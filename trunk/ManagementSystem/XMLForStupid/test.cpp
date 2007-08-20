@@ -32,7 +32,8 @@ selector<Kind,Content> operator | (selector<Kind,Content>, Content const& ctnt)
   return selector<Kind,Content> (ctnt);
 }
 template <typename Kind>
-selector<Kind,std::string> operator | (selector<Kind,std::string>, const char* text)
+selector<Kind,std::string> operator | (selector<Kind,std::string>,
+				       const char* text)
 {
   return selector<Kind,std::string> (std::string (text));
 }
@@ -181,26 +182,26 @@ public:
 	      o << indent << "<" << N.name << ">";
       }
   }
-	friend void read (std::istream& i, node& N)
-	{
-		// we're going to eat the whole damn file in one gulp
-		// that's why it's called "XMLForStupid"
-		std::string line;
-		std::string lines;
-		while (std::getline (i, line))
-			lines += line;
-		// 
-	}	
+  friend void read (std::istream& i, node& N)
+  {
+    // we're going to eat the whole damn file in one gulp
+    // that's why it's called "XMLForStupid"
+    std::string line;
+    std::string lines;
+    while (std::getline (i, line))
+      lines += line;
+    // 
+  }	
   friend std::ostream& operator << (std::ostream& o, node const& N)
   {
     write (o, N);
     return o;
   }
   friend std::istream& operator >> (std::istream& i, node& N)
-	{
+  {
     read (i, N);
     return i;
-	}	
+  }	
 };
 
 node node::NDUMP;
