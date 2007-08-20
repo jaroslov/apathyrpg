@@ -19,18 +19,23 @@ class ArpgXMLReference(wx.TreeItemData):
     self.Key = ""
 
 class SelectionFrame(wx.Frame):
-  def __init__(self, Location=""):
+  def __init__(self, ArpgContent):
     wx.Frame.__init__(self, None, wx.NewId(), "ARPG-MS",
                           pos=wx.DefaultPosition,
                           style=wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL)
 
-    self.ArpgContent = ArpgContent (Location=Location)
+    self.ArpgContent = ArpgContent
 
     self.Hierarch = None
     self.AddHierarchy ()
-    self.Bind (wx.TREE_SEL_CHANGED, self.Selected, self.Hierarch)
+    try:
+      self.Bind (wx.EVT_TREE_SEL_CHANGED, self.Selected, self.Hierarch)
+    except:
+      pass
     
-    self.TextBox = wx.TextCtrl (self)
+    self.TextBox = wx.TextCtrl (self,
+                                style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
+    self.Bind (wx.EVT_TEXT, self.TextChanged, self.TextBox)
 
     #self.Splitter = wx.SplitterWindow (self, wx.NewId())
     #try:
@@ -73,8 +78,8 @@ class SelectionFrame(wx.Frame):
           TSKeys = What.TopoSortKeys ()
           for TSKey in TSKeys:
             datum = ArpgXMLReference (What, TSKey)
-            SSRoot = self.Hierarch.AppendItem (SubRoot, TSKey.capitalize (),
-                                               data=datum)
+            self.Hierarch.AppendItem (SubRoot, TSKey.capitalize (),
+                                      data=wx.TreeItemData((What,TSKey)))
     else:
       self.Hierarch = wx.TreeCtrl (self)
       Root = self.Hierarch.AddRoot (self.ArpgContent.Name)
@@ -84,10 +89,25 @@ class SelectionFrame(wx.Frame):
         self.AddHierarchy (Root, self.ArpgContent.Data[Key])
 
   def Selected (self, Event):
-    pass
+    which = self.Hierarch.GetSelection ()
+    itemdatum = self.Hierarch.GetItemData (which)
+    datum = itemdatum.GetData ()
+    if datum:
+      self.TextBox.SetValue (datum[0].Data[datum[1]])
+    else:
+      self.TextBox.SetValue ("")
+
+  def TextChanged (self, Event):
+    which = self.Hierarch.GetSelection ()
+    itemdatum = self.Hierarch.GetItemData (which)
+    datum = itemdatum.GetData ()
+    if datum:
+      datum[0].Data[datum[1]] = self.TextBox.GetValue ()
 
 if __name__=="__main__":
   app = wx.App ()
-  sf = SelectionFrame (sys.argv[1])
+  ArpgContent = ArpgContent (sys.argv[1])
+  sf = SelectionFrame (ArpgContent)
   app.MainLoop ()
-
+  tmp = open ("tmp.xml", "w")
+  print >> tmp, ArpgContent.AsXML ()
