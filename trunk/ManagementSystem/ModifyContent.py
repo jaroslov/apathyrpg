@@ -41,53 +41,26 @@ class SelectionFrame(wx.Frame):
                                 style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
     self.Bind (wx.EVT_TEXT, self.TextChanged, self.TextBox)
 
-    #self.Splitter = wx.SplitterWindow (self, wx.NewId())
-    #try:
-    #  self.SplitVertically (self.Hierarch, self.TextBox, -100)
-    #except:
-    #  pass
-
-    if False:
-      self.Sizer = wx.BoxSizer (wx.HORIZONTAL)
-      self.Sizer.Add (self.Hierarch,
-                      proportion=1,
-                      flag=wx.EXPAND
-                      | wx.ALL
-                      | wx.ALIGN_CENTER_HORIZONTAL
-                      | wx.ALIGN_CENTER_VERTICAL,
-                      border=5)
-      self.Sizer.Add (self.TextBox,
-                      proportion=1,
-                      flag=wx.EXPAND
-                      | wx.ALL
-                      | wx.ALIGN_CENTER_HORIZONTAL
-                      | wx.ALIGN_CENTER_VERTICAL,
-                      border=15)
-      
-      self.SetSizer (self.Sizer)
-      self.SetAutoLayout (1)
-      self.Sizer.Fit (self)
-    else:
-      self.LSizer = wx.BoxSizer (wx.HORIZONTAL)
-      self.LSizer.Add (self.Hierarch,
-                      proportion=1,
-                      flag=wx.EXPAND
-                      | wx.ALL
-                      | wx.ALIGN_CENTER_HORIZONTAL
-                      | wx.ALIGN_CENTER_VERTICAL,
-                      border=5)
-      self.LeftPanel.SetSizer (self.LSizer)
-      self.RSizer = wx.BoxSizer (wx.HORIZONTAL)
-      self.RSizer.Add (self.TextBox,
-                      proportion=1,
-                      flag=wx.EXPAND
-                      | wx.ALL
-                      | wx.ALIGN_CENTER_HORIZONTAL
-                      | wx.ALIGN_CENTER_VERTICAL,
-                      border=5)
-      self.RightPanel.SetSizer (self.RSizer)
-      self.Splitter.SplitVertically (self.LeftPanel, self.RightPanel, -100)
-
+    self.LSizer = wx.BoxSizer (wx.HORIZONTAL)
+    self.LSizer.Add (self.Hierarch,
+                     proportion=1,
+                     flag=wx.EXPAND
+                     | wx.ALL
+                     | wx.ALIGN_CENTER_HORIZONTAL
+                     | wx.ALIGN_CENTER_VERTICAL,
+                     border=5)
+    self.LeftPanel.SetSizer (self.LSizer)
+    self.RSizer = wx.BoxSizer (wx.HORIZONTAL)
+    self.RSizer.Add (self.TextBox,
+                     proportion=1,
+                     flag=wx.EXPAND
+                     | wx.ALL
+                     | wx.ALIGN_CENTER_HORIZONTAL
+                     | wx.ALIGN_CENTER_VERTICAL,
+                     border=5)
+    self.RightPanel.SetSizer (self.RSizer)
+    self.Splitter.SplitVertically (self.LeftPanel, self.RightPanel, -100)
+    
     self.Show (True)
 
   def AddHierarchy (self, Root=None, What=None):
