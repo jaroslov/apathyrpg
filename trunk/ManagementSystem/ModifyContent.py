@@ -12,6 +12,12 @@ from ArpgMs import ARPG_MS as ArpgContent
 # modified. There is also a capability to "add new"
 # which is based upon objects within the hierarchy, already.
 
+class ArpgXMLReference(wx.TreeItemData):
+  def __init__(self, Reference=None, Key=""):
+    wx.TreeItemData.__init__ (self)
+    self.Reference = Reference
+    self.Key = ""
+
 class SelectionFrame(wx.Frame):
   def __init__(self, Location=""):
     wx.Frame.__init__(self, None, wx.NewId(), "ARPG-MS",
@@ -22,7 +28,29 @@ class SelectionFrame(wx.Frame):
 
     self.Hierarch = None
     self.AddHierarchy ()
+    self.Bind (wx.TREE_SEL_CHANGED, self.Selected, self.Hierarch)
+    
+    self.TextBox = wx.TextCtrl (self)
 
+    #self.Splitter = wx.SplitterWindow (self, wx.NewId())
+    #try:
+    #  self.SplitVertically (self.Hierarch, self.TextBox, -100)
+    #except:
+    #  pass
+
+    self.Sizer = wx.BoxSizer (wx.HORIZONTAL)
+    self.Sizer.Add (self.Hierarch,
+                    proportion=1,
+                    flag=wx.EXPAND|wx.ALL|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL,
+                    border=5)
+    self.Sizer.Add (self.TextBox,
+                    proportion=1,
+                    flag=wx.EXPAND|wx.ALL|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL,
+                    border=15)
+
+    self.SetSizer (self.Sizer)
+    self.SetAutoLayout (1)
+    self.Sizer.Fit (self)
 
     self.Show (True)
 
@@ -44,7 +72,9 @@ class SelectionFrame(wx.Frame):
           SubRoot = self.Hierarch.AppendItem (Root, What.Data["name"])
           TSKeys = What.TopoSortKeys ()
           for TSKey in TSKeys:
-            self.Hierarch.AppendItem (SubRoot, TSKey.capitalize ())
+            datum = ArpgXMLReference (What, TSKey)
+            SSRoot = self.Hierarch.AppendItem (SubRoot, TSKey.capitalize (),
+                                               data=datum)
     else:
       self.Hierarch = wx.TreeCtrl (self)
       Root = self.Hierarch.AddRoot (self.ArpgContent.Name)
@@ -52,6 +82,9 @@ class SelectionFrame(wx.Frame):
       Keys.sort ()
       for Key in Keys:
         self.AddHierarchy (Root, self.ArpgContent.Data[Key])
+
+  def Selected (self, Event):
+    pass
 
 if __name__=="__main__":
   app = wx.App ()
