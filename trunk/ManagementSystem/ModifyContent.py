@@ -29,7 +29,10 @@ class SelectionFrame(wx.Frame):
   def AddHierarchy (self, Root=None, What=None):
     if self.Hierarch:
       if "Hierarch" == What.Kind:
-        SubRoot = self.Hierarch.AppendItem (Root, What.Name)
+        Name = What.Name
+        if len(What.ID) > 0:
+          Name = What.ID
+        SubRoot = self.Hierarch.AppendItem (Root, Name)
         Keys = What.Data.keys  ()
         Keys.sort ()
         for Key in Keys:
@@ -38,7 +41,10 @@ class SelectionFrame(wx.Frame):
         self.AddHierarchy (Root, What.Data)
       else:
         if len(What.Data["name"]) > 0:
-          self.Hierarch.AppendItem (Root, What.Data["name"])
+          SubRoot = self.Hierarch.AppendItem (Root, What.Data["name"])
+          TSKeys = What.TopoSortKeys ()
+          for TSKey in TSKeys:
+            self.Hierarch.AppendItem (SubRoot, TSKey.capitalize ())
     else:
       self.Hierarch = wx.TreeCtrl (self)
       Root = self.Hierarch.AddRoot (self.ArpgContent.Name)
