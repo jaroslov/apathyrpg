@@ -109,5 +109,6 @@ if __name__=="__main__":
   ArpgContent = ArpgContent (sys.argv[1])
   sf = SelectionFrame (ArpgContent)
   app.MainLoop ()
-  tmp = open ("tmp.xml", "w")
-  print >> tmp, ArpgContent.AsXML ()
+  if len(sys.argv) > 2:
+    tmp = open (sys.argv[2], "w")
+    print >> tmp, ArpgContent.AsXML ()
