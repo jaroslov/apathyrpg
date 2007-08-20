@@ -26,6 +26,10 @@ class SelectionFrame(wx.Frame):
 
     self.ArpgContent = ArpgContent
 
+    self.Splitter = wx.SplitterWindow (self, wx.ID_ANY)
+    self.LeftPanel = wx.Panel (self.Splitter, wx.ID_ANY)
+    self.RightPanel = wx.Panel (self.Splitter, wx.ID_ANY)
+
     self.Hierarch = None
     self.AddHierarchy ()
     try:
@@ -33,7 +37,7 @@ class SelectionFrame(wx.Frame):
     except:
       pass
     
-    self.TextBox = wx.TextCtrl (self,
+    self.TextBox = wx.TextCtrl (self.RightPanel,
                                 style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
     self.Bind (wx.EVT_TEXT, self.TextChanged, self.TextBox)
 
@@ -43,19 +47,46 @@ class SelectionFrame(wx.Frame):
     #except:
     #  pass
 
-    self.Sizer = wx.BoxSizer (wx.HORIZONTAL)
-    self.Sizer.Add (self.Hierarch,
-                    proportion=1,
-                    flag=wx.EXPAND|wx.ALL|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL,
-                    border=5)
-    self.Sizer.Add (self.TextBox,
-                    proportion=1,
-                    flag=wx.EXPAND|wx.ALL|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL,
-                    border=15)
-
-    self.SetSizer (self.Sizer)
-    self.SetAutoLayout (1)
-    self.Sizer.Fit (self)
+    if False:
+      self.Sizer = wx.BoxSizer (wx.HORIZONTAL)
+      self.Sizer.Add (self.Hierarch,
+                      proportion=1,
+                      flag=wx.EXPAND
+                      | wx.ALL
+                      | wx.ALIGN_CENTER_HORIZONTAL
+                      | wx.ALIGN_CENTER_VERTICAL,
+                      border=5)
+      self.Sizer.Add (self.TextBox,
+                      proportion=1,
+                      flag=wx.EXPAND
+                      | wx.ALL
+                      | wx.ALIGN_CENTER_HORIZONTAL
+                      | wx.ALIGN_CENTER_VERTICAL,
+                      border=15)
+      
+      self.SetSizer (self.Sizer)
+      self.SetAutoLayout (1)
+      self.Sizer.Fit (self)
+    else:
+      self.LSizer = wx.BoxSizer (wx.HORIZONTAL)
+      self.LSizer.Add (self.Hierarch,
+                      proportion=1,
+                      flag=wx.EXPAND
+                      | wx.ALL
+                      | wx.ALIGN_CENTER_HORIZONTAL
+                      | wx.ALIGN_CENTER_VERTICAL,
+                      border=5)
+      self.LeftPanel.SetSizer (self.LSizer)
+      self.RSizer = wx.BoxSizer (wx.HORIZONTAL)
+      self.RSizer.Add (self.TextBox,
+                      proportion=1,
+                      flag=wx.EXPAND
+                      | wx.ALL
+                      | wx.ALIGN_CENTER_HORIZONTAL
+                      | wx.ALIGN_CENTER_VERTICAL,
+                      border=5)
+      self.RightPanel.SetSizer (self.RSizer)
+      self.Splitter.SplitVertically (self.LeftPanel, self.RightPanel, -100)
 
     self.Show (True)
 
@@ -81,7 +112,7 @@ class SelectionFrame(wx.Frame):
             self.Hierarch.AppendItem (SubRoot, TSKey.capitalize (),
                                       data=wx.TreeItemData((What,TSKey)))
     else:
-      self.Hierarch = wx.TreeCtrl (self)
+      self.Hierarch = wx.TreeCtrl (self.LeftPanel)
       Root = self.Hierarch.AddRoot (self.ArpgContent.Name)
       Keys = self.ArpgContent.Data.keys ()
       Keys.sort ()
