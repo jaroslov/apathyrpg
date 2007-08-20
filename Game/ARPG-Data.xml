@@ -1485,7 +1485,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		</KeyedItem>
 	</Academic>
 	<Augmentations>
-		<Arm__Hand>
+		<Arm__Hand id="Arm, Hand">
 			<KeyedItem id="/Augmentations/Arm, Hand/Arm Blades" >
 				<augmentation>
 					<cp>5</cp>
@@ -4433,7 +4433,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				</armor>
 			</KeyedItem>
 		</Armor>
-		<Energy_Weapons>
+		<Energy_Weapons id="Energy Weapons">
 		</Energy_Weapons>
 		<Melee>
 			<Axes>
@@ -5722,7 +5722,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					</melee>
 				</KeyedItem>
 			</Knives>
-			<Large_Swords>
+			<Large_Swords id="Large Swords">
 				<KeyedItem id="/Equipment/Melee/Large Swords/Bastard Sword" >
 					<melee>
 						<class>Large Swords</class>
@@ -6552,7 +6552,7 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 					</melee>
 				</KeyedItem>
 			</Rocket-Assisted>
-			<Small_Swords>
+			<Small_Swords id="Small Swords">
 				<KeyedItem id="/Equipment/Melee/Small Swords/Chinese war sword" >
 					<melee>
 						<class>Small Swords</class>
@@ -14543,7 +14543,7 @@ This instantly nullifies all poisons in the caster's body, and renders the caste
 			</KeyedItem>
 		</Water>
 	</Magic>
-	<Martial_Arts>
+	<Martial_Arts id="Martial Arts">
 		<Basic>
 			<KeyedItem id="/Martial Arts/Basic/Archaic Weapons" >
 				<skill>
@@ -16509,9 +16509,9 @@ and thus \emph{may not} be used.</description>
 					</energy>
 				</KeyedItem>
 			</Energy>
-			<Melee_Weapons>
+			<Melee_Weapons id="Melee Weapons">
 			</Melee_Weapons>
-			<Sensors_and_Controls>
+			<Sensors_and_Controls id="Sensors and Controls">
 				<KeyedItem id="/Mecha/Equipment/Sensors and Controls/A--V Recorder" >
 					<sensor>
 						<character_points>2</character_points>

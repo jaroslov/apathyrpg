@@ -1,8 +1,47 @@
+TopoImportance = ["name",
+                  "metatag",
+                  "class",
+                  "type",
+                  "rank",
+                  "level",
+                  "attribute",
+                  "casting_time",
+                  "cost",
+                  "note",
+                  "encumbrance",
+                  "piercing",
+                  "slashing",
+                  "crushing",
+                  "damage",
+                  "hands",
+                  "minimum_strength",
+                  "maximum_strength_bonus",
+                  "recovery",
+                  "duration",
+                  "magic_points",
+                  "range",
+                  "target",
+                  "occupation",
+                  "time",
+                  "skills",
+                  "items",
+                  "spells",
+                  "traits",
+                  "special_abilities",
+                  "statistics",
+                  "attacks",
+                  "slots",
+                  "requirements",
+                  "character_points",
+                  "description",
+                  "implementation"]
+
 class ARPG_MS(object):
   def __init__ (self, Location=None, XML=None, KeyedItem=None, Leaf=None):
     self.Kind = ""
     self.Name = ""
     self.Data = {}
+    self.ID = ""
     if Location:
       self.FromXMLFile (Location)
     elif XML:
@@ -20,6 +59,8 @@ class ARPG_MS(object):
   def FromXML (self, xml):
     self.Name = xml.nodeName
     self.Kind = "Hierarch"
+    if xml.hasAttributes ():
+      self.ID = xml.getAttribute("id")
     if xml.hasChildNodes ():
       for child in xml.childNodes:
         if child.nodeType == xml.ELEMENT_NODE:
@@ -53,7 +94,7 @@ class ARPG_MS(object):
   def AsXML (self, Indent=""):
     output = ""
     if "Hierarch" == self.Kind:
-      output += Indent+"<"+self.Name+">\n"
+      output += Indent+"<"+self.Name+" id=\""+self.ID+"\" >\n"
       keys = self.Data.keys ()
       keys.sort ()
       for key in keys:
@@ -72,3 +113,14 @@ class ARPG_MS(object):
         output += Indent+"\t<"+key+">"+value+"</"+key+">\n"
       output += Indent+"</"+self.Name+">"
     return output
+
+  def TopoSortKeys (self):
+    zkeys = self.Data.keys()
+    topokeys = []
+    for ikey in TopoImportance:
+      if ikey in zkeys:
+        topokeys.append(ikey)
+    for zkey in zkeys:
+      if zkey not in topokeys:
+        topokeys.append(zkey)
+    return topokeys
