@@ -21,6 +21,177 @@ class ArpgXMLReference(wx.TreeItemData):
     self.Reference = Reference
     self.Key = ""
 
+class GridView(gridlib.Grid):
+  def __init__(self, parent, id):
+    gridlib.Grid.__init__(self, parent, id)
+
+    self.WhichCategory = None
+    self.WhichKeyedItems = None
+    self.WhichHeadings = None
+    self.WhichItem = None
+
+    self.ItemChangedCallback = None
+
+    self.Bind (gridlib.EVT_GRID_LABEL_RIGHT_CLICK, self.LabelRightClick)
+    self.Bind (gridlib.EVT_GRID_CELL_CHANGE, self.ItemChanged)
+    self.Bind (gridlib.EVT_GRID_SELECT_CELL, self.ItemSelected)
+
+  def ClearGrid (self):
+    self.WhichCategory = None
+    self.WhichKeyedItems = None
+    self.WhichHeadings = None
+    self.WhichItem = None
+    Table = self.GetTable ()
+    cols = Table.GetNumberCols ()
+    rows = Table.GetNumberRows ()
+    if rows > 0:
+      self.DeleteRows (0, rows)
+    if cols > 0:
+      self.DeleteCols (0, cols)
+
+  def ItemSelected (self, Event):
+    if (self.WhichCategory
+        and self.WhichKeyedItems
+        and self.WhichHeadings):
+      self.WhichItem = (Event.GetRow (), Event.GetCol ())
+      Key = self.WhichKeyedItems[Event.GetRow ()][1]
+      Heading = self.WhichHeadings[Event.GetCol ()]
+      KeyedItem = self.WhichCategory.Data[Key]
+      Item = KeyedItem.Data
+      if self.ItemChangedCallback:
+        self.ItemChangedCallback (Item.Data[Heading])
+    elif self.ItemChangedCallback:
+      self.ItemChangedCallback ("")
+    Event.Skip ()
+
+  def ItemChanged (self, Event):
+    if (self.WhichCategory
+        and self.WhichKeyedItems
+        and self.WhichHeadings):
+      Key = self.WhichKeyedItems[Event.GetRow ()][1]
+      Heading = self.WhichHeadings[Event.GetCol ()]
+      KeyedItem = self.WhichCategory.Data[Key]
+      Item = KeyedItem.Data
+      Item.Data[Heading] = self.GetCellValue (Event.GetRow (), Event.GetCol ())
+      if self.ItemChangedCallback:
+        self.ItemChangedCallback (Item.Data[Heading])
+      self.ContextSensitiveColoring (Item.Data[Heading], Event.GetRow (), Event.GetCol ())
+    Event.Skip ()
+
+  def LabelRightClick (self, Event):
+    if Event.GetRow () > -1:
+      row = Event.GetRow ()
+      insertID = wx.NewId ()
+      deleteID = wx.NewId ()
+
+      if not self.GetSelectedRows ():
+        self.SelectRow (row)
+
+      menu = wx.Menu ()
+      x, y = Event.GetPosition ()
+      menu.Append (insertID, "Insert Row")
+      menu.Append (deleteID, "Delete Row")
+
+      def InsertRow (Event, self=self, row=row):
+        if (self.WhichCategory
+            and self.WhichKeyedItems
+            and self.WhichHeadings):
+          # find the Default
+          Default = None
+          for Key in self.WhichCategory.Data.keys ():
+            if Key.find ("Default") > 1:
+              Default = self.WhichCategory.Data[Key]
+          if Default == None:
+            print >> sys.stderr, "There is not Default"
+            return # if there's no Default we're sunk
+          NewItem = Default.Clone ()
+          NewItem.ID = "__"+str(wx.NewId ())
+          self.WhichCategory.Data[NewItem.ID] = NewItem
+          self.SetUpGrid (self.WhichCategory)
+        pass
+
+      def DeleteRow (Event, self=self, row=row):
+        if (self.WhichCategory
+            and self.WhichKeyedItems
+            and self.WhichHeadings):
+          Key = self.WhichKeyedItems[row][1]
+          del self.WhichCategory.Data[Key]
+          self.SetUpGrid (self.WhichCategory)
+        pass
+
+      self.Bind (wx.EVT_MENU, InsertRow, id=insertID)
+      self.Bind (wx.EVT_MENU, DeleteRow, id=deleteID)
+      self.PopupMenu (menu, (x, y))
+      menu.Destroy ()
+
+  def ContextSensitiveColoring (self, Value, Row, Col):
+    if (Value.find ("self >>>") >= 0
+        or Value.find ("other >>>") >= 0):
+      self.SetCellBackgroundColour (Row, Col, wx.Color(255,0,0))
+    elif (Value.find ("[LaTeX]") >= 0
+          or Value.find ("[latex]") >= 0):
+      self.SetCellBackgroundColour (Row, Col, wx.Color(0,195,255))
+    else:
+      self.SetCellBackgroundColour (Row, Col, wx.Color(255,255,255))
+
+  def SetUpGrid (self, What):
+    self.ClearGrid ()
+
+    Keys = What.Data.keys ()
+    if len(Keys) < 1:
+      return
+
+    # check that we're gonna see leaves soon
+    if "KeyedItem" != What.Data[Keys[0]].Kind:
+      return
+
+    # find the Default, sort the keys
+    Default = None
+    SortingKeys = []
+    for Key in Keys:
+      if What.Data[Key].ID.find("Default") > 1:
+        Default = What.Data[Key].Data
+      else:
+        if What.Data[Key].Data.Data.has_key ("name"):
+          SortingKeys.append ((What.Data[Key].Data.Data["name"],Key))
+        else:
+          SortingKeys.append ((Key,Key))
+    if Default == None:
+      return
+    SortingKeys.sort ()
+
+    # get the Header, remove extraneous
+    Header = Default.TopoSortKeys ()[:]
+    try:
+      Header.remove ("implementation")
+      #Header.remove ("description")
+    except: pass
+
+    self.AppendCols (len(Header))
+    self.AppendRows (len(SortingKeys))
+
+    for hdx in xrange(0,len(Header)):
+      heading = Header[hdx]
+      self.SetColLabelValue (hdx, heading.capitalize ())
+      for skx in xrange(0,len(SortingKeys)):
+        Key = SortingKeys[skx][1]
+        KeyedItem = What.Data[Key]
+        Item = KeyedItem.Data
+        if Item.Data.has_key (heading):
+          self.SetCellValue (skx, hdx, Item.Data[heading])
+          self.ContextSensitiveColoring (Item.Data[heading], skx, hdx)
+      if "description" != heading:
+        self.AutoSizeColumn (hdx, True)
+
+    self.WhichCategory = What
+    self.WhichKeyedItems = SortingKeys
+    self.WhichHeadings = Header
+
+    ## Can't figure out how to make row-label auto-sized
+    #for skx in xrange(0,len(SortingKeys)):
+    #  self.GridView.SetRowLabelValue (skx, What.Data[SortingKeys[skx][1]].Data.Name)
+
+
 class SelectionFrame(wx.Frame):
   def __init__(self, ArpgContent):
     wx.Frame.__init__(self, None, wx.NewId(), "ARPG-MS",
@@ -28,11 +199,6 @@ class SelectionFrame(wx.Frame):
                           style=wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL)
 
     self.ArpgContent = ArpgContent
-
-    self.WhichCategory = None
-    self.WhichKeyedItems = None
-    self.WhichHeadings = None
-    self.WhichItem = None
 
     self.MainSplitter = wx.SplitterWindow (self, wx.ID_ANY)
     self.LeftPanel = wx.Panel (self.MainSplitter, wx.ID_ANY)
@@ -49,10 +215,9 @@ class SelectionFrame(wx.Frame):
     except:
       pass
     
-    self.GridView = gridlib.Grid (self.TopPanel, wx.ID_ANY)
+    self.GridView = GridView (self.TopPanel, wx.ID_ANY)
     self.GridView.CreateGrid (0, 0)
-    self.Bind (gridlib.EVT_GRID_CELL_CHANGE, self.ItemChanged)
-    self.Bind (gridlib.EVT_GRID_SELECT_CELL, self.ItemSelected)
+    self.GridView.ItemChangedCallback = self.ItemChangedCallback
 
     self.TextBox = wx.TextCtrl (self.BottomPanel,
                                 style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
@@ -119,125 +284,30 @@ class SelectionFrame(wx.Frame):
     itemdatum = self.Hierarch.GetItemData (which)
     datum = itemdatum.GetData ()
     if datum:
-      self.SetUpGrid (datum)
+      self.GridView.SetUpGrid (datum)
       self.TextBox.SetValue ("")
     else:
-      self.ClearGrid ()
+      self.GridView.ClearGrid ()
       self.TextBox.SetValue ("")
 
   def TextChanged (self, Event):
-    if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings and self.WhichItem:
-      Row = self.WhichItem[0]
-      Col = self.WhichItem[1]
+    if (self.GridView.WhichCategory
+        and self.GridView.WhichKeyedItems
+        and self.GridView.WhichHeadings
+        and self.GridView.WhichItem):
+      Row = self.GridView.WhichItem[0]
+      Col = self.GridView.WhichItem[1]
       self.GridView.SetCellValue (Row, Col, self.TextBox.GetValue ())
-      Key = self.WhichKeyedItems[Row][1]
-      Heading = self.WhichHeadings[Col]
-      KeyedItem = self.WhichCategory.Data[Key]
+      Key = self.GridView.WhichKeyedItems[Row][1]
+      Heading = self.GridView.WhichHeadings[Col]
+      KeyedItem = self.GridView.WhichCategory.Data[Key]
       Item = KeyedItem.Data
       Item.Data[Heading] = self.TextBox.GetValue ()
-      self.HasError (self.TextBox.GetValue (), Row, Col)
-    else: pass
+      self.GridView.ContextSensitiveColoring (self.TextBox.GetValue (), Row, Col)
+    else: pass    
 
-  def ItemChanged (self, Event):
-    if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings:
-      Key = self.WhichKeyedItems[Event.GetRow ()][1]
-      Heading = self.WhichHeadings[Event.GetCol ()]
-      KeyedItem = self.WhichCategory.Data[Key]
-      Item = KeyedItem.Data
-      Item.Data[Heading] = self.GridView.GetCellValue (Event.GetRow (), Event.GetCol ())
-      self.TextBox.SetValue (Item.Data[Heading])
-      self.HasError (self.TextBox.GetValue (), Event.GetRow (), Event.GetCol ())
-    Event.Skip ()
-
-  def ItemSelected (self, Event):
-    if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings:
-      self.WhichItem = (Event.GetRow (), Event.GetCol ())
-      Key = self.WhichKeyedItems[Event.GetRow ()][1]
-      Heading = self.WhichHeadings[Event.GetCol ()]
-      KeyedItem = self.WhichCategory.Data[Key]
-      Item = KeyedItem.Data
-      self.TextBox.SetValue (Item.Data[Heading])
-    else:
-      self.TextBox.SetValue ("")
-    Event.Skip ()
-
-  def ClearGrid (self):
-    self.WhichCategory = None
-    self.WhichKeyedItems = None
-    self.WhichHeadings = None
-    self.WhichItem = None
-    Table = self.GridView.GetTable ()
-    cols = Table.GetNumberCols ()
-    rows = Table.GetNumberRows ()
-    if rows > 0:
-      self.GridView.DeleteRows (0, rows)
-    if cols > 0:
-      self.GridView.DeleteCols (0, cols)
-
-  def SetUpGrid (self, What):
-    self.ClearGrid ()
-
-    Keys = What.Data.keys ()
-    if len(Keys) < 1:
-      return
-
-    # check that we're gonna see leaves soon
-    if "KeyedItem" != What.Data[Keys[0]].Kind:
-      return
-
-    # find the Default, sort the keys
-    Default = None
-    SortingKeys = []
-    for Key in Keys:
-      if What.Data[Key].ID.find("Default") > 1:
-        Default = What.Data[Key].Data
-      else:
-        if What.Data[Key].Data.Data.has_key ("name"):
-          SortingKeys.append ((What.Data[Key].Data.Data["name"],Key))
-        else:
-          SortingKeys.append ((Key,Key))
-    if Default == None:
-      return
-    SortingKeys.sort ()
-
-    # get the Header, remove extraneous
-    Header = Default.TopoSortKeys ()[:]
-    try:
-      Header.remove ("implementation")
-      #Header.remove ("description")
-    except: pass
-
-    self.GridView.AppendCols (len(Header))
-    self.GridView.AppendRows (len(SortingKeys))
-
-    for hdx in xrange(0,len(Header)):
-      heading = Header[hdx]
-      self.GridView.SetColLabelValue (hdx, heading.capitalize ())
-      for skx in xrange(0,len(SortingKeys)):
-        Key = SortingKeys[skx][1]
-        KeyedItem = What.Data[Key]
-        Item = KeyedItem.Data
-        if Item.Data.has_key (heading):
-          self.GridView.SetCellValue (skx, hdx, Item.Data[heading])
-          self.HasError (Item.Data[heading], skx, hdx)
-      if "description" != heading:
-        self.GridView.AutoSizeColumn (hdx, True)
-
-    self.WhichCategory = What
-    self.WhichKeyedItems = SortingKeys
-    self.WhichHeadings = Header
-
-    ## Can't figure out how to make row-label auto-sized
-    #for skx in xrange(0,len(SortingKeys)):
-    #  self.GridView.SetRowLabelValue (skx, What.Data[SortingKeys[skx][1]].Data.Name)
-
-  def HasError (self, Value, Row, Col):
-    if (Value.find ("self >>>") >= 0
-        or Value.find ("other >>>") >= 0):
-      self.GridView.SetCellBackgroundColour (Row, Col, wx.Color(255,0,0))
-    else:
-      self.GridView.SetCellBackgroundColour (Row, Col, wx.Color(255,255,255))
-    
+  def ItemChangedCallback (self, Data):
+    self.TextBox.SetValue (Data)
 
 def Debug ():
   app = wx.App ()
