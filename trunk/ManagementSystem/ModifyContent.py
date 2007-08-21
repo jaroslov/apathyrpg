@@ -49,8 +49,7 @@ class SelectionFrame(wx.Frame):
     self.GridView = gridlib.Grid (self.TopPanel, wx.ID_ANY)
     self.GridView.CreateGrid (0, 0)
     self.Bind (gridlib.EVT_GRID_CELL_CHANGE, self.ItemChanged)
-    self.Bind (gridlib.EVT_GRID_LABEL_RIGHT_CLICK, self.ItemSelected)
-    self.Bind (gridlib.EVT_GRID_LABEL_LEFT_CLICK, self.ItemSelected)
+    self.Bind (gridlib.EVT_GRID_SELECT_CELL, self.ItemSelected)
 
     self.TextBox = wx.TextCtrl (self.BottomPanel,
                                 style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
@@ -137,9 +136,18 @@ class SelectionFrame(wx.Frame):
       KeyedItem = self.WhichCategory.Data[Key]
       Item = KeyedItem.Data
       Item.Data[Heading] = self.GridView.GetCellValue (Event.GetRow (), Event.GetCol ())
+      self.TextBox.SetValue (Item.Data[Heading])
     Event.Skip ()
 
   def ItemSelected (self, Event):
+    if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings:
+      Key = self.WhichKeyedItems[Event.GetRow ()][1]
+      Heading = self.WhichHeadings[Event.GetCol ()]
+      KeyedItem = self.WhichCategory.Data[Key]
+      Item = KeyedItem.Data
+      self.TextBox.SetValue (Item.Data[Heading])
+    else:
+      self.TextBox.SetValue ("")
     Event.Skip ()
 
   def ClearGrid (self):
@@ -181,7 +189,7 @@ class SelectionFrame(wx.Frame):
     Header = Default.TopoSortKeys ()[:]
     try:
       Header.remove ("implementation")
-      Header.remove ("description")
+      #Header.remove ("description")
     except: pass
 
     self.GridView.AppendCols (len(Header))
@@ -196,9 +204,8 @@ class SelectionFrame(wx.Frame):
         Item = KeyedItem.Data
         if Item.Data.has_key (heading):
           self.GridView.SetCellValue (skx, hdx, Item.Data[heading])
-
-    self.GridView.AutoSizeColumns (True)
-    self.GridView.AutoSizeRows (True)
+      if "description" != heading:
+        self.GridView.AutoSizeColumn (hdx, True)
 
     self.WhichCategory = What
     self.WhichKeyedItems = SortingKeys
@@ -210,7 +217,7 @@ class SelectionFrame(wx.Frame):
     
 if __name__=="__main__":
   app = wx.App ()
-  ArpgContent = None#ArpgContent (sys.argv[1])
+  ArpgContent = ArpgContent (sys.argv[1])
   sf = SelectionFrame (ArpgContent)
   app.MainLoop ()
   if len(sys.argv) > 2:
