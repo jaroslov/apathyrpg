@@ -1,6 +1,7 @@
 import sys
 import wx
 from ArpgMs import ARPG_MS as ArpgContent
+import wx.lib.mixins.listctrl as listmix
 
 # This is a windowed utility for modifying the contents
 # but *not* the hierarchy of the Data-section of the 
@@ -17,6 +18,15 @@ class ArpgXMLReference(wx.TreeItemData):
     wx.TreeItemData.__init__ (self)
     self.Reference = Reference
     self.Key = ""
+
+class TextListCtrl(wx.ListCtrl,
+                   listmix.ListCtrlAutoWidthMixin,
+                   listmix.TextEditMixin):
+  def __init__(self, parent, ID, pos=wx.DefaultPosition,
+               size=wx.DefaultSize, style=0):
+    wx.ListCtrl.__init__ (self, parent, ID, pos, size, style)
+    listmix.ListCtrlAutoWidthMixin.__init__ (self)
+    listmix.TextEditMixin.__init__ (self)
 
 class SelectionFrame(wx.Frame):
   def __init__(self, ArpgContent):
@@ -37,6 +47,11 @@ class SelectionFrame(wx.Frame):
     except:
       pass
     
+    self.ListView = TextListCtrl (self.RightPanel,
+                                  wx.ID_ANY,
+                                  style=wx.LC_REPORT
+                                  | wx.BORDER_NONE
+                                  | wx.LC_SORT_ASCENDING)
     self.TextBox = wx.TextCtrl (self.RightPanel,
                                 style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
     self.Bind (wx.EVT_TEXT, self.TextChanged, self.TextBox)
@@ -50,7 +65,14 @@ class SelectionFrame(wx.Frame):
                      | wx.ALIGN_CENTER_VERTICAL,
                      border=5)
     self.LeftPanel.SetSizer (self.LSizer)
-    self.RSizer = wx.BoxSizer (wx.HORIZONTAL)
+    self.RSizer = wx.BoxSizer (wx.VERTICAL)
+    self.RSizer.Add (self.ListView,
+                     proportion=3,
+                     flag=wx.EXPAND
+                     | wx.ALL
+                     | wx.ALIGN_CENTER_HORIZONTAL
+                     | wx.ALIGN_CENTER_VERTICAL,
+                     border=5)
     self.RSizer.Add (self.TextBox,
                      proportion=1,
                      flag=wx.EXPAND
@@ -59,7 +81,7 @@ class SelectionFrame(wx.Frame):
                      | wx.ALIGN_CENTER_VERTICAL,
                      border=5)
     self.RightPanel.SetSizer (self.RSizer)
-    self.Splitter.SplitVertically (self.LeftPanel, self.RightPanel, -100)
+    self.Splitter.SplitVertically (self.LeftPanel, self.RightPanel, -200)
     
     self.Show (True)
 
@@ -69,21 +91,12 @@ class SelectionFrame(wx.Frame):
         Name = What.Name
         if len(What.ID) > 0:
           Name = What.ID
-        SubRoot = self.Hierarch.AppendItem (Root, Name)
+        SubRoot = self.Hierarch.AppendItem (Root, Name,
+                                            data=wx.TreeItemData (What))
         Keys = What.Data.keys  ()
         Keys.sort ()
         for Key in Keys:
           self.AddHierarchy (SubRoot, What.Data[Key])
-      elif "KeyedItem" == What.Kind:
-        self.AddHierarchy (Root, What.Data)
-      else:
-        if len(What.Data["name"]) > 0:
-          SubRoot = self.Hierarch.AppendItem (Root, What.Data["name"])
-          TSKeys = What.TopoSortKeys ()
-          for TSKey in TSKeys:
-            datum = ArpgXMLReference (What, TSKey)
-            self.Hierarch.AppendItem (SubRoot, TSKey.capitalize (),
-                                      data=wx.TreeItemData((What,TSKey)))
     else:
       self.Hierarch = wx.TreeCtrl (self.LeftPanel)
       Root = self.Hierarch.AddRoot (self.ArpgContent.Name)
@@ -97,8 +110,10 @@ class SelectionFrame(wx.Frame):
     itemdatum = self.Hierarch.GetItemData (which)
     datum = itemdatum.GetData ()
     if datum:
-      self.TextBox.SetValue (datum[0].Data[datum[1]])
+      self.SetUpGrid (datum)
+      self.TextBox.SetValue ("")
     else:
+      self.ListView.DeleteAllColumns ()
       self.TextBox.SetValue ("")
 
   def TextChanged (self, Event):
@@ -106,7 +121,41 @@ class SelectionFrame(wx.Frame):
     itemdatum = self.Hierarch.GetItemData (which)
     datum = itemdatum.GetData ()
     if datum:
-      datum[0].Data[datum[1]] = self.TextBox.GetValue ()
+      pass#datum[0].Data[datum[1]] = self.TextBox.GetValue ()
+
+  def SetUpGrid (self, What):
+    self.ListView.DeleteAllColumns ()
+    self.TextBox.SetValue ("")
+    if What:
+      # find the default item by it's ID
+      Keys = What.Data.keys ()
+      Keys.sort ()
+      Keys.reverse ()
+      if What.Data[Keys[0]].Kind == "KeyedItem":
+        Data = {}
+        index = 0
+        Header = []
+        Item = What.Data[Keys[0]].Data
+        TSKeys = Item.TopoSortKeys ()
+        if len(Header) < 1:
+          Header = TSKeys[:]
+        for Heading in Header:
+          if "description" != Heading:
+            self.ListView.InsertColumn (index, Header[index])
+            index += 1
+        index = 0
+        for Key in Keys:
+          Item = What.Data[Key].Data
+          TSKeys = Item.TopoSortKeys ()
+          col = 1
+          if len(Item.Data[TSKeys[0]]) > 0:
+            index = self.ListView.InsertStringItem (index, Item.Data[TSKeys[0]])
+            TSKeys = TSKeys[1:len(TSKeys)-1]
+            for TSKey in TSKeys:
+              if "description" != TSKey:
+                self.ListView.SetStringItem(index, col, Item.Data[TSKey])
+                col += 1
+        
 
 if __name__=="__main__":
   app = wx.App ()
