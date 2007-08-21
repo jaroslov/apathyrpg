@@ -72,6 +72,56 @@ class ARPG_MS(object):
             arpgms = ARPG_MS (XML=child)
             self.Data[arpgms.Name] = arpgms
 
+  def Clone (self):
+    Cp = ARPG_MS ()
+    Cp.Kind = self.Kind
+    Cp.Name = self.Name
+    Cp.ID   = self.ID
+    if "Hierarch" == self.Kind:
+      for key in self.Data.keys ():
+        Cp.Data[key] = self.Data[key].Clone ()
+    elif "KeyedItem" == self.Kind:
+      Cp.Data = self.Data.Clone ()
+    elif "Leaf" == self.Kind:
+      for key in self.Data.keys ():
+        Cp.Data[key] = "" + self.Data[key]
+    return Cp
+
+  def LeftMerge (self, Other):
+    # merges together...
+    if self.Kind == Other.Kind:
+      if self.Name != Other.Name:
+        self.Name += "__COLLISION__" + Other.Name
+      if self.ID != Other.ID:
+        self.ID += "__COLLISION__" + Other.ID
+      if "Hierarch" == self.Kind or "Leaf" == self.Kind:
+        CommonKeys = {}
+        for key in self.Data.keys ():
+          CommonKeys[key] = None
+        for key in Other.Data.keys ():
+          CommonKeys[key] = None
+        if "Hierarch" == self.Kind:
+          for key in CommonKeys.keys ():
+            if self.Data.has_key (key) and Other.Data.has_key (key):
+              self.Data[key].LeftMerge (Other.Data[key])
+            elif Other.Data.has_key (key):
+              self.Data[key] = Other.Data[key].Clone ()
+        else:
+          for key in CommonKeys.keys ():
+            if self.Data.has_key (key) and Other.Data.has_key (key):
+              if self.Data[key] != Other.Data[key]:
+                self.Data[key] = "self >>>\n"+self.Data[key]+"\nother >>>\n"+Other.Data[key]
+            elif Other.Data.has_key (key):
+              self.Data[key] = ""+Other.Data[key]
+      elif "KeyedItem" == self.Kind:
+        self.Data.LeftMerge (Other.Data)
+    else: pass # mismatch, returns error
+
+  def Merge (self, Other):
+    Cp = self.Clone ()
+    Cp.LeftMerge (Other)
+    return Cp
+
   def FromXMLKeyedItem (self, KeyedItem):
     self.Kind = "KeyedItem"
     self.ID = KeyedItem.getAttribute("id")
@@ -88,6 +138,7 @@ class ARPG_MS(object):
       if child.nodeType == Leaf.ELEMENT_NODE:
         if child.hasChildNodes ():
           self.Data[child.nodeName] = child.childNodes[0].nodeValue
+          self.Data[child.nodeName].replace("&lt;","<").replace("&gt;",">").replace("&amp;","&")
         else:
           self.Data[child.nodeName] = ""
 
@@ -124,3 +175,13 @@ class ARPG_MS(object):
       if zkey not in topokeys:
         topokeys.append(zkey)
     return topokeys
+
+def TestMerge ():
+  C1 = ARPG_MS (Location="../Game/ARPG-Data.xml")
+  C2 = ARPG_MS (Location="../Game/ARPG-Data2.xml")
+  C3 = C1.Merge (C2)
+  out = open ("LMerge.xml", "w")
+  print >> out, C3.AsXML ()
+
+if __name__=="__main__":
+  TestMerge ()
