@@ -210,7 +210,7 @@ class SelectionFrame(wx.Frame):
     
 if __name__=="__main__":
   app = wx.App ()
-  ArpgContent = ArpgContent (sys.argv[1])
+  ArpgContent = None#ArpgContent (sys.argv[1])
   sf = SelectionFrame (ArpgContent)
   app.MainLoop ()
   if len(sys.argv) > 2:
