@@ -135,6 +135,7 @@ class SelectionFrame(wx.Frame):
       KeyedItem = self.WhichCategory.Data[Key]
       Item = KeyedItem.Data
       Item.Data[Heading] = self.TextBox.GetValue ()
+      self.HasError (self.TextBox.GetValue (), Row, Col)
     else: pass
 
   def ItemChanged (self, Event):
@@ -145,6 +146,7 @@ class SelectionFrame(wx.Frame):
       Item = KeyedItem.Data
       Item.Data[Heading] = self.GridView.GetCellValue (Event.GetRow (), Event.GetCol ())
       self.TextBox.SetValue (Item.Data[Heading])
+      self.HasError (self.TextBox.GetValue (), Event.GetRow (), Event.GetCol ())
     Event.Skip ()
 
   def ItemSelected (self, Event):
@@ -190,7 +192,10 @@ class SelectionFrame(wx.Frame):
       if What.Data[Key].ID.find("Default") > 1:
         Default = What.Data[Key].Data
       else:
-        SortingKeys.append ((What.Data[Key].Data.Data["name"],Key))
+        if What.Data[Key].Data.Data.has_key ("name"):
+          SortingKeys.append ((What.Data[Key].Data.Data["name"],Key))
+        else:
+          SortingKeys.append ((Key,Key))
     if Default == None:
       return
     SortingKeys.sort ()
@@ -214,6 +219,7 @@ class SelectionFrame(wx.Frame):
         Item = KeyedItem.Data
         if Item.Data.has_key (heading):
           self.GridView.SetCellValue (skx, hdx, Item.Data[heading])
+          self.HasError (Item.Data[heading], skx, hdx)
       if "description" != heading:
         self.GridView.AutoSizeColumn (hdx, True)
 
@@ -224,6 +230,14 @@ class SelectionFrame(wx.Frame):
     ## Can't figure out how to make row-label auto-sized
     #for skx in xrange(0,len(SortingKeys)):
     #  self.GridView.SetRowLabelValue (skx, What.Data[SortingKeys[skx][1]].Data.Name)
+
+  def HasError (self, Value, Row, Col):
+    if (Value.find ("self >>>") >= 0
+        or Value.find ("other >>>") >= 0):
+      self.GridView.SetCellBackgroundColour (Row, Col, wx.Color(255,0,0))
+    else:
+      self.GridView.SetCellBackgroundColour (Row, Col, wx.Color(255,255,255))
+    
 
 def Debug ():
   app = wx.App ()
