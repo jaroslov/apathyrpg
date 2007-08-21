@@ -140,7 +140,7 @@ class SelectionFrame(wx.Frame):
   def ItemSelected (self, Event):
     # Event.GetIndex () gives us the row
     # Event.GetText () gives us the name of the first column
-    print >> sys.stderr, Event.GetIndex (), Event.GetText ()
+    pass#print >> sys.stderr, Event.GetIndex (), Event.GetText ()
 
   def SetUpGrid (self, What):
     self.ListView.DeleteAllColumns ()
@@ -161,6 +161,13 @@ class SelectionFrame(wx.Frame):
           if What.Data[Key].ID.find ("Default") > 0:
             Header = What.Data[Key].Data.TopoSortKeys ()[:]
         self.ItemCategory = What # set here, b/c everything worked!
+        # sorting hat
+        sKeys = []
+        for Key in Keys:
+          key = What.Data[Key].Data.Data["name"]
+          sKeys.append ((key,Key))
+        sKeys.sort ()
+        sKeys.reverse ()
         if len(Header) < 1:
           return
         try:
@@ -170,7 +177,8 @@ class SelectionFrame(wx.Frame):
         for Heading in Header:
           self.ListView.InsertColumn (index, Header[index])
           index += 1
-        for Key in Keys:
+        for sKey in sKeys:
+          Key = sKey[1]
           Item = What.Data[Key].Data
           TSKeys = Item.TopoSortKeys ()
           try:
@@ -179,8 +187,7 @@ class SelectionFrame(wx.Frame):
           except: pass
           col = 1
           if len(Item.Data[TSKeys[0]]) > 0:
-            sindex = self.ListView.InsertStringItem (index,
-                                                     Item.Data[TSKeys[0]])
+            sindex = self.ListView.InsertStringItem (0,Item.Data[TSKeys[0]])
             TSKeys = TSKeys[1:len(TSKeys)]
             for TSKey in TSKeys:
               if TSKey in Header:
