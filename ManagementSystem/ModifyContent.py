@@ -36,9 +36,13 @@ class SelectionFrame(wx.Frame):
 
     self.ArpgContent = ArpgContent
 
-    self.Splitter = wx.SplitterWindow (self, wx.ID_ANY)
-    self.LeftPanel = wx.Panel (self.Splitter, wx.ID_ANY)
-    self.RightPanel = wx.Panel (self.Splitter, wx.ID_ANY)
+    self.MainSplitter = wx.SplitterWindow (self, wx.ID_ANY)
+    self.LeftPanel = wx.Panel (self.MainSplitter, wx.ID_ANY)
+    self.RightPanel = wx.Panel (self.MainSplitter, wx.ID_ANY)
+
+    self.RightSplitter = wx.SplitterWindow (self.MainSplitter, wx.ID_ANY)
+    self.TopPanel = wx.Panel (self.RightSplitter, wx.ID_ANY)
+    self.BottomPanel = wx.Panel (self.RightSplitter, wx.ID_ANY)
 
     self.Hierarch = None
     self.AddHierarchy ()
@@ -47,12 +51,15 @@ class SelectionFrame(wx.Frame):
     except:
       pass
     
-    self.ListView = TextListCtrl (self.RightPanel,
+    self.ListView = TextListCtrl (self.TopPanel,
                                   wx.ID_ANY,
                                   style=wx.LC_REPORT
                                   | wx.BORDER_NONE
                                   | wx.LC_SORT_ASCENDING)
-    self.TextBox = wx.TextCtrl (self.RightPanel,
+    self.Bind (wx.EVT_LIST_ITEM_SELECTED, self.ItemSelected, self.ListView)
+    self.ItemCategory = None
+
+    self.TextBox = wx.TextCtrl (self.BottomPanel,
                                 style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
     self.Bind (wx.EVT_TEXT, self.TextChanged, self.TextBox)
 
@@ -65,23 +72,30 @@ class SelectionFrame(wx.Frame):
                      | wx.ALIGN_CENTER_VERTICAL,
                      border=5)
     self.LeftPanel.SetSizer (self.LSizer)
-    self.RSizer = wx.BoxSizer (wx.VERTICAL)
-    self.RSizer.Add (self.ListView,
-                     proportion=3,
-                     flag=wx.EXPAND
-                     | wx.ALL
-                     | wx.ALIGN_CENTER_HORIZONTAL
-                     | wx.ALIGN_CENTER_VERTICAL,
-                     border=5)
-    self.RSizer.Add (self.TextBox,
-                     proportion=1,
-                     flag=wx.EXPAND
-                     | wx.ALL
-                     | wx.ALIGN_CENTER_HORIZONTAL
-                     | wx.ALIGN_CENTER_VERTICAL,
-                     border=5)
-    self.RightPanel.SetSizer (self.RSizer)
-    self.Splitter.SplitVertically (self.LeftPanel, self.RightPanel, -200)
+
+    self.TRSizer = wx.BoxSizer (wx.VERTICAL)
+    self.TRSizer.Add (self.ListView,
+                      proportion=3,
+                      flag=wx.EXPAND
+                      | wx.ALL
+                      | wx.ALIGN_CENTER_HORIZONTAL
+                      | wx.ALIGN_CENTER_VERTICAL,
+                      border=5)
+    self.TopPanel.SetSizer (self.TRSizer)
+
+    self.BRSizer = wx.BoxSizer (wx.VERTICAL)
+    self.BRSizer.Add (self.TextBox,
+                      proportion=1,
+                      flag=wx.EXPAND
+                      | wx.ALL
+                      | wx.ALIGN_CENTER_HORIZONTAL
+                      | wx.ALIGN_CENTER_VERTICAL,
+                      border=5)
+    self.BottomPanel.SetSizer (self.BRSizer)
+
+    self.RightSplitter.SplitHorizontally (self.TopPanel, self.BottomPanel, -100)
+    self.RightSplitter.SetSashGravity (1.0)
+    self.MainSplitter.SplitVertically (self.LeftPanel, self.RightSplitter, -200)
     
     self.Show (True)
 
@@ -123,22 +137,32 @@ class SelectionFrame(wx.Frame):
     if datum:
       pass#datum[0].Data[datum[1]] = self.TextBox.GetValue ()
 
+  def ItemSelected (self, Event):
+    # Event.GetIndex () gives us the row
+    # Event.GetText () gives us the name of the first column
+    print >> sys.stderr, Event.GetIndex (), Event.GetText ()
+
   def SetUpGrid (self, What):
     self.ListView.DeleteAllColumns ()
+    self.ListView.ClearAll ()
+    self.ListView.DeleteAllItems ()
     self.TextBox.SetValue ("")
+    self.ItemCategory = None
     if What:
       # find the default item by it's ID
       Keys = What.Data.keys ()
-      Keys.sort ()
-      Keys.reverse ()
+      #Keys.sort ()
+      if len(Keys) < 1:
+        return
       if What.Data[Keys[0]].Kind == "KeyedItem":
-        Data = {}
         index = 0
         Header = []
-        Item = What.Data[Keys[0]].Data
-        TSKeys = Item.TopoSortKeys ()
+        for Key in Keys:
+          if What.Data[Key].ID.find ("Default") > 0:
+            Header = What.Data[Key].Data.TopoSortKeys ()[:]
+        self.ItemCategory = What # set here, b/c everything worked!
         if len(Header) < 1:
-          Header = TSKeys[:]
+          return
         try:
           Header.remove ("description")
           Header.remove ("implementation")
@@ -155,11 +179,13 @@ class SelectionFrame(wx.Frame):
           except: pass
           col = 1
           if len(Item.Data[TSKeys[0]]) > 0:
-            sindex = self.ListView.InsertStringItem (index, Item.Data[TSKeys[0]])
-            TSKeys = TSKeys[1:len(TSKeys)-1]
+            sindex = self.ListView.InsertStringItem (index,
+                                                     Item.Data[TSKeys[0]])
+            TSKeys = TSKeys[1:len(TSKeys)]
             for TSKey in TSKeys:
-              self.ListView.SetStringItem(sindex, col, Item.Data[TSKey])
-              col += 1
+              if TSKey in Header:
+                self.ListView.SetStringItem(sindex, col, Item.Data[TSKey])
+                col += 1
         for idx in xrange(index):
           self.ListView.SetColumnWidth (idx, wx.LIST_AUTOSIZE)
           if self.ListView.GetColumnWidth (idx) < 25:

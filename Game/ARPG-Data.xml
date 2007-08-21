@@ -3272,20 +3272,15 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</ammunition>
 			</KeyedItem>
 			<KeyedItem id="/Equipment/Ammunition/Bullet Point" >
-				<melee>
-					<class></class>
+				<ammunition>
 					<cost></cost>
 					<damage></damage>
 					<description>The ``standard'' type of arrow point.  The tip is pointed, but somewhat blunt, like a rifle bullet.  They are used for hunting small game, and for target shooting.  They are also common arrows for some military use since they are easily and cheaply produced.</description>
 					<hands></hands>
-					<implementation></implementation>
-					<maximum_strength_bonus></maximum_strength_bonus>
 					<metatag></metatag>
-					<minimum_strength></minimum_strength>
 					<name>Bullet Point</name>
-					<recovery></recovery>
 					<type></type>
-				</melee>
+				</ammunition>
 			</KeyedItem>
 			<KeyedItem id="/Equipment/Ammunition/Bullet Point (blunt--target)" >
 				<ammunition>
@@ -3310,20 +3305,15 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</ammunition>
 			</KeyedItem>
 			<KeyedItem id="/Equipment/Ammunition/Explosive" >
-				<melee>
-					<class></class>
+				<ammunition>
 					<cost></cost>
 					<damage></damage>
 					<description>A rare arrow design, which features a hollow head packed with gunpowder or other light explosive.  When it strikes the target, it makes a small explosion.  This has excellent damage potential.  Unfortunately, the large, fragile, head makes this type of arrow poor at penetrating armor.</description>
-					<hands></hands>
 					<implementation></implementation>
-					<maximum_strength_bonus></maximum_strength_bonus>
 					<metatag></metatag>
-					<minimum_strength></minimum_strength>
 					<name>Explosive</name>
-					<recovery></recovery>
 					<type></type>
-				</melee>
+				</ammunition>
 			</KeyedItem>
 			<KeyedItem id="/Equipment/Ammunition/Explosive Point" >
 				<ammunition>
@@ -3359,20 +3349,15 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</ammunition>
 			</KeyedItem>
 			<KeyedItem id="/Equipment/Ammunition/Fire Point" >
-				<melee>
-					<class></class>
+				<ammunition>
 					<cost></cost>
 					<damage></damage>
 					<description>An arrow that is coated with cloth soaked in pitch, tar, kerosene, or some similar flammable material.  It is set alight before firing.  These arrows are commonly used for sending signals, and for setting enemy structures on fire---however, they are also effective for setting enemy soldiers on fire.</description>
-					<hands></hands>
 					<implementation></implementation>
-					<maximum_strength_bonus></maximum_strength_bonus>
 					<metatag></metatag>
-					<minimum_strength></minimum_strength>
 					<name>Fire Point</name>
-					<recovery></recovery>
 					<type></type>
-				</melee>
+				</ammunition>
 			</KeyedItem>
 		</Ammunition>
 		<Armor>
