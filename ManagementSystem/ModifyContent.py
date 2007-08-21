@@ -1,7 +1,7 @@
 import sys
 import wx
 from ArpgMs import ARPG_MS as ArpgContent
-import wx.lib.mixins.listctrl as listmix
+import wx.grid as gridlib
 
 # This is a windowed utility for modifying the contents
 # but *not* the hierarchy of the Data-section of the 
@@ -19,15 +19,6 @@ class ArpgXMLReference(wx.TreeItemData):
     self.Reference = Reference
     self.Key = ""
 
-class TextListCtrl(wx.ListCtrl,
-                   listmix.ListCtrlAutoWidthMixin,
-                   listmix.TextEditMixin):
-  def __init__(self, parent, ID, pos=wx.DefaultPosition,
-               size=wx.DefaultSize, style=0):
-    wx.ListCtrl.__init__ (self, parent, ID, pos, size, style)
-    listmix.ListCtrlAutoWidthMixin.__init__ (self)
-    listmix.TextEditMixin.__init__ (self)
-
 class SelectionFrame(wx.Frame):
   def __init__(self, ArpgContent):
     wx.Frame.__init__(self, None, wx.NewId(), "ARPG-MS",
@@ -35,6 +26,10 @@ class SelectionFrame(wx.Frame):
                           style=wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL)
 
     self.ArpgContent = ArpgContent
+
+    self.WhichCategory = None
+    self.WhichKeyedItems = None
+    self.WhichHeadings = None
 
     self.MainSplitter = wx.SplitterWindow (self, wx.ID_ANY)
     self.LeftPanel = wx.Panel (self.MainSplitter, wx.ID_ANY)
@@ -47,17 +42,15 @@ class SelectionFrame(wx.Frame):
     self.Hierarch = None
     self.AddHierarchy ()
     try:
-      self.Bind (wx.EVT_TREE_SEL_CHANGED, self.Selected, self.Hierarch)
+      self.Bind (wx.EVT_TREE_SEL_CHANGED, self.CategorySelected, self.Hierarch)
     except:
       pass
     
-    self.ListView = TextListCtrl (self.TopPanel,
-                                  wx.ID_ANY,
-                                  style=wx.LC_REPORT
-                                  | wx.BORDER_NONE
-                                  | wx.LC_SORT_ASCENDING)
-    self.Bind (wx.EVT_LIST_ITEM_SELECTED, self.ItemSelected, self.ListView)
-    self.ItemCategory = None
+    self.GridView = gridlib.Grid (self.TopPanel, wx.ID_ANY)
+    self.GridView.CreateGrid (0, 0)
+    self.Bind (gridlib.EVT_GRID_CELL_CHANGE, self.ItemChanged)
+    self.Bind (gridlib.EVT_GRID_LABEL_RIGHT_CLICK, self.ItemSelected)
+    self.Bind (gridlib.EVT_GRID_LABEL_LEFT_CLICK, self.ItemSelected)
 
     self.TextBox = wx.TextCtrl (self.BottomPanel,
                                 style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
@@ -74,8 +67,8 @@ class SelectionFrame(wx.Frame):
     self.LeftPanel.SetSizer (self.LSizer)
 
     self.TRSizer = wx.BoxSizer (wx.VERTICAL)
-    self.TRSizer.Add (self.ListView,
-                      proportion=3,
+    self.TRSizer.Add (self.GridView,
+                      proportion=1,
                       flag=wx.EXPAND
                       | wx.ALL
                       | wx.ALIGN_CENTER_HORIZONTAL
@@ -119,7 +112,7 @@ class SelectionFrame(wx.Frame):
       for Key in Keys:
         self.AddHierarchy (Root, self.ArpgContent.Data[Key])
 
-  def Selected (self, Event):
+  def CategorySelected (self, Event):
     which = self.Hierarch.GetSelection ()
     itemdatum = self.Hierarch.GetItemData (which)
     datum = itemdatum.GetData ()
@@ -127,7 +120,7 @@ class SelectionFrame(wx.Frame):
       self.SetUpGrid (datum)
       self.TextBox.SetValue ("")
     else:
-      self.ListView.DeleteAllColumns ()
+      self.ClearGrid ()
       self.TextBox.SetValue ("")
 
   def TextChanged (self, Event):
@@ -137,14 +130,84 @@ class SelectionFrame(wx.Frame):
     if datum:
       pass#datum[0].Data[datum[1]] = self.TextBox.GetValue ()
 
+  def ItemChanged (self, Event):
+    if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings:
+      Key = self.WhichKeyedItems[Event.GetRow ()][1]
+      Heading = self.WhichHeadings[Event.GetCol ()]
+      KeyedItem = self.WhichCategory.Data[Key]
+      Item = KeyedItem.Data
+      Item.Data[Heading] = self.GridView.GetCellValue (Event.GetRow (), Event.GetCol ())
+    Event.Skip ()
+
   def ItemSelected (self, Event):
-    # Event.GetIndex () gives us the row
-    # Event.GetText () gives us the name of the first column
-    pass#print >> sys.stderr, Event.GetIndex (), Event.GetText ()
+    Event.Skip ()
+
+  def ClearGrid (self):
+    self.WhichCategory = None
+    self.WhichKeyedItems = None
+    self.WhichHeadings = None
+    Table = self.GridView.GetTable ()
+    cols = Table.GetNumberCols ()
+    rows = Table.GetNumberRows ()
+    if rows > 0:
+      self.GridView.DeleteRows (0, rows)
+    if cols > 0:
+      self.GridView.DeleteCols (0, cols)
 
   def SetUpGrid (self, What):
-    pass
+    self.ClearGrid ()
 
+    Keys = What.Data.keys ()
+    if len(Keys) < 1:
+      return
+
+    # check that we're gonna see leaves soon
+    if "KeyedItem" != What.Data[Keys[0]].Kind:
+      return
+
+    # find the Default, sort the keys
+    Default = None
+    SortingKeys = []
+    for Key in Keys:
+      if What.Data[Key].ID.find("Default") > 1:
+        Default = What.Data[Key].Data
+      else:
+        SortingKeys.append ((What.Data[Key].Data.Data["name"],Key))
+    if Default == None:
+      return
+    SortingKeys.sort ()
+
+    # get the Header, remove extraneous
+    Header = Default.TopoSortKeys ()[:]
+    try:
+      Header.remove ("implementation")
+      Header.remove ("description")
+    except: pass
+
+    self.GridView.AppendCols (len(Header))
+    self.GridView.AppendRows (len(SortingKeys))
+
+    for hdx in xrange(0,len(Header)):
+      heading = Header[hdx]
+      self.GridView.SetColLabelValue (hdx, heading.capitalize ())
+      for skx in xrange(0,len(SortingKeys)):
+        Key = SortingKeys[skx][1]
+        KeyedItem = What.Data[Key]
+        Item = KeyedItem.Data
+        if Item.Data.has_key (heading):
+          self.GridView.SetCellValue (skx, hdx, Item.Data[heading])
+
+    self.GridView.AutoSizeColumns (True)
+    self.GridView.AutoSizeRows (True)
+
+    self.WhichCategory = What
+    self.WhichKeyedItems = SortingKeys
+    self.WhichHeadings = Header
+
+    ## Can't figure out how to make row-label auto-sized
+    #for skx in xrange(0,len(SortingKeys)):
+    #  self.GridView.SetRowLabelValue (skx, What.Data[SortingKeys[skx][1]].Data.Name)
+    
 if __name__=="__main__":
   app = wx.App ()
   ArpgContent = ArpgContent (sys.argv[1])
