@@ -219,8 +219,8 @@ class SelectionFrame(wx.Frame):
     ## Can't figure out how to make row-label auto-sized
     #for skx in xrange(0,len(SortingKeys)):
     #  self.GridView.SetRowLabelValue (skx, What.Data[SortingKeys[skx][1]].Data.Name)
-    
-if __name__=="__main__":
+
+def Debug ():
   app = wx.App ()
   if len(sys.argv) > 1:
     ArpgContent = ArpgContent (sys.argv[1])
@@ -229,3 +229,14 @@ if __name__=="__main__":
     if len(sys.argv) > 2:
       tmp = open (sys.argv[2], "w")
       print >> tmp, ArpgContent.AsXML ()
+
+def Live ():
+  app = wx.App ()
+  Content = ArpgContent ("ARPG-Data.xml")
+  sf = SelectionFrame (Content)
+  app.MainLoop ()
+  tmp = open ("ARPG-Data.xml", "w")
+  print >> tmp, Content.AsXML ()
+
+if __name__=="__main__":
+  Live ()
