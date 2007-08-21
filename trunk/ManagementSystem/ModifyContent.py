@@ -130,6 +130,11 @@ class SelectionFrame(wx.Frame):
       Row = self.WhichItem[0]
       Col = self.WhichItem[1]
       self.GridView.SetCellValue (Row, Col, self.TextBox.GetValue ())
+      Key = self.WhichKeyedItems[Row][1]
+      Heading = self.WhichHeadings[Col]
+      KeyedItem = self.WhichCategory.Data[Key]
+      Item = KeyedItem.Data
+      Item.Data[Heading] = self.TextBox.GetValue ()
     else: pass
 
   def ItemChanged (self, Event):
@@ -231,11 +236,18 @@ def Debug ():
       print >> tmp, ArpgContent.AsXML ()
 
 def Live ():
+  From = "ARPG-Data.xml"
+  To = "ARPG-Data.xml"
+  if len(sys.argv) > 1:
+    From = sys.argv[1]
+    To = From
+  if len(sys.argv) > 2:
+    To = sys.argv[2]
   app = wx.App ()
-  Content = ArpgContent ("ARPG-Data.xml")
+  Content = ArpgContent (From)
   sf = SelectionFrame (Content)
   app.MainLoop ()
-  tmp = open ("ARPG-Data.xml", "w")
+  tmp = open (To, "w")
   print >> tmp, Content.AsXML ()
 
 if __name__=="__main__":
