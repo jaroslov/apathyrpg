@@ -30,6 +30,7 @@ class SelectionFrame(wx.Frame):
     self.WhichCategory = None
     self.WhichKeyedItems = None
     self.WhichHeadings = None
+    self.WhichItem = None
 
     self.MainSplitter = wx.SplitterWindow (self, wx.ID_ANY)
     self.LeftPanel = wx.Panel (self.MainSplitter, wx.ID_ANY)
@@ -123,11 +124,11 @@ class SelectionFrame(wx.Frame):
       self.TextBox.SetValue ("")
 
   def TextChanged (self, Event):
-    which = self.Hierarch.GetSelection ()
-    itemdatum = self.Hierarch.GetItemData (which)
-    datum = itemdatum.GetData ()
-    if datum:
-      pass#datum[0].Data[datum[1]] = self.TextBox.GetValue ()
+    if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings and self.WhichItem:
+      Row = self.WhichItem[0]
+      Col = self.WhichItem[1]
+      self.GridView.SetCellValue (Row, Col, self.TextBox.GetValue ())
+    else: pass
 
   def ItemChanged (self, Event):
     if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings:
@@ -141,6 +142,7 @@ class SelectionFrame(wx.Frame):
 
   def ItemSelected (self, Event):
     if self.WhichCategory and self.WhichKeyedItems and self.WhichHeadings:
+      self.WhichItem = (Event.GetRow (), Event.GetCol ())
       Key = self.WhichKeyedItems[Event.GetRow ()][1]
       Heading = self.WhichHeadings[Event.GetCol ()]
       KeyedItem = self.WhichCategory.Data[Key]
@@ -154,6 +156,7 @@ class SelectionFrame(wx.Frame):
     self.WhichCategory = None
     self.WhichKeyedItems = None
     self.WhichHeadings = None
+    self.WhichItem = None
     Table = self.GridView.GetTable ()
     cols = Table.GetNumberCols ()
     rows = Table.GetNumberRows ()
