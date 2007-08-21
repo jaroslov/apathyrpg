@@ -139,22 +139,31 @@ class SelectionFrame(wx.Frame):
         TSKeys = Item.TopoSortKeys ()
         if len(Header) < 1:
           Header = TSKeys[:]
+        try:
+          Header.remove ("description")
+          Header.remove ("implementation")
+        except: pass
         for Heading in Header:
-          if "description" != Heading:
-            self.ListView.InsertColumn (index, Header[index])
-            index += 1
-        index = 0
+          self.ListView.InsertColumn (index, Header[index])
+          index += 1
         for Key in Keys:
           Item = What.Data[Key].Data
           TSKeys = Item.TopoSortKeys ()
+          try:
+            TSKeys.remove ("description")
+            TSKeys.remove ("implementation")
+          except: pass
           col = 1
           if len(Item.Data[TSKeys[0]]) > 0:
-            index = self.ListView.InsertStringItem (index, Item.Data[TSKeys[0]])
+            sindex = self.ListView.InsertStringItem (index, Item.Data[TSKeys[0]])
             TSKeys = TSKeys[1:len(TSKeys)-1]
             for TSKey in TSKeys:
-              if "description" != TSKey:
-                self.ListView.SetStringItem(index, col, Item.Data[TSKey])
-                col += 1
+              self.ListView.SetStringItem(sindex, col, Item.Data[TSKey])
+              col += 1
+        for idx in xrange(index):
+          self.ListView.SetColumnWidth (idx, wx.LIST_AUTOSIZE)
+          if self.ListView.GetColumnWidth (idx) < 25:
+            self.ListView.SetColumnWidth (idx, wx.LIST_AUTOSIZE_USEHEADER)
         
 
 if __name__=="__main__":
