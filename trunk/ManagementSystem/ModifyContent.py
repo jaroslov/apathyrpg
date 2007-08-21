@@ -1,3 +1,5 @@
+#!/usr/bin/pythonw2.5
+
 import sys
 import wx
 from ArpgMs import ARPG_MS as ArpgContent
@@ -220,11 +222,10 @@ class SelectionFrame(wx.Frame):
     
 if __name__=="__main__":
   app = wx.App ()
-  if len(sys.argv) < 2:
-    return
-  ArpgContent = ArpgContent (sys.argv[1])
-  sf = SelectionFrame (ArpgContent)
-  app.MainLoop ()
-  if len(sys.argv) > 2:
-    tmp = open (sys.argv[2], "w")
-    print >> tmp, ArpgContent.AsXML ()
+  if len(sys.argv) > 1:
+    ArpgContent = ArpgContent (sys.argv[1])
+    sf = SelectionFrame (ArpgContent)
+    app.MainLoop ()
+    if len(sys.argv) > 2:
+      tmp = open (sys.argv[2], "w")
+      print >> tmp, ArpgContent.AsXML ()
