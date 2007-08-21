@@ -143,61 +143,7 @@ class SelectionFrame(wx.Frame):
     pass#print >> sys.stderr, Event.GetIndex (), Event.GetText ()
 
   def SetUpGrid (self, What):
-    self.ListView.DeleteAllColumns ()
-    self.ListView.ClearAll ()
-    self.ListView.DeleteAllItems ()
-    self.TextBox.SetValue ("")
-    self.ItemCategory = None
-    if What:
-      # find the default item by it's ID
-      Keys = What.Data.keys ()
-      #Keys.sort ()
-      if len(Keys) < 1:
-        return
-      if What.Data[Keys[0]].Kind == "KeyedItem":
-        index = 0
-        Header = []
-        for Key in Keys:
-          if What.Data[Key].ID.find ("Default") > 0:
-            Header = What.Data[Key].Data.TopoSortKeys ()[:]
-        self.ItemCategory = What # set here, b/c everything worked!
-        # sorting hat
-        sKeys = []
-        for Key in Keys:
-          key = What.Data[Key].Data.Data["name"]
-          sKeys.append ((key,Key))
-        sKeys.sort ()
-        sKeys.reverse ()
-        if len(Header) < 1:
-          return
-        try:
-          Header.remove ("description")
-          Header.remove ("implementation")
-        except: pass
-        for Heading in Header:
-          self.ListView.InsertColumn (index, Header[index])
-          index += 1
-        for sKey in sKeys:
-          Key = sKey[1]
-          Item = What.Data[Key].Data
-          TSKeys = Item.TopoSortKeys ()
-          try:
-            TSKeys.remove ("description")
-            TSKeys.remove ("implementation")
-          except: pass
-          col = 1
-          if len(Item.Data[TSKeys[0]]) > 0:
-            sindex = self.ListView.InsertStringItem (0,Item.Data[TSKeys[0]])
-            TSKeys = TSKeys[1:len(TSKeys)]
-            for TSKey in TSKeys:
-              if TSKey in Header:
-                self.ListView.SetStringItem(sindex, col, Item.Data[TSKey])
-                col += 1
-        for idx in xrange(index):
-          self.ListView.SetColumnWidth (idx, wx.LIST_AUTOSIZE)
-          if self.ListView.GetColumnWidth (idx) < 25:
-            self.ListView.SetColumnWidth (idx, wx.LIST_AUTOSIZE_USEHEADER)
-        
+    pass
 
 if __name__=="__main__":
   app = wx.App ()
