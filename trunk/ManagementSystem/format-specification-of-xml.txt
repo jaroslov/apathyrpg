@@ -69,7 +69,7 @@ table { // as per XHTML table
 
 list {
     [
-        bulleted-list // a bulleted list
+        itemized-list // a bulleted list
         description-list // a list whose bullets are bold words
         numbered-list // a numbered list
     ]

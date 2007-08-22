@@ -1,7 +1,7 @@
 <chapter>
- <title>Core Rules</title>
- <section>
-  <title>Introduction</title>
+    <title>Core Rules</title>
+    <section><!-- Intro -->
+        <title>Introduction</title>
 
   <text><Apathy /> is a paper &amp; pencil role-playing game.  <Apathy
   />'s authors have played a great many RPGs including D&amp;D, Heroes
@@ -17,10 +17,10 @@
   <text><Apathy /> is recommended for advanced role-players (or at
   least for experienced DM/GM/Storytellers).  This is because the
   <Apathy /> system is designed for a unique mix of speed and realism
-  rather than carefully &ldquo;balanced&rdquo; rules.  The <Apathy />
-  rules make it very easy to make unbalanced (&ldquo;min-maxed&rdquo;)
+  rather than carefully <dquo>balanced</dquo> rules.  The <Apathy />
+  rules make it very easy to make unbalanced (<dquo>min-maxed</dquo>)
   or tweaked characters.  <Apathy /> is likewise not appropriate for
-  &ldquo;rules lawyers&rdquo; or excessively anal GMs and
+  <dquo>rules lawyers</dquo> or excessively anal GMs and
   players.</text>
 
   <text><Apathy /> was created around several core features.  These
@@ -29,7 +29,7 @@
   <description-list>
 
     <item><Apathy /> has no fixed character classes, such as
-    &ldquo;fighter&rdquo; or &ldquo;wizard&rdquo;, etc.  Players can
+    <dquo>fighter</dquo> or <dquo>wizard</dquo>, etc.  Players can
     pick and choose every detail of their character, rather than being
     forced into set classes.</item>
 
@@ -41,33 +41,32 @@
     These different elements can be used simultaneously without any
     one being excessively powerful.</item>
 
-    <item>There are no discrete &ldquo;levels&rdquo; for character
+    <item>There are no discrete <dquo>levels</dquo> for character
     advancement.  Characters develop and grow constantly, rather than
     infrequent, sudden, increases common to level-based games.  There
-    is a distinct and obvious increase in &ldquo;power&rdquo; as
+    is a distinct and obvious increase in <dquo>power</dquo> as
     characters grow.  This gives players the feeling that their
     characters are constantly improving as the game continues.</item>
 
-    <item>The game rules are purposely devoid of &ldquo;fluff&rdquo;
+    <item>The game rules are purposely devoid of <dquo>fluff</dquo>
     rules.  Time-consuming (and therefore not fun) look-up tables and
     thick books of rules are nowhere to be found.  <Apathy /> is
-    designed to be fast to play.  Most of the &ldquo;tables&rdquo; in
+    designed to be fast to play.  Most of the <dquo>tables</dquo> in
     the <Apathy /> manuals are just to explain things to the players
     and aren't used during play.</item>
 
-    <item>While <Apathy /> is devoid of many &ldquo;clutter
-    rules&rdquo;, it does have an emphasis on realism.  <Apathy />'s
+    <item>While <Apathy /> is devoid of many <dquo>clutter
+    rules</dquo>, it does have an emphasis on realism.  <Apathy />'s
     combat system is an excellent compromise between speed and
     realism.</item>
 
     <item>In any game of <Apathy />, the CHARACTERS are the heroes!</item>
   </description-list>
-
- </section>
- <section>
-  <title>Basic Terms</title>
-
-  <description-list>
+    </section><!-- /Intro -->
+    <section><!-- Basic Terms -->
+        <title>Basic Terms</title>
+        
+          <description-list>
    <item description="Action">An action is the most basic unit of time during combat.
   It is roughly equal to one second of time.  Most characters will
   have three actions per turn, though certain things can increase or
@@ -75,7 +74,7 @@
   unconscious, he or she <bold>always</bold> has at least one action per turn.</item>
 
    <item description="Base armor"> A character's natural resistance to bodily harm of
-  unusual varieties.  You can think of this as &ldquo;toughness&rdquo; (not to
+  unusual varieties.  You can think of this as <dquo>toughness</dquo> (not to
   be confused with the skill of the same name).  A character's base
   armor reduces the damage they suffer from U (undefined) damage.
   Base armor \emph{does not} protect against any other form of damage,
@@ -89,7 +88,7 @@
   indicates how much crushing damage the armor will defend against.</item>
 
    <item description="CP"> \emph{Character Points}.  These are points you use to
-  &ldquo;purchase&rdquo; skills, equipment, etc. for your character.  CP can
+  <dquo>purchase</dquo> skills, equipment, etc. for your character.  CP can
   also be used to increase attributes according to a special table.
   See the section on character creation.</item>
 
@@ -106,7 +105,7 @@
   The gamemaster controls the game world that the players inhabit.
   He/she controls everything that is not the players.  This includes
   other people (sometimes called non-player characters), monsters,
-  natural events, etc.  This is usually abbreviated as &ldquo;GM&rdquo;.</item>
+  natural events, etc.  This is usually abbreviated as <dquo>GM</dquo>.</item>
 
    <item description="HP"> Abbreviation for Hit Points.  Hit Points are used to
   represent a character's health.  If a character gets injured, their
@@ -167,13 +166,13 @@ see Hand-to-Hand </item>
   <item description="PC"> Power Cells.  This is a measurement of energy or power for
   things like mecha, vehicles, robots, and power armor.  Power,
   measured in PC, is produced by things like engines and is consumed
-  by movement systems and weapons, etc.  PC can also mean &ldquo;player
-  character&rdquo;.</item>
+  by movement systems and weapons, etc.  PC can also mean <dquo>player
+  character</dquo>.</item>
 
   <item description="Player"> An actual person, like the authors of this manual--or
   you--who controls a character in the game world.</item>
 
-  <item description="Round"> A &ldquo;round&rdquo; is the most general unit of time during
+  <item description="Round"> A <dquo>round</dquo> is the most general unit of time during
   combat.  Any sequence of combat is broken down into one or more
   rounds.  During each round, each combatant gets to take one turn.  A
   round is over whenever all combatants have taken a turn (or are
@@ -187,8 +186,8 @@ see Hand-to-Hand </item>
   <item description="Size"> A representation of the approximate size of objects such
   as people, mecha, etc.  Humans are size level 2.  Each size level is
   approximately double the height and weight of the size below it.
-  So, size 2 covers things up to about 7&rsquo; tall.  Size 3, therefore, is
-  about 14&rsquo; tall.</item>
+  So, size 2 covers things up to about 7<squo /> tall.  Size 3, therefore, is
+  about 14<squo /> tall.</item>
 
   <item description="Turn"> A turn is a unit of time during combat.  Each round of
   combat is broken down into one turn per combatant.  During each
@@ -204,12 +203,12 @@ see Hand-to-Hand </item>
   that can protect a character from U damage is his or her base armor.
   Note, that if a character suffers any U damage, no matter how high
   their base armor might be, they ALWAYS loose 1 HP.</item>
- <description-list>
-</section>
-<section>
- <title>Game World</title>
+ </description-list>
 
- <text><Apathy />, like most role-playing games, can be thought of like a play
+    </section><!-- /Basic Terms -->
+    <section><!-- Game World -->
+        <title>Game World</title>
+         <text><Apathy />, like most role-playing games, can be thought of like a play
 or a movie.  The players are like the actors; their characters are the
 heroes and heroines of the story.  Like a movie, a game can take place
 in any number of settings.  The GM is like the director, and decides
@@ -232,9 +231,9 @@ make their characters and the game starts.</text>
 <text>The <Apathy /> system contains sections for many different types of
 games and many different historical settings.  The GM should decide
 which ones to allow for each game.</text>
-</section>
-<section>
-<title>Creating a Character</title>
+    </section><!-- /Game World -->
+    <section><!-- Character -->
+        <title>Creating a Character</title>
 
 <text>The first step in playing <Apathy /> is determining your character
 concept.  Talk to the GM and your fellow players for ideas about the
@@ -267,20 +266,18 @@ hopes?  Their goals?</text>
 appearance, personality, skills, etc.  What you need to do next is
 represent that idea in the <Apathy /> system rules.  Grab a character
 sheet, and follow along.</text>
-
-<section>
- <title>Character Basics</title>
-
-<text>The first part of describing your character is very simple.  Decide
+        <section><!-- Character Basics -->
+            <title>Character Basics</title>
+            <text>The first part of describing your character is very simple.  Decide
 what your character's basic description is like.  Are they male or
 female?  How tall?  What do they weigh?  Fill in age, sex, height,
 weight, eyes color, and hair color/style on the upper right portion of
 your character sheet.  Decide on your character's name, and fill that
 in too.  There is also a spot on the character sheet for \emph{your}
 name.  Now you can move on to the details of your character.</text>
-</section>
-<section>
- <title>Attributes</title>
+        </section><!-- /Character Basics -->
+        <section><!-- Attributes -->
+                <title>Attributes</title>
 
 <text><Apathy /> models characters by means of a core attribute system.
 These attributes are numbers that describe the most basic
@@ -289,24 +286,51 @@ characteristics of any given character.  They are:</text>
 \begin{table}[!htb]
 \begin{center}
 \begin{tabular}{p{.5in}p{1in}p{2.5in}}
-Abbr. & Name & Definition \\
-\hline
-\hline
-STR &	Strength & raw physical strength,  muscle power\\
-DEX	& Dexterity & quickness, coordination, fine motor control, balance\\
-BLD	& Build & the toughness and durability of your body,  
-stamina, &ldquo;guts&rdquo;\\
-INT	& Intelligence & computational power of the mind, ability 
-to grasp complex problems\\
-KNO	& Knowledge & experience and background knowledge, common 
-sense, etc.\\
-WIL	& Willpower & strength of the mind, ability to `stick
-it out' when things get tough\\
-CHA	& Charisma & friendliness, dealing with people, etc.\\
-\end{tabular}
-\caption{Basic Terms}
-\end{center}
-\end{table}
+<figure>
+    <table>
+    <head>
+        <cell width=".5in">Abbr.</cell>
+        <cell width="1in">Name</cell>
+        <cell width="2.5in">Definition</cell>
+    </head>
+    <row>
+        <cell>STR</cell>
+        <cell>Strength</cell>
+        <cell>raw physical strength,  muscle power</cell>
+    </row>
+    <row>
+        <cell>DEX</cell>
+        <cell>Dexterity</cell>
+        <cell>quickness, coordination, fine motor control, balance</cell>
+    </row>
+    <row>
+        <cell>BLD</cell>
+        <cell>Build</cell>
+        <cell>the toughness and durability of your body, stamina, <dquo>guts</dquo></cell>
+    </row>
+    <row>
+        <cell>INT</cell>
+        <cell>Intelligence</cell>
+        <cell>computational power of the mind, ability to grasp complex problems</cell>
+    </row>
+    <row>
+        <cell>KNO</cell>
+        <cell>Knowledge</cell>
+        <cell>experience and background knowledge, common sense, etc.</cell>
+    </row>
+    <row>
+        <cell>WIL</cell>
+        <cell>Willpower</cell>
+        <cell>strength of the mind, ability to `stick it out' when things get tough</cell>
+    </row>
+    <row>
+        <cell>CHA</cell>
+        <cell>Charisma</cell>
+        <cell>friendliness, dealing with people, etc.</cell>
+    </row>
+</table>
+<caption>Basic Terms</caption>
+</figure>
 
 <text><emph>Throughout this document the attributes will usually be
   mentioned using the three-letter abbreviation instead of the full
@@ -317,254 +341,313 @@ Attributes.  The second three attributes (INT, WIS, and WIL) are
 Mental Attributes.  The seventh, CHA, is a little of both, but is
 generally considered to be a Mental Attribute.</text>
 
-Attributes are rated on a scale.  1 is the lowest possible attribute
+<text>Attributes are rated on a scale.  1 is the lowest possible attribute
 score.  There is no top end on the scale, though an attribute of 20 is
 the peak of human ability.  A human character can never have an
 attribute higher than 20 without some supernatural effect (super
-power, magic, cybernetics, etc).
+power, magic, cybernetics, etc).</text>
 
-When creating a character, the GM allows you a certain number of
+<text>When creating a character, the GM allows you a certain number of
 attribute points.  Attribute Points are used to purchase the attribute
-values you want your character to have. \textbf{A normal human has
+values you want your character to have. <bold>A normal human has
   about 40 attribute points.  An above average human would have about
   105--140 attribute points.  We recommend that 120 Attribute Points
   be assigned to starting characters---after all, player characters
-  are supposed to be heroic---though the GM has the final word.}
+  are supposed to be heroic---though the GM has the final word.</bold></text>
 
-The cost of an attribute is computed like a skill with Rank 1 (see the
+<text>The cost of an attribute is computed like a skill with Rank 1 (see the
 skill section later on). However, the final value for the attribute
 (for a Human) is increased by 8; that is, if you buy 5 levels of STR
-(for 15 AP), then the final value of the STR is $5 + 8 = 13$.
+(for 15 AP), then the final value of the STR is <math>5 + 8 = 13</math>.</text>
 
-\textbf{In most cases no player may have an attribute below 8.
+<text><bold>In most cases no player may have an attribute below 8.
   Attributes below 8 are considered handicapped and/or disabled, and
-  such a character would probably not be adventuring!}  \emph{If the
+  such a character would probably not be adventuring!</bold>  <emph>If the
   GM deems it OK, then you may reduce an attribute below 8, but you
   get NO benefits (you wouldn't get points in another attribute for
   example).  Why would you do this?  Simple, it's in your character
-  concept.  Would a 6-year-old child have an 8 STR?  Not likely.}
+  concept.  Would a 6-year-old child have an 8 STR?  Not likely.</emph></text>
 
-When recording your attributes on the character sheet, record the number of
+<text>When recording your attributes on the character sheet, record the number of
 Attribute Points you spent on that attribute, this will help you when you wish
-to increase them later.
+to increase them later.</text>
 
-\textbf{No attribute can be above a 20 for a natural human.  A 20 is
+<text><bold>No attribute can be above a 20 for a natural human.  A 20 is
   considered the peak of human ability.  11 or so is average.  Below 8
   is considered handicapped for an adult human.  Note that certain
   things can increase attributes above 20, such as supernatural
-  powers, magic, cybernetics, etc.}
+  powers, magic, cybernetics, etc.</bold></text>
 
-Character Points (see next section) can be used to purchase Attribute Points
-for increasing your attributes later on.
+<text>Character Points (see next section) can be used to purchase Attribute Points
+for increasing your attributes later on.</text>
 
-\subsection{Sub-Attributes}
-
-There are a number of &ldquo;sub-attributes&rdquo; that rely on your attributes to
+        </section><!-- /Attributes -->
+        <section><!-- SubAttr -->
+            <title>Sub-Attributes</title>
+<text>There are a number of <dquo>sub-attributes</dquo> that rely on your attributes to
 determine their value.  The names, description, and method for determining
-their value are listed below.
+their value are listed below.</text>
 
-\begin{table}[htb]
-\begin{center}
-\begin{tabular}[!h]{p{1in}p{3in}p{1.5in}}
-Abbr. & Definition & Computation \\
-\hline
-\hline
-\textbf{Lift} &
-This determines how much weight the character can lift in pounds, in a
-&ldquo;good&rdquo; situation, such as a weighted barbell or a trunk with handles.
-& ${STR*STR*BLD}\over{10}+STR$ \\
-\textbf{Carry} &
-This is the amount of weight the character can carry about his/her person for
-a reasonable length of time.
-& $Lift \over 2$ \\
-\textbf{Encumbrance} &
-This represents how much gear the character can wear before encountering adverse
-effects due to the weight and impaired mobility.
-& ${BLD+DEX+STR}\over 6$\\
-\textbf{Base Armor} &
-Determines how resilient the character is to &ldquo;odd&rdquo; damage, such as lightning
-and fire.
-& ${BLD+WIL}\over 6$\\
-\textbf{Movement} &
-How fast the character is in &ldquo;squares per move-equivalent action.&rdquo;
-& ${2*STR+DEX}\over 15$\\
-\textbf{Perception} &
-How well the character can notice things around him.  Used just like
-an attribute check.
-& ${DEX+2*KNO+INT}\over 4$\\
-\textbf{Interaction} &
-The basic ability of a character to interact with other people.
-& ${CHA+KNO+INT}\over 3$\\
-\textbf{Hit Points} &
-The amount of damage you can receive before dying.
-& $BLD+WIL$ \\
-\textbf{Magic Points} &
-The number of Magic Points you can draw on to cast magic spells or
-perform supernatural feats
-& $(WIL+BLD)*10$ \\
-\end{tabular}
-\caption{Sub-Attributes}
-\end{center}
-\end{table}
+<figure>
+    <table>
+        <head>
+            <cell width="1in">Abbr.</cell>
+            <cell width="3in">Definition</cell>
+            <cell width="1.5in">Computation</cell>
+        </head>
+        <row>
+            <cell><bold>Lift</bold></cell>
+            <cell>This determines how much weight the character can lift in pounds, in a <dquo>good</dquo> situation, such as a weighted barbell or a trunk with handles.</cell>
+            <cell><math>{STR*STR*BLD}\over{10}+STR</math></cell>
+            <cell><bold>Carry</bold></cell>
+            <cell>This is the amount of weight the character can carry about his/her person for a reasonable length of time.</cell>
+            <cell><math>Lift \over 2</math></cell>
+        </row>
+        <row>
+            <cell><bold>Encumbrance</bold>
+            </cell>
+            <cell>This represents how much gear the character can wear before encountering adverse effects due to the weight and impaired mobility.</cell>
+            <cell><math>{BLD+DEX+STR}\over 6</math></cell>
+        </row>
+        <row>
+            <cell><bold>Base Armor</bold></cell>
+            <cell>Determines how resilient the character is to <dquo>odd</dquo> damage, such as lightning and fire.</cell>
+            <cell><math>{BLD+WIL}\over 6</math></cell>
+        </row>
+        <row>
+            <cell><bold>Movement</bold></cell>
+            <cell>How fast the character is in <dquo>squares per move-equivalent action.</dquo></cell>
+            <cell><math>{2*STR+DEX}\over 15</math></cell>
+        </row>
+        <row>
+            <cell>\textbf{Perception}</cell>
+            <cell>How well the character can notice things around him.  Used just like an attribute check.</cell>
+            <cell><math>{DEX+2*KNO+INT}\over 4</math></cell>
+        </row>
+        <row>
+            <cell>\textbf{Interaction}</cell>
+            <cell>The basic ability of a character to interact with other people.</cell>
+            <cell><math>{CHA+KNO+INT}\over 3</math></cell>
+        </row>
+        <row>
+            <cell>\textbf{Hit Points}</cell>
+            <cell>The amount of damage you can receive before dying.</cell>
+            <cell><math>BLD+WIL</math></cell>
+        </row>
+        <row>
+            <cell>\textbf{Magic Points}</cell>
+            <cell>The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</cell>
+            <cell>$(WIL+BLD)*10$</cell>
+        </row>
+    </table>
+    <caption>Sub-Attributes</caption>
+</figure>
 
-Encumbrance, Base Armor, HP, and MP will be discussed in more detail in later
-sections.  Keep this in mind as you may need to update them later.
-
-\subsection{Character Points}
-
-The remainder of the character creation process is done through the expenditure
+<text>Encumbrance, Base Armor, HP, and MP will be discussed in more detail in later
+sections.  Keep this in mind as you may need to update them later.</text>
+        </section><!-- /SubAttr -->
+        <section><!-- CP -->
+            <title>Character Points</title>
+<text>The remainder of the character creation process is done through the expenditure
 of Character Points, otherwise known as CP.  Talk with your GM about how many
 CP you should use to create your character with.  We have found that for a
 group of 3-4 players 125 CP is about right.  Typically the more players, the
 fewer CP characters should have.  This will keep the group from becoming too
-powerful---unless this is the GM's intent.
+powerful---unless this is the GM's intent.</text>
 
-You will use your CP to &ldquo;purchase&rdquo; the remainder of your character.  The rest
+<text>You will use your CP to <dquo>purchase</dquo> the remainder of your character.  The rest
 of your character is broken into three categories where you will spend these
-points:
+points:</text>
 
+<itemized-list>
+    <item>Mundane
+        <description-list>
+            <item description="Attributes"> increasing starting attributes</item>
+            <item description="Skills" > normal skills, proficiency and knowledge of various topics</item>
+            <item description="Combat Skills" > techniques for fighting and defense.</item>
+        </description-list>
+    </item>
+    <item>Arcane / Magic
+        <description-list>
+            <item description="Spellcasting" />
+            <item description="Psionics" />
+            <item description="Witchcraft or Ritual Magic" />
+            <item description="Supernatural abilities (super powers)" />
+        </description-list>
+    </item>
+    <item>Technology
+        <description-list>
+            <item description="Mecha and Robotics" >Robotic bodies, limbs, powered armor, and robotic suits</item>
+            <item description="Augmentations" >Cybernetics, genetic mutations, and chemical augmentations</item>
+            <item description="Weapons" />
+            <item description="Armor" />
+            <item description="Equipment" > &amp; other material possessions</item>
+        </description-list>
+    </item>
+</itemized-list>
 
-\begin{itemize}
-\item Mundane
-  \begin{description}
-    \item[Attributes] increasing starting attributes
-    \item[Skills] normal skills, proficiency and knowledge of various topics
-    \item[Combat Skills] techniques for fighting and defense.
-  \end{description}
-
-\item Arcane / Magic
-  \begin{description}
-    \item[Spellcasting]
-    \item[Psionics]
-    \item[Witchcraft or Ritual Magic]
-    \item[Supernatural abilities (super powers)]
-  \end{description}
-
-\item Technology
-  \begin{description}
-    \item[Mecha and Robotics] Robotic bodies, limbs, powered armor, and robotic suits
-    \item[Augmentations] Cybernetics, genetic mutations, and chemical augmentations
-    \item[Weapons]
-    \item[Armor]
-    \item[Equipment] \& other material possessions
-  \end{description}
-\end{itemize}
-
-\textbf{IMPORTANT NOTE!  <Apathy /> does not have &ldquo;character classes&rdquo; that are
+<text><bold>IMPORTANT NOTE!</bold> <Apathy /> does not have <dquo>character classes</dquo> that are
 common to many role-playing systems.  The <Apathy /> system allows the player
 to decide every detail pertaining to his character, rather than being stuck
-with a &ldquo;default&rdquo; set of abilities and skills.  It is up to the player to use
+with a <dquo>default</dquo> set of abilities and skills.  It is up to the player to use
 his CP to develop a well-rounded character.  Note that there are NO skills
-that come &ldquo;free.&rdquo;  If your character is literate, then that skill needs
-to be purchased.  Know how to drive a car?  Buy the skill.}
+that come <dquo>free.</dquo>  If your character is literate, then that skill needs
+to be purchased.  Know how to drive a car?  Buy the skill.</text>
 
-\subsection{Increasing Attributes (optional)}
+        </section><!-- /CP -->
+        <section><!-- Inc Attr -->
+        <title>Increasing Attributes (optional)</title>
 
-If your attributes aren't quite where you desire, you will need to get more
+<text>If your attributes aren't quite where you desire, you will need to get more
 Attribute Points so you can purchase a better attribute.  Each Attribute Point
 costs 1 Character Point.  Once you purchase the number of Attribute Points you
 want, just look at the table found in the Attributes section above to see
-how many total Attribute Points you must spend to get that attribute.
+how many total Attribute Points you must spend to get that attribute.</text>
 
-You must pay a number of Attribute Points equal to the difference between what
+<text>You must pay a number of Attribute Points equal to the difference between what
 you want, and what you already have.  For example: if you currently have an 11
 STR (6 Attribute Points) and wish to increase it to a 14 (21 Attribute Points)
 that will cost you 15 Attribute Points ($9 - 4 = 5$).  Since Attribute Points
 cost 1 Character Point each, going from an 11 in an attribute to a 14 will cost
-15 CP.
+15 CP.</text>
 
-Remember to keep track of how many Attribute Points you have spent on your
-attributes so you can easily increase them at a later date.
-
-\section{Skills}
-
-All characters have skills.  Skills represent what your character has learned
+<text>Remember to keep track of how many Attribute Points you have spent on your
+attributes so you can easily increase them at a later date.</text>
+        </section><!-- /Inc Attr -->
+    </section><!-- /Character -->
+    <section><!-- Skills -->
+        <title>Skills</title>
+<text>All characters have skills.  Skills represent what your character has learned
 and what they know how to do.  Other than being useful in game, skills help to
 distinguish your character from everyone else in the world.  Are you going to
 play a diplomat?  You better have diplomacy, law, and similar skills.  A
-warrior?  Better have that shield and/or weapon skills handy!
+warrior?  Better have that shield and/or weapon skills handy!</text>
 
-Skills have a number of pieces of information associated with them.  They have
+<text>Skills have a number of pieces of information associated with them.  They have
 a \textbf{Rank}, \textbf{Associated Attribute}, \textbf{Description},
-and \textbf{Level}.  
+and \textbf{Level}.</text>
 
-The \textbf{rank} determines how hard a skill is to learn.  Higher the rank, the more
+<text>The \textbf{rank} determines how hard a skill is to learn.  Higher the rank, the more
 time and CP it will take to get better at it.  Rank 1 skills are the simplest
 and easiest to learn.  Skills that are more difficult have higher ranks.  Rank
-can also be thought of as the &ldquo;cost&rdquo; or &ldquo;price&rdquo; of a skill.
+can also be thought of as the <dquo>cost</dquo> or <dquo>price</dquo> of a skill.</text>
 
-An \textbf{associated} attribute tells you what attribute is used in the skill roll.
+<text>An \textbf{associated} attribute tells you what attribute is used in the skill roll.
 This is the attribute that is used along with any particular skill.  This is
-discussed in more detail below.
+discussed in more detail below.</text>
 
-The \textbf{description} will let you know the scope of actions that a skill
+<text>The \textbf{description} will let you know the scope of actions that a skill
 encompasses.  The things listed are not the only things available under that
 skill, but just some of the more common applications of the skill.  If you have
-a question, ask your GM about his take on a particular skill.
+a question, ask your GM about his take on a particular skill.</text>
 
-\textbf{Level} is how good your particular character is at the skill. You will use CP
+<text>\textbf{Level} is how good your particular character is at the skill. You will use CP
 to purchase levels in a skill, which is discussed below.  If you don't know a
 skill at all, you have Level 0 in that skill---meaning you don't know anything
 about it.  The more you know about the skill, the higher your level.
-This is often abbreviated as &ldquo;Lvl&rdquo; (alt. &ldquo;LVL&rdquo;).  You must purchase your
+This is often abbreviated as <dquo>Lvl</dquo> (alt. <dquo>LVL</dquo>).  You must purchase your
 skill levels with CP.  Below is a simple chart indicating what different levels
-correspond to:
+correspond to:</text>
 
-\begin{table}[!htb]
-\begin{center}
-\begin{tabular}{cl}
-\textbf{Level} & \textbf{What it means} \\
-\hline
-\hline
-0 & No knowledge of the skill. \\
-1	& Amateur.  You know something about it. \\
-2	& Had some training or experience \\
-3	& Beginning professional or serious hobbyist \\
-4	& Professional \\
-5	& Experienced professional \\
-6	& Exceptionally good.  Among the best in the country. \\
-7	& Among the best in the world. \\
-8+ & Among the best ever \\
-\end{tabular}
-\caption{Skill Level and Descriptive Equivalents}
-\end{center}
-\end{table}
+<figure>
+    <table>
+        <head>
+            <cell align="center">\textbf{Level}</cell>
+            <cell align="left">\textbf{What it means}</cell>
+        </head>
+            <row>
+                <cell>0</cell>
+                <cell>No knowledge of the skill.</cell>
+            </row>
+            <row>
+                <cell>1</cell>
+                <cell>Amateur.  You know something about it.</cell>
+            </row>
+            <row>
+                <cell>2</cell>
+                <cell>Had some training or experience</cell>
+            </row>
+            <row>
+                <cell>3</cell>
+                <cell>Beginning professional or serious hobbyist</cell>
+            </row>
+            <row>
+                <cell>4</cell>
+                <cell>Professional</cell>
+            </row>
+            <row>
+                <cell>5</cell>
+                <cell>Experienced professional</cell>
+            </row>
+            <row>
+                <cell>6</cell>
+                <cell>Exceptionally good.  Among the best in the country.</cell>
+            </row>
+            <row>
+                <cell>7</cell>
+                <cell>Among the best in the world.</cell>
+            </row>
+            <row>
+                <cell>8+</cell>
+                <cell>Among the best ever</cell>
+            </row>
+    </table>
+        <caption>Skill Level and Descriptive Equivalents</caption>
+</figure>
 
-Like most of character creation, skills are purchased using CP.  The higher
+<text>Like most of character creation, skills are purchased using CP.  The higher
 the rank, the more expensive it will be.  The higher the level you want in the
-skill, the more expensive it will be.
+skill, the more expensive it will be.</text>
 
-For those that are mathematically inclined, here is the formula for determining
-CP of a particular skill level and rank:
-\vspace{-.4in}
-\begin{center}
-\begin{equation}
+<text>For those that are mathematically inclined, here is the formula for determining
+CP of a particular skill level and rank:</text>
+
+<math>
 \sum_{i=1}^{Desired Level = n} \left(Rank * i\right) = Rank * {{n^{2}+n}\over{2}}
-\end{equation}
-\end{center}
-For the rest of us, use this nifty table, and multiply the value listed by the
-rank.
-\begin{table}[!htb]
-\begin{center}
-\begin{tabular}{l|cccccccccc}
-\hline
-\textbf{Desired Level} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
-\textbf{CP Cost for Rank 1} & 1 & 3 & 6 & 10 & 15 & 21 & 28 & 36 & 45 & 55 \\
-\hline
-\end{tabular}
-\caption{CP cost of Desired Level, precomputed}
-\end{center}
-\end{table}
-See the trend?
+</math>
 
-If not, here's yet another way to look at purchasing skills.
+<text>For the rest of us, use this nifty table, and multiply the value listed by the
+rank.</text>
 
-To get level 1 of a skill, you must spend the Rank in CP.  To get to the next
+<figure>
+    <table>
+        <head>
+            <cell align="left" border-right="1px black" />
+            <cell align="center" /><cell align="center" /><cell align="center" />
+            <cell align="center" /><cell align="center" /><cell align="center" />
+            <cell align="center" /><cell align="center" /><cell align="center" />
+            <cell align="center" />
+        </head>
+        <row>
+            <cell><bold>Desired Level</bold></cell>
+            <cell>1</cell><cell>2</cell><cell>3</cell>
+            <cell>4</cell><cell>5</cell><cell>6</cell>
+            <cell>7</cell><cell>8</cell><cell>9</cell>
+            <cell>10</cell>
+        </row>
+        <row>
+            <cell><bold>CP Cost for Rank 1</bold></cell>
+            <cell>1</cell><cell>3</cell><cell>6</cell>
+            <cell>10</cell><cell>15</cell><cell>21</cell>
+            <cell>28</cell><cell>36</cell><cell>45</cell>
+            <cell>55</cell>
+        </row>
+    </table>
+    <caption>CP cost of Desired Level, precomputed</caption>
+</figure>
+
+<text>See the trend?</text>
+
+<text>If not, here's yet another way to look at purchasing skills.</text>
+
+<text>To get level 1 of a skill, you must spend the Rank in CP.  To get to the next
 level, add the rank of the skill to the amount of CP you spent the last time you
 increase the skill (and just that last increase, not the total amount you've spent
-on the skill) and that is the amount that you need to spend.
+on the skill) and that is the amount that you need to spend.</text>
 
-\quotexample[Computing Skill Cost]{I want to purchase the shield skill
+    <example>
+        <title>Computing Skill Cost</title>
+        <text>I want to purchase the shield skill
 (rank 2).  To get Lvl 1
 I would need to spend
 2 CP.  Now, if I want to go from Lvl 1, to Lvl 2, I would add the rank (2) to
@@ -575,46 +658,51 @@ I'm not happy with my Lvl 2 shield skill, and wish to upgrade it to level 3.
 I would again take the rank (2) and add it to the amount I spent on the last
 increase (4) to get the number of CP I must spend to upgrade the skill.  In this
 case, I must spend an additional 6 CP.  Therefore, to get a level 3 shield skill
-(or any skill or rank 2), I must spend a total of 12 CP.}
+(or any skill or rank 2), I must spend a total of 12 CP.</text>
+    </example>
 
-If you take a look at the little chart above, you will see that at the desired
+<text>If you take a look at the little chart above, you will see that at the desired
 skill level (3) the CP cost is a 6, which I then multiply by the rank (2) to get
-12 CP, the same thing I got when I did it out by hand.
+12 CP, the same thing I got when I did it out by hand.</text>
 
-Note that the chart will only tell you how many total Character Points.  To get
+<text>Note that the chart will only tell you how many total Character Points.  To get
 the number of CP needed to increase to the next level, just subtract the upper
 number from the lower one.  A more complete version of the above table can be
-found at the end of this manual.
+found at the end of this manual.</text>
 
-Once you are in game and earning experience, you can increase the level of a
+<text>Once you are in game and earning experience, you can increase the level of a
 skill you currently have at least one level in by paying the appropriate CP
 cost.  If you wish to learn the first level of a skill you don't have yet, it
-takes a number of weeks of intense studying equal to the rank of the skill.
-
-\subsection{Skill Specialization (optional)}
-
-\subsubsection{Specialization in most Skills}
-
-It is possible to specialize in many skills.  When specialized, a character
+takes a number of weeks of intense studying equal to the rank of the skill.</text>
+        <section><!-- Skill Spec -->
+            <title>Skill Specialization (optional)</title>
+            <section><!-- Spec Most -->
+                <title>Specialization in most Skills</title>
+<text>It is possible to specialize in many skills.  When specialized, a character
 knows more about a certain aspect of the skill than other parts of the skill.
 In game terms, you are +1 LVL when performing a check in the area of your
 specialization, but are -4 to your roll when you are performing a check outside
-of your specialization.  Specializing does NOT cost any extra CP.
+of your specialization.  Specializing does NOT cost any extra CP.</text>
 
-\quotexample[History$\rightarrow$Spanish]{Ralf Gr\"osse-Kunstleve is a historian.
+    <example>
+        <title>History$\rightarrow$Spanish</title>
+        <text>Ralf Gr\"osse-Kunstleve is a historian.
 Specifically, he is knowledgeable
 about Spanish history. He has a LVL 3 History skill with a specialization in
 Spanish History.  This means that if Juan had to make a skill check related to
 Spanish history, he would roll 4 dice.  (3 from his LVL, +1 from the specialty.)
 However, if he had to make a History roll about another kind of history, he
-would only roll 3 dice, and be at a -4 to his roll.}
+would only roll 3 dice, and be at a -4 to his roll.</text>
+    </example>
 
-Note that you can choose to buy a particular skill more than once with different
-specialties, if you feel like it.  When this happens the roll for &ldquo;outside
-of specialty&rdquo; skill checks is the highest of the skill levels -4 +1 for each
-skill beyond the first.
+<text>Note that you can choose to buy a particular skill more than once with different
+specialties, if you feel like it.  When this happens the roll for <dquo>outside
+of specialty</dquo> skill checks is the highest of the skill levels -4 +1 for each
+skill beyond the first.</text>
 
-\quotexample[Chemistry$\rightarrow$WMD]{Dr. Klo\t{tz}enstein is a scientist.
+    <example>
+        <title>Chemistry$\rightarrow$WMD</title>
+        <text>Dr. Klo\t{tz}enstein is a scientist.
 He has LVL 3 Chemistry with a specialty in
 Chemical weapons and poisons.  As well, he has LVL 4 Chemistry with a
 specialization in the chemistry of explosives.  Dr. Klotzenstein's rolls are
@@ -622,179 +710,225 @@ as follows:
 
 \noindent For Weapons/poisons: 4 dice \\
 \noindent For Explosives: 5 dice \\
-\noindent For Non-specialty rolls, 5 dice -3.}
+\noindent For Non-specialty rolls, 5 dice -3.}</text>
+    </example>
 
-It is possible to specialize in most skills.  Talk to your GM about specializing
-to see which skills you think are appropriate and which ones are not.
+<text>It is possible to specialize in most skills.  Talk to your GM about specializing
+to see which skills you think are appropriate and which ones are not.</text>
 
-\textbf{Specializing in skills is purely optional.}
-
-\subsubsection{Specialization applied to Weapon skills}
-
-It is also possible to specialize in weapon skills.  If a character has a
+<text><bold>Specializing in skills is purely optional.</bold></text>
+            </section><!-- /Spec Most -->
+            <section><!-- Spec Wpn -->
+                <title>Specialization applied to Weapon skills</title>
+<text>It is also possible to specialize in weapon skills.  If a character has a
 specialized weapon skill that means that he is especially proficient with a
 very specific type of weapon.  When wielding a weapon that matches a character's
 specialty, that character receives +1 LVL to the skill.  This bonus applies to
 attack (strike) rolls, and defensive rolls (parry), if applicable.  When using
 a weapon that is outside the character's specialty, the character is at -1 LVL.
-Note that Weapon skill specialization does NOT affect damage rolls.
+Note that Weapon skill specialization does NOT affect damage rolls.</text>
 
-\textbf{Specializing in a weapons skill costs 3 CP in addition to the normal cost of the
+<text>\textbf{Specializing in a weapons skill costs 3 CP in addition to the normal cost of the
 skill. Specializing can be applied to all weapon proficiency type skills and
-the shield skill.}
+the shield skill.}</text>
 
-\quotexample[Axes$\rightarrow$Nordic War Axe]{Bj\o{}rgen
+    <example>
+        <title>Axes$\rightarrow$Nordic War Axe</title>
+        <text>Bj\o{}rgen
 is a warrior with a liking for the Nordic War Axe.
 He has the skill
-&ldquo;Archaic Weapons: Axes&rdquo; at level 3.  As well, he is specialized in the Nordic
+<dquo>Archaic Weapons: Axes</dquo> at level 3.  As well, he is specialized in the Nordic
 War Axe.  The total skill cost is 9 CP.  That is 6 CP for Level 3 in a Rank 1
 skill, Plus 3 CP from the specialization.  When welding a Genuine Nordic War
 Axe~\texttrademark in combat, Gunnar has 4 dice.  However, when using any other
-kind of axe Gunnar only has 2 dice.}
+kind of axe Gunnar only has 2 dice.</text>
+    </example>
 
-Note that some unusual or esoteric weapons \emph{require} specialization.
+<text>Note that some unusual or esoteric weapons \emph{require} specialization.
 This is because those weapons are different enough from common weapons that
-they require special knowledge and experience in order to use them properly.
+they require special knowledge and experience in order to use them properly.</text>
 
-Most characters that specialize in weapons are very particular about their
+<text>Most characters that specialize in weapons are very particular about their
 weapons.  For the character it is almost an obsessive-compulsive issue to
 wield a particular weapon.  Generally the weapon must be very specific in order
 to satisfy the specialty.  In medieval campaigns, a weapon specialty might
 require a sword forged by a particular smith, or arrows made from a certain
 type of wood.  In a modern campaign, a weapon specialty might entail a particular
-make and model of rifle.
+make and model of rifle.</text>
 
-\textbf{Specializing in skills is purely optional.}
+<text>\textbf{Specializing in skills is purely optional.}</text>
 
-\section{Rules (Rolls)}
+            </section><!-- /Spec Wpn -->
+        </section><!-- /Skill Spec -->
 
-What would an RPG be without rules?  <Apathy /> has a set of rules that allow
-for just about any occurrence that an imaginative GM can put the players through.
+    </section><!-- /Skills -->
+    <section><!-- Rolls -->
+        <title>Rules (Rolls)</title>
+<text>What would an RPG be without rules?  <Apathy /> has a set of rules that allow
+for just about any occurrence that an imaginative GM can put the players through.</text>
 
-Lets start with the basics (some of this will be review):
+<text>Lets start with the basics (some of this will be review):</text>
 
-In <Apathy />, there are \emph{three} different types of die rolls.  Every time
-you roll a die when playing <Apathy />, you will use one of these sets of rules.
+<text>In <Apathy />, there are \emph{three} different types of die rolls.  Every time
+you roll a die when playing <Apathy />, you will use one of these sets of rules.</text>
 
-\subsection{Attribute Checks}
+        <section><!-- Attr Chks -->
+    <title>Attribute Checks</title>
 
-Attribute checks are required anytime the GM wants to see if you did something
+<text>Attribute checks are required anytime the GM wants to see if you did something
 solely based on an attribute.  They are used whenever a player wants their 
 character to do something tricky.  Attribute checks are purely based on a 
 character's core attributes.  They are completely separate from skills.  If a 
 player needs to do something based on a particular skill, then see the skill 
-roll section below.
+roll section below.</text>
 
-\quotexample[Catch a Pack]{Barnacleez is trying
+    <example>
+        <title>Catch a Pack</title>
+        <text>Barnacleez is trying
 to catch a pack that was thrown at him.  The GM 
-requires him to make a DEX check to see if he successfully caught the pack.}
+requires him to make a DEX check to see if he successfully caught the pack.</text>
+    </example>
 
-\quotexample[Swim a Long Distance]{Thomas is trying to
+    <example>
+        <title>Swim a Long Distance</title>
+        <text>Thomas is trying to
 swim a long distance while carrying a heavy load.
-He has to roll a BLD check to see if he has enough stamina to make the swim.}
+He has to roll a BLD check to see if he has enough stamina to make the swim.</text>
+    </example>
 
-\quotexample[Decipher Symbols]{Wendy is trying to
+    <example>
+        <title>Decipher Symbols</title>
+        <text>Wendy is trying to
 decipher the meaning of some strange symbols written 
 on a wall.  Since she has no applicable skills, the GM determines that she needs 
-to make an INT check in order to figure out what they mean.}
+to make an INT check in order to figure out what they mean.</text>
 
-Attribute checks are always rolled the same.  Roll ONE twenty-sided die, add 
+<text>Attribute checks are always rolled the same.  Roll ONE twenty-sided die, add 
 the attribute to the die, and add any bonuses or negatives.  If the total (die 
 roll + attribute + bonuses + negatives) is 25 or higher, then the check 
 succeeded.  If you roll a 1, you fail automatically, no matter what your bonuses 
 or attributes are.  If you roll a 20, you succeed automatically, no matter what 
 the negatives might be.  \textbf{For an attribute check, you always roll just one 
-20-sided die.}
-
-\subsection{Contest of Attributes}
-
-\textbf{Contests of Attributes} occur whenever two characters are competing at 
+20-sided die.</text>
+    </example>
+        </section><!-- /Attr Chks -->
+        <section><!-- Contest of Attr -->
+        <title>Contest of Attributes</title>
+<text><bold>Contests of Attributes</bold> occur whenever two characters are competing at 
 something that is largely dependent on an attribute and nothing else.  Arm 
 wrestling is a contest of strength.   Racing to complete a puzzle is a contest 
-of intelligence.  A trivia game would be a contest of wisdom, etc.
+of intelligence.  A trivia game would be a contest of wisdom, etc.</text>
 
-A contest of attributes occurs \emph{only} when there are multiple competitors 
+<text>A contest of attributes occurs \emph{only} when there are multiple competitors 
 (generally two) and \emph{only} when there is no particular skill involved.  For 
 example, arm wrestling is a contest of strength but a game of 1-on-1 basketball 
-is generally \emph{not}, because basketball is a complex game.
+is generally \emph{not}, because basketball is a complex game.</text>
 
-When a contest of attributes occurs, all competitors roll 1D4 and add the
+<text>When a contest of attributes occurs, all competitors roll 1D4 and add the
 result to their attribute.  The highest score wins, and like scores tie.
 The GM may wish to impose negatives and/or bonuses depending on the exact
-circumstances of the contest.
+circumstances of the contest.</text>
 
-\quotexample[Dougles vs. Enemy Soldier]{Douglas (STR 13) is fighting with an 
+<example>
+    <title>Dougles vs. Enemy Soldier</title>
+    <text>Douglas (STR 13) is fighting with an 
 enemy solider (STR 12) over the possession of a single rifle.  The GM 
 declares that a contest of strength will resolve who manages to gain 
 possession of the rifle.  The GM rolls for the solider (a three) and 
 Douglas rolls a 1.  The enemy soldier has a total of 15, and Douglas 
 has 14.  Therefore, the enemy soldier wrestles the rifle out of
-Douglas's hands.}
-
-\subsection{Skill Rolls}
-
-\textbf{Skill rolls} are used whenever a player wants to use one of his
+Douglas's hands.</text></example>
+        </section><!-- /Contest of Attr -->
+        <section><!-- Skill Rolls -->
+            <title>Skill Rolls</title>
+<text><bold>Skill rolls</bold>are used whenever a player wants to use one of his
 character's skills.  They are also used whenever two characters are competing
 at something (Contest of skills) related to a skill. \textbf{Skill rolls are also used
-&ldquo;to strike&rdquo; or &ldquo;to defend&rdquo; in combat.}
+<dquo>to strike</dquo> or <dquo>to defend</dquo> in combat.}</text>
 
-To determine if you are successful in performing a skill, roll a number of D20s 
+<text>To determine if you are successful in performing a skill, roll a number of D20s 
 equal to the Level you have purchased the skill in.  To \emph{each} die, add 
 your 
 current attribute referenced by the associated attribute value of the skill.  
 Each time a die with this value added to it reaches 25 or above, this is called 
 a success.  If you have at least one success, you successfully performed the 
-skill.  Rolling a &ldquo;20&rdquo; on a die will give you +1 successes to however many 
+skill.  Rolling a <dquo>20</dquo> on a die will give you +1 successes to however many 
 you rolled normally.  Note that this makes it possible to have more successes 
-than you have levels in a given skill.  Likewise, a roll of &ldquo;1&rdquo; is -1 
+than you have levels in a given skill.  Likewise, a roll of <dquo>1</dquo> is -1 
 successes to your total.  If you have negative successes (caused by rolling 
 more 1s than successes) then you have a critical failure!  In the case of a 
-critical failure the GM will determine what (negative) outcome happens!
+critical failure the GM will determine what (negative) outcome happens!</text>
 
-\begin{table}[!htb]
-\begin{center}
-\begin{tabular}{cl}
-\textbf{Roll} & \textbf{Sample Outcome} \\
-Strike (sword) & Sword breaks or is dropped \\
-Strike (gun) & gun jams or misfires \\
-Parry & you drop your weapon and are struck by the incoming blow \\
-Diplomacy & you make a faux pas that offends the parties involved \\
-Deception & you are caught &ldquo;red handed&rdquo; in a blatant lie \\
-Medicine & you make an outright mistake, harming the patient. \\
-\end{tabular}
-\caption{Sample outcome for Skill Rolls}
-\end{center}
-\end{table}
+<!-- CONTINUE HERE -->
 
-The GM will give penalties and/or bonuses to your skill roll based on the 
+<figure>
+    <table>
+        <head>
+            <cell align="center">Roll</cell>
+            <cell align="left">Sample Outcome</cell>
+        </head>
+            <row>
+                <cell>Strike (sword)</cell>
+                <cell>Sword breaks or is dropped</cell>
+            </row>
+            <row>
+                <cell>Strike (gun)</cell>
+                <cell>gun jams or misfires</cell>
+            </row>
+            <row>
+                <cell>Parry</cell>
+                <cell>you drop your weapon and are struck by the incoming blow</cell>
+            </row>
+            <row>
+                <cell>Diplomacy</cell>
+                <cell>you make a faux pas that offends the parties involved</cell>
+            </row>
+            <row>
+                <cell>Deception</cell>
+                <cell>you are caught <dquo>red handed</dquo> in a blatant lie</cell>
+            </row>
+            <row>
+                <cell>Medicine</cell>
+                <cell>you make an outright mistake, harming the patient.</cell>
+            </row>
+        </table>
+    <caption>Sample outcome for Skill Rolls</caption>
+</figure>
+
+<text>The GM will give penalties and/or bonuses to your skill roll based on the 
 difficulty of the action you are performing and what circumstances may be 
 surrounding it.  When such a negative or bonus is given, this is subtracted 
-from the associated attribute value, not the number of dice rolled for a skill.
+from the associated attribute value, not the number of dice rolled for a skill.</text>
 
-Basically stated, skill rolls work like this:  Roll 1D20 for each level you 
+<text>Basically stated, skill rolls work like this:  Roll 1D20 for each level you 
 have in the skill.  To each die, add your associated attribute and any 
 negatives 
 or bonuses the GM gives you.  If the total on each die is 25 or greater that is 
 a success.  If the die rolls a 20, regardless of bonuses, attributes, etc. you 
 get +1 successes.  If a die rolls a 1, regardless of bonuses, etc. you get -1 
-success.
+success.</text>
 
-Note that the \textsc{Maximum} you can ever add to your die roll---no 
+<text>Note that the \textsc{Maximum} you can ever add to your die roll---no 
 matter how high 
-your attribute or bonuses to succeed might be---is 20.
+your attribute or bonuses to succeed might be---is 20.</text>
 
-Also, if you are doing something simple with respect to your skill level 
+<text>Also, if you are doing something simple with respect to your skill level 
 then you don't have to roll dice at all.  It's assumed that you succeed 
-examples.
+examples.</text>
 
-\quotexample[Lookup Internt Address]{Amy has the Computer
+    <example>
+        <title>Lookup Internt Address</title>
+        <text>Amy has the Computer
 Use skill at level 3.  She wants to look up an 
 Internet address on the computer that she thinks might give the players some 
 needed information.  Since this is a simple task and she has a significant 
 level in the associated skill (Computer Use), then the GM rules that she does 
-so automatically, with no roll needed.}
+so automatically, with no roll needed.</text>
+    </example>
 
-\quotexample[Investigate Mysterious Person]{Amy is still on the Internet.
+    <example>
+        <title>Investigate Mysterious Person</title>
+        <text>Amy is still on the Internet.
 Now she is attempting to dig up some 
 information about a mysterious person.  The GM determines that Amy needs to 
 use her Level 2 Investigation skill.  Amy has a 13 WIS, the associated 
@@ -805,9 +939,12 @@ and there is no bonus or negative.  So Amy rolls 2D20 for the skill and rolls a
 Only the 
 26 is a success since it is 25 or above.  Since she has at least one success,
 Amy 
-is able to find the information she was looking for.}
+is able to find the information she was looking for.</text>
+    </example>
 
-\quotexample[Fix a Beater]{Chris is trying
+    <example>
+        <title>Fix a Beater</title>
+        <text>Chris is trying
 to fix an old car so he and his fellow characters can use 
 it.  The GM determines that this falls under the Mechanic: General skill.  Chris
 has a level 2 in that skill.  Furthermore, the GM determines that since the car 
@@ -815,39 +952,47 @@ is in really bad shape, that Chris has a -3 to his roll.  Chris has a 12 DEX.
 Chris rolls his dice and gets a 1 and a 16. (Chris is rolling two dice because 
 he has a level 2 skill)  Adding his DEX to those rolls, Chris now has a 13 and 
 a 28.  The 13 isn't 25 or above, so it fails, but the 28 succeeds.  So far, 
-Chris has 1 success.  However, the &ldquo;1&rdquo; Chris rolled is -1 success.  So, this 
-gives Chris a total of 0 successes---meaning the car didn't get fixed.}
+Chris has 1 success.  However, the <dquo>1</dquo> Chris rolled is -1 success.  So, this 
+gives Chris a total of 0 successes---meaning the car didn't get fixed.</text>
+    </example>
 
-\quotexample[Shoot a Large Robot]{Billy is
+    <example>
+        <title>Shoot a Large Robot</title>
+        <text>Billy is
 a cybernetic gunfighter with a 22 DEX.  He is trying to shoot an 
 enemy robot.  The GM determines that Billy gets a bonus of +3 to shoot the 
 robot because it's so large.  Normally, Billy would roll his dice and add +25 
 to each one:  +22 from his DEX and +3 from the size bonus.  However, this gets 
-capped at +20.  Thus, Billy only gets to add +20 to each of his dice.}
+capped at +20.  Thus, Billy only gets to add +20 to each of his dice.</text>
+    </example>
 
-\quotexample[Called Shot to Arm]{Billy is still fighting the same
+    <example>
+        <title>Called Shot to Arm</title>
+        <text>Billy is still fighting the same
 giant robot.  This time, he's trying to 
 make a called shot and shoot the robot in the arm.  The GM determines that 
 Billy gets a +3 bonus due to the robot's size, but also a -4 to strike because 
 of the called shot to the arm.  Thus, Billy adds up his bonuses:  +22 from DEX 
 +3 from size and -4 for the called shot.  This adds up to +21, but the bonus 
-is capped at +20.  Again, Billy adds +20 to his dice.  Notice that the &ldquo;+20 
-cap&rdquo; is applied AFTER all the bonuses and negatives are added up.}
-
-\subsection{Contest of Skills}
-
-
-\textbf{A contest of skills occurs when two people are trying 
-to defeat each other in some manner with their skills.}  
+is capped at +20.  Again, Billy adds +20 to his dice.  Notice that the <dquo>+20 
+cap</dquo> is applied AFTER all the bonuses and negatives are added up.</text>
+    </example>
+        </section><!-- /Skill Rolls -->
+        <section><!-- Contest of Skills -->
+            <title>Contest of Skills</title>
+<text><bold>A contest of skills occurs when two people are trying 
+to defeat each other in some manner with their skills.</bold>
 If two characters were competing to see who could sing better, the 
 character with the largest number of successes of the singing skill 
 would win.  The most common example of this is combat.  In order to 
 be successful in a combat situation---such as attempting to hit an 
 opponent with a sword while he is blocking with a shield, the 
 initiator (or attacker) of the action must make more successes 
-than the defender.
+than the defender.</text>
 
-\quotexample[Tom and the Shopkeeper in a Contest]{Tom is attempting 
+<example>
+    <title>Tom and the Shopkeeper in a Contest</title>
+    <text>Tom is attempting 
 to purchase an expensive suit of armor, and doesn't want to pay 
 full price.  So he is attempting to bring the price down by using 
 the Bargaining skill.  The shopkeeper also has the Bargaining skill, 
@@ -856,7 +1001,7 @@ WIS of 13 (the associated attribute for Bargaining); the shopkeeper
 has a level 4 Bargaining (he's been at it longer than Tom has), 
 and a WIS of 10.
 
-Tom rolls 3 dice and gets a &ldquo;14&rdquo;, &ldquo;20&rdquo;, and a &ldquo;3&rdquo;.  Tom now 
+Tom rolls 3 dice and gets a <dquo>14</dquo>, <dquo>20</dquo>, and a <dquo>3</dquo>.  Tom now 
 adds his wisdom (13) to each of these.  The GM didn't give any 
 negatives or bonuses, so that is all that gets added.  After adding, 
 the totals are 27, 33, and 16.  Two of these are 25 or higher, so Tom 
@@ -864,49 +1009,53 @@ has two successes so far.  Note that Tom rolled one 20---which gives him
 an additional success.  Tom has a total of three successes.
  
 The shopkeeper rolls four dice (remember, he has a level 4 Bargaining), 
-and gets a &ldquo;1&rdquo;, &ldquo;12&rdquo;, &ldquo;15', and an &ldquo;18&rdquo;.  After adding the 
-shopkeeper's WIS of 10, we get the following rolls: &ldquo;11&rdquo;, &ldquo;22&rdquo;, 
-&ldquo;25&rdquo;, and &ldquo;28&rdquo;.  The 25 and 28 are both successes, but the 
-&ldquo;1&rdquo; is a -1 success, so the shopkeeper has 1 total success.
+and gets a <dquo>1</dquo>, <dquo>12</dquo>, <dquo>15'</dquo>, and an <dquo>18</dquo>.  After adding the 
+shopkeeper's WIS of 10, we get the following rolls: <dquo>11</dquo>, <dquo>22</dquo>, 
+<dquo>25</dquo>, and <dquo>28</dquo>.  The 25 and 28 are both successes, but the 
+<dquo>1</dquo> is a -1 success, so the shopkeeper has 1 total success.
 
 Tom has 3 successes, and the shopkeeper has 1.  Since Tom initiated 
-the bargaining, and has more successes than the &ldquo;defender&rdquo;, he is 
+the bargaining, and has more successes than the <dquo>defender</dquo>, he is 
 successful in his attempt to reduce the price of the armor.  How
 much is determined by the GM, but it should be commensurate with 
-the number of successes that Tom beat the shopkeeper by.}
+the number of successes that Tom beat the shopkeeper by.</text>
+</example>
 
-The winner of a contest of skills is whomever rolled the highest 
+<text>The winner of a contest of skills is whomever rolled the highest 
 number of successes.  The margin of success is based on the difference 
-between the two rolls.  For example, if the &ldquo;winner&rdquo; had only 1 more 
-success than the &ldquo;loser&rdquo;, then the contest was close.  However, if 
-the &ldquo;winner&rdquo; had three more successes than the loser, then it was a 
-decisive victory!
+between the two rolls.  For example, if the <dquo>winner</dquo> had only 1 more 
+success than the <dquo>loser</dquo>, then the contest was close.  However, if 
+the <dquo>winner</dquo> had three more successes than the loser, then it was a 
+decisive victory!</text>
 
-Ties are left up to the GM to resolve.  The suggested protocol is as follows:
+<text>Ties are left up to the GM to resolve.  The suggested protocol is as follows:</text>
 
-If the tie occurred on a contest that entails a single past event or 
-is something that is &ldquo;judged&rdquo; by outsiders, then the winner is the 
+<text>If the tie occurred on a contest that entails a single past event or 
+is something that is <dquo>judged</dquo> by outsiders, then the winner is the 
 character with the higher associated attribute.  (Example: who can 
-paint a better picture, etc.)
+paint a better picture, etc.)</text>
 
-If the contest entails an ongoing event (such as the haggling over a 
+<text>If the contest entails an ongoing event (such as the haggling over a 
 suit of armor detailed above) then it is assumed that the competitors 
-&ldquo;keep at it&rdquo; and a second roll is in order.
+<dquo>keep at it</dquo> and a second roll is in order.</text>
 
-The rules for combat are slightly more complicated; see below.
+<text>The rules for combat are slightly more complicated; see below.</text>
 
-\subsection{Skill Rolls and Related Skills}
-
-If a character needs to make a skill roll and that character knows 
+        </section><!-- /Contest of Skills -->
+        <section><!-- Skills Rolls and Related -->
+            <title>Skill Rolls and Related Skills</title>
+<text>If a character needs to make a skill roll and that character knows 
 other skills that are somehow related to (or are similar to) the 
 skill to be rolled, that character is generally entitled to a bonus 
 to his or her roll.  The exact terms of the bonus, including what 
-skills qualify as &ldquo;related&rdquo;, is determined by the GM on a case-by-case 
+skills qualify as <dquo>related</dquo>, is determined by the GM on a case-by-case 
 basis.  The general rule is that each level of a related skill conveys 
 a +1 to the roll.  The maximum possible bonus from related skills is 
-+5, regardless of the circumstances.
++5, regardless of the circumstances.</text>
 
-\quotexample[Paul repairing a device]{Paul is attempting to repair an 
+<example>
+    <title>Paul repairing a device</title>
+    <text>Paul is attempting to repair an 
 electronic device.  The GM asks Paul to roll his Electronics skill, 
 which Paul has at lvl 4.  Paul mentions that he also knows the 
 skills Electrical Engineering: 2, Electrician: 3, Mechanic: General: 3, 
@@ -916,32 +1065,33 @@ GM decides that since this device is unrelated to communications,
 Paul's Communications skill does not apply either.  However, the GM 
 decides that Paul's Electrical Engineering and Electrician skills 
 are relevant.  The GM assigns Paul a bonus of +5 to his roll from his 
-levels in those related skills.}
+levels in those related skills.</text>
+</example>
 
-\textbf{Related Skill bonuses NEVER apply to 
-combat skills or any skill used in a combat situation.}
+<text><bold>Related Skill bonuses NEVER apply to 
+combat skills or any skill used in a combat situation.</bold></text>
 
-
-\subsection{All Other Rolls}
-
-This type of die rolling is used for just about everything else in 
+        </section><!-- /Skills Rolls and Related -->
+        <section><!-- All Other Rolls -->
+            <title>All Other Rolls</title>
+<text>This type of die rolling is used for just about everything else in 
 the game: rolling damage from combat, the duration of magical spells, 
-or the number of monsters appearing in a group.
+or the number of monsters appearing in a group.</text>
 
-Rolling dice is represented in the XDY+Z format; for example 
+<text>Rolling dice is represented in the XDY+Z format; for example 
 3D4+1.  This means that you roll three individual 4-sided dice, 
-and add 1 to each die.
+and add 1 to each die.</text>
 
-If any die roll with its bonus added in equals or betters the maximum 
+<text>If any die roll with its bonus added in equals or betters the maximum 
 value on a die, then you get a \textbf{rollover}.  When a 
 rollover happens, re-roll that die, without any bonus, and add its 
 value to the total.  If the roll again has the highest value on the 
 die, then another rollover happens.  This keeps going until the 
 highest value on the die is not rolled.  \textbf{Remember, after 
 the first roll, the bonus is not applied; it's just the 
-raw die roll.}
+raw die roll.}</text>
 
-This may sound confusing, so we'll work with the example from above.
+<text>This may sound confusing, so we'll work with the example from above.
 Let's say you have to roll 3D4+1.  You get some four-sided dice and 
 roll three of them.  Suppose the results are: 1, 3, and a 4.  After 
 adding the +1 (from the die bonus), we now have: 2, 4, and 5.  We add 
@@ -951,94 +1101,99 @@ rollovers: the 4 and 5.  So we roll each of these again,
 \textbf{without the original bonus}, and get a 2 and 4.  We add 
 these to the total yielding 17.  But wait, we have yet another 
 rollover (the 4).  So we roll that die again, and get a 3.  We now 
-have a total of a 20 for our 3D4+1 die roll.
+have a total of a 20 for our 3D4+1 die roll.</text>
 
-The same rules apply for any die.  Lets say you are rolling six-sided 
+<text>The same rules apply for any die.  Lets say you are rolling six-sided 
 dice.  If any die (after bonuses) has a 6 or higher, then you get a 
 rollover.  On an eight-sided die?  You guessed it; a roll of 8 or higher 
-will yield a rollover.
+will yield a rollover.</text>
 
-If you have bonuses or negatives to a roll, add them up first, 
-then perform the final roll.
+<text>If you have bonuses or negatives to a roll, add them up first, 
+then perform the final roll.</text>
 
-Note that if there is a minus to the die roll once all the 
+<text>Note that if there is a minus to the die roll once all the 
 bonuses/penalties are added up, then no rollover is possible.  An 
 example is 1D4-1.  Even if you roll a 4 on the die it will be reduced 
 to a 3, which does not yield a rollover.  \textbf{No die (even 
 after negatives) can give a value less than 1}.  So, if you 
 have a 1D6-4, and roll a 2 (which would theoretically total -2), 
-then the actual total would be 1.
+then the actual total would be 1.</text>
 
-Along with what is given above, die rolls might have a 
+<text>Along with what is given above, die rolls might have a 
 \textbf{raw bonus}.  This is represented by a bonus in brackets 
 such as this: 3D4+1 [+4] (alt. 4+3D4+1).  Raw Bonuses are 
 added to the resultant total of a die roll, NOT to each die; thus 
 they do not affect rollovers at all.  This bonus is added in after 
 all the rollovers are done with.  Consider the prior example of 
 3D4+1 but with the [+4] added.  That would be written 3D4+1 [+4].
-The total using the above numbers would be 24. 
+The total using the above numbers would be 24. </text>
 
-Unless otherwise stated, \emph{all non-skill die rolls use this system}.
+<text>Unless otherwise stated, \emph{all non-skill die rolls use this system}.</text>
+        </section><!-- /All Other Rolls -->
+    </section><!-- /Rolls -->
+    <section><!-- Combat Sequence and Initiative -->
+        <title>Combat Sequence &amp; Initiative</title>
 
-\section{Combat Sequence \& Initiative}
-
-Combat is based on a system of \textit{Rounds}, \textit{Turns}, and
-\textit{Actions}.  A &ldquo;round&rdquo; lasts about five seconds.  It is the
+<text>Combat is based on a system of \textit{Rounds}, \textit{Turns}, and
+\textit{Actions}.  A <dquo>round</dquo> lasts about five seconds.  It is the
 length of time in which all combatants have done something.  Each
 round is broken down into actions.  An action lasts about 1 second.
 Each combatant gets one or more actions during each round.  When all
 combatants have used up their actions, the current round is over and a
-new one starts.
+new one starts.</text>
 
-During your turn, you determine what you wish to do with your
+<text>During your turn, you determine what you wish to do with your
 available actions.  Almost everything that you do of significance
 during your turn consumes an action.  Simple examples of what can be
 done in an action are shooting a gun, swing a sword, moving, or using
-a mystical ability.  Keep in mind that a lot of &ldquo;boring&rdquo; combat
+a mystical ability.  Keep in mind that a lot of <dquo>boring</dquo> combat
 stuff also takes up actions: reloading your weapon, moving around,
 ducking behind cover, or taking an item out of your pack.  Some things
-that you will want to do will consume multiple actions per turn.
+that you will want to do will consume multiple actions per turn.</text>
 
-\BracedWrapPicture{l}{Images/MartialArts/Cpg359-49v.jpg}
+<img src="/MartialArts/Cpg359-49v.jpg" />
 
-All characters, by default, have \emph{three} actions per round.
+<text>All characters, by default, have \emph{three} actions per round.
 Certain skills or in-game effects might change this.  When combat is
 going to start, all players need to figure out how many actions they
-get.  (typically, this will be 3 each).
+get.  (typically, this will be 3 each).</text>
 
-At the beginning of combat, all characters must roll initiative.  This
+<text>At the beginning of combat, all characters must roll initiative.  This
 determines who attacks first in the turn.  When combat starts,
 participants must roll a 1D20 for their initiative. If any characters
 have more than 3 actions per turn (due to a skill or magical effect or
-somesuch), then those characters must roll initiative twice.
+somesuch), then those characters must roll initiative twice.</text>
 
-Various bonuses or penalties apply to initiative rolls.  Certain
+<text>Various bonuses or penalties apply to initiative rolls.  Certain
 skills and magical effects can alter initiative.  As well, the GM may
 apply initiative bonuses or penalties depending on game situations,
-such as surprise attacks or ambushes.
+such as surprise attacks or ambushes.</text>
 
-\textbf{Most characters will have 3 actions per turn.  All 
+<text>\textbf{Most characters will have 3 actions per turn.  All 
 three actions are 
-taken at the same time, on that character's initiative.}
+taken at the same time, on that character's initiative.}</text>
 
-\quotexample[Tom's Turn in Combat]{Tom is in combat.
+<example>
+    <title>Tom's Turn in Combat</title>
+    <text>Tom is in combat.
 Tom has three actions and he rolled an 11 as his 
 initiative.  When it's Tom's turn in combat (11), he takes all three actions at 
-that time.}
+that time.</text>
+</example>
 
-The character that has the highest initiative goes first, and then the 
+<text>The character that has the highest initiative goes first, and then the 
 character with the next highest initiative takes their turn, and so 
-forth down the line until all combatants have taken a turn.
+forth down the line until all combatants have taken a turn.</text>
 
-Once all turns are over, the current round of combat is over.  It then 
+<text>Once all turns are over, the current round of combat is over.  It then 
 restarts with everyone's initiative being the same as it was in the previous 
 round.  This progression continues until combat is over.  If the combatants 
 change significantly during combat---for example, if new characters show up on 
 the scene---the GM might want to make everyone re-roll their initiative.  If 
 something happens during combat that changes how many actions the combatants 
-have, the GM should ask that initiative be re-rolled.
+have, the GM should ask that initiative be re-rolled.</text>
 
-Some things that you might want to do will take up multiple actions.  A common 
+<text>Some things that you might want to do will take up multiple actions.  A common 
 example of this is spell casting, where many spells take several actions to 
 cast.  If you do this, you may need to drag this type of action across multiple 
 actions or even multiple turns.  For example, let's say that you want to cast 
@@ -1049,17 +1204,17 @@ When an ability or activity requires multiple actions, it always takes place
 on the final action that completes that activity.  Also, it is possible to be 
 disturbed or disrupted if you are attacked while performing a multiple-action 
 activity.  The GM should take note of this and might impose skill checks or 
-other chances of failure if you get knocked around too much.
+other chances of failure if you get knocked around too much.</text>
 
-\textbf{Note that everything you may wish to do in combat 
+<text>\textbf{Note that everything you may wish to do in combat 
 requires one or more actions.  
 This includes moving around, drawing a weapon, 
 using items, etc.  Undoubtedly, 
 many of your actions will be used for things 
-other than attacking.}
+other than attacking.}</text>
 
-When in combat, some characters may want to delay their action until 
-later.  A character can always choose to &ldquo;act later&rdquo; in combat.  
+<text>When in combat, some characters may want to delay their action until 
+later.  A character can always choose to <dquo>act later</dquo> in combat.  
 When doing so the player states what new initiative number he 
 wishes to act on.  The new initiative must be lower than his 
 current initiative number.  Once a character's initiative is 
@@ -1068,27 +1223,32 @@ That characters initiative remains at the new, lower, number for the
 remainder of combat, unless the GM asks all players to re-roll 
 initiative.  Actions cannot be split between different initiative 
 numbers.  So, a character must either take all his actions at his 
-normal initiative, or he must delay all his actions to a later initiative.
+normal initiative, or he must delay all his actions to a later initiative.</text>
 
-\quotexample[Tom's initiative]{Tom's initiative roll is an 18.  He 
+<example>
+    <title>Tom's initiative</title>
+    <text>Tom's initiative roll is an 18.  He 
 and his fellow players were cornered by ogres for whom the GM has 
 secretly rolled initiative.  Tom has the highest initiative roll, so 
 he goes first.  Tom isn't exactly sure what to do, so he delays 
-his initiative until &ldquo;10&rdquo;.  The GM then resumes combat as normal, 
+his initiative until <dquo>10</dquo>.  The GM then resumes combat as normal, 
 with the next highest initiative going first.  Tom has initiative 10 
-for the remainder of combat.}
+for the remainder of combat.</text>
+</example>
 
 
-Some game effects last a certain number of turns, or have a certain 
+<text>Some game effects last a certain number of turns, or have a certain 
 effect each turn.  These effects are counted and take place on 
 the affected character's turn.  They only are counted and occur 
 if the character begins that turn with the effect in place.  
 These effects occur at the beginning of that character's turn 
 in a given round.  These effects are automatic and do not consume 
 any time from the character.  Resolve all effects before that 
-character takes any actions. 
+character takes any actions. </text>
 
-\quotexample[Lucy's turn in combat]{It is Lucy's turn in 
+<example>
+    <title>Lucy's turn in combat</title>
+    <text>It is Lucy's turn in 
 combat and she casts Regeneration on herself.  The effect of the 
 spell is that each turn she gains 1D4+1 hit points.  Now the spell 
 has taken effect, but she does not gain any HP yet, nor does this 
@@ -1096,75 +1256,84 @@ turn count against the duration of the spell.  Now all other
 combatants take their turns.  When it is again Lucy's 
 turn (next round) she gains her 1D4+1 HP, just before 
 her first action.  This is also considered one turn out of the 
-spell's duration.}
+spell's duration.</text>
+</example>
 
-It is possible to &ldquo;hold an action&rdquo; for later.  Holding an 
+<text>It is possible to <dquo>hold an action</dquo> for later.  Holding an 
 action means that the character is maintaining his current 
 initiative number, but is saving an action for a specific 
 situation.  A character may only hold one action at a time.  
 Furthermore, you must declare what your held action will be, and 
 under what circumstances.  Held actions are resolved as soon 
-as their conditions are met.  Held actions &ldquo;expire&rdquo; if their 
-declared conditions never occur at the beginning of your next turn.
+as their conditions are met.  Held actions <dquo>expire</dquo> if their 
+declared conditions never occur at the beginning of your next turn.</text>
 
-\quotexample[Tom holds an action]{Tom's initiative is 10.  During 
+<example>
+    <title>Tom holds an action</title>
+    <text>Tom's initiative is 10.  During 
 his turn he spends one action to move behind some cover and another 
 to ready his longbow.  Tom declares that he is going to hold his 
-final action:  &ldquo;I am going to cover the hallway with my 
+final action:  <dquo>I am going to cover the hallway with my 
 bow.  If I see a goblin come out of the hallway, I'm going to 
-shoot at it&rdquo;.  If a goblin does indeed come out of the hallway (and 
+shoot at it</dquo>.  If a goblin does indeed come out of the hallway (and 
 Tom can see this), then Tom may immediately take his held action to 
 fire an arrow at it.  However, if no goblin comes down the 
-hallway before Tom's next turn, then the held action is wasted.}
+hallway before Tom's next turn, then the held action is wasted.</text>
+</example>
 
-Notes for held actions:
-\begin{enumerate}
-\item You may only hold one action at a time
-\item You must state specifically what the conditions for 
+<text>Notes for held actions:</text>
+<numbered-list>
+    <item> You may only hold one action at a time</item>
+    <item> You must state specifically what the conditions for 
 your held action must be, and what your action will be once 
-those conditions are met.
-\item Your held action can be any activity you could do 
-in one action (including attacking, moving, using a magical ability, etc.)
-\item Held actions are lost if their triggering conditions never occur.
-\end{enumerate}
-
-\subsection{Weapons \& Equipment}
-
-Most characters will carry equipment in combat.  This usually includes
-weapons and armor.  There are no &ldquo;class&rdquo; restrictions for weapons or
+those conditions are met.</item>
+    <item> Your held action can be any activity you could do 
+in one action (including attacking, moving, using a magical ability, etc.)</item>
+    <item> Held actions are lost if their triggering conditions never occur.</item>
+</numbered-list>
+        <section><!-- Weapons and Equipment -->
+            <title>Weapons &amp; Equipment</title>
+<text>Most characters will carry equipment in combat.  This usually includes
+weapons and armor.  There are no <dquo>class</dquo> restrictions for weapons or
 armor.  Any character can wear any armor and wield any weapon,
-provided that the character has the appropriate attributes and skills.
+provided that the character has the appropriate attributes and skills.</text>
 
-Weapons have a \emph{minimum strength requirement} (MSR).  The MSR
+<text>Weapons have a \emph{minimum strength requirement} (MSR).  The MSR
 indicates what strength is required of the character to properly wield
 a given weapon.  If the character's strength is \textit{less} than the
 MSR, then the character has -1 to strike and [-1] damage for each
-point of strength difference.
+point of strength difference.</text>
 
-The \emph{raw damage bonus} (RDB) is calculated by subtracting 8 from
+<text>The \emph{raw damage bonus} (RDB) is calculated by subtracting 8 from
 the wielder's \textscbf{Str}. The RDB is added as \emph{raw} damage to
 total of the weapon's damage. However, all weapons have a
 \emph{maximum strength bonus} (MSB); if the RDB is greater than the
-MSB, then the MSB is used as the RDB instead.
+MSB, then the MSB is used as the RDB instead.</text>
 
-\quotexample[MSR for Bosk]{Bosk has a STR of 17 and is brandishing a
+<example>
+    <title>MSR for Bosk</title>
+    <text>Bosk has a STR of 17 and is brandishing a
   Hercules Club (3D6C, MSR: 12, MSB: 13).  Because Bosk's
   \textscbf{Str} is higher than the minimum strength requirement of
   the Hercules Club (12), he is entitled to a damage bonus.  Subtract
   8 from Bosk's \textscbf{Str} score to calculate his bonus: $17 - 8 =
-  9$. So this means that Bosk deals 9+3D6 C damage.}
+  9$. So this means that Bosk deals 9+3D6 C damage.</text>
+</example>
 
 
-\quotexample[Bosk with Knife]{Suppose Bosk pulls out a long knife
+<example>
+    <title>Bosk with Knife</title>
+    <text>Suppose Bosk pulls out a long knife
   (1D6+1 S, MSR: 8; MSB: 4).  Bosk's \textscbf{Str} is significantly
   higher than the minimum required for the weapon.  Calculating his
   theoretical bonus, we can write: 17 - 8 = 9.  At first glance, it
   appears that Bosk is entitled to a [+9] bonus.  However, the maximum
   strength bonus for the long knife is 4. Therefore, Bosk's damage
-  roll would be 4+1D6+1.}
+  roll would be 4+1D6+1.</text>
+</example>
 
 
-Bows never grant a damage bonus to characters with higher than 
+<text>Bows never grant a damage bonus to characters with higher than 
 required STR.  However, it is possible to purchase stiffer (stronger) 
 bows that can take advantage of a character's higher STR score.  
 High-draw bows cost 20\% more for every 1 STR point added to the 
@@ -1174,11 +1343,11 @@ that the maximum STR requirement that can be added to a bow of a
 given type is equal to half of its original MSR.  Note that the 
 damage and strike penalty for having a lower-than-required STR does 
 apply to bows.  Modern compound bows are adjustable and can be set 
-to a higher than normal strength value without incurring additional cost.
+to a higher than normal strength value without incurring additional cost.</text>
 
-\BracedWrapPicture{r}{Images/Magic/Lion-faced_deity.jpg}
+<img src="/Magic/Lion-faced_deity.jpg" />
 
-Characters will have two hands that they may use to wield weapons.
+<text>Characters will have two hands that they may use to wield weapons.
 All weapons are either one-hand or two-handed.  Two-handed weapons, of
 course, require both hands to properly wield.  One-handed weapons
 require only one hand.  Therefore a player could wield one single-hand
@@ -1189,43 +1358,44 @@ weapons does not grant the ability to the character to strike with
 both weapons in one action. In general, wielding two weapons gives the
 user -3 and -6 to strike with the primary and off -hand
 (respectively), and requires an additional action. These penalties can
-be mitigated with skills from \emph{Martial Arts}.
+be mitigated with skills from \emph{Martial Arts}.</text>
 
-Characters that use magic, aside from Martial Magic, must have at 
+<text>Characters that use magic, aside from Martial Magic, must have at 
 least one hand free when casting spells. 
 Characters that use Faith magic must have a holy symbol in their 
 grasp when casting magic; this requires a free hand to hold.  
 Spellcasters are free to use two-handed weapons so long as they 
 aren't wielding the weapon at the same time as they are 
 casting spells.  (Spellcasters can put away a weapon, cast magic 
-freely, and then draw their weapon again, though this takes time)
+freely, and then draw their weapon again, though this takes time)</text>
 
-All firearms are assumed to be 2-handed by default.  However, pistols 
+<text>All firearms are assumed to be 2-handed by default.  However, pistols 
 and submachine guns may be fired with one hand.  (See rules for using 
 2-handed weapons with one hand below).  Larger firearms including 
 rifles, shotguns, and heavy weapons (rocket launchers, etc.) must always 
 be used 2-handed.  It always requires two hands to reload a firearm, 
-no matter what kind it is.
+no matter what kind it is.</text>
 
-Bows are always two-handed weapons.  Hand (small) crossbows can be 
+<text>Bows are always two-handed weapons.  Hand (small) crossbows can be 
 aimed and fired with one hand.  However, cocking and re-loading 
 a crossbow always requires two hands.  Larger crossbows always 
 require two hands to fire as well as load.  Siege weapons, cannons, 
 heavy weapons, etc, always require both hands to be free in order 
-to load, aim, and fire.
+to load, aim, and fire.</text>
 
-It is possible to use two hands to fight with a one-handed weapon.  
+<text>It is possible to use two hands to fight with a one-handed weapon.  
 In this case, the wielder has -1 to strike and effectively adds +3 
-to his strength.
+to his strength.</text>
 
-It is possible to use some two-handed weapons with one hand.  To do 
+<text>It is possible to use some two-handed weapons with one hand.  To do 
 so, add 4 to the minimum strength requirement of the weapon.  Note 
 that many two-handed weapons always require two hands, period.  These 
-are large firearms (rifles, shotguns), staves, pole arms, chains, and bows.  
+are large firearms (rifles, shotguns), staves, pole arms, chains, and bows.  </text>
 
-\subsection{Dual-wielding Weapons or Weapon \& Shield}
-
-As noted above, it is possible for characters to wield two weapons in
+        </section><!-- /Weapons and Equipment -->
+        <section><!-- Dual-wielding Weapons or Weapon and Shield -->
+            <title>Dual-wielding Weapons or Weapon &amp; Shield</title>
+<text>As noted above, it is possible for characters to wield two weapons in
 combat, or a weapon and a shield. A character \emph{cannot} attack
 with both weapons during the same action unless he takes the
 \emph{Multi-weapon style} skill in \emph{Martial Arts}.  A character
@@ -1233,89 +1403,89 @@ using a weapon and a shield \emph{may not} attack with his weapon and
 shield bash in the same action, for the same reason.  When attacking
 with both weapons the character makes two separate attack rolls, one
 for each weapon; each attack is resolved separately. This takes two
-separate actions.
+separate actions.</text>
 
-\begin{description}
-\item[Two normal weapons] When wielding two weapons the weapon in the
-  character's &ldquo;good&rdquo; hand receives a -3 to strike and the weapon in
-  the character's &ldquo;off&rdquo; hand receives a -6. Some characters can have
-  &ldquo;even-more-offhand&rdquo; weapons, such as a kick (or two), or literally
+<description-list>
+    <item description="Two normal weapons"> When wielding two weapons the weapon in the
+  character's <dquo>good</dquo> hand receives a -3 to strike and the weapon in
+  the character's <dquo>off</dquo> hand receives a -6. Some characters can have
+  <dquo>even-more-offhand</dquo> weapons, such as a kick (or two), or literally
   having extra limbs. To calculate the negative to strike for wielding
   multiple weapons, first find the number of weapons being used, then
   order them (the strike order). The first weapon is at -3 to strike,
   the second at -6, the third ad -9, and so on, i.e. the k$^{th}$
-  weapon is at -3*k to strike.
+  weapon is at -3*k to strike.</item>
 
-\item[Paired weapons], or one normal weapon and one backup weapon:
+    <item description="Paired weapons">, or one normal weapon and one backup weapon:
   Some weapons are well suited to, or even designed for, use in the
-  &ldquo;off&rdquo; hand.  When using these weapons the penalty for the offhand
+  <dquo>off</dquo> hand.  When using these weapons the penalty for the offhand
   weapon is -3 as opposed to -6.  The penalty for the primary weapon
   remains -3.  Specifically, these combinations are:
 
-  \begin{enumerate}
-  \item Any type of knife may be used in the off-hand in combination
-    with any standard (non exotic) one-handed weapon in the main hand.
-  \item Two Kris, or one Kris Datoh (main hand) and one Kris (off
-    hand).
-  \item One Katana (main hand) and one Wakizashi (off hand), but only
+        <numbered-list>
+            <item>Any type of knife may be used in the off-hand in combination
+    with any standard (non exotic) one-handed weapon in the main hand.</item>
+            <item>Two Kris, or one Kris Datoh (main hand) and one Kris (off
+    hand).</item>
+            <item>One Katana (main hand) and one Wakizashi (off hand), but only
     if the wielder is specialized in both weapons and takes the
-    appropriate penalty for using the Katana one-handed.
-  \item Any weapon that is normally used in pairs, such as Sai, Kama,
-    tonfa, nunchaku, or Iron Claws.
-  \item Two identical handguns, but only with the appropriate penalty
-    for using them one-handed.
-\end{enumerate}
+    appropriate penalty for using the Katana one-handed.</item>
+            <item>Any weapon that is normally used in pairs, such as Sai, Kama,
+    tonfa, nunchaku, or Iron Claws.</item>
+            <item>Two identical handguns, but only with the appropriate penalty
+    for using them one-handed.</item>
+        </numbered-list>
+    </item>
 
-\item[One normal weapon and a shield or item] If the character is
-  wielding a 1-handed weapon in his &ldquo;good&rdquo; hand, and his other hand
+    <item description="One normal weapon and a shield or item"> If the character is
+  wielding a 1-handed weapon in his <dquo>good</dquo> hand, and his other hand
   is carrying a shield, a non-weapon holy symbol, or a utility item
   then there is NO strike penalty at all.  For the purposes of this
   rule a utility item is something such as a torch, walking stick,
   magical totem, leash, or bag.  Utility items are not weapons and
-  must not require particular attention to carry.
+  must not require particular attention to carry.</item>
  
-\end{description}
+</description-list>
 
-If a character is wielding two weapons, he may always choose to attack
+<text>If a character is wielding two weapons, he may always choose to attack
 with the main weapon only at no penalty.  In this case the weapon in
-his off hand is considered merely carried, and is not &ldquo;ready&rdquo; for
+his off hand is considered merely carried, and is not <dquo>ready</dquo> for
 combat. An attack with the off-hand weapon is always made with the
-full penalty, regardless of what the &ldquo;main hand&rdquo; is doing.
+full penalty, regardless of what the <dquo>main hand</dquo> is doing.</text>
 
-Note that the \emph{Ambidexterity} skill from Martial Arts can reduce
+<text>Note that the \emph{Ambidexterity} skill from Martial Arts can reduce
 the dual-weapon penalty; and that the \emph{Multi-weapon Style} skill
 allows the character to strike more than once during a single
 action. A different approach is the use of the \emph{Multitarget}
 skill which allows the martial artist to strike multiple times with a
-single weapon in a single action.
+single weapon in a single action.</text>
+        </section><!-- /Dual-wielding Weapons or Weapon and Shield -->
+        <section><!-- Combat Overview -->
+            <title>Combat Overview</title>
+<text>Resolving an attack is a three-step process:</text>
 
-
-\subsection{Combat Overview}
-
-Resolving an attack is a three-step process:
-
-\begin{enumerate}
-\item The attacker makes a strike roll.  A strike roll is an attempt
-  to hit an opponent using a weapon or ability.
-\item The defender may attempt a defensive maneuver.  A defensive
+<numbered-list>
+    <item>The attacker makes a strike roll.  A strike roll is an attempt
+  to hit an opponent using a weapon or ability.</item>
+    <item>The defender may attempt a defensive maneuver.  A defensive
   maneuver is a special skill that is used to avoid or reduce the
-  damage from an incoming attack.
-\item If the attack was successful, damage is rolled, calculated, and
-  applied to the target.
-\end{enumerate}
+  damage from an incoming attack.</item>
+    <item>If the attack was successful, damage is rolled, calculated, and
+  applied to the target.</item>
+</numbered-list>
 
-This process is explained in detail below:
-
-\subsection{Attacking}
-
-An attack is nearly anything that you try to do to an opponent during
+<text>This process is explained in detail below.</text>
+        </section><!-- /Combat Overview -->
+        <section><!-- Attacking -->
+            <title>Attacking</title>
+<text>An attack is nearly anything that you try to do to an opponent during
 your turn.  Typically an attack is a physical strike against your
 opponent with a weapon (such as your fist or a sword), but it could
 also be the use of a supernatural ability, magic spell, or a modern
-device such as a gun.
+device such as a gun.</text>
 
-When you attack, you use one of your skills in an attempt to damage
-your opponent.  Normally, this will be a &ldquo;basic attack&rdquo; skill from
+<text>When you attack, you use one of your skills in an attempt to damage
+your opponent.  Normally, this will be a <dquo>basic attack</dquo> skill from
 Martial Arts.  Any time you make an attack like this, you roll a
 \textbf{Strike Roll}.  \emph{Strike roll} is just a special name for a
 skill roll in combat---they work just like normal skill rolls.  To
@@ -1324,18 +1494,18 @@ using to attack with (i.e. use the Large Sword skill to strike with
 your bastard sword), add your attribute and any bonuses or negatives.
 For each die that hits 25 or better, you have a success.  \textbf{If
   you have at least one success, you strike the target.}  Otherwise
-you miss your target.
+you miss your target.</text>
 
-Some attacks don't require a skill roll.  This includes special
+<text>Some attacks don't require a skill roll.  This includes special
 attacks that automatically hit your opponent (such as certain
 abilities from Martial Arts) as well as magical spells or supernatural
 powers that are auto-targeting.  For example, the magic spell
 \emph{Ray of Heat} automatically hits your opponent, with no strike
-roll needed.
-
-\subsection{Defending}
-
-The target of an attack usually receives an attempt to defend himself.
+roll needed.</text>
+        </section><!-- /Attacking -->
+        <section><!-- Defending -->
+            <title>Defending</title>
+<text>The target of an attack usually receives an attempt to defend himself.
 \textbf{Defending is using your skills to avoid getting hit by an
   incoming attack.}  There are many different skills that are
 available for defense.  They are called defensive maneuvers. A
@@ -1345,10 +1515,10 @@ normal skills.  A target of an attack may attempt to use any
 \emph{one} defensive maneuver in order to protect himself from the
 attack. The most common are parrying, blocking, and the \emph{Dodge}
 skill.  These are described below.  Other defensive maneuvers may be
-found in the Martial Arts section.
+found in the Martial Arts section.</text>
 
-\begin{description}
-\item[Parry] Parrying is using your weapon to deflect a blow from
+<description-list>
+    <item description="Parry" > Parrying is using your weapon to deflect a blow from
   another weapon.  Parrying may only be performed with melee weapons,
   against either a melee or hand to hand attack.  Parrying is
   ineffective versus other attacks, such as explosives, bullets,
@@ -1364,8 +1534,8 @@ found in the Martial Arts section.
     the outcome of a successful parry, though it usually means that
     the defender avoids all damage.  However, if you are parrying an
     attack from a heavy or large weapon with a small weapon, the GM
-    might want to impose a different outcome.}
-\item[Block] Blocking is putting a shield between you and an incoming
+    might want to impose a different outcome.}</item>
+    <item description="Block"> Blocking is putting a shield between you and an incoming
   attack.  \textbf{Upon a successful block, a shield's armor values
     are added to any armor that you are currently wearing} (see
   below).  You can attempt to block any incoming attack that you are
@@ -1377,21 +1547,21 @@ found in the Martial Arts section.
     but the defender gets to add the armor of the shield to his own
     armor value.}  In the case of a non-standard attack, such as a
   splash of acid, the shield simply stops a certain percentage of the
-  damage outright.
-\item[Dodge] one of the best types of defense.  \emph{Dodge} is an
+  damage outright.</item>
+    <item description="Dodge" >one of the best types of defense.  \emph{Dodge} is an
   (expensive) skill; dodging is moving your body out of the way of an
   incoming attack.  By sidestepping, ducking, throwing yourself to the
   ground or similar action you can avoid any attack completely and
   take no damage.  The \emph{Dodge} skill is used for dodging.  On a
   successful dodge the blow doesn't hit, period.  However, dodge is a
-  high rank skill, so most characters will not be very good at it.
-\end{description}
+  high rank skill, so most characters will not be very good at it.</item>
+</description-list>
 
-Now that you know what the types of defenses are, we are going to lump
-them together and call them &ldquo;defense&rdquo; for the sake of simplicity for
-what is to follow.
+<text>Now that you know what the types of defenses are, we are going to lump
+them together and call them <dquo>defense</dquo> for the sake of simplicity for
+what is to follow.</text>
 
-To defend against an attack, you must succeed at your defending skill
+<text>To defend against an attack, you must succeed at your defending skill
 roll.  And you must have MORE successes at the attacker had in his
 attack roll.  For example, if an attacker has 3 successes to strike
 you, then you would need at least 4 successes at your defensive skill
@@ -1400,13 +1570,13 @@ you are struck by the attack.  You can only attempt to defend against
 an attack with one type of defense.  You can only try to block, dodge,
 or parry once per attack but not multiple of these at a time (i.e. you
 cannot attempt to block and dodge the same attack).  You can attempt
-to parry one attack and then dodge the next attack, however.
+to parry one attack and then dodge the next attack, however.</text>
 
-If you are struck you will likely take damage from the attack.  Also
+<text>If you are struck you will likely take damage from the attack.  Also
 note that you cannot defend (parry, block, or dodge) an attack that
-you did not know about!
+you did not know about!</text>
 
-Note that there are other defensive maneuvers aside from Dodge, Parry,
+<text>Note that there are other defensive maneuvers aside from Dodge, Parry,
 and Block.  These include certain magic spells (Blink, for example),
 martial arts abilities (such as Preemptive Dodge), or supernatural
 powers.  Regardless of what defense a character chooses to use, only
@@ -1425,77 +1595,79 @@ attack\footnote{Some magical spells or super powers of a defensive
   example, Ray of Heat as discussed above will always strike its
   target.  Call Lightning will always strike its target, if the caster
   succeeds on his magical control roll to cast the spell.  For these
-  abilities, defensive maneuvers have no effect.}.
-
-\subsection{Damage}
-
-When an attack hits its target, it will inflict damage upon it.  Every
+  abilities, defensive maneuvers have no effect.}.</text>
+        </section><!-- /Defending -->
+        <section><!-- Damage -->
+            <title>Damage</title>
+<text>When an attack hits its target, it will inflict damage upon it.  Every
 weapon has a damage rating associated with it as well as a damage type
 (for example: a dagger is a 1D6 P weapon).  The damage rating is the
 amount of damage it will do, and the damage type reflects how the
-weapon deals its damage.
+weapon deals its damage.</text>
 
-Here's a key of the different damage types with abbreviations in
-parenthesis and what they are typically associated with:
+<text>Here's a key of the different damage types with abbreviations in
+parenthesis and what they are typically associated with:</text>
 
-\begin{description}
-\item[Piercing (P)] using a sharp tip to penetrate the target creating
+<description-list>
+    <item description="Piercing (P)"> using a sharp tip to penetrate the target creating
   a hole or deep cut within the target.  Some melee weapons, most
   bullets, and other penetrating weapons deal piercing damage.  Armor
-  can protect against this type of damage.
-\item[Slashing (S)] using a cutting edge to slice the target creating
+  can protect against this type of damage.</item>
+    <item description="Slashing (S)"> using a cutting edge to slice the target creating
   a fairly shallow long cut within the target.  Most melee weapons
   such as knives and swords, as well as lasers deal slashing damage.
-  Armor can protect against this type of damage.
-\item[Crushing (C)] using a heavy blunt edge in an attempt to fracture
+  Armor can protect against this type of damage.</item>
+    <item description="Crushing (C)"> using a heavy blunt edge in an attempt to fracture
   or break the target.  This is typically the hardest damage to
   protect against, and as such, is a favorite type of damage for melee
   combat.  Punches, clubs, staves, and explosions deal crushing
-  damage.  Armor can protect against this type of damage.
-\item[Undefined (U)] using energy to cause damage within the target.
+  damage.  Armor can protect against this type of damage.</item>
+    <item description="Undefined (U)"> using energy to cause damage within the target.
   This can include electricity, heat, magic, sickness and other
-  &ldquo;odd&rdquo; types of damage.  Normal armor cannot protect against this
+  <dquo>odd</dquo> types of damage.  Normal armor cannot protect against this
   type of damage.  Only your character's Base Armor (BA) can protect
   you from undefined damage.  Any time someone takes undefined damage
   he or she will always take at least one point of damage, regardless
-  of the base armor.
-\item[Direct (D)] extremely damaging attacks deal D damage.  There is
+  of the base armor.</item>
+    <item description="Direct (D)"> extremely damaging attacks deal D damage.  There is
   no way to protect yourself from direct damage, as it will bypass all
   armor and other protections that you have on.  Damage from D attacks
-  is subtracted directly from hit points (HP).
-\end{description}
+  is subtracted directly from hit points (HP).</item>
+</description-list>
 
-Consider the dagger again: 1D6 P
+<text>Consider the dagger again: 1D6 P</text>
 
-This tells us that a strike from a Dagger deals 1D6 damage.  Also, we
-know that it deals piercing damage.
+<text>This tells us that a strike from a Dagger deals 1D6 damage.  Also, we
+know that it deals piercing damage.</text>
 
-Ok, so now we've got our weapon's damage rating and it's damage type.
+<text>Ok, so now we've got our weapon's damage rating and it's damage type.
 Roll the given damage as described in the dice rolling section at the
 beginning of the rules section.  The higher the damage roll, the more
-severe the attack was upon the target.
+severe the attack was upon the target.</text>
 
-After the damage roll is determined, subtract that damage from the
+<text>After the damage roll is determined, subtract that damage from the
 target's Hit Points (HP).  Armor can reduce the damage taken, which
-brings us to$\ldots$
-
-\subsection{Armor}
-
-Armor is any covering that you are wearing or behind that will absorb
+brings us to$\ldots$</text>
+        </section><!-- /Damage -->
+        <section><!-- Armor -->
+            <title>Armor</title>
+<text>Armor is any covering that you are wearing or behind that will absorb
 some of the damage applied to you.  All armor is given three numerical
 ratings for piercing, slashing, and crushing protection.  The higher
 any one number is, the better it will protect you from that type of
 damage.  Typically this value sequence is represented as P/S/C
 (Piercing/Slashing/Crushing).  An example would be 3/2/3, which
 provides 3 points of piercing protection, two points of slashing
-protection, and 3 points of crushing protection.
+protection, and 3 points of crushing protection.</text>
 
-When taking damage subtract the armor value, which matches the damage
-type of the weapon, from the damage amount.
+<text>When taking damage subtract the armor value, which matches the damage
+type of the weapon, from the damage amount.</text>
 
-Here are a few examples:
+<text>Here are a few examples:</text>
 
-\quotexample[Carlos vs. the Bandit]{Carlos was attacked by a bandit
+<example>
+    <title>Carlos vs. the Bandit</title>
+    <text>Carlos was attacked by a bandit
   with a short sword.  The bandit made his skill roll to attack and
   had three successes.  Carlos attempts to parry and had only one
   success.  Since Carlos has fewer successes than the attacker, he
@@ -1507,9 +1679,12 @@ Here are a few examples:
   provides 3 points of protection against this attack.  So we take the
   damage of the weapon (8) and the amount of protection the armor
   gives (3), and subtract the armor value from the weapon damage.  So,
-  Carlos just took 5 damage (8-3=5).}
+  Carlos just took 5 damage (8-3=5).</text>
+</example>
 
-\quotexample[Lira the Gladiator]{Lira is fighting a gladiator-style
+<example>
+    <title>Lira the Gladiator</title>
+    <text>Lira is fighting a gladiator-style
   duel.  Her opponent attacks with a spear and has two successes to
   hit.  Lira wants to block and rolls her shield skill.  She has four
   successes on her skill roll.  This means that she successfully
@@ -1524,36 +1699,37 @@ Here are a few examples:
   with the remaining 5 damage.  (14 damage was dealt, minus the 9
   taken by the shield = 5).  Her armor has a P value of 3, meaning
   that she only takes 2 points of damage to her HP total.  (14 damage
-  - 9 from shield - 3 from armor = 2)}
+  - 9 from shield - 3 from armor = 2)</text>
+</example>
 
-Now that you have that, lets introduce a few tricks.  The entire next
-two paragraphs are incredibly important, so pay attention!
+<text>Now that you have that, lets introduce a few tricks.  The entire next
+two paragraphs are incredibly important, so pay attention!</text>
 
-Weapons that deal undefined or direct damage (U or D damage) bypass
+<text>Weapons that deal undefined or direct damage (U or D damage) bypass
 all armor values.  Undefined damage can be protected against by your
 character's Base Armor (BA) sub-attribute.  Just subtract the BA from
 the damage taken as if the BA was normal armor.  Note that Base Armor
 is not used for protecting against anything but undefined damage!  A
 target will always lose at least one HP when hit with an attack that
-deals undefined damage.
+deals undefined damage.</text>
 
-Direct damage cannot be protected against.  Not by normal armor, Base
+<text>Direct damage cannot be protected against.  Not by normal armor, Base
 Armor, not anything.  It's harsh, so be careful when on the receiving
 end of something that deals D damage.  D damage is applied directly to
-your Hit Points.
-
-
-\subsubsection{AP (Armor Piercing)}
-
-Some weapons have a note that says &ldquo;AP&rdquo; followed by some number.
+your Hit Points.</text>
+            <section><!-- Armor Piercing -->
+                <title>Armor Piercing</title>
+<text>Some weapons have a note that says <dquo>AP</dquo> followed by some number.
 This kind of weapon has an unusual ability to pierce armor.  If an
-armored target is struck by a weapon with &ldquo;AP&rdquo;, the armor is reduced
+armored target is struck by a weapon with <dquo>AP</dquo>, the armor is reduced
 by the AP number for the purposes of damage calculation.  Note, that
-this cannot go negative.  If an &ldquo;AP: 10&rdquo; weapon strikes someone
+this cannot go negative.  If an <dquo>AP: 10</dquo> weapon strikes someone
 wearing 5 armor, then the armor is totally ignored.  It does not,
-however, go to -5.
+however, go to -5.</text>
 
-\quotexample[Lira Strikes With Gladius]{Lira is wielding a gladius,
+<example>
+    <title>Lira Strikes With Gladius</title>
+    <text>Lira is wielding a gladius,
   which is a type of short sword that has AP: 5.  She successfully
   strikes her opponent, and rolls 11 damage.  Her opponent has an
   armor of 7 versus slashing damage.  First, deduct the AP from the
@@ -1565,51 +1741,56 @@ however, go to -5.
   opponent's armor is only a 3 versus slashing.  First, deduct the AP
   form the armor: 3 armor - 5 AP = -2.  However, this cannot be
   negative, so we cap it at zero.  Now, deduct the result from the
-  damage: 11 damage - 0 = 11.  Lira's opponent takes all 11 damage.}
+  damage: 11 damage - 0 = 11.  Lira's opponent takes all 11 damage.</text>
+</example>
 
-AP is effective against armored targets, but it does nothing against
+<text>AP is effective against armored targets, but it does nothing against
 unarmored targets.  Note, that most weapons with AP don't deal very
 much damage.  It is usually a good idea to use AP weapons versus
-armored targets only, and use &ldquo;normal&rdquo; weapons versus unarmored
-targets.
-
-\subsection{Hit Points}
-
-Hit points are numbers used to represent how injured or healthy a
+armored targets only, and use <dquo>normal</dquo> weapons versus unarmored
+targets.</text>
+            </section><!-- /Armor Piercing -->
+        </section><!-- /Armor -->
+    <section><!-- Hit Points -->
+        <title>Hit Points</title>
+<text>Hit points are numbers used to represent how injured or healthy a
 character is.  A character will have TWO Hit Point numbers.  Your
 maximum Hit Points determines how tough your character is at full
 health.  This number will rarely change.  It is determined by your BLD
 and WIL attributes, and will rarely change unless your attributes
-change.
+change.</text>
 
-Your \emph{current} hit points is the most important number.  It will
+<text>Your \emph{current} hit points is the most important number.  It will
 likely change frequently during combat.  Hit points are generally
 represented as a fraction: ${Current~HP}\over{Max~HP}$.  When the game
 begins, your character will be fully healthy and uninjured.  Thus,
-when starting, your current HP will be equal to your maximum.
+when starting, your current HP will be equal to your maximum.</text>
 
-\BracedWrapPicture{l}{Images/Map/Forte-marghera-02.jpg}
+<src img="/Map/Forte-marghera-02.jpg" />
 
-As you get injured, any damage you take (after applying armor, etc.)
+<text>As you get injured, any damage you take (after applying armor, etc.)
 will be applied to your current HP.  As you get injured, your current
 HP drops.  Over time, your body will heal itself, and your HP will go
 up.  Seeking medical attention will speed this process.  Other things,
-like magic or cybernetic devices, can heal you as well.
+like magic or cybernetic devices, can heal you as well.</text>
 
-Your current HP can never exceed your maximum HP.  As a general rule
+<text>Your current HP can never exceed your maximum HP.  As a general rule
 for minor injuries (less than 5 HP), you gain back 1 HP per day of
 average activity.  For significant HP losses, it takes (Max~HP -
-Current~HP)$^{2}$ days to fully recover your HP.
+Current~HP)$^{2}$ days to fully recover your HP.</text>
 
-If a character is resting and is under basic medical care, then your
+<text>If a character is resting and is under basic medical care, then your
 healing time is cut in HALF.  If your character is under the care of a
 professional Doctor or Healer, healing time is cut to one QUARTER of
-normal time.
+normal time.</text>
 
-If your current HP falls below 0, your character falls unconscious.
+<text>If your current HP falls below 0, your character falls unconscious.
 It is possible to remain conscious by making a willpower check at -X,
 where X is the amount below zero your HP are.  If your current HP are
 below 0, your character is bleeding badly (internal bleeding is
 possible too) and you will loose 1 HP per round, unless you receive
 medical attention.  If your current HP ever reaches the negative of
-your maximum HP, you have died.
+your maximum HP, you have died.</text>
+    </section><!-- /Hit Points -->
+    </section><!-- /Combat Sequence and Initiative -->
+</chapter>
