@@ -10,29 +10,29 @@
   with values of 4/3/7 would have 4 points of protection vs. Piercing, 
   3 vs. Slashing, and 7 vs. crushing damage.</item>
     <item> Armor does not protect from Undefined (U) or Direct (D).</item>
-    <item> A character's Base Armor is the only thing that can protect vs. 
+    <item> A character<squo />s Base Armor is the only thing that can protect vs. 
   U damage.  Nothing can protect against D damage.</item>
     <item> All non D/U damage has an associated damage type to is; either P, 
   S, or C.  Subtract all matching armor values of the character from 
   the damage being done.  If the damage value is still above 0, then 
   the character takes that amount of damage.</item>
     <item> A weapon with an armor piercing (AP) attack will list the amount 
-  of AP it has.  Subtract this AP number from all of the armor's 
+  of AP it has.  Subtract this AP number from all of the armor<squo />s 
   damage values when determining its protection against the attack.  
-  This cannot drop the armor's value below 0.</item>
+  This cannot drop the armor<squo />s value below 0.</item>
     <item> GMs determine when armor is damaged beyond use/protection.</item>
     <item> Hard Armor is any armor that uses hard
   ceramic/plastic/metallic/wooden plates or coverage to protect 
   the character.  Hard armor is MUCH more durable than non-hard armor.  
-  Hard armor is denoted by ``hard'' on the armor sheet.  Note that 
-  the components of hard armor are$\ldots$hard.  They can't be bent 
+  Hard armor is denoted by <dquo>hard</dquo> on the armor sheet.  Note that 
+  the components of hard armor are$\ldots$hard.  They can<squo />t be bent 
   without damaging the armor.  Hard armor is generally made specifically 
   for the wearer, it will only fit others with nearly identical 
   body proportions.</item>
-    <item> Soft armor (armor that isn't considered hard) is at least 
+    <item> Soft armor (armor that isn<squo />t considered hard) is at least 
   somewhat flexible.  It will generally fit anyone of similar size/stature. </item>
-    <item> Armor with the descriptor of ``fire'' has fire protection.  
-  This means the armor has the ``natural'' ability to deflect 
+    <item> Armor with the descriptor of <dquo>fire</dquo> has fire protection.  
+  This means the armor has the <dquo>natural</dquo> ability to deflect 
   and protect against fire attacks.  The armor will protect from all 
   fire damage (assuming the fire hits the armor, so full suits are 
   better for this).</item>
@@ -54,7 +54,7 @@
             <item> -1 action per 2 full points over ENC</item>
         </itemized-list>
     </item>
-    <item> An armor's Class is a general idea of what period of history/future 
+    <item> An armor<squo />s Class is a general idea of what period of history/future 
   the armor would appear.  A later period can find the earlier armor.</item>
 </itemized-list>
 
@@ -70,9 +70,9 @@
     </item>
     <item> On a successful block, a shield will subtract its appropriate 
   armor value from the damage.  Any damage that penetrates the shield 
-  will then be applied against the user's armor.
+  will then be applied against the user<squo />s armor.
     </item>
-    <item> Shields can be used to block U attacks that are ``thrown'' 
+    <item> Shields can be used to block U attacks that are <dquo>thrown</dquo> 
   at them.  These include fireballs, lightning strikes, breath 
   weapons, chemical splashes, etc.  To block one of these attacks, 
   the user must make a block roll at -3.  If successful, then damage 
