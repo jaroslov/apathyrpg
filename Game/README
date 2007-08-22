@@ -1,0 +1,9 @@
+Eventually there will be only *.xml files in this folder.
+Every item that has a *.tex is in the process of being transferred.
+
+TODO:
+
+August 22:
+  Jacob -- finish transferring tex->xml
+  Jacob -- make DTD for ARPG-Data.xml
+  Jacob -- make DTD for Manual.xml
