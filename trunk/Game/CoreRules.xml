@@ -3,8 +3,7 @@
     <section><!-- Intro -->
         <title>Introduction</title>
 
-  <text><Apathy /> is a paper &amp; pencil role-playing game.  <Apathy
-  />'s authors have played a great many RPGs including D&amp;D, Heroes
+  <text><Apathy /> is a paper &amp; pencil role-playing game.  <Apathy /><squo />s authors have played a great many RPGs including D&amp;D, Heroes
   Unlimited, GURPS, Shadowrun, TMMNT, various White Wolf games
   (Vampire, etc.), Deadlands, and a few others.  While these games are
   all fun, we felt that each game had various shortcomings that could
@@ -53,10 +52,10 @@
     thick books of rules are nowhere to be found.  <Apathy /> is
     designed to be fast to play.  Most of the <dquo>tables</dquo> in
     the <Apathy /> manuals are just to explain things to the players
-    and aren't used during play.</item>
+    and aren<squo />t used during play.</item>
 
     <item>While <Apathy /> is devoid of many <dquo>clutter
-    rules</dquo>, it does have an emphasis on realism.  <Apathy />'s
+    rules</dquo>, it does have an emphasis on realism.  <Apathy /><squo />s
     combat system is an excellent compromise between speed and
     realism.</item>
 
@@ -73,9 +72,9 @@
   decrease this number.  Note that as long as a character is
   unconscious, he or she <bold>always</bold> has at least one action per turn.</item>
 
-   <item description="Base armor"> A character's natural resistance to bodily harm of
+   <item description="Base armor"> A character<squo />s natural resistance to bodily harm of
   unusual varieties.  You can think of this as <dquo>toughness</dquo> (not to
-  be confused with the skill of the same name).  A character's base
+  be confused with the skill of the same name).  A character<squo />s base
   armor reduces the damage they suffer from U (undefined) damage.
   Base armor <emph>does not</emph> protect against any other form of damage,
   such as P, S, C, or D. Note, that if a character suffers any U
@@ -93,11 +92,11 @@
   See the section on character creation.</item>
 
    <item description="Character"> A persona within the game world that is adopted by a
-  player.  The player sees through the character's eyes, controls the
-  character's actions, and speaks through the character's mouth.</item>
+  player.  The player sees through the character<squo />s eyes, controls the
+  character<squo />s actions, and speaks through the character<squo />s mouth.</item>
 
    <item description="D"> An abbreviation for Direct Damage.  D damage is applied
-  directly against the target's HP.  Armor, including base armor,
+  directly against the target<squo />s HP.  Armor, including base armor,
   <emph>cannot</emph> protect against D damage.  Fortunately, D damage
   sources are few and far between.</item>
 
@@ -108,7 +107,7 @@
   natural events, etc.  This is usually abbreviated as <dquo>GM</dquo>.</item>
 
    <item description="HP"> Abbreviation for Hit Points.  Hit Points are used to
-  represent a character's health.  If a character gets injured, their
+  represent a character<squo />s health.  If a character gets injured, their
   HP decreases.  If a character reaches 0 HP, they fall unconscious.
   If a character reaches -X HP, where X is equal to their maximum HP,
   they are dead.  Note that if a character is below 0 HP, they will
@@ -125,7 +124,7 @@ see Hand-to-Hand </item>
 
   <item description="Luck"> Usually, this is short for Luck Points.  Luck points are
   accumulated during gameplay, and players redeem them for combat
-  bonuses, or for saving their character's butt if things get rough.
+  bonuses, or for saving their character<squo />s butt if things get rough.
   This is used to help unlucky die rolls from screwing over players.
   All major character in the game, including significant NPCs,
   villains, etc. will have luck points.  The GM is responsible for
@@ -191,7 +190,7 @@ see Hand-to-Hand </item>
 
   <item description="Turn"> A turn is a unit of time during combat.  Each round of
   combat is broken down into one turn per combatant.  During each
-  player's turn, they get to do whatever they want.  A turn is roughly
+  player<squo />s turn, they get to do whatever they want.  A turn is roughly
   equal to three seconds of time.  Each turn is subdivided into
   actions.</item>
 
@@ -240,11 +239,11 @@ concept.  Talk to the GM and your fellow players for ideas about the
 game setting and what kind of character you might want to play.  Your
 imagination is the only real limit as to what your character can be.
 Perhaps you want to play a heroic knight that fights for honor and
-puts monsters to the sword?  Or maybe you'd rather play a cunning and
+puts monsters to the sword?  Or maybe you<squo />d rather play a cunning and
 seductive thief with a hidden agenda.  You could be a young mecha
 pilot<mdash />inexperienced, but eager to fight for his cause.  Your
 character is a hero in the game.  You should take this opportunity to
-have fun and do things you can't do in real life.</text>
+have fun and do things you can<squo />t do in real life.</text>
 
 <img src="/Monsters/Buer.png" />
 
@@ -255,24 +254,24 @@ like Han Solo from Star Wars, or maybe a secret agent like James
 Bond<mdash />or perhaps an old-west gunslinger.</text>
 
 <text>Once you have an idea so to what kind of character you want to play,
-it's time to develop that idea.  Think about what your character looks
+it<squo />s time to develop that idea.  Think about what your character looks
 like.  How old are they?  How do they dress?  What kinds of
 possessions do they have?  What do they do for a living?  What was
 their past?  How would they react in a fight?  What would they do if
 they were suddenly given a lot of money?  What are their fears?  Their
 hopes?  Their goals?</text>
 
-<text>Now you should have a good understanding of your character's
+<text>Now you should have a good understanding of your character<squo />s
 appearance, personality, skills, etc.  What you need to do next is
 represent that idea in the <Apathy /> system rules.  Grab a character
 sheet, and follow along.</text>
         <section><!-- Character Basics -->
             <title>Character Basics</title>
             <text>The first part of describing your character is very simple.  Decide
-what your character's basic description is like.  Are they male or
+what your character<squo />s basic description is like.  Are they male or
 female?  How tall?  What do they weigh?  Fill in age, sex, height,
 weight, eyes color, and hair color/style on the upper right portion of
-your character sheet.  Decide on your character's name, and fill that
+your character sheet.  Decide on your character<squo />s name, and fill that
 in too.  There is also a spot on the character sheet for <emph>your</emph>
 name.  Now you can move on to the details of your character.</text>
         </section><!-- /Character Basics -->
@@ -318,7 +317,7 @@ characteristics of any given character.  They are:</text>
     <row>
         <cell>WIL</cell>
         <cell>Willpower</cell>
-        <cell>strength of the mind, ability to `stick it out' when things get tough</cell>
+        <cell>strength of the mind, ability to `stick it out<squo /> when things get tough</cell>
     </row>
     <row>
         <cell>CHA</cell>
@@ -361,8 +360,8 @@ skill section later on). However, the final value for the attribute
   Attributes below 8 are considered handicapped and/or disabled, and
   such a character would probably not be adventuring!</bold>  <emph>If the
   GM deems it OK, then you may reduce an attribute below 8, but you
-  get NO benefits (you wouldn't get points in another attribute for
-  example).  Why would you do this?  Simple, it's in your character
+  get NO benefits (you wouldn<squo />t get points in another attribute for
+  example).  Why would you do this?  Simple, it<squo />s in your character
   concept.  Would a 6-year-old child have an 8 STR?  Not likely.</emph></text>
 
 <text>When recording your attributes on the character sheet, record the number of
@@ -450,7 +449,7 @@ of Character Points, otherwise known as CP.  Talk with your GM about how many
 CP you should use to create your character with.  We have found that for a
 group of 3-4 players 125 CP is about right.  Typically the more players, the
 fewer CP characters should have.  This will keep the group from becoming too
-powerful<mdash />unless this is the GM's intent.</text>
+powerful<mdash />unless this is the GM<squo />s intent.</text>
 
 <text>You will use your CP to <dquo>purchase</dquo> the remainder of your character.  The rest
 of your character is broken into three categories where you will spend these
@@ -495,7 +494,7 @@ to be purchased.  Know how to drive a car?  Buy the skill.</text>
         <section><!-- Inc Attr -->
         <title>Increasing Attributes (optional)</title>
 
-<text>If your attributes aren't quite where you desire, you will need to get more
+<text>If your attributes aren<squo />t quite where you desire, you will need to get more
 Attribute Points so you can purchase a better attribute.  Each Attribute Point
 costs 1 Character Point.  Once you purchase the number of Attribute Points you
 want, just look at the table found in the Attributes section above to see
@@ -539,8 +538,8 @@ skill, but just some of the more common applications of the skill.  If you have
 a question, ask your GM about his take on a particular skill.</text>
 
 <text><bold>Level</bold> is how good your particular character is at the skill. You will use CP
-to purchase levels in a skill, which is discussed below.  If you don't know a
-skill at all, you have Level 0 in that skill<mdash />meaning you don't know anything
+to purchase levels in a skill, which is discussed below.  If you don<squo />t know a
+skill at all, you have Level 0 in that skill<mdash />meaning you don<squo />t know anything
 about it.  The more you know about the skill, the higher your level.
 This is often abbreviated as <dquo>Lvl</dquo> (alt. <dquo>LVL</dquo>).  You must purchase your
 skill levels with CP.  Below is a simple chart indicating what different levels
@@ -652,11 +651,11 @@ rank.</text>
 
 <text>See the trend?</text>
 
-<text>If not, here's yet another way to look at purchasing skills.</text>
+<text>If not, here<squo />s yet another way to look at purchasing skills.</text>
 
 <text>To get level 1 of a skill, you must spend the Rank in CP.  To get to the next
 level, add the rank of the skill to the amount of CP you spent the last time you
-increase the skill (and just that last increase, not the total amount you've spent
+increase the skill (and just that last increase, not the total amount you<squo />ve spent
 on the skill) and that is the amount that you need to spend.</text>
 
     <example>
@@ -668,7 +667,7 @@ I would need to spend
 the amount I spent on the last level increase (2 CP), to get the new cost, in
 this case I would need to spend a total of 4 CP (rank of 2 + 2 CP from last
 purchase).  So now the total amount I have spent on this skill is 6 CP.  Lets say
-I'm not happy with my Lvl 2 shield skill, and wish to upgrade it to level 3.
+I<squo />m not happy with my Lvl 2 shield skill, and wish to upgrade it to level 3.
 I would again take the rank (2) and add it to the amount I spent on the last
 increase (4) to get the number of CP I must spend to upgrade the skill.  In this
 case, I must spend an additional 6 CP.  Therefore, to get a level 3 shield skill
@@ -686,7 +685,7 @@ found at the end of this manual.</text>
 
 <text>Once you are in game and earning experience, you can increase the level of a
 skill you currently have at least one level in by paying the appropriate CP
-cost.  If you wish to learn the first level of a skill you don't have yet, it
+cost.  If you wish to learn the first level of a skill you don<squo />t have yet, it
 takes a number of weeks of intense studying equal to the rank of the skill.</text>
         <section><!-- Skill Spec -->
             <title>Skill Specialization (optional)</title>
@@ -719,7 +718,7 @@ skill beyond the first.</text>
         <text>Dr. Klo<overbrace>tz</overbrace>enstein is a scientist.
 He has LVL 3 Chemistry with a specialty in
 Chemical weapons and poisons.  As well, he has LVL 4 Chemistry with a
-specialization in the chemistry of explosives.  Dr. Klotzenstein's rolls are
+specialization in the chemistry of explosives.  Dr. Klotzenstein<squo />s rolls are
 as follows:
 
     <itemized-list>
@@ -739,10 +738,10 @@ to see which skills you think are appropriate and which ones are not.</text>
                 <title>Specialization applied to Weapon skills</title>
 <text>It is also possible to specialize in weapon skills.  If a character has a
 specialized weapon skill that means that he is especially proficient with a
-very specific type of weapon.  When wielding a weapon that matches a character's
+very specific type of weapon.  When wielding a weapon that matches a character<squo />s
 specialty, that character receives +1 LVL to the skill.  This bonus applies to
 attack (strike) rolls, and defensive rolls (parry), if applicable.  When using
-a weapon that is outside the character's specialty, the character is at -1 LVL.
+a weapon that is outside the character<squo />s specialty, the character is at -1 LVL.
 Note that Weapon skill specialization does NOT affect damage rolls.</text>
 
 <text><bold>Specializing in a weapons skill costs 3 CP in addition to the normal cost of the
@@ -795,7 +794,7 @@ you roll a die when playing <Apathy />, you will use one of these sets of rules.
 <text>Attribute checks are required anytime the GM wants to see if you did something
 solely based on an attribute.  They are used whenever a player wants their 
 character to do something tricky.  Attribute checks are purely based on a 
-character's core attributes.  They are completely separate from skills.  If a 
+character<squo />s core attributes.  They are completely separate from skills.  If a 
 player needs to do something based on a particular skill, then see the skill 
 roll section below.</text>
 
@@ -854,12 +853,12 @@ declares that a contest of strength will resolve who manages to gain
 possession of the rifle.  The GM rolls for the solider (a three) and 
 Douglas rolls a 1.  The enemy soldier has a total of 15, and Douglas 
 has 14.  Therefore, the enemy soldier wrestles the rifle out of
-Douglas's hands.</text></example>
+Douglas<squo />s hands.</text></example>
         </section><!-- /Contest of Attr -->
         <section><!-- Skill Rolls -->
             <title>Skill Rolls</title>
 <text><bold>Skill rolls</bold>are used whenever a player wants to use one of his
-character's skills.  They are also used whenever two characters are competing
+character<squo />s skills.  They are also used whenever two characters are competing
 at something (Contest of skills) related to a skill. <bold>Skill rolls are also used
 <dquo>to strike</dquo> or <dquo>to defend</dquo> in combat.</bold></text>
 
@@ -930,7 +929,7 @@ matter how high
 your attribute or bonuses to succeed might be<mdash />is 20.</text>
 
 <text>Also, if you are doing something simple with respect to your skill level 
-then you don't have to roll dice at all.  It's assumed that you succeed 
+then you don<squo />t have to roll dice at all.  It<squo />s assumed that you succeed 
 examples.</text>
 
     <example>
@@ -968,9 +967,9 @@ has a level 2 in that skill.  Furthermore, the GM determines that since the car
 is in really bad shape, that Chris has a -3 to his roll.  Chris has a 12 DEX.  
 Chris rolls his dice and gets a 1 and a 16. (Chris is rolling two dice because 
 he has a level 2 skill)  Adding his DEX to those rolls, Chris now has a 13 and 
-a 28.  The 13 isn't 25 or above, so it fails, but the 28 succeeds.  So far, 
+a 28.  The 13 isn<squo />t 25 or above, so it fails, but the 28 succeeds.  So far, 
 Chris has 1 success.  However, the <dquo>1</dquo> Chris rolled is -1 success.  So, this 
-gives Chris a total of 0 successes<mdash />meaning the car didn't get fixed.</text>
+gives Chris a total of 0 successes<mdash />meaning the car didn<squo />t get fixed.</text>
     </example>
 
     <example>
@@ -978,7 +977,7 @@ gives Chris a total of 0 successes<mdash />meaning the car didn't get fixed.</te
         <text>Billy is
 a cybernetic gunfighter with a 22 DEX.  He is trying to shoot an 
 enemy robot.  The GM determines that Billy gets a bonus of +3 to shoot the 
-robot because it's so large.  Normally, Billy would roll his dice and add +25 
+robot because it<squo />s so large.  Normally, Billy would roll his dice and add +25 
 to each one:  +22 from his DEX and +3 from the size bonus.  However, this gets 
 capped at +20.  Thus, Billy only gets to add +20 to each of his dice.</text>
     </example>
@@ -986,9 +985,9 @@ capped at +20.  Thus, Billy only gets to add +20 to each of his dice.</text>
     <example>
         <title>Called Shot to Arm</title>
         <text>Billy is still fighting the same
-giant robot.  This time, he's trying to 
+giant robot.  This time, he<squo />s trying to 
 make a called shot and shoot the robot in the arm.  The GM determines that 
-Billy gets a +3 bonus due to the robot's size, but also a -4 to strike because 
+Billy gets a +3 bonus due to the robot<squo />s size, but also a -4 to strike because 
 of the called shot to the arm.  Thus, Billy adds up his bonuses:  +22 from DEX 
 +3 from size and -4 for the called shot.  This adds up to +21, but the bonus 
 is capped at +20.  Again, Billy adds +20 to his dice.  Notice that the <dquo>+20 
@@ -1010,24 +1009,24 @@ than the defender.</text>
 <example>
     <title>Tom and the Shopkeeper in a Contest</title>
     <text>Tom is attempting 
-to purchase an expensive suit of armor, and doesn't want to pay 
+to purchase an expensive suit of armor, and doesn<squo />t want to pay 
 full price.  So he is attempting to bring the price down by using 
 the Bargaining skill.  The shopkeeper also has the Bargaining skill, 
 so a contest of skills ensues.  Tom has a skill level of 3, and a 
 WIS of 13 (the associated attribute for Bargaining); the shopkeeper 
-has a level 4 Bargaining (he's been at it longer than Tom has), 
+has a level 4 Bargaining (he<squo />s been at it longer than Tom has), 
 and a WIS of 10.
 
 Tom rolls 3 dice and gets a <dquo>14</dquo>, <dquo>20</dquo>, and a <dquo>3</dquo>.  Tom now 
-adds his wisdom (13) to each of these.  The GM didn't give any 
+adds his wisdom (13) to each of these.  The GM didn<squo />t give any 
 negatives or bonuses, so that is all that gets added.  After adding, 
 the totals are 27, 33, and 16.  Two of these are 25 or higher, so Tom 
 has two successes so far.  Note that Tom rolled one 20<mdash />which gives him 
 an additional success.  Tom has a total of three successes.
  
 The shopkeeper rolls four dice (remember, he has a level 4 Bargaining), 
-and gets a <dquo>1</dquo>, <dquo>12</dquo>, <dquo>15'</dquo>, and an <dquo>18</dquo>.  After adding the 
-shopkeeper's WIS of 10, we get the following rolls: <dquo>11</dquo>, <dquo>22</dquo>, 
+and gets a <dquo>1</dquo>, <dquo>12</dquo>, <dquo>15<squo /></dquo>, and an <dquo>18</dquo>.  After adding the 
+shopkeeper<squo />s WIS of 10, we get the following rolls: <dquo>11</dquo>, <dquo>22</dquo>, 
 <dquo>25</dquo>, and <dquo>28</dquo>.  The 25 and 28 are both successes, but the 
 <dquo>1</dquo> is a -1 success, so the shopkeeper has 1 total success.
 
@@ -1077,10 +1076,10 @@ electronic device.  The GM asks Paul to roll his Electronics skill,
 which Paul has at lvl 4.  Paul mentions that he also knows the 
 skills Electrical Engineering: 2, Electrician: 3, Mechanic: General: 3, 
 and Communications/Telco: 3.  The GM determines that since this device 
-is purely electronic, Paul's Mechanic skill is of no use.  As well, the 
+is purely electronic, Paul<squo />s Mechanic skill is of no use.  As well, the 
 GM decides that since this device is unrelated to communications, 
-Paul's Communications skill does not apply either.  However, the GM 
-decides that Paul's Electrical Engineering and Electrician skills 
+Paul<squo />s Communications skill does not apply either.  However, the GM 
+decides that Paul<squo />s Electrical Engineering and Electrician skills 
 are relevant.  The GM assigns Paul a bonus of +5 to his roll from his 
 levels in those related skills.</text>
 </example>
@@ -1105,11 +1104,11 @@ rollover happens, re-roll that die, without any bonus, and add its
 value to the total.  If the roll again has the highest value on the 
 die, then another rollover happens.  This keeps going until the 
 highest value on the die is not rolled.  <bold>Remember, after 
-the first roll, the bonus is not applied; it's just the 
+the first roll, the bonus is not applied; it<squo />s just the 
 raw die roll.</bold></text>
 
-<text>This may sound confusing, so we'll work with the example from above.
-Let's say you have to roll 3D4+1.  You get some four-sided dice and 
+<text>This may sound confusing, so we<squo />ll work with the example from above.
+Let<squo />s say you have to roll 3D4+1.  You get some four-sided dice and 
 roll three of them.  Suppose the results are: 1, 3, and a 4.  After 
 adding the +1 (from the die bonus), we now have: 2, 4, and 5.  We add 
 all the totals up and get 11.  Now we have to deal with the rollovers.
@@ -1188,13 +1187,13 @@ such as surprise attacks or ambushes.</text>
 
 <text><bold>Most characters will have 3 actions per turn.  All 
 three actions are 
-taken at the same time, on that character's initiative.</bold></text>
+taken at the same time, on that character<squo />s initiative.</bold></text>
 
 <example>
-    <title>Tom's Turn in Combat</title>
+    <title>Tom<squo />s Turn in Combat</title>
     <text>Tom is in combat.
 Tom has three actions and he rolled an 11 as his 
-initiative.  When it's Tom's turn in combat (11), he takes all three actions at 
+initiative.  When it<squo />s Tom<squo />s turn in combat (11), he takes all three actions at 
 that time.</text>
 </example>
 
@@ -1203,7 +1202,7 @@ character with the next highest initiative takes their turn, and so
 forth down the line until all combatants have taken a turn.</text>
 
 <text>Once all turns are over, the current round of combat is over.  It then 
-restarts with everyone's initiative being the same as it was in the previous 
+restarts with everyone<squo />s initiative being the same as it was in the previous 
 round.  This progression continues until combat is over.  If the combatants 
 change significantly during combat<mdash />for example, if new characters show up on 
 the scene<mdash />the GM might want to make everyone re-roll their initiative.  If 
@@ -1213,7 +1212,7 @@ have, the GM should ask that initiative be re-rolled.</text>
 <text>Some things that you might want to do will take up multiple actions.  A common 
 example of this is spell casting, where many spells take several actions to 
 cast.  If you do this, you may need to drag this type of action across multiple 
-actions or even multiple turns.  For example, let's say that you want to cast 
+actions or even multiple turns.  For example, let<squo />s say that you want to cast 
 a spell that takes 3 actions.  You can use your first action to start casting, 
 and then use your second and third actions to finish casting the spell.   At 
 any time you may cancel (stop casting) the spell or ability with no penalty.  
@@ -1234,7 +1233,7 @@ other than attacking.</bold></text>
 later.  A character can always choose to <dquo>act later</dquo> in combat.  
 When doing so the player states what new initiative number he 
 wishes to act on.  The new initiative must be lower than his 
-current initiative number.  Once a character's initiative is 
+current initiative number.  Once a character<squo />s initiative is 
 delayed it remains delayed (though it could be delayed even further).  
 That characters initiative remains at the new, lower, number for the 
 remainder of combat, unless the GM asks all players to re-roll 
@@ -1243,11 +1242,11 @@ numbers.  So, a character must either take all his actions at his
 normal initiative, or he must delay all his actions to a later initiative.</text>
 
 <example>
-    <title>Tom's initiative</title>
-    <text>Tom's initiative roll is an 18.  He 
+    <title>Tom<squo />s initiative</title>
+    <text>Tom<squo />s initiative roll is an 18.  He 
 and his fellow players were cornered by ogres for whom the GM has 
 secretly rolled initiative.  Tom has the highest initiative roll, so 
-he goes first.  Tom isn't exactly sure what to do, so he delays 
+he goes first.  Tom isn<squo />t exactly sure what to do, so he delays 
 his initiative until <dquo>10</dquo>.  The GM then resumes combat as normal, 
 with the next highest initiative going first.  Tom has initiative 10 
 for the remainder of combat.</text>
@@ -1256,24 +1255,24 @@ for the remainder of combat.</text>
 
 <text>Some game effects last a certain number of turns, or have a certain 
 effect each turn.  These effects are counted and take place on 
-the affected character's turn.  They only are counted and occur 
+the affected character<squo />s turn.  They only are counted and occur 
 if the character begins that turn with the effect in place.  
-These effects occur at the beginning of that character's turn 
+These effects occur at the beginning of that character<squo />s turn 
 in a given round.  These effects are automatic and do not consume 
 any time from the character.  Resolve all effects before that 
 character takes any actions. </text>
 
 <example>
-    <title>Lucy's turn in combat</title>
-    <text>It is Lucy's turn in 
+    <title>Lucy<squo />s turn in combat</title>
+    <text>It is Lucy<squo />s turn in 
 combat and she casts Regeneration on herself.  The effect of the 
 spell is that each turn she gains 1D4+1 hit points.  Now the spell 
 has taken effect, but she does not gain any HP yet, nor does this 
 turn count against the duration of the spell.  Now all other 
-combatants take their turns.  When it is again Lucy's 
+combatants take their turns.  When it is again Lucy<squo />s 
 turn (next round) she gains her 1D4+1 HP, just before 
 her first action.  This is also considered one turn out of the 
-spell's duration.</text>
+spell<squo />s duration.</text>
 </example>
 
 <text>It is possible to <dquo>hold an action</dquo> for later.  Holding an 
@@ -1287,15 +1286,15 @@ declared conditions never occur at the beginning of your next turn.</text>
 
 <example>
     <title>Tom holds an action</title>
-    <text>Tom's initiative is 10.  During 
+    <text>Tom<squo />s initiative is 10.  During 
 his turn he spends one action to move behind some cover and another 
 to ready his longbow.  Tom declares that he is going to hold his 
 final action:  <dquo>I am going to cover the hallway with my 
-bow.  If I see a goblin come out of the hallway, I'm going to 
+bow.  If I see a goblin come out of the hallway, I<squo />m going to 
 shoot at it</dquo>.  If a goblin does indeed come out of the hallway (and 
 Tom can see this), then Tom may immediately take his held action to 
 fire an arrow at it.  However, if no goblin comes down the 
-hallway before Tom's next turn, then the held action is wasted.</text>
+hallway before Tom<squo />s next turn, then the held action is wasted.</text>
 </example>
 
 <text>Notes for held actions:</text>
@@ -1317,23 +1316,23 @@ provided that the character has the appropriate attributes and skills.</text>
 
 <text>Weapons have a <emph>minimum strength requirement</emph> (MSR).  The MSR
 indicates what strength is required of the character to properly wield
-a given weapon.  If the character's strength is <italics>less</italics> than the
+a given weapon.  If the character<squo />s strength is <italics>less</italics> than the
 MSR, then the character has -1 to strike and [-1] damage for each
 point of strength difference.</text>
 
 <text>The <emph>raw damage bonus</emph> (RDB) is calculated by subtracting 8 from
-the wielder's <smallcapsbold>Str</smallcapsbold>. The RDB is added as <emph>raw</emph> damage to
-total of the weapon's damage. However, all weapons have a
+the wielder<squo />s <smallcapsbold>Str</smallcapsbold>. The RDB is added as <emph>raw</emph> damage to
+total of the weapon<squo />s damage. However, all weapons have a
 <emph>maximum strength bonus</emph> (MSB); if the RDB is greater than the
 MSB, then the MSB is used as the RDB instead.</text>
 
 <example>
     <title>MSR for Bosk</title>
     <text>Bosk has a STR of 17 and is brandishing a
-  Hercules Club (3D6C, MSR: 12, MSB: 13).  Because Bosk's
+  Hercules Club (3D6C, MSR: 12, MSB: 13).  Because Bosk<squo />s
   <smallcapsbold>Str</smallcapsbold> is higher than the minimum strength requirement of
   the Hercules Club (12), he is entitled to a damage bonus.  Subtract
-  8 from Bosk's <smallcapsbold>Str</smallcapsbold> score to calculate his bonus: <math>17 - 8 =
+  8 from Bosk<squo />s <smallcapsbold>Str</smallcapsbold> score to calculate his bonus: <math>17 - 8 =
   9</math>. So this means that Bosk deals 9+3D6 C damage.</text>
 </example>
 
@@ -1341,18 +1340,18 @@ MSB, then the MSB is used as the RDB instead.</text>
 <example>
     <title>Bosk with Knife</title>
     <text>Suppose Bosk pulls out a long knife
-  (1D6+1 S, MSR: 8; MSB: 4).  Bosk's <smallcapsbold>Str</smallcapsbold> is significantly
+  (1D6+1 S, MSR: 8; MSB: 4).  Bosk<squo />s <smallcapsbold>Str</smallcapsbold> is significantly
   higher than the minimum required for the weapon.  Calculating his
   theoretical bonus, we can write: 17 - 8 = 9.  At first glance, it
   appears that Bosk is entitled to a [+9] bonus.  However, the maximum
-  strength bonus for the long knife is 4. Therefore, Bosk's damage
+  strength bonus for the long knife is 4. Therefore, Bosk<squo />s damage
   roll would be 4+1D6+1.</text>
 </example>
 
 
 <text>Bows never grant a damage bonus to characters with higher than 
 required STR.  However, it is possible to purchase stiffer (stronger) 
-bows that can take advantage of a character's higher STR score.  
+bows that can take advantage of a character<squo />s higher STR score.  
 High-draw bows cost 20% more for every 1 STR point added to the 
 MSR.  For each point, add [+1] damage.  This can be stacked.  So, a 
 +1 bow costs 20% extra, a +2 bow costs 40% extra, etc.  Note 
@@ -1382,7 +1381,7 @@ least one hand free when casting spells.
 Characters that use Faith magic must have a holy symbol in their 
 grasp when casting magic; this requires a free hand to hold.  
 Spellcasters are free to use two-handed weapons so long as they 
-aren't wielding the weapon at the same time as they are 
+aren<squo />t wielding the weapon at the same time as they are 
 casting spells.  (Spellcasters can put away a weapon, cast magic 
 freely, and then draw their weapon again, though this takes time)</text>
 
@@ -1424,8 +1423,8 @@ separate actions.</text>
 
 <description-list>
     <item description="Two normal weapons"> When wielding two weapons the weapon in the
-  character's <dquo>good</dquo> hand receives a -3 to strike and the weapon in
-  the character's <dquo>off</dquo> hand receives a -6. Some characters can have
+  character<squo />s <dquo>good</dquo> hand receives a -3 to strike and the weapon in
+  the character<squo />s <dquo>off</dquo> hand receives a -6. Some characters can have
   <dquo>even-more-offhand</dquo> weapons, such as a kick (or two), or literally
   having extra limbs. To calculate the negative to strike for wielding
   multiple weapons, first find the number of weapons being used, then
@@ -1512,7 +1511,7 @@ For each die that hits 25 or better, you have a success.  <bold>If
   you have at least one success, you strike the target.</bold>  Otherwise
 you miss your target.</text>
 
-<text>Some attacks don't require a skill roll.  This includes special
+<text>Some attacks don<squo />t require a skill roll.  This includes special
 attacks that automatically hit your opponent (such as certain
 abilities from Martial Arts) as well as magical spells or supernatural
 powers that are auto-targeting.  For example, the magic spell
@@ -1552,7 +1551,7 @@ found in the Martial Arts section.</text>
     attack from a heavy or large weapon with a small weapon, the GM
     might want to impose a different outcome.</bold></item>
     <item description="Block"> Blocking is putting a shield between you and an incoming
-  attack.  <bold>Upon a successful block, a shield's armor values
+  attack.  <bold>Upon a successful block, a shield<squo />s armor values
     are added to any armor that you are currently wearing</bold> (see
   below).  You can attempt to block any incoming attack that you are
   aware of.  Blocking can be used against melee attacks, missile
@@ -1569,7 +1568,7 @@ found in the Martial Arts section.</text>
   incoming attack.  By sidestepping, ducking, throwing yourself to the
   ground or similar action you can avoid any attack completely and
   take no damage.  The <emph>Dodge</emph> skill is used for dodging.  On a
-  successful dodge the blow doesn't hit, period.  However, dodge is a
+  successful dodge the blow doesn<squo />t hit, period.  However, dodge is a
   high rank skill, so most characters will not be very good at it.</item>
 </description-list>
 
@@ -1621,7 +1620,7 @@ weapon has a damage rating associated with it as well as a damage type
 amount of damage it will do, and the damage type reflects how the
 weapon deals its damage.</text>
 
-<text>Here's a key of the different damage types with abbreviations in
+<text>Here<squo />s a key of the different damage types with abbreviations in
 parenthesis and what they are typically associated with:</text>
 
 <description-list>
@@ -1641,7 +1640,7 @@ parenthesis and what they are typically associated with:</text>
     <item description="Undefined (U)"> using energy to cause damage within the target.
   This can include electricity, heat, magic, sickness and other
   <dquo>odd</dquo> types of damage.  Normal armor cannot protect against this
-  type of damage.  Only your character's Base Armor (BA) can protect
+  type of damage.  Only your character<squo />s Base Armor (BA) can protect
   you from undefined damage.  Any time someone takes undefined damage
   he or she will always take at least one point of damage, regardless
   of the base armor.</item>
@@ -1656,13 +1655,13 @@ parenthesis and what they are typically associated with:</text>
 <text>This tells us that a strike from a Dagger deals 1D6 damage.  Also, we
 know that it deals piercing damage.</text>
 
-<text>Ok, so now we've got our weapon's damage rating and it's damage type.
+<text>Ok, so now we<squo />ve got our weapon<squo />s damage rating and it<squo />s damage type.
 Roll the given damage as described in the dice rolling section at the
 beginning of the rules section.  The higher the damage roll, the more
 severe the attack was upon the target.</text>
 
 <text>After the damage roll is determined, subtract that damage from the
-target's Hit Points (HP).  Armor can reduce the damage taken, which
+target<squo />s Hit Points (HP).  Armor can reduce the damage taken, which
 brings us to<ellipsis /></text>
         </section><!-- /Damage -->
         <section><!-- Armor -->
@@ -1688,7 +1687,7 @@ type of the weapon, from the damage amount.</text>
   had three successes.  Carlos attempts to parry and had only one
   success.  Since Carlos has fewer successes than the attacker, he
   fails to parry and takes full damage.  The GM rolls damage for the
-  bandit and determines that the bandit's sword blow deals 8 damage.
+  bandit and determines that the bandit<squo />s sword blow deals 8 damage.
   Carlos is wearing soft leather armor, which has a P/S/C rating of
   2/3/0. We know the short sword dealt 8 damage.  But it is a slashing
   weapon (denoted by the S in the weapon damage), so the armor
@@ -1705,9 +1704,9 @@ type of the weapon, from the damage amount.</text>
   hit.  Lira wants to block and rolls her shield skill.  She has four
   successes on her skill roll.  This means that she successfully
   blocked the incoming attack with her shield.  The GM rolls damage
-  for the attack and gets 14 P.  (that's a strong blow!)  Lira is
+  for the attack and gets 14 P.  (that<squo />s a strong blow!)  Lira is
   using a Splint Shield (P/S/C of 9/9/9) and is wearing Hard Leather
-  armor (3/4/1).  First, apply the damage against Lira's shield.  Her
+  armor (3/4/1).  First, apply the damage against Lira<squo />s shield.  Her
   shield has an armor of 9 versus P.  This means that her shield stops
   9 points of the incoming damage.  However, since the spear blow
   dealt more damage than her shield has armor, the weapon continues
@@ -1723,14 +1722,14 @@ two paragraphs are incredibly important, so pay attention!</text>
 
 <text>Weapons that deal undefined or direct damage (U or D damage) bypass
 all armor values.  Undefined damage can be protected against by your
-character's Base Armor (BA) sub-attribute.  Just subtract the BA from
+character<squo />s Base Armor (BA) sub-attribute.  Just subtract the BA from
 the damage taken as if the BA was normal armor.  Note that Base Armor
 is not used for protecting against anything but undefined damage!  A
 target will always lose at least one HP when hit with an attack that
 deals undefined damage.</text>
 
 <text>Direct damage cannot be protected against.  Not by normal armor, Base
-Armor, not anything.  It's harsh, so be careful when on the receiving
+Armor, not anything.  It<squo />s harsh, so be careful when on the receiving
 end of something that deals D damage.  D damage is applied directly to
 your Hit Points.</text>
             <section><!-- Armor Piercing -->
@@ -1750,18 +1749,18 @@ however, go to -5.</text>
   strikes her opponent, and rolls 11 damage.  Her opponent has an
   armor of 7 versus slashing damage.  First, deduct the AP from the
   armor: 7 armor - 5 AP = 2.  Then, deduct the armor from the damage
-  like normal: 11 damage - 2 armor = 9 damage.  Lira's opponent takes
+  like normal: 11 damage - 2 armor = 9 damage.  Lira<squo />s opponent takes
   9 damage.
 
-  Consider the same situation as above, but assume that Lira's
-  opponent's armor is only a 3 versus slashing.  First, deduct the AP
+  Consider the same situation as above, but assume that Lira<squo />s
+  opponent<squo />s armor is only a 3 versus slashing.  First, deduct the AP
   form the armor: 3 armor - 5 AP = -2.  However, this cannot be
   negative, so we cap it at zero.  Now, deduct the result from the
-  damage: 11 damage - 0 = 11.  Lira's opponent takes all 11 damage.</text>
+  damage: 11 damage - 0 = 11.  Lira<squo />s opponent takes all 11 damage.</text>
 </example>
 
 <text>AP is effective against armored targets, but it does nothing against
-unarmored targets.  Note, that most weapons with AP don't deal very
+unarmored targets.  Note, that most weapons with AP don<squo />t deal very
 much damage.  It is usually a good idea to use AP weapons versus
 armored targets only, and use <dquo>normal</dquo> weapons versus unarmored
 targets.</text>
