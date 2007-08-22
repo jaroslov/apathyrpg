@@ -1,0 +1,45 @@
+Energy weapons draw energy straight from the engines or batteries. There
+are multiple different methods for producing the blast that comes from
+an energy weapon, but all of them share some things in common. First, the
+base damage-table is used to calculate the damage an energy weapon
+does based on it's class:
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\textbf{Class} & \textbf{Energy Units} & \textbf{Damage} & \textbf{C.P.} \\ \hline \hline
+0 & 5 & 5D6 P & 2 \\ \hline
+1 & 10 & 1D6 x10 P & 4 \\ \hline
+2 & 15 & 2D6 x10 P & 6 \\ \hline
+3 & 20 & 4D6 x10 P & 8 \\ \hline
+4 & 25 & 8D6 x10 P & 10 \\ \hline
+\end{tabular}
+\caption{Sizes, number of die with multiplier, and energy usage for energy weapons.}
+\end{center}
+\end{table}
+
+Energy weapons use Class+2 slots.
+
+All Energy weapons can be ``tuned'' for various effects (one
+or the other), which takes (Class+1) hours to do in a professional shop. Unless
+otherwise stated all weapons have a range of (Class+3)*10000 feet.
+
+\begin{description}
+\item[OverFire] spends twice as much energy but deals 50\% more damage
+\item[Flame] spends twice as much energy but also causes the target to suffer
+the damage as U (Undefined) Fire
+\item[Drawing] spends three times as much energy, deals S (Slashing) damage instead of P
+\item[Pulse] spends 1/2 as much energy, use four-sided dice (D4) instead of 6.
+\item[Higgs Particle] weapon deals C (Crushing) damage, but the maximum range is
+(Class+1)*100 feet
+\item[Area Effect] uses twice the energy, but has (Class+1)*5' area effect
+\end{description}
+
+When buying an energy weapon you may pay it's cost again to add an effect. Certain
+combinations of effects are ``named'' below.
+
+After every twenty shots an Energy weapon \emph{must} be retuned or else
+it will suffer damage. For every five shots after the twenty-limit, roll
+a 1D20 with a minus equal to the number of shots, plus (Class+1)*2. If the
+die-roll fails, the weapon is \emph{slagged} and requires (Class+1)*10 hours
+of repair in a professional shop.
