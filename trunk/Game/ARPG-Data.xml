@@ -1,5 +1,5 @@
-<Content>
-	<Academic>
+<Content id="" >
+	<Academic id="" >
 		<KeyedItem id="/Academic/Acrobatics" >
 			<skill>
 				<attribute>Dexterity</attribute>
@@ -88,7 +88,7 @@ The academic knowledge of the bodies of humans and common animals. The skill hol
 			<skill>
 				<attribute>Wisdom</attribute>
 				<description>Dealing with animals. Wild or domestic.</description>
-				<metatag></metatag>
+				<metatag>Any</metatag>
 				<name>Animal Handling</name>
 				<occupation>Steve Irwin</occupation>
 				<rank>1</rank>
@@ -887,7 +887,7 @@ The skills of metalworking. This includes how to operate common tools in a metal
 				<attribute>Varies</attribute>
 				<description>How to add arbitrary mana points.</description>
 				<implementation>ManaPoints += Rank;</implementation>
-				<metatag></metatag>
+				<metatag>Any</metatag>
 				<name>Mana Points</name>
 				<rank>0</rank>
 			</skill>
@@ -1357,7 +1357,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			<skill>
 				<attribute>Wisdom</attribute>
 				<description>The ability to teach skills you know to others.</description>
-				<metatag></metatag>
+				<metatag>Any</metatag>
 				<name>Teaching</name>
 				<occupation>Teacher, Didact</occupation>
 				<rank>1</rank>
@@ -1484,8 +1484,8 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</skill>
 		</KeyedItem>
 	</Academic>
-	<Augmentations>
-		<Arm__Hand id="Arm, Hand">
+	<Augmentations id="" >
+		<Arm__Hand id="Arm, Hand" >
 			<KeyedItem id="/Augmentations/Arm, Hand/Arm Blades" >
 				<augmentation>
 					<cp>5</cp>
@@ -1677,7 +1677,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</augmentation>
 			</KeyedItem>
 		</Arm__Hand>
-		<Body>
+		<Body id="" >
 			<KeyedItem id="/Augmentations/Body/Abnormal Articulation" >
 				<augmentation>
 					<cp></cp>
@@ -2089,7 +2089,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</augmentation>
 			</KeyedItem>
 		</Body>
-		<Head>
+		<Head id="" >
 			<KeyedItem id="/Augmentations/Head/Advanced Audio" >
 				<augmentation>
 					<cp></cp>
@@ -2821,7 +2821,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</augmentation>
 			</KeyedItem>
 		</Head>
-		<Leg>
+		<Leg id="" >
 			<KeyedItem id="/Augmentations/Leg/Climbing Feet" >
 				<augmentation>
 					<cp>3</cp>
@@ -2943,7 +2943,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</augmentation>
 			</KeyedItem>
 		</Leg>
-		<Torso>
+		<Torso id="" >
 			<KeyedItem id="/Augmentations/Torso/Advanced Digestive Sys" >
 				<augmentation>
 					<cp></cp>
@@ -3236,8 +3236,8 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 		</Torso>
 	</Augmentations>
-	<Equipment>
-		<Ammunition>
+	<Equipment id="" >
+		<Ammunition id="" >
 			<KeyedItem id="/Equipment/Ammunition/Anti-armor (arrows only!)" >
 				<ammunition>
 					<cost>15</cost>
@@ -3360,7 +3360,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				</ammunition>
 			</KeyedItem>
 		</Ammunition>
-		<Armor>
+		<Armor id="" >
 			<KeyedItem id="/Equipment/Armor/ALCAR Plate" >
 				<armor>
 					<cost>11900</cost>
@@ -4418,10 +4418,10 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				</armor>
 			</KeyedItem>
 		</Armor>
-		<Energy_Weapons id="Energy Weapons">
+		<Energy_Weapons id="Energy Weapons" >
 		</Energy_Weapons>
-		<Melee>
-			<Axes>
+		<Melee id="" >
+			<Axes id="" >
 				<KeyedItem id="/Equipment/Melee/Axes/2-Headed Axe" >
 					<melee>
 						<class>Axes</class>
@@ -4599,7 +4599,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					</melee>
 				</KeyedItem>
 			</Axes>
-			<Blunt>
+			<Blunt id="" >
 				<KeyedItem id="/Equipment/Melee/Blunt/Arab Mace" >
 					<melee>
 						<class>Blunt</class>
@@ -4881,7 +4881,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					</melee>
 				</KeyedItem>
 			</Blunt>
-			<Body>
+			<Body id="" >
 				<KeyedItem id="/Equipment/Melee/Body/Boxing Irons of the Troll" >
 					<melee>
 						<class>Body</class>
@@ -5011,7 +5011,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					</melee>
 				</KeyedItem>
 			</Body>
-			<Chained>
+			<Chained id="" >
 				<KeyedItem id="/Equipment/Melee/Chained/Ball and Chain" >
 					<melee>
 						<class>Chained</class>
@@ -5141,7 +5141,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					</melee>
 				</KeyedItem>
 			</Chained>
-			<Exotic>
+			<Exotic id="" >
 				<KeyedItem id="/Equipment/Melee/Exotic/Atalatl" >
 					<melee>
 						<class>Exotic</class>
@@ -5529,7 +5529,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					</melee>
 				</KeyedItem>
 			</Exotic>
-			<Knives>
+			<Knives id="" >
 				<KeyedItem id="/Equipment/Melee/Knives/Cleaver" >
 					<melee>
 						<class>Knives</class>
@@ -5707,7 +5707,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					</melee>
 				</KeyedItem>
 			</Knives>
-			<Large_Swords id="Large Swords">
+			<Large_Swords id="Large Swords" >
 				<KeyedItem id="/Equipment/Melee/Large Swords/Bastard Sword" >
 					<melee>
 						<class>Large Swords</class>
@@ -5969,7 +5969,7 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 					</melee>
 				</KeyedItem>
 			</Large_Swords>
-			<Monofilament>
+			<Monofilament id="" >
 				<KeyedItem id="/Equipment/Melee/Monofilament/Default" >
 					<melee>
 						<class></class>
@@ -6003,7 +6003,7 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 					</melee>
 				</KeyedItem>
 			</Monofilament>
-			<Plasma>
+			<Plasma id="" >
 				<KeyedItem id="/Equipment/Melee/Plasma/Axe" >
 					<melee>
 						<class>Plasma</class>
@@ -6085,7 +6085,7 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 					</melee>
 				</KeyedItem>
 			</Plasma>
-			<Polearms>
+			<Polearms id="" >
 				<KeyedItem id="/Equipment/Melee/Polearms/Awl Pike" >
 					<melee>
 						<class>Polearms</class>
@@ -6423,7 +6423,7 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 					</melee>
 				</KeyedItem>
 			</Polearms>
-			<Rocket-Assisted>
+			<Rocket-Assisted id="" >
 				<KeyedItem id="/Equipment/Melee/Rocket-Assisted/Battle Axe" >
 					<melee>
 						<class>Rocket-Assisted</class>
@@ -6537,7 +6537,7 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 					</melee>
 				</KeyedItem>
 			</Rocket-Assisted>
-			<Small_Swords id="Small Swords">
+			<Small_Swords id="Small Swords" >
 				<KeyedItem id="/Equipment/Melee/Small Swords/Chinese war sword" >
 					<melee>
 						<class>Small Swords</class>
@@ -6751,7 +6751,7 @@ A 14'--18' flat stone (typically jade) paddle. Has a razor-sharp edge. Weighs ab
 					</melee>
 				</KeyedItem>
 			</Small_Swords>
-			<Staves>
+			<Staves id="" >
 				<KeyedItem id="/Equipment/Melee/Staves/Bo Staff" >
 					<melee>
 						<class>Staves</class>
@@ -6881,7 +6881,7 @@ A 14'--18' flat stone (typically jade) paddle. Has a razor-sharp edge. Weighs ab
 					</melee>
 				</KeyedItem>
 			</Staves>
-			<Thrown>
+			<Thrown id="" >
 				<KeyedItem id="/Equipment/Melee/Thrown/Chakram (large)" >
 					<melee>
 						<class>Thrown</class>
@@ -7060,7 +7060,7 @@ A 14'--18' flat stone (typically jade) paddle. Has a razor-sharp edge. Weighs ab
 				</KeyedItem>
 			</Thrown>
 		</Melee>
-		<Miscellaneous>
+		<Miscellaneous id="" >
 			<KeyedItem id="/Equipment/Miscellaneous/ALICE Rig" >
 				<miscellaneous>
 					<cost>$250.00</cost>
@@ -8612,7 +8612,7 @@ MagicPoints -= 2;</implementation>
 				</miscellaneous>
 			</KeyedItem>
 		</Miscellaneous>
-		<Ranged>
+		<Ranged id="" >
 			<KeyedItem id="/Equipment/Ranged/Blow Gun - Long" >
 				<ranged>
 					<class>Missile</class>
@@ -8918,7 +8918,7 @@ MagicPoints -= 2;</implementation>
 				</ranged>
 			</KeyedItem>
 		</Ranged>
-		<Shields>
+		<Shields id="" >
 			<KeyedItem id="/Equipment/Shields/ALC Plate" >
 				<shield>
 					<cost>9000</cost>
@@ -9201,8 +9201,8 @@ MagicPoints -= 2;</implementation>
 			</KeyedItem>
 		</Shields>
 	</Equipment>
-	<Magic>
-		<Air>
+	<Magic id="" >
+		<Air id="" >
 			<KeyedItem id="/Magic/Air/Air Laser" >
 				<spell>
 					<casting_time>1</casting_time>
@@ -9713,7 +9713,7 @@ This smoke is not hazardous or unpleasant to breathe, though it does obscure vis
 				</spell>
 			</KeyedItem>
 		</Air>
-		<Arcane>
+		<Arcane id="" >
 			<KeyedItem id="/Magic/Arcane/Advanced Haste" >
 				<spell>
 					<casting_time>3</casting_time>
@@ -10373,7 +10373,7 @@ Because the evil wizard wins the skill contest, disenchant is successful and Maj
 				</spell>
 			</KeyedItem>
 		</Arcane>
-		<Beast>
+		<Beast id="" >
 			<KeyedItem id="/Magic/Beast/Beast Lore 1" >
 				<spell>
 					<casting_time>n--a</casting_time>
@@ -10775,7 +10775,7 @@ Because the evil wizard wins the skill contest, disenchant is successful and Maj
 				</spell>
 			</KeyedItem>
 		</Beast>
-		<Earth>
+		<Earth id="" >
 			<KeyedItem id="/Magic/Earth/Alter Size" >
 				<spell>
 					<casting_time>3</casting_time>
@@ -11273,7 +11273,7 @@ Because the evil wizard wins the skill contest, disenchant is successful and Maj
 				</spell>
 			</KeyedItem>
 		</Earth>
-		<Fire>
+		<Fire id="" >
 			<KeyedItem id="/Magic/Fire/Ashen cloud" >
 				<spell>
 					<casting_time>3</casting_time>
@@ -11709,7 +11709,7 @@ Adds Fire effect to the weapon and also a +2 bonus to the damage roll.</descript
 				</spell>
 			</KeyedItem>
 		</Fire>
-		<Life>
+		<Life id="" >
 			<KeyedItem id="/Magic/Life/Animate" >
 				<spell>
 					<casting_time>3</casting_time>
@@ -12395,7 +12395,7 @@ This spell also heals sensory deprivation such as blindness, deafness, or inabil
 				</spell>
 			</KeyedItem>
 		</Life>
-		<Light>
+		<Light id="" >
 			<KeyedItem id="/Magic/Light/Aura Sight" >
 				<spell>
 					<casting_time>3</casting_time>
@@ -12893,7 +12893,7 @@ This spell also heals sensory deprivation such as blindness, deafness, or inabil
 				</spell>
 			</KeyedItem>
 		</Light>
-		<Physical>
+		<Physical id="" >
 			<KeyedItem id="/Magic/Physical/Autophase" >
 				<spell>
 					<casting_time>3</casting_time>
@@ -13495,7 +13495,7 @@ The caster must have an object to propel with this spell.  Note that even if a "
 				</spell>
 			</KeyedItem>
 		</Physical>
-		<Spirit>
+		<Spirit id="" >
 			<KeyedItem id="/Magic/Spirit/Banshee's Wail" >
 				<spell>
 					<casting_time>3</casting_time>
@@ -13977,7 +13977,7 @@ The caster must have an object to propel with this spell.  Note that even if a "
 				</spell>
 			</KeyedItem>
 		</Spirit>
-		<Water>
+		<Water id="" >
 			<KeyedItem id="/Magic/Water/Absolute Zero" >
 				<spell>
 					<casting_time>1</casting_time>
@@ -14528,8 +14528,8 @@ This instantly nullifies all poisons in the caster's body, and renders the caste
 			</KeyedItem>
 		</Water>
 	</Magic>
-	<Martial_Arts id="Martial Arts">
-		<Basic>
+	<Martial_Arts id="Martial Arts" >
+		<Basic id="" >
 			<KeyedItem id="/Martial Arts/Basic/Archaic Weapons" >
 				<skill>
 					<attribute>Dexterity</attribute>
@@ -14742,7 +14742,7 @@ and thus \emph{may not} be used.</description>
 				</skill>
 			</KeyedItem>
 		</Basic>
-		<Combat>
+		<Combat id="" >
 			<KeyedItem id="/Martial Arts/Combat/Ambidexterity" >
 				<skill>
 					<attribute>Dexterity</attribute>
@@ -15196,7 +15196,7 @@ and thus \emph{may not} be used.</description>
 				</skill>
 			</KeyedItem>
 		</Combat>
-		<Defensive>
+		<Defensive id="" >
 			<KeyedItem id="/Martial Arts/Defensive/Anticipated Dodge" >
 				<skill>
 					<attribute>Wisdom</attribute>
@@ -15376,7 +15376,7 @@ and thus \emph{may not} be used.</description>
 				</skill>
 			</KeyedItem>
 		</Defensive>
-		<Modifier>
+		<Modifier id="" >
 			<KeyedItem id="/Martial Arts/Modifier/Aimed Shot" >
 				<skill>
 					<attribute>Dexterity</attribute>
@@ -15664,7 +15664,7 @@ and thus \emph{may not} be used.</description>
 				</skill>
 			</KeyedItem>
 		</Modifier>
-		<Special>
+		<Special id="" >
 			<KeyedItem id="/Martial Arts/Special/Default" >
 				<skill>
 					<attribute>Dexterity</attribute>
@@ -15766,9 +15766,9 @@ and thus \emph{may not} be used.</description>
 			</KeyedItem>
 		</Special>
 	</Martial_Arts>
-	<Mecha>
-		<Equipment>
-			<Auxiliary>
+	<Mecha id="" >
+		<Equipment id="" >
+			<Auxiliary id="" >
 				<KeyedItem id="/Mecha/Equipment/Auxiliary/Active Stealth" >
 					<auxiliary>
 						<character_points>3+(Size^2)x2</character_points>
@@ -16310,7 +16310,7 @@ and thus \emph{may not} be used.</description>
 					</auxiliary>
 				</KeyedItem>
 			</Auxiliary>
-			<Ballistic>
+			<Ballistic id="" >
 				<KeyedItem id="/Mecha/Equipment/Ballistic/Auto-Cannon" >
 					<ammunition>
 						<character_points>(Class+1)*6</character_points>
@@ -16429,7 +16429,7 @@ and thus \emph{may not} be used.</description>
 					</ammunition>
 				</KeyedItem>
 			</Ballistic>
-			<Energy>
+			<Energy id="" >
 				<KeyedItem id="/Mecha/Equipment/Energy/Beam Cannon" >
 					<energy>
 						<description>An untuned weapon.</description>
@@ -16494,9 +16494,9 @@ and thus \emph{may not} be used.</description>
 					</energy>
 				</KeyedItem>
 			</Energy>
-			<Melee_Weapons id="Melee Weapons">
+			<Melee_Weapons id="Melee Weapons" >
 			</Melee_Weapons>
-			<Sensors_and_Controls id="Sensors and Controls">
+			<Sensors_and_Controls id="Sensors and Controls" >
 				<KeyedItem id="/Mecha/Equipment/Sensors and Controls/A--V Recorder" >
 					<sensor>
 						<character_points>2</character_points>
@@ -16790,7 +16790,7 @@ and thus \emph{may not} be used.</description>
 			</Sensors_and_Controls>
 		</Equipment>
 	</Mecha>
-	<Monsters>
+	<Monsters id="" >
 		<KeyedItem id="/Monsters/Allip" >
 			<monster>
 				<attacks>Touch of Madness: Permenantly drains 1 WIL from the target per hit.  Requires Touch.</attacks>
@@ -19390,7 +19390,7 @@ Base Armor: 7</statistics>
 			</monster>
 		</KeyedItem>
 	</Monsters>
-	<Traits>
+	<Traits id="" >
 		<KeyedItem id="/Traits/Absent Minded Genius" >
 			<trait>
 				<description>You recive 1D6 to all your INT checks and int-related skill checks. You recieve -2 + 1D4 to all your WIS checks and WIL related skill checks.</description>
