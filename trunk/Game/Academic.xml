@@ -1,0 +1,6 @@
+<chapter>
+    <title>Academic</title>
+    
+    <!-- Procedurally generated content. -->
+    <procedural src="Content/Academic" />
+</chapter>

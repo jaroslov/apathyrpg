@@ -88,4 +88,6 @@
 
     </section><!-- /Shields -->
 
+    <procedural src="Content/Equipment/Armor" />
+
 </section>

@@ -167,4 +167,10 @@ blood supply found in the torso.
         
     </section><!-- /Determining the Cost of an Augmentation body part -->
 
+    <procedural src="Content/Augmentations/Arm__Hand" />
+    <procedural src="Content/Augmentations/Body" />
+    <procedural src="Content/Augmentations/Head" />
+    <procedural src="Content/Augmentations/Leg" />
+    <procedural src="Content/Augmentations/Torso" />
+
 </chapter>

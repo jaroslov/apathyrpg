@@ -1,0 +1,15 @@
+<chapter>
+    <title>Magic</title>
+
+
+    <procedural src="Content/Magic/Air" />
+    <procedural src="Content/Magic/Arcane" />
+    <procedural src="Content/Magic/Beast" />
+    <procedural src="Content/Magic/Earth" />
+    <procedural src="Content/Magic/Fire" />
+    <procedural src="Content/Magic/Life" />
+    <procedural src="Content/Magic/Light" />
+    <procedural src="Content/Magic/Physical" />
+    <procedural src="Content/Magic/Spirit" />
+    <procedural src="Content/Magic/Water" />
+</chapter>

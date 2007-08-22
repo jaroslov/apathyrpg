@@ -1,0 +1,5 @@
+<chapter>
+    <title>Monster</title>
+    
+    <procedural src="Content/Monsters" />
+</chapter>
