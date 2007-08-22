@@ -101,5 +101,10 @@ A         AA         A Nathan Jones
                 </per-item-layout>
             </tabular-content>
         </chapter>
+        <chapter>
+            <title>Equipment</title>
+            <section>
+            </section>
+        </chapter>
     </part>
 </book>
