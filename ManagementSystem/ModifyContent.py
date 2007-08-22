@@ -35,6 +35,7 @@ class GridView(gridlib.Grid):
     self.Bind (gridlib.EVT_GRID_LABEL_RIGHT_CLICK, self.LabelRightClick)
     self.Bind (gridlib.EVT_GRID_CELL_CHANGE, self.ItemChanged)
     self.Bind (gridlib.EVT_GRID_SELECT_CELL, self.ItemSelected)
+    self.Bind (gridlib.EVT_GRID_EDITOR_HIDDEN, self.EditorHides)
 
   def ClearGrid (self):
     self.WhichCategory = None
@@ -68,6 +69,7 @@ class GridView(gridlib.Grid):
     if (self.WhichCategory
         and self.WhichKeyedItems
         and self.WhichHeadings):
+      self.WhichItem = (Event.GetRow (), Event.GetCol ())
       Key = self.WhichKeyedItems[Event.GetRow ()][1]
       Heading = self.WhichHeadings[Event.GetCol ()]
       KeyedItem = self.WhichCategory.Data[Key]
@@ -77,6 +79,9 @@ class GridView(gridlib.Grid):
         self.ItemChangedCallback (Item.Data[Heading])
       self.ContextSensitiveColoring (Item.Data[Heading], Event.GetRow (), Event.GetCol ())
     Event.Skip ()
+
+  def EditorHides (self, Event):
+    pass
 
   def LabelRightClick (self, Event):
     if Event.GetRow () > -1:
@@ -191,12 +196,12 @@ class GridView(gridlib.Grid):
     #for skx in xrange(0,len(SortingKeys)):
     #  self.GridView.SetRowLabelValue (skx, What.Data[SortingKeys[skx][1]].Data.Name)
 
-
 class SelectionFrame(wx.Frame):
   def __init__(self, ArpgContent):
     wx.Frame.__init__(self, None, wx.NewId(), "ARPG-MS",
-                          pos=wx.DefaultPosition,
-                          style=wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL)
+                      pos=wx.DefaultPosition,
+                      size=(800,600),
+                      style=wx.DEFAULT_FRAME_STYLE|wx.FRAME_EX_METAL|wx.TAB_TRAVERSAL)
 
     self.ArpgContent = ArpgContent
 
@@ -253,9 +258,10 @@ class SelectionFrame(wx.Frame):
                       border=5)
     self.BottomPanel.SetSizer (self.BRSizer)
 
-    self.RightSplitter.SplitHorizontally (self.TopPanel, self.BottomPanel, -100)
-    self.RightSplitter.SetSashGravity (1.0)
-    self.MainSplitter.SplitVertically (self.LeftPanel, self.RightSplitter, -200)
+    self.RightSplitter.SplitHorizontally (self.TopPanel, self.BottomPanel, -200)
+    self.RightSplitter.SetSashGravity (.9)
+    self.MainSplitter.SplitVertically (self.LeftPanel, self.RightSplitter, -600)
+    self.MainSplitter.SetSashGravity (.1)
     
     self.Show (True)
 
@@ -278,6 +284,7 @@ class SelectionFrame(wx.Frame):
       Keys.sort ()
       for Key in Keys:
         self.AddHierarchy (Root, self.ArpgContent.Data[Key])
+      self.Hierarch.Expand (Root)
 
   def CategorySelected (self, Event):
     which = self.Hierarch.GetSelection ()
