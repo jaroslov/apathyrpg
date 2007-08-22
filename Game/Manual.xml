@@ -84,14 +84,14 @@ A         AA         A Nathan Jones
                 <item-spec>
                     <item field="name" width="">Name</item>
                     <item field="location" width="">Location</item>
-                    <item field="character_points" width="">CP</item>
+                    <item field="cp" width="">CP</item>
                     <item field="prerequisites" width="">Prereq.</item>
                     <item field="description" width="">Description</item>
                 </item-spec>
                 <table-items>
                     <item>name</item>
                     <item>location</item>
-                    <item>character_points</item>
+                    <item>cp</item>
                     <item>prerequisites</item>
                 </table-items>
                 <per-item-layout>
