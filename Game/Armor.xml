@@ -1,4 +1,4 @@
-<chapter>
+<section>
     <title>Armor</title>
     <section><!-- Basics for Armor and Damage -->
         <title>Basics for Armor and Damage</title>
@@ -87,4 +87,5 @@
 </itemized-list>
 
     </section><!-- /Shields -->
-</chapter>
+
+</section>
