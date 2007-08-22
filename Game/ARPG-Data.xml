@@ -1488,7 +1488,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		<Arm__Hand id="Arm, Hand" >
 			<KeyedItem id="/Augmentations/Arm, Hand/Arm Blades" >
 				<augmentation>
-					<cp>5</cp>
+					<character_points>5</character_points>
 					<description>One or more metal blades is inserted into the forearm.  It can extend forward or swing out from the back of the arm.  The blades are used with the small sword skill and can deal 1D6+2 S</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1498,7 +1498,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Arm Guards" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Special armor plating is inserted into the back of the forearm.  This makes the forearm and effective tool for parrying melee attacks.  Armor is 5/9/5</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1508,7 +1508,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Climbing Hands" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A special set of hands designed to improve your ability to climb.  -1 DEX for normal tasks.  +4 to climbing rolls.  When combined with Climbing Feet, bonus is a total of +6</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1518,7 +1518,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Climbing System" >
 				<augmentation>
-					<cp>2</cp>
+					<character_points>2</character_points>
 					<description>Uses 5 Power, range of 150 feet</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1528,7 +1528,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Concealed Gun" >
 				<augmentation>
-					<cp>3</cp>
+					<character_points>3</character_points>
 					<description>A semiautomatic gun, in any normal pistol caliber,  can be concealed in the forearm</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1538,7 +1538,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Default" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location></location>
 					<metatag></metatag>
@@ -1548,7 +1548,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Extendable Arms" >
 				<augmentation>
-					<cp>6</cp>
+					<character_points>6</character_points>
 					<description>The ability to extend your arms up to twice their normal length.  You have -3 STR with the arms fully extended.  They can be extended and contracted at wll.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1558,7 +1558,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Finger Blades" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1568,7 +1568,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Finger Sprayer" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>This device, when implanted into a hand, can be used to spray chemicals a short distance away.  It can't store very much liquid, however.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1578,7 +1578,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Garrote Wire" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Concealed in a finger</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1588,7 +1588,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Grip Lock" >
 				<augmentation>
-					<cp>4</cp>
+					<character_points>4</character_points>
 					<description>This allows the user to lock his grip on an object.  When locked, it requires 5 greater than the user's STR to un-break the grip.  It also gives +5 to STR checks for holding onto an object.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1598,7 +1598,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Heated Hand" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>This modification gives your hands -1 DEX, but allows you to heat your palms to a significant temperatures.  This can be used to deal 1D4 U damage in an attack, or for cooking food, etc.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1608,7 +1608,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Hollow Arm" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Gives 2 slots in either arm.  1 in upper arm, one in lower arm.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1618,7 +1618,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Knuckle Spikes" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Adds +1 to punching damage</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1628,7 +1628,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Laser Finger" >
 				<augmentation>
-					<cp>2</cp>
+					<character_points>2</character_points>
 					<description>1D6+1 S per shot for 2 Power</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1638,7 +1638,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Palm Sheild" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>An armored palm can be used as a shield to block attacks,  etc.  The palm has 6/8/4 armor after this modification.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1648,7 +1648,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Subdermal Watch" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A luminescent watch is implanted beneath the skin somewhere on the body.  It is usually in the wrist area.  It tells perfect time, and you can't ever loose it!</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1658,7 +1658,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Tool Hands" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Small tools, similar to a swiss army knife, are implanted into the hands.  They aren't strong enough for tough jobs, but are very handy for light work.  Includes a small knife, scissors, file, saw, various screwdrivers, bottle/can opener, etc.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1668,7 +1668,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Arm, Hand/Typing Hands" >
 				<augmentation>
-					<cp>3</cp>
+					<character_points>3</character_points>
 					<description>Robotic fingers can split apart into six individual micro-fingers.  This allows one to type on a keyboard much faster than with normal hands.  When in "typing mode",  hand has a STR of 2.</description>
 					<location>Arm, Hand</location>
 					<metatag></metatag>
@@ -1680,7 +1680,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		<Body id="" >
 			<KeyedItem id="/Augmentations/Body/Abnormal Articulation" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A modification to your joints.  It enables a given joint to move in a manner in which it normally couldn't.  (so, you could bend your knee backwards, for example)</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1690,7 +1690,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Alternate Digestive Orifice" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Adds another orificice to the body (or adapts an existing one), enabling you to eat from it.  Thus, it's possible to eat through your ear, etc.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1700,7 +1700,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Climate Adaptability" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Improves your ability to survive and perform in odd enviornments, such as deserts,  snow,  high altitude, etc.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1710,7 +1710,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Cosmetic Addition" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A minor cosmetic modification to the body, such as skin ridges, changing the shape of part of the body, etc.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1720,7 +1720,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Default" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location></location>
 					<metatag></metatag>
@@ -1730,7 +1730,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Dermal Backlight" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Makes your skin glow. You can turn it on and off at will</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1740,7 +1740,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Detachable Joint" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Enables a certain joint in the body (knee, wrist, elbow, etc.) to be detached and re-connected at will.  This enables you to switch limbs or "attachments" on your body.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1750,7 +1750,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Dynochromatic Skin" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Change the color of your skin.  It can be changed to any color, or patterns, etc.  Changing takes a few seconds.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1760,7 +1760,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Easy Maintenance" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Makes healing your body and working on your cybernetics unusually easy.  Downtime is reduced by half.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1770,7 +1770,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Electrically Shielded Body" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Protects the body from electrical damage.  Take only 50% damage from electrical attacks unless they originate from inside the body.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1780,7 +1780,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/False Bleeding" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Make yourself bleed at will, for no reason, and without harm.  You can stop the false bleeding at will.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1790,7 +1790,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Fireproof Skin" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Prevents the skin from burning in normal situations.  You take half damage from short-term contact with fire.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1800,7 +1800,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Gills" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Enables you to "breate" water naturally.  Usually installed on the neck,  but could be anywhere.  The Gills are a sensitive organ.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1810,7 +1810,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Hair Control" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Enables you to control the look of your hair at will.  This can do anything that normal hair styling can do, and affects the entire body</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1820,7 +1820,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Hard Skin" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Hardens the skin all over your body.  3/0/0</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1830,7 +1830,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Increased STR for muscles" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Upgrade the STR of your muscles.  Can be purchased as many times as you want.  Each purchase is +1 STR</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1840,7 +1840,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Increased Twitch Fibers" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Increases the amount of fast-twitch muscle fiber in your body.  Gain +3 STR for fast applications, but suffer a -1 BLD.  You also suffer and -3 STR for anything that takes longer than a second.  -2 Enc</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1850,7 +1850,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Increased perception (sense skin)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Improves the sensitivity of your skin.  You can accuratley determine the shape, size, texture, and temperature of objects touching you.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1860,7 +1860,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Increased speed of Wings" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Adds speed to your wings.  Each purchase is +20 MPH</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1870,7 +1870,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Melanin Control" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Change the color of your skin.  It works fairly slowly, and can only be used to match normal "human color" skin.  It can be white, black, "yellow".  You can simulate tans, etc, but cannot do unnatural colors.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1880,7 +1880,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Muscle replacement" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Replace your muscles with superior lab-grown ones.  +1 STR and +1 BLD</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1890,7 +1890,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Myomer muscle fibers" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Muscle enhancement which improves motor control.  Each purchase adds +1 DEX.  Can be purchased more than once, but each consecutive purchase is twice the cost of the previous one.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1900,7 +1900,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Nervous System replacement" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Replaces your nervous system (except the brain) with an electronic network.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1910,7 +1910,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Pain Editior" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Enables you to shut off or dimininsh pain at your will</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1920,7 +1920,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Radiation Immunity" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Protects the body from radiation from outside sources.  Will not protect you from ingesting radioactive materials, etc.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1930,7 +1930,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Reenforced Skeleton" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Toughens your skeleton and improves how smoothly it moves, improving your BLD by 1 point</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1940,7 +1940,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Replaced Skeleton (Flexible)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A replacement for your normal skeleton.  The bones are make of many individual joints, and can be bent at will.  This enables you to perform amazing feats of contortion.  +1 DEX -1 STR</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1950,7 +1950,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Replaced Skeleton (Rigid)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A replacement for your normal skeleton.  It has the ability to be locked rigid, giving you a +3 to STR contests, and an additional +1 BLD</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1960,7 +1960,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Self Sealing Blood Vessels" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Your blood vessels will seal themselves very effectivley if cut or otherwise damaged.  You don't loose extra HP after going below 0, and don't bleed appreciably.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1970,7 +1970,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Slick Skin" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Makes your skin unusually slick and slightly slimy.  It makes it very difficult for something to grab you (-3), and slashing weapons have a tendency to slide off.  (0/3/0)</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1980,7 +1980,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Spongy Skin" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Makes your skin tougher and thicker than normal.  It cushions impact.  (0/0/3)</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -1990,7 +1990,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Subdermal Armor (heavy)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Armored mesh is implanted below the skin.  It is located everywhere execpt the face, groin, hands, and feet.  Armor is 6/6/5.  This is highly visible</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2000,7 +2000,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Subdermal Armor (light)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Armored mesh is implanted below the skin.  It is located everywhere execpt the face, groin, hands, and feet.  Armor is 2/2/2.  This is almost invisible</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2010,7 +2010,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Subdermal Armor (med)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Armored mesh is implanted below the skin.  It is located everywhere execpt the face, groin, hands, and feet.  Armor is 4/4/4  this is visible if someone looks for it.,</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2020,7 +2020,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Suspended organs" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A special network of neuro-activated wire actuators suspends your vital organs.  If something penetrates your body, they pull your organs out of the way.  Take 50% piercing damage.  Only works if you are not wearing any armor.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2030,7 +2030,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Tail (balancing)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A tail is added to the body.  It is thick and sturdy.  It improves your balance, giving +3 to balance-related DEX  checks.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2040,7 +2040,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Tail (cosmetic)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A tail is added to the body.  It has sensation, but has no real use other than cosmetics.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2050,7 +2050,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Tail (prehensile)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A tail is added to the body.  It has DEX equal to your normal value.  It can be used to hold onto things, etc.  Also gives balance dex bonus</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2060,7 +2060,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Toxic Skin" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Enables you to secrete a weak poison from the skin.  It is foul tasting, and deals 1D4-1 damage if ingested.  Anything biting you must make a WILL check at -8 or immiedtly let go. (except robots, undead)</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2070,7 +2070,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Wing blades" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Addes blades to your wings that can be used as weapons.  Use with unarmed combat.  3D6 damage.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2080,7 +2080,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Body/Wings" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Adds a set of wings to the body.  They can be used to fly up to 20 MPH.  Wings can retract inside the body for 2 slots and 6 more CP.</description>
 					<location>Body</location>
 					<metatag></metatag>
@@ -2092,7 +2092,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		<Head id="" >
 			<KeyedItem id="/Augmentations/Head/Advanced Audio" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Hear a whisper from 100 meters away</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2102,7 +2102,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Advanced Olfactory System" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Increases senses of taste and smell by 4 times.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2112,7 +2112,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Advanced Tasting" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Increase sense of taste by 100 times</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2122,7 +2122,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Alternate breathing passage" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Additional hole to breath from (can be anywhere on body)</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2132,7 +2132,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Anti-Dazzle" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Immune to flash and laser blinding</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2142,7 +2142,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Automatic Reticle" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Gives + 1 to strike with ranged weapons</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2152,7 +2152,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Brain Coprocessor" >
 				<augmentation>
-					<cp>5</cp>
+					<character_points>5</character_points>
 					<description>+1 INT</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2162,7 +2162,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Brain casing" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Gives brain 10/10/10 armor</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2172,7 +2172,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Built in Translator" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>One language</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2182,7 +2182,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Camera" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>2 hours of recording time</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2192,7 +2192,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Chemical Identification" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Detect Hormonal changes, sweat, lie detect (as if at level 4), etc...</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2202,7 +2202,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Cold Breath" >
 				<augmentation>
-					<cp>3</cp>
+					<character_points>3</character_points>
 					<description>must have 1 slot for fuel.  1D4 D, half damage against hard armor</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2212,7 +2212,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Cosmetic Ear change" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Change ears to look like anything you want</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2222,7 +2222,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Cosmetic Eye Change" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Change the look of any/all portions of the eye.  This can be color of the iris, pupil, or any other portion of the eye.  This can also include glowing eyes.  Permanent change.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2232,7 +2232,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Cyber hair" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Metallic hair, effect is cosmetic only</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2242,7 +2242,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Default" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location></location>
 					<metatag></metatag>
@@ -2252,7 +2252,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Detachable Jaw" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Character can unhinge the jaw, allowing him or her to swallow objects up to 3 times normal size</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2262,7 +2262,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Directional Hearing" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Range 2000'</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2272,7 +2272,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Disguise Face (Facial Features)" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Character can completely change his or her facial features, not including facial hair.  This process takes a minute of concentration.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2282,7 +2282,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Droud" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A device for stimulating the pleasure or pain centers of the brain directly.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2292,7 +2292,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Dynamic Eye Changing" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Change the look of any/all portions of the eye.  This can be color of the iris, pupil, or any other portion of the eye.  This can also include glowing eyes.  The look of the eyes can be changed at will, takes 15 seconds.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2302,7 +2302,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Dynamic Memory Chip" >
 				<augmentation>
-					<cp>5</cp>
+					<character_points>5</character_points>
 					<description>+1 WIS</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2312,7 +2312,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Extra Eye" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Additional eye on body</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2322,7 +2322,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Eye Laser" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>1D6+1 S.  Can be used once per round.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2332,7 +2332,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Eye Lights" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>The eyes can act like flashlights, emiting a beam of light up to 100' away</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2342,7 +2342,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Eye Projector" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>The eyes can project a holographic image of anything the character wishes.  The image is unmistakable for a hologram, and will fool only the most stupid into believing what they are seeing.  Has no sound.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2352,7 +2352,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Eye flash" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>The eyes can emit a bright flash, momentarily stunning those without an anti-dazzle system.  Stunned victives are at -3 to all actions for 1D4 turns</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2362,7 +2362,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Facial Hair Control" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Character can completely change his or her facial &amp; head hair.  This includes style, sparseness, color, and placement</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2372,7 +2372,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/False teeth" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Teeth are not natural, and they feel no pain</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2382,7 +2382,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Fangs" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Cosmetic.  But if character has the Strengthened Bite implant, then fangs add +3 damage and changes damage to P.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2392,7 +2392,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Fire Breathing" >
 				<augmentation>
-					<cp>2</cp>
+					<character_points>2</character_points>
 					<description>must have 1 slot for fuel.  2D4 U</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2402,7 +2402,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Hearing System" >
 				<augmentation>
-					<cp>1</cp>
+					<character_points>1</character_points>
 					<description>Inner ear replacement.  4x normal hearing</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2412,7 +2412,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Heat Sensor" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>20ft range.  Detect exact temperature of surroundings.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2422,7 +2422,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Horns" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>1D4 P damage, or 2D4 for 1 enc</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2432,7 +2432,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Infra-Scanner" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Visualizes heat of objects</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2442,7 +2442,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Maxwell Board" >
 				<augmentation>
-					<cp>20</cp>
+					<character_points>20</character_points>
 					<description>Regenerates 1D4+1 HP per round.  1 Slot for power source</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2452,7 +2452,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Memory Board" >
 				<augmentation>
-					<cp>4</cp>
+					<character_points>4</character_points>
 					<description>Acts as a file system for remembering things.  It can store up to twenty-five different "memories".  They can be accessed at will, and the information contained within will never be "forgotten".</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2462,7 +2462,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Memory Buffer or Reclocker" >
 				<augmentation>
-					<cp>15</cp>
+					<character_points>15</character_points>
 					<description>+1 action per turn, only one</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2472,7 +2472,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Microscopic Vision" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Increase magnification by up to 200 times but for only objects very close to character</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2482,7 +2482,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Motion Detector" >
 				<augmentation>
-					<cp>2</cp>
+					<character_points>2</character_points>
 					<description>100ft range</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2492,7 +2492,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Movement Board" >
 				<augmentation>
-					<cp>10</cp>
+					<character_points>10</character_points>
 					<description>+1 DEX in applications where speed isn't an issue (Delicate tasks, etc.).  If you have a Flexible Skeleton, add +1 DEX all the time and an additional +1 DEX for slow tasks.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2502,7 +2502,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Multispeech" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Can speak multiple things at once</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2512,7 +2512,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Navigation System" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>GPS and map system</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2522,7 +2522,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Needle hair" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>1D4-1 P damage from hair (on head)</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2532,7 +2532,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Noise Filter" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Immune to loud noises, and filters out background noise to hear someone in a noisy area</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2542,7 +2542,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Nose gun" >
 				<augmentation>
-					<cp>3</cp>
+					<character_points>3</character_points>
 					<description>1 Shell in a nostril.  Fired from trigger in mouth.  Can be any automatic pistol caliber.  Cost adds to the cost of the gun you want to use; min STR has -2 for this use.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2552,7 +2552,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Octopus Board" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Gives + 4 Brain slots.  Only one can be used</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2562,7 +2562,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Output Jack" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Allows for electronic output from brain to interface with electronics, computers, etc.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2572,7 +2572,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Posion Glands" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Deliver poison when bitting.  5 doses</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2582,7 +2582,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Prehensile Tongue" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Cosmetic only. Has a 3 Strength, and a Dexterity of the user.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2592,7 +2592,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Psionic Board" >
 				<augmentation>
-					<cp>7</cp>
+					<character_points>7</character_points>
 					<description>Allows the use of a single psionic power (must be purchased normally).  Also opens character up to attacks from this type of psionic attack (assuming it's a mental attack)</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2602,7 +2602,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Radar Detector" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2612,7 +2612,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Radiation Detector" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Acts like a geiger counter</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2622,7 +2622,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Radio Receiver or Transmitter" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>20 mile range</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2632,7 +2632,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Remote Eye" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Remove eye from socket, wire connects to face</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2642,7 +2642,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Slotted Robotic Brain (SRB)" >
 				<augmentation>
-					<cp>5</cp>
+					<character_points>5</character_points>
 					<description>A.I. reconstruction of the human brain.  Work identically to a human brain.  Contains 8 "brain slots" which may be utilized for special brain upgrades.  Can be located anywhere in the body.  Frees up 2 slots in head.  The SRB takes up one slot, can be located anywhere.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2652,7 +2652,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Sonar" >
 				<augmentation>
-					<cp>4</cp>
+					<character_points>4</character_points>
 					<description>req. vocal system, range 500'</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2662,7 +2662,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Spitting Glands" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Spit a poison up to 20'.  5 doses</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2672,7 +2672,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Strengthened Bite" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Bite deals 1D4 C damage</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2682,7 +2682,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Suicide system" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>At will, the character can kill himself, just by desiring to die</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2692,7 +2692,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Telescopic Vision" >
 				<augmentation>
-					<cp>2</cp>
+					<character_points>2</character_points>
 					<description>Provides up to 40x normal vision</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2702,7 +2702,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Ultrasonic Pickup" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Alows hearing of very high frequency sound, like an animal.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2712,7 +2712,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/V-System Board" >
 				<augmentation>
-					<cp>10</cp>
+					<character_points>10</character_points>
 					<description>Can turn on and off at will.  When on, it will provide +2 WIS, +2 INT,  and +1 action for 1D4-1 turns.  Then, it has the opposite effect for two turns, before it can be activated again.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2722,7 +2722,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Ventriliquist System" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Character can speak without opening the mouth.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2732,7 +2732,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Vision System" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>The eyes are replaced by mechanical versions that perform slightly better than their human counterparts. 4x normal vision</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2742,7 +2742,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Vocal Blast" >
 				<augmentation>
-					<cp>10</cp>
+					<character_points>10</character_points>
 					<description>Deal 2D4 C damage to a target up to 100' away</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2752,7 +2752,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Vocal Screech" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Stun all listeners of the screech for 1d4 turns.  All those stunned lose an action for the duration.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2762,7 +2762,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Vocal System" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Increase vocal range by 4 times.  Gives a +4 to the singing skill.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2772,7 +2772,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Voice Modulator" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Can change characters voice to any recorded voice</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2782,7 +2782,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Voice Projector" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2792,7 +2792,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Volume Control" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Increase or decrease volume by up to 10 times.</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2802,7 +2802,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Whiskers" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>+1 perception rolls</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2812,7 +2812,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Head/Wideband Camera" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Sees IR and UV Light reflections</description>
 					<location>Head</location>
 					<metatag></metatag>
@@ -2824,7 +2824,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		<Leg id="" >
 			<KeyedItem id="/Augmentations/Leg/Climbing Feet" >
 				<augmentation>
-					<cp>3</cp>
+					<character_points>3</character_points>
 					<description>A special set of feet designed to improve your ability to climb.  -1 DEX for normal tasks.  +4 to climbing rolls.  When combined with Climbing hands, bonus is a total of +6</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2834,7 +2834,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Default" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location></location>
 					<metatag></metatag>
@@ -2844,7 +2844,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Durable Feet" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>The feet are made unusually durable.  They will not develop blisters nor get tired, even when doing heavy work.  Stubbing a toe or having your feet stepped on will no longer be as painful and is much less likely to cause injury.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2854,7 +2854,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Extendable Legs" >
 				<augmentation>
-					<cp>6</cp>
+					<character_points>6</character_points>
 					<description>The ability to extend your legs up to twice their normal length.  You have -3 STR with the legs fully extended.  They can be extended and contracted at wll.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2864,7 +2864,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Foot Blades" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Retractible metal blades are implanted into the foot.  They give +1 damage to kicks and deal S damage.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2874,7 +2874,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Foot Sheild" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>The sole of the foot is toughened with implants.  This eliminates the need to wear shoes.  You can walk on any normal terrain without hurting your feet.  They can also be used to block attacks (if you are sufficiently skilled).  The sole has 4/5/3 armor.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2884,7 +2884,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Foot Thrusters" >
 				<augmentation>
-					<cp>6</cp>
+					<character_points>6</character_points>
 					<description>Small rocket engines implanted into the foot allow you to jump 50% further than normal.  They can also be used to accelerate the movement of the foot during a kick, adding +5 raw damage.  Six uses before recharging.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2894,7 +2894,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Heel Spike" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A metal spike is implanted into the heel.  It makes it easier to run, walk, etc. on slippery surfaces.  It also deals extra damage with kicks or stomps.  (+1, P)</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2904,7 +2904,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Hollow leg" >
 				<augmentation>
-					<cp>3</cp>
+					<character_points>3</character_points>
 					<description>Gives 3 slots in either leg.  (two in thigh and one in calf)</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2914,7 +2914,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Jumping ability" >
 				<augmentation>
-					<cp>5+X</cp>
+					<character_points>5+X</character_points>
 					<description>Can leap 10+3*X feet vertically or horizontally.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2924,7 +2924,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Knee Spike" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A metal spike is implanted into the knee.  It can be used to deal 1D6+1 P damage.  It also protects the kneecap from injury.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2934,7 +2934,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Leg/Speed increase" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Gives 5 additional MPH per purchase.  Can be bought 4 times without needing space.  Beyond that, every 4 purchases requires a slot.</description>
 					<location>Leg</location>
 					<metatag></metatag>
@@ -2946,7 +2946,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		<Torso id="" >
 			<KeyedItem id="/Augmentations/Torso/Advanced Digestive Sys" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>An improved digestive system.  It allows you to eat and digest things that would normally have little nutriutional value.  This includes stringy vegitation, wood, paper, hard meat, leather, etc.  Also extracts more nutrition out of normal foods.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -2956,7 +2956,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Armored Crotch" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Protective armor applied to the crotch area.  It elimiates the groin as an effective target in combat.  Armor is 5/5/5</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -2966,7 +2966,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Breathing Filter" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Allows you to breathe effectivley in "bad" enviornments, such as smoke,  steam, or chemical vapors.  It won't create oxygen out of nowhere, but it will filter out mild and some moderate irritants and hazardous substances.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -2976,7 +2976,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Crotch Gun" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Any pistol-caliber can be used.  The gun is semiautomatic and is hidden in the groin area.  Cost adds to the cost of the gun you pick.  STR requirement is normal.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -2986,7 +2986,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Default" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description></description>
 					<location></location>
 					<metatag></metatag>
@@ -2996,7 +2996,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Dilating Throat" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>The throat can expand to much larger than it's normal size.  This allows one to swallow large objects without a problem.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3006,7 +3006,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Durable Genitalia" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Makes the genitals less sensitive to pain, damage, and disease.  Improves sexual stamina, and elimiates chafing!</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3016,7 +3016,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Hyper Kidneys" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Improved kidneys allow you to eat spolied or rotten food that would otherwise make you ill.  They remove toxins from the blood very effectivley.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3026,7 +3026,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Improved Breathing" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Improves your ability to breathe under duress.  You don't have to gasp or breathe hard when doing strenuous activity.  Gives a +3 to BLD checks for strenuous activity.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3036,7 +3036,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Internal Cavity Trans Sys" >
 				<augmentation>
-					<cp>8</cp>
+					<character_points>8</character_points>
 					<description>A complex modification that enables things to be moved throughout the body.  It can be used to remove embedded objects (splinters,  bullets, etc.)  this can be used with an internal storage compartment.  Example:  swallow a key and have it appear in the compartment.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3046,7 +3046,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Metabolic Controller" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Allows one to control one's metabolism.  This can be used to maintain a certain weight and to govern sleep cycles, etc.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3056,7 +3056,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Nutrient Storage" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A small implant stores hyper-concentrated vitamins an minerals from when your body has a surplus and saves them for later, when needed.  This allows the body to be healthy when eating poor food for extended periods of time.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3066,7 +3066,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Odor Masking" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Enables the user to elimiate his or her natural scent.  It also effects burps and flatulence, etc.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3076,7 +3076,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Oxygen Storage" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A small tank implanted in the body is used to store compressed 3 hours worth of oxygen.  It can be used to breathe anywhere.  If the tank is destroyed, when full, it explodes and deals 6D6+3 damage to the host.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3086,7 +3086,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Prehensile Genitalia" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Adds significant dexterity to the genitals.  This is used to enhance sexual pleasure.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3096,7 +3096,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Reduced Cardiovascular Sys" >
 				<augmentation>
-					<cp>1</cp>
+					<character_points>1</character_points>
 					<description>+1 slot in torso</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3106,7 +3106,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Reduced Digestive Sys" >
 				<augmentation>
-					<cp>1</cp>
+					<character_points>1</character_points>
 					<description>+2 slot in torso</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3116,7 +3116,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Reduced Respitory Sys" >
 				<augmentation>
-					<cp>1</cp>
+					<character_points>1</character_points>
 					<description>+1 slot in torso</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3126,7 +3126,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Redundant Vital System" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Duplciates the effect of a vital organ (pick one).  If the original is damaged,  this takes over, saving your life.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3136,7 +3136,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Retractible Genitals" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Normally used for males only.  The genitals can be "pulled up" into the body to protect them from harm.  Can also be used for disguise purposes.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3146,7 +3146,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Sealing Lungs" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>A modification to the lungs that enables them to seal themselves if punctured.  If your lungs are wounded, you suffer no special effects.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3156,7 +3156,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Self Destruct Bomb" >
 				<augmentation>
-					<cp>2</cp>
+					<character_points>2</character_points>
 					<description>Enables the user to self-destruct his body and cause serious damage in the process.  Deals 5x 6D6+3 to a 20' radius.  Kills the character.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3166,7 +3166,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Sex Changer" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>enables the user to change his sexual appearance.  The "change" takes less than a minuite, and can make a man look like a woman, or vice versa, even when totally naked.  It does NOT actually change the user's sex, just the appearance.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3176,7 +3176,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Silent Running" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Makes the body quiet.  It cancels the sound of the heartbeat, breathing, etc.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3186,7 +3186,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Storage Compartment" >
 				<augmentation>
-					<cp>1</cp>
+					<character_points>1</character_points>
 					<description>A compartment is installed in the body.  It can be accessed by opening a door on the body.  It can store something a little bigger than a soda can.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3196,7 +3196,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Thermal Masking" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Makes the body appear room temperature.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3206,7 +3206,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Vomit Tank" >
 				<augmentation>
-					<cp>2</cp>
+					<character_points>2</character_points>
 					<description>takes a slot.  The tank can be filled with anything you can swallow.  At a later time, you can spew the contents of the tank forth, out your mouth.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3216,7 +3216,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Waste Eliminator" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>An upgrade to the digestive tract finds a way to use ALL the substances you ingest.  It all but eliminates the need to excrete waste.</description>
 					<location>Torso</location>
 					<metatag></metatag>
@@ -3226,7 +3226,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 			</KeyedItem>
 			<KeyedItem id="/Augmentations/Torso/Weight Control" >
 				<augmentation>
-					<cp></cp>
+					<character_points></character_points>
 					<description>Enables the recipient to control his or her weight.  By thinking about it, the user can add or remove fat quite quickly.  Up to one pound per minuite.  When gaining weight, the user must ingest something for the weight to come from (e.g. food)</description>
 					<location>Torso</location>
 					<metatag></metatag>
