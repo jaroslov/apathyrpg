@@ -22,89 +22,13 @@ A         AA         A Nathan Jones
     </part>
     <part>
         <title>Rule Sections</title>
-        <chapter>
-            <title>Academic</title>
-            <!-- Database-oriented data
-                "tabular-content" is recursive starting at
-                the top-most directory from the "source" called
-                '/Academic'
-                
-                The "item-spec" is the set of fields, specified by
-                "field" to extract from the database per-item; 
-                "width" is the width to render in the main-table.
-                The name to use whilst rendering is given as the
-                text portion of the tag.
-                
-                The "table-items" section details the order and which
-                fields from the items to use in the main-table.
-                
-                The "per-item-layout" is the layout of each item after
-                the main-table. The "title" is the field to use for
-                the title. The "item-spec-table" is a small summarizing
-                table to use before the main-text for each item. It is
-                referenced by the fields in the "item-spec". The "text"
-                is the field to draw from for the main-text of the item.
-            -->
-            <tabular-content>
-                <!-- Optional text. -->
-                <text />
-                <source>/Academic</source>
-                <item-spec>
-                    <item field="name">Name</item>
-                    <item field="rank">Rank</item>
-                    <item field="attribute">Attribute</item>
-                    <item field="occupation">Occ.</item>
-                    <item field="description">Description</item>
-                </item-spec>
-                <table-items>
-                    <item width="">name</item>
-                    <item width="">rank</item>
-                    <item width="">attribute</item>
-                    <item width="">occupation</item>
-                </table-items>
-                <per-item-layout>
-                    <title>name</title>
-                    <item-spec-table />
-                    <text>description</text>
-                </per-item-layout>
-            </tabular-content>
-        </chapter>
-        <chapter>
-            <title>Augmentations</title>
-            <include src="Augmentations.xml" /> <!-- Include rules info -->
-            <tabular-content>
-                <source>/Augmentations</source>
-                <!--
-                    We note that "/Augmentations" has subcategories.
-                    
-                    In this case, each category is layed out according
-                    to the specification below, but put into it's own
-                    section.
-                -->
-                <item-spec>
-                    <item field="name" width="">Name</item>
-                    <item field="location" width="">Location</item>
-                    <item field="cp" width="">CP</item>
-                    <item field="prerequisites" width="">Prereq.</item>
-                    <item field="description" width="">Description</item>
-                </item-spec>
-                <table-items>
-                    <item>name</item>
-                    <item>location</item>
-                    <item>cp</item>
-                    <item>prerequisites</item>
-                </table-items>
-                <per-item-layout>
-                    <title>name</title>
-                    <item-spec-table />
-                    <text>description</text>
-                </per-item-layout>
-            </tabular-content>
-        </chapter>
-        <chapter>
-            <title>Equipment</title>
-            <section>
-            </section>
-        </chapter>
+        <include src="Academic.xml" />
+        <include src="Augmentations.xml" />
+        <include src="Equipment.xml" />
+        <include src="Magic.xml" />
+        <include src="Martial Arts.xml" />
+        <include src="Mecha.xml" />
+        <include src="Monsters.xml" />
+        <include src="Traits.xml" />
     </part>
 </book>
