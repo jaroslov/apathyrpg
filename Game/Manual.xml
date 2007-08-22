@@ -67,178 +67,176 @@
  <section>
   <title>Basic Terms</title>
 
-
-\begin{description}
-\item[Action] An action is the most basic unit of time during combat.
+  <description-list>
+   <item description="Action">An action is the most basic unit of time during combat.
   It is roughly equal to one second of time.  Most characters will
   have three actions per turn, though certain things can increase or
   decrease this number.  Note that as long as a character is
-  unconscious, he or she ALWAYS has at least one action per turn.
+  unconscious, he or she <bold>always</bold> has at least one action per turn.</item>
 
-\item[Base armor] A character's natural resistance to bodily harm of
+   <item description="Base armor"> A character's natural resistance to bodily harm of
   unusual varieties.  You can think of this as &ldquo;toughness&rdquo; (not to
   be confused with the skill of the same name).  A character's base
   armor reduces the damage they suffer from U (undefined) damage.
   Base armor \emph{does not} protect against any other form of damage,
   such as P, S, C, or D. Note, that if a character suffers any U
   damage, no matter how high their base armor might be, they
-  \emph{always} loose at least 1 HP.
+  \emph{always} loose at least 1 HP.</item>
 
-\item[C] An abbreviation for \emph{crushing}.  When used in
+   <item description="C"> An abbreviation for \emph{crushing}.  When used in
   conjunction with a weapon, it indicates that the weapon in question
   deals crushing type damage.  When used in conjunction with armor, it
-  indicates how much crushing damage the armor will defend against.
+  indicates how much crushing damage the armor will defend against.</item>
 
-\item[CP] \emph{Character Points}.  These are points you use to
+   <item description="CP"> \emph{Character Points}.  These are points you use to
   &ldquo;purchase&rdquo; skills, equipment, etc. for your character.  CP can
   also be used to increase attributes according to a special table.
-  See the section on character creation.
+  See the section on character creation.</item>
 
-\item[Character] A persona within the game world that is adopted by a
+   <item description="Character"> A persona within the game world that is adopted by a
   player.  The player sees through the character's eyes, controls the
-  character's actions, and speaks through the character's mouth.
+  character's actions, and speaks through the character's mouth.</item>
 
-\item[D] An abbreviation for Direct Damage.  D damage is applied
+   <item description="D"> An abbreviation for Direct Damage.  D damage is applied
   directly against the target's HP.  Armor, including base armor,
   \emph{cannot} protect against D damage.  Fortunately, D damage
-  sources are few and far between.
+  sources are few and far between.</item>
 
-\item[Gamemaster] A person who is in the game that is not a player.
+   <item description="Gamemaster"> A person who is in the game that is not a player.
   The gamemaster controls the game world that the players inhabit.
   He/she controls everything that is not the players.  This includes
   other people (sometimes called non-player characters), monsters,
-  natural events, etc.  This is usually abbreviated as &ldquo;GM&rdquo;.
+  natural events, etc.  This is usually abbreviated as &ldquo;GM&rdquo;.</item>
 
-\item[HP] Abbreviation for Hit Points.  Hit Points are used to
+   <item description="HP"> Abbreviation for Hit Points.  Hit Points are used to
   represent a character's health.  If a character gets injured, their
   HP decreases.  If a character reaches 0 HP, they fall unconscious.
   If a character reaches -X HP, where X is equal to their maximum HP,
   they are dead.  Note that if a character is below 0 HP, they will
   loose 1 HP per turn (1 HP per 3 seconds when not in combat) due to
-  bleeding, unless they are given medical attention.
+  bleeding, unless they are given medical attention.</item>
 
-\item[HTH] 
-see Hand-to-Hand 
+  <item description="HTH">
+see Hand-to-Hand </item>
 
-\item[Hand-to-Hand] Hand-to-hand is a special type of combat.  It
+  <item description="Hand-to-Hand"> Hand-to-hand is a special type of combat.  It
   takes place when the combatants use no weapons of any kind.  Thus,
   in hand-to-hand combat, only punches, kicks, and similar attacks
-  will take place.
+  will take place.</item>
 
-\item[Luck] Usually, this is short for Luck Points.  Luck points are
+  <item description="Luck"> Usually, this is short for Luck Points.  Luck points are
   accumulated during gameplay, and players redeem them for combat
   bonuses, or for saving their character's butt if things get rough.
   This is used to help unlucky die rolls from screwing over players.
   All major character in the game, including significant NPCs,
   villains, etc. will have luck points.  The GM is responsible for
-  distributing luck points.
+  distributing luck points.</item>
 
-\item[MA] Abbreviation for Martial Arts.  It is sometimes used to
+  <item description="MA"> Abbreviation for Martial Arts.  It is sometimes used to
   refer to the Martial Arts skill.  See the Martial Arts section for
-  more information.
+  more information.</item>
 
-\item[MP] Magic Points, also called Mana.  Magic points measure how
+  <item description="MP"> Magic Points, also called Mana.  Magic points measure how
   much magic a character can use in a certain amount of time.  Each
   time magic is used (a spell is cast, or the character makes a rune)
   MP are consumed.  If a character has no MP, they cannot use any
   magic until the MP replenish.  MP replenish naturally over time.
-  See the Magic section for details.
+  See the Magic section for details.</item>
 
-\item[Melee] Melee is a special type of combat.  Melee combat takes
+  <item description="Melee"> Melee is a special type of combat.  Melee combat takes
   place when there are \emph{no} projectile (launched, thrown, shot,
   etc.) weapons or attacks of any kind.  Melee combat includes things
   like hand-to-hand fighting, or using weapons like swords, clubs,
-  etc.
+  etc.</item>
 
-\item[Missile] A missile weapon is one that flies through the air in
+  <item description="Missile"> A missile weapon is one that flies through the air in
   some manner.  Throwing knives, slings, thrown stones, spears, and
-  arrows are examples of missile weapons.
+  arrows are examples of missile weapons.</item>
 
-\item[Non-Player Character] A person controlled by the gamemaster who
+  <item description="Non-Player Character"> A person controlled by the gamemaster who
   interacts with the players.  A non-player character is anyone in the
-  game world not controlled by a player.
+  game world not controlled by a player.</item>
 
-\item[NPC] See Non Player Character.
+  <item description="NPC"> See Non Player Character.</item>
 
-\item[P] An abbreviation for Piercing.  When used in conjunction with
+  <item description="P"> An abbreviation for Piercing.  When used in conjunction with
   a weapon, it indicates that the weapon in question deals piercing
   type damage.  When used in conjunction with armor, it indicates how
-  much piercing damage the armor will defend against.
+  much piercing damage the armor will defend against.</item>
 
-\item[PC] Power Cells.  This is a measurement of energy or power for
+  <item description="PC"> Power Cells.  This is a measurement of energy or power for
   things like mecha, vehicles, robots, and power armor.  Power,
   measured in PC, is produced by things like engines and is consumed
   by movement systems and weapons, etc.  PC can also mean &ldquo;player
-  character&rdquo;.
+  character&rdquo;.</item>
 
-\item[Player] An actual person, like the authors of this manual--or
-  you--who controls a character in the game world.
+  <item description="Player"> An actual person, like the authors of this manual--or
+  you--who controls a character in the game world.</item>
 
-\item[Round] A &ldquo;round&rdquo; is the most general unit of time during
+  <item description="Round"> A &ldquo;round&rdquo; is the most general unit of time during
   combat.  Any sequence of combat is broken down into one or more
   rounds.  During each round, each combatant gets to take one turn.  A
   round is over whenever all combatants have taken a turn (or are
-  unable to for some reason).
+  unable to for some reason).</item>
 
-\item[S] An abbreviation for Slashing.  When used in conjunction with
+  <item description="S"> An abbreviation for Slashing.  When used in conjunction with
   a weapon, it indicates that the weapon in question deals slashing
   type damage.  When used in conjunction with armor, it indicates how
-  much slashing damage the armor will defend against.
+  much slashing damage the armor will defend against.</item>
 
-\item[Size] A representation of the approximate size of objects such
+  <item description="Size"> A representation of the approximate size of objects such
   as people, mecha, etc.  Humans are size level 2.  Each size level is
   approximately double the height and weight of the size below it.
-  So, size 2 covers things up to about 7' tall.  Size 3, therefore, is
-  about 14' tall.
+  So, size 2 covers things up to about 7&rsquo; tall.  Size 3, therefore, is
+  about 14&rsquo; tall.</item>
 
-\item[Turn] A turn is a unit of time during combat.  Each round of
+  <item description="Turn"> A turn is a unit of time during combat.  Each round of
   combat is broken down into one turn per combatant.  During each
   player's turn, they get to do whatever they want.  A turn is roughly
   equal to three seconds of time.  Each turn is subdivided into
-  actions.
+  actions.</item>
 
-\item[U] An abbreviation for undefined damage.  Undefined damage is a
+  <item description="U"> An abbreviation for undefined damage.  Undefined damage is a
   special type of damage that cannot be prevented by normal armor.  It
   is usually caused by supernatural powers, magic, high tech weapons,
   and similar unusual sources.  Normal (P/S/C) armor \emph{cannot}
   protect against U damage.  With very few exceptions, the ONLY thing
   that can protect a character from U damage is his or her base armor.
   Note, that if a character suffers any U damage, no matter how high
-  their base armor might be, they ALWAYS loose 1 HP.
+  their base armor might be, they ALWAYS loose 1 HP.</item>
+ <description-list>
+</section>
+<section>
+ <title>Game World</title>
 
-\end{description}
-
-
-\section{Game World}
-
-<Apathy />, like most role-playing games, can be thought of like a play
+ <text><Apathy />, like most role-playing games, can be thought of like a play
 or a movie.  The players are like the actors; their characters are the
 heroes and heroines of the story.  Like a movie, a game can take place
 in any number of settings.  The GM is like the director, and decides
-the intricacies of the game world.
+the intricacies of the game world.</text>
 
-The GM should talk with the players and decide upon what kind of game
+<text>The GM should talk with the players and decide upon what kind of game
 world they would like to use.  The GM can then finalize the details of
 that world, and should tell the players about it before the players
-make their characters and the game starts.
+make their characters and the game starts.</text>
 
-Some things to think about when creating the game world are the following:
+<text>Some things to think about when creating the game world are the following:</text>
 
-\begin{enumerate}
-\item Time Period:  Medieval?  Modern-day?  Futuristic?
-\item Location:  on Earth?  A different planet?  A particular city, perhaps?
-\item Level of technology
-\item Allowed game subsections: Magic?  Psionics?  Supernatural Powers? etc.
-\end{enumerate}
+<numbered-list>
+<item>Time Period:  Medieval?  Modern-day?  Futuristic?</item>
+<item> Location:  on Earth?  A different planet?  A particular city, perhaps?</item>
+<item> Level of technology</item>
+<item> Allowed game subsections: Magic?  Psionics?  Supernatural Powers? etc.</item>
+</numbered-list>
 
-The <Apathy /> system contains sections for many different types of
+<text>The <Apathy /> system contains sections for many different types of
 games and many different historical settings.  The GM should decide
-which ones to allow for each game.
+which ones to allow for each game.</text>
+</section>
+<section>
+<title>Creating a Character</title>
 
-\section{Creating a Character}
-
-
-The first step in playing <Apathy /> is determining your character
+<text>The first step in playing <Apathy /> is determining your character
 concept.  Talk to the GM and your fellow players for ideas about the
 game setting and what kind of character you might want to play.  Your
 imagination is the only real limit as to what your character can be.
@@ -247,44 +245,46 @@ puts monsters to the sword?  Or maybe you'd rather play a cunning and
 seductive thief with a hidden agenda.  You could be a young mecha
 pilot---inexperienced, but eager to fight for his cause.  Your
 character is a hero in the game.  You should take this opportunity to
-have fun and do things you can't do in real life.
+have fun and do things you can't do in real life.</text>
 
-\BracedWrapPicture{r}{Images/Monsters/Buer.png}
+<img src="/Monsters/Buer.png" />
 
-If you are having trouble thinking up a character concept, you might
+<text>If you are having trouble thinking up a character concept, you might
 want to look to books, movies, or even historical precedent as to what
 kind of character you want to play.  You could be a space mercenary
 like Han Solo from Star Wars, or maybe a secret agent like James
-Bond---or perhaps an old-west gunslinger.
+Bond---or perhaps an old-west gunslinger.</text>
 
-Once you have an idea so to what kind of character you want to play,
+<text>Once you have an idea so to what kind of character you want to play,
 it's time to develop that idea.  Think about what your character looks
 like.  How old are they?  How do they dress?  What kinds of
 possessions do they have?  What do they do for a living?  What was
 their past?  How would they react in a fight?  What would they do if
 they were suddenly given a lot of money?  What are their fears?  Their
-hopes?  Their goals?
+hopes?  Their goals?</text>
 
-Now you should have a good understanding of your character's
+<text>Now you should have a good understanding of your character's
 appearance, personality, skills, etc.  What you need to do next is
 represent that idea in the <Apathy /> system rules.  Grab a character
-sheet, and follow along.
+sheet, and follow along.</text>
 
-\subsection{Character Basics}
+<section>
+ <title>Character Basics</title>
 
-The first part of describing your character is very simple.  Decide
+<text>The first part of describing your character is very simple.  Decide
 what your character's basic description is like.  Are they male or
 female?  How tall?  What do they weigh?  Fill in age, sex, height,
 weight, eyes color, and hair color/style on the upper right portion of
 your character sheet.  Decide on your character's name, and fill that
 in too.  There is also a spot on the character sheet for \emph{your}
-name.  Now you can move on to the details of your character.
+name.  Now you can move on to the details of your character.</text>
+</section>
+<section>
+ <title>Attributes</title>
 
-\subsection{Attributes}
-
-<Apathy /> models characters by means of a core attribute system.
+<text><Apathy /> models characters by means of a core attribute system.
 These attributes are numbers that describe the most basic
-characteristics of any given character.  They are:
+characteristics of any given character.  They are:</text>
 
 \begin{table}[!htb]
 \begin{center}
@@ -308,14 +308,14 @@ CHA	& Charisma & friendliness, dealing with people, etc.\\
 \end{center}
 \end{table}
 
-\emph{Throughout this document the attributes will usually be
+<text><emph>Throughout this document the attributes will usually be
   mentioned using the three-letter abbreviation instead of the full
-  name.}
+  name.</emph></text>
 
-The first three attributes (STR, DEX, and BLD) are considered Physical
+<text>The first three attributes (STR, DEX, and BLD) are considered Physical
 Attributes.  The second three attributes (INT, WIS, and WIL) are
 Mental Attributes.  The seventh, CHA, is a little of both, but is
-generally considered to be a Mental Attribute.
+generally considered to be a Mental Attribute.</text>
 
 Attributes are rated on a scale.  1 is the lowest possible attribute
 score.  There is no top end on the scale, though an attribute of 20 is
