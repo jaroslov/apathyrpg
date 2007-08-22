@@ -6,24 +6,24 @@ What follows is the specification of the book-xml to be used by Apathy. Because 
 book {
     title // of the book
     ?subtitle // necessary subtitle
-    author+ // author list
+    author* // author list
     ?table-of-contents // optional prebook parts
     ?list-of-tables
     ?list-of-figures
     ?list-of-examples
     (
-        reference // out-of-line reference
+        include // out-of-line include
         part // parts of the book
     )*
 }
 
-reference
-    <reference src="target" />
+include
+    <include src="target" />
 
 part { // a major portion of the book
     title // of the part
     [
-        reference
+        include
         chapter
     ]* // parts of the part
 }
