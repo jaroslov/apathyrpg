@@ -1,0 +1,12 @@
+<chapter>
+    <title>Mecha</title>
+    
+    <section><!-- Equipment -->
+        <title>Equipment</title>
+        <procedural src="Content/Mecha/Equipment/Auxiliary" />
+        <include src="Mecha-Ballistic.xml" />
+        <include src="Mecha-Energy.tex" />
+        <include src="Mecha-Melee Weapons.tex" />
+        <procedural src="Content/Mecha/Equipment/Sensors and Controls" />
+    </section><!-- /Equipment -->
+</chapter>
