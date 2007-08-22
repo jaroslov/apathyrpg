@@ -1,3 +1,5 @@
+<!DOCTYPE Content [
+
 <!ELEMENT Content
     (
         Academic,
@@ -9,10 +11,10 @@
         Monsters,
         Traits
     )>
-<!ATTLIST Content id #PCDATA "" >
+<!ATTLIST Content id CDATA "">
 
 <!ELEMENT Academic (KeyedItem*) >
-<!ATTLIST Academic id #PCDATA "" >
+<!ATTLIST Academic id CDATA "" >
 
 <!ELEMENT Augmentations
     (
@@ -22,7 +24,7 @@
         Leg,
         Torso
     ) >
-<!ATTLIST Augmentations id #PCDATA "" >
+<!ATTLIST Augmentations id CDATA "" >
 
 <!ELEMENT Equipment
     (
@@ -32,9 +34,9 @@
         Melee,
         Miscellaneous,
         Ranged,
-        Shields,
+        Shields
     ) >
-<!ATTLIST Equipment id #PCDATA "" >
+<!ATTLIST Equipment id CDATA "" >
 
 <!ELEMENT Melee
     (
@@ -53,7 +55,7 @@
         Staves,
         Thrown
     ) >
-<!ATTLIST Melee id #PCDATA "">
+<!ATTLIST Melee id CDATA "">
 
 <!ELEMENT Magic
     (
@@ -68,7 +70,7 @@
         Spirit,
         Water
     ) >
-<!ATTLIST Magic id #PCDATA "" >
+<!ATTLIST Magic id CDATA "" >
 
 <!ELEMENT Martial_Arts
     (
@@ -78,13 +80,13 @@
         Modifer,
         Special
     ) >
-<!ATTLIST Martial_Arts id #PCDATA "" >
+<!ATTLIST Martial_Arts id CDATA "" >
 
 <!ELEMENT Mecha
     (
         Equipment
     ) >
-<!ATTLIST Mecha id #PCDATA "">
+<!ATTLIST Mecha id CDATA "">
 
 <!ELEMENT Equipment
     (
@@ -94,130 +96,130 @@
         Melee_Weapons,
         Sensors_and_Controls
     ) >
-<!ATTLIST Equipment id #PCDATA "">
+<!ATTLIST Equipment id CDATA "">
 
 <!ELEMENT Monsters (KeyedItem*) >
-<!ATTLIST Monsters id #PCDATA "">
+<!ATTLIST Monsters id CDATA "">
 
 <!ELEMENT Traits (KeyedItem*) >
-<!ATTLIST Traits id #PCDATA "">
+<!ATTLIST Traits id CDATA "">
 
 <!ELEMENT Arm__Hand (KeyedItem)* >
-<!ATTLIST Arm__Hand id #PCDATA "">
+<!ATTLIST Arm__Hand id CDATA "">
 
 <!ELEMENT Body (KeyedItem)* >
-<!ATTLIST Body id #PCDATA "">
+<!ATTLIST Body id CDATA "">
 
 <!ELEMENT Head (KeyedItem)* >
-<!ATTLIST Head id #PCDATA "">
+<!ATTLIST Head id CDATA "">
 
 <!ELEMENT Leg (KeyedItem)* >
-<!ATTLIST Leg id #PCDATA "">
+<!ATTLIST Leg id CDATA "">
 
 <!ELEMENT Torso (KeyedItem)* >
-<!ATTLIST Torso id #PCDATA "">
+<!ATTLIST Torso id CDATA "">
 
 <!ELEMENT Ammunition (KeyedItem)* >
-<!ATTLIST Ammunition id #PCDATA "">
+<!ATTLIST Ammunition id CDATA "">
 
 <!ELEMENT Armor (KeyedItem)* >
-<!ATTLIST Armor id #PCDATA "">
+<!ATTLIST Armor id CDATA "">
 
 <!ELEMENT Energy_Weapons (KeyedItem)* >
-<!ATTLIST Energy_Weapons id #PCDATA "">
+<!ATTLIST Energy_Weapons id CDATA "">
 
 <!ELEMENT Axes (KeyedItem)* >
-<!ATTLIST Axes id #PCDATA "">
+<!ATTLIST Axes id CDATA "">
 
 <!ELEMENT Blunt (KeyedItem)* >
-<!ATTLIST Blunt id #PCDATA "">
+<!ATTLIST Blunt id CDATA "">
 
 <!ELEMENT Body (KeyedItem)* >
-<!ATTLIST Body id #PCDATA "">
+<!ATTLIST Body id CDATA "">
 
 <!ELEMENT Chained (KeyedItem)* >
-<!ATTLIST Chained id #PCDATA "">
+<!ATTLIST Chained id CDATA "">
 
 <!ELEMENT Exotic (KeyedItem)* >
-<!ATTLIST Exotic id #PCDATA "">
+<!ATTLIST Exotic id CDATA "">
 
 <!ELEMENT Knives (KeyedItem)* >
-<!ATTLIST Knives id #PCDATA "">
+<!ATTLIST Knives id CDATA "">
 
 <!ELEMENT Large_Swords (KeyedItem)* >
-<!ATTLIST Large_Swords id #PCDATA "">
+<!ATTLIST Large_Swords id CDATA "">
 
 <!ELEMENT Monofilament (KeyedItem)* >
-<!ATTLIST Monofilament id #PCDATA "">
+<!ATTLIST Monofilament id CDATA "">
 
 <!ELEMENT Plasma (KeyedItem)* >
-<!ATTLIST Plasma id #PCDATA "">
+<!ATTLIST Plasma id CDATA "">
 
 <!ELEMENT Polearms (KeyedItem)* >
-<!ATTLIST Polearms id #PCDATA "">
+<!ATTLIST Polearms id CDATA "">
 
 <!ELEMENT Rocket-Assisted (KeyedItem)* >
-<!ATTLIST Rocket-Assisted id #PCDATA "">
+<!ATTLIST Rocket-Assisted id CDATA "">
 
 <!ELEMENT Small_Swords (KeyedItem)* >
-<!ATTLIST Small_Swords id #PCDATA "">
+<!ATTLIST Small_Swords id CDATA "">
 
 <!ELEMENT Staves (KeyedItem)* >
-<!ATTLIST Staves id #PCDATA "">
+<!ATTLIST Staves id CDATA "">
 
 <!ELEMENT Thrown (KeyedItem)* >
-<!ATTLIST Thrown id #PCDATA "">
+<!ATTLIST Thrown id CDATA "">
 
 <!ELEMENT Miscellaneous (KeyedItem)* >
-<!ATTLIST Miscellaneous id #PCDATA "">
+<!ATTLIST Miscellaneous id CDATA "">
 
 <!ELEMENT Ranged (KeyedItem)* >
-<!ATTLIST Ranged id #PCDATA "">
+<!ATTLIST Ranged id CDATA "">
 
 <!ELEMENT Shields (KeyedItem)* >
-<!ATTLIST Shields id #PCDATA "">
+<!ATTLIST Shields id CDATA "">
 
 <!ELEMENT Air (KeyedItem)* >
-<!ATTLIST Air id #PCDATA "">
+<!ATTLIST Air id CDATA "">
 
 <!ELEMENT Arcane (KeyedItem)* >
-<!ATTLIST Arcane id #PCDATA "">
+<!ATTLIST Arcane id CDATA "">
 
 <!ELEMENT Beast (KeyedItem)* >
-<!ATTLIST Beast id #PCDATA "">
+<!ATTLIST Beast id CDATA "">
 
 <!ELEMENT Earth (KeyedItem)* >
-<!ATTLIST Earth id #PCDATA "">
+<!ATTLIST Earth id CDATA "">
 
 <!ELEMENT Life (KeyedItem)* >
-<!ATTLIST Life id #PCDATA "">
+<!ATTLIST Life id CDATA "">
 
 <!ELEMENT Light (KeyedItem)* >
-<!ATTLIST Light id #PCDATA "">
+<!ATTLIST Light id CDATA "">
 
 <!ELEMENT Physical (KeyedItem)* >
-<!ATTLIST Physical id #PCDATA "">
+<!ATTLIST Physical id CDATA "">
 
 <!ELEMENT Spirit (KeyedItem)* >
-<!ATTLIST Spirit id #PCDATA "">
+<!ATTLIST Spirit id CDATA "">
 
 <!ELEMENT Water (KeyedItem)* >
-<!ATTLIST Water id #PCDATA "">
+<!ATTLIST Water id CDATA "">
 
 <!ELEMENT Auxiliary (KeyedItem)* >
-<!ATTLIST Auxiliary id #PCDATA "">
+<!ATTLIST Auxiliary id CDATA "">
 
 <!ELEMENT Ballistic (KeyedItem)* >
-<!ATTLIST Ballistic id #PCDATA "">
+<!ATTLIST Ballistic id CDATA "">
 
 <!ELEMENT Energy (KeyedItem)* >
-<!ATTLIST Energy id #PCDATA "">
+<!ATTLIST Energy id CDATA "">
 
 <!ELEMENT Melee_Weapons (KeyedItem)* >
-<!ATTLIST Melee_Weapons id #PCDATA "">
+<!ATTLIST Melee_Weapons id CDATA "">
 
 <!ELEMENT Sensors_and_Controls (KeyedItem)* >
-<!ATTLIST Sensors_and_Controls id #PCDATA "">
+<!ATTLIST Sensors_and_Controls id CDATA "">
 
 <!ELEMENT KeyedItem
     (
@@ -236,7 +238,7 @@
     |   sensor
     |   trait
     )* >
-<!ATTLIST KeyedItem id #PCDATA #REQUIRED>
+<!ATTLIST KeyedItem id CDATA #REQUIRED>
 
 <!ELEMENT skill
     (
@@ -275,3 +277,7 @@
         target?,
         type?
     ) >
+
+]>
+
+<Content />
