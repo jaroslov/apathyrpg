@@ -33,6 +33,9 @@ TopoImportance = ["name",
                   "slots",
                   "requirements",
                   "character_points",
+                  "prerequisite",
+                  "cp",
+                  "location",
                   "description",
                   "implementation"]
 
