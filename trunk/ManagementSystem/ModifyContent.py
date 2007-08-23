@@ -4,6 +4,8 @@ import sys
 import wx
 from ArpgMs import ArpgUni as ArpgContent
 import wx.grid as gridlib
+import wx.stc as stclib
+import wx.html as htmllib
 
 # This is a windowed utility for modifying the contents
 # but *not* the hierarchy of the Data-section of the 
@@ -55,12 +57,13 @@ class GridView(gridlib.Grid):
         and self.WhichKeyedItems
         and self.WhichHeadings):
       self.WhichItem = (Event.GetRow (), Event.GetCol ())
-      Key = self.WhichKeyedItems[Event.GetRow ()][1]
+      Key = self.WhichKeyedItems[Event.GetRow ()]
       Heading = self.WhichHeadings[Event.GetCol ()]
-      KeyedItem = self.WhichCategory.Data[Key]
-      Item = KeyedItem.Data
+      Datum = self.WhichCategory[Key]
+      if not Datum.HasChild (Heading): # uh-oh, fix this!
+        Datum[Heading] = self.WhichCategory.Default[Heading].Clone ()
       if self.ItemChangedCallback:
-        self.ItemChangedCallback (Item.Data[Heading])
+        self.ItemChangedCallback (Datum[Heading].Value)
     elif self.ItemChangedCallback:
       self.ItemChangedCallback ("")
     Event.Skip ()
@@ -70,14 +73,13 @@ class GridView(gridlib.Grid):
         and self.WhichKeyedItems
         and self.WhichHeadings):
       self.WhichItem = (Event.GetRow (), Event.GetCol ())
-      Key = self.WhichKeyedItems[Event.GetRow ()][1]
+      Key = self.WhichKeyedItems[Event.GetRow ()]
       Heading = self.WhichHeadings[Event.GetCol ()]
-      KeyedItem = self.WhichCategory.Data[Key]
-      Item = KeyedItem.Data
-      Item.Data[Heading] = self.GetCellValue (Event.GetRow (), Event.GetCol ())
+      Datum = self.WhichCategory[Key]
+      Datum[Heading].Value = self.GetCellValue (Event.GetRow (), Event.GetCol ())
       if self.ItemChangedCallback:
-        self.ItemChangedCallback (Item.Data[Heading])
-      self.ContextSensitiveColoring (Item.Data[Heading], Event.GetRow (), Event.GetCol ())
+        self.ItemChangedCallback (Datum[Heading].Value)
+      self.ContextSensitiveColoring (Datum[Heading].Value, Event.GetRow (), Event.GetCol ())
     Event.Skip ()
 
   def EditorHides (self, Event):
@@ -102,16 +104,14 @@ class GridView(gridlib.Grid):
             and self.WhichKeyedItems
             and self.WhichHeadings):
           # find the Default
-          Default = None
-          for Key in self.WhichCategory.Data.keys ():
-            if Key.find ("Default") > 1:
-              Default = self.WhichCategory.Data[Key]
+          Default = self.WhichCategory.Default
           if Default == None:
-            print >> sys.stderr, "There is not Default"
+            print >> sys.stderr, "There is no Default"
             return # if there's no Default we're sunk
           NewItem = Default.Clone ()
-          NewItem.ID = "__"+str(wx.NewId ())
-          self.WhichCategory.Data[NewItem.ID] = NewItem
+          NewItem.Kind = "datum"
+          NewItem.Name = "__"+str(wx.NewId ())
+          self.WhichCategory[NewItem.Name] = NewItem
           self.SetUpGrid (self.WhichCategory)
         pass
 
@@ -119,8 +119,8 @@ class GridView(gridlib.Grid):
         if (self.WhichCategory
             and self.WhichKeyedItems
             and self.WhichHeadings):
-          Key = self.WhichKeyedItems[row][1]
-          del self.WhichCategory.Data[Key]
+          Key = self.WhichKeyedItems[row]
+          del self.WhichCategory[Key]
           self.SetUpGrid (self.WhichCategory)
         pass
 
@@ -184,6 +184,74 @@ class GridView(gridlib.Grid):
     #for skx in xrange(0,len(SortingKeys)):
     #  self.GridView.SetRowLabelValue (skx, What.Data[SortingKeys[skx][1]].Data.Name)
 
+class HtmlBox(wx.Notebook):
+  def __init__ (self, parent, id=wx.ID_ANY):
+    wx.Notebook.__init__ (self, parent, id, style=wx.NB_TOP)
+    self.HtmlWindow = htmllib.HtmlWindow (self)
+    self.Editor = stclib.StyledTextCtrl (self)
+
+    #print >> sys.stderr, dir(stclib)
+
+    self.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.OnPageChanged)
+
+    self.AddPage (self.HtmlWindow, "Render")
+    self.AddPage (self.Editor, "Edit")
+
+    self.Constants = {stclib.STC_H_ASP:"",
+                      stclib.STC_H_ASPAT:"",
+                      stclib.STC_H_ATTRIBUTE:"",
+                      stclib.STC_H_ATTRIBUTEUNKNOWN:"",
+                      stclib.STC_H_CDATA:"fore:#FFFFFF,back:#000000",
+                      stclib.STC_H_COMMENT:"fore:#339966",
+                      stclib.STC_H_DEFAULT:"",
+                      stclib.STC_H_DOUBLESTRING:"",
+                      stclib.STC_H_ENTITY:"fore:#00DD00",
+                      stclib.STC_H_NUMBER:"fore:#FF0000",
+                      stclib.STC_H_OTHER:"",
+                      stclib.STC_H_QUESTION:"fore:#00DD66",
+                      stclib.STC_H_SCRIPT:"",
+                      stclib.STC_H_SGML_1ST_PARAM:"",
+                      stclib.STC_H_SGML_1ST_PARAM_COMMENT:"",
+                      stclib.STC_H_SGML_BLOCK_DEFAULT:"",
+                      stclib.STC_H_SGML_COMMAND:"",
+                      stclib.STC_H_SGML_COMMENT:"",
+                      stclib.STC_H_SGML_DEFAULT:"",
+                      stclib.STC_H_SGML_DOUBLESTRING:"",
+                      stclib.STC_H_SGML_ENTITY:"",
+                      stclib.STC_H_SGML_ERROR:"",
+                      stclib.STC_H_SGML_SIMPLESTRING:"",
+                      stclib.STC_H_SGML_SPECIAL:"",
+                      stclib.STC_H_SINGLESTRING:"",
+                      stclib.STC_H_TAG:"fore:#993399",
+                      stclib.STC_H_TAGEND:"fore:#996666",
+                      stclib.STC_H_TAGUNKNOWN:"fore:#669900",
+                      stclib.STC_H_VALUE:"fore:000000",
+                      stclib.STC_H_XCCOMMENT:"",
+                      stclib.STC_H_XMLEND:"",
+                      stclib.STC_H_XMLSTART:""}
+
+    self.SetUpHtmlStyle ()
+
+  def SetUpHtmlStyle (self):
+    self.Editor.SetLexer (stclib.STC_LEX_PYTHON)
+    try:
+      for key in self.Constants.keys ():
+        try:
+          pass#self.Editor.StyleSetSpec (key, self.Constants[key])
+        except:
+          print >> sys.stderr, key, self.Constants[key]
+    except:
+      print >> sys.stderr, self.Constants
+
+  def SetValue (self, String):
+    self.Editor.SetText (String)
+    self.HtmlWindow.SetPage (self.GetValue ())
+  def GetValue (self):
+    return self.Editor.GetText ()
+  def OnPageChanged (self, Event):
+    self.HtmlWindow.SetPage (self.GetValue ())
+    Event.Skip ()
+
 class SelectionFrame(wx.Frame):
   def __init__(self, ArpgContent):
     wx.Frame.__init__(self, None, wx.NewId(), "ARPG-MS",
@@ -212,9 +280,10 @@ class SelectionFrame(wx.Frame):
     self.GridView.CreateGrid (0, 0)
     self.GridView.ItemChangedCallback = self.ItemChangedCallback
 
-    self.TextBox = wx.TextCtrl (self.BottomPanel,
-                                style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
-    self.Bind (wx.EVT_TEXT, self.TextChanged, self.TextBox)
+    self.RenderBox = HtmlBox (self.BottomPanel)
+    #  self.RenderBox = wx.TextCtrl (self.BottomPanel,
+    #                              style=wx.TE_WORDWRAP|wx.TE_MULTILINE)
+    self.Bind (stclib.EVT_STC_CHANGE, self.TextChanged, self.RenderBox.Editor)
 
     self.LSizer = wx.BoxSizer (wx.HORIZONTAL)
     self.LSizer.Add (self.Hierarch,
@@ -237,7 +306,7 @@ class SelectionFrame(wx.Frame):
     self.TopPanel.SetSizer (self.TRSizer)
 
     self.BRSizer = wx.BoxSizer (wx.VERTICAL)
-    self.BRSizer.Add (self.TextBox,
+    self.BRSizer.Add (self.RenderBox,
                       proportion=1,
                       flag=wx.EXPAND
                       | wx.ALL
@@ -276,10 +345,10 @@ class SelectionFrame(wx.Frame):
     datum = itemdatum.GetData ()
     if datum:
       self.GridView.SetUpGrid (datum)
-      self.TextBox.SetValue ("")
+      self.RenderBox.SetValue ("")
     else:
       self.GridView.ClearGrid ()
-      self.TextBox.SetValue ("")
+      self.RenderBox.SetValue ("")
 
   def TextChanged (self, Event):
     if (self.GridView.WhichCategory
@@ -288,17 +357,16 @@ class SelectionFrame(wx.Frame):
         and self.GridView.WhichItem):
       Row = self.GridView.WhichItem[0]
       Col = self.GridView.WhichItem[1]
-      self.GridView.SetCellValue (Row, Col, self.TextBox.GetValue ())
-      Key = self.GridView.WhichKeyedItems[Row][1]
+      self.GridView.SetCellValue (Row, Col, self.RenderBox.GetValue ())
+      Key = self.GridView.WhichKeyedItems[Row]
       Heading = self.GridView.WhichHeadings[Col]
-      KeyedItem = self.GridView.WhichCategory.Data[Key]
-      Item = KeyedItem.Data
-      Item.Data[Heading] = self.TextBox.GetValue ()
-      self.GridView.ContextSensitiveColoring (self.TextBox.GetValue (), Row, Col)
+      Datum = self.GridView.WhichCategory[Key]
+      Datum[Heading].Value = self.RenderBox.GetValue ()
+      self.GridView.ContextSensitiveColoring (self.RenderBox.GetValue (), Row, Col)
     else: pass    
 
   def ItemChangedCallback (self, Data):
-    self.TextBox.SetValue (Data)
+    self.RenderBox.SetValue (Data)
 
 def Debug ():
   app = wx.App ()
