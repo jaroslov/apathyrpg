@@ -179,6 +179,141 @@ class ARPG_MS(object):
         topokeys.append(zkey)
     return topokeys
 
+  def UniformXml (self, Indent="", Default=False):
+    # CategoryRule ::= (CategoryRule*)|(DefaultRule DatumRule*)
+    # DefaultRule ::= FieldRule*
+    # DatumRule ::= FieldRule*
+    #
+    # CategoryRule => <category name="...">?</category>
+    # DefaultRule => <default name="...">?</default>
+    # DatumRule => <datum name="...">?</datum>
+    # FieldRule => <field name="...">?</field>
+    output = ""
+    if "Hierarch" == self.Kind:
+      output += Indent+"<category name=\""+self.Name+"\">\n"
+      keys = self.Data.keys ()
+      keys.sort ()
+      for key in keys:
+        output += self.Data[key].UniformXml (Indent+"\t")+"\n"
+      output += Indent+"</category>"
+    elif "KeyedItem" == self.Kind:
+      if self.ID.find ("Default") > 0:
+        output += self.Data.UniformXml (Indent+"\t", True)
+      else:
+        output += self.Data.UniformXml (Indent+"\t")
+    elif "Leaf":
+      name = "datum"
+      if Default: name = "default"
+      output += Indent+"<"+name+" name=\""+self.Data["name"].replace("\"","\\\"")+"\" >\n"
+      keys = self.Data.keys ()
+      keys.sort ()
+      for key in keys:
+        value = self.Data[key].replace ("&", "&amp;").replace("<","&lt;").replace(">","&gt;")
+        output += Indent+"\t<field name=\""+key+"\" "
+        if len(value) > 0:
+          output += ">"+value+"</field>\n"
+        else: output += "/>\n"
+      output += Indent+"</"+name+">"
+    return output
+
+class ArpgUni(object):
+  def __init__ (self, Location=None):
+    self.Name = "" # attribute of `name="..."'
+    self.Kind = "" # category, default, rule, field
+    self.Value = ""
+    self.Default = None
+    self._Children = {}
+    if Location:
+      self.FromXmlFile (Location)
+
+  def FromXmlFile (self, Location):
+    import xml.dom.minidom as minix
+    file = minix.parse(Location)
+    # the first node is the "document" node, ignore
+    self.FromXml (file.childNodes[0])
+
+  def FromXml (self, xml):
+    import sys
+    self.Kind = xml.nodeName
+    if xml.hasAttributes ():
+      self.Name = xml.getAttribute("name")
+    if xml.hasChildNodes ():
+      for child in xml.childNodes:
+        if child.nodeType == xml.ELEMENT_NODE:
+          uchld = ArpgUni ()
+          uchld.FromXml (child)
+          if "default" == uchld.Kind:
+            self.Default = uchld
+          else:
+            self._Children[uchld.Name] = uchld
+        else:
+          self.Value += self.DexmlizeString(child.nodeValue)
+
+  def XmlizeString (self, String):
+    return String.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;").replace("\"","&quot;").replace("\'","&apos;");
+
+  def DexmlizeString (self, String):
+    return String.replace("&amp;","&").replace("&lt;","<").replace("&gt;",">").replace("&quot;","\"").replace("&apos;","\'")
+
+  def HasChild (self, Kid):
+    return self._Children.has_key (Kid)
+
+  def AsXml (self, Indent=""):
+    output = Indent + "<" + self.Kind + " name=\"" + self.Name + "\""
+    if "field" == self.Kind:
+      if len(self.Value) > 0:
+        val = self.XmlizeString (self.Value)
+        output += " >" + val + "</" + self.Kind + ">"
+      else: output += " />"
+    else:
+      output += " >\n"
+      if self.Default:
+        output += self.Default.AsXml (Indent+"\t")+"\n"
+      for child in self.keys ():
+        output += self[child].AsXml (Indent+"\t")+"\n"
+      output += Indent + "</" + self.Kind + ">"
+    return output
+
+  def __getitem__ (self, key):
+    return self._Children[key]
+
+  def __setitem__ (self, key, value):
+    self._Children[key] = value
+
+  def __delitem__ (self, key):
+    del self._Children[key]
+
+  def __len__ (self):
+    return len(self._Children)
+
+  def keys (self):
+    if "category" != self.Kind:
+      zkeys = self._Children.keys()
+      topokeys = []
+      for ikey in TopoImportance:
+        if ikey in zkeys:
+          topokeys.append(ikey)
+      for zkey in zkeys:
+        if zkey not in topokeys:
+          topokeys.append(zkey)
+      return topokeys
+    else:
+      keys = self._Children.keys ()
+      keys.sort ()
+      return keys
+
+  def StructuralEquivalence (self, Other, FieldEq = False):
+    if self.Kind == Other.Kind:
+      if "field" == self.Kind and FieldEq:
+        return self.Value == Other.Value
+      for key in self.keys ():
+        if Other.HasChild (key):
+          if not self[key].StructuralEquivalence (Other[key], FieldEq):
+            return False
+    else:
+      return False
+    return True
+
 def TestMerge ():
   C1 = ARPG_MS (Location="../Game/ARPG-Data.xml")
   C2 = ARPG_MS (Location="../Game/ARPG-Data2.xml")
@@ -186,5 +321,22 @@ def TestMerge ():
   out = open ("LMerge.xml", "w")
   print >> out, C3.AsXML ()
 
+def TestUni ():
+  C1 = ArpgUni (Location="UniData.xml")
+  out = open("RTUData.xml", "w")
+  print >> out, C1.AsXml ()
+
+def TestStructuralEq ():
+  C1 = ArpgUni (Location="UniData.xml");
+  C2 = ArpgUni (Location="RTUData.xml")
+  print C1.StructuralEquivalence (C1), C1.StructuralEquivalence (C2), C1.StructuralEquivalence (C2, True)
+
+def TestConvert ():
+  C1 = ARPG_MS (Location="../Game/ARPG-Data.xml")
+  out = open ("UniData.xml","w")
+  print >> out, C1.UniformXml ()
+
 if __name__=="__main__":
-  TestMerge ()
+  #TestUni ()
+  #TestConvert ()
+  TestStructuralEq ()
