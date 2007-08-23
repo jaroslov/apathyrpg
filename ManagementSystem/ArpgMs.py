@@ -259,7 +259,7 @@ class ArpgUni(object):
     return self._Children.has_key (Kid)
 
   def AsXml (self, Indent=""):
-    output = Indent + "<" + self.Kind + " name=\"" + self.Name + "\""
+    output = Indent + "<" + self.Kind + " name=\"" + self.XmlizeString (self.Name) + "\""
     if "field" == self.Kind:
       if len(self.Value) > 0:
         val = self.XmlizeString (self.Value)
@@ -314,6 +314,16 @@ class ArpgUni(object):
       return False
     return True
 
+  def Clone (self):
+    Other = ArpgUni ()
+    Other.Kind = self.Kind
+    Other.Name = self.Name
+    if self.Default:
+      Other.Default = self.Default.Clone ()
+    for key in self.keys ():
+      Other[key] = self[key].Clone ()
+    return Other
+
 def TestMerge ():
   C1 = ARPG_MS (Location="../Game/ARPG-Data.xml")
   C2 = ARPG_MS (Location="../Game/ARPG-Data2.xml")
@@ -336,7 +346,11 @@ def TestConvert ():
   out = open ("UniData.xml","w")
   print >> out, C1.UniformXml ()
 
+def TestOpen ():
+  C1 = ArpgUni (Location="blah.xml")
+
 if __name__=="__main__":
+  TestOpen ()
   #TestUni ()
   #TestConvert ()
-  TestStructuralEq ()
+  #TestStructuralEq ()
