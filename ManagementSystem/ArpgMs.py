@@ -302,17 +302,35 @@ class ArpgUni(object):
       keys.sort ()
       return keys
 
-  def StructuralEquivalence (self, Other, FieldEq = False):
+  def WalkStructures (self, Other, Walker):
     if self.Kind == Other.Kind:
-      if "field" == self.Kind and FieldEq:
-        return self.Value == Other.Value
+      Walker.SimilarKind (self, Other)
       for key in self.keys ():
         if Other.HasChild (key):
-          if not self[key].StructuralEquivalence (Other[key], FieldEq):
-            return False
+          Walker.BothHaveChild (self, Other, key)
+          self[key].WalkStructures (Other[key], Walker)
+        else:
+          Walker.OtherDoesntHaveChild (self, Other, key)
     else:
-      return False
-    return True
+      Walker.DissimilarKind (self, Other)
+
+  def StructuralEquivalence (self, Other, FieldEq = False):
+    class Walker(object):
+      def __init__ (self):
+        self.Equivalent = True
+        self.FieldEq = FieldEq
+      def SimilarKind (self, Left, Right):
+        if "field" == Left.Kind and self.FieldEq:
+          self.Equivalent = (self.Equivalent and Left.Value == Right.Value)
+      def BothHaveChild (self, Left, Right, key):
+        pass
+      def OtherDoesntHaveChild (self, Left, Right, key):
+        self.Equivalent = False
+      def DissimlarKind (self, Left, Right):
+        self.Equivalent = False
+    Walk = Walker ()
+    self.WalkStructures (Other, Walk)
+    return Walk.Equivalent
 
   def Clone (self):
     Other = ArpgUni ()
@@ -325,8 +343,8 @@ class ArpgUni(object):
     return Other
 
 def TestMerge ():
-  C1 = ARPG_MS (Location="../Game/ARPG-Data.xml")
-  C2 = ARPG_MS (Location="../Game/ARPG-Data2.xml")
+  C1 = ARPG_MS (Location="UniData.xml")
+  C2 = ARPG_MS (Location="RTUData.xml")
   C3 = C1.Merge (C2)
   out = open ("LMerge.xml", "w")
   print >> out, C3.AsXML ()
@@ -350,7 +368,7 @@ def TestOpen ():
   C1 = ArpgUni (Location="blah.xml")
 
 if __name__=="__main__":
-  TestOpen ()
+  #TestOpen ()
   #TestUni ()
   #TestConvert ()
-  #TestStructuralEq ()
+  TestStructuralEq ()
