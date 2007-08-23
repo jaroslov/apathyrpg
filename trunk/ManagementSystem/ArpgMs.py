@@ -364,6 +364,11 @@ def TestConvert ():
   out = open ("UniData.xml","w")
   print >> out, C1.UniformXml ()
 
+def TestRoundtrip ():
+  C1 = ArpgUni (Location="RTUData.xml")
+  out = open ("RTUData.xml", "w")
+  print >> out, C1.AsXml ()
+
 def TestOpen ():
   C1 = ArpgUni (Location="blah.xml")
 
@@ -371,4 +376,5 @@ if __name__=="__main__":
   #TestOpen ()
   #TestUni ()
   #TestConvert ()
-  TestStructuralEq ()
+  #TestStructuralEq ()
+  TestRoundtrip ()
