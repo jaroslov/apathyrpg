@@ -2,7 +2,7 @@
 
 import sys
 import wx
-from ArpgMs import ARPG_MS as ArpgContent
+from ArpgMs import ArpgUni as ArpgContent
 import wx.grid as gridlib
 
 # This is a windowed utility for modifying the contents
@@ -142,54 +142,42 @@ class GridView(gridlib.Grid):
   def SetUpGrid (self, What):
     self.ClearGrid ()
 
-    Keys = What.Data.keys ()
+    Keys = What.keys ()
     if len(Keys) < 1:
       return
 
     # check that we're gonna see leaves soon
-    if "KeyedItem" != What.Data[Keys[0]].Kind:
+    if "datum" != What[Keys[0]].Kind:
       return
 
     # find the Default, sort the keys
-    Default = None
-    SortingKeys = []
-    for Key in Keys:
-      if What.Data[Key].ID.find("Default") > 1:
-        Default = What.Data[Key].Data
-      else:
-        if What.Data[Key].Data.Data.has_key ("name"):
-          SortingKeys.append ((What.Data[Key].Data.Data["name"],Key))
-        else:
-          SortingKeys.append ((Key,Key))
-    if Default == None:
-      return
-    SortingKeys.sort ()
+    Default = What.Default
+    DataKeys = What.keys ()
 
     # get the Header, remove extraneous
-    Header = Default.TopoSortKeys ()[:]
+    Header = Default.keys ()
     try:
       Header.remove ("implementation")
       #Header.remove ("description")
     except: pass
 
     self.AppendCols (len(Header))
-    self.AppendRows (len(SortingKeys))
+    self.AppendRows (len(DataKeys))
 
     for hdx in xrange(0,len(Header)):
       heading = Header[hdx]
       self.SetColLabelValue (hdx, heading.capitalize ())
-      for skx in xrange(0,len(SortingKeys)):
-        Key = SortingKeys[skx][1]
-        KeyedItem = What.Data[Key]
-        Item = KeyedItem.Data
-        if Item.Data.has_key (heading):
-          self.SetCellValue (skx, hdx, Item.Data[heading])
-          self.ContextSensitiveColoring (Item.Data[heading], skx, hdx)
+      for skx in xrange(0,len(DataKeys)):
+        Key = DataKeys[skx]
+        Datum = What[Key]
+        if Datum.HasChild (heading):
+          self.SetCellValue (skx, hdx, Datum[heading].Value)
+          self.ContextSensitiveColoring (Datum[heading].Value, skx, hdx)
       if "description" != heading:
         self.AutoSizeColumn (hdx, True)
 
     self.WhichCategory = What
-    self.WhichKeyedItems = SortingKeys
+    self.WhichKeyedItems = DataKeys
     self.WhichHeadings = Header
 
     ## Can't figure out how to make row-label auto-sized
@@ -267,23 +255,19 @@ class SelectionFrame(wx.Frame):
 
   def AddHierarchy (self, Root=None, What=None):
     if self.Hierarch:
-      if "Hierarch" == What.Kind:
+      if "category" == What.Kind:
         Name = What.Name
-        if len(What.ID) > 0:
-          Name = What.ID
         SubRoot = self.Hierarch.AppendItem (Root, Name,
                                             data=wx.TreeItemData (What))
-        Keys = What.Data.keys  ()
-        Keys.sort ()
+        Keys = What.keys  ()
         for Key in Keys:
-          self.AddHierarchy (SubRoot, What.Data[Key])
+          self.AddHierarchy (SubRoot, What[Key])
     else:
       self.Hierarch = wx.TreeCtrl (self.LeftPanel)
       Root = self.Hierarch.AddRoot (self.ArpgContent.Name)
-      Keys = self.ArpgContent.Data.keys ()
-      Keys.sort ()
+      Keys = self.ArpgContent.keys ()
       for Key in Keys:
-        self.AddHierarchy (Root, self.ArpgContent.Data[Key])
+        self.AddHierarchy (Root, self.ArpgContent[Key])
       self.Hierarch.Expand (Root)
 
   def CategorySelected (self, Event):
@@ -339,7 +323,7 @@ def Live ():
   sf = SelectionFrame (Content)
   app.MainLoop ()
   tmp = open (To, "w")
-  print >> tmp, Content.AsXML ()
+  print >> tmp, Content.AsXml ()
 
 if __name__=="__main__":
   Live ()
