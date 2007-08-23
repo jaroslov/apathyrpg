@@ -342,6 +342,115 @@ class ArpgUni(object):
       Other[key] = self[key].Clone ()
     return Other
 
+def MakeHtmlTable (Category, Caption=""):
+  """
+  Makes an HTML-formatted Table from a given category. Non-recursive.
+  Note, items are placed in the Table if the Default item in the category
+  contains the word "Table" in it's text.
+  """
+  if not Category.Default:
+    return ""
+  Headings = []
+  for field in Category.Default.keys (): # look for the word "Table"
+    if Category.Default[field].Value.find ("Table") >= 0:
+      Headings.append (field)
+  # begin the table
+  output = "<table class=\"database-table\" id=\""+Category.Name+"\">"
+  output += "\n\t<caption class=\"database-table-caption\">"+Caption+"</caption>\n"
+  # table heading
+  output += "\t<thead class=\"database-table-head\"><tr>"
+  for Heading in Headings:
+    output += "<td>"+Heading+"</td>"
+  output += "</tr></thead>\n"
+  # table body
+  output += "\t<tbody class=\"database-table-body\">\n"
+  for key in Category.keys ():
+    output += "\t\t<tr>"
+    for Heading in Headings:
+      Value = ""
+      if Category[key].HasChild (Heading):
+        Value = Category[key][Heading].Value
+      output += "<td>"+Value+"</td>"
+    output += "</tr>\n"
+  output += "\t</tbody>\n"
+  # end the table
+  output += "</table>"
+  return output
+
+def MakeFormattedDescription (Datum, Title, DescTbl, Description):
+  """
+  A div with a title selected by "Title" a small, two-column table
+  generated from DescTbl and a paragraph from "Description"
+  """
+  # start the div
+  output = "<div class=\"database-description\">\n"
+  # heading
+  output += "\t<h1>"+Datum[Title].Value+"</h1>\n"
+  # table
+  output += "\t<table>\n"
+  # table is two-column: find length of left & right columns
+  # insertion items: field-name, field-value, ...
+  tblitems = []
+  for dsc in DescTbl:
+    tblitems.append (dsc)
+    if Datum.HasChild (dsc):
+      tblitems.append (Datum[dsc].Value)
+    else:
+      tblitems.append ("")
+  llen = len(DescTbl) / 2
+  rlen = len(DescTbl) - llen
+  if llen < rlen:
+    tmp = llen
+    llen = rlen
+    rlen = tmp
+    tblitems.append ("")
+    tblitems.append ("")
+  fnmcls = "database-description-table-field-name"
+  fvlcls = "database-description-table-field-value"
+  for idx in xrange(llen):
+    output += "\t\t<tr><td class=\""+fnmcls+"\">"+tblitems[idx*4]+":</td>"
+    output += "<td class=\""+fvlcls+"\">"+tblitems[idx*4+1]+"</td>"
+    output += "<td class=\""+fnmcls+"\">"+tblitems[idx*4+2]+":</td>"
+    output += "<td class=\""+fvlcls+"\">"+tblitems[idx*4+3]+"</td></tr>\n"
+  output += "\t</table>\n"
+  # description
+  output += "\t<p>"+Datum[Description].Value+"</p>\n"
+  # end the div
+  output += "</div>"
+  return output
+
+def MakeFormattedDescriptions (Category):
+  """
+  Makes an HTML-formatted description. This consists of a <div> element
+  that contains a title, possibly a small table, and then a longer
+  description.
+  The following keys are marked in the "Default" item:
+  "title" is marked "Title", the last one marked is used
+  "table-items" are marked "DescTbl"
+  "description" is marked "Description"
+  """
+  if not Category.Default:
+    return ""
+  Title = ""
+  DescTbl = []
+  Description = ""
+  for field in Category.Default.keys ():
+    if Category.Default[field].Value.find ("Title") >= 0:
+      Title = field
+    if Category.Default[field].Value.find ("DescTbl") >= 0:
+      DescTbl.append (field)
+    if Category.Default[field].Value.find ("Description") >= 0:
+      Description = field
+  output = ""
+  for key in Category.keys ():
+    output += MakeFormattedDescription  (Category[key], Title, DescTbl, Description) + "\n"
+  return output
+
+def MakeHtmlCategory (Category, Caption=""):
+  output = MakeHtmlTable (Category)+"\n"
+  output += MakeFormattedDescriptions (Category)
+  return output
+
 def TestMerge ():
   C1 = ARPG_MS (Location="UniData.xml")
   C2 = ARPG_MS (Location="RTUData.xml")
@@ -372,9 +481,24 @@ def TestRoundtrip ():
 def TestOpen ():
   C1 = ArpgUni (Location="blah.xml")
 
+def TestMakeTable ():
+  C1 = ArpgUni (Location="UniData.xml")
+  print MakeHtmlTable (C1["Academic"],"Auto-Generated Table")
+
+def TestMakeFormattedDescs ():
+  C1 = ArpgUni (Location="UniData.xml")
+  print MakeFormattedDescriptions (C1["Magic"]["Air"])
+
+def TestMakeHtmlCategory ():
+  C1 = ArpgUni (Location="UniData.xml")
+  print MakeHtmlCategory (C1["Magic"]["Air"])
+
 if __name__=="__main__":
   #TestOpen ()
   #TestUni ()
   #TestConvert ()
   #TestStructuralEq ()
-  TestRoundtrip ()
+  #TestRoundtrip ()
+  #TestMakeTable ()
+  #TestMakeFormattedDescs ()
+  TestMakeHtmlCategory ()
