@@ -2710,19 +2710,18 @@ The academic study of natural laws, including mechanics, electricity and magneti
 				<field name="MetaTag" />
 				<field name="Cost" />
 				<field name="Note" />
-				<field name="encumbrance" />
 				<field name="Piercing" />
 				<field name="Slashing" />
 				<field name="Crushing" />
 				<field name="Description" />
 				<field name="Implementation" />
+				<field name="encumbrance" />
 			</default>
 			<datum name="ALCAR Plate" >
 				<field name="Name" >ALCAR Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >11900</field>
 				<field name="Note" >Hard, Fire</field>
-				<field name="encumbrance" >7</field>
 				<field name="Piercing" >13</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >5</field>
@@ -2730,25 +2729,25 @@ The academic study of natural laws, including mechanics, electricity and magneti
 
 The suit is made of heavy ballistic nylon which is covered with form-fitting ALuminum-CARbon plates which cover the vast majority of the body.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >7</field>
 			</datum>
 			<datum name="Ajax&apos;s Deadly Grasp" >
 				<field name="Name" >Ajax&apos;s Deadly Grasp</field>
 				<field name="MetaTag" >Unique</field>
 				<field name="Cost" >0</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >3</field>
 				<field name="Description" >???</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Articulated Plate" >
 				<field name="Name" >Articulated Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >32700</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >9</field>
 				<field name="Piercing" >12</field>
 				<field name="Slashing" >15</field>
 				<field name="Crushing" >9</field>
@@ -2756,13 +2755,13 @@ The suit is made of heavy ballistic nylon which is covered with form-fitting ALu
 
 Articulated plate must be made specifically for a given wearer.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >9</field>
 			</datum>
 			<datum name="BSP Linked Plate Armor" >
 				<field name="Name" >BSP Linked Plate Armor</field>
 				<field name="MetaTag" />
 				<field name="Cost" >29300</field>
 				<field name="Note" >Hard, Fire x2</field>
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >15</field>
 				<field name="Slashing" >10</field>
 				<field name="Crushing" >8</field>
@@ -2770,49 +2769,49 @@ Articulated plate must be made specifically for a given wearer.</field>
 
 This armor consists of a Spectra sleeved vest and matching pants.  The entire suit is covered with polymeric plates reenforced with boron nanotubes.  The thickness and shape of the plates is optimized to provide good mobility and protection.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Ballistics Cloth (Heavy)" >
 				<field name="Name" >Ballistics Cloth (Heavy)</field>
 				<field name="MetaTag" />
 				<field name="Cost" >6300</field>
 				<field name="Note" />
-				<field name="encumbrance" >4</field>
 				<field name="Piercing" >8</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >5</field>
 				<field name="Description" >Heavy bulletproof vest with a trauma plate in the chest area.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >4</field>
 			</datum>
 			<datum name="Ballistics Cloth (Light)" >
 				<field name="Name" >Ballistics Cloth (Light)</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1100</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >2</field>
 				<field name="Crushing" >3</field>
 				<field name="Description" >A very light bulletproof vest.  This is typically used by undercover police or anyone that needs unobtrusive protection.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="Ballistics Cloth (Standard)" >
 				<field name="Name" >Ballistics Cloth (Standard)</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2700</field>
 				<field name="Note" />
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >6</field>
 				<field name="Slashing" >3</field>
 				<field name="Crushing" >4</field>
 				<field name="Description" >A typical Kevlar bulletproof vest.  Very commonly issued to soldiers and police.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >3</field>
 			</datum>
 			<datum name="Banded Mail" >
 				<field name="Name" >Banded Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >6200</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >9</field>
 				<field name="Piercing" >7</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >9</field>
@@ -2822,37 +2821,37 @@ A leather suit covered in overlapping and layerd metal plates that curve around 
 
 \VBoxColumnPicture{Images/Equipment/Armor/Hirschvogel_Sigismund.jpg}</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >9</field>
 			</datum>
 			<datum name="Beast Leather" >
 				<field name="Name" >Beast Leather</field>
 				<field name="MetaTag" />
 				<field name="Cost" >3900</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >2</field>
 				<field name="Description" >Leather armor made from special leather from wilderness beasts. Scarce.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="Biker&apos;s Leathers" >
 				<field name="Name" >Biker&apos;s Leathers</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1000</field>
 				<field name="Note" >Fire</field>
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >3</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Leather suit worn by motorcycle racers. The suit is specially tailored to fit the rider while in the ridng position.  This, size is considered to be zero when the rider is on a motorcycle.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="Boron-Ceramic Plate" >
 				<field name="Name" >Boron-Ceramic Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >27500</field>
 				<field name="Note" >Hard, Fire x3</field>
-				<field name="encumbrance" >10</field>
 				<field name="Piercing" >15</field>
 				<field name="Slashing" >12</field>
 				<field name="Crushing" >9</field>
@@ -2860,25 +2859,25 @@ A leather suit covered in overlapping and layerd metal plates that curve around 
 
 This armor is exceptionally resistant to battle damage and is capable of absorbing a remarkable amount of damage before becoming unusuable.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >10</field>
 			</datum>
 			<datum name="Brigandine" >
 				<field name="Name" >Brigandine</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1700</field>
 				<field name="Note" />
-				<field name="encumbrance" >6</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >2</field>
 				<field name="Description" >Brigandine armor is made from a heavy cloth or supple leather tunic that is fitted with a regular pattern of rectangular iron plates.  It covers the body from the neck to the thighs, and also covers the shoulder area.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >6</field>
 			</datum>
 			<datum name="CLAF Suit" >
 				<field name="Name" >CLAF Suit</field>
 				<field name="MetaTag" />
 				<field name="Cost" >10100</field>
 				<field name="Note" />
-				<field name="encumbrance" >4</field>
 				<field name="Piercing" >10</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >4</field>
@@ -2886,13 +2885,13 @@ This armor is exceptionally resistant to battle damage and is capable of absorbi
 
 CLAF armor is common amongst police in affluent precincts and is also issued to some frontline infantry troops.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >4</field>
 			</datum>
 			<datum name="CLB--WAF Suit" >
 				<field name="Name" >CLB--WAF Suit</field>
 				<field name="MetaTag" />
 				<field name="Cost" >19000</field>
 				<field name="Note" >Fire</field>
-				<field name="encumbrance" >4</field>
 				<field name="Piercing" >11</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >3</field>
@@ -2900,13 +2899,13 @@ CLAF armor is common amongst police in affluent precincts and is also issued to 
 
 This armor delivers remarkable protection but is light enough to be used by beat cops and common soldiers.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >4</field>
 			</datum>
 			<datum name="Carbon Fiber Plate" >
 				<field name="Name" >Carbon Fiber Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >17000</field>
 				<field name="Note" >Fire, Hard</field>
-				<field name="encumbrance" >5</field>
 				<field name="Piercing" >10</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >7</field>
@@ -2916,13 +2915,13 @@ It consists of high saturation 3D carbon fiber matix plates impregnated with sem
 
 This armor is typically used by SWAT and Military units.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >5</field>
 			</datum>
 			<datum name="Ceramic Plate" >
 				<field name="Name" >Ceramic Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >24800</field>
 				<field name="Note" >Hard, Fire x3</field>
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >14</field>
 				<field name="Slashing" >11</field>
 				<field name="Crushing" >7</field>
@@ -2930,13 +2929,13 @@ This armor is typically used by SWAT and Military units.</field>
 
 Though it is an uncommon choice for military or police use, it is very popular amonst freelance mercenaries and adventurers due to its excellent fire resistance.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Chain Mail" >
 				<field name="Name" >Chain Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1000</field>
 				<field name="Note" />
-				<field name="encumbrance" >5</field>
 				<field name="Piercing" >3</field>
 				<field name="Slashing" >7</field>
 				<field name="Crushing" >1</field>
@@ -2948,133 +2947,133 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 
 \VBoxColumnPicture{Images/Equipment/Armor/Morgan_Bible_28r_detail.jpg}</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >5</field>
 			</datum>
 			<datum name="Chain and Brigandine" >
 				<field name="Name" >Chain and Brigandine</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2900</field>
 				<field name="Note" />
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >10</field>
 				<field name="Crushing" >3</field>
 				<field name="Description" >A chain mail suit covered with thick metal plates</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Cloth" >
 				<field name="Name" >Cloth</field>
 				<field name="MetaTag" />
 				<field name="Cost" >100</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >1</field>
 				<field name="Slashing" >1</field>
 				<field name="Crushing" >0</field>
 				<field name="Description" >Heavy clothing designed especially for protection--like a woodsman&apos;s coveralls, etc.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Densematter Plate" >
 				<field name="Name" >Densematter Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >30000</field>
 				<field name="Note" >Hard, Fire x3</field>
-				<field name="encumbrance" >15</field>
 				<field name="Piercing" >17</field>
 				<field name="Slashing" >15</field>
 				<field name="Crushing" >11</field>
 				<field name="Description" >Heavy hard armor carrying collapsed abotex plates. Exceedingly rare.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >15</field>
 			</datum>
 			<datum name="Double Mail" >
 				<field name="Name" >Double Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2700</field>
 				<field name="Note" />
-				<field name="encumbrance" >6</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >9</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Similar to chain mail, but a superior design with a higher denisty of rings.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >6</field>
 			</datum>
 			<datum name="Elven Chain Mail" >
 				<field name="Name" >Elven Chain Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >17800</field>
 				<field name="Note" />
-				<field name="encumbrance" >4</field>
 				<field name="Piercing" >6</field>
 				<field name="Slashing" >12</field>
 				<field name="Crushing" >2</field>
 				<field name="Description" >A superior form of chain mail made from exceptionally small metal rings that are interlinked in three dimensions.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >4</field>
 			</datum>
 			<datum name="Elysian Plate" >
 				<field name="Name" >Elysian Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >13300</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >6</field>
 				<field name="Piercing" >8</field>
 				<field name="Slashing" >11</field>
 				<field name="Crushing" >6</field>
 				<field name="Description" >A fine suit of plate armor. It is made of exotic metals and has finely fitted joints to improve mobility.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >6</field>
 			</datum>
 			<datum name="Fiberglass Plate" >
 				<field name="Name" >Fiberglass Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2300</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >6</field>
 				<field name="Description" >Hard armor composed of fiberglass-epoxy plates over a kevlar interior</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Field Plate aka 3/4 plate" >
 				<field name="Name" >Field Plate aka 3/4 plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >10500</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >12</field>
 				<field name="Piercing" >10</field>
 				<field name="Slashing" >13</field>
 				<field name="Crushing" >8</field>
 				<field name="Description" >A chain mail suit covered with thick, form-fitting heavy metal plates</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >12</field>
 			</datum>
 			<datum name="Fishback Ceramic" >
 				<field name="Name" >Fishback Ceramic</field>
 				<field name="MetaTag" />
 				<field name="Cost" >4800</field>
 				<field name="Note" />
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >7</field>
 				<field name="Crushing" >3</field>
 				<field name="Description" >A heavy synth coat covered with hundreds of small hexagonal CERMET plates</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >3</field>
 			</datum>
 			<datum name="Fishback Steel" >
 				<field name="Name" >Fishback Steel</field>
 				<field name="MetaTag" />
 				<field name="Cost" >500</field>
 				<field name="Note" />
-				<field name="encumbrance" >5</field>
 				<field name="Piercing" >3</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >3</field>
 				<field name="Description" >A heavy denim coat covered with hundreds of small hexagonal metal tiles</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >5</field>
 			</datum>
 			<datum name="Flak Armor" >
 				<field name="Name" >Flak Armor</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1000</field>
 				<field name="Note" />
-				<field name="encumbrance" >6</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >4</field>
@@ -3086,537 +3085,538 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 
         \VBoxColumnPicture{Images/Equipment/Armor/Sn-42b.jpg}</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >6</field>
 			</datum>
 			<datum name="Forged Plate" >
 				<field name="Name" >Forged Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >27300</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >15</field>
 				<field name="Piercing" >14</field>
 				<field name="Slashing" >17</field>
 				<field name="Crushing" >11</field>
 				<field name="Description" >Metallurgically improved plate armor. It is the same encumberance but provides better protection.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >15</field>
 			</datum>
 			<datum name="Full Plate" >
 				<field name="Name" >Full Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >14000</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >15</field>
 				<field name="Piercing" >12</field>
 				<field name="Slashing" >15</field>
 				<field name="Crushing" >9</field>
 				<field name="Description" >A full chain mail suit completely covered with form fitting heavy steel plates</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >15</field>
 			</datum>
 			<datum name="Furs" >
 				<field name="Name" >Furs</field>
 				<field name="MetaTag" />
 				<field name="Cost" >200</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >1</field>
 				<field name="Slashing" >1</field>
 				<field name="Crushing" >2</field>
 				<field name="Description" >cold weather clothing made from leather and animal furs</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="G-Alloy Plate" >
 				<field name="Name" >G-Alloy Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >329700</field>
 				<field name="Note" >Hard, Fire x5</field>
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >20</field>
 				<field name="Slashing" >24</field>
 				<field name="Crushing" >14</field>
 				<field name="Description" >Highly advanced semimetallic armor oriented on the molecular level</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Gentleman&apos;s Vest" >
 				<field name="Name" >Gentleman&apos;s Vest</field>
 				<field name="MetaTag" >Unique</field>
 				<field name="Cost" >0</field>
 				<field name="Note" >Fire, Hard</field>
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >10</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >16</field>
 				<field name="Description" >A snazzy, gray, woolen, formal vest. It is somewhat bulky, but very debonair. Adds +1 to all Build-related skills. A magical item.</field>
 				<field name="Implementation" >Charisma += 2;</field>
+				<field name="encumbrance" >3</field>
 			</datum>
 			<datum name="Gi" >
 				<field name="Name" >Gi</field>
 				<field name="MetaTag" />
 				<field name="Cost" >100</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >1</field>
 				<field name="Slashing" >1</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="HC Aramid Armor" >
 				<field name="Name" >HC Aramid Armor</field>
 				<field name="MetaTag" />
 				<field name="Cost" >42000</field>
 				<field name="Note" >Fire, Hard</field>
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >16</field>
 				<field name="Slashing" >11</field>
 				<field name="Crushing" >9</field>
 				<field name="Description" >Heavy hard armor made from hard-cast semimetallic composite plates</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Hakama (cotton)" >
 				<field name="Name" >Hakama (cotton)</field>
 				<field name="MetaTag" />
 				<field name="Cost" >200</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >1</field>
 				<field name="Slashing" >2</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="Hakama (silk)" >
 				<field name="Name" >Hakama (silk)</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1000</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >4</field>
 				<field name="Crushing" >0</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Half Plate" >
 				<field name="Name" >Half Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >5700</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >10</field>
 				<field name="Piercing" >8</field>
 				<field name="Slashing" >11</field>
 				<field name="Crushing" >6</field>
 				<field name="Description" >A chain mail suit sparcely covered with thick, non-interlocking plates</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >10</field>
 			</datum>
 			<datum name="Hard Leather" >
 				<field name="Name" >Hard Leather</field>
 				<field name="MetaTag" />
 				<field name="Cost" >700</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >3</field>
 				<field name="Slashing" >4</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Similar to soft leather, except that the main pieces are made of hard tooled leather</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="Heavy Jacket" >
 				<field name="Name" >Heavy Jacket</field>
 				<field name="MetaTag" />
 				<field name="Cost" >50</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >0</field>
 				<field name="Slashing" >1</field>
 				<field name="Crushing" >0</field>
 				<field name="Description" >Any sort of unusually thick clothing--like a parka, leather jacket, heavy denim, etc.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Heavy Plate" >
 				<field name="Name" >Heavy Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >33100</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >18</field>
 				<field name="Piercing" >16</field>
 				<field name="Slashing" >19</field>
 				<field name="Crushing" >12</field>
 				<field name="Description" >A suit of fully enclosed metal plate armor. The plates are thicker than normal for superior protection.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >18</field>
 			</datum>
 			<datum name="Jack/gravel coat" >
 				<field name="Name" >Jack/gravel coat</field>
 				<field name="MetaTag" />
 				<field name="Cost" >400</field>
 				<field name="Note" />
-				<field name="encumbrance" >4</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >A cloak made of heavy cloth secured with leather straps. The surface is covered with small stones and bits of metal bonded and sewn in place.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >4</field>
 			</datum>
 			<datum name="Kevlar" >
 				<field name="Name" >Kevlar</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2200</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >3</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >armored clothing made from pure kevlar with normal cloth over it. Designed to be inconspicuous. (used by diplomats, etc.)</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Knitted Steel" >
 				<field name="Name" >Knitted Steel</field>
 				<field name="MetaTag" />
 				<field name="Cost" >800</field>
 				<field name="Note" />
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >1</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >0</field>
 				<field name="Description" >Armor made from weaving steel wire into cloth</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >3</field>
 			</datum>
 			<datum name="Light Plate" >
 				<field name="Name" >Light Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >5100</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >4</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >4</field>
 				<field name="Description" >A partial plate suit. It consists of a breast plate, shoulder plates and greaves. The plates are cut to maximize movement.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >4</field>
 			</datum>
 			<datum name="Linked Metal" >
 				<field name="Name" >Linked Metal</field>
 				<field name="MetaTag" />
 				<field name="Cost" >500</field>
 				<field name="Note" />
-				<field name="encumbrance" >4</field>
 				<field name="Piercing" >3</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >secondary armor for millitary applications--a network of metal plates over a cloth vest</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >4</field>
 			</datum>
 			<datum name="Mylar" >
 				<field name="Name" >Mylar</field>
 				<field name="MetaTag" />
 				<field name="Cost" >4900</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >1</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >0</field>
 				<field name="Description" >Thin armor material that is nearly impossible to cut</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Nomex" >
 				<field name="Name" >Nomex</field>
 				<field name="MetaTag" />
 				<field name="Cost" >250</field>
 				<field name="Note" >Fire x 2</field>
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >2</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Tough clothing made from NOMEX fibers---designed for fire protection. Worn by firefighters and emergency workers</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="PACA Mesh suit" >
 				<field name="Name" >PACA Mesh suit</field>
 				<field name="MetaTag" />
 				<field name="Cost" >3400</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Millitary armor made from tough armored fibers and composite plastics</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="PLCALF Armor" >
 				<field name="Name" >PLCALF Armor</field>
 				<field name="MetaTag" />
 				<field name="Cost" >28900</field>
 				<field name="Note" >Fire, Hard</field>
-				<field name="encumbrance" >5</field>
 				<field name="Piercing" >13</field>
 				<field name="Slashing" >9</field>
 				<field name="Crushing" >5</field>
 				<field name="Description" >Same as the above, with additional polymeric plates in key areas. This is the heaviest armor used by ultramodern SWAT forces.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >5</field>
 			</datum>
 			<datum name="Padded" >
 				<field name="Name" >Padded</field>
 				<field name="MetaTag" />
 				<field name="Cost" >100</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >0</field>
 				<field name="Slashing" >1</field>
 				<field name="Crushing" >2</field>
 				<field name="Description" >Heavy clothing lined with multiple layers of thick fur, padding, etc.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Polymer Plate" >
 				<field name="Name" >Polymer Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >5800</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >6</field>
 				<field name="Piercing" >8</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >5</field>
 				<field name="Description" >Light hard armor made from advanced polymeric plates over a kevlar suit</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >6</field>
 			</datum>
 			<datum name="R-Polymer Plate" >
 				<field name="Name" >R-Polymer Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >15900</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >7</field>
 				<field name="Piercing" >11</field>
 				<field name="Slashing" >10</field>
 				<field name="Crushing" >7</field>
 				<field name="Description" >Polymeric hard armor containing steel inserts in all plates</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >7</field>
 			</datum>
 			<datum name="RIR Hazard Suit" >
 				<field name="Name" >RIR Hazard Suit</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2300</field>
 				<field name="Note" />
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >7</field>
 				<field name="Crushing" >2</field>
 				<field name="Description" >Rubber-impregnated polyester fabric filled with dogbone-shaped interlocking metal bars. Protects against chemicals too.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >3</field>
 			</datum>
 			<datum name="Racer&apos;s Suit/Pilot&apos;s suit" >
 				<field name="Name" >Racer&apos;s Suit/Pilot&apos;s suit</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1500</field>
 				<field name="Note" >Fire x 2</field>
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >3</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Full body jumpsuit made of fireproof materials. Designed to save the life of race car drivers, pilots, etc, in the event of a crash or fire.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Reinforced Leather" >
 				<field name="Name" >Reinforced Leather</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1200</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >2</field>
 				<field name="Description" >Very hard and stiff leather with inlaid metal reinforcements. The edges are ringed in metal.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >3</field>
 			</datum>
 			<datum name="Ring Mail" >
 				<field name="Name" >Ring Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1900</field>
 				<field name="Note" />
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >6</field>
 				<field name="Description" >Large metal rings held together with leather straps</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Riot Armor" >
 				<field name="Name" >Riot Armor</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2400</field>
 				<field name="Note" />
-				<field name="encumbrance" >7</field>
 				<field name="Piercing" >6</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >6</field>
 				<field name="Description" >Standard SWAT armor: Ballistics cloth with metal plates in key locations</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >7</field>
 			</datum>
 			<datum name="SEB Hard Armor" >
 				<field name="Name" >SEB Hard Armor</field>
 				<field name="MetaTag" />
 				<field name="Cost" >22000</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >14</field>
 				<field name="Slashing" >10</field>
 				<field name="Crushing" >7</field>
 				<field name="Description" >Boron-composite plates over a spectra undersuit. Rare, generally used by special forces or elite units.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="SPECTRA" >
 				<field name="Name" >SPECTRA</field>
 				<field name="MetaTag" />
 				<field name="Cost" >22700</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >7</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Improved version of Kevar, very flexible yet stands up well to piercing and slashing</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="SPECTRA Tactical Vest" >
 				<field name="Name" >SPECTRA Tactical Vest</field>
 				<field name="MetaTag" />
 				<field name="Cost" >14900</field>
 				<field name="Note" />
-				<field name="encumbrance" >6</field>
 				<field name="Piercing" >12</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >5</field>
 				<field name="Description" >A heavy bulletproof vest made from the improved SPECTRA material with a steel chestplate</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >6</field>
 			</datum>
 			<datum name="Scale Mail" >
 				<field name="Name" >Scale Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1400</field>
 				<field name="Note" />
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >6</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >5</field>
 				<field name="Description" >Hard leather armor covered in overlapping metal scales</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Scale-over-Chain" >
 				<field name="Name" >Scale-over-Chain</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2400</field>
 				<field name="Note" />
-				<field name="encumbrance" >9</field>
 				<field name="Piercing" >7</field>
 				<field name="Slashing" >8</field>
 				<field name="Crushing" >5</field>
 				<field name="Description" >A chain mail suit with additional metal scales covering the chain material</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >9</field>
 			</datum>
 			<datum name="Silk" >
 				<field name="Name" >Silk</field>
 				<field name="MetaTag" />
 				<field name="Cost" >4400</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >3</field>
 				<field name="Slashing" >5</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Armored robes made from woven silk threads.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Soft Leather" >
 				<field name="Name" >Soft Leather</field>
 				<field name="MetaTag" />
 				<field name="Cost" >500</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >2</field>
 				<field name="Slashing" >3</field>
 				<field name="Crushing" >0</field>
 				<field name="Description" >Armored clothing made of pieces of thick, soft, leather sewn together</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Sorbothene" >
 				<field name="Name" >Sorbothene</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1100</field>
 				<field name="Note" />
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >0</field>
 				<field name="Slashing" >0</field>
 				<field name="Crushing" >5</field>
 				<field name="Description" >A shock-damping suit made from a special rubber material</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="Splint Mail" >
 				<field name="Name" >Splint Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2600</field>
 				<field name="Note" />
-				<field name="encumbrance" >8</field>
 				<field name="Piercing" >3</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >8</field>
 				<field name="Description" >Soft leather armor covered with paralell vertical bands of iron</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >8</field>
 			</datum>
 			<datum name="Steel Plate" >
 				<field name="Name" >Steel Plate</field>
 				<field name="MetaTag" />
 				<field name="Cost" >2000</field>
 				<field name="Note" >Hard</field>
-				<field name="encumbrance" >12</field>
 				<field name="Piercing" >9</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >6</field>
 				<field name="Description" >A modern version of full plate mail</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >12</field>
 			</datum>
 			<datum name="Stripped-Leather Mail" >
 				<field name="Name" >Stripped-Leather Mail</field>
 				<field name="MetaTag" />
 				<field name="Cost" >1800</field>
 				<field name="Note" />
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >4</field>
 				<field name="Slashing" >6</field>
 				<field name="Crushing" >1</field>
 				<field name="Description" >Soft leather underlayment with multiple layers of hard leather straps held on by metallic buckles or rings. Creaks and makes noise when moving.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >3</field>
 			</datum>
 			<datum name="Tai Chi suit" >
 				<field name="Name" >Tai Chi suit</field>
 				<field name="MetaTag" />
 				<field name="Cost" >250</field>
 				<field name="Note" />
-				<field name="encumbrance" >1</field>
 				<field name="Piercing" >1</field>
 				<field name="Slashing" >2</field>
 				<field name="Crushing" >0</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >1</field>
 			</datum>
 			<datum name="Toad Armor" >
 				<field name="Name" >Toad Armor</field>
 				<field name="MetaTag" >Unique</field>
 				<field name="Cost" >0</field>
 				<field name="Note" >Fire, Hard*</field>
-				<field name="encumbrance" >2</field>
 				<field name="Piercing" >3</field>
 				<field name="Slashing" >1</field>
 				<field name="Crushing" >4</field>
 				<field name="Description" >Armor made of hundreds of toad-skins stitched together. This may be worn either inside or outside of armor as it is quite suppled and billowing. The armor provides protection against poisons and acids, as long as it is not punctured. Even though the armor is considered &quot;Hard&quot; it does not count as &quot;Hard&quot; for sizing and encumbrance purposes.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >2</field>
 			</datum>
 			<datum name="Wyrmhide" >
 				<field name="Name" >Wyrmhide</field>
 				<field name="MetaTag" />
 				<field name="Cost" >4800</field>
 				<field name="Note" />
-				<field name="encumbrance" >3</field>
 				<field name="Piercing" >5</field>
 				<field name="Slashing" >7</field>
 				<field name="Crushing" >3</field>
 				<field name="Description" >Special leather made from the hide of rare and dangerous monsters is used to make this superior type of armor.</field>
 				<field name="Implementation" />
+				<field name="encumbrance" >3</field>
 			</datum>
 		</category>
-		<category name="Energy_Weapons" >
+		<category name="Energy Weapons" >
 		</category>
 		<category name="Melee" >
 			<category name="Axes" >
@@ -4747,7 +4747,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 					<field name="Implementation" />
 				</datum>
 			</category>
-			<category name="Large_Swords" >
+			<category name="Large Swords" >
 				<default name="" >
 					<field name="Name" />
 					<field name="MetaTag" />
@@ -5475,7 +5475,7 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 					<field name="Implementation" />
 				</datum>
 			</category>
-			<category name="Small_Swords" >
+			<category name="Small Swords" >
 				<default name="" >
 					<field name="Name" />
 					<field name="MetaTag" />
@@ -12304,7 +12304,7 @@ This instantly nullifies all poisons in the caster&apos;s body, and renders the 
 			</datum>
 		</category>
 	</category>
-	<category name="Martial_Arts" >
+	<category name="Martial Arts" >
 		<category name="Basic" >
 			<default name="" >
 				<field name="Name" />
@@ -13962,9 +13962,9 @@ and thus \emph{may not} be used.</field>
 					<field name="Description" >(Wide Area); an untuned long-firing weapon; uses twice the energy but can be used on up to 3 targets.</field>
 				</datum>
 			</category>
-			<category name="Melee_Weapons" >
+			<category name="Melee Weapons" >
 			</category>
-			<category name="Sensors_and_Controls" >
+			<category name="Sensors and Controls" >
 				<default name="" >
 					<field name="Name" />
 					<field name="MetaTag" />
@@ -14212,7 +14212,6 @@ and thus \emph{may not} be used.</field>
 		<datum name="Allip" >
 			<field name="Name" >Allip</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Takes no damage from non-magical attacks.  Immune to psionics.</field>
 			<field name="Statistics" >STR: n/a
 
@@ -14239,11 +14238,11 @@ Size: Human sized
 Dice: Strike: 3</field>
 			<field name="Attacks" >Touch of Madness: Permenantly drains 1 WIL from the target per hit.  Requires Touch.</field>
 			<field name="Description" >Properly speaking, an Allip is a special kind of Undead or Spirit.  An Allip is born whenever a person is deeply wronged by some tragic act and is thereby driven to madness and suicide.  The body dies while the person&apos;s soul continues to live as a ghostly being.  An Allip has the attributes of whatever the human had before his suicide.  They are truly insane and are driven by madness and the overwhelming desire for revenge.  The only desire of an Allip is to avenge itself by tormenting the person or persons responsible for his suicide.  When the person(s) responisible die, an Allip vanishes into nothing.  Moving requires intense concentation, and therefore an Allip cannot move very quickly.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Babau" >
 			<field name="Name" >Babau</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Dodge while grappling (3 dice)
 
 Regenerate 15 HP/turn</field>
@@ -14274,11 +14273,11 @@ Combat:  Babaus can be effective combatants due to their impressive strength, re
 If a Babau is hit by a slashing weapon that deals more than 5 damage,  the babau splits into two halves.  Each is the size of the original babau.  One half sustains whatever damage was dealt by the blow.  The other one has full HP.
 
 Example:  Eric attacks a Babau with a short sword, and rolls 14 damage.  After deducting the Babau&apos;s natural armor, the damage sustained is 9 S.  Since this is more than 5 damage, the Babau splits in two.  One half sustains that 9 damage.  The other half is at full HP.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Basilisk" >
 			<field name="Name" >Basilisk</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Once per turn the basilisk can turn an opponent to stone with just a gaze.  This power does not work if the target is COMPLETELY enclosed, no eyeslits in armor, NOTHING.  The basilisk must have a line of sight with the target.</field>
 			<field name="Statistics" >STR: 13
 
@@ -14305,11 +14304,11 @@ Example:  Eric attacks a Babau with a short sword, and rolls 14 damage.  After d
 	Dice: Strike: 4</field>
 			<field name="Attacks" >Bite: 2D6+1 ; Claws: 1D6+2; Spines: anyone touching the spines will take 1D4 P and be poisoned for 1D6 turns, taking 2D4+1 U damage a turn.</field>
 			<field name="Description" >A basilisk is a large lizard-like creature that is about ten feet long when fully grown.  It has a stout, thick body and a short, heavy tail.  It weighs about 400 pounds.  The creature has six powerful legs and a large head with strong jaws.  Basilisks eat just about anything, including stone.  The basilisk is covered with armored scales that are colored similar to it&apos;s habitat.  Woodland basilisks are green, scrubland basilisks are a dull brown,  etc.  The Basilisk&apos;s scales are slick with poison,  and a Basilisk&apos;s gaze can turn a living target to stone, instantly.  Basilisks are of high animal intellience (predator) and are totally fearless.  A basilisk is unafraid of death, and cannot be awed or surprised.  They are solitary animals and fairly rare.  They have a long life span.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Bugbear" >
 			<field name="Name" >Bugbear</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Nightvision and exceptional hearing</field>
 			<field name="Statistics" >STR: 16
 
@@ -14336,11 +14335,11 @@ Example:  Eric attacks a Babau with a short sword, and rolls 14 damage.  After d
 	Dice: Strike: 4; Dodge: 2; Block: 4</field>
 			<field name="Attacks" >Bte: 1D6; Claws: 2D4; but will usually have an archaic weapon, prefers this type of attack</field>
 			<field name="Description" >Bugbears are humanoid creatures that are covered with coarse brown hair.  They have dog-like ears and flattened noses, and otherwise appear human-like.  They tend to be stronger and tougher than the average human (higher STR and BLD), but they are less intelligent (8 INT and WIS is common).  They have a simple tribal society.  They are capable of making tools and act much like primitive humans.  They will often be found farming or hunting animals with simple weapons.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Cave Droll" >
 			<field name="Name" >Cave Droll</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Dodge (stats above; is generally used as a last resport.  Add +2 dice when jumping away to escape)
 
 Heat Sense (as a viper: can &quot;see&quot; warm-blooded targets even in complete darkness)
@@ -14387,11 +14386,11 @@ Females lack the colored throat patch and the knee spikes.  Their mouths are con
 Habits:  Cave Drolls are omnivorous predators.  They lair in secluded areas, most commonly caves, but any dark location with shelter from the elements will do.  Cave Drolls will eat any kind of animal or insect they can subdue and kill, and are also known to eat sweet fruits or berries when they can find them.  Hunting tactics generally involve subduing prey with brute force.  While Cave Drolls are not active man-hunters, they have been known to kill and eat humans that stray too near their lairs.
 
 Combat:  The animalistic intelligence of Cave Drolls prevents them from utilizing strategy.  They are not subtle combatants and have no concept of trickery or prioritizing targets.  However, their hunting instincts are strong, and they are known to hide motionless while prey approaches, suddenly making an ambush attack to kill it.  Individuals simply grab and devour small prey, such as rodents or lizards.  Larger animals are swarmed and attacked en masse:  Males attack prey by first jumping at it and latching on with their claws.  Then, they repeatedly pummel it with repeated blows from their spiked knees, and deliver their poison bite.  Females keep their distance from prey, surround it, and spit poison globs.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Cave Horror" >
 			<field name="Name" >Cave Horror</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Low-light vision
 
 Spider Climb ability
@@ -14428,11 +14427,11 @@ Slam (after leaping)
 Habits:  Though it appears to be a gigantic insect, the Great Eatler is actually a hateful monster.  It is cunning, patient, and greedy to the extreme.  Cave Horrors build their lairs deep in caves or similar areas, keeping well hidden from likely disturbance.  When the mood suits it--frequently--or when disturbed, the beast awakes and looks for potential prey.  The Cave Horror uses its exceptional perception skills to track and locate its chosen target.  It observes its target(s) for some time, before deciding when and how to attack.  It often times strikes from the darkness or hiding (often on the celing), surging forth to attack the victim and then retreating to plan a future attack. Cave Horrors do not covet treasure specifically, but generally accumulate it due to their long lifespan and propensity to attack sentient prey.
 
 Combat:  The Cave Horror is an intelligent combatant.  It follows and observes targets before beginning combat with a suprise attack.  It may make use of ambushes or tricks in order to gain the upper hand--or simply to confuse, distract, or block of its prey&apos;s escape route.  When actually fighting the Cave Horror relies on its claw attacks and its bite.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Centaur" >
 			<field name="Name" >Centaur</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Running speed: 30 mph</field>
 			<field name="Statistics" >STR: 15
 
@@ -14459,11 +14458,11 @@ Combat:  The Cave Horror is an intelligent combatant.  It follows and observes t
 	Dice: Strike: 4; Dodge: 3; Block: 4</field>
 			<field name="Attacks" >Hooves: 2D4 C; can also use any human weapons</field>
 			<field name="Description" >A centaur is a cross between a human and a horse.  They have the body of a horse, but a human torso extends where the horse&apos;s neck and head would normally be.  They are an intellgent, proud race, whose mental attributes average a 12.  They have 4 legs like a horse, and have two human-like arms.  Centaurs are peaceful and enjoy intellectual and athletic pursuits.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Chimera" >
 			<field name="Name" >Chimera</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >The dragon&apos;s head can breath fire once per turn instead of biting dealing 4D6+2 U damage.  Can fly at 30 mph and run at 20 mph</field>
 			<field name="Statistics" >STR: 18
 
@@ -14490,11 +14489,11 @@ Combat:  The Cave Horror is an intelligent combatant.  It follows and observes t
 	Dice: Strike: 5</field>
 			<field name="Attacks" >Can make a total of 3 bites, 1 claw attack, and 1 tail attack per turn. Bite: 2D6+2; claw: 3D4+1; tail: 2D4+2</field>
 			<field name="Description" >A chimera is a powerful monster that appears as a mix between several different animals.  The front half of it&apos;s body is that of a Lion, and the back half is that of a goat.  It has three heads:  a goat, lion, and a serpent.  It has a tail with bony spikes along it&apos;s length.  It has a pair of bat-like wings atop its back.  Each head can function indipentantly of the others, but the Lion head controls the body.  All three heads can attack independently.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Cockatrice" >
 			<field name="Name" >Cockatrice</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Once per turn the cockatrice can turn an opponent to stone with just a gaze.  This power does not work if the target is COMPLETELY enclosed, no eyeslits in armor, NOTHING.  The cockatrice must have a line of sight with the target.</field>
 			<field name="Statistics" >STR: 4
 
@@ -14521,11 +14520,11 @@ Combat:  The Cave Horror is an intelligent combatant.  It follows and observes t
 	Dice: Strike: 2</field>
 			<field name="Attacks" >Bite: 1D4-1; claws: 1D4</field>
 			<field name="Description" >A cockatrice is a grotesque bird-like creature that is about the size of a turkey.  It is covered with tough, warty skin and it also has scales on some parts of it&apos;s body.  Cockatrices eat only stone, and are found in groups of 6-10.  They aren&apos;t particularly intelligent and spend their time looking for food (things to turn to stone and then eat) and sleeping.  Cockatrices, like the Basilisk, have the ability to turn a target to stone with just a gaze.  The bite of a cockatrice can also turn a target to stone.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Deviruchi" >
 			<field name="Name" >Deviruchi</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Dodge (stats above)
 
 Skewer
@@ -14568,11 +14567,11 @@ Bite:  Deals 1D4 [+1] P.  If wounded, the target suffers an additional 1D6 U fro
 Habits:  Deviruchi are among the lowliest of daemons.  As such, they are not particularly intelligent, though they are intensely curious and of the same mental capacity as a child.  As they are physically and intellectually weak, their masters rarely attempt to give them significant responsibilities; rather they are simply dispersed in the world, spreading havoc and furthering all manner of evil.  Deviruchi may therefore be found in nearly any location or climate, so long as humans or innocent beasts are present to torment.
 
 Combat:  Deviruchi are small, fast-moving, and have numerous offensive capabilites.  They are fairly dangerous 1-on-1, but are especially dangerous in groups.  When a group of Deviruchi is encountered, all individuals generally swarm and attack the same opponent.  However, they are easily distracted and may quickly shift from one opponent to the next for seemingly no reason. They rarely fight with any sort of organized strategy, however all Deviruchi relish combat and enjoy inflicting pain and suffering on any living thing.  They are unlikely to run from a fight, though they do scatter and regroup when overwhelmed.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dirge Worm" >
 			<field name="Name" >Dirge Worm</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >poison resistance
 
 burrowing
@@ -14627,11 +14626,11 @@ Habits:  Dirge worms live underground.  They lair in caves, old dungeons, sewers
 Though they are powerful, Dirge Worms prefer not to fight directly.  They use their abilities to hide and move in darkness to suprise and overwhelm prey.
 
 Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to pass close by.  It then bursts forth from the ground or from a hiding spot in a nearby marshy area, to attack.  Usually one bite is sufficent to kill a potential victim.  If facing multiple targets it uses its spell-like abilities immedietly to gain an advantage early on, then fights with its teeth and stinger.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Doppleganger" >
 			<field name="Name" >Doppleganger</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can completely imitate the physical characteristics of another creature.  The doppleganger gets all physical attributes, HP, armor, and attacks.  This can only be done after slaying the original creature.</field>
 			<field name="Statistics" >STR: 10
 
@@ -14658,20 +14657,20 @@ Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to p
 	Dice: Strike: 3; Dodge: 2</field>
 			<field name="Attacks" >Assumes any attacks of copied creature</field>
 			<field name="Description" >A doppleganger is an unusual creature with the ability to assume the appearance and abilities of other living creatures.  The doppleganger&apos;s true form (which is very rarely seen) is a short (4&apos;) grey-skinned humanoid with large, slanting, eyes.  In it&apos;s true form a doppleganger is quite weak and is similar to a human child in ability.  The doppleganger can, however, transform its body (permanently) into the body of any other living creature of size 1, 2, or 3.  When it does this, it gains the attributes and abilities of whatever creature it ``copied&apos;&apos;.  Note that in order for this transformation to be possible, the doppleganger must first have slain the creature to be copied.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dragon" >
 			<field name="Name" >Dragon</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" >A large winged reptile with a long neck and tail.  Dragons have horned heads and a spiny ridge that runs along the back and down the tail.  Dragons are very intelligent creatures and generally know a great deal of magic.  They occur in various varieties and are generally rare creatures.  The skin of a dragon, which is covered in fine armored scales, is very tough and is beautiful to look at.  All dragons have some sort of breath weapon---commonly this is fire, but it could be ice, poison, acid, etc.  Dragons can fly at great speed and have powerful bodies.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dragon - Mature" >
 			<field name="Name" >Dragon - Mature</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 70 mph.  Has a breath weapon (acid, poison, ice, lightning, or fire) that deals 8D4+2 U damage.  1 &quot;free&quot; breath weapon attack can be made per turn.</field>
 			<field name="Statistics" >STR: 30
 
@@ -14698,11 +14697,11 @@ Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to p
 	Dice: Strike: 7; Dodge: 4; Block (with claws): 8</field>
 			<field name="Attacks" >Bite: 7D6+3 P; Claws: 9D4+3; Tail: 9D4 C; Bat with wings: 6D4 C and blows target back 20 feet.</field>
 			<field name="Description" >A large lizard creature.  Usually knows a great deal of magic, typically will know every spell of rank 6 or less, with 1500 MP.  A dragon becomes fully mature around 600 years after birth.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dragon - Old" >
 			<field name="Name" >Dragon - Old</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 60 mph.  Has a breath weapon (acid, poison, ice, lightning, or fire) that deals 12D4+2 U damage.  1 &quot;free&quot; breath weapon attack can be made per turn.</field>
 			<field name="Statistics" >STR: 28
 
@@ -14729,11 +14728,11 @@ Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to p
 	Dice: Strike: 5; Dodge: 4; Block (with claws): 5</field>
 			<field name="Attacks" >Bite: 4D6+3 P; Claws: 6D4+3; Tail: 11D4 C; Bat with wings: 6D4 C and blows target back 20 feet.</field>
 			<field name="Description" >A large lizard creature.  Usually knows a great deal of magic, typically will know every spell, with 4000 MP.  A dragon becomes old around 3000 years after birth.  Dragons have no known limited lifespan.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dragon - Young" >
 			<field name="Name" >Dragon - Young</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 40 mph.  Has a breath weapon (acid, poison, ice, lightning, or fire) that deals 4D4+2 U damage.  1 &quot;free&quot; breath weapon attack can be made per turn.\</field>
 			<field name="Statistics" >STR: 24
 
@@ -14760,11 +14759,11 @@ Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to p
 	Dice: Strike: 5; Dodge: 4; Block (with claws): 5</field>
 			<field name="Attacks" >Bite: 3D6+3 P; Claws: 4D4+3; Tail: 3D4 C; Bat with wings: 2D4 C and blows target back 20 feet.</field>
 			<field name="Description" >A large lizard creature.  Usually knows a great deal of magic, typically will know every spell of rank 4 or less, with 600 MP</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dragonette" >
 			<field name="Name" >Dragonette</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 20 mph.  Can breath fire or ice (choose one).  Fire deals: 2D4 U; ice deals 1D6 D.  Can teleport once per turn up to 200&apos; away.</field>
 			<field name="Statistics" >STR: 6
 
@@ -14791,11 +14790,11 @@ Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to p
 	Dice: Strike: 3; Dodge: 5</field>
 			<field name="Attacks" >Bite: 1D4; claws: 1D6</field>
 			<field name="Description" >Trainable.  Very personable creatures, and will often play with people, and will take food from them as well.  They are very prized as pets, but they are free-willed.  If a dranette is held against it&apos;s will, it will attempt to escape asap.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dragonling" >
 			<field name="Name" >Dragonling</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 30 mph.  Can breath fire or ice (choose one).  Fire deals: 4D4 U; ice deals: 2D6 D.</field>
 			<field name="Statistics" >STR: 16
 
@@ -14822,11 +14821,11 @@ Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to p
 	Dice: Strike: 4; Dodge: 3; Block: 4; Parry: 4</field>
 			<field name="Attacks" >Bite: 2D4 P; Claws: 2D4+1; Tail: 1D6+2; will usually use a one-handed weapon and prefers this method of attack.</field>
 			<field name="Description" >Dragonlings aren&apos;t actually dragons, they just appear to be related.  They are bipedal creatures with thick scales (usually golden) covering the body.  It has a long tail with small spines along the spine.  Will usually use human weaponry.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Dryad" >
 			<field name="Name" >Dryad</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can run 30 mph.  Can hide within its own tree.  Beauty Lvl 4.  Any creature that wishes to attack a dryad must make a wilpower check at -8 to do so.</field>
 			<field name="Statistics" >STR: 8
 
@@ -14853,56 +14852,56 @@ Combat:  When &quot;hunting&quot; prey, the dirge worm waits for its target to p
 	Dice: Dodge: 3</field>
 			<field name="Attacks" >None</field>
 			<field name="Description" >All dryads have a tree that is &quot;theirs&quot;, never travels more than a mile from it.  If the tree dies, the dryad dies, and vice versa.  Dyads will occasionally help travelers by offering fruit and healing.  They know all the Heal and Cure spells at level 1.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Electric Beast" >
 			<field name="Name" >Electric Beast</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Elemental - Air" >
 			<field name="Name" >Elemental - Air</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Elemental - Earth" >
 			<field name="Name" >Elemental - Earth</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Elemental - Fire" >
 			<field name="Name" >Elemental - Fire</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Elemental - Water" >
 			<field name="Name" >Elemental - Water</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Embalmed Master" >
 			<field name="Name" >Embalmed Master</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Regenerate 15 HP/turn
 
 Preemptive Block 5/8
@@ -14949,11 +14948,11 @@ Apperance:  The Embalmed Master at first glance appears to be a large man wearin
 Habits:  Like an Embalmed Zombie, the Embalmed Master is the undead servant of it&apos;s creator, Duncan Nusukan.  His default &quot;programming&quot; is to act as Nusukan&apos;s bodyguard.  He must obey Nusukan&apos;s every whim, and thus may be sent on special missions.  Despite being under Nusukan&apos;s control, the Embalmed Master may &quot;think&quot; for himself, and is therefore far more skilled than a simple zombie.  Combined with his immense strength, he is a powerful foe indeed.
 
 Combat:  The Embalmed Master fights as an expert warrior would fight, as he retains his former combat experience.  However, he is bound to obey any orders issued by Nusukan.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Featherfolk" >
 			<field name="Name" >Featherfolk</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 30 mph.</field>
 			<field name="Statistics" >STR: 12
 
@@ -14980,11 +14979,11 @@ Combat:  The Embalmed Master fights as an expert warrior would fight, as he reta
 	Dice: Strike: 4; Dodge: 3; Block: 4; Parry: 4</field>
 			<field name="Attacks" >Same as a human.  Will often use melee weapons or long bows.</field>
 			<field name="Description" >Featherlings are winged humanoid creatures that look similar to humans.  They have long (1&apos; long) pointed ears and slanted eyes.  In place of hair they have large brightly-colored feathers.  They are smart and cunning, equal to a human in every aspect.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Freysian Cave Hopper  (&quot;Deadly Insect&quot;)" >
 			<field name="Name" >Freysian Cave Hopper  (&quot;Deadly Insect&quot;)</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >darkvision
 
 jump 25 feet
@@ -15025,11 +15024,11 @@ The creature is an omnivourous scavenger: its typical diet is mostly plant matte
 Combat:
 
 Freysian Hoppers do not enter combat unless attacked or defending their nest or egg sac.  When pressed into combat they attempt to frighten intruders by making a loud chirping sound (similar to that of a cricket, but loud enough to cause temporary deafness) and unfolding their red inner wings as a kind of threat display.  Their bite is weak, though their powerful sting is intensely painful and is potent enough to kill a healthy adult if medical assistance is not available.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Gargoyle" >
 			<field name="Name" >Gargoyle</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 20 mph.</field>
 			<field name="Statistics" >STR: 16
 
@@ -15056,11 +15055,11 @@ Freysian Hoppers do not enter combat unless attacked or defending their nest or 
 	Dice: Strike: 4; Dodge: 2; Parry: 4; Block: 4</field>
 			<field name="Attacks" >Claws: 2D4.  Will usually use humanoid weapons and armor.</field>
 			<field name="Description" >argoyles are gray-skinned humanoid creature with wings protruding from the shoulders.  They have human like attributes, but have double the HP.  Gargoyles sleep by turning into a stone statue.  They can fly up to 20 mph.  Gargoyles have a tribal society.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Gargoyle - Mage" >
 			<field name="Name" >Gargoyle - Mage</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly 20 mph.</field>
 			<field name="Statistics" >STR: 16
 
@@ -15087,20 +15086,20 @@ Freysian Hoppers do not enter combat unless attacked or defending their nest or 
 	Dice: Strike: 3; Parry: 3</field>
 			<field name="Attacks" >Claws: 2D4.  Will usually use humanoid weapons and armor.</field>
 			<field name="Description" >Gargoyles are winged humanoids.  Their skin has a stone-like appearance.  All gargoyles can turn into a statue at will.  Knows a good deal of magic.  Magic Studies: 5;  Magic Control: 5; and 450 MP</field>
+			<field name="level" />
 		</datum>
 		<datum name="Ghost" >
 			<field name="Name" >Ghost</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Ghoul" >
 			<field name="Name" >Ghoul</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Only fire can deal damage to a ghoul</field>
 			<field name="Statistics" >STR: 10
 
@@ -15127,11 +15126,11 @@ Freysian Hoppers do not enter combat unless attacked or defending their nest or 
 	Dice: Strike: 3</field>
 			<field name="Attacks" >Touch: 2D4 U.  Bite: 2D6, and poison for 1D6 U.</field>
 			<field name="Description" >Ghouls are a variety of undead.  They are stupid, relentless, creatures that exist only to eat the flesh of the dead.  Ghouls prefer to eat the flesh of whatever species they were in life.  They are very slow moving, but quite strong.  Ghouls deal cold damage by physical contact and have a bite that is posionous to living creatures.  Ghouls regenerate very quickly.  They are extremely weak against fire.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Giant Slipper Snail" >
 			<field name="Name" >Giant Slipper Snail</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Low-light vision
 
 Sense vibrations
@@ -15176,11 +15175,11 @@ Poison deals 1D4-1 STR, 1D4+1 U, and -1 action for 2D6 rounds</field>
 Habits:  The Giant Slipper Snail is a terrestrial ambush predator.  It hides very effectively after having covered its shell with detritus from the area in which it hunts, making it blend into the background.  It sits motionless for long periods of time (days if need be) waiting for potential prey to walk nearby.  After detecting the approach of potential prey (from vibration in the ground) it attacks once the prey is close.  The creature is extraordinarly stupid and kills only to eat meat.  Once any prey has been devoured, it scatters the remains about, sometimes attaching parts of the victim to it&apos;s shell.  Gaint Slipper Snails eat the entire body of their prey, including bones, hair, and teeth, which provide the minerals it needs to grow its shell.
 
 Combat:  Giant Slipper Snails are not combative in general, however they are prone to attack nearly anything when hungry.  A large prey target is attacked using its poison dart.  The creature then waits for the poison to take effect before taking further action.  Smaller prey animals (rodents, frogs, lizards, and the like) are simply grabbed and constricted using its tentacles.  If the snail encounters a tough prey animal, it simply retreats inside it&apos;s armored shell and uses it&apos;s adhesive to stick itself to the floor, waiting for the threat to go away.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Gnoll" >
 			<field name="Name" >Gnoll</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >When in a pack, will have a +1 damage bonus</field>
 			<field name="Statistics" >STR: 15
 
@@ -15207,11 +15206,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 3; Parry: 3; Block: 3</field>
 			<field name="Attacks" >Bite: 2D4 P</field>
 			<field name="Description" >Gnolls are hyena-like beasts with human heads and faces.  Some Gnolls have human-like arms and walk like apes.  Most are much more hyena-like, however.  They are cunning animals that enjoy the slaughter of weaker animals, or whatever they can successfully attack.  They are easily scared and are fearful of flashy displays of power.  They are gregarious and are generally found in groups of 2D6 individuals.  They are scavengers and will eat whatever they can find.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Goblin" >
 			<field name="Name" >Goblin</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >None</field>
 			<field name="Statistics" >STR: 10
 
@@ -15238,11 +15237,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 2; Parry: 2; Dodge: 2</field>
 			<field name="Attacks" >Will usually use a short sword, small club, or dagger.  May also have a shield.</field>
 			<field name="Description" >Goblins are pathetic, hideous humanoid creatures with green, wart-covered, skin.  They are cruel and delight in causing trouble and tormenting others.  Most goblins are of low intelligence and are very superstitious.  They have a tribal society lead by a cheftain or shaman, who generally knows some low level magic.  Goblins use simple weapons and some might wear basic armor such as leather.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Griffon" >
 			<field name="Name" >Griffon</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly at a speed of 50 mph.  Has excellent vision, as well as the ability to see in complete darkness.  Will kill harpies on sight (has a +2 damage bonus against harpies)</field>
 			<field name="Statistics" >STR: 16
 
@@ -15269,11 +15268,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 4; Dodge: 4</field>
 			<field name="Attacks" >Beak: 3D4+1 P; Claws: 4D6+1 S</field>
 			<field name="Description" >Griffons have the body and hindquarters of a lion and the head and neck of an eagle.  They have feathered wings and are agile fliers.  They are proud and majestic creatures that care for their young defiantly.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Gurgoyle" >
 			<field name="Name" >Gurgoyle</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can leap 100 feet</field>
 			<field name="Statistics" >STR: 20
 
@@ -15300,11 +15299,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 4; Dodge: 2; Parry: 4; Block: 4</field>
 			<field name="Attacks" >Claws: 2D4.  Will usually use humanoid weapons and armor.</field>
 			<field name="Description" >Gurgoyle is a cousin of the Gargoyle.  Gurgoyles are stronger and tougher, but less intelligent.  They are far more common than gargoyles.  Generally, gurgoyles are found with their more intelligent bretheren, who subjugate them as soldiers.  Though stupid, they are formidible fighters.  Like gargoyles, they transform into stone statues during sleep.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Harpy" >
 			<field name="Name" >Harpy</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can fly at 30 mph.  Harpies have a terrible stench that follows them wherever they go.  All non-harpies are at -2 actions when within 25&apos; of the harpy.</field>
 			<field name="Statistics" >STR: 14
 
@@ -15331,11 +15330,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 4; Dodge: 4</field>
 			<field name="Attacks" >Claws: 2D6+2 and will poison when damage is done.  The poison will do 2D6 U damage a turn for 1D4+2 turns.</field>
 			<field name="Description" >Harpies are hideous nude humanoids that live in a bee-like society.  The majority are female.  Harpies have a horrible stench that surrounds them and their colony.  They have bat-like wings and clawed hands and feet.  They have a tendency to form colonies on cliff sides facing the ocean.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Hellcat" >
 			<field name="Name" >Hellcat</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Anyone who touches or attacks a hellcat is immediately struck by fire dealing 2D4 U.  If the bite deals damage, then fire poison races through the target dealing 3D4 D a turn until death (an ice spell or cure can stop this)</field>
 			<field name="Statistics" >STR: 14
 
@@ -15362,11 +15361,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 5; Dodge: 5</field>
 			<field name="Attacks" >Claws: 2D4+2 U; Bite: 1D6+2 U</field>
 			<field name="Description" >A lion-like creature, the Hellcat&apos;s body is covered with a mane of blazing fire.  They are voracious predators and will eat anything they can catch and kill.  Hellcats are immune to non-magical damage, except ice or water based attacks. Anything touching a Hellcat suffers a fire based attack,  which also poisons them.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Hobgoblin" >
 			<field name="Name" >Hobgoblin</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >None</field>
 			<field name="Statistics" >STR: 15
 
@@ -15393,11 +15392,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 3; Parry: 3; Dodge: 3</field>
 			<field name="Attacks" >Will use any melee weapon or crossbow</field>
 			<field name="Description" >obgoblins are larger, smarter versions of goblins.  They are generally 4-5 feet tall and have human-like skin and hair.  They understand tactics, and are not easy to scare like goblins are.  Goblins will usually rely on the smarts of a hobgoblin if possible.  Hobgoblins are either solitary or members of small family groups (1D4 individuals).  They tend to be hateful of other races and creatures, except goblins.  They have a complex polytheistic religion.  Hobgoblins use human like weapons and armor, but never the more advanced varieties.  Though hobgoblins are capable of understanding concepts such as deceit, trickery, etc.  they prefer to use brute force to overwhelm their opponents.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Hydra" >
 			<field name="Name" >Hydra</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Each head can act independently of the others, consequently, each head gets one &quot;free&quot; attack a turn.  This can be a bite, or to breath fire (6D4 U).  The 3 attacks listed are for tail and claw attacks.</field>
 			<field name="Statistics" >STR: 30
 
@@ -15424,11 +15423,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 5; Dodge: 4</field>
 			<field name="Attacks" >Bite: 5D6+2 P; Claws: 6D4+1 S; Tail: 7D4 C</field>
 			<field name="Description" >ydras are massive beasts that enjoy destruction, plundering, and the hoarding of valuables.  They have multiple heads (anywhere from three to nine) on long necks and a stout barrel-like body with a long scaly tail.  They have thick, stubby legs that look vaguely like those of a frog or toad.  Hydras are amphibious but are poor swimmers.  They will often live in or near shallow bodies of water.  They favor swampy areas.  Each head can act indipendantly of the others.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Ifrit" >
 			<field name="Name" >Ifrit</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Immune to fire of any kind.  Normal fire will HEAL an Ifrit instead of damaging it.  Merely touching an Ifrit deals 4D4+1 U fire damage.</field>
 			<field name="Statistics" >STR: 35
 
@@ -15455,11 +15454,11 @@ Combat:  Giant Slipper Snails are not combative in general, however they are pro
 	Dice: Strike: 4  Dodge: 2</field>
 			<field name="Attacks" >Punch, kick.  Bite deals 3D6 C.  Flaming dash attack takes whole turn, deals 4x4D4+1 U fire</field>
 			<field name="Description" >A rare, solitary, beast that looks something like a gorilla.   It is covered in gold-colored shaggy hair which burns with fierce flames.  Walks bipedally but uses hands to steady itself.  It is thought to be an ancient variety of fire elemental.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Imp (any)" >
 			<field name="Name" >Imp (any)</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >-2 to strike any imp
 
 Natural armor 3/3/3, 6/6/6, 9/9/9
@@ -15470,11 +15469,11 @@ Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" >Imps are the most common (and weakest) variety of demon.  They occur in three different varieties.  Imps speak Demon and also have their own language consisting of chittering, high-pitched barks, chirps, and yelps.  They are very fast moving and are totally fearless.  Imps delight in causing suffering and tormenting anything living.  Imps are of marginal intelligence and especially hate humans and other ``smarter&apos;&apos; races.  Imps live in clans consisting of 5x 1D4 red imps, 2x 1D4 black imps, and 1D4 Darklings.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Imp (black)" >
 			<field name="Name" >Imp (black)</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >-2 to strike an imp (Fast moving)</field>
 			<field name="Statistics" >STR: 10
 
@@ -15501,11 +15500,11 @@ Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
 	Dice: Strike 3, block: 3</field>
 			<field name="Attacks" >Claws 2D4+1 S; Bite 1D6+3 P</field>
 			<field name="Description" >Black imps are stronger versions of their red brethren.  They use hit-and-run tactics, as well as simple ambushes, traps, etc.  Occur in groups of 3X1D4, usually lead by some other from of demon or possibly a Darkling.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Imp (darkling)" >
 			<field name="Name" >Imp (darkling)</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >-2 to strike an imp (Fast moving)  Can raise red or black imps for 1 action each.  Can summon 1D4 red imps or 1 black imp at will for 2 actions.</field>
 			<field name="Statistics" >STR: 12
 
@@ -15532,11 +15531,11 @@ Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
 	Dice: Strike: 4 Dodge: 3</field>
 			<field name="Attacks" >Claws 2D4+1 S; Bite 1D6+3 P</field>
 			<field name="Description" >Darklings are the most powerful type of imp.  They oversee the weaker imps, and direct their evil deeds.  Ususally solitary, in groups of 1D4, or sometimes commanding groups of lesser imps.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Imp (red)" >
 			<field name="Name" >Imp (red)</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >-2 to strike an imp (Fast moving)</field>
 			<field name="Statistics" >STR: 9
 
@@ -15563,20 +15562,20 @@ Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
 	Dice: Strike: 3</field>
 			<field name="Attacks" >Claws 2D4 S; Bite 1D6+2 P</field>
 			<field name="Description" >Imps are among the weakest demons.  Small, fast moving, reletless and fearless.  They delight in causing suffering.  Ususally occur in groups of 5X1D4, lead by a higher type of imp or a greater imp.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Iron Maiden" >
 			<field name="Name" >Iron Maiden</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Knorath (minor fire demon)" >
 			<field name="Name" >Knorath (minor fire demon)</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can raise minor and normal zombies/skeleton for one action each.</field>
 			<field name="Statistics" >STR: 18
 
@@ -15603,11 +15602,11 @@ Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
 	Dice: Strike: 5; Block: 5; Dodge: 3</field>
 			<field name="Attacks" >Morning star 3D6+2 C; Kick 2D6+4 C; Breathe Fire 2D4+1 U</field>
 			<field name="Description" >A minor demon--red-skinned, muscular humanoid.  Knows magic: Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3; Bio 1,2; Quake 1,2.  700 MP.  Has infravision, can see invisible.  Immune to posion &amp; sleep.  Regenerates 3D6 HP per turn</field>
+			<field name="level" />
 		</datum>
 		<datum name="Kobold" >
 			<field name="Name" >Kobold</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Kobolds can leap up to 15 feet.</field>
 			<field name="Statistics" >STR: 10
 
@@ -15634,11 +15633,11 @@ Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
 	Dice: Strike: 3; Parry: 3; Dodge: 4</field>
 			<field name="Attacks" >Will usually use a short spear or short bow.</field>
 			<field name="Description" >Kobolds travel in packs of 3D4.  They are sadistic creatures that enjoy the eating of intelligent creatures.  They are not cowardly like goblins, so are much more dangerous.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Kraken" >
 			<field name="Name" >Kraken</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Each tentacle can make 2 &quot;free&quot; slaps or constricions per turn.  The other actions are for moving.  Immune to water and ice/cold attacks.  A kraken&apos;s eye is susceptable to damage.</field>
 			<field name="Statistics" >STR: 30
 
@@ -15665,11 +15664,11 @@ Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
 	Dice: Strike: 4</field>
 			<field name="Attacks" >Tentacle slap &amp; grab 10D4 C.  Tentacle Constriction: 6D4 C, doubles each consecutive action.  Full body constriction: (8D4)x4 C as above</field>
 			<field name="Description" >Krakens are gargantuan creatures of the deep oceans.  Rarely seen, but when they are, they instill panic and will often attack nearby sailing vessels thinking they are their favorite prey (whales).  Not a vicious animal naturally.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Kuan-Ya" >
 			<field name="Name" >Kuan-Ya</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Minor Teleport (3/day)
 
 Snort Smoke (As spell Create Smoke, 1/turn)
@@ -15716,11 +15715,11 @@ Charge-bite deals double the normal S damage; fire damage is unchanged.</field>
 Habits:  Kuan-Ya are tempramental, agressive, and mean.  Fortunately, their temper is also mercurial and while they are easily provoked, they are also likely to forget about past acts of agression if a new threat presents itself.  Kuan-Ya are spirit beings, and therefore they do not need to eat.  They are not particularly intelligent.
 
 Combat:  Kuan-Ya are fearless and charge forward in battle.  They use no subterfuge and attack the most convenient opponent directly, biting with their red-hot mouth.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Maw larva" >
 			<field name="Name" >Maw larva</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Excellent climbers.  They have a strong grip when holding onto something.  Can jump up to 6&apos;, but slow  and ungainly on the ground.</field>
 			<field name="Statistics" >STR: 10
 
@@ -15747,11 +15746,11 @@ Combat:  Kuan-Ya are fearless and charge forward in battle.  They use no subterf
 	Dice: Strike: 3</field>
 			<field name="Attacks" >Claws 1D4-1; Bite 4D4+1 C</field>
 			<field name="Description" >A rat-sized pink creature with soft, wrinkly skin and four small limbs each of which end in a 3-clawed hand.  It has a massive head and mouth--the size of a man&apos;s fist--with prominent teeth.  They eat anything they can catch.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Metal Babble" >
 			<field name="Name" >Metal Babble</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >(standard)
 
 Regenerate 10 HP/turn
@@ -15812,11 +15811,11 @@ Blade Cyclone 3D6+1 [+25] S, affects all surrounding squares.</field>
 Habits:  Metal Babbles are of very low intelligence.  They like dark areas such as old cellars, caves, and underground crypts.  They slide about the floor, searching for material to eat.  Metal Babbles are capable of eating nearly anything, including stone, dirt, and organic matter.  They care little for the taste of meat, though they will eat it in preferance to stone.  The Metal Babble&apos;s favorite food is metal objects, including coins, weapons, tools and the like.  Metal Babbles eat by engulfing their food like an amoeba.
 
 Combat:  Metal Babbles do not hunt live prey, and they do not persue hostilities of their own accord.  However, if disturbed they attack ferociously.  Metal Babbles attack by forming their body into living weapons.  Their most common attack is to form a spear-like blade and thrust it towards a target.  When surrounded by multiple threats, they can form their body into a huge mass of spinning blades, threatening everyone around them.  Finally,  the creature is able to spew forth a sonic attack of mind-numbing gibberish.  All creatures who are within range (and who can hear) are affected by this ability.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Minotaur" >
 			<field name="Name" >Minotaur</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Charge: Takes up all actions for the turn, and has a 5D+14 for successes (because it is so fast) and will deal 6D6+2 P</field>
 			<field name="Statistics" >STR: 23
 
@@ -15843,11 +15842,11 @@ Combat:  Metal Babbles do not hunt live prey, and they do not persue hostilities
 	Dice: Strike: 3; Parry: 3; Block: 3</field>
 			<field name="Attacks" >Claws: 2D4 [+8] S; Horns: 4D4 [+8] P; Hooves: 3D4 [+8] C.  Some may use a blunt weapon and maybe a shield.</field>
 			<field name="Description" >Minotaurs are massive humanoid creatures covered with corse hair.  It has the head and legs of a bull.  They are typically passive unless attacked.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Mummy" >
 			<field name="Name" >Mummy</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Undead.  Immune to poison, cold, and electricity attacks.  Healing spells cast on a mummy will do 1/2 &quot;healed&quot; damage direct to HP.</field>
 			<field name="Statistics" >STR: 20
 
@@ -15874,11 +15873,11 @@ Combat:  Metal Babbles do not hunt live prey, and they do not persue hostilities
 	Dice: Strike: 3</field>
 			<field name="Attacks" >Punch: 3D4+1</field>
 			<field name="Description" >Stupid, mindless creature brought back to life.  A decaying corpse wrapped in cloth that stinks to high-heaven.  Will attack any non-undead on sight.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Necrolisk" >
 			<field name="Name" >Necrolisk</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >low-light vision
 
 Heat sense</field>
@@ -15923,11 +15922,11 @@ The Necrolisk is a powerful carnivore--it spends its time hunting in order to fe
 Combat:
 
 The Necrolisk is an unsubtle combatant.  It charges foes and attacks them with claws, bite, its tail slap.  Incapacitated targets are impaled on its back spikes.  It us unlikley to back down from a fight unless it is obvious loosing or if it&apos;s opponents are particularly flashy and/or larger than it is.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Net-lath (minor earth demon)" >
 			<field name="Name" >Net-lath (minor earth demon)</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can raise minor and normal zombies/skeleton for one action each, can summon zombies at will for 1,2,3 actions respectivley</field>
 			<field name="Statistics" >STR: 12
 
@@ -15954,11 +15953,11 @@ The Necrolisk is an unsubtle combatant.  It charges foes and attacks them with c
 	Dice: Strike: 3;  Dodge: 5;</field>
 			<field name="Attacks" >Death touch 2D4+2 U; Poisionous breath weapon 1D4+2 U area affect</field>
 			<field name="Description" >A minor demon--Guant, grey-skinned humanoid.  Knows magic: Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake 1,2,3; Geo Transport, Heal 1,2,3.  1200 MP.  Can see invisible.  Immune to posion &amp; sleep.  Regenerates 4D6 HP per turn</field>
+			<field name="level" />
 		</datum>
 		<datum name="Nightmare" >
 			<field name="Name" >Nightmare</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can carry a rider who weighs no more than 1 ton (and is small enough).  All melee attacks have fire effect.  Cannot be hurt my non-magical attacks.  Walks on air.  Speed: 50 mph.  Immune to fire</field>
 			<field name="Statistics" >STR: 18
 
@@ -15985,11 +15984,11 @@ The Necrolisk is an unsubtle combatant.  It charges foes and attacks them with c
 	Dice: Strike: 4; Dodge: 5</field>
 			<field name="Attacks" >Bite: 2D4+2 C; Front Kick: 3D4+1 C; Back Kick: 5D4+2 C; Fire Breath: 4D4+1 U Fire</field>
 			<field name="Description" >Trainable - Ebony black horses with manes and hoves of fire.  Solitary creatures, tend to be cruel to other creatures out of spite.  A trained nightmare will have the same disposition of its trainer, and will not listen to anyone besides the trainer.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Ogre" >
 			<field name="Name" >Ogre</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >None</field>
 			<field name="Statistics" >STR: 24
 
@@ -16016,20 +16015,20 @@ The Necrolisk is an unsubtle combatant.  It charges foes and attacks them with c
 	Dice: Strike: 4; Parry: 3</field>
 			<field name="Attacks" >Bite: 1D6 [+9] P; Claws: 3D4+1 [+9] S; Often will use a very large blunt weapon</field>
 			<field name="Description" >Dumb humanoid creatures with brownish yellow skin.  Band together like goblins, and attack in large numbers (3D6).  Afraid of magic users (must make a WIL check or flee), otherwise, they are not fearfull of anything.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Quickening Demon" >
 			<field name="Name" >Quickening Demon</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Rabbat" >
 			<field name="Name" >Rabbat</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Flies
 
 Doom, as the spell except timer is 1D6-1 instead, and affects up to 4 targets at once.  Only 1/day
@@ -16060,20 +16059,20 @@ Base Armor: 7</field>
 Habits:  Rabbats are aggressive meat eaters.  In the wild, they persue and attack anything they think they can kill, which is most creatures.  Rabbats are only afraid of very large, powerful, beasts such as Dragons.  They may be found in nearly any enviornment, but they tend to lair in caves.  Rabbats are much more powerful than they are intelligent, and thus they are sometimes subjugated by powerful wizards for use as minions.
 
 Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, however, know the tactical advantage of staying away from a fight and utilize their ranged spell-like abilities, closing in to bite only when they are clearly winning the fight.  They are unlikely to flee except in the most exceptional of circumstances.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Shadow Walker" >
 			<field name="Name" >Shadow Walker</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Skeleton-greater mage" >
 			<field name="Name" >Skeleton-greater mage</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >can touch and drain 1D4 HP</field>
 			<field name="Statistics" >STR: 9
 
@@ -16100,11 +16099,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 3; Dodge: 2</field>
 			<field name="Attacks" >Punch 1D4+1 C, Cold blast 1D4+1 D</field>
 			<field name="Description" >Skeletal mage appears as an animated human skeleton, has clothing and carries a staff or wand-like object. Likes to wear crowns and jewlery.  Has 350 MP, knows spells: Fire 1,2,3; Cold 1; Bio 1,2; Quake 1,2; Magic Missile.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Skeleton-greater warrior" >
 			<field name="Name" >Skeleton-greater warrior</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >can touch and drain 1D4 HP</field>
 			<field name="Statistics" >STR: 15
 
@@ -16131,11 +16130,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 5; Parry: 5; Dodge:3</field>
 			<field name="Attacks" >Attacks with archaic weapon (varies)</field>
 			<field name="Description" >Animated skeleton, typically has some archaic armor.  Wields an archaic weapon in combat, favoring large swords, axes, or blunt weapons like flails/ball-and-chain.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Skeleton-mage" >
 			<field name="Name" >Skeleton-mage</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >none</field>
 			<field name="Statistics" >STR: 8
 
@@ -16162,11 +16161,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike:3, Dodge: 2</field>
 			<field name="Attacks" >Punch 1D4+1 C, Cold blast 1D4 D</field>
 			<field name="Description" >Skeletal mage appears as an animated human skeleton, often has some clothing and carries a staff or wand-like object. Has 250 MP, knows spells: Fire 1,2; Cold 1; Bio 1.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Skeleton-minor" >
 			<field name="Name" >Skeleton-minor</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >none</field>
 			<field name="Statistics" >STR: 8
 
@@ -16193,11 +16192,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 3</field>
 			<field name="Attacks" >Punch 1D4+1 C</field>
 			<field name="Description" >Appears as an animated, somewhat damaged humanoid skeleton.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Skeleton-warrior" >
 			<field name="Name" >Skeleton-warrior</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >none</field>
 			<field name="Statistics" >STR: 13
 
@@ -16224,11 +16223,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 4; Dodge: 2</field>
 			<field name="Attacks" >Attacks with archaic weapon (varies)</field>
 			<field name="Description" >Animated skeleton, typically has some poor quality archaic armor (chain, hard leather, etc.).  Wields an archaic weapon in combat, usually a sword, knife, or blunt</field>
+			<field name="level" />
 		</datum>
 		<datum name="Snakeman - Greater - Harn Dal&apos;aar" >
 			<field name="Name" >Snakeman - Greater - Harn Dal&apos;aar</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can spit acidic venom once per turn.  Deals 2D4+1 U if it strikes bare skin.</field>
 			<field name="Statistics" >STR: 18
 
@@ -16255,11 +16254,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 5; Dodge: 3; Parry: 5; Block: 5;</field>
 			<field name="Attacks" >Oversized Long sword 3D4+1 S; Sheild Bash 2D6; Throw Fire 2D4+2 U; bite 1D4+2 P + 1D4+2 U posion</field>
 			<field name="Description" >A demonic warrior created from a human sacrifice and a venomous snake in a magical ritual.  Wields a serrated long sword in one hand.  Appears much like a human, with scaly skin and a forked tongue. Their skin has a distinct greenish hue.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Snakeman - Greater - Ku&apos;toxx" >
 			<field name="Name" >Snakeman - Greater - Ku&apos;toxx</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can spit acidic venom once per turn.  Deals 3D4+1 U if it strikes bare skin.</field>
 			<field name="Statistics" >STR: 19
 
@@ -16286,11 +16285,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 5; Dodge: 3; Parry: 5; Block: 5;</field>
 			<field name="Attacks" >Oversized Long sword 3D4+1 S (+6 raw); Sheild Bash 2D6; Throw Fire 2D4+2 U; bite 1D4+2 P + 2D4+2 U posion</field>
 			<field name="Description" >A demonic warrior created from a human sacrifice and a venomous snake in a magical ritual.  Wields a serrated long sword in one hand.  Appears much like a human, with scaly skin and a forked tongue. Their skin has a distinct gray hue.  Has no body hair.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Snakeman - Gukn" >
 			<field name="Name" >Snakeman - Gukn</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Can spit acidic venom once per turn.  Deals 1D4+1 U if it strikes bare skin.</field>
 			<field name="Statistics" >STR: 16
 
@@ -16317,11 +16316,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 4; Dodge: 2; Parry: 4</field>
 			<field name="Attacks" >Oversized Long sword 3D4 S; Throw fire 2D4+1 U; bite 1D4+1 P + 1D4+1 U posion</field>
 			<field name="Description" >A demonic warrior created from a human sacrifice and a venomous snake in a magical ritual.  Wields a serrated long sword in one hand.  Appears much like a human, with a somewhat scaly skin pattern and a forked tongue.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Stygian Fly" >
 			<field name="Name" >Stygian Fly</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Has only one attack--biting.  If bitten, the target will suffer 2D6+2S.  If flesh is contacted, target suffers tremendous pain.  Wound will grow, consuming target&apos;s body, at a rate of 1D6+1 D per SECOND.</field>
 			<field name="Statistics" >STR: 2
 
@@ -16348,11 +16347,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 4</field>
 			<field name="Attacks" >Bite--see special.</field>
 			<field name="Description" >A horrible demonic insect from the depths of the underworld.  Stupid, lives only to feast upon the flesh and souls of the living.  Even if the wound is cured, the wounded portion of the SOUL remains lost.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Stygian Mofish" >
 			<field name="Name" >Stygian Mofish</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Cannot be harmed by nonmagical weapons.  Immune to cold and fire.</field>
 			<field name="Statistics" >STR: 14
 
@@ -16379,11 +16378,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 3  Dodge: 2</field>
 			<field name="Attacks" >Bite:  4D6+1 S  (-1 die for young, +1 for old)</field>
 			<field name="Description" >Demonic creatures that inhabit the waters of the underworld.  Very fast swimmers.  Will attack anything living that approaches their territory.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Stygian Toad" >
 			<field name="Name" >Stygian Toad</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Wounds caused by an attack from a Stygian Toad cannot heal by normal means.  They can be healed by magic at 1/10th normal rates.</field>
 			<field name="Statistics" >STR: 12
 
@@ -16410,11 +16409,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 6</field>
 			<field name="Attacks" >Bite:  4D4+1 C;  Tongue spear:  3D6 P, range of 6&apos;</field>
 			<field name="Description" >A large, wart-covered toad that lives in bogs, marshes, and stagnant water.  Lies in wait for it&apos;s prey, and then strikes. Camo: level 5.  Likes to wound target and then wait for it to die, returning to eat the entire body of the victim.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Tevish-Tzat" >
 			<field name="Name" >Tevish-Tzat</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Regenerates 3D4 HP on each of it&apos;s turns.</field>
 			<field name="Statistics" >STR: 24
 
@@ -16441,20 +16440,20 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 4; Block: 4</field>
 			<field name="Attacks" >Claws:  3D6;  Bite: 4D4+1 P.  Any contact poisons target for 2D4 U per turn for 1D4 turns.</field>
 			<field name="Description" >A tall, lanky demon with rotten yellow skin.  Hunched over,  with long spindly arms.  Will persue (and attempt to eat) weaker opponents first.  Ususally solitary.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Titan" >
 			<field name="Name" >Titan</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
 			<field name="Description" />
+			<field name="level" />
 		</datum>
 		<datum name="Troll" >
 			<field name="Name" >Troll</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Trolls regenerate 1D4+1 HP on each of their turns.  They suffer half damage from poisons.</field>
 			<field name="Statistics" >STR: 10
 
@@ -16481,11 +16480,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Varies.  They use human skills and weapons.</field>
 			<field name="Attacks" />
 			<field name="Description" >Trolls are an ancient race, usually despised by the higher races (men, elves, dwarves).  They are primitive and considered savage and dirty.  Trolls speak their own native tongue</field>
+			<field name="level" />
 		</datum>
 		<datum name="Troll, Rock" >
 			<field name="Name" >Troll, Rock</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Rock Trolls regenerate 2D4 HP on each of their turns.  They have a natural Camo skill of 3 and natural armor of 4/4/4.</field>
 			<field name="Statistics" >STR: 16
 
@@ -16512,11 +16511,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Varies.  They use human skills and weapons; favor axes, hammers.</field>
 			<field name="Attacks" />
 			<field name="Description" >Rock Trolls are a distant offshoot of the Troll race.  Rock Trolls are much larger. They are a proud, honorable, warrior race that defend their territory fiercely.  They rarely venture out of their lands so they are not frequently encountered.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Wolf, Dire" >
 			<field name="Name" >Wolf, Dire</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >Howl: takes 1 action.  Summons 1D4 wolves loyal to the Dire Wolf.</field>
 			<field name="Statistics" >STR: 18
 
@@ -16543,11 +16542,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 3 Dodge: 4</field>
 			<field name="Attacks" >Bite 3D6 S;  Claws 2D4S</field>
 			<field name="Description" >A huge, supernatural version of a normal wolf.  They are sometimes solitary but ususally found with a pack of normal wolves which they lead.</field>
+			<field name="level" />
 		</datum>
 		<datum name="Zombie" >
 			<field name="Name" >Zombie</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >If struck in melee, 30% chance to deal 1D4 U damage to attacker</field>
 			<field name="Statistics" >STR: 13
 
@@ -16574,11 +16573,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 3</field>
 			<field name="Attacks" >Punch 1D4+1 + 1D4 U</field>
 			<field name="Description" >Undead, rotting corpse.  Suffers double damage from fire based attacks.  Regenerates 1D4 HP per turn</field>
+			<field name="level" />
 		</datum>
 		<datum name="Zombie - Greater" >
 			<field name="Name" >Zombie - Greater</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >If struck in melee, 30% chance to deal 1D4 D damage to attacker</field>
 			<field name="Statistics" >STR: 14
 
@@ -16605,11 +16604,11 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 4; Dodge: 2</field>
 			<field name="Attacks" >Punch 1D4+2 + 1D4+1 U</field>
 			<field name="Description" >Undead, rotting corpse. Regenerates 1D6+1 HP per turn</field>
+			<field name="level" />
 		</datum>
 		<datum name="Zombie - Minor" >
 			<field name="Name" >Zombie - Minor</field>
 			<field name="MetaTag" />
-			<field name="level" />
 			<field name="Special Abilities" >If struck in melee, 30% chance to deal 1D4 U damage to attacker</field>
 			<field name="Statistics" >STR: 12
 
@@ -16636,6 +16635,7 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	Dice: Strike: 3</field>
 			<field name="Attacks" >Punch 1D4+ 1D4 U</field>
 			<field name="Description" >Undead, rotting corpse.  Suffers double damage from fire based attacks.  Regenerates 1D2 HP per turn (no rollover!)</field>
+			<field name="level" />
 		</datum>
 	</category>
 	<category name="Traits" >

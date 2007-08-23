@@ -157,7 +157,7 @@ class GridView(gridlib.Grid):
     # get the Header, remove extraneous
     Header = Default.keys ()
     try:
-      Header.remove ("implementation")
+      Header.remove ("Implementation")
       #Header.remove ("description")
     except: pass
 
