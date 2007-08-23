@@ -194,8 +194,8 @@ class HtmlBox(wx.Notebook):
 
     self.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.OnPageChanged)
 
-    self.AddPage (self.HtmlWindow, "Render")
     self.AddPage (self.Editor, "Edit")
+    self.AddPage (self.HtmlWindow, "Render")
 
     self.Constants = {stclib.STC_H_ASP:"",
                       stclib.STC_H_ASPAT:"",
