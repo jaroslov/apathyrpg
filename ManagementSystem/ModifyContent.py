@@ -166,7 +166,7 @@ class GridView(gridlib.Grid):
 
     for hdx in xrange(0,len(Header)):
       heading = Header[hdx]
-      self.SetColLabelValue (hdx, heading.capitalize ())
+      self.SetColLabelValue (hdx, heading)
       for skx in xrange(0,len(DataKeys)):
         Key = DataKeys[skx]
         Datum = What[Key]
