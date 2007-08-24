@@ -389,9 +389,9 @@ def MakeHtmlTable (Category, Caption=""):
       if Category[key].HasChild (Heading):
         Value = Category[key][Heading].Value
       if Category.Default[Heading].Switches.has_key ("title"):
-        output += "<td><a href=\"#database-description-"+Category.Name+"-"+Category[key].Name+"\">"+Value+"</a></td>"
+        output += "<td class=\"database-table-body-title\"><a href=\"#database-description-"+Category.Name+"-"+Category[key].Name+"\">"+Value+"</a></td>"
       else:
-        output += "<td>"+Value+"</td>"
+        output += "<td class=\"database-table-body-nontitle\" >"+Value+"</td>"
     output += "</tr>\n"
   output += "\t</tbody>\n"
   # end the table
