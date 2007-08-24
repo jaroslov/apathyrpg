@@ -245,8 +245,7 @@ class ArpgUni(object):
       if "field" == self.Kind:
         for fieldswitch in FieldSwitches:
           if xml.hasAttribute (fieldswitch):
-            self.Switches[fieldswitch] = None
-
+            self.Switches[fieldswitch] = self.DexmlizeString (xml.getAttribute (fieldswitch))
     if xml.hasChildNodes ():
       for child in xml.childNodes:
         if child.nodeType == xml.ELEMENT_NODE:
@@ -272,7 +271,7 @@ class ArpgUni(object):
     output = Indent + "<" + self.Kind + " name=\"" + self.XmlizeString (self.Name) + "\""
     if "field" == self.Kind:
       for fieldswitch in self.Switches.keys ():
-        output += " "+fieldswitch+"=\"\""
+        output += " "+self.XmlizeString (self.Switches[fieldswitch])+"=\"\""
       if len(self.Value) > 0:
         val = self.XmlizeString (self.Value)
         output += " >" + val + "</" + self.Kind + ">"
@@ -363,9 +362,9 @@ def MakeHtmlTable (Category, Caption=""):
   if not Category.Default:
     return ""
   Headings = []
-  for field in Category.Default.keys (): # look for the word "Table"
-    if Category.Default[field].Value.find ("Table") >= 0:
-      Headings.append (field)
+  for key in Category.Default.keys ():
+    if Category.Default[key].Switches.has_key ("table"):
+      Headings.append (key)
   # begin the table
   output = "<table class=\"database-table\" id=\""+Category.Name+"\">"
   output += "\n\t<caption class=\"database-table-caption\">"+Caption+"</caption>\n"
@@ -377,25 +376,29 @@ def MakeHtmlTable (Category, Caption=""):
   # table body
   output += "\t<tbody class=\"database-table-body\">\n"
   for key in Category.keys ():
-    output += "\t\t<tr>"
+    output += "\t\t<tr id=\"database-table-"+Category.Name+"-"+Category[key].Name+"\">"
     for Heading in Headings:
       Value = ""
       if Category[key].HasChild (Heading):
         Value = Category[key][Heading].Value
-      output += "<td>"+Value+"</td>"
+      if Category.Default[Heading].Switches.has_key ("title"):
+        output += "<td><a href=\"#database-description-"+Category.Name+"-"+Category[key].Name+"\">"+Value+"</a></td>"
+      else:
+        output += "<td>"+Value+"</td>"
     output += "</tr>\n"
   output += "\t</tbody>\n"
   # end the table
   output += "</table>"
   return output
 
-def MakeFormattedDescription (Datum, Title, DescTbl, Description):
+def MakeFormattedDescription (CatName, Datum, Title, DescTbl, Description):
   """
   A div with a title selected by "Title" a small, two-column table
   generated from DescTbl and a paragraph from "Description"
   """
   # start the div
-  output = "<div class=\"database-description\">\n"
+  output = "<div class=\"database-description\""
+  output += " id=\"database-description-"+CatName+"-"+Datum.Name+"\">\n"
   # heading
   output += "\t<h1>"+Datum[Title].Value+"</h1>\n"
   # table
@@ -447,19 +450,19 @@ def MakeFormattedDescriptions (Category):
   DescTbl = []
   Description = ""
   for field in Category.Default.keys ():
-    if Category.Default[field].Value.find ("Title") >= 0:
+    if Category.Default[field].Switches.has_key ("title"):
       Title = field
-    if Category.Default[field].Value.find ("DescTbl") >= 0:
+    if Category.Default[field].Switches.has_key ("qsummary"):
       DescTbl.append (field)
-    if Category.Default[field].Value.find ("Description") >= 0:
+    if Category.Default[field].Switches.has_key ("description"):
       Description = field
   output = ""
   for key in Category.keys ():
-    output += MakeFormattedDescription  (Category[key], Title, DescTbl, Description) + "\n"
+    output += MakeFormattedDescription  (Category.Name, Category[key], Title, DescTbl, Description) + "\n"
   return output
 
 def MakeHtmlCategory (Category, Caption=""):
-  output = MakeHtmlTable (Category)+"\n"
+  output = MakeHtmlTable (Category, Caption)+"\n"
   output += MakeFormattedDescriptions (Category)
   return output
 
@@ -503,14 +506,14 @@ def TestMakeFormattedDescs ():
 
 def TestMakeHtmlCategory ():
   C1 = ArpgUni (Location="../Game/ARPG-Data.xml")
-  print MakeHtmlCategory (C1["Magic"]["Air"])
+  print MakeHtmlCategory (C1["Magic"]["Air"], "Air")
 
 if __name__=="__main__":
   #TestOpen ()
   #TestUni ()
   #TestConvert ()
   #TestStructuralEq ()
-  TestRoundtrip ()
+  #TestRoundtrip ()
   #TestMakeTable ()
   #TestMakeFormattedDescs ()
-  #TestMakeHtmlCategory ()
+  TestMakeHtmlCategory ()
