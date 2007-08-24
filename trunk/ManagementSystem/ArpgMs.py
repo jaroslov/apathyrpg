@@ -38,6 +38,11 @@ TopoImportance = ["Name",
                   "Description",
                   "Implementation"]
 
+FieldSwitches = ["title",
+                 "description",
+                 "table",
+                 "qsummary"]
+
 class ARPG_MS(object):
   def __init__ (self, Location=None, XML=None, KeyedItem=None, Leaf=None):
     self.Kind = ""
@@ -221,6 +226,7 @@ class ArpgUni(object):
     self.Kind = "" # category, default, rule, field
     self.Value = ""
     self.Default = None
+    self.Switches = {}
     self._Children = {}
     if Location:
       self.FromXmlFile (Location)
@@ -236,6 +242,11 @@ class ArpgUni(object):
     self.Kind = xml.nodeName
     if xml.hasAttributes ():
       self.Name = xml.getAttribute("name")
+      if "field" == self.Kind:
+        for fieldswitch in FieldSwitches:
+          if xml.hasAttribute (fieldswitch):
+            self.Switches[fieldswitch] = None
+
     if xml.hasChildNodes ():
       for child in xml.childNodes:
         if child.nodeType == xml.ELEMENT_NODE:
@@ -260,6 +271,8 @@ class ArpgUni(object):
   def AsXml (self, Indent=""):
     output = Indent + "<" + self.Kind + " name=\"" + self.XmlizeString (self.Name) + "\""
     if "field" == self.Kind:
+      for fieldswitch in self.Switches.keys ():
+        output += " "+fieldswitch+"=\"\""
       if len(self.Value) > 0:
         val = self.XmlizeString (self.Value)
         output += " >" + val + "</" + self.Kind + ">"
@@ -473,7 +486,7 @@ def TestConvert ():
   print >> out, C1.UniformXml ()
 
 def TestRoundtrip ():
-  C1 = ArpgUni (Location="RTUData.xml")
+  C1 = ArpgUni (Location="../Game/ARPG-Data.xml")
   out = open ("RTUData.xml", "w")
   print >> out, C1.AsXml ()
 
@@ -489,7 +502,7 @@ def TestMakeFormattedDescs ():
   print MakeFormattedDescriptions (C1["Magic"]["Air"])
 
 def TestMakeHtmlCategory ():
-  C1 = ArpgUni (Location="UniData.xml")
+  C1 = ArpgUni (Location="../Game/ARPG-Data.xml")
   print MakeHtmlCategory (C1["Magic"]["Air"])
 
 if __name__=="__main__":
@@ -497,7 +510,7 @@ if __name__=="__main__":
   #TestUni ()
   #TestConvert ()
   #TestStructuralEq ()
-  #TestRoundtrip ()
+  TestRoundtrip ()
   #TestMakeTable ()
   #TestMakeFormattedDescs ()
-  TestMakeHtmlCategory ()
+  #TestMakeHtmlCategory ()
