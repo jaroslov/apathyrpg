@@ -375,8 +375,15 @@ def MakeHtmlTable (Category, Caption=""):
   output += "</tr></thead>\n"
   # table body
   output += "\t<tbody class=\"database-table-body\">\n"
+  index = 0
+  eo_p = ""
   for key in Category.keys ():
-    output += "\t\t<tr id=\"database-table-"+Category.Name+"-"+Category[key].Name+"\">"
+    index += 1
+    if index%2 == 0:
+      eo_p = "even";
+    else:
+      eo_p = "odd"
+    output += "\t\t<tr class=\""+eo_p+"\" id=\"database-table-"+Category.Name+"-"+Category[key].Name+"\">"
     for Heading in Headings:
       Value = ""
       if Category[key].HasChild (Heading):
