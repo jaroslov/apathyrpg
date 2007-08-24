@@ -1,12 +1,12 @@
 <category name="Content" >
 	<category name="Academic" >
 		<default name="" >
-			<field name="Name" />
+			<field name="Name" title="yes" table="yes"/>
 			<field name="MetaTag" />
-			<field name="Rank" />
-			<field name="Attribute" />
-			<field name="Occupation" />
-			<field name="Description" />
+			<field name="Rank" table="yes" />
+			<field name="Attribute" table="yes" />
+			<field name="Occupation" table="yes" />
+			<field name="Description" description="yes" />
 		</default>
 		<datum name="Acrobatics" >
 			<field name="Name" >Acrobatics</field>
@@ -1201,12 +1201,12 @@ The academic study of natural laws, including mechanics, electricity and magneti
 	<category name="Augmentations" >
 		<category name="Arm, Hand" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Character Points" />
-				<field name="Prerequisite" />
-				<field name="Location" />
-				<field name="Description" />
+				<field name="Character Points" table="" />
+				<field name="Prerequisite" table="" />
+				<field name="Location" table="" />
+				<field name="Description" description="" />
 			</default>
 			<datum name="Arm Blades" >
 				<field name="Name" >Arm Blades</field>
@@ -1355,12 +1355,12 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		</category>
 		<category name="Body" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Character Points" />
-				<field name="Prerequisite" />
-				<field name="Location" />
-				<field name="Description" />
+				<field name="Character Points" table="" />
+				<field name="Prerequisite" table="" />
+				<field name="Location" table="" />
+				<field name="Description" description="" />
 			</default>
 			<datum name="Abnormal Articulation" >
 				<field name="Name" >Abnormal Articulation</field>
@@ -1685,12 +1685,12 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		</category>
 		<category name="Head" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Character Points" />
-				<field name="Prerequisite" />
-				<field name="Location" />
-				<field name="Description" />
+				<field name="Character Points" table="" />
+				<field name="Prerequisite" table="" />
+				<field name="Location" table="" />
+				<field name="Description" description="" />
 			</default>
 			<datum name="Advanced Audio" >
 				<field name="Name" >Advanced Audio</field>
@@ -2271,12 +2271,12 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		</category>
 		<category name="Leg" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Character Points" />
-				<field name="Prerequisite" />
-				<field name="Location" />
-				<field name="Description" />
+				<field name="Character Points" table="" />
+				<field name="Prerequisite" table="" />
+				<field name="Location" table="" />
+				<field name="Description" description="" />
 			</default>
 			<datum name="Climbing Feet" >
 				<field name="Name" >Climbing Feet</field>
@@ -2369,12 +2369,12 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		</category>
 		<category name="Torso" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Character Points" />
-				<field name="Prerequisite" />
-				<field name="Location" />
-				<field name="Description" />
+				<field name="Character Points" table="" />
+				<field name="Prerequisite" table="" />
+				<field name="Location" table="" />
+				<field name="Description" description="" />
 			</default>
 			<datum name="Advanced Digestive Sys" >
 				<field name="Name" >Advanced Digestive Sys</field>
@@ -2605,12 +2605,12 @@ The academic study of natural laws, including mechanics, electricity and magneti
 	<category name="Equipment" >
 		<category name="Ammunition" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Cost" />
-				<field name="Damage" />
-				<field name="Description" />
+				<field name="Type" table="" />
+				<field name="Cost" table="" />
+				<field name="Damage" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Anti-armor (arrows only!)" >
@@ -2706,16 +2706,16 @@ The academic study of natural laws, including mechanics, electricity and magneti
 		</category>
 		<category name="Armor" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Cost" />
-				<field name="Note" />
-				<field name="Piercing" />
-				<field name="Slashing" />
-				<field name="Crushing" />
-				<field name="Description" />
+				<field name="Cost" table="" />
+				<field name="Note" table="" />
+				<field name="Piercing" table="" />
+				<field name="Slashing" table="" />
+				<field name="Crushing" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
-				<field name="encumbrance" />
+				<field name="Encumbrance" table="" />
 			</default>
 			<datum name="ALCAR Plate" >
 				<field name="Name" >ALCAR Plate</field>
@@ -2729,7 +2729,7 @@ The academic study of natural laws, including mechanics, electricity and magneti
 
 The suit is made of heavy ballistic nylon which is covered with form-fitting ALuminum-CARbon plates which cover the vast majority of the body.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >7</field>
+				<field name="Encumbrance" >7</field>
 			</datum>
 			<datum name="Ajax&apos;s Deadly Grasp" >
 				<field name="Name" >Ajax&apos;s Deadly Grasp</field>
@@ -2741,7 +2741,7 @@ The suit is made of heavy ballistic nylon which is covered with form-fitting ALu
 				<field name="Crushing" >3</field>
 				<field name="Description" >???</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Articulated Plate" >
 				<field name="Name" >Articulated Plate</field>
@@ -2755,7 +2755,7 @@ The suit is made of heavy ballistic nylon which is covered with form-fitting ALu
 
 Articulated plate must be made specifically for a given wearer.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >9</field>
+				<field name="Encumbrance" >9</field>
 			</datum>
 			<datum name="BSP Linked Plate Armor" >
 				<field name="Name" >BSP Linked Plate Armor</field>
@@ -2769,7 +2769,7 @@ Articulated plate must be made specifically for a given wearer.</field>
 
 This armor consists of a Spectra sleeved vest and matching pants.  The entire suit is covered with polymeric plates reenforced with boron nanotubes.  The thickness and shape of the plates is optimized to provide good mobility and protection.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Ballistics Cloth (Heavy)" >
 				<field name="Name" >Ballistics Cloth (Heavy)</field>
@@ -2781,7 +2781,7 @@ This armor consists of a Spectra sleeved vest and matching pants.  The entire su
 				<field name="Crushing" >5</field>
 				<field name="Description" >Heavy bulletproof vest with a trauma plate in the chest area.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >4</field>
+				<field name="Encumbrance" >4</field>
 			</datum>
 			<datum name="Ballistics Cloth (Light)" >
 				<field name="Name" >Ballistics Cloth (Light)</field>
@@ -2793,7 +2793,7 @@ This armor consists of a Spectra sleeved vest and matching pants.  The entire su
 				<field name="Crushing" >3</field>
 				<field name="Description" >A very light bulletproof vest.  This is typically used by undercover police or anyone that needs unobtrusive protection.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="Ballistics Cloth (Standard)" >
 				<field name="Name" >Ballistics Cloth (Standard)</field>
@@ -2805,7 +2805,7 @@ This armor consists of a Spectra sleeved vest and matching pants.  The entire su
 				<field name="Crushing" >4</field>
 				<field name="Description" >A typical Kevlar bulletproof vest.  Very commonly issued to soldiers and police.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 			<datum name="Banded Mail" >
 				<field name="Name" >Banded Mail</field>
@@ -2821,7 +2821,7 @@ A leather suit covered in overlapping and layerd metal plates that curve around 
 
 \VBoxColumnPicture{Images/Equipment/Armor/Hirschvogel_Sigismund.jpg}</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >9</field>
+				<field name="Encumbrance" >9</field>
 			</datum>
 			<datum name="Beast Leather" >
 				<field name="Name" >Beast Leather</field>
@@ -2833,7 +2833,7 @@ A leather suit covered in overlapping and layerd metal plates that curve around 
 				<field name="Crushing" >2</field>
 				<field name="Description" >Leather armor made from special leather from wilderness beasts. Scarce.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="Biker&apos;s Leathers" >
 				<field name="Name" >Biker&apos;s Leathers</field>
@@ -2845,7 +2845,7 @@ A leather suit covered in overlapping and layerd metal plates that curve around 
 				<field name="Crushing" >1</field>
 				<field name="Description" >Leather suit worn by motorcycle racers. The suit is specially tailored to fit the rider while in the ridng position.  This, size is considered to be zero when the rider is on a motorcycle.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="Boron-Ceramic Plate" >
 				<field name="Name" >Boron-Ceramic Plate</field>
@@ -2859,7 +2859,7 @@ A leather suit covered in overlapping and layerd metal plates that curve around 
 
 This armor is exceptionally resistant to battle damage and is capable of absorbing a remarkable amount of damage before becoming unusuable.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >10</field>
+				<field name="Encumbrance" >10</field>
 			</datum>
 			<datum name="Brigandine" >
 				<field name="Name" >Brigandine</field>
@@ -2871,7 +2871,7 @@ This armor is exceptionally resistant to battle damage and is capable of absorbi
 				<field name="Crushing" >2</field>
 				<field name="Description" >Brigandine armor is made from a heavy cloth or supple leather tunic that is fitted with a regular pattern of rectangular iron plates.  It covers the body from the neck to the thighs, and also covers the shoulder area.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >6</field>
+				<field name="Encumbrance" >6</field>
 			</datum>
 			<datum name="CLAF Suit" >
 				<field name="Name" >CLAF Suit</field>
@@ -2885,7 +2885,7 @@ This armor is exceptionally resistant to battle damage and is capable of absorbi
 
 CLAF armor is common amongst police in affluent precincts and is also issued to some frontline infantry troops.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >4</field>
+				<field name="Encumbrance" >4</field>
 			</datum>
 			<datum name="CLB--WAF Suit" >
 				<field name="Name" >CLB--WAF Suit</field>
@@ -2899,7 +2899,7 @@ CLAF armor is common amongst police in affluent precincts and is also issued to 
 
 This armor delivers remarkable protection but is light enough to be used by beat cops and common soldiers.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >4</field>
+				<field name="Encumbrance" >4</field>
 			</datum>
 			<datum name="Carbon Fiber Plate" >
 				<field name="Name" >Carbon Fiber Plate</field>
@@ -2915,7 +2915,7 @@ It consists of high saturation 3D carbon fiber matix plates impregnated with sem
 
 This armor is typically used by SWAT and Military units.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >5</field>
+				<field name="Encumbrance" >5</field>
 			</datum>
 			<datum name="Ceramic Plate" >
 				<field name="Name" >Ceramic Plate</field>
@@ -2929,7 +2929,7 @@ This armor is typically used by SWAT and Military units.</field>
 
 Though it is an uncommon choice for military or police use, it is very popular amonst freelance mercenaries and adventurers due to its excellent fire resistance.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Chain Mail" >
 				<field name="Name" >Chain Mail</field>
@@ -2947,7 +2947,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 
 \VBoxColumnPicture{Images/Equipment/Armor/Morgan_Bible_28r_detail.jpg}</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >5</field>
+				<field name="Encumbrance" >5</field>
 			</datum>
 			<datum name="Chain and Brigandine" >
 				<field name="Name" >Chain and Brigandine</field>
@@ -2959,7 +2959,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >3</field>
 				<field name="Description" >A chain mail suit covered with thick metal plates</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Cloth" >
 				<field name="Name" >Cloth</field>
@@ -2971,7 +2971,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >0</field>
 				<field name="Description" >Heavy clothing designed especially for protection--like a woodsman&apos;s coveralls, etc.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Densematter Plate" >
 				<field name="Name" >Densematter Plate</field>
@@ -2983,7 +2983,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >11</field>
 				<field name="Description" >Heavy hard armor carrying collapsed abotex plates. Exceedingly rare.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >15</field>
+				<field name="Encumbrance" >15</field>
 			</datum>
 			<datum name="Double Mail" >
 				<field name="Name" >Double Mail</field>
@@ -2995,7 +2995,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Similar to chain mail, but a superior design with a higher denisty of rings.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >6</field>
+				<field name="Encumbrance" >6</field>
 			</datum>
 			<datum name="Elven Chain Mail" >
 				<field name="Name" >Elven Chain Mail</field>
@@ -3007,7 +3007,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >2</field>
 				<field name="Description" >A superior form of chain mail made from exceptionally small metal rings that are interlinked in three dimensions.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >4</field>
+				<field name="Encumbrance" >4</field>
 			</datum>
 			<datum name="Elysian Plate" >
 				<field name="Name" >Elysian Plate</field>
@@ -3019,7 +3019,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >6</field>
 				<field name="Description" >A fine suit of plate armor. It is made of exotic metals and has finely fitted joints to improve mobility.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >6</field>
+				<field name="Encumbrance" >6</field>
 			</datum>
 			<datum name="Fiberglass Plate" >
 				<field name="Name" >Fiberglass Plate</field>
@@ -3031,7 +3031,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >6</field>
 				<field name="Description" >Hard armor composed of fiberglass-epoxy plates over a kevlar interior</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Field Plate aka 3/4 plate" >
 				<field name="Name" >Field Plate aka 3/4 plate</field>
@@ -3043,7 +3043,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >8</field>
 				<field name="Description" >A chain mail suit covered with thick, form-fitting heavy metal plates</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >12</field>
+				<field name="Encumbrance" >12</field>
 			</datum>
 			<datum name="Fishback Ceramic" >
 				<field name="Name" >Fishback Ceramic</field>
@@ -3055,7 +3055,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >3</field>
 				<field name="Description" >A heavy synth coat covered with hundreds of small hexagonal CERMET plates</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 			<datum name="Fishback Steel" >
 				<field name="Name" >Fishback Steel</field>
@@ -3067,7 +3067,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >3</field>
 				<field name="Description" >A heavy denim coat covered with hundreds of small hexagonal metal tiles</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >5</field>
+				<field name="Encumbrance" >5</field>
 			</datum>
 			<datum name="Flak Armor" >
 				<field name="Name" >Flak Armor</field>
@@ -3085,7 +3085,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 
         \VBoxColumnPicture{Images/Equipment/Armor/Sn-42b.jpg}</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >6</field>
+				<field name="Encumbrance" >6</field>
 			</datum>
 			<datum name="Forged Plate" >
 				<field name="Name" >Forged Plate</field>
@@ -3097,7 +3097,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >11</field>
 				<field name="Description" >Metallurgically improved plate armor. It is the same encumberance but provides better protection.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >15</field>
+				<field name="Encumbrance" >15</field>
 			</datum>
 			<datum name="Full Plate" >
 				<field name="Name" >Full Plate</field>
@@ -3109,7 +3109,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >9</field>
 				<field name="Description" >A full chain mail suit completely covered with form fitting heavy steel plates</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >15</field>
+				<field name="Encumbrance" >15</field>
 			</datum>
 			<datum name="Furs" >
 				<field name="Name" >Furs</field>
@@ -3121,7 +3121,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >2</field>
 				<field name="Description" >cold weather clothing made from leather and animal furs</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="G-Alloy Plate" >
 				<field name="Name" >G-Alloy Plate</field>
@@ -3133,7 +3133,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >14</field>
 				<field name="Description" >Highly advanced semimetallic armor oriented on the molecular level</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Gentleman&apos;s Vest" >
 				<field name="Name" >Gentleman&apos;s Vest</field>
@@ -3145,7 +3145,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >16</field>
 				<field name="Description" >A snazzy, gray, woolen, formal vest. It is somewhat bulky, but very debonair. Adds +1 to all Build-related skills. A magical item.</field>
 				<field name="Implementation" >Charisma += 2;</field>
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 			<datum name="Gi" >
 				<field name="Name" >Gi</field>
@@ -3157,7 +3157,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="HC Aramid Armor" >
 				<field name="Name" >HC Aramid Armor</field>
@@ -3169,7 +3169,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >9</field>
 				<field name="Description" >Heavy hard armor made from hard-cast semimetallic composite plates</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Hakama (cotton)" >
 				<field name="Name" >Hakama (cotton)</field>
@@ -3181,7 +3181,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="Hakama (silk)" >
 				<field name="Name" >Hakama (silk)</field>
@@ -3193,7 +3193,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >0</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Half Plate" >
 				<field name="Name" >Half Plate</field>
@@ -3205,7 +3205,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >6</field>
 				<field name="Description" >A chain mail suit sparcely covered with thick, non-interlocking plates</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >10</field>
+				<field name="Encumbrance" >10</field>
 			</datum>
 			<datum name="Hard Leather" >
 				<field name="Name" >Hard Leather</field>
@@ -3217,7 +3217,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Similar to soft leather, except that the main pieces are made of hard tooled leather</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="Heavy Jacket" >
 				<field name="Name" >Heavy Jacket</field>
@@ -3229,7 +3229,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >0</field>
 				<field name="Description" >Any sort of unusually thick clothing--like a parka, leather jacket, heavy denim, etc.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Heavy Plate" >
 				<field name="Name" >Heavy Plate</field>
@@ -3241,7 +3241,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >12</field>
 				<field name="Description" >A suit of fully enclosed metal plate armor. The plates are thicker than normal for superior protection.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >18</field>
+				<field name="Encumbrance" >18</field>
 			</datum>
 			<datum name="Jack/gravel coat" >
 				<field name="Name" >Jack/gravel coat</field>
@@ -3253,7 +3253,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >A cloak made of heavy cloth secured with leather straps. The surface is covered with small stones and bits of metal bonded and sewn in place.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >4</field>
+				<field name="Encumbrance" >4</field>
 			</datum>
 			<datum name="Kevlar" >
 				<field name="Name" >Kevlar</field>
@@ -3265,7 +3265,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >armored clothing made from pure kevlar with normal cloth over it. Designed to be inconspicuous. (used by diplomats, etc.)</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Knitted Steel" >
 				<field name="Name" >Knitted Steel</field>
@@ -3277,7 +3277,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >0</field>
 				<field name="Description" >Armor made from weaving steel wire into cloth</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 			<datum name="Light Plate" >
 				<field name="Name" >Light Plate</field>
@@ -3289,7 +3289,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >4</field>
 				<field name="Description" >A partial plate suit. It consists of a breast plate, shoulder plates and greaves. The plates are cut to maximize movement.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >4</field>
+				<field name="Encumbrance" >4</field>
 			</datum>
 			<datum name="Linked Metal" >
 				<field name="Name" >Linked Metal</field>
@@ -3301,7 +3301,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >secondary armor for millitary applications--a network of metal plates over a cloth vest</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >4</field>
+				<field name="Encumbrance" >4</field>
 			</datum>
 			<datum name="Mylar" >
 				<field name="Name" >Mylar</field>
@@ -3313,7 +3313,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >0</field>
 				<field name="Description" >Thin armor material that is nearly impossible to cut</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Nomex" >
 				<field name="Name" >Nomex</field>
@@ -3325,7 +3325,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Tough clothing made from NOMEX fibers---designed for fire protection. Worn by firefighters and emergency workers</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="PACA Mesh suit" >
 				<field name="Name" >PACA Mesh suit</field>
@@ -3337,7 +3337,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Millitary armor made from tough armored fibers and composite plastics</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="PLCALF Armor" >
 				<field name="Name" >PLCALF Armor</field>
@@ -3349,7 +3349,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >5</field>
 				<field name="Description" >Same as the above, with additional polymeric plates in key areas. This is the heaviest armor used by ultramodern SWAT forces.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >5</field>
+				<field name="Encumbrance" >5</field>
 			</datum>
 			<datum name="Padded" >
 				<field name="Name" >Padded</field>
@@ -3361,7 +3361,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >2</field>
 				<field name="Description" >Heavy clothing lined with multiple layers of thick fur, padding, etc.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Polymer Plate" >
 				<field name="Name" >Polymer Plate</field>
@@ -3373,7 +3373,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >5</field>
 				<field name="Description" >Light hard armor made from advanced polymeric plates over a kevlar suit</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >6</field>
+				<field name="Encumbrance" >6</field>
 			</datum>
 			<datum name="R-Polymer Plate" >
 				<field name="Name" >R-Polymer Plate</field>
@@ -3385,7 +3385,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >7</field>
 				<field name="Description" >Polymeric hard armor containing steel inserts in all plates</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >7</field>
+				<field name="Encumbrance" >7</field>
 			</datum>
 			<datum name="RIR Hazard Suit" >
 				<field name="Name" >RIR Hazard Suit</field>
@@ -3397,7 +3397,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >2</field>
 				<field name="Description" >Rubber-impregnated polyester fabric filled with dogbone-shaped interlocking metal bars. Protects against chemicals too.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 			<datum name="Racer&apos;s Suit/Pilot&apos;s suit" >
 				<field name="Name" >Racer&apos;s Suit/Pilot&apos;s suit</field>
@@ -3409,7 +3409,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Full body jumpsuit made of fireproof materials. Designed to save the life of race car drivers, pilots, etc, in the event of a crash or fire.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Reinforced Leather" >
 				<field name="Name" >Reinforced Leather</field>
@@ -3421,7 +3421,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >2</field>
 				<field name="Description" >Very hard and stiff leather with inlaid metal reinforcements. The edges are ringed in metal.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 			<datum name="Ring Mail" >
 				<field name="Name" >Ring Mail</field>
@@ -3433,7 +3433,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >6</field>
 				<field name="Description" >Large metal rings held together with leather straps</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Riot Armor" >
 				<field name="Name" >Riot Armor</field>
@@ -3445,7 +3445,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >6</field>
 				<field name="Description" >Standard SWAT armor: Ballistics cloth with metal plates in key locations</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >7</field>
+				<field name="Encumbrance" >7</field>
 			</datum>
 			<datum name="SEB Hard Armor" >
 				<field name="Name" >SEB Hard Armor</field>
@@ -3457,7 +3457,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >7</field>
 				<field name="Description" >Boron-composite plates over a spectra undersuit. Rare, generally used by special forces or elite units.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="SPECTRA" >
 				<field name="Name" >SPECTRA</field>
@@ -3469,7 +3469,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Improved version of Kevar, very flexible yet stands up well to piercing and slashing</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="SPECTRA Tactical Vest" >
 				<field name="Name" >SPECTRA Tactical Vest</field>
@@ -3481,7 +3481,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >5</field>
 				<field name="Description" >A heavy bulletproof vest made from the improved SPECTRA material with a steel chestplate</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >6</field>
+				<field name="Encumbrance" >6</field>
 			</datum>
 			<datum name="Scale Mail" >
 				<field name="Name" >Scale Mail</field>
@@ -3493,7 +3493,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >5</field>
 				<field name="Description" >Hard leather armor covered in overlapping metal scales</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Scale-over-Chain" >
 				<field name="Name" >Scale-over-Chain</field>
@@ -3505,7 +3505,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >5</field>
 				<field name="Description" >A chain mail suit with additional metal scales covering the chain material</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >9</field>
+				<field name="Encumbrance" >9</field>
 			</datum>
 			<datum name="Silk" >
 				<field name="Name" >Silk</field>
@@ -3517,7 +3517,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Armored robes made from woven silk threads.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Soft Leather" >
 				<field name="Name" >Soft Leather</field>
@@ -3529,7 +3529,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >0</field>
 				<field name="Description" >Armored clothing made of pieces of thick, soft, leather sewn together</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Sorbothene" >
 				<field name="Name" >Sorbothene</field>
@@ -3541,7 +3541,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >5</field>
 				<field name="Description" >A shock-damping suit made from a special rubber material</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="Splint Mail" >
 				<field name="Name" >Splint Mail</field>
@@ -3553,7 +3553,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >8</field>
 				<field name="Description" >Soft leather armor covered with paralell vertical bands of iron</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >8</field>
+				<field name="Encumbrance" >8</field>
 			</datum>
 			<datum name="Steel Plate" >
 				<field name="Name" >Steel Plate</field>
@@ -3565,7 +3565,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >6</field>
 				<field name="Description" >A modern version of full plate mail</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >12</field>
+				<field name="Encumbrance" >12</field>
 			</datum>
 			<datum name="Stripped-Leather Mail" >
 				<field name="Name" >Stripped-Leather Mail</field>
@@ -3577,7 +3577,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >1</field>
 				<field name="Description" >Soft leather underlayment with multiple layers of hard leather straps held on by metallic buckles or rings. Creaks and makes noise when moving.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 			<datum name="Tai Chi suit" >
 				<field name="Name" >Tai Chi suit</field>
@@ -3589,7 +3589,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >0</field>
 				<field name="Description" >martial arts costume</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >1</field>
+				<field name="Encumbrance" >1</field>
 			</datum>
 			<datum name="Toad Armor" >
 				<field name="Name" >Toad Armor</field>
@@ -3601,7 +3601,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >4</field>
 				<field name="Description" >Armor made of hundreds of toad-skins stitched together. This may be worn either inside or outside of armor as it is quite suppled and billowing. The armor provides protection against poisons and acids, as long as it is not punctured. Even though the armor is considered &quot;Hard&quot; it does not count as &quot;Hard&quot; for sizing and encumbrance purposes.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >2</field>
+				<field name="Encumbrance" >2</field>
 			</datum>
 			<datum name="Wyrmhide" >
 				<field name="Name" >Wyrmhide</field>
@@ -3613,7 +3613,7 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 				<field name="Crushing" >3</field>
 				<field name="Description" >Special leather made from the hide of rare and dangerous monsters is used to make this superior type of armor.</field>
 				<field name="Implementation" />
-				<field name="encumbrance" >3</field>
+				<field name="Encumbrance" >3</field>
 			</datum>
 		</category>
 		<category name="Energy Weapons" >
@@ -3621,17 +3621,17 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 		<category name="Melee" >
 			<category name="Axes" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
 				<datum name="2-Headed Axe" >
@@ -3777,17 +3777,17 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 			</category>
 			<category name="Blunt" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
 				<datum name="Arab Mace" >
@@ -4025,17 +4025,17 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 			</category>
 			<category name="Body" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
 				<datum name="Boxing Irons of the Troll" >
@@ -4139,17 +4139,17 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 			</category>
 			<category name="Chained" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
 				<datum name="Ball and Chain" >
@@ -4253,19 +4253,20 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 			</category>
 			<category name="Exotic" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Atalatl" >
 					<field name="Name" >Atalatl</field>
 					<field name="MetaTag" />
@@ -4593,19 +4594,20 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 			</category>
 			<category name="Knives" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Cleaver" >
 					<field name="Name" >Cleaver</field>
 					<field name="MetaTag" />
@@ -4749,19 +4751,20 @@ Typically this is worn over padded armor as the rings are known for chafing agai
 			</category>
 			<category name="Large Swords" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Bastard Sword" >
 					<field name="Name" >Bastard Sword</field>
 					<field name="MetaTag" />
@@ -4979,19 +4982,20 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 			</category>
 			<category name="Monofilament" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Whip" >
 					<field name="Name" >Whip</field>
 					<field name="MetaTag" >Ultramodern</field>
@@ -5009,19 +5013,20 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 			</category>
 			<category name="Plasma" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Axe" >
 					<field name="Name" >Axe</field>
 					<field name="MetaTag" >Ultramodern</field>
@@ -5081,19 +5086,20 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 			</category>
 			<category name="Polearms" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Awl Pike" >
 					<field name="Name" >Awl Pike</field>
 					<field name="MetaTag" />
@@ -5377,19 +5383,20 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 			</category>
 			<category name="Rocket-Assisted" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Battle Axe" >
 					<field name="Name" >Battle Axe</field>
 					<field name="MetaTag" >Ultramodern</field>
@@ -5477,19 +5484,20 @@ A fearsome sword with scalloped, flame-like, blade edges.  Sure to inspire terro
 			</category>
 			<category name="Small Swords" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Chinese war sword" >
 					<field name="Name" >Chinese war sword</field>
 					<field name="MetaTag" />
@@ -5665,19 +5673,20 @@ A 14&apos;--18&apos; flat stone (typically jade) paddle. Has a razor-sharp edge.
 			</category>
 			<category name="Staves" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Bo Staff" >
 					<field name="Name" >Bo Staff</field>
 					<field name="MetaTag" />
@@ -5779,19 +5788,20 @@ A 14&apos;--18&apos; flat stone (typically jade) paddle. Has a razor-sharp edge.
 			</category>
 			<category name="Thrown" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Class" />
-					<field name="Type" />
-					<field name="Cost" />
-					<field name="Damage" />
-					<field name="Hands" />
-					<field name="Minimum Strength" />
-					<field name="Maximum Strength Bonus" />
-					<field name="Recovery" />
-					<field name="Description" />
+					<field name="Class" table="" />
+					<field name="Type" table="" />
+					<field name="Cost" table="" />
+					<field name="Damage" table="" />
+					<field name="Hands" table="" />
+					<field name="Minimum Strength" table="" />
+					<field name="Maximum Strength Bonus" table="" />
+					<field name="Recovery" table="" />
+					<field name="Description" description="" />
 					<field name="Implementation" />
 				</default>
+
 				<datum name="Chakram (large)" >
 					<field name="Name" >Chakram (large)</field>
 					<field name="MetaTag" />
@@ -5936,10 +5946,10 @@ A 14&apos;--18&apos; flat stone (typically jade) paddle. Has a razor-sharp edge.
 		</category>
 		<category name="Miscellaneous" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Cost" />
-				<field name="Description" />
+				<field name="Cost" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="ALICE Rig" >
@@ -7120,17 +7130,17 @@ MagicPoints -= 2;</field>
 		</category>
 		<category name="Ranged" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Class" />
-				<field name="Type" />
-				<field name="Cost" />
-				<field name="Damage" />
-				<field name="Hands" />
-				<field name="Minimum Strength" />
-				<field name="Recovery" />
-				<field name="Range" />
-				<field name="Description" />
+				<field name="Class" table="" />
+				<field name="Type" table="" />
+				<field name="Cost" table="" />
+				<field name="Damage" table="" />
+				<field name="Hands" table="" />
+				<field name="Minimum Strength" table="" />
+				<field name="Recovery" table="" />
+				<field name="Range" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Blow Gun - Long" >
@@ -7388,15 +7398,15 @@ MagicPoints -= 2;</field>
 		</category>
 		<category name="Shields" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Cost" />
-				<field name="Note" />
-				<field name="Piercing" />
-				<field name="Slashing" />
-				<field name="Crushing" />
-				<field name="Minimum Strength" />
-				<field name="Description" />
+				<field name="Cost" table="" />
+				<field name="Note" table="" />
+				<field name="Piercing" table="" />
+				<field name="Slashing" table="" />
+				<field name="Crushing" table="" />
+				<field name="Minimum Strength" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="ALC Plate" >
@@ -7632,17 +7642,17 @@ MagicPoints -= 2;</field>
 	<category name="Magic" >
 		<category name="Air" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Air Laser" >
@@ -8083,17 +8093,17 @@ This smoke is not hazardous or unpleasant to breathe, though it does obscure vis
 		</category>
 		<category name="Arcane" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Advanced Haste" >
@@ -8663,17 +8673,17 @@ Because the evil wizard wins the skill contest, disenchant is successful and Maj
 		</category>
 		<category name="Beast" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Beast Lore 1" >
@@ -9015,17 +9025,17 @@ Because the evil wizard wins the skill contest, disenchant is successful and Maj
 		</category>
 		<category name="Earth" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Alter Size" >
@@ -9451,17 +9461,17 @@ Because the evil wizard wins the skill contest, disenchant is successful and Maj
 		</category>
 		<category name="Fire" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Ashen cloud" >
@@ -9833,17 +9843,17 @@ Adds Fire effect to the weapon and also a +2 bonus to the damage roll.</field>
 		</category>
 		<category name="Life" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Animate" >
@@ -10435,17 +10445,17 @@ This spell also heals sensory deprivation such as blindness, deafness, or inabil
 		</category>
 		<category name="Light" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Aura Sight" >
@@ -10871,17 +10881,17 @@ This spell also heals sensory deprivation such as blindness, deafness, or inabil
 		</category>
 		<category name="Physical" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Autophase" >
@@ -11399,17 +11409,17 @@ The caster must have an object to propel with this spell.  Note that even if a &
 		</category>
 		<category name="Spirit" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Banshee&apos;s Wail" >
@@ -11821,17 +11831,17 @@ The caster must have an object to propel with this spell.  Note that even if a &
 		</category>
 		<category name="Water" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Casting Time" />
-				<field name="Damage" />
-				<field name="Duration" />
-				<field name="Magic Points" />
-				<field name="Range" />
-				<field name="Target" />
-				<field name="Description" />
+				<field name="Type" table="" qsummary="" />
+				<field name="Rank" table="" qsummary="" />
+				<field name="Casting Time" table="" qsummary="" />
+				<field name="Damage" table="" qsummary="" />
+				<field name="Duration" table="" qsummary="" />
+				<field name="Magic Points" table="" qsummary="" />
+				<field name="Range" table="" qsummary="" />
+				<field name="Target" table="" qsummary="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Absolute Zero" >
@@ -12307,12 +12317,12 @@ This instantly nullifies all poisons in the caster&apos;s body, and renders the 
 	<category name="Martial Arts" >
 		<category name="Basic" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Attribute" >Dexterity</field>
-				<field name="Description" />
+				<field name="Type" table="" />
+				<field name="Rank" table="" />
+				<field name="Attribute" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Archaic Weapons" >
@@ -12506,12 +12516,12 @@ and thus \emph{may not} be used.</field>
 		</category>
 		<category name="Combat" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Attribute" >Dexterity</field>
-				<field name="Description" />
+				<field name="Type" table="" />
+				<field name="Rank" table="" />
+				<field name="Attribute" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Ambidexterity" >
@@ -12916,12 +12926,12 @@ and thus \emph{may not} be used.</field>
 		</category>
 		<category name="Defensive" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Attribute" >Dexterity</field>
-				<field name="Description" />
+				<field name="Type" table="" />
+				<field name="Rank" table="" />
+				<field name="Attribute" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Anticipated Dodge" >
@@ -13074,12 +13084,12 @@ and thus \emph{may not} be used.</field>
 		</category>
 		<category name="Modifier" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Attribute" >Dexterity</field>
-				<field name="Description" />
+				<field name="Type" table="" />
+				<field name="Rank" table="" />
+				<field name="Attribute" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Aimed Shot" >
@@ -13316,12 +13326,12 @@ and thus \emph{may not} be used.</field>
 		</category>
 		<category name="Special" >
 			<default name="" >
-				<field name="Name" />
+				<field name="Name" title="" table="" />
 				<field name="MetaTag" />
-				<field name="Type" />
-				<field name="Rank" />
-				<field name="Attribute" >Dexterity</field>
-				<field name="Description" />
+				<field name="Type" table="" />
+				<field name="Rank" table="" />
+				<field name="Attribute" table="" />
+				<field name="Description" description="" />
 				<field name="Implementation" />
 			</default>
 			<datum name="Disarm" >
@@ -13402,11 +13412,11 @@ and thus \emph{may not} be used.</field>
 		<category name="Equipment" >
 			<category name="Auxiliary" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Slots" />
-					<field name="Character Points" />
-					<field name="Description" />
+					<field name="Slots" table="" />
+					<field name="Character Points" table="" />
+					<field name="Description" description="" />
 				</default>
 				<datum name="Active Stealth" >
 					<field name="Name" >Active Stealth</field>
@@ -13824,11 +13834,11 @@ and thus \emph{may not} be used.</field>
 			</category>
 			<category name="Ballistic" >
 				<default name="" >
-					<field name="Name" />
-					<field name="MetaTag" >Future</field>
-					<field name="Slots" />
-					<field name="Character Points" />
-					<field name="Description" />
+					<field name="Name" title="" table="" />
+					<field name="MetaTag" />
+					<field name="Slots" table="" />
+					<field name="Character Points" table="" />
+					<field name="Description" description="" />
 				</default>
 				<datum name="Auto-Cannon" >
 					<field name="Name" >Auto-Cannon</field>
@@ -13917,9 +13927,9 @@ and thus \emph{may not} be used.</field>
 			</category>
 			<category name="Energy" >
 				<default name="" >
-					<field name="Name" />
-					<field name="MetaTag" >Future</field>
-					<field name="Description" />
+					<field name="Name" title="" table="" />
+					<field name="MetaTag" />
+					<field name="Description" description="" />
 				</default>
 				<datum name="Beam Cannon" >
 					<field name="Name" >Beam Cannon</field>
@@ -13966,12 +13976,12 @@ and thus \emph{may not} be used.</field>
 			</category>
 			<category name="Sensors and Controls" >
 				<default name="" >
-					<field name="Name" />
+					<field name="Name" title="" table="" />
 					<field name="MetaTag" />
-					<field name="Slots" />
-					<field name="Requirements" />
-					<field name="Character Points" />
-					<field name="Description" />
+					<field name="Slots" table="" />
+					<field name="Requirements" table="" />
+					<field name="Character Points" table="" />
+					<field name="Description" description="" />
 				</default>
 				<datum name="A/V Recorder" >
 					<field name="Name" >A/V Recorder</field>
@@ -14202,12 +14212,12 @@ and thus \emph{may not} be used.</field>
 	</category>
 	<category name="Monsters" >
 		<default name="" >
-			<field name="Name" />
+			<field name="Name" title="" table="" />
 			<field name="MetaTag" />
 			<field name="Special Abilities" />
 			<field name="Statistics" />
 			<field name="Attacks" />
-			<field name="Description" />
+			<field name="Description" description="" />
 		</default>
 		<datum name="Allip" >
 			<field name="Name" >Allip</field>
@@ -16640,10 +16650,10 @@ Combat:  Rabbats are unsubtle and make no use of trickery or deciet.  They do, h
 	</category>
 	<category name="Traits" >
 		<default name="" >
-			<field name="Name" />
+			<field name="Name" title="" table="" />
 			<field name="MetaTag" />
-			<field name="Rank" />
-			<field name="Description" />
+			<field name="Rank" table="" />
+			<field name="Description" description="" />
 			<field name="Implementation" />
 		</default>
 		<datum name="Absent Minded Genius" >
