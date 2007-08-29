@@ -2226,7 +2226,115 @@ The recover time of the Monofilament Whip cannot be reduced by strength, and wil
 
         <section><!-- Plasma -->
           <title>Plasma</title>
+
+          <text>
+Plasma weapons are designed for a specific set of modifications. These
+are:
+          </text>
+
+          <figure>
+            <table>
+              <head>
+                <cell align="left">Type</cell><cell width="1.5in">Effect</cell><cell align="center">Cost Factor</cell>
+              </head>
+              <row>
+                <cell>High temperature</cell>
+                <cell>Blade is hotter than normal, dealing +1 damage, can be purchased up to 3 times (each time double cost)</cell>
+                <cell>x2</cell>
+              </row>
+              <row>
+                <cell>Over powered field</cell>
+                <cell>The magnetic field is stronger than normal, giving a +5 STR when breaking from a lock</cell>
+                <cell>x2</cell>
+              </row>
+              <row>
+                <cell>High speed blade</cell>
+                <cell>The plasma weapon can be turned on in 0 actions</cell>
+                <cell>x1.5</cell>
+              </row>
+              <row>
+                <cell>Power burst</cell>
+                <cell>Once per minute the blade's power can be increased to deal +3 damage</cell>
+                <cell>x1.5</cell>
+              </row>
+            </table>
+            <caption>Plasma Weapon Modifiers</caption>
+          </figure>
+
+          <section><!-- Notes for Plasma Weapons -->
+            <title>Notes: specific to Plasma Weapons</title>
+
+            <itemize-list>
+              <item>Plasma weapons are a bladeless handle (typically looks like a
+  normal weapon handle or a flashlight) from which a glowing blade of
+  extremely hot plasma vents forth.  The plasma is held in the shape
+  of a cylinder (or blade) by a magnetic field. They take an action to
+  turn on.</item>
+              <item>Due to the difference between using a plasma weapon verses
+  normal weapons, they require the Archaic Weapons - Energy skill to
+  use. Anyone can use their normal sword skill (or axe skill
+  respectively) but will get a critical failure on a 4 or below
+  (instead of the normal 1).</item>
+              <item>Plasma weapons cannot be parried by non-plasma weapons,
+  likewise, they cannot parry non-plasma weapons.  Similarly, shields
+  cannot block plasma weapons.  Plasma weapons can parry other plasma
+  weapons, and force fields protect against them as normal If a plasma
+  weapon comes in contact with another one, there is a 25% chance the
+  magnetic fields of the blades will lock together. It is easy to tell
+  if combatants are locked as an extremely bright glow emanates from
+  the contact point of the weapons. Getting out of a lock requires an
+  action where a strength contest ensues.  If there is more than a
+  difference of 8 between the two strength rolls, the lock is broken
+  and the loser loses his or her next action.  If no break occurs, the
+  combatants must attempt again on the next action. Either combatant
+  in a lock can turn off their weapon, in which case he or she
+  automatically loses the lock challenge, and gets the same negative
+  as if he lost due in a STR contest.</item>
+              <item>One side effect of having a magnetic field around the blade, is
+  that it is possible to parry projectile energy attacks (such as
+  shots from a beam rifle).  Doing so the wielder is at a -8.</item>
+            </itemize-list>
+
+          </section><!-- /Notes for Plasma Weapons -->
+
         </section><!-- /Plasma -->
+
+        <section><!-- Polearms -->
+          <title>Polearms</title>
+          <reference hrid="Content/Equipment/Melee/Polearms" />
+        </section><!-- /Polearms -->
+
+        <section><!-- Rocket Assisted -->
+          <title>Rocket Assisted</title>
+
+          <text>
+Rocket-assisted weapons are modern versions of traditional archaic weapons.  They have small rocket motors contained in the weapon.	When the weapon is swung,  the motor ignites, giving extra force to the blow.  They are used with the same skill as normal archaic weapons.
+          </text>
+
+          <text>
+If such a weapon is used, and the target is missed, then it takes an extra two actions to recover.  If the target is hit but the blow	is parried or blocked, then it takes the normal time to recover.
+          </text>
+
+          <text>
+When using rocket assisted weapons, you need an extra success to parry melee attacks.  (At least two better than attacker.)
+          </text>
+
+          <text>
+Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used up, they must be refilled before the weapon can be used.	Each charge costs $100 to refill.
+          </text>
+
+          <reference hrid="Content/Equipment/Melee/Rocket Assisted" />
+        </section><!-- /Rocket Assisted -->
+
+        <section><!-- Staves -->
+          <title>Staves</title>
+          <reference hrid="Content/Equipment/Melee/Staves" />
+        </section><!-- /Staves -->
+
+        <section><!-- Thrown -->
+          <title>Thrown</title>
+          <reference hrid="Content/Equipment/Melee/Thrown" />
+        </section><!-- /Thrown -->
 
       </section><!-- /Melee -->
 
