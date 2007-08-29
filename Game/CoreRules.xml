@@ -2224,6 +2224,10 @@ The recover time of the Monofilament Whip cannot be reduced by strength, and wil
           <reference hrid="Content/Equipment/Melee/Monofilament" />
         </section><!-- /Monofilament -->
 
+        <section><!-- Plasma -->
+          <title>Plasma</title>
+        </section><!-- /Plasma -->
+
       </section><!-- /Melee -->
 
   </chapter><!-- /S Equipment -->
