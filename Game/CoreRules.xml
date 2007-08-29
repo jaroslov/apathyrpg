@@ -1780,10 +1780,12 @@ your maximum HP, you have died.</text>
 </part>
 <part>
   <title>Rule Sections</title>
+
   <chapter><!-- S Academics -->
     <title>Academics</title>
     <procedural src="Academic" />
   </chapter><!-- /S Academics -->
+
   <chapter><!-- S Augmentations -->
     <title>Augmentations</title>
 
@@ -1953,17 +1955,48 @@ blood supply found in the torso.
         
     </section><!-- /Determining the Cost of an Augmentation body part -->
 
-    <procedural src="Content/Augmentations/Arm__Hand" />
-    <procedural src="Content/Augmentations/Body" />
-    <procedural src="Content/Augmentations/Head" />
-    <procedural src="Content/Augmentations/Leg" />
-    <procedural src="Content/Augmentations/Torso" />
+    <section><!-- Arm, Hand -->
+      <title>Arm, Hand</title>
+      <procedural src="Content/Augmentations/Arm, Hand" />
+    </section><!-- /Arm, Hand -->
+
+    <section><!-- Body -->
+      <title>Body</title>
+      <procedural src="Content/Augmentations/Body" />
+    </section><!-- /Body -->
+
+    <section><!-- Head -->
+      <title>Head</title>
+      <procedural src="Content/Augmentations/Head" />
+    </section><!-- /Head -->
+
+    <section><!-- Leg -->
+      <title>Leg</title>
+      <procedural src="Content/Augmentations/Leg" />
+    </section><!-- /Leg -->
+
+    <section><!-- Torso -->
+      <title>Torso</title>
+      <procedural src="Content/Augmentations/Torso" />
+    </section><!-- /Torso -->
 
   </chapter><!-- /S Augmentations -->
+
   <chapter><!-- S Equipment -->
     <title>Equipment</title>
 
+    <section><!-- Ammunition -->
+      <title>Ammunition</title>
+      <procedural src="Content/Equipment/Ammunition" />
+    </section><!-- /Ammunition -->
 
+    <section><!-- Armor -->
+      <title>Armor</title>
+
+
+
+      <procedural src="Content/Equipment/Armor" />
+    </section><!-- /Armor -->
 
   </chapter><!-- /S Equipment -->
   <chapter><!-- S Magic -->
@@ -2410,7 +2443,10 @@ any relavent interaction statistics, such as combat, elocution etc.</text>
         </section><!-- /Adding a Template -->
     </section><!-- /Building a Monster -->
     
-    <procedural src="Content/Monsters" />
+    <section><!-- Monsters -->
+      <title>Monsters</title>
+      <procedural src="Content/Monsters" />
+    </section><!-- /Monsters -->
 
   </chapter><!-- /S Monsters -->
   <chapter><!-- S Traits -->
@@ -2433,7 +2469,11 @@ character's Mana Points.</text>
 designed for using abilities to some specific spell, this trait is
 called <emph>Spell Ability</emph>.</text>
     
-    <procedural src="Content/Traits" />
+    
+    <section><!-- Traits -->
+      <title>Traits</title>
+      <procedural src="Content/Traits" />
+    </section><!-- /Traits -->
 
   </chapter><!-- /S Traits -->
 </part>
