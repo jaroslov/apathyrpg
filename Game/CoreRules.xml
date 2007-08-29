@@ -2082,6 +2082,13 @@ blood supply found in the torso.
 
     <reference hrid="Content/Equipment/Armor" />
 
+      <section><!-- Energy Weapons -->
+        <title>Energy Weapons</title>
+        <text>
+Most energy weapons are powered by a battery pack.  These are interchangable between weapons.  Energy within the packs is consumed as the weapon is fired, like normal bullets.  They are called <dquo>batts</dquo> or <dquo>b-paks</dquo> in slang. B-paks store energy in units of EU.  Different weapons consume EU at different rates.  Smaller weapons use 1 EU per shot.  Larger weapons might use more.  Pistols can hold ONE pack.  Rifles/cannons can usually hold 3. B-paks can be recharged.  Recharging a pack takes about thirty seconds per EU that has been used.  As a general rule, it costs $1 per EU to have pack recharged.  HD paks require special equipment to charge and these cost about $1.50 per EU to charge.
+        </text>
+      </section><!-- Energy Weapons -->
+
     </section><!-- /Equipment -->
 
   </chapter><!-- /S Equipment -->
