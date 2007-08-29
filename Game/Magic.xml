@@ -495,15 +495,20 @@ the caster has is then applied as a bonus to that roll.
   <section><!-- Martial Magic / Super Power Combat -->
     <title>Martial Magic / Super Power Combat</title>
 
+    <text>
 Martial magic is the ability to perform supernatural <dquo>attacks</dquo> in
 conjunction with normal combat, such as fist fighting, martial arts,
 or combat with weapons.
+    </text>
 
+    <text>
 Martial Magic always works in conjunction with some kind of verbal or
 somatic component.  This means that the fighter must perform a
 particular combat form (kata), stance, or must shout a particular
 phrase in order to use the ability.
+    </text>
 
+    <text>
 Martial magic is always taught from master to student.  It is a
 closely guarded secret of warrior secret societies, secluded martial
 arts temples, or families with great fighting traditions.  Once a
@@ -511,58 +516,75 @@ warrior masters the traditional (non-supernatural) combat arts, he may
 be taught martial magic.  Since martial magic is highly dependent on
 particular combat forms and stances, it is nearly impossible to learn
 on one<squo />s own or from a book.
+    </text>
 
+    <text>
 Magical effects that ordinarily require touch do so for the martial
 magician as well.  This is normally done by striking the target with
 some kind of melee attack.  The character does not have to deal damage
 per se (if the target is wearing armor) but he must connect with a
 solid blow.  The magical energy (effect) is transferred through the
 blow.  Martial magic users may choose to use a normal touch instead.
+    </text>
 
+    <text>
 Magical effects that are projectile in nature (such as
-\emph{fireball}) and normally require a strike roll must be used in
+<fireball />) and normally require a strike roll must be used in
 conjunction with a missile or projectile weapon of some kind (thrown
 weapon, arrow, dart, or even a bullet).
+    </text>
 
+    <text>
 Magical effects that are autotargeting when performed by a spellcaster
-(such as \emph{lightning bolt}) are no longer autotargeting.  The
+(such as <lightning-bolt />) are no longer autotargeting.  The
 Super Power combatant must strike with any attack of his choice, which
 may be a ranged attack or a melee attack.
+    </text>
 
+    <text>
 The effects of a martial magic spell are in addition to those normally
 associated with a strike in combat.  If a martial artist punches a
-target and also performs the spell \emph{Vampiric Drain}, then the
+target and also performs the spell <Vampiric-Drain />, then the
 target will suffer normal damage from the Punch, as well as the damage
-and effects from \emph{Vampiric Drain}.  Likewise, if a martial
+and effects from <Vampiric-Drain />.  Likewise, if a martial
 magician shoots a target with an arrow in conjunction with
-\emph{Energy Blast}, then both the arrow and \emph{Energy Blast} deal
+<Energy-Blast />, then both the arrow and <Energy-Blast /> deal
 damage.
+    </text>
 
+    <text>
 Martial magic works similar to spellcasting, with the following notes:
+    </text>
 
-\begin{itemize}
-<item> MP are consumed just like spellcasting
-<item> Touch spells require a successful strike roll in combat
-<item> Ranged spells require a missile weapon of some kind
-<item> Auto-target spells are now <dquo>cast</dquo> by a WIL check of the user
-<item> Martial Magic spells are learned/purchased just like normal Spells
-<item> Martial Magic users must have at least 1 level in \emph{Mysticism}
-\end{itemize}
+    <itemize-list>
+      <item> MP are consumed just like spellcasting</item>
+      <item> Touch spells require a successful strike roll in combat</item>
+      <item> Ranged spells require a missile weapon of some kind</item>
+      <item> Auto-target spells are now <dquo>cast</dquo> by a WIL check of the user</item>
+      <item> Martial Magic spells are learned/purchased just like normal Spells</item>
+      <item> Martial Magic users must have at least 1 level in <mysticism /></item>
+    </itemize-list>
 
+    <text>
 Rather than purchasing the <spellcasting /> skill, a Super Power
 Fighter adds together his skill level of \emph{Martial Arts} and
-\emph{Mysticism}.  The total is considered the skill level of
+<mysticism />.  The total is considered the skill level of
 <dquo>Martial Magic</dquo>
+    </text>
 
   </section><!-- /Martial Magic / Super Power Combat -->
 
-\subsection{Mysticism / Psionics}
+  <section><!-- Mysticism / Psionics -->
+    <title>Mysticism / Psionics</title>
 
+    <text>
 Psionics is the ability to perform magic or supernatural acts by pure
 force of will.  No incantations, materials, or special preparation is
 required.  A character that can perform these feats is called a
 Mystic.
+    <text>
 
+    <text>
 Whereas most magic users have trained to develop their abilities,
 Mystic characters are more often <dquo>gifted</dquo> with magical abilities.
 Quite often these powers manifest themselves as a result of a
@@ -575,23 +597,28 @@ kind of structured <dquo>method</dquo> or <dquo>technique</dquo>.  While mystic
 characters might join magical societies they cannot <dquo>learn</dquo> or
 <dquo>teach</dquo> mystic techniques to others.  Psionic abilities are
 something that a mystic discovers herself.
+    </text>
 
+    <text>
 Mystic rules:
+    </text>
 
-\begin{itemize}
-<item> MP are consumed just like spellcasting
-<item> No verbal, somatic, or material components are required.  A
+    <itemize-list>
+      <item> MP are consumed just like spellcasting</item>
+      <item> No verbal, somatic, or material components are required.  A
   mystic can be totally still and silent and can sill use his
   abilities, though the time required to perform (use) a mystic
-  ability is exactly the same as standard spellcasting.
-<item> Spells are purchased from the spell list at will.  There is no
+  ability is exactly the same as standard spellcasting.</item>
+      <item> Spells are purchased from the spell list at will.  There is no
   need to follow a particular category.  The only restriction is that
   learned spells must be no higher level than the character<squo />s
-  \emph{Mysticism} skill.
-<item> Mystics always use the WIL attribute for magic-related rolls,
+  <mysticism /> skill.</item>
+      <item> Mystics always use the WIL attribute for magic-related rolls,
   such as \emph{Magical Control}, regardless of the normal attribute
-  that would be used for that roll.
-\end{itemize}
+  that would be used for that roll.</item>
+    </itemize-list>
+
+  </section><!-- /Mysticism / Psionics -->
 
 \subsection{Beast Magic (summoning)}
 
