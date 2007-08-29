@@ -88,6 +88,6 @@
 
     </section><!-- /Shields -->
 
-    <procedural src="Content/Equipment/Armor" />
+    <reference hrid="Content/Equipment/Armor" />
 
 </section>
