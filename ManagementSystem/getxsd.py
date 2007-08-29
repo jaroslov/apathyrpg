@@ -47,18 +47,25 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
     if xml.hasChildNodes ():
       ckind = {}
       for child in xml.childNodes:
-        colN = child.nodeName
-        if colN in ckind:
-          ckind[colN] += 1
-        else:
-          ckind[colN] = 1
-
-        NodeTable[rowN][colN].Exists = True
-        if child.attributes:
-          for attr in child.attributes.keys ():
-            if attr not in NodeTable[rowN][colN].Attributes:
-              NodeTable[rowN][colN].Attributes.append (attr)
-        GetNodeTable (None, child, NodeTable)
+        if child.nodeType == child.ELEMENT_NODE:
+          colN = child.nodeName
+          if colN in ckind:
+            ckind[colN] += 1
+          else:
+            ckind[colN] = 1
+  
+          NodeTable[rowN][colN].Exists = True
+          if child.attributes:
+            for attr in child.attributes.keys ():
+              if attr not in NodeTable[rowN][colN].Attributes:
+                NodeTable[rowN][colN].Attributes.append (attr)
+          GetNodeTable (None, child, NodeTable)
+        elif child.nodeType == child.TEXT_NODE:
+          value = ""
+          if child.nodeValue is not None:
+            value = child.nodeValue.strip ("\t\n\v\f ")
+          if len(value) > 0:
+            NodeTable[rowN][child.nodeName].Exists = True
       for ckey in ckind.keys ():
         if ckind[ckey] > 1:
           NodeTable[rowN][ckey].Unique = False
