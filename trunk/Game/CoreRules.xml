@@ -1783,7 +1783,7 @@ your maximum HP, you have died.</text>
 
   <chapter><!-- S Academics -->
     <title>Academics</title>
-    <procedural src="Academic" />
+    <reference hrid="Academic" />
   </chapter><!-- /S Academics -->
 
   <chapter><!-- S Augmentations -->
@@ -1957,27 +1957,27 @@ blood supply found in the torso.
 
     <section><!-- Arm, Hand -->
       <title>Arm, Hand</title>
-      <procedural src="Content/Augmentations/Arm, Hand" />
+      <reference hrid="Content/Augmentations/Arm, Hand" />
     </section><!-- /Arm, Hand -->
 
     <section><!-- Body -->
       <title>Body</title>
-      <procedural src="Content/Augmentations/Body" />
+      <reference hrid="Content/Augmentations/Body" />
     </section><!-- /Body -->
 
     <section><!-- Head -->
       <title>Head</title>
-      <procedural src="Content/Augmentations/Head" />
+      <reference hrid="Content/Augmentations/Head" />
     </section><!-- /Head -->
 
     <section><!-- Leg -->
       <title>Leg</title>
-      <procedural src="Content/Augmentations/Leg" />
+      <reference hrid="Content/Augmentations/Leg" />
     </section><!-- /Leg -->
 
     <section><!-- Torso -->
       <title>Torso</title>
-      <procedural src="Content/Augmentations/Torso" />
+      <reference hrid="Content/Augmentations/Torso" />
     </section><!-- /Torso -->
 
   </chapter><!-- /S Augmentations -->
@@ -1987,7 +1987,7 @@ blood supply found in the torso.
 
     <section><!-- Ammunition -->
       <title>Ammunition</title>
-      <procedural src="Content/Equipment/Ammunition" />
+      <reference hrid="Content/Equipment/Ammunition" />
     </section><!-- /Ammunition -->
 
     <section><!-- Armor -->
@@ -1995,7 +1995,7 @@ blood supply found in the torso.
 
 
 
-      <procedural src="Content/Equipment/Armor" />
+      <reference hrid="Content/Equipment/Armor" />
     </section><!-- /Armor -->
 
   </chapter><!-- /S Equipment -->
@@ -2008,7 +2008,151 @@ blood supply found in the torso.
   <chapter><!-- S Martial Arts -->
     <title>Martial Arts</title>
 
+    <text>
+The governing skill for <martial-arts /> is the Academic Skill,
+<martial-arts />, which is rank 2.  All combat skills fall under
+the <ae />gis of <martial-arts />. This means that a character engages in
+combat<mdash />whether or not they have any facility in Martial
+  Arts<mdash />they must still engage as a Martial Artist. For instance,
+the Academic skill Hunting covers many areas (ambuscade, rifle
+or bow shooting, skinning, stalking etc.), however these skills are
+related to a stress-free environment. <combat />, on the other hand, is a
+high-stress environment requiring special training for weapons. Those
+skills considered useful for hunting have little use in a combat
+arena<mdash />and may even be a detriment.
+    </text>
 
+    <section><!-- Rules -->
+      <title>Rules</title>
+
+      <text>
+<martial-arts /> covers the use of all weapons (ranged, melee,
+ultratech, mecha, et al.), in addition to hand-to-hand (HtH) combat,
+and the set of specialized skills that are associated with the
+<martial-arts /> governing skill.  The maximum level that any
+character may have in any <martial-arts /> skill is less than or equal to
+his level in <martial-arts />, i.e. if he has 3 Levels in <martial-arts />,
+then all of his <martial-arts /> skills must be Level 3 or less.  The
+basic Martial Art skill confers upon the martial artist the ability to
+purchase the different skills listed in this section.
+      </text>
+
+      <text>
+For each level the martial artist has in <martial-arts /> they may choose
+one <martial-arts /> skill; for this skill, any time the martial artist
+would have to roll the skill, they get an extra die to do so. A
+skill may only be chosen
+Level-in-<martial-arts />/2 times (the Lvl in
+<martial-arts />, divided by two, rounded-down).
+      </text>
+
+
+      <example>
+        <title>Kim improves his Nyrkkeily</title>
+        <text>
+Kim NG<cedilla>o</cedilla>c G<vcap>o</vcap>ay is an
+  expert in Norse Boxing (Nyrkkeily), he chooses, when he gets his
+  first level in <martial-arts />, he also buys a level in <dquo>Punch/Kick;</dquo>
+  in particular, he also assigns his level-bonus to <dquo>Punch/Kick.</dquo>
+  This means when he rolls to strike with a punch he rolls two
+  dice and not one.
+        </text>
+      </example>
+
+      <text>
+After the <martial-arts /> skill has been purchased, skills from
+the four basic categories may be acquired; the four categories
+represent different capabilities that <martial-arts /> covers. The
+five categories are <basic />, <combat />,
+<defensive />, and <modifier />. The different categories
+focus on different phases of <combat />, such that <combat />
+skills are designed to aid the Martial Artist with movement,
+entering/exiting combat, the knowledge of combat, deployment, and
+higher-level strategy. <basic /> skills are involved in the
+nitty-gritty (basic) postures and moves to actually strike
+the opponent and inflict harm or
+death. <defensive /> skills are designed to deflect,
+dodge, and/or otherwise avoid the mishap of being harmed by another
+pugilist. <modifier />s represent ways to modify
+<basic /> skills.
+      </text>
+
+<description-list>
+  <item><description><basic /></description> These skills represent <basic /> combat actions, such as
+  punching or kicking, grappling, the use of weapons and other
+  primitive attacks. <note>Only <basic /> attacks may be modified
+    by a <modifier />.</note></item>
+<item><description><combat /></description> These are the skills for being in, around, or preparing
+  for combat. For example, knowledge of the terrain, etiquette, being
+  prepared to move quickly and with assurance.</item>
+
+<item><description><defensive /></description> These are the skills used for defending against an
+  attack. They are the foil to the <basic /> skills.</item>
+
+<item><description><modifier /></description> A <modifier /> is a skill used to modify a <basic /> attack. A
+  <modifier /> changes the behaviour of a <basic /> attack; the <basic /> attack
+  is now considered a <special /> attack of the same name with the
+  <modifier /> as the adjective, for instance, if the Martial Artist is
+  modifying a Punch with a Bash, then this is now a <special />
+  attack, <dquo>Bashing Punch.</dquo> Since a modified <basic /> attack counts as a
+  <special /> attack, it may not be further modified, as only <basic />
+    attacks can be modified. There are certain <combat /> skills which
+  enable the Martial Artist to consider certain specific combinations
+  of <modifier />/<basic /> to be <basic /> attacks.</item>
+</description-list>
+
+      <note>A <modifier /> may not be used more than Lvl times per turn.</note>
+
+      <example>
+        <title>Candlestick modifies his punch</title>
+        <text>
+Candlestick has two
+  levels in <martial-arts />; he has bought Punch at rank 3
+  and level 3, and chosen it as his bonus; he also has Bash at
+  level 1 and Feint at level 1. He is striking at the Giant
+  Hispaniola Solenodon with a Bashing Punch. Because he is
+  using Bash with his Punch his punch is now considered
+  <dquo>special</dquo> and may not be further modified, even though he could
+  still use his Feint this turn.
+        </text>
+      </example>
+
+    </section><!-- /Rules -->
+    
+    <section><!-- Further Commentary -->
+      <title>Further Commentary</title>
+
+      <text>
+You will note that there is no <dquo>chi</dquo> or <dquo>super-powers</dquo> in
+<martial-arts />. In fact, the skills are deliberately kept
+pedestrian<mdash />those possessed (or assumed to be possessed, if possible)
+by the greatest <dquo>non-mystical</dquo> martial artists in the <squo>real world.</squo>
+This is done deliberately to provide a clear separation between the
+Supernormal<mdash />governed by Magic and Traits<mdash />and the
+mundane reality of kicking, spitting, biting and hurting. If
+you want to create a character that has truly jaw-dropping magical
+abilities, like flying-through the air, or punching through a
+fired-brick wall, bending steel, or leaping from roof-top-to-roof-top,
+consider looking into the Magic and Traits section. In
+Magic there a several categories that would benefit a Martial
+Artist tremondously.
+      </text>
+
+      <section><!-- Advanced Martial Arts -->
+        <title>Advanced Martial Arts</title>
+
+        <text>
+Also there are several para-skills which are tremondously
+important to the dedicated Martial Artist: Kata,
+Kung Fu, Waza, and Jitsu. These skills allow the
+Martial Artist to transform his very <basic /> and <defensive /> attacks,
+allowing him to perform prodigious feats: a Savage Feinting Death
+Strike is only possible by using these skills.
+        </text>
+
+      </section><!-- /Advanced Martial Arts -->
+
+    </section><!-- /Further Commentary -->
 
   </chapter><!-- /S Martial Arts -->
   <chapter><!-- S Mecha -->
@@ -2445,7 +2589,7 @@ any relavent interaction statistics, such as combat, elocution etc.</text>
     
     <section><!-- Monsters -->
       <title>Monsters</title>
-      <procedural src="Content/Monsters" />
+      <reference hrid="Content/Monsters" />
     </section><!-- /Monsters -->
 
   </chapter><!-- /S Monsters -->
@@ -2472,7 +2616,7 @@ called <emph>Spell Ability</emph>.</text>
     
     <section><!-- Traits -->
       <title>Traits</title>
-      <procedural src="Content/Traits" />
+      <reference hrid="Content/Traits" />
     </section><!-- /Traits -->
 
   </chapter><!-- /S Traits -->
