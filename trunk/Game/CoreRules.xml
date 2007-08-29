@@ -2264,7 +2264,7 @@ are:
           <section><!-- Notes for Plasma Weapons -->
             <title>Notes: specific to Plasma Weapons</title>
 
-            <itemize-list>
+            <itemized-list>
               <item>Plasma weapons are a bladeless handle (typically looks like a
   normal weapon handle or a flashlight) from which a glowing blade of
   extremely hot plasma vents forth.  The plasma is held in the shape
@@ -2293,7 +2293,7 @@ are:
               <item>One side effect of having a magnetic field around the blade, is
   that it is possible to parry projectile energy attacks (such as
   shots from a beam rifle).  Doing so the wielder is at a -8.</item>
-            </itemize-list>
+            </itemized-list>
 
           </section><!-- /Notes for Plasma Weapons -->
 
@@ -2403,19 +2403,19 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   Examples of locations/things that are very rich in mana:
     </text>
     
-    <itemize-list>
+    <itemized-list>
       <item> Graveyards, grave markers</item>
       <item> Large Churches, Cathedrals, holy symbols, idols, and relics</item>
       <item> Museums, famous artwork or historical objects</item>
       <item> Antiques</item>
       <item> Ancient ruins, crypts, etc.</item>
-    </itemize-list>
+    </itemized-list>
   
     <text>
   Examples of locations/things that have a lot of mana:
     </text>
   
-    <itemize-list>
+    <itemized-list>
       <item> Old houses, family heirlooms</item>
       <item> Smaller churches and shrines.</item>
       <item> Local landmarks such as wishing wells, old trees, popular meeting places</item>
@@ -2424,19 +2424,19 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     (royalty, politicians, popular musicians, etc)</item>
       <item> Slaughterhouses</item>
       <item> Fossils, natural gemstones</item>
-    </itemize-list>
+    </itemized-list>
   
     <text>
   Examples of locations/things that have very little mana:
     </text>
   
-    <itemize-list>
+    <itemized-list>
       <item> Barren landscapes such as desert or arctic regions</item>
       <item> Sky</item>
       <item> Some underground caves or dungeons</item>
       <item> <dquo>Ghost towns</dquo> / looted or abandoned buildings</item>
       <item> Newly cleared land</item>
-    </itemize-list>
+    </itemized-list>
   
   </section><!-- /Introduction -->
   
@@ -2650,7 +2650,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   spell.
       </text>
   
-      <itemize-list>
+      <itemized-list>
         <item> NO MP from the character are required for ritual magic</item>
         <item> Each spell<squo />s components cost 1/10th of the <dquo>scroll/potion</dquo>
     cost from the spell table, PLUS $1 for each MP required.
@@ -2669,7 +2669,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
         <item> Ritual magicians learn free rituals as they gain levels in
     Ritual Magic, according to the chart below; note that they are free
     to purchase other spells as they desire.</item>
-      </itemize-list>
+      </itemized-list>
   
       <figure>
         <title>Rank of Ritual Spell</title>
@@ -2763,11 +2763,11 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   to their adherents, for example curse.
       </text>
   
-      <itemize-list>
+      <itemized-list>
         <item>	MP are consumed as normal spellcasting</item>
         <item>	A holy symbol is required for religious magic casting</item>
         <item>	A successful Faith check must be made for casting faith magic.</item>
-      </itemize-list>
+      </itemized-list>
   
       <text>
   Priests, monks, and warriors of faith practice religious magic.  All
@@ -2914,14 +2914,14 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   Martial magic works similar to spellcasting, with the following notes:
       </text>
   
-      <itemize-list>
+      <itemized-list>
         <item> MP are consumed just like spellcasting</item>
         <item> Touch spells require a successful strike roll in combat</item>
         <item> Ranged spells require a missile weapon of some kind</item>
         <item> Auto-target spells are now <dquo>cast</dquo> by a WIL check of the user</item>
         <item> Martial Magic spells are learned/purchased just like normal Spells</item>
         <item> Martial Magic users must have at least 1 level in <mysticism /></item>
-      </itemize-list>
+      </itemized-list>
   
       <text>
   Rather than purchasing the <spellcasting /> skill, a Super Power
@@ -2961,7 +2961,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   Mystic rules:
       </text>
   
-      <itemize-list>
+      <itemized-list>
         <item> MP are consumed just like spellcasting</item>
         <item> No verbal, somatic, or material components are required.  A
     mystic can be totally still and silent and can sill use his
@@ -2974,7 +2974,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
         <item> Mystics always use the WIL attribute for magic-related rolls,
     such as <Magical-Control />, regardless of the normal attribute
     that would be used for that roll.</item>
-      </itemize-list>
+      </itemized-list>
   
     </section><!-- /Mysticism / Psionics -->
   
@@ -3113,7 +3113,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     <section><!-- Magic-Related Skill Summary -->
       <title>Magic-Related Skill Summary</title>
   
-      <itemize-list>
+      <itemized-list>
         <item> Spellcasting gives additional LVL<sup>2</sup> <times /> WIS MP.  This is the
     governing skill for learning Invocation spells.</item>
         <item> Magical Studies is the academic study of magic and how it works.
@@ -3137,7 +3137,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
         <item> Ritual Magic is used for Ritual Magic spells.  No character can
     learn a ritual spell with a higher rank than her level of Ritual
     Magic.  This skill does not provide MP.</item>
-      </itemize-list>
+      </itemized-list>
   
       <text>
   There exist different types or categories of magic.  The different
