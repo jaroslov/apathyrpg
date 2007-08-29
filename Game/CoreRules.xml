@@ -1817,7 +1817,7 @@ this type of augmentation is very small and its function is often limited.</text
 
 <text>The second type are larger, complex systems, which take up a lot of space in 
 the body.  Generally, the only way to add something like this to your body is 
-to remove, move, replace, or otherwise modify some \emph{other}
+to remove, move, replace, or otherwise modify some other
 part of your body in 
 order to accommodate it.  This works on a system of slots (see below) which is 
 similar to the Mecha system.</text>
@@ -1884,7 +1884,7 @@ made by a mechanic or by replacing the damaged parts with new ones.</item>
     </item>
     <item>
          Appear normal when viewed casually, or on thermal sensors.  Many 
-cybernetic limbs will appear 100\% normal even under close visual inspection.  
+cybernetic limbs will appear 100% normal even under close visual inspection.  
 However, inspection by a knowledgeable person (Doctor, Nurse, Cyber Doctor, 
 etc.) will reveal the true nature of the limb.
     </item>
@@ -2017,7 +2017,7 @@ blood supply found in the torso.
   ceramic/plastic/metallic/wooden plates or coverage to protect 
   the character.  Hard armor is MUCH more durable than non-hard armor.  
   Hard armor is denoted by <dquo>hard</dquo> on the armor sheet.  Note that 
-  the components of hard armor are$\ldots$hard.  They can<squo />t be bent 
+  the components of hard armor are hard.  They can<squo />t be bent 
   without damaging the armor.  Hard armor is generally made specifically 
   for the wearer, it will only fit others with nearly identical 
   body proportions.</item>
@@ -2118,7 +2118,7 @@ roll, with an additional 4 added to the final result. When wielding a
 <item><description>Range</description> the effective ``Reach'' of the weapon in feet.  If your
   target is beyond your range, you cannot strike them. You can spend
   an action to gain range on your opponent. If your target is closer
-  than $1\over2$ range, then you are at -6 to strike the target.</item>
+  than 1/2 range, then you are at -6 to strike the target.</item>
           </description-list>
 
         <section><!-- Options for Melee Weapons -->
@@ -2754,12 +2754,12 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       <text>
   Religious magic is taught by a particular Church. Each faith has one
   or more magic schools associated with it.  These nearly always include
-  \emph{Spiritual} and \emph{Life} magic, and may include others.  Most
+  <Spiritual /> and <Life /> magic, and may include others.  Most
   faiths have 3 or 4 schools of spells.  A faith caster has access to
   all spells in the school(s) associated with his <faith />, except
   those whose rank is higher than his level of faith, and those which
   are specifically prohibited by his Church.  For example, a <dquo>good</dquo>
-  tending religion would typically deny harmful \emph{life}-magic spells
+  tending religion would typically deny harmful <Life />-magic spells
   to their adherents, for example curse.
       </text>
   
@@ -2925,7 +2925,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   
       <text>
   Rather than purchasing the <spellcasting /> skill, a Super Power
-  Fighter adds together his skill level of \emph{Martial Arts} and
+  Fighter adds together his skill level of <Martial-Arts /> and
   <mysticism />.  The total is considered the skill level of
   <dquo>Martial Magic</dquo>
       </text>
@@ -2972,7 +2972,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     learned spells must be no higher level than the character<squo />s
     <mysticism /> skill.</item>
         <item> Mystics always use the WIL attribute for magic-related rolls,
-    such as \emph{Magical Control}, regardless of the normal attribute
+    such as <Magical-Control />, regardless of the normal attribute
     that would be used for that roll.</item>
       </itemize-list>
   
