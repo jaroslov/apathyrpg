@@ -1990,13 +1990,99 @@ blood supply found in the torso.
       <reference hrid="Content/Equipment/Ammunition" />
     </section><!-- /Ammunition -->
 
-    <section><!-- Armor -->
+    <section>
       <title>Armor</title>
+        <section><!-- Basics for Armor and Damage -->
+          <title>Basics for Armor and Damage</title>
 
+<itemized-list>
+    <item> Armor has 3 main values: Piercing, slashing, and crushing.  
+  Armor values are represented by 3 numbers separated by slashes 
+  (represented by:  P/S/C; piercing/slashing/crushing).  Example: Armor 
+  with values of 4/3/7 would have 4 points of protection vs. Piercing, 
+  3 vs. Slashing, and 7 vs. crushing damage.</item>
+    <item> Armor does not protect from Undefined (U) or Direct (D).</item>
+    <item> A character<squo />s Base Armor is the only thing that can protect vs. 
+  U damage.  Nothing can protect against D damage.</item>
+    <item> All non D/U damage has an associated damage type to is; either P, 
+  S, or C.  Subtract all matching armor values of the character from 
+  the damage being done.  If the damage value is still above 0, then 
+  the character takes that amount of damage.</item>
+    <item> A weapon with an armor piercing (AP) attack will list the amount 
+  of AP it has.  Subtract this AP number from all of the armor<squo />s 
+  damage values when determining its protection against the attack.  
+  This cannot drop the armor<squo />s value below 0.</item>
+    <item> GMs determine when armor is damaged beyond use/protection.</item>
+    <item> Hard Armor is any armor that uses hard
+  ceramic/plastic/metallic/wooden plates or coverage to protect 
+  the character.  Hard armor is MUCH more durable than non-hard armor.  
+  Hard armor is denoted by <dquo>hard</dquo> on the armor sheet.  Note that 
+  the components of hard armor are$\ldots$hard.  They can<squo />t be bent 
+  without damaging the armor.  Hard armor is generally made specifically 
+  for the wearer, it will only fit others with nearly identical 
+  body proportions.</item>
+    <item> Soft armor (armor that isn<squo />t considered hard) is at least 
+  somewhat flexible.  It will generally fit anyone of similar size/stature. </item>
+    <item> Armor with the descriptor of <dquo>fire</dquo> has fire protection.  
+  This means the armor has the <dquo>natural</dquo> ability to deflect 
+  and protect against fire attacks.  The armor will protect from all 
+  fire damage (assuming the fire hits the armor, so full suits are 
+  better for this).</item>
+    <item> Armor can be layered, but only one hard suit can be worn at a 
+  time.  A person can have different hard armors on different parts of 
+  the body.  Non-hard armors can be layered indefinitely.  Add all 
+  armor values of the armors together to give the full armor protection.  
+  If any armor has fire protection, fire will be stopped, but any armor 
+  on top of it is still susceptible to the fire.</item>
+    <item> Encumbrance is determined by: BLD/3</item>
+    <item> A character can wear (without penalty) as much armor in size 
+  levels as his Encumbrance score will allow.  Add up all layers of 
+  armor to get the complete Size level of the armor, if this number 
+  is equal or less than Encumbrance, then no negatives are given to the player.</item>
+    <item> When a character has more armor than his Encumbrance (ENC) 
+  allows, then the player has the following penalties against him:
+        <itemized-list>
+            <item> -2 DEX per pt over ENC</item>
+            <item> -1 action per 2 full points over ENC</item>
+        </itemized-list>
+    </item>
+    <item> An armor<squo />s Class is a general idea of what period of history/future 
+  the armor would appear.  A later period can find the earlier armor.</item>
+</itemized-list>
 
+    </section><!-- /Basics for Armor and Damage -->
+    <section><!-- Shields -->
+        <title>Shields</title>
 
-      <reference hrid="Content/Equipment/Armor" />
-    </section><!-- /Armor -->
+<itemized-list>
+    <item> When creating a shield, there are 2 factors.  The material the 
+  shield is made of, and the type of shield.  Choose both of these 
+  values when creating a shield to get the full set of statistics 
+  for the shield.
+    </item>
+    <item> On a successful block, a shield will subtract its appropriate 
+  armor value from the damage.  Any damage that penetrates the shield 
+  will then be applied against the user<squo />s armor.
+    </item>
+    <item> Shields can be used to block U attacks that are <dquo>thrown</dquo> 
+  at them.  These include fireballs, lightning strikes, breath 
+  weapons, chemical splashes, etc.  To block one of these attacks, 
+  the user must make a block roll at -3.  If successful, then damage 
+  will be reduced based on the type of shield:
+        <itemized-list>
+            <item> Buckler: Full damage</item>
+            <item> Small: <math>1/4</math></item>
+            <item> Large: <math>1/2</math></item>
+            <item> Tower: <math>3/4</math></item>
+        </itemized-list>
+    </item>
+</itemized-list>
+
+    </section><!-- /Shields -->
+
+    <reference hrid="Content/Equipment/Armor" />
+
+    </section><!-- /Equipment -->
 
   </chapter><!-- /S Equipment -->
   <chapter><!-- S Magic -->
