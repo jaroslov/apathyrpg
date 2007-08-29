@@ -1,3 +1,4 @@
+<L>
 <section><!-- Introduction -->
   <title>Introduction</title>
 
@@ -38,11 +39,11 @@ do <dquo>new</dquo> ones.  Whenever an item is broken it is possible to extract
 some of its mana as it dissipates back into the environment.  This is
 also possible when a living creature dies.  In game terms, we call
 mana <dquo>MP</dquo> (Mana Points / Magic Points).
-  <text>
+  </text>
 
   <text>
 Examples of locations/things that are very rich in mana:
-  <text>
+  </text>
   
   <itemize-list>
     <item> Graveyards, grave markers</item>
@@ -54,7 +55,7 @@ Examples of locations/things that are very rich in mana:
 
   <text>
 Examples of locations/things that have a lot of mana:
-  <text>
+  </text>
 
   <itemize-list>
     <item> Old houses, family heirlooms</item>
@@ -71,7 +72,7 @@ Examples of locations/things that have a lot of mana:
 Examples of locations/things that have very little mana:
   </text>
 
-  </itemize-list>
+  <itemize-list>
     <item> Barren landscapes such as desert or arctic regions</item>
     <item> Sky</item>
     <item> Some underground caves or dungeons</item>
@@ -174,7 +175,7 @@ intonations required for magical incantations.  Beyond that Magical
 Studies is a purely optional skill.
     </text>
 
-    </text>
+    <text>
 Characters that cast Invocation magic must have at least two free
 points of Encumberance available.  If not, they are not able to cast
 magic.
@@ -310,7 +311,7 @@ spell.
       <item> Ritual magicians learn free rituals as they gain levels in
   Ritual Magic, according to the chart below; note that they are free
   to purchase other spells as they desire.</item>
-    <itemize-list>
+    </itemize-list>
 
     <figure>
       <title>Rank of Ritual Spell</title>
@@ -372,7 +373,7 @@ time requires another batch of the requisite spell ingredients (not
 Mana).  Therefore, it can become very expensive to make long duration
 infused items.  An infused item may be used by anyone, not just the
 ritualist.
-    <text>
+    </text>
 
   </section><!-- /Ritual Magic -->
 
@@ -408,7 +409,7 @@ to their adherents, for example curse.
       <item>	MP are consumed as normal spellcasting</item>
       <item>	A holy symbol is required for religious magic casting</item>
       <item>	A successful Faith check must be made for casting faith magic.</item>
-    <itemize-list>
+    </itemize-list>
 
     <text>
 Priests, monks, and warriors of faith practice religious magic.  All
@@ -434,7 +435,7 @@ magic-related skill rolls, including those that would normally require
 <spellcasting /> or <magical-control />, etc.
     </text>
 
-    </text>
+    <text>
 A <holy-symbol /> is always required to cast <faith /> magic.
 If a holy symbol is not available, then Faith magic simply cannot be
 cast.  Thankfully, a simple gesture or trinket often suffices.  There
@@ -478,17 +479,16 @@ holy symbols offer a better bonus to Faith magic casting:
           <cell>An artifact or relic of tremendous religious significance.  Items like this are literally worshipped in the particular religion.  There will only be a handful of items like this in existence for any one religion at any given time (if any at all).  Examples:  Spear of Destiny, Holy Grail, piece of the true cross, skull of a major saint.</cell>
           <cell>Cost: priceless.</cell>
         </row>
-        <row>
       </table>
       <caption>Bonuses provided by a <holy-symbol /></caption>
-    <figure>
+    </figure>
 
     <text>
 Anytime a Faith magic caster has to make a magic-related roll
 (<dquo>Magical Control</dquo> roll, or a strike roll associated with a magical
 spell, etc), use the caster<squo />s Faith skill.  Whatever holy symbol that
 the caster has is then applied as a bonus to that roll.
-    <text>
+    </text>
 
   </section><!-- /Religious and Faith Magic -->
 
@@ -582,7 +582,7 @@ Psionics is the ability to perform magic or supernatural acts by pure
 force of will.  No incantations, materials, or special preparation is
 required.  A character that can perform these feats is called a
 Mystic.
-    <text>
+    </text>
 
     <text>
 Whereas most magic users have trained to develop their abilities,
@@ -620,35 +620,40 @@ Mystic rules:
 
   </section><!-- /Mysticism / Psionics -->
 
-\subsection{Beast Magic (summoning)}
+  <section><!-- Beast Magic (summoning) -->
+    <title>Beast Magic (summoning)</title>
 
+    <text>
 Beast Magic is a unique magic school.  It is the art of summoning
 creatures to aid their master.  Any magic user (spellcasting, ritual,
 etc.) may purchase summoning spells as normal.  However, a spellcaster
 that specializes in Beast Magic (and has no other magical aptitudes)
 may purchase summoning spells as if they are one rank lower than
 normal.
+    </text>
 
+    <text>
 There are five basic summoning spells:
+    </text>
 
-\begin{description}
-<item>[Gate] allows the summoner to call forth a creature that appears
+    <description-list>
+<item><description>Gate</description> allows the summoner to call forth a creature that appears
   somewhere near the caster.  The location of appearance must be
   within direct line of sight of the caster, and no more than 30 feet
   away.  Once the creature appears, it is free to do whatever it wants
   based on its own free will<mdash />the caster simply transports it to a
   new location.  It will return to its original location after 3D6
-  rounds.
+  rounds.</item>
 
-<item>[Summon] allows the summoner to call forth a creature near the
+<item><description>Summon</description> allows the summoner to call forth a creature near the
   caster (like Gate).  This creature is bound to follow SIMPLE
   directives given by the caster.  The creature will not act in a
   hostile manner towards the caster.  If a summoner casts another
   Summon spell while another one is currently active, he must make a
   Magical Control roll.  Failure means that the new spell fails and
-  the first expires immediately.
+  the first expires immediately.</item>
 
-<item>[Pact] allows the caster to form a complex bond with a creature,
+<item><description>Pact</description> allows the caster to form a complex bond with a creature,
   making that creature his Familiar.  The caster must first find a
   creature to use pact with<mdash />such as summoning the creature by gate
   or summon) The caster may <dquo>control</dquo> the creature in a manner
@@ -659,16 +664,16 @@ There are five basic summoning spells:
   to the caster, and vice versa.  A basic empathic link exists between
   the creature and the caster.  The caster may make a Magical Control
   check in order to <dquo>listen in</dquo> on any of the familiar<squo />s senses at
-  any point in time.
+  any point in time.</item>
 
-<item>[Control] is very similar to summon except that the caster has
+<item><description>Control</description> is very similar to summon except that the caster has
   exacting and specific control over the creature(s) summoned.  The
   caster can literally operate the creature(s) as though by <dquo>remote
   control</dquo>.  While Control is active, the summoner is responsible for
   literally every action made by the summoned creature<mdash />it has no
-  will of its own.
+  will of its own.</item>
 
-<item>[Transform] is a powerful technique in which the caster takes the
+<item><description>Transform</description> is a powerful technique in which the caster takes the
   form of the creature summoned.  The caster literally becomes the
   creature in question, but retains his own mental state and skills in
   addition to the skills of the summoned creature.  All physical
@@ -678,199 +683,264 @@ There are five basic summoning spells:
   ended at will.  The transformation requires three actions to
   complete.  When the spell expires, the caster will be very tired,
   and will suffer the effects of slow, loosing 1 action per turn for
-  1D4+1 turns.
-
-<item>[These] summon spells are used in conjunction with whatever
+  1D4+1 turns.</item>
+    </description-list>
+    
+    <text>
+      These summon spells are used in conjunction with whatever
   creature <dquo>spells</dquo> a summoner knows.  In order to learn a creature
   spell, the Summoner must have encountered such a creature.  The rank
   of example creatures is shown below.  For others, see the Beastiary
   section.
-\end{description}
+    </text>
 
+    <text>
 These summon spells are used in conjunction with whatever creature
 <dquo>spells</dquo> a summoner knows.  In order to learn a creature spell, the
 Summoner must have encountered such a creature.  The rank of example
 creatures is shown below.  For others, see the Beastiary section.
+    </text>
 
-\begin{table}[htb]
-\begin{center}
-\begin{tabular}{c|p{4.5in}}
-\textbf{Rank} & \textbf{Spell (choose specifically)} $
-\hline
-\hline
-1 & Insects, songbirds, rats, mice, other small rodents, frogs/toads, salamanders, misc. other small reptiles or amphibians. \\ \hline
-2 & Dogs, cats, exotic small animals, larger birds (crow, raven, owl, etc.), common snakes.  Raccoon, possum, etc.  Bats, small flying/gliding mammals.  Wallaby. \\ \hline
-3 & Very large dogs, Cow, goat, sheep, deer, antelope.  Large predatory birds (hawk, eagle), large reptiles (small crocodile, monitor lizard, large snake).  Lesser monkeys.  Lynx, Kangaroo \\ \hline
-4 & Crocodile, Horse, Bull.  Exotic 4-legged animals.  Large constricting snakes.  Apes. \\ \hline
-5 & Hippo, Cape buffalo, Lion, Black Bear \\ \hline
-6 & Elephant, Rhinocerous, Grizzly or Polar bear.  Mammoth $
-\end{tabular}
-\caption{Summonable animals by Rank}
-\end{center}
-\end{table}
+    <figure>
+      <table>
+        <head>
+          <cell align="center">Rank</cell>
+          <cell width="4.5in">Spell (choose specifically)</cell>
+        </head>
+        <row>
+          <cell>1</cell>
+          <cell>Insects, songbirds, rats, mice, other small rodents, frogs/toads, salamanders, misc. other small reptiles or amphibians.</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>Dogs, cats, exotic small animals, larger birds (crow, raven, owl, etc.), common snakes.  Raccoon, possum, etc.  Bats, small flying/gliding mammals.  Wallaby.</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>Very large dogs, Cow, goat, sheep, deer, antelope.  Large predatory birds (hawk, eagle), large reptiles (small crocodile, monitor lizard, large snake).  Lesser monkeys.  Lynx, Kangaroo</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>Crocodile, Horse, Bull.  Exotic 4-legged animals.  Large constricting snakes.  Apes.</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>Hippo, Cape buffalo, Lion, Black Bear</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell>Elephant, Rhinocerous, Grizzly or Polar bear.  Mammoth</cell>
+        </row>
+      </table>
+      <caption>Summonable animals by Rank</caption>
+    </figure>
 
+    <text>
 For generic animals follow the table above.  For very specific,
 exotic, or rare animals jump to the next higher rank.  (Example:
 Summon Frog: rank 1.  Summon Brazilian Poison-dart frog: rank 2.)
+    </text>
 
+    <text>
 Whenever a summoning spell is cast the Summoner must make a Magical
 Control skill check.  The negative to the roll is the total summoning
 rank(s) of the creatures to be summoned.  A summoner can attempt to
 summon multiple of the same creature simultaneously, but not a mixture
 of different creatures.  The caster has a bonus to this check based on
 what <dquo>Beast Lore</dquo> skills he knows.
+    </text>
 
-\subsection{Magic-Related Skill Summary}
+  </section><!-- /Beast Magic (summoning) -->
 
-\begin{itemize}
-<item> Spellcasting gives additional $(LVL^2* WIS)$ MP.  This is the
-  governing skill for learning Invocation spells.
-<item> Magical Studies is the academic study of magic and how it works.
+  <section><!-- Magic-Related Skill Summary -->
+    <title>Magic-Related Skill Summary</title>
+
+    <itemize-list>
+      <item> Spellcasting gives additional LVL<sup>2</sup> <times /> WIS MP.  This is the
+  governing skill for learning Invocation spells.</item>
+      <item> Magical Studies is the academic study of magic and how it works.
   It also gives the player the ability to identify magical items or
   effects (a simple skill test), and to determine what a particular
   magical item/effect does (GM determines difficulty of the test). It
   also conveys the ability to read and write magical script.  This
   skill does not convey the ability to use magic; this skill does not
-  provide MP.
-<item> Magical Control gives additional $(LVL^2*WIL)*2$ MP, and is used
+  provide MP.</item>
+      <item> Magical Control gives additional (LVL<sup>2</sup><times />WIL)<times />2 MP, and is used
   to strike with and to control the effects of some spells.  While
-  this skill is not required for magic use, it is commonly used.
-<item> Mysticism gives an additional $(LVL^3 * WIS)$ MP.  This is the
-  governing skill for learning Mystic / Psionic spells.
-<item> Faith is not technically a magic skill.  However, it is used for
-  Faith magic, and provides $(LVL^2 * WIL *1.5)$ MP.  Faith only
+  this skill is not required for magic use, it is commonly used.</item>
+      <item> Mysticism gives an additional (LVL<sup>3</sup><times />WIS) MP.  This is the
+  governing skill for learning Mystic / Psionic spells.</item>
+      <item> Faith is not technically a magic skill.  However, it is used for
+  Faith magic, and provides (LVL<sup>2</sup><times />WIL<times />1.5) MP.  Faith only
   provides MP to those characters who actually know Faith magic
   spells.  If a non-faith spellcaster has this skill (For example, a
   Wizard that also happens to be religious) then it does NOT provide
-  any MP.
-<item> Ritual Magic is used for Ritual Magic spells.  No character can
+  any MP.</item>
+      <item> Ritual Magic is used for Ritual Magic spells.  No character can
   learn a ritual spell with a higher rank than her level of Ritual
-  Magic.  This skill does not provide MP.
-\end{itemize}
+  Magic.  This skill does not provide MP.</item>
+    </itemize-list>
 
-
+    <text>
 There exist different types or categories of magic.  The different
 types of magic are:
+    </text>
 
-\begin{description}
-<item>[Air] Air magic is varied and effective for combat mages.  The
+    <description-list>
+      <item><description>Air</description> Air magic is varied and effective for combat mages.  The
   lower rank spells are a mixture between utility types and damaging
   spells.  The higher level combat spells are quite powerful.  Air
   magic contains Lightning spells, which have wildly varying damage
-  potential.
+  potential.</item>
 
-<item>[Life] Life magic is capable of curing the wounded, healing the
+      <item><description>Life</description> Life magic is capable of curing the wounded, healing the
   sick, and even inflicting horrible diseases upon your opponents.  It
   is a favorite of religious orders, either for good or evil.  Most
   combat magic in this category is limited because the spells require
   touch to cast.  Some spells are capable of dealing a great deal of
   damage, but usually over a period of time.  Sufficiently advanced
   mages who practice life magic can raise the dead or kill the living
-  with a simple gesture.
+  with a simple gesture.</item>
 
-<item>[Spiritual] Magic of the Spiritual category is uncommon at best.
+      <item><description>Spiritual</description> Magic of the Spiritual category is uncommon at best.
   With relatively few low-rank spells it is usually reserved to
   advanced practitioners of magic.  However, it has some unique spells
   that make it very effective.  Spiritual magic is particularly well
   suited for combating demons or spirits.  Higher level mages can lay
-  waste to legions of their enemies with single spell.
+  waste to legions of their enemies with single spell.</item>
 
-<item>[Light] With few exceptions, Light magic is a utility category.
+      <item><description>Light</description> With few exceptions, Light magic is a utility category.
   It can be used to illuminate dark passages beneath the earth or
   deceive with illusion and tricks.  Light magic has many useful
   spells, many of which are available at low or middle levels.  It is
   a very useful type of magic for the rogue or healer-type character
   who wants to be useful but doesn<squo />t want to fight.  A few high level
-  light spells can deal excellent damage, but only at a steep MP cost.
+  light spells can deal excellent damage, but only at a steep MP cost.</item>
 
-<item>[Physical] Physical magic is an excellent choice for
+      <item><description>Physical</description> Physical magic is an excellent choice for
   <dquo>dual-classed</dquo> characters that practice magic and also fight in
   melee combat.  At lower and middle levels, physical magic allows one
   to improve the abilities of others, and to manipulate the physical
   world with magic.  He can also repair broken weapons or mend
   machines.  At higher levels the school offers very effective
   defensive spells and the highly effective gravity-based offensive
-  magic, which always deals solid damage.
+  magic, which always deals solid damage.</item>
 
-<item>[Arcane] Arcane magic has no direct offensive capability; this
+      <item><description>Arcane</description> Arcane magic has no direct offensive capability; this
   would appear to be a weak form of magic that has little use for an
   adventurer.  However, the ability of arcane magic to support,
   enhance, and empower the caster or his allies is unmatched.  It is
-  excellent when paired with other magic of a more offensive nature.
+  excellent when paired with other magic of a more offensive nature.</item>
 
-<item>[Fire] Fire magic is a traditional offensive type of magic.  It<squo />s
+      <item><description>Fire</description> Fire magic is a traditional offensive type of magic.  It<squo />s
   spells deal high damage and are without equal for causing
   large-scale destruction.  They are also quite mana-efficient.
   However, fire magic is the easiest of all <dquo>supernatural</dquo> attacks
   to defend against.  Fire magic is also noisy, flashy, and very
   intimidating to one<squo />s opponents.  Unfortunatley, this makes it
-  nearly impossible to use in a stealthy manner.
+  nearly impossible to use in a stealthy manner.</item>
 
-<item>[Earth] Earth magic is a varied school that combines defensive
+      <item><description>Earth</description> Earth magic is a varied school that combines defensive
   and offensive spells.  While neither type of spell is the most
   powerful available, they are not to be underestimated.  Earth magic
-  has a number of very useful utility spells.
+  has a number of very useful utility spells.</item>
 
-<item>[Water] At lower levels, water magic is fairly weak, though it
+      <item><description>Water</description> At lower levels, water magic is fairly weak, though it
   does combine both offensive and defensive spells.  Middle ranks
   offer effective protection and more effective combat spells.
   Higher-level water magic is legendary in effectiveness and is very
   powerful, Though many of the offensive spells have a long casting
-  time, they are nearly impossible to defend against.
-\end{description}
+  time, they are nearly impossible to defend against.</item>
+    </description-list>
+
+  </section><!-- /Magic-Related Skill Summary -->
 
 </section><!-- /Types of Magic -->
 
-\section{General notes}
+<section><!-- General Notes -->
+  <title>General notes</title>
 
+  <text>
 Most spells automatically succeed (there is no skill check necessary,
 except for Faith Magic).  Once cast, it is possible for some spells to
 miss their target however.  For these spells, the player must make a
 skill test using MAGICAL CONTROL (or <faith />) to determine if the
 strike is successful.  See the spell listing for what spells are
 auto-targeting and which aren<squo />t.
+  </text>
 
+  <text>
 If the player is interrupted while spell casting (e.g. takes damage,
 gets knocked around, etc.), he must make a skill check (Magical
 Control).  If he fails the check, the spell fails, but the MP are not
-lost.  \textbf{The caster may not speak while spellcasting, but may
-  move around, dodge, and perform very simple physical activities.}
+lost.  <note>The caster may not speak while spellcasting, but may
+move around, dodge, and perform very simple physical activities.</note>
+  </text>
 
+  <text>
 A spell always takes effect at the end of the casting period.  The MP
 are consumed at the exact instant that the spell takes effect.
+  </text>
 
+  <text>
 A casting time of zero (0) means that the caster may cast the spell
-\textbf{anytime}, even in response to something (e.g. getting shot
+anytime, even in response to something (e.g. getting shot
 at), or having no actions remaining at the time.  Such spells require
 no command words, components, or gesturing of any kind.
+  </text>
 
+  <text>
 Note that a Faith magic caster must always make a Faith roll in order
 to cast any magical spell.
+  </text>
 
-\subsubsection{Magic Points (MP)}
+  <section><!-- Magic Points -->
+    <title>Magic Points (MP)</title>
 
-ANY character has innate MP; magic related skills will give additional MP.
+    <text>
+Any character has innate MP; magic related skills will give additional MP.
+    </text>
 
+    <text>
 MP are consumed whenever spells are cast.  They are recovered
 according to the following chart:
+    </text>
 
-\begin{table}[htb]
-\begin{center}
-\begin{tabular}{rl}
-Strenuous Activity: & 0 per hour $
-Normal Activity: & 5 per hour $
-Restful Activity: & 10 per hour $
-Sleeping: & 20 per hour $
-Meditation or prayer: & 20 per hour $
-\end{tabular}
-\caption{Mana Point replacement per hour.}
-\end{center}
-\end{table}
+    <figure>
+      <table>
+        <head>
+          <cell align="right" />
+          <cell align="left" />
+        </head>
+        <row>
+          <cell>Strenuous Activity:</cell><cell>0 per hour</cell>
+        </row>
+        <row>
+          <cell>Normal Activity:</cell><cell>5 per hour</cell>
+        </row>
+        <row>
+          <cell>Restful Activity:</cell><cell>10 per hour</cell>
+        </row>
+        <row>
+          <cell>Sleeping:</cell><cell>20 per hour</cell>
+        </row>
+        <row>
+          <cell>Meditation or prayer:</cell><cell>20 per hour</cell>
+        </row>
+      </table>
+      <caption>Mana Point replacement per hour.</caption>
+    </figure>
 
-\subsubsection{Magical <dquo>Tools</dquo>: Books, Scrolls, and Potions}
+  </section><!-- /Magic Points -->
 
+  <section><!-- Magical Tools -->
+    <title>Magical <dquo>Tools</dquo>: Books, Scrolls, and Potions</title>
+
+    <text>
 There exist three different kinds of magic-related books.
+    </text>
 
+    <text>
 Type 1 is a volume that contains detailed information on how to cast a
 particular spell (or spells).  Books of this type are always written
 in magical script.  Anyone with the Magical Studies skill can read and
@@ -883,7 +953,9 @@ multiple spells, then its value is equal to the sum of the costs for
 each spell contained.  Generally speaking, books of this type only
 contain multiple spells when they are compendia of low-level spells in
 a given school of magic.
+    </text>
 
+    <text>
 Type 2 is a volume that describes how to perform a particular spell in
 ritual format.  Books of this type might be written in any language,
 and are generally not written in magical script.  If a Ritual magic
@@ -892,7 +964,9 @@ cookbook for a particular ritual spell.  The character could keep the
 book as a reference or could use it to learn the ritual described.
 Ritual spell manuals are worth approximately one-quarter the cost of a
 Type 1 book.
+    </text>
 
+    <text>
 Type 3 is a book that describes other forms of magic.  Since Faith
 magic, Martial Magic, and Mysticism are dependant on the individual
 <dquo>casting</dquo> the spell and not on some external <dquo>formula</dquo> or
@@ -906,7 +980,9 @@ out a new spell or technique, but it is no guarantee.  Books of this
 type are worth approximatley one-tenth of the listed price, depending
 on the exact subject matter contained within the volume.  They may be
 written in any language.
+    </text>
 
+    <text>
 Magical potions or scrolls are single-use magic spells.  Anybody can
 use a potion or scroll<mdash />whether they know anything about magic or
 not.  Spells that affect the caster or a willing recipient are
@@ -915,41 +991,51 @@ spells take the form of scrolls.  Reading the scroll aloud causes the
 spell to take effect.  Both scrolls and potions are single-use only.
 Potions can be drunk in one action.  Scrolls ALWAYS take 3 actions to
 use regardless of the spell.
+    </text>
 
+    <text>
 A person with Magical Studies can create Books, Scrolls, and Potions
 of any spell he/she knows.  Producing such works is a long and
 expensive process:
+    </text>
 
-\begin{description}
-<item>[Books] Requires a number of days equal to twice the rank of the
+    <description-list>
+      <item><description>Books</description> Requires a number of days equal to twice the rank of the
   spell squared to create.  No MP are required, but special precious
   inks and paper are required.  These materials cost approximately
-  half the value of the book.
+  half the value of the book.</item>
 
-<item>[Scrolls/Potions] Require $LVL^2$ hours to create.  They require
+      <item><description>Scrolls/Potions</description> Require LVL<sup>2</sup> hours to create.  They require
   MP equal to a normal casting of the spell to be expended, and
   require precious materials valued at not less than three-quarters
   the value of the finished item.  A ritualist may prepare a potion in
-  half that time.
-\end{description}
+  half that time.</item>
+    </description-list>
 
-\subsubsection{Magic Terminology \& Misc.}
+  </section><!-- /Magical Tools -->
 
-\begin{description}
-<item>[Black] spells are those associated with evil, death energy, and
+  <section><!-- Magical Miscellany -->
+    <title>Magic Terminology &amp; Misc.</title>
+
+    <description-list>
+      <item><description>Black</description> spells are those associated with evil, death energy, and
   demonic influence.  While they are not necissiarily evil, they are
   generally indescriminate in their targets.  Black spells never
   affect demons, undead, or targets that are not living, such as
-  ghosts or robots.
+  ghosts or robots.</item>
 
-<item>[White] spells are those that are comprised of life energy.  They
+      <item><description>White</description> spells are those that are comprised of life energy.  They
   are technically not <dquo>good</dquo> aligned, though they are a favorite of
   <dquo>good</dquo> religious orders.  White spells that cause damage only
-  affect demons, undead, and spirits.
+  affect demons, undead, and spirits.</item>
 
-<item>[Auto] spells are those that are automatically targeting.  That
+      <item><description>Auto</description> spells are those that are automatically targeting.  That
   means that once cast the spell will never miss or malfunction.
   However, in order to cast an auto-targeting spell, the caster must
-  be able to clearly see and identify his target.
+  be able to clearly see and identify his target.</item>
+    </description-list>
+    
+  </section><!-- /Magical Miscellany -->
 
-\end{description}
+</section><!-- /General Notes -->
+</L>
