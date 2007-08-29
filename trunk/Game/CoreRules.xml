@@ -2338,10 +2338,24 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
 
       </section><!-- /Melee -->
 
+      <section><!-- Miscellaneous -->
+        <title>Miscellaneous</title>
+        <reference hrid="Content/Equipment/Miscellaneous" />
+      </section><!-- /Miscellaneous -->
+
+      <section><!-- Ranged -->
+        <title>Ranged</title>
+        <reference hrid="Content/Equipment/Ranged" />
+      </section><!-- /Ranged -->
+
+      <section><!-- Shields -->
+        <title>Shields</title>
+        <reference hrid="Content/Equipment/Shields" />
+      </section><!-- /Shields -->
+
   </chapter><!-- /S Equipment -->
   <chapter><!-- S Magic -->
     <title>Magic</title>
-
 
 
   </chapter><!-- /S Magic -->
