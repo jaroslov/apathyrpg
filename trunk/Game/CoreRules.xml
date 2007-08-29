@@ -2597,21 +2597,21 @@ any relavent interaction statistics, such as combat, elocution etc.</text>
     <title>Traits</title>
 
 <text>Traits are supernatural (supernormal or paranormal) capabilities. They
-are differentiated from <emph>Magic</emph> because they are singular in
+are differentiated from <magic /> because they are singular in
 nature. For instance, a trait could be a specific power that a monster
 has, a specific power of a SuperHero. It can be the result of means
 magical, chemical, mutation, or some future technology.</text>
 
-<text>The important part is that the power occurs <emph>singularly</emph> and
-<emph>uniquely</emph> and is not part of some larger <dquo>system,</dquo>
-i.e. <emph>Magic</emph>. <emph>Traits</emph> are generally bought at only one
+<text>The important part is that the power occurs singularly and
+uniquely and is not part of some larger <dquo>system,</dquo>
+i.e. <magic />. <traits /> are generally bought at only one
 level, but can be purchased at higher levels, if it is pertinent. If a
-<emph>Trait</emph> needs <dquo>points</dquo> to power it, these are taken from the
+<traits /> needs <dquo>points</dquo> to power it, these are taken from the
 character's Mana Points.</text>
 
 <text>Since many traits overlap magical spells, there is a specific trait
 designed for using abilities to some specific spell, this trait is
-called <emph>Spell Ability</emph>.</text>
+called <spell-ability />.</text>
     
     
     <section><!-- Traits -->
