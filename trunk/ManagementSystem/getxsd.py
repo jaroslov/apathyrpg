@@ -8,6 +8,7 @@ class MergingNode (object):
   def __init__ (self, xml=None):
     self.Name = ""
     self.Children = []
+    self.ChildPositions = {}
     self.Attributes = {}
     if xml is not None:
       self.Name = xml.nodeName
@@ -18,10 +19,59 @@ class MergingNode (object):
         for attr in xml.attributes.keys ():
           self.Attributes[attr] = xml.getAttribute (attr)
   def __str__ (self):
-    res = self.Name
+    return self.ToString ()
+  def ToString (self, Indent="", NamePre=""):
+    res = Indent+self.Name + NamePre + ":"
+    for attr in self.Attributes.keys ():
+      res += " " + attr
     for child in self.Children:
-      res += " " + child.Name
+      namepre = ""
+      if child.Name in self.ChildPositions:
+        namepre = "[" + str(self.ChildPositions[child.Name]) + "]"
+      res += "\n"+Indent+child.ToString (Indent+" ", namepre)
     return res
+
+def KMerge (MNodes):
+  # performs a k-way merge of MergingNodes, recursively
+  if len(MNodes) < 1:
+    return
+  OutPut = MergingNode ()
+  # Name
+  OutPut.Name = MNodes[0].Name
+  # Merge attributes
+  #  1) add unique attribute names
+  #  2) and only unique attribute values
+  for mnode in MNodes:
+    for attr in mnode.Attributes.keys ():
+      if attr not in OutPut.Attributes: # unique names
+        OutPut.Attributes[attr] = [mnode.Attributes[attr]]
+      else: # unique values
+        if mnode.Attributes[attr] not in OutPut.Attributes[attr]:
+          OutPut.Attributes[attr].append (mnode.Attributes[attr])
+  # Merge children
+  #  1) keep track of the index of the children
+  #  2) merge the children, recursively & by kind
+  # First, let's recursively merge the children
+  childLists = {}
+  childPositions = {}
+  for mnode in MNodes:
+    index = 0
+    for child in mnode.Children:
+      if child.Name not in childLists:
+        childLists[child.Name] = []
+        childPositions[child.Name] = {}
+      if child.Name[0] != "#":
+        if index not in childPositions[child.Name]:
+          childPositions[child.Name][index] = 1
+        else:
+          childPositions[child.Name][index] += 1
+        index += 1
+      childLists[child.Name].append (child)
+  for ckey in childLists.keys ():
+    mchild = KMerge (childLists[ckey])
+    OutPut.Children.append (mchild)
+  OutPut.ChildPositions = childPositions
+  return OutPut
 
 def GetAllNodeKinds (filename=None, xml=None, NodeKinds=None):
   if filename is not None:
@@ -261,9 +311,12 @@ if __name__=="__main__":
   nt = GetAllNodeKinds (where)
   ntkeys = nt.keys ()
   ntkeys.sort ()
+  ntnew = {}
   for ntkey in ntkeys:
-    for item in nt[ntkey]:
-      print str(item)
+    km = KMerge (nt[ntkey])
+    ntnew[km.Name] = km
+  #  print km
+  print ntnew["#document"]
   #nt = GetNodeTable (where)
   #print PrintNodeTableNicely (nt)
   #print NodeTableToDot (nt)
