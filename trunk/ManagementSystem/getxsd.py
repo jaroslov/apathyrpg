@@ -79,6 +79,68 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
           NodeTable[rowN][ckey].Unique = False
   return NodeTable
 
+def NodeTableToXsd (NodeTable):
+  tab = "  "
+  res = ""
+  res += '<?xml version "1.0" encoding="UTF-8" ?>\n'
+  res += '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">\n'
+  # write down all of the elements as types
+  res += "\n<!-- Element Declarations -->\n\n"
+  keys = NodeTable.keys ()
+  keys.sort ()
+  for key in keys:
+    if key[0] != "#":
+      res += tab + '<xs:element name="'+key+'" type="'+key+'Type" />\n'
+  res += "\n<!-- Element Definitions -->\n\n"
+  for row in keys:
+    if row[0] == "#":
+      continue
+    # a row represents a possible parent element
+    # where each column are possible children elements
+    # (1) if a row has no children but #text, it is
+    #     just an 'xs:string' type
+    #     otherwise it is *actually* complex
+    # (2) nontrivial children are placed into the container
+    #     childrenTypes; if the Position or rPosition is fixed
+    #     then this is marked as well
+    onlyHashText = True
+    serialChildren = {}
+    fixedPosition = {} # known to occur before other riffraff
+    #fixedrPosition = {} # we'll deal with fixedrPosition later
+    for col in keys:
+      if col[0] != "#" and NodeTable[row][col].Exists:
+        onlyHashText = False
+        node = NodeTable[row][col]
+        if len(node.Positions) == 1:
+          fixedPosition[node.Positions[0]] = col
+        else:
+          serialChildren[col] = node
+    import sys
+    print >> sys.stderr, row, fixedPosition
+    # simpleTypes (text)
+    if onlyHashText:
+      res += tab + '<xs:simpleType name="'+row+'Type">\n'
+      res += tab*2 + '<xs:restriction base="xs:string" />\n'
+      res += tab + '</xs:simpleType>\n\n'
+    # complexTypes (has children)
+    # fixed portion
+    else:
+      res += tab + '<xs:complexType name="'+row+'Type" >\n'
+      fixedkeys = fixedPosition.keys ()
+      fixedkeys.sort ()
+      for fixedkey in fixedkeys:
+        col = fixedPosition[fixedkey]
+        res += tab*2 + '<xs:element name="'+col+'" type="'+col+'Type" />\n'
+      res += tab*2 + '<xs:sequence>\n'
+      res += tab*3 + '<xs:choice>\n'
+      for schld in serialChildren.keys ():
+        res += tab*4 + '<xs:element name="'+schld+'" type="'+schld+'Type" />\n'
+      res += tab*3 + '</xs:choice>\n'      
+      res += tab*2 + '</xs:sequence>\n'      
+      res += tab + '</xs:complexType>\n\n'
+  res += '</xs:schema>'
+  return res
+
 def NodeTableToDot (NodeTable):
   dot = "digraph G {\n\tcompound=true;\n"
   dot += "\tsubgraph clusterAttributes {\n"
@@ -119,10 +181,28 @@ def NodeTableToDot (NodeTable):
   dot += "}\n"
   return dot
 
+def PrintNodeTableNicely (NodeTable):
+  res = ""
+  keys = NodeTable.keys ()
+  keys.sort ()
+  res += " "*12
+  values = []
+  for key in keys:
+    res += "%-12s"%key
+  res += "\n"
+  for key in keys:
+    res += "%12s"%key
+    for skey in keys:
+      res += "%-12s"%str(NodeTable[key][skey])
+    res += "\n"
+  return res
+
 if __name__=="__main__":
   import sys
   where = "../Game/CoreRules.xml"
   if len(sys.argv) > 1:
     where = sys.argv[1]
   nt = GetNodeTable (where)
-  print NodeTableToDot (nt)
+  #print PrintNodeTableNicely (nt)
+  #print NodeTableToDot (nt)
+  print NodeTableToXsd (nt)

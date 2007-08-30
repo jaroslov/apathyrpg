@@ -246,10 +246,6 @@ class ArpgUni(object):
         for fieldswitch in FieldSwitches:
           if xml.hasAttribute (fieldswitch):
             self.Switches[fieldswitch] = self.DexmlizeString (xml.getAttribute (fieldswitch))
-      if "field" == self.Kind and self.hasChildNodes ():
-        for child in self.childNodes:
-          if child.nodeName in FieldSwitches:
-            self.Switches[fieldswitch] = child.nodeName
     if xml.hasChildNodes ():
       for child in xml.childNodes:
         if child.nodeType == xml.ELEMENT_NODE:
@@ -351,8 +347,6 @@ class ArpgUni(object):
     Other = ArpgUni ()
     Other.Kind = self.Kind
     Other.Name = self.Name
-    Other.FieldSwitches = self.FieldSwitches[:]
-    Other.Value = self.Value
     if self.Default:
       Other.Default = self.Default.Clone ()
     for key in self.keys ():
