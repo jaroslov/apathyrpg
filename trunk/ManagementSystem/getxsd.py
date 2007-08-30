@@ -9,6 +9,8 @@ class TableEntry(object):
     self.Exists = Ex
     self.Attributes = []
     self.Unique = True
+    self.Positions = []
+    self.rPositions = []
   def __str__ (self):
     if self.Exists:
       unique = "!"
@@ -46,7 +48,8 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
     rowN = xml.nodeName
     if xml.hasChildNodes ():
       ckind = {}
-      for child in xml.childNodes:
+      for cdx in xrange(len(xml.childNodes)):
+        child = xml.childNodes[cdx]
         if child.nodeType == child.ELEMENT_NODE:
           colN = child.nodeName
           if colN in ckind:
@@ -55,6 +58,11 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
             ckind[colN] = 1
   
           NodeTable[rowN][colN].Exists = True
+          if cdx not in NodeTable[rowN][colN].Positions:
+            NodeTable[rowN][colN].Positions.append (cdx)
+          rcdx = len(xml.childNodes) - cdx - 1
+          if rcdx not in NodeTable[rowN][colN].rPositions:
+            NodeTable[rowN][colN].rPositions.append (rcdx)
           if child.attributes:
             for attr in child.attributes.keys ():
               if attr not in NodeTable[rowN][colN].Attributes:
@@ -71,42 +79,45 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
           NodeTable[rowN][ckey].Unique = False
   return NodeTable
 
-def GetInfo (filename=None,xml=None,NodeKinds=None):
-  if filename is not None:
-    NodeKinds = {}
-    import xml.dom.minidom as minix
-    xml = minix.parse(filename)
-    GetInfo (None, xml, NodeKinds)
-  else:
-    if xml.nodeName in NodeKinds:
-      node = NodeKinds[xml.nodeName]
+def NodeTableToDot (NodeTable):
+  dot = "digraph G {\n\tcompound=true;\n"
+  dot += "\tsubgraph clusterAttributes {\n"
+  attributes = []
+  for col in NodeTable.keys ():
+    for row in NodeTable.keys ():
+      for attr in NodeTable[col][row].Attributes:
+        if attr not in attributes:
+          attributes.append (attr)
+  for attr in attributes:
+    dot += "\t\t\"" + attr + "\";\n"
+  dot += "\t\t"
+  for adx in xrange(len(attributes)):
+    dot += "\""+attributes[adx]+"\""
+    if (adx+1) < len(attributes):
+      dot += " -> "
     else:
-      NodeKinds[xml.nodeName] = Node ()
-      node = NodeKinds[xml.nodeName]
-      node.Name = xml.nodeName
-    if xml.hasChildNodes:
-      ckind = {}
-      for child in xml.childNodes:
-
-        if child.nodeName in ckind:
-          ckind[child.nodeName] += 1
-        else:
-          ckind[child.nodeName] = 1
-
-        if child.nodeName in node.Children:
-          info = node.Children[child.nodeName]
-          if ckind[child.nodeName] > 1:
-            node.Children[child.nodeName] = "sequence"
-        else:
-          node.Children[child.nodeName] = "unique"
-        GetInfo (None, child, NodeKinds)
-    if xml.attributes is not None:
-      for attr in xml.attributes.keys ():
-        if attr in node.Attributes:
-          pass
-        else:
-          node.Attributes.append (attr)
-  return NodeKinds
+      dot += " [style=invis];\n"
+  dot += "\t}\n"
+  for col in NodeTable.keys ():
+    prCol = col
+    shape = "[shape=ellipse]"
+    if '#' == prCol[0]:
+      shape = "[shape=box]"
+    prCol = "\"" + col + "\""
+    dot += "\t" + prCol + " " + shape + ";\n"
+    for row in NodeTable.keys ():
+      if NodeTable[col][row].Exists:
+        prRow = "\""+row+"\""
+        dot += "\t" + prCol + " -> " + prRow + ";\n"
+  for col in NodeTable.keys ():
+    prCol = "\""+col+"\""
+    for row in NodeTable.keys ():
+      if NodeTable[col][row].Exists:
+        prRow = "\""+row+"\""
+        for attr in NodeTable[col][row].Attributes:
+          dot += "\t" + prRow + " -> " + "\"" + attr + "\"" + " [color=blue,weight=.1];\n"
+  dot += "}\n"
+  return dot
 
 if __name__=="__main__":
   import sys
@@ -114,14 +125,4 @@ if __name__=="__main__":
   if len(sys.argv) > 1:
     where = sys.argv[1]
   nt = GetNodeTable (where)
-  keys = nt.keys ()
-  keys.sort ()
-  print " "*12,
-  for key in keys:
-    print "%-12s"%key,
-  print
-  for key in keys:
-    print "%12s"%key,
-    for skey in keys:
-      print "%-12s"%str(nt[key][skey]),
-    print
+  print NodeTableToDot (nt)
