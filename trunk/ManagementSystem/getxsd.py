@@ -51,7 +51,6 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
       cdx = 0
       for child in xml.childNodes:
         if child.nodeType == child.ELEMENT_NODE:
-          cdx += 1
           colN = child.nodeName
           if colN in ckind:
             ckind[colN] += 1
@@ -69,6 +68,7 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
               if attr not in NodeTable[rowN][colN].Attributes:
                 NodeTable[rowN][colN].Attributes.append (attr)
           GetNodeTable (None, child, NodeTable)
+          cdx += 1
         elif child.nodeType == child.TEXT_NODE:
           value = ""
           if child.nodeValue is not None:
@@ -109,10 +109,10 @@ def NodeTableToXsd (NodeTable):
     fixedPosition = {} # known to occur before other riffraff
     #fixedrPosition = {} # we'll deal with fixedrPosition later
     import sys
-    #print >> sys.stderr, row,
+    print >> sys.stderr, row,
     for col in keys:
-      #if NodeTable[row][col].Exists:
-      #  print >> sys.stderr, col, NodeTable[row][col].Positions,
+      if NodeTable[row][col].Exists:
+        print >> sys.stderr, col, NodeTable[row][col].Positions,
       if col[0] != "#" and NodeTable[row][col].Exists:
         onlyHashText = False
         node = NodeTable[row][col]
@@ -120,7 +120,7 @@ def NodeTableToXsd (NodeTable):
           fixedPosition[node.Positions[0]] = col
         else:
           serialChildren[col] = node
-    #print >> sys.stderr
+    print >> sys.stderr
     # now count fixedPosition and throw away non-serial positions
     tmpFPs = {}
     for idx in xrange(len(fixedPosition)):
