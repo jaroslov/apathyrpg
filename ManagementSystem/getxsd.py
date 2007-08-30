@@ -107,16 +107,27 @@ def NodeTableToXsd (NodeTable):
     serialChildren = {}
     fixedPosition = {} # known to occur before other riffraff
     #fixedrPosition = {} # we'll deal with fixedrPosition later
+    import sys
+    print >> sys.stderr, row,
     for col in keys:
       if col[0] != "#" and NodeTable[row][col].Exists:
         onlyHashText = False
         node = NodeTable[row][col]
+        print >> sys.stderr, col, node.Positions,
         if len(node.Positions) == 1:
           fixedPosition[node.Positions[0]] = col
         else:
           serialChildren[col] = node
-    import sys
-    print >> sys.stderr, row, fixedPosition
+    print >> sys.stderr
+    # now count fixedPosition and throw away non-serial positions
+    tmpFPs = {}
+    for idx in xrange(len(fixedPosition)):
+      if idx in fixedPosition:
+        tmpFPs[idx] = fixedPosition[idx]
+    for idx in tmpFPs.keys ():
+      if idx not in fixedPosition.keys ():
+        serialChildren[fixedPosition[idx]] = NodeTable[row][fixedPosition[idx]]
+    fixedPosition = tmpFPs
     # simpleTypes (text)
     if onlyHashText:
       res += tab + '<xs:simpleType name="'+row+'Type">\n'
@@ -133,7 +144,9 @@ def NodeTableToXsd (NodeTable):
         res += tab*2 + '<xs:element name="'+col+'" type="'+col+'Type" />\n'
       res += tab*2 + '<xs:sequence>\n'
       res += tab*3 + '<xs:choice>\n'
-      for schld in serialChildren.keys ():
+      scKeys = serialChildren.keys ()
+      scKeys.sort ()
+      for schld in scKeys:
         res += tab*4 + '<xs:element name="'+schld+'" type="'+schld+'Type" />\n'
       res += tab*3 + '</xs:choice>\n'      
       res += tab*2 + '</xs:sequence>\n'      
