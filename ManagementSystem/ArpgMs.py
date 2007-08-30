@@ -231,6 +231,20 @@ class ArpgUni(object):
     if Location:
       self.FromXmlFile (Location)
 
+  def PropogateDefaultSwitches (self):
+    # this propogates the switches along...
+    if "category" == self.Kind and self.Default is not None:
+      for key in self.Default.keys ():
+        field = self.Default[key]
+        for switch in field.Switches.keys ():
+          for child in self.keys ():
+            if key in self[child].keys ():
+              if switch not in self[child][key].Switches.keys ():
+                self[child][key].Switches[switch] = field.Switches[switch]
+    else:
+      for child in self.keys ():
+        self[child].PropogateDefaultSwitches ()
+
   def FromXmlFile (self, Location):
     import xml.dom.minidom as minix
     file = minix.parse(Location)
@@ -267,11 +281,13 @@ class ArpgUni(object):
   def HasChild (self, Kid):
     return self._Children.has_key (Kid)
 
-  def AsXml (self, Indent=""):
+  def AsXml (self, Indent="", Propogate=True):
+    if Propogate:
+      self.PropogateDefaultSwitches ()
     output = Indent + "<" + self.Kind + " name=\"" + self.XmlizeString (self.Name) + "\""
     if "field" == self.Kind:
       for fieldswitch in self.Switches.keys ():
-        output += " "+self.XmlizeString (self.Switches[fieldswitch])+"=\"\""
+        output += " "+fieldswitch+"=\""+self.XmlizeString (self.Switches[fieldswitch])+"\""
       if len(self.Value) > 0:
         val = self.XmlizeString (self.Value)
         output += " >" + val + "</" + self.Kind + ">"
@@ -279,9 +295,9 @@ class ArpgUni(object):
     else:
       output += " >\n"
       if self.Default:
-        output += self.Default.AsXml (Indent+"\t")+"\n"
+        output += self.Default.AsXml (Indent+" ", Propogate=False)+"\n"
       for child in self.keys ():
-        output += self[child].AsXml (Indent+"\t")+"\n"
+        output += self[child].AsXml (Indent+" ", Propogate=False)+"\n"
       output += Indent + "</" + self.Kind + ">"
     return output
 
@@ -520,7 +536,7 @@ if __name__=="__main__":
   #TestUni ()
   #TestConvert ()
   #TestStructuralEq ()
-  #TestRoundtrip ()
+  TestRoundtrip ()
   #TestMakeTable ()
   #TestMakeFormattedDescs ()
-  TestMakeHtmlCategory ()
+  #TestMakeHtmlCategory ()
