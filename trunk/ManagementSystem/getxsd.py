@@ -48,9 +48,10 @@ def GetNodeTable (filename, xml=None, NodeTable=None):
     rowN = xml.nodeName
     if xml.hasChildNodes ():
       ckind = {}
-      for cdx in xrange(len(xml.childNodes)):
-        child = xml.childNodes[cdx]
+      cdx = 0
+      for child in xml.childNodes:
         if child.nodeType == child.ELEMENT_NODE:
+          cdx += 1
           colN = child.nodeName
           if colN in ckind:
             ckind[colN] += 1
@@ -108,17 +109,18 @@ def NodeTableToXsd (NodeTable):
     fixedPosition = {} # known to occur before other riffraff
     #fixedrPosition = {} # we'll deal with fixedrPosition later
     import sys
-    print >> sys.stderr, row,
+    #print >> sys.stderr, row,
     for col in keys:
+      #if NodeTable[row][col].Exists:
+      #  print >> sys.stderr, col, NodeTable[row][col].Positions,
       if col[0] != "#" and NodeTable[row][col].Exists:
         onlyHashText = False
         node = NodeTable[row][col]
-        print >> sys.stderr, col, node.Positions,
         if len(node.Positions) == 1:
           fixedPosition[node.Positions[0]] = col
         else:
           serialChildren[col] = node
-    print >> sys.stderr
+    #print >> sys.stderr
     # now count fixedPosition and throw away non-serial positions
     tmpFPs = {}
     for idx in xrange(len(fixedPosition)):
