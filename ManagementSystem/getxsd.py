@@ -1,3 +1,44 @@
+#
+# What's going on?
+#  Right now getxsd does a two-node analysis, and poorly at that;
+#  the correct thing to do is to do subgraph unions for all 
+#  subgraphs starting from the same tree-like node.
+
+class MergingNode (object):
+  def __init__ (self, xml=None):
+    self.Name = ""
+    self.Children = []
+    self.Attributes = {}
+    if xml is not None:
+      self.Name = xml.nodeName
+      if xml.hasChildNodes ():
+        for child in xml.childNodes:
+          self.Children.append (MergingNode (child))
+      if xml.attributes is not None:
+        for attr in xml.attributes.keys ():
+          self.Attributes[attr] = xml.getAttribute (attr)
+  def __str__ (self):
+    res = self.Name
+    for child in self.Children:
+      res += " " + child.Name
+    return res
+
+def GetAllNodeKinds (filename=None, xml=None, NodeKinds=None):
+  if filename is not None:
+    NodeKinds = {}
+    import xml.dom.minidom as minix
+    xml = minix.parse(filename)
+    GetAllNodeKinds (None, xml, NodeKinds)
+  else:
+    if xml.nodeName not in NodeKinds:
+      NodeKinds[xml.nodeName] = [MergingNode (xml)]
+    else:
+      NodeKinds[xml.nodeName].append (MergingNode (xml))
+    if xml.hasChildNodes:
+      for child in xml.childNodes:
+        GetAllNodeKinds (None, child, NodeKinds)
+  return NodeKinds
+
 class Node(object):
   def __init__ (self):
     self.Name = ""
@@ -217,7 +258,13 @@ if __name__=="__main__":
   where = "../Game/CoreRules.xml"
   if len(sys.argv) > 1:
     where = sys.argv[1]
-  nt = GetNodeTable (where)
+  nt = GetAllNodeKinds (where)
+  ntkeys = nt.keys ()
+  ntkeys.sort ()
+  for ntkey in ntkeys:
+    for item in nt[ntkey]:
+      print str(item)
+  #nt = GetNodeTable (where)
   #print PrintNodeTableNicely (nt)
   #print NodeTableToDot (nt)
-  print NodeTableToXsd (nt)
+  #print NodeTableToXsd (nt)
