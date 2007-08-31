@@ -146,6 +146,16 @@
     </table>
   </xsl:template>
 
+  <xsl:template match="itemized-list">
+    <ul class="itemized-list">
+      <xsl:for-each select="item">
+        <li>
+          <xsl:apply-templates select="." />
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
   <xsl:template match="define">
     <span class="definition" id=".">
       <xsl:value-of select="." />
@@ -191,6 +201,50 @@
         <xsl:apply-templates />
       </p>
     </div>
+  </xsl:template>
+  
+  <xsl:template match="reference">
+    <!-- A unique hrid to the category we need -->
+    <xsl:variable name="hrid" select="./@hrid" />
+    <table class="datum-table">
+      <thead>
+        <!-- Build the head from the Default structure -->
+        <xsl:for-each select="//category[@name=$hrid]/default/field">
+          <xsl:if test="./@title">
+            <th><xsl:value-of select="@name" /></th>
+          </xsl:if>
+          <xsl:if test="./@table">
+            <th class="content"><xsl:value-of select="@name" /></th>
+          </xsl:if>
+        </xsl:for-each>
+      </thead>
+      <!-- Build the body of the table from the datums found -->
+      <xsl:for-each select="//category[@name=$hrid]/datum">
+        <tr>
+          <xsl:for-each select="field" >
+            <xsl:if test="./@title">
+              <td>
+                <a href="#{../../../@name}-{$hrid}-{.}">
+                  <xsl:apply-templates select="." />
+                </a>
+              </td>
+            </xsl:if>
+            <xsl:if test="./@table">
+              <td class="content"><xsl:apply-templates select="." /></td>
+            </xsl:if>
+          </xsl:for-each>
+        </tr>
+      </xsl:for-each>
+    </table>
+    <!-- Builds the descriptor lists -->
+    <xsl:for-each select="//category[@name=$hrid]/datum">
+      <xsl:variable name="datum-title" select="field[@title='yes']" />
+      <div class="datum-description"
+        id="{../../@name}-{$hrid}-{$datum-title}">
+        <h1><xsl:value-of select="field[@title='yes']" /></h1>
+        <p><xsl:value-of select="field[@description='yes']" /></p>
+      </div>
+    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>
