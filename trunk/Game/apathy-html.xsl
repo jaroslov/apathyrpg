@@ -90,10 +90,10 @@
   <xsl:template match="book">
     <xsl:for-each select="part">
       <div class="part">
-        <h1><xsl:value-of select="title" /></h1>
+        <!--<h1><xsl:value-of select="title" /></h1>-->
         <xsl:for-each select="chapter">
           <div class="chapter" id="chapter-{./title}">
-            <h1><xsl:value-of select="title" /></h1>
+            <!--<h1><xsl:value-of select="title" /></h1>-->
             <xsl:apply-templates />
           </div>
         </xsl:for-each>
@@ -103,7 +103,7 @@
 
   <xsl:template match="section">
     <div class="section" id="section-{../title}-{./title}" >
-      <h1><xsl:value-of select="title" /></h1>
+      <!--<h1><xsl:value-of select="title" /></h1>-->
       <xsl:apply-templates />
     </div>
   </xsl:template>
@@ -120,7 +120,7 @@
         <span class="example-title">Example:</span>
         <xsl:value-of select="title" />
       </h1>
-      <xsl:apply-templates />
+      <xsl:apply-templates select="text" />
     </div>
   </xsl:template>
 
@@ -170,7 +170,7 @@
   </xsl:template>
   
   <xsl:template match="table">
-    <table>
+    <table class="content-table">
       <thead>
         <xsl:for-each select="head/cell">
           <th>
@@ -181,7 +181,9 @@
       <xsl:for-each select="row">
         <tr>
           <xsl:for-each select="cell">
-            <td>
+            <xsl:variable name="cellspan" select="./@span" />
+            <xsl:variable name="border" select="./@border" />
+            <td colspan="{$cellspan}" class="{$border}" >
               <xsl:apply-templates />
             </td>
           </xsl:for-each>
@@ -190,6 +192,14 @@
     </table>
   </xsl:template>
   
+  <xsl:template match="sup">
+    <sup><xsl:value-of select="." /></sup>
+  </xsl:template>
+  
+  <xsl:template match="title">
+    <h1 class="bare-title"><xsl:value-of select="." /></h1>
+  </xsl:template>
+
   <xsl:template match="caption">
     <p class="figure-caption"><xsl:value-of select="." /></p>
   </xsl:template>
@@ -246,5 +256,47 @@
       </div>
     </xsl:for-each>
   </xsl:template>
+
+  <!-- BROKEN! Fix with MathML -->
+  <xsl:template match="math">
+    <span class="math">
+      <xsl:apply-templates />
+    </span>
+  </xsl:template>
+  
+  <xsl:template match="sum">
+    <table class="sum">
+      <tr>
+        <td colspan="2"><xsl:apply-templates select="./to" /></td>
+      </tr>
+      <tr>
+        <td><span style="font-size:26pt; font-style: normal;"><xsl:apply-templates select="./symbol" /></span></td>
+          <td><xsl:apply-templates select="./of" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><xsl:apply-templates select="./from" /></td><td></td>
+      </tr>
+    </table>
+  </xsl:template>
+  
+  <xsl:template match="parenthesis">
+    (<xsl:value-of select="." />)
+  </xsl:template>
+  
+  <xsl:template match="frac">
+    <table class="fraction">
+      <tr>
+        <td class="numerator">
+          <xsl:apply-templates select="top" />
+        </td>
+      </tr>
+      <tr>
+        <td class="denominator">
+          <xsl:apply-templates select="bot" />
+        </td>
+      </tr>
+    </table>
+  </xsl:template>
+  <!-- BROKEN! Fix with MathML -->
 
 </xsl:stylesheet>
