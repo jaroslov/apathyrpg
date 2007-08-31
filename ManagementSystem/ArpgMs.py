@@ -249,7 +249,10 @@ class ArpgUni(object):
     import xml.dom.minidom as minix
     file = minix.parse(Location)
     # the first node is the "document" node, ignore
-    self.FromXml (file.childNodes[0])
+    if file.hasChildNodes ():
+      for child in file.childNodes:
+        if child.nodeType == child.ELEMENT_NODE:
+          self.FromXml (child)
 
   def FromXml (self, xml):
     import sys
