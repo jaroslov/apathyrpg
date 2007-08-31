@@ -18,6 +18,9 @@ a:hover {
 ol {
   font-size: 12pt;
 }
+table {
+  empty-cells: show;
+}
 div.toc h1 {
   font-variant: small-caps;
   font-size: 16pt;
@@ -106,14 +109,16 @@ div.section h1 {
 div.example {
   width: 35em;
   text-align: justify;
-  padding: 2em;
+  padding: .5em 2em .5em 2em;
+  margin: 0;
 }
 div.example h1 {
   font-size: 14pt;
 }
 div.example p {
-  padding-left: 2em;
+  padding: 0 0 .25em 2em;
   text-indent: -1em;
+  margin: 0;
 }
 div.example span.example-title {
   font-variant: small-caps;
@@ -203,3 +208,70 @@ table.datum-table th.content {
   border-left: 1px solid black;
   padding-left: .5em;
 }
+table.content-table {
+  border-collapse: collapse;
+}
+table.content-table th {
+  border-bottom: double black;
+  border-top: 1px solid black;
+  padding-right: .5em;
+  padding-left: .5em;
+}
+table.content-table td {
+  border-bottom: 1px solid black;
+  padding-right: .5em;
+  padding-left: .5em;
+}
+table.content-table td.none {
+  border-bottom: 0;
+}
+table.content-table h1 {
+  font-size: 16pt;
+  font-variant: small-caps;
+  margin: .1em;
+  padding: 0em;
+}
+table.content-table th:first-child {
+  border-left: 0px;
+}
+table.content-table thead th {
+  border-left: 1px solid black;
+}
+table.content-table td:first-child {
+  border-left: 0px;
+}
+table.content-table tr td {
+  border-left: 1px solid black;
+}
+span.math {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-family: arial, serif;
+}
+div.math table {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+table.fraction {
+  font-size: 8pt;
+  border-collapse: collapse;
+  text-align: center;
+  display: inline-block;
+}
+table.fraction td {
+  border: 0px;
+}
+table.fraction td.numerator {
+  border-bottom: 1px solid black;
+}
+table.sum {
+  text-align: left;
+  display: inline-block;
+}
+
+
