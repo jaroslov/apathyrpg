@@ -1,0 +1,161 @@
+body {
+  padding: 1em;
+  padding-right: 3em;
+  padding-left: 3em;
+  margin: 0em;
+  font-size: 12pt;
+  text-align: justify;
+  font-color: black;
+  background-color: white;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ol {
+  font-size: 12pt;
+}
+div.toc h1 {
+  font-variant: small-caps;
+  font-size: 16pt;
+}
+ol.toc {
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  margin-left: 1em;
+  padding-left: .1em;
+}
+ol.toc ol {
+  list-style-type: lower-roman;
+}
+ol.toc ol ol {
+  list-style-type: lower-alpha;
+}
+ol.toc li {
+  font-variant: small-caps;
+}
+div.examples h1 {
+  font-variant: small-caps;
+  font-size: 16pt;
+}
+ol.examples {
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  margin-left: 1em;
+  padding-left: .1em;
+}
+ol.examples li {
+  font-variant: small-caps;
+}
+div.figures h1 {
+  font-variant: small-caps;
+  font-size: 16pt;
+}
+ol.figures {
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  margin-left: 1em;
+  padding-left: .1em;
+}
+ol.figures li {
+  font-variant: small-caps;
+}
+span.apathy-A1 {
+  font-size: 90pt;
+}
+span.apathy-P {
+  position: relative;
+  font-size: 60pt;
+  left: -.22em;
+  top: -.25em;
+}
+span.apathy-A2 {
+  position: relative;
+  font-size: 90pt;
+  left: -.4em;
+}
+span.apathy-thy {
+  position: relative;
+  font-size: 60pt;
+  left: -1em;
+  top: -.25em;
+}
+table.apathy-authors {
+  position: relative;
+  text-align: center;
+  right: -11em;
+  top: -3em;
+}
+div.titlepage {
+  border: double black;
+  padding: 2em;
+  padding-bottom: 5em;
+}
+div.part h1 {
+  font-size: 28pt;
+}
+div.chapter h1 {
+  font-size: 22pt;
+}
+div.section h1 {
+  font-size: 16pt;
+}
+div.example {
+  width: 35em;
+  text-align: justify;
+  padding: 2em;
+}
+div.example h1 {
+  font-size: 14pt;
+}
+div.example p {
+  padding-left: 2em;
+  text-indent: -1em;
+}
+div.example span.example-title {
+  font-variant: small-caps;
+  font-weight: bold;
+  padding-right: 1em;
+}
+span.ApAthy {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+span.definition {
+  font-style: italic;
+}
+.description-term {
+  font-weight: bold;
+}
+p.figure-caption {
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+}
+div.note {
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: 1px solid red;
+  margin: .5em;
+}
+div.note p {
+  margin: 0;
+  padding: 0;
+}
+div.note span.note-exclaim {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 16pt;
+  margin-right: .5em;
+}
+ul.Fast-Find-List {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 18pt;
+  list-style-type: none;
+  margin-left: -1.5em;
+}
