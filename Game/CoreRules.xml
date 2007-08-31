@@ -1,4 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE stylesheet [
+<!ENTITY rarr  "&#8594;" ><!-- small n, tilde -->
+]>
+<?xml-stylesheet type="text/xsl" href="core-rules-html.xsl"?>
 <arpg>
 <part>
   <title>Game Manual</title>
@@ -757,7 +761,7 @@ In game terms, you are +1 LVL when performing a check in the area of your
 specialization, but are -4 to your roll when you are performing a check outside
 of your specialization.  Specializing does NOT cost any extra CP.</text>
         <example>
-          <title>History<rightarrow/>Spanish</title>
+          <title>History&rarr;Spanish</title>
           <text>Ralf Gr<umlaut>o</umlaut>osse-Kunstleve is a historian.
 Specifically, he is knowledgeable
 about Spanish history. He has a LVL 3 History skill with a specialization in
@@ -771,7 +775,7 @@ specialties, if you feel like it.  When this happens the roll for <dquo>outside
 of specialty</dquo> skill checks is the highest of the skill levels -4 +1 for each
 skill beyond the first.</text>
         <example>
-          <title>Chemistry<rightarrow/>WMD</title>
+          <title>Chemistry&rarr;WMD</title>
           <text>Dr. Klo<overbrace>tz</overbrace>enstein is a scientist.
 He has LVL 3 Chemistry with a specialty in
 Chemical weapons and poisons.  As well, he has LVL 4 Chemistry with a
@@ -797,7 +801,7 @@ Note that Weapon skill specialization does NOT affect damage rolls.</text>
 skill. Specializing can be applied to all weapon proficiency type skills and
 the shield skill.</text>
         <example>
-          <title>Axes<rightarrow/>Nordic War Axe</title>
+          <title>Axes&rarr;Nordic War Axe</title>
           <text>Bj<struck>o</struck>rgen
 is a warrior with a liking for the Nordic War Axe.
 He has the skill
@@ -3964,6 +3968,7 @@ lists the fundamental physical attributes of the various base-types.</text>
             <cell>1</cell>
         </row>
     </table>
+    <caption>Monster Construction Table</caption>
 </figure>
 
         </section><!-- /Base Types -->
