@@ -91,7 +91,7 @@
                     <xsl:value-of select="." />
                   </a></td>
                 </xsl:when>
-                <xsl:when test="@table and not(@title)">
+                <xsl:when test="@table">
                   <td class="text-description-td-body">
                     <xsl:value-of select="." />
                   </td>
@@ -111,7 +111,7 @@
     <thead><tr>
     <xsl:for-each select="field">
       <xsl:choose>
-        <xsl:when test="@table and not(@title)">
+        <xsl:when test="@table">
           <td class="text-description-td-body"><xsl:value-of select="@name" /></td>
         </xsl:when>
         <xsl:when test="@title">
