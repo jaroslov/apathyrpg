@@ -285,9 +285,12 @@ class ArpgUni(object):
     return self._Children.has_key (Kid)
 
   def AsXml (self, Indent="", Propogate=True):
+    output = ''
     if Propogate:
       self.PropogateDefaultSwitches ()
-    output = Indent + "<" + self.Kind + " name=\"" + self.XmlizeString (self.Name) + "\""
+      output += '<?xml version="1.0" encoding="ISO-8859-1"?>\n'
+      output += '<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>\n'
+    output += Indent + "<" + self.Kind + " name=\"" + self.XmlizeString (self.Name) + "\""
     if "field" == self.Kind:
       for fieldswitch in self.Switches.keys ():
         output += " "+fieldswitch+"=\""+self.XmlizeString (self.Switches[fieldswitch])+"\""
