@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE stylesheet [
 <!ENTITY rarr  "&#8594;" ><!-- small n, tilde -->
+<!ENTITY ldquo  "&#8220;" ><!-- left double quote -->
+<!ENTITY rdquo  "&#8221;" ><!-- right double quote -->
+<!ENTITY lsquo  "&#8216;" ><!-- left quote -->
+<!ENTITY rsquo  "&#8217;" ><!-- right quote -->
 ]>
 <?xml-stylesheet type="text/xsl" href="core-rules-html.xsl"?>
 <arpg>
@@ -11,7 +15,8 @@
   <section>
     <title>Introduction</title>
     <text><Apathy/> is a paper &amp; pencil role-playing game.
-    <Apathy/><squo/>s authors have played a great many RPGs including D&amp;D, Heroes
+    <Apathy/>&rsquo;s authors have played a great many RPGs including D&amp;D, 
+    Heroes
   Unlimited, GURPS, Shadowrun, TMMNT, various White Wolf games
   (Vampire, etc.), Deadlands, and a few others.  While these games are
   all fun, we felt that each game had various shortcomings that could
@@ -23,17 +28,17 @@
     <text><Apathy/> is recommended for advanced role-players (or at
   least for experienced DM/GM/Storytellers).  This is because the
   <Apathy/> system is designed for a unique mix of speed and realism
-  rather than carefully <dquo>balanced</dquo> rules.  The <Apathy/>
-  rules make it very easy to make unbalanced (<dquo>min-maxed</dquo>)
+  rather than carefully &ldquo;balanced&rdquo; rules.  The <Apathy/>
+  rules make it very easy to make unbalanced (&ldquo;min-maxed&rdquo;)
   or tweaked characters.  <Apathy/> is likewise not appropriate for
-  <dquo>rules lawyers</dquo> or excessively anal GMs and
+  &ldquo;rules lawyers&rdquo; or excessively anal GMs and
   players.</text>
     <text><Apathy/> was created around several core features.  These
   are what make <Apathy/> a unique game system:</text>
     <itemized-list>
       <item>
         <text><Apathy/> has no fixed character classes, such as
-    <dquo>fighter</dquo> or <dquo>wizard</dquo>, etc.  Players can
+    &ldquo;fighter&rdquo; or &ldquo;wizard&rdquo;, etc.  Players can
     pick and choose every detail of their character, rather than being
     forced into set classes.</text>
       </item>
@@ -47,24 +52,24 @@
     one being excessively powerful.</text>
       </item>
       <item>
-        <text>There are no discrete <dquo>levels</dquo> for character
+        <text>There are no discrete &ldquo;levels&rdquo; for character
     advancement.  Characters develop and grow constantly, rather than
     infrequent, sudden, increases common to level-based games.  There
-    is a distinct and obvious increase in <dquo>power</dquo> as
+    is a distinct and obvious increase in &ldquo;power&rdquo; as
     characters grow.  This gives players the feeling that their
     characters are constantly improving as the game continues.</text>
       </item>
       <item>
-        <text>The game rules are purposely devoid of <dquo>fluff</dquo>
+        <text>The game rules are purposely devoid of &ldquo;fluff&rdquo;
     rules.  Time-consuming (and therefore not fun) look-up tables and
     thick books of rules are nowhere to be found.  <Apathy/> is
-    designed to be fast to play.  Most of the <dquo>tables</dquo> in
+    designed to be fast to play.  Most of the &ldquo;tables&rdquo; in
     the <Apathy/> manuals are just to explain things to the players
-    and aren<squo/>t used during play.</text>
+    and aren&rsquo;t used during play.</text>
       </item>
       <item>
-        <text>While <Apathy/> is devoid of many <dquo>clutter
-    rules</dquo>, it does have an emphasis on realism.  <Apathy/><squo/>s
+        <text>While <Apathy/> is devoid of many &ldquo;clutter
+    rules&rdquo;, it does have an emphasis on realism.  <Apathy/>&rsquo;s
     combat system is an excellent compromise between speed and
     realism.</text>
       </item>
@@ -77,18 +82,18 @@
     <title>Basic Terms</title>
     <description-list>
       <item>
-        <description>Action</description>
-        <text>An <action /> is the most basic unit of time during combat.
+        <description><define>Action</define></description>
+        <text>An action is the most basic unit of time during combat.
   It is roughly equal to one second of time.  Most characters will
   have three <action plural="yes" /> per turn, though certain things can increase or
   decrease this number.  Note that as long as a character is
   unconscious, he or she always has at least one <action /> per turn.</text>
       </item>
       <item>
-        <description><base-armor /></description>
-        <text> A character<squo/>s natural resistance to bodily harm of
-  unusual varieties.  You can think of this as <dquo>toughness</dquo> (not to
-  be confused with the skill of the same name).  A character<squo/>s base
+        <description><define>Base Armor</define></description>
+        <text> A character&rsquo;s natural resistance to bodily harm of
+  unusual varieties.  You can think of this as &ldquo;toughness&rdquo; (not to
+  be confused with the skill of the same name).  A character&rsquo;s base
   armor reduces the damage they suffer from U (undefined) damage.
   <base-armor /> does not protect against any other form of damage,
   such as P, S, C, or D. Note, that if a character suffers any U
@@ -96,8 +101,8 @@
   always loose at least 1 HP.</text>
       </item>
       <item>
-        <description>C</description>
-        <text> An abbreviation for <crushing />.  When used in
+        <description><define>C</define></description>
+        <text> An abbreviation for <define>crushing</define>.  When used in
   conjunction with a weapon, it indicates that the weapon in question
   deals <crushing /> type damage.  When used in conjunction with armor, it
   indicates how much <crushing /> damage the armor will defend against.</text>
@@ -105,20 +110,20 @@
       <item>
         <description>CP</description>
         <text> Character Points.  These are points you use to
-  <dquo>purchase</dquo> skills, equipment, etc. for your character.  CP can
+  &ldquo;purchase&rdquo; skills, equipment, etc. for your character.  CP can
   also be used to increase attributes according to a special table.
   See the section on character creation.</text>
       </item>
       <item>
         <description>Character</description>
         <text> A persona within the game world that is adopted by a
-  player.  The player sees through the character<squo/>s eyes, controls the
-  character<squo/>s <action plural="yes" />, and speaks through the character<squo/>s mouth.</text>
+  player.  The player sees through the character&rsquo;s eyes, controls the
+  character&rsquo;s <action plural="yes" />, and speaks through the character&rsquo;s mouth.</text>
       </item>
       <item>
         <description>D</description>
         <text> An abbreviation for <direct-damage />.  D damage is applied
-  directly against the target<squo/>s HP.  Armor, including <base-armor />,
+  directly against the target&rsquo;s HP.  Armor, including <base-armor />,
   cannot protect against D damage.  Fortunately, D damage
   sources are few and far between.</text>
       </item>
@@ -128,12 +133,12 @@
   The <game-master /> controls the game world that the players inhabit.
   He/she controls everything that is not the players.  This includes
   other people (sometimes called non-player characters), monsters,
-  natural events, etc.  This is usually abbreviated as <dquo>GM</dquo>.</text>
+  natural events, etc.  This is usually abbreviated as &ldquo;GM&rdquo;.</text>
       </item>
       <item>
         <description>HP</description>
         <text> Abbreviation for <hit-points />.  <hit-points /> are used to
-  represent a character<squo/>s health.  If a character gets injured, their
+  represent a character&rsquo;s health.  If a character gets injured, their
   HP decreases.  If a character reaches 0 HP, they fall unconscious.
   If a character reaches -X HP, where X is equal to their maximum HP,
   they are dead.  Note that if a character is below 0 HP, they will
@@ -156,7 +161,7 @@ see Hand-to-Hand </text>
         <description><luck-points /></description>
         <text> Usually, this is short for <luck-points />.  <luck-points /> are
   accumulated during gameplay, and players redeem them for combat
-  bonuses, or for saving their character<squo/>s butt if things get rough.
+  bonuses, or for saving their character&rsquo;s butt if things get rough.
   This is used to help un<luck-points />y die rolls from screwing over players.
   All major character in the game, including significant NPCs,
   villains, etc. will have <luck-points />.  The GM is responsible for
@@ -213,8 +218,8 @@ see Hand-to-Hand </text>
         <text> Power Cells.  This is a measurement of energy or power for
   things like mecha, vehicles, robots, and power armor.  Power,
   measured in PC, is produced by things like engines and is consumed
-  by movement systems and weapons, etc.  PC can also mean <dquo>player
-  character</dquo>.</text>
+  by movement systems and weapons, etc.  PC can also mean &ldquo;player
+  character&rdquo;.</text>
       </item>
       <item>
         <description>Player</description>
@@ -223,7 +228,7 @@ see Hand-to-Hand </text>
       </item>
       <item>
         <description>Round</description>
-        <text> A <dquo>round</dquo> is the most general unit of time during
+        <text> A &ldquo;round&rdquo; is the most general unit of time during
   combat.  Any sequence of combat is broken down into one or more
   rounds.  During each round, each combatant gets to take one turn.  A
   round is over whenever all combatants have taken a turn (or are
@@ -241,14 +246,14 @@ see Hand-to-Hand </text>
         <text> A representation of the approximate <size /> of objects such
   as people, mecha, etc.  Humans are <size /> level 2.  Each <size /> level is
   approximately double the height and weight of the <size /> below it.
-  So, <size /> 2 covers things up to about 7<squo/> tall.  <size /> 3, therefore, is
-  about 14<squo/> tall.</text>
+  So, <size /> 2 covers things up to about 7&rsquo; tall.  <size /> 3, therefore, is
+  about 14&rsquo; tall.</text>
       </item>
       <item>
         <description>Turn</description>
         <text> A turn is a unit of time during combat.  Each round of
   combat is broken down into one turn per combatant.  During each
-  player<squo/>s turn, they get to do whatever they want.  A turn is roughly
+  player&rsquo;s turn, they get to do whatever they want.  A turn is roughly
   equal to three seconds of time.  Each turn is subdivided into
   <action plural="yes" />.</text>
       </item>
@@ -302,11 +307,11 @@ concept.  Talk to the GM and your fellow players for ideas about the
 game setting and what kind of character you might want to play.  Your
 imagination is the only real limit as to what your character can be.
 Perhaps you want to play a heroic knight that fights for honor and
-puts monsters to the sword?  Or maybe you<squo/>d rather play a cunning and
+puts monsters to the sword?  Or maybe you&rsquo;d rather play a cunning and
 seductive thief with a hidden agenda.  You could be a young mecha
 pilot<mdash/>inexperienced, but eager to fight for his cause.  Your
 character is a hero in the game.  You should take this opportunity to
-have fun and do things you can<squo/>t do in real life.</text>
+have fun and do things you can&rsquo;t do in real life.</text>
     <image src='/Monsters/Buer.png'/>
     <text>If you are having trouble thinking up a character concept, you might
 want to look to books, movies, or even historical precedent as to what
@@ -314,23 +319,23 @@ kind of character you want to play.  You could be a space mercenary
 like Han Solo from Star Wars, or maybe a secret agent like James
 Bond<mdash/>or perhaps an old-west gunslinger.</text>
     <text>Once you have an idea so to what kind of character you want to play,
-it<squo/>s time to develop that idea.  Think about what your character looks
+it&rsquo;s time to develop that idea.  Think about what your character looks
 like.  How old are they?  How do they dress?  What kinds of
 possessions do they have?  What do they do for a living?  What was
 their past?  How would they react in a fight?  What would they do if
 they were suddenly given a lot of money?  What are their fears?  Their
 hopes?  Their goals?</text>
-    <text>Now you should have a good understanding of your character<squo/>s
+    <text>Now you should have a good understanding of your character&rsquo;s
 appearance, personality, skills, etc.  What you need to do next is
 represent that idea in the <Apathy/> system rules.  Grab a character
 sheet, and follow along.</text>
     <section>
       <title>Character Basics</title>
       <text>The first part of describing your character is very simple.  Decide
-what your character<squo/>s basic description is like.  Are they male or
+what your character&rsquo;s basic description is like.  Are they male or
 female?  How tall?  What do they weigh?  Fill in age, sex, height,
 weight, eyes color, and hair color/style on the upper right portion of
-your character sheet.  Decide on your character<squo/>s name, and fill that
+your character sheet.  Decide on your character&rsquo;s name, and fill that
 in too.  There is also a spot on the character sheet for your
 name.  Now you can move on to the details of your character.</text>
     </section>
@@ -359,7 +364,7 @@ characteristics of any given character.  They are:</text>
           <row>
             <cell>BLD</cell>
             <cell>Build</cell>
-            <cell>the toughness and durability of your body, stamina, <dquo>guts</dquo></cell>
+            <cell>the toughness and durability of your body, stamina, &ldquo;guts&rdquo;</cell>
           </row>
           <row>
             <cell>INT</cell>
@@ -374,7 +379,7 @@ characteristics of any given character.  They are:</text>
           <row>
             <cell>WIL</cell>
             <cell>Willpower</cell>
-            <cell>strength of the mind, ability to `stick it out<squo/> when things get tough</cell>
+            <cell>strength of the mind, ability to &lsquo;stick it out&rsquo; when things get tough</cell>
           </row>
           <row>
             <cell>CHA</cell>
@@ -412,8 +417,8 @@ skill section later on). However, the final value for the attribute
   such a character would probably not be adventuring!</note>
       <note>If the
   GM deems it OK, then you may reduce an attribute below 8, but you
-  get NO benefits (you wouldn<squo/>t get points in another attribute for
-  example).  Why would you do this?  Simple, it<squo/>s in your character
+  get NO benefits (you wouldn&rsquo;t get points in another attribute for
+  example).  Why would you do this?  Simple, it&rsquo;s in your character
   concept.  Would a 6-year-old child have an 8 STR?  Not likely.</note>
       <text>When recording your attributes on the character sheet, record the number of
 Attribute Points you spent on that attribute, this will help you when you wish
@@ -428,7 +433,7 @@ for increasing your attributes later on.</text>
     </section>
     <section>
       <title>Sub-Attributes</title>
-      <text>There are a number of <dquo>sub-attributes</dquo> that rely on your attributes to
+      <text>There are a number of &ldquo;sub-attributes&rdquo; that rely on your attributes to
 determine their value.  The names, description, and method for determining
 their value are listed below.</text>
       <figure>
@@ -440,10 +445,12 @@ their value are listed below.</text>
           </head>
           <row>
             <cell>Lift</cell>
-            <cell>This determines how much weight the character can lift in pounds, in a <dquo>good</dquo> situation, such as a weighted barbell or a trunk with handles.</cell>
+            <cell>This determines how much weight the character can lift in pounds, in a &ldquo;good&rdquo; situation, such as a weighted barbell or a trunk with handles.</cell>
             <cell>
               <math><frac><top>STR*STR*BLD</top><bot>10</bot></frac>+STR</math>
             </cell>
+          </row>
+          <row>
             <cell>Carry</cell>
             <cell>This is the amount of weight the character can carry about his/her person for a reasonable length of time.</cell>
             <cell>
@@ -470,7 +477,7 @@ their value are listed below.</text>
           </row>
           <row>
             <cell>Base Armor</cell>
-            <cell>Determines how resilient the character is to <dquo>odd</dquo> damage, such as lightning and fire.</cell>
+            <cell>Determines how resilient the character is to &ldquo;odd&rdquo; damage, such as lightning and fire.</cell>
             <cell>
               <math>
                 <frac>
@@ -482,7 +489,7 @@ their value are listed below.</text>
           </row>
           <row>
             <cell>Movement</cell>
-            <cell>How fast the character is in <dquo>squares per move-equivalent <action /> </dquo></cell>
+            <cell>How fast the character is in &ldquo;squares per move-equivalent <action /> &rdquo;</cell>
             <cell>
               <math>
                 <frac>
@@ -543,8 +550,8 @@ of Character Points, otherwise known as CP.  Talk with your GM about how many
 CP you should use to create your character with.  We have found that for a
 group of 3-4 players 125 CP is about right.  Typically the more players, the
 fewer CP characters should have.  This will keep the group from becoming too
-powerful<mdash/>unless this is the GM<squo/>s intent.</text>
-      <text>You will use your CP to <dquo>purchase</dquo> the remainder of your character.  The rest
+powerful<mdash/>unless this is the GM&rsquo;s intent.</text>
+      <text>You will use your CP to &ldquo;purchase&rdquo; the remainder of your character.  The rest
 of your character is broken into three categories where you will spend these
 points:</text>
       <itemized-list>
@@ -561,17 +568,17 @@ points:</text>
         <description-list><item><description>Mecha and Robotics</description><text>Robotic bodies, limbs, powered armor, and robotic suits</text></item><item><description>Augmentations</description><text>Cybernetics, genetic mutations, and chemical augmentations</text></item><item><description>Weapons</description><text/></item><item><description>Armor</description><text/></item><item><description>Equipment</description><text> &amp; other material possessions</text></item></description-list></text>
         </item>
       </itemized-list>
-      <note>IMPORTANT NOTE!<Apathy/> does not have <dquo>character classes</dquo> that are
+      <note><Apathy/> does not have &ldquo;character classes&rdquo; that are
 common to many role-playing systems.  The <Apathy/> system allows the player
 to decide every detail pertaining to his character, rather than being stuck
-with a <dquo>default</dquo> set of abilities and skills.  It is up to the player to use
+with a &ldquo;default&rdquo; set of abilities and skills.  It is up to the player to use
 his CP to develop a well-rounded character.  Note that there are NO skills
-that come <dquo>free.</dquo>  If your character is literate, then that skill needs
+that come &ldquo;free.&rdquo;  If your character is literate, then that skill needs
 to be purchased.  Know how to drive a car?  Buy the skill.</note>
     </section>
     <section>
       <title>Increasing Attributes (optional)</title>
-      <text>If your attributes aren<squo/>t quite where you desire, you will need to get more
+      <text>If your attributes aren&rsquo;t quite where you desire, you will need to get more
 Attribute Points so you can purchase a better attribute.  Each Attribute Point
 costs 1 Character Point.  Once you purchase the number of Attribute Points you
 want, just look at the table found in the Attributes section above to see
@@ -599,7 +606,7 @@ and Level.</text>
     <text>The rank determines how hard a skill is to learn.  Higher the rank, the more
 time and CP it will take to get better at it.  Rank 1 skills are the simplest
 and easiest to learn.  Skills that are more difficult have higher ranks.  Rank
-can also be thought of as the <dquo>cost</dquo> or <dquo>price</dquo> of a skill.</text>
+can also be thought of as the &ldquo;cost&rdquo; or &ldquo;price&rdquo; of a skill.</text>
     <text>An associated attribute tells you what attribute is used in the skill roll.
 This is the attribute that is used along with any particular skill.  This is
 discussed in more detail below.</text>
@@ -608,10 +615,10 @@ encompasses.  The things listed are not the only things available under that
 skill, but just some of the more common applications of the skill.  If you have
 a question, ask your GM about his take on a particular skill.</text>
     <text>Level is how good your particular character is at the skill. You will use CP
-to purchase levels in a skill, which is discussed below.  If you don<squo/>t know a
-skill at all, you have Level 0 in that skill<mdash/>meaning you don<squo/>t know anything
+to purchase levels in a skill, which is discussed below.  If you don&rsquo;t know a
+skill at all, you have Level 0 in that skill<mdash/>meaning you don&rsquo;t know anything
 about it.  The more you know about the skill, the higher your level.
-This is often abbreviated as <dquo>Lvl</dquo> (alt. <dquo>LVL</dquo>).  You must purchase your
+This is often abbreviated as &ldquo;Lvl&rdquo; (alt. &ldquo;LVL&rdquo;).  You must purchase your
 skill levels with CP.  Below is a simple chart indicating what different levels
 correspond to:</text>
     <figure>
@@ -720,10 +727,10 @@ rank.</text>
       <caption>CP cost of Desired Level, precomputed</caption>
     </figure>
     <text>See the trend?</text>
-    <text>If not, here<squo/>s yet another way to look at purchasing skills.</text>
+    <text>If not, here&rsquo;s yet another way to look at purchasing skills.</text>
     <text>To get level 1 of a skill, you must spend the Rank in CP.  To get to the next
 level, add the rank of the skill to the amount of CP you spent the last time you
-increase the skill (and just that last increase, not the total amount you<squo/>ve spent
+increase the skill (and just that last increase, not the total amount you&rsquo;ve spent
 on the skill) and that is the amount that you need to spend.</text>
     <example>
       <title>Computing Skill Cost</title>
@@ -734,7 +741,7 @@ I would need to spend
 the amount I spent on the last level increase (2 CP), to get the new cost, in
 this case I would need to spend a total of 4 CP (rank of 2 + 2 CP from last
 purchase).  So now the total amount I have spent on this skill is 6 CP.  Lets say
-I<squo/>m not happy with my Lvl 2 shield skill, and wish to upgrade it to level 3.
+I&rsquo;m not happy with my Lvl 2 shield skill, and wish to upgrade it to level 3.
 I would again take the rank (2) and add it to the amount I spent on the last
 increase (4) to get the number of CP I must spend to upgrade the skill.  In this
 case, I must spend an additional 6 CP.  Therefore, to get a level 3 shield skill
@@ -749,7 +756,7 @@ number from the lower one.  A more complete version of the above table can be
 found at the end of this manual.</text>
     <text>Once you are in game and earning experience, you can increase the level of a
 skill you currently have at least one level in by paying the appropriate CP
-cost.  If you wish to learn the first level of a skill you don<squo/>t have yet, it
+cost.  If you wish to learn the first level of a skill you don&rsquo;t have yet, it
 takes a number of weeks of intense studying equal to the rank of the skill.</text>
     <section>
       <title>Skill Specialization (optional)</title>
@@ -771,15 +778,15 @@ However, if he had to make a History roll about another kind of history, he
 would only roll 3 dice, and be at a -4 to his roll.</text>
         </example>
         <text>Note that you can choose to buy a particular skill more than once with different
-specialties, if you feel like it.  When this happens the roll for <dquo>outside
-of specialty</dquo> skill checks is the highest of the skill levels -4 +1 for each
+specialties, if you feel like it.  When this happens the roll for &ldquo;outside
+of specialty&rdquo; skill checks is the highest of the skill levels -4 +1 for each
 skill beyond the first.</text>
         <example>
           <title>Chemistry&rarr;WMD</title>
           <text>Dr. Klo<overbrace>tz</overbrace>enstein is a scientist.
 He has LVL 3 Chemistry with a specialty in
 Chemical weapons and poisons.  As well, he has LVL 4 Chemistry with a
-specialization in the chemistry of explosives.  Dr. Klotzenstein<squo/>s rolls are
+specialization in the chemistry of explosives.  Dr. Klotzenstein&rsquo;s rolls are
 as follows:
 
     <itemized-list><item><text>For Weapons/poisons: 4 dice</text></item><item><text>For Explosives: 5 dice</text></item><item><text>For Non-specialty rolls, 5 dice -3.</text></item></itemized-list></text>
@@ -792,10 +799,10 @@ to see which skills you think are appropriate and which ones are not.</text>
         <title>Specialization applied to Weapon skills</title>
         <text>It is also possible to specialize in weapon skills.  If a character has a
 specialized weapon skill that means that he is especially proficient with a
-very specific type of weapon.  When wielding a weapon that matches a character<squo/>s
+very specific type of weapon.  When wielding a weapon that matches a character&rsquo;s
 specialty, that character receives +1 LVL to the skill.  This bonus applies to
 attack (strike) rolls, and defensive rolls (parry), if applicable.  When using
-a weapon that is outside the character<squo/>s specialty, the character is at -1 LVL.
+a weapon that is outside the character&rsquo;s specialty, the character is at -1 LVL.
 Note that Weapon skill specialization does NOT affect damage rolls.</text>
         <text>Specializing in a weapons skill costs 3 CP in addition to the normal cost of the
 skill. Specializing can be applied to all weapon proficiency type skills and
@@ -805,7 +812,7 @@ the shield skill.</text>
           <text>Bj<struck>o</struck>rgen
 is a warrior with a liking for the Nordic War Axe.
 He has the skill
-<dquo>Archaic Weapons: Axes</dquo> at level 3.  As well, he is specialized in the Nordic
+&ldquo;Archaic Weapons: Axes&rdquo; at level 3.  As well, he is specialized in the Nordic
 War Axe.  The total skill cost is 9 CP.  That is 6 CP for Level 3 in a Rank 1
 skill, Plus 3 CP from the specialization.  When welding a Genuine Nordic War
 Axe<trademark/> in combat, Gunnar has 4 dice.  However, when using any other
@@ -837,7 +844,7 @@ you roll a die when playing <Apathy/>, you will use one of these sets of rules.<
       <text>Attribute checks are required anytime the GM wants to see if you did something
 solely based on an attribute.  They are used whenever a player wants their 
 character to do something tricky.  Attribute checks are purely based on a 
-character<squo/>s core attributes.  They are completely separate from skills.  If a 
+character&rsquo;s core attributes.  They are completely separate from skills.  If a 
 player needs to do something based on a particular skill, then see the skill 
 roll section below.</text>
       <example>
@@ -889,24 +896,24 @@ declares that a contest of strength will resolve who manages to gain
 possession of the rifle.  The GM rolls for the solider (a three) and 
 Douglas rolls a 1.  The enemy soldier has a total of 15, and Douglas 
 has 14.  Therefore, the enemy soldier wrestles the rifle out of
-Douglas<squo/>s hands.</text>
+Douglas&rsquo;s hands.</text>
       </example>
     </section>
     <section>
       <title>Skill Rolls</title>
       <text>Skill rollsare used whenever a player wants to use one of his
-character<squo/>s skills.  They are also used whenever two characters are competing
+character&rsquo;s skills.  They are also used whenever two characters are competing
 at something (Contest of skills) related to a skill. Skill rolls are also used
-<dquo>to strike</dquo> or <dquo>to defend</dquo> in combat.</text>
+&ldquo;to strike&rdquo; or &ldquo;to defend&rdquo; in combat.</text>
       <text>To determine if you are successful in performing a skill, roll a number of D20s 
 equal to the Level you have purchased the skill in.  To each die, add 
 your 
 current attribute referenced by the associated attribute value of the skill.  
 Each time a die with this value added to it reaches 25 or above, this is called 
 a success.  If you have at least one success, you successfully performed the 
-skill.  Rolling a <dquo>20</dquo> on a die will give you +1 successes to however many 
+skill.  Rolling a &ldquo;20&rdquo; on a die will give you +1 successes to however many 
 you rolled normally.  Note that this makes it possible to have more successes 
-than you have levels in a given skill.  Likewise, a roll of <dquo>1</dquo> is -1 
+than you have levels in a given skill.  Likewise, a roll of &ldquo;1&rdquo; is -1 
 successes to your total.  If you have negative successes (caused by rolling 
 more 1s than successes) then you have a critical failure!  In the case of a 
 critical failure the GM will determine what (negative) outcome happens!</text>
@@ -934,7 +941,7 @@ critical failure the GM will determine what (negative) outcome happens!</text>
           </row>
           <row>
             <cell>Deception</cell>
-            <cell>you are caught <dquo>red handed</dquo> in a blatant lie</cell>
+            <cell>you are caught &ldquo;red handed&rdquo; in a blatant lie</cell>
           </row>
           <row>
             <cell>Medicine</cell>
@@ -958,7 +965,7 @@ success.</text>
 matter how high 
 your attribute or bonuses to succeed might be<mdash/>is 20.</text>
       <text>Also, if you are doing something simple with respect to your skill level 
-then you don<squo/>t have to roll dice at all.  It<squo/>s assumed that you succeed 
+then you don&rsquo;t have to roll dice at all.  It&rsquo;s assumed that you succeed 
 examples.</text>
       <example>
         <title>Lookup Internt Address</title>
@@ -993,29 +1000,29 @@ has a level 2 in that skill.  Furthermore, the GM determines that since the car
 is in really bad shape, that Chris has a -3 to his roll.  Chris has a 12 DEX.  
 Chris rolls his dice and gets a 1 and a 16. (Chris is rolling two dice because 
 he has a level 2 skill)  Adding his DEX to those rolls, Chris now has a 13 and 
-a 28.  The 13 isn<squo/>t 25 or above, so it fails, but the 28 succeeds.  So far, 
-Chris has 1 success.  However, the <dquo>1</dquo> Chris rolled is -1 success.  So, this 
-gives Chris a total of 0 successes<mdash/>meaning the car didn<squo/>t get fixed.</text>
+a 28.  The 13 isn&rsquo;t 25 or above, so it fails, but the 28 succeeds.  So far, 
+Chris has 1 success.  However, the &ldquo;1&rdquo; Chris rolled is -1 success.  So, this 
+gives Chris a total of 0 successes<mdash/>meaning the car didn&rsquo;t get fixed.</text>
       </example>
       <example>
         <title>Shoot a Large Robot</title>
         <text>Billy is
 a cybernetic gunfighter with a 22 DEX.  He is trying to shoot an 
 enemy robot.  The GM determines that Billy gets a bonus of +3 to shoot the 
-robot because it<squo/>s so large.  Normally, Billy would roll his dice and add +25 
+robot because it&rsquo;s so large.  Normally, Billy would roll his dice and add +25 
 to each one:  +22 from his DEX and +3 from the <size /> bonus.  However, this gets 
 capped at +20.  Thus, Billy only gets to add +20 to each of his dice.</text>
       </example>
       <example>
         <title>Called Shot to Arm</title>
         <text>Billy is still fighting the same
-giant robot.  This time, he<squo/>s trying to 
+giant robot.  This time, he&rsquo;s trying to 
 make a called shot and shoot the robot in the arm.  The GM determines that 
-Billy gets a +3 bonus due to the robot<squo/>s <size />, but also a -4 to strike because 
+Billy gets a +3 bonus due to the robot&rsquo;s <size />, but also a -4 to strike because 
 of the called shot to the arm.  Thus, Billy adds up his bonuses:  +22 from DEX 
 +3 from <size /> and -4 for the called shot.  This adds up to +21, but the bonus 
-is capped at +20.  Again, Billy adds +20 to his dice.  Notice that the <dquo>+20 
-cap</dquo> is applied AFTER all the bonuses and negatives are added up.</text>
+is capped at +20.  Again, Billy adds +20 to his dice.  Notice that the &ldquo;+20 
+cap&rdquo; is applied AFTER all the bonuses and negatives are added up.</text>
       </example>
     </section>
     <section>
@@ -1032,47 +1039,47 @@ than the defender.</text>
       <example>
         <title>Tom and the Shopkeeper in a Contest</title>
         <text>Tom is attempting 
-to purchase an expensive suit of armor, and doesn<squo/>t want to pay 
+to purchase an expensive suit of armor, and doesn&rsquo;t want to pay 
 full price.  So he is attempting to bring the price down by using 
 the Bargaining skill.  The shopkeeper also has the Bargaining skill, 
 so a contest of skills ensues.  Tom has a skill level of 3, and a 
 WIS of 13 (the associated attribute for Bargaining); the shopkeeper 
-has a level 4 Bargaining (he<squo/>s been at it longer than Tom has), 
+has a level 4 Bargaining (he&rsquo;s been at it longer than Tom has), 
 and a WIS of 10.
 
-Tom rolls 3 dice and gets a <dquo>14</dquo>, <dquo>20</dquo>, and a <dquo>3</dquo>.  Tom now 
-adds his wisdom (13) to each of these.  The GM didn<squo/>t give any 
+Tom rolls 3 dice and gets a &ldquo;14&rdquo;, &ldquo;20&rdquo;, and a &ldquo;3&rdquo;.  Tom now 
+adds his wisdom (13) to each of these.  The GM didn&rsquo;t give any 
 negatives or bonuses, so that is all that gets added.  After adding, 
 the totals are 27, 33, and 16.  Two of these are 25 or higher, so Tom 
 has two successes so far.  Note that Tom rolled one 20<mdash/>which gives him 
 an additional success.  Tom has a total of three successes.
  
 The shopkeeper rolls four dice (remember, he has a level 4 Bargaining), 
-and gets a <dquo>1</dquo>, <dquo>12</dquo>, <dquo>15<squo/></dquo>, and an <dquo>18</dquo>.  After adding the 
-shopkeeper<squo/>s WIS of 10, we get the following rolls: <dquo>11</dquo>, <dquo>22</dquo>, 
-<dquo>25</dquo>, and <dquo>28</dquo>.  The 25 and 28 are both successes, but the 
-<dquo>1</dquo> is a -1 success, so the shopkeeper has 1 total success.
+and gets a &ldquo;1&rdquo;, &ldquo;12&rdquo;, &ldquo;15&rsquo;&rdquo;, and an &ldquo;18&rdquo;.  After adding the 
+shopkeeper&rsquo;s WIS of 10, we get the following rolls: &ldquo;11&rdquo;, &ldquo;22&rdquo;, 
+&ldquo;25&rdquo;, and &ldquo;28&rdquo;.  The 25 and 28 are both successes, but the 
+&ldquo;1&rdquo; is a -1 success, so the shopkeeper has 1 total success.
 
 Tom has 3 successes, and the shopkeeper has 1.  Since Tom initiated 
-the bargaining, and has more successes than the <dquo>defender</dquo>, he is 
+the bargaining, and has more successes than the &ldquo;defender&rdquo;, he is 
 successful in his attempt to reduce the price of the armor.  How
 much is determined by the GM, but it should be commensurate with 
 the number of successes that Tom beat the shopkeeper by.</text>
       </example>
       <text>The winner of a contest of skills is whomever rolled the highest 
 number of successes.  The margin of success is based on the difference 
-between the two rolls.  For example, if the <dquo>winner</dquo> had only 1 more 
-success than the <dquo>loser</dquo>, then the contest was close.  However, if 
-the <dquo>winner</dquo> had three more successes than the loser, then it was a 
+between the two rolls.  For example, if the &ldquo;winner&rdquo; had only 1 more 
+success than the &ldquo;loser&rdquo;, then the contest was close.  However, if 
+the &ldquo;winner&rdquo; had three more successes than the loser, then it was a 
 decisive victory!</text>
       <text>Ties are left up to the GM to resolve.  The suggested protocol is as follows:</text>
       <text>If the tie occurred on a contest that entails a single past event or 
-is something that is <dquo>judged</dquo> by outsiders, then the winner is the 
+is something that is &ldquo;judged&rdquo; by outsiders, then the winner is the 
 character with the higher associated attribute.  (Example: who can 
 paint a better picture, etc.)</text>
       <text>If the contest entails an ongoing event (such as the haggling over a 
 suit of armor detailed above) then it is assumed that the competitors 
-<dquo>keep at it</dquo> and a second roll is in order.</text>
+&ldquo;keep at it&rdquo; and a second roll is in order.</text>
       <text>The rules for combat are slightly more complicated; see below.</text>
     </section>
     <section>
@@ -1081,7 +1088,7 @@ suit of armor detailed above) then it is assumed that the competitors
 other skills that are somehow related to (or are similar to) the 
 skill to be rolled, that character is generally entitled to a bonus 
 to his or her roll.  The exact terms of the bonus, including what 
-skills qualify as <dquo>related</dquo>, is determined by the GM on a case-by-case 
+skills qualify as &ldquo;related&rdquo;, is determined by the GM on a case-by-case 
 basis.  The general rule is that each level of a related skill conveys 
 a +1 to the roll.  The maximum possible bonus from related skills is 
 +5, regardless of the circumstances.</text>
@@ -1092,10 +1099,10 @@ electronic device.  The GM asks Paul to roll his Electronics skill,
 which Paul has at lvl 4.  Paul mentions that he also knows the 
 skills Electrical Engineering: 2, Electrician: 3, Mechanic: General: 3, 
 and Communications/Telco: 3.  The GM determines that since this device 
-is purely electronic, Paul<squo/>s Mechanic skill is of no use.  As well, the 
+is purely electronic, Paul&rsquo;s Mechanic skill is of no use.  As well, the 
 GM decides that since this device is unrelated to communications, 
-Paul<squo/>s Communications skill does not apply either.  However, the GM 
-decides that Paul<squo/>s Electrical Engineering and Electrician skills 
+Paul&rsquo;s Communications skill does not apply either.  However, the GM 
+decides that Paul&rsquo;s Electrical Engineering and Electrician skills 
 are relevant.  The GM assigns Paul a bonus of +5 to his roll from his 
 levels in those related skills.</text>
       </example>
@@ -1116,10 +1123,10 @@ rollover happens, re-roll that die, without any bonus, and add its
 value to the total.  If the roll again has the highest value on the 
 die, then another rollover happens.  This keeps going until the 
 highest value on the die is not rolled.  Remember, after 
-the first roll, the bonus is not applied; it<squo/>s just the 
+the first roll, the bonus is not applied; it&rsquo;s just the 
 raw die roll.</text>
-      <text>This may sound confusing, so we<squo/>ll work with the example from above.
-Let<squo/>s say you have to roll 3D4+1.  You get some four-sided dice and 
+      <text>This may sound confusing, so we&rsquo;ll work with the example from above.
+Let&rsquo;s say you have to roll 3D4+1.  You get some four-sided dice and 
 roll three of them.  Suppose the results are: 1, 3, and a 4.  After 
 adding the +1 (from the die bonus), we now have: 2, 4, and 5.  We add 
 all the totals up and get 11.  Now we have to deal with the rollovers.
@@ -1156,7 +1163,7 @@ The total using the above numbers would be 24. </text>
   <section>
     <title>Combat Sequence &amp; Initiative</title>
     <text>Combat is based on a system of <italics>Rounds</italics>, <italics>Turns</italics>, and
-<italics>Actions</italics>.  A <dquo>round</dquo> lasts about five seconds.  It is the
+<italics>Actions</italics>.  A &ldquo;round&rdquo; lasts about five seconds.  It is the
 length of time in which all combatants have done something.  Each
 round is broken down into <action plural="yes" />.  An <action /> lasts about 1 second.
 Each combatant gets one or more <action plural="yes" /> during each round.  When all
@@ -1166,7 +1173,7 @@ new one starts.</text>
 available <action plural="yes" />.  Almost everything that you do of significance
 during your turn consumes an <action />   Simple examples of what can be
 done in an <action /> are shooting a gun, swing a sword, moving, or using
-a mystical ability.  Keep in mind that a lot of <dquo>boring</dquo> combat
+a mystical ability.  Keep in mind that a lot of &ldquo;boring&rdquo; combat
 stuff also takes up <action plural="yes" />: reloading your weapon, moving around,
 ducking behind cover, or taking an item out of your pack.  Some things
 that you will want to do will consume multiple <action plural="yes" /> per turn.</text>
@@ -1186,19 +1193,19 @@ apply initiative bonuses or penalties depending on game situations,
 such as surprise attacks or ambushes.</text>
     <note>Most characters will have 3 <action plural="yes" /> per turn.  All 
 three <action plural="yes" /> are 
-taken at the same time, on that character<squo/>s initiative.</note>
+taken at the same time, on that character&rsquo;s initiative.</note>
     <example>
-      <title>Tom<squo/>s Turn in Combat</title>
+      <title>Tom&rsquo;s Turn in Combat</title>
       <text>Tom is in combat.
 Tom has three <action plural="yes" /> and he rolled an 11 as his 
-initiative.  When it<squo/>s Tom<squo/>s turn in combat (11), he takes all three <action plural="yes" /> at 
+initiative.  When it&rsquo;s Tom&rsquo;s turn in combat (11), he takes all three <action plural="yes" /> at 
 that time.</text>
     </example>
     <text>The character that has the highest initiative goes first, and then the 
 character with the next highest initiative takes their turn, and so 
 forth down the line until all combatants have taken a turn.</text>
     <text>Once all turns are over, the current round of combat is over.  It then 
-restarts with everyone<squo/>s initiative being the same as it was in the previous 
+restarts with everyone&rsquo;s initiative being the same as it was in the previous 
 round.  This progression continues until combat is over.  If the combatants 
 change significantly during combat<mdash/>for example, if new characters show up on 
 the scene<mdash/>the GM might want to make everyone re-roll their initiative.  If 
@@ -1206,7 +1213,7 @@ something happens during combat that changes how many <action plural="yes" /> th
 have, the GM should ask that initiative be re-rolled.</text>
     <text>Some things that you might want to do will take up multiple <action plural="yes" />.  A common 
 example of this is spell casting, where many spells take several <action plural="yes" /> to 
-cast.  If you do this, you may need to drag this type of <action /> across multiple  <action plural="yes" /> or even multiple turns.  For example, let<squo/>s say that you want to cast 
+cast.  If you do this, you may need to drag this type of <action /> across multiple  <action plural="yes" /> or even multiple turns.  For example, let&rsquo;s say that you want to cast 
 a spell that takes 3 <action plural="yes" />.  You can use your first <action /> to start casting, 
 and then use your second and third <action plural="yes" /> to finish casting the spell.   At 
 any time you may cancel (stop casting) the spell or ability with no penalty.  
@@ -1222,10 +1229,10 @@ using items, etc.  Undoubtedly,
 many of your <action plural="yes" /> will be used for things 
 other than attacking.</note>
     <text>When in combat, some characters may want to delay their <action /> until 
-later.  A character can always choose to <dquo>act later</dquo> in combat.  
+later.  A character can always choose to &ldquo;act later&rdquo; in combat.  
 When doing so the player states what new initiative number he 
 wishes to act on.  The new initiative must be lower than his 
-current initiative number.  Once a character<squo/>s initiative is 
+current initiative number.  Once a character&rsquo;s initiative is 
 delayed it remains delayed (though it could be delayed even further).  
 That characters initiative remains at the new, lower, number for the 
 remainder of combat, unless the GM asks all players to re-roll 
@@ -1233,53 +1240,53 @@ initiative.  <action plural="yes" /> cannot be split between different initiativ
 numbers.  So, a character must either take all his <action plural="yes" /> at his 
 normal initiative, or he must delay all his <action plural="yes" /> to a later initiative.</text>
     <example>
-      <title>Tom<squo/>s initiative</title>
-      <text>Tom<squo/>s initiative roll is an 18.  He 
+      <title>Tom&rsquo;s initiative</title>
+      <text>Tom&rsquo;s initiative roll is an 18.  He 
 and his fellow players were cornered by ogres for whom the GM has 
 secretly rolled initiative.  Tom has the highest initiative roll, so 
-he goes first.  Tom isn<squo/>t exactly sure what to do, so he delays 
-his initiative until <dquo>10</dquo>.  The GM then resumes combat as normal, 
+he goes first.  Tom isn&rsquo;t exactly sure what to do, so he delays 
+his initiative until &ldquo;10&rdquo;.  The GM then resumes combat as normal, 
 with the next highest initiative going first.  Tom has initiative 10 
 for the remainder of combat.</text>
     </example>
     <text>Some game effects last a certain number of turns, or have a certain 
 effect each turn.  These effects are counted and take place on 
-the affected character<squo/>s turn.  They only are counted and occur 
+the affected character&rsquo;s turn.  They only are counted and occur 
 if the character begins that turn with the effect in place.  
-These effects occur at the beginning of that character<squo/>s turn 
+These effects occur at the beginning of that character&rsquo;s turn 
 in a given round.  These effects are automatic and do not consume 
 any time from the character.  Resolve all effects before that 
 character takes any <action plural="yes" />. </text>
     <example>
-      <title>Lucy<squo/>s turn in combat</title>
-      <text>It is Lucy<squo/>s turn in 
+      <title>Lucy&rsquo;s turn in combat</title>
+      <text>It is Lucy&rsquo;s turn in 
 combat and she casts Regeneration on herself.  The effect of the 
 spell is that each turn she gains 1D4+1 <hit-points />.  Now the spell 
 has taken effect, but she does not gain any HP yet, nor does this 
 turn count against the duration of the spell.  Now all other 
-combatants take their turns.  When it is again Lucy<squo/>s 
+combatants take their turns.  When it is again Lucy&rsquo;s 
 turn (next round) she gains her 1D4+1 HP, just before 
 her first <action />   This is also considered one turn out of the 
-spell<squo/>s duration.</text>
+spell&rsquo;s duration.</text>
     </example>
-    <text>It is possible to <dquo>hold an <action />  </dquo> for later.  Holding an  <action /> means that the character is maintaining his current 
+    <text>It is possible to &ldquo;hold an <action />  &rdquo; for later.  Holding an  <action /> means that the character is maintaining his current 
 initiative number, but is saving an <action />  for a specific 
 situation.  A character may only hold one <action />  at a time.  
 Furthermore, you must declare what your held <action />  will be, and 
 under what circumstances.  Held <action plural="yes" /> are resolved as soon 
-as their conditions are met.  Held <action plural="yes" /> <dquo>expire</dquo> if their 
+as their conditions are met.  Held <action plural="yes" /> &ldquo;expire&rdquo; if their 
 declared conditions never occur at the beginning of your next turn.</text>
     <example>
       <title>Tom holds an <action /> </title>
-      <text>Tom<squo/>s initiative is 10.  During 
+      <text>Tom&rsquo;s initiative is 10.  During 
 his turn he spends one <action /> to move behind some cover and another 
 to ready his longbow.  Tom declares that he is going to hold his 
-final <action />   <dquo>I am going to cover the hallway with my 
-bow.  If I see a goblin come out of the hallway, I<squo/>m going to 
-shoot at it</dquo>.  If a goblin does indeed come out of the hallway (and 
+final <action />   &ldquo;I am going to cover the hallway with my 
+bow.  If I see a goblin come out of the hallway, I&rsquo;m going to 
+shoot at it&rdquo;.  If a goblin does indeed come out of the hallway (and 
 Tom can see this), then Tom may immediately take his held <action /> to 
 fire an arrow at it.  However, if no goblin comes down the 
-hallway before Tom<squo/>s next turn, then the held <action />  is wasted.</text>
+hallway before Tom&rsquo;s next turn, then the held <action />  is wasted.</text>
     </example>
     <text>Notes for held <action plural="yes" />:</text>
     <numbered-list>
@@ -1302,41 +1309,41 @@ in one <action /> (including attacking, moving, using a magical ability, etc.)</
     <section>
       <title>Weapons &amp; Equipment</title>
       <text>Most characters will carry equipment in combat.  This usually includes
-weapons and armor.  There are no <dquo>class</dquo> restrictions for weapons or
+weapons and armor.  There are no &ldquo;class&rdquo; restrictions for weapons or
 armor.  Any character can wear any armor and wield any weapon,
 provided that the character has the appropriate attributes and skills.</text>
       <text>Weapons have a minimum strength requirement (MSR).  The MSR
 indicates what strength is required of the character to properly wield
-a given weapon.  If the character<squo/>s strength is <italics>less</italics> than the
+a given weapon.  If the character&rsquo;s strength is <italics>less</italics> than the
 MSR, then the character has -1 to strike and [-1] damage for each
 point of strength difference.</text>
       <text>The raw damage bonus (RDB) is calculated by subtracting 8 from
-the wielder<squo/>s Str. The RDB is added as raw damage to
-total of the weapon<squo/>s damage. However, all weapons have a
+the wielder&rsquo;s Str. The RDB is added as raw damage to
+total of the weapon&rsquo;s damage. However, all weapons have a
 maximum strength bonus (MSB); if the RDB is greater than the
 MSB, then the MSB is used as the RDB instead.</text>
       <example>
         <title>MSR for Bosk</title>
         <text>Bosk has a STR of 17 and is brandishing a
-  Hercules Club (3D6C, MSR: 12, MSB: 13).  Because Bosk<squo/>s
+  Hercules Club (3D6C, MSR: 12, MSB: 13).  Because Bosk&rsquo;s
   Str is higher than the minimum strength requirement of
   the Hercules Club (12), he is entitled to a damage bonus.  Subtract
-  8 from Bosk<squo/>s Str score to calculate his bonus: <math>17 - 8 =
+  8 from Bosk&rsquo;s Str score to calculate his bonus: <math>17 - 8 =
   9</math>. So this means that Bosk deals 9+3D6 C damage.</text>
       </example>
       <example>
         <title>Bosk with Knife</title>
         <text>Suppose Bosk pulls out a long knife
-  (1D6+1 S, MSR: 8; MSB: 4).  Bosk<squo/>s Str is significantly
+  (1D6+1 S, MSR: 8; MSB: 4).  Bosk&rsquo;s Str is significantly
   higher than the minimum required for the weapon.  Calculating his
   theoretical bonus, we can write: 17 - 8 = 9.  At first glance, it
   appears that Bosk is entitled to a [+9] bonus.  However, the maximum
-  strength bonus for the long knife is 4. Therefore, Bosk<squo/>s damage
+  strength bonus for the long knife is 4. Therefore, Bosk&rsquo;s damage
   roll would be 4+1D6+1.</text>
       </example>
       <text>Bows never grant a damage bonus to characters with higher than 
 required STR.  However, it is possible to purchase stiffer (stronger) 
-bows that can take advantage of a character<squo/>s higher STR score.  
+bows that can take advantage of a character&rsquo;s higher STR score.  
 High-draw bows cost 20% more for every 1 STR point added to the 
 MSR.  For each point, add [+1] damage.  This can be stacked.  So, a 
 +1 bow costs 20% extra, a +2 bow costs 40% extra, etc.  Note 
@@ -1363,7 +1370,7 @@ least one hand free when casting spells.
 Characters that use Faith magic must have a holy symbol in their 
 grasp when casting magic; this requires a free hand to hold.  
 Spellcasters are free to use two-handed weapons so long as they 
-aren<squo/>t wielding the weapon at the same time as they are 
+aren&rsquo;t wielding the weapon at the same time as they are 
 casting spells.  (Spellcasters can put away a weapon, cast magic 
 freely, and then draw their weapon again, though this takes time)</text>
       <text>All firearms are assumed to be 2-handed by default.  However, pistols 
@@ -1401,9 +1408,9 @@ separate <action plural="yes" />.</text>
         <item>
           <description>Two normal weapons</description>
           <text> When wielding two weapons the weapon in the
-  character<squo/>s <dquo>good</dquo> hand receives a -3 to strike and the weapon in
-  the character<squo/>s <dquo>off</dquo> hand receives a -6. Some characters can have
-  <dquo>even-more-offhand</dquo> weapons, such as a kick (or two), or literally
+  character&rsquo;s &ldquo;good&rdquo; hand receives a -3 to strike and the weapon in
+  the character&rsquo;s &ldquo;off&rdquo; hand receives a -6. Some characters can have
+  &ldquo;even-more-offhand&rdquo; weapons, such as a kick (or two), or literally
   having extra limbs. To calculate the negative to strike for wielding
   multiple weapons, first find the number of weapons being used, then
   order them (the strike order). The first weapon is at -3 to strike,
@@ -1413,7 +1420,7 @@ separate <action plural="yes" />.</text>
           <description>Paired weapons</description>
           <text>, or one normal weapon and one backup weapon:
   Some weapons are well suited to, or even designed for, use in the
-  <dquo>off</dquo> hand.  When using these weapons the penalty for the offhand
+  &ldquo;off&rdquo; hand.  When using these weapons the penalty for the offhand
   weapon is -3 as opposed to -6.  The penalty for the primary weapon
   remains -3.  Specifically, these combinations are:
 
@@ -1428,7 +1435,7 @@ separate <action plural="yes" />.</text>
         <item>
           <description>One normal weapon and a shield or item</description>
           <text> If the character is
-  wielding a 1-handed weapon in his <dquo>good</dquo> hand, and his other hand
+  wielding a 1-handed weapon in his &ldquo;good&rdquo; hand, and his other hand
   is carrying a shield, a non-weapon holy symbol, or a utility item
   then there is NO strike penalty at all.  For the purposes of this
   rule a utility item is something such as a torch, walking stick,
@@ -1438,9 +1445,9 @@ separate <action plural="yes" />.</text>
       </description-list>
       <text>If a character is wielding two weapons, he may always choose to attack
 with the main weapon only at no penalty.  In this case the weapon in
-his off hand is considered merely carried, and is not <dquo>ready</dquo> for
+his off hand is considered merely carried, and is not &ldquo;ready&rdquo; for
 combat. An attack with the off-hand weapon is always made with the
-full penalty, regardless of what the <dquo>main hand</dquo> is doing.</text>
+full penalty, regardless of what the &ldquo;main hand&rdquo; is doing.</text>
       <text>Note that the Ambidexterity skill from Martial Arts can reduce
 the dual-weapon penalty; and that the Multi-weapon Style skill
 allows the character to strike more than once during a single <action />  A different approach is the use of the Multitarget
@@ -1475,7 +1482,7 @@ opponent with a weapon (such as your fist or a sword), but it could
 also be the use of a supernatural ability, magic spell, or a modern
 device such as a gun.</text>
       <text>When you attack, you use one of your skills in an attempt to damage
-your opponent.  Normally, this will be a <dquo>basic attack</dquo> skill from
+your opponent.  Normally, this will be a &ldquo;basic attack&rdquo; skill from
 Martial Arts.  Any time you make an attack like this, you roll a
 Strike Roll.  Strike roll is just a special name for a
 skill roll in combat<mdash/>they work just like normal skill rolls.  To
@@ -1485,7 +1492,7 @@ your bastard sword), add your attribute and any bonuses or negatives.
 For each die that hits 25 or better, you have a success.  <note>If
   you have at least one success, you strike the target.</note>  Otherwise
 you miss your target.</text>
-      <text>Some attacks don<squo/>t require a skill roll.  This includes special
+      <text>Some attacks don&rsquo;t require a skill roll.  This includes special
 attacks that automatically hit your opponent (such as certain
 abilities from Martial Arts) as well as magical spells or supernatural
 powers that are auto-targeting.  For example, the magic spell
@@ -1529,7 +1536,7 @@ found in the Martial Arts section.</text>
         <item>
           <description>Block</description>
           <text> Blocking is putting a shield between you and an incoming
-  attack.  <note>Upon a successful block, a shield<squo/>s armor values
+  attack.  <note>Upon a successful block, a shield&rsquo;s armor values
     are added to any armor that you are currently wearing</note> (see
   below).  You can attempt to block any incoming attack that you are
   aware of.  Blocking can be used against melee attacks, missile
@@ -1549,12 +1556,12 @@ found in the Martial Arts section.</text>
   incoming attack.  By sidestepping, ducking, throwing yourself to the
   ground or similar <action /> you can avoid any attack completely and
   take no damage.  The Dodge skill is used for dodging.  On a
-  successful dodge the blow doesn<squo/>t hit, period.  However, dodge is a
+  successful dodge the blow doesn&rsquo;t hit, period.  However, dodge is a
   high rank skill, so most characters will not be very good at it.</text>
         </item>
       </description-list>
       <text>Now that you know what the types of defenses are, we are going to lump
-them together and call them <dquo>defense</dquo> for the sake of simplicity for
+them together and call them &ldquo;defense&rdquo; for the sake of simplicity for
 what is to follow.</text>
       <text>To defend against an attack, you must succeed at your defending skill
 roll.  And you must have MORE successes at the attacker had in his
@@ -1597,7 +1604,7 @@ weapon has a damage rating associated with it as well as a damage type
 (for example: a dagger is a 1D6 P weapon).  The damage rating is the
 amount of damage it will do, and the damage type reflects how the
 weapon deals its damage.</text>
-      <text>Here<squo/>s a key of the different damage types with abbreviations in
+      <text>Here&rsquo;s a key of the different damage types with abbreviations in
 parenthesis and what they are typically associated with:</text>
       <description-list>
         <item>
@@ -1608,14 +1615,14 @@ parenthesis and what they are typically associated with:</text>
   can protect against this type of damage.</text>
         </item>
         <item>
-          <description><slashing /> (S)</description>
+          <description>Slashing (S)</description>
           <text> using a cutting edge to slice the target creating
   a fairly shallow long cut within the target.  Most melee weapons
   such as knives and swords, as well as lasers deal <slashing /> damage.
   Armor can protect against this type of damage.</text>
         </item>
         <item>
-          <description><crushing /> (C)</description>
+          <description>Crushing (C)</description>
           <text> using a heavy blunt edge in an attempt to fracture
   or break the target.  This is typically the hardest damage to
   protect against, and as such, is a favorite type of damage for melee
@@ -1626,8 +1633,8 @@ parenthesis and what they are typically associated with:</text>
           <description>Undefined (U)</description>
           <text> using energy to cause damage within the target.
   This can include electricity, heat, magic, sickness and other
-  <dquo>odd</dquo> types of damage.  Normal armor cannot protect against this
-  type of damage.  Only your character<squo/>s <base-armor /> (BA) can protect
+  &ldquo;odd&rdquo; types of damage.  Normal armor cannot protect against this
+  type of damage.  Only your character&rsquo;s <base-armor /> (BA) can protect
   you from undefined damage.  Any time someone takes undefined damage
   he or she will always take at least one point of damage, regardless
   of the <base-armor />.</text>
@@ -1643,12 +1650,12 @@ parenthesis and what they are typically associated with:</text>
       <text>Consider the dagger again: 1D6 P</text>
       <text>This tells us that a strike from a Dagger deals 1D6 damage.  Also, we
 know that it deals piercing damage.</text>
-      <text>Ok, so now we<squo/>ve got our weapon<squo/>s damage rating and it<squo/>s damage type.
+      <text>Ok, so now we&rsquo;ve got our weapon&rsquo;s damage rating and it&rsquo;s damage type.
 Roll the given damage as described in the dice rolling section at the
 beginning of the rules section.  The higher the damage roll, the more
 severe the attack was upon the target.</text>
       <text>After the damage roll is determined, subtract that damage from the
-target<squo/>s <hit-points /> (HP).  Armor can reduce the damage taken, which
+target&rsquo;s <hit-points /> (HP).  Armor can reduce the damage taken, which
 brings us to<ellipsis/></text>
     </section>
     <section>
@@ -1671,7 +1678,7 @@ type of the weapon, from the damage amount.</text>
   had three successes.  Carlos attempts to parry and had only one
   success.  Since Carlos has fewer successes than the attacker, he
   fails to parry and takes full damage.  The GM rolls damage for the
-  bandit and determines that the bandit<squo/>s sword blow deals 8 damage.
+  bandit and determines that the bandit&rsquo;s sword blow deals 8 damage.
   Carlos is wearing soft leather armor, which has a P/S/C rating of
   2/3/0. We know the short sword dealt 8 damage.  But it is a <slashing />
   weapon (denoted by the S in the weapon damage), so the armor
@@ -1687,9 +1694,9 @@ type of the weapon, from the damage amount.</text>
   hit.  Lira wants to block and rolls her shield skill.  She has four
   successes on her skill roll.  This means that she successfully
   blocked the incoming attack with her shield.  The GM rolls damage
-  for the attack and gets 14 P.  (that<squo/>s a strong blow!)  Lira is
+  for the attack and gets 14 P.  (that&rsquo;s a strong blow!)  Lira is
   using a Splint Shield (P/S/C of 9/9/9) and is wearing Hard Leather
-  armor (3/4/1).  First, apply the damage against Lira<squo/>s shield.  Her
+  armor (3/4/1).  First, apply the damage against Lira&rsquo;s shield.  Her
   shield has an armor of 9 versus P.  This means that her shield stops
   9 points of the incoming damage.  However, since the spear blow
   dealt more damage than her shield has armor, the weapon continues
@@ -1703,22 +1710,22 @@ type of the weapon, from the damage amount.</text>
 two paragraphs are incredibly important, so pay attention!</text>
       <text>Weapons that deal undefined or <direct-damage /> (U or D damage) bypass
 all armor values.  Undefined damage can be protected against by your
-character<squo/>s <base-armor /> (BA) sub-attribute.  Just subtract the BA from
+character&rsquo;s <base-armor /> (BA) sub-attribute.  Just subtract the BA from
 the damage taken as if the BA was normal armor.  Note that <base-armor />
 is not used for protecting against anything but undefined damage!  A
 target will always lose at least one HP when hit with an attack that
 deals undefined damage.</text>
       <text><direct-damage /> cannot be protected against.  Not by normal armor, Base
-Armor, not anything.  It<squo/>s harsh, so be careful when on the receiving
+Armor, not anything.  It&rsquo;s harsh, so be careful when on the receiving
 end of something that deals D damage.  D damage is applied directly to
 your <hit-points />.</text>
       <section>
         <title>Armor Piercing</title>
-        <text>Some weapons have a note that says <dquo>AP</dquo> followed by some number.
+        <text>Some weapons have a note that says &ldquo;AP&rdquo; followed by some number.
 This kind of weapon has an unusual ability to pierce armor.  If an
-armored target is struck by a weapon with <dquo>AP</dquo>, the armor is reduced
+armored target is struck by a weapon with &ldquo;AP&rdquo;, the armor is reduced
 by the AP number for the purposes of damage calculation.  Note, that
-this cannot go negative.  If an <dquo>AP: 10</dquo> weapon strikes someone
+this cannot go negative.  If an &ldquo;AP: 10&rdquo; weapon strikes someone
 wearing 5 armor, then the armor is totally ignored.  It does not,
 however, go to -5.</text>
         <example>
@@ -1728,24 +1735,24 @@ however, go to -5.</text>
   strikes her opponent, and rolls 11 damage.  Her opponent has an
   armor of 7 versus <slashing /> damage.  First, deduct the AP from the
   armor: 7 armor - 5 AP = 2.  Then, deduct the armor from the damage
-  like normal: 11 damage - 2 armor = 9 damage.  Lira<squo/>s opponent takes
+  like normal: 11 damage - 2 armor = 9 damage.  Lira&rsquo;s opponent takes
   9 damage.
 
-  Consider the same situation as above, but assume that Lira<squo/>s
-  opponent<squo/>s armor is only a 3 versus <slashing />.  First, deduct the AP
+  Consider the same situation as above, but assume that Lira&rsquo;s
+  opponent&rsquo;s armor is only a 3 versus <slashing />.  First, deduct the AP
   form the armor: 3 armor - 5 AP = -2.  However, this cannot be
   negative, so we cap it at zero.  Now, deduct the result from the
-  damage: 11 damage - 0 = 11.  Lira<squo/>s opponent takes all 11 damage.</text>
+  damage: 11 damage - 0 = 11.  Lira&rsquo;s opponent takes all 11 damage.</text>
         </example>
         <text>AP is effective against armored targets, but it does nothing against
-unarmored targets.  Note, that most weapons with AP don<squo/>t deal very
+unarmored targets.  Note, that most weapons with AP don&rsquo;t deal very
 much damage.  It is usually a good idea to use AP weapons versus
-armored targets only, and use <dquo>normal</dquo> weapons versus unarmored
+armored targets only, and use &ldquo;normal&rdquo; weapons versus unarmored
 targets.</text>
       </section>
     </section>
     <section>
-      <title><hit-points /></title>
+      <title>Hit Points</title>
       <text><hit-points /> are numbers used to represent how injured or healthy a
 character is.  A character will have TWO Hit Point numbers.  Your
 maximum <hit-points /> determines how tough your character is at full
@@ -2006,29 +2013,29 @@ blood supply found in the torso.
   with values of 4/3/7 would have 4 points of protection vs. Piercing, 
   3 vs. Slashing, and 7 vs. crushing damage.</item>
     <item> Armor does not protect from Undefined (U) or Direct (D).</item>
-    <item> A character<squo />s Base Armor is the only thing that can protect vs. 
+    <item> A character&rsquo;s Base Armor is the only thing that can protect vs. 
   U damage.  Nothing can protect against D damage.</item>
     <item> All non D/U damage has an associated damage type to is; either P, 
   S, or C.  Subtract all matching armor values of the character from 
   the damage being done.  If the damage value is still above 0, then 
   the character takes that amount of damage.</item>
     <item> A weapon with an armor piercing (AP) attack will list the amount 
-  of AP it has.  Subtract this AP number from all of the armor<squo />s 
+  of AP it has.  Subtract this AP number from all of the armor&rsquo;s 
   damage values when determining its protection against the attack.  
-  This cannot drop the armor<squo />s value below 0.</item>
+  This cannot drop the armor&rsquo;s value below 0.</item>
     <item> GMs determine when armor is damaged beyond use/protection.</item>
     <item> Hard Armor is any armor that uses hard
   ceramic/plastic/metallic/wooden plates or coverage to protect 
   the character.  Hard armor is MUCH more durable than non-hard armor.  
-  Hard armor is denoted by <dquo>hard</dquo> on the armor sheet.  Note that 
-  the components of hard armor are hard.  They can<squo />t be bent 
+  Hard armor is denoted by &ldquo;hard&rdquo; on the armor sheet.  Note that 
+  the components of hard armor are hard.  They can&rsquo;t be bent 
   without damaging the armor.  Hard armor is generally made specifically 
   for the wearer, it will only fit others with nearly identical 
   body proportions.</item>
-    <item> Soft armor (armor that isn<squo />t considered hard) is at least 
+    <item> Soft armor (armor that isn&rsquo;t considered hard) is at least 
   somewhat flexible.  It will generally fit anyone of similar size/stature. </item>
-    <item> Armor with the descriptor of <dquo>fire</dquo> has fire protection.  
-  This means the armor has the <dquo>natural</dquo> ability to deflect 
+    <item> Armor with the descriptor of &ldquo;fire&rdquo; has fire protection.  
+  This means the armor has the &ldquo;natural&rdquo; ability to deflect 
   and protect against fire attacks.  The armor will protect from all 
   fire damage (assuming the fire hits the armor, so full suits are 
   better for this).</item>
@@ -2050,7 +2057,7 @@ blood supply found in the torso.
             <item> -1 action per 2 full points over ENC</item>
         </itemized-list>
     </item>
-    <item> An armor<squo />s Class is a general idea of what period of history/future 
+    <item> An armor&rsquo;s Class is a general idea of what period of history/future 
   the armor would appear.  A later period can find the earlier armor.</item>
 </itemized-list>
 
@@ -2066,9 +2073,9 @@ blood supply found in the torso.
     </item>
     <item> On a successful block, a shield will subtract its appropriate 
   armor value from the damage.  Any damage that penetrates the shield 
-  will then be applied against the user<squo />s armor.
+  will then be applied against the user&rsquo;s armor.
     </item>
-    <item> Shields can be used to block U attacks that are <dquo>thrown</dquo> 
+    <item> Shields can be used to block U attacks that are &ldquo;thrown&rdquo; 
   at them.  These include fireballs, lightning strikes, breath 
   weapons, chemical splashes, etc.  To block one of these attacks, 
   the user must make a block roll at -3.  If successful, then damage 
@@ -2091,7 +2098,7 @@ blood supply found in the torso.
       <section><!-- Energy Weapons -->
         <title>Energy Weapons</title>
         <text>
-Most energy weapons are powered by a battery pack.  These are interchangable between weapons.  Energy within the packs is consumed as the weapon is fired, like normal bullets.  They are called <dquo>batts</dquo> or <dquo>b-paks</dquo> in slang. B-paks store energy in units of EU.  Different weapons consume EU at different rates.  Smaller weapons use 1 EU per shot.  Larger weapons might use more.  Pistols can hold ONE pack.  Rifles/cannons can usually hold 3. B-paks can be recharged.  Recharging a pack takes about thirty seconds per EU that has been used.  As a general rule, it costs $1 per EU to have pack recharged.  HD paks require special equipment to charge and these cost about $1.50 per EU to charge.
+Most energy weapons are powered by a battery pack.  These are interchangable between weapons.  Energy within the packs is consumed as the weapon is fired, like normal bullets.  They are called &ldquo;batts&rdquo; or &ldquo;b-paks&rdquo; in slang. B-paks store energy in units of EU.  Different weapons consume EU at different rates.  Smaller weapons use 1 EU per shot.  Larger weapons might use more.  Pistols can hold ONE pack.  Rifles/cannons can usually hold 3. B-paks can be recharged.  Recharging a pack takes about thirty seconds per EU that has been used.  As a general rule, it costs $1 per EU to have pack recharged.  HD paks require special equipment to charge and these cost about $1.50 per EU to charge.
         </text>
       </section><!-- /Energy Weapons -->
 
@@ -2324,7 +2331,7 @@ When using rocket assisted weapons, you need an extra success to parry melee att
           </text>
 
           <text>
-Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used up, they must be refilled before the weapon can be used.	Each charge costs $100 to refill.
+Each weapon can store up to 5 &ldquo;rocket charges.&rdquo;  When these are used up, they must be refilled before the weapon can be used.	Each charge costs $100 to refill.
           </text>
 
           <reference hrid="Content/Equipment/Melee/Rocket Assisted" />
@@ -2377,10 +2384,10 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   Magic, whatever type it might be, is all about manipulating MANA.
   Mana, as mentioned above, is a supernatural energy that is present in
   everything.  It is in the air, the ground, in your food, even in your
-  body.  Mana is what is responsible for <dquo>enforcing</dquo> physical laws
+  body.  Mana is what is responsible for &ldquo;enforcing&rdquo; physical laws
   such as gravity, etc.  When a person uses magic, they are manipulating
   mana to do what they want.  Normally, this is the mana that is in
-  their own body.  It is possible to work with mana outside one<squo />s body
+  their own body.  It is possible to work with mana outside one&rsquo;s body
   as well.  Nobody really knows exactly how mana works, but special
   gestures and body movements handed down throughout time are believed
   to initiate complex quantum-mechanical events that result in seemingly
@@ -2395,12 +2402,12 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   etc.) contain quite a lot of mana.  Living things, from mice to humans
   to whales, contain even more mana.  Mana is released back into the
   environment when living things die, or when mana-rich objects decay,
-  are burned, or broken.  Other objects tend to <dquo>soak up</dquo> mana that is
+  are burned, or broken.  Other objects tend to &ldquo;soak up&rdquo; mana that is
   released near them.  Thus, older items tend to contain more mana than
-  do <dquo>new</dquo> ones.  Whenever an item is broken it is possible to extract
+  do &ldquo;new&rdquo; ones.  Whenever an item is broken it is possible to extract
   some of its mana as it dissipates back into the environment.  This is
   also possible when a living creature dies.  In game terms, we call
-  mana <dquo>MP</dquo> (Mana Points / Magic Points).
+  mana &ldquo;MP&rdquo; (Mana Points / Magic Points).
     </text>
   
     <text>
@@ -2438,7 +2445,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       <item> Barren landscapes such as desert or arctic regions</item>
       <item> Sky</item>
       <item> Some underground caves or dungeons</item>
-      <item> <dquo>Ghost towns</dquo> / looted or abandoned buildings</item>
+      <item> &ldquo;Ghost towns&rdquo; / looted or abandoned buildings</item>
       <item> Newly cleared land</item>
     </itemized-list>
   
@@ -2488,7 +2495,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   members to share.  In such situations there will usually be more
   experienced spellcasters that may teach their skills to junior
   members.  Wizards may be children of existing wizards or they might be
-  apprentices or students at an established wizard<squo />s school or place of
+  apprentices or students at an established wizard&rsquo;s school or place of
   business.  Wizard secret societies are common as well.  Some are
   devoted to particular schools of magic.  Others are devoted to a
   certain cause and happen to share arcane secrets to persue common
@@ -2502,7 +2509,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       <text>
   Spells are purchased (learned) similar to skills.  However, there are
   no levels for spells.  A character either knows a given spell, or they
-  don<squo />t.  If you like you can think of this as a <dquo>level 1 skill</dquo>.
+  don&rsquo;t.  If you like you can think of this as a &ldquo;level 1 skill&rdquo;.
       </text>
   
       <text>
@@ -2512,8 +2519,8 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   restrictions.  A character may only learn a given spell if she knows
   at least one spell of lower rank from the same school.  As well, the
   rank of the spell must be no higher than your <spellcasting />
-  skill level.  For example, you cannot learn a rank 4 <dquo>Air</dquo> magic
-  spell unless you already know a rank 3 <dquo>Air</dquo> spell, AND you must
+  skill level.  For example, you cannot learn a rank 4 &ldquo;Air&rdquo; magic
+  spell unless you already know a rank 3 &ldquo;Air&rdquo; spell, AND you must
   have Level 4 or higher <spellcasting />.
       </text>
   
@@ -2548,7 +2555,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       <title>Ritual Magic</title>
   
       <text>
-  Ritual magic is performed in elaborate <dquo>performances</dquo> involving a
+  Ritual magic is performed in elaborate &ldquo;performances&rdquo; involving a
   much human involvement.  Magic rituals involve material components
   (ingredients) and a great deal of chanting, mumbling, gesturing, and
   the like.  The traditional image of a witch, bent over a bubbling
@@ -2565,8 +2572,8 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   making a bowl of oatmeal or mixing some cement.  However, in many
   cultures ritual magic is heavily associated with religion, especially
   in primitive, animistic, or tribal societies.  In these cultures
-  ritual magic is the domain of the <dquo>witch doctor</dquo> or <dquo>medicine
-  man</dquo><mdash />people who hold important positions in the tribe, often
+  ritual magic is the domain of the &ldquo;witch doctor&rdquo; or &ldquo;medicine
+  man&rdquo;<mdash />people who hold important positions in the tribe, often
   including that of a kind of priest or spiritual leader.  Therefore,
   there is a strong association between ritual magic and primitive,
   pagan, religions.  Many ritual magicians are religious figures,
@@ -2585,7 +2592,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   consuming and often messy proposition.  Therefore, most ritualists
   have a set area where they can store their materials and perform
   rituals: usually a quiet location away from prying eyes.  This might
-  be a purpose-built room in the home or a secret <dquo>lair</dquo> in a basement
+  be a purpose-built room in the home or a secret &ldquo;lair&rdquo; in a basement
   or abandoned building.  It might even be a cave or hidden woodland
   grotto.  Such an area is a very personal space for the ritualist, and
   while it might be neatly organized or highly messy, it will be arrayed
@@ -2593,12 +2600,12 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       </text>
   
       <text>
-  Most ritual supplies are re-useable, and a ritualist<squo />s <dquo>kitchen</dquo>
+  Most ritual supplies are re-useable, and a ritualist&rsquo;s &ldquo;kitchen&rdquo;
   will be well stocked with such items.  These include such things as
   wands, knives, scales, measuring devices, a fireplace, cauldrons,
   bottles, pots, strainers, mirrors, precious gems, candles, assorted
   tools, and so on.  Approximately $1000 * Rank worth of supplies is
-  required in a ritualist<squo />s <dquo>kitchen</dquo>.  (In other words, in order to
+  required in a ritualist&rsquo;s &ldquo;kitchen&rdquo;.  (In other words, in order to
   perform the Ritual Stoneform, which is a rank 6 spell, $6000 worth of
   supplies are required to be on hand) These supplies are reuseable and
   are used for many different rituals.
@@ -2626,7 +2633,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   
       <text>
   The cost of ingredients for a particular spell is approximately 1/10
-  of the <dquo>scroll or potion</dquo> cost from the spell chart. This assumes
+  of the &ldquo;scroll or potion&rdquo; cost from the spell chart. This assumes
   fair prices in an open market.  However, this cost might vary greatly
   depending on various circumstances.  For example, in a certain town
   components for Fire spells might be common and therefore very
@@ -2635,7 +2642,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       </text>
   
       <text>
-  In addition to its specific <dquo>recipe</dquo>, any ritual spell will also
+  In addition to its specific &ldquo;recipe&rdquo;, any ritual spell will also
   require the infusion of mana.  As mentioned above, in ritual magic the
   MP does not come from the caster.  The caster must gather objects
   containing sufficient MP to conduct the spell.  As mentioned above,
@@ -2656,7 +2663,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   
       <itemized-list>
         <item> NO MP from the character are required for ritual magic</item>
-        <item> Each spell<squo />s components cost 1/10th of the <dquo>scroll/potion</dquo>
+        <item> Each spell&rsquo;s components cost 1/10th of the &ldquo;scroll/potion&rdquo;
     cost from the spell table, PLUS $1 for each MP required.
     Components are consumed and can only be used once.  (note that costs
     are approximate and should be determined by the GM)</item>
@@ -2744,13 +2751,13 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   
       <text>
   Religious magic is magical effects that are brought into reality by
-  the combined will of the caster and the caster<squo />s god(s).  Whereas
+  the combined will of the caster and the caster&rsquo;s god(s).  Whereas
   primitive religions and cults tend towards the use of ritual magic,
   Religious or Faith magic is practiced by priests of clearly defined
   and well organized religions.  Most religions that practice Faith
   magic have a clearly organized hierarchy within the church.  Religious
   dogma and/or scripture is well defined and is extensively documented.
-  Faith-magic using religions are not necessarily <dquo>good</dquo>, but they are
+  Faith-magic using religions are not necessarily &ldquo;good&rdquo;, but they are
   usually known to the general public and often actively recruit new
   members.
       </text>
@@ -2762,7 +2769,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   faiths have 3 or 4 schools of spells.  A faith caster has access to
   all spells in the school(s) associated with his <faith />, except
   those whose rank is higher than his level of faith, and those which
-  are specifically prohibited by his Church.  For example, a <dquo>good</dquo>
+  are specifically prohibited by his Church.  For example, a &ldquo;good&rdquo;
   tending religion would typically deny harmful <Life />-magic spells
   to their adherents, for example curse.
       </text>
@@ -2801,7 +2808,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   A <holy-symbol /> is always required to cast <faith /> magic.
   If a holy symbol is not available, then Faith magic simply cannot be
   cast.  Thankfully, a simple gesture or trinket often suffices.  There
-  are different types of holy symbols.  <dquo>Better</dquo> and more significant
+  are different types of holy symbols.  &ldquo;Better&rdquo; and more significant
   holy symbols offer a better bonus to Faith magic casting:
       </text>
   
@@ -2819,12 +2826,12 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
           </row>
           <row>
             <cell>0</cell>
-            <cell>An inexpensive <dquo>trinket</dquo> type holy symbol, or a common copy of a holy book / scripture.  Generally mass-produced.  Might be given away at a particular church, or might be available for purchase.  Also a holy symbol made by a marginally skilled craftsman or apprentice.  Example: prayer beads, a simple carved wooden cross, a mass-printed holy book, etc.  Cost:  $5 or more.</cell>
+            <cell>An inexpensive &ldquo;trinket&rdquo; type holy symbol, or a common copy of a holy book / scripture.  Generally mass-produced.  Might be given away at a particular church, or might be available for purchase.  Also a holy symbol made by a marginally skilled craftsman or apprentice.  Example: prayer beads, a simple carved wooden cross, a mass-printed holy book, etc.  Cost:  $5 or more.</cell>
           </row>
           <row>
             <cell>1</cell>
             <cell>An unusually high quality trinket made by a good craftsman (such as a fine gold crucifix necklace).  Or, a good quality weapon bearing religious inscription and symbols. Or, an item from a particular church which is not available to the general public (such as the robes of an ordained priest), or a fine quality holy book.</cell>
-            <cell>Cost:  At least $500 plus the cost of the <dquo>base item</dquo></cell>
+            <cell>Cost:  At least $500 plus the cost of the &ldquo;base item&rdquo;</cell>
           </row>
           <row>
             <cell>2</cell>
@@ -2847,8 +2854,8 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   
       <text>
   Anytime a Faith magic caster has to make a magic-related roll
-  (<dquo>Magical Control</dquo> roll, or a strike roll associated with a magical
-  spell, etc), use the caster<squo />s Faith skill.  Whatever holy symbol that
+  (&ldquo;Magical Control&rdquo; roll, or a strike roll associated with a magical
+  spell, etc), use the caster&rsquo;s Faith skill.  Whatever holy symbol that
   the caster has is then applied as a bonus to that roll.
       </text>
   
@@ -2858,7 +2865,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       <title>Martial Magic / Super Power Combat</title>
   
       <text>
-  Martial magic is the ability to perform supernatural <dquo>attacks</dquo> in
+  Martial magic is the ability to perform supernatural &ldquo;attacks&rdquo; in
   conjunction with normal combat, such as fist fighting, martial arts,
   or combat with weapons.
       </text>
@@ -2877,7 +2884,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   warrior masters the traditional (non-supernatural) combat arts, he may
   be taught martial magic.  Since martial magic is highly dependent on
   particular combat forms and stances, it is nearly impossible to learn
-  on one<squo />s own or from a book.
+  on one&rsquo;s own or from a book.
       </text>
   
       <text>
@@ -2922,7 +2929,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
         <item> MP are consumed just like spellcasting</item>
         <item> Touch spells require a successful strike roll in combat</item>
         <item> Ranged spells require a missile weapon of some kind</item>
-        <item> Auto-target spells are now <dquo>cast</dquo> by a WIL check of the user</item>
+        <item> Auto-target spells are now &ldquo;cast&rdquo; by a WIL check of the user</item>
         <item> Martial Magic spells are learned/purchased just like normal Spells</item>
         <item> Martial Magic users must have at least 1 level in <mysticism /></item>
       </itemized-list>
@@ -2931,7 +2938,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   Rather than purchasing the <spellcasting /> skill, a Super Power
   Fighter adds together his skill level of <Martial-Arts /> and
   <mysticism />.  The total is considered the skill level of
-  <dquo>Martial Magic</dquo>
+  &ldquo;Martial Magic&rdquo;
       </text>
   
     </section><!-- /Martial Magic / Super Power Combat -->
@@ -2948,16 +2955,16 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   
       <text>
   Whereas most magic users have trained to develop their abilities,
-  Mystic characters are more often <dquo>gifted</dquo> with magical abilities.
+  Mystic characters are more often &ldquo;gifted&rdquo; with magical abilities.
   Quite often these powers manifest themselves as a result of a
   traumatic event, such as a near-fatal accident, that is experienced by
   the character.  They may also be abilities that are passed down
   through a particular family<mdash />in which case the character is simply
   born with his unique powers.  Mystic characters have an innate ability
   to perform their abilities<mdash />which are completely independent of any
-  kind of structured <dquo>method</dquo> or <dquo>technique</dquo>.  While mystic
-  characters might join magical societies they cannot <dquo>learn</dquo> or
-  <dquo>teach</dquo> mystic techniques to others.  Psionic abilities are
+  kind of structured &ldquo;method&rdquo; or &ldquo;technique&rdquo;.  While mystic
+  characters might join magical societies they cannot &ldquo;learn&rdquo; or
+  &ldquo;teach&rdquo; mystic techniques to others.  Psionic abilities are
   something that a mystic discovers herself.
       </text>
   
@@ -2973,7 +2980,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     ability is exactly the same as standard spellcasting.</item>
         <item> Spells are purchased from the spell list at will.  There is no
     need to follow a particular category.  The only restriction is that
-    learned spells must be no higher level than the character<squo />s
+    learned spells must be no higher level than the character&rsquo;s
     <mysticism /> skill.</item>
         <item> Mystics always use the WIL attribute for magic-related rolls,
     such as <Magical-Control />, regardless of the normal attribute
@@ -3018,20 +3025,20 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   <item><description>Pact</description> allows the caster to form a complex bond with a creature,
     making that creature his Familiar.  The caster must first find a
     creature to use pact with<mdash />such as summoning the creature by gate
-    or summon) The caster may <dquo>control</dquo> the creature in a manner
+    or summon) The caster may &ldquo;control&rdquo; the creature in a manner
     similar to summon.  This is permanent and lasts until either the
     caster or the Familiar is slain.  If the caster casts Pact a while
     he already has a Familiar, the original spell expires and the caster
     suffers 1D6+3 U.  While active, the Familar is aware of what happens
     to the caster, and vice versa.  A basic empathic link exists between
     the creature and the caster.  The caster may make a Magical Control
-    check in order to <dquo>listen in</dquo> on any of the familiar<squo />s senses at
+    check in order to &ldquo;listen in&rdquo; on any of the familiar&rsquo;s senses at
     any point in time.</item>
   
   <item><description>Control</description> is very similar to summon except that the caster has
     exacting and specific control over the creature(s) summoned.  The
-    caster can literally operate the creature(s) as though by <dquo>remote
-    control</dquo>.  While Control is active, the summoner is responsible for
+    caster can literally operate the creature(s) as though by &ldquo;remote
+    control&rdquo;.  While Control is active, the summoner is responsible for
     literally every action made by the summoned creature<mdash />it has no
     will of its own.</item>
   
@@ -3050,7 +3057,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       
       <text>
         These summon spells are used in conjunction with whatever
-    creature <dquo>spells</dquo> a summoner knows.  In order to learn a creature
+    creature &ldquo;spells&rdquo; a summoner knows.  In order to learn a creature
     spell, the Summoner must have encountered such a creature.  The rank
     of example creatures is shown below.  For others, see the Beastiary
     section.
@@ -3058,7 +3065,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   
       <text>
   These summon spells are used in conjunction with whatever creature
-  <dquo>spells</dquo> a summoner knows.  In order to learn a creature spell, the
+  &ldquo;spells&rdquo; a summoner knows.  In order to learn a creature spell, the
   Summoner must have encountered such a creature.  The rank of example
   creatures is shown below.  For others, see the Beastiary section.
       </text>
@@ -3109,7 +3116,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   rank(s) of the creatures to be summoned.  A summoner can attempt to
   summon multiple of the same creature simultaneously, but not a mixture
   of different creatures.  The caster has a bonus to this check based on
-  what <dquo>Beast Lore</dquo> skills he knows.
+  what &ldquo;Beast Lore&rdquo; skills he knows.
       </text>
   
     </section><!-- /Beast Magic (summoning) -->
@@ -3176,11 +3183,11 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     deceive with illusion and tricks.  Light magic has many useful
     spells, many of which are available at low or middle levels.  It is
     a very useful type of magic for the rogue or healer-type character
-    who wants to be useful but doesn<squo />t want to fight.  A few high level
+    who wants to be useful but doesn&rsquo;t want to fight.  A few high level
     light spells can deal excellent damage, but only at a steep MP cost.</item>
   
         <item><description>Physical</description> Physical magic is an excellent choice for
-    <dquo>dual-classed</dquo> characters that practice magic and also fight in
+    &ldquo;dual-classed&rdquo; characters that practice magic and also fight in
     melee combat.  At lower and middle levels, physical magic allows one
     to improve the abilities of others, and to manipulate the physical
     world with magic.  He can also repair broken weapons or mend
@@ -3194,12 +3201,12 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     enhance, and empower the caster or his allies is unmatched.  It is
     excellent when paired with other magic of a more offensive nature.</item>
   
-        <item><description>Fire</description> Fire magic is a traditional offensive type of magic.  It<squo />s
+        <item><description>Fire</description> Fire magic is a traditional offensive type of magic.  It&rsquo;s
     spells deal high damage and are without equal for causing
     large-scale destruction.  They are also quite mana-efficient.
-    However, fire magic is the easiest of all <dquo>supernatural</dquo> attacks
+    However, fire magic is the easiest of all &ldquo;supernatural&rdquo; attacks
     to defend against.  Fire magic is also noisy, flashy, and very
-    intimidating to one<squo />s opponents.  Unfortunatley, this makes it
+    intimidating to one&rsquo;s opponents.  Unfortunatley, this makes it
     nearly impossible to use in a stealthy manner.</item>
   
         <item><description>Earth</description> Earth magic is a varied school that combines defensive
@@ -3228,7 +3235,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   miss their target however.  For these spells, the player must make a
   skill test using MAGICAL CONTROL (or <faith />) to determine if the
   strike is successful.  See the spell listing for what spells are
-  auto-targeting and which aren<squo />t.
+  auto-targeting and which aren&rsquo;t.
     </text>
   
     <text>
@@ -3296,7 +3303,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     </section><!-- /Magic Points -->
   
     <section><!-- Magical Tools -->
-      <title>Magical <dquo>Tools</dquo>: Books, Scrolls, and Potions</title>
+      <title>Magical &ldquo;Tools&rdquo;: Books, Scrolls, and Potions</title>
   
       <text>
   There exist three different kinds of magic-related books.
@@ -3310,7 +3317,7 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
   can make real use of the contents.  A Spellcasting character can
   easily learn new spells from a book of this type.  Books of this type
   are very valuable.  The cost of a spell book like this is equal to the
-  <dquo>Book</dquo> price column of the magic table.  If the book contains
+  &ldquo;Book&rdquo; price column of the magic table.  If the book contains
   multiple spells, then its value is equal to the sum of the costs for
   each spell contained.  Generally speaking, books of this type only
   contain multiple spells when they are compendia of low-level spells in
@@ -3331,8 +3338,8 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
       <text>
   Type 3 is a book that describes other forms of magic.  Since Faith
   magic, Martial Magic, and Mysticism are dependant on the individual
-  <dquo>casting</dquo> the spell and not on some external <dquo>formula</dquo> or
-  <dquo>recipe</dquo>, it is essentially impossible to truly document how to
+  &ldquo;casting&rdquo; the spell and not on some external &ldquo;formula&rdquo; or
+  &ldquo;recipe&rdquo;, it is essentially impossible to truly document how to
   perform a given spell with nothing more than a book.  These books are
   of interest to sages and scholars who are interested in arcane
   subjects.  However, they are little more than a curiosity to actual
@@ -3387,8 +3394,8 @@ Each weapon can store up to 5 <dquo>rocket charges.</dquo>  When these are used 
     ghosts or robots.</item>
   
         <item><description>White</description> spells are those that are comprised of life energy.  They
-    are technically not <dquo>good</dquo> aligned, though they are a favorite of
-    <dquo>good</dquo> religious orders.  White spells that cause damage only
+    are technically not &ldquo;good&rdquo; aligned, though they are a favorite of
+    &ldquo;good&rdquo; religious orders.  White spells that cause damage only
     affect demons, undead, and spirits.</item>
   
         <item><description>Auto</description> spells are those that are automatically targeting.  That
@@ -3450,8 +3457,8 @@ Level-in-<martial-arts />/2 times (the Lvl in
         <text>
 Kim NG<cedilla>o</cedilla>c G<vcap>o</vcap>ay is an
   expert in Norse Boxing (Nyrkkeily), he chooses, when he gets his
-  first level in <martial-arts />, he also buys a level in <dquo>Punch/Kick;</dquo>
-  in particular, he also assigns his level-bonus to <dquo>Punch/Kick.</dquo>
+  first level in <martial-arts />, he also buys a level in &ldquo;Punch/Kick;&rdquo;
+  in particular, he also assigns his level-bonus to &ldquo;Punch/Kick.&rdquo;
   This means when he rolls to strike with a punch he rolls two
   dice and not one.
         </text>
@@ -3492,7 +3499,7 @@ pugilist. <modifier />s represent ways to modify
   is now considered a <special /> attack of the same name with the
   <modifier /> as the adjective, for instance, if the Martial Artist is
   modifying a Punch with a Bash, then this is now a <special />
-  attack, <dquo>Bashing Punch.</dquo> Since a modified <basic /> attack counts as a
+  attack, &ldquo;Bashing Punch.&rdquo; Since a modified <basic /> attack counts as a
   <special /> attack, it may not be further modified, as only <basic />
     attacks can be modified. There are certain <combat /> skills which
   enable the Martial Artist to consider certain specific combinations
@@ -3510,7 +3517,7 @@ Candlestick has two
   level 1 and Feint at level 1. He is striking at the Giant
   Hispaniola Solenodon with a Bashing Punch. Because he is
   using Bash with his Punch his punch is now considered
-  <dquo>special</dquo> and may not be further modified, even though he could
+  &ldquo;special&rdquo; and may not be further modified, even though he could
   still use his Feint this turn.
         </text>
       </example>
@@ -3521,10 +3528,10 @@ Candlestick has two
       <title>Further Commentary</title>
 
       <text>
-You will note that there is no <dquo>chi</dquo> or <dquo>super-powers</dquo> in
+You will note that there is no &ldquo;chi&rdquo; or &ldquo;super-powers&rdquo; in
 <martial-arts />. In fact, the skills are deliberately kept
 pedestrian<mdash />those possessed (or assumed to be possessed, if possible)
-by the greatest <dquo>non-mystical</dquo> martial artists in the <squo>real world.</squo>
+by the greatest &ldquo;non-mystical&rdquo; martial artists in the &lsquo;real world.&rsquo;
 This is done deliberately to provide a clear separation between the
 Supernormal<mdash />governed by Magic and Traits<mdash />and the
 mundane reality of kicking, spitting, biting and hurting. If
@@ -3573,17 +3580,17 @@ are envisioning is not available to them. The <emph>Monster</emph> section
 is thus divided into three parts:</text>
 
 <description-list>
-    <item description="Base types">: the fundamental attributes, abilities, and <dquo>look</dquo>
+    <item description="Base types">: the fundamental attributes, abilities, and &ldquo;look&rdquo;
   of the base creature</item>
     <item description="Templates">: modifications to the base-type that give the
-  <dquo>flavor</dquo> of the monster</item>
+  &ldquo;flavor&rdquo; of the monster</item>
     <item description="Examples">: that have been pre-generated</item>
 </description-list>
 
         <section><!-- Base Types -->
             <title>Base Types</title>
 
-<text>The base-types are the fundamental <dquo>type</dquo> or <dquo>look</dquo> of the
+<text>The base-types are the fundamental &ldquo;type&rdquo; or &ldquo;look&rdquo; of the
 monster, they are:</text>
 
 <description-list>
@@ -4002,10 +4009,10 @@ has, a specific power of a SuperHero. It can be the result of means
 magical, chemical, mutation, or some future technology.</text>
 
 <text>The important part is that the power occurs singularly and
-uniquely and is not part of some larger <dquo>system,</dquo>
+uniquely and is not part of some larger &ldquo;system,&rdquo;
 i.e. <magic />. <traits /> are generally bought at only one
 level, but can be purchased at higher levels, if it is pertinent. If a
-<traits /> needs <dquo>points</dquo> to power it, these are taken from the
+<traits /> needs &ldquo;points&rdquo; to power it, these are taken from the
 character's Mana Points.</text>
 
 <text>Since many traits overlap magical spells, there is a specific trait
