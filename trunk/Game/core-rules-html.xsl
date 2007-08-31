@@ -117,6 +117,8 @@
           top: 5em;
         }
         div.titlepage {
+          border: double black;
+          padding: 2em;
           padding-bottom: 5em;
         }
         </style>
