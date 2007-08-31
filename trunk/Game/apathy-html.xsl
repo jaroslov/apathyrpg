@@ -5,7 +5,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="/">
-    <html>
+    <html><!-- xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">-->
       <head>
         <title>Apathy Manual (ARPG)</title>
         <link rel="stylesheet" type="text/css" href="Apathy.css" title="Apathy" />
@@ -257,8 +257,14 @@
     </xsl:for-each>
   </xsl:template>
 
-  <!-- BROKEN! Fix with MathML -->
-  <xsl:template match="math">
+  <xsl:template match="M">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <xsl:value-of select="." />
+    </math>
+  </xsl:template>
+
+  <!-- BROKEN! Fix with MathML
+  <xsl:template match="M">
     <span class="math">
       <xsl:apply-templates />
     </span>
@@ -297,6 +303,6 @@
       </tr>
     </table>
   </xsl:template>
-  <!-- BROKEN! Fix with MathML -->
+  BROKEN! Fix with MathML -->
 
 </xsl:stylesheet>
