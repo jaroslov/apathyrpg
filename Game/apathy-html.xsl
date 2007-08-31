@@ -8,7 +8,7 @@
     <html>
       <head>
         <title>Apathy Manual (ARPG)</title>
-        <link rel="stylesheet" type="text/css" href="apathy.css" title="Apathy" />
+        <link rel="stylesheet" type="text/css" href="Apathy.css" title="Apathy" />
       </head>
       <body>
         <div class="titlepage">
