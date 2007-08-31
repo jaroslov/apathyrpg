@@ -414,7 +414,7 @@
           <text>The cost of an attribute is computed like a skill with Rank 1 (see the
     skill section later on). However, the final value for the attribute
     (for a Human) is increased by 8; that is, if you buy 5 levels of STR
-    (for 15 AP), then the final value of the STR is <math>5 + 8 = 13</math>.</text>
+    (for 15 AP), then the final value of the STR is <M>5 + 8 = 13</M>.</text>
           <note>In most cases no player may have an attribute below 8.
       Attributes below 8 are considered handicapped and/or disabled, and
       such a character would probably not be adventuring!</note>
@@ -450,19 +450,26 @@
                 <cell>Lift</cell>
                 <cell>This determines how much weight the character can lift in pounds, in a &ldquo;good&rdquo; situation, such as a weighted barbell or a trunk with handles.</cell>
                 <cell>
-                  <math><frac><top>STR&times;STR&times;BLD</top><bot>10</bot></frac>+STR</math>
+                  <M>
+		    <mfrac>
+		      <mrow>STR&times;STR&times;BLD</mrow>
+		      <mn>10</mn>
+		    </mfrac>
+		    <mo>+</mo>
+		    <mi>STR</mi>
+		  </M>
                 </cell>
               </row>
               <row>
                 <cell>Carry</cell>
                 <cell>This is the amount of weight the character can carry about his/her person for a reasonable length of time.</cell>
                 <cell>
-                  <math>
+                  <M>
                     <frac>
                       <top>Lift</top>
                       <bot>2</bot>
                     </frac>
-                  </math>
+                  </M>
                 </cell>
               </row>
               <row>
@@ -470,74 +477,74 @@
                 </cell>
                 <cell>This represents how much gear the character can wear before encountering adverse effects due to the weight and impaired mobility.</cell>
                 <cell>
-                  <math>
+                  <M>
                     <frac>
                       <top>BLD+DEX+STR</top>
                       <bot>6</bot>
                     </frac>
-                  </math>
+                  </M>
                 </cell>
               </row>
               <row>
                 <cell>Base Armor</cell>
                 <cell>Determines how resilient the character is to &ldquo;odd&rdquo; damage, such as lightning and fire.</cell>
                 <cell>
-                  <math>
+                  <M>
                     <frac>
                       <top>BLD+WIL</top>
                       <bot>6</bot>
                     </frac>
-                  </math>
+                  </M>
                 </cell>
               </row>
               <row>
                 <cell>Movement</cell>
                 <cell>How fast the character is in &ldquo;squares per move-equivalent <action /> &rdquo;</cell>
                 <cell>
-                  <math>
+                  <M>
                     <frac>
                       <top>2&times;STR+DEX</top>
                       <bot>15</bot>
                     </frac>
-                  </math>
+                  </M>
                 </cell>
               </row>
               <row>
                 <cell>Perception</cell>
                 <cell>How well the character can notice things around him.  Used just like an attribute check.</cell>
                 <cell>
-                  <math>
+                  <M>
                     <frac>
                       <top>DEX+2&times;KNO+INT</top>
                       <bot>4</bot>
                     </frac>
-                  </math>
+                  </M>
                 </cell>
               </row>
               <row>
                 <cell>Interaction</cell>
                 <cell>The basic ability of a character to interact with other people.</cell>
                 <cell>
-                  <math>
+                  <M>
                     <frac>
                       <top>CHA+KNO+INT</top>
                       <bot>3</bot>
                     </frac>
-                  </math>
+                  </M>
                 </cell>
               </row>
               <row>
                 <cell><hit-points /></cell>
                 <cell>The amount of damage you can receive before dying.</cell>
                 <cell>
-                  <math>BLD+WIL</math>
+                  <M>BLD+WIL</M>
                 </cell>
               </row>
               <row>
                 <cell>Magic Points</cell>
                 <cell>The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</cell>
                 <cell>
-                  <math>(WIL+BLD)&times;10</math>
+                  <M>(WIL+BLD)&times;10</M>
                 </cell>
               </row>
             </table>
@@ -589,7 +596,7 @@
           <text>You must pay a number of Attribute Points equal to the difference between what
     you want, and what you already have.  For example: if you currently have an 11
     STR (6 Attribute Points) and wish to increase it to a 14 (21 Attribute Points)
-    that will cost you 15 Attribute Points (<math>9 - 4 = 5</math>).  Since Attribute Points
+    that will cost you 15 Attribute Points (<M>9 - 4 = 5</M>).  Since Attribute Points
     cost 1 Character Point each, going from an 11 in an attribute to a 14 will cost
     15 CP.</text>
           <text>Remember to keep track of how many Attribute Points you have spent on your
@@ -674,7 +681,7 @@
     skill, the more expensive it will be.</text>
         <text>For those that are mathematically inclined, here is the formula for determining
     CP of a particular skill level and rank:</text>
-        <math>
+        <M>
 	  <sum>
 	    <from>i=1</from>
 	    <to>Desired Level = n</to>
@@ -692,7 +699,7 @@
             </top>
 	    <bot>2</bot>
 	  </frac>
-	</math>
+	</M>
         <text>For the rest of us, use this nifty table, and multiply the value listed by the
     rank.</text>
         <figure>
@@ -1328,8 +1335,8 @@
       Hercules Club (3D6C, MSR: 12, MSB: 13).  Because Bosk&rsquo;s
       Str is higher than the minimum strength requirement of
       the Hercules Club (12), he is entitled to a damage bonus.  Subtract
-      8 from Bosk&rsquo;s Str score to calculate his bonus: <math>17 - 8 =
-      9</math>. So this means that Bosk deals 9+3D6 C damage.</text>
+      8 from Bosk&rsquo;s Str score to calculate his bonus: <M>17 - 8 =
+      9</M>. So this means that Bosk deals 9+3D6 C damage.</text>
           </example>
           <example>
             <title>Bosk with Knife</title>
@@ -1761,7 +1768,7 @@
     change.</text>
           <text>Your current <hit-points /> is the most important number.  It will
     likely change frequently during combat.  <hit-points /> are generally
-    represented as a fraction: <math><frac><top>Current HP</top><bot>Max HP</bot></frac></math>.  When the game
+    represented as a fraction: <M><frac><top>Current HP</top><bot>Max HP</bot></frac></M>.  When the game
     begins, your character will be fully healthy and uninjured.  Thus,
     when starting, your current HP will be equal to your maximum.</text>
           <image src='/Map/Forte-marghera-02.jpg'/>
@@ -2082,9 +2089,9 @@
       will be reduced based on the type of shield:
             <itemized-list>
                 <item> Buckler: Full damage</item>
-                <item> Small: <math><frac><top>1</top><bot>4</bot></frac></math></item>
-                <item> Large: <math><frac><top>1</top><bot>2</bot></frac></math></item>
-                <item> Tower: <math><frac><top>3</top><bot>4</bot></frac></math></item>
+                <item> Small: <M><frac><top>1</top><bot>4</bot></frac></M></item>
+                <item> Large: <M><frac><top>1</top><bot>2</bot></frac></M></item>
+                <item> Tower: <M><frac><top>3</top><bot>4</bot></frac></M></item>
             </itemized-list>
         </item>
     </itemized-list>
@@ -3717,7 +3724,7 @@
             <row>
                 <cell border="none">Anthropoid</cell>
                 <cell span="11" border="none">
-                    Height: <math>Size<sup>2</sup>&times;40 cm</math>
+                    Height: <M>Size<sup>2</sup>&times;40 cm</M>
                 </cell>
             </row>
             <row>
@@ -3771,7 +3778,7 @@
             <row>
                 <cell border="none">Bipedal</cell>
                 <cell span="11" border="none">
-                    Height: <math>Size<sup>2</sup>&times;35 cm</math>
+                    Height: <M>Size<sup>2</sup>&times;35 cm</M>
                 </cell>
             </row>
             <row>
@@ -3823,7 +3830,7 @@
             <row>
                 <cell border="none" >Quadruped</cell>
                 <cell span="11" border="none">
-                    Length: <math>Size<sup>2</sup>&times;35 cm</math>; Height: <math><frac><top>1</top><bot>3</bot></frac>&times;Length</math>
+                    Length: <M>Size<sup>2</sup>&times;35 cm</M>; Height: <M><frac><top>1</top><bot>3</bot></frac>&times;Length</M>
                 </cell>
             </row>
             <row>
@@ -3875,7 +3882,7 @@
             <row>
                 <cell border="none">Serpent</cell>
                 <cell span="11" border="none">
-                    Length: <math>Size<sup>2</sup>&times;40 cm</math>; Height: <math><frac><top>1</top><bot>8</bot></frac>&times;Length</math>
+                    Length: <M>Size<sup>2</sup>&times;40 cm</M>; Height: <M><frac><top>1</top><bot>8</bot></frac>&times;Length</M>
                 </cell>
             </row>
             <row>
@@ -3927,7 +3934,7 @@
             <row>
                 <cell border="none">Polymelic</cell>
                 <cell span="11" border="none">
-                    Size: <math>Size<sup>2</sup>&times;30 cm</math>, in some dimension
+                    Size: <M>Size<sup>2</sup>&times;30 cm</M>, in some dimension
                 </cell>
             </row>
             <row>
@@ -3979,12 +3986,12 @@
             <row>
                 <cell border="none">Amorphous</cell>
                 <cell span="11" border="none">
-                    Diameter: <math>Size<sup>2</sup>&times;50 cm</math>
+                    Diameter: <M>Size<sup>2</sup>&times;50 cm</M>
                 </cell>
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: <math>Diameter<sup>3</sup></math> kilograms</cell>
+                <cell span="11">Weight: <M>Diameter<sup>3</sup></M> kilograms</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
