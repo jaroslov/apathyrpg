@@ -159,3 +159,47 @@ ul.Fast-Find-List {
   list-style-type: none;
   margin-left: -1.5em;
 }
+div.datum-description {
+  border: 1px solid black;
+  margin: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 1em;
+  width: 35em;
+}
+div.datum-description h1 {
+  font-size: 14pt;
+}
+div.datum-description p {
+  padding-left: 2em;
+  padding-right: 2em;
+  text-indent: -1em;
+}
+table.datum-table {
+  border-collapse: collapse;
+}
+table.datum-table a {
+  font-variant: small-caps;
+}
+table.datum-table tr:hover {
+  background-color: #EEF;
+}
+table.datum-table td {
+  border-bottom: 1px solid black;
+}
+table.datum-table td {
+  padding-right: .5em;
+}
+table.datum-table td.content {
+  border-left: 1px dotted black;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+table.datum-table th {
+  border-bottom: double black;
+  padding-right: .5em;
+}
+table.datum-table th.content {
+  border-left: 1px solid black;
+  padding-left: .5em;
+}
