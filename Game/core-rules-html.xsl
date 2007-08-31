@@ -162,6 +162,13 @@
           font-size: 16pt;
           margin-right: .5em;
         }
+        ul.Fast-Find-List {
+          font-weight: bold;
+          font-variant: small-caps;
+          font-size: 18pt;
+          list-style-type: none;
+          margin-left: -1.5em;
+        }
         </style>
       </head>
       <body>
@@ -179,7 +186,12 @@
             <tr><td>Josh Kramer</td></tr>
           </table>
         </div>
-        <div class="toc">
+        <ul class="Fast-Find-List">
+          <li><a href="#Table-of-Contents">Table of Contents</a></li>
+          <li><a href="#List-of-Examples">List of Examples</a></li>
+          <li><a href="#List-of-Figures">List of Figures</a></li>
+        </ul>
+        <div class="toc" id="Table-of-Contents">
           <h1>Table of Contents</h1>
           <ol class="toc" >
             <xsl:for-each select="//chapter">
@@ -209,7 +221,7 @@
             </xsl:for-each>
           </ol>
         </div>
-        <div class="examples">
+        <div class="examples" id="List-of-Examples">
           <h1>List of Examples</h1>
           <ol class="examples">
             <xsl:for-each select="//example">
@@ -219,7 +231,7 @@
             </xsl:for-each>
           </ol>
         </div>
-        <div class="figures">
+        <div class="figures" id="List-of-Figures">
           <h1>List of Figures</h1>
           <ol class="figures">
             <xsl:for-each select="//figure">
@@ -277,7 +289,7 @@
   </xsl:template>
 
   <xsl:template match="Apathy">
-    <span class="ApAthy">ApAthy</span>
+    <span class="ApAthy">Apathy</span>
   </xsl:template>
 
   <xsl:template match="description-list">
