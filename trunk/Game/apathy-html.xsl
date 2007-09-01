@@ -257,10 +257,8 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="M">
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
-      <xsl:value-of select="." />
-    </math>
+  <xsl:template match="math">
+    <xsl:value-of select="." />
   </xsl:template>
 
   <!-- BROKEN! Fix with MathML
