@@ -9,7 +9,8 @@
     <html><!-- xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">-->
       <head>
         <title>Apathy Manual (ARPG)</title>
-        <link rel="stylesheet" type="text/css" href="Apathy.css" title="Apathy" />
+        <link rel="stylesheet"
+          type="text/css" href="Apathy.css" title="Apathy" />
       </head>
       <body>
         <div class="titlepage">
@@ -30,19 +31,20 @@
           <li><a href="#Table-of-Contents">Table of Contents</a></li>
           <li><a href="#List-of-Examples">List of Examples</a></li>
           <li><a href="#List-of-Figures">List of Figures</a></li>
+          <li><a href="#List-of-Equations">List of Equations</a></li>
         </ul>
         <div class="toc" id="Table-of-Contents">
           <h1>Table of Contents</h1>
-          <ol class="toc" >
-            <xsl:for-each select="//chapter">
+          <ol class="toc">
+            <xsl:for-each select="//part">
               <li>
-                <a href="#chapter-{./title}">
+                <a href="#part-{./title}">
                   <xsl:value-of select="title" />
                 </a>
                 <ol class="toc" >
-                  <xsl:for-each select="section">
+                  <xsl:for-each select="chapter">
                     <li>
-                      <a href="#section-{../title}-{./title}">
+                      <a href="#chapter-{./title}">
                         <xsl:value-of select="title" />
                       </a>
                       <ol class="toc" >
@@ -51,6 +53,15 @@
                             <a href="#section-{../title}-{./title}">
                               <xsl:value-of select="title" />
                             </a>
+                            <ol class="toc" >
+                              <xsl:for-each select="section">
+                                <li>
+                                  <a href="#section-{../title}-{./title}">
+                                    <xsl:value-of select="title" />
+                                  </a>
+                                </li>
+                              </xsl:for-each>
+                            </ol>
                           </li>
                         </xsl:for-each>
                       </ol>
@@ -83,6 +94,16 @@
             </xsl:for-each>
           </ol>
         </div>
+        <div class="equations" id="List-of-Equations">
+          <h1>List of Equations</h1>
+          <ol class="equations">
+            <xsl:for-each select="//M">
+              <li>
+                <xsl:apply-templates select="." />
+              </li>
+            </xsl:for-each>
+          </ol>
+        </div>
         <xsl:apply-templates select="//book"/>
       </body>
     </html>
@@ -90,7 +111,7 @@
   
   <xsl:template match="book">
     <xsl:for-each select="part">
-      <div class="part">
+      <div class="part" id="part-{./title}">
         <!--<h1><xsl:value-of select="title" /></h1>-->
         <xsl:for-each select="chapter">
           <div class="chapter" id="chapter-{./title}">
