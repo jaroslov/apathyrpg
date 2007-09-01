@@ -4,6 +4,7 @@
 ]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <!-- Main document -->
   <xsl:template match="/">
     <html><!-- xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">-->
       <head>
@@ -155,6 +156,17 @@
       </xsl:for-each>
     </ul>
   </xsl:template>
+
+  <xsl:template match="numbered-list" >
+    <ol class="numbered-list">
+      <xsl:for-each select="item">
+        <li>
+          <xsl:apply-templates select="." />
+        </li>
+      </xsl:for-each>
+    </ol>    
+  </xsl:template>
+
 
   <xsl:template match="define">
     <span class="definition" id=".">
