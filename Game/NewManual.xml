@@ -77,38 +77,7 @@
 				<text>
 					Apathy models characters by means of a core attribute system.  These attributes are numbers that describe the most basic characteristics of any given character.  There are seven attributes; below is a brief overview: 
 				</text>
-				<description-list>
-					<item>
-						<description>STR</description>
-						<text>
-							Strength  raw physical strength.  Muscle power.
-						</text>
-					</item>
-				    <item>
-						<description>DEX</description>
-						<text>Dexterity quickness, coordination, fine motor control, balance</text>
-					</item>
-				    <item>
-						<description>BLD</description>
-						<text>Build the toughness and durability of your body,  stamina, “guts”</text>
-					</item>
-				    <item>
-						<description>INT</description>
-						<text>Intelligence computational power of the mind, ability to grasp complex problems</text>
-					</item>
-				    <item>
-						<description>WIS</description>
-						<text>Wisdom experience, worldliness, background knowledge, and common sense</text>
-					</item>
-				    <item>
-						<description>WIL</description>
-						<text>Willpower strength of the mind, ability to ‘stick it out’ when things get tough</text>
-					</item>
-					<item>
-						<description>CHA</description>
-						<text>Charisma appearance, personal presence, ability to make friends or influence others</text>
-					</item>	    
-				</description-list>
+
 				<note>
 					Throughout this document the attributes will usually be mentioned using the three-letter abbreviation instead of the full name.  For example, “STR” for “Strength”. 
 				</note>
@@ -862,8 +831,9 @@
 			</section>
 			<section>
 				<title>Combat Sequence &amp; Initiative</title>
+				<text>
 				Combat is based on a system of Rounds, Turns, and Actions.  A “round” lasts about five seconds.  It is the length of time in which every combatant has had one turn. Each round is broken down into one turn per combatant.  Each turn is broken down into one or more actions (usually three).    An action lasts about 1 second, and is the most basic unit of time in combat. 
-
+				</text>
 				During your turn, you determine what you wish to do with your available actions.  Almost everything that you do of significance during your turn consumes at least one action.  Simple examples of what can be done in an action are shooting a gun, swinging a sword, moving, throwing a grenade, or using a mystical ability.  Keep in mind that a lot of “boring” combat stuff also takes up actions: reloading your weapon, moving around, ducking behind cover, or taking an item out of your pack.  Some things that you will want to do will consume multiple actions per turn. 
 
 				All characters, by default, have THREE actions per round.  Certain skills or in-game effects might change this, but regardless of situation all combatants have at least one action per round.  When combat is going to start, all players need to figure out how many actions they get.  (Default is 3 unless a special ability or affect alters this number). 
