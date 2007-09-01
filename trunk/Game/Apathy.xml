@@ -9,7 +9,7 @@
 <!ENTITY sigma  "&#931;" ><!-- sigma -->
 <!ENTITY reg    "&#174;" ><!-- trademark -->
 ]>
-<!--<?xml-stylesheet type="text/xsl" href="apathy-html.xsl"?>-->
+<?xml-stylesheet type="text/xsl" href="apathy-html.xsl"?>
 <apathy-game>
   <book>
     <part>
@@ -2423,7 +2423,7 @@
 	  </example>
 	</section>
 	<section>
-	  <title>Cover</cover>
+	  <title>Cover</title>
 	  <text>
 	    Cover is something that a character or a creature is
 	    obscured by.  Cover has two effects:
