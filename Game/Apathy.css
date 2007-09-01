@@ -27,14 +27,17 @@ div.toc h1 {
 }
 ol.toc {
   list-style-position: outside;
-  list-style-type: upper-roman;
+  list-style-type: decimal;
   margin-left: 1em;
   padding-left: .1em;
 }
 ol.toc ol {
-  list-style-type: lower-roman;
+  list-style-type: upper-roman;
 }
 ol.toc ol ol {
+  list-style-type: lower-roman;
+}
+ol.toc ol ol ol {
   list-style-type: lower-alpha;
 }
 ol.toc li {
