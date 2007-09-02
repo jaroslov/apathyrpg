@@ -2599,7 +2599,7 @@
 	<text>An addition is something that is added to the body that
 	  normally isn't there.  A good example is a cardiac
 	  pacemaker.  Additions add new functionality to the
-	  body---either as a ``fix'' for an illness, or as an upgrade
+	  body---either as a &ldquo;fix&rdquo; for an illness, or as an upgrade
 	  to the body.  Some additions are very small devices that
 	  perform simple functions.  Others are large and complex
 	  systems that might require significant body
@@ -2935,7 +2935,7 @@
     <item><description>Enc</description> Represents the weight of the weapon.  This consumes
       Encumbrance just like armor.  Only use this when the weapon is
       actually being used.</item>
-    <item><description>Range</description> the effective ``Reach'' of the weapon in feet.  If your
+    <item><description>Range</description> the effective &ldquo;Reach&rdquo; of the weapon in feet.  If your
       target is beyond your range, you cannot strike them. You can spend
       an action to gain range on your opponent. If your target is closer
       than 1/2 range, then you are at -6 to strike the target.</item>
@@ -4539,11 +4539,821 @@
         </section>
     
       </chapter><!-- /S Martial Arts -->
+
+<!-- Mecha -->
       <chapter><!-- S Mecha -->
         <title>Mecha</title>
-    
-    
-    
+        <section>
+          <title>Mecha Suits &amp; Powered Armor</title>
+          <text>
+      A robot in which the pilot is completely protected by armor and other mechanisms.Mecha are controlled by abstract means and requires the Mecha Piloting skill.
+          </text>
+          <text>
+	    Mecha denotes armored mechanical vehicles that are built in the form of a human. There are two basic types of mecha: Power Armor and Mecha.  
+          </text>
+          <text>
+      Power Armor is an armored suit that is &ldquo;worn&rdquo; like clothing.  It provides armor protection, but it has the function of increasing the wearer's strength, endurance, and weapon payload.  It is easy to use.  The internal computers, etc, in the suit allow it to follow the wearer's movements.
+          </text>
+          <itemized-list>
+            <item>Power Armor does NOT require any skill to use</item>
+            <item>Power Armor must be either the same size as the wearer, or exactly one level larger</item>
+          </itemized-list>
+          <text>
+      True Mecha is best thought of as a vehicle, like an airplane or tank, which is often bipedal.  Mecha is piloted, not worn like power armor.  A mecha has a cockpit, and is controlled with levers, switches, and pedals.  Piloting a mecha is something like flying an airplane or driving a car.
+          </text>
+          <itemized-list>
+            <item>The Mecha Piloting skill is required to operate a mecha</item>
+            <item>When piloting a mech, any skill you use is capped at your level of mecha piloting.  So, if you had LVL 5 Dodge, but have a Mecha Piloting skill of 4, you would roll 4 dice to dodge in your mech.</item>
+            <item>Mecha must be AT LEAST one size level larger than the pilot.  Beyond that, they can be ANY size.</item>
+          </itemized-list>
+      
+          <text>
+      As a general summary: Power Armor tends to be a lighter and smaller than mecha.  Power Armor can carry less weaponry (and other hardware), but is usually more manueverable.  It is often possible to perform major feats of dexterity while wearing power armor.   This is because the power armor does not hinder the wearer's natural skills.  As well, power armor is easier to use because the Mecha Piloting skill is not required.
+          </text>
+          <text>
+      Mecha tend to be larger and more powerful than power armor.  Mecha generally have more and heavier weapons, better armor, and superior auxiliary systems compared to powered armor.  However, the pilot needs to be skilled to maximize the potential of a mecha.
+          </text>
+          <section>
+            <title>Building a Mecha</title>
+            <numbered-list>
+              <item>
+                <title>Size and Starting Costs Step</title>
+                <figure>
+                  <table>
+                    <head>
+                      <cell>Size</cell>
+                      <cell>1</cell><cell>2</cell><cell>3</cell>
+                      <cell>4</cell><cell>5</cell><cell>6</cell>
+                      <cell>7</cell><cell>8</cell><cell>9</cell>
+                    </head>
+                    <row>
+                      <cell>Height</cell>
+                      <cell>4'</cell>
+                      <cell>7'</cell>
+                      <cell>15'</cell>
+                      <cell>30'</cell>
+                      <cell>60'</cell>
+                      <cell>125'</cell>
+                      <cell>250'</cell>
+                      <cell>500'</cell>
+                      <cell>1000'</cell>
+                    </row>
+                    <row>
+                      <cell>Mecha Weight (tons)</cell>
+                      <cell>0.5</cell>
+                      <cell>1</cell>
+                      <cell>2</cell>
+                      <cell>16</cell>
+                      <cell>125</cell>
+                      <cell>1000</cell>
+                      <cell>8000</cell>
+                      <cell>65000</cell>
+                      <cell>500000</cell>
+                    </row>
+                    <row>
+                      <cell>Mecha CP Cost</cell>
+                      <cell>5</cell>
+                      <cell>10</cell>
+                      <cell>20</cell>
+                      <cell>40</cell>
+                      <cell>80</cell>
+                      <cell>160</cell>
+                      <cell>320</cell>
+                      <cell>640</cell>
+                      <cell>1280</cell>
+                    </row>
+                    <row>
+                      <cell>Power Armor CP Cost</cell>
+                      <cell>1</cell>
+                      <cell>4</cell>
+                      <cell>9</cell>
+                      <cell>16</cell>
+                      <cell>25</cell>
+                      <cell>50</cell>
+                      <cell>100</cell>
+                      <cell>200</cell>
+                      <cell>400</cell>
+                    </row>
+                  </table>
+                <caption>Size Level and Starting CP Cost</caption>
+                </figure>
+                <itemized-list>
+                  <item>Mecha can be no smaller than one size level greater than the wearer's size</item>
+                  <item>Humans are size level 2, weight is given in tons</item>
+                  <item>Height and weight indicates the maximum size for a humanoid shaped robot for a given size level</item>
+                </itemized-list>
+              </item>
+              <item>
+                <title>Starting Values</title>
+                  <figure>
+                  <table>
+                    <head>
+                      <cell>Size</cell>
+                      <cell>1</cell><cell>2</cell><cell>3</cell>
+                      <cell>4</cell><cell>5</cell><cell>6</cell>
+                      <cell>7</cell><cell>8</cell><cell>9</cell>
+                    </head>
+                    <row>
+                      <cell>Mecha Slots</cell>
+                      <cell>10</cell>
+                      <cell>20</cell>
+                      <cell>40</cell>
+                      <cell>80</cell>
+                      <cell>160</cell>
+                      <cell>320</cell>
+                      <cell>640</cell>
+                      <cell>1280</cell>
+                      <cell>2560</cell>
+                    </row>
+                    <row>
+                      <cell>Power Armor Slots</cell>
+                      <cell>8</cell>
+                      <cell>20</cell>
+                      <cell>35</cell>
+                      <cell>60</cell>
+                      <cell>100</cell>
+                      <cell>190</cell>
+                      <cell>330</cell>
+                      <cell>575</cell>
+                      <cell>1000</cell>
+                    </row>
+                    <row>
+                      <cell>Mecha Armor</cell>
+                      <cell>5</cell>
+                      <cell>10</cell>
+                      <cell>20</cell>
+                      <cell>30</cell>
+                      <cell>40</cell>
+                      <cell>50</cell>
+                      <cell>60</cell>
+                      <cell>70</cell>
+                      <cell>80</cell>
+                    </row>
+                    <row>
+                      <cell>Power Armor Armor</cell>
+                      <cell>2</cell>
+                      <cell>6</cell>
+                      <cell>12</cell>
+                      <cell>20</cell>
+                      <cell>30</cell>
+                      <cell>40</cell>
+                      <cell>50</cell>
+                      <cell>60</cell>
+                      <cell>70</cell>
+                    </row>
+                    <row>
+                      <cell>Dex Minus</cell>
+                      <cell>-1</cell>
+                      <cell>-2</cell>
+                      <cell>-3</cell>
+                      <cell>-4</cell>
+                      <cell>-5</cell>
+                      <cell>-6</cell>
+                      <cell>-7</cell>
+                      <cell>-8</cell>
+                      <cell>-9</cell>
+                    </row>
+                    <row>
+                      <cell>A. Penalty</cell>
+                      <cell>3</cell>
+                      <cell>5</cell>
+                      <cell>10</cell>
+                      <cell>15</cell>
+                      <cell>20</cell>
+                      <cell>25</cell>
+                      <cell>30</cell>
+                      <cell>35</cell>
+                      <cell>40</cell>
+                    </row>
+                    <row>
+                      <cell>Hit Points</cell>
+                      <cell>75</cell>
+                      <cell>150</cell>
+                      <cell>300</cell>
+                      <cell>600</cell>
+                      <cell>1200</cell>
+                      <cell>2500</cell>
+                      <cell>5000</cell>
+                      <cell>10000</cell>
+                      <cell>20000</cell>
+                    </row>
+                    <row>
+                      <cell>Strength</cell>
+                      <cell>5</cell>
+                      <cell>10</cell>
+                      <cell>20</cell>
+                      <cell>40</cell>
+                      <cell>80</cell>
+                      <cell>160</cell>
+                      <cell>320</cell>
+                      <cell>640</cell>
+                      <cell>1280</cell>
+                    </row>
+                    <row>
+                      <cell>Power</cell>
+                      <cell>2</cell>
+                      <cell>5</cell>
+                      <cell>10</cell>
+                      <cell>20</cell>
+                      <cell>40</cell>
+                      <cell>80</cell>
+                      <cell>160</cell>
+                      <cell>320</cell>
+                      <cell>640</cell>
+                    </row>
+                    </table>
+                    <caption>Starting Values for Statistics</caption>
+                  </figure>
+                <description-list>
+                  <item><description>Slots</description><text> The amount of equipment that can be installed on the suit</text></item>
+                  <item><description>Armor</description><text> Starting armor value of the suit (All equal for P/S/C)</text></item>
+                  <item><description>Dex Minus</description><text> Robots have some control-lag, this is represented by a DEX minus to the pilots DEX attribute</text></item>
+                  <item><description>A. Penalty</description><text> Armor Penalty.  For every full amount of this value, the DEX of the pilot is reduced by 1.</text></item>
+                  <item><description>Power</description><text> is the number of PC per turn consumed by the robot, just to run basic needed systems</text></item>
+                  <item><description>Hit Points</description><text> The starting number of HP that a mecha has</text></item>
+                  <item><description>Strength</description><text> The starting strength value for the mecha</text></item>
+                </description-list>
+              </item>
+              <item>
+                <title>Frame Style</title>
+                <figure>
+                  <table>
+                    <head>
+                      <cell>Frame Material (Added HP)</cell>
+		      <cell>Cost Factor</cell>
+                      <cell>Very Light (-20%)</cell>
+                      <cell>Light (-10%)</cell>
+                      <cell>Medium (0%)</cell>
+                      <cell>Heavy (+10%)</cell>
+                      <cell>Very Heavy (-10%)</cell>
+                    </head>
+                      <row>
+                        <cell>Carbon Composite</cell>
+                        <cell>-20%</cell>
+                        <cell>XXXX</cell>
+                        <cell>XXXX</cell>
+                        <cell>XXXX</cell>
+                        <cell>XXXX</cell>
+                        <cell>0</cell>
+                      </row>
+                      <row>
+                        <cell>Aluminum Alloy</cell>
+                        <cell>-10%</cell>
+                        <cell>XXXX</cell>
+                        <cell>XXXX</cell>
+                        <cell>XXXX</cell>
+                        <cell>0</cell>
+                        <cell>20</cell>
+                      </row>
+                      <row>
+                        <cell>Standard Steel</cell>
+                        <cell>+0%</cell>
+                        <cell>XXXX</cell>
+                        <cell>XXXX</cell>
+                        <cell>0</cell>
+                        <cell>2</cell>
+                        <cell>40</cell>
+                      </row>
+                      <row>
+                        <cell>Heavy Steel</cell>
+                        <cell>+20%</cell>
+                        <cell>XXXX</cell>
+                        <cell>0</cell>
+                        <cell>2</cell>
+                        <cell>4</cell>
+                        <cell>60</cell>
+                      </row>
+                      <row>
+                        <cell>Duralimin Alloy</cell>
+                        <cell>+40%</cell>
+                        <cell>0</cell>
+                        <cell>2</cell>
+                        <cell>4</cell>
+                        <cell>6</cell>
+                        <cell>80</cell>
+                      </row>
+                      <row>
+                        <cell>Matrix Composite</cell>
+                        <cell>+60%</cell>
+                        <cell>2</cell>
+                        <cell>4</cell>
+                        <cell>6</cell>
+                        <cell>8</cell>
+                        <cell>100</cell>
+                      </row>
+                      <row>
+                        <cell>Adamantite Alloy</cell>
+                        <cell>+80%</cell>
+                        <cell>4</cell>
+                        <cell>6</cell>
+                        <cell>8</cell>
+                        <cell>10</cell>
+                        <cell>120</cell>
+                      </row>
+                      <row>
+                        <cell>Gundanium Alloy</cell>
+                        <cell>+100%</cell>
+                        <cell>6</cell>
+                        <cell>8</cell>
+                        <cell>10</cell>
+                        <cell>12</cell>
+                        <cell>140</cell>
+                      </row>
+                  </table>
+                  <caption>Frame Style</caption>
+                </figure>
+                <text>
+      The number of HP and Slots that a mecha has can be further altered by the internal frame's style and material makup. Frame Style determines the efficiency of how bulky the internal frame of the mecha is, this adjusts the number of slots that are within the mecha. Frame Material is the makeup of the frame, what it is made of.  Different materials offer decreased or added hit points to the mecha. Choose the type of Frame Style, as well as the Material.  Cross reference them on the chart below, and multiply the number by the size of the mecha to get the CP cost for that configuration.
+                </text>
+                <text>
+      For example, if you chose a &ldquo;Light Matrix Composite&rdquo; frame for a size 4 mecha, it will receive -10% to it's slot total, would gain +60% to it's hit points, and cost 16 CP (size of 4*4).
+                </text>
+                <text>
+      If a mecha suit runs out of HP, it is rendered useless until repaired.  If it goes -HP then it is destroyed. Any time the mecha takes 10% of it's total HP in one blow, the pilot takes 1D6+1 U damage.
+                </text>
+              </item>
+                <text>
+      Starting armor is already listed above, the mecha suit starts with this value in P/S/C. Additional armor is purchased by spending 1 CP per +1/+1/+1 armor value. Different types of armors can be used on the mecha suit.  These different types modify the ratio of the three armor values.  Chose one, but they cannot be mixed.
+                </text>
+              <item>
+                <title>Armor</title>
+                <figure>
+                  <table>
+                    <head>
+                      <cell>Type</cell>
+                      <cell>Ratio of P/S/C</cell>
+                      <cell>Description</cell>
+                    </head>
+                    <row>
+                      <cell>Normal</cell>
+                      <cell>100% / 100% / 100% </cell>
+                      <cell>Standard protective armor</cell>
+                    </row>
+                    <row>
+                      <cell>Reactive</cell>
+                      <cell>80% / 80% / 140% </cell>
+                      <cell>Armor will detonate against all attacks, blunting the blow of C damage</cell>
+                    </row>
+                    <row>
+                      <cell>Ultrahard</cell>
+                      <cell>130% / 90% / 80% </cell>
+                      <cell>Extra hard armor fragments piercing weapons</cell>
+                    </row>
+                    <row>
+                      <cell>Slick-steel</cell>
+                      <cell>90% / 120% / 90% </cell>
+                      <cell>Slashing attacks tend to slide off the armor</cell>
+                    </row>
+                    <row>
+                      <cell>Reflective</cell>
+                      <cell>70% / 70% / 70%</cell>
+                      <cell> Armor will protect against energy based attacks as if the attack was not U</cell>
+                    </row>
+                  </table>
+                  <caption>Armor</caption>
+                </figure>
+              </item>
+              <item>
+                <title>Engines etc.</title>
+                <text>
+      Various parts of a mecha or powered suit require power to operate.  This can come from any number of different sources.  A mecha will generally have an ENGINE of some sort that supplies power for moving around, and operating equipment &amp; weapons.  Some mecha will have supplimentary power sources used for especially power-hungry equipment.  All power sources take up slots within the suit based on the amount of power that it produces.  The more expensive (in CP) a power system is, the more power can be gotten from one slot's worth of the power source. Power is measured in PCs (or Power Cells).  All power sources produce the number of listed PC at the beginning of each of the character's turns.  All systems on a suit will draw power from this, and if there isn't enough power available, that piece of equipment will not function.  So it is vital that the suit has adequate power.
+                </text>
+                <figure>
+                  <title>Engines (provide constant power while mech is operating)</title>
+                  <table>
+                    <head>
+                      <cell>System</cell>
+                      <cell>PC / slot</cell>
+                      <cell>CP / slot</cell>
+                      <cell>Description</cell>
+                    </head>
+                    <row>
+                      <cell>Solar</cell>
+                      <cell>2</cell>
+                      <cell>.5</cell>
+                      <cell>Solar panels on the suit provide power.  No light = no power</cell>
+                    </row>
+                    <row>
+                      <cell>Fuel</cell>
+                      <cell>4</cell>
+                      <cell>1</cell>
+                      <cell>A standard fuel powered engine.  Easily accessible fuel (gasoline).</cell>
+                    </row>
+                    <row>
+                      <cell>Turbine</cell>
+                      <cell>6</cell>
+                      <cell>2</cell>
+                      <cell>A high efficiency fuel engine.  Fuel is hard to come by and expensive.</cell>
+                    </row>
+                    <row>
+                      <cell>Fission</cell>
+                      <cell>8</cell>
+                      <cell>4</cell>
+                      <cell>A small nuclear reactor provides power.</cell>
+                    </row>
+                    <row>
+                      <cell>Fusion</cell>
+                      <cell>10</cell>
+                      <cell>6</cell>
+                      <cell>Most efficient, and most expensive.</cell>
+                    </row>
+                  </table>
+                  <caption>Power Sources</caption>
+                </figure>
+                <text>
+      When turned on, booster engines provide power every turn for three turns in a row.  They cannot be shut offonce they are turned on. They must be refueled before they can be used again.  These are useful for emergency applications or powering large engergy weapons in combat.
+                </text>
+                <text>
+      Booster Engines (provide temporary power for 3 turns only before refueling)
+                </text>
+                <figure>
+                  <table>
+                    <head>
+                      <cell>System</cell><cell>PC / slot</cell>
+                      <cell>CP / slot</cell><cell>Description</cell>
+                    </head>
+                      <row>
+                        <cell>LPG</cell>
+                        <cell>7</cell>
+                        <cell>1</cell>
+                        <cell>Liquified Petroleum Gas micro-turbine</cell>
+                      </row>
+                      <row>
+                        <cell>Alcohol</cell>
+                        <cell>10</cell>
+                        <cell>2</cell>
+                        <cell>Alcohol-driven high-speed rotary generator</cell>
+                      </row>
+                      <row>
+                        <cell>Hydrazine</cell>
+                        <cell>15</cell>
+                        <cell>3</cell>
+                        <cell>Hydrazine-Gasoline fueled generator.</cell>
+                      </row>
+                      <row>
+                        <cell>LOX</cell>
+                        <cell>22</cell>
+                        <cell>4</cell>
+                        <cell>Liquid-Oxygen / Aluminum fueled generator.</cell>
+                      </row>
+                  </table>
+                  <caption>Booster Engines</caption>
+                </figure>
+                <text>
+      Power cells store energy like a rechargeable battery.  They contain a certain amount of power, which can be drawn from them at will.  Once the power is used up, they must be recharged before they can be used again.  Better power cells can store more energy in a smaller amount of space.
+                </text>
+                <text>
+      Power Cells store power like a battery; can be recharged.
+                </text>
+                <figure>
+                  <table>
+                    <head>
+                      <cell>System</cell>
+                      <cell>PC / Slot</cell>
+                      <cell>CP / Slot</cell>
+                      <cell>Description</cell>
+                    </head>
+                      <row>
+                        <cell>Standard</cell>
+                        <cell>50</cell>
+                        <cell>1</cell>
+                        <cell>Simple capacitors store power</cell>
+                      </row>
+                      <row>
+                        <cell>HG</cell>
+                        <cell>80</cell>
+                        <cell>2</cell>
+                        <cell>special high grade power cell</cell>
+                      </row>
+                      <row>
+                        <cell>HD</cell>
+                        <cell>120</cell>
+                        <cell>3</cell>
+                        <cell>High-density power cell</cell>
+                      </row>
+                      <row>
+                        <cell>Super</cell>
+                        <cell>170</cell>
+                        <cell>4</cell>
+                        <cell>Most efficent power cell</cell>
+                      </row>
+                  </table>
+                  <caption>Power Cells</caption>
+                </figure>
+              </item>
+              <item>
+                <title>Agility and Strength Modification</title>
+                <figure>
+                  <table>
+                    <head>
+                      <cell>Kind</cell>
+                      <cell>DEX Bonus</cell>
+                      <cell>STR Bonus</cell>
+                      <cell>Caveats</cell>
+                    </head>
+                    <row>
+                      <cell>Mecha</cell>
+                      <cell>
+                        <m>
+                          <mrow>
+                            <mfrac>
+                              <mrow>
+                                <mn>2</mn>
+                                <mo>&times;</mo>
+                                <mi>Size CP</mi>
+                              </mrow>
+                              <mrow>
+                                <mi>+1</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </m>
+                      </cell>
+                        <m>
+                          <mfrac>
+                            <mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mi>CP</mi>
+                            </mrow>
+                            <mrow>
+                              <mi>+1</mi>
+                            </mrow>
+                          </mfrac>
+                        </m>
+                      <cell>
+                      </cell>
+                      <cell>DEX can only be used to reduce the DEX minus to a +0.</cell>
+                    </row>
+                    <row>
+                      <cell>Powered Armor</cell>
+                      <cell>
+                        <m>
+                          <mrow>
+                            <mfrac>
+                              <mrow>
+                                <mn>3</mn>
+                                <mi>CP</mi>  
+                              </mrow>
+                              <mrow>
+                                <mo>+</mo>
+                                <mo>(</mo>
+                                <mi>Size</mi>
+                                <mo>-</mo>
+                                <mn>1</mn>
+                                <mo>)</mo>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </m>
+                      </cell>
+                      <cell>
+                        <m>
+                          <mrow>
+                            <mfrac>
+                              <mrow>
+                                <mo>(</mo>
+                                  <mn>2</mn>
+                                  <mo>&times;</mo>
+                                  <mi>Size Cp</mi>
+                                <mo>)</mo>
+                              </mrow>
+                              <mrow>
+                                <mi>+1</mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </m>
+                      </cell>
+                      <cell>Power armor STR bonus increases the wearer's own STR while wearing the armor
+      </cell>
+                    </row>
+                  </table>
+                  <caption>DEX and STR modification.</caption>
+                </figure>
+              </item>
+              <item>
+                <title>Movement Systems</title>
+                <text>
+      A mecha suit or power armor needs to move.  All movement systems use power.  Unless otherwise stated, the systems use their power only when activated (being used).
+                </text>
+                <figure>
+                  <head>
+                    <cell>Type</cell><cell>Speed</cell>
+                    <cell>Altitude</cell><cell>Power</cell>
+                    <cell>Slots</cell><cell>CP</cell><cell>Notes</cell>
+                  </head>
+                    <row>
+                      <cell>Legs</cell>
+                        <cell>20 mph</cell>
+                        <cell>
+                          <m><mrow>
+                              <mn>5</mn>
+                              <mo>&times;</mo>
+                              <mi>Size</mi>
+                          </mrow></m>
+                        </cell>
+                        <cell>
+                          <m><mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mo>&times;</mo>
+                              <mn>6</mn>
+                          </mrow></m>
+                        </cell>
+                        <cell>0</cell>
+                        <cell>4</cell>
+                    </row>
+                    <row>
+                      <cell>Wheels</cell>
+                        <cell>50 mph</cell>
+                        <cell>0</cell>
+                        <cell>
+                          <m><mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mo>&times;</mo>
+                              <mn>2</mn>
+                          </mrow></m>
+                        </cell>
+                        <cell>1</cell>
+                        <cell>3</cell>
+                    </row>
+                    <row>
+                      <cell>Treads</cell>
+                        <cell>30 mph</cell>
+                        <cell>0</cell>
+                        <cell>$(Size-1)*4$</cell>
+                        <cell>2</cell>
+                        <cell>4</cell>
+                    </row>
+                    <row>
+                      <cell>Micro-hover</cell>
+                        <cell>20 mph</cell>
+                        <cell>15'</cell>
+                        <cell>
+                          
+                          <m><mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mo>&times;</mo>
+                              <mn>10</mn>
+                          </mrow></m>
+                        </cell>
+                        <cell>4</cell>
+                        <cell>8</cell>
+                    </row>
+                    <row>
+                      <cell>True-hover</cell>
+                        <cell>30 mph</cell>
+                        <cell>200'</cell>
+                        <cell>
+                          <m><mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mo>&times;</mo>
+                              <mn>15</mn>
+                          </mrow></m>
+                        </cell>
+                        <cell>6</cell>
+                        <cell>10</cell>
+                    </row>
+                    <row>
+                      <cell>Jump jets</cell>
+                        <cell>0 mph</cell>
+                        <cell>100'</cell>
+                        <cell>
+                          <m><mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mo>&times;</mo>
+                              <mn>10</mn>
+                          </mrow></m>
+                        </cell>
+                        <cell>1</cell>
+                        <cell>$Size^2$</cell>
+                    </row>
+                    <row>
+                      <cell>Mech. Jump</cell>
+                        <cell>0 mph</cell>
+                        <cell>50'</cell>
+                        <cell>0</cell>
+                        <cell>2</cell>
+                        <cell><m><msup><mi>Size</mi><mn>2</mn></msup></m></cell>
+                    </row>
+                    <row>
+                      <cell>Manuever Jets</cell>
+                        <cell>40 mph</cell>
+                        <cell>5'</cell>
+                        <cell>
+                          <m><mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mo>&times;</mo>
+                              <mn>20</mn>
+                          </mrow></m>
+                        </cell>
+                        <cell>1</cell>
+                        <cell>
+                          <m><mfrac>
+                            <mrow>
+                              <mn>3</mn><mo>&times;</mo>
+                              <mrow><mo>(</mo>
+                                <mi>X</mi>
+                                <mo>&times;</mo>
+                                <mn>1</mn>
+                              <mo>)</mo></mrow>
+                            </mrow>
+                            <mn>4</mn>
+                          </mfrac></m>
+                        </cell>
+                        <cell>Gives [+2X] to dodge</cell>
+                    </row>
+                    <row>
+                      <cell>Jet System</cell>
+                        <cell>200 mph</cell>
+                        <cell>Unlimited</cell>
+                        <cell>
+                          <m><mrow>
+                              <mo>(</mo>
+                              <mi>Size</mi>
+                              <mo>-</mo>
+                              <mn>1</mn>
+                              <mo>)</mo>
+                              <mo>&times;</mo>
+                              <mn>20</mn>
+                          </mrow></m>
+                        </cell>
+                        <cell>10</cell>
+                        <cell>15</cell>
+                    </row>
+                    <row>
+                      <cell>Added Speed</cell>
+                        <cell>+15 mph</cell>
+                        <cell>n/a</cell>
+                        <cell>n/a</cell>
+                        <cell>n/a</cell>
+                        <cell>1</cell>
+                        <cell>Not for jet system</cell>
+                    </row>
+                    <row>
+                      <cell>Added Speed</cell>
+                        <cell>+50 mph</cell>
+                        <cell>n/a</cell>
+                        <cell>n/a</cell>
+                        <cell>n/a</cell>
+                        <cell>1</cell>
+                        <cell>For jet system only</cell>
+                    </row>
+                  <caption>Movement Systems</caption>
+                </figure>
+              </item>
+              <item>
+                <title>Equipment</title>
+                <text>
+                Purchase equipment.
+                </text>
+              </item>
+              <item>
+                <title>Weapons</title>
+                <text>
+      Purchase weapons from the generic weapons sheet.
+                </text>
+                <note>A mecha suit can weild any hand-held weapon that is no bigger than STR/2 slots.</note>
+              </item>
+            </numbered-list>
+          </section>
+        </section>
+      
+        <section><!-- Equipment -->
+            <title>Equipment</title>
+            <reference src="Content/Mecha/Equipment/Auxiliary" />
+            <note>Mecha-Ballistic.xml</note>
+            <note>Mecha-Energy.xml</note>
+            <note>Mecha-Melee Weapons.xml</note>
+            <reference src="Content/Mecha/Equipment/Sensors and Controls" />
+        </section><!-- /Equipment -->
       </chapter><!-- /S Mecha -->
       <chapter><!-- S Monsters -->
         <title>Monsters</title>
@@ -7709,7 +8519,7 @@
       <field name="Type" table="yes" >S</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >+1 Dmg</field>
-      <field name="Description" description="yes" >These are the most effective hunting arrows.  They aren&apos;t great at penetrating heavy armor, but are excellent for causing additional damage to the target.  This is particularly desirable for hunting, because it is likely to kill or incapacitate the target animal quickly, even if the vital organs are missed.  A broadhead is a wide, diamond-shaped head that has two or more ``fins&apos;&apos; on it that are sharpened into blades---which cut a devastating wound in the target.</field>
+      <field name="Description" description="yes" >These are the most effective hunting arrows.  They aren&apos;t great at penetrating heavy armor, but are excellent for causing additional damage to the target.  This is particularly desirable for hunting, because it is likely to kill or incapacitate the target animal quickly, even if the vital organs are missed.  A broadhead is a wide, diamond-shaped head that has two or more &ldquo;fins&apos;&apos; on it that are sharpened into blades---which cut a devastating wound in the target.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Bullet Point" >
@@ -7719,7 +8529,7 @@
       <field name="Cost" table="yes" />
       <field name="Damage" table="yes" />
       <field name="Hands" />
-      <field name="Description" description="yes" >The ``standard&apos;&apos; type of arrow point.  The tip is pointed, but somewhat blunt, like a rifle bullet.  They are used for hunting small game, and for target shooting.  They are also common arrows for some military use since they are easily and cheaply produced.</field>
+      <field name="Description" description="yes" >The &ldquo;standard&apos;&apos; type of arrow point.  The tip is pointed, but somewhat blunt, like a rifle bullet.  They are used for hunting small game, and for target shooting.  They are also common arrows for some military use since they are easily and cheaply produced.</field>
      </datum>
      <datum name="Bullet Point (blunt--target)" >
       <field name="Name" title="yes" >Bullet Point (blunt--target)</field>
@@ -8828,7 +9638,7 @@
        <field name="Minimum Strength" table="yes" >15</field>
        <field name="Maximum Strength Bonus" table="yes" >18</field>
        <field name="Recovery" table="yes" >2</field>
-       <field name="Description" description="yes" >Developed by the fiercest Norse barbarian tribes, this is a simple yet fearsome weapon.  Forged from the superior steels of the northern countries, the huge swept blade would easily cleave armor and limbs alike, and the carved handle provided for a very controllable swing.  Many Norse warriors named their war-axes such things as ``widowmaker&apos;&apos; or ``swordbreaker&apos;&apos;.</field>
+       <field name="Description" description="yes" >Developed by the fiercest Norse barbarian tribes, this is a simple yet fearsome weapon.  Forged from the superior steels of the northern countries, the huge swept blade would easily cleave armor and limbs alike, and the carved handle provided for a very controllable swing.  Many Norse warriors named their war-axes such things as &ldquo;widowmaker&apos;&apos; or &ldquo;swordbreaker&apos;&apos;.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Pickaxe" >
@@ -9060,7 +9870,7 @@
           on the end. A slungshot is used much like a yo-yo. It is not a
           chained weapon because of it&apos;s use: straight-line shots. The
           range of the weapon can be up to 10 feet. Specialists may use
-          a variant called a ``loaded sleeve&apos;&apos; which is a modification
+          a variant called a &ldquo;loaded sleeve&apos;&apos; which is a modification
           of long robe-sleeves to use the weapon. As an Exotic weapon,
           the slungshot may be used twice in a single action.</field>
        <field name="Implementation" />
@@ -9120,7 +9930,7 @@
        <field name="Minimum Strength" table="yes" >12</field>
        <field name="Maximum Strength Bonus" table="yes" >10</field>
        <field name="Recovery" table="yes" >0</field>
-       <field name="Description" description="yes" >Heavy metal brass knuckles, shaped like a ``D&apos;&apos;; made by Rock Trolls. Can be used as Blunt or Body (punch). Can cast any of the following spells, but only one of the spells per day</field>
+       <field name="Description" description="yes" >Heavy metal brass knuckles, shaped like a &ldquo;D&apos;&apos;; made by Rock Trolls. Can be used as Blunt or Body (punch). Can cast any of the following spells, but only one of the spells per day</field>
        <field name="Implementation" />
       </datum>
       <datum name="Brass Body" >
@@ -9176,7 +9986,7 @@
        <field name="Minimum Strength" table="yes" >0</field>
        <field name="Maximum Strength Bonus" table="yes" >20</field>
        <field name="Recovery" table="yes" >0</field>
-       <field name="Description" description="yes" >These gloves were owned by Julius Creese of the Church of St. Simon. Similar gloves have been used by important members of the church in times past, though their mothod of manufacture has been lost. A pair of whilte cloth gloves. The gloves are heavily starched and have a bright white color despite their age and lack of care. EAch glove has a large cuff that surrounds the wrist ofthe wearer. The left glove has black text reading ``Speak With The Dead&apos;&apos; superimposed over a cross imprinted onto the back of the hand. The right glove has text reading ``Saint Simon is in Heaven Now.&apos;&apos; These gloves have the following properties, which only work if both glvoes are worn</field>
+       <field name="Description" description="yes" >These gloves were owned by Julius Creese of the Church of St. Simon. Similar gloves have been used by important members of the church in times past, though their mothod of manufacture has been lost. A pair of whilte cloth gloves. The gloves are heavily starched and have a bright white color despite their age and lack of care. EAch glove has a large cuff that surrounds the wrist ofthe wearer. The left glove has black text reading &ldquo;Speak With The Dead&apos;&apos; superimposed over a cross imprinted onto the back of the hand. The right glove has text reading &ldquo;Saint Simon is in Heaven Now.&apos;&apos; These gloves have the following properties, which only work if both glvoes are worn</field>
        <field name="Implementation" />
       </datum>
       <datum name="Sap Glove" >
@@ -9476,7 +10286,7 @@
        <field name="Minimum Strength" table="yes" >20</field>
        <field name="Maximum Strength Bonus" table="yes" >28</field>
        <field name="Recovery" table="yes" >3</field>
-       <field name="Description" description="yes" >Literally ``Hammer of Iron&apos;&apos;, this is the largest of the hammer type weapons.  It&apos;s fifty-pound iron head requires a true brute to swing, but woe to those who would be in its path.</field>
+       <field name="Description" description="yes" >Literally &ldquo;Hammer of Iron&apos;&apos;, this is the largest of the hammer type weapons.  It&apos;s fifty-pound iron head requires a true brute to swing, but woe to those who would be in its path.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Monks Spade" >
@@ -9716,7 +10526,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >3</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >Also called a Quatar or punch dagger.  It consists of a handle mounted perpendicular to the blade, often in a ``T&apos;&apos; shape.  The handle is gripped in a closed fist, with a triangular blade extending forward.  It is used in a punching motion.</field>
+      <field name="Description" description="yes" >Also called a Quatar or punch dagger.  It consists of a handle mounted perpendicular to the blade, often in a &ldquo;T&apos;&apos; shape.  The handle is gripped in a closed fist, with a triangular blade extending forward.  It is used in a punching motion.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Knife" >
@@ -9786,7 +10596,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >2</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >This would be a typical pocketknife, ``Swiss army knife&apos;&apos;, or any knife with a short blade.  Not very effective as a weapon, but easy to conceal---and a decent backup.</field>
+      <field name="Description" description="yes" >This would be a typical pocketknife, &ldquo;Swiss army knife&apos;&apos;, or any knife with a short blade.  Not very effective as a weapon, but easy to conceal---and a decent backup.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Stiletto" >
@@ -10146,7 +10956,7 @@
       <field name="Minimum Strength" table="yes" >6</field>
       <field name="Maximum Strength Bonus" table="yes" >0</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >A standard European-style ``cut and thrust&apos;&apos; sword.  It was the mainstay weapon of the footsoldiers of many past armies---a durable weapon that can be counted on in combat.</field>
+      <field name="Description" description="yes" >A standard European-style &ldquo;cut and thrust&apos;&apos; sword.  It was the mainstay weapon of the footsoldiers of many past armies---a durable weapon that can be counted on in combat.</field>
       <field name="Implementation" />
      </datum>
     </category>
@@ -10698,7 +11508,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >4</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >The class ``fencing&apos;&apos; sword used in duels from the [latex]$16^{th}$--$19^{th}$[/latex] c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for 2D6 with 4 AP and a MSB of 12. If the weapon is used as [latex]\emph{exotic}[/latex] (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</field>
+      <field name="Description" description="yes" >The class &ldquo;fencing&apos;&apos; sword used in duels from the [latex]$16^{th}$--$19^{th}$[/latex] c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for 2D6 with 4 AP and a MSB of 12. If the weapon is used as [latex]\emph{exotic}[/latex] (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Stone Bat" >
@@ -10944,7 +11754,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >1</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >The well known ``Ninja&apos;s star&apos;&apos;.  Shuriken are small starlike bladed throwing weapons, having anywhere from three to twelve points on them.  The most common have between three and six points.  They are very easy to conceal, but don&apos;t deal much damage.  They are best used with skilled aim or with poisons.  High quality shurikens are razor sharp and have superior damage capability.</field>
+      <field name="Description" description="yes" >The well known &ldquo;Ninja&apos;s star&apos;&apos;.  Shuriken are small starlike bladed throwing weapons, having anywhere from three to twelve points on them.  The most common have between three and six points.  They are very easy to conceal, but don&apos;t deal much damage.  They are best used with skilled aim or with poisons.  High quality shurikens are razor sharp and have superior damage capability.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Shuriken, True" >
@@ -12049,7 +12859,7 @@
       <field name="Name" title="yes" >Tent, large</field>
       <field name="MetaTag" />
       <field name="Cost" table="yes" >$100.00</field>
-      <field name="Description" description="yes" >A big ``cabin&apos;&apos; style tent.  Has lots of room inside, up to 8 adults.</field>
+      <field name="Description" description="yes" >A big &ldquo;cabin&apos;&apos; style tent.  Has lots of room inside, up to 8 adults.</field>
      </datum>
      <datum name="Tent, small" >
       <field name="Name" title="yes" >Tent, small</field>
@@ -12091,7 +12901,7 @@
       <field name="Name" title="yes" >Tool, MultiTool</field>
       <field name="MetaTag" />
       <field name="Cost" table="yes" >$75.00</field>
-      <field name="Description" description="yes" >A pocket tool similar to a ``swiss army knife&apos;&apos;.  It has common tools inside, like pliers, screwdriver, knife blade, etc.  Very handy, but not tough enough for serious jobs or manuverable enough for delicate work.</field>
+      <field name="Description" description="yes" >A pocket tool similar to a &ldquo;swiss army knife&apos;&apos;.  It has common tools inside, like pliers, screwdriver, knife blade, etc.  Very handy, but not tough enough for serious jobs or manuverable enough for delicate work.</field>
      </datum>
      <datum name="Tool, Rescue" >
       <field name="Name" title="yes" >Tool, Rescue</field>
@@ -12410,7 +13220,7 @@
       <field name="Minimum Strength" table="yes" >10</field>
       <field name="Recovery" table="yes" >1</field>
       <field name="Range" table="yes" >400</field>
-      <field name="Description" description="yes" >A recurve bow is one that has been specially treated so that the bow itself ``wants&apos;&apos; to bend in the opposite direction that it actually does when drawn.  This puts more force on the bowstring therefore equates to a more powerful bow.</field>
+      <field name="Description" description="yes" >A recurve bow is one that has been specially treated so that the bow itself &ldquo;wants&apos;&apos; to bend in the opposite direction that it actually does when drawn.  This puts more force on the bowstring therefore equates to a more powerful bow.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Short Bow" >
@@ -13287,7 +14097,7 @@
     
     Because Major Ward is 5$^{th}$ rank, Disenchant does not automatically work, and a skill contest is required.
     
-    Even though Ulek is dead, ``he&apos;&apos; is still entitled to a roll.  The GM determines that Ulek had Magical Control level 4 and WIL 15 at the time Major Ward was first cast.  Thus, Ulek&apos;s roll is 4 dice + 15 (from wisdom) and +5 from the spell level.  The GM keeps this information secret, and rolls for Ulek:  Three successes.
+    Even though Ulek is dead, &ldquo;he&apos;&apos; is still entitled to a roll.  The GM determines that Ulek had Magical Control level 4 and WIL 15 at the time Major Ward was first cast.  Thus, Ulek&apos;s roll is 4 dice + 15 (from wisdom) and +5 from the spell level.  The GM keeps this information secret, and rolls for Ulek:  Three successes.
     
     The evil wizard now rolls:  He has Lvl 5 Magical Control, a WIL of 14, and he chooses to spend an extra 250 MP which gives him +5 to his roll.  His roll is 5 dice + 19, and comes up four successes.
     
@@ -17533,7 +18343,7 @@
             30, so he owes $30-20=10$ character points.}
     
           The Maximum Strength Bonus (MSB) of \emph{Punch/Kick} is
-          ``unlimited,&apos;&apos; and the Minimum Strength Requirement (MSR) is
+          &ldquo;unlimited,&apos;&apos; and the Minimum Strength Requirement (MSR) is
           8. Characters with less than an 8 \textscbf{STR} can still
           purchase \emph{Punch/Kick} but have a negative to the raw
           damage they deal.
@@ -17667,7 +18477,7 @@
           As in Ulek&apos;s case, note that the effect of the spells are
           delayed until the last spell comes into effect. If order is
           important, this is determined by the Mage; the effects can
-          ``cross-cut.&apos;&apos;</field>
+          &ldquo;cross-cut.&apos;&apos;</field>
       <field name="Implementation" />
      </datum>
      <datum name="Combat Etiquette" >
@@ -17678,8 +18488,8 @@
       <field name="Attribute" table="yes" >Charisma</field>
       <field name="Description" description="yes" >[LaTeX]
     
-          The skill of how to engage in ``gentlemanly,&apos;&apos; ``honorable&apos;&apos;
-          or ``face-saving&apos;&apos; combat (duels, sport-combat, etc.). This
+          The skill of how to engage in &ldquo;gentlemanly,&apos;&apos; &ldquo;honorable&apos;&apos;
+          or &ldquo;face-saving&apos;&apos; combat (duels, sport-combat, etc.). This
           includes battle-field code-of-conduct, rituals, battle-cries,
           cheers, negotation, the art of surrender etc. In any situation
           in which negotation must occur during the duress of combat,
@@ -17726,11 +18536,11 @@
           or otherwise difficult-to-traverse terrain, given that he has
           an appropriate skill knowledge (like \emph{acrobatics} or
           \emph{climb}). This skill is rolled with a minus equal to the
-          ``difficulty&apos;&apos; of the terrain and a bonus of
+          &ldquo;difficulty&apos;&apos; of the terrain and a bonus of
           LVL*Actions-spent-studying.
     
           If the character is familiar with the local terrain then if he
-          has to dodge by ``throwing himself to the ground&apos;&apos; he gets an
+          has to dodge by &ldquo;throwing himself to the ground&apos;&apos; he gets an
           additional die. The character is also acutely aware in changes
           in the environment and gets a bonus to his Perception equal to
           2*LVL in \emph{Combat Terrain}.</field>
@@ -17757,7 +18567,7 @@
           verbal commands or hand-signals, highly-developed or
           coordinated maneuvers can be carried out (the requirement of
           previous group practice still holds). Characters may also
-          attack and defend ``as a unit,&apos;&apos; thus if two characters have
+          attack and defend &ldquo;as a unit,&apos;&apos; thus if two characters have
           \emph{Combat Training} and are immediately adjacent to each
           other (typically 5 feet), then when initiative is rolled, they
           can choose to take either of the rolled initiatives.
@@ -17818,7 +18628,7 @@
             on defending himself and Travis using \emph{Defend
               Other}. However, because he has such fantastic armor (and
             gets hit a lot defending Travis), he really wants to be able
-            to ``lay down the law&apos;&apos; with his \emph{Reciprocal
+            to &ldquo;lay down the law&apos;&apos; with his \emph{Reciprocal
               Attack}. When he takes his 3$^{rd}$ level in Jitsu, he
             chooses \emph{Reciprocal Attack} as his skill; from now on
             Myk can modify \emph{Reciprocal Attack} as if it were a \textsc{Basic}
@@ -17842,7 +18652,7 @@
           combination is considered a \textsc{Special} attack.
     
           \quotexample[Running a Polearm]{Travis is tired of having
-            those damn spry Elves ``run&apos;&apos; his polearm, his original
+            those damn spry Elves &ldquo;run&apos;&apos; his polearm, his original
             problem was penetrating their armor, but by purchasing his
             Legendy Yari and learning the \emph{Reciprocal Attack}
             \emph{Jitsu} he&apos;s been doing better. However, he&apos;s picked up
@@ -17960,7 +18770,7 @@
     
           \quotexample[Ragnar&apos;s Bar Fights]{Ragnar finds himself in more
             barfights than he wants, and decides that (a) nothing says
-            ``I&apos;m serious&apos;&apos; more than a \emph{Barrel Charge} but (b)
+            &ldquo;I&apos;m serious&apos;&apos; more than a \emph{Barrel Charge} but (b)
             he&apos;d rather throw a punch or two into the whole
             operation. As a result he picks up a new \emph{Waza}
             combining \emph{Barrel Charge} with a Rank 2
@@ -18251,12 +19061,12 @@
           \emph{Multi-Weapon Style} has Rank 3*X, where X is the number
           of \textit{additional} weapons the martial artist intends to
           use. The martial artist can now use more than one
-          weapon---given that they are ``in-hand&apos;&apos; (or foot, tentacle
+          weapon---given that they are &ldquo;in-hand&apos;&apos; (or foot, tentacle
           etc.)---in a single action. Note that the additional attacks
           have the appropriate multi-weapon minus; which can be
           mitigated by using \emph{Ambidexterity}.
     
-          \quotexample[Jesse ``Capoeira&apos;&apos;: Double-Kick \&amp;
+          \quotexample[Jesse &ldquo;Capoeira&apos;&apos;: Double-Kick \&amp;
           Double-Punch]{Jesse wants to perform a Capoeira-style
             Double-Kick followed by a Double-Punch. He purchases
             \emph{Multi-Weapon Style} for 3 additional weapons; the Rank
@@ -18919,7 +19729,7 @@
     
     Dice: Strike: 3; Dodge: 2</field>
       <field name="Attacks" >Assumes any attacks of copied creature</field>
-      <field name="Description" description="yes" >A doppleganger is an unusual creature with the ability to assume the appearance and abilities of other living creatures.  The doppleganger&apos;s true form (which is very rarely seen) is a short (4&apos;) grey-skinned humanoid with large, slanting, eyes.  In it&apos;s true form a doppleganger is quite weak and is similar to a human child in ability.  The doppleganger can, however, transform its body (permanently) into the body of any other living creature of size 1, 2, or 3.  When it does this, it gains the attributes and abilities of whatever creature it ``copied&apos;&apos;.  Note that in order for this transformation to be possible, the doppleganger must first have slain the creature to be copied.</field>
+      <field name="Description" description="yes" >A doppleganger is an unusual creature with the ability to assume the appearance and abilities of other living creatures.  The doppleganger&apos;s true form (which is very rarely seen) is a short (4&apos;) grey-skinned humanoid with large, slanting, eyes.  In it&apos;s true form a doppleganger is quite weak and is similar to a human child in ability.  The doppleganger can, however, transform its body (permanently) into the body of any other living creature of size 1, 2, or 3.  When it does this, it gains the attributes and abilities of whatever creature it &ldquo;copied&apos;&apos;.  Note that in order for this transformation to be possible, the doppleganger must first have slain the creature to be copied.</field>
       <field name="level" />
      </datum>
      <datum name="Dragon" >
@@ -19731,7 +20541,7 @@
     Summon 1D4 red imps or 1 black imp: 1action (Darkling only)</field>
       <field name="Statistics" />
       <field name="Attacks" />
-      <field name="Description" description="yes" >Imps are the most common (and weakest) variety of demon.  They occur in three different varieties.  Imps speak Demon and also have their own language consisting of chittering, high-pitched barks, chirps, and yelps.  They are very fast moving and are totally fearless.  Imps delight in causing suffering and tormenting anything living.  Imps are of marginal intelligence and especially hate humans and other ``smarter&apos;&apos; races.  Imps live in clans consisting of 5x 1D4 red imps, 2x 1D4 black imps, and 1D4 Darklings.</field>
+      <field name="Description" description="yes" >Imps are the most common (and weakest) variety of demon.  They occur in three different varieties.  Imps speak Demon and also have their own language consisting of chittering, high-pitched barks, chirps, and yelps.  They are very fast moving and are totally fearless.  Imps delight in causing suffering and tormenting anything living.  Imps are of marginal intelligence and especially hate humans and other &ldquo;smarter&apos;&apos; races.  Imps live in clans consisting of 5x 1D4 red imps, 2x 1D4 black imps, and 1D4 Darklings.</field>
       <field name="level" />
      </datum>
      <datum name="Imp (black)" >
@@ -20982,13 +21792,13 @@
              \emph{Flame Shroud} at level 1, \emph{Living Fire} at level
              1, and \emph{Flame Whip} at level 2. Although he feels it
              was unnecessary, his secret master has been forcing him to
-             train in the ``mystic arts&apos;&apos; to learn to control his powers
+             train in the &ldquo;mystic arts&apos;&apos; to learn to control his powers
              better (\emph{Mysticism}, level 3). Although he thinks it&apos;s
              bunk, and wasn&apos;t necessary, he can certainly use his powers
              longer nowadays.}
     
            We note that for \emph{Flame Whip}, \emph{Fire Shards}, and
-           \emph{Fireblast} the description in says to ``roll&apos;&apos; to
+           \emph{Fireblast} the description in says to &ldquo;roll&apos;&apos; to
            determine if Ignaceous strikes. Ignaceous would roll his
            \emph{level} he has purchased the skills at, i.e. levels 2, 4,
            and 4, respectively.</field>
@@ -22179,7 +22989,7 @@
       <field name="MetaTag" >Future</field>
       <field name="Slots" table="yes" >(Class+1)*4</field>
       <field name="Character Points" table="yes" >(Class+1)*6</field>
-      <field name="Description" description="yes" >``Automatically Loading Cannon&apos;&apos;  An autocannon is similar to a modern semiautomatic rifle, but scaled up to an artillery size weapon.  Ammunition is stored in a magazine and the gun automatically loads a new shell after each is fired.</field>
+      <field name="Description" description="yes" >&ldquo;Automatically Loading Cannon&apos;&apos;  An autocannon is similar to a modern semiautomatic rifle, but scaled up to an artillery size weapon.  Ammunition is stored in a magazine and the gun automatically loads a new shell after each is fired.</field>
      </datum>
      <datum name="Chaingun" >
       <field name="Name" title="yes" >Chaingun</field>
@@ -22214,7 +23024,7 @@
       <field name="MetaTag" >Future</field>
       <field name="Slots" table="yes" >(Class+1)*10</field>
       <field name="Character Points" table="yes" >(Class+1)*15</field>
-      <field name="Description" description="yes" >Alternately, the Long Rail Gun can be ``carried&apos;&apos; like a rifle, but has to be manually reloaded with a recovery time if (Class+5) actions. Deals double normal damage, with (Class+10)*20 AP. Requires (Class+1)*10 ``free&apos;&apos; energy units from the engines.</field>
+      <field name="Description" description="yes" >Alternately, the Long Rail Gun can be &ldquo;carried&apos;&apos; like a rifle, but has to be manually reloaded with a recovery time if (Class+5) actions. Deals double normal damage, with (Class+10)*20 AP. Requires (Class+1)*10 &ldquo;free&apos;&apos; energy units from the engines.</field>
      </datum>
      <datum name="Mortar" >
       <field name="Name" title="yes" >Mortar</field>
@@ -22235,7 +23045,7 @@
       <field name="MetaTag" >Future</field>
       <field name="Slots" table="yes" >(Class+1)*6</field>
       <field name="Character Points" table="yes" >(Class+1)*10</field>
-      <field name="Description" description="yes" >In addition to normal damage, the Rail Gun has (Class+4)*10 AP. Requires (Class+1)*3 ``free&apos;&apos; units of energy to shoot per turn (from the engines).</field>
+      <field name="Description" description="yes" >In addition to normal damage, the Rail Gun has (Class+4)*10 AP. Requires (Class+1)*3 &ldquo;free&apos;&apos; units of energy to shoot per turn (from the engines).</field>
      </datum>
      <datum name="Shotgun" >
       <field name="Name" title="yes" >Shotgun</field>
@@ -22273,7 +23083,7 @@
      <datum name="L-Particle Cannon" >
       <field name="Name" title="yes" >L-Particle Cannon</field>
       <field name="MetaTag" >Future</field>
-      <field name="Description" description="yes" >A variant of the Particle Cannon that is tuned for a special ``defective&apos;&apos; (non-m-brane modulating) Higgs particle; the effective range on the cannon is unlimited. It&apos;s range is literally unlimited, but must be purchased as if it costs 5 Classes above it&apos;s normal Class.</field>
+      <field name="Description" description="yes" >A variant of the Particle Cannon that is tuned for a special &ldquo;defective&apos;&apos; (non-m-brane modulating) Higgs particle; the effective range on the cannon is unlimited. It&apos;s range is literally unlimited, but must be purchased as if it costs 5 Classes above it&apos;s normal Class.</field>
      </datum>
      <datum name="Laser Cannon" >
       <field name="Name" title="yes" >Laser Cannon</field>
