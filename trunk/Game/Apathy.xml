@@ -4776,6 +4776,7 @@
               </item>
               <item>
                 <title>Frame Style</title>
+		<note>This section is for Mecha only!</note>
                 <figure>
                   <table>
                     <head>
@@ -5141,6 +5142,7 @@
       A mecha suit or power armor needs to move.  All movement systems use power.  Unless otherwise stated, the systems use their power only when activated (being used).
                 </text>
                 <figure>
+		  <table>
                   <head>
                     <cell>Type</cell><cell>Speed</cell>
                     <cell>Altitude</cell><cell>Power</cell>
@@ -5326,6 +5328,7 @@
                         <cell>1</cell>
                         <cell>For jet system only</cell>
                     </row>
+		  </table>
                   <caption>Movement Systems</caption>
                 </figure>
               </item>
@@ -5348,7 +5351,10 @@
       
         <section><!-- Equipment -->
             <title>Equipment</title>
-            <reference src="Content/Mecha/Equipment/Auxiliary" />
+	    <section>
+	      <title>Auxiliary</title>
+              <reference hrid="Content/Mecha/Equipment/Auxiliary" />
+	    </section>
           <section>
             <title>Ballistics</title>
             <text>
@@ -5459,6 +5465,7 @@
               <item><description>Damage</description><text> the damage the ammunition does</text></item>
               <item><description>Cost</description><text> the cost in dollars to purchase the ammunition pod</text></item>
             </description-list>
+	    <reference hdir="Content/Mecha/Equipment/Ballistic" />
           </section>
           <section>
             <title>Energy Weapons</title>
@@ -5520,6 +5527,7 @@
           die-roll fails, the weapon is slagged and requires (Class+1)*10 hours
           of repair in a professional shop.
             </text>
+	    <reference hrid="Content/Mecha/Equipment/Energy Weapons" />
           </section>
           <section>
             <title>Weapons</title>
@@ -5637,8 +5645,12 @@
               </table>
               <caption>Mecha and Power Armor Melee Weapons</caption>
             </figure>
+	    <reference hrid="Content/Mecha/Equipment/Melee Weapons" />
           </section>
-            <reference src="Content/Mecha/Equipment/Sensors and Controls" />
+	  <section>
+	    <title>Sensors and Controls</title>
+            <reference hrid="Content/Mecha/Equipment/Sensors and Controls" />
+	  </section>
         </section><!-- /Equipment -->
       </chapter><!-- /S Mecha -->
       <chapter><!-- S Monsters -->
