@@ -97,7 +97,7 @@
         <div class="equations" id="List-of-Equations">
           <h1>List of Equations</h1>
           <ol class="equations">
-            <xsl:for-each select="//math">
+            <xsl:for-each select="//m">
               <li>
                 <xsl:apply-templates select="." />
               </li>
