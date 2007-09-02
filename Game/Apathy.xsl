@@ -99,7 +99,12 @@
           <ol class="equations">
             <xsl:for-each select="//m">
               <li>
-                <xsl:apply-templates select="." />
+								<a href="#equation-{generate-id(.)}">
+								  <!-- In place so it hops to the right place. -->
+                  <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <xsl:copy-of select="child::node()" />
+                  </math>
+								</a>
               </li>
             </xsl:for-each>
           </ol>
@@ -302,7 +307,8 @@
 
   <!-- Math is dropped in place -->
   <xsl:template match="m">
-    <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <math xmlns="http://www.w3.org/1998/Math/MathML"
+      id="equation-{generate-id(.)}">
       <xsl:copy-of select="child::node()" />
     </math>
   </xsl:template>
