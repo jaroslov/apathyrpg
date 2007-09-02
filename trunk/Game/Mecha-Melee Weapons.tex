@@ -1,17 +1,133 @@
-Melee weapons for Mecha and Powered Armor are simply ``scaled'' up Melee weapons. The following table details the rule for scaling ``human'' sized weapons for Mechanized Battle Armor. For the \emph{Damage} multiplier listed below, this is a multiplier to the number of dice.
-
-\begin{table}[htb]
-\begin{center}
-\begin{tabular}{c|c|c|c|c|c}
-\textbf{size} & \textbf{C.P. Cost} & \textbf{Slots} & \textbf{Damage} & \textbf{Max.Str.Bns.} & \textbf{Min.Str.Req.} \\ \hline \hline
-2 & x1 & 0 & x1 & x1 & x1 \\ \hline
-3 & x2 & 0 & x2 & x2 & x2 \\ \hline
-4 & x3 & 0 & x4 & x4 & x4 \\ \hline
-5 & x4 & 0 & x8 & x8 & x8 \\ \hline
-$X>2$ & x${X-1}$ & 0 & x${2}^{X-2}$  & x${2}^{X-2}$ & x${2}^{X-2}$ \\ \hline
-\textsc{Assisted Melee System} & $X^2$ & Size & +X to damage & \multicolumn{2}{c}{Uses 5x power.} \\ \hline
-\end{tabular}
-\caption{Mecha and Power Armor Melee Weapons}
-\end{center}
-\end{table}
-
+<!DOCTYPE stylesheet [
+<!ENTITY rarr  "&#8594;" ><!-- small n, tilde -->
+<!ENTITY ldquo  "&#8220;" ><!-- left double quote -->
+<!ENTITY rdquo  "&#8221;" ><!-- right double quote -->
+<!ENTITY lsquo  "&#8216;" ><!-- left quote -->
+<!ENTITY rsquo  "&#8217;" ><!-- right quote -->
+<!ENTITY times  "&#215;" ><!-- times -->
+<!ENTITY Sigma  "&#931;" ><!-- sigma -->
+<!ENTITY reg    "&#174;" ><!-- trademark -->
+<!ENTITY ouml   "&#246;" ><!-- o-umlaut -->
+<!ENTITY oslash "&#248;" ><!-- o-slash -->
+<!ENTITY ndash  "&#8211;" ><!-- n-dash -->
+<!ENTITY mdash  "&#8212;" ><!-- m-dash -->
+<!ENTITY aelig  "&#230;" ><!-- ae-lig -->
+<!ENTITY hellip  "&#8230;" ><!-- ... -->
+<!ENTITY egrave  "&#232;" ><!-- e' -->
+]>
+          <section>
+            <title>Weapons</title>
+            <text>
+          Melee weapons for Mecha and Powered Armor are simply ``scaled'' up Melee weapons. The following table details the rule for scaling ``human'' sized weapons for Mechanized Battle Armor. For the \emph{Damage} multiplier listed below, this is a multiplier to the number of dice.
+            </text>
+            <figure>
+              <table>
+                <head>
+                  <cell>Size</cell><cell>C.P. Cost</cell><cell>Slots</cell><cell>Damage</cell><cell>Max.Str.Bns.</cell><cell>Min.Str.Req.</cell>
+                </head>
+                  <row>
+                    <cell>2</cell>
+                    <cell>x1</cell>
+                    <cell>0</cell>
+                    <cell>x1</cell>
+                    <cell>x1</cell>
+                    <cell>x1</cell>
+                  </row>
+                  <row>
+                    <cell>3</cell>
+                    <cell>x2</cell>
+                    <cell>0</cell>
+                    <cell>x2</cell>
+                    <cell>x2</cell>
+                    <cell>x2</cell>
+                  </row>
+                  <row>
+                    <cell>4</cell>
+                    <cell>x3</cell>
+                    <cell>0</cell>
+                    <cell>x4</cell>
+                    <cell>x4</cell>
+                    <cell>x4</cell>
+                  </row>
+                  <row>
+                    <cell>5</cell>
+                    <cell>x4</cell>
+                    <cell>0</cell>
+                    <cell>x8</cell>
+                    <cell>x8</cell>
+                    <cell>x8</cell>
+                  </row>
+                    <cell>
+                      <m><mrow>
+                        <mi>X</mi>
+                        <mo>&gt;</mo>
+                        <mn>2</mn>
+                      </mrow></m>
+                    </cell>
+                    <cell>
+                      <m><mrow>
+                        <mo>&times;</mo>
+                        <mrow>
+                          <mi>X</mi>
+                          <mo>-</mo>
+                          <mn>1</mn>
+                        </mrow>
+                      </mrow></m>
+                    </cell>
+                    <cell>0</cell>
+                    <cell>
+                      <m><mrow>
+                        <mo>&times;</mo>
+                        <msup>
+                          <mn>2</mn>
+                          <mrow>
+                            <mi>X</mi>
+                            <mo>-</mo>
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                      </mrow></m>
+                    </cell>
+                    <cell>
+                      <m><mrow>
+                        <mo>&times;</mo>
+                        <msup>
+                          <mn>2</mn>
+                          <mrow>
+                            <mi>X</mi>
+                            <mo>-</mo>
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                      </mrow></m>
+                    </cell>
+                    <cell>
+                      <m><mrow>
+                        <mo>&times;</mo>
+                        <msup>
+                          <mn>2</mn>
+                          <mrow>
+                            <mi>X</mi>
+                            <mo>-</mo>
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                      </mrow></m>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell>Assisted Melee System</cell>
+                    <cell>
+                      <m><msup>
+                        <mi>X</mi>
+                        <mn>2</mn>
+                      </msup></m>
+                    </cell>
+                    <cell>Size</cell>
+                    <cell>+X to damage</cell>
+                    <cell span="2">Uses 5x power.</cell>
+                  </row>
+              </table>
+              <caption>Mecha and Power Armor Melee Weapons</caption>
+            <figure>
+          </section>
