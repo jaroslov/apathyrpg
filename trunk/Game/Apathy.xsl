@@ -245,7 +245,17 @@
       </p>
     </div>
   </xsl:template>
+
+  <xsl:template match="footnote">
+    <span class="footnote">
+        <xsl:apply-templates />
+    </span>
+  </xsl:template>
   
+	<!--
+		Given a reference to the raw-data section, we build
+		a table, then build a descriptor-list.
+	-->
   <xsl:template match="reference">
     <!-- A unique hrid to the category we need -->
     <xsl:variable name="hrid" select="./@hrid" />

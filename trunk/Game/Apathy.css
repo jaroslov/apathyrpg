@@ -160,6 +160,9 @@ div.note span.note-exclaim {
   font-size: 16pt;
   margin-right: .5em;
 }
+span.footnote {
+  color: blue;
+}
 ul.Fast-Find-List {
   font-weight: bold;
   font-variant: small-caps;
