@@ -6,7 +6,7 @@
 <!ENTITY lsquo  "&#8216;" ><!-- left quote -->
 <!ENTITY rsquo  "&#8217;" ><!-- right quote -->
 <!ENTITY times  "&#215;" ><!-- times -->
-<!ENTITY sigma  "&#931;" ><!-- sigma -->
+<!ENTITY Sigma  "&#931;" ><!-- sigma -->
 <!ENTITY reg    "&#174;" ><!-- trademark -->
 ]>
 <?xml-stylesheet type="text/xsl" href="Apathy.xsl"?>
@@ -473,8 +473,9 @@
 	    Rank 1 (see the skill section later on). However, the
 	    final value for the attribute (for a Human) is increased
 	    by 8; that is, if you buy 5 levels of STR (for 15 AP),
-	    then the final value of the STR is <M>5 + 8 =
-	    13</M>.</text>
+	    then the final value of the STR
+	    is <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo>
+	    <mn>13</mn></mrow></math>.</text>
           <note>In most cases no player may have an attribute below 8.
 	    Attributes below 8 are considered handicapped and/or
 	    disabled, and such a character would probably not be
@@ -519,26 +520,26 @@
                       &ldquo;good&rdquo; situation, such as a weighted
                       barbell or a trunk with handles.</cell>
                     <cell>
-                      <M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
 			<mfrac>
 			  <mrow>STR&times;STR&times;BLD</mrow>
 			  <mn>10</mn>
 			</mfrac>
 			<mo>+</mo>
 			<mi>STR</mi>
-		      </M>
+		      </math>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Carry</cell>
                     <cell>This is the amount of weight the character can carry about his/her person for a reasonable length of time.</cell>
                     <cell>
-                      <M>
-			<frac>
-			  <top>Lift</top>
-			  <bot>2</bot>
-			</frac>
-                      </M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+			  <mi>Lift</mi>
+			  <mn>2</mn>
+			</mfrac>
+                      </math>
                     </cell>
 		  </row>
 		  <row>
@@ -546,74 +547,81 @@
                     </cell>
                     <cell>This represents how much gear the character can wear before encountering adverse effects due to the weight and impaired mobility.</cell>
                     <cell>
-                      <M>
-			<frac>
-			  <top>BLD+DEX+STR</top>
-			  <bot>6</bot>
-			</frac>
-                      </M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+			  <mrow>
+			    <mi>BLD</mi><mo>+</mo><mi>DEX</mi><mo>+</mo><mi>STR</mi>
+			  </mrow>
+			  <mn>6</mn>
+			</mfrac>
+                      </math>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Base Armor</cell>
                     <cell>Determines how resilient the character is to &ldquo;odd&rdquo; damage, such as lightning and fire.</cell>
                     <cell>
-                      <M>
-			<frac>
-			  <top>BLD+WIL</top>
-			  <bot>6</bot>
-			</frac>
-                      </M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+			  <mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow>
+			  <mn>6</mn>
+			</mfrac>
+                      </math>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Movement</cell>
                     <cell>How fast the character is in &ldquo;squares per move-equivalent <action /> &rdquo;</cell>
                     <cell>
-                      <M>
-			<frac>
-			  <top>2&times;STR+DEX</top>
-			  <bot>15</bot>
-			</frac>
-                      </M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+			  <mrow><mn>2</mn><mo>&times;</mo><mi>STR</mi><mo>+</mo><mi>DEX</mi></mrow>
+			  <mn>15</mn>
+			</mfrac>
+                      </math>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Perception</cell>
                     <cell>How well the character can notice things around him.  Used just like an attribute check.</cell>
                     <cell>
-                      <M>
-			<frac>
-			  <top>DEX+2&times;KNO+INT</top>
-			  <bot>4</bot>
-			</frac>
-                      </M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+			  <mrow>
+			    <mi>DEX</mi><mo>+</mo>
+			    <mn>2</mn><mo>&times;</mo>
+			    <mi>KNO</mi><mo>+</mo>
+			    <mi>INT</mi>
+			  </mrow>
+			  <mn>4</mn>
+			</mfrac>
+                      </math>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Interaction</cell>
                     <cell>The basic ability of a character to interact with other people.</cell>
                     <cell>
-                      <M>
-			<frac>
-			  <top>CHA+KNO+INT</top>
-			  <bot>3</bot>
-			</frac>
-                      </M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+			  <mrow><mi>CHA</mi><mo>+</mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow>
+			  <mn>3</mn>
+			</mfrac>
+                      </math>
                     </cell>
 		  </row>
 		  <row>
                     <cell><hit-points /></cell>
                     <cell>The amount of damage you can receive before dying.</cell>
                     <cell>
-                      <M>BLD+WIL</M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Magic Points</cell>
                     <cell>The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</cell>
                     <cell>
-                      <M>(WIL+BLD)&times;10</M>
+                      <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfenced><mi>WIL</mi><mo>+</mo><mi>BLD</mi></mfenced><mo>&times;</mo><mn>10</mn></mrow></math>
                     </cell>
 		  </row>
 		</table>
@@ -698,9 +706,11 @@
 		already have.  For example: if you currently have an
 		11 STR (6 Attribute Points) and wish to increase it to
 		a 14 (21 Attribute Points) that will cost you 15
-		Attribute Points (<M>9 - 4 = 5</M>).  Since Attribute
-		Points cost 1 Character Point each, going from an 11
-		in an attribute to a 14 will cost 15 CP.</text>
+		Attribute Points
+		(<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>).
+		Since Attribute Points cost 1 Character Point each,
+		going from an 11 in an attribute to a 14 will cost 15
+		CP.</text>
               <text>Remember to keep track of how many Attribute
 		Points you have spent on your attributes so you can
 		easily increase them at a later date.</text>
@@ -839,25 +849,27 @@
         <text>For those that are mathematically inclined, here is the
 	  formula for determining CP of a particular skill level and
 	  rank:</text>
-        <M>
-	  <sum>
-	    <from>i=1</from>
-	    <to>Desired Level = n</to>
-	    <of>
-	      <parenthesis>
-                Rank&times;i
-              </parenthesis>
-	    </of>
-	    <symbol>&sigma;</symbol>
-	  </sum>
-	  =
-	  <frac>
-	    <top>
-              n<sup>2</sup>+n
-            </top>
-	    <bot>2</bot>
-	  </frac>
-	</M>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+	  <mrow>
+            <munderover accent="true" accentunder="true">
+              <mstyle scriptlevel="-3">&Sigma;</mstyle>
+              <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
+              <mi>N</mi>
+            </munderover>
+            <mi>i</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mfenced>
+		<mrow>
+		  <msup><mi>N</mi><mn>2</mn></msup>
+		  <mo>+</mo>
+		  <mi>N</mi>
+		</mrow>
+              </mfenced>
+              <mn>2</mn>
+            </mfrac>
+	  </mrow>
+	</math>
         <text>For the rest of us, use this nifty table, and multiply
 	  the value listed by the rank.</text>
         <figure>
@@ -1647,9 +1659,10 @@
 		  Bosk&rsquo;s Str is higher than the minimum strength
 		  requirement of the Hercules Club (12), he is
 		  entitled to a damage bonus.  Subtract 8 from
-		  Bosk&rsquo;s Str score to calculate his bonus: <M>17
-		  - 8 = 9</M>. So this means that Bosk deals 9+3D6 C
-		  damage.</text>
+		  Bosk&rsquo;s Str score to calculate his
+		  bonus: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>17</mn>
+		  <mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></math>. So
+		  this means that Bosk deals 9+3D6 C damage.</text>
               </example>
               <example>
 		<title>Bosk with Knife</title>
@@ -2320,8 +2333,8 @@
           <text>Your current <hit-points /> is the most important
 	    number.  It will likely change frequently during combat.
 	    <hit-points /> are generally represented as a
-	    fraction: <M><frac><top>Current HP</top><bot>Max
-	    HP</bot></frac></M>.  When the game begins, your character
+	    fraction: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>Current HP</mi><mi>Max
+	    HP</mi></mfrac></math>.  When the game begins, your character
 	    will be fully healthy and uninjured.  Thus, when starting,
 	    your current HP will be equal to your maximum.</text>
 	    <image src='/Map/Forte-marghera-02.jpg'/>
@@ -2848,9 +2861,9 @@
       will be reduced based on the type of shield:
             <itemized-list>
                 <item> Buckler: Full damage</item>
-                <item> Small: <M><frac><top>1</top><bot>4</bot></frac></M></item>
-                <item> Large: <M><frac><top>1</top><bot>2</bot></frac></M></item>
-                <item> Tower: <M><frac><top>3</top><bot>4</bot></frac></M></item>
+                <item> Small: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>4</mn></mfrac></math></item>
+                <item> Large: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></item>
+                <item> Tower: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></item>
             </itemized-list>
         </item>
     </itemized-list>
@@ -4493,7 +4506,14 @@
             <row>
                 <cell border="none">Anthropoid</cell>
                 <cell span="11" border="none">
-                    Height: <M>Size<sup>2</sup>&times;40 cm</M>
+                    Height:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML">
+		      <mrow>
+			<msup><mi>Size</mi><mn>2</mn></msup>
+			<mo>&times;</mo>
+			<mn>40</mn><mi>cm</mi>
+		      </mrow>
+		    </math>
                 </cell>
             </row>
             <row>
@@ -4547,7 +4567,13 @@
             <row>
                 <cell border="none">Bipedal</cell>
                 <cell span="11" border="none">
-                    Height: <M>Size<sup>2</sup>&times;35 cm</M>
+                    Height:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML">
+		      <mrow>
+			<msup><mi>Size</mi><mn>2</mn></msup>
+			<mo>&times;</mo><mn>35</mn><mi>cm</mi>
+		      </mrow>
+		    </math>
                 </cell>
             </row>
             <row>
@@ -4599,7 +4625,18 @@
             <row>
                 <cell border="none" >Quadruped</cell>
                 <cell span="11" border="none">
-                    Length: <M>Size<sup>2</sup>&times;35 cm</M>; Height: <M><frac><top>1</top><bot>3</bot></frac>&times;Length</M>
+                    Length:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+			<msup><mi>Size</mi><mn>2</mn></msup>
+			<mo>&times;</mo>
+			<mn>35</mn><mi>cm</mi>
+		    </mrow></math>;
+		    Height:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		      <mfrac><mn>1</mn><mn>3</mn></mfrac>
+		      <mo>&times;</mo>
+		      <mi>Length</mi>
+		    </mrow></math>
                 </cell>
             </row>
             <row>
@@ -4651,7 +4688,16 @@
             <row>
                 <cell border="none">Serpent</cell>
                 <cell span="11" border="none">
-                    Length: <M>Size<sup>2</sup>&times;40 cm</M>; Height: <M><frac><top>1</top><bot>8</bot></frac>&times;Length</M>
+                    Length:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		      <msup><mi>Size</mi><mn>2</mn></msup>
+		      <mo>&times;</mo><mn>40</mn><mi>cm</mi>
+		    </mrow></math>;
+		    Height:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		      <mfrac><mn>1</mn><mn>8</mn></mfrac>
+		      <mo>&times;</mo><mi>Length</mi>
+		    </mrow></math>
                 </cell>
             </row>
             <row>
@@ -4703,12 +4749,16 @@
             <row>
                 <cell border="none">Polymelic</cell>
                 <cell span="11" border="none">
-                    Size: <M>Size<sup>2</sup>&times;30 cm</M>, in some dimension
+                    Size:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+			<msup><mi>Size</mi><mn>2</mn></msup>
+			<mo>&times;</mo><mn>30</mn><mi>cm</mi>
+		    </mrow></math>, in some dimension
                 </cell>
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: Size/3 kilograms</cell>
+                <cell span="11">Weight: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>Size</mi><mn>3</mn></mfrac></math> kilograms</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
@@ -4755,12 +4805,20 @@
             <row>
                 <cell border="none">Amorphous</cell>
                 <cell span="11" border="none">
-                    Diameter: <M>Size<sup>2</sup>&times;50 cm</M>
+                    Diameter:
+		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+			<msup><mi>Size</mi><mn>2</mn></msup>
+			<mo>&times;</mo><mn>50</mn><mi>cm</mi>
+		    </mrow></math>
                 </cell>
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: <M>Diameter<sup>3</sup></M> kilograms</cell>
+                <cell span="11">Weight:
+		  <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		      <msup><mi>Diameter</mi><mn>3</mn></msup>
+		  </mrow></math>
+		  kilograms</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
