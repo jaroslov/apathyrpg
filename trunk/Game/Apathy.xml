@@ -9,7 +9,7 @@
 <!ENTITY sigma  "&#931;" ><!-- sigma -->
 <!ENTITY reg    "&#174;" ><!-- trademark -->
 ]>
-<?xml-stylesheet type="text/xsl" href="apathy-html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="Apathy.xsl"?>
 <apathy-game>
   <book>
     <part>
