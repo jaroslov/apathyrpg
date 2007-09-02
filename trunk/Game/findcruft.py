@@ -23,6 +23,24 @@ def sanitizews (string):
     string = string.replace("  "," ")
   return string.strip()
 
+def selfsimilarstrings (Where, xml=None, Strings={}):
+  if Where is not None:
+    xml = minix.parse (Where)
+    selfsimilarstrings (None, xml, Strings)
+  else:
+    if xml.nodeType == xml.TEXT_NODE:
+      stext = sanitizews (xml.nodeValue)
+      words = stext.split (" ")
+      for word in words:
+        if word not in Strings:
+          Strings[word] = 1
+        else:
+          Strings[word] += 1
+    if xml.hasChildNodes ():
+      for child in xml.childNodes:
+        selfsimilarstrings (None, child, Strings)
+  return Strings
+
 def pseudoprettyprint (Where, xml=None, indent="", inlines=[]):
   result = u""
   if Where is not None:
@@ -90,3 +108,10 @@ if __name__=="__main__":
     result = pseudoprettyprint (where, inlines=inlines)
     beauty = open ("beautified.xml","w")
     print >> beauty, result
+  elif "selfsim" == which:
+    strings = selfsimilarstrings (where)
+    skeys = strings.keys ()
+    skeys.sort ()
+    for skey in skeys:
+      print "("+skey+": "+str(strings[skey])+")"
+    print
