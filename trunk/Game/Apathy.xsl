@@ -129,7 +129,7 @@
   </xsl:template>
 
   <xsl:template match="section">
-    <div class="section" id="section-{../title}-{../title}-{./title}" >
+    <div class="section" id="section-{../../title}-{../title}-{./title}" >
       <!--<h1><xsl:value-of select="title" /></h1>-->
       <xsl:apply-templates />
     </div>
