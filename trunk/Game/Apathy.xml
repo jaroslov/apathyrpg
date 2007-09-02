@@ -5465,7 +5465,7 @@
               <item><description>Damage</description><text> the damage the ammunition does</text></item>
               <item><description>Cost</description><text> the cost in dollars to purchase the ammunition pod</text></item>
             </description-list>
-	    <reference hdir="Content/Mecha/Equipment/Ballistic" />
+	    <reference hrid="Content/Mecha/Equipment/Ballistic" />
           </section>
           <section>
             <title>Energy Weapons</title>
@@ -23367,7 +23367,7 @@
       <field name="Description" description="yes" >Vulcans are automatic weapons capable of high rates of fire.  They fire 2D6 bursts.  These are multi-barrelled weapons, where the barrels are rotated mechanically.</field>
      </datum>
     </category>
-    <category name="Content/Mecha/Equipment/Energy" >
+    <category name="Content/Mecha/Equipment/Energy Weapons" >
      <default name="" >
       <field name="Name" title="yes" />
       <field name="MetaTag" />
