@@ -474,7 +474,7 @@
 	    final value for the attribute (for a Human) is increased
 	    by 8; that is, if you buy 5 levels of STR (for 15 AP),
 	    then the final value of the STR
-	    is <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo>
+	    is <m><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo>
 	    <mn>13</mn></mrow></math>.</text>
           <note>In most cases no player may have an attribute below 8.
 	    Attributes below 8 are considered handicapped and/or
@@ -520,7 +520,7 @@
                       &ldquo;good&rdquo; situation, such as a weighted
                       barbell or a trunk with handles.</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <m>
 			<mfrac>
 			  <mrow>STR&times;STR&times;BLD</mrow>
 			  <mn>10</mn>
@@ -534,7 +534,7 @@
                     <cell>Carry</cell>
                     <cell>This is the amount of weight the character can carry about his/her person for a reasonable length of time.</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <m>
 			<mfrac>
 			  <mi>Lift</mi>
 			  <mn>2</mn>
@@ -547,7 +547,7 @@
                     </cell>
                     <cell>This represents how much gear the character can wear before encountering adverse effects due to the weight and impaired mobility.</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <m>
 			<mfrac>
 			  <mrow>
 			    <mi>BLD</mi><mo>+</mo><mi>DEX</mi><mo>+</mo><mi>STR</mi>
@@ -561,7 +561,7 @@
                     <cell>Base Armor</cell>
                     <cell>Determines how resilient the character is to &ldquo;odd&rdquo; damage, such as lightning and fire.</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <m>
 			<mfrac>
 			  <mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow>
 			  <mn>6</mn>
@@ -573,7 +573,7 @@
                     <cell>Movement</cell>
                     <cell>How fast the character is in &ldquo;squares per move-equivalent <action /> &rdquo;</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <m>
 			<mfrac>
 			  <mrow><mn>2</mn><mo>&times;</mo><mi>STR</mi><mo>+</mo><mi>DEX</mi></mrow>
 			  <mn>15</mn>
@@ -585,7 +585,7 @@
                     <cell>Perception</cell>
                     <cell>How well the character can notice things around him.  Used just like an attribute check.</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <m>
 			<mfrac>
 			  <mrow>
 			    <mi>DEX</mi><mo>+</mo>
@@ -602,7 +602,7 @@
                     <cell>Interaction</cell>
                     <cell>The basic ability of a character to interact with other people.</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <m>
 			<mfrac>
 			  <mrow><mi>CHA</mi><mo>+</mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow>
 			  <mn>3</mn>
@@ -614,14 +614,14 @@
                     <cell><hit-points /></cell>
                     <cell>The amount of damage you can receive before dying.</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
+                      <m><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Magic Points</cell>
                     <cell>The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</cell>
                     <cell>
-                      <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfenced><mi>WIL</mi><mo>+</mo><mi>BLD</mi></mfenced><mo>&times;</mo><mn>10</mn></mrow></math>
+                      <m><mrow><mfenced><mi>WIL</mi><mo>+</mo><mi>BLD</mi></mfenced><mo>&times;</mo><mn>10</mn></mrow></math>
                     </cell>
 		  </row>
 		</table>
@@ -707,7 +707,7 @@
 		11 STR (6 Attribute Points) and wish to increase it to
 		a 14 (21 Attribute Points) that will cost you 15
 		Attribute Points
-		(<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>).
+		(<m><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>).
 		Since Attribute Points cost 1 Character Point each,
 		going from an 11 in an attribute to a 14 will cost 15
 		CP.</text>
@@ -849,7 +849,7 @@
         <text>For those that are mathematically inclined, here is the
 	  formula for determining CP of a particular skill level and
 	  rank:</text>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <m>
 	  <mrow>
             <munderover accent="true" accentunder="true">
               <mstyle scriptlevel="-3">&Sigma;</mstyle>
@@ -1660,7 +1660,7 @@
 		  requirement of the Hercules Club (12), he is
 		  entitled to a damage bonus.  Subtract 8 from
 		  Bosk&rsquo;s Str score to calculate his
-		  bonus: <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>17</mn>
+		  bonus: <m><mrow><mn>17</mn>
 		  <mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></math>. So
 		  this means that Bosk deals 9+3D6 C damage.</text>
               </example>
@@ -2333,7 +2333,7 @@
           <text>Your current <hit-points /> is the most important
 	    number.  It will likely change frequently during combat.
 	    <hit-points /> are generally represented as a
-	    fraction: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>Current HP</mi><mi>Max
+	    fraction: <m><mfrac><mi>Current HP</mi><mi>Max
 	    HP</mi></mfrac></math>.  When the game begins, your character
 	    will be fully healthy and uninjured.  Thus, when starting,
 	    your current HP will be equal to your maximum.</text>
@@ -2861,9 +2861,9 @@
       will be reduced based on the type of shield:
             <itemized-list>
                 <item> Buckler: Full damage</item>
-                <item> Small: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>4</mn></mfrac></math></item>
-                <item> Large: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></item>
-                <item> Tower: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></item>
+                <item> Small: <m><mfrac><mn>1</mn><mn>4</mn></mfrac></math></item>
+                <item> Large: <m><mfrac><mn>1</mn><mn>2</mn></mfrac></math></item>
+                <item> Tower: <m><mfrac><mn>3</mn><mn>4</mn></mfrac></math></item>
             </itemized-list>
         </item>
     </itemized-list>
@@ -4507,7 +4507,7 @@
                 <cell border="none">Anthropoid</cell>
                 <cell span="11" border="none">
                     Height:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML">
+		    <m>
 		      <mrow>
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo>
@@ -4568,7 +4568,7 @@
                 <cell border="none">Bipedal</cell>
                 <cell span="11" border="none">
                     Height:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML">
+		    <m>
 		      <mrow>
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo><mn>35</mn><mi>cm</mi>
@@ -4626,13 +4626,13 @@
                 <cell border="none" >Quadruped</cell>
                 <cell span="11" border="none">
                     Length:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		    <m><mrow>
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo>
 			<mn>35</mn><mi>cm</mi>
 		    </mrow></math>;
 		    Height:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		    <m><mrow>
 		      <mfrac><mn>1</mn><mn>3</mn></mfrac>
 		      <mo>&times;</mo>
 		      <mi>Length</mi>
@@ -4689,12 +4689,12 @@
                 <cell border="none">Serpent</cell>
                 <cell span="11" border="none">
                     Length:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		    <m><mrow>
 		      <msup><mi>Size</mi><mn>2</mn></msup>
 		      <mo>&times;</mo><mn>40</mn><mi>cm</mi>
 		    </mrow></math>;
 		    Height:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		    <m><mrow>
 		      <mfrac><mn>1</mn><mn>8</mn></mfrac>
 		      <mo>&times;</mo><mi>Length</mi>
 		    </mrow></math>
@@ -4750,7 +4750,7 @@
                 <cell border="none">Polymelic</cell>
                 <cell span="11" border="none">
                     Size:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		    <m><mrow>
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo><mn>30</mn><mi>cm</mi>
 		    </mrow></math>, in some dimension
@@ -4758,7 +4758,7 @@
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>Size</mi><mn>3</mn></mfrac></math> kilograms</cell>
+                <cell span="11">Weight: <m><mfrac><mi>Size</mi><mn>3</mn></mfrac></math> kilograms</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
@@ -4806,7 +4806,7 @@
                 <cell border="none">Amorphous</cell>
                 <cell span="11" border="none">
                     Diameter:
-		    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		    <m><mrow>
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo><mn>50</mn><mi>cm</mi>
 		    </mrow></math>
@@ -4815,9 +4815,9 @@
             <row>
                 <cell />
                 <cell span="11">Weight:
-		  <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+		  <m><mrow>
 		      <msup><mi>Diameter</mi><mn>3</mn></msup>
-		  </mrow></math>
+		  </mrow></m>
 		  kilograms</cell>
             </row>
             <row>
