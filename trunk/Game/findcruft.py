@@ -16,12 +16,21 @@ def findcruft (Where, xml=None, NodeKinds=None):
         findcruft (None, child, NodeKinds)
   return NodeKinds
 
-def sanitizews (string):
+def sanitizes (string):
   for rep in [" ","\t","\v","\f","\n"]:
     string = string.replace(rep," ")
   for idx in xrange(10):
     string = string.replace("  "," ")
-  return string.strip()
+  result = string
+  result = result.replace (u'\u2018',"&lsquo;").replace (u'\u2019',"&rsquo;")
+  result = result.replace (u'\u201c',"&ldquo;").replace (u'\u201d',"&rdquo;")
+  result = result.replace (u'\xd7', "&times;").replace (u'\u03a3', "&Sigma;")
+  result = result.replace (u'\u2192', "&rarr;").replace (u'\xae', "&reg;")
+  result = result.replace (u'\u2014', "&mdash;").replace (u'\u2013', "&ndash;")
+  result = result.replace (u'\xf6', "&ouml;").replace (u'\xf8', "&oslash;")
+  result = result.replace (u'\u2026', "&hellip;").replace (u'\xe8', "&egrave;")
+  result = result.replace (u'\u2026', "&hellip;").replace (u'\xe6', "&aelig;")
+  return result.strip()
 
 def selfsimilarstrings (Where, xml=None, Strings={}):
   if Where is not None:
@@ -29,7 +38,7 @@ def selfsimilarstrings (Where, xml=None, Strings={}):
     selfsimilarstrings (None, xml, Strings)
   else:
     if xml.nodeType == xml.TEXT_NODE:
-      stext = sanitizews (xml.nodeValue)
+      stext = sanitizes (xml.nodeValue)
       words = stext.split (" ")
       for word in words:
         if word not in Strings:
@@ -46,35 +55,31 @@ def pseudoprettyprint (Where, xml=None, indent="", inlines=[]):
   if Where is not None:
     xml = minix.parse(Where)
     result += pseudoprettyprint (None, xml, inlines=inlines)
-    result = result.replace (u'\u2018',"&lsquo;").replace (u'\u2019',"&rsquo;")
-    result = result.replace (u'\u201c',"&ldquo;").replace (u'\u201d',"&rdquo;")
-    result = result.replace (u'\xd7', "&times;").replace (u'\u03a3', "&Sigma;")
-    result = result.replace (u'\u2192', "&rarr;").replace (u'\xae', "&reg;")
   else:
     if xml.nodeType == xml.ELEMENT_NODE:
       if xml.nodeName not in inlines:
         result += indent
       result += "<"+xml.nodeName
-      if xml.attributes:
-        for attr in xml.attributes.keys ():
-          result += u" "+attr+"='"+xml.getAttribute (attr)+"'"
+      hasNodes = False
       if xml.hasChildNodes ():
-        result += u">"
-        once = True
         for child in xml.childNodes:
-          if (child.nodeType == xml.ELEMENT_NODE
-            and once and child.nodeName not in inlines):
-            result += "\n"+indent
-            once = False
-          result += pseudoprettyprint (None, child, "  "+indent, inlines=inlines)
-          if (child.nodeType == xml.ELEMENT_NODE
-            and child.nodeName not in inlines):
-            result += "\n"+indent
-        result += "</"+xml.nodeName+">"
+          if child.nodeType == xml.ELEMENT_NODE:
+            if not hasNodes:
+              result += ">\n"
+            hasNodes = True
+            result += pseudoprettyprint (None, child, indent+"  ", inlines)
+            if child.nodeName not in inlines:
+              result += "\n"
+          elif child.nodeType == xml.TEXT_NODE:
+            if child.nodeValue:
+              sans = sanitizes(child.nodeValue)
+              if len(sans) > 0:
+                hasNodes = True
+              result += sans
+      if hasNodes:
+        result += "\n"+indent+"</"+xml.nodeName+">"
       else:
-        result += "/>"
-    elif xml.nodeType == xml.TEXT_NODE:
-      result += u""+sanitizews(xml.nodeValue)
+        result += " />"
     else:
       if xml.hasChildNodes ():
         for child in xml.childNodes:
