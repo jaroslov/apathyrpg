@@ -2910,28 +2910,38 @@
               <figure>
                 <table>
                   <head>
-                    <cell align="left" border-right="yes" />
-                    <cell align="center" />
-                    <cell align="center" />
-                    <cell align="center" />
+                    <cell align="left" border-right="yes">Quality</cell>
+                    <cell align="center">Bonus to damage</cell>
+                    <cell align="center">Cost factor</cell>
+                    <cell align="center">Rarity</cell>
                   </head>
                   <row>
-                    <cell span="4">Options for Mel<grave>e</grave>e weapons</cell>
                   </row>
                   <row>
-                    <cell>Exceptional Quality<cell></cell>+1 damage<cell></cell>double cost<cell></cell>Adds 1 to rarity</cell>
+                    <cell>Exceptional Quality</cell>
+		    <cell>+1 damage</cell>
+		    <cell>double cost</cell><cell>Adds 1 to
+		    rarity</cell>
                   </row>
                   <row>
-                    <cell>Master Quality<cell></cell>+2 damage<cell></cell>10 times cost<cell></cell>Adds 3 to rarity</cell>
+                    <cell>Master Quality</cell><cell>+2
+                    damage</cell><cell>10 times cost</cell><cell>Adds
+                    3 to rarity</cell>
                   </row>
                   <row>
-                    <cell>Legendary Quality<cell></cell>+3 damage<cell></cell>100 times cost<cell></cell>Adds 5 to rarity</cell>
+                    <cell>Legendary Quality</cell><cell>+3
+                    damage</cell><cell>100 times cost</cell><cell>Adds
+                    5 to rarity</cell>
                   </row>
                   <row>
-                    <cell>Vibro-edge (bladed only)<cell></cell>+10 AP<cell></cell>5 times cost<cell></cell>ULTRAMODERN</cell>
+                    <cell>Vibro-edge (bladed only)</cell><cell>+10
+                    AP</cell><cell>5 times
+                    cost</cell><cell>ULTRAMODERN</cell>
                   </row>
                   <row>
-                    <cell>Wooden Training<cell></cell>1/2 damage, C<cell></cell>1/10<sup>th</sup> cost</cell>
+                    <cell>Wooden Training</cell><cell>1/2 damage,
+                    C</cell><cell>1/10<sup>th</sup> cost</cell>
+		    <cell>Common</cell>
                   </row>
                 </table>
                 <caption>Options for mel<grave>e</grave>e weapon construction</caption>
