@@ -5069,6 +5069,7 @@
                           </mrow>
                         </m>
                       </cell>
+                      <cell>
                         <m>
                           <mfrac>
                             <mrow>
@@ -5084,7 +5085,6 @@
                             </mrow>
                           </mfrac>
                         </m>
-                      <cell>
                       </cell>
                       <cell>DEX can only be used to reduce the DEX minus to a +0.</cell>
                     </row>
