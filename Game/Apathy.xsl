@@ -56,7 +56,7 @@
                             <ol class="toc" >
                               <xsl:for-each select="section">
                                 <li>
-                                  <a href="#section-{../title}-{./title}">
+                                  <a href="#section-{../../title}-{../title}-{./title}">
                                     <xsl:value-of select="title" />
                                   </a>
                                 </li>
@@ -129,7 +129,7 @@
   </xsl:template>
 
   <xsl:template match="section">
-    <div class="section" id="section-{../title}-{./title}" >
+    <div class="section" id="section-{../title}-{../title}-{./title}" >
       <!--<h1><xsl:value-of select="title" /></h1>-->
       <xsl:apply-templates />
     </div>
