@@ -291,7 +291,9 @@
   </xsl:template>
 
   <xsl:template match="m">
-    <xsl:copy-of select="." />
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <xsl:copy-of select="child::node()" />
+    </math>
   </xsl:template>
 
 </xsl:stylesheet>
