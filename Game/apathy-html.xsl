@@ -112,7 +112,7 @@
   <xsl:template match="book">
     <xsl:for-each select="part">
       <div class="part" id="part-{./title}">
-        <!--<h1><xsl:value-of select="title" /></h1>-->
+        <h1><xsl:value-of select="title" /></h1>
         <xsl:for-each select="chapter">
           <div class="chapter" id="chapter-{./title}">
             <!--<h1><xsl:value-of select="title" /></h1>-->
