@@ -619,9 +619,21 @@
 		  </row>
 		  <row>
                     <cell>Magic Points</cell>
-                    <cell>The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</cell>
+                    <cell>The number of Magic Points you can draw on
+                    to cast magic spells or perform supernatural
+                    feats</cell>
                     <cell>
-                      <m><mrow><mfenced><mi>WIL</mi><mo>+</mo><mi>BLD</mi></mfenced><mo>&times;</mo><mn>10</mn></mrow></m>
+                      <m>
+			<mrow>
+			  <mo>(</mo>
+			  <mi>WIL</mi>
+			  <mo>+</mo>
+			  <mi>BLD</mi>
+			  <mo>)</mo>
+			  <mo>&times;</mo>
+			  <mn>10</mn>
+			</mrow>
+		      </m>
                     </cell>
 		  </row>
 		</table>
