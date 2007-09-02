@@ -475,7 +475,7 @@
 	    by 8; that is, if you buy 5 levels of STR (for 15 AP),
 	    then the final value of the STR
 	    is <m><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo>
-	    <mn>13</mn></mrow></math>.</text>
+	    <mn>13</mn></mrow></m>.</text>
           <note>In most cases no player may have an attribute below 8.
 	    Attributes below 8 are considered handicapped and/or
 	    disabled, and such a character would probably not be
@@ -527,7 +527,7 @@
 			</mfrac>
 			<mo>+</mo>
 			<mi>STR</mi>
-		      </math>
+		      </m>
                     </cell>
 		  </row>
 		  <row>
@@ -539,7 +539,7 @@
 			  <mi>Lift</mi>
 			  <mn>2</mn>
 			</mfrac>
-                      </math>
+                      </m>
                     </cell>
 		  </row>
 		  <row>
@@ -554,7 +554,7 @@
 			  </mrow>
 			  <mn>6</mn>
 			</mfrac>
-                      </math>
+                      </m>
                     </cell>
 		  </row>
 		  <row>
@@ -566,7 +566,7 @@
 			  <mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow>
 			  <mn>6</mn>
 			</mfrac>
-                      </math>
+                      </m>
                     </cell>
 		  </row>
 		  <row>
@@ -578,7 +578,7 @@
 			  <mrow><mn>2</mn><mo>&times;</mo><mi>STR</mi><mo>+</mo><mi>DEX</mi></mrow>
 			  <mn>15</mn>
 			</mfrac>
-                      </math>
+                      </m>
                     </cell>
 		  </row>
 		  <row>
@@ -595,7 +595,7 @@
 			  </mrow>
 			  <mn>4</mn>
 			</mfrac>
-                      </math>
+                      </m>
                     </cell>
 		  </row>
 		  <row>
@@ -607,21 +607,21 @@
 			  <mrow><mi>CHA</mi><mo>+</mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow>
 			  <mn>3</mn>
 			</mfrac>
-                      </math>
+                      </m>
                     </cell>
 		  </row>
 		  <row>
                     <cell><hit-points /></cell>
                     <cell>The amount of damage you can receive before dying.</cell>
                     <cell>
-                      <m><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
+                      <m><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></m>
                     </cell>
 		  </row>
 		  <row>
                     <cell>Magic Points</cell>
                     <cell>The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</cell>
                     <cell>
-                      <m><mrow><mfenced><mi>WIL</mi><mo>+</mo><mi>BLD</mi></mfenced><mo>&times;</mo><mn>10</mn></mrow></math>
+                      <m><mrow><mfenced><mi>WIL</mi><mo>+</mo><mi>BLD</mi></mfenced><mo>&times;</mo><mn>10</mn></mrow></m>
                     </cell>
 		  </row>
 		</table>
@@ -707,7 +707,7 @@
 		11 STR (6 Attribute Points) and wish to increase it to
 		a 14 (21 Attribute Points) that will cost you 15
 		Attribute Points
-		(<m><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>).
+		(<m><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></m>).
 		Since Attribute Points cost 1 Character Point each,
 		going from an 11 in an attribute to a 14 will cost 15
 		CP.</text>
@@ -869,7 +869,7 @@
               <mn>2</mn>
             </mfrac>
 	  </mrow>
-	</math>
+	</m>
         <text>For the rest of us, use this nifty table, and multiply
 	  the value listed by the rank.</text>
         <figure>
@@ -1661,7 +1661,7 @@
 		  entitled to a damage bonus.  Subtract 8 from
 		  Bosk&rsquo;s Str score to calculate his
 		  bonus: <m><mrow><mn>17</mn>
-		  <mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></math>. So
+		  <mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></m>. So
 		  this means that Bosk deals 9+3D6 C damage.</text>
               </example>
               <example>
@@ -2334,7 +2334,7 @@
 	    number.  It will likely change frequently during combat.
 	    <hit-points /> are generally represented as a
 	    fraction: <m><mfrac><mi>Current HP</mi><mi>Max
-	    HP</mi></mfrac></math>.  When the game begins, your character
+	    HP</mi></mfrac></m>.  When the game begins, your character
 	    will be fully healthy and uninjured.  Thus, when starting,
 	    your current HP will be equal to your maximum.</text>
 	    <image src='/Map/Forte-marghera-02.jpg'/>
@@ -2861,9 +2861,9 @@
       will be reduced based on the type of shield:
             <itemized-list>
                 <item> Buckler: Full damage</item>
-                <item> Small: <m><mfrac><mn>1</mn><mn>4</mn></mfrac></math></item>
-                <item> Large: <m><mfrac><mn>1</mn><mn>2</mn></mfrac></math></item>
-                <item> Tower: <m><mfrac><mn>3</mn><mn>4</mn></mfrac></math></item>
+                <item> Small: <m><mfrac><mn>1</mn><mn>4</mn></mfrac></m></item>
+                <item> Large: <m><mfrac><mn>1</mn><mn>2</mn></mfrac></m></item>
+                <item> Tower: <m><mfrac><mn>3</mn><mn>4</mn></mfrac></m></item>
             </itemized-list>
         </item>
     </itemized-list>
@@ -4513,7 +4513,7 @@
 			<mo>&times;</mo>
 			<mn>40</mn><mi>cm</mi>
 		      </mrow>
-		    </math>
+		    </m>
                 </cell>
             </row>
             <row>
@@ -4573,7 +4573,7 @@
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo><mn>35</mn><mi>cm</mi>
 		      </mrow>
-		    </math>
+		    </m>
                 </cell>
             </row>
             <row>
@@ -4630,13 +4630,13 @@
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo>
 			<mn>35</mn><mi>cm</mi>
-		    </mrow></math>;
+		    </mrow></m>;
 		    Height:
 		    <m><mrow>
 		      <mfrac><mn>1</mn><mn>3</mn></mfrac>
 		      <mo>&times;</mo>
 		      <mi>Length</mi>
-		    </mrow></math>
+		    </mrow></m>
                 </cell>
             </row>
             <row>
@@ -4692,12 +4692,12 @@
 		    <m><mrow>
 		      <msup><mi>Size</mi><mn>2</mn></msup>
 		      <mo>&times;</mo><mn>40</mn><mi>cm</mi>
-		    </mrow></math>;
+		    </mrow></m>;
 		    Height:
 		    <m><mrow>
 		      <mfrac><mn>1</mn><mn>8</mn></mfrac>
 		      <mo>&times;</mo><mi>Length</mi>
-		    </mrow></math>
+		    </mrow></m>
                 </cell>
             </row>
             <row>
@@ -4753,12 +4753,12 @@
 		    <m><mrow>
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo><mn>30</mn><mi>cm</mi>
-		    </mrow></math>, in some dimension
+		    </mrow></m>, in some dimension
                 </cell>
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: <m><mfrac><mi>Size</mi><mn>3</mn></mfrac></math> kilograms</cell>
+                <cell span="11">Weight: <m><mfrac><mi>Size</mi><mn>3</mn></mfrac></m> kilograms</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
@@ -4809,7 +4809,7 @@
 		    <m><mrow>
 			<msup><mi>Size</mi><mn>2</mn></msup>
 			<mo>&times;</mo><mn>50</mn><mi>cm</mi>
-		    </mrow></math>
+		    </mrow></m>
                 </cell>
             </row>
             <row>
