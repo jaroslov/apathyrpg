@@ -2369,11 +2369,13 @@
 	      <m>
 		<mrow>
 		  <msup>
-		    <mo>(</mo>
-		    <mi>Max HP</mi>
-		    <mo>-</mo>
-		    <mi>Current HP</mi>
-		    <mo>)</mo>
+		    <mrow>
+		      <mo>(</mo>
+		      <mi>Maximum</mi>
+		      <mo>-</mo>
+		      <mi>Current</mi>
+		      <mo>)</mo>
+		    </mrow>
 		    <mn>2</mn>
 		  </msup>
 		</mrow>
@@ -3997,7 +3999,7 @@
 		  </msup>
 		  <mo>&times;</mo>
 		  <mi>WIL</mi>
-		  <mo>&times;2</mo>
+		  <mo>&times;</mo>
 		  <mn>2</mn>
 		  <mi>MP</mi>
 		</mrow>
