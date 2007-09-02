@@ -4531,7 +4531,13 @@
             <row>
                 <cell />
                 <cell span="11">
-                    Weight: Height/2 kilograms
+                  Weight:
+		  <m>
+		    <mrow>
+		      <mfrac><mi>Height</mi><mn>3</mn></mfrac>
+		      <mi>kilograms</mi>
+		    </mrow>
+		  </m>
                 </cell>
             </row>
             <row>
@@ -4590,7 +4596,14 @@
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: Height/3 kilograms</cell>
+                <cell span="11">Weight:
+		  <m>
+		    <mrow>
+		      <mfrac><mi>Height</mi><mn>3</mn></mfrac>
+		      <mi>kilograms</mi>
+		    </mrow>
+		  </m>
+		</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
@@ -4653,7 +4666,15 @@
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: Length/2 kilograms</cell>
+                <cell span="11">
+		  Weight:
+		  <m>
+		    <mrow>
+		      <mfrac><mi>Length</mi><mn>2</mn></mfrac>
+		      <mi>kilograms</mi>
+		    </mrow>
+		  </m>
+		</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
@@ -4714,7 +4735,12 @@
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: Height/2 kilograms</cell>
+                <cell span="11">Weight:
+		    <mrow>
+		      <mfrac><mi>Height</mi><mn>2</mn></mfrac>
+		      <mi>kilograms</mi>
+		    </mrow>
+		</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
@@ -4770,7 +4796,12 @@
             </row>
             <row>
                 <cell />
-                <cell span="11">Weight: <m><mfrac><mi>Size</mi><mn>3</mn></mfrac></m> kilograms</cell>
+                <cell span="11">Weight:
+		  <m><mrow>
+		    <mfrac><mi>Size</mi><mn>3</mn></mfrac>
+		    <mi>kilograms</mi>
+		  </mrow></m>
+		</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
@@ -4829,8 +4860,9 @@
                 <cell span="11">Weight:
 		  <m><mrow>
 		      <msup><mi>Diameter</mi><mn>3</mn></msup>
+		      <mi>kilograms</mi>
 		  </mrow></m>
-		  kilograms</cell>
+		</cell>
             </row>
             <row>
                 <cell><smallcaps>Str</smallcaps></cell>
