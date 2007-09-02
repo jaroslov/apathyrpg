@@ -6,7 +6,8 @@
 
   <!-- Main document -->
   <xsl:template match="/">
-    <html><!-- xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">-->
+    <!-- Bug in FFX2.0.0.6? Renders incorrectly b/c it uses ending ".xhtml" -->
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
       <head>
         <title>Apathy Manual (ARPG)</title>
         <link rel="stylesheet"
