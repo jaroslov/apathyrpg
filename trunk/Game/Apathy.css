@@ -279,5 +279,6 @@ table.sum {
   text-align: left;
   display: inline-block;
 }
-
-
+span.notappl {
+  font-style: italic;
+}

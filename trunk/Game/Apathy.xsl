@@ -300,10 +300,16 @@
     </xsl:for-each>
   </xsl:template>
 
+  <!-- Math is dropped in place -->
   <xsl:template match="m">
     <math xmlns="http://www.w3.org/1998/Math/MathML">
       <xsl:copy-of select="child::node()" />
     </math>
+  </xsl:template>
+
+  <!-- "n/a" notappl -->
+  <xsl:template match="notappl">
+    <span class="notappl">n/a</span>
   </xsl:template>
 
 </xsl:stylesheet>
