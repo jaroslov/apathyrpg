@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE stylesheet [
-<!ENTITY rarr  "&#8594;" ><!-- small n, tilde -->
-]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:output version="5.0" method="html" encoding="ISO-8859-1" media-type="text/html"/>
 
   <!-- Main document -->
   <xsl:template match="/">
