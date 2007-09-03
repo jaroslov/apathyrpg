@@ -7,7 +7,7 @@
 <!ENTITY rsquo  "&#8217;" ><!-- right quote -->
 <!ENTITY times  "&#215;" ><!-- times -->
 <!ENTITY Sigma  "&#931;" ><!-- sigma -->
-<!ENTITY reg    "&#174;" ><!-- trademark -->
+<!ENTITY trade  "&#8482;" ><!-- trademark -->
 <!ENTITY ouml   "&#246;" ><!-- o-umlaut -->
 <!ENTITY oslash "&#248;" ><!-- o-slash -->
 <!ENTITY ndash  "&#8211;" ><!-- n-dash -->
@@ -1039,7 +1039,7 @@
 		well, he is specialized in the Nordic War Axe.  The
 		total skill cost is 9 CP.  That is 6 CP for Level 3 in
 		a Rank 1 skill, Plus 3 CP from the specialization.
-		When welding a Genuine Nordic War Axe&reg; in
+		When welding a Genuine Nordic War Axe&trade; in
 		combat, Gunnar has 4 dice.  However, when using any
 		other kind of axe Gunnar only has 2 dice.</text>
             </example>
