@@ -1,9 +1,1 @@
-Eventually there will be only *.xml files in this folder.
-Every item that has a *.tex is in the process of being transferred.
-
-TODO:
-
-August 22:
-  Jacob -- finish transferring tex->xml
-  Jacob -- make DTD for ARPG-Data.xml
-  Jacob -- make DTD for Manual.xml
+In order to transform the file rename one of the Apathy.xsl.* files to just Apathy.xsl (i.e. cp Apathy.xsl.fo Apathy.xsl).
