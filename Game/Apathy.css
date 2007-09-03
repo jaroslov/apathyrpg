@@ -129,6 +129,9 @@ span.definition {
 .description-term {
   font-weight: bold;
 }
+table.description-list {
+  margin-right: 3em;
+}
 p.figure-caption {
   font-weight: bold;
   text-align: center;
