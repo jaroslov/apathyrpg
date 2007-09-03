@@ -60,6 +60,26 @@ div.figures h1 {
   font-variant: small-caps;
   font-size: 16pt;
 }
+div.chapter h1 {
+  font-size: 28pt;
+  font-weight: bold;
+}
+div.chapter div.section h1 {
+  font-size: 24pt;
+  font-weight: bold;
+}
+div.chapter div.section div.section h1 {
+  font-size: 20pt;
+  font-weight: bold;
+}
+div.chapter div.section div.section div.section h1 {
+  font-size: 16pt;
+  font-weight: bold;
+}
+div.chapter div.section div.section div.section div.section h1 {
+  font-size: 14pt;
+  font-weight: bold;
+}
 ol.figures {
   list-style-position: outside;
   list-style-type: upper-roman;
