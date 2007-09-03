@@ -60,25 +60,30 @@ div.figures h1 {
   font-variant: small-caps;
   font-size: 16pt;
 }
-div.chapter h1 {
+div.part h1 {
   font-size: 28pt;
   font-weight: bold;
+  color: orange;
 }
-div.chapter div.section h1 {
-  font-size: 24pt;
+div.part div.chapter h1 {
+  font-size: 28pt;
   font-weight: bold;
+  color: red;
 }
-div.chapter div.section div.section h1 {
-  font-size: 20pt;
+div.part div.chapter div.section h1 {
+  font-size: 28pt;
   font-weight: bold;
+  color: blue;
 }
-div.chapter div.section div.section div.section h1 {
-  font-size: 16pt;
+div.part div.chapter div.section div.section h1 {
+  font-size: 28pt;
   font-weight: bold;
+  color: green;
 }
-div.chapter div.section div.section div.section div.section h1 {
-  font-size: 14pt;
+div.part div.chapter div.section div.section div.section h1 {
+  font-size: 28pt;
   font-weight: bold;
+  color: black;
 }
 ol.figures {
   list-style-position: outside;
@@ -119,15 +124,6 @@ div.titlepage {
   border: double black;
   padding: 2em;
   padding-bottom: 5em;
-}
-div.part h1 {
-  font-size: 28pt;
-}
-div.chapter h1 {
-  font-size: 22pt;
-}
-div.section h1 {
-  font-size: 16pt;
 }
 div.example {
   width: 35em;
