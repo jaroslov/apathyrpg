@@ -50,7 +50,7 @@
                       <ol class="toc" >
                         <xsl:for-each select="section">
                           <li>
-                            <a href="#section-{../title}-{./title}">
+                            <a href="#section-{../../title}-{../title}-{./title}">
                               <xsl:value-of select="title" />
                             </a>
                             <ol class="toc" >
