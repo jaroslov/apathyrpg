@@ -29,7 +29,7 @@ def sanitizes (string):
   result = result.replace (u'\u2014', "&mdash;").replace (u'\u2013', "&ndash;")
   result = result.replace (u'\xf6', "&ouml;").replace (u'\xf8', "&oslash;")
   result = result.replace (u'\u2026', "&hellip;").replace (u'\xe8', "&egrave;")
-  result = result.replace (u'\u2026', "&hellip;").replace (u'\xe6', "&aelig;")
+  result = result.replace (u'\xe6', "&aelig;")
   return result.strip()
 
 def selfsimilarstrings (Where, xml=None, Strings={}):
@@ -50,36 +50,53 @@ def selfsimilarstrings (Where, xml=None, Strings={}):
         selfsimilarstrings (None, child, Strings)
   return Strings
 
+def buildEmptyElementNode (xml):
+  name = sanitizes (xml.nodeName)
+  result = ""
+  result += "<"+name
+  if xml.attributes:
+    for attr in xml.attributes.keys ():
+      result += " "+attr+"='"+xml.getAttribute (attr)+"'"
+  result += " />"
+  return result
+
 def pseudoprettyprint (Where, xml=None, indent="", inlines=[]):
   result = u""
   if Where is not None:
     xml = minix.parse(Where)
     result += pseudoprettyprint (None, xml, inlines=inlines)
   else:
+    name = sanitizes (xml.nodeName)
     if xml.nodeType == xml.ELEMENT_NODE:
-      if xml.nodeName not in inlines:
-        result += indent
-      result += "<"+xml.nodeName
-      hasNodes = False
-      if xml.hasChildNodes ():
-        for child in xml.childNodes:
-          if child.nodeType == xml.ELEMENT_NODE:
-            if not hasNodes:
-              result += ">\n"
-            hasNodes = True
-            result += pseudoprettyprint (None, child, indent+"  ", inlines)
-            if child.nodeName not in inlines:
-              result += "\n"
-          elif child.nodeType == xml.TEXT_NODE:
-            if child.nodeValue:
-              sans = sanitizes(child.nodeValue)
-              if len(sans) > 0:
-                hasNodes = True
-              result += sans
-      if hasNodes:
-        result += "\n"+indent+"</"+xml.nodeName+">"
+      # 1) ascertain if it has child-nodes which are non-trivial
+      # 2) ascertain if it is an inline tag
+      if name in inlines:
+        print sys.stderr, name
+        result += buildEmptyElementNode (xml)
       else:
-        result += " />"
+        hasChild = False
+        if xml.hasChildNodes ():
+          for child in xml.childNodes:
+            if child.nodeType == xml.ELEMENT_NODE:
+              hasChild = True
+            if child.nodeType == xml.TEXT_NODE:
+              val = sanitizes (child.nodeValue)
+              if len(val) > 0:
+                hasChild = True
+        if not hasChild:
+          result += indent+buildEmptyElementNode (xml)
+        else:
+          result += indent+"<"+name
+          if xml.attributes:
+            for attr in xml.attributes.keys ():
+              result += " "+attr+"='"+sanitizes(xml.getAttribute(attr))+"'"
+          result += ">"
+          if xml.hasChildNodes ():
+            for child in xml.childNodes:
+              if child.nodeType == xml.ELEMENT_NODE:
+                result += "\n"+pseudoprettyprint (None, child,
+                  indent+"  ", inlines=inlines)
+          result += "\n"+indent+"</"+name+">"
     else:
       if xml.hasChildNodes ():
         for child in xml.childNodes:
