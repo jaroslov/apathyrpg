@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE stylesheet [
-<!ENTITY rarr  "&#8594;" ><!-- small n, tilde -->
-<!ENTITY ldquo  "&#8220;" ><!-- left double quote -->
-<!ENTITY rdquo  "&#8221;" ><!-- right double quote -->
-<!ENTITY lsquo  "&#8216;" ><!-- left quote -->
-<!ENTITY rsquo  "&#8217;" ><!-- right quote -->
-<!ENTITY times  "&#215;" ><!-- times -->
-<!ENTITY Sigma  "&#931;" ><!-- sigma -->
-<!ENTITY reg    "&#174;" ><!-- trademark -->
-<!ENTITY ouml   "&#246;" ><!-- o-umlaut -->
-<!ENTITY oslash "&#248;" ><!-- o-slash -->
-<!ENTITY ndash  "&#8211;" ><!-- n-dash -->
-<!ENTITY mdash  "&#8212;" ><!-- m-dash -->
-<!ENTITY aelig  "&#230;" ><!-- ae-lig -->
-<!ENTITY hellip  "&#8230;" ><!-- ... -->
-<!ENTITY egrave  "&#232;" ><!-- e' -->
+<!ENTITY rarr  "&#8594;" ><!&ndash; small n, tilde &ndash;>
+<!ENTITY ldquo  "&#8220;" ><!&ndash; left double quote &ndash;>
+<!ENTITY rdquo  "&#8221;" ><!&ndash; right double quote &ndash;>
+<!ENTITY lsquo  "&#8216;" ><!&ndash; left quote &ndash;>
+<!ENTITY rsquo  "&#8217;" ><!&ndash; right quote &ndash;>
+<!ENTITY times  "&#215;" ><!&ndash; times &ndash;>
+<!ENTITY Sigma  "&#931;" ><!&ndash; sigma &ndash;>
+<!ENTITY reg    "&#174;" ><!&ndash; trademark &ndash;>
+<!ENTITY ouml   "&#246;" ><!&ndash; o-umlaut &ndash;>
+<!ENTITY oslash "&#248;" ><!&ndash; o-slash &ndash;>
+<!ENTITY ndash  "&#8211;" ><!&ndash; n-dash &ndash;>
+<!ENTITY mdash  "&#8212;" ><!&ndash; m-dash &ndash;>
+<!ENTITY aelig  "&#230;" ><!&ndash; ae-lig &ndash;>
+<!ENTITY hellip  "&#8230;" ><!&ndash; ... &ndash;>
+<!ENTITY egrave  "&#232;" ><!&ndash; e&rsquo; &ndash;>
 ]>
 <?xml-stylesheet type="text/xsl" href="Apathy.xsl"?>
 <apathy-game>
@@ -366,7 +366,7 @@
 	    eager to fight for his cause.  Your character is a hero in
 	    the game.  You should take this opportunity to have fun
 	    and do things you can&rsquo;t do in real life.</text>
-	    <image src='/Monsters/Buer.png'/>
+	    <image src=&rsquo;/Monsters/Buer.png&rsquo;/>
             <text>If you are having trouble thinking up a character
 	      concept, you might want to look to books, movies, or
 	      even historical precedent as to what kind of character
@@ -410,9 +410,9 @@
               <figure>
 		<table>
 		  <head>
-                    <cell width='.5in'>Abbr.</cell>
-                    <cell width='1in'>Name</cell>
-                    <cell width='2.5in'>Definition</cell>
+                    <cell width=&rsquo;.5in&rsquo;>Abbr.</cell>
+                    <cell width=&rsquo;1in&rsquo;>Name</cell>
+                    <cell width=&rsquo;2.5in&rsquo;>Definition</cell>
 		  </head>
 		  <row>
                     <cell>STR</cell>
@@ -515,9 +515,9 @@
               <figure>
 		<table>
 		  <head>
-                    <cell width='1in'>Abbr.</cell>
-                    <cell width='3in'>Definition</cell>
-                    <cell width='1.5in'>Computation</cell>
+                    <cell width=&rsquo;1in&rsquo;>Abbr.</cell>
+                    <cell width=&rsquo;3in&rsquo;>Definition</cell>
+                    <cell width=&rsquo;1.5in&rsquo;>Computation</cell>
 		  </head>
 		  <row>
                     <cell>Lift</cell>
@@ -818,8 +818,8 @@
         <figure>
           <table>
             <head>
-              <cell align='center'>Level</cell>
-              <cell align='left'>What it means</cell>
+              <cell align=&rsquo;center&rsquo;>Level</cell>
+              <cell align=&rsquo;left&rsquo;>What it means</cell>
             </head>
             <row>
               <cell>0</cell>
@@ -1169,8 +1169,8 @@
             <figure>
               <table>
 		<head>
-                  <cell align='center'>Roll</cell>
-                  <cell align='left'>Sample Outcome</cell>
+                  <cell align=&rsquo;center&rsquo;>Roll</cell>
+                  <cell align=&rsquo;left&rsquo;>Sample Outcome</cell>
 		</head>
 		<row>
                   <cell>Strike (sword)</cell>
@@ -1481,7 +1481,7 @@
 	    around, ducking behind cover, or taking an item out of
 	    your pack.  Some things that you will want to do will
 	    consume multiple Actions per turn.</text>
-	    <image src='/MartialArts/Cpg359-49v.jpg'/>
+	    <image src=&rsquo;/MartialArts/Cpg359-49v.jpg&rsquo;/>
             <text>All characters, by default, have three
 	      Actions per round.  Certain skills or
 	      in-game effects might change this.  When combat is going
@@ -1707,7 +1707,7 @@
 		compound bows are adjustable and can be set to a
 		higher than normal strength value without incurring
 		additional cost.</text>
-		<image src='/Magic/Lion-faced_deity.jpg'/>
+		<image src=&rsquo;/Magic/Lion-faced_deity.jpg&rsquo;/>
 		<text>Characters will have two hands that they may use
 		  to wield weapons.  All weapons are either one-hand
 		  or two-handed.  Two-handed weapons, of course,
@@ -2354,7 +2354,7 @@
 	    HP</mi></mfrac></m>.  When the game begins, your character
 	    will be fully healthy and uninjured.  Thus, when starting,
 	    your current HP will be equal to your maximum.</text>
-	    <image src='/Map/Forte-marghera-02.jpg'/>
+	    <image src=&rsquo;/Map/Forte-marghera-02.jpg&rsquo;/>
             <text>As you get injured, any damage you take (after
 	      applying armor, etc.)  will be applied to your current
 	      HP.  As you get injured, your current HP drops.  Over
@@ -2579,17 +2579,17 @@
     <part>
       <title>Rule Sections</title>
       
-      <chapter><!-- S Academics -->
+      <chapter><!&ndash; S Academics &ndash;>
         <title>Academics</title>
         <reference hrid="Content/Academic" />
-      </chapter><!-- /S Academics -->
+      </chapter><!&ndash; /S Academics &ndash;>
       
-      <chapter><!-- S Augmentations -->
+      <chapter><!&ndash; S Augmentations &ndash;>
         <title>Augmentations</title>
 	
 	<text>Augmentations are modifications to the body made through
 	  technology.  This can be anything from using a metal implant
-	  to repair a broken bone, to replacing a person's brain with
+	  to repair a broken bone, to replacing a person&rsquo;s brain with
 	  a computerized electronic brain.</text>
 	
 	<text>In general, augmentations fall into two categories.
@@ -2597,9 +2597,9 @@
 	  something already there.</text>
 	
 	<text>An addition is something that is added to the body that
-	  normally isn't there.  A good example is a cardiac
+	  normally isn&rsquo;t there.  A good example is a cardiac
 	  pacemaker.  Additions add new functionality to the
-	  body---either as a &ldquo;fix&rdquo; for an illness, or as an upgrade
+	  body&mdash;either as a &ldquo;fix&rdquo; for an illness, or as an upgrade
 	  to the body.  Some additions are very small devices that
 	  perform simple functions.  Others are large and complex
 	  systems that might require significant body
@@ -2611,13 +2611,13 @@
 	  also be used as a repair for a body part that was injured or
 	  for utility purposes.</text>
     
-        <section><!-- Additions -->
+        <section><!&ndash; Additions &ndash;>
           <title>Additions</title>
 	  
 	  <text>There are two basic types of addition augmentations.
-	    The first are small devices that don't take up a lot of
+	    The first are small devices that don&rsquo;t take up a lot of
 	    room.  These are easy to add to the body because they
-	    don't require any power or a lot of space.  As a general
+	    don&rsquo;t require any power or a lot of space.  As a general
 	    rule, this type of augmentation is very small and its
 	    function is often limited.</text>
     
@@ -2629,8 +2629,8 @@
 	    of slots (see below) which is similar to the Mecha
 	    system.</text>
     
-        </section><!-- /Additions -->
-        <section><!-- Replacements -->
+        </section><!&ndash; /Additions &ndash;>
+        <section><!&ndash; Replacements &ndash;>
           <title>Replacements</title>
 	  
 	  <text>Augmentation replacements, in their most basic forms,
@@ -2640,8 +2640,8 @@
 	    than normal.  Some augmentation replacements have new
 	    functions or different abilities than normal.</text>
 	  
-        </section><!-- /Replacements -->
-        <section><!-- Augmentation Limbs and Bodies -->
+        </section><!&ndash; /Replacements &ndash;>
+        <section><!&ndash; Augmentation Limbs and Bodies &ndash;>
           <title>Augmentation Limbs and Bodies</title>
 	  
 	  <text>Entire limbs or even entire bodies may be replaced
@@ -2664,7 +2664,7 @@
     
 	  <text>These rules apply to cybernetic and robotic components:</text>
 	  
-          <section><!-- Robotics -->
+          <section><!&ndash; Robotics &ndash;>
             <title>Robotics</title>
 	    
 	    <itemized-list>
@@ -2694,8 +2694,8 @@
 		replacing the damaged parts with new ones.</item>
 	    </itemized-list>
     
-            </section><!-- /Robotics -->
-            <section><!-- Cybernetics -->
+            </section><!&ndash; /Robotics &ndash;>
+            <section><!&ndash; Cybernetics &ndash;>
                 <title>Cybernetics</title>
     
     <itemized-list>
@@ -2720,7 +2720,7 @@
     replacement.  However, this usually requires surgery.
         </item>
         <item>
-             Cybernetic parts are usually built around the user's body.  Used 
+             Cybernetic parts are usually built around the user&rsquo;s body.  Used 
     cybernetic parts are valuable, but the potential market is limited to those 
     people who are very similar to the original owner.  Therefore the used 
     cybernetic parts market tends to be flooded with supply for which it is 
@@ -2742,9 +2742,9 @@
         </item>
     </itemized-list>
     
-            </section><!-- /Cybernetics -->
-        </section><!-- /Augmentation Limbs and Bodies -->
-        <section><!-- General Augmentation Rules -->
+            </section><!&ndash; /Cybernetics &ndash;>
+        </section><!&ndash; /Augmentation Limbs and Bodies &ndash;>
+        <section><!&ndash; General Augmentation Rules &ndash;>
             <title>General Augmentation Rules</title>
     
     <itemized-list>
@@ -2767,52 +2767,52 @@
         </item>
     </itemized-list>
     
-        </section><!-- /General Augmentation Rules -->
-        <section><!-- Determining the Cost of an Augmentation body part -->
+        </section><!&ndash; /General Augmentation Rules &ndash;>
+        <section><!&ndash; Determining the Cost of an Augmentation body part &ndash;>
             <title>Determining the Cost of an Augmentation body part</title>
             
             <note>This section is incomplete.</note>
             
-        </section><!-- /Determining the Cost of an Augmentation body part -->
+        </section><!&ndash; /Determining the Cost of an Augmentation body part &ndash;>
     
-        <section><!-- Arm, Hand -->
+        <section><!&ndash; Arm, Hand &ndash;>
           <title>Arm, Hand</title>
           <reference hrid="Content/Augmentations/Arm, Hand" />
-        </section><!-- /Arm, Hand -->
+        </section><!&ndash; /Arm, Hand &ndash;>
     
-        <section><!-- Body -->
+        <section><!&ndash; Body &ndash;>
           <title>Body</title>
           <reference hrid="Content/Augmentations/Body" />
-        </section><!-- /Body -->
+        </section><!&ndash; /Body &ndash;>
     
-        <section><!-- Head -->
+        <section><!&ndash; Head &ndash;>
           <title>Head</title>
           <reference hrid="Content/Augmentations/Head" />
-        </section><!-- /Head -->
+        </section><!&ndash; /Head &ndash;>
     
-        <section><!-- Leg -->
+        <section><!&ndash; Leg &ndash;>
           <title>Leg</title>
           <reference hrid="Content/Augmentations/Leg" />
-        </section><!-- /Leg -->
+        </section><!&ndash; /Leg &ndash;>
     
-        <section><!-- Torso -->
+        <section><!&ndash; Torso &ndash;>
           <title>Torso</title>
           <reference hrid="Content/Augmentations/Torso" />
-        </section><!-- /Torso -->
+        </section><!&ndash; /Torso &ndash;>
     
-      </chapter><!-- /S Augmentations -->
+      </chapter><!&ndash; /S Augmentations &ndash;>
     
-      <chapter><!-- S Equipment -->
+      <chapter><!&ndash; S Equipment &ndash;>
         <title>Equipment</title>
     
-        <section><!-- Ammunition -->
+        <section><!&ndash; Ammunition &ndash;>
           <title>Ammunition</title>
           <reference hrid="Content/Equipment/Ammunition" />
-        </section><!-- /Ammunition -->
+        </section><!&ndash; /Ammunition &ndash;>
     
         <section>
           <title>Armor</title>
-            <section><!-- Basics for Armor and Damage -->
+            <section><!&ndash; Basics for Armor and Damage &ndash;>
               <title>Basics for Armor and Damage</title>
     
     <itemized-list>
@@ -2870,8 +2870,8 @@
       the armor would appear.  A later period can find the earlier armor.</item>
     </itemized-list>
     
-        </section><!-- /Basics for Armor and Damage -->
-        <section><!-- Shields -->
+        </section><!&ndash; /Basics for Armor and Damage &ndash;>
+        <section><!&ndash; Shields &ndash;>
             <title>Shields</title>
     
     <itemized-list>
@@ -2898,20 +2898,20 @@
         </item>
     </itemized-list>
     
-        </section><!-- /Shields -->
+        </section><!&ndash; /Shields &ndash;>
     
         <reference hrid="Content/Equipment/Armor" />
     
-        </section><!-- /Armor -->
+        </section><!&ndash; /Armor &ndash;>
     
-          <section><!-- Energy Weapons -->
+          <section><!&ndash; Energy Weapons &ndash;>
             <title>Energy Weapons</title>
             <text>
     Most energy weapons are powered by a battery pack.  These are interchangable between weapons.  Energy within the packs is consumed as the weapon is fired, like normal bullets.  They are called &ldquo;batts&rdquo; or &ldquo;b-paks&rdquo; in slang. B-paks store energy in units of EU.  Different weapons consume EU at different rates.  Smaller weapons use 1 EU per shot.  Larger weapons might use more.  Pistols can hold ONE pack.  Rifles/cannons can usually hold 3. B-paks can be recharged.  Recharging a pack takes about thirty seconds per EU that has been used.  As a general rule, it costs $1 per EU to have pack recharged.  HD paks require special equipment to charge and these cost about $1.50 per EU to charge.
             </text>
-          </section><!-- /Energy Weapons -->
+          </section><!&ndash; /Energy Weapons &ndash;>
     
-          <section><!-- Melee -->
+          <section><!&ndash; Melee &ndash;>
             <title>Melee</title>
     
               <text>
@@ -2941,7 +2941,7 @@
       than 1/2 range, then you are at -6 to strike the target.</item>
               </description-list>
     
-            <section><!-- Options for Melee Weapons -->
+            <section><!&ndash; Options for Melee Weapons &ndash;>
               <title>Options for Melee Weapons</title>
     
               <text>
@@ -3014,51 +3014,51 @@
     bonus, damage dice number, etc.
               </text>
     
-            </section><!-- /Options for Melee Weapons -->
+            </section><!&ndash; /Options for Melee Weapons &ndash;>
     
-            <section><!-- Axes -->
+            <section><!&ndash; Axes &ndash;>
               <title>Axes</title>
     
               <reference hrid="Content/Equipment/Melee/Axes" />
-            </section><!-- /Axes -->
+            </section><!&ndash; /Axes &ndash;>
     
-            <section><!-- Blunt -->
+            <section><!&ndash; Blunt &ndash;>
               <title>Blunt</title>
     
               <reference hrid="Content/Equipment/Melee/Blunt" />
-            </section><!-- /Blunt -->
+            </section><!&ndash; /Blunt &ndash;>
     
-            <section><!-- Body -->
+            <section><!&ndash; Body &ndash;>
               <title>Body</title>
     
               <reference hrid="Content/Equipment/Melee/Body" />
-            </section><!-- /Body -->
+            </section><!&ndash; /Body &ndash;>
     
-            <section><!-- Chained -->
+            <section><!&ndash; Chained &ndash;>
               <title>Chained</title>
     
               <reference hrid="Content/Equipment/Melee/Chained" />
-            </section><!-- /Chained -->
+            </section><!&ndash; /Chained &ndash;>
     
-            <section><!-- Exotic -->
+            <section><!&ndash; Exotic &ndash;>
               <title>Exotic</title>
     
               <reference hrid="Content/Equipment/Melee/Exotic" />
-            </section><!-- /Exotic -->
+            </section><!&ndash; /Exotic &ndash;>
     
-            <section><!-- Knives -->
+            <section><!&ndash; Knives &ndash;>
               <title>Knives</title>
     
               <reference hrid="Content/Equipment/Melee/Knives" />
-            </section><!-- /Knives -->
+            </section><!&ndash; /Knives &ndash;>
     
-            <section><!-- Large Swords -->
+            <section><!&ndash; Large Swords &ndash;>
               <title>Large Swords</title>
     
               <reference hrid="Content/Equipment/Melee/Large Swords" />
-            </section><!-- /Large Swords -->
+            </section><!&ndash; /Large Swords &ndash;>
     
-            <section><!-- Monofilament -->
+            <section><!&ndash; Monofilament &ndash;>
               <title>Monofilament</title>
     
               <text>
@@ -3070,9 +3070,9 @@
               </text>
     
               <reference hrid="Content/Equipment/Melee/Monofilament" />
-            </section><!-- /Monofilament -->
+            </section><!&ndash; /Monofilament &ndash;>
     
-            <section><!-- Plasma -->
+            <section><!&ndash; Plasma &ndash;>
               <title>Plasma</title>
     
               <text>
@@ -3102,14 +3102,14 @@
                   </row>
                   <row>
                     <cell>Power burst</cell>
-                    <cell>Once per minute the blade's power can be increased to deal +3 damage</cell>
+                    <cell>Once per minute the blade&rsquo;s power can be increased to deal +3 damage</cell>
                     <cell>x1.5</cell>
                   </row>
                 </table>
                 <caption>Plasma Weapon Modifiers</caption>
               </figure>
     
-              <section><!-- Notes for Plasma Weapons -->
+              <section><!&ndash; Notes for Plasma Weapons &ndash;>
                 <title>Notes: specific to Plasma Weapons</title>
     
                 <itemized-list>
@@ -3143,16 +3143,16 @@
       shots from a beam rifle).  Doing so the wielder is at a -8.</item>
                 </itemized-list>
     
-              </section><!-- /Notes for Plasma Weapons -->
+              </section><!&ndash; /Notes for Plasma Weapons &ndash;>
     
-            </section><!-- /Plasma -->
+            </section><!&ndash; /Plasma &ndash;>
     
-            <section><!-- Polearms -->
+            <section><!&ndash; Polearms &ndash;>
               <title>Polearms</title>
               <reference hrid="Content/Equipment/Melee/Polearms" />
-            </section><!-- /Polearms -->
+            </section><!&ndash; /Polearms &ndash;>
     
-            <section><!-- Rocket Assisted -->
+            <section><!&ndash; Rocket Assisted &ndash;>
               <title>Rocket Assisted</title>
     
               <text>
@@ -3172,40 +3172,40 @@
               </text>
     
               <reference hrid="Content/Equipment/Melee/Rocket Assisted" />
-            </section><!-- /Rocket Assisted -->
+            </section><!&ndash; /Rocket Assisted &ndash;>
     
-            <section><!-- Staves -->
+            <section><!&ndash; Staves &ndash;>
               <title>Staves</title>
               <reference hrid="Content/Equipment/Melee/Staves" />
-            </section><!-- /Staves -->
+            </section><!&ndash; /Staves &ndash;>
     
-            <section><!-- Thrown -->
+            <section><!&ndash; Thrown &ndash;>
               <title>Thrown</title>
               <reference hrid="Content/Equipment/Melee/Thrown" />
-            </section><!-- /Thrown -->
+            </section><!&ndash; /Thrown &ndash;>
     
-          </section><!-- /Melee -->
+          </section><!&ndash; /Melee &ndash;>
     
-          <section><!-- Miscellaneous -->
+          <section><!&ndash; Miscellaneous &ndash;>
             <title>Miscellaneous</title>
             <reference hrid="Content/Equipment/Miscellaneous" />
-          </section><!-- /Miscellaneous -->
+          </section><!&ndash; /Miscellaneous &ndash;>
     
-          <section><!-- Ranged -->
+          <section><!&ndash; Ranged &ndash;>
             <title>Ranged</title>
             <reference hrid="Content/Equipment/Ranged" />
-          </section><!-- /Ranged -->
+          </section><!&ndash; /Ranged &ndash;>
     
-          <section><!-- Shields -->
+          <section><!&ndash; Shields &ndash;>
             <title>Shields</title>
             <reference hrid="Content/Equipment/Shields" />
-          </section><!-- /Shields -->
+          </section><!&ndash; /Shields &ndash;>
     
-      </chapter><!-- /S Equipment -->
-      <chapter><!-- S Magic -->
+      </chapter><!&ndash; /S Equipment &ndash;>
+      <chapter><!&ndash; S Magic &ndash;>
         <title>Magic</title>
     
-      <section><!-- Introduction -->
+      <section><!&ndash; Introduction &ndash;>
         <title>Introduction</title>
       
         <text>
@@ -3286,12 +3286,12 @@
           <item> Newly cleared land</item>
         </itemized-list>
       
-      </section><!-- /Introduction -->
+      </section><!&ndash; /Introduction &ndash;>
       
-      <section><!-- Types of Magic -->
+      <section><!&ndash; Types of Magic &ndash;>
         <title>Types of Magic</title>
       
-        <section><!-- Invocation Magic (spellcasting) -->
+        <section><!&ndash; Invocation Magic (spellcasting) &ndash;>
           <title>Invocation Magic (spellcasting)</title>
       
           <text>
@@ -3386,9 +3386,9 @@
       points of Encumberance available.  If not, they are not able to cast
       magic.
           </text>
-        </section><!-- /Invocation Magic (spellcasting) -->
+        </section><!&ndash; /Invocation Magic (spellcasting) &ndash;>
       
-        <section><!-- Ritual Magic -->
+        <section><!&ndash; Ritual Magic &ndash;>
           <title>Ritual Magic</title>
       
           <text>
@@ -3581,9 +3581,9 @@
       ritualist.
           </text>
       
-        </section><!-- /Ritual Magic -->
+        </section><!&ndash; /Ritual Magic &ndash;>
       
-        <section><!-- Religious and Faith Magic -->
+        <section><!&ndash; Religious and Faith Magic &ndash;>
           <title>Religious &amp; Faith Magic</title>
       
           <text>
@@ -3700,9 +3700,9 @@
       the caster has is then applied as a bonus to that roll.
           </text>
       
-        </section><!-- /Religious and Faith Magic -->
+        </section><!&ndash; /Religious and Faith Magic &ndash;>
       
-        <section><!-- Martial Magic / Super Power Combat -->
+        <section><!&ndash; Martial Magic / Super Power Combat &ndash;>
           <title>Martial Magic / Super Power Combat</title>
       
           <text>
@@ -3788,9 +3788,9 @@
 	    considered the skill level of &ldquo;Martial Magic&rdquo;
           </text>
       
-        </section><!-- /Martial Magic / Super Power Combat -->
+        </section><!&ndash; /Martial Magic / Super Power Combat &ndash;>
       
-        <section><!-- Mysticism / Psionics -->
+        <section><!&ndash; Mysticism / Psionics &ndash;>
           <title>Mysticism / Psionics</title>
       
           <text>
@@ -3835,9 +3835,9 @@
         that would be used for that roll.</item>
           </itemized-list>
       
-        </section><!-- /Mysticism / Psionics -->
+        </section><!&ndash; /Mysticism / Psionics &ndash;>
       
-        <section><!-- Beast Magic (summoning) -->
+        <section><!&ndash; Beast Magic (summoning) &ndash;>
           <title>Beast Magic (summoning)</title>
       
           <text>
@@ -3967,9 +3967,9 @@
       what &ldquo;Beast Lore&rdquo; skills he knows.
           </text>
       
-        </section><!-- /Beast Magic (summoning) -->
+        </section><!&ndash; /Beast Magic (summoning) &ndash;>
       
-        <section><!-- Magic-Related Skill Summary -->
+        <section><!&ndash; Magic-Related Skill Summary &ndash;>
           <title>Magic-Related Skill Summary</title>
       
           <itemized-list>
@@ -4117,11 +4117,11 @@
         time, they are nearly impossible to defend against.</item>
           </description-list>
       
-        </section><!-- /Magic-Related Skill Summary -->
+        </section><!&ndash; /Magic-Related Skill Summary &ndash;>
       
-      </section><!-- /Types of Magic -->
+      </section><!&ndash; /Types of Magic &ndash;>
       
-      <section><!-- General Notes -->
+      <section><!&ndash; General Notes &ndash;>
         <title>General notes</title>
       
         <text>
@@ -4158,7 +4158,7 @@
       to cast any magical spell.
         </text>
       
-        <section><!-- Magic Points -->
+        <section><!&ndash; Magic Points &ndash;>
           <title>Magic Points (MP)</title>
       
           <text>
@@ -4195,9 +4195,9 @@
             <caption>Mana Point replacement per hour.</caption>
           </figure>
       
-        </section><!-- /Magic Points -->
+        </section><!&ndash; /Magic Points &ndash;>
       
-        <section><!-- Magical Tools -->
+        <section><!&ndash; Magical Tools &ndash;>
           <title>Magical &ldquo;Tools&rdquo;: Books, Scrolls, and Potions</title>
       
           <text>
@@ -4284,9 +4284,9 @@
               ritualist may prepare a potion in half that time.</item>
           </description-list>
       
-        </section><!-- /Magical Tools -->
+        </section><!&ndash; /Magical Tools &ndash;>
       
-        <section><!-- Magical Miscellany -->
+        <section><!&ndash; Magical Miscellany &ndash;>
           <title>Magic Terminology &amp; Misc.</title>
       
           <description-list>
@@ -4307,9 +4307,9 @@
         be able to clearly see and identify his target.</item>
           </description-list>
           
-        </section><!-- /Magical Miscellany -->
+        </section><!&ndash; /Magical Miscellany &ndash;>
       
-      </section><!-- /General Notes -->
+      </section><!&ndash; /General Notes &ndash;>
     
       <section>
         <title>Schools(???)</title>
@@ -4355,8 +4355,8 @@
         </section>
       </section>
     
-      </chapter><!-- /S Magic -->
-      <chapter><!-- S Martial Arts -->
+      </chapter><!&ndash; /S Magic &ndash;>
+      <chapter><!&ndash; S Martial Arts &ndash;>
         <title>Martial Arts</title>
     
         <text>
@@ -4373,7 +4373,7 @@
     arena&mdash;and may even be a detriment.
         </text>
     
-        <section><!-- Rules -->
+        <section><!&ndash; Rules &ndash;>
           <title>Rules</title>
     
           <text>
@@ -4474,9 +4474,9 @@
       </text>
     </example>
     
-        </section><!-- /Rules -->
+        </section><!&ndash; /Rules &ndash;>
         
-        <section><!-- Further Commentary -->
+        <section><!&ndash; Further Commentary &ndash;>
           <title>Further Commentary</title>
     
           <text>
@@ -4498,7 +4498,7 @@
 	    would benefit a Martial Artist tremondously.
           </text>
     
-          <section><!-- Advanced Martial Arts -->
+          <section><!&ndash; Advanced Martial Arts &ndash;>
             <title>Advanced Martial Arts</title>
     
             <text>
@@ -4510,9 +4510,9 @@
     Strike is only possible by using these skills.
             </text>
     
-          </section><!-- /Advanced Martial Arts -->
+          </section><!&ndash; /Advanced Martial Arts &ndash;>
     
-        </section><!-- /Further Commentary -->
+        </section><!&ndash; /Further Commentary &ndash;>
     
         <section>
           <title>Categories</title>
@@ -4538,10 +4538,10 @@
           </section>
         </section>
     
-      </chapter><!-- /S Martial Arts -->
+      </chapter><!&ndash; /S Martial Arts &ndash;>
 
-<!-- Mecha -->
-      <chapter><!-- S Mecha -->
+<!&ndash; Mecha &ndash;>
+      <chapter><!&ndash; S Mecha &ndash;>
         <title>Mecha</title>
         <section>
           <title>Mecha Suits &amp; Powered Armor</title>
@@ -4552,7 +4552,7 @@
 	    Mecha denotes armored mechanical vehicles that are built in the form of a human. There are two basic types of mecha: Power Armor and Mecha.  
           </text>
           <text>
-      Power Armor is an armored suit that is &ldquo;worn&rdquo; like clothing.  It provides armor protection, but it has the function of increasing the wearer's strength, endurance, and weapon payload.  It is easy to use.  The internal computers, etc, in the suit allow it to follow the wearer's movements.
+      Power Armor is an armored suit that is &ldquo;worn&rdquo; like clothing.  It provides armor protection, but it has the function of increasing the wearer&rsquo;s strength, endurance, and weapon payload.  It is easy to use.  The internal computers, etc, in the suit allow it to follow the wearer&rsquo;s movements.
           </text>
           <itemized-list>
             <item>Power Armor does NOT require any skill to use</item>
@@ -4568,7 +4568,7 @@
           </itemized-list>
       
           <text>
-      As a general summary: Power Armor tends to be a lighter and smaller than mecha.  Power Armor can carry less weaponry (and other hardware), but is usually more manueverable.  It is often possible to perform major feats of dexterity while wearing power armor.   This is because the power armor does not hinder the wearer's natural skills.  As well, power armor is easier to use because the Mecha Piloting skill is not required.
+      As a general summary: Power Armor tends to be a lighter and smaller than mecha.  Power Armor can carry less weaponry (and other hardware), but is usually more manueverable.  It is often possible to perform major feats of dexterity while wearing power armor.   This is because the power armor does not hinder the wearer&rsquo;s natural skills.  As well, power armor is easier to use because the Mecha Piloting skill is not required.
           </text>
           <text>
       Mecha tend to be larger and more powerful than power armor.  Mecha generally have more and heavier weapons, better armor, and superior auxiliary systems compared to powered armor.  However, the pilot needs to be skilled to maximize the potential of a mecha.
@@ -4588,15 +4588,15 @@
                     </head>
                     <row>
                       <cell>Height</cell>
-                      <cell>4'</cell>
-                      <cell>7'</cell>
-                      <cell>15'</cell>
-                      <cell>30'</cell>
-                      <cell>60'</cell>
-                      <cell>125'</cell>
-                      <cell>250'</cell>
-                      <cell>500'</cell>
-                      <cell>1000'</cell>
+                      <cell>4&rsquo;</cell>
+                      <cell>7&rsquo;</cell>
+                      <cell>15&rsquo;</cell>
+                      <cell>30&rsquo;</cell>
+                      <cell>60&rsquo;</cell>
+                      <cell>125&rsquo;</cell>
+                      <cell>250&rsquo;</cell>
+                      <cell>500&rsquo;</cell>
+                      <cell>1000&rsquo;</cell>
                     </row>
                     <row>
                       <cell>Mecha Weight (tons)</cell>
@@ -4638,7 +4638,7 @@
                 <caption>Size Level and Starting CP Cost</caption>
                 </figure>
                 <itemized-list>
-                  <item>Mecha can be no smaller than one size level greater than the wearer's size</item>
+                  <item>Mecha can be no smaller than one size level greater than the wearer&rsquo;s size</item>
                   <item>Humans are size level 2, weight is given in tons</item>
                   <item>Height and weight indicates the maximum size for a humanoid shaped robot for a given size level</item>
                 </itemized-list>
@@ -4864,13 +4864,13 @@
                   <caption>Frame Style</caption>
                 </figure>
                 <text>
-      The number of HP and Slots that a mecha has can be further altered by the internal frame's style and material makup. Frame Style determines the efficiency of how bulky the internal frame of the mecha is, this adjusts the number of slots that are within the mecha. Frame Material is the makeup of the frame, what it is made of.  Different materials offer decreased or added hit points to the mecha. Choose the type of Frame Style, as well as the Material.  Cross reference them on the chart below, and multiply the number by the size of the mecha to get the CP cost for that configuration.
+      The number of HP and Slots that a mecha has can be further altered by the internal frame&rsquo;s style and material makup. Frame Style determines the efficiency of how bulky the internal frame of the mecha is, this adjusts the number of slots that are within the mecha. Frame Material is the makeup of the frame, what it is made of.  Different materials offer decreased or added hit points to the mecha. Choose the type of Frame Style, as well as the Material.  Cross reference them on the chart below, and multiply the number by the size of the mecha to get the CP cost for that configuration.
                 </text>
                 <text>
-      For example, if you chose a &ldquo;Light Matrix Composite&rdquo; frame for a size 4 mecha, it will receive -10% to it's slot total, would gain +60% to it's hit points, and cost 16 CP (size of 4*4).
+      For example, if you chose a &ldquo;Light Matrix Composite&rdquo; frame for a size 4 mecha, it will receive -10% to it&rsquo;s slot total, would gain +60% to it&rsquo;s hit points, and cost 16 CP (size of 4*4).
                 </text>
                 <text>
-      If a mecha suit runs out of HP, it is rendered useless until repaired.  If it goes -HP then it is destroyed. Any time the mecha takes 10% of it's total HP in one blow, the pilot takes 1D6+1 U damage.
+      If a mecha suit runs out of HP, it is rendered useless until repaired.  If it goes -HP then it is destroyed. Any time the mecha takes 10% of it&rsquo;s total HP in one blow, the pilot takes 1D6+1 U damage.
                 </text>
               </item>
                 <text>
@@ -4917,7 +4917,7 @@
               <item>
                 <title>Engines etc.</title>
                 <text>
-      Various parts of a mecha or powered suit require power to operate.  This can come from any number of different sources.  A mecha will generally have an ENGINE of some sort that supplies power for moving around, and operating equipment &amp; weapons.  Some mecha will have supplimentary power sources used for especially power-hungry equipment.  All power sources take up slots within the suit based on the amount of power that it produces.  The more expensive (in CP) a power system is, the more power can be gotten from one slot's worth of the power source. Power is measured in PCs (or Power Cells).  All power sources produce the number of listed PC at the beginning of each of the character's turns.  All systems on a suit will draw power from this, and if there isn't enough power available, that piece of equipment will not function.  So it is vital that the suit has adequate power.
+      Various parts of a mecha or powered suit require power to operate.  This can come from any number of different sources.  A mecha will generally have an ENGINE of some sort that supplies power for moving around, and operating equipment &amp; weapons.  Some mecha will have supplimentary power sources used for especially power-hungry equipment.  All power sources take up slots within the suit based on the amount of power that it produces.  The more expensive (in CP) a power system is, the more power can be gotten from one slot&rsquo;s worth of the power source. Power is measured in PCs (or Power Cells).  All power sources produce the number of listed PC at the beginning of each of the character&rsquo;s turns.  All systems on a suit will draw power from this, and if there isn&rsquo;t enough power available, that piece of equipment will not function.  So it is vital that the suit has adequate power.
                 </text>
                 <figure>
                   <title>Engines (provide constant power while mech is operating)</title>
@@ -5129,7 +5129,7 @@
                           </mrow>
                         </m>
                       </cell>
-                      <cell>Power armor STR bonus increases the wearer's own STR while wearing the armor
+                      <cell>Power armor STR bonus increases the wearer&rsquo;s own STR while wearing the armor
       </cell>
                     </row>
                   </table>
@@ -5201,7 +5201,7 @@
                     <row>
                       <cell>Micro-hover</cell>
                         <cell>20 mph</cell>
-                        <cell>15'</cell>
+                        <cell>15&rsquo;</cell>
                         <cell>
                           
                           <m><mrow>
@@ -5220,7 +5220,7 @@
                     <row>
                       <cell>True-hover</cell>
                         <cell>30 mph</cell>
-                        <cell>200'</cell>
+                        <cell>200&rsquo;</cell>
                         <cell>
                           <m><mrow>
                               <mo>(</mo>
@@ -5238,7 +5238,7 @@
                     <row>
                       <cell>Jump jets</cell>
                         <cell>0 mph</cell>
-                        <cell>100'</cell>
+                        <cell>100&rsquo;</cell>
                         <cell>
                           <m><mrow>
                               <mo>(</mo>
@@ -5256,7 +5256,7 @@
                     <row>
                       <cell>Mech. Jump</cell>
                         <cell>0 mph</cell>
-                        <cell>50'</cell>
+                        <cell>50&rsquo;</cell>
                         <cell>0</cell>
                         <cell>2</cell>
                         <cell><m><msup><mi>Size</mi><mn>2</mn></msup></m></cell>
@@ -5264,7 +5264,7 @@
                     <row>
                       <cell>Manuever Jets</cell>
                         <cell>40 mph</cell>
-                        <cell>5'</cell>
+                        <cell>5&rsquo;</cell>
                         <cell>
                           <m><mrow>
                               <mo>(</mo>
@@ -5349,7 +5349,7 @@
           </section>
         </section>
       
-        <section><!-- Equipment -->
+        <section><!&ndash; Equipment &ndash;>
             <title>Equipment</title>
 	    <section>
 	      <title>Auxiliary</title>
@@ -5460,7 +5460,7 @@
             <description-list>
               <item><description>Class</description><text> the size of the weapon being bought; used to calculate various expenses</text></item>
               <item><description>Size</description><text> the size of the mecha or powered armor</text></item>
-              <item><description>Slots</description><text> the number of slots a ``pod'' of ammunition uses</text></item>
+              <item><description>Slots</description><text> the number of slots a &ldquo;pod&rdquo; of ammunition uses</text></item>
               <item><description>Capacity per</description><text> the number of rounds per pod</text></item>
               <item><description>Damage</description><text> the damage the ammunition does</text></item>
               <item><description>Cost</description><text> the cost in dollars to purchase the ammunition pod</text></item>
@@ -5475,7 +5475,7 @@
               producing the blast that comes from an energy weapon,
               but all of them share some things in common. First, the
               base damage-table is used to calculate the damage an
-              energy weapon does based on it's class:
+              energy weapon does based on it&rsquo;s class:
             </text>
             <figure>
               <table>
@@ -5536,11 +5536,11 @@
 		<text> weapon deals C (Crushing) damage, but the
 		  maximum range is (Class+1)*100 feet</text></item>
               <item><description>Area Effect</description>
-		<text> uses twice the energy, but has (Class+1)*5'
+		<text> uses twice the energy, but has (Class+1)*5&rsquo;
 		  area effect</text></item>
             </description-list>
             <text>
-              When buying an energy weapon you may pay it's cost again
+              When buying an energy weapon you may pay it&rsquo;s cost again
               to add an effect. Certain combinations of effects are
               &ldquo;named&rdquo; below.
             </text>
@@ -5681,12 +5681,12 @@
 	    <title>Sensors and Controls</title>
             <reference hrid="Content/Mecha/Equipment/Sensors and Controls" />
 	  </section>
-        </section><!-- /Equipment -->
-      </chapter><!-- /S Mecha -->
-      <chapter><!-- S Monsters -->
+        </section><!&ndash; /Equipment &ndash;>
+      </chapter><!&ndash; /S Mecha &ndash;>
+      <chapter><!&ndash; S Monsters &ndash;>
         <title>Monsters</title>
     
-        <section><!-- Building a Monster -->
+        <section><!&ndash; Building a Monster &ndash;>
             <title>Building a Monster</title>
     
     <text>Because of the wide variety of monstrous creatures available in
@@ -5704,7 +5704,7 @@
         <item description="Examples">: that have been pre-generated</item>
     </description-list>
     
-            <section><!-- Base Types -->
+            <section><!&ndash; Base Types &ndash;>
                 <title>Base Types</title>
     
     <text>The base-types are the fundamental &ldquo;type&rdquo; or &ldquo;look&rdquo; of the
@@ -6159,9 +6159,9 @@
         <caption>Monster Construction Table</caption>
     </figure>
     
-            </section><!-- /Base Types -->
+            </section><!&ndash; /Base Types &ndash;>
     
-            <section><!-- Adding a Template -->
+            <section><!&ndash; Adding a Template &ndash;>
                 <title>Adding a Template</title>
     
     <text>There are several important items missing from the
@@ -6171,16 +6171,16 @@
     any relavent interaction statistics, such as combat, elocution etc.</text>
     
     
-            </section><!-- /Adding a Template -->
-        </section><!-- /Building a Monster -->
+            </section><!&ndash; /Adding a Template &ndash;>
+        </section><!&ndash; /Building a Monster &ndash;>
         
-        <section><!-- Monsters -->
+        <section><!&ndash; Monsters &ndash;>
           <title>Monsters</title>
           <reference hrid="Content/Monsters" />
-        </section><!-- /Monsters -->
+        </section><!&ndash; /Monsters &ndash;>
     
-      </chapter><!-- /S Monsters -->
-      <chapter><!-- S Traits -->
+      </chapter><!&ndash; /S Monsters &ndash;>
+      <chapter><!&ndash; S Traits &ndash;>
         <title>Traits</title>
     
 	<text>Traits are supernatural (supernormal or paranormal)
@@ -6196,19 +6196,19 @@
 	  bought at only one level, but can be purchased at higher
 	  levels, if it is pertinent. If a Traits needs
 	  &ldquo;points&rdquo; to power it, these are taken from the
-	  character's Mana Points.</text>
+	  character&rsquo;s Mana Points.</text>
 	
 	<text>Since many traits overlap magical spells, there is a
 	  specific trait designed for using abilities to some specific
 	  spell, this trait is called Spell Ability.</text>
         
         
-        <section><!-- Traits -->
+        <section><!&ndash; Traits &ndash;>
           <title>Traits</title>
           <reference hrid="Content/Traits" />
-        </section><!-- /Traits -->
+        </section><!&ndash; /Traits &ndash;>
     
-      </chapter><!-- /S Traits -->
+      </chapter><!&ndash; /S Traits &ndash;>
     </part>
   </book>
   <raw-data>
@@ -6251,7 +6251,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Herbalist, magician, shaman</field>
-       <field name="Description" description="yes" >Knowledge of `primitive&apos; chemistry and related techniques. A person with this skill will know how to prepare simple chemicals (including such things as simple medicines, poisons, black powder, etc) from natural sources. This skill can also be used to prepare alchemical equivalents of magical potions at -2 LVL.</field>
+       <field name="Description" description="yes" >Knowledge of &lsquo;primitive&apos; chemistry and related techniques. A person with this skill will know how to prepare simple chemicals (including such things as simple medicines, poisons, black powder, etc) from natural sources. This skill can also be used to prepare alchemical equivalents of magical potions at -2 LVL.</field>
       </datum>
       <datum name="Alectromancy" >
        <field name="Name" title="yes" >Alectromancy</field>
@@ -6267,7 +6267,7 @@
        <field name="Rank" table="yes" >1</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Soldier, assassin, hunter, law enforcement</field>
-       <field name="Description" description="yes" >The knowledge of how to surprise someone or something---often by means of diversion or camouflage.</field>
+       <field name="Description" description="yes" >The knowledge of how to surprise someone or something&mdash;often by means of diversion or camouflage.</field>
       </datum>
       <datum name="Anatomy" >
        <field name="Name" title="yes" >Anatomy</field>
@@ -6398,7 +6398,7 @@
        <field name="Rank" table="yes" >1</field>
        <field name="Attribute" table="yes" >Wisdom</field>
        <field name="Occupation" table="yes" >Botanist, gardener</field>
-       <field name="Description" description="yes" >The knowledge of how plants grow, and their biological processes, etc. Persons with this skill can identify plants---including those that are medicinal, poisonous, or edible.</field>
+       <field name="Description" description="yes" >The knowledge of how plants grow, and their biological processes, etc. Persons with this skill can identify plants&mdash;including those that are medicinal, poisonous, or edible.</field>
       </datum>
       <datum name="Bureaucracy" >
        <field name="Name" title="yes" >Bureaucracy</field>
@@ -6406,7 +6406,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >diplomat, law enforcement, organized crime, politician</field>
-       <field name="Description" description="yes" >Experience with dealing with the political, legal, and related processes of the time. People with this skill will know ways around [latex]`red tape&apos;[/latex] and how to favorably deal with public services and government agencies.</field>
+       <field name="Description" description="yes" >Experience with dealing with the political, legal, and related processes of the time. People with this skill will know ways around [latex]&lsquo;red tape&apos;[/latex] and how to favorably deal with public services and government agencies.</field>
       </datum>
       <datum name="Business Sense" >
        <field name="Name" title="yes" >Business Sense</field>
@@ -6467,7 +6467,7 @@
        <field name="Rank" table="yes" >1</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Reporter, teacher, secretary</field>
-       <field name="Description" description="yes" >The knowledge of basic communication such as hand signals and gesturing, as well as modern communications methods like telephone, radio, and computerized communication---and their associated equipment.</field>
+       <field name="Description" description="yes" >The knowledge of basic communication such as hand signals and gesturing, as well as modern communications methods like telephone, radio, and computerized communication&mdash;and their associated equipment.</field>
       </datum>
       <datum name="Computer Programming" >
        <field name="Name" title="yes" >Computer Programming</field>
@@ -6483,7 +6483,7 @@
        <field name="Rank" table="yes" >1</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Any</field>
-       <field name="Description" description="yes" >The ability to use a computer for work and pleasure. This includes how to perform simple computer-related tasks, such as setting up a computer, basic repairs, and how to use common software---like word processing, spreadsheets, image viewing, E-mail, and Internet browsing.</field>
+       <field name="Description" description="yes" >The ability to use a computer for work and pleasure. This includes how to perform simple computer-related tasks, such as setting up a computer, basic repairs, and how to use common software&mdash;like word processing, spreadsheets, image viewing, E-mail, and Internet browsing.</field>
       </datum>
       <datum name="Construction" >
        <field name="Name" title="yes" >Construction</field>
@@ -6491,7 +6491,7 @@
        <field name="Rank" table="yes" >1</field>
        <field name="Attribute" table="yes" >Strength</field>
        <field name="Occupation" table="yes" >Construction worker, architect, contractor</field>
-       <field name="Description" description="yes" >The knowledge of working on a construction site. This includes preparing a site for building, reading plans---blueprints, surveying and laying a foundation, framing, and finishing a building or other structure. This also includes the use of common construction tools and heavy equipment including power tools, dump trucks, cement mixers, backhoes, and cranes. A person with this skill will also have experience with mixing concrete, laying bricks, and working with lumber and structural steel---as well as SIMPLE plumbing, electrical, and carpentry tasks.</field>
+       <field name="Description" description="yes" >The knowledge of working on a construction site. This includes preparing a site for building, reading plans&mdash;blueprints, surveying and laying a foundation, framing, and finishing a building or other structure. This also includes the use of common construction tools and heavy equipment including power tools, dump trucks, cement mixers, backhoes, and cranes. A person with this skill will also have experience with mixing concrete, laying bricks, and working with lumber and structural steel&mdash;as well as SIMPLE plumbing, electrical, and carpentry tasks.</field>
       </datum>
       <datum name="Cooking" >
        <field name="Name" title="yes" >Cooking</field>
@@ -6703,7 +6703,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Geologist, oil driller, professional climber</field>
-       <field name="Description" description="yes" >The academic study of the earth and its geological formations---including rocks, minerals, and related scientific elements. A person with this skill would know how to identify various geological features, including gems, etc.</field>
+       <field name="Description" description="yes" >The academic study of the earth and its geological formations&mdash;including rocks, minerals, and related scientific elements. A person with this skill would know how to identify various geological features, including gems, etc.</field>
       </datum>
       <datum name="Glassblowing" >
        <field name="Name" title="yes" >Glassblowing</field>
@@ -6718,7 +6718,7 @@
        <field name="MetaTag" >Any</field>
        <field name="Rank" table="yes" >1</field>
        <field name="Attribute" table="yes" >Wisdom</field>
-       <field name="Occupation" table="yes" >Newspaper--book editor, artist</field>
+       <field name="Occupation" table="yes" >Newspaper&ndash;book editor, artist</field>
        <field name="Description" description="yes" >The design and layout of printed matter, such as books, magazines, newspapers, and posters and advertising materials. Includes designing such works for maximum readability and visual impact, as well as the production of printed materials. This involves typesetting, production of master copies, operating a printing press, and desktop publishing on a computer.</field>
       </datum>
       <datum name="Gunsmithing" >
@@ -6743,7 +6743,7 @@
        <field name="Rank" table="yes" >1</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Diplomat, politician, teacher</field>
-       <field name="Description" description="yes" >Historical knowledge extending from the present until 5000 years in the past. Persons with this skill will know about major political figures (and other famous people), wars, famines, natural disasters, and major cultural---scientific---religious events and discoveries made during that time.</field>
+       <field name="Description" description="yes" >Historical knowledge extending from the present until 5000 years in the past. Persons with this skill will know about major political figures (and other famous people), wars, famines, natural disasters, and major cultural&mdash;scientific&mdash;religious events and discoveries made during that time.</field>
       </datum>
       <datum name="Hit Points" >
        <field name="Name" title="yes" >Hit Points</field>
@@ -6775,7 +6775,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Charisma</field>
        <field name="Occupation" table="yes" >Actor, thief, assassin</field>
-       <field name="Description" description="yes" >The skills of portraying a character or person other than oneself. Includes how to alter voice, habits and mannerisms---as well as basic costuming, etc. in order to play the part. This skill is used for professional actors, and for espionage purposes.</field>
+       <field name="Description" description="yes" >The skills of portraying a character or person other than oneself. Includes how to alter voice, habits and mannerisms&mdash;as well as basic costuming, etc. in order to play the part. This skill is used for professional actors, and for espionage purposes.</field>
       </datum>
       <datum name="Inspire Emotion" >
        <field name="Name" title="yes" >Inspire Emotion</field>
@@ -7014,7 +7014,7 @@
        <field name="Rank" table="yes" >3</field>
        <field name="Attribute" table="yes" >Wisdom</field>
        <field name="Occupation" table="yes" >Doctor, paramedic, shaman</field>
-       <field name="Description" description="yes" >Professional medicine. The study of the human body, its ailments, and how to treat them. Lvl 1 = Pre-Med Student, Lvl 2 = Med School Graduate--Resident, Lvl 3 = Inexperienced MD. You may choose the area of expertise</field>
+       <field name="Description" description="yes" >Professional medicine. The study of the human body, its ailments, and how to treat them. Lvl 1 = Pre-Med Student, Lvl 2 = Med School Graduate&ndash;Resident, Lvl 3 = Inexperienced MD. You may choose the area of expertise</field>
       </datum>
       <datum name="Medical Emergency" >
        <field name="Name" title="yes" >Medical Emergency</field>
@@ -7128,7 +7128,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Wisdom</field>
        <field name="Occupation" table="yes" >Politician, diplomat</field>
-       <field name="Description" description="yes" >Affinity for politics; knowledge of the political process, political groups and their agendas--public and private. The knowledge of current political events, deal making, vote gathering, and lobbying fall under this scope of this skill.</field>
+       <field name="Description" description="yes" >Affinity for politics; knowledge of the political process, political groups and their agendas&ndash;public and private. The knowledge of current political events, deal making, vote gathering, and lobbying fall under this scope of this skill.</field>
       </datum>
       <datum name="Psionic Studies" >
        <field name="Name" title="yes" >Psionic Studies</field>
@@ -7200,7 +7200,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Bum, thief</field>
-       <field name="Description" description="yes" >Knowledge of how and where to look for items, but not from &apos;normal&apos; sources. People with this skill are known for their ability to find just about anything--even if that means digging around in dumpsters, pawnshops, and similar locations.</field>
+       <field name="Description" description="yes" >Knowledge of how and where to look for items, but not from &apos;normal&apos; sources. People with this skill are known for their ability to find just about anything&ndash;even if that means digging around in dumpsters, pawnshops, and similar locations.</field>
       </datum>
       <datum name="Security" >
        <field name="Name" title="yes" >Security</field>
@@ -7288,7 +7288,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Wisdom</field>
        <field name="Occupation" table="yes" >Magician, historian</field>
-       <field name="Description" description="yes" >The knowledge of little known or unusual mythology, especially that involving ghosts, monsters, undead, werewolves or vampires, etc. A person with this skill will have knowledge of various mythical (and real) beasts, monsters, etc. including their appearance, strengths--weaknesses, etc.</field>
+       <field name="Description" description="yes" >The knowledge of little known or unusual mythology, especially that involving ghosts, monsters, undead, werewolves or vampires, etc. A person with this skill will have knowledge of various mythical (and real) beasts, monsters, etc. including their appearance, strengths&ndash;weaknesses, etc.</field>
       </datum>
       <datum name="Survival" >
        <field name="Name" title="yes" >Survival</field>
@@ -8847,7 +8847,7 @@
       <field name="Type" table="yes" >S</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >+1 Dmg</field>
-      <field name="Description" description="yes" >These are the most effective hunting arrows.  They aren&apos;t great at penetrating heavy armor, but are excellent for causing additional damage to the target.  This is particularly desirable for hunting, because it is likely to kill or incapacitate the target animal quickly, even if the vital organs are missed.  A broadhead is a wide, diamond-shaped head that has two or more &ldquo;fins&apos;&apos; on it that are sharpened into blades---which cut a devastating wound in the target.</field>
+      <field name="Description" description="yes" >These are the most effective hunting arrows.  They aren&apos;t great at penetrating heavy armor, but are excellent for causing additional damage to the target.  This is particularly desirable for hunting, because it is likely to kill or incapacitate the target animal quickly, even if the vital organs are missed.  A broadhead is a wide, diamond-shaped head that has two or more &ldquo;fins&apos;&apos; on it that are sharpened into blades&mdash;which cut a devastating wound in the target.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Bullet Point" >
@@ -8859,13 +8859,13 @@
       <field name="Hands" />
       <field name="Description" description="yes" >The &ldquo;standard&apos;&apos; type of arrow point.  The tip is pointed, but somewhat blunt, like a rifle bullet.  They are used for hunting small game, and for target shooting.  They are also common arrows for some military use since they are easily and cheaply produced.</field>
      </datum>
-     <datum name="Bullet Point (blunt--target)" >
-      <field name="Name" title="yes" >Bullet Point (blunt--target)</field>
+     <datum name="Bullet Point (blunt&ndash;target)" >
+      <field name="Name" title="yes" >Bullet Point (blunt&ndash;target)</field>
       <field name="MetaTag" />
       <field name="Type" table="yes" >P</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >Bonus 0</field>
-      <field name="Description" description="yes" >A common military arrowhead.  This is also the most common type of dart.  The head is made of steel, and fashioned into a narrow cone---much like a pencil.  These types of arrows are generally not used for hunting, but are very effective for wartime use.</field>
+      <field name="Description" description="yes" >A common military arrowhead.  This is also the most common type of dart.  The head is made of steel, and fashioned into a narrow cone&mdash;much like a pencil.  These types of arrows are generally not used for hunting, but are very effective for wartime use.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Explosive" >
@@ -8910,7 +8910,7 @@
       <field name="Type" table="yes" />
       <field name="Cost" table="yes" />
       <field name="Damage" table="yes" />
-      <field name="Description" description="yes" >An arrow that is coated with cloth soaked in pitch, tar, kerosene, or some similar flammable material.  It is set alight before firing.  These arrows are commonly used for sending signals, and for setting enemy structures on fire---however, they are also effective for setting enemy soldiers on fire.</field>
+      <field name="Description" description="yes" >An arrow that is coated with cloth soaked in pitch, tar, kerosene, or some similar flammable material.  It is set alight before firing.  These arrows are commonly used for sending signals, and for setting enemy structures on fire&mdash;however, they are also effective for setting enemy soldiers on fire.</field>
       <field name="Implementation" />
      </datum>
     </category>
@@ -9097,8 +9097,8 @@
     CLAF armor is common amongst police in affluent precincts and is also issued to some frontline infantry troops.</field>
       <field name="Implementation" />
      </datum>
-     <datum name="CLB--WAF Suit" >
-      <field name="Name" title="yes" >CLB--WAF Suit</field>
+     <datum name="CLB&ndash;WAF Suit" >
+      <field name="Name" title="yes" >CLB&ndash;WAF Suit</field>
       <field name="MetaTag" />
       <field name="Cost" table="yes" >19000</field>
       <field name="Note" table="yes" >Fire</field>
@@ -9180,7 +9180,7 @@
       <field name="Piercing" table="yes" >1</field>
       <field name="Slashing" table="yes" >1</field>
       <field name="Crushing" table="yes" >0</field>
-      <field name="Description" description="yes" >Heavy clothing designed especially for protection--like a woodsman&apos;s coveralls, etc.</field>
+      <field name="Description" description="yes" >Heavy clothing designed especially for protection&ndash;like a woodsman&apos;s coveralls, etc.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Densematter Plate" >
@@ -9438,7 +9438,7 @@
       <field name="Piercing" table="yes" >0</field>
       <field name="Slashing" table="yes" >1</field>
       <field name="Crushing" table="yes" >0</field>
-      <field name="Description" description="yes" >Any sort of unusually thick clothing--like a parka, leather jacket, heavy denim, etc.</field>
+      <field name="Description" description="yes" >Any sort of unusually thick clothing&ndash;like a parka, leather jacket, heavy denim, etc.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Heavy Plate" >
@@ -9510,7 +9510,7 @@
       <field name="Piercing" table="yes" >3</field>
       <field name="Slashing" table="yes" >5</field>
       <field name="Crushing" table="yes" >1</field>
-      <field name="Description" description="yes" >secondary armor for millitary applications--a network of metal plates over a cloth vest</field>
+      <field name="Description" description="yes" >secondary armor for millitary applications&ndash;a network of metal plates over a cloth vest</field>
       <field name="Implementation" />
      </datum>
      <datum name="Mylar" >
@@ -9534,7 +9534,7 @@
       <field name="Piercing" table="yes" >2</field>
       <field name="Slashing" table="yes" >2</field>
       <field name="Crushing" table="yes" >1</field>
-      <field name="Description" description="yes" >Tough clothing made from NOMEX fibers---designed for fire protection. Worn by firefighters and emergency workers</field>
+      <field name="Description" description="yes" >Tough clothing made from NOMEX fibers&mdash;designed for fire protection. Worn by firefighters and emergency workers</field>
       <field name="Implementation" />
      </datum>
      <datum name="PACA Mesh suit" >
@@ -9868,7 +9868,7 @@
        <field name="Minimum Strength" table="yes" >8</field>
        <field name="Maximum Strength Bonus" table="yes" >8</field>
        <field name="Recovery" table="yes" >0</field>
-       <field name="Description" description="yes" >A typical axe---a tool for chopping and spitting wood.  Many conscripted soldiers found their farm axes to be devastating in combat, often proving more effective than some swords.</field>
+       <field name="Description" description="yes" >A typical axe&mdash;a tool for chopping and spitting wood.  Many conscripted soldiers found their farm axes to be devastating in combat, often proving more effective than some swords.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Berzerker Axe" >
@@ -9889,7 +9889,7 @@
        <field name="Name" title="yes" >Firemans Axe</field>
        <field name="MetaTag" />
        <field name="Class" table="yes" >Axes</field>
-       <field name="Type" table="yes" >P--S</field>
+       <field name="Type" table="yes" >P&ndash;S</field>
        <field name="Cost" table="yes" >0</field>
        <field name="Damage" table="yes" >3D4</field>
        <field name="Hands" table="yes" >2</field>
@@ -9924,7 +9924,7 @@
        <field name="Minimum Strength" table="yes" >16</field>
        <field name="Maximum Strength Bonus" table="yes" >24</field>
        <field name="Recovery" table="yes" >3</field>
-       <field name="Description" description="yes" >Some of the strongest medieval knights depended on heavy battle axes to deliver maximum damage to their enemies, human or otherwise.  The heavy battle axe is designed for the roughest combat conditions, equipped with a massive, broad, head---and the weight to carry it through it&apos;s target.</field>
+       <field name="Description" description="yes" >Some of the strongest medieval knights depended on heavy battle axes to deliver maximum damage to their enemies, human or otherwise.  The heavy battle axe is designed for the roughest combat conditions, equipped with a massive, broad, head&mdash;and the weight to carry it through it&apos;s target.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Light Battle Axe" >
@@ -9952,7 +9952,7 @@
        <field name="Minimum Strength" table="yes" >17</field>
        <field name="Maximum Strength Bonus" table="yes" >25</field>
        <field name="Recovery" table="yes" >3</field>
-       <field name="Description" description="yes" >An oversized battle-axe subscribing to the idea that more weight equals more damage---and rightly so.  The Lochaber axe&apos;s massive blade deals huge damage, and the spiked backside can deal a very nasty piercing attack.</field>
+       <field name="Description" description="yes" >An oversized battle-axe subscribing to the idea that more weight equals more damage&mdash;and rightly so.  The Lochaber axe&apos;s massive blade deals huge damage, and the spiked backside can deal a very nasty piercing attack.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Nordic War Axe" >
@@ -10013,8 +10013,8 @@
        <field name="Description" description="yes" >A simple yet effective weapon, consisting of a wooden handle capped with a round iron or bronze head.</field>
        <field name="Implementation" />
       </datum>
-      <datum name="Cane--Lathi" >
-       <field name="Name" title="yes" >Cane--Lathi</field>
+      <datum name="Cane&ndash;Lathi" >
+       <field name="Name" title="yes" >Cane&ndash;Lathi</field>
        <field name="MetaTag" />
        <field name="Class" table="yes" >Blunt</field>
        <field name="Type" table="yes" >C</field>
@@ -10178,7 +10178,7 @@
        <field name="Minimum Strength" table="yes" >12</field>
        <field name="Maximum Strength Bonus" table="yes" >10</field>
        <field name="Recovery" table="yes" >0</field>
-       <field name="Description" description="yes" >A large hammer, typically used for construction work---and sometimes conscripted as a weapon.  A sledgehammer has an iron head weighing several pounds mounted atop a long wooden handle.</field>
+       <field name="Description" description="yes" >A large hammer, typically used for construction work&mdash;and sometimes conscripted as a weapon.  A sledgehammer has an iron head weighing several pounds mounted atop a long wooden handle.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Slungshot" >
@@ -10286,7 +10286,7 @@
        <field name="Minimum Strength" table="yes" />
        <field name="Maximum Strength Bonus" table="yes" />
        <field name="Recovery" table="yes" />
-       <field name="Description" description="yes" >A piece of metal designed to fit inside a closed fist.  It usually has spikes that protrude between the fingers, or rings that surround the fingers---allowing one to deal more damage with punches.</field>
+       <field name="Description" description="yes" >A piece of metal designed to fit inside a closed fist.  It usually has spikes that protrude between the fingers, or rings that surround the fingers&mdash;allowing one to deal more damage with punches.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Cestus" >
@@ -10342,7 +10342,7 @@
        <field name="Minimum Strength" table="yes" >0</field>
        <field name="Maximum Strength Bonus" table="yes" >0</field>
        <field name="Recovery" table="yes" >0</field>
-       <field name="Description" description="yes" >Fairly self-explanatory.  These are heavy-duty boots with metal studs or spikes embedded in the toe area---perfect for delivering a thorough ass kicking.</field>
+       <field name="Description" description="yes" >Fairly self-explanatory.  These are heavy-duty boots with metal studs or spikes embedded in the toe area&mdash;perfect for delivering a thorough ass kicking.</field>
        <field name="Implementation" />
       </datum>
     </category>
@@ -10381,12 +10381,12 @@
        <field name="Class" table="yes" >Chained</field>
        <field name="Type" table="yes" >C</field>
        <field name="Cost" table="yes" >0</field>
-       <field name="Damage" table="yes" >2D4--2D6 S</field>
+       <field name="Damage" table="yes" >2D4&ndash;2D6 S</field>
        <field name="Hands" table="yes" >2</field>
        <field name="Minimum Strength" table="yes" >10</field>
        <field name="Maximum Strength Bonus" table="yes" >9</field>
        <field name="Recovery" table="yes" >1</field>
-       <field name="Description" description="yes" >A fairly long chain equipped with weights on either end---very effective for striking an opponent, and then entangling him.</field>
+       <field name="Description" description="yes" >A fairly long chain equipped with weights on either end&mdash;very effective for striking an opponent, and then entangling him.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Chain - Normal" >
@@ -10395,7 +10395,7 @@
        <field name="Class" table="yes" >Chained</field>
        <field name="Type" table="yes" >C</field>
        <field name="Cost" table="yes" >0</field>
-       <field name="Damage" table="yes" >1D6--2D4 C</field>
+       <field name="Damage" table="yes" >1D6&ndash;2D4 C</field>
        <field name="Hands" table="yes" >1</field>
        <field name="Minimum Strength" table="yes" >8</field>
        <field name="Maximum Strength Bonus" table="yes" >8</field>
@@ -10403,13 +10403,13 @@
        <field name="Description" description="yes" >A length of iron chain suitable for striking an opponent with.</field>
        <field name="Implementation" />
       </datum>
-      <datum name="Chain with spikes--blades" >
-       <field name="Name" title="yes" >Chain with spikes--blades</field>
+      <datum name="Chain with spikes&ndash;blades" >
+       <field name="Name" title="yes" >Chain with spikes&ndash;blades</field>
        <field name="MetaTag" />
        <field name="Class" table="yes" >Chained</field>
        <field name="Type" table="yes" >C</field>
        <field name="Cost" table="yes" >0</field>
-       <field name="Damage" table="yes" >3D4--3D4 S</field>
+       <field name="Damage" table="yes" >3D4&ndash;3D4 S</field>
        <field name="Hands" table="yes" >2</field>
        <field name="Minimum Strength" table="yes" >13</field>
        <field name="Maximum Strength Bonus" table="yes" >10</field>
@@ -10747,7 +10747,7 @@
        <field name="Name" title="yes" >Yoroidoshi Tanto</field>
        <field name="MetaTag" />
        <field name="Class" table="yes" >Exotic</field>
-       <field name="Type" table="yes" >P--S</field>
+       <field name="Type" table="yes" >P&ndash;S</field>
        <field name="Cost" table="yes" >0</field>
        <field name="Damage" table="yes" >1D6</field>
        <field name="Hands" table="yes" >1</field>
@@ -10761,21 +10761,21 @@
        <field name="Name" title="yes" >Yumi</field>
        <field name="MetaTag" />
        <field name="Class" table="yes" >Exotic</field>
-       <field name="Type" table="yes" >n--a</field>
+       <field name="Type" table="yes" >n&ndash;a</field>
        <field name="Cost" table="yes" >0</field>
        <field name="Damage" table="yes" >4D4+1</field>
        <field name="Hands" table="yes" >2</field>
        <field name="Minimum Strength" table="yes" >15</field>
        <field name="Maximum Strength Bonus" table="yes" >0</field>
        <field name="Recovery" table="yes" >1</field>
-       <field name="Description" description="yes" >The Japanese equivalent of the Long bow.  It is of composite design and is very large.  The Yumi is unusual because the grip is located two-thirds of the way down the bow, rather than in the center, and it is fired with the bow leaning forward.  This means that it requires a very high ceiling to fire a Yumi indoors.  The design of this bow makes it extremely powerful---easily capable of defeating heavily armored opponents.  Unfortunatley, it is very large and therefore it can be difficult to transport.</field>
+       <field name="Description" description="yes" >The Japanese equivalent of the Long bow.  It is of composite design and is very large.  The Yumi is unusual because the grip is located two-thirds of the way down the bow, rather than in the center, and it is fired with the bow leaning forward.  This means that it requires a very high ceiling to fire a Yumi indoors.  The design of this bow makes it extremely powerful&mdash;easily capable of defeating heavily armored opponents.  Unfortunatley, it is very large and therefore it can be difficult to transport.</field>
        <field name="Implementation" />
       </datum>
       <datum name="Zaghnal" >
        <field name="Name" title="yes" >Zaghnal</field>
        <field name="MetaTag" />
        <field name="Class" table="yes" >Exotic</field>
-       <field name="Type" table="yes" >S--C</field>
+       <field name="Type" table="yes" >S&ndash;C</field>
        <field name="Cost" table="yes" >0</field>
        <field name="Damage" table="yes" >2D4+1</field>
        <field name="Hands" table="yes" >1</field>
@@ -10896,7 +10896,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >4</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >A special variety of fighting knife.  The slender blade is longer than 8&apos;&apos;, and sharpened along both edges.  This is among the largest weapons in this category---and is effective for both stabbing and slashing.</field>
+      <field name="Description" description="yes" >A special variety of fighting knife.  The slender blade is longer than 8&apos;&apos;, and sharpened along both edges.  This is among the largest weapons in this category&mdash;and is effective for both stabbing and slashing.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Serrated knife" >
@@ -10924,7 +10924,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >2</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >This would be a typical pocketknife, &ldquo;Swiss army knife&apos;&apos;, or any knife with a short blade.  Not very effective as a weapon, but easy to conceal---and a decent backup.</field>
+      <field name="Description" description="yes" >This would be a typical pocketknife, &ldquo;Swiss army knife&apos;&apos;, or any knife with a short blade.  Not very effective as a weapon, but easy to conceal&mdash;and a decent backup.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Stiletto" >
@@ -11010,7 +11010,7 @@
       <field name="Minimum Strength" table="yes" >13</field>
       <field name="Maximum Strength Bonus" table="yes" >18</field>
       <field name="Recovery" table="yes" >2</field>
-      <field name="Description" description="yes" >A famous weapon of Scottish origin.  This blade requires a very strong person to wield---even two handed, but deals impressive damage to match.  Claymores generally have a blade 5..6 feet long.  The long reach of the claymore makes it effective for engaging multiple targets at once.</field>
+      <field name="Description" description="yes" >A famous weapon of Scottish origin.  This blade requires a very strong person to wield&mdash;even two handed, but deals impressive damage to match.  Claymores generally have a blade 5..6 feet long.  The long reach of the claymore makes it effective for engaging multiple targets at once.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Espandon" >
@@ -11070,7 +11070,7 @@
       <field name="Minimum Strength" table="yes" >18</field>
       <field name="Maximum Strength Bonus" table="yes" >19</field>
       <field name="Recovery" table="yes" >2</field>
-      <field name="Description" description="yes" >The largest traditional sword.  The grand sword appears much like a great sword, only larger.  It is sufficiently heavy that only a mighty warrior might wield it, but is nearly indestructible---and is only matched by the No-Dachi in combat effectiveness.</field>
+      <field name="Description" description="yes" >The largest traditional sword.  The grand sword appears much like a great sword, only larger.  It is sufficiently heavy that only a mighty warrior might wield it, but is nearly indestructible&mdash;and is only matched by the No-Dachi in combat effectiveness.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Great Sword" >
@@ -11284,7 +11284,7 @@
       <field name="Minimum Strength" table="yes" >6</field>
       <field name="Maximum Strength Bonus" table="yes" >0</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >A standard European-style &ldquo;cut and thrust&apos;&apos; sword.  It was the mainstay weapon of the footsoldiers of many past armies---a durable weapon that can be counted on in combat.</field>
+      <field name="Description" description="yes" >A standard European-style &ldquo;cut and thrust&apos;&apos; sword.  It was the mainstay weapon of the footsoldiers of many past armies&mdash;a durable weapon that can be counted on in combat.</field>
       <field name="Implementation" />
      </datum>
     </category>
@@ -11321,14 +11321,14 @@
       <field name="Name" title="yes" >Beaked Axe</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Polearms</field>
-      <field name="Type" table="yes" >P--S</field>
+      <field name="Type" table="yes" >P&ndash;S</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >3D6+1</field>
       <field name="Hands" table="yes" >2</field>
       <field name="Minimum Strength" table="yes" >10</field>
       <field name="Maximum Strength Bonus" table="yes" >15</field>
       <field name="Recovery" table="yes" >2</field>
-      <field name="Description" description="yes" >A long wooden pole topped with an iron head.  One side of the head features an axe blade; the other is equipped with a spike for piercing armor.  Originally used as a tool for ships---the axe head was used to chop stuck mooring lines; the spike could be used to snag ropes or wreckage.</field>
+      <field name="Description" description="yes" >A long wooden pole topped with an iron head.  One side of the head features an axe blade; the other is equipped with a spike for piercing armor.  Originally used as a tool for ships&mdash;the axe head was used to chop stuck mooring lines; the spike could be used to snag ropes or wreckage.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Bicento" >
@@ -11349,7 +11349,7 @@
       <field name="Name" title="yes" >Glaive-Guisarme</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Polearms</field>
-      <field name="Type" table="yes" >P--S</field>
+      <field name="Type" table="yes" >P&ndash;S</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >4D4</field>
       <field name="Hands" table="yes" >2</field>
@@ -11370,7 +11370,7 @@
       <field name="Minimum Strength" table="yes" >10</field>
       <field name="Maximum Strength Bonus" table="yes" >13</field>
       <field name="Recovery" table="yes" >1</field>
-      <field name="Description" description="yes" >A simple, effective, weapon---especially for defensive positions.  A halberd is basically a large knife blade mounted on a pole for extra reach.</field>
+      <field name="Description" description="yes" >A simple, effective, weapon&mdash;especially for defensive positions.  A halberd is basically a large knife blade mounted on a pole for extra reach.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Katakamayari" >
@@ -11419,7 +11419,7 @@
       <field name="Name" title="yes" >Lucerne Hammer</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Polearms</field>
-      <field name="Type" table="yes" >P--C</field>
+      <field name="Type" table="yes" >P&ndash;C</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >4D4+1</field>
       <field name="Hands" table="yes" >2</field>
@@ -11440,7 +11440,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >12</field>
       <field name="Recovery" table="yes" >1</field>
-      <field name="Description" description="yes" >A variant on a simple pike.  The military fork is a group of thin metal tines (spikes) mounted to a long handle.  It is much more effective for parrying than a pike, since one can catch weapons between its tines.  It is also effective for hunting---it is excellent for spearing small animals or fish.</field>
+      <field name="Description" description="yes" >A variant on a simple pike.  The military fork is a group of thin metal tines (spikes) mounted to a long handle.  It is much more effective for parrying than a pike, since one can catch weapons between its tines.  It is also effective for hunting&mdash;it is excellent for spearing small animals or fish.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Naginata" >
@@ -11468,7 +11468,7 @@
       <field name="Minimum Strength" table="yes" >12</field>
       <field name="Maximum Strength Bonus" table="yes" >9</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >A very long sharp stick.  Pikes are generally much longer than other polearms---often twenty feet long.  The point is generally made from iron, but simple pikes might just have carved points.</field>
+      <field name="Description" description="yes" >A very long sharp stick.  Pikes are generally much longer than other polearms&mdash;often twenty feet long.  The point is generally made from iron, but simple pikes might just have carved points.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Sabre Halberd" >
@@ -11531,7 +11531,7 @@
       <field name="Name" title="yes" >Voulge</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Polearms</field>
-      <field name="Type" table="yes" >P--S</field>
+      <field name="Type" table="yes" >P&ndash;S</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >5D4+1</field>
       <field name="Hands" table="yes" >2</field>
@@ -11710,7 +11710,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >10</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >An ingeniously designed weapon---a stout, backswept blade of considerable thickness counterbalanced with a tassel and weighted knot.  When wielded by a strong warrior, a truly fearsome weapon.</field>
+      <field name="Description" description="yes" >An ingeniously designed weapon&mdash;a stout, backswept blade of considerable thickness counterbalanced with a tassel and weighted knot.  When wielded by a strong warrior, a truly fearsome weapon.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Cutlass" >
@@ -11738,14 +11738,14 @@
       <field name="Minimum Strength" table="yes" >10</field>
       <field name="Maximum Strength Bonus" table="yes" >8</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >Somwhat like a scimitar but with a straight blade.  The back of the blade is straight, but the cutting edge is curved forward.  The blade is very thick and gets wider near the tip---this concentrates the weight forward of the balance points of most swords.  In the right hands, a very effective tool.</field>
+      <field name="Description" description="yes" >Somwhat like a scimitar but with a straight blade.  The back of the blade is straight, but the cutting edge is curved forward.  The blade is very thick and gets wider near the tip&mdash;this concentrates the weight forward of the balance points of most swords.  In the right hands, a very effective tool.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Gladius" >
       <field name="Name" title="yes" >Gladius</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Small Swords</field>
-      <field name="Type" table="yes" >P--S</field>
+      <field name="Type" table="yes" >P&ndash;S</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >1D6+3</field>
       <field name="Hands" table="yes" >1</field>
@@ -11773,7 +11773,7 @@
       <field name="Name" title="yes" >Kris</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Small Swords</field>
-      <field name="Type" table="yes" >P--S</field>
+      <field name="Type" table="yes" >P&ndash;S</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >2D6</field>
       <field name="Hands" table="yes" >1</field>
@@ -11836,7 +11836,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >4</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >The class &ldquo;fencing&apos;&apos; sword used in duels from the [latex]$16^{th}$--$19^{th}$[/latex] c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for 2D6 with 4 AP and a MSB of 12. If the weapon is used as [latex]\emph{exotic}[/latex] (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</field>
+      <field name="Description" description="yes" >The class &ldquo;fencing&apos;&apos; sword used in duels from the [latex]$16^{th}$&ndash;$19^{th}$[/latex] c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for 2D6 with 4 AP and a MSB of 12. If the weapon is used as [latex]\emph{exotic}[/latex] (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Stone Bat" >
@@ -11852,7 +11852,7 @@
       <field name="Recovery" table="yes" >1</field>
       <field name="Description" description="yes" >[LaTeX]
     
-    A 14&apos;--18&apos; flat stone (typically jade) paddle. Has a razor-sharp edge. Weighs about 4 pounds for a 14&apos; version, and an addition pound per inch. For each additional pound/inch add +2 to the MSB.
+    A 14&apos;&ndash;18&apos; flat stone (typically jade) paddle. Has a razor-sharp edge. Weighs about 4 pounds for a 14&apos; version, and an addition pound per inch. For each additional pound/inch add +2 to the MSB.
     
     \VBoxColumnPicture{Images/Equipment/Melee/Macahuitl.png}</field>
       <field name="Implementation" />
@@ -11868,7 +11868,7 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Maximum Strength Bonus" table="yes" >8</field>
       <field name="Recovery" table="yes" >0</field>
-      <field name="Description" description="yes" >A Japanese short sword.  It is usually carried in combination with a Katana (large sword), worn on the hip with the sharp side of the blade pointed upwards.  The fantastic damage potential of this sword is due to the superior metallurgy of the blade---enabling it to achieve an exceptional level of sharpness.</field>
+      <field name="Description" description="yes" >A Japanese short sword.  It is usually carried in combination with a Katana (large sword), worn on the hip with the sharp side of the blade pointed upwards.  The fantastic damage potential of this sword is due to the superior metallurgy of the blade&mdash;enabling it to achieve an exceptional level of sharpness.</field>
       <field name="Implementation" />
      </datum>
     </category>
@@ -13105,7 +13105,7 @@
       <field name="Name" title="yes" >Spidersilk Rope</field>
       <field name="MetaTag" />
       <field name="Cost" table="yes" >50</field>
-      <field name="Description" description="yes" >This is for 1 feet of rope. Weighs 1--2 ounce.</field>
+      <field name="Description" description="yes" >This is for 1 feet of rope. Weighs 1&ndash;2 ounce.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Statue" >
@@ -13174,7 +13174,7 @@
       <field name="Name" title="yes" >Tao Tieh Pendant</field>
       <field name="MetaTag" />
       <field name="Cost" table="yes" >10000</field>
-      <field name="Description" description="yes" >A small stone pendant carved with a Yin--Yang. The size of a quarter of black-granite. Part is inlaid with mother-of-pearl. The back is engraved with eight Tao hexagrams in an octagonal pattern inlaid in gold. There is a crude fiber cord attached to the pendant.</field>
+      <field name="Description" description="yes" >A small stone pendant carved with a Yin&ndash;Yang. The size of a quarter of black-granite. Part is inlaid with mother-of-pearl. The back is engraved with eight Tao hexagrams in an octagonal pattern inlaid in gold. There is a crude fiber cord attached to the pendant.</field>
       <field name="Implementation" >ManaPoints+=50; Piercing+=1; Crushing+=1; Slashing+=1;</field>
      </datum>
      <datum name="Tent, expedition" >
@@ -13262,7 +13262,7 @@
       <field name="Name" title="yes" >Wagon, Postal Carrier</field>
       <field name="MetaTag" />
       <field name="Cost" table="yes" >4000</field>
-      <field name="Description" description="yes" >A wagon with a light-weight steel undercarriage with wicker-work and canvas top. The top is oiled and made from doubled-egypt cloth and is therefore weather proof. A Postal Carrier weighs approximately 1--4 of an equivalently sized wagon, but uses the same number of draft animals. It can maintain twice the speed of a normal wagon.</field>
+      <field name="Description" description="yes" >A wagon with a light-weight steel undercarriage with wicker-work and canvas top. The top is oiled and made from doubled-egypt cloth and is therefore weather proof. A Postal Carrier weighs approximately 1&ndash;4 of an equivalently sized wagon, but uses the same number of draft animals. It can maintain twice the speed of a normal wagon.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Wagon, Team" >
@@ -13380,14 +13380,14 @@
       <field name="Minimum Strength" table="yes" >8</field>
       <field name="Recovery" table="yes" >2</field>
       <field name="Range" table="yes" >100</field>
-      <field name="Description" description="yes" >A simple tool used for capturing animals. The bolo is a bundle of long cords tied together in a common knot.  The free ends of the cords are tipped with weights.  The bolo is whirled around the head and then thrown---upon striking, the cords are likely to entangle the target&apos;s legs.  Though not thought of as a common weapon of war, bolos have been used in combat, and can be very useful.</field>
+      <field name="Description" description="yes" >A simple tool used for capturing animals. The bolo is a bundle of long cords tied together in a common knot.  The free ends of the cords are tipped with weights.  The bolo is whirled around the head and then thrown&mdash;upon striking, the cords are likely to entangle the target&apos;s legs.  Though not thought of as a common weapon of war, bolos have been used in combat, and can be very useful.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Composite Bow" >
       <field name="Name" title="yes" >Composite Bow</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >2D4+1</field>
       <field name="Hands" table="yes" >2</field>
@@ -13401,7 +13401,7 @@
       <field name="Name" title="yes" >Compound Bow</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >2D4+3</field>
       <field name="Hands" table="yes" >2</field>
@@ -13415,7 +13415,7 @@
       <field name="Name" title="yes" >Crossbow - Hand</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >2D4</field>
       <field name="Hands" table="yes" >1</field>
@@ -13429,7 +13429,7 @@
       <field name="Name" title="yes" >Crossbow - Heavy</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >5D4+2</field>
       <field name="Hands" table="yes" >2</field>
@@ -13443,7 +13443,7 @@
       <field name="Name" title="yes" >Crossbow - Large</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >3D4+2</field>
       <field name="Hands" table="yes" >2</field>
@@ -13485,7 +13485,7 @@
       <field name="Name" title="yes" >Crossbow - Repeating</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >2D4</field>
       <field name="Hands" table="yes" >1</field>
@@ -13499,7 +13499,7 @@
       <field name="Name" title="yes" >Heavy Recurve Bow</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >3D4+1</field>
       <field name="Hands" table="yes" >2</field>
@@ -13513,7 +13513,7 @@
       <field name="Name" title="yes" >Hunters Bow</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >2D6</field>
       <field name="Hands" table="yes" >2</field>
@@ -13527,7 +13527,7 @@
       <field name="Name" title="yes" >Long Bow</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >3D6+1</field>
       <field name="Hands" table="yes" >2</field>
@@ -13541,7 +13541,7 @@
       <field name="Name" title="yes" >Recurve Bow</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >4D4</field>
       <field name="Hands" table="yes" >2</field>
@@ -13555,7 +13555,7 @@
       <field name="Name" title="yes" >Short Bow</field>
       <field name="MetaTag" />
       <field name="Class" table="yes" >Bows</field>
-      <field name="Type" table="yes" >n--a</field>
+      <field name="Type" table="yes" >n&ndash;a</field>
       <field name="Cost" table="yes" >0</field>
       <field name="Damage" table="yes" >2D4</field>
       <field name="Hands" table="yes" >2</field>
@@ -13760,7 +13760,7 @@
       <field name="Slashing" table="yes" >35</field>
       <field name="Crushing" table="yes" >35</field>
       <field name="Minimum Strength" table="yes" >8</field>
-      <field name="Description" description="yes" >has 100 HP regen 20 HP--turn</field>
+      <field name="Description" description="yes" >has 100 HP regen 20 HP&ndash;turn</field>
       <field name="Implementation" />
      </datum>
      <datum name="Plate" >
@@ -13862,7 +13862,7 @@
       <field name="Magic Points" table="yes" qsummary="yes" >60</field>
       <field name="Range" table="yes" qsummary="yes" >100 feet</field>
       <field name="Target" table="yes" qsummary="yes" >Roll</field>
-      <field name="Description" description="yes" >This spell fires a thin beam of compressed gas and wind from the caster&apos;s outstretched hand.  The beam is very hard to see becasue it looks like a hazy distortion in the air--it is very nearly transparent.  The beam may be fired at any target within 100 feet range.
+      <field name="Description" description="yes" >This spell fires a thin beam of compressed gas and wind from the caster&apos;s outstretched hand.  The beam is very hard to see becasue it looks like a hazy distortion in the air&ndash;it is very nearly transparent.  The beam may be fired at any target within 100 feet range.
     
     Air Laser has AP: 50 and is at a +3 to strike.
     
@@ -14751,7 +14751,7 @@
       <field name="Magic Points" table="yes" qsummary="yes" >200</field>
       <field name="Range" table="yes" qsummary="yes" >special</field>
       <field name="Target" table="yes" qsummary="yes" >Auto</field>
-      <field name="Description" description="yes" >Caster creates a magical copy of any one target.  Copy will stand beside target and will do whatever the target does (effectively doubling the actions of target)  If shadow takes any damage (even one point!--and it has NO armor) it vanishes, dealing 2D6 U to the original target.</field>
+      <field name="Description" description="yes" >Caster creates a magical copy of any one target.  Copy will stand beside target and will do whatever the target does (effectively doubling the actions of target)  If shadow takes any damage (even one point!&ndash;and it has NO armor) it vanishes, dealing 2D6 U to the original target.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Silence" >
@@ -14887,12 +14887,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >1</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +1 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -14901,12 +14901,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >10</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +10 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -14915,12 +14915,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >2</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +2 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -14929,12 +14929,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >3</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +3 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -14943,12 +14943,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >4</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +4 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -14957,12 +14957,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >5</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +5 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -14985,12 +14985,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >7</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +7 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -14999,12 +14999,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >8</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +8 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -15013,12 +15013,12 @@
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >9</field>
-      <field name="Casting Time" table="yes" qsummary="yes" >n--a</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
-      <field name="Duration" table="yes" qsummary="yes" >n--a</field>
+      <field name="Casting Time" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Duration" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Magic Points" table="yes" qsummary="yes" >0</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
-      <field name="Target" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
+      <field name="Target" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Description" description="yes" >Adds +9 to summon score</field>
       <field name="Implementation" />
      </datum>
@@ -15028,10 +15028,10 @@
       <field name="Type" table="yes" qsummary="yes" >Beast</field>
       <field name="Rank" table="yes" qsummary="yes" >6</field>
       <field name="Casting Time" table="yes" qsummary="yes" >1</field>
-      <field name="Damage" table="yes" qsummary="yes" >n--a</field>
+      <field name="Damage" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Duration" table="yes" qsummary="yes" >special</field>
       <field name="Magic Points" table="yes" qsummary="yes" >10</field>
-      <field name="Range" table="yes" qsummary="yes" >n--a</field>
+      <field name="Range" table="yes" qsummary="yes" >n&ndash;a</field>
       <field name="Target" table="yes" qsummary="yes" >Auto</field>
       <field name="Description" description="yes" >Caster may extend the duration of a Circle spell. +X D6 rounds</field>
       <field name="Implementation" />
@@ -16693,7 +16693,7 @@
       <field name="Magic Points" table="yes" qsummary="yes" >80</field>
       <field name="Range" table="yes" qsummary="yes" >self</field>
       <field name="Target" table="yes" qsummary="yes" >Auto</field>
-      <field name="Description" description="yes" >Caster becomes invisible--cannot be detected via above means, OR radar/sonar &amp; similar means</field>
+      <field name="Description" description="yes" >Caster becomes invisible&ndash;cannot be detected via above means, OR radar/sonar &amp; similar means</field>
       <field name="Implementation" />
      </datum>
      <datum name="Autoinvisibility 3" >
@@ -16707,7 +16707,7 @@
       <field name="Magic Points" table="yes" qsummary="yes" >100</field>
       <field name="Range" table="yes" qsummary="yes" >self</field>
       <field name="Target" table="yes" qsummary="yes" >Auto</field>
-      <field name="Description" description="yes" >Caster becomes invisible--cannot be detected by any physical (non-magical / psionic) means</field>
+      <field name="Description" description="yes" >Caster becomes invisible&ndash;cannot be detected by any physical (non-magical / psionic) means</field>
       <field name="Implementation" />
      </datum>
      <datum name="Bend Light" >
@@ -16917,7 +16917,7 @@
       <field name="Magic Points" table="yes" qsummary="yes" >80</field>
       <field name="Range" table="yes" qsummary="yes" >target</field>
       <field name="Target" table="yes" qsummary="yes" >Auto</field>
-      <field name="Description" description="yes" >One target (other than caster) becomes invisible--cannot be detected via above means, OR radar/sonar &amp; similar means</field>
+      <field name="Description" description="yes" >One target (other than caster) becomes invisible&ndash;cannot be detected via above means, OR radar/sonar &amp; similar means</field>
       <field name="Implementation" />
      </datum>
      <datum name="Grant Invisibility 3" >
@@ -16931,7 +16931,7 @@
       <field name="Magic Points" table="yes" qsummary="yes" >100</field>
       <field name="Range" table="yes" qsummary="yes" >target</field>
       <field name="Target" table="yes" qsummary="yes" >Auto</field>
-      <field name="Description" description="yes" >One target (other than caster ) becomes invisible--cannot be detected by any physical (non-magical / psionic) means</field>
+      <field name="Description" description="yes" >One target (other than caster ) becomes invisible&ndash;cannot be detected by any physical (non-magical / psionic) means</field>
       <field name="Implementation" />
      </datum>
      <datum name="Greater Illusion" >
@@ -16945,7 +16945,7 @@
       <field name="Magic Points" table="yes" qsummary="yes" >80X</field>
       <field name="Range" table="yes" qsummary="yes" >target</field>
       <field name="Target" table="yes" qsummary="yes" >Auto</field>
-      <field name="Description" description="yes" >Caster may project a 6x6x6 foot (per X) illusion anywhere within his range of sight--complete with sound, thermal radiation, smell, etc.</field>
+      <field name="Description" description="yes" >Caster may project a 6x6x6 foot (per X) illusion anywhere within his range of sight&ndash;complete with sound, thermal radiation, smell, etc.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Illusion" >
@@ -18494,7 +18494,7 @@
       <field name="Description" description="yes" >The caster can send out a small wisp of biting cold to strike a target no more than 100&apos; away.  Can be cast no more than half the caster&apos;s level of Magical Control in a turn.</field>
       <field name="Implementation" />
      </datum>
-     <datum name="lcy prison" >
+     <datum name="Icy prison" >
       <field name="Name" title="yes" >lcy prison</field>
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Water</field>
@@ -18736,7 +18736,7 @@
           \VBoxColumnPicture{Images/MartialArts/two-weapon-style.png}
     
           \quotexample[Candlestick is ambidextrous]{Candlestick has 3
-            levels of ambidexterity; he has -0 to strike with his `good&apos;
+            levels of ambidexterity; he has -0 to strike with his &lsquo;good&apos;
             hand and -3 to strike with the off hand. If Candlestick had
             6 levels of ambidexterity he would no negative at all when
             attacking with his 2$^{nd}$ weapon, and a -3 with his
@@ -18794,7 +18794,7 @@
           \emph{Spell}.
     
           \quotexample[Ulek&apos;s Fire-Bomb]{Ulek finds himself having to
-            blast the crap out of opponents---standing right next to
+            blast the crap out of opponents&mdash;standing right next to
             him. He gets a level in \emph{Jitsu} and picks \emph{Spell}
             (\emph{Combat Casting}). He then gets a \emph{Waza}
             combining \emph{Fireball} and \emph{Minor Teleport}. Now,
@@ -19079,7 +19079,7 @@
       <field name="Type" table="yes" >Combat</field>
       <field name="Rank" table="yes" >3</field>
       <field name="Attribute" table="yes" >Build</field>
-      <field name="Description" description="yes" >The martial artist is unusually sturdy and well built; his training and combat experience has hardened the skin and bones. Each level of Toughness provides a 1 bonus to P--S--C (as natural armor).</field>
+      <field name="Description" description="yes" >The martial artist is unusually sturdy and well built; his training and combat experience has hardened the skin and bones. Each level of Toughness provides a 1 bonus to P&ndash;S&ndash;C (as natural armor).</field>
       <field name="Implementation" >Piercing += Level; Crushing += Level; Slashing += Level;</field>
      </datum>
      <datum name="Waza" >
@@ -19389,8 +19389,8 @@
           \emph{Multi-Weapon Style} has Rank 3*X, where X is the number
           of \textit{additional} weapons the martial artist intends to
           use. The martial artist can now use more than one
-          weapon---given that they are &ldquo;in-hand&apos;&apos; (or foot, tentacle
-          etc.)---in a single action. Note that the additional attacks
+          weapon&mdash;given that they are &ldquo;in-hand&apos;&apos; (or foot, tentacle
+          etc.)&mdash;in a single action. Note that the additional attacks
           have the appropriate multi-weapon minus; which can be
           mitigated by using \emph{Ambidexterity}.
     
@@ -19451,7 +19451,7 @@
       <field name="Type" table="yes" >Modifier</field>
       <field name="Rank" table="yes" >3</field>
       <field name="Attribute" table="yes" >Build</field>
-      <field name="Description" description="yes" >Must be declared at the beginning of the turn. For each action during the declared turn, take LVL plus 1 actions instead. The character may only make unmodified attacks during this turn. For the next minute the character is at 1 action--turn and -3 to all skill rolls. This may only be used LVL--2 (round up) times per day.</field>
+      <field name="Description" description="yes" >Must be declared at the beginning of the turn. For each action during the declared turn, take LVL plus 1 actions instead. The character may only make unmodified attacks during this turn. For the next minute the character is at 1 action&ndash;turn and -3 to all skill rolls. This may only be used LVL&ndash;2 (round up) times per day.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Savage" >
@@ -19487,7 +19487,7 @@
       <field name="Type" table="yes" >Modifier</field>
       <field name="Rank" table="yes" >1</field>
       <field name="Attribute" table="yes" >Dexterity</field>
-      <field name="Description" description="yes" >Slam describes various blows such as tackles, body blows, or butting--goring (beasts with horns). It deals the same damage as the standard HTH damage chart, but the next category up. It us usually C damage. If you attempt a Slam attack and miss, then you must spend 1 action to recover.</field>
+      <field name="Description" description="yes" >Slam describes various blows such as tackles, body blows, or butting&ndash;goring (beasts with horns). It deals the same damage as the standard HTH damage chart, but the next category up. It us usually C damage. If you attempt a Slam attack and miss, then you must spend 1 action to recover.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Spray" >
@@ -19543,7 +19543,7 @@
       <field name="Type" table="yes" >Special</field>
       <field name="Rank" table="yes" >2</field>
       <field name="Attribute" table="yes" >Intelligence</field>
-      <field name="Description" description="yes" >You take extra care with your attacks in order to set up your opponent for an especially devastating attack later on. You may &apos;save&apos; up to LVL dice from your to-strike rolls and--or LVL damage from various attacks versus a specific target. Then, on your final attack, you may add your &apos;saved&apos; to-strike dice and--or damage (as raw bonus). All these attacks must be made without interruption and must be made versus one specific target. All attacks must be melee attacks, and must be made with the same weapon(s). For example, suppose you have LVL 1 fiendish maneuver and LVL 3 Small Swords. You are fighting an armored knight. You make an attack and roll 2 dice to strike (saving one to-strike die). As well, you subtract 1 from your damage roll for that attack. On your next attack versus the same armored knight, you then roll 4 dice to strike and add [+1] damage.</field>
+      <field name="Description" description="yes" >You take extra care with your attacks in order to set up your opponent for an especially devastating attack later on. You may &apos;save&apos; up to LVL dice from your to-strike rolls and&ndash;or LVL damage from various attacks versus a specific target. Then, on your final attack, you may add your &apos;saved&apos; to-strike dice and&ndash;or damage (as raw bonus). All these attacks must be made without interruption and must be made versus one specific target. All attacks must be melee attacks, and must be made with the same weapon(s). For example, suppose you have LVL 1 fiendish maneuver and LVL 3 Small Swords. You are fighting an armored knight. You make an attack and roll 2 dice to strike (saving one to-strike die). As well, you subtract 1 from your damage roll for that attack. On your next attack versus the same armored knight, you then roll 4 dice to strike and add [+1] damage.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Hurl" >
@@ -19552,7 +19552,7 @@
       <field name="Type" table="yes" >Special</field>
       <field name="Rank" table="yes" >1</field>
       <field name="Attribute" table="yes" >Dexterity</field>
-      <field name="Description" description="yes" >You throw a melee weapon as though it were a missile weapon, enabling you to attack from a distance. Roll to strike using Hurl, however the damage dealt is equal to the damage normally done by the weapon that you throw. You do not have to be proficient with the weapon that you choose to Hurl, and you do not get a STR bonus to damage. However, strike penalties from MSR do still apply. The maximum thrown range is 50--(encumbrance 1) feet. This is considered a missile attack for the purposes of defense. When you use hurl you throw the weapon and let go of it in the process. Thereafter, the weapon is no longer in your possession.</field>
+      <field name="Description" description="yes" >You throw a melee weapon as though it were a missile weapon, enabling you to attack from a distance. Roll to strike using Hurl, however the damage dealt is equal to the damage normally done by the weapon that you throw. You do not have to be proficient with the weapon that you choose to Hurl, and you do not get a STR bonus to damage. However, strike penalties from MSR do still apply. The maximum thrown range is 50&ndash;(encumbrance 1) feet. This is considered a missile attack for the purposes of defense. When you use hurl you throw the weapon and let go of it in the process. Thereafter, the weapon is no longer in your possession.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Isolate" >
@@ -19597,7 +19597,7 @@
       <field name="Type" table="yes" >Special</field>
       <field name="Rank" table="yes" >1</field>
       <field name="Attribute" table="yes" >Dexterity</field>
-      <field name="Description" description="yes" >The skill of fighting and defending oneself with body weapons. This could be thought of as a basic fist fighting or brawling skill; also applicable to simple hand-to-hand defense knowledge. This skill is used to strike or defend in combat with hand-to-hand attacks and body weapons (claws, fangs, etc.) Unarmed combat strikes use the same damage as normal kicks--punches, etc, however unarmed combat blows cannot be modified. (This is the skill of a &apos;thug&apos; or &apos;brute&apos; character or an animal--it is not representative of a trained warrior). Without this skill all hand-to-hand blows are considered &quot;stunning&quot; blows and not &quot;lethal&quot; blows.</field>
+      <field name="Description" description="yes" >The skill of fighting and defending oneself with body weapons. This could be thought of as a basic fist fighting or brawling skill; also applicable to simple hand-to-hand defense knowledge. This skill is used to strike or defend in combat with hand-to-hand attacks and body weapons (claws, fangs, etc.) Unarmed combat strikes use the same damage as normal kicks&ndash;punches, etc, however unarmed combat blows cannot be modified. (This is the skill of a &apos;thug&apos; or &apos;brute&apos; character or an animal&ndash;it is not representative of a trained warrior). Without this skill all hand-to-hand blows are considered &quot;stunning&quot; blows and not &quot;lethal&quot; blows.</field>
       <field name="Implementation" />
      </datum>
     </category> 
@@ -19665,7 +19665,7 @@
       <field name="Attacks" >Slap with limb:  limb stetches into tentacle-like whip.  Deals 3D6+1 [+15] C and scores an automatic grapple
     
     Energy drain:  Requires a grapple first.  Deals 3D4 [+5] U with automatic success.</field>
-      <field name="Description" description="yes" >Appearance:  A babau is a constructed creature, similar to a golem.  As such they vary in exact appearance.  However, all babaus resemble some other creature from which they are made--most commonly an infant of any humanoid race--though they could be made from any living creature.  A babau looks like the creature that it was made from, with the following features:  they are always naked and carry no equipment or weapons, they are perfectly pitch black,  and their body lacks much of the detail of the original creature--most delicate or &quot;sharp&quot; features are smoothed over.  Babaus have no eyes or ears or toes--they have only the tinest of bumps where these features once were.  Their fingers are small nubs, and their mouth is a tiny wrinkle.
+      <field name="Description" description="yes" >Appearance:  A babau is a constructed creature, similar to a golem.  As such they vary in exact appearance.  However, all babaus resemble some other creature from which they are made&ndash;most commonly an infant of any humanoid race&ndash;though they could be made from any living creature.  A babau looks like the creature that it was made from, with the following features:  they are always naked and carry no equipment or weapons, they are perfectly pitch black,  and their body lacks much of the detail of the original creature&ndash;most delicate or &quot;sharp&quot; features are smoothed over.  Babaus have no eyes or ears or toes&ndash;they have only the tinest of bumps where these features once were.  Their fingers are small nubs, and their mouth is a tiny wrinkle.
     
     Habits:  Babaus are constructs and as such, they do whatever their creator has &quot;programmed&quot; them do to.  The programming of a Babau is set during their creation, and typically includes such activities as guarding a certain area or performing menial labor.  Becasue the complexity of a babau&apos;s programming is directly related to the learning ability of the original creature, the most common babau is made from an infant or young child of an intelligent race (such as human).  If a babau is made from an animal, it is only suitable for the most basic of menial tasks.
     
@@ -19825,9 +19825,9 @@
     3D4 [+10] C</field>
       <field name="Description" description="yes" >Apperance:  The Cave Horror, also known as the &quot;Great Eatler&quot;, resembles an enormous beetle.  The body is approximatley four feet long, three feet wide, and two feet thick.  It is covered in a hard, shiny, black carapace.  Its head is the size of a basketball and has two large compound eyes and large, sickle-like manibles as prominent features.  The creature has four legs, each of which is nearly twenty feet long fully extended, but are usually carried in a peaked arrangement with the feet close to the body.  Each foot is tipped with two wicked claws.  It&apos;s appear slender and delicate, but the chitonous covering is extremely hard.  It&apos;s limbs have the strength of iron bars.
     
-    Habits:  Though it appears to be a gigantic insect, the Great Eatler is actually a hateful monster.  It is cunning, patient, and greedy to the extreme.  Cave Horrors build their lairs deep in caves or similar areas, keeping well hidden from likely disturbance.  When the mood suits it--frequently--or when disturbed, the beast awakes and looks for potential prey.  The Cave Horror uses its exceptional perception skills to track and locate its chosen target.  It observes its target(s) for some time, before deciding when and how to attack.  It often times strikes from the darkness or hiding (often on the celing), surging forth to attack the victim and then retreating to plan a future attack. Cave Horrors do not covet treasure specifically, but generally accumulate it due to their long lifespan and propensity to attack sentient prey.
+    Habits:  Though it appears to be a gigantic insect, the Great Eatler is actually a hateful monster.  It is cunning, patient, and greedy to the extreme.  Cave Horrors build their lairs deep in caves or similar areas, keeping well hidden from likely disturbance.  When the mood suits it&ndash;frequently&ndash;or when disturbed, the beast awakes and looks for potential prey.  The Cave Horror uses its exceptional perception skills to track and locate its chosen target.  It observes its target(s) for some time, before deciding when and how to attack.  It often times strikes from the darkness or hiding (often on the celing), surging forth to attack the victim and then retreating to plan a future attack. Cave Horrors do not covet treasure specifically, but generally accumulate it due to their long lifespan and propensity to attack sentient prey.
     
-    Combat:  The Cave Horror is an intelligent combatant.  It follows and observes targets before beginning combat with a suprise attack.  It may make use of ambushes or tricks in order to gain the upper hand--or simply to confuse, distract, or block of its prey&apos;s escape route.  When actually fighting the Cave Horror relies on its claw attacks and its bite.</field>
+    Combat:  The Cave Horror is an intelligent combatant.  It follows and observes targets before beginning combat with a suprise attack.  It may make use of ambushes or tricks in order to gain the upper hand&ndash;or simply to confuse, distract, or block of its prey&apos;s escape route.  When actually fighting the Cave Horror relies on its claw attacks and its bite.</field>
       <field name="level" />
      </datum>
      <datum name="Centaur" >
@@ -20020,9 +20020,9 @@
     Negate 1/day
     
     Geo Transport 1/day</field>
-      <field name="Description" description="yes" >Apperance:  The dirge worm is a revolting and horrific monster which is constantly surrounded with the stench of decaying flesh.  The creature&apos;s body resembles a bloated grub or worm, except it is twenty-five feet long and two feet in diameter.  Its skin is a tough, transparent membrane which is coated in a yellowish slime.  The skin is stretched tight around the creature&apos;s body, making it look like it might burst at any moment.  The combination of the slime and the transparent skin makes a dirge worm appear to be a writhing tube of mutilated flesh--when in fact it is a living creature.  A Dirge Worm&apos;s head resembles a grotesquely oversized human head.  It has no hair and is covered with the same transparent skin and slime of the body.  The forehead is extended, the mouth exaggerated, and it has tiny black eyes.  The creature has no lips, and thus its mouth--full of jagged teeth--is clearly visible.  Dirge worms move like a snake and are capable of extreme speed.
+      <field name="Description" description="yes" >Apperance:  The dirge worm is a revolting and horrific monster which is constantly surrounded with the stench of decaying flesh.  The creature&apos;s body resembles a bloated grub or worm, except it is twenty-five feet long and two feet in diameter.  Its skin is a tough, transparent membrane which is coated in a yellowish slime.  The skin is stretched tight around the creature&apos;s body, making it look like it might burst at any moment.  The combination of the slime and the transparent skin makes a dirge worm appear to be a writhing tube of mutilated flesh&ndash;when in fact it is a living creature.  A Dirge Worm&apos;s head resembles a grotesquely oversized human head.  It has no hair and is covered with the same transparent skin and slime of the body.  The forehead is extended, the mouth exaggerated, and it has tiny black eyes.  The creature has no lips, and thus its mouth&ndash;full of jagged teeth&ndash;is clearly visible.  Dirge worms move like a snake and are capable of extreme speed.
     
-    Habits:  Dirge worms live underground.  They lair in caves, old dungeons, sewers, abandoned mineshafts, and similar locations--anywhere damp and dark with sufficient space to accomodate their size.  Dirge worms eat dead, decaying flesh.  To this end they attack large prey.  They often lair near humanoid settlements, from which they raid livestock and people alike.  They haul the dead back to their lair and leave the bodies to rot.  Once the flesh is sufficienly putrid, the creature consumes it.  Dirge worms are fond of eating minor undead, such as zombies, as they are &quot;instant&quot; sources of dead, decayed flesh.  They are also attracted to graveyards, burial pits, or battlefields where they collect great quantities of corpses to feed their insatiable hunger.  Dirge Worm slime is valued by Necromancers for use in fell ritals.  Thus some powerful necromancers seek out dirge worms and even supply them with zombies and other hapless victims in order to have a source of slime readily available.
+    Habits:  Dirge worms live underground.  They lair in caves, old dungeons, sewers, abandoned mineshafts, and similar locations&ndash;anywhere damp and dark with sufficient space to accomodate their size.  Dirge worms eat dead, decaying flesh.  To this end they attack large prey.  They often lair near humanoid settlements, from which they raid livestock and people alike.  They haul the dead back to their lair and leave the bodies to rot.  Once the flesh is sufficienly putrid, the creature consumes it.  Dirge worms are fond of eating minor undead, such as zombies, as they are &quot;instant&quot; sources of dead, decayed flesh.  They are also attracted to graveyards, burial pits, or battlefields where they collect great quantities of corpses to feed their insatiable hunger.  Dirge Worm slime is valued by Necromancers for use in fell ritals.  Thus some powerful necromancers seek out dirge worms and even supply them with zombies and other hapless victims in order to have a source of slime readily available.
     
     Though they are powerful, Dirge Worms prefer not to fight directly.  They use their abilities to hide and move in darkness to suprise and overwhelm prey.
     
@@ -20066,7 +20066,7 @@
       <field name="Special Abilities" />
       <field name="Statistics" />
       <field name="Attacks" />
-      <field name="Description" description="yes" >A large winged reptile with a long neck and tail.  Dragons have horned heads and a spiny ridge that runs along the back and down the tail.  Dragons are very intelligent creatures and generally know a great deal of magic.  They occur in various varieties and are generally rare creatures.  The skin of a dragon, which is covered in fine armored scales, is very tough and is beautiful to look at.  All dragons have some sort of breath weapon---commonly this is fire, but it could be ice, poison, acid, etc.  Dragons can fly at great speed and have powerful bodies.</field>
+      <field name="Description" description="yes" >A large winged reptile with a long neck and tail.  Dragons have horned heads and a spiny ridge that runs along the back and down the tail.  Dragons are very intelligent creatures and generally know a great deal of magic.  They occur in various varieties and are generally rare creatures.  The skin of a dragon, which is covered in fine armored scales, is very tough and is beautiful to look at.  All dragons have some sort of breath weapon&mdash;commonly this is fire, but it could be ice, poison, acid, etc.  Dragons can fly at great speed and have powerful bodies.</field>
       <field name="level" />
      </datum>
      <datum name="Dragon - Mature" >
@@ -20344,7 +20344,7 @@
     Evil totem:  1D10x2 near, 1D10x20 touching</field>
       <field name="Description" description="yes" >The Embalmed Master was the greatest work of the necromancers Erasmus Diggle and Duncan Nusukan.  This evil creature represented the best of their combined skills in embalming, undead animation, dark magic, and artificing.  Duncan Nusukan chose the body of his enemy, King Asmodius,  for this horrible creation.
     
-    Apperance:  The Embalmed Master at first glance appears to be a large man wearing armor.  However, continued observation results in the viewer realizing the true nature of this horrid creation.  Asmodius&apos; body, stripped of its skin, has been chemically embalmed and infused with unholy magic, as an &quot;embalmed zombie&quot;.  The creature bears magical tattoos worked directly into the muscles, futher empowering it.  The armor it wears is made of heavy chains, riveted into a suit of chain mail of gross proportions.  Additional iron chains dangle from the armor and drag across the ground like a train of a noble&apos;s robe--a horrific mockery of Asmodius&apos; former position in life.
+    Apperance:  The Embalmed Master at first glance appears to be a large man wearing armor.  However, continued observation results in the viewer realizing the true nature of this horrid creation.  Asmodius&apos; body, stripped of its skin, has been chemically embalmed and infused with unholy magic, as an &quot;embalmed zombie&quot;.  The creature bears magical tattoos worked directly into the muscles, futher empowering it.  The armor it wears is made of heavy chains, riveted into a suit of chain mail of gross proportions.  Additional iron chains dangle from the armor and drag across the ground like a train of a noble&apos;s robe&ndash;a horrific mockery of Asmodius&apos; former position in life.
     
     Habits:  Like an Embalmed Zombie, the Embalmed Master is the undead servant of it&apos;s creator, Duncan Nusukan.  His default &quot;programming&quot; is to act as Nusukan&apos;s bodyguard.  He must obey Nusukan&apos;s every whim, and thus may be sent on special missions.  Despite being under Nusukan&apos;s control, the Embalmed Master may &quot;think&quot; for himself, and is therefore far more skilled than a simple zombie.  Combined with his immense strength, he is a powerful foe indeed.
     
@@ -21002,7 +21002,7 @@
     
     Dice: Strike: 5; Block: 5; Dodge: 3</field>
       <field name="Attacks" >Morning star 3D6+2 C; Kick 2D6+4 C; Breathe Fire 2D4+1 U</field>
-      <field name="Description" description="yes" >A minor demon--red-skinned, muscular humanoid.  Knows magic: Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3; Bio 1,2; Quake 1,2.  700 MP.  Has infravision, can see invisible.  Immune to posion &amp; sleep.  Regenerates 3D6 HP per turn</field>
+      <field name="Description" description="yes" >A minor demon&ndash;red-skinned, muscular humanoid.  Knows magic: Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3; Bio 1,2; Quake 1,2.  700 MP.  Has infravision, can see invisible.  Immune to posion &amp; sleep.  Regenerates 3D6 HP per turn</field>
       <field name="level" />
      </datum>
      <datum name="Kobold" >
@@ -21146,7 +21146,7 @@
     
     Dice: Strike: 3</field>
       <field name="Attacks" >Claws 1D4-1; Bite 4D4+1 C</field>
-      <field name="Description" description="yes" >A rat-sized pink creature with soft, wrinkly skin and four small limbs each of which end in a 3-clawed hand.  It has a massive head and mouth--the size of a man&apos;s fist--with prominent teeth.  They eat anything they can catch.</field>
+      <field name="Description" description="yes" >A rat-sized pink creature with soft, wrinkly skin and four small limbs each of which end in a 3-clawed hand.  It has a massive head and mouth&ndash;the size of a man&apos;s fist&ndash;with prominent teeth.  They eat anything they can catch.</field>
       <field name="level" />
      </datum>
      <datum name="Metal Babble" >
@@ -21318,7 +21318,7 @@
     
     Habits:
     
-    The Necrolisk is a powerful carnivore--it spends its time hunting in order to feed its ravenous appetite.  Its only other pastime is sleeping off past meals.  Any creature encountered by a Necrolisk is either ignored (in the case of tiny vermin) or categorized as food or as a potential threat--in both cases, it is attacked and eaten.  The necrolisk is fond of impaling dead prey on its back spikes to store it for later as it relishes the taste of partially-decayed meat.
+    The Necrolisk is a powerful carnivore&ndash;it spends its time hunting in order to feed its ravenous appetite.  Its only other pastime is sleeping off past meals.  Any creature encountered by a Necrolisk is either ignored (in the case of tiny vermin) or categorized as food or as a potential threat&ndash;in both cases, it is attacked and eaten.  The necrolisk is fond of impaling dead prey on its back spikes to store it for later as it relishes the taste of partially-decayed meat.
     
     Combat:
     
@@ -21353,7 +21353,7 @@
     
     Dice: Strike: 3;  Dodge: 5;</field>
       <field name="Attacks" >Death touch 2D4+2 U; Poisionous breath weapon 1D4+2 U area affect</field>
-      <field name="Description" description="yes" >A minor demon--Guant, grey-skinned humanoid.  Knows magic: Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake 1,2,3; Geo Transport, Heal 1,2,3.  1200 MP.  Can see invisible.  Immune to posion &amp; sleep.  Regenerates 4D6 HP per turn</field>
+      <field name="Description" description="yes" >A minor demon&ndash;Guant, grey-skinned humanoid.  Knows magic: Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake 1,2,3; Geo Transport, Heal 1,2,3.  1200 MP.  Can see invisible.  Immune to posion &amp; sleep.  Regenerates 4D6 HP per turn</field>
       <field name="level" />
      </datum>
      <datum name="Nightmare" >
@@ -21455,7 +21455,7 @@
     
     Base Armor: 7</field>
       <field name="Attacks" >Bite 4D4 [+10] S</field>
-      <field name="Description" description="yes" >Apperance:  The Rabbat is frightening beast to behold.  It consists of a bulbous central body which is dominated by a single giant eyeball and a huge mouth filled with vicious looking teeth--leaving no doubt that this beast is a meat eater.  Two bat-like wings extend from the central body.  It has no other limbs.
+      <field name="Description" description="yes" >Apperance:  The Rabbat is frightening beast to behold.  It consists of a bulbous central body which is dominated by a single giant eyeball and a huge mouth filled with vicious looking teeth&ndash;leaving no doubt that this beast is a meat eater.  Two bat-like wings extend from the central body.  It has no other limbs.
     
     Habits:  Rabbats are aggressive meat eaters.  In the wild, they persue and attack anything they think they can kill, which is most creatures.  Rabbats are only afraid of very large, powerful, beasts such as Dragons.  They may be found in nearly any enviornment, but they tend to lair in caves.  Rabbats are much more powerful than they are intelligent, and thus they are sometimes subjugated by powerful wizards for use as minions.
     
@@ -21722,7 +21722,7 @@
      <datum name="Stygian Fly" >
       <field name="Name" title="yes" >Stygian Fly</field>
       <field name="MetaTag" />
-      <field name="Special Abilities" >Has only one attack--biting.  If bitten, the target will suffer 2D6+2S.  If flesh is contacted, target suffers tremendous pain.  Wound will grow, consuming target&apos;s body, at a rate of 1D6+1 D per SECOND.</field>
+      <field name="Special Abilities" >Has only one attack&ndash;biting.  If bitten, the target will suffer 2D6+2S.  If flesh is contacted, target suffers tremendous pain.  Wound will grow, consuming target&apos;s body, at a rate of 1D6+1 D per SECOND.</field>
       <field name="Statistics" >STR: 2
     
     DEX: 16
@@ -21746,7 +21746,7 @@
     Size: about 3&quot; long
     
     Dice: Strike: 4</field>
-      <field name="Attacks" >Bite--see special.</field>
+      <field name="Attacks" >Bite&ndash;see special.</field>
       <field name="Description" description="yes" >A horrible demonic insect from the depths of the underworld.  Stupid, lives only to feast upon the flesh and souls of the living.  Even if the wound is cured, the wounded portion of the SOUL remains lost.</field>
       <field name="level" />
      </datum>
@@ -22072,7 +22072,7 @@
       <field name="Name" title="yes" >Adhesion</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >20</field>
-      <field name="Description" description="yes" >Character can stick to surfaces, allowing him to run--climb up wall and ceilings as if he was walking normally.</field>
+      <field name="Description" description="yes" >Character can stick to surfaces, allowing him to run&ndash;climb up wall and ceilings as if he was walking normally.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Agent of Fate" >
@@ -22220,7 +22220,7 @@
       <field name="Name" title="yes" >Control</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >8</field>
-      <field name="Description" description="yes" >Character can control up to a total of ( LVL--2 ) ^2 * 30 cp worth of spirits. The spirit must obey any commands until death.</field>
+      <field name="Description" description="yes" >Character can control up to a total of ( LVL&ndash;2 ) ^2 * 30 cp worth of spirits. The spirit must obey any commands until death.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Deafen" >
@@ -22381,15 +22381,15 @@
       <field name="Name" title="yes" >Hard Body</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >0</field>
-      <field name="Description" description="yes" >You gain +1 CHR and +1 BLD. However, this bonus only applies if you have followed a particular diet and--or training regimen that day.</field>
+      <field name="Description" description="yes" >You gain +1 CHR and +1 BLD. However, this bonus only applies if you have followed a particular diet and&ndash;or training regimen that day.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Hardened Worker" >
       <field name="Name" title="yes" >Hardened Worker</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >0</field>
-      <field name="Description" description="yes" >You recive natural armor of X--X+1--X where X is equal to half your level in that skill.</field>
-      <field name="Implementation" >Piercing += Level--2; Crushing += (Level+1)--2; Slashing += Level--2;</field>
+      <field name="Description" description="yes" >You recive natural armor of X&ndash;X+1&ndash;X where X is equal to half your level in that skill.</field>
+      <field name="Implementation" >Piercing += Level&ndash;2; Crushing += (Level+1)&ndash;2; Slashing += Level&ndash;2;</field>
      </datum>
      <datum name="Healing (Others)" >
       <field name="Name" title="yes" >Healing (Others)</field>
@@ -22402,7 +22402,7 @@
       <field name="Name" title="yes" >Heroic Armor</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >0</field>
-      <field name="Description" description="yes" >You may choose to wear skimpy clothing instead of standard armor. You recive armor equal X--X--X where X = (CHA-8 +LVL of Beauty + LVL of Fashion Skill). This has no encumberance. You cannot use ability while wearing armor of any kind.</field>
+      <field name="Description" description="yes" >You may choose to wear skimpy clothing instead of standard armor. You recive armor equal X&ndash;X&ndash;X where X = (CHA-8 +LVL of Beauty + LVL of Fashion Skill). This has no encumberance. You cannot use ability while wearing armor of any kind.</field>
       <field name="Implementation" >Piercing += (Charisma-8); Crushing += (Charisma-8); Slashing += (Charisma-8);</field>
      </datum>
      <datum name="Hold Breath" >
@@ -22486,7 +22486,7 @@
       <field name="Name" title="yes" >Kinetic Absorption</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >7</field>
-      <field name="Description" description="yes" >Character can absorb up to 5 * Lvl points of damage from kinetic damage (P--S--C) per turn. Each 5 points absorbed in this way may be converted over to one HP point.</field>
+      <field name="Description" description="yes" >Character can absorb up to 5 * Lvl points of damage from kinetic damage (P&ndash;S&ndash;C) per turn. Each 5 points absorbed in this way may be converted over to one HP point.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Kinetic Acceleration" >
@@ -22535,7 +22535,7 @@
       <field name="Name" title="yes" >Magnetism</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >7</field>
-      <field name="Description" description="yes" >Character can manipulate up to Lvl^3 * 10 pounds of metal. Metal pieces may be thrown for an attack (one action) that deals Lvl D 6 S--P--C damage.</field>
+      <field name="Description" description="yes" >Character can manipulate up to Lvl^3 * 10 pounds of metal. Metal pieces may be thrown for an attack (one action) that deals Lvl D 6 S&ndash;P&ndash;C damage.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Melt" >
@@ -22570,7 +22570,7 @@
       <field name="Name" title="yes" >Natural Armor</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >3</field>
-      <field name="Description" description="yes" >Character has some form of natural (or mystical) covering that gives him Lvl^2 P--S--C protection and Lvl U protection.</field>
+      <field name="Description" description="yes" >Character has some form of natural (or mystical) covering that gives him Lvl^2 P&ndash;S&ndash;C protection and Lvl U protection.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Natural Weaponry" >
@@ -22654,7 +22654,7 @@
       <field name="Name" title="yes" >Resistance</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >50</field>
-      <field name="Description" description="yes" >Slashing attacks deal 1--2 damage.</field>
+      <field name="Description" description="yes" >Slashing attacks deal 1&ndash;2 damage.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Rot Substance" >
@@ -22780,7 +22780,7 @@
       <field name="Name" title="yes" >Stretchability</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >2</field>
-      <field name="Description" description="yes" >Character can stretch up to Lvl times as long, or 1--Lvl times as thin as he currently is. This gives the character an additional 0--0--Lvl*2 personal armor</field>
+      <field name="Description" description="yes" >Character can stretch up to Lvl times as long, or 1&ndash;Lvl times as thin as he currently is. This gives the character an additional 0&ndash;0&ndash;Lvl*2 personal armor</field>
       <field name="Implementation" />
      </datum>
      <datum name="Substance Surfing" >
@@ -22794,7 +22794,7 @@
       <field name="Name" title="yes" >Supernatural Attribute</field>
       <field name="MetaTag" />
       <field name="Rank" table="yes" >1</field>
-      <field name="Description" description="yes" >Purchase per attribute that is at least a 20. Increase the max attribute to 20 + lvl^2, and purchase additional points as if the base attribute is 1--2 the current attribute.</field>
+      <field name="Description" description="yes" >Purchase per attribute that is at least a 20. Increase the max attribute to 20 + lvl^2, and purchase additional points as if the base attribute is 1&ndash;2 the current attribute.</field>
       <field name="Implementation" />
      </datum>
      <datum name="Sure Footed" >
@@ -23380,7 +23380,7 @@
       <field name="MetaTag" >Future</field>
       <field name="Slots" table="yes" >(Class+1)*3/2</field>
       <field name="Character Points" table="yes" >(Class+1)*6</field>
-      <field name="Description" description="yes" >Mecha Shotgun&apos;s deal half the usual damage of a similar weapon of the same size and ammunition, i.e. if it is a 75mm shotgun, then it deals (4D6x10)/2 = 4D6x5 C (Crushing) damage. Shotguns use 5--25 rounds per shot, depending upon the set-up of the weapon. Shotguns get a bonus to Strike of 1+(Class+2)/2. The range is 1/4 of the usual weapon range.</field>
+      <field name="Description" description="yes" >Mecha Shotgun&apos;s deal half the usual damage of a similar weapon of the same size and ammunition, i.e. if it is a 75mm shotgun, then it deals (4D6x10)/2 = 4D6x5 C (Crushing) damage. Shotguns use 5&ndash;25 rounds per shot, depending upon the set-up of the weapon. Shotguns get a bonus to Strike of 1+(Class+2)/2. The range is 1/4 of the usual weapon range.</field>
      </datum>
      <datum name="Snub Cannon" >
       <field name="Name" title="yes" >Snub Cannon</field>
