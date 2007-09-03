@@ -63,25 +63,25 @@ div.figures h1 {
 div.part h1 {
   font-size: 28pt;
   font-weight: bold;
-  color: orange;
+  color: black;
 }
 div.part div.chapter h1 {
-  font-size: 28pt;
+  font-size: 24pt;
   font-weight: bold;
-  color: red;
+  color: black;
 }
 div.part div.chapter div.section h1 {
-  font-size: 28pt;
+  font-size: 20pt;
   font-weight: bold;
-  color: blue;
+  color: black;
 }
 div.part div.chapter div.section div.section h1 {
-  font-size: 28pt;
+  font-size: 16pt;
   font-weight: bold;
-  color: green;
+  color: black;
 }
 div.part div.chapter div.section div.section div.section h1 {
-  font-size: 28pt;
+  font-size: 14pt;
   font-weight: bold;
   color: black;
 }
