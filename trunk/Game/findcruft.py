@@ -66,7 +66,26 @@ def pseudoprettyprint (Where, xml=None, indent="", inlines=[]):
   result = u""
   if Where is not None:
     xml = minix.parse(Where)
+    result += """<?xml version="1.0" encoding="ISO-8859-1"?>\n"""
     result += pseudoprettyprint (None, xml, inlines=inlines)
+    # okay, now we cut to 80 line-widths
+    lines = result.split ("\n")
+    result = ""
+    for ldx in xrange(len(lines)):
+      line = lines[ldx]
+      if len(line) > 72:
+        indentation = len(line) - len(line.strip ())
+        words = line.strip().split(" ")
+        lres = " "*indentation+words[0]
+        for word in words[1:]:
+          if len(lres) + len(word) > 72:
+            result += lres + "\n"
+            lres = " "*indentation
+          lres += " " + word
+        result += lres + "\n"
+      else:
+        result += line + "\n"
+    return result
   else:
     name = sanitizes (xml.nodeName)
     if xml.nodeType == xml.ELEMENT_NODE:
@@ -111,6 +130,8 @@ def pseudoprettyprint (Where, xml=None, indent="", inlines=[]):
     else:
       if xml.hasChildNodes ():
         for child in xml.childNodes:
+          if child.nodeType != child.ELEMENT_NODE:
+            result += child.toprettyxml () + "\n"
           result += pseudoprettyprint (None, child, "", inlines=inlines)
   return result
 
