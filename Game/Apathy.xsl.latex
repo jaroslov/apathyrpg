@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:output version="1.0" method="xml"
-    encoding="ISO-8859-1"
-    media-type="text/xml"/>
+  <!--<xsl:output version="5.0" method="html" encoding="ISO-8859-1" media-type="text/html"/>-->
 
   <!-- Main document -->
   <xsl:template match="/">
     <!-- Bug in FFX2.0.0.6? Renders incorrectly b/c it uses ending ".xhtml" -->
-      <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
-
-      <fo:layout-master-set>
-        <fo:simple-page-master
-          master-name="Centered"
-          margin="1in" >
-          <fo:region-body />
-        </fo:simple-page-master>
-      </fo:layout-master-set>
-
-      <fo:page-sequence master-reference="Centered">
-        <!--<div class="titlepage">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+      <head>
+        <title>Apathy Manual (ARPG)</title>
+        <link rel="stylesheet"
+          type="text/css" href="Apathy.css" title="Apathy" />
+      </head>
+      <body>
+        <div class="titlepage">
           <span class="apathy-A1">A</span>
           <span class="apathy-P">P</span>
           <span class="apathy-A2">A</span>
@@ -41,20 +35,13 @@
         </ul>
         <div class="toc" id="Table-of-Contents">
           <h1>Table of Contents</h1>
-          <ol class="toc">-->
-        <fo:flow flow-name="xsl-region-body">
-          <fo:list-block>
+          <ol class="toc">
             <xsl:for-each select="//part">
-              <fo:list-item>
-                <fo:list-item-label>
-                  <fo:block>*</fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body>
-                  <fo:block>
-                    <xsl:value-of select="title" />
-                  </fo:block>
-                </fo:list-item-body>
-                <!--<ol class="toc" >
+              <li>
+                <a href="#part-{./title}">
+                  <xsl:value-of select="title" />
+                </a>
+                <ol class="toc" >
                   <xsl:for-each select="chapter">
                     <li>
                       <a href="#chapter-{./title}">
@@ -80,12 +67,11 @@
                       </ol>
                     </li>
                   </xsl:for-each>
-                </ol>-->
-              </fo:list-item>
+                </ol>
+              </li>
             </xsl:for-each>
-          </fo:list-block>
-        </fo:flow>
-        <!--</div>
+          </ol>
+        </div>
         <div class="examples" id="List-of-Examples">
           <h1>List of Examples</h1>
           <ol class="examples">
@@ -114,6 +100,7 @@
             <xsl:for-each select="//m">
               <li>
 								<a href="#equation-{generate-id(.)}">
+								  <!-- In place so it hops to the right place. -->
                   <math xmlns="http://www.w3.org/1998/Math/MathML">
                     <xsl:copy-of select="child::node()" />
                   </math>
@@ -122,9 +109,9 @@
             </xsl:for-each>
           </ol>
         </div>
-        <xsl:apply-templates select="//book"/>-->
-      </fo:page-sequence>>
-    </fo:root>
+        <xsl:apply-templates select="//book"/>
+      </body>
+    </html>
   </xsl:template>
   
   <xsl:template match="book">
