@@ -7,7 +7,6 @@
 <!ENTITY rsquo  "&#8217;" ><!-- right quote -->
 <!ENTITY times  "&#215;" ><!-- times -->
 <!ENTITY Sigma  "&#931;" ><!-- sigma -->
-<!ENTITY sum  "&#8721;" ><!-- sigma -->
 <!ENTITY reg    "&#174;" ><!-- trademark -->
 <!ENTITY ouml   "&#246;" ><!-- o-umlaut -->
 <!ENTITY oslash "&#248;" ><!-- o-slash -->
@@ -15,7 +14,8 @@
 <!ENTITY mdash  "&#8212;" ><!-- m-dash -->
 <!ENTITY aelig  "&#230;" ><!-- ae-lig -->
 <!ENTITY hellip  "&#8230;" ><!-- ... -->
-<!ENTITY egrave  "&#232;" ><!-- e&rsquo; -->
+<!ENTITY egrave  "&#232;" ><!-- e' -->
+<!ENTITY sum    "&#8721;" ><!-- mathematical sum char -->
 ]>
 <?xml-stylesheet type="text/xsl" href="Apathy.xsl"?>
 <apathy-game>
@@ -367,7 +367,7 @@
 	    eager to fight for his cause.  Your character is a hero in
 	    the game.  You should take this opportunity to have fun
 	    and do things you can&rsquo;t do in real life.</text>
-	    <image src=&rsquo;/Monsters/Buer.png&rsquo;/>
+	    <image src='/Monsters/Buer.png'/>
             <text>If you are having trouble thinking up a character
 	      concept, you might want to look to books, movies, or
 	      even historical precedent as to what kind of character
@@ -411,9 +411,9 @@
               <figure>
 		<table>
 		  <head>
-                    <cell width=&rsquo;.5in&rsquo;>Abbr.</cell>
-                    <cell width=&rsquo;1in&rsquo;>Name</cell>
-                    <cell width=&rsquo;2.5in&rsquo;>Definition</cell>
+                    <cell width='.5in'>Abbr.</cell>
+                    <cell width='1in'>Name</cell>
+                    <cell width='2.5in'>Definition</cell>
 		  </head>
 		  <row>
                     <cell>STR</cell>
@@ -516,9 +516,9 @@
               <figure>
 		<table>
 		  <head>
-                    <cell width=&rsquo;1in&rsquo;>Abbr.</cell>
-                    <cell width=&rsquo;3in&rsquo;>Definition</cell>
-                    <cell width=&rsquo;1.5in&rsquo;>Computation</cell>
+                    <cell width='1in'>Abbr.</cell>
+                    <cell width='3in'>Definition</cell>
+                    <cell width='1.5in'>Computation</cell>
 		  </head>
 		  <row>
                     <cell>Lift</cell>
@@ -819,8 +819,8 @@
         <figure>
           <table>
             <head>
-              <cell align=&rsquo;center&rsquo;>Level</cell>
-              <cell align=&rsquo;left&rsquo;>What it means</cell>
+              <cell align='center'>Level</cell>
+              <cell align='left'>What it means</cell>
             </head>
             <row>
               <cell>0</cell>
@@ -871,7 +871,7 @@
         <m>
 	  <mrow>
             <munderover accent="true" accentunder="true">
-              <mstyle scriptlevel="-3">&sum;</mstyle>
+              <mstyle scriptlevel="-1">&sum;</mstyle>
               <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
               <mi>N</mi>
             </munderover>
@@ -1170,8 +1170,8 @@
             <figure>
               <table>
 		<head>
-                  <cell align=&rsquo;center&rsquo;>Roll</cell>
-                  <cell align=&rsquo;left&rsquo;>Sample Outcome</cell>
+                  <cell align='center'>Roll</cell>
+                  <cell align='left'>Sample Outcome</cell>
 		</head>
 		<row>
                   <cell>Strike (sword)</cell>
@@ -1482,7 +1482,7 @@
 	    around, ducking behind cover, or taking an item out of
 	    your pack.  Some things that you will want to do will
 	    consume multiple Actions per turn.</text>
-	    <image src=&rsquo;/MartialArts/Cpg359-49v.jpg&rsquo;/>
+	    <image src='/MartialArts/Cpg359-49v.jpg'/>
             <text>All characters, by default, have three
 	      Actions per round.  Certain skills or
 	      in-game effects might change this.  When combat is going
@@ -1708,7 +1708,7 @@
 		compound bows are adjustable and can be set to a
 		higher than normal strength value without incurring
 		additional cost.</text>
-		<image src=&rsquo;/Magic/Lion-faced_deity.jpg&rsquo;/>
+		<image src='/Magic/Lion-faced_deity.jpg'/>
 		<text>Characters will have two hands that they may use
 		  to wield weapons.  All weapons are either one-hand
 		  or two-handed.  Two-handed weapons, of course,
@@ -2355,7 +2355,7 @@
 	    HP</mi></mfrac></m>.  When the game begins, your character
 	    will be fully healthy and uninjured.  Thus, when starting,
 	    your current HP will be equal to your maximum.</text>
-	    <image src=&rsquo;/Map/Forte-marghera-02.jpg&rsquo;/>
+	    <image src='/Map/Forte-marghera-02.jpg'/>
             <text>As you get injured, any damage you take (after
 	      applying armor, etc.)  will be applied to your current
 	      HP.  As you get injured, your current HP drops.  Over
@@ -2580,12 +2580,12 @@
     <part>
       <title>Rule Sections</title>
       
-      <chapter><!&ndash; S Academics &ndash;>
+      <chapter><!-- S Academics -->
         <title>Academics</title>
         <reference hrid="Content/Academic" />
-      </chapter><!&ndash; /S Academics &ndash;>
+      </chapter><!-- /S Academics -->
       
-      <chapter><!&ndash; S Augmentations &ndash;>
+      <chapter><!-- S Augmentations -->
         <title>Augmentations</title>
 	
 	<text>Augmentations are modifications to the body made through
@@ -2612,7 +2612,7 @@
 	  also be used as a repair for a body part that was injured or
 	  for utility purposes.</text>
     
-        <section><!&ndash; Additions &ndash;>
+        <section><!-- Additions -->
           <title>Additions</title>
 	  
 	  <text>There are two basic types of addition augmentations.
@@ -2630,8 +2630,8 @@
 	    of slots (see below) which is similar to the Mecha
 	    system.</text>
     
-        </section><!&ndash; /Additions &ndash;>
-        <section><!&ndash; Replacements &ndash;>
+        </section><!-- /Additions -->
+        <section><!-- Replacements -->
           <title>Replacements</title>
 	  
 	  <text>Augmentation replacements, in their most basic forms,
@@ -2641,8 +2641,8 @@
 	    than normal.  Some augmentation replacements have new
 	    functions or different abilities than normal.</text>
 	  
-        </section><!&ndash; /Replacements &ndash;>
-        <section><!&ndash; Augmentation Limbs and Bodies &ndash;>
+        </section><!-- /Replacements -->
+        <section><!-- Augmentation Limbs and Bodies -->
           <title>Augmentation Limbs and Bodies</title>
 	  
 	  <text>Entire limbs or even entire bodies may be replaced
@@ -2665,7 +2665,7 @@
     
 	  <text>These rules apply to cybernetic and robotic components:</text>
 	  
-          <section><!&ndash; Robotics &ndash;>
+          <section><!-- Robotics -->
             <title>Robotics</title>
 	    
 	    <itemized-list>
@@ -2695,8 +2695,8 @@
 		replacing the damaged parts with new ones.</item>
 	    </itemized-list>
     
-            </section><!&ndash; /Robotics &ndash;>
-            <section><!&ndash; Cybernetics &ndash;>
+            </section><!-- /Robotics -->
+            <section><!-- Cybernetics -->
                 <title>Cybernetics</title>
     
     <itemized-list>
@@ -2743,9 +2743,9 @@
         </item>
     </itemized-list>
     
-            </section><!&ndash; /Cybernetics &ndash;>
-        </section><!&ndash; /Augmentation Limbs and Bodies &ndash;>
-        <section><!&ndash; General Augmentation Rules &ndash;>
+            </section><!-- /Cybernetics -->
+        </section><!-- /Augmentation Limbs and Bodies -->
+        <section><!-- General Augmentation Rules -->
             <title>General Augmentation Rules</title>
     
     <itemized-list>
@@ -2768,52 +2768,52 @@
         </item>
     </itemized-list>
     
-        </section><!&ndash; /General Augmentation Rules &ndash;>
-        <section><!&ndash; Determining the Cost of an Augmentation body part &ndash;>
+        </section><!-- /General Augmentation Rules -->
+        <section><!-- Determining the Cost of an Augmentation body part -->
             <title>Determining the Cost of an Augmentation body part</title>
             
             <note>This section is incomplete.</note>
             
-        </section><!&ndash; /Determining the Cost of an Augmentation body part &ndash;>
+        </section><!-- /Determining the Cost of an Augmentation body part -->
     
-        <section><!&ndash; Arm, Hand &ndash;>
+        <section><!-- Arm, Hand -->
           <title>Arm, Hand</title>
           <reference hrid="Content/Augmentations/Arm, Hand" />
-        </section><!&ndash; /Arm, Hand &ndash;>
+        </section><!-- /Arm, Hand -->
     
-        <section><!&ndash; Body &ndash;>
+        <section><!-- Body -->
           <title>Body</title>
           <reference hrid="Content/Augmentations/Body" />
-        </section><!&ndash; /Body &ndash;>
+        </section><!-- /Body -->
     
-        <section><!&ndash; Head &ndash;>
+        <section><!-- Head -->
           <title>Head</title>
           <reference hrid="Content/Augmentations/Head" />
-        </section><!&ndash; /Head &ndash;>
+        </section><!-- /Head -->
     
-        <section><!&ndash; Leg &ndash;>
+        <section><!-- Leg -->
           <title>Leg</title>
           <reference hrid="Content/Augmentations/Leg" />
-        </section><!&ndash; /Leg &ndash;>
+        </section><!-- /Leg -->
     
-        <section><!&ndash; Torso &ndash;>
+        <section><!-- Torso -->
           <title>Torso</title>
           <reference hrid="Content/Augmentations/Torso" />
-        </section><!&ndash; /Torso &ndash;>
+        </section><!-- /Torso -->
     
-      </chapter><!&ndash; /S Augmentations &ndash;>
+      </chapter><!-- /S Augmentations -->
     
-      <chapter><!&ndash; S Equipment &ndash;>
+      <chapter><!-- S Equipment -->
         <title>Equipment</title>
     
-        <section><!&ndash; Ammunition &ndash;>
+        <section><!-- Ammunition -->
           <title>Ammunition</title>
           <reference hrid="Content/Equipment/Ammunition" />
-        </section><!&ndash; /Ammunition &ndash;>
+        </section><!-- /Ammunition -->
     
         <section>
           <title>Armor</title>
-            <section><!&ndash; Basics for Armor and Damage &ndash;>
+            <section><!-- Basics for Armor and Damage -->
               <title>Basics for Armor and Damage</title>
     
     <itemized-list>
@@ -2871,8 +2871,8 @@
       the armor would appear.  A later period can find the earlier armor.</item>
     </itemized-list>
     
-        </section><!&ndash; /Basics for Armor and Damage &ndash;>
-        <section><!&ndash; Shields &ndash;>
+        </section><!-- /Basics for Armor and Damage -->
+        <section><!-- Shields -->
             <title>Shields</title>
     
     <itemized-list>
@@ -2899,20 +2899,20 @@
         </item>
     </itemized-list>
     
-        </section><!&ndash; /Shields &ndash;>
+        </section><!-- /Shields -->
     
         <reference hrid="Content/Equipment/Armor" />
     
-        </section><!&ndash; /Armor &ndash;>
+        </section><!-- /Armor -->
     
-          <section><!&ndash; Energy Weapons &ndash;>
+          <section><!-- Energy Weapons -->
             <title>Energy Weapons</title>
             <text>
     Most energy weapons are powered by a battery pack.  These are interchangable between weapons.  Energy within the packs is consumed as the weapon is fired, like normal bullets.  They are called &ldquo;batts&rdquo; or &ldquo;b-paks&rdquo; in slang. B-paks store energy in units of EU.  Different weapons consume EU at different rates.  Smaller weapons use 1 EU per shot.  Larger weapons might use more.  Pistols can hold ONE pack.  Rifles/cannons can usually hold 3. B-paks can be recharged.  Recharging a pack takes about thirty seconds per EU that has been used.  As a general rule, it costs $1 per EU to have pack recharged.  HD paks require special equipment to charge and these cost about $1.50 per EU to charge.
             </text>
-          </section><!&ndash; /Energy Weapons &ndash;>
+          </section><!-- /Energy Weapons -->
     
-          <section><!&ndash; Melee &ndash;>
+          <section><!-- Melee -->
             <title>Melee</title>
     
               <text>
@@ -2942,7 +2942,7 @@
       than 1/2 range, then you are at -6 to strike the target.</item>
               </description-list>
     
-            <section><!&ndash; Options for Melee Weapons &ndash;>
+            <section><!-- Options for Melee Weapons -->
               <title>Options for Melee Weapons</title>
     
               <text>
@@ -3015,51 +3015,51 @@
     bonus, damage dice number, etc.
               </text>
     
-            </section><!&ndash; /Options for Melee Weapons &ndash;>
+            </section><!-- /Options for Melee Weapons -->
     
-            <section><!&ndash; Axes &ndash;>
+            <section><!-- Axes -->
               <title>Axes</title>
     
               <reference hrid="Content/Equipment/Melee/Axes" />
-            </section><!&ndash; /Axes &ndash;>
+            </section><!-- /Axes -->
     
-            <section><!&ndash; Blunt &ndash;>
+            <section><!-- Blunt -->
               <title>Blunt</title>
     
               <reference hrid="Content/Equipment/Melee/Blunt" />
-            </section><!&ndash; /Blunt &ndash;>
+            </section><!-- /Blunt -->
     
-            <section><!&ndash; Body &ndash;>
+            <section><!-- Body -->
               <title>Body</title>
     
               <reference hrid="Content/Equipment/Melee/Body" />
-            </section><!&ndash; /Body &ndash;>
+            </section><!-- /Body -->
     
-            <section><!&ndash; Chained &ndash;>
+            <section><!-- Chained -->
               <title>Chained</title>
     
               <reference hrid="Content/Equipment/Melee/Chained" />
-            </section><!&ndash; /Chained &ndash;>
+            </section><!-- /Chained -->
     
-            <section><!&ndash; Exotic &ndash;>
+            <section><!-- Exotic -->
               <title>Exotic</title>
     
               <reference hrid="Content/Equipment/Melee/Exotic" />
-            </section><!&ndash; /Exotic &ndash;>
+            </section><!-- /Exotic -->
     
-            <section><!&ndash; Knives &ndash;>
+            <section><!-- Knives -->
               <title>Knives</title>
     
               <reference hrid="Content/Equipment/Melee/Knives" />
-            </section><!&ndash; /Knives &ndash;>
+            </section><!-- /Knives -->
     
-            <section><!&ndash; Large Swords &ndash;>
+            <section><!-- Large Swords -->
               <title>Large Swords</title>
     
               <reference hrid="Content/Equipment/Melee/Large Swords" />
-            </section><!&ndash; /Large Swords &ndash;>
+            </section><!-- /Large Swords -->
     
-            <section><!&ndash; Monofilament &ndash;>
+            <section><!-- Monofilament -->
               <title>Monofilament</title>
     
               <text>
@@ -3071,9 +3071,9 @@
               </text>
     
               <reference hrid="Content/Equipment/Melee/Monofilament" />
-            </section><!&ndash; /Monofilament &ndash;>
+            </section><!-- /Monofilament -->
     
-            <section><!&ndash; Plasma &ndash;>
+            <section><!-- Plasma -->
               <title>Plasma</title>
     
               <text>
@@ -3110,7 +3110,7 @@
                 <caption>Plasma Weapon Modifiers</caption>
               </figure>
     
-              <section><!&ndash; Notes for Plasma Weapons &ndash;>
+              <section><!-- Notes for Plasma Weapons -->
                 <title>Notes: specific to Plasma Weapons</title>
     
                 <itemized-list>
@@ -3144,16 +3144,16 @@
       shots from a beam rifle).  Doing so the wielder is at a -8.</item>
                 </itemized-list>
     
-              </section><!&ndash; /Notes for Plasma Weapons &ndash;>
+              </section><!-- /Notes for Plasma Weapons -->
     
-            </section><!&ndash; /Plasma &ndash;>
+            </section><!-- /Plasma -->
     
-            <section><!&ndash; Polearms &ndash;>
+            <section><!-- Polearms -->
               <title>Polearms</title>
               <reference hrid="Content/Equipment/Melee/Polearms" />
-            </section><!&ndash; /Polearms &ndash;>
+            </section><!-- /Polearms -->
     
-            <section><!&ndash; Rocket Assisted &ndash;>
+            <section><!-- Rocket Assisted -->
               <title>Rocket Assisted</title>
     
               <text>
@@ -3173,40 +3173,40 @@
               </text>
     
               <reference hrid="Content/Equipment/Melee/Rocket Assisted" />
-            </section><!&ndash; /Rocket Assisted &ndash;>
+            </section><!-- /Rocket Assisted -->
     
-            <section><!&ndash; Staves &ndash;>
+            <section><!-- Staves -->
               <title>Staves</title>
               <reference hrid="Content/Equipment/Melee/Staves" />
-            </section><!&ndash; /Staves &ndash;>
+            </section><!-- /Staves -->
     
-            <section><!&ndash; Thrown &ndash;>
+            <section><!-- Thrown -->
               <title>Thrown</title>
               <reference hrid="Content/Equipment/Melee/Thrown" />
-            </section><!&ndash; /Thrown &ndash;>
+            </section><!-- /Thrown -->
     
-          </section><!&ndash; /Melee &ndash;>
+          </section><!-- /Melee -->
     
-          <section><!&ndash; Miscellaneous &ndash;>
+          <section><!-- Miscellaneous -->
             <title>Miscellaneous</title>
             <reference hrid="Content/Equipment/Miscellaneous" />
-          </section><!&ndash; /Miscellaneous &ndash;>
+          </section><!-- /Miscellaneous -->
     
-          <section><!&ndash; Ranged &ndash;>
+          <section><!-- Ranged -->
             <title>Ranged</title>
             <reference hrid="Content/Equipment/Ranged" />
-          </section><!&ndash; /Ranged &ndash;>
+          </section><!-- /Ranged -->
     
-          <section><!&ndash; Shields &ndash;>
+          <section><!-- Shields -->
             <title>Shields</title>
             <reference hrid="Content/Equipment/Shields" />
-          </section><!&ndash; /Shields &ndash;>
+          </section><!-- /Shields -->
     
-      </chapter><!&ndash; /S Equipment &ndash;>
-      <chapter><!&ndash; S Magic &ndash;>
+      </chapter><!-- /S Equipment -->
+      <chapter><!-- S Magic -->
         <title>Magic</title>
     
-      <section><!&ndash; Introduction &ndash;>
+      <section><!-- Introduction -->
         <title>Introduction</title>
       
         <text>
@@ -3287,12 +3287,12 @@
           <item> Newly cleared land</item>
         </itemized-list>
       
-      </section><!&ndash; /Introduction &ndash;>
+      </section><!-- /Introduction -->
       
-      <section><!&ndash; Types of Magic &ndash;>
+      <section><!-- Types of Magic -->
         <title>Types of Magic</title>
       
-        <section><!&ndash; Invocation Magic (spellcasting) &ndash;>
+        <section><!-- Invocation Magic (spellcasting) -->
           <title>Invocation Magic (spellcasting)</title>
       
           <text>
@@ -3387,9 +3387,9 @@
       points of Encumberance available.  If not, they are not able to cast
       magic.
           </text>
-        </section><!&ndash; /Invocation Magic (spellcasting) &ndash;>
+        </section><!-- /Invocation Magic (spellcasting) -->
       
-        <section><!&ndash; Ritual Magic &ndash;>
+        <section><!-- Ritual Magic -->
           <title>Ritual Magic</title>
       
           <text>
@@ -3582,9 +3582,9 @@
       ritualist.
           </text>
       
-        </section><!&ndash; /Ritual Magic &ndash;>
+        </section><!-- /Ritual Magic -->
       
-        <section><!&ndash; Religious and Faith Magic &ndash;>
+        <section><!-- Religious and Faith Magic -->
           <title>Religious &amp; Faith Magic</title>
       
           <text>
@@ -3701,9 +3701,9 @@
       the caster has is then applied as a bonus to that roll.
           </text>
       
-        </section><!&ndash; /Religious and Faith Magic &ndash;>
+        </section><!-- /Religious and Faith Magic -->
       
-        <section><!&ndash; Martial Magic / Super Power Combat &ndash;>
+        <section><!-- Martial Magic / Super Power Combat -->
           <title>Martial Magic / Super Power Combat</title>
       
           <text>
@@ -3789,9 +3789,9 @@
 	    considered the skill level of &ldquo;Martial Magic&rdquo;
           </text>
       
-        </section><!&ndash; /Martial Magic / Super Power Combat &ndash;>
+        </section><!-- /Martial Magic / Super Power Combat -->
       
-        <section><!&ndash; Mysticism / Psionics &ndash;>
+        <section><!-- Mysticism / Psionics -->
           <title>Mysticism / Psionics</title>
       
           <text>
@@ -3836,9 +3836,9 @@
         that would be used for that roll.</item>
           </itemized-list>
       
-        </section><!&ndash; /Mysticism / Psionics &ndash;>
+        </section><!-- /Mysticism / Psionics -->
       
-        <section><!&ndash; Beast Magic (summoning) &ndash;>
+        <section><!-- Beast Magic (summoning) -->
           <title>Beast Magic (summoning)</title>
       
           <text>
@@ -3968,9 +3968,9 @@
       what &ldquo;Beast Lore&rdquo; skills he knows.
           </text>
       
-        </section><!&ndash; /Beast Magic (summoning) &ndash;>
+        </section><!-- /Beast Magic (summoning) -->
       
-        <section><!&ndash; Magic-Related Skill Summary &ndash;>
+        <section><!-- Magic-Related Skill Summary -->
           <title>Magic-Related Skill Summary</title>
       
           <itemized-list>
@@ -4118,11 +4118,11 @@
         time, they are nearly impossible to defend against.</item>
           </description-list>
       
-        </section><!&ndash; /Magic-Related Skill Summary &ndash;>
+        </section><!-- /Magic-Related Skill Summary -->
       
-      </section><!&ndash; /Types of Magic &ndash;>
+      </section><!-- /Types of Magic -->
       
-      <section><!&ndash; General Notes &ndash;>
+      <section><!-- General Notes -->
         <title>General notes</title>
       
         <text>
@@ -4159,7 +4159,7 @@
       to cast any magical spell.
         </text>
       
-        <section><!&ndash; Magic Points &ndash;>
+        <section><!-- Magic Points -->
           <title>Magic Points (MP)</title>
       
           <text>
@@ -4196,9 +4196,9 @@
             <caption>Mana Point replacement per hour.</caption>
           </figure>
       
-        </section><!&ndash; /Magic Points &ndash;>
+        </section><!-- /Magic Points -->
       
-        <section><!&ndash; Magical Tools &ndash;>
+        <section><!-- Magical Tools -->
           <title>Magical &ldquo;Tools&rdquo;: Books, Scrolls, and Potions</title>
       
           <text>
@@ -4285,9 +4285,9 @@
               ritualist may prepare a potion in half that time.</item>
           </description-list>
       
-        </section><!&ndash; /Magical Tools &ndash;>
+        </section><!-- /Magical Tools -->
       
-        <section><!&ndash; Magical Miscellany &ndash;>
+        <section><!-- Magical Miscellany -->
           <title>Magic Terminology &amp; Misc.</title>
       
           <description-list>
@@ -4308,9 +4308,9 @@
         be able to clearly see and identify his target.</item>
           </description-list>
           
-        </section><!&ndash; /Magical Miscellany &ndash;>
+        </section><!-- /Magical Miscellany -->
       
-      </section><!&ndash; /General Notes &ndash;>
+      </section><!-- /General Notes -->
     
       <section>
         <title>Schools(???)</title>
@@ -4356,8 +4356,8 @@
         </section>
       </section>
     
-      </chapter><!&ndash; /S Magic &ndash;>
-      <chapter><!&ndash; S Martial Arts &ndash;>
+      </chapter><!-- /S Magic -->
+      <chapter><!-- S Martial Arts -->
         <title>Martial Arts</title>
     
         <text>
@@ -4374,7 +4374,7 @@
     arena&mdash;and may even be a detriment.
         </text>
     
-        <section><!&ndash; Rules &ndash;>
+        <section><!-- Rules -->
           <title>Rules</title>
     
           <text>
@@ -4475,9 +4475,9 @@
       </text>
     </example>
     
-        </section><!&ndash; /Rules &ndash;>
+        </section><!-- /Rules -->
         
-        <section><!&ndash; Further Commentary &ndash;>
+        <section><!-- Further Commentary -->
           <title>Further Commentary</title>
     
           <text>
@@ -4499,7 +4499,7 @@
 	    would benefit a Martial Artist tremondously.
           </text>
     
-          <section><!&ndash; Advanced Martial Arts &ndash;>
+          <section><!-- Advanced Martial Arts -->
             <title>Advanced Martial Arts</title>
     
             <text>
@@ -4511,9 +4511,9 @@
     Strike is only possible by using these skills.
             </text>
     
-          </section><!&ndash; /Advanced Martial Arts &ndash;>
+          </section><!-- /Advanced Martial Arts -->
     
-        </section><!&ndash; /Further Commentary &ndash;>
+        </section><!-- /Further Commentary -->
     
         <section>
           <title>Categories</title>
@@ -4539,10 +4539,10 @@
           </section>
         </section>
     
-      </chapter><!&ndash; /S Martial Arts &ndash;>
+      </chapter><!-- /S Martial Arts -->
 
-<!&ndash; Mecha &ndash;>
-      <chapter><!&ndash; S Mecha &ndash;>
+<!-- Mecha -->
+      <chapter><!-- S Mecha -->
         <title>Mecha</title>
         <section>
           <title>Mecha Suits &amp; Powered Armor</title>
@@ -4589,15 +4589,15 @@
                     </head>
                     <row>
                       <cell>Height</cell>
-                      <cell>4&rsquo;</cell>
-                      <cell>7&rsquo;</cell>
-                      <cell>15&rsquo;</cell>
-                      <cell>30&rsquo;</cell>
-                      <cell>60&rsquo;</cell>
-                      <cell>125&rsquo;</cell>
-                      <cell>250&rsquo;</cell>
-                      <cell>500&rsquo;</cell>
-                      <cell>1000&rsquo;</cell>
+                      <cell>4'</cell>
+                      <cell>7'</cell>
+                      <cell>15'</cell>
+                      <cell>30'</cell>
+                      <cell>60'</cell>
+                      <cell>125'</cell>
+                      <cell>250'</cell>
+                      <cell>500'</cell>
+                      <cell>1000'</cell>
                     </row>
                     <row>
                       <cell>Mecha Weight (tons)</cell>
@@ -5202,7 +5202,7 @@
                     <row>
                       <cell>Micro-hover</cell>
                         <cell>20 mph</cell>
-                        <cell>15&rsquo;</cell>
+                        <cell>15'</cell>
                         <cell>
                           
                           <m><mrow>
@@ -5221,7 +5221,7 @@
                     <row>
                       <cell>True-hover</cell>
                         <cell>30 mph</cell>
-                        <cell>200&rsquo;</cell>
+                        <cell>200'</cell>
                         <cell>
                           <m><mrow>
                               <mo>(</mo>
@@ -5239,7 +5239,7 @@
                     <row>
                       <cell>Jump jets</cell>
                         <cell>0 mph</cell>
-                        <cell>100&rsquo;</cell>
+                        <cell>100'</cell>
                         <cell>
                           <m><mrow>
                               <mo>(</mo>
@@ -5257,7 +5257,7 @@
                     <row>
                       <cell>Mech. Jump</cell>
                         <cell>0 mph</cell>
-                        <cell>50&rsquo;</cell>
+                        <cell>50'</cell>
                         <cell>0</cell>
                         <cell>2</cell>
                         <cell><m><msup><mi>Size</mi><mn>2</mn></msup></m></cell>
@@ -5265,7 +5265,7 @@
                     <row>
                       <cell>Manuever Jets</cell>
                         <cell>40 mph</cell>
-                        <cell>5&rsquo;</cell>
+                        <cell>5'</cell>
                         <cell>
                           <m><mrow>
                               <mo>(</mo>
@@ -5350,7 +5350,7 @@
           </section>
         </section>
       
-        <section><!&ndash; Equipment &ndash;>
+        <section><!-- Equipment -->
             <title>Equipment</title>
 	    <section>
 	      <title>Auxiliary</title>
@@ -5537,7 +5537,7 @@
 		<text> weapon deals C (Crushing) damage, but the
 		  maximum range is (Class+1)*100 feet</text></item>
               <item><description>Area Effect</description>
-		<text> uses twice the energy, but has (Class+1)*5&rsquo;
+		<text> uses twice the energy, but has (Class+1)*5'
 		  area effect</text></item>
             </description-list>
             <text>
@@ -5682,12 +5682,12 @@
 	    <title>Sensors and Controls</title>
             <reference hrid="Content/Mecha/Equipment/Sensors and Controls" />
 	  </section>
-        </section><!&ndash; /Equipment &ndash;>
-      </chapter><!&ndash; /S Mecha &ndash;>
-      <chapter><!&ndash; S Monsters &ndash;>
+        </section><!-- /Equipment -->
+      </chapter><!-- /S Mecha -->
+      <chapter><!-- S Monsters -->
         <title>Monsters</title>
     
-        <section><!&ndash; Building a Monster &ndash;>
+        <section><!-- Building a Monster -->
             <title>Building a Monster</title>
     
     <text>Because of the wide variety of monstrous creatures available in
@@ -5705,7 +5705,7 @@
         <item description="Examples">: that have been pre-generated</item>
     </description-list>
     
-            <section><!&ndash; Base Types &ndash;>
+            <section><!-- Base Types -->
                 <title>Base Types</title>
     
     <text>The base-types are the fundamental &ldquo;type&rdquo; or &ldquo;look&rdquo; of the
@@ -6160,9 +6160,9 @@
         <caption>Monster Construction Table</caption>
     </figure>
     
-            </section><!&ndash; /Base Types &ndash;>
+            </section><!-- /Base Types -->
     
-            <section><!&ndash; Adding a Template &ndash;>
+            <section><!-- Adding a Template -->
                 <title>Adding a Template</title>
     
     <text>There are several important items missing from the
@@ -6172,16 +6172,16 @@
     any relavent interaction statistics, such as combat, elocution etc.</text>
     
     
-            </section><!&ndash; /Adding a Template &ndash;>
-        </section><!&ndash; /Building a Monster &ndash;>
+            </section><!-- /Adding a Template -->
+        </section><!-- /Building a Monster -->
         
-        <section><!&ndash; Monsters &ndash;>
+        <section><!-- Monsters -->
           <title>Monsters</title>
           <reference hrid="Content/Monsters" />
-        </section><!&ndash; /Monsters &ndash;>
+        </section><!-- /Monsters -->
     
-      </chapter><!&ndash; /S Monsters &ndash;>
-      <chapter><!&ndash; S Traits &ndash;>
+      </chapter><!-- /S Monsters -->
+      <chapter><!-- S Traits -->
         <title>Traits</title>
     
 	<text>Traits are supernatural (supernormal or paranormal)
@@ -6204,12 +6204,12 @@
 	  spell, this trait is called Spell Ability.</text>
         
         
-        <section><!&ndash; Traits &ndash;>
+        <section><!-- Traits -->
           <title>Traits</title>
           <reference hrid="Content/Traits" />
-        </section><!&ndash; /Traits &ndash;>
+        </section><!-- /Traits -->
     
-      </chapter><!&ndash; /S Traits &ndash;>
+      </chapter><!-- /S Traits -->
     </part>
   </book>
   <raw-data>
@@ -6252,7 +6252,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >Herbalist, magician, shaman</field>
-       <field name="Description" description="yes" >Knowledge of &lsquo;primitive&apos; chemistry and related techniques. A person with this skill will know how to prepare simple chemicals (including such things as simple medicines, poisons, black powder, etc) from natural sources. This skill can also be used to prepare alchemical equivalents of magical potions at -2 LVL.</field>
+       <field name="Description" description="yes" >Knowledge of &lsquo;primitive&rsquo; chemistry and related techniques. A person with this skill will know how to prepare simple chemicals (including such things as simple medicines, poisons, black powder, etc) from natural sources. This skill can also be used to prepare alchemical equivalents of magical potions at -2 LVL.</field>
       </datum>
       <datum name="Alectromancy" >
        <field name="Name" title="yes" >Alectromancy</field>
@@ -6407,7 +6407,7 @@
        <field name="Rank" table="yes" >2</field>
        <field name="Attribute" table="yes" >Intelligence</field>
        <field name="Occupation" table="yes" >diplomat, law enforcement, organized crime, politician</field>
-       <field name="Description" description="yes" >Experience with dealing with the political, legal, and related processes of the time. People with this skill will know ways around [latex]&lsquo;red tape&apos;[/latex] and how to favorably deal with public services and government agencies.</field>
+       <field name="Description" description="yes" >Experience with dealing with the political, legal, and related processes of the time. People with this skill will know ways around &lsquo;red tape&rsquo; and how to favorably deal with public services and government agencies.</field>
       </datum>
       <datum name="Business Sense" >
        <field name="Name" title="yes" >Business Sense</field>
@@ -18495,7 +18495,7 @@
       <field name="Description" description="yes" >The caster can send out a small wisp of biting cold to strike a target no more than 100&apos; away.  Can be cast no more than half the caster&apos;s level of Magical Control in a turn.</field>
       <field name="Implementation" />
      </datum>
-     <datum name="Icy prison" >
+     <datum name="lcy prison" >
       <field name="Name" title="yes" >lcy prison</field>
       <field name="MetaTag" />
       <field name="Type" table="yes" qsummary="yes" >Water</field>
@@ -18737,13 +18737,13 @@
           \VBoxColumnPicture{Images/MartialArts/two-weapon-style.png}
     
           \quotexample[Candlestick is ambidextrous]{Candlestick has 3
-            levels of ambidexterity; he has -0 to strike with his &lsquo;good&apos;
-            hand and -3 to strike with the off hand. If Candlestick had
-            6 levels of ambidexterity he would no negative at all when
-            attacking with his 2$^{nd}$ weapon, and a -3 with his
-            3$^{rd}$ weapon, for instance if he were doing two punches
-            and a kick.}</field>
-      <field name="Implementation" />
+            levels of ambidexterity; he has -0 to strike with his
+            &lsquo;good&rsquo; hand and -3 to strike with the off
+            hand. If Candlestick had 6 levels of ambidexterity he
+            would no negative at all when attacking with his 2$^{nd}$
+            weapon, and a -3 with his 3$^{rd}$ weapon, for instance if
+            he were doing two punches and a kick.}</field>
+            <field name="Implementation" />
      </datum>
      <datum name="Blind Fighting" >
       <field name="Name" title="yes" >Blind Fighting</field>
