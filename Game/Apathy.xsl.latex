@@ -6,12 +6,7 @@
   <!-- Main document -->
   <xsl:template match="/">
     <!-- Bug in FFX2.0.0.6? Renders incorrectly b/c it uses ending ".xhtml" -->
-    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-      <head>
-        <title>Apathy Manual (ARPG)</title>
-        <link rel="stylesheet"
-          type="text/css" href="Apathy.css" title="Apathy" />
-      </head>
+    \begin{document}
       <body>
         <div class="titlepage">
           <span class="apathy-A1">A</span>
@@ -111,7 +106,7 @@
         </div>
         <xsl:apply-templates select="//book"/>
       </body>
-    </html>
+    \end{document}
   </xsl:template>
   
   <xsl:template match="book">
