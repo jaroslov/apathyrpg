@@ -131,6 +131,7 @@ span.definition {
 }
 table.description-list {
   margin-right: 3em;
+  margin-left: 3em;
 }
 p.figure-caption {
   font-weight: bold;
