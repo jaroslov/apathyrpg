@@ -60,31 +60,6 @@ div.figures h1 {
   font-variant: small-caps;
   font-size: 16pt;
 }
-div.part h1 {
-  font-size: 28pt;
-  font-weight: bold;
-  color: black;
-}
-div.part div.chapter h1 {
-  font-size: 24pt;
-  font-weight: bold;
-  color: black;
-}
-div.part div.chapter div.section h1 {
-  font-size: 20pt;
-  font-weight: bold;
-  color: black;
-}
-div.part div.chapter div.section div.section h1 {
-  font-size: 16pt;
-  font-weight: bold;
-  color: black;
-}
-div.part div.chapter div.section div.section div.section h1 {
-  font-size: 14pt;
-  font-weight: bold;
-  color: black;
-}
 ol.figures {
   list-style-position: outside;
   list-style-type: upper-roman;
@@ -297,4 +272,48 @@ table.sum {
 }
 span.notappl {
   font-style: italic;
+}
+div.part h1 {
+  font-size: 28pt;
+  font-weight: bold;
+  color: black;
+}
+div.part div.chapter h1 {
+  font-size: 24pt;
+  font-weight: bold;
+  color: black;
+}
+div.part div.chapter div.section h1 {
+  font-size: 20pt;
+  font-weight: bold;
+  color: black;
+}
+div.part div.chapter div.section div.section h1 {
+  font-size: 16pt;
+  font-weight: bold;
+  color: black;
+}
+div.part div.chapter div.section div.section div.section h1 {
+  font-size: 14pt;
+  font-weight: bold;
+  color: black;
+}
+div.part {
+  padding-left: 0em;
+  width: 50em;
+}
+div.part div.chapter {
+  padding-left: .5em;
+}
+div.part div.chapter div.section {
+  padding-left: .5em;
+}
+div.part div.chapter div.section div.section {
+  padding-left: .5em;
+}
+div.part div.chapter div.section div.section div.section {
+  padding-left: .5em;
+}
+div.figure {
+  align: center;
 }
