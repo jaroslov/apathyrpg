@@ -871,7 +871,7 @@
         <m>
 	  <mrow>
             <munderover accent="true" accentunder="true">
-              <mstyle scriptlevel="-1">&sum;</mstyle>
+              <mstyle scriptlevel="-2">&sum;</mstyle>
               <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
               <mi>N</mi>
             </munderover>
