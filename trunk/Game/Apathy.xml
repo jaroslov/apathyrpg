@@ -1422,7 +1422,7 @@
                the duration of magical spells, or the number of monsters
                appearing in a group. </text>
               <text> Rolling dice is represented in the XDY+Z format; for
-               example 3D4+1. This means that you roll three individual
+               example <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>. This means that you roll three individual
                4-sided dice, and add 1 to each die. </text>
               <text> If any die roll with its bonus added in equals or
                betters the maximum value on a die, then you get a
@@ -1435,7 +1435,7 @@
                roll. </text>
               <text> This may sound confusing, so we&rsquo;ll work with
                the example from above. Let&rsquo;s say you have to roll
-               3D4+1. You get some four-sided dice and roll three of
+               <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>. You get some four-sided dice and roll three of
                them. Suppose the results are: 1, 3, and a 4. After adding
                the +1 (from the die bonus), we now have: 2, 4, and 5. We
                add all the totals up and get 11. Now we have to deal with
@@ -1445,7 +1445,7 @@
                get a 2 and 4. We add these to the total yielding 17. But
                wait, we have yet another rollover (the 4). So we roll
                that die again, and get a 3. We now have a total of a 20
-               for our 3D4+1 die roll. </text>
+               for our <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>die roll. </text>
               <text> The same rules apply for any die. Lets say you are
                rolling six-sided dice. If any die (after bonuses) has a 6
                or higher, then you get a rollover. On an eight-sided die?
@@ -1455,20 +1455,20 @@
                up first, then perform the final roll. </text>
               <text> Note that if there is a minus to the die roll once
                all the bonuses/penalties are added up, then no rollover
-               is possible. An example is 1D4-1. Even if you roll a 4 on
+               is possible. An example is <roll><num>1</num><face>4</face><bns>-1</bns><kind></kind></roll>. Even if you roll a 4 on
                the die it will be reduced to a 3, which does not yield a
                rollover. No die (even after negatives) can give a value
-               less than 1. So, if you have a 1D6-4, and roll a 2 (which
+               less than 1. So, if you have a <roll><num>1</num><face>6</face><bns>-4</bns><kind></kind></roll>, and roll a 2 (which
                would theoretically total -2), then the actual total would
                be 1. </text>
               <text> Along with what is given above, die rolls might have
                a raw bonus. This is represented by a bonus in brackets
-               such as this: 3D4+1 [+4] (alt. 4+3D4+1). Raw Bonuses are
+               such as this: <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>[+4] (alt. 4+<roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>). Raw Bonuses are
                added to the resultant total of a die roll, NOT to each
                die; thus they do not affect rollovers at all. This bonus
                is added in after all the rollovers are done with.
-               Consider the prior example of 3D4+1 but with the [+4]
-               added. That would be written 3D4+1 [+4]. The total using
+               Consider the prior example of <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>but with the [+4]
+               added. That would be written <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>[+4]. The total using
                the above numbers would be 24. </text>
               <text> Unless otherwise stated, all non-skill die rolls use
                this system. </text>
@@ -1594,11 +1594,11 @@
             <title>Lucy&rsquo;s turn in combat</title>  
               <text> It is Lucy&rsquo;s turn in combat and she casts
                Regeneration on herself. The effect of the spell is that
-               each turn she gains 1D4+1 Hit Points. Now the spell has
+               each turn she gains <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>Hit Points. Now the spell has
                taken effect, but she does not gain any HP yet, nor does
                this turn count against the duration of the spell. Now all
                other combatants take their turns. When it is again
-               Lucy&rsquo;s turn (next round) she gains her 1D4+1 HP,
+               Lucy&rsquo;s turn (next round) she gains her <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>HP,
                just before her first Action This is also considered one
                turn out of the spell&rsquo;s duration. </text>
           </example>  
@@ -1680,14 +1680,14 @@
             </example>  
             <example>  
               <title>Bosk with Knife</title>  
-                <text> Suppose Bosk pulls out a long knife (1D6+1 S, MSR:
+                <text> Suppose Bosk pulls out a long knife (<roll><num>1</num><face>6</face><bns>+1</bns><kind>S</kind></roll>, MSR:
                  8; MSB: 4). Bosk&rsquo;s Str is significantly higher
                  than the minimum required for the weapon. Calculating
                  his theoretical bonus, we can write: 17 - 8 = 9. At
                  first glance, it appears that Bosk is entitled to a [+9]
                  bonus. However, the maximum strength bonus for the long
                  knife is 4. Therefore, Bosk&rsquo;s damage roll would be
-                 4+1D6+1. </text>
+                 4+<roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>. </text>
             </example>  
               <text> Bows never grant a damage bonus to characters with
                higher than required STR. However, it is possible to
@@ -2841,8 +2841,7 @@
              to wield the weapon. For every point of STR over the
              Strength Requirement, add one point of damage to the raw
              roll, up to a maximum of the MSB (Max Strength Bonus) A raw
-             bonus is always indicated with square brackets. So 3D4+1
-             [+4] would be a normal 3D4+1 roll, with an additional 4
+             bonus is always indicated with square brackets. So <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>[+4] would be a normal <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>roll, with an additional 4
              added to the final result. When wielding a 1-H weapon with
              two hands, assume the wielder has +2 STR. </text>
           <description-list>  
@@ -3807,7 +3806,7 @@
                   to summon. This is permanent and lasts until either the
                   caster or the Familiar is slain. If the caster casts
                   Pact a while he already has a Familiar, the original
-                  spell expires and the caster suffers 1D6+3 U. While
+                  spell expires and the caster suffers <roll><num>1</num><face>6</face><bns>+3</bns><kind>U</kind></roll>. While
                   active, the Familar is aware of what happens to the
                   caster, and vice versa. A basic empathic link exists
                   between the creature and the caster. The caster may
@@ -3838,7 +3837,7 @@
                   It cannot be ended at will. The transformation requires
                   three actions to complete. When the spell expires, the
                   caster will be very tired, and will suffer the effects
-                  of slow, loosing 1 action per turn for 1D4+1 turns.
+                  of slow, loosing 1 action per turn for <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns.
               </item>  
             </description-list>  
               <text>  These summon spells are used in conjunction with
@@ -4838,7 +4837,7 @@
                   <text>  If a mecha suit runs out of HP, it is rendered
                    useless until repaired. If it goes -HP then it is
                    destroyed. Any time the mecha takes 10% of it&rsquo;s
-                   total HP in one blow, the pilot takes 1D6+1 U damage.
+                   total HP in one blow, the pilot takes <roll><num>1</num><face>6</face><bns>+1</bns><kind>U</kind></roll> damage.
                    </text>
               </item>  
                 <text>  Starting armor is already listed above, the mecha
@@ -5303,7 +5302,7 @@
                   <cell> 40 mm </cell>  
                   <cell> 1 </cell>  
                   <cell> 2 rounds </cell>  
-                  <cell> 2D4+1x10 P </cell>  
+                  <cell> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>x10 P </cell>  
                   <cell> $50 </cell>  
                 </row>  
                 <row>  
@@ -5327,7 +5326,7 @@
                   <cell> 100 mm </cell>  
                   <cell> 3 </cell>  
                   <cell> 1 round </cell>  
-                  <cell> 4D4+1x10 P </cell>  
+                  <cell> <roll><num>4</num><face>4</face><bns>+1</bns><kind></kind></roll>x10 P </cell>  
                   <cell> $150 </cell>  
                 </row>  
                 <row>  
@@ -7902,7 +7901,7 @@
           <field name='Description' description='yes'> One or more metal
            blades is inserted into the forearm. It can extend forward or
            swing out from the back of the arm. The blades are used with
-           the small sword skill and can deal 1D6+2 S </field>
+           the small sword skill and can deal <roll><num>1</num><face>6</face><bns>+2</bns><kind>S</kind></roll> </field>
       </datum>  
       <datum name='Arm Guards'>  
         <field name='Name' title='yes'> Arm Guards </field>  
@@ -8030,7 +8029,7 @@
         <field table='yes' name='Character Points'> 2 </field>  
         <field table='yes' name='Prerequisite' />  
         <field table='yes' name='Location'> Arm, Hand </field>  
-          <field name='Description' description='yes'> 1D6+1 S per shot
+          <field name='Description' description='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind>S</kind></roll> per shot
            for 2 Power </field>
       </datum>  
       <datum name='Palm Sheild'>  
@@ -8498,7 +8497,7 @@
         <field table='yes' name='Location'> Body </field>  
           <field name='Description' description='yes'> Enables you to
            secrete a weak poison from the skin. It is foul tasting, and
-           deals 1D4-1 damage if ingested. Anything biting you must make
+           deals <roll><num>1</num><face>4</face><bns>-1</bns><kind></kind></roll>damage if ingested. Anything biting you must make
            a WILL check at -8 or immiedtly let go. (except robots,
            undead) </field>
       </datum>  
@@ -8752,7 +8751,7 @@
         <field table='yes' name='Character Points' />  
         <field table='yes' name='Prerequisite'> Vision System </field>  
         <field table='yes' name='Location'> Head </field>  
-          <field name='Description' description='yes'> 1D6+1 S. Can be
+          <field name='Description' description='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind>S</kind></roll>. Can be
            used once per round. </field>
       </datum>  
       <datum name='Eye Lights'>  
@@ -8868,8 +8867,7 @@
         <field table='yes' name='Character Points'> 20 </field>  
         <field table='yes' name='Prerequisite' />  
         <field table='yes' name='Location'> Head </field>  
-          <field name='Description' description='yes'> Regenerates 1D4+1
-           HP per round. 1 Slot for power source </field>
+          <field name='Description' description='yes'> Regenerates <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>HP per round. 1 Slot for power source </field>
       </datum>  
       <datum name='Memory Board'>  
         <field name='Name' title='yes'> Memory Board </field>  
@@ -8948,7 +8946,7 @@
         <field table='yes' name='Character Points' />  
         <field table='yes' name='Prerequisite'> Cyber hair </field>  
         <field table='yes' name='Location'> Head </field>  
-          <field name='Description' description='yes'> 1D4-1 P damage
+          <field name='Description' description='yes'> <roll><num>1</num><face>4</face><bns>-1</bns><kind>P</kind></roll> damage
            from hair (on head) </field>
       </datum>  
       <datum name='Noise Filter'>  
@@ -9134,7 +9132,7 @@
         <field table='yes' name='Location'> Head </field>  
           <field name='Description' description='yes'> Can turn on and
            off at will. When on, it will provide +2 WIS, +2 INT, and +1
-           action for 1D4-1 turns. Then, it has the opposite effect for
+           action for <roll><num>1</num><face>4</face><bns>-1</bns><kind></kind></roll>turns. Then, it has the opposite effect for
            two turns, before it can be activated again. </field>
       </datum>  
       <datum name='Ventriliquist System'>  
@@ -9342,7 +9340,7 @@
         <field table='yes' name='Prerequisite' />  
         <field table='yes' name='Location'> Leg </field>  
           <field name='Description' description='yes'> A metal spike is
-           implanted into the knee. It can be used to deal 1D6+1 P
+           implanted into the knee. It can be used to deal <roll><num>1</num><face>6</face><bns>+1</bns><kind>P</kind></roll>
            damage. It also protects the kneecap from injury. </field>
       </datum>  
       <datum name='Speed increase'>  
@@ -9508,8 +9506,7 @@
           <field name='Description' description='yes'> A small tank
            implanted in the body is used to store compressed 3 hours
            worth of oxygen. It can be used to breathe anywhere. If the
-           tank is destroyed, when full, it explodes and deals 6D6+3
-           damage to the host. </field>
+           tank is destroyed, when full, it explodes and deals <roll><num>6</num><face>6</face><bns>+3</bns><kind></kind></roll>damage to the host. </field>
       </datum>  
       <datum name='Prehensile Genitalia'>  
         <field name='Name' title='yes'> Prehensile Genitalia </field>  
@@ -9589,7 +9586,7 @@
         <field table='yes' name='Location'> Torso </field>  
           <field name='Description' description='yes'> Enables the user
            to self-destruct his body and cause serious damage in the
-           process. Deals 5x 6D6+3 to a 20&apos; radius. Kills the
+           process. Deals 5x <roll><num>6</num><face>6</face><bns>+3</bns><kind></kind></roll>to a 20&apos; radius. Kills the
            character. </field>
       </datum>  
       <datum name='Sex Changer'>  
@@ -10886,7 +10883,7 @@
         <field table='yes' name='Class'> Axes </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 14 </field>  
@@ -10922,7 +10919,7 @@
         <field table='yes' name='Class'> Axes </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 5D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>5</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 18 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 32 </field>  
@@ -10960,7 +10957,7 @@
         <field table='yes' name='Class'> Axes </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -10977,7 +10974,7 @@
         <field table='yes' name='Class'> Axes </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 16 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 24 </field>  
@@ -11014,7 +11011,7 @@
         <field table='yes' name='Class'> Axes </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 5D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 17 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 25 </field>  
@@ -11032,7 +11029,7 @@
         <field table='yes' name='Class'> Axes </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 18 </field>  
@@ -11053,7 +11050,7 @@
         <field table='yes' name='Class'> Axes </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 14 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 20 </field>  
@@ -11087,7 +11084,7 @@
         <field table='yes' name='Class'> Blunt </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 11 </field>  
@@ -11257,7 +11254,7 @@
         <field table='yes' name='Class'> Blunt </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 6 </field>  
@@ -11312,7 +11309,7 @@
         <field table='yes' name='Class'> Blunt </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -11332,7 +11329,7 @@
         <field table='yes' name='Class'> Blunt </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 24 </field>  
@@ -11576,7 +11573,7 @@
         <field table='yes' name='Class'> Chained </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 12 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 16 </field>  
@@ -11593,7 +11590,7 @@
         <field table='yes' name='Class'> Chained </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
@@ -11610,7 +11607,7 @@
         <field table='yes' name='Class'> Chained </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 16 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 22 </field>  
@@ -11660,7 +11657,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 6 </field>  
@@ -11693,7 +11690,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 12 </field>  
@@ -11707,7 +11704,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 3 </field>  
@@ -11722,7 +11719,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 30 </field>  
@@ -11736,7 +11733,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
@@ -11750,7 +11747,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 20 </field>  
@@ -11764,7 +11761,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 6 </field>  
@@ -11779,7 +11776,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 5D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>5</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 20 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 28 </field>  
@@ -11812,7 +11809,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D10+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>10</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 0 </field>  
@@ -11827,7 +11824,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 5D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 16 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 18 </field>  
@@ -11848,7 +11845,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 5 </field>  
@@ -11882,7 +11879,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
@@ -11900,7 +11897,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
@@ -11914,7 +11911,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -11929,7 +11926,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 18 </field>  
@@ -11962,7 +11959,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> n&ndash;a </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 0 </field>  
@@ -11985,7 +11982,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S&ndash;C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 14 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 17 </field>  
@@ -12003,7 +12000,7 @@
         <field table='yes' name='Class'> Exotic </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 6d4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>6</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 18 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 2 </field>  
@@ -12034,7 +12031,7 @@
         <field table='yes' name='Class'> Knives </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -12068,7 +12065,7 @@
         <field table='yes' name='Class'> Knives </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 3 </field>  
@@ -12122,7 +12119,7 @@
         <field table='yes' name='Class'> Knives </field>  
         <field table='yes' name='Type'> S or P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -12157,7 +12154,7 @@
         <field table='yes' name='Class'> Knives </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6-1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>-1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 2 </field>  
@@ -12244,7 +12241,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 15 </field>  
@@ -12260,7 +12257,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 13 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 18 </field>  
@@ -12296,7 +12293,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 13 </field>  
@@ -12332,7 +12329,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 5D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 18 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 19 </field>  
@@ -12369,7 +12366,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 12 </field>  
@@ -12390,7 +12387,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
@@ -12406,7 +12403,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 18 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 21 </field>  
@@ -12423,7 +12420,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 12 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 20 </field>  
@@ -12438,7 +12435,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -12452,7 +12449,7 @@
         <field table='yes' name='Class'> Large Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 13 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 15 </field>  
@@ -12617,7 +12614,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 11 </field>  
@@ -12634,7 +12631,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P&ndash;S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 15 </field>  
@@ -12739,7 +12736,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
@@ -12755,7 +12752,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P&ndash;C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 4D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 14 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 15 </field>  
@@ -12771,7 +12768,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 12 </field>  
@@ -12790,7 +12787,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 14 </field>  
@@ -12842,7 +12839,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 5 </field>  
@@ -12872,7 +12869,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 12 </field>  
@@ -12889,7 +12886,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> P&ndash;S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 5D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 13 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 20 </field>  
@@ -12921,7 +12918,7 @@
         <field table='yes' name='Class'> Polearms </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 12 </field>  
@@ -12974,7 +12971,7 @@
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> $20000 </field>  
-        <field table='yes' name='Damage'> 4D6+3 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bns>+3</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 16 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 24 </field>  
@@ -12988,7 +12985,7 @@
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> $18000 </field>  
-        <field table='yes' name='Damage'> 4D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 22 </field>  
@@ -13005,7 +13002,7 @@
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> $10000 </field>  
-        <field table='yes' name='Damage'> 3D6+3 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+3</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 18 </field>  
@@ -13019,7 +13016,7 @@
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> $14000 </field>  
-        <field table='yes' name='Damage'> 3D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 12 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 13 </field>  
@@ -13037,7 +13034,7 @@
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> $10000 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 11 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 14 </field>  
@@ -13055,7 +13052,7 @@
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> $20000 </field>  
-        <field table='yes' name='Damage'> 4D6+3 </field>  
+        <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bns>+3</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 24 </field>  
@@ -13142,7 +13139,7 @@
         <field table='yes' name='Class'> Small Swords </field>  
         <field table='yes' name='Type'> P&ndash;S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+3 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+3</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -13276,7 +13273,7 @@
         <field table='yes' name='Class'> Small Swords </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
@@ -13312,7 +13309,7 @@
         <field table='yes' name='Class'> Staves </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
@@ -13329,7 +13326,7 @@
         <field table='yes' name='Class'> Staves </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 14 </field>  
@@ -13347,7 +13344,7 @@
         <field table='yes' name='Class'> Staves </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 12 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 14 </field>  
@@ -13365,7 +13362,7 @@
         <field table='yes' name='Class'> Staves </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
@@ -13418,7 +13415,7 @@
         <field table='yes' name='Class'> Staves </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 2 </field>  
@@ -13449,7 +13446,7 @@
         <field table='yes' name='Class'> Thrown </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
@@ -13483,7 +13480,7 @@
         <field table='yes' name='Class'> Thrown </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 6 </field>  
@@ -13501,7 +13498,7 @@
         <field table='yes' name='Class'> Thrown </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
@@ -13530,7 +13527,7 @@
         <field table='yes' name='Class'> Thrown </field>  
         <field table='yes' name='Type'> S </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D3-1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>3</face><bns>-1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 1 </field>  
@@ -15241,7 +15238,7 @@
         <field table='yes' name='Class'> Missile </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Recovery'> 2 </field>  
@@ -15276,7 +15273,7 @@
         <field table='yes' name='Class'> Missile </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Recovery'> 2 </field>  
@@ -15297,7 +15294,7 @@
         <field table='yes' name='Class'> Bows </field>  
         <field table='yes' name='Type'> n&ndash;a </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
@@ -15315,7 +15312,7 @@
         <field table='yes' name='Class'> Bows </field>  
         <field table='yes' name='Type'> n&ndash;a </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 2D4+3 </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns>+3</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Recovery'> 2 </field>  
@@ -15350,7 +15347,7 @@
         <field table='yes' name='Class'> Bows </field>  
         <field table='yes' name='Type'> n&ndash;a </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 5D4+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 12 </field>  
         <field table='yes' name='Recovery'> 4 </field>  
@@ -15372,7 +15369,7 @@
         <field table='yes' name='Class'> Bows </field>  
         <field table='yes' name='Type'> n&ndash;a </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Recovery'> 3 </field>  
@@ -15403,7 +15400,7 @@
         <field table='yes' name='Class'> Bows </field>  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 9 </field>  
         <field table='yes' name='Recovery'> 2 </field>  
@@ -15433,7 +15430,7 @@
         <field table='yes' name='Class'> Bows </field>  
         <field table='yes' name='Type'> n&ndash;a </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D4+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 11 </field>  
         <field table='yes' name='Recovery'> 2 </field>  
@@ -15466,7 +15463,7 @@
         <field table='yes' name='Class'> Bows </field>  
         <field table='yes' name='Type'> n&ndash;a </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 3D6+1 </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 13 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
@@ -15518,7 +15515,7 @@
         <field table='yes' name='Class'> Missile </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D4+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Recovery'> 2 </field>  
@@ -15539,7 +15536,7 @@
         <field table='yes' name='Class'> Missile </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> 1D4+2 </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns>+2</bns><kind></kind></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
@@ -15822,7 +15819,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D4+2 P
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns>+2</bns><kind>P</kind></roll>
            </field>
         <field table='yes' name='Duration' qsummary='yes'>
           <notappl />
@@ -15850,7 +15847,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D4+4 S
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bns>+4</bns><kind>S</kind></roll>
            </field>
         <field table='yes' name='Duration' qsummary='yes'>
           <notappl />
@@ -16020,7 +16017,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50
            </field>
@@ -16063,7 +16060,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 1 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 1D6-1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>6</face><bns>-1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 5
@@ -16112,7 +16109,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2X-1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 3X*4D4+1 C
+          <field table='yes' name='Damage' qsummary='yes'> 3X*<roll><num>4</num><face>4</face><bns>+1</bns><kind>C</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100X
@@ -16155,7 +16152,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5x2D4+1 S
+          <field table='yes' name='Damage' qsummary='yes'> 5x<roll><num>2</num><face>4</face><bns>+1</bns><kind>S</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50*
@@ -16261,7 +16258,7 @@
            </field>
           <field table='yes' name='Damage' qsummary='yes'> 1D10 x 5 U
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+2 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50
            </field>
@@ -16308,7 +16305,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 9 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D6+3 x2 C
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>6</face><bns>+3</bns><kind></kind></roll>x2 C
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
@@ -16328,7 +16325,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 3 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D4+1 S
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bns>+1</bns><kind>S</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 60
@@ -16386,7 +16383,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 1 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 2D4+1 S
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind>S</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 20
@@ -16431,7 +16428,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
            </field>
@@ -16451,7 +16448,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D4+4 C
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bns>+4</bns><kind>C</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
@@ -16474,7 +16471,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50
            </field>
@@ -16515,7 +16512,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 60
            </field>
@@ -16533,7 +16530,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 60
            </field>
@@ -16597,7 +16594,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 400
            </field>
@@ -16709,7 +16706,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
            </field>
@@ -16747,7 +16744,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
            </field>
@@ -16767,7 +16764,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 95
            </field>
@@ -16807,7 +16804,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 30
            </field>
@@ -16825,7 +16822,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 40
            </field>
@@ -16865,7 +16862,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 145
            </field>
@@ -16941,7 +16938,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+2 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
            </field>
@@ -16980,7 +16977,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+2 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
            </field>
@@ -17140,7 +17137,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 200
            </field>
@@ -17202,7 +17199,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 30
            </field>
@@ -17283,7 +17280,7 @@
            </field>
         <field table='yes' name='Range' qsummary='yes'> touch </field>  
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
-          <field name='Description' description='yes'> Adds +1D6-1 to
+          <field name='Description' description='yes'> Adds +<roll><num>1</num><face>6</face><bns>-1</bns><kind></kind></roll>to
            target&apos;s attributes, divided how caster chooses but
            cannot make an attribute more than 20, and cannot be cast
            again on the same target until the effects wear off. </field>
@@ -17869,7 +17866,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 9 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D4+1 C
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bns>+1</bns><kind>C</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 200
@@ -17971,7 +17968,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 9 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D4+1 P
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bns>+1</bns><kind>P</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D6 turns
            </field>
@@ -18081,9 +18078,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D4+2 x3 C
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bns>+2</bns><kind></kind></roll>x3 C
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 200
            </field>
@@ -18125,7 +18122,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D6+6 C per
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bns>+6</bns><kind>C</kind></roll> per
            size level </field>
           <field table='yes' name='Duration' qsummary='yes'> permanent
            </field>
@@ -18291,7 +18288,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+2 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100+X
            </field>
@@ -18300,8 +18297,7 @@
           <field name='Description' description='yes'> Caster creates a
            snake-like living golem out of stone. It is controllable by
            the caster for the duration of the spell. It cannot dodge, but
-           it can attack and parry with it&apos;s claws. Damage is 3D4+1
-           S claws, 6D6+1 C bite and 4D10 C tail. It has 5 dice to attack
+           it can attack and parry with it&apos;s claws. Damage is <roll><num>3</num><face>4</face><bns>+1</bns><kind>S</kind></roll> claws, <roll><num>6</num><face>6</face><bns>+1</bns><kind>C</kind></roll> bite and 4D10 C tail. It has 5 dice to attack
            and 3 actions/turn. Armor is equal to caster&apos;s WIL in all
            categories and has X HP. </field>
         <field name='Implementation' />  
@@ -18420,7 +18416,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D6+1 C
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bns>+1</bns><kind>C</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D6 turns
            </field>
@@ -18432,7 +18428,7 @@
            approximately 8 feet tall, rises from the ground and attacks
            any opponents that come near it. The statue has 10/10/10 armor
            and 200 HP. It has a reach of 15 feet with it&apos;s stone
-           arms, and deals 4D6+1 C damage. It has an attack and parry
+           arms, and deals <roll><num>4</num><face>6</face><bns>+1</bns><kind>C</kind></roll> damage. It has an attack and parry
            skill of a 5, and has 4 actions per turn. </field>
         <field name='Implementation' />  
       </datum>  
@@ -18464,7 +18460,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D8+3 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>8</face><bns>+3</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 200
            </field>
@@ -18502,7 +18498,7 @@
            </field>
           <field table='yes' name='Damage' qsummary='yes'> Special
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 150
            </field>
@@ -18562,12 +18558,12 @@
            with 50 feet of the caster take 2D6 U damage from the heat per
            turn; everything within 20 feet of the caster takes 6D6 U
            damage per turn. Anything the caster touches (including what
-           he&apos;s standing on) takes 5D6+3 U damage. Any living object
+           he&apos;s standing on) takes <roll><num>5</num><face>6</face><bns>+3</bns><kind>U</kind></roll> damage. Any living object
            the caster touches must make a BLD check or be reduced to
            ashes. At the end of the spell&apos;s duration the
            caster&apos;s body is restored. If the caster dies before the
            duration expires, the caster detonates in a massive explosion
-           dealing 5D6+1 x 5 U damage to everything within 50 feet.
+           dealing <roll><num>5</num><face>6</face><bns>+1</bns><kind></kind></roll>x 5 U damage to everything within 50 feet.
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -18635,7 +18631,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 4 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 30
@@ -18694,7 +18690,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 70
            </field>
@@ -18724,7 +18720,7 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Creates a large
            wall of magical fire, 3 x 50 x 25 feet, oriented as the caster
-           wishes. Anything passing through the wall suffers 6D4+1 U
+           wishes. Anything passing through the wall suffers <roll><num>6</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            damage (with fire effect). Cannot be cast on a living target.
            </field>
         <field name='Implementation' />  
@@ -18819,7 +18815,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D6+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 150
@@ -18866,7 +18862,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 5
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D6+1 U * Size
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bns>+1</bns><kind>U</kind></roll> * Size
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 250
@@ -18892,7 +18888,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D6+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
@@ -18926,12 +18922,12 @@
           <field table='yes' name='Target' qsummary='yes'> Roll at +5
            </field>
           <field name='Description' description='yes'> Summons a small
-           flaming meteor that launches at one target dealing 6D6+1 U
-           fire damage, and 6D6+3 C damage. All objects within 20 yards
+           flaming meteor that launches at one target dealing <roll><num>6</num><face>6</face><bns>+1</bns><kind>U</kind></roll>
+           fire damage, and <roll><num>6</num><face>6</face><bns>+3</bns><kind>C</kind></roll> damage. All objects within 20 yards
            radius suffers half damage from the fire. Damage can only be
            prevented by rank 6 or higher magical barrier or supernatural
            immunity to fire. An area of 20 yards around the impact will
-           burn for the duration of the spell dealing 3D4+1 U fire damage
+           burn for the duration of the spell dealing <roll><num>3</num><face>4</face><bns>+1</bns><kind>U</kind></roll> fire damage
            to all objects. </field>
         <field name='Implementation' />  
       </datum>  
@@ -18942,7 +18938,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D6+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 125
@@ -18985,7 +18981,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 30
            </field>
@@ -19004,7 +19000,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
            </field>
@@ -19014,7 +19010,7 @@
           <field name='Description' description='yes'> Generates a
            circular wall, ten feet in radius, three feet thick, thirty
            feet high, of flames surrounding the caster. Anything passing
-           through the wall suffers 6D4+1 U damage. </field>
+           through the wall suffers <roll><num>6</num><face>4</face><bns>+1</bns><kind>U</kind></roll> damage. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Soak Fire'>  
@@ -19036,7 +19032,7 @@
           <field name='Description' description='yes'> Caster touches any
            kind of flame or fire that happens to be nearby while spell is
            active and coverts the heat into life energy. The caster GAINS
-           1D6 HP/turn for normal fire or 1D8+1 for intense/magical fire.
+           1D6 HP/turn for normal fire or <roll><num>1</num><face>8</face><bns>+1</bns><kind></kind></roll>for intense/magical fire.
            The caster can soak a fire-based attack/spell with a
            successful magical control check with a - equal to the rank of
            the attack/spell. Upon succeeding the caster gains HP equal to
@@ -19086,9 +19082,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
            </field>
@@ -19139,8 +19135,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
         <field table='yes' name='Damage' qsummary='yes' />  
-          <field table='yes' name='Duration' qsummary='yes'> 2d4+1
-           </field>
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll></field>
           <field table='yes' name='Magic Points' qsummary='yes'> 175
            </field>
         <field table='yes' name='Range' qsummary='yes'> sight </field>  
@@ -19268,7 +19263,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 12D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>12</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 4+2D4 turns
            </field>
@@ -19278,8 +19273,7 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Causes direct
            biological damage in one target, and poisons the target. The
-           disease causes the victim to loose 2 actions and suffer 4D4+1
-           U damage per turn until duration expires </field>
+           disease causes the victim to loose 2 actions and suffer <roll><num>4</num><face>4</face><bns>+1</bns><kind>U</kind></roll> damage per turn until duration expires </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Disinfect'>  
@@ -19318,7 +19312,7 @@
            target and attempts to end it&apos;s vital life processes.
            Caster must make a successful Magical Control check for the
            spell to work. If the target fails a BLD check, it drops to 0
-           HP instantly. Thereafter it looses size * 1D6+1 HP per turn
+           HP instantly. Thereafter it looses size * <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>HP per turn
            until dead. During this time, the target cannot regain
            conciousness by itself, but it can be healed by outside
            forces. </field>
@@ -19342,7 +19336,7 @@
           <field name='Description' description='yes'> Enchants one
            creature with a death curse. Once the spell is cast the curse
            takes effect, indicating to the target how much time it has
-           left to live. After 1D6+1 turns the creature must roll a BLD
+           left to live. After <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns the creature must roll a BLD
            check at -5. Failure means instant death and there is a 50%
            chance the corpse is destroyed. Success means the creature
            drops to 1 HP instead. This spell cannot be disenchanted.
@@ -19357,7 +19351,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 2 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 2D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 40
@@ -19378,14 +19372,13 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 3+2D6+1
-           turns </field>
+          <field table='yes' name='Duration' qsummary='yes'> 3+<roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll>turns </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
            </field>
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> One target
-           regenerates 3D4+2 HP per turn for (3+ 2D6+1) turns </field>
+           regenerates <roll><num>3</num><face>4</face><bns>+2</bns><kind></kind></roll>HP per turn for (3+ <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll>) turns </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Heal Battle Wounds'>  
@@ -19395,8 +19388,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6d8+4
-           (healing) </field>
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>8</face><bns>+4</bns><kind></kind></roll>(healing) </field>
         <field table='yes' name='Duration' qsummary='yes' />  
           <field table='yes' name='Magic Points' qsummary='yes'> 50
            </field>
@@ -19412,8 +19404,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 4 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D8+3
-           (healing) </field>
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>8</face><bns>+3</bns><kind></kind></roll>(healing) </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50
            </field>
@@ -19430,8 +19421,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4d8+4
-           (healing) </field>
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>8</face><bns>+4</bns><kind></kind></roll>(healing) </field>
         <field table='yes' name='Duration' qsummary='yes' />  
           <field table='yes' name='Magic Points' qsummary='yes'> 50
            </field>
@@ -19447,8 +19437,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 3 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 3D6+1
-           (healing) </field>
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll>(healing) </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 70
            </field>
@@ -19541,7 +19530,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
           <field table='yes' name='Damage' qsummary='yes'> 2D4 U </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 40
            </field>
@@ -19637,7 +19626,7 @@
            accelerates the natural healing processes of one target,
            boosting the target&apos;s vitality and closing wounds at a
            fast rate. While this spell is in effect, the target gains
-           1D4+1 HP per turn. Furthermore, this spell allows severed
+           <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>HP per turn. Furthermore, this spell allows severed
            limbs to reattach if the limb is held against the stump. Any
            excessive bleeding (such as HP loss from dropping below 0 or
            from severe wounds) will instantly stop. </field>
@@ -19875,7 +19864,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 10D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>10</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D4 turns
            </field>
@@ -19897,9 +19886,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 4 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
            </field>
@@ -20128,7 +20117,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 2D8+5 min
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>2</num><face>8</face><bns>+5</bns><kind></kind></roll>min
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50
            </field>
@@ -20273,7 +20262,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 10D6+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>10</num><face>6</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 400
@@ -20433,7 +20422,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D4+1 P
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bns>+1</bns><kind>P</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50
@@ -20493,7 +20482,7 @@
            </field>
           <field table='yes' name='Damage' qsummary='yes'> special
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+1 rounds
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>rounds
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
            </field>
@@ -20505,7 +20494,7 @@
            (100 foot radius) area of dark, hazy, fog. This spell mimics
            the effects of Create Darkness, except that it does not move
            with the caster. Any creature other than the caster suffers
-           1D6+1 U every turn it remains in the dark area. </field>
+           <roll><num>1</num><face>6</face><bns>+1</bns><kind>U</kind></roll> every turn it remains in the dark area. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='See Invisible'>  
@@ -20736,7 +20725,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 10+4D6+3 U
+          <field table='yes' name='Damage' qsummary='yes'> 10+<roll><num>4</num><face>6</face><bns>+3</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
@@ -20779,7 +20768,7 @@
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 30
            </field>
@@ -20901,7 +20890,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 4 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 2D6+2 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>6</face><bns>+2</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 30
@@ -20920,7 +20909,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D6+3 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bns>+3</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50
@@ -20940,7 +20929,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D6+4 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bns>+4</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100
@@ -21430,15 +21419,15 @@
         <field table='yes' name='Rank' qsummary='yes'> 2 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 2D10+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>10</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 15
            </field>
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> roll </field>  
-          <field name='Description' description='yes'> Deals 2D10+1 U.
-           Caster looses 1D8-1 HP. </field>
+          <field name='Description' description='yes'> Deals <roll><num>2</num><face>10</face><bns>+1</bns><kind>U</kind></roll>.
+           Caster looses <roll><num>1</num><face>8</face><bns>-1</bns><kind></kind></roll>HP. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Black Wrath'>  
@@ -21460,7 +21449,7 @@
           <field name='Description' description='yes'> All beings within
            range loose 1 action next turn, suffer listed damage, and have
            50% chance to become poisoned. Does not affect the caster or
-           undead, ghosts/spirits, or demons. Poison deals 1D4+1 U damage
+           undead, ghosts/spirits, or demons. Poison deals <roll><num>1</num><face>4</face><bns>+1</bns><kind>U</kind></roll> damage
            per turn for the spell&apos;s duration </field>
         <field name='Implementation' />  
       </datum>  
@@ -21471,9 +21460,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4 x 2D4+3 U
+          <field table='yes' name='Damage' qsummary='yes'> 4 x <roll><num>2</num><face>4</face><bns>+3</bns><kind>U</kind></roll>
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 350
            </field>
@@ -21516,7 +21505,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 8 x 2D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> 8 x <roll><num>2</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D4 turns
            </field>
@@ -21560,7 +21549,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 8D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>8</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D4 turns
            </field>
@@ -21608,7 +21597,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5X 2D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> 5X <roll><num>2</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D4 turns
            </field>
@@ -21620,7 +21609,7 @@
            caster </field>
           <field name='Description' description='yes'> All beings within
            range loose 1 action for each of the next 4 turns, suffer
-           damage, become poisoned (1D8+1 U per turn), and have 50%
+           damage, become poisoned (<roll><num>1</num><face>8</face><bns>+1</bns><kind>U</kind></roll> per turn), and have 50%
            chance to become paralyzed for the duration of the spell. Does
            not affect the caster, demons, undead, ghosts, or spirits.
            </field>
@@ -21633,7 +21622,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 9 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4x 3D4+3 U
+          <field table='yes' name='Damage' qsummary='yes'> 4x <roll><num>3</num><face>4</face><bns>+3</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 500
@@ -21766,9 +21755,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D4+3 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns>+3</bns><kind>U</kind></roll>
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 120
            </field>
@@ -21778,7 +21767,7 @@
            Caster </field>
           <field name='Description' description='yes'> All beings within
            range loose 1 action per turn, have 70% to suffer Mute effect,
-           are blinded for 1D4+1 turns, and suffer listed damage. Only
+           are blinded for <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns, and suffer listed damage. Only
            affects undead, ghosts/spirits, demons, etc. </field>
         <field name='Implementation' />  
       </datum>  
@@ -21813,9 +21802,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D4+3 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bns>+3</bns><kind>U</kind></roll>
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 70
            </field>
@@ -21917,7 +21906,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 1D10-1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bns>-1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D4 turns
            </field>
@@ -21931,7 +21920,7 @@
            swirl out from the caster within a 100 foot radius. The
            spirits seek out living targets the caster wishes, and attempt
            to steal a small part of their soul. Anyone that has a spirit
-           hit them takes 1D10-1 U damage. Any targets within the range
+           hit them takes <roll><num>1</num><face>10</face><bns>-1</bns><kind>U</kind></roll> damage. Any targets within the range
            have a 50% chance per turn to be struck by a spirit. </field>
         <field name='Implementation' />  
       </datum>  
@@ -21986,9 +21975,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6x 2D4+3 U
+          <field table='yes' name='Damage' qsummary='yes'> 6x <roll><num>2</num><face>4</face><bns>+3</bns><kind>U</kind></roll>
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D4+1 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 250
            </field>
@@ -21998,7 +21987,7 @@
            Caster </field>
           <field name='Description' description='yes'> All beings within
            range loose 1 action per turn, suffer Mute effect, are blinded
-           for 1D4+1 turns, and suffer damage. Only affects undead,
+           for <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>turns, and suffer damage. Only affects undead,
            ghosts/spirits, demons, etc. Valid targets with less than 60
            maximum HP within range of the spell are instantly vaporized.
            </field>
@@ -22045,7 +22034,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 9 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 3*X* 4D4+1 U
+          <field table='yes' name='Damage' qsummary='yes'> 3*X* <roll><num>4</num><face>4</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100X
@@ -22066,7 +22055,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D4+1 S
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bns>+1</bns><kind>S</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 2D4 turns
            </field>
@@ -22135,7 +22124,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 2x 5D6+1 U
+          <field table='yes' name='Damage' qsummary='yes'> 2x <roll><num>5</num><face>6</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75X
@@ -22233,8 +22222,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D4+1 P 6D6+1
-           U </field>
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns>+1</bns><kind>P</kind></roll> <roll><num>6</num><face>6</face><bns>+1</bns><kind>U</kind></roll> </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 200
            </field>
@@ -22252,7 +22240,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 4 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D6 U 2D4+1 C
+          <field table='yes' name='Damage' qsummary='yes'> 6D6 U <roll><num>2</num><face>4</face><bns>+1</bns><kind>C</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
@@ -22270,7 +22258,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D4+1 C
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bns>+1</bns><kind>C</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> X/3 turns
            </field>
@@ -22294,9 +22282,9 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D4+1 C
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns>+1</bns><kind>C</kind></roll>
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> 1D6+2 turns
+          <field table='yes' name='Duration' qsummary='yes'> <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll>turns
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 150
            </field>
@@ -22317,7 +22305,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 2 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 2D6+1 S
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>6</face><bns>+1</bns><kind>S</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 30
@@ -22535,7 +22523,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 4D6+1 U
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bns>+1</bns><kind>U</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 110
@@ -22612,7 +22600,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 4 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 3D6+1 S 20 AP
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>6</face><bns>+1</bns><kind>S</kind></roll> 20 AP
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 75
@@ -22656,7 +22644,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 5D4+1 S
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bns>+1</bns><kind>S</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 100 +
@@ -22699,7 +22687,7 @@
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> 6D4+1 S
+          <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns>+1</bns><kind>S</kind></roll>
            </field>
           <field table='yes' name='Duration' qsummary='yes'> 1D6 turns
            </field>
@@ -22711,7 +22699,7 @@
            in large block of magical ice for the duration of the spell.
            If the spell is forced to expire by the caster, then it does
            not shatter. For each turn the target is trapped within the
-           Ice Prison, they take 1D6-1 D damage due to the extreme cold.
+           Ice Prison, they take <roll><num>1</num><face>6</face><bns>-1</bns><kind></kind></roll>D damage due to the extreme cold.
            At the end of the duration the block shatters, causing the
            listed damage. While within the block of ice, the target is
            immune to physical attacks. The block of ice has 200 hit
@@ -24079,7 +24067,7 @@
            size-2 targets) Dodge: 5-8 (or 3-8 when grappling) Natural
            Armor: 5/5/5 Base Armor: 10 </field>
           <field name='Attacks'> Slap with limb: limb stetches into
-           tentacle-like whip. Deals 3D6+1 [+15] C and scores an
+           tentacle-like whip. Deals <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll>[+15] C and scores an
            automatic grapple Energy drain: Requires a grapple first.
            Deals 3D4 [+5] U with automatic success. </field>
           <field name='Description' description='yes'> Appearance: A
@@ -24136,9 +24124,9 @@
           <field name='Statistics'> STR: 13 DEX: 14 BLD: 13 INT: 3 WIS: 5
            WIL: 10 CHA: 2 HP: 60 Actions:: 3 P/S/C: 15/14/11 Size:
            6&apos;, 10&apos; from snout to tail Dice: Strike: 4 </field>
-          <field name='Attacks'> Bite: 2D6+1 ; Claws: 1D6+2; Spines:
+          <field name='Attacks'> Bite: <roll><num>2</num><face>6</face><bns>+1</bns><kind></kind></roll>; Claws: <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll>; Spines:
            anyone touching the spines will take 1D4 P and be poisoned for
-           1D6 turns, taking 2D4+1 U damage a turn. </field>
+           1D6 turns, taking <roll><num>2</num><face>4</face><bns>+1</bns><kind>U</kind></roll> damage a turn. </field>
           <field name='Description' description='yes'> A basilisk is a
            large lizard-like creature that is about ten feet long when
            fully grown. It has a stout, thick body and a short, heavy
@@ -24194,7 +24182,7 @@
            &amp; 1D6 U from poison for 1D12 turns Female: 1D4 S &amp; 1D6
            U from poison for 2D6 turns Knee Attack (male only) May attack
            with both knees simulaneously in one action with no penalty
-           1D6+1 [+3] P each Spit Poison (female only) up to 5 times per
+           <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>[+3] P each Spit Poison (female only) up to 5 times per
            day, range of 15 feet. 2D6 U for 1D4 turns </field>
           <field name='Description' description='yes'> Apperance: The
            Cave Droll is a small reptile with a bulbous, bean-shaped
@@ -24304,14 +24292,14 @@
         <field name='Name' title='yes'> Chimera </field>  
         <field name='MetaTag' />  
           <field name='Special Abilities'> The dragon&apos;s head can
-           breath fire once per turn instead of biting dealing 4D6+2 U
+           breath fire once per turn instead of biting dealing <roll><num>4</num><face>6</face><bns>+2</bns><kind>U</kind></roll>
            damage. Can fly at 30 mph and run at 20 mph </field>
           <field name='Statistics'> STR: 18 DEX: 14 BLD: 20 INT: 10 WIS:
            12 WIL: 15 CHA: 6 HP: 130 Actions:: * P/S/C: 20/20/20 Size:
            10&apos; long with an 8&apos; tail Dice: Strike: 5 </field>
           <field name='Attacks'> Can make a total of 3 bites, 1 claw
-           attack, and 1 tail attack per turn. Bite: 2D6+2; claw: 3D4+1;
-           tail: 2D4+2 </field>
+           attack, and 1 tail attack per turn. Bite: <roll><num>2</num><face>6</face><bns>+2</bns><kind></kind></roll>; claw: <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>;
+           tail: <roll><num>2</num><face>4</face><bns>+2</bns><kind></kind></roll></field>
           <field name='Description' description='yes'> A chimera is a
            powerful monster that appears as a mix between several
            different animals. The front half of it&apos;s body is that of
@@ -24334,7 +24322,7 @@
           <field name='Statistics'> STR: 4 DEX: 14 BLD: 6 INT: 3 WIS: 5
            WIL: 10 CHA: 2 HP: 25 Actions:: 3 P/S/C: 2/3/2 Size: Turkey
            sized Dice: Strike: 2 </field>
-        <field name='Attacks'> Bite: 1D4-1; claws: 1D4 </field>  
+        <field name='Attacks'> Bite: <roll><num>1</num><face>4</face><bns>-1</bns><kind></kind></roll>; claws: 1D4 </field>  
           <field name='Description' description='yes'> A cockatrice is a
            grotesque bird-like creature that is about the size of a
            turkey. It is covered with tough, warty skin and it also has
@@ -24357,8 +24345,7 @@
            immune to fire) 32 HP Size: 1 Actions: 4 Attack/Parry: 4-13
            (+2 vs. medium targets such as humans) Dodge: 3-16 Natural
            Armor: 3/4/2 Base Armor: 2 </field>
-          <field name='Attacks'> "poke": Tiny Pitchfork of Heat: 1D6+1
-           [+1] P and 1D4 U from heat (but does not have fire effect)
+          <field name='Attacks'> "poke": Tiny Pitchfork of Heat: <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>[+1] P and 1D4 U from heat (but does not have fire effect)
            "fire": Fire Fountain: Requires 3 actions to cast. This ritual
            requires at least 2 Deviruchi to participate in, which they do
            by simultaneously plunging their pitchforks into the ground.
@@ -24414,9 +24401,9 @@
            Size: 2 (25&apos; long, but diminished size due to narrow
            body) Actions: 3 plus 1 move Attack: 7-6 (bite or stinger)
            Dodge: 5-6 Natural Armor: 10/15/30 Base Armor: 15 </field>
-          <field name='Attacks'> Bite 4D10 [+10] P Stinger 4D6+1 P, 20 AP
-           and poision for 2D6 turns: 3D6 U &amp; 1D4+1 BLD Constrict
-           (must bite first), 4x4D6+1 C Spell-like abilities: Darkness
+          <field name='Attacks'> Bite 4D10 [+10] P Stinger <roll><num>4</num><face>6</face><bns>+1</bns><kind>P</kind></roll>, 20 AP
+           and poision for 2D6 turns: 3D6 U &amp; <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>BLD Constrict
+           (must bite first), 4x<roll><num>4</num><face>6</face><bns>+1</bns><kind>C</kind></roll> Spell-like abilities: Darkness
            1/turn Carpet of Adhesion or slipperyness at will Spider Climb
            2/day Rock to Mud 2/day Create Portal 2/day Advanced Slow
            2/day Negate 1/day Geo Transport 1/day </field>
@@ -24516,13 +24503,13 @@
         <field name='MetaTag' />  
           <field name='Special Abilities'> Can fly 70 mph. Has a breath
            weapon (acid, poison, ice, lightning, or fire) that deals
-           8D4+2 U damage. 1 "free" breath weapon attack can be made per
+           <roll><num>8</num><face>4</face><bns>+2</bns><kind>U</kind></roll> damage. 1 "free" breath weapon attack can be made per
            turn. </field>
           <field name='Statistics'> STR: 30 DEX: 22 BLD: 33 INT: 18 WIS:
            20 WIL: 20 CHA: 16 HP: 1000 Actions:: 5 P/S/C: 40/40/40 Size:
            50&apos; from head to base of tail with a 30&apos; tail Dice:
            Strike: 7; Dodge: 4; Block (with claws): 8 </field>
-          <field name='Attacks'> Bite: 7D6+3 P; Claws: 9D4+3; Tail: 9D4
+          <field name='Attacks'> Bite: <roll><num>7</num><face>6</face><bns>+3</bns><kind>P</kind></roll>; Claws: <roll><num>9</num><face>4</face><bns>+3</bns><kind></kind></roll>; Tail: 9D4
            C; Bat with wings: 6D4 C and blows target back 20 feet.
            </field>
           <field name='Description' description='yes'> A large lizard
@@ -24536,13 +24523,13 @@
         <field name='MetaTag' />  
           <field name='Special Abilities'> Can fly 60 mph. Has a breath
            weapon (acid, poison, ice, lightning, or fire) that deals
-           12D4+2 U damage. 1 "free" breath weapon attack can be made per
+           <roll><num>12</num><face>4</face><bns>+2</bns><kind>U</kind></roll> damage. 1 "free" breath weapon attack can be made per
            turn. </field>
           <field name='Statistics'> STR: 28 DEX: 16 BLD: 30 INT: 24 WIS:
            26 WIL: 22 CHA: 18 HP: 800 Actions:: 4 P/S/C: 30/30/30 Size:
            60&apos; from head to base of tail with a 40&apos; tail Dice:
            Strike: 5; Dodge: 4; Block (with claws): 5 </field>
-          <field name='Attacks'> Bite: 4D6+3 P; Claws: 6D4+3; Tail: 11D4
+          <field name='Attacks'> Bite: <roll><num>4</num><face>6</face><bns>+3</bns><kind>P</kind></roll>; Claws: <roll><num>6</num><face>4</face><bns>+3</bns><kind></kind></roll>; Tail: 11D4
            C; Bat with wings: 6D4 C and blows target back 20 feet.
            </field>
           <field name='Description' description='yes'> A large lizard
@@ -24557,13 +24544,13 @@
         <field name='MetaTag' />  
           <field name='Special Abilities'> Can fly 40 mph. Has a breath
            weapon (acid, poison, ice, lightning, or fire) that deals
-           4D4+2 U damage. 1 "free" breath weapon attack can be made per
+           <roll><num>4</num><face>4</face><bns>+2</bns><kind>U</kind></roll> damage. 1 "free" breath weapon attack can be made per
            turn.\ </field>
           <field name='Statistics'> STR: 24 DEX: 18 BLD: 23 INT: 14 WIS:
            16 WIL: 20 CHA: 14 HP: 300 Actions:: 4 P/S/C: 20/20/20 Size:
            20&apos; from head to base of tail with a 10&apos; tail Dice:
            Strike: 5; Dodge: 4; Block (with claws): 5 </field>
-          <field name='Attacks'> Bite: 3D6+3 P; Claws: 4D4+3; Tail: 3D4
+          <field name='Attacks'> Bite: <roll><num>3</num><face>6</face><bns>+3</bns><kind>P</kind></roll>; Claws: <roll><num>4</num><face>4</face><bns>+3</bns><kind></kind></roll>; Tail: 3D4
            C; Bat with wings: 2D4 C and blows target back 20 feet.
            </field>
           <field name='Description' description='yes'> A large lizard
@@ -24599,7 +24586,7 @@
            12 WIL: 15 CHA: 12 HP: 60 Actions:: 3 P/S/C: 16/16/16 Size:
            Human sized with 4&apos; tail Dice: Strike: 4; Dodge: 3;
            Block: 4; Parry: 4 </field>
-          <field name='Attacks'> Bite: 2D4 P; Claws: 2D4+1; Tail: 1D6+2;
+          <field name='Attacks'> Bite: 2D4 P; Claws: <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>; Tail: <roll><num>1</num><face>6</face><bns>+2</bns><kind></kind></roll>;
            will usually use a one-handed weapon and prefers this method
            of attack. </field>
           <field name='Description' description='yes'> Dragonlings
@@ -24685,10 +24672,10 @@
            10/5 with melee weapons Dodge: 6-5 Armor: 15/18/3 Infernal
            Chain, 20/20/20 natural, TOTAL: 35/38/23 Base Armor: 20
            </field>
-          <field name='Attacks'> Chain Whip: 4D4+1 [+10] S range of 15
+          <field name='Attacks'> Chain Whip: <roll><num>4</num><face>4</face><bns>+1</bns><kind></kind></roll>[+10] S range of 15
            feet, target has -5 to defend Fist: 4D4 [+20] C, and Disrupt
-           Life on contact Wounding War Hammer +2: 4D6+3 [+20] C and
-           wound deals 1D6+6 per turn. Wounds stack. Evil totem: 1D10x2
+           Life on contact Wounding War Hammer +2: <roll><num>4</num><face>6</face><bns>+3</bns><kind></kind></roll>[+20] C and
+           wound deals <roll><num>1</num><face>6</face><bns>+6</bns><kind></kind></roll>per turn. Wounds stack. Evil totem: 1D10x2
            near, 1D10x20 touching </field>
           <field name='Description' description='yes'> The Embalmed
            Master was the greatest work of the necromancers Erasmus
@@ -24751,15 +24738,14 @@
            </field>
           <field name='Attacks'> Bite: 5+1D4 S (bite is not poisonous)
            Sting: 5+2D4 P 10 AP primary damage, plus poison Poison deals
-           4D6+1 U instantly, plus 2D6 U and 1D4 BLD for next 1D6+1
-           turns. The sting is intensley painful and the target is
+           <roll><num>4</num><face>6</face><bns>+1</bns><kind>U</kind></roll> instantly, plus 2D6 U and 1D4 BLD for next <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>turns. The sting is intensley painful and the target is
            reduced to 1 action per turn unless he can make a WIL check
            (-3) each turn the poison is in effect. Anything requiring
            concentration (such as casting a magic spell or using many
            academic skills) requires a skill roll at a penalty of -3 due
            to the pain. Chirping: Sonic effect in a 90-degree cone.
            Targets within 10 feet are deafened for 1D4 minutes and loose
-           1D4-1 actions next turn. Targets out to 20&apos; loose their
+           <roll><num>1</num><face>4</face><bns>-1</bns><kind></kind></roll>actions next turn. Targets out to 20&apos; loose their
            next action only. </field>
           <field name='Description' description='yes'> Apperance: This
            insect resembles an oversized leaf grasshopper, approximatley
@@ -24868,8 +24854,7 @@
            target Size 2 or smaller Bite: 1D4 S Spray ahesive: As the
            spell Carpet of Adhesion (twice per day); may be sprayed
            outward or secreted on the floor directly. Posion Dart: (once
-           per day) Range of 30 feet Deals 3D6+1 P Poison deals 1D4-1
-           STR, 1D4+1 U, and -1 action for 2D6 rounds </field>
+           per day) Range of 30 feet Deals <roll><num>3</num><face>6</face><bns>+1</bns><kind>P</kind></roll> Poison deals <roll><num>1</num><face>4</face><bns>-1</bns><kind>S</kind></roll>TR, <roll><num>1</num><face>4</face><bns>+1</bns><kind>U</kind></roll>, and -1 action for 2D6 rounds </field>
           <field name='Description' description='yes'> Apperance: This
            strange creature appears to be a pile of rubbish at first
            glance. It is actually a type of pretatory snail. The
@@ -24963,7 +24948,7 @@
           <field name='Statistics'> STR: 16 DEX: 13 BLD: 18 INT: 5 WIS: 8
            WIL: 10 CHA: 10 HP: 50 Actions:: 3 P/S/C: 4/4/4 Size: Lion
            sized Dice: Strike: 4; Dodge: 4 </field>
-        <field name='Attacks'> Beak: 3D4+1 P; Claws: 4D6+1 S </field>  
+        <field name='Attacks'> Beak: <roll><num>3</num><face>4</face><bns>+1</bns><kind>P</kind></roll>; Claws: <roll><num>4</num><face>6</face><bns>+1</bns><kind>S</kind></roll> </field>  
           <field name='Description' description='yes'> Griffons have the
            body and hindquarters of a lion and the head and neck of an
            eagle. They have feathered wings and are agile fliers. They
@@ -25001,9 +24986,8 @@
            12 WIL: 10 CHA: 4 HP: 34 Actions:: 3 P/S/C: None Size: 6&apos;
            tall with a 30&apos; wingspan Dice: Strike: 4; Dodge: 4
            </field>
-          <field name='Attacks'> Claws: 2D6+2 and will poison when damage
-           is done. The poison will do 2D6 U damage a turn for 1D4+2
-           turns. </field>
+          <field name='Attacks'> Claws: <roll><num>2</num><face>6</face><bns>+2</bns><kind></kind></roll>and will poison when damage
+           is done. The poison will do 2D6 U damage a turn for <roll><num>1</num><face>4</face><bns>+2</bns><kind></kind></roll>turns. </field>
           <field name='Description' description='yes'> Harpies are
            hideous nude humanoids that live in a bee-like society. The
            majority are female. Harpies have a horrible stench that
@@ -25023,7 +25007,7 @@
           <field name='Statistics'> STR: 14 DEX: 14 BLD: 18 INT: 14 WIS:
            13 WIL: 16 CHA: 10 HP: 40 Actions:: 4 P/S/C: 5/5/5 Size: Lion
            sized Dice: Strike: 5; Dodge: 5 </field>
-        <field name='Attacks'> Claws: 2D4+2 U; Bite: 1D6+2 U </field>  
+        <field name='Attacks'> Claws: <roll><num>2</num><face>4</face><bns>+2</bns><kind>U</kind></roll>; Bite: <roll><num>1</num><face>6</face><bns>+2</bns><kind>U</kind></roll> </field>  
           <field name='Description' description='yes'> A lion-like
            creature, the Hellcat&apos;s body is covered with a mane of
            blazing fire. They are voracious predators and will eat
@@ -25070,7 +25054,7 @@
            12 WIL: 10 CHA: 6 HP: 500 Actions:: 3 P/S/C: 16/16/16; Base
            armor of 15 Size: 50&apos; from head to base of tail with a
            30&apos; tail Dice: Strike: 5; Dodge: 4 </field>
-          <field name='Attacks'> Bite: 5D6+2 P; Claws: 6D4+1 S; Tail: 7D4
+          <field name='Attacks'> Bite: <roll><num>5</num><face>6</face><bns>+2</bns><kind>P</kind></roll>; Claws: <roll><num>6</num><face>4</face><bns>+1</bns><kind>S</kind></roll>; Tail: 7D4
            C </field>
           <field name='Description' description='yes'> ydras are massive
            beasts that enjoy destruction, plundering, and the hoarding of
@@ -25088,13 +25072,13 @@
         <field name='MetaTag' />  
           <field name='Special Abilities'> Immune to fire of any kind.
            Normal fire will HEAL an Ifrit instead of damaging it. Merely
-           touching an Ifrit deals 4D4+1 U fire damage. </field>
+           touching an Ifrit deals <roll><num>4</num><face>4</face><bns>+1</bns><kind>U</kind></roll> fire damage. </field>
           <field name='Statistics'> STR: 35 DEX: 13 BLD: 25 INT: 8 WIS:
            12 WIL: 16 CHA: 8 HP: 200 Actions:: 3 P/S/C: 4/8/10 Size:
            14&apos; tall; 10&apos; tall when hunched over Dice: Strike: 4
            Dodge: 2 </field>
           <field name='Attacks'> Punch, kick. Bite deals 3D6 C. Flaming
-           dash attack takes whole turn, deals 4x4D4+1 U fire </field>
+           dash attack takes whole turn, deals 4x<roll><num>4</num><face>4</face><bns>+1</bns><kind>U</kind></roll> fire </field>
           <field name='Description' description='yes'> A rare, solitary,
            beast that looks something like a gorilla. It is covered in
            gold-colored shaggy hair which burns with fierce flames. Walks
@@ -25131,7 +25115,7 @@
           <field name='Statistics'> STR: 10 DEX: 12 BLD: 7 INT: 12 WIS: 9
            WIL: 9 CHA: 6 HP: 30 Actions:: 3 P/S/C: 6/6/6 Size: 2&apos;
            high Dice: Strike 3, block: 3 </field>
-        <field name='Attacks'> Claws 2D4+1 S; Bite 1D6+3 P </field>  
+        <field name='Attacks'> Claws <roll><num>2</num><face>4</face><bns>+1</bns><kind>S</kind></roll>; Bite <roll><num>1</num><face>6</face><bns>+3</bns><kind>P</kind></roll> </field>  
           <field name='Description' description='yes'> Black imps are
            stronger versions of their red brethren. They use hit-and-run
            tactics, as well as simple ambushes, traps, etc. Occur in
@@ -25149,7 +25133,7 @@
           <field name='Statistics'> STR: 12 DEX: 14 BLD: 8 INT: 13 WIS:
            10 WIL: 10 CHA: 7 HP: 50 Actions:: 4 P/S/C: 9/9/9 Size:
            2&apos; high Dice: Strike: 4 Dodge: 3 </field>
-        <field name='Attacks'> Claws 2D4+1 S; Bite 1D6+3 P </field>  
+        <field name='Attacks'> Claws <roll><num>2</num><face>4</face><bns>+1</bns><kind>S</kind></roll>; Bite <roll><num>1</num><face>6</face><bns>+3</bns><kind>P</kind></roll> </field>  
           <field name='Description' description='yes'> Darklings are the
            most powerful type of imp. They oversee the weaker imps, and
            direct their evil deeds. Ususally solitary, in groups of 1D4,
@@ -25164,7 +25148,7 @@
           <field name='Statistics'> STR: 9 DEX: 10 BLD: 6 INT: 10 WIS: 9
            WIL: 8 CHA: 6 HP: 20 Actions:: 3 P/S/C: 3/3/3 Size: 2&apos;
            high Dice: Strike: 3 </field>
-        <field name='Attacks'> Claws 2D4 S; Bite 1D6+2 P </field>  
+        <field name='Attacks'> Claws 2D4 S; Bite <roll><num>1</num><face>6</face><bns>+2</bns><kind>P</kind></roll> </field>  
           <field name='Description' description='yes'> Imps are among the
            weakest demons. Small, fast moving, reletless and fearless.
            They delight in causing suffering. Ususally occur in groups of
@@ -25190,8 +25174,8 @@
            13 WIL: 13 CHA: 12 HP: 250 Actions:: 5 P/S/C: 12/14/13 Size:
            8&apos; tall humanoid Dice: Strike: 5; Block: 5; Dodge: 3
            </field>
-          <field name='Attacks'> Morning star 3D6+2 C; Kick 2D6+4 C;
-           Breathe Fire 2D4+1 U </field>
+          <field name='Attacks'> Morning star <roll><num>3</num><face>6</face><bns>+2</bns><kind>C</kind></roll>; Kick <roll><num>2</num><face>6</face><bns>+4</bns><kind>C</kind></roll>;
+           Breathe Fire <roll><num>2</num><face>4</face><bns>+1</bns><kind>U</kind></roll> </field>
           <field name='Description' description='yes'> A minor
            demon&ndash;red-skinned, muscular humanoid. Knows magic:
            Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3;
@@ -25248,15 +25232,15 @@
            non-magical weapons) A Kuan Ya that sees it&apos;s reflection
            in a mirror looses half it&apos;s HP. (only works once per
            day) Striking a Kuan-Ya with a mirror deals damage directly to
-           HP equal to twice its normal fire damge (6D6+1) </field>
+           HP equal to twice its normal fire damge (<roll><num>6</num><face>6</face><bns>+1</bns><kind></kind></roll>) </field>
           <field name='Statistics'> Immune to fire and poison. Take 1/4
            damage from other elemental sources, except water which deals
            1/2 damage instead. 200 HP Size: 2 (15&apos; long, but
            diminished size due to narrow body) Actions: 3 plus 3 moves
            Attack: 6-6 (bite) Dodge: none Natural Armor: 0/0/0 Base
            Armor: 5 </field>
-          <field name='Attacks'> Bite 4D4 [+10] S and 3D6+1 U Fire Tail
-           Whip 4D4+3 C and 3D6+1 U Fire Charge-bite deals double the
+          <field name='Attacks'> Bite 4D4 [+10] S and <roll><num>3</num><face>6</face><bns>+1</bns><kind>U</kind></roll> Fire Tail
+           Whip <roll><num>4</num><face>4</face><bns>+3</bns><kind>C</kind></roll> and <roll><num>3</num><face>6</face><bns>+1</bns><kind>U</kind></roll> Fire Charge-bite deals double the
            normal S damage; fire damage is unchanged. </field>
           <field name='Description' description='yes'> Apperance: The
            Kuan-Ya is an agressive beast whose body is made entirely of
@@ -25289,7 +25273,7 @@
           <field name='Statistics'> STR: 10 DEX: 10 BLD: 4 INT: 6 WIS: 6
            WIL: 10 CHA: 4 HP: 10 Actions:: 3 P/S/C: 1/3/0 Size: 8-10"
            long Dice: Strike: 3 </field>
-        <field name='Attacks'> Claws 1D4-1; Bite 4D4+1 C </field>  
+        <field name='Attacks'> Claws <roll><num>1</num><face>4</face><bns>-1</bns><kind></kind></roll>; Bite <roll><num>4</num><face>4</face><bns>+1</bns><kind>C</kind></roll> </field>  
           <field name='Description' description='yes'> A rat-sized pink
            creature with soft, wrinkly skin and four small limbs each of
            which end in a 3-clawed hand. It has a massive head and
@@ -25302,9 +25286,9 @@
         <field name='MetaTag' />  
           <field name='Special Abilities'> (standard) Regenerate 10
            HP/turn Babble: Affects all within 15&apos; radius who can
-           hear it. Deals 1D6+1 U and 1D4 WIL (huge) Regenerate 20
+           hear it. Deals <roll><num>1</num><face>6</face><bns>+1</bns><kind>U</kind></roll> and 1D4 WIL (huge) Regenerate 20
            HP/turn Babble: Affects all within 20&apos; radius who can
-           hear it. Deals 2D6+1 U, 1D4+1 WIL, and -1 action next turn.
+           hear it. Deals <roll><num>2</num><face>6</face><bns>+1</bns><kind>U</kind></roll>, <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>WIL, and -1 action next turn.
            Immune to weapons of +3 quality or lesser. </field>
           <field name='Statistics'> (standard) Vulerable to electricity
            (1.5x damage) 150 HP Size: 2 Actions: 3 plus 2 moves
@@ -25314,9 +25298,9 @@
            moves Attack/Parry: 7-8 with pseudopod, 6-8 with blade cyclone
            Natural Armor: 80/60/45 Base Armor: 1 </field>
           <field name='Attacks'> (standard) Spike Pseudopod: 4D4 [+5] P,
-           30 AP Blade Cyclone 3D6+1 [+15] S, affects all surrounding
+           30 AP Blade Cyclone <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll>[+15] S, affects all surrounding
            squares. (huge) Spike Pseudopod: 4D4 [+15] P, 30 AP, or half
-           damage at a 10&apos; range. Blade Cyclone 3D6+1 [+25] S,
+           damage at a 10&apos; range. Blade Cyclone <roll><num>3</num><face>6</face><bns>+1</bns><kind></kind></roll>[+25] S,
            affects all surrounding squares. </field>
           <field name='Description' description='yes'> Appearance: The
            metal babble is a strange creature whose body looks like an
@@ -25354,7 +25338,7 @@
         <field name='MetaTag' />  
           <field name='Special Abilities'> Charge: Takes up all actions
            for the turn, and has a 5D+14 for successes (because it is so
-           fast) and will deal 6D6+2 P </field>
+           fast) and will deal <roll><num>6</num><face>6</face><bns>+2</bns><kind>P</kind></roll> </field>
           <field name='Statistics'> STR: 23 DEX: 14 BLD: 24 INT: 10 WIS:
            10 WIL: 12 CHA: 8 HP: 60 Actions:: 3 P/S/C: 9/9/9 Size:
            7&apos;-8&apos; humanoid Dice: Strike: 3; Parry: 3; Block: 3
@@ -25377,7 +25361,7 @@
           <field name='Statistics'> STR: 20 DEX: 10 BLD: 12 INT: 4 WIS: 4
            WIL: 6 CHA: 4 HP: 40 Actions:: 2 P/S/C: 4/4/4 Size: Human
            sized Dice: Strike: 3 </field>
-        <field name='Attacks'> Punch: 3D4+1 </field>  
+        <field name='Attacks'> Punch: <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll></field>  
           <field name='Description' description='yes'> Stupid, mindless
            creature brought back to life. A decaying corpse wrapped in
            cloth that stinks to high-heaven. Will attack any non-undead
@@ -25393,7 +25377,7 @@
            Attack: 4-10 Bite 4-12 Tail slap 4-12 Grab with small arms
            3-11 Claws Move: 4 Natural Armor: 12/16/8 Base Armor: 9
            </field>
-          <field name='Attacks'> Bite: 5+4D4+1 C Tail Slap: 10+3D6 S
+          <field name='Attacks'> Bite: 5+<roll><num>4</num><face>4</face><bns>+1</bns><kind>C</kind></roll> Tail Slap: 10+3D6 S
            Claws: 5+3D4 S Impale on Spike: 5+2D4P </field>
           <field name='Description' description='yes'> Apperance: This
            foul beast resembles a gigantic ignuana. It&apos;s body is
@@ -25429,8 +25413,8 @@
           <field name='Statistics'> STR: 12 DEX: 16 BLD: 14 INT: 15 WIS:
            15 WIL: 16 CHA: 10 HP: 400 Actions:: 5 P/S/C: 16/16/16 Size:
            Human sized Dice: Strike: 3; Dodge: 5; </field>
-          <field name='Attacks'> Death touch 2D4+2 U; Poisionous breath
-           weapon 1D4+2 U area affect </field>
+          <field name='Attacks'> Death touch <roll><num>2</num><face>4</face><bns>+2</bns><kind>U</kind></roll>; Poisionous breath
+           weapon <roll><num>1</num><face>4</face><bns>+2</bns><kind>U</kind></roll> area affect </field>
           <field name='Description' description='yes'> A minor
            demon&ndash;Guant, grey-skinned humanoid. Knows magic:
            Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake
@@ -25450,8 +25434,8 @@
            12 WIL: 14 CHA: 10 HP: 200 Actions:: 3 P/S/C: 16/16/16; 10
            base armor Size: Large War-Horse Sized Dice: Strike: 4; Dodge:
            5 </field>
-          <field name='Attacks'> Bite: 2D4+2 C; Front Kick: 3D4+1 C; Back
-           Kick: 5D4+2 C; Fire Breath: 4D4+1 U Fire </field>
+          <field name='Attacks'> Bite: <roll><num>2</num><face>4</face><bns>+2</bns><kind>C</kind></roll>; Front Kick: <roll><num>3</num><face>4</face><bns>+1</bns><kind>C</kind></roll>; Back
+           Kick: <roll><num>5</num><face>4</face><bns>+2</bns><kind>C</kind></roll>; Fire Breath: <roll><num>4</num><face>4</face><bns>+1</bns><kind>U</kind></roll> Fire </field>
           <field name='Description' description='yes'> Trainable - Ebony
            black horses with manes and hoves of fire. Solitary creatures,
            tend to be cruel to other creatures out of spite. A trained
@@ -25467,7 +25451,7 @@
            WIL: 10 CHA: 4 HP: 100 Actions:: 3 P/S/C: 9/9/9 Natural; Will
            often wear leather Size: 10&apos; tall, 6&apos; wide Dice:
            Strike: 4; Parry: 3 </field>
-          <field name='Attacks'> Bite: 1D6 [+9] P; Claws: 3D4+1 [+9] S;
+          <field name='Attacks'> Bite: 1D6 [+9] P; Claws: <roll><num>3</num><face>4</face><bns>+1</bns><kind></kind></roll>[+9] S;
            Often will use a very large blunt weapon </field>
           <field name='Description' description='yes'> Dumb humanoid
            creatures with brownish yellow skin. Band together like
@@ -25489,9 +25473,9 @@
         <field name='Name' title='yes'> Rabbat </field>  
         <field name='MetaTag' />  
           <field name='Special Abilities'> Flies Doom, as the spell
-           except timer is 1D6-1 instead, and affects up to 4 targets at
+           except timer is <roll><num>1</num><face>6</face><bns>-1</bns><kind></kind></roll>instead, and affects up to 4 targets at
            once. Only 1/day Fireball, 10D4 U 30&apos; radius Fire effect
-           Magma Dart, 4D6+1 Explosive + Fire Energy Shield 3+1D4 turns,
+           Magma Dart, <roll><num>4</num><face>6</face><bns>+1</bns><kind></kind></roll>Explosive + Fire Energy Shield 3+1D4 turns,
            1/2 damage incoming only. </field>
           <field name='Statistics'> Immune to fire and cold 200 HP Size:
            2 Actions: 3 plus 2 moves Attack/Parry: 4-11 (bite) Dodge:
@@ -25535,7 +25519,7 @@
           <field name='Statistics'> STR: 9 DEX: 10 BLD: 10 INT: 16 WIS:
            13 WIL: 13 CHA: 8 HP: 50 Actions:: 4 P/S/C: varies, typ: 8/8/8
            Size: Human Sized Dice: Strike: 3; Dodge: 2 </field>
-          <field name='Attacks'> Punch 1D4+1 C, Cold blast 1D4+1 D
+          <field name='Attacks'> Punch <roll><num>1</num><face>4</face><bns>+1</bns><kind>C</kind></roll>, Cold blast <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>D
            </field>
           <field name='Description' description='yes'> Skeletal mage
            appears as an animated human skeleton, has clothing and
@@ -25568,7 +25552,7 @@
           <field name='Statistics'> STR: 8 DEX: 9 BLD: 8 INT: 14 WIS: 11
            WIL: 11 CHA: 8 HP: 40 Actions:: 3 P/S/C: varies, typ: 4/4/4
            Size: Human Sized Dice: Strike:3, Dodge: 2 </field>
-          <field name='Attacks'> Punch 1D4+1 C, Cold blast 1D4 D </field>
+          <field name='Attacks'> Punch <roll><num>1</num><face>4</face><bns>+1</bns><kind>C</kind></roll>, Cold blast 1D4 D </field>
           <field name='Description' description='yes'> Skeletal mage
            appears as an animated human skeleton, often has some clothing
            and carries a staff or wand-like object. Has 250 MP, knows
@@ -25582,7 +25566,7 @@
           <field name='Statistics'> STR: 8 DEX: 8 BLD: 8 INT: 8 WIS: 8
            WIL: 8 CHA: 8 HP: 25 Actions:: 3 P/S/C: none Size: Human Sized
            Dice: Strike: 3 </field>
-        <field name='Attacks'> Punch 1D4+1 C </field>  
+        <field name='Attacks'> Punch <roll><num>1</num><face>4</face><bns>+1</bns><kind>C</kind></roll> </field>  
           <field name='Description' description='yes'> Appears as an
            animated, somewhat damaged humanoid skeleton. </field>
         <field name='level' />  
@@ -25607,13 +25591,13 @@
            Dal&apos;aar </field>
         <field name='MetaTag' />  
           <field name='Special Abilities'> Can spit acidic venom once per
-           turn. Deals 2D4+1 U if it strikes bare skin. </field>
+           turn. Deals <roll><num>2</num><face>4</face><bns>+1</bns><kind>U</kind></roll> if it strikes bare skin. </field>
           <field name='Statistics'> STR: 18 DEX: 16 BLD: 14 INT: 12 WIS:
            12 WIL: 12 CHA: 10 HP: 170 Actions:: 4 P/S/C: 10/12/11 base: 5
            Size: Human sized Dice: Strike: 5; Dodge: 3; Parry: 5; Block:
            5; </field>
-          <field name='Attacks'> Oversized Long sword 3D4+1 S; Sheild
-           Bash 2D6; Throw Fire 2D4+2 U; bite 1D4+2 P + 1D4+2 U posion
+          <field name='Attacks'> Oversized Long sword <roll><num>3</num><face>4</face><bns>+1</bns><kind>S</kind></roll>; Sheild
+           Bash 2D6; Throw Fire <roll><num>2</num><face>4</face><bns>+2</bns><kind>U</kind></roll>; bite <roll><num>1</num><face>4</face><bns>+2</bns><kind>P</kind></roll> + <roll><num>1</num><face>4</face><bns>+2</bns><kind>U</kind></roll> posion
            </field>
           <field name='Description' description='yes'> A demonic warrior
            created from a human sacrifice and a venomous snake in a
@@ -25627,13 +25611,13 @@
            Ku&apos;toxx </field>
         <field name='MetaTag' />  
           <field name='Special Abilities'> Can spit acidic venom once per
-           turn. Deals 3D4+1 U if it strikes bare skin. </field>
+           turn. Deals <roll><num>3</num><face>4</face><bns>+1</bns><kind>U</kind></roll> if it strikes bare skin. </field>
           <field name='Statistics'> STR: 19 DEX: 16 BLD: 18 INT: 14 WIS:
            12 WIL: 13 CHA: 11 HP: 220 Actions:: 5 P/S/C: 14/16/12 base: 5
            Size: Human Sized Dice: Strike: 5; Dodge: 3; Parry: 5; Block:
            5; </field>
-          <field name='Attacks'> Oversized Long sword 3D4+1 S (+6 raw);
-           Sheild Bash 2D6; Throw Fire 2D4+2 U; bite 1D4+2 P + 2D4+2 U
+          <field name='Attacks'> Oversized Long sword <roll><num>3</num><face>4</face><bns>+1</bns><kind>S</kind></roll> (+6 raw);
+           Sheild Bash 2D6; Throw Fire <roll><num>2</num><face>4</face><bns>+2</bns><kind>U</kind></roll>; bite <roll><num>1</num><face>4</face><bns>+2</bns><kind>P</kind></roll> + <roll><num>2</num><face>4</face><bns>+2</bns><kind>U</kind></roll>
            posion </field>
           <field name='Description' description='yes'> A demonic warrior
            created from a human sacrifice and a venomous snake in a
@@ -25647,12 +25631,12 @@
         <field name='Name' title='yes'> Snakeman - Gukn </field>  
         <field name='MetaTag' />  
           <field name='Special Abilities'> Can spit acidic venom once per
-           turn. Deals 1D4+1 U if it strikes bare skin. </field>
+           turn. Deals <roll><num>1</num><face>4</face><bns>+1</bns><kind>U</kind></roll> if it strikes bare skin. </field>
           <field name='Statistics'> STR: 16 DEX: 15 BLD: 12 INT: 10 WIS:
            10 WIL: 10 CHA: 8 HP: 100 Actions:: 3 P/S/C: 8/10/8 base: 4
            Size: Human sized Dice: Strike: 4; Dodge: 2; Parry: 4 </field>
           <field name='Attacks'> Oversized Long sword 3D4 S; Throw fire
-           2D4+1 U; bite 1D4+1 P + 1D4+1 U posion </field>
+           <roll><num>2</num><face>4</face><bns>+1</bns><kind>U</kind></roll>; bite <roll><num>1</num><face>4</face><bns>+1</bns><kind>P</kind></roll> + <roll><num>1</num><face>4</face><bns>+1</bns><kind>U</kind></roll> posion </field>
           <field name='Description' description='yes'> A demonic warrior
            created from a human sacrifice and a venomous snake in a
            magical ritual. Wields a serrated long sword in one hand.
@@ -25664,9 +25648,9 @@
         <field name='Name' title='yes'> Stygian Fly </field>  
         <field name='MetaTag' />  
           <field name='Special Abilities'> Has only one
-           attack&ndash;biting. If bitten, the target will suffer 2D6+2S.
+           attack&ndash;biting. If bitten, the target will suffer <roll><num>2</num><face>6</face><bns>+2</bns><kind>S</kind></roll>.
            If flesh is contacted, target suffers tremendous pain. Wound
-           will grow, consuming target&apos;s body, at a rate of 1D6+1 D
+           will grow, consuming target&apos;s body, at a rate of <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>D
            per SECOND. </field>
           <field name='Statistics'> STR: 2 DEX: 16 BLD: 1 INT: 1 WIS: 1
            WIL: 10 CHA: 1 HP: 10 Actions:: 3 P/S/C: 3/3/3 -9 to strike
@@ -25689,7 +25673,7 @@
            14 WIL: 14 CHA: 5 HP: 100 Actions:: P/S/C: young: 3/3/3;
            average 6/6/6; old: 9/9/10 Size: young: 2&apos;; average:
            5&apos;; old: 8&apos; long Dice: Strike: 3 Dodge: 2 </field>
-          <field name='Attacks'> Bite: 4D6+1 S (-1 die for young, +1 for
+          <field name='Attacks'> Bite: <roll><num>4</num><face>6</face><bns>+1</bns><kind>S</kind></roll> (-1 die for young, +1 for
            old) </field>
           <field name='Description' description='yes'> Demonic creatures
            that inhabit the waters of the underworld. Very fast swimmers.
@@ -25706,7 +25690,7 @@
           <field name='Statistics'> STR: 12 DEX: 12 BLD: 6 INT: 6 WIS: 10
            WIL: 10 CHA: 4 HP: 60 Actions:: 2 P/S/C: 8/14/8 Size: About
            2&apos; long Dice: Strike: 6 </field>
-          <field name='Attacks'> Bite: 4D4+1 C; Tongue spear: 3D6 P,
+          <field name='Attacks'> Bite: <roll><num>4</num><face>4</face><bns>+1</bns><kind>C</kind></roll>; Tongue spear: 3D6 P,
            range of 6&apos; </field>
           <field name='Description' description='yes'> A large,
            wart-covered toad that lives in bogs, marshes, and stagnant
@@ -25723,7 +25707,7 @@
           <field name='Statistics'> STR: 24 DEX: 14 BLD: 22 INT: 8 WIS: 8
            WIL: 12 CHA: 6 HP: 300 Actions:: 4 P/S/C: 12/12/6 Size:
            14&apos; tall Dice: Strike: 4; Block: 4 </field>
-          <field name='Attacks'> Claws: 3D6; Bite: 4D4+1 P. Any contact
+          <field name='Attacks'> Claws: 3D6; Bite: <roll><num>4</num><face>4</face><bns>+1</bns><kind>P</kind></roll>. Any contact
            poisons target for 2D4 U per turn for 1D4 turns. </field>
           <field name='Description' description='yes'> A tall, lanky
            demon with rotten yellow skin. Hunched over, with long spindly
@@ -25743,7 +25727,7 @@
       <datum name='Troll'>  
         <field name='Name' title='yes'> Troll </field>  
         <field name='MetaTag' />  
-          <field name='Special Abilities'> Trolls regenerate 1D4+1 HP on
+          <field name='Special Abilities'> Trolls regenerate <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>HP on
            each of their turns. They suffer half damage from poisons.
            </field>
           <field name='Statistics'> STR: 10 DEX: 8 BLD: 12 INT: 8 WIS: 8
@@ -25798,7 +25782,7 @@
           <field name='Statistics'> STR: 13 DEX: 10 BLD: 16 INT: 9 WIS: 9
            WIL: 10 CHA: 6 HP: 50 Actions:: 3 P/S/C: 8/8/8 base 5 Size:
            Human sized Dice: Strike: 3 </field>
-        <field name='Attacks'> Punch 1D4+1 + 1D4 U </field>  
+        <field name='Attacks'> Punch <roll><num>1</num><face>4</face><bns>+1</bns><kind></kind></roll>+ 1D4 U </field>  
           <field name='Description' description='yes'> Undead, rotting
            corpse. Suffers double damage from fire based attacks.
            Regenerates 1D4 HP per turn </field>
@@ -25812,9 +25796,9 @@
           <field name='Statistics'> STR: 14 DEX: 12 BLD: 18 INT: 9 WIS:
            10 WIL: 12 CHA: 6 HP: 70 Actions:: 3 P/S/C: 9/9/9 base 6 Size:
            Human sized Dice: Strike: 4; Dodge: 2 </field>
-        <field name='Attacks'> Punch 1D4+2 + 1D4+1 U </field>  
+        <field name='Attacks'> Punch <roll><num>1</num><face>4</face><bns>+2</bns><kind></kind></roll>+ <roll><num>1</num><face>4</face><bns>+1</bns><kind>U</kind></roll> </field>  
           <field name='Description' description='yes'> Undead, rotting
-           corpse. Regenerates 1D6+1 HP per turn </field>
+           corpse. Regenerates <roll><num>1</num><face>6</face><bns>+1</bns><kind></kind></roll>HP per turn </field>
         <field name='level' />  
       </datum>  
       <datum name='Zombie - Minor'>  
@@ -26923,7 +26907,7 @@
            active, the character appears to be an opaque tornado (think
            Tasmanian Devil here). All projectiles will be deflected.
            Anything that comes in contact with the character will receive
-           3D6+2 C damage. </field>
+           <roll><num>3</num><face>6</face><bns>+2</bns><kind>C</kind></roll> damage. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Withstand Pressure'>  
@@ -27261,7 +27245,7 @@
         <field table='yes' name='Slots'> 0 </field>  
         <field table='yes' name='Character Points'> 10 </field>  
           <field name='Description' description='yes'> Will stop
-           bleeding. Once per "charge" it can give 2D4+1 HP ($1000 to
+           bleeding. Once per "charge" it can give <roll><num>2</num><face>4</face><bns>+1</bns><kind></kind></roll>HP ($1000 to
            refill) </field>
       </datum>  
       <datum name='LASER Resistant Coating'>  
@@ -27543,7 +27527,7 @@
           <field table='yes' name='Character Points'> (Class+1)*5
            </field>
           <field name='Description' description='yes'> Deals
-           (Class+1)*4D6+1 U + Fire damage with a radius of (Class+1)*20
+           (Class+1)*<roll><num>4</num><face>6</face><bns>+1</bns><kind>U</kind></roll> + Fire damage with a radius of (Class+1)*20
            feet. An ammunition pod holds 5 grenades, regardless of Class.
            </field>
       </datum>  
