@@ -282,7 +282,7 @@
           <xsl:for-each select="field" >
             <xsl:if test="./@title">
               <td>
-                <a href="#{../../../@name}-{$hrid}-{.}">
+                <a href="#{../../../@name}-{$hrid}-{translate(.,' ','')}">
                   <xsl:apply-templates select="." />
                 </a>
               </td>
@@ -298,7 +298,7 @@
     <xsl:for-each select="//category[@name=$hrid]/datum">
       <xsl:variable name="datum-title" select="field[@title='yes']" />
       <div class="datum-description"
-        id="{../../@name}-{$hrid}-{$datum-title}">
+        id="{../../@name}-{$hrid}-{translate($datum-title,' ','')}">
         <h1><xsl:value-of select="field[@title='yes']" /></h1>
         <p><xsl:value-of select="field[@description='yes']" /></p>
       </div>
