@@ -1,1 +1,3 @@
 In order to transform the file rename one of the Apathy.xsl.* files to just Apathy.xsl (i.e. cp Apathy.xsl.fo Apathy.xsl).
+
+Requirements: python 2.5, 4Suite-XML-1.0.2
