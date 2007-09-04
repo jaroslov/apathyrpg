@@ -23,11 +23,11 @@
 <apathy-game>  
   <book>  
     <part>  
-      <title> Game Manual </title>  
-      <chapter>  
-        <title> Core Rules </title>  
+      <title>Game Manual</title>  
+      <chapter>
+        <title>Core Rules</title>  
         <section>  
-          <title> Introduction </title>  
+          <title>Introduction</title>  
            <text><Apathy />  is a paper &amp; pencil role-playing game.
             <Apathy />&rsquo;s authors have played a great many RPGs
             including D&amp;D, Heroes Unlimited, GURPS, Shadowrun, TMNT,
@@ -105,7 +105,7 @@
           </text>  
         </section>  
         <section>  
-          <title> Basic Terms </title>  
+          <title>Basic Terms</title>  
           <description-list>  
             <item>  
               <description>
@@ -329,7 +329,7 @@
           </description-list>  
         </section>  
         <section>  
-          <title> Game World </title>  
+          <title>Game World</title>  
            <text><Apathy />, like most role-playing games, can be
             thought of like a play or a movie. The players are like the
             actors; their characters are the heroes and heroines of the
@@ -368,7 +368,7 @@
           </text>  
         </section>  
         <section>  
-          <title> Creating a Character </title>  
+          <title>Creating a Character</title>  
            <text> The first step in playing <Apathy />  is determining
             your character concept. Talk to the GM and your fellow
             players for ideas about the game setting and what kind of
@@ -403,7 +403,7 @@
             system rules. Grab a character sheet, and follow along.
           </text>  
           <section>  
-            <title> Character Basics </title>  
+            <title>Character Basics</title>  
               <text> The first part of describing your character is very
                simple. Decide what your character&rsquo;s basic
                description is like. Are they male or female? How tall?
@@ -415,7 +415,7 @@
                details of your character. </text>
           </section>  
           <section>  
-            <title> Attributes </title>  
+            <title>Attributes</title>  
              <text><Apathy />  models characters by means of a core
               attribute system. These attributes are numbers that
               describe the most basic characteristics of any given
@@ -470,7 +470,7 @@
                      </cell>
                 </row>  
               </table>  
-              <caption> Basic Terms </caption>  
+              <caption>Basic Terms</caption>  
             </figure>  
               <note> Throughout this document the attributes will usually
                be mentioned using the three-letter abbreviation instead
@@ -528,7 +528,7 @@
                later on. </text>
           </section>  
           <section>  
-            <title> Sub-Attributes </title>  
+            <title>Sub-Attributes</title>  
               <text> There are a number of &ldquo;sub-attributes&rdquo;
                that rely on your attributes to determine their value. The
                names, description, and method for determining their value
@@ -628,7 +628,7 @@
                   </cell>  
                 </row>  
               </table>  
-              <caption> Sub-Attributes </caption>  
+              <caption>Sub-Attributes</caption>  
             </figure>  
               <text> If the above equations generate any fractions, round
                them to the nearest whole number. </text>
@@ -637,7 +637,7 @@
                mind as you may need to update them later. </text>
           </section>  
           <section>  
-            <title> Character Points </title>  
+            <title>Character Points</title>  
               <text> The remainder of the character creation process is
                done through the expenditure of Character Points,
                otherwise known as CP. Talk with your GM about how many CP
@@ -738,7 +738,7 @@
             </note>  
           </section>  
           <section>  
-            <title> Increasing Attributes (optional) </title>  
+            <title>Increasing Attributes (optional)</title>  
               <text> If your attributes aren&rsquo;t quite where you
                desire, you will need to get more Attribute Points so you
                can purchase a better attribute. Each Attribute Point
@@ -806,7 +806,7 @@
           </section>  
         </section>  
         <section>  
-          <title> Skills </title>  
+          <title>Skills</title>  
             <text> All characters have skills. Skills represent what your
              character has learned and what they know how to do. Other
              than being useful in game, skills help to distinguish your
@@ -886,8 +886,7 @@
                 <cell> Among the best ever </cell>  
               </row>  
             </table>  
-              <caption> Skill Level and Descriptive Equivalents
-               </caption>
+              <caption>Skill Level and Descriptive Equivalents</caption>
           </figure>  
             <text> Like most of character creation, skills are purchased
              using CP. The higher the rank, the more expensive it will
@@ -935,7 +934,7 @@
                 <cell> 55 </cell>  
               </row>  
             </table>  
-            <caption> CP cost of Desired Level, precomputed </caption>  
+            <caption>CP cost of Desired Level, precomputed</caption>  
           </figure>  
           <text> See the trend? </text>  
             <text> If not, here&rsquo;s yet another way to look at
@@ -947,7 +946,7 @@
              you&rsquo;ve spent on the skill) and that is the amount that
              you need to spend. </text>
           <example>  
-            <title> Computing Skill Cost </title>  
+            <title>Computing Skill Cost</title>  
               <text> I want to purchase the shield skill (rank 2). To get
                Lvl 1 I would need to spend 2 CP. Now, if I want to go
                from Lvl 1, to Lvl 2, I would add the rank (2) to the
@@ -979,9 +978,9 @@
              yet, it takes a number of weeks of intense studying equal to
              the rank of the skill. </text>
           <section>  
-            <title> Skill Specialization (optional) </title>  
+            <title>Skill Specialization (optional)</title>  
             <section>  
-              <title> Specialization in most Skills </title>  
+              <title>Specialization in most Skills</title>  
                 <text> It is possible to specialize in many skills. When
                  specialized, a character knows more about a certain
                  aspect of the skill than other parts of the skill. In
@@ -991,7 +990,7 @@
                  specialization. Specializing does NOT cost any extra CP.
                  </text>
               <example>  
-                <title> History&rarr;Spanish </title>  
+                <title>History&rarr;Spanish</title>  
                   <text> Ralf Gr&ouml;osse-Kunstleve is a historian.
                    Specifically, he is knowledgeable about Spanish
                    history. He has a LVL 3 History skill with a
@@ -1009,7 +1008,7 @@
                  skill levels -4 +1 for each skill beyond the first.
                  </text>
               <example>  
-                <title> Chemistry&rarr;WMD </title>  
+                <title>Chemistry&rarr;WMD</title>  
                  <text> Dr. Klotzenstein is a scientist. He has LVL 3
                   Chemistry with a specialty in Chemical weapons and
                   poisons. As well, he has LVL 4 Chemistry with a
@@ -1034,7 +1033,7 @@
                 <text> Specializing in skills is purely optional. </text>
             </section>  
             <section>  
-              <title> Specialization applied to Weapon skills </title>  
+              <title>Specialization applied to Weapon skills</title>  
                 <text> It is also possible to specialize in weapon
                  skills. If a character has a specialized weapon skill
                  that means that he is especially proficient with a very
@@ -1051,7 +1050,7 @@
                  can be applied to all weapon proficiency type skills and
                  the shield skill. </text>
               <example>  
-                <title> Axes&rarr;Nordic War Axe </title>  
+                <title>Axes&rarr;Nordic War Axe</title>  
                   <text> Bj&oslash;rgen is a warrior with a liking for
                    the Nordic War Axe. He has the skill &ldquo;Archaic
                    Weapons: Axes&rdquo; at level 3. As well, he is
@@ -1082,7 +1081,7 @@
           </section>  
         </section>  
         <section>  
-          <title> Rules (Rolls) </title>  
+          <title>Rules (Rolls)</title>  
            <text> What would an RPG be without rules? <Apathy />  has a
             set of rules that allow for just about any occurrence that an
             imaginative GM can put the players through.
@@ -1094,7 +1093,7 @@
             you will use one of these sets of rules.
           </text>  
           <section>  
-            <title> Attribute Checks </title>  
+            <title>Attribute Checks</title>  
               <text> Attribute checks are required anytime the GM wants
                to see if you did something solely based on an attribute.
                They are used whenever a player wants their character to
@@ -1104,19 +1103,19 @@
                based on a particular skill, then see the skill roll
                section below. </text>
             <example>  
-              <title> Catch a Pack </title>  
+              <title>Catch a Pack</title>  
                 <text> Barnacleez is trying to catch a pack that was
                  thrown at him. The GM requires him to make a DEX check
                  to see if he successfully caught the pack. </text>
             </example>  
             <example>  
-              <title> Swim a Long Distance </title>  
+              <title>Swim a Long Distance</title>  
                 <text> Thomas is trying to swim a long distance while
                  carrying a heavy load. He has to roll a BLD check to see
                  if he has enough stamina to make the swim. </text>
             </example>  
             <example>  
-              <title> Decipher Symbols </title>  
+              <title>Decipher Symbols</title>  
                 <text> Wendy is trying to decipher the meaning of some
                  strange symbols written on a wall. Since she has no
                  applicable skills, the GM determines that she needs to
@@ -1134,7 +1133,7 @@
             </example>  
           </section>  
           <section>  
-            <title> Contest of Attributes </title>  
+            <title>Contest of Attributes</title>  
               <text> Contests of Attributes occur whenever two characters
                are competing at something that is largely dependent on an
                attribute and nothing else. Arm wrestling is a contest of
@@ -1153,7 +1152,7 @@
                to impose negatives and/or bonuses depending on the exact
                circumstances of the contest. </text>
             <example>  
-              <title> Dougles vs. Enemy Soldier </title>  
+              <title>Dougles vs. Enemy Soldier</title>  
                 <text> Douglas (STR 13) is fighting with an enemy solider
                  (STR 12) over the possession of a single rifle. The GM
                  declares that a contest of strength will resolve who
@@ -1165,7 +1164,7 @@
             </example>  
           </section>  
           <section>  
-            <title> Skill Rolls </title>  
+            <title>Skill Rolls</title>  
               <text> Skill rollsare used whenever a player wants to use
                one of his character&rsquo;s skills. They are also used
                whenever two characters are competing at something
@@ -1223,7 +1222,7 @@
                      patient. </cell>
                 </row>  
               </table>  
-              <caption> Sample outcome for Skill Rolls </caption>  
+              <caption>Sample outcome for Skill Rolls</caption>  
             </figure>  
               <text> The GM will give penalties and/or bonuses to your
                skill roll based on the difficulty of the Action you are
@@ -1247,7 +1246,7 @@
                at all. It&rsquo;s assumed that you succeed examples.
                </text>
             <example>  
-              <title> Lookup Internt Address </title>  
+              <title>Lookup Internt Address</title>  
                 <text> Amy has the Computer Use skill at level 3. She
                  wants to look up an Internet address on the computer
                  that she thinks might give the players some needed
@@ -1257,7 +1256,7 @@
                  with no roll needed. </text>
             </example>  
             <example>  
-              <title> Investigate Mysterious Person </title>  
+              <title>Investigate Mysterious Person</title>  
                 <text> Amy is still on the Internet. Now she is
                  attempting to dig up some information about a mysterious
                  person. The GM determines that Amy needs to use her
@@ -1272,7 +1271,7 @@
                  </text>
             </example>  
             <example>  
-              <title> Fix a Beater </title>  
+              <title>Fix a Beater</title>  
                 <text> Chris is trying to fix an old car so he and his
                  fellow characters can use it. The GM determines that
                  this falls under the Mechanic: General skill. Chris has
@@ -1289,7 +1288,7 @@
                  didn&rsquo;t get fixed. </text>
             </example>  
             <example>  
-              <title> Shoot a Large Robot </title>  
+              <title>Shoot a Large Robot</title>  
                 <text> Billy is a cybernetic gunfighter with a 22 DEX. He
                  is trying to shoot an enemy robot. The GM determines
                  that Billy gets a bonus of +3 to shoot the robot because
@@ -1299,7 +1298,7 @@
                  Billy only gets to add +20 to each of his dice. </text>
             </example>  
             <example>  
-              <title> Called Shot to Arm </title>  
+              <title>Called Shot to Arm</title>  
                 <text> Billy is still fighting the same giant robot. This
                  time, he&rsquo;s trying to make a called shot and shoot
                  the robot in the arm. The GM determines that Billy gets
@@ -1314,7 +1313,7 @@
             </example>  
           </section>  
           <section>  
-            <title> Contest of Skills </title>  
+            <title>Contest of Skills</title>  
               <text> A contest of skills occurs when two people are
                trying to defeat each other in some manner with their
                skills. If two characters were competing to see who could
@@ -1326,7 +1325,7 @@
                the initiator (or attacker) of the Action must make more
                successes than the defender. </text>
             <example>  
-              <title> Tom and the Shopkeeper in a Contest </title>  
+              <title>Tom and the Shopkeeper in a Contest</title>  
                 <text> Tom is attempting to purchase an expensive suit of
                  armor, and doesn&rsquo;t want to pay full price. So he
                  is attempting to bring the price down by using the
@@ -1385,7 +1384,7 @@
                see below. </text>
           </section>  
           <section>  
-            <title> Skill Rolls and Related Skills </title>  
+            <title>Skill Rolls and Related Skills</title>  
               <text> If a character needs to make a skill roll and that
                character knows other skills that are somehow related to
                (or are similar to) the skill to be rolled, that character
@@ -1397,7 +1396,7 @@
                possible bonus from related skills is +5, regardless of
                the circumstances. </text>
             <example>  
-              <title> Paul repairing a device </title>  
+              <title>Paul repairing a device</title>  
                 <text> Paul is attempting to repair an electronic device.
                  The GM asks Paul to roll his Electronics skill, which
                  Paul has at lvl 4. Paul mentions that he also knows the
@@ -1417,7 +1416,7 @@
                or any skill used in a combat situation. </text>
           </section>  
           <section>  
-            <title> All Other Rolls </title>  
+            <title>All Other Rolls</title>  
               <text> This type of die rolling is used for just about
                everything else in the game: rolling damage from combat,
                the duration of magical spells, or the number of monsters
@@ -1476,7 +1475,7 @@
           </section>  
         </section>  
         <section>  
-          <title> Combat Sequence &amp; Initiative </title>  
+          <title>Combat Sequence &amp; Initiative</title>  
             <text> Combat is based on a system of Rounds, Turns, and
              Actions. A &ldquo;round&rdquo; lasts about five seconds. It
              is the length of time in which all combatants have done
@@ -1516,7 +1515,7 @@
              three Actions are taken at the same time, on that
              character&rsquo;s initiative. </note>
           <example>  
-            <title> Tom&rsquo;s Turn in Combat </title>  
+            <title>Tom&rsquo;s Turn in Combat</title>  
               <text> Tom is in combat. Tom has three Actions and he
                rolled an 11 as his initiative. When it&rsquo;s
                Tom&rsquo;s turn in combat (11), he takes all three
@@ -1572,7 +1571,7 @@
              take all his Actions at his normal initiative, or he must
              delay all his Actions to a later initiative. </text>
           <example>  
-            <title> Tom&rsquo;s initiative </title>  
+            <title>Tom&rsquo;s initiative</title>  
               <text> Tom&rsquo;s initiative roll is an 18. He and his
                fellow players were cornered by ogres for whom the GM has
                secretly rolled initiative. Tom has the highest initiative
@@ -1592,7 +1591,7 @@
              the character. Resolve all effects before that character
              takes any Actions. </text>
           <example>  
-            <title> Lucy&rsquo;s turn in combat </title>  
+            <title>Lucy&rsquo;s turn in combat</title>  
               <text> It is Lucy&rsquo;s turn in combat and she casts
                Regeneration on herself. The effect of the spell is that
                each turn she gains 1D4+1 Hit Points. Now the spell has
@@ -1614,7 +1613,7 @@
              conditions never occur at the beginning of your next turn.
              </text>
           <example>  
-            <title> Tom holds an Action </title>  
+            <title>Tom holds an Action</title>  
               <text> Tom&rsquo;s initiative is 10. During his turn he
                spends one Action to move behind some cover and another to
                ready his longbow. Tom declares that he is going to hold
@@ -1648,7 +1647,7 @@
             </item>  
           </numbered-list>  
           <section>  
-            <title> Weapons &amp; Equipment </title>  
+            <title>Weapons &amp; Equipment</title>  
               <text> Most characters will carry equipment in combat. This
                usually includes weapons and armor. There are no
                &ldquo;class&rdquo; restrictions for weapons or armor. Any
@@ -1668,7 +1667,7 @@
                if the RDB is greater than the MSB, then the MSB is used
                as the RDB instead. </text>
             <example>  
-              <title> MSR for Bosk </title>  
+              <title>MSR for Bosk</title>  
                <text> Bosk has a STR of 17 and is brandishing a Hercules
                 Club (3D6C, MSR: 12, MSB: 13). Because Bosk&rsquo;s Str
                 is higher than the minimum strength requirement of the
@@ -1680,7 +1679,7 @@
               </text>  
             </example>  
             <example>  
-              <title> Bosk with Knife </title>  
+              <title>Bosk with Knife</title>  
                 <text> Suppose Bosk pulls out a long knife (1D6+1 S, MSR:
                  8; MSB: 4). Bosk&rsquo;s Str is significantly higher
                  than the minimum required for the weapon. Calculating
@@ -1754,8 +1753,7 @@
                and bows. </text>
           </section>  
           <section>  
-              <title> Dual-wielding Weapons or Weapon &amp; Shield
-               </title>
+              <title>Dual-wielding Weapons or Weapon &amp; Shield</title>
               <text> As noted above, it is possible for characters to
                wield two weapons in combat, or a weapon and a shield. A
                character cannot attack with both weapons during the same
@@ -1851,7 +1849,7 @@
                weapon in a single Action </text>
           </section>  
           <section>  
-            <title> Combat Overview </title>  
+            <title>Combat Overview</title>  
               <text> Resolving an attack is a three-step process: </text>
             <numbered-list>  
               <item>  
@@ -1873,7 +1871,7 @@
             <text> This process is explained in detail below. </text>  
           </section>  
           <section>  
-            <title> Attacking </title>  
+            <title>Attacking</title>  
               <text> An attack is nearly anything that you try to do to
                an opponent during your turn. Typically an attack is a
                physical strike against your opponent with a weapon (such
@@ -1903,7 +1901,7 @@
                needed. </text>
           </section>  
           <section>  
-            <title> Defending </title>  
+            <title>Defending</title>  
              <text> The target of an attack usually receives an attempt
               to defend himself.
                <note> Defending is using your skills to avoid getting hit
@@ -2026,7 +2024,7 @@
             </text>  
           </section>  
           <section>  
-            <title> Damage </title>  
+            <title>Damage</title>  
               <text> When an attack hits its target, it will inflict
                damage upon it. Every weapon has a damage rating
                associated with it as well as a damage type (for example:
@@ -2098,7 +2096,7 @@
                </text>
           </section>  
           <section>  
-            <title> Armor </title>  
+            <title>Armor</title>  
               <text> Armor is any covering that you are wearing or behind
                that will absorb some of the damage applied to you. All
                armor is given three numerical ratings for piercing,
@@ -2114,7 +2112,7 @@
                amount. </text>
             <text> Here are a few examples: </text>  
             <example>  
-              <title> Carlos vs. the Bandit </title>  
+              <title>Carlos vs. the Bandit</title>  
                 <text> Carlos was attacked by a bandit with a short
                  sword. The bandit made his skill roll to attack and had
                  three successes. Carlos attempts to parry and had only
@@ -2132,7 +2130,7 @@
                  Carlos just took 5 damage (8-3=5). </text>
             </example>  
             <example>  
-              <title> Lira the Gladiator </title>  
+              <title>Lira the Gladiator</title>  
                 <text> Lira is fighting a gladiator-style duel. Her
                  opponent attacks with a spear and has two successes to
                  hit. Lira wants to block and rolls her shield skill. She
@@ -2170,7 +2168,7 @@
                deals D damage. D damage is applied directly to your Hit
                Points. </text>
             <section>  
-              <title> Armor Piercing </title>  
+              <title>Armor Piercing</title>  
                 <text> Some weapons have a note that says
                  &ldquo;AP&rdquo; followed by some number. This kind of
                  weapon has an unusual ability to pierce armor. If an
@@ -2181,7 +2179,7 @@
                  strikes someone wearing 5 armor, then the armor is
                  totally ignored. It does not, however, go to -5. </text>
               <example>  
-                <title> Lira Strikes With Gladius </title>  
+                <title>Lira Strikes With Gladius</title>  
                   <text> Lira is wielding a gladius, which is a type of
                    short sword that has AP: 5. She successfully strikes
                    her opponent, and rolls 11 damage. Her opponent has an
@@ -2206,7 +2204,7 @@
                  versus unarmored targets. </text>
             </section>  
             <section>  
-              <title> Fire (F) </title>  
+              <title>Fire (F)</title>  
                 <text> Some weapons and spells have a note that says
                  &ldquo;F&rdquo;, &ldquo;Fire&rdquo;, &ldquo;Fire
                  Effect&rdquo;, or &rdquo;U Fire&rdquo;. These weapons
@@ -2236,7 +2234,7 @@
                  &ldquo;on fire&rdquo; suffer the damage on each of their
                  turns. </text>
               <example>  
-                <title> David deals Fire damage </title>  
+                <title>David deals Fire damage</title>  
                   <text> David shoots a Ghoul with a Flame blaster. This
                    weapon deals 2D6 U Fire. David rolls damage and ends
                    up with 10 U. The target suffers the 10 damage. As
@@ -2246,8 +2244,7 @@
                    until the fire is somehow put out. </text>
               </example>  
               <example>  
-                  <title> Travis&rsquo;s armor resists Fire damage
-                   </title>
+                  <title>Travis&rsquo;s armor resists Fire damage</title>
                   <text> Travis is wearing Ceramic Plate armor and is
                    shot with a 12-ga shotgun loaded with a meteor round.
                    The meteor round deals 5D6 C + Fire and Travis&rsquo;s
@@ -2261,8 +2258,7 @@
             </section>  
           </section>  
           <section>  
-              <title> Combat with Different types of Weapons and Effects
-               </title>
+              <title>Combat with Different types of Weapons and Effects</title>
               <text> Apathy includes rules for combat with melee weapons,
                ranged weapons, firearms, magic, and so forth. The rules
                for attacking and defending with different kinds of
@@ -2318,7 +2314,7 @@
             </description-list>  
           </section>  
           <section>  
-            <title> Hit Points </title>  
+            <title>Hit Points</title>  
               <text> Hit Points are numbers used to represent how injured
                or healthy a character is. A character will have TWO Hit
                Point numbers. Your maximum Hit Points determines how
@@ -2367,7 +2363,7 @@
                </text>
           </section>  
           <section>  
-            <title> Called Shots </title>  
+            <title>Called Shots</title>  
               <text>  Whenever a character attacks he is aiming for the
                most convenient blow that he can make. It is assumed that
                this is a &ldquo;center mass&rdquo; attack: In other
@@ -2403,7 +2399,7 @@
                depend on the location of the called shot and also the
                amount and nature of the damage dealt. </text>
             <example>  
-              <title> Philip misses the troll </title>  
+              <title>Philip misses the troll</title>  
                 <text>  Philip has engaged a troll in combat, and
                  declares that he wishes to make a called shot, aiming
                  for the troll&rsquo;s head. The GM assigns a strike
@@ -2412,7 +2408,7 @@
                  completely. </text>
             </example>  
             <example>  
-              <title> Morgdar is fighting a lizardman. </title>  
+              <title>Morgdar is fighting a lizardman.</title>  
                 <text> He attempts to make a called shot targeted at the
                  lizardman&rsquo;s eye. He successfully makes his called
                  shot and the lizardman fails to defend. The GM asks that
@@ -2425,7 +2421,7 @@
             </example>  
           </section>  
           <section>  
-            <title> Cover </title>  
+            <title>Cover</title>  
               <text>  Cover is something that a character or a creature
                is obscured by. Cover has two effects: </text>
             <numbered-list>  
@@ -2487,8 +2483,8 @@
                special effort to hide behind it. In this case there is no
                penalty to defensive maneuvers. </text>
             <example>  
-                <title> Darin and her comrades are fighting a group of
-                 trolls. </title>
+                <title>Darin and her comrades are fighting a group of
+                 trolls.</title>
                 <text> One troll has ducked behind some rocks. The GM
                  states that the troll has half cover due to hiding
                  behind the rocks. If Darin wants to shoot the troll with
@@ -2499,7 +2495,7 @@
                  selects. </text>
             </example>  
             <example>  
-              <title> Mikus is in a gunfight. </title>  
+              <title>Mikus is in a gunfight.</title>  
                 <text>  His opponent, a local gangster, has ducked behind
                  the door of a nearby car. The GM rules that the gangster
                  has dense cover, and thus Mikus has &mdash;12 to strike
@@ -2520,13 +2516,13 @@
       </chapter>  
     </part>  
     <part>  
-      <title> Rule Sections </title>  
+      <title>Rule Sections</title>  
       <chapter>  
-        <title> Academics </title>  
+        <title>Academics</title>  
         <reference hrid='Content/Academic' />  
       </chapter>  
       <chapter>  
-        <title> Augmentations </title>  
+        <title>Augmentations</title>  
           <text> Augmentations are modifications to the body made through
            technology. This can be anything from using a metal implant to
            repair a broken bone, to replacing a person&rsquo;s brain with
@@ -2548,7 +2544,7 @@
            be used as a repair for a body part that was injured or for
            utility purposes. </text>
         <section>  
-          <title> Additions </title>  
+          <title>Additions</title>  
             <text> There are two basic types of addition augmentations.
              The first are small devices that don&rsquo;t take up a lot
              of room. These are easy to add to the body because they
@@ -2563,7 +2559,7 @@
              (see below) which is similar to the Mecha system. </text>
         </section>  
         <section>  
-          <title> Replacements </title>  
+          <title>Replacements</title>  
             <text> Augmentation replacements, in their most basic forms,
              are exactly the same function-wise as normal body parts. Of
              course, many augmentation parts are upgrades of some sort.
@@ -2572,7 +2568,7 @@
              different abilities than normal. </text>
         </section>  
         <section>  
-          <title> Augmentation Limbs and Bodies </title>  
+          <title>Augmentation Limbs and Bodies</title>  
             <text> Entire limbs or even entire bodies may be replaced
              with augmented versions. There are two basic types of
              replacement limbs and bodies: Robotic or Cybernetic. </text>
@@ -2590,7 +2586,7 @@
             <text> These rules apply to cybernetic and robotic
              components: </text>
           <section>  
-            <title> Robotics </title>  
+            <title>Robotics</title>  
             <itemized-list>  
                 <item>  Do not bleed when injured (though they might leak
                  oil or make sparks) </item>
@@ -2620,7 +2616,7 @@
             </itemized-list>  
           </section>  
           <section>  
-            <title> Cybernetics </title>  
+            <title>Cybernetics</title>  
             <itemized-list>  
               <item>  Bleed when injured </item>  
                 <item>  Appear normal when viewed casually, or on thermal
@@ -2661,7 +2657,7 @@
           </section>  
         </section>  
         <section>  
-          <title> General Augmentation Rules </title>  
+          <title>General Augmentation Rules</title>  
           <itemized-list>  
               <item>  All humanoid characters have, by default, (size)
                free slots in the body. These are assumed to be located in
@@ -2681,41 +2677,40 @@
           </itemized-list>  
         </section>  
         <section>  
-            <title> Determining the Cost of an Augmentation body part
-             </title>
+            <title>Determining the Cost of an Augmentation body part</title>
           <note> This section is incomplete. </note>  
         </section>  
         <section>  
-          <title> Arm, Hand </title>  
+          <title>Arm, Hand</title>  
           <reference hrid='Content/Augmentations/Arm, Hand' />  
         </section>  
         <section>  
-          <title> Body </title>  
+          <title>Body</title>  
           <reference hrid='Content/Augmentations/Body' />  
         </section>  
         <section>  
-          <title> Head </title>  
+          <title>Head</title>  
           <reference hrid='Content/Augmentations/Head' />  
         </section>  
         <section>  
-          <title> Leg </title>  
+          <title>Leg</title>  
           <reference hrid='Content/Augmentations/Leg' />  
         </section>  
         <section>  
-          <title> Torso </title>  
+          <title>Torso</title>  
           <reference hrid='Content/Augmentations/Torso' />  
         </section>  
       </chapter>  
       <chapter>  
-        <title> Equipment </title>  
+        <title>Equipment</title>  
         <section>  
-          <title> Ammunition </title>  
+          <title>Ammunition</title>  
           <reference hrid='Content/Equipment/Ammunition' />  
         </section>  
         <section>  
-          <title> Armor </title>  
+          <title>Armor</title>  
           <section>  
-            <title> Basics for Armor and Damage </title>  
+            <title>Basics for Armor and Damage</title>  
             <itemized-list>  
                 <item>  Armor has 3 main values: Piercing, slashing, and
                  crushing. Armor values are represented by 3 numbers
@@ -2787,7 +2782,7 @@
             </itemized-list>  
           </section>  
           <section>  
-            <title> Shields </title>  
+            <title>Shields</title>  
             <itemized-list>  
                 <item>  When creating a shield, there are 2 factors. The
                  material the shield is made of, and the type of shield.
@@ -2821,7 +2816,7 @@
           <reference hrid='Content/Equipment/Armor' />  
         </section>  
         <section>  
-          <title> Energy Weapons </title>  
+          <title>Energy Weapons</title>  
             <text>  Most energy weapons are powered by a battery pack.
              These are interchangable between weapons. Energy within the
              packs is consumed as the weapon is fired, like normal
@@ -2837,7 +2832,7 @@
              $1.50 per EU to charge. </text>
         </section>  
         <section>  
-          <title> Melee </title>  
+          <title>Melee</title>  
             <text>  For damage type listed as _/_, the weapon can deal
              either type of damage for a given attack. For a P/S weapon,
              the attcker can choose to do a P or S attack. For every
@@ -2876,7 +2871,7 @@
             </item>  
           </description-list>  
           <section>  
-            <title> Options for Melee Weapons </title>  
+            <title>Options for Melee Weapons</title>  
               <text>  Prices listed are for basic weapons with enough
                durability to function in real combat situations. They are
                not showpieces or wallhangers. However, other options are
@@ -2926,8 +2921,7 @@
                   <cell> Common </cell>  
                 </row>  
               </table>  
-                <caption> Options for mel&egrave;e weapon construction
-                 </caption>
+                <caption>Options for mel&egrave;e weapon construction</caption>
             </figure>  
               <text>  For other than normal sized weapons (mecha, etc.),
                all stats are <m>
@@ -2938,35 +2932,35 @@
             </text>  
           </section>  
           <section>  
-            <title> Axes </title>  
+            <title>Axes</title>  
             <reference hrid='Content/Equipment/Melee/Axes' />  
           </section>  
           <section>  
-            <title> Blunt </title>  
+            <title>Blunt</title>  
             <reference hrid='Content/Equipment/Melee/Blunt' />  
           </section>  
           <section>  
-            <title> Body </title>  
+            <title>Body</title>  
             <reference hrid='Content/Equipment/Melee/Body' />  
           </section>  
           <section>  
-            <title> Chained </title>  
+            <title>Chained</title>  
             <reference hrid='Content/Equipment/Melee/Chained' />  
           </section>  
           <section>  
-            <title> Exotic </title>  
+            <title>Exotic</title>  
             <reference hrid='Content/Equipment/Melee/Exotic' />  
           </section>  
           <section>  
-            <title> Knives </title>  
+            <title>Knives</title>  
             <reference hrid='Content/Equipment/Melee/Knives' />  
           </section>  
           <section>  
-            <title> Large Swords </title>  
+            <title>Large Swords</title>  
             <reference hrid='Content/Equipment/Melee/Large Swords' />  
           </section>  
           <section>  
-            <title> Monofilament </title>  
+            <title>Monofilament</title>  
               <text>  The Monofilament Whip is length of metallic,
                diamondoid, or silicoid wire that is the thickness of a
                single molecule, with a weight on one end. The Archaic
@@ -2984,7 +2978,7 @@
             <reference hrid='Content/Equipment/Melee/Monofilament' />  
           </section>  
           <section>  
-            <title> Plasma </title>  
+            <title>Plasma</title>  
               <text>  Plasma weapons are designed for a specific set of
                modifications. These are: </text>
             <figure>  
@@ -3020,10 +3014,10 @@
                   <cell> x1.5 </cell>  
                 </row>  
               </table>  
-              <caption> Plasma Weapon Modifiers </caption>  
+              <caption>Plasma Weapon Modifiers</caption>  
             </figure>  
             <section>  
-              <title> Notes: specific to Plasma Weapons </title>  
+              <title>Notes: specific to Plasma Weapons</title>  
               <itemized-list>  
                   <item> Plasma weapons are a bladeless handle (typically
                    looks like a normal weapon handle or a flashlight)
@@ -3065,11 +3059,11 @@
             </section>  
           </section>  
           <section>  
-            <title> Polearms </title>  
+            <title>Polearms</title>  
             <reference hrid='Content/Equipment/Melee/Polearms' />  
           </section>  
           <section>  
-            <title> Rocket Assisted </title>  
+            <title>Rocket Assisted</title>  
               <text>  Rocket-assisted weapons are modern versions of
                traditional archaic weapons. They have small rocket motors
                contained in the weapon. When the weapon is swung, the
@@ -3091,31 +3085,31 @@
                />
           </section>  
           <section>  
-            <title> Staves </title>  
+            <title>Staves</title>  
             <reference hrid='Content/Equipment/Melee/Staves' />  
           </section>  
           <section>  
-            <title> Thrown </title>  
+            <title>Thrown</title>  
             <reference hrid='Content/Equipment/Melee/Thrown' />  
           </section>  
         </section>  
         <section>  
-          <title> Miscellaneous </title>  
+          <title>Miscellaneous</title>  
           <reference hrid='Content/Equipment/Miscellaneous' />  
         </section>  
         <section>  
-          <title> Ranged </title>  
+          <title>Ranged</title>  
           <reference hrid='Content/Equipment/Ranged' />  
         </section>  
         <section>  
-          <title> Shields </title>  
+          <title>Shields</title>  
           <reference hrid='Content/Equipment/Shields' />  
         </section>  
       </chapter>  
       <chapter>  
-        <title> Magic </title>  
+        <title>Magic</title>  
         <section>  
-          <title> Introduction </title>  
+          <title>Introduction</title>  
             <text>  Magic exists in many forms. It is a supernatural
              energy that permeates everything in the world. Characters
              with the right skills can bend this energy to their
@@ -3192,9 +3186,9 @@
           </itemized-list>  
         </section>  
         <section>  
-          <title> Types of Magic </title>  
+          <title>Types of Magic</title>  
           <section>  
-            <title> Invocation Magic (spellcasting) </title>  
+            <title>Invocation Magic (spellcasting)</title>  
               <text>  Invocation spellcasting is the most common and
                basic form of magic. This is the art of the wizard and
                sorceress, where characters use innate mana to cast
@@ -3277,7 +3271,7 @@
                they are not able to cast magic. </text>
           </section>  
           <section>  
-            <title> Ritual Magic </title>  
+            <title>Ritual Magic</title>  
               <text>  Ritual magic is performed in elaborate
                &ldquo;performances&rdquo; involving a much human
                involvement. Magic rituals involve material components
@@ -3410,7 +3404,7 @@
                  desire. </item>
             </itemized-list>  
             <figure>  
-              <title> Rank of Ritual Spell </title>  
+              <title>Rank of Ritual Spell</title>  
               <table>  
                 <head>  
                   <cell align='center'> Level of Ritual Magic </cell>  
@@ -3511,8 +3505,7 @@
                   <cell> 1 </cell>  
                 </row>  
               </table>  
-                <caption> Rank of Ritual Spells per Ritual Magic Level
-                 </caption>
+                <caption>Rank of Ritual Spells per Ritual Magic Level</caption>
             </figure>  
               <text>  Ritual magicians may also perform a ritual in a
                special manner, infusing the spell into an object, such as
@@ -3532,7 +3525,7 @@
                used by anyone, not just the ritualist. </text>
           </section>  
           <section>  
-            <title> Religious &amp; Faith Magic </title>  
+            <title>Religious &amp; Faith Magic</title>  
               <text>  Religious magic is magical effects that are brought
                into reality by the combined will of the caster and the
                caster&rsquo;s god(s). Whereas primitive religions and
@@ -3655,7 +3648,7 @@
                   <cell> Cost: priceless. </cell>  
                 </row>  
               </table>  
-              <caption> Bonuses provided by a Holy Symbol </caption>  
+              <caption>Bonuses provided by a Holy Symbol</caption>  
             </figure>  
               <text>  Anytime a Faith magic caster has to make a
                magic-related roll (&ldquo;Magical Control&rdquo; roll, or
@@ -3665,7 +3658,7 @@
                </text>
           </section>  
           <section>  
-            <title> Martial Magic / Super Power Combat </title>  
+            <title>Martial Magic / Super Power Combat</title>  
               <text>  Martial magic is the ability to perform
                supernatural &ldquo;attacks&rdquo; in conjunction with
                normal combat, such as fist fighting, martial arts, or
@@ -3732,7 +3725,7 @@
                skill level of &ldquo;Martial Magic&rdquo; </text>
           </section>  
           <section>  
-            <title> Mysticism / Psionics </title>  
+            <title>Mysticism / Psionics</title>  
               <text>  Psionics is the ability to perform magic or
                supernatural acts by pure force of will. No incantations,
                materials, or special preparation is required. A character
@@ -3773,7 +3766,7 @@
             </itemized-list>  
           </section>  
           <section>  
-            <title> Beast Magic (summoning) </title>  
+            <title>Beast Magic (summoning)</title>  
               <text>  Beast Magic is a unique magic school. It is the art
                of summoning creatures to aid their master. Any magic user
                (spellcasting, ritual, etc.) may purchase summoning spells
@@ -3902,7 +3895,7 @@
                      Mammoth </cell>
                 </row>  
               </table>  
-              <caption> Summonable animals by Rank </caption>  
+              <caption>Summonable animals by Rank</caption>  
             </figure>  
               <text>  For generic animals follow the table above. For
                very specific, exotic, or rare animals jump to the next
@@ -3918,7 +3911,7 @@
                </text>
           </section>  
           <section>  
-            <title> Magic-Related Skill Summary </title>  
+            <title>Magic-Related Skill Summary</title>  
             <itemized-list>  
               <item>  Spellcasting gives additional <m>  <mrow>  
                     <msup>  <mi> LVL </mi><mn> 2 </mn>  
@@ -4064,7 +4057,7 @@
           </section>  
         </section>  
         <section>  
-          <title> General notes </title>  
+          <title>General notes</title>  
             <text>  Most spells automatically succeed (there is no skill
              check necessary, except for Faith Magic). Once cast, it is
              possible for some spells to miss their target however. For
@@ -4091,7 +4084,7 @@
             <text>  Note that a Faith magic caster must always make a
              Faith roll in order to cast any magical spell. </text>
           <section>  
-            <title> Magic Points (MP) </title>  
+            <title>Magic Points (MP)</title>  
               <text>  Any character has innate MP; magic related skills
                will give additional MP. </text>
               <text>  MP are consumed whenever spells are cast. They are
@@ -4123,12 +4116,12 @@
                   <cell> 20 per hour </cell>  
                 </row>  
               </table>  
-              <caption> Mana Point replacement per hour. </caption>  
+              <caption>Mana Point replacement per hour.</caption>  
             </figure>  
           </section>  
           <section>  
-              <title> Magical &ldquo;Tools&rdquo;: Books, Scrolls, and
-               Potions </title>
+              <title>Magical &ldquo;Tools&rdquo;: Books, Scrolls, and
+               Potions</title>
               <text>  There exist three different kinds of magic-related
                books. </text>
               <text>  Type 1 is a volume that contains detailed
@@ -4207,7 +4200,7 @@
             </description-list>  
           </section>  
           <section>  
-            <title> Magic Terminology &amp; Misc. </title>  
+            <title>Magic Terminology &amp; Misc.</title>  
             <description-list>  
               <item>
                  <description> Black </description>  spells are those
@@ -4236,51 +4229,51 @@
           </section>  
         </section>  
         <section>  
-          <title> Schools(???) </title>  
+          <title>Schools(???)</title>  
           <section>  
-            <title> Air </title>  
+            <title>Air</title>  
             <reference hrid='Content/Magic/Air' />  
           </section>  
           <section>  
-            <title> Arcane </title>  
+            <title>Arcane</title>  
             <reference hrid='Content/Magic/Arcane' />  
           </section>  
           <section>  
-            <title> Beast </title>  
+            <title>Beast</title>  
             <reference hrid='Content/Magic/Beast' />  
           </section>  
           <section>  
-            <title> Earth </title>  
+            <title>Earth</title>  
             <reference hrid='Content/Magic/Earth' />  
           </section>  
           <section>  
-            <title> Fire </title>  
+            <title>Fire</title>  
             <reference hrid='Content/Magic/Fire' />  
           </section>  
           <section>  
-            <title> Life </title>  
+            <title>Life</title>  
             <reference hrid='Content/Magic/Life' />  
           </section>  
           <section>  
-            <title> Light </title>  
+            <title>Light</title>  
             <reference hrid='Content/Magic/Light' />  
           </section>  
           <section>  
-            <title> Physical </title>  
+            <title>Physical</title>  
             <reference hrid='Content/Magic/Physical' />  
           </section>  
           <section>  
-            <title> Spirit </title>  
+            <title>Spirit</title>  
             <reference hrid='Content/Magic/Spirit' />  
           </section>  
           <section>  
-            <title> Water </title>  
+            <title>Water</title>  
             <reference hrid='Content/Magic/Water' />  
           </section>  
         </section>  
       </chapter>  
       <chapter>  
-        <title> Martial Arts </title>  
+        <title>Martial Arts</title>  
           <text>  The governing skill for Martial Arts is the Academic
            Skill, Martial Arts, which is rank 2. All combat skills fall
            under the &aelig;gis of Martial Arts. This means that a
@@ -4295,7 +4288,7 @@
            little use in a combat arena&mdash;and may even be a
            detriment. </text>
         <section>  
-          <title> Rules </title>  
+          <title>Rules</title>  
             <text>  Martial Arts covers the use of all weapons (ranged,
              melee, ultratech, mecha, et al.), in addition to
              hand-to-hand (HtH) combat, and the set of specialized skills
@@ -4314,7 +4307,7 @@
              Level-in-Martial Arts/2 times (the Lvl in Martial Arts,
              divided by two, rounded-down). </text>
           <example>  
-            <title> Kim improves his Nyrkkeily </title>  
+            <title>Kim improves his Nyrkkeily</title>  
               <text>  Kim NGoc Goay is an expert in Norse Boxing
                (Nyrkkeily), he chooses, when he gets his first level in
                Martial Arts, he also buys a level in
@@ -4376,7 +4369,7 @@
             <note> A Modifier may not be used more than Lvl times per
              turn. </note>
           <example>  
-            <title> Candlestick modifies his punch </title>  
+            <title>Candlestick modifies his punch</title>  
               <text>  Candlestick has two levels in Martial Arts; he has
                bought Punch at rank 3 and level 3, and chosen it as his
                bonus; he also has Bash at level 1 and Feint at level 1.
@@ -4388,7 +4381,7 @@
           </example>  
         </section>  
         <section>  
-          <title> Further Commentary </title>  
+          <title>Further Commentary</title>  
             <text>  You will note that there is no &ldquo;chi&rdquo; or
              &ldquo;super-powers&rdquo; in Martial Arts. In fact, the
              skills are deliberately kept pedestrian&mdash;those
@@ -4405,7 +4398,7 @@
              Traits section. In Magic there a several categories that
              would benefit a Martial Artist tremondously. </text>
           <section>  
-            <title> Advanced Martial Arts </title>  
+            <title>Advanced Martial Arts</title>  
               <text>  Also there are several para-skills which are
                tremondously important to the dedicated Martial Artist:
                Kata, Kung Fu, Waza, and Jitsu. These skills allow the
@@ -4416,33 +4409,33 @@
           </section>  
         </section>  
         <section>  
-          <title> Categories </title>  
+          <title>Categories</title>  
           <section>  
-            <title> Basic </title>  
+            <title>Basic</title>  
             <reference hrid='Content/Martial Arts/Basic' />  
           </section>  
           <section>  
-            <title> Combat </title>  
+            <title>Combat</title>  
             <reference hrid='Content/Martial Arts/Combat' />  
           </section>  
           <section>  
-            <title> Defensive </title>  
+            <title>Defensive</title>  
             <reference hrid='Content/Martial Arts/Defensive' />  
           </section>  
           <section>  
-            <title> Modifier </title>  
+            <title>Modifier</title>  
             <reference hrid='Content/Martial Arts/Modifier' />  
           </section>  
           <section>  
-            <title> Special </title>  
+            <title>Special</title>  
             <reference hrid='Content/Martial Arts/Special' />  
           </section>  
         </section>  
       </chapter>    
       <chapter>  
-        <title> Mecha </title>  
+        <title>Mecha</title>  
         <section>  
-          <title> Mecha Suits &amp; Powered Armor </title>  
+          <title>Mecha Suits &amp; Powered Armor</title>  
             <text>  A robot in which the pilot is completely protected by
              armor and other mechanisms.Mecha are controlled by abstract
              means and requires the Mecha Piloting skill. </text>
@@ -4491,10 +4484,10 @@
              armor. However, the pilot needs to be skilled to maximize
              the potential of a mecha. </text>
           <section>  
-            <title> Building a Mecha </title>  
+            <title>Building a Mecha</title>  
             <numbered-list>  
               <item>  
-                <title> Size and Starting Costs Step </title>  
+                <title>Size and Starting Costs Step</title>  
                 <figure>  
                   <table>  
                     <head>  
@@ -4558,7 +4551,7 @@
                       <cell> 400 </cell>  
                     </row>  
                   </table>  
-                  <caption> Size Level and Starting CP Cost </caption>  
+                  <caption>Size Level and Starting CP Cost</caption>  
                 </figure>  
                 <itemized-list>  
                     <item> Mecha can be no smaller than one size level
@@ -4571,7 +4564,7 @@
                 </itemized-list>  
               </item>  
               <item>  
-                <title> Starting Values </title>  
+                <title>Starting Values</title>  
                 <figure>  
                   <table>  
                     <head>  
@@ -4695,7 +4688,7 @@
                       <cell> 640 </cell>  
                     </row>  
                   </table>  
-                  <caption> Starting Values for Statistics </caption>  
+                  <caption>Starting Values for Statistics</caption>  
                 </figure>  
                 <description-list>  
                   <item>
@@ -4737,7 +4730,7 @@
                 </description-list>  
               </item>  
               <item>  
-                <title> Frame Style </title>  
+                <title>Frame Style</title>  
                 <note> This section is for Mecha only! </note>  
                 <figure>  
                   <table>  
@@ -4823,7 +4816,7 @@
                       <cell> 140 </cell>  
                     </row>  
                   </table>  
-                  <caption> Frame Style </caption>  
+                  <caption>Frame Style</caption>  
                 </figure>  
                   <text>  The number of HP and Slots that a mecha has can
                    be further altered by the internal frame&rsquo;s style
@@ -4856,7 +4849,7 @@
                  armor values. Chose one, but they cannot be mixed.
                  </text>
               <item>  
-                <title> Armor </title>  
+                <title>Armor</title>  
                 <figure>  
                   <table>  
                     <head>  
@@ -4894,11 +4887,11 @@
                          attacks as if the attack was not U </cell>
                     </row>  
                   </table>  
-                  <caption> Armor </caption>  
+                  <caption>Armor</caption>  
                 </figure>  
               </item>  
               <item>  
-                <title> Engines etc. </title>  
+                <title>Engines etc.</title>  
                   <text>  Various parts of a mecha or powered suit
                    require power to operate. This can come from any
                    number of different sources. A mecha will generally
@@ -4918,8 +4911,8 @@
                    of equipment will not function. So it is vital that
                    the suit has adequate power. </text>
                 <figure>  
-                    <title> Engines (provide constant power while mech is
-                     operating) </title>
+                    <title>Engines (provide constant power while mech is
+                     operating)</title>
                   <table>  
                     <head>  
                       <cell> System </cell>  
@@ -4963,7 +4956,7 @@
                          </cell>
                     </row>  
                   </table>  
-                  <caption> Power Sources </caption>  
+                  <caption>Power Sources</caption>  
                 </figure>  
                   <text>  When turned on, booster engines provide power
                    every turn for three turns in a row. They cannot be
@@ -5010,7 +5003,7 @@
                          </cell>
                     </row>  
                   </table>  
-                  <caption> Booster Engines </caption>  
+                  <caption>Booster Engines</caption>  
                 </figure>  
                   <text>  Power cells store energy like a rechargeable
                    battery. They contain a certain amount of power, which
@@ -5053,11 +5046,11 @@
                       <cell> Most efficent power cell </cell>  
                     </row>  
                   </table>  
-                  <caption> Power Cells </caption>  
+                  <caption>Power Cells</caption>  
                 </figure>  
               </item>  
               <item>  
-                <title> Agility and Strength Modification </title>  
+                <title>Agility and Strength Modification</title>  
                 <figure>  
                   <table>  
                     <head>  
@@ -5099,11 +5092,11 @@
                          </cell>
                     </row>  
                   </table>  
-                  <caption> DEX and STR modification. </caption>  
+                  <caption>DEX and STR modification.</caption>  
                 </figure>  
               </item>  
               <item>  
-                <title> Movement Systems </title>  
+                <title>Movement Systems</title>  
                   <text>  A mecha suit or power armor needs to move. All
                    movement systems use power. Unless otherwise stated,
                    the systems use their power only when activated (being
@@ -5242,15 +5235,15 @@
                       <cell> For jet system only </cell>  
                     </row>  
                   </table>  
-                  <caption> Movement Systems </caption>  
+                  <caption>Movement Systems</caption>  
                 </figure>  
               </item>  
               <item>  
-                <title> Equipment </title>  
+                <title>Equipment</title>  
                 <text>  Purchase equipment. </text>  
               </item>  
               <item>  
-                <title> Weapons </title>  
+                <title>Weapons</title>  
                   <text>  Purchase weapons from the generic weapons
                    sheet. </text>
                   <note> A mecha suit can weild any hand-held weapon that
@@ -5260,13 +5253,13 @@
           </section>  
         </section>  
         <section>  
-          <title> Equipment </title>  
+          <title>Equipment</title>  
           <section>  
-            <title> Auxiliary </title>  
+            <title>Auxiliary</title>  
             <reference hrid='Content/Mecha/Equipment/Auxiliary' />  
           </section>  
           <section>  
-            <title> Ballistics </title>  
+            <title>Ballistics</title>  
               <text>  Ballistic weapons are scaled firearms or missiles
                (not energy weapons). The following chart details the
                information for various sized ammuntion for firearm-like
@@ -5362,8 +5355,8 @@
                   <cell> $800 </cell>  
                 </row>  
               </table>  
-                <caption> Sizes, costs, capacity for firearm ballistic
-                 weapons. </caption>
+                <caption>Sizes, costs, capacity for firearm ballistic
+                 weapons.</caption>
             </figure>  
             <description-list>  
               <item>
@@ -5397,7 +5390,7 @@
             <reference hrid='Content/Mecha/Equipment/Ballistic' />  
           </section>  
           <section>  
-            <title> Energy Weapons </title>  
+            <title>Energy Weapons</title>  
               <text>  Energy weapons draw energy straight from the
                engines or batteries. There are multiple different methods
                for producing the blast that comes from an energy weapon,
@@ -5443,8 +5436,8 @@
                   <cell> 10 </cell>  
                 </row>  
               </table>  
-                <caption> Sizes, number of die with multiplier, and
-                 energy usage for energy weapons. </caption>
+                <caption>Sizes, number of die with multiplier, and
+                 energy usage for energy weapons.</caption>
             </figure>  
             <text>  Energy weapons use Class+2 slots. </text>  
               <text>  All Energy weapons can be &ldquo;tuned&rdquo; for
@@ -5498,7 +5491,7 @@
               <reference hrid='Content/Mecha/Equipment/Energy Weapons' />
           </section>  
           <section>  
-            <title> Weapons </title>  
+            <title>Weapons</title>  
               <text>  Melee weapons for Mecha and Powered Armor are
                simply &ldquo;scaled&rdquo; up Melee weapons. The
                following table details the rule for scaling
@@ -5583,21 +5576,21 @@
                   <cell span='2'> Uses 5x power. </cell>  
                 </row>  
               </table>  
-              <caption> Mecha and Power Armor Melee Weapons </caption>  
+              <caption>Mecha and Power Armor Melee Weapons</caption>  
             </figure>  
             <reference hrid='Content/Mecha/Equipment/Melee Weapons' />  
           </section>  
           <section>  
-            <title> Sensors and Controls </title>  
+            <title>Sensors and Controls</title>  
               <reference hrid='Content/Mecha/Equipment/Sensors and
                Controls' />
           </section>  
         </section>  
       </chapter>  
       <chapter>  
-        <title> Monsters </title>  
+        <title>Monsters</title>  
         <section>  
-          <title> Building a Monster </title>  
+          <title>Building a Monster</title>  
             <text> Because of the wide variety of monstrous creatures
              available in literature and fantasy, it is a somewhat futile
              task to attempt to construct an exhaustive list. In
@@ -5616,7 +5609,7 @@
                pre-generated </item>
           </description-list>  
           <section>  
-            <title> Base Types </title>  
+            <title>Base Types</title>  
               <text> The base-types are the fundamental
                &ldquo;type&rdquo; or &ldquo;look&rdquo; of the monster,
                they are: </text>
@@ -5659,8 +5652,7 @@
                 </head>  
                 <row>  
                   <cell span='12'>
-                    <title> The fundamental base-types for monsters
-                     </title>
+                    <title>The fundamental base-types for monsters</title>
                   </cell>  
                 </row>  
                 <row>  
@@ -6040,11 +6032,11 @@
                   <cell> 1 </cell>  
                 </row>  
               </table>  
-              <caption> Monster Construction Table </caption>  
+              <caption>Monster Construction Table</caption>  
             </figure>  
           </section>  
           <section>  
-            <title> Adding a Template </title>  
+            <title>Adding a Template</title>  
               <text> There are several important items missing from the
                base-type. These are covered by Monstrous Templates which
                add things such as mental attributes (and Cha!), special
@@ -6054,12 +6046,12 @@
           </section>  
         </section>  
         <section>  
-          <title> Monsters </title>  
+          <title>Monsters</title>  
           <reference hrid='Content/Monsters' />  
         </section>  
       </chapter>  
       <chapter>  
-        <title> Traits </title>  
+        <title>Traits</title>  
           <text> Traits are supernatural (supernormal or paranormal)
            capabilities. They are differentiated from Magic because they
            are singular in nature. For instance, a trait could be a
@@ -6077,7 +6069,7 @@
            specific trait designed for using abilities to some specific
            spell, this trait is called Spell Ability. </text>
         <section>  
-          <title> Traits </title>  
+          <title>Traits</title>  
           <reference hrid='Content/Traits' />  
         </section>  
       </chapter>  
