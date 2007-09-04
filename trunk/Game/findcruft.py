@@ -32,7 +32,7 @@ def sanitizes (string):
   result = result.replace (u'\xe6', "&aelig;").replace (u'\u2211', "&sum;")
   result = result.replace (u'\u2122', "&trade;").replace ("<", "&lt;")
   result = result.replace (">", "&gt;").replace ("'", "&apos;")
-  return result.strip()
+  return result.rstrip()
 
 def selfsimilarstrings (Where, xml=None, Strings={}):
   if Where is not None:
@@ -123,7 +123,7 @@ def pseudoprettyprint (Where, xml=None, indent="", inlines=[]):
                 indent+"  ", inlines=inlines)
             elif child.nodeType == xml.TEXT_NODE:
               if child.nodeValue:
-                result += sanitizes (child.nodeValue)
+                result += " " + sanitizes (child.nodeValue) + " "
         if name not in inlines and not onlyText:
           result += "\n"+indent
         result += "</"+name+">"
