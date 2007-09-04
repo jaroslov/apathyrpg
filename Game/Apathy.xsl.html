@@ -318,4 +318,23 @@
     <span class="notappl">n/a</span>
   </xsl:template>
 
+  <!-- roll -->
+  <xsl:template match="roll">
+    <span class="roll">
+      <span class="num">
+        <xsl:value-of select="num" />
+      </span>
+      <span class="D">D</span>
+      <span class="face">
+        <xsl:value-of select="face" />
+      </span>
+      <span class="bns">
+        <xsl:value-of select="bns" />
+      </span>
+      <span class="kind">
+        <xsl:value-of select="kind" />
+      </span>
+    </span>
+  </xsl:template>
+
 </xsl:stylesheet>
