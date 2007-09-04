@@ -3,8 +3,6 @@
 
   <!--<xsl:output version="5.0" method="html" encoding="ISO-8859-1" media-type="text/html"/>-->
 
-  <xsl:strip-space elements="title" />
-
   <!-- Main document -->
   <xsl:template match="/">
     <!-- Bug in FFX2.0.0.6? Renders incorrectly b/c it uses ending ".xhtml" -->
@@ -40,25 +38,25 @@
           <ol class="toc">
             <xsl:for-each select="//part">
               <li>
-                <a href="#part-{./title}">
+                <a href="#part-{translate(./title,' ','')}">
                   <xsl:value-of select="title" />
                 </a>
                 <ol class="toc" >
                   <xsl:for-each select="chapter">
                     <li>
-                      <a href="#chapter-{./title}">
+                      <a href="#chapter-{translate(./title,' ','')}">
                         <xsl:value-of select="title" />
                       </a>
                       <ol class="toc" >
                         <xsl:for-each select="section">
                           <li>
-                            <a href="#section-{../../title}-{../title}-{./title}">
+                            <a href="#section-{translate(../../title,' ','')}-{translate(../title,' ','')}-{translate(./title,' ','')}">
                               <xsl:value-of select="title" />
                             </a>
                             <ol class="toc" >
                               <xsl:for-each select="section">
                                 <li>
-                                  <a href="#section-{../../title}-{../title}-{./title}">
+                                  <a href="#section-{translate(../../title,' ','')}-{translate(../title,' ','')}-{translate(./title,' ','')}">
                                     <xsl:value-of select="title" />
                                   </a>
                                 </li>
@@ -78,7 +76,7 @@
           <h1>List of Examples</h1>
           <ol class="examples">
             <xsl:for-each select="//example">
-              <li><a href="#example-{./title}">
+              <li><a href="#example-{translate(./title,' ','')}">
                 <xsl:value-of select="title" />
               </a></li>
             </xsl:for-each>
@@ -89,7 +87,7 @@
           <ol class="figures">
             <xsl:for-each select="//figure">
               <li>
-                <a href="#figure-{./caption}">
+                <a href="#figure-{translate(./caption,' ','')}">
                   <xsl:value-of select="caption" />
                 </a>
               </li>
@@ -118,10 +116,10 @@
   
   <xsl:template match="book">
     <xsl:for-each select="part">
-      <div class="part" id="part-{./title}">
+      <div class="part" id="part-{translate(./title,' ','')}">
         <h1><xsl:value-of select="title" /></h1>
         <xsl:for-each select="chapter">
-          <div class="chapter" id="chapter-{./title}">
+          <div class="chapter" id="chapter-{translate(./title,' ','')}">
             <!--<h1><xsl:value-of select="title" /></h1>-->
             <xsl:apply-templates />
           </div>
@@ -131,7 +129,7 @@
   </xsl:template>
 
   <xsl:template match="section">
-    <div class="section" id="section-{../../title}-{../title}-{./title}" >
+    <div class="section" id="section-{translate(../../title,' ','')}-{translate(../title,' ','')}-{translate(./title,' ','')}" >
       <!--<h1><xsl:value-of select="title" /></h1>-->
       <xsl:apply-templates />
     </div>
@@ -144,7 +142,7 @@
   </xsl:template>
 
   <xsl:template match="example">
-    <div class="example" id="example-{./title}">
+    <div class="example" id="example-{translate(./title,' ','')}">
       <h1>
         <span class="example-title">Example:</span>
         <xsl:value-of select="title" />
@@ -203,7 +201,7 @@
   </xsl:template>
 
   <xsl:template match="figure">
-    <div class="figure" id="figure-{./caption}">
+    <div class="figure" id="figure-{translate(./caption,' ','')}">
       <xsl:apply-templates select="table" />
       <xsl:apply-templates select="caption" />
     </div>
