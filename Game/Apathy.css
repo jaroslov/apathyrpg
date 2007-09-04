@@ -132,6 +132,7 @@ span.definition {
 }
 .description-term {
   font-weight: bold;
+  min-width: 10em;
 }
 table.description-list {
   margin-right: 3em;
