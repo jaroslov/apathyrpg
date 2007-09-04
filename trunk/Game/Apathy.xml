@@ -19666,15 +19666,22 @@
       <field name="Attacks" >Slap with limb:  limb stetches into tentacle-like whip.  Deals 3D6+1 [+15] C and scores an automatic grapple
     
     Energy drain:  Requires a grapple first.  Deals 3D4 [+5] U with automatic success.</field>
-      <field name="Description" description="yes" >Appearance:  A babau is a constructed creature, similar to a golem.  As such they vary in exact appearance.  However, all babaus resemble some other creature from which they are made&ndash;most commonly an infant of any humanoid race&ndash;though they could be made from any living creature.  A babau looks like the creature that it was made from, with the following features:  they are always naked and carry no equipment or weapons, they are perfectly pitch black,  and their body lacks much of the detail of the original creature&ndash;most delicate or &quot;sharp&quot; features are smoothed over.  Babaus have no eyes or ears or toes&ndash;they have only the tinest of bumps where these features once were.  Their fingers are small nubs, and their mouth is a tiny wrinkle.
-    
+      <field name="Description" description="yes" >
+	<text>
+	Appearance:  A babau is a constructed creature, similar to a golem.  As such they vary in exact appearance.  However, all babaus resemble some other creature from which they are made&ndash;most commonly an infant of any humanoid race&ndash;though they could be made from any living creature.  A babau looks like the creature that it was made from, with the following features:  they are always naked and carry no equipment or weapons, they are perfectly pitch black,  and their body lacks much of the detail of the original creature&ndash;most delicate or &quot;sharp&quot; features are smoothed over.  Babaus have no eyes or ears or toes&ndash;they have only the tinest of bumps where these features once were.  Their fingers are small nubs, and their mouth is a tiny wrinkle.
+	</text>
+	<text>
     Habits:  Babaus are constructs and as such, they do whatever their creator has &quot;programmed&quot; them do to.  The programming of a Babau is set during their creation, and typically includes such activities as guarding a certain area or performing menial labor.  Becasue the complexity of a babau&apos;s programming is directly related to the learning ability of the original creature, the most common babau is made from an infant or young child of an intelligent race (such as human).  If a babau is made from an animal, it is only suitable for the most basic of menial tasks.
-    
+	</text>
+	<text>
     Combat:  Babaus can be effective combatants due to their impressive strength, resiliance, and unique attacks.  However, their combat strategy is preprogrammed, and such they never deviate in their behavior.  This behavior is set by their programming, and thus it varies depending on their programmer&apos;s wishes.  Generally their attack strategy is to strike and grapple an opponent using their limb-tentacles.  Once they have secured a grapple, they use their energy drain attack as often as possible. They typically are programmed to flee and regenerate if they are seriously wounded.
-    
+	</text>
+	<text>
     If a Babau is hit by a slashing weapon that deals more than 5 damage,  the babau splits into two halves.  Each is the size of the original babau.  One half sustains whatever damage was dealt by the blow.  The other one has full HP.
-    
-    Example:  Eric attacks a Babau with a short sword, and rolls 14 damage.  After deducting the Babau&apos;s natural armor, the damage sustained is 9 S.  Since this is more than 5 damage, the Babau splits in two.  One half sustains that 9 damage.  The other half is at full HP.</field>
+	</text>
+	<text>
+    Example:  Eric attacks a Babau with a short sword, and rolls 14 damage.  After deducting the Babau&apos;s natural armor, the damage sustained is 9 S.  Since this is more than 5 damage, the Babau splits in two.  One half sustains that 9 damage.  The other half is at full HP.</text>
+      </field>
       <field name="level" />
      </datum>
      <datum name="Basilisk" >
@@ -19705,7 +19712,7 @@
     
     Dice: Strike: 4</field>
       <field name="Attacks" >Bite: 2D6+1 ; Claws: 1D6+2; Spines: anyone touching the spines will take 1D4 P and be poisoned for 1D6 turns, taking 2D4+1 U damage a turn.</field>
-      <field name="Description" description="yes" >A basilisk is a large lizard-like creature that is about ten feet long when fully grown.  It has a stout, thick body and a short, heavy tail.  It weighs about 400 pounds.  The creature has six powerful legs and a large head with strong jaws.  Basilisks eat just about anything, including stone.  The basilisk is covered with armored scales that are colored similar to it&apos;s habitat.  Woodland basilisks are green, scrubland basilisks are a dull brown,  etc.  The Basilisk&apos;s scales are slick with poison,  and a Basilisk&apos;s gaze can turn a living target to stone, instantly.  Basilisks are of high animal intellience (predator) and are totally fearless.  A basilisk is unafraid of death, and cannot be awed or surprised.  They are solitary animals and fairly rare.  They have a long life span.</field>
+      <field name="Description" description="yes" >A basilisk is a large lizard-like creature that is about ten feet long when fully grown.  It has a stout, thick body and a short, heavy tail.  It weighs about 400 pounds.  The creature has six powerful legs and a large head with strong jaws.  Basilisks eat just about anything, including stone.  The basilisk is covered with armored scales that are colored similar to its habitat.  Woodland basilisks are green, scrubland basilisks are a dull brown,  etc.  The Basilisk&apos;s scales are slick with poison,  and a Basilisk&apos;s gaze can turn a living target to stone, instantly.  Basilisks are of high animal intellience (predator) and are totally fearless.  A basilisk is unafraid of death, and cannot be awed or surprised.  They are solitary animals and fairly rare.  They have a long life span.</field>
       <field name="level" />
      </datum>
      <datum name="Bugbear" >
@@ -19882,21 +19889,34 @@
     
     HP: 130
     
-    Actions:: *
+    Actions: *
     
     P/S/C: 20/20/20
     
     Size: 10&apos; long with an 8&apos; tail
     
     Dice: Strike: 5</field>
-      <field name="Attacks" >Can make a total of 3 bites, 1 claw attack, and 1 tail attack per turn. Bite: 2D6+2; claw: 3D4+1; tail: 2D4+2</field>
-      <field name="Description" description="yes" >A chimera is a powerful monster that appears as a mix between several different animals.  The front half of it&apos;s body is that of a Lion, and the back half is that of a goat.  It has three heads:  a goat, lion, and a serpent.  It has a tail with bony spikes along it&apos;s length.  It has a pair of bat-like wings atop its back.  Each head can function indipentantly of the others, but the Lion head controls the body.  All three heads can attack independently.</field>
-      <field name="level" />
+      <field name="Attacks" >Can make a total of 3 bites, 1 claw
+	attack, and 1 tail attack per turn. Bite: 2D6+2; claw: 3D4+1;
+	tail: 2D4+2</field>
+      <field name="Description" description="yes" >A chimera is a
+	powerful monster that appears as a mix between several
+	different animals.  The front half of it&apos;s body is that
+	of a Lion, and the back half is that of a goat.  It has three
+	heads: a goat, lion, and a serpent.  It has a tail with bony
+	spikes along it&apos;s length.  It has a pair of bat-like
+	wings atop its back.  Each head can function indipentantly of
+	the others, but the Lion head controls the body.  All three
+	heads can attack independently.</field> <field name="level" />
      </datum>
      <datum name="Cockatrice" >
       <field name="Name" title="yes" >Cockatrice</field>
       <field name="MetaTag" />
-      <field name="Special Abilities" >Once per turn the cockatrice can turn an opponent to stone with just a gaze.  This power does not work if the target is COMPLETELY enclosed, no eyeslits in armor, NOTHING.  The cockatrice must have a line of sight with the target.</field>
+      <field name="Special Abilities" >Once per turn the cockatrice
+	can turn an opponent to stone with just a gaze.  This power
+	does not work if the target is COMPLETELY enclosed, no
+	eyeslits in armor, NOTHING.  The cockatrice must have a line
+	of sight with the target.</field>
       <field name="Statistics" >STR: 4
     
     DEX: 14
