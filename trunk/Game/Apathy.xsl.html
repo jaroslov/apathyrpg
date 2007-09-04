@@ -3,6 +3,8 @@
 
   <!--<xsl:output version="5.0" method="html" encoding="ISO-8859-1" media-type="text/html"/>-->
 
+  <xsl:strip-space elements="title" />
+
   <!-- Main document -->
   <xsl:template match="/">
     <!-- Bug in FFX2.0.0.6? Renders incorrectly b/c it uses ending ".xhtml" -->
