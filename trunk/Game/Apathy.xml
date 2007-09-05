@@ -501,7 +501,7 @@
               final value for the attribute (for a Human) is increased by
               8; that is, if you buy 5 levels of STR (for 15 AP), then
               the final value of the STR is <m><mrow><mn> 5 </mn><mo> +
-              </mo><mn> 8 </mn><mo> = </mo>  <mn> 13 </mn></mrow></m> .
+              </mo><mn> 8 </mn><mo> = </mo>  <mn> 13 </mn></mrow></m>.
             </text>  
               <note> In most cases no player may have an attribute below
                8. Attributes below 8 are considered handicapped and/or
