@@ -351,3 +351,17 @@ div.datum-description span  {
   font-weight: bold;
   color: black;
 }
+div.footnotes {
+  margin-top: 10em;
+  padding-top: 2em;
+  border-top: double black;
+  font-size: 8pt;
+}
+div.footnote {
+  width: 30em;
+  margin-bottom: 2em;
+}
+div.footnote p {
+  padding-left: 2em;
+  text-indent: -1em;
+}

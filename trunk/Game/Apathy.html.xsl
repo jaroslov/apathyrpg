@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE stylesheet [
+<!ENTITY copy  "&#169;" ><!-- (c) -->
+]>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!--<xsl:output version="5.0" method="html" encoding="ISO-8859-1" media-type="text/html"/>-->
+
+  <xsl:strip-space elements="a" />
 
   <!-- Main document -->
   <xsl:template match="/">
@@ -110,6 +115,14 @@
           </ol>
         </div>
         <xsl:apply-templates select="//book"/>
+        <div class="footnotes">
+          <xsl:for-each select="//footnote">
+            <div class="footnote" id="{generate-id(.)}">
+              <p>*<xsl:apply-templates /></p>
+            </div>
+          </xsl:for-each>
+        </div>
+        <p>Copyright &copy; GPLv2 Creative Common: Allan Moyse, Jacob Smith, Noah Smith, Chris Cook, Nathan Jones</p>
       </body>
     </html>
   </xsl:template>
@@ -252,9 +265,7 @@
   </xsl:template>
 
   <xsl:template match="footnote">
-    <span class="footnote">
-        <xsl:apply-templates />
-    </span>
+    <a class="footnote" href="#{generate-id(.)}">*</a>
   </xsl:template>
   
 	<!--
