@@ -170,22 +170,6 @@ ul.Fast-Find-List {
   list-style-type: none;
   margin-left: -1.5em;
 }
-div.datum-description {
-  border: 1px solid black;
-  margin: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-  padding: 1em;
-  width: 35em;
-}
-div.datum-description h1 {
-  font-size: 14pt;
-}
-div.datum-description p {
-  padding-left: 2em;
-  padding-right: 2em;
-  text-indent: -1em;
-}
 table.datum-table {
   border-collapse: collapse;
 }
@@ -345,4 +329,25 @@ span.roll span.kind {
   font-weight: bold;
   font-variant: small-caps;
   padding-left: .25em;
+}
+div.datum-description {
+  border-top: double black;
+  padding-top: .5em;
+  margin: .5em;
+  margin-left: .5em;
+  margin-right: .5em;
+  width: 45em;
+}
+div.datum-description p {
+  padding: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-indent: -1em;
+  margin: 0;
+}
+div.datum-description span  {
+  font-size: 16pt;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: black;
 }
