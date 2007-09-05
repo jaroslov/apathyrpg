@@ -299,7 +299,7 @@
       <xsl:variable name="datum-title" select="field[@title='yes']" />
       <div class="datum-description"
         id="{../../@name}-{$hrid}-{translate($datum-title,' ','')}">
-        <h1><xsl:value-of select="field[@title='yes']" /></h1>
+        <span class="datum-description"><xsl:value-of select="field[@title='yes']" /></span>
         <p><xsl:value-of select="field[@description='yes']" /></p>
       </div>
     </xsl:for-each>
