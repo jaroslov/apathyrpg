@@ -12,7 +12,7 @@
     doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
     doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
   <xsl:preserve-space elements="html head body" />
-  <xsl:strip-space elements="p a" />
+  <xsl:strip-space elements="p a span" />
 
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -46,6 +46,7 @@
       <li><a href="#List-of-Examples">List of Examples</a></li>
       <li><a href="#List-of-Figures">List of Figures</a></li>
       <li><a href="#List-of-Equations">List of Equations</a></li>
+      <li><a href="#List-of-Rolls">List of Rolls</a></li>
     </ul>
     <div class="toc" id="Table-of-Contents">
       <h1>Table of Contents</h1>
@@ -120,6 +121,18 @@
         </xsl:for-each>
       </ol>
     </div>
+    <div class="rolls" id="List-of-Rolls">
+      <h1>List of Rolls</h1>
+      <ol class="rolls">
+        <xsl:for-each select="//roll">
+          <li>
+            <a href="#{generate-id(.)}">
+              <span class="roll"><xsl:apply-templates /></span>
+            </a>
+          </li>
+        </xsl:for-each>
+      </ol>
+    </div>
     <xsl:apply-templates select="part" />
     <div class="footnotes">
       <xsl:for-each select="//footnote">
@@ -137,20 +150,76 @@
   </xsl:template>
   <!-- dice rolls -->
   <xsl:template match="roll">
-    <span class="roll">
-      <span class="num">
-        <xsl:value-of select="num" />
-      </span>
-      <span class="D">D</span>
-      <span class="face">
-        <xsl:value-of select="face" />
-      </span>
-      <span class="bns">
-        <xsl:value-of select="bns" />
-      </span>
-      <span class="kind">
-        <xsl:value-of select="kind" />
-      </span>
+    <xsl:choose>
+      <xsl:when test="./@type='alt'">
+        <span class="roll" id="{generate-id(.)}">
+          <xsl:apply-templates select="num"/>
+          <xsl:apply-templates select="face"/>
+          <xsl:apply-templates select="bOff"/>
+          <xsl:apply-templates select="bns"/>
+          <xsl:apply-templates select="mul"/>
+          <xsl:apply-templates select="kind"/>
+          <xsl:if test="raw">
+            [<xsl:apply-templates select="rOff"/><xsl:apply-templates select="raw"/>]
+          </xsl:if>
+        </span>
+      </xsl:when>
+      <xsl:otherwise>
+        <span class="roll" id="{generate-id(.)}">
+          <xsl:apply-templates select="rOff"/>
+          <xsl:apply-templates select="raw"/>
+          <xsl:if test="raw">
+            <span class="rawPlus">+</span>
+          </xsl:if>
+          <xsl:apply-templates select="num"/>
+          <xsl:apply-templates select="face"/>
+          <xsl:apply-templates select="bOff"/>
+          <xsl:apply-templates select="bns"/>
+          <xsl:apply-templates select="mul"/>
+          <xsl:apply-templates select="kind"/>
+        </span>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="rOff">
+    <span class="rOff">
+      <xsl:value-of select="." />
+    </span>
+  </xsl:template>
+  <xsl:template match="raw">
+    <span class="raw">
+      <xsl:value-of select="." />
+    </span>
+  </xsl:template>
+  <xsl:template match="num">
+    <span class="num">
+      <xsl:value-of select="." />
+    </span>
+  </xsl:template>
+  <xsl:template match="face">
+    <span class="D">D</span>
+    <span class="face">
+      <xsl:value-of select="." />
+    </span>
+  </xsl:template>
+  <xsl:template match="bOff">
+    <span class="bOff">
+      <xsl:value-of select="." />
+    </span>
+  </xsl:template>
+  <xsl:template match="bns">
+    <span class="bns">
+      <xsl:value-of select="." />
+    </span>
+  </xsl:template>
+  <xsl:template match="mul">
+    <span class="mul">
+      &#215;<xsl:value-of select="." />
+    </span>
+  </xsl:template>
+  <xsl:template match="kind">
+    <span class="kind">
+      <xsl:value-of select="." />
     </span>
   </xsl:template>
   <!-- "n/a" notappl -->
@@ -169,12 +238,14 @@
   </xsl:template>
   <!-- footnote -->
   <xsl:template match="footnote">
-    <sup><a class="footnote" href="#{generate-id(.)}">
-      <xsl:variable name="index">
-        <xsl:number/>
-      </xsl:variable>
-      <xsl:copy-of select="$index"/>
-    </a></sup>
+    <xsl:variable name="thisFN" select="." />
+    <xsl:for-each select="//footnote">
+      <xsl:if test="$thisFN=.">
+        <sup><a class="footnote" href="#{generate-id(.)}">
+          <xsl:number value="position()" />
+        </a></sup>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <!-- structure elements -->
