@@ -34,8 +34,8 @@
       <span class="apathy-thy">THY</span>
       <table class="apathy-authors">
         <tr><td>Allan Moyse</td></tr>
-        <tr><td>Jacob Smith</td></tr>
         <tr><td>Nathan Jones</td></tr>
+        <tr><td>Jacob Smith</td></tr>
         <tr><td>Noah Smith</td></tr>
         <tr><td>Chris Cook</td></tr>
         <tr><td>Josh Kramer</td></tr>
@@ -148,6 +148,8 @@
   <xsl:template match="Apathy">
     <span class="ApAthy">Apathy</span>
   </xsl:template>
+  <!-- special "and" word -->
+  <xsl:template match="and">&amp;</xsl:template>
   <!-- dice rolls -->
   <xsl:template match="roll">
     <xsl:choose>

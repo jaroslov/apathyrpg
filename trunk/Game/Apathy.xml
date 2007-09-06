@@ -28,9 +28,9 @@
         <title>Core Rules</title>  
         <section>  
           <title>Introduction</title>  
-           <text><Apathy />  is a paper &amp; pencil role-playing game.
+           <text><Apathy />  is a paper <and /> pencil role-playing game.
             <Apathy />&rsquo;s authors have played a great many RPGs
-            including D&amp;D, Heroes Unlimited, GURPS, Shadowrun, TMNT,
+            including D<and />D, Heroes Unlimited, GURPS, Shadowrun, TMNT,
             various White Wolf games (Vampire, etc.), Deadlands, and a
             few others. While these games are all fun, we felt that each
             game had various shortcomings that could be improved upon.
@@ -719,7 +719,7 @@
                     </item>
                     <item>
                       <description> Equipment </description>
-                      <text>  &amp; other material possessions </text>
+                      <text>  <and /> other material possessions </text>
                     </item>
                   </description-list>
                 </text>  
@@ -1477,7 +1477,7 @@
           </section>  
         </section>  
         <section>  
-          <title>Combat Sequence &amp; Initiative</title>  
+          <title>Combat Sequence <and /> Initiative</title>  
             <text> Combat is based on a system of Rounds, Turns, and
              Actions. A &ldquo;round&rdquo; lasts about five seconds. It
              is the length of time in which all combatants have done
@@ -1649,7 +1649,7 @@
             </item>  
           </numbered-list>  
           <section>  
-            <title>Weapons &amp; Equipment</title>  
+            <title>Weapons <and /> Equipment</title>  
               <text> Most characters will carry equipment in combat. This
                usually includes weapons and armor. There are no
                &ldquo;class&rdquo; restrictions for weapons or armor. Any
@@ -1755,7 +1755,7 @@
                and bows. </text>
           </section>  
           <section>  
-              <title>Dual-wielding Weapons or Weapon &amp; Shield</title>
+              <title>Dual-wielding Weapons or Weapon <and /> Shield</title>
               <text> As noted above, it is possible for characters to
                wield two weapons in combat, or a weapon and a shield. A
                character cannot attack with both weapons during the same
@@ -3526,7 +3526,7 @@
                used by anyone, not just the ritualist. </text>
           </section>  
           <section>  
-            <title>Religious &amp; Faith Magic</title>  
+            <title>Religious <and /> Faith Magic</title>  
               <text>  Religious magic is magical effects that are brought
                into reality by the combined will of the caster and the
                caster&rsquo;s god(s). Whereas primitive religions and
@@ -3561,7 +3561,7 @@
                religious magic. All religious spells are channeled
                through a holy symbol (see below). </text>
               <text>  Once a day the caster must engage in prayer. The
-               exact means of praying is left up to the players &amp; GM,
+               exact means of praying is left up to the players <and /> GM,
                but during this time the priest will choose which spells
                he as access to for the remainder of the day. The caster
                may choose any combination of spells he has access to,
@@ -4201,7 +4201,7 @@
             </description-list>  
           </section>  
           <section>  
-            <title>Magic Terminology &amp; Misc.</title>  
+            <title>Magic Terminology <and /> Misc.</title>  
             <description-list>  
               <item>
                  <description> Black </description>  spells are those
@@ -4436,7 +4436,7 @@
       <chapter>  
         <title>Mecha</title>  
         <section>  
-          <title>Mecha Suits &amp; Powered Armor</title>  
+          <title>Mecha Suits <and /> Powered Armor</title>  
             <text>  A robot in which the pilot is completely protected by
              armor and other mechanisms.Mecha are controlled by abstract
              means and requires the Mecha Piloting skill. </text>
@@ -4897,7 +4897,7 @@
                    require power to operate. This can come from any
                    number of different sources. A mecha will generally
                    have an ENGINE of some sort that supplies power for
-                   moving around, and operating equipment &amp; weapons.
+                   moving around, and operating equipment <and /> weapons.
                    Some mecha will have supplimentary power sources used
                    for especially power-hungry equipment. All power
                    sources take up slots within the suit based on the
@@ -8795,7 +8795,7 @@
         <field table='yes' name='Prerequisite' />  
         <field table='yes' name='Location'> Head </field>  
           <field name='Description' description='yes'> Character can
-           completely change his or her facial &amp; head hair. This
+           completely change his or her facial <and /> head hair. This
            includes style, sparseness, color, and placement </field>
       </datum>  
       <datum name='False teeth'>  
@@ -9074,7 +9074,7 @@
         <field name='Name' title='yes'> Sonar </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Character Points'> 4 </field>  
-          <field table='yes' name='Prerequisite'> Hearing &amp; Vocal
+          <field table='yes' name='Prerequisite'> Hearing <and /> Vocal
            Systems </field>
         <field table='yes' name='Location'> Head </field>  
           <field name='Description' description='yes'> req. vocal system,
@@ -14158,7 +14158,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Cost'> $100.00 </field>  
           <field name='Description' description='yes'> A small box
-           containing a multi-piece rod &amp; reel, line, hooks, lures,
+           containing a multi-piece rod <and /> reel, line, hooks, lures,
            and a small folding net. </field>
       </datum>  
       <datum name='Flannel Shirt'>  
@@ -14542,7 +14542,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Cost'> $25.00 </field>  
           <field name='Description' description='yes'> A metal or plastic
-           container for storing &amp; transporting gas, water, oil, etc.
+           container for storing <and /> transporting gas, water, oil, etc.
            Very rugged. Has a 5 gallon capacity, and can be used with
            most chemicals. </field>
       </datum>  
@@ -14621,7 +14621,7 @@
            simple many surgical procedures. A full assortment of
            bandages, many drugs (painkillers, disease treatments,
            anesthetic, antibiotics, etc), surgical tools, splints,
-           portable EKG machine, emergency fluids &amp; blood supply,
+           portable EKG machine, emergency fluids <and /> blood supply,
            sutures, etc. </field>
       </datum>  
       <datum name='Mess Kit'>  
@@ -14982,7 +14982,7 @@
           <field name='Description' description='yes'> A backpack with
            enough gear to survive for a long time: first aid supplies, 15
            days of mini-rations, knife, fishing supplies, snare,
-           guidebook to animals &amp; plants, 4 days of water, water
+           guidebook to animals <and /> plants, 4 days of water, water
            filter, compass, flashlight, signal equipment, flare launcher,
            matches, assorted drugs, compact sleeping blanket, battery
            powered radio, and a .22 caliber gun with 200 rounds. </field>
@@ -16601,7 +16601,7 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster creates a
            magical copy of any one target, as Shadow Servant. It has
-           armor &amp; HP equivalent to the target. It vanishes if
+           armor <and /> HP equivalent to the target. It vanishes if
            it&apos;s HP goes negative. Copy cannot, however, use any
            defensive skills, dodge, etc. </field>
         <field name='Implementation' />  
@@ -18695,7 +18695,7 @@
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> The caster&apos;s
-           body is covered with magical fire. The caster &amp; his
+           body is covered with magical fire. The caster <and /> his
            carried items suffer no damage, but anything contacting the
            fire suffers <roll><num>2</num><face>4</face><bns></bns><kind>U</kind></roll> damage. Caster also gains 4/4/4 Armor, and
            +4 to base armor. </field>
@@ -18740,7 +18740,7 @@
           <field name='Description' description='yes'> The caster creates
            a three-foot high wave of magical fire that travels out from
            the caster to a maximum range of 50 feet. +2 to strike. Will
-           travel up, over &amp; down surfaces it contacts, but cannot
+           travel up, over <and /> down surfaces it contacts, but cannot
            bridge gaps, etc. </field>
         <field name='Implementation' />  
       </datum>  
@@ -18986,7 +18986,7 @@
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> One target gains
-           permanent fire protection (cannot be set on fire) &amp;
+           permanent fire protection (cannot be set on fire) <and />
            sustains half damage from fire or heat-based sources. </field>
         <field name='Implementation' />  
       </datum>  
@@ -19999,7 +19999,7 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster becomes
            invisible&ndash;cannot be detected via above means, OR
-           radar/sonar &amp; similar means </field>
+           radar/sonar <and /> similar means </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Autoinvisibility 3'>  
@@ -20330,7 +20330,7 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> One target (other
            than caster) becomes invisible&ndash;cannot be detected via
-           above means, OR radar/sonar &amp; similar means </field>
+           above means, OR radar/sonar <and /> similar means </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Grant Invisibility 3'>  
@@ -23676,7 +23676,7 @@
            the additional attacks have the appropriate multi-weapon
            minus; which can be mitigated by using \emph{Ambidexterity}.
            \quotexample[Jesse &ldquo;Capoeira&apos;&apos;: Double-Kick
-           \&amp; Double-Punch]{Jesse wants to perform a Capoeira-style
+           \<and /> Double-Punch]{Jesse wants to perform a Capoeira-style
            Double-Kick followed by a Double-Punch. He purchases
            \emph{Multi-Weapon Style} for 3 additional weapons; the Rank
            of the \emph{Multi-Weapon Style} is then $3*3=9$ Since
@@ -24166,7 +24166,7 @@
            humans) Dodge: 2-16 Natural Armor: 4/6/2 (Male: 5/7/3) Base
            Armor: 0 </field>
           <field name='Attacks'> Bite (once per round only) Male: <roll><num>2</num><face>4</face><bns></bns><kind>S</kind></roll>
-           &amp; <roll><num>1</num><face>6</face><bns></bns><kind>U</kind></roll> from poison for <roll><num>1</num><face>12</face><bns></bns></roll>turns Female: <roll><num>1</num><face>4</face><bns></bns><kind>S</kind></roll> &amp; <roll><num>1</num><face>6</face><bns></bns><kind>U</kind></roll> from poison for <roll><num>2</num><face>6</face><bns></bns></roll>turns Knee Attack (male only) May attack
+           <and /> <roll><num>1</num><face>6</face><bns></bns><kind>U</kind></roll> from poison for <roll><num>1</num><face>12</face><bns></bns></roll>turns Female: <roll><num>1</num><face>4</face><bns></bns><kind>S</kind></roll> <and /> <roll><num>1</num><face>6</face><bns></bns><kind>U</kind></roll> from poison for <roll><num>2</num><face>6</face><bns></bns></roll>turns Knee Attack (male only) May attack
            with both knees simulaneously in one action with no penalty
            <roll type="alt"><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><rOff>+</rOff><raw>3</raw><kind>P</kind></roll> each Spit Poison (female only) up to 5 times per
            day, range of 15 feet. <roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll> for <roll><num>1</num><face>4</face><bns></bns></roll>turns </field>
@@ -24388,7 +24388,7 @@
            body) Actions: 3 plus 1 move Attack: 7-6 (bite or stinger)
            Dodge: 5-6 Natural Armor: 10/15/30 Base Armor: 15 </field>
           <field name='Attacks'> Bite <roll type="alt"><num>4</num><face>10</face><bns></bns><rOff>+</rOff><raw>10</raw><kind>P</kind></roll> Stinger <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>P</kind></roll>, 20 AP
-           and poision for <roll><num>2</num><face>6</face><bns></bns></roll>turns: <roll><num>3</num><face>6</face><bns></bns><kind>U</kind></roll> &amp; <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>BLD Constrict
+           and poision for <roll><num>2</num><face>6</face><bns></bns></roll>turns: <roll><num>3</num><face>6</face><bns></bns><kind>U</kind></roll> <and /> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>BLD Constrict
            (must bite first), 4x<roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll> Spell-like abilities: Darkness
            1/turn Carpet of Adhesion or slipperyness at will Spider Climb
            2/day Rock to Mud 2/day Create Portal 2/day Advanced Slow
@@ -25161,7 +25161,7 @@
            demon&ndash;red-skinned, muscular humanoid. Knows magic:
            Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3;
            Bio 1,2; Quake 1,2. 700 MP. Has infravision, can see
-           invisible. Immune to posion &amp; sleep. Regenerates <roll><num>3</num><face>6</face><bns></bns></roll>HP
+           invisible. Immune to posion <and /> sleep. Regenerates <roll><num>3</num><face>6</face><bns></bns></roll>HP
            per turn </field>
         <field name='level' />  
       </datum>  
@@ -25193,7 +25193,7 @@
            WIL: 10 CHA: 4 HP: 4000 Actions:: 2 P/S/C: 10/10/20 Size: Main
            body is 80&apos; long, with 100&apos; tentacles Dice: Strike:
            4 </field>
-          <field name='Attacks'> Tentacle slap &amp; grab <roll><num>10</num><face>4</face><bns></bns><kind>C</kind></roll>.
+          <field name='Attacks'> Tentacle slap <and /> grab <roll><num>10</num><face>4</face><bns></bns><kind>C</kind></roll>.
            Tentacle Constriction: <roll><num>6</num><face>4</face><bns></bns><kind>C</kind></roll>, doubles each consecutive action.
            Full body constriction: (<roll><num>8</num><face>4</face><bns></bns></roll>)x4 C as above </field>
           <field name='Description' description='yes'> Krakens are
@@ -25400,7 +25400,7 @@
            demon&ndash;Guant, grey-skinned humanoid. Knows magic:
            Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake
            1,2,3; Geo Transport, Heal 1,2,3. 1200 MP. Can see invisible.
-           Immune to posion &amp; sleep. Regenerates <roll><num>4</num><face>6</face><bns></bns></roll>HP per turn
+           Immune to posion <and /> sleep. Regenerates <roll><num>4</num><face>6</face><bns></bns></roll>HP per turn
            </field>
         <field name='level' />  
       </datum>  
@@ -27117,7 +27117,7 @@
         <field table='yes' name='Slots'> 0 </field>  
         <field table='yes' name='Character Points'> 4 </field>  
           <field name='Description' description='yes'> Modifications
-           &amp; repairs can be done in 1/2 the normal time </field>
+           <and /> repairs can be done in 1/2 the normal time </field>
       </datum>  
       <datum name='Environmental protection'>  
           <field name='Name' title='yes'> Environmental protection
@@ -27136,7 +27136,7 @@
         <field table='yes' name='Character Points'> X/2 </field>  
           <field name='Description' description='yes'> Protects a certain
            piece of equipment from electronic effects (EM pulse, Logic
-           Bomb). The sheilding &amp; equipment it protects are immune to
+           Bomb). The sheilding <and /> equipment it protects are immune to
            electronic effects + damage but other types of weapons
            (bullets, bombs, missiles, lasers, etc.) will destroy BOTH
            </field>
@@ -27675,7 +27675,7 @@
            </field>
         <field table='yes' name='Character Points'> 2 </field>  
           <field name='Description' description='yes'> Has 2 hour of
-           recording time, can take pictures or record video &amp; sound
+           recording time, can take pictures or record video <and /> sound
            </field>
       </datum>  
       <datum name='Advanced Audio'>  
@@ -27895,7 +27895,7 @@
            </field>
         <field table='yes' name='Character Points'> 1 </field>  
           <field name='Description' description='yes'> 3D Compass,
-           Elevation, artificial horizon, GPS &amp; Mapping system
+           Elevation, artificial horizon, GPS <and /> Mapping system
            </field>
       </datum>  
       <datum name='Seismic Detector'>  

@@ -161,7 +161,7 @@ Josh Kramer}
   </xsl:template>
   <!-- Generic Text -->
   <xsl:template match="text()">
-    <xsl:variable name="text" select="translate(.,'&amp;','')" />
+    <xsl:variable name="text" select="." />
     <xsl:value-of select="$text" />
   </xsl:template>
   <!-- examples -->
@@ -170,5 +170,7 @@ Josh Kramer}
   </xsl:template>
   <!-- Apathy -->
   <xsl:template match="Apathy">\APATHY{}</xsl:template>
+  <!-- and -->
+  <xsl:template match="and">\&amp;</xsl:template>
 
 </xsl:stylesheet>
