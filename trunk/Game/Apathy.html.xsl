@@ -12,6 +12,7 @@
     doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
     doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
   <xsl:preserve-space elements="html head body" />
+  <xsl:strip-space elements="p a" />
 
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -123,7 +124,7 @@
     <div class="footnotes">
       <xsl:for-each select="//footnote">
         <div class="footnote" id="{generate-id(.)}">
-          <p>*<xsl:apply-templates /></p>
+          <p><xsl:number value="position()" /><xsl:apply-templates /></p>
         </div>
       </xsl:for-each>
     </div>
@@ -168,7 +169,12 @@
   </xsl:template>
   <!-- footnote -->
   <xsl:template match="footnote">
-    <a class="footnote" href="#{generate-id(.)}">*</a>
+    <sup><a class="footnote" href="#{generate-id(.)}">
+      <xsl:variable name="index">
+        <xsl:number/>
+      </xsl:variable>
+      <xsl:copy-of select="$index"/>
+    </a></sup>
   </xsl:template>
 
   <!-- structure elements -->
