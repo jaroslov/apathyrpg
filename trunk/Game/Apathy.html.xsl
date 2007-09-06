@@ -154,6 +154,12 @@
   <xsl:template match="dollar">$</xsl:template>
   <!-- special "percent" word -->
   <xsl:template match="percent">%</xsl:template>
+  <!-- special "rightarrow" word -->
+  <xsl:template match="rightarrow">&#8594;</xsl:template>
+  <!-- special "ldquo" word -->
+  <xsl:template match="ldquo">&#8220;</xsl:template>
+  <!-- special "rdquo" word -->
+  <xsl:template match="rdquo">&#8221;</xsl:template>
   <!-- dice rolls -->
   <xsl:template match="roll">
     <xsl:choose>
