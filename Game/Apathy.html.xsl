@@ -151,7 +151,9 @@
   <!-- special "and" word -->
   <xsl:template match="and">&amp;</xsl:template>
   <!-- special "dollar" word -->
-  <xsl:template match="dollar">&dollar;</xsl:template>
+  <xsl:template match="dollar">$</xsl:template>
+  <!-- special "percent" word -->
+  <xsl:template match="percent">%</xsl:template>
   <!-- dice rolls -->
   <xsl:template match="roll">
     <xsl:choose>

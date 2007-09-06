@@ -1695,9 +1695,9 @@
                higher than required STR. However, it is possible to
                purchase stiffer (stronger) bows that can take advantage
                of a character&rsquo;s higher STR score. High-draw bows
-               cost 20% more for every 1 STR point added to the MSR. For
+               cost 20<percent /> more for every 1 STR point added to the MSR. For
                each point, add [+1] damage. This can be stacked. So, a +1
-               bow costs 20% extra, a +2 bow costs 40% extra, etc. Note
+               bow costs 20<percent /> extra, a +2 bow costs 40<percent /> extra, etc. Note
                that the maximum STR requirement that can be added to a
                bow of a given type is equal to half of its original MSR.
                Note that the damage and strike penalty for having a
@@ -2622,7 +2622,7 @@
             <itemized-list>  
               <item>  Bleed when injured </item>  
                 <item>  Appear normal when viewed casually, or on thermal
-                 sensors. Many cybernetic limbs will appear 100% normal
+                 sensors. Many cybernetic limbs will appear 100<percent /> normal
                  even under close visual inspection. However, inspection
                  by a knowledgeable person (Doctor, Nurse, Cyber Doctor,
                  etc.) will reveal the true nature of the limb. </item>
@@ -2973,7 +2973,7 @@
               <text>  The recover time of the Monofilament Whip cannot be
                reduced by strength, and will always require a 1 action to
                recover from safely. The user can attempt to reduce the
-               recover time to 0, but there is a 50% chance that the user
+               recover time to 0, but there is a 50<percent /> chance that the user
                will strike himself with the whip dealing full damage to
                himself. </text>
             <reference hrid='Content/Equipment/Melee/Monofilament' />  
@@ -3038,7 +3038,7 @@
                    weapons. Plasma weapons can parry other plasma
                    weapons, and force fields protect against them as
                    normal If a plasma weapon comes in contact with
-                   another one, there is a 25% chance the magnetic fields
+                   another one, there is a 25<percent /> chance the magnetic fields
                    of the blades will lock together. It is easy to tell
                    if combatants are locked as an extremely bright glow
                    emanates from the contact point of the weapons.
@@ -4738,15 +4738,15 @@
                     <head>  
                       <cell> Frame Material (Added HP) </cell>  
                       <cell> Cost Factor </cell>  
-                      <cell> Very Light (-20%) </cell>  
-                      <cell> Light (-10%) </cell>  
-                      <cell> Medium (0%) </cell>  
-                      <cell> Heavy (+10%) </cell>  
-                      <cell> Very Heavy (-10%) </cell>  
+                      <cell> Very Light (-20<percent />) </cell>  
+                      <cell> Light (-10<percent />) </cell>  
+                      <cell> Medium (0<percent />) </cell>  
+                      <cell> Heavy (+10<percent />) </cell>  
+                      <cell> Very Heavy (-10<percent />) </cell>  
                     </head>  
                     <row>  
                       <cell> Carbon Composite </cell>  
-                      <cell> -20% </cell>  
+                      <cell> -20<percent /> </cell>  
                       <cell> XXXX </cell>  
                       <cell> XXXX </cell>  
                       <cell> XXXX </cell>  
@@ -4755,7 +4755,7 @@
                     </row>  
                     <row>  
                       <cell> Aluminum Alloy </cell>  
-                      <cell> -10% </cell>  
+                      <cell> -10<percent /> </cell>  
                       <cell> XXXX </cell>  
                       <cell> XXXX </cell>  
                       <cell> XXXX </cell>  
@@ -4764,7 +4764,7 @@
                     </row>  
                     <row>  
                       <cell> Standard Steel </cell>  
-                      <cell> +0% </cell>  
+                      <cell> +0<percent /> </cell>  
                       <cell> XXXX </cell>  
                       <cell> XXXX </cell>  
                       <cell> 0 </cell>  
@@ -4773,7 +4773,7 @@
                     </row>  
                     <row>  
                       <cell> Heavy Steel </cell>  
-                      <cell> +20% </cell>  
+                      <cell> +20<percent /> </cell>  
                       <cell> XXXX </cell>  
                       <cell> 0 </cell>  
                       <cell> 2 </cell>  
@@ -4782,7 +4782,7 @@
                     </row>  
                     <row>  
                       <cell> Duralimin Alloy </cell>  
-                      <cell> +40% </cell>  
+                      <cell> +40<percent /> </cell>  
                       <cell> 0 </cell>  
                       <cell> 2 </cell>  
                       <cell> 4 </cell>  
@@ -4791,7 +4791,7 @@
                     </row>  
                     <row>  
                       <cell> Matrix Composite </cell>  
-                      <cell> +60% </cell>  
+                      <cell> +60<percent /> </cell>  
                       <cell> 2 </cell>  
                       <cell> 4 </cell>  
                       <cell> 6 </cell>  
@@ -4800,7 +4800,7 @@
                     </row>  
                     <row>  
                       <cell> Adamantite Alloy </cell>  
-                      <cell> +80% </cell>  
+                      <cell> +80<percent /> </cell>  
                       <cell> 4 </cell>  
                       <cell> 6 </cell>  
                       <cell> 8 </cell>  
@@ -4809,7 +4809,7 @@
                     </row>  
                     <row>  
                       <cell> Gundanium Alloy </cell>  
-                      <cell> +100% </cell>  
+                      <cell> +100<percent /> </cell>  
                       <cell> 6 </cell>  
                       <cell> 8 </cell>  
                       <cell> 10 </cell>  
@@ -4833,12 +4833,12 @@
                    that configuration. </text>
                   <text>  For example, if you chose a &ldquo;Light Matrix
                    Composite&rdquo; frame for a size 4 mecha, it will
-                   receive -10% to it&rsquo;s slot total, would gain +60%
+                   receive -10<percent /> to it&rsquo;s slot total, would gain +60<percent />
                    to it&rsquo;s hit points, and cost 16 CP (size of
                    4*4). </text>
                   <text>  If a mecha suit runs out of HP, it is rendered
                    useless until repaired. If it goes -HP then it is
-                   destroyed. Any time the mecha takes 10% of it&rsquo;s
+                   destroyed. Any time the mecha takes 10<percent /> of it&rsquo;s
                    total HP in one blow, the pilot takes <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> damage.
                    </text>
               </item>  
@@ -4860,30 +4860,30 @@
                     </head>  
                     <row>  
                       <cell> Normal </cell>  
-                      <cell> 100% / 100% / 100% </cell>  
+                      <cell> 100<percent /> / 100<percent /> / 100<percent /> </cell>  
                       <cell> Standard protective armor </cell>  
                     </row>  
                     <row>  
                       <cell> Reactive </cell>  
-                      <cell> 80% / 80% / 140% </cell>  
+                      <cell> 80<percent /> / 80<percent /> / 140<percent /> </cell>  
                         <cell> Armor will detonate against all attacks,
                          blunting the blow of C damage </cell>
                     </row>  
                     <row>  
                       <cell> Ultrahard </cell>  
-                      <cell> 130% / 90% / 80% </cell>  
+                      <cell> 130<percent /> / 90<percent /> / 80<percent /> </cell>  
                         <cell> Extra hard armor fragments piercing
                          weapons </cell>
                     </row>  
                     <row>  
                       <cell> Slick-steel </cell>  
-                      <cell> 90% / 120% / 90% </cell>  
+                      <cell> 90<percent /> / 120<percent /> / 90<percent /> </cell>  
                         <cell> Slashing attacks tend to slide off the
                          armor </cell>
                     </row>  
                     <row>  
                       <cell> Reflective </cell>  
-                      <cell> 70% / 70% / 70% </cell>  
+                      <cell> 70<percent /> / 70<percent /> / 70<percent /> </cell>  
                         <cell>  Armor will protect against energy based
                          attacks as if the attack was not U </cell>
                     </row>  
@@ -5176,7 +5176,13 @@
                          &times; </mo>  <mn> 10 </mn>  </mrow></math>
                       </cell>  
                       <cell> 1 </cell>  
-                      <cell> <dollar />Size^2<dollar /> </cell>  
+                      <cell>
+                        <math>
+                          <msup>
+                            <mi>Size</mi><mn>2</mn>
+                          </msup>
+                        </math>
+                      </cell>  
                     </row>  
                     <row>  
                       <cell> Mech. Jump </cell>  
@@ -5449,7 +5455,7 @@
             <description-list>  
               <item>
                 <description> OverFire </description>  
-                <text>  spends twice as much energy but deals 50\% more
+                <text>  spends twice as much energy but deals 50\<percent /> more
                  damage </text>
               </item>  
               <item>
@@ -6421,7 +6427,14 @@
         <field table='yes' name='Occupation'> Any </field>  
           <field name='Description' description='yes'> Unique skill. This
            provides the character money. Character gets
-           (LVL[latex]<dollar />^2<dollar />[/latex])*1000 dollars in cash, equipment, or
+           <math>
+            <mrow>
+              <msup>
+                <mi>LVL</mi><mn>2</mn>
+              </msup>
+              <mo>&times;</mo><mn>1000</mn>
+            </mrow>
+           </math> dollars in cash, equipment, or
            goods. This can be bought many times. </field>
           <field name='Implementation'> Money += Level*Level*500 </field>
       </datum>  
@@ -8178,7 +8191,7 @@
         <field table='yes' name='Prerequisite' />  
         <field table='yes' name='Location'> Body </field>  
           <field name='Description' description='yes'> Protects the body
-           from electrical damage. Take only 50% damage from electrical
+           from electrical damage. Take only 50<percent /> damage from electrical
            attacks unless they originate from inside the body. </field>
       </datum>  
       <datum name='False Bleeding'>  
@@ -8456,7 +8469,7 @@
           <field name='Description' description='yes'> A special network
            of neuro-activated wire actuators suspends your vital organs.
            If something penetrates your body, they pull your organs out
-           of the way. Take 50% piercing damage. Only works if you are
+           of the way. Take 50<percent /> piercing damage. Only works if you are
            not wearing any armor. </field>
       </datum>  
       <datum name='Tail (balancing)'>  
@@ -9300,7 +9313,7 @@
         <field table='yes' name='Prerequisite' />  
         <field table='yes' name='Location'> Leg </field>  
           <field name='Description' description='yes'> Small rocket
-           engines implanted into the foot allow you to jump 50% further
+           engines implanted into the foot allow you to jump 50<percent /> further
            than normal. They can also be used to accelerate the movement
            of the foot during a kick, adding +5 raw damage. Six uses
            before recharging. </field>
@@ -9683,7 +9696,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 15 </field>  
-        <field table='yes' name='Damage'> -25% dmg </field>  
+        <field table='yes' name='Damage'> -25<percent /> dmg </field>  
           <field name='Description' description='yes'> A special type of
            arrowhead designed to penetrate heavy armor. They are
            expensive and time-consuming to produce, and therefore
@@ -13239,7 +13252,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> The class
            &ldquo;fencing&apos;&apos; sword used in duels from the
-           [latex]<dollar />16^{th}<dollar />&ndash;<dollar />19^{th}<dollar />[/latex] c. If the user has
+           [latex]<dollar /><math><msup><mn>16</mn><mi>th</mi></msup></math>&ndash;<dollar /><math><msup><mn>19</mn><mi>th</mi></msup></math>[/latex] c. If the user has
            weapon specialization in Small Sword then the weapon can be
            used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns></bns></roll>with 4 AP and a MSB of
            12. If the weapon is used as [latex]\emph{exotic}[/latex]
@@ -15926,7 +15939,7 @@
         <field table='yes' name='Target' qsummary='yes'> Roll </field>  
           <field name='Description' description='yes'> Caster calls down
            a single lighting bolt from the sky, which strikes the target.
-           It has a 50% chance of fire effect. This spell is only
+           It has a 50<percent /> chance of fire effect. This spell is only
            effective outdoors. If this spell is cast on a stormy day, it
            deals double damage and the caster gets +3 to his strike roll.
            </field>
@@ -16049,7 +16062,7 @@
         <field table='yes' name='Target' qsummary='yes'> Roll </field>  
           <field name='Description' description='yes'> Caster forms a
            small bolt of lighting in his/her hands and sends it flying
-           towards any one target. (has a 50% chance of fire effect)
+           towards any one target. (has a 50<percent /> chance of fire effect)
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -16096,7 +16109,7 @@
           <field name='Description' description='yes'> Generates an area
            of highly charged air. Electronic devices in the field such as
            appliances, cellular phones, computers, or walkie-talkies have
-           60% chance to fail in operation. Furthermore, static
+           60<percent /> chance to fail in operation. Furthermore, static
            electricity in the area will move about lightweight objects
            and fine particles are likely to become stuck to anything
            moving in the area. </field>
@@ -16156,7 +16169,7 @@
            </field>
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 50*
-           (X^2) </field>
+           (<math><msup><mi>X</mi><mn>2</mn></msup></math>) </field>
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Roll </field>  
           <field name='Description' description='yes'> One target is
@@ -16456,8 +16469,8 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Tosses one target
            into the air, where it is torn apart by strong crosswinds. If
-           the target is wearing armor there is a 75% chance that it will
-           be destroyed if it is soft armor, 25% chance if it is hard.
+           the target is wearing armor there is a 75<percent /> chance that it will
+           be destroyed if it is soft armor, 25<percent /> chance if it is hard.
            The armor does protect against the damage of the spell.
            </field>
         <field name='Implementation' />  
@@ -16659,9 +16672,9 @@
           <field name='Description' description='yes'> [LaTeX] Disenchant
            is used to remove magical effects from an object or area. Each
            casting of Disenchant affects a single magical spell or
-           effect. If disenchant is used on a spell of 3<dollar />^{rd}<dollar /> rank or
+           effect. If disenchant is used on a spell of <math><msup><mn>3</mn><mi>rd</mi></msup></math> rank or
            lower, then the targeted spell effect instantly expires
-           (stops). If disenchant is used on a spell of 4<dollar />^{th}<dollar /> rank or
+           (stops). If disenchant is used on a spell of <math><msup><mn>4</mn><mi>th</mi></msup></math> rank or
            higher, then the spell may or may not be affected. In this
            case the caster of Disenchant enters a contest of skills
            (Magical Control) with the original caster of the existing
@@ -16682,7 +16695,7 @@
            lockbox containing some scrolls. Now, having slain Ulek, an
            evil wizard, Br\c{a}\"{e}tzn\.{r} wishes to disenchant Major
            Ward so that he can open the box unharmed. Because Major Ward
-           is 5<dollar />^{th}<dollar /> rank, Disenchant does not automatically work, and
+           is <math><msup><mn>5</mn><mi>th</mi></msup></math> rank, Disenchant does not automatically work, and
            a skill contest is required. Even though Ulek is dead,
            &ldquo;he&apos;&apos; is still entitled to a roll. The GM
            determines that Ulek had Magical Control level 4 and WIL 15 at
@@ -16732,7 +16745,7 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Affects any one
            target. Whenever the target performs a damage causing action,
-           it takes 25% of that damage itself, as D </field>
+           it takes 25<percent /> of that damage itself, as D </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Field of Silence'>  
@@ -17554,7 +17567,7 @@
            </field>
         <field table='yes' name='Damage' qsummary='yes'> n/a </field>  
           <field table='yes' name='Duration' qsummary='yes'> n/a </field>
-          <field table='yes' name='Magic Points' qsummary='yes'> X^2
+          <field table='yes' name='Magic Points' qsummary='yes'> <math><msup><mi>X</mi><mn>2</mn></msup></math>
            </field>
         <field table='yes' name='Range' qsummary='yes'> self </field>  
         <field table='yes' name='Target' qsummary='yes'> n/a </field>  
@@ -17852,7 +17865,7 @@
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster may alter
-           the size of one object +/- 100 %. This can only affect
+           the size of one object +/- 100 <percent />. This can only affect
            non-living targets. The target must be a single object; it
            cannot work on machines. </field>
         <field name='Implementation' />  
@@ -18171,7 +18184,7 @@
         <field table='yes' name='Range' qsummary='yes'> touch </field>  
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster may alter
-           the size of one object +/- 500 %. This can only affect
+           the size of one object +/- 500 <percent />. This can only affect
            non-living targets. The target must be a single object; it
            cannot work on machines. </field>
         <field name='Implementation' />  
@@ -18580,7 +18593,7 @@
            </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster may
-           extinguish normal fire (Magical Control^2 square yards)
+           extinguish normal fire (Magical Contro<math><msup><mi>l</mi><mn>2</mn></msup></math> square yards)
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -19334,7 +19347,7 @@
            creature with a death curse. Once the spell is cast the curse
            takes effect, indicating to the target how much time it has
            left to live. After <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll>turns the creature must roll a BLD
-           check at -5. Failure means instant death and there is a 50%
+           check at -5. Failure means instant death and there is a 50<percent />
            chance the corpse is destroyed. Success means the creature
            drops to 1 HP instead. This spell cannot be disenchanted.
            Sanctuary will temporarily stall the countdown. Disenchant +
@@ -19891,7 +19904,7 @@
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> roll </field>  
           <field name='Description' description='yes'> Causes direct
-           biological damage in one target, and has a 50% chance to give
+           biological damage in one target, and has a 50<percent /> chance to give
            the target a nasty disease. The disease causes the victim to
            loose 1 action and suffer <roll><raw>1</raw><num>1</num><face>6</face><bns></bns><kind>U</kind></roll> damage per turn until
            duration expires </field>
@@ -21231,7 +21244,7 @@
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Creates a
-           hemispherical barrier 8 feet in radius. 50% chance to deflect
+           hemispherical barrier 8 feet in radius. 50<percent /> chance to deflect
            incoming magical/psionic/projectile attacks upon user, or
            block physical attack </field>
         <field name='Implementation' />  
@@ -21435,7 +21448,7 @@
            caster </field>
           <field name='Description' description='yes'> All beings within
            range loose 1 action next turn, suffer listed damage, and have
-           50% chance to become poisoned. Does not affect the caster or
+           50<percent /> chance to become poisoned. Does not affect the caster or
            undead, ghosts/spirits, or demons. Poison deals <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> damage
            per turn for the spell&apos;s duration </field>
         <field name='Implementation' />  
@@ -21504,7 +21517,7 @@
            caster </field>
           <field name='Description' description='yes'> All beings within
            range loose 2 actions for each of the next 5 turns, suffer
-           damage, become poisoned (<roll><num>2</num><face>10</face><bns></bns><kind>U</kind></roll> per turn), and have 75% chance
+           damage, become poisoned (<roll><num>2</num><face>10</face><bns></bns><kind>U</kind></roll> per turn), and have 75<percent /> chance
            to become paralyzed for the duration of the spell. Does not
            affect the caster, spirits, undead or demons. </field>
         <field name='Implementation' />  
@@ -21548,7 +21561,7 @@
            caster </field>
           <field name='Description' description='yes'> All beings within
            range loose 1 action for each of the next 3 turns, suffer
-           listed damage, become poisoned (<roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll> per turn), and have 25%
+           listed damage, become poisoned (<roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll> per turn), and have 25<percent />
            chance to become paralyzed for the duration of the spell. Does
            not affect the caster, demons, undead, ghosts, or spirits.
            </field>
@@ -21596,7 +21609,7 @@
            caster </field>
           <field name='Description' description='yes'> All beings within
            range loose 1 action for each of the next 4 turns, suffer
-           damage, become poisoned (<roll><num>1</num><face>8</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> per turn), and have 50%
+           damage, become poisoned (<roll><num>1</num><face>8</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> per turn), and have 50<percent />
            chance to become paralyzed for the duration of the spell. Does
            not affect the caster, demons, undead, ghosts, or spirits.
            </field>
@@ -21753,7 +21766,7 @@
           <field table='yes' name='Target' qsummary='yes'> Centered at
            Caster </field>
           <field name='Description' description='yes'> All beings within
-           range loose 1 action per turn, have 70% to suffer Mute effect,
+           range loose 1 action per turn, have 70<percent /> to suffer Mute effect,
            are blinded for <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>turns, and suffer listed damage. Only
            affects undead, ghosts/spirits, demons, etc. </field>
         <field name='Implementation' />  
@@ -21800,7 +21813,7 @@
           <field table='yes' name='Target' qsummary='yes'> Centered at
            Caster </field>
           <field name='Description' description='yes'> All beings within
-           range loose 1 action per turn, have 50% to suffer Mute effect,
+           range loose 1 action per turn, have 50<percent /> to suffer Mute effect,
            and suffer listed damage. Only affects undead, ghosts/spirits,
            and demons, etc. </field>
         <field name='Implementation' />  
@@ -21908,7 +21921,7 @@
            spirits seek out living targets the caster wishes, and attempt
            to steal a small part of their soul. Anyone that has a spirit
            hit them takes <roll><num>1</num><face>10</face><bOff>-</bOff><bns>1</bns><kind>U</kind></roll> damage. Any targets within the range
-           have a 50% chance per turn to be struck by a spirit. </field>
+           have a 50<percent /> chance per turn to be struck by a spirit. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Touch of Fate'>  
@@ -22891,8 +22904,8 @@
            levels of ambidexterity; he has -0 to strike with his
            &lsquo;good&rsquo; hand and -3 to strike with the off hand. If
            Candlestick had 6 levels of ambidexterity he would no negative
-           at all when attacking with his 2<dollar />^{nd}<dollar /> weapon, and a -3 with
-           his 3<dollar />^{rd}<dollar /> weapon, for instance if he were doing two punches
+           at all when attacking with his <math><msup><mn>2</mn><mi>nd</mi></msup></math> weapon, and a -3 with
+           his <math><msup><mn>3</mn><mi>rd</mi></msup></math> weapon, for instance if he were doing two punches
            and a kick.} </field>
         <field name='Implementation' />  
       </datum>  
@@ -23089,7 +23102,7 @@
            Other}. However, because he has such fantastic armor (and gets
            hit a lot defending Travis), he really wants to be able to
            &ldquo;lay down the law&apos;&apos; with his \emph{Reciprocal
-           Attack}. When he takes his 3<dollar />^{rd}<dollar /> level in Jitsu, he chooses
+           Attack}. When he takes his <math><msup><mn>3</mn><mi>rd</mi></msup></math> level in Jitsu, he chooses
            \emph{Reciprocal Attack} as his skill; from now on Myk can
            modify \emph{Reciprocal Attack} as if it were a \textsc{Basic}
            attack; in particular he has 3 levels in \emph{Deadly} he
@@ -25758,7 +25771,7 @@
       <datum name='Zombie'>  
         <field name='Name' title='yes'> Zombie </field>  
         <field name='MetaTag' />  
-          <field name='Special Abilities'> If struck in melee, 30% chance
+          <field name='Special Abilities'> If struck in melee, 30<percent /> chance
            to deal <roll><num>1</num><face>4</face><bns></bns><kind>U</kind></roll> damage to attacker </field>
           <field name='Statistics'> STR: 13 DEX: 10 BLD: 16 INT: 9 WIS: 9
            WIL: 10 CHA: 6 HP: 50 Actions:: 3 P/S/C: 8/8/8 base 5 Size:
@@ -25772,7 +25785,7 @@
       <datum name='Zombie - Greater'>  
         <field name='Name' title='yes'> Zombie - Greater </field>  
         <field name='MetaTag' />  
-          <field name='Special Abilities'> If struck in melee, 30% chance
+          <field name='Special Abilities'> If struck in melee, 30<percent /> chance
            to deal <roll><num>1</num><face>4</face><bns></bns></roll>D damage to attacker </field>
           <field name='Statistics'> STR: 14 DEX: 12 BLD: 18 INT: 9 WIS:
            10 WIL: 12 CHA: 6 HP: 70 Actions:: 3 P/S/C: 9/9/9 base 6 Size:
@@ -25785,7 +25798,7 @@
       <datum name='Zombie - Minor'>  
         <field name='Name' title='yes'> Zombie - Minor </field>  
         <field name='MetaTag' />  
-          <field name='Special Abilities'> If struck in melee, 30% chance
+          <field name='Special Abilities'> If struck in melee, 30<percent /> chance
            to deal <roll><num>1</num><face>4</face><bns></bns><kind>U</kind></roll> damage to attacker </field>
           <field name='Statistics'> STR: 12 DEX: 8 BLD: 14 INT: 8 WIS: 8
            WIL: 8 CHA: 6 HP: 35 Actions:: 3 P/S/C: 6/6/6; base 4 Size:
@@ -26029,7 +26042,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 8 </field>  
           <field name='Description' description='yes'> Character can
-           control up to a total of ( LVL&ndash;2 ) ^2 * 30 cp worth of
+           control up to a total of <math><msup><mrow><mi>LVL</mi><mo>-</mo><mn>2</mn></mrow><mn>2</mn></msup></math> * 30 cp worth of
            spirits. The spirit must obey any commands until death.
            </field>
         <field name='Implementation' />  
@@ -26093,7 +26106,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 5 </field>  
           <field name='Description' description='yes'> Character can
-           steal Lvl^2 * 5 MP from target, and gain Lvl^2 * 5 MP.
+           steal <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> * 5 MP from target, and gain <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> * 5 MP.
            Requires touch. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26131,7 +26144,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 2 </field>  
           <field name='Description' description='yes'> Character emits an
-           odor up to 10*lvl^2 feet away. Purchase for each odor.
+           odor up to 10*<math><msup><mi>lvl</mi><mn>2</mn></msup></math> feet away. Purchase for each odor.
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -26187,7 +26200,7 @@
         <field table='yes' name='Rank'> 3 </field>  
           <field name='Description' description='yes'> Character can
            float a few inches above the ground or smooth water. Can move
-           at Lvl^2 mph. </field>
+           at <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> mph. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Forcefield'>  
@@ -26195,7 +26208,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 6 </field>  
           <field name='Description' description='yes'> Erect a FF with a
-           radius of up to Lvl * 5 ft around character. Can take Lvl^2 *
+           radius of up to Lvl * 5 ft around character. Can take <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> *
            25 damage. Opponents are +1 to strike the forcefield. FF
            regenerates Lvl HP per hour. </field>
         <field name='Implementation' />  
@@ -26327,7 +26340,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 1 </field>  
           <field name='Description' description='yes'> Character can jump
-           an additional Lvl^2 feet </field>
+           an additional <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> feet </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Increased Speed'>  
@@ -26335,7 +26348,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 1 </field>  
           <field name='Description' description='yes'> Character can run
-           at Lvl^2 MPH </field>
+           at <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> MPH </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Intangibility'>  
@@ -26398,7 +26411,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 5 </field>  
           <field name='Description' description='yes'> Character emits
-           enough light to illuminate (like day) an area up to 5*Lvl^2 in
+           enough light to illuminate (like day) an area up to 5*<math><msup><mi>Lvl</mi><mn>2</mn></msup></math> in
            radius. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26448,7 +26461,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 7 </field>  
           <field name='Description' description='yes'> Character can
-           manipulate up to Lvl^3 * 10 pounds of metal. Metal pieces may
+           manipulate up to <math><msup><mi>Lvl</mi><mn>3</mn></msup></math> * 10 pounds of metal. Metal pieces may
            be thrown for an attack (one action) that deals Lvl D 6
            S&ndash;P&ndash;C damage. </field>
         <field name='Implementation' />  
@@ -26497,7 +26510,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 3 </field>  
           <field name='Description' description='yes'> Character has some
-           form of natural (or mystical) covering that gives him Lvl^2
+           form of natural (or mystical) covering that gives him <math><msup><mi>Lvl</mi><mn>2</mn></msup></math>
            P&ndash;S&ndash;C protection and Lvl U protection. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26559,7 +26572,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 6 </field>  
           <field name='Description' description='yes'> Character can
-           control up to Lvl^2 * 10 pounds of plant material. Can be used
+           control up to <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> * 10 pounds of plant material. Can be used
            to attack others (takes one action) with the plants, deals Lvl
            D 6 C damage. </field>
         <field name='Implementation' />  
@@ -26688,8 +26701,8 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 10 </field>  
           <field name='Description' description='yes'> Character gains
-           Lvl sizes, gains 2^Lvl Strength, looses Lvl Dex, multiply HP
-           and Base Armor by 2^Lvl. </field>
+           Lvl sizes, gains <math><msup><mn>2</mn><mi>Lvl</mi></msup></math> Strength, looses Lvl Dex, multiply HP
+           and Base Armor by <math><msup><mn>2</mn><mi>Lvl</mi></msup></math>. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Slow Motion'>  
@@ -26796,7 +26809,7 @@
         <field table='yes' name='Rank'> 1 </field>  
           <field name='Description' description='yes'> Purchase per
            attribute that is at least a 20. Increase the max attribute to
-           20 + lvl^2, and purchase additional points as if the base
+           20 + <math><msup><mi>lvl</mi><mn>2</mn></msup></math>, and purchase additional points as if the base
            attribute is 1&ndash;2 the current attribute. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26814,7 +26827,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 20 </field>  
           <field name='Description' description='yes'> Character can
-           teleport up to Lvl^2 * 5 miles away that he can see or has
+           teleport up to <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> * 5 miles away that he can see or has
            been. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26840,7 +26853,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 5 </field>  
           <field name='Description' description='yes'> Character can
-           transfer Lvl ^2 * 5 MP to a target per second. Requires Touch
+           transfer <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> * 5 MP to a target per second. Requires Touch
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -26849,7 +26862,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 2 </field>  
           <field name='Description' description='yes'> Character can
-           initiate a grip that requires a strength of STR+Lvl^2. Adds
+           initiate a grip that requires a strength of STR+<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>. Adds
            Level to any grappling skill. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26877,7 +26890,7 @@
         <field table='yes' name='Rank'> 10 </field>  
           <field name='Description' description='yes'> Character can
            control the weather (basic stuff here, no tornadoes,
-           huricanes, etc) for an area of Lvl^2 square miles. </field>
+           huricanes, etc) for an area of <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> square miles. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Whirlwind'>  
@@ -26905,7 +26918,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 10 </field>  
           <field name='Description' description='yes'> Character can see
-           through any substance that is no more than Lvl^2 feet thick.
+           through any substance that is no more than <math><msup><mi>Lvl</mi><mn>2</mn></msup></math> feet thick.
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -26922,9 +26935,9 @@
         <field name='Name' title='yes'> Active Stealth </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 4 </field>  
-          <field table='yes' name='Character Points'> 3+(Size^2)x2
+          <field table='yes' name='Character Points'> 3+(<math><msup><mi>Size</mi><mn>2</mn></msup></math>)x2
            </field>
-          <field name='Description' description='yes'> 75% chance of
+          <field name='Description' description='yes'> 75<percent /> chance of
            resisting detection by Radar or Sonar. Uses 3* SIZE PC
            </field>
       </datum>  
@@ -26942,9 +26955,9 @@
         <field name='Name' title='yes'> Advanced ECM </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 8 </field>  
-          <field table='yes' name='Character Points'> 3+(Size^2)x3
+          <field table='yes' name='Character Points'> 3+(<math><msup><mi>Size</mi><mn>2</mn></msup></math>)x3
            </field>
-          <field name='Description' description='yes'> 100% chance of
+          <field name='Description' description='yes'> 100<percent /> chance of
            working, High manuever missiles have no bonus, can
            misrepresent radar signiture. 15 PC </field>
       </datum>  
@@ -26970,9 +26983,18 @@
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 1 </field>  
         <field table='yes' name='Character Points'> X </field>  
-          <field name='Description' description='yes'> Can hold X^2 slots
+          <field name='Description' description='yes'> Can hold <math><msup><mi>X</mi><mn>2</mn></msup></math> slots
            worth of armor where X is no larger than the size of suit. The
-           pod has (2X)^2 armor. If the pod is pierced, the ammo is
+           pod has
+           <math>
+            <msup>
+              <mrow>
+                <mn>2</mn>
+                <mo>&times;</mo>
+                <mi>X</mi>
+              </mrow>
+              <mn>2</mn>
+            </msup></math> armor. If the pod is pierced, the ammo is
            rendered useless. </field>
       </datum>  
       <datum name='Armor Suit'>  
@@ -26991,7 +27013,7 @@
         <field table='yes' name='Slots'> 4 </field>  
         <field table='yes' name='Character Points'> 6 </field>  
           <field name='Description' description='yes'> Protects the
-           pilot&apos;s compartment with 50% more armor than the rest of
+           pilot&apos;s compartment with 50<percent /> more armor than the rest of
            the mecha. </field>
       </datum>  
       <datum name='Basic Cloaking system'>  
@@ -27008,16 +27030,17 @@
         <field table='yes' name='Slots'> 1 </field>  
         <field table='yes' name='Character Points'> 4 </field>  
           <field name='Description' description='yes'> Has 10 uses before
-           refill. Each gives 25% to fool RADAR sensor or Missile
+           refill. Each gives 25<percent /> to fool RADAR sensor or Missile
            </field>
       </datum>  
       <datum name='Climbing System'>  
         <field name='Name' title='yes'> Climbing System </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size </field>  
-          <field table='yes' name='Character Points'> (Size^2)/2 </field>
+          <field table='yes' name='Character Points'> (<math><msup><mi>Size</mi><mn>2</mn></msup></math>)/2 </field>
           <field name='Description' description='yes'> Range of
-           ((Size-1)^2)*150 feet. Minimum of 50&apos;. Uses 5 PC per use
+            <math><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo>&times;</mo><mn>150</mn></mrow></math> feet.
+            Minimum of 50&apos;. Uses 5 PC per use
            </field>
       </datum>  
       <datum name='Combination Ability'>  
@@ -27034,7 +27057,7 @@
         <field table='yes' name='Slots'> 31 </field>  
         <field table='yes' name='Character Points'> 14 </field>  
           <field name='Description' description='yes'> 2000&apos; range.
-           100% to interrupt radio, 75% to disrupt advanced comm </field>
+           100<percent /> to interrupt radio, 75<percent /> to disrupt advanced comm </field>
       </datum>  
       <datum name='Compact Transformation'>  
           <field name='Name' title='yes'> Compact Transformation </field>
@@ -27099,7 +27122,7 @@
         <field table='yes' name='Slots'> 1 </field>  
         <field table='yes' name='Character Points'> 5X </field>  
           <field name='Description' description='yes'> X*10 yard radius.
-           Has 75% chance to shut down electronic devices in the area
+           Has 75<percent /> chance to shut down electronic devices in the area
            </field>
       </datum>  
       <datum name='Easy maintenace'>  
@@ -27125,7 +27148,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 1 </field>  
         <field table='yes' name='Character Points'> 2 </field>  
-          <field name='Description' description='yes'> Size^2 hours in
+          <field name='Description' description='yes'> <math><msup><mi>Size</mi><mn>2</mn></msup></math> hours in
            air supply, rebreather, stops poisons and radiation fallout
            </field>
       </datum>  
@@ -27146,7 +27169,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 1 </field>  
         <field table='yes' name='Character Points'> 4 </field>  
-          <field name='Description' description='yes'> Add +50% range to
+          <field name='Description' description='yes'> Add +50<percent /> range to
            a Jammer. Uses 2 PC </field>
       </datum>  
       <datum name='Extra limb'>  
@@ -27180,7 +27203,7 @@
         <field table='yes' name='Slots'> 1 </field>  
         <field table='yes' name='Character Points'> 4 </field>  
           <field name='Description' description='yes'> Has 10 uses before
-           refill. Each gives 25% to fool thermal sensor or missile
+           refill. Each gives 25<percent /> to fool thermal sensor or missile
            </field>
       </datum>  
       <datum name='Flash System'>  
@@ -27196,7 +27219,7 @@
         <field name='Name' title='yes'> Force Field </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size </field>  
-        <field table='yes' name='Character Points'> Size^2 </field>  
+        <field table='yes' name='Character Points'> <math><msup><mi>Size</mi><mn>2</mn></msup></math> </field>  
           <field name='Description' description='yes'> Each point of
            damage done to the force field, 1 PC is used. </field>
       </datum>  
@@ -27244,7 +27267,7 @@
         <field table='yes' name='Slots'> 1 </field>  
         <field table='yes' name='Character Points'> 10X </field>  
           <field name='Description' description='yes'> X*10 yard radius.
-           100% chance to shut down electronics, 50% to destroy them.
+           100<percent /> chance to shut down electronics, 50<percent /> to destroy them.
            </field>
       </datum>  
       <datum name='Magical Transformation'>  
@@ -27268,7 +27291,7 @@
         <field name='Name' title='yes'> Myomer Actuators </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size </field>  
-        <field table='yes' name='Character Points'> 1+Size^2 </field>  
+        <field table='yes' name='Character Points'> 1+<math><msup><mi>Size</mi><mn>2</mn></msup></math> </field>  
         <field name='Description' description='yes'> +2 Dex </field>  
       </datum>  
       <datum name='Non-dextrous hand'>  
@@ -27292,15 +27315,15 @@
         <field name='Name' title='yes'> Passive Stealth </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 0 </field>  
-        <field table='yes' name='Character Points'> 3+Size^2 </field>  
-          <field name='Description' description='yes'> 50% chance of
+        <field table='yes' name='Character Points'> 3+<math><msup><mi>Size</mi><mn>2</mn></msup></math> </field>  
+          <field name='Description' description='yes'> 50<percent /> chance of
            resisting detection by Radar or Sonar </field>
       </datum>  
       <datum name='Pinpoint Forcefield'>  
         <field name='Name' title='yes'> Pinpoint Forcefield </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size </field>  
-        <field table='yes' name='Character Points'> Size^2 </field>  
+        <field table='yes' name='Character Points'> <math><msup><mi>Size</mi><mn>2</mn></msup></math> </field>  
           <field name='Description' description='yes'> Like forcefield, 3
            hp per 1 PC. Parry with a skill of 3 or get a +2 to a
            defensive skill </field>
@@ -27310,8 +27333,8 @@
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size </field>  
         <field table='yes' name='Character Points'> Size*2 </field>  
-          <field name='Description' description='yes'> Add +50% to
-           strength for 2^Size power </field>
+          <field name='Description' description='yes'> Add +50<percent /> to
+           strength for <math><msup><mn>2</mn><mi>Size</mi></msup></math> power </field>
       </datum>  
       <datum name='Quantum Teleport Engine'>  
           <field name='Name' title='yes'> Quantum Teleport Engine
@@ -27344,9 +27367,9 @@
         <field name='Name' title='yes'> Self Repair </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size </field>  
-          <field table='yes' name='Character Points'> (Size^2)*3 </field>
+          <field table='yes' name='Character Points'> (<math><msup><mi>Size</mi><mn>2</mn></msup></math>)*3 </field>
           <field name='Description' description='yes'> Repairs Size HP
-           per hour (up to half of damage taken). Uses Size^2 power
+           per hour (up to half of damage taken). Uses <math><msup><mi>Size</mi><mn>2</mn></msup></math> power
            </field>
       </datum>  
       <datum name='Shield'>  
@@ -27361,9 +27384,9 @@
         <field name='Name' title='yes'> Shielded Armor </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size-1 </field>  
-        <field table='yes' name='Character Points'> Size^3 </field>  
+        <field table='yes' name='Character Points'> <math><msup><mi>Size</mi><mn>3</mn></msup></math> </field>  
           <field name='Description' description='yes'> Doubles armor.
-           Power: All PC production+Size^2 </field>
+           Power: All PC production+<math><msup><mi>Size</mi><mn>2</mn></msup></math> </field>
       </datum>  
       <datum name='Spot Armor'>  
         <field name='Name' title='yes'> Spot Armor </field>  
@@ -27380,9 +27403,9 @@
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 2 </field>  
         <field table='yes' name='Character Points'> 6 </field>  
-          <field name='Description' description='yes'> 50% chance of
+          <field name='Description' description='yes'> 50<percent /> chance of
            negating active stealth. Only one per vehicle. With 2 systems,
-           100%chance of negating active stealth. Uses 7 power. </field>
+           100<percent />chance of negating active stealth. Uses 7 power. </field>
       </datum>  
       <datum name='Supercharger'>  
         <field name='Name' title='yes'> Supercharger </field>  
@@ -27390,14 +27413,14 @@
         <field table='yes' name='Slots'> Size </field>  
         <field table='yes' name='Character Points'> Size*2 </field>  
           <field name='Description' description='yes'> Increases speed
-           any one movement system by 50%, doubles power required.
+           any one movement system by 50<percent />, doubles power required.
            </field>
       </datum>  
       <datum name='Thermal Masking'>  
         <field name='Name' title='yes'> Thermal Masking </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> 1 </field>  
-        <field table='yes' name='Character Points'> Size^2 </field>  
+        <field table='yes' name='Character Points'> <math><msup><mi>Size</mi><mn>2</mn></msup></math> </field>  
           <field name='Description' description='yes'> Makes mecha
            invisible to thermal sensors, cannot be targeted by heat
            seekers </field>
@@ -27407,7 +27430,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Slots'> Size </field>  
         <field table='yes' name='Character Points'> 5 </field>  
-          <field name='Description' description='yes'> Get +50% speed for
+          <field name='Description' description='yes'> Get +50<percent /> speed for
            related form. (more wheeled speed for cars) </field>
       </datum>  
       <datum name='Weapon Storage'>  
@@ -27809,7 +27832,7 @@
         <field table='yes' name='Character Points'> 10 </field>  
           <field name='Description' description='yes'> Filter&apos;s
            pilots movements to keep him/her from exposing the suit to
-           attack. -1 Actions per turn. Mecha or power armor takes 25%
+           attack. -1 Actions per turn. Mecha or power armor takes 25<percent />
            less damage than normal (before being applied to armor)Every
            turn this is active subtract 2 from your initiave </field>
       </datum>  
@@ -27935,7 +27958,7 @@
         <field table='yes' name='Slots'> 1 </field>  
           <field table='yes' name='Requirements'> Very Advanced Sensor
            Package </field>
-        <field table='yes' name='Character Points'> Bonus^2 </field>  
+        <field table='yes' name='Character Points'> <math><msup><mi>Bonus</mi><mn>2</mn></msup></math> </field>  
           <field name='Description' description='yes'> Give [Bonus] to
            strike. If [Bonus] &gt;= 3 allows for targeting of High
            Manuever Missiles </field>
