@@ -56,12 +56,14 @@
 \setcounter{ExampleCounter}{1}
 \newcommand{\quotexample}[2][~]
 {
+\vspace{1em}
 \addcontentsline{lof}{section}{\arabic{ExampleCounter} \textsc{#1}}
 \vbox{
 \textscbf{\noindent Example \arabic{ExampleCounter} {\small \textsc{#1}}}
 \begin{quotation}
 {\small #2}
 \end{quotation}
+\vspace{1em}
 }
 \addtocounter{ExampleCounter}{1}
 }
@@ -136,20 +138,24 @@ Josh Kramer}
   <!-- STRUCTURAL ELEMENTS -->
   <!-- Book -->
   <xsl:template match="book">
+    &#xa;
     <xsl:apply-templates select="part" />
   </xsl:template>
   <!-- Part -->
   <xsl:template match="part">
+    &#xa;
 \part{<xsl:apply-templates select="title" />}
     <xsl:apply-templates select="chapter" />
   </xsl:template>
   <!-- Chapter -->
   <xsl:template match="chapter">
+    &#xa;
 \chapter{<xsl:apply-templates select="title" />}
     <xsl:apply-templates select="section" />
   </xsl:template>
   <!-- Section -->
   <xsl:template match="section">
+    &#xa;
 \<xsl:if test="name(../.)='section'">sub</xsl:if><xsl:if test="name(../../.)='section'">sub</xsl:if><xsl:if test="name(../../../.)='section'">sub</xsl:if>section{<xsl:apply-templates select="title" />}
     <xsl:apply-templates select="./*[position()&gt;1]" />
   </xsl:template>
@@ -160,13 +166,19 @@ Josh Kramer}
     <xsl:apply-templates />
   </xsl:template>
   <!-- Generic Text -->
+  <xsl:template match="text">
+    <xsl:apply-templates />
+    &#xa;&#xa;
+  </xsl:template>
   <xsl:template match="text()">
     <xsl:variable name="text" select="." />
     <xsl:value-of select="$text" />
   </xsl:template>
   <!-- examples -->
   <xsl:template match="example">
+  &#xa;
 \quotexample[<xsl:apply-templates select="title" />]{<xsl:apply-templates select="text" />}
+  &#xa;
   </xsl:template>
   <!-- Apathy -->
   <xsl:template match="Apathy">\APATHY{}</xsl:template>
