@@ -176,5 +176,10 @@ Josh Kramer}
   <xsl:template match="dollar">\$</xsl:template>
   <!-- special "percent" word -->
   <xsl:template match="percent">\%</xsl:template>
+  <!-- special "rightarrow" word -->
+  <xsl:template match="rightarrow">$\rightarrow$</xsl:template>
+  <xsl:template match="ldquo">``</xsl:template>
+  <!-- special "rdquo" word -->
+  <xsl:template match="rdquo">''</xsl:template>
 
 </xsl:stylesheet>
