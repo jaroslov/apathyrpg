@@ -815,7 +815,7 @@
              skills. A warrior? Better have that shield and/or weapon
              skills handy! </text>
             <text> Skills have a number of pieces of information
-             associated with them. They have a Rank}, Associated
+             associated with them. They have a Rank, Associated
              Attribute, Description, and Level. </text>
             <text> The rank determines how hard a skill is to learn.
              Higher the rank, the more time and CP it will take to get
@@ -2829,13 +2829,13 @@
              more. Pistols can hold ONE pack. Rifles/cannons can usually
              hold 3. B-paks can be recharged. Recharging a pack takes
              about thirty seconds per EU that has been used. As a general
-             rule, it costs $1 per EU to have pack recharged. HD paks
+             rule, it costs <dollar />1 per EU to have pack recharged. HD paks
              require special equipment to charge and these cost about
-             $1.50 per EU to charge. </text>
+             <dollar />1.50 per EU to charge. </text>
         </section>  
         <section>  
           <title>Melee</title>  
-            <text>  For damage type listed as _/_, the weapon can deal
+            <text>  For damage type listed as X/Y, the weapon can deal
              either type of damage for a given attack. For a P/S weapon,
              the attcker can choose to do a P or S attack. For every
              point of STR under Min. STR, the attack gets -1 damage and
@@ -3081,7 +3081,7 @@
               <text>  Each weapon can store up to 5 &ldquo;rocket
                charges.&rdquo; When these are used up, they must be
                refilled before the weapon can be used. Each charge costs
-               $100 to refill. </text>
+               <dollar />100 to refill. </text>
               <reference hrid='Content/Equipment/Melee/Rocket Assisted'
                />
           </section>  
@@ -3323,10 +3323,10 @@
                wands, knives, scales, measuring devices, a fireplace,
                cauldrons, bottles, pots, strainers, mirrors, precious
                gems, candles, assorted tools, and so on. Approximately
-               $1000 * Rank worth of supplies is required in a
+               <dollar />1000 * Rank worth of supplies is required in a
                ritualist&rsquo;s &ldquo;kitchen&rdquo;. (In other words,
                in order to perform the Ritual Stoneform, which is a rank
-               6 spell, $6000 worth of supplies are required to be on
+               6 spell, <dollar />6000 worth of supplies are required to be on
                hand) These supplies are reuseable and are used for many
                different rituals. </text>
               <text>  Specific spells require different ingredients.
@@ -3370,7 +3370,7 @@
                destruction of the items used! This might even entail the
                sacrifice of living things&mdash;if such an amount of MP
                is required. Generally, items yielding MP for ritual use
-               will cost about $1 per MP required, though this will vary.
+               will cost about <dollar />1 per MP required, though this will vary.
                Much like individual spell components, a ritualist will
                tend to hoard items that may be sacrificed for MP. Common
                items are living plants and small animals, antiques, old
@@ -3383,7 +3383,7 @@
                  magic </item>
                 <item>  Each spell&rsquo;s components cost 1/10th of the
                  &ldquo;scroll/potion&rdquo; cost from the spell table,
-                 PLUS $1 for each MP required. Components are consumed
+                 PLUS <dollar />1 for each MP required. Components are consumed
                  and can only be used once. (note that costs are
                  approximate and should be determined by the GM) </item>
                 <item>  The time required to prepare for a given ritual
@@ -3605,7 +3605,7 @@
                      purchase. Also a holy symbol made by a marginally
                      skilled craftsman or apprentice. Example: prayer
                      beads, a simple carved wooden cross, a mass-printed
-                     holy book, etc. Cost: $5 or more. </cell>
+                     holy book, etc. Cost: <dollar />5 or more. </cell>
                 </row>  
                 <row>  
                   <cell> 1 </cell>  
@@ -3616,7 +3616,7 @@
                      a particular church which is not available to the
                      general public (such as the robes of an ordained
                      priest), or a fine quality holy book. </cell>
-                    <cell> Cost: At least $500 plus the cost of the
+                    <cell> Cost: At least <dollar />500 plus the cost of the
                      &ldquo;base item&rdquo; </cell>
                 </row>  
                 <row>  
@@ -3625,7 +3625,7 @@
                      craftsman and of fine pedigree and history. Or, a
                      weapon or other object of superior quality with
                      appropriate engravings and blessings. </cell>
-                    <cell> Cost: at least $5000 plus the base cost of the
+                    <cell> Cost: at least <dollar />5000 plus the base cost of the
                      item. </cell>
                 </row>  
                 <row>  
@@ -3635,7 +3635,7 @@
                      the church, or a Legendary quality weapon blessed by
                      a member of the church with Faith: 7 or higher.
                      </cell>
-                  <cell> Cost: $1,000,000 or more. </cell>  
+                  <cell> Cost: <dollar />1,000,000 or more. </cell>  
                 </row>  
                 <row>  
                   <cell> 4 </cell>  
@@ -5141,7 +5141,7 @@
                       <cell> Treads </cell>  
                       <cell> 30 mph </cell>  
                       <cell> 0 </cell>  
-                      <cell> $(Size-1)*4$ </cell>  
+                      <cell> <dollar />(Size-1)*4<dollar /> </cell>  
                       <cell> 2 </cell>  
                       <cell> 4 </cell>  
                     </row>  
@@ -5176,7 +5176,7 @@
                          &times; </mo>  <mn> 10 </mn>  </mrow></math>
                       </cell>  
                       <cell> 1 </cell>  
-                      <cell> $Size^2$ </cell>  
+                      <cell> <dollar />Size^2<dollar /> </cell>  
                     </row>  
                     <row>  
                       <cell> Mech. Jump </cell>  
@@ -5289,7 +5289,7 @@
                   <cell> 1 </cell>  
                   <cell> 20 rounds </cell>  
                   <cell> <roll><num>2</num><face>4</face><bns></bns><mul>10</mul><kind>P</kind></roll> </cell>  
-                  <cell> $10 </cell>  
+                  <cell> <dollar />10 </cell>  
                 </row>  
                 <row>  
                   <cell> 2 </cell>  
@@ -5297,7 +5297,7 @@
                   <cell> 1 </cell>  
                   <cell> 10 rounds </cell>  
                   <cell> <roll><num>2</num><face>6</face><bns></bns><mul>10</mul><kind>P</kind></roll> </cell>  
-                  <cell> $20 </cell>  
+                  <cell> <dollar />20 </cell>  
                 </row>  
                 <row>  
                   <cell> 3 </cell>  
@@ -5305,7 +5305,7 @@
                   <cell> 1 </cell>  
                   <cell> 2 rounds </cell>  
                   <cell> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><mul>10</mul><kind>P</kind></roll> </cell>  
-                  <cell> $50 </cell>  
+                  <cell> <dollar />50 </cell>  
                 </row>  
                 <row>  
                   <cell> 4 </cell>  
@@ -5313,7 +5313,7 @@
                   <cell> 1 </cell>  
                   <cell> 1 round </cell>  
                   <cell> <roll><num>3</num><face>6</face><bns></bns><mul>10</mul><kind>P</kind></roll> </cell>  
-                  <cell> $75 </cell>  
+                  <cell> <dollar />75 </cell>  
                 </row>  
                 <row>  
                   <cell> 5 </cell>  
@@ -5321,7 +5321,7 @@
                   <cell> 2 </cell>  
                   <cell> 1 round </cell>  
                   <cell> <roll><num>4</num><face>6</face><bns></bns><mul>10</mul><kind>P</kind></roll> </cell>  
-                  <cell> $100 </cell>  
+                  <cell> <dollar />100 </cell>  
                 </row>  
                 <row>  
                   <cell> 6 </cell>  
@@ -5329,7 +5329,7 @@
                   <cell> 3 </cell>  
                   <cell> 1 round </cell>  
                   <cell> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><mul>10</mul><kind>P</kind></roll> </cell>  
-                  <cell> $150 </cell>  
+                  <cell> <dollar />150 </cell>  
                 </row>  
                 <row>  
                   <cell> 7 </cell>  
@@ -5337,7 +5337,7 @@
                   <cell> 4 </cell>  
                   <cell> 1 round </cell>  
                   <cell> <roll><num>4</num><face>4</face><bns></bns><mul>20</mul><kind>P</kind></roll> </cell>  
-                  <cell> $200 </cell>  
+                  <cell> <dollar />200 </cell>  
                 </row>  
                 <row>  
                   <cell> 8 </cell>  
@@ -5345,7 +5345,7 @@
                   <cell> 5 </cell>  
                   <cell> 1 round </cell>  
                   <cell> <roll><num>5</num><face>4</face><bns></bns><mul>20</mul><kind>P</kind></roll> </cell>  
-                  <cell> $400 </cell>  
+                  <cell> <dollar />400 </cell>  
                 </row>  
                 <row>  
                   <cell> 9 </cell>  
@@ -5353,7 +5353,7 @@
                   <cell> 6 </cell>  
                   <cell> 1 round </cell>  
                   <cell> <roll><num>5</num><face>6</face><bns></bns><mul>20</mul><kind>P</kind></roll> </cell>  
-                  <cell> $800 </cell>  
+                  <cell> <dollar />800 </cell>  
                 </row>  
               </table>  
                 <caption>Sizes, costs, capacity for firearm ballistic
@@ -6397,7 +6397,7 @@
            in order to profit from them. Persons with this skill will be
            good at recognizing good and bad business propositions, as
            well as bargains or rip-offs in the common marketplace. This
-           skill gives the holder $50 per level per week, if he/she is in
+           skill gives the holder <dollar />50 per level per week, if he/she is in
            an area with people and business dealings. </field>
       </datum>  
       <datum name='Carpentry'>  
@@ -6421,7 +6421,7 @@
         <field table='yes' name='Occupation'> Any </field>  
           <field name='Description' description='yes'> Unique skill. This
            provides the character money. Character gets
-           (LVL[latex]$^2$[/latex])*1000 dollars in cash, equipment, or
+           (LVL[latex]<dollar />^2<dollar />[/latex])*1000 dollars in cash, equipment, or
            goods. This can be bought many times. </field>
           <field name='Implementation'> Money += Level*Level*500 </field>
       </datum>  
@@ -12006,7 +12006,7 @@
         <field table='yes' name='Minimum Strength'> 18 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 2 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
-          <field name='Description' description='yes'> $18,000.00
+          <field name='Description' description='yes'> <dollar />18,000.00
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -12502,7 +12502,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Monofilament </field>  
         <field table='yes' name='Type'> D </field>  
-        <field table='yes' name='Cost'> $20000 </field>  
+        <field table='yes' name='Cost'> <dollar />20000 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
@@ -12533,7 +12533,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Plasma </field>  
         <field table='yes' name='Type'> U/C </field>  
-        <field table='yes' name='Cost'> $4000 </field>  
+        <field table='yes' name='Cost'> <dollar />4000 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll>/ <roll><num>2</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 12 </field>  
@@ -12549,7 +12549,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Plasma </field>  
         <field table='yes' name='Type'> U </field>  
-        <field table='yes' name='Cost'> $1000 </field>  
+        <field table='yes' name='Cost'> <dollar />1000 </field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 4 </field>  
@@ -12566,7 +12566,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Plasma </field>  
         <field table='yes' name='Type'> U </field>  
-        <field table='yes' name='Cost'> $4000 </field>  
+        <field table='yes' name='Cost'> <dollar />4000 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
@@ -12580,7 +12580,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Plasma </field>  
         <field table='yes' name='Type'> U </field>  
-        <field table='yes' name='Cost'> $2000 </field>  
+        <field table='yes' name='Cost'> <dollar />2000 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 6 </field>  
@@ -12971,7 +12971,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> S </field>  
-        <field table='yes' name='Cost'> $20000 </field>  
+        <field table='yes' name='Cost'> <dollar />20000 </field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 16 </field>  
@@ -12985,7 +12985,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
-        <field table='yes' name='Cost'> $18000 </field>  
+        <field table='yes' name='Cost'> <dollar />18000 </field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
@@ -13002,7 +13002,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
-        <field table='yes' name='Cost'> $10000 </field>  
+        <field table='yes' name='Cost'> <dollar />10000 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
@@ -13016,7 +13016,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
-        <field table='yes' name='Cost'> $14000 </field>  
+        <field table='yes' name='Cost'> <dollar />14000 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 12 </field>  
@@ -13034,7 +13034,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
-        <field table='yes' name='Cost'> $10000 </field>  
+        <field table='yes' name='Cost'> <dollar />10000 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 11 </field>  
@@ -13052,7 +13052,7 @@
         <field name='MetaTag'> Ultramodern </field>  
         <field table='yes' name='Class'> Rocket-Assisted </field>  
         <field table='yes' name='Type'> C </field>  
-        <field table='yes' name='Cost'> $20000 </field>  
+        <field table='yes' name='Cost'> <dollar />20000 </field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 15 </field>  
@@ -13239,7 +13239,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> The class
            &ldquo;fencing&apos;&apos; sword used in duels from the
-           [latex]$16^{th}$&ndash;$19^{th}$[/latex] c. If the user has
+           [latex]<dollar />16^{th}<dollar />&ndash;<dollar />19^{th}<dollar />[/latex] c. If the user has
            weapon specialization in Small Sword then the weapon can be
            used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns></bns></roll>with 4 AP and a MSB of
            12. If the weapon is used as [latex]\emph{exotic}[/latex]
@@ -13623,7 +13623,7 @@
       <datum name='ALICE Rig'>  
         <field name='Name' title='yes'> ALICE Rig </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $250.00 </field>  
+        <field table='yes' name='Cost'> <dollar />250.00 </field>  
           <field name='Description' description='yes'> Millitary vest
            used to hold weapons, ammo, grenades, rations, tools, etc. for
            quick access. </field>
@@ -13631,7 +13631,7 @@
       <datum name='Ammo Pouch, combo'>  
         <field name='Name' title='yes'> Ammo Pouch, combo </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $30.00 </field>  
+        <field table='yes' name='Cost'> <dollar />30.00 </field>  
           <field name='Description' description='yes'> A sturdy leather
            or nylon pouch that fits on your belt. Holds approx. 50 pistol
            rounds, 25 rifle rounds, or 15 shotgun shells </field>
@@ -13639,7 +13639,7 @@
       <datum name='Ammo Pouch, mag'>  
         <field name='Name' title='yes'> Ammo Pouch, mag </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $30.00 </field>  
+        <field table='yes' name='Cost'> <dollar />30.00 </field>  
           <field name='Description' description='yes'> A leather or nylon
            pouch that fits on your belt. It holds up to four pistol
            magazines or two assault rifle mags </field>
@@ -13647,7 +13647,7 @@
       <datum name='Anti-dazzle lens'>  
         <field name='Name' title='yes'> Anti-dazzle lens </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> Add this to a set
            of goggles or glasses. It prevents flashes of light, etc, from
            stunning the wearer. </field>
@@ -13667,7 +13667,7 @@
       <datum name='Backpack - hard'>  
         <field name='Name' title='yes'> Backpack - hard </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Hiker&apos;s
            backpack with a metal frame. Carries up to 100 pounds of gear.
            Very comfortable. </field>
@@ -13711,7 +13711,7 @@
       <datum name='Binoculars, mini'>  
         <field name='Name' title='yes'> Binoculars, mini </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> A pair of
            binoculars that folds up for easy carrying. Magnifies 4 times.
            </field>
@@ -13719,7 +13719,7 @@
       <datum name='Binoculars, standard'>  
         <field name='Name' title='yes'> Binoculars, standard </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A normal pair of
            binoculars. Has a neck strap and a carrying case. Variable
            magnification from 5 to 10 times. </field>
@@ -13727,7 +13727,7 @@
       <datum name='Binoculars, super'>  
         <field name='Name' title='yes'> Binoculars, super </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> A pair of high
            grade binoculars. Has a built in range finder and superior
            glass lenses. Mag varies from 5 to 20 times. </field>
@@ -13743,7 +13743,7 @@
       <datum name='Boat, Portable'>  
         <field name='Name' title='yes'> Boat, Portable </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $750.00 </field>  
+        <field table='yes' name='Cost'> <dollar />750.00 </field>  
           <field name='Description' description='yes'> A backpack
            containing an inflatable boat, inflating device, and a set of
            collapsible paddles. Holds up to 750 lbs of people and gear.
@@ -13752,14 +13752,14 @@
       <datum name='Boat, inflatable'>  
         <field name='Name' title='yes'> Boat, inflatable </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A simple
            inflatable boat. Light duty. Will hold up to 500 lbs. </field>
       </datum>  
       <datum name='Boat, portable Zodiac'>  
         <field name='Name' title='yes'> Boat, portable Zodiac </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $5,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />5,000.00 </field>  
           <field name='Description' description='yes'> Very high quality
            portable/inflatable boat. Kit weighs 160 lbs, carried in two
            packs. Has boat (seats four adults+250 lbs of gear), inflator,
@@ -13794,7 +13794,7 @@
       <datum name='Breathing Apparatus'>  
         <field name='Name' title='yes'> Breathing Apparatus </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> Similar to a SCUBA
            tank. Has a mask and tank that protects the wearer from gases,
            diseases, fumes, etc, even in enviornments that have no
@@ -13804,7 +13804,7 @@
       <datum name='Bug, micro'>  
         <field name='Name' title='yes'> Bug, micro </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Listening device
            the size of a button. Transmits what it hears to a common
            AM/FM radio. Range is 1000&apos; max. </field>
@@ -13812,14 +13812,14 @@
       <datum name='Bug, phone tap'>  
         <field name='Name' title='yes'> Bug, phone tap </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> Listening device
            attached to a telephone. Range is 1 mile. </field>
       </datum>  
       <datum name='Bug, super'>  
         <field name='Name' title='yes'> Bug, super </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> Listening device.
            Button sized, has special encrypted transmssions. Range is 1
            mile. </field>
@@ -13843,7 +13843,7 @@
       <datum name='Butcher&apos;s kit'>  
         <field name='Name' title='yes'> Butcher&apos;s kit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> Used for dressing
            animals in the field. Contains meat bags, skinning knife, saw,
            and a compact game hoist. </field>
@@ -13851,7 +13851,7 @@
       <datum name='Camera, Digital'>  
         <field name='Name' title='yes'> Camera, Digital </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> Digital video
            camera. Not a true pro-grade camera, but can store hundreds of
            photos and you don&apos;t have film hassles. </field>
@@ -13859,7 +13859,7 @@
       <datum name='Camera, Video'>  
         <field name='Name' title='yes'> Camera, Video </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> Video camera that
            records to tape or data discs. It is NOT broadcast quality,
            but is compact and easy to carry. </field>
@@ -13867,28 +13867,28 @@
       <datum name='Camera, Zoom Lens'>  
         <field name='Name' title='yes'> Camera, Zoom Lens </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> Zoom lens for a
            camera for long-distance shots </field>
       </datum>  
       <datum name='Camera, basic'>  
         <field name='Name' title='yes'> Camera, basic </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A simple film
            camera. </field>
       </datum>  
       <datum name='Camera, professional'>  
         <field name='Name' title='yes'> Camera, professional </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> A pro grade film
            camera. Includes some different lenses, filters, etc. </field>
       </datum>  
       <datum name='Camera, spy'>  
         <field name='Name' title='yes'> Camera, spy </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $300.00 </field>  
+        <field table='yes' name='Cost'> <dollar />300.00 </field>  
           <field name='Description' description='yes'> Super-small camera
            that can be easily concealed. Can be used like a normal
            camera, or can be set like a booby trap. </field>
@@ -13928,7 +13928,7 @@
       <datum name='Chemlight, bright'>  
         <field name='Name' title='yes'> Chemlight, bright </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $3.00 </field>  
+        <field table='yes' name='Cost'> <dollar />3.00 </field>  
           <field name='Description' description='yes'> A chemical light
            stick. Bend it to activate. This is a special stick that only
            lasts 20-30 minuites at most. It is VERY bright, like a good
@@ -13937,7 +13937,7 @@
       <datum name='Chemlight, mini'>  
         <field name='Name' title='yes'> Chemlight, mini </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1.00 </field>  
           <field name='Description' description='yes'> A small chemical
            light stick. It&apos;s about the size of a hair pin. Makes a
            great fishing lure </field>
@@ -13945,7 +13945,7 @@
       <datum name='Chemlight, stick'>  
         <field name='Name' title='yes'> Chemlight, stick </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $2.00 </field>  
+        <field table='yes' name='Cost'> <dollar />2.00 </field>  
           <field name='Description' description='yes'> A chemical light
            stick. Bend it to activiate. Works in any temperature, no
            batteries, etc. Gives off enough light to perform simple tasks
@@ -13954,14 +13954,14 @@
       <datum name='Climbing Gear'>  
         <field name='Name' title='yes'> Climbing Gear </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $400.00 </field>  
+        <field table='yes' name='Cost'> <dollar />400.00 </field>  
           <field name='Description' description='yes'> Climibing shoes,
            gear belt / harness, climbing axe, pitons, etc. </field>
       </datum>  
       <datum name='Climbing Gear - Ice'>  
         <field name='Name' title='yes'> Climbing Gear - Ice </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $600.00 </field>  
+        <field table='yes' name='Cost'> <dollar />600.00 </field>  
           <field name='Description' description='yes'> As above, but
            includes ice axe, crampons (spiked shoes), ice screws, etc.
            </field>
@@ -13985,14 +13985,14 @@
       <datum name='Coat, Raincoat'>  
         <field name='Name' title='yes'> Coat, Raincoat </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Waterproof coat.
            Good for travelling, etc. </field>
       </datum>  
       <datum name='Coat, Trenchcoat'>  
         <field name='Name' title='yes'> Coat, Trenchcoat </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $200.00 </field>  
+        <field table='yes' name='Cost'> <dollar />200.00 </field>  
           <field name='Description' description='yes'> Keeps you warm,
            dry, and is great for concealing things. Can conceal a shotgun
            or rifle. </field>
@@ -14000,7 +14000,7 @@
       <datum name='Combat Belt'>  
         <field name='Name' title='yes'> Combat Belt </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> Keeps your extra
            magazines, grenades, pistol, etc, close at hand and ready for
            use </field>
@@ -14008,7 +14008,7 @@
       <datum name='Computer, PDA'>  
         <field name='Name' title='yes'> Computer, PDA </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $300.00 </field>  
+        <field table='yes' name='Cost'> <dollar />300.00 </field>  
           <field name='Description' description='yes'> A small
            calculator-sized mini computer. Used for storing notes,
            directions, can also save small files, etc. </field>
@@ -14016,21 +14016,21 @@
       <datum name='Computer, advanced'>  
         <field name='Name' title='yes'> Computer, advanced </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $4,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />4,000.00 </field>  
           <field name='Description' description='yes'> High powered
            computer, "cutting edge" of the era </field>
       </datum>  
       <datum name='Computer, basic'>  
         <field name='Name' title='yes'> Computer, basic </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> A simple computer
            with monitor, etc. </field>
       </datum>  
       <datum name='Computer, portable'>  
         <field name='Name' title='yes'> Computer, portable </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $2,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />2,000.00 </field>  
           <field name='Description' description='yes'> Portable version
            of a normal computer. Runs off of batteries or can be plugged
            in. </field>
@@ -14072,7 +14072,7 @@
       <datum name='Cyber-medicine kit'>  
         <field name='Name' title='yes'> Cyber-medicine kit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Supplies for
            performing first aid on cyborgs, etc. Contains many of the
            same things as a normal first aid kit, but also specialized
@@ -14081,14 +14081,14 @@
       <datum name='Diving - Extra tank'>  
         <field name='Name' title='yes'> Diving - Extra tank </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Extra tank gives
            up to 2 hour dive time. </field>
       </datum>  
       <datum name='Diving Kit'>  
         <field name='Name' title='yes'> Diving Kit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $750.00 </field>  
+        <field table='yes' name='Cost'> <dollar />750.00 </field>  
           <field name='Description' description='yes'> SCUBA kit with
            tank, regulator, weight belt, BCD vest. Everything needed for
            1 person. 1 hour maximum dive time. </field>
@@ -14156,7 +14156,7 @@
       <datum name='Fishing Kit, portable'>  
         <field name='Name' title='yes'> Fishing Kit, portable </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A small box
            containing a multi-piece rod <and /> reel, line, hooks, lures,
            and a small folding net. </field>
@@ -14172,7 +14172,7 @@
       <datum name='Flares, aerial'>  
         <field name='Name' title='yes'> Flares, aerial </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $20.00 </field>  
+        <field table='yes' name='Cost'> <dollar />20.00 </field>  
           <field name='Description' description='yes'> These flares look
            like shotgun shells. They are fired from a launcher and ignite
            high in the air, whereafter they drift slowly back down.
@@ -14182,14 +14182,14 @@
       <datum name='Flares, launcher'>  
         <field name='Name' title='yes'> Flares, launcher </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> Looks like pistol.
            Fires aerial signal flares </field>
       </datum>  
       <datum name='Flares, signal'>  
         <field name='Name' title='yes'> Flares, signal </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $5.00 </field>  
+        <field table='yes' name='Cost'> <dollar />5.00 </field>  
           <field name='Description' description='yes'> A stick-type flare
            that burns with a bright red flame. (Road flare). For marking
            targets, warnings, etc. Good for starting fires too. </field>
@@ -14197,7 +14197,7 @@
       <datum name='Flashlight, Heavy duty'>  
           <field name='Name' title='yes'> Flashlight, Heavy duty </field>
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $25.00 </field>  
+        <field table='yes' name='Cost'> <dollar />25.00 </field>  
           <field name='Description' description='yes'> Metal police
            flashlight. Can be used as a club. Very tough, waterproof,
            high brightness </field>
@@ -14205,7 +14205,7 @@
       <datum name='Flashlight, Spotlight'>  
         <field name='Name' title='yes'> Flashlight, Spotlight </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Portable spotlight
            for hunting, search-and-rescue, etc. Runs for 4 hours, VERY
            powerful. </field>
@@ -14213,21 +14213,21 @@
       <datum name='Flashlight, pen light'>  
         <field name='Name' title='yes'> Flashlight, pen light </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $5.00 </field>  
+        <field table='yes' name='Cost'> <dollar />5.00 </field>  
           <field name='Description' description='yes'> Pen-sized pocket
            flashlight </field>
       </datum>  
       <datum name='Flashlight, small'>  
         <field name='Name' title='yes'> Flashlight, small </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $5.00 </field>  
+        <field table='yes' name='Cost'> <dollar />5.00 </field>  
           <field name='Description' description='yes'> A handy flashlight
            that fits in your pocket. </field>
       </datum>  
       <datum name='Flashlight, standard'>  
         <field name='Name' title='yes'> Flashlight, standard </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $10.00 </field>  
+        <field table='yes' name='Cost'> <dollar />10.00 </field>  
           <field name='Description' description='yes'> A normal
            flashlight. It takes two D-size batteries. </field>
       </datum>  
@@ -14255,7 +14255,7 @@
       <datum name='Forensics kit'>  
         <field name='Name' title='yes'> Forensics kit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $25.00 </field>  
+        <field table='yes' name='Cost'> <dollar />25.00 </field>  
           <field name='Description' description='yes'> Magnifying glass,
            fingerprinting supplies, disposable camera, evidence bags,
            composite sketch kit, notebook, handbook </field>
@@ -14263,7 +14263,7 @@
       <datum name='GPS Rec. superior'>  
         <field name='Name' title='yes'> GPS Rec. superior </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> Global Positioning
            System tool. About the size of a calculator. Has advanced 2-D
            and 3-D mapping information, weather data, can store and
@@ -14273,7 +14273,7 @@
       <datum name='GPS Reciever'>  
         <field name='Name' title='yes'> GPS Reciever </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $200.00 </field>  
+        <field table='yes' name='Cost'> <dollar />200.00 </field>  
           <field name='Description' description='yes'> Global Positioning
            System tool. About the size of a calculator, it tells you
            exactly where you are in the world. Has limited mapping
@@ -14282,7 +14282,7 @@
       <datum name='Gas Mask'>  
         <field name='Name' title='yes'> Gas Mask </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> rubber mask with
            filter prevents poisous gases, smoke, etc, from harming the
            wearer. Filter is good for 6 hours. </field>
@@ -14290,7 +14290,7 @@
       <datum name='Gas Mask filter'>  
         <field name='Name' title='yes'> Gas Mask filter </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $25.00 </field>  
+        <field table='yes' name='Cost'> <dollar />25.00 </field>  
           <field name='Description' description='yes'> extra filter for
            gas mask. Lasts for 6 hours. </field>
       </datum>  
@@ -14305,7 +14305,7 @@
       <datum name='Generator, large'>  
         <field name='Name' title='yes'> Generator, large </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $2,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />2,000.00 </field>  
           <field name='Description' description='yes'> A big generator
            that might be found on a construction site. Can run power
            tools, big floodlights, etc. </field>
@@ -14313,7 +14313,7 @@
       <datum name='Generator, small'>  
         <field name='Name' title='yes'> Generator, small </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> A backpack sized
            portable generator. Good for operating small electronic
            devices like TV, radio, etc. </field>
@@ -14334,7 +14334,7 @@
       <datum name='Gloves, Butcher&apos;s'>  
           <field name='Name' title='yes'> Gloves, Butcher&apos;s </field>
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Heavy-duty gloves
            made from kevlar or metal that prevents your hand from being
            cut when handling sharp objects. Has 1/4/0 Armor for the
@@ -14343,7 +14343,7 @@
       <datum name='Gloves, Grip'>  
         <field name='Name' title='yes'> Gloves, Grip </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> Specially treated
            gloves to improve your grip on objects. Gives +1 STR when in a
            strength contest, etc. </field>
@@ -14351,14 +14351,14 @@
       <datum name='Gloves, Mittens'>  
         <field name='Name' title='yes'> Gloves, Mittens </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $5.00 </field>  
+        <field table='yes' name='Cost'> <dollar />5.00 </field>  
           <field name='Description' description='yes'> Gloves for cold
            weather. -3 Dex while wearing them </field>
       </datum>  
       <datum name='Gloves, Work'>  
         <field name='Name' title='yes'> Gloves, Work </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $5.00 </field>  
+        <field table='yes' name='Cost'> <dollar />5.00 </field>  
           <field name='Description' description='yes'> Leather gloves to
            protect the hands from minor cuts and abrasions while working
            </field>
@@ -14366,7 +14366,7 @@
       <datum name='Goggles - combat'>  
         <field name='Name' title='yes'> Goggles - combat </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Full wraparound
            goggles that protect the eyes from dust, shrapnel, chemicals,
            and laser sighting devices </field>
@@ -14374,14 +14374,14 @@
       <datum name='Goggles - night vision'>  
           <field name='Name' title='yes'> Goggles - night vision </field>
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> Provides
            monochrome night vision by amplfiying ambient light </field>
       </datum>  
       <datum name='Goggles - thermal'>  
         <field name='Name' title='yes'> Goggles - thermal </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $2,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />2,000.00 </field>  
           <field name='Description' description='yes'> Allows wearer to
            "see" heat. It has a limited ability to see heat through
            things. The thicker the cover, the less detail. </field>
@@ -14389,7 +14389,7 @@
       <datum name='Handcuffs'>  
         <field name='Name' title='yes'> Handcuffs </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $25.00 </field>  
+        <field table='yes' name='Cost'> <dollar />25.00 </field>  
           <field name='Description' description='yes'> Police quality
            handcuffs. Cannot be broken unless STR &gt;19, Lock can be
            picked at -4 to roll. </field>
@@ -14397,7 +14397,7 @@
       <datum name='Handcuffs, super'>  
         <field name='Name' title='yes'> Handcuffs, super </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Extra-high
            security handcuffs. Requires STR &gt; 26 to break them. Lock
            is -10 to pick. </field>
@@ -14420,7 +14420,7 @@
       <datum name='Hat, Adventurer&apos;s'>  
           <field name='Name' title='yes'> Hat, Adventurer&apos;s </field>
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> Keep the sun and
            the bugs off your head. </field>
       </datum>  
@@ -14435,7 +14435,7 @@
       <datum name='Holster, Hip'>  
         <field name='Name' title='yes'> Holster, Hip </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> A simple holster
            that holds your gun at your hip. Can be modern appearance, or
            "old west" type. </field>
@@ -14443,7 +14443,7 @@
       <datum name='Holster, SWAT'>  
         <field name='Name' title='yes'> Holster, SWAT </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Holds a pistol or
            SMG on your leg. Can&apos;t be concealed, but offers +2 to
            quick draw the weapon. </field>
@@ -14451,7 +14451,7 @@
       <datum name='Holster, Shoulder'>  
         <field name='Name' title='yes'> Holster, Shoulder </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $200.00 </field>  
+        <field table='yes' name='Cost'> <dollar />200.00 </field>  
           <field name='Description' description='yes'> Quality leather
            rig holds your pistol by your shoulder or armpit. Conceals
            under a jacket easily. Fit to the wearer </field>
@@ -14459,7 +14459,7 @@
       <datum name='Holster, concealed'>  
         <field name='Name' title='yes'> Holster, concealed </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Used to conceal a
            gun inside your pants or by your bellybutton. </field>
       </datum>  
@@ -14540,7 +14540,7 @@
       <datum name='Jerry Can'>  
         <field name='Name' title='yes'> Jerry Can </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $25.00 </field>  
+        <field table='yes' name='Cost'> <dollar />25.00 </field>  
           <field name='Description' description='yes'> A metal or plastic
            container for storing <and /> transporting gas, water, oil, etc.
            Very rugged. Has a 5 gallon capacity, and can be used with
@@ -14561,7 +14561,7 @@
       <datum name='Lock Picks, gun'>  
         <field name='Name' title='yes'> Lock Picks, gun </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A nifty little
            tool that will open nearly all simple key locks in a second or
            two. Can be used by unskilled persons. Tool gives Lockpick: 2
@@ -14571,7 +14571,7 @@
       <datum name='Lock Picks, master'>  
         <field name='Name' title='yes'> Lock Picks, master </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> A full lockpick
            set, about the size of a hardcover book. Contains many
            different types of picks and specialty tools. Use for car
@@ -14580,7 +14580,7 @@
       <datum name='Lock Picks, mini'>  
         <field name='Name' title='yes'> Lock Picks, mini </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> A small leather
            pouch containing a tension wrench and 3-4 commonly shaped
            picks. Good for simple locks. </field>
@@ -14588,7 +14588,7 @@
       <datum name='Lock Picks, set'>  
         <field name='Name' title='yes'> Lock Picks, set </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A pouch about the
            size of a glasses case. It contains a tension wrench, and an
            assortment of picks and other lock tools. This would be
@@ -14597,7 +14597,7 @@
       <datum name='Medical Kit'>  
         <field name='Name' title='yes'> Medical Kit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $250.00 </field>  
+        <field table='yes' name='Cost'> <dollar />250.00 </field>  
           <field name='Description' description='yes'> A small tote bag
            with a good selection of first aid supplies. Gauze banadges,
            antiseptic, scissors, simple drugs, elastic bandage, etc.
@@ -14607,7 +14607,7 @@
           <field name='Name' title='yes'> Medical Kit - First Aid
            </field>
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $10.00 </field>  
+        <field table='yes' name='Cost'> <dollar />10.00 </field>  
           <field name='Description' description='yes'> A small waterproof
            box with basic first aid supplies (band aids, gauze bandages,
            ointment, aspirin, etc.) </field>
@@ -14615,7 +14615,7 @@
       <datum name='Medical Kit - Large'>  
         <field name='Name' title='yes'> Medical Kit - Large </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $2,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />2,000.00 </field>  
           <field name='Description' description='yes'> A large duffel bag
            crammed with most of an emergency room. Enough to complete
            simple many surgical procedures. A full assortment of
@@ -14627,7 +14627,7 @@
       <datum name='Mess Kit'>  
         <field name='Name' title='yes'> Mess Kit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $25.00 </field>  
+        <field table='yes' name='Cost'> <dollar />25.00 </field>  
           <field name='Description' description='yes'> Frying pan x2, pan
            lid, cup, bowl, knife, fork, spoon, and salt/pepper shaker. It
            all nests together in a small pouch. </field>
@@ -14635,7 +14635,7 @@
       <datum name='Mobile Phone'>  
         <field name='Name' title='yes'> Mobile Phone </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> Portable
            telephone. Works off of cellular system. Works in all major
            cities and most suburbs. </field>
@@ -14643,7 +14643,7 @@
       <datum name='Mobile Phone, sat'>  
         <field name='Name' title='yes'> Mobile Phone, sat </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> Portable
            telephone. Works off of satellites. Works anywhere on earth.
            </field>
@@ -14726,7 +14726,7 @@
       <datum name='Radio, Comm headset'>  
         <field name='Name' title='yes'> Radio, Comm headset </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A radio headset
            that has hands-free operation. Works up to 2 miles away in
            clear areas. Each </field>
@@ -14734,7 +14734,7 @@
       <datum name='Radio, Walkie-Talkie'>  
         <field name='Name' title='yes'> Radio, Walkie-Talkie </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> A hand-held radio
            that lets you talk to other people with similar radios. Has a
            range up to 2 miles in clear areas. Each. </field>
@@ -14742,7 +14742,7 @@
       <datum name='Rations'>  
         <field name='Name' title='yes'> Rations </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $5.00 </field>  
+        <field table='yes' name='Cost'> <dollar />5.00 </field>  
           <field name='Description' description='yes'> Millitary ration
            (MRE) or equivalent. A plastic bag containing a full meal.
            About as big as a "bag lunch" </field>
@@ -14750,7 +14750,7 @@
       <datum name='Rations - mini'>  
         <field name='Name' title='yes'> Rations - mini </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $3.00 </field>  
+        <field table='yes' name='Cost'> <dollar />3.00 </field>  
           <field name='Description' description='yes'> A small food bar.
            Highly nutritious (1 day&apos;s food in one bar!), but tastes
            awful. Same size as a candy bar. </field>
@@ -14758,7 +14758,7 @@
       <datum name='Repair Kit'>  
         <field name='Name' title='yes'> Repair Kit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $200.00 </field>  
+        <field table='yes' name='Cost'> <dollar />200.00 </field>  
           <field name='Description' description='yes'> For repairing
            robotics, power armor, and mecha. Contains specialized tools
            (but not basics, which are also needed) Oil, wire, common
@@ -14795,7 +14795,7 @@
       <datum name='Rope, climbing'>  
         <field name='Name' title='yes'> Rope, climbing </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $150.00 </field>  
+        <field table='yes' name='Cost'> <dollar />150.00 </field>  
           <field name='Description' description='yes'> Woven rope handles
            better and is safer for climbing than normal rope. Can hold up
            to 1000 lbs. 100 feet </field>
@@ -14803,7 +14803,7 @@
       <datum name='Rope, utility'>  
         <field name='Name' title='yes'> Rope, utility </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> Basic twisted
            rope. Good for all sorts of uses! Can hold up to 500 lbs
            before it breaks. Price is for 100 feet </field>
@@ -14843,14 +14843,14 @@
       <datum name='Shovel'>  
         <field name='Name' title='yes'> Shovel </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $15.00 </field>  
+        <field table='yes' name='Cost'> <dollar />15.00 </field>  
           <field name='Description' description='yes'> For digging holes.
            A regular shovel with a wooden handle </field>
       </datum>  
       <datum name='Shovel, folding'>  
         <field name='Name' title='yes'> Shovel, folding </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $10.00 </field>  
+        <field table='yes' name='Cost'> <dollar />10.00 </field>  
           <field name='Description' description='yes'> Portable army
            shovel. It folds up to take less space. </field>
       </datum>  
@@ -14889,7 +14889,7 @@
       <datum name='Snowshoes'>  
         <field name='Name' title='yes'> Snowshoes </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> For walking on
            snow. Also useful for loose desert sand </field>
       </datum>  
@@ -14920,14 +14920,14 @@
       <datum name='Suit- Dry suit'>  
         <field name='Name' title='yes'> Suit- Dry suit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $1,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />1,000.00 </field>  
           <field name='Description' description='yes'> Used for diving in
            very cold water. </field>
       </datum>  
       <datum name='Suit- Enviornmental'>  
         <field name='Name' title='yes'> Suit- Enviornmental </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> Special rubber and
            plastic suit covers the entire body. Has a built-in gas mask.
            Prevents harm due to posion gas, smoke, dangerous chemicals,
@@ -14936,7 +14936,7 @@
       <datum name='Suit- Fire'>  
         <field name='Name' title='yes'> Suit- Fire </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $250.00 </field>  
+        <field table='yes' name='Cost'> <dollar />250.00 </field>  
           <field name='Description' description='yes'> NOMEX clothing and
            helmet. Has no armor value, but protects wearer from fire.
            </field>
@@ -14944,7 +14944,7 @@
       <datum name='Suit- Ghillie'>  
         <field name='Name' title='yes'> Suit- Ghillie </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> Sniper&apos;s camo
            suit. Must be purchased for a certain type of terrain (desert,
            woodland, urban, etc...) Gives +4 to camo skill. </field>
@@ -14952,7 +14952,7 @@
       <datum name='Suit- Space'>  
         <field name='Name' title='yes'> Suit- Space </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $2,500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />2,500.00 </field>  
           <field name='Description' description='yes'> Space suit,
            similar to that worn by astrounauts. Has an emergency air
            supply built in. </field>
@@ -14960,7 +14960,7 @@
       <datum name='Suit- Wetsuit'>  
         <field name='Name' title='yes'> Suit- Wetsuit </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $200.00 </field>  
+        <field table='yes' name='Cost'> <dollar />200.00 </field>  
           <field name='Description' description='yes'> Used for diving.
            Keeps wearer protected from abrasions, jellyfish, etc. Keeps
            diver warm. </field>
@@ -14968,7 +14968,7 @@
       <datum name='Survival Kit, basic'>  
         <field name='Name' title='yes'> Survival Kit, basic </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $40.00 </field>  
+        <field table='yes' name='Cost'> <dollar />40.00 </field>  
           <field name='Description' description='yes'> A fanny pack
            containing simple first aid supplies, two days of emergency
            rations, poncho, fishing supplies, knife, snare, matches, 100
@@ -14978,7 +14978,7 @@
       <datum name='Survival Kit, full'>  
         <field name='Name' title='yes'> Survival Kit, full </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $500.00 </field>  
+        <field table='yes' name='Cost'> <dollar />500.00 </field>  
           <field name='Description' description='yes'> A backpack with
            enough gear to survive for a long time: first aid supplies, 15
            days of mini-rations, knife, fishing supplies, snare,
@@ -15012,7 +15012,7 @@
       <datum name='Tent, expedition'>  
         <field name='Name' title='yes'> Tent, expedition </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $300.00 </field>  
+        <field table='yes' name='Cost'> <dollar />300.00 </field>  
           <field name='Description' description='yes'> High quality tent
            will stand up to the worst weather conditions. Fits 3 adults
            max. </field>
@@ -15020,7 +15020,7 @@
       <datum name='Tent, large'>  
         <field name='Name' title='yes'> Tent, large </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A big
            &ldquo;cabin&apos;&apos; style tent. Has lots of room inside,
            up to 8 adults. </field>
@@ -15028,21 +15028,21 @@
       <datum name='Tent, small'>  
         <field name='Name' title='yes'> Tent, small </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $30.00 </field>  
+        <field table='yes' name='Cost'> <dollar />30.00 </field>  
           <field name='Description' description='yes'> A small tent. Will
            fit two adults max. </field>
       </datum>  
       <datum name='Tent, survival'>  
         <field name='Name' title='yes'> Tent, survival </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> A tiny tent large
            enough for one person. Fits into a pants pocket! </field>
       </datum>  
       <datum name='Tool kit- advanced'>  
         <field name='Name' title='yes'> Tool kit- advanced </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $3,000.00 </field>  
+        <field table='yes' name='Cost'> <dollar />3,000.00 </field>  
           <field name='Description' description='yes'> Large tool kit for
            working on machinery, vehicles, or mecha. Fits in a large
            rolling chest or small trailer. Has many special tools such as
@@ -15053,7 +15053,7 @@
       <datum name='Tool kit- basic'>  
         <field name='Name' title='yes'> Tool kit- basic </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $30.00 </field>  
+        <field table='yes' name='Cost'> <dollar />30.00 </field>  
           <field name='Description' description='yes'> A portable pouch
            with the basics: Hammer, screwdrivers, adjustable wrench,
            pliers, measuring tape, and a small saw </field>
@@ -15061,7 +15061,7 @@
       <datum name='Tool kit- standard'>  
         <field name='Name' title='yes'> Tool kit- standard </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $200.00 </field>  
+        <field table='yes' name='Cost'> <dollar />200.00 </field>  
           <field name='Description' description='yes'> A big tool box
            filled with a large assortment of tools. Weighs about 70 lbs.
            Good for most basic jobs. </field>
@@ -15069,7 +15069,7 @@
       <datum name='Tool, Halligan'>  
         <field name='Name' title='yes'> Tool, Halligan </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $250.00 </field>  
+        <field table='yes' name='Cost'> <dollar />250.00 </field>  
           <field name='Description' description='yes'> Firefighter&apos;s
            tool. A single piece of metal that has a hammer, axe, hydrant
            wrench, and a special prying edge. It can be used to force
@@ -15078,7 +15078,7 @@
       <datum name='Tool, MultiTool'>  
         <field name='Name' title='yes'> Tool, MultiTool </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $75.00 </field>  
+        <field table='yes' name='Cost'> <dollar />75.00 </field>  
           <field name='Description' description='yes'> A pocket tool
            similar to a &ldquo;swiss army knife&apos;&apos;. It has
            common tools inside, like pliers, screwdriver, knife blade,
@@ -15088,7 +15088,7 @@
       <datum name='Tool, Rescue'>  
         <field name='Name' title='yes'> Tool, Rescue </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> 2-in-1 tool. Used
            to break car windshields and cut seatbelts/clothing. Cannot be
            used as a weapon. </field>
@@ -15198,21 +15198,21 @@
       <datum name='Watch, Calculator'>  
         <field name='Name' title='yes'> Watch, Calculator </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $50.00 </field>  
+        <field table='yes' name='Cost'> <dollar />50.00 </field>  
           <field name='Description' description='yes'> A wristwatch with
            a built-in calculator. </field>
       </datum>  
       <datum name='Watch, standard'>  
         <field name='Name' title='yes'> Watch, standard </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $20.00 </field>  
+        <field table='yes' name='Cost'> <dollar />20.00 </field>  
           <field name='Description' description='yes'> Tells the time.
            That&apos;s about it. </field>
       </datum>  
       <datum name='Watch, survival'>  
         <field name='Name' title='yes'> Watch, survival </field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost'> $100.00 </field>  
+        <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A heavy-duty watch
            that&apos;s nearly indestructible. Waterproof, has built in
            compass, thermometer, and other features. </field>
@@ -15391,7 +15391,7 @@
         <field table='yes' name='Recovery'> 1 </field>  
         <field table='yes' name='Range'> 200 </field>  
           <field name='Description' description='yes'> Always deals P
-           damage. Bullets are $1 each </field>
+           damage. Bullets are <dollar />1 each </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Crossbow - Pellet, large'>  
@@ -15407,7 +15407,7 @@
         <field table='yes' name='Recovery'> 2 </field>  
         <field table='yes' name='Range'> 300 </field>  
           <field name='Description' description='yes'> Always deals P
-           damage. Bullets are $1 each </field>
+           damage. Bullets are <dollar />1 each </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Crossbow - Repeating'>  
@@ -16659,9 +16659,9 @@
           <field name='Description' description='yes'> [LaTeX] Disenchant
            is used to remove magical effects from an object or area. Each
            casting of Disenchant affects a single magical spell or
-           effect. If disenchant is used on a spell of 3$^{rd}$ rank or
+           effect. If disenchant is used on a spell of 3<dollar />^{rd}<dollar /> rank or
            lower, then the targeted spell effect instantly expires
-           (stops). If disenchant is used on a spell of 4$^{th}$ rank or
+           (stops). If disenchant is used on a spell of 4<dollar />^{th}<dollar /> rank or
            higher, then the spell may or may not be affected. In this
            case the caster of Disenchant enters a contest of skills
            (Magical Control) with the original caster of the existing
@@ -16682,7 +16682,7 @@
            lockbox containing some scrolls. Now, having slain Ulek, an
            evil wizard, Br\c{a}\"{e}tzn\.{r} wishes to disenchant Major
            Ward so that he can open the box unharmed. Because Major Ward
-           is 5$^{th}$ rank, Disenchant does not automatically work, and
+           is 5<dollar />^{th}<dollar /> rank, Disenchant does not automatically work, and
            a skill contest is required. Even though Ulek is dead,
            &ldquo;he&apos;&apos; is still entitled to a roll. The GM
            determines that Ulek had Magical Control level 4 and WIL 15 at
@@ -22821,7 +22821,7 @@
           <field name='Description' description='yes'> [LaTeX] You
            deliver a P, C, or S blow using your fist or foot
            (\textsl{Punch} and \textsl{Kick}, respectively). The damage
-           for a for a kick is $X$D6 and for a punch is $X$D4, where $X$
+           for a for a kick is <dollar />X<dollar />D6 and for a punch is <dollar />X<dollar />D4, where <dollar />X<dollar />
            is the Rank of the skill. A martial srtist may increase the
            Rank of this skill even after he has bought it.
            \quotexample[Rei hits harder]{Rei has decided that he wants to
@@ -22829,7 +22829,7 @@
            2, Level 4, \emph{Punch/Kick}. He decides to increase the Rank
            of his \emph{Punch/Kick} to 3. The cost of a Rank 2, Level 4
            skill is 20; the cost of a Rank 3, Level 4 skill is 30, so he
-           owes $30-20=10$ character points.} The Maximum Strength Bonus
+           owes <dollar />30-20=10<dollar /> character points.} The Maximum Strength Bonus
            (MSB) of \emph{Punch/Kick} is &ldquo;unlimited,&apos;&apos;
            and the Minimum Strength Requirement (MSR) is 8. Characters
            with less than an 8 \textscbf{STR} can still purchase
@@ -22891,8 +22891,8 @@
            levels of ambidexterity; he has -0 to strike with his
            &lsquo;good&rsquo; hand and -3 to strike with the off hand. If
            Candlestick had 6 levels of ambidexterity he would no negative
-           at all when attacking with his 2$^{nd}$ weapon, and a -3 with
-           his 3$^{rd}$ weapon, for instance if he were doing two punches
+           at all when attacking with his 2<dollar />^{nd}<dollar /> weapon, and a -3 with
+           his 3<dollar />^{rd}<dollar /> weapon, for instance if he were doing two punches
            and a kick.} </field>
         <field name='Implementation' />  
       </datum>  
@@ -23043,7 +23043,7 @@
            three levels in \emph{Combat Training}. Travis has three
            levels in \emph{Readiness}. At the beginning of combat they
            both roll initiative, Myk rolls (and gets) a 12, Travis rolls
-           an 11, with his \emph{Readiness} he has $11+6=17$. Both Myk
+           an 11, with his \emph{Readiness} he has <dollar />11+6=17<dollar />. Both Myk
            and Travis choose to go on the iniative of 17.} </field>
         <field name='Implementation' />  
       </datum>  
@@ -23089,11 +23089,11 @@
            Other}. However, because he has such fantastic armor (and gets
            hit a lot defending Travis), he really wants to be able to
            &ldquo;lay down the law&apos;&apos; with his \emph{Reciprocal
-           Attack}. When he takes his 3$^{rd}$ level in Jitsu, he chooses
+           Attack}. When he takes his 3<dollar />^{rd}<dollar /> level in Jitsu, he chooses
            \emph{Reciprocal Attack} as his skill; from now on Myk can
            modify \emph{Reciprocal Attack} as if it were a \textsc{Basic}
            attack; in particular he has 3 levels in \emph{Deadly} he
-           plans to use$\ldots$} </field>
+           plans to use<dollar />\ldots<dollar />} </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Kata'>  
@@ -23261,7 +23261,7 @@
            he&apos;d rather throw a punch or two into the whole
            operation. As a result he picks up a new \emph{Waza} combining
            \emph{Barrel Charge} with a Rank 2 \emph{Punch/Kick} at 2
-           levels. This means the \emph{Waza} has $1+2-1=2$ Rank, and at
+           levels. This means the \emph{Waza} has <dollar />1+2-1=2<dollar /> Rank, and at
            level 2, would cost 6 C.P. Note that Ragnar cannot further
            \textsc{Modify} this skill because it is \textsc{Special}.}
            </field>
@@ -23577,8 +23577,8 @@
            undead, etc. targets. It is likewise ineffective against
            exotic creatures. This can be used against cyborgs and robots,
            given that you make the applicable roll. Your attack deals
-           $1/2$ damage, but it is now Undefined. If the target loses
-           more than $1/4$ of their Hitpoint total in a single strike,
+           <dollar />1/2<dollar /> damage, but it is now Undefined. If the target loses
+           more than <dollar />1/4<dollar /> of their Hitpoint total in a single strike,
            they must make a BLD check, or fall to 0 HP instantly.
            </field>
         <field name='Implementation' />  
@@ -23679,7 +23679,7 @@
            \<and /> Double-Punch]{Jesse wants to perform a Capoeira-style
            Double-Kick followed by a Double-Punch. He purchases
            \emph{Multi-Weapon Style} for 3 additional weapons; the Rank
-           of the \emph{Multi-Weapon Style} is then $3*3=9$ Since
+           of the \emph{Multi-Weapon Style} is then <dollar />3*3=9<dollar /> Since
            it&apos;s so expensive, he only purchases one level, so he can
            only use it once per turn. On top of this he has purchases 3
            levels of \emph{Ambidexterity}, offset all of his multi-use
@@ -26981,7 +26981,7 @@
         <field table='yes' name='Slots'> 0 </field>  
         <field table='yes' name='Character Points'> Varies </field>  
           <field name='Description' description='yes'> Choose a human
-           armor, multiply values by Size-1. CP: normal $ amount *
+           armor, multiply values by Size-1. CP: normal <dollar /> amount *
            (size-1) </field>
       </datum>  
       <datum name='Armored Cockpit (Mecha Only)'>  
@@ -27226,7 +27226,7 @@
         <field table='yes' name='Slots'> 0 </field>  
         <field table='yes' name='Character Points'> 10 </field>  
           <field name='Description' description='yes'> Will stop
-           bleeding. Once per "charge" it can give <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>HP ($1000 to
+           bleeding. Once per "charge" it can give <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>HP (<dollar />1000 to
            refill) </field>
       </datum>  
       <datum name='LASER Resistant Coating'>  
