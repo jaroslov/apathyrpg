@@ -174,5 +174,7 @@ Josh Kramer}
   <xsl:template match="and">\&amp;</xsl:template>
   <!-- special "dollar" word -->
   <xsl:template match="dollar">\$</xsl:template>
+  <!-- special "percent" word -->
+  <xsl:template match="percent">\%</xsl:template>
 
 </xsl:stylesheet>
