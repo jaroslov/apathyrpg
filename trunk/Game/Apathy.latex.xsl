@@ -1,316 +1,174 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!--<xsl:output version="5.0" method="html" encoding="ISO-8859-1" media-type="text/html"/>-->
-
-  <!-- Main document -->
+  <xsl:output method="text" encoding="UTF-8" media-type="text/plain" indent="no"/>
   <xsl:template match="/">
-    <!-- Bug in FFX2.0.0.6? Renders incorrectly b/c it uses ending ".xhtml" -->
-    \begin{document}
-      <body>
-        <div class="titlepage">
-          <span class="apathy-A1">A</span>
-          <span class="apathy-P">P</span>
-          <span class="apathy-A2">A</span>
-          <span class="apathy-thy">THY</span>
-          <table class="apathy-authors">
-            <tr><td>Allan Moyse</td></tr>
-            <tr><td>Jacob Smith</td></tr>
-            <tr><td>Nathan Jones</td></tr>
-            <tr><td>Noah Smith</td></tr>
-            <tr><td>Chris Cook</td></tr>
-            <tr><td>Josh Kramer</td></tr>
-          </table>
-        </div>
-        <ul class="Fast-Find-List">
-          <li><a href="#Table-of-Contents">Table of Contents</a></li>
-          <li><a href="#List-of-Examples">List of Examples</a></li>
-          <li><a href="#List-of-Figures">List of Figures</a></li>
-          <li><a href="#List-of-Equations">List of Equations</a></li>
-        </ul>
-        <div class="toc" id="Table-of-Contents">
-          <h1>Table of Contents</h1>
-          <ol class="toc">
-            <xsl:for-each select="//part">
-              <li>
-                <a href="#part-{./title}">
-                  <xsl:value-of select="title" />
-                </a>
-                <ol class="toc" >
-                  <xsl:for-each select="chapter">
-                    <li>
-                      <a href="#chapter-{./title}">
-                        <xsl:value-of select="title" />
-                      </a>
-                      <ol class="toc" >
-                        <xsl:for-each select="section">
-                          <li>
-                            <a href="#section-{../title}-{./title}">
-                              <xsl:value-of select="title" />
-                            </a>
-                            <ol class="toc" >
-                              <xsl:for-each select="section">
-                                <li>
-                                  <a href="#section-{../../title}-{../title}-{./title}">
-                                    <xsl:value-of select="title" />
-                                  </a>
-                                </li>
-                              </xsl:for-each>
-                            </ol>
-                          </li>
-                        </xsl:for-each>
-                      </ol>
-                    </li>
-                  </xsl:for-each>
-                </ol>
-              </li>
-            </xsl:for-each>
-          </ol>
-        </div>
-        <div class="examples" id="List-of-Examples">
-          <h1>List of Examples</h1>
-          <ol class="examples">
-            <xsl:for-each select="//example">
-              <li><a href="#example-{./title}">
-                <xsl:value-of select="title" />
-              </a></li>
-            </xsl:for-each>
-          </ol>
-        </div>
-        <div class="figures" id="List-of-Figures">
-          <h1>List of Figures</h1>
-          <ol class="figures">
-            <xsl:for-each select="//figure">
-              <li>
-                <a href="#figure-{./caption}">
-                  <xsl:value-of select="caption" />
-                </a>
-              </li>
-            </xsl:for-each>
-          </ol>
-        </div>
-        <div class="equations" id="List-of-Equations">
-          <h1>List of Equations</h1>
-          <ol class="equations">
-            <xsl:for-each select="//m">
-              <li>
-								<a href="#equation-{generate-id(.)}">
-								  <!-- In place so it hops to the right place. -->
-                  <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <xsl:copy-of select="child::node()" />
-                  </math>
-								</a>
-              </li>
-            </xsl:for-each>
-          </ol>
-        </div>
-        <xsl:apply-templates select="//book"/>
-      </body>
-    \end{document}
+\documentclass[twoside]{book}
+\usepackage{include}
+\usepackage{pslatex}
+\usepackage{psfonts}
+\usepackage{multicol}
+\usepackage{newcent}
+\usepackage{ncntrsbk}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{multicolumn}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage[text={5.5in,8in},textheight=8in]{geometry}
+
+\begin{document}
+
+\newfont{\GIANT}{rpncr scaled 9500}
+\newfont{\Giant}{rpncr scaled 4500}
+\DeclareFixedFont{\apathyscbf}{OT1}{pnc}{b}{sc}{8}
+\DeclareFixedFont{\rulescbf}{OT1}{pnc}{b}{sc}{11}
+\DeclareFixedFont{\apathymn}{OT1}{pnc}{m}{n}{8}
+\newcommand{\halfline}{\vspace{.5ex}}
+\newcommand{\textscbf}[1]{\textsc{\textbf{#1}}}
+\newcommand{\APATHY}{\textscbf{Apathy}}
+\newcommand{\rulename}[1]
+{
+\noindent\rulescbf{#1}
+}
+\newcommand{\ruledesc}[1]
+{
+\parindent=5pt
+\everypar{\hangindent=20pt \hangafter=1}
+\normalsize #1
+}
+\newcommand{\ARPG}{
+{\GIANT A}
+\hspace{-3ex}\raise5ex\hbox{\Giant P}
+\hspace{-4ex}{\GIANT A}
+\hspace{-4ex}\raise5ex\hbox{\Giant THY}
+\raise13ex\hbox{
+\hspace{-23ex}\textscbf{R}\textsc{ole-}\textscbf{P}\textsc{laying}
+\textscbf{G}\textsc{ame}
+}
+}
+\newcounter{ExampleCounter}
+\setcounter{ExampleCounter}{1}
+\newcommand{\quotexample}[2][~]
+{
+\addcontentsline{lof}{section}{\arabic{ExampleCounter} \textsc{#1}}
+\vbox{
+\textscbf{\noindent Example \arabic{ExampleCounter} {\small \textsc{#1}}}
+\begin{quotation}
+{\small #2}
+\end{quotation}
+}
+\addtocounter{ExampleCounter}{1}
+}
+
+\newcommand{\BracedWrapPicture}[2]
+{
+\begin{wrapfigure}{#1}{.40\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    $\overbrace{\hspace{.40\textwidth}}$
+    \vspace{-10pt}
+    \includegraphics[width=0.38\textwidth]{#2}
+    \vspace{-10pt}
+    $\underbrace{\hspace{.40\textwidth}}$
+  \end{center}
+  \vspace{-15pt}
+\end{wrapfigure}
+}
+
+\newcommand{\VBoxColumnPicture}[1]
+{
+\vbox{
+\begin{center}
+$\overbrace{\hspace{.8\columnwidth}}$
+\vspace{-10pt}
+\includegraphics[width=.76\columnwidth]{#1}
+\vspace{-10pt}
+$\underbrace{\hspace{.8\columnwidth}}$
+\end{center}}
+}
+
+
+\begin{titlepage}
+~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
+\begin{center}
+\ARPG \\
+
+\hspace*{6em}
+\vbox{\vspace{-2em}
+\small Allan Moyse \\
+Nathan Jones \\
+Jacob Smith \\
+Noah Smith \\
+Chris Cook \\
+Josh Kramer}
+
+\vskip 2in
+\textsc{Revision \#1.100000 (06 September 2007)}
+\end{center}
+
+\end{titlepage}
+
+~
+\setcounter{page}{1}
+\pagenumbering{roman}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+  <xsl:apply-templates select="//book" />
+
+\end{document}
   </xsl:template>
   
+  <!-- STRUCTURAL ELEMENTS -->
+  <!-- Book -->
   <xsl:template match="book">
-    <xsl:for-each select="part">
-      <div class="part" id="part-{./title}">
-        <h1><xsl:value-of select="title" /></h1>
-        <xsl:for-each select="chapter">
-          <div class="chapter" id="chapter-{./title}">
-            <!--<h1><xsl:value-of select="title" /></h1>-->
-            <xsl:apply-templates />
-          </div>
-        </xsl:for-each>
-      </div>
-    </xsl:for-each>
+    <xsl:apply-templates select="part" />
   </xsl:template>
-
+  <!-- Part -->
+  <xsl:template match="part">
+\part{<xsl:apply-templates select="title" />}
+    <xsl:apply-templates select="chapter" />
+  </xsl:template>
+  <!-- Chapter -->
+  <xsl:template match="chapter">
+\chapter{<xsl:apply-templates select="title" />}
+    <xsl:apply-templates select="section" />
+  </xsl:template>
+  <!-- Section -->
   <xsl:template match="section">
-    <div class="section" id="section-{../../title}-{../title}-{./title}" >
-      <!--<h1><xsl:value-of select="title" /></h1>-->
-      <xsl:apply-templates />
-    </div>
-  </xsl:template>
-  
-  <xsl:template match="text">
-    <p>
-      <xsl:apply-templates />
-    </p>
+\<xsl:if test="name(../.)='section'">sub</xsl:if><xsl:if test="name(../../.)='section'">sub</xsl:if><xsl:if test="name(../../../.)='section'">sub</xsl:if>section{<xsl:apply-templates select="title" />}
+    <xsl:apply-templates select="./*[position()&gt;1]" />
   </xsl:template>
 
+
+  <!-- INLINE ELEMENTS -->
+  <xsl:template match="title">
+    <xsl:apply-templates />
+  </xsl:template>
+  <!-- Generic Text -->
+  <xsl:template match="text()">
+    <xsl:variable name="text" select="translate(.,'&amp;','')" />
+    <xsl:value-of select="$text" />
+  </xsl:template>
+  <!-- examples -->
   <xsl:template match="example">
-    <div class="example" id="example-{./title}">
-      <h1>
-        <span class="example-title">Example:</span>
-        <xsl:value-of select="title" />
-      </h1>
-      <xsl:apply-templates select="text" />
-    </div>
+\quotexample[<xsl:apply-templates select="title" />]{<xsl:apply-templates select="text" />}
   </xsl:template>
-
-  <xsl:template match="title">
-  </xsl:template>
-
-  <xsl:template match="Apathy">
-    <span class="ApAthy">Apathy</span>
-  </xsl:template>
-
-  <xsl:template match="description-list">
-    <table class="description-list">
-    <xsl:for-each select="item">
-      <tr>
-        <td class="description-term">
-          <xsl:apply-templates select="description" />
-        </td>
-        <td class="description-definition">
-          <xsl:apply-templates select="text" />
-        </td>
-      </tr>
-    </xsl:for-each>
-    </table>
-  </xsl:template>
-
-  <xsl:template match="itemized-list">
-    <ul class="itemized-list">
-      <xsl:for-each select="item">
-        <li>
-          <xsl:apply-templates select="." />
-        </li>
-      </xsl:for-each>
-    </ul>
-  </xsl:template>
-
-  <xsl:template match="numbered-list" >
-    <ol class="numbered-list">
-      <xsl:for-each select="item">
-        <li>
-          <xsl:apply-templates select="." />
-        </li>
-      </xsl:for-each>
-    </ol>    
-  </xsl:template>
-
-
-  <xsl:template match="define">
-    <span class="definition" id=".">
-      <xsl:value-of select="." />
-    </span>
-  </xsl:template>
-
-  <xsl:template match="figure">
-    <div class="figure" id="figure-{./caption}">
-      <xsl:apply-templates select="table" />
-      <xsl:apply-templates select="caption" />
-    </div>
-  </xsl:template>
-  
-  <xsl:template match="table">
-    <table class="content-table">
-      <thead>
-        <xsl:for-each select="head/cell">
-          <th>
-            <xsl:apply-templates />
-          </th>
-        </xsl:for-each>
-      </thead>
-      <xsl:for-each select="row">
-        <tr>
-          <xsl:for-each select="cell">
-            <xsl:variable name="cellspan" select="./@span" />
-            <xsl:variable name="border" select="./@border" />
-            <td colspan="{$cellspan}" class="{$border}" >
-              <xsl:apply-templates />
-            </td>
-          </xsl:for-each>
-        </tr>
-      </xsl:for-each>
-    </table>
-  </xsl:template>
-  
-  <xsl:template match="sup">
-    <sup><xsl:value-of select="." /></sup>
-  </xsl:template>
-  
-  <xsl:template match="title">
-    <h1 class="bare-title"><xsl:value-of select="." /></h1>
-  </xsl:template>
-
-  <xsl:template match="caption">
-    <p class="figure-caption"><xsl:value-of select="." /></p>
-  </xsl:template>
-
-  <xsl:template match="note">
-    <div class="note">
-      <p>
-        <span class="note-exclaim">Note!</span>
-        <xsl:apply-templates />
-      </p>
-    </div>
-  </xsl:template>
-
-  <xsl:template match="footnote">
-    <span class="footnote">
-        <xsl:apply-templates />
-    </span>
-  </xsl:template>
-  
-	<!--
-		Given a reference to the raw-data section, we build
-		a table, then build a descriptor-list.
-	-->
-  <xsl:template match="reference">
-    <!-- A unique hrid to the category we need -->
-    <xsl:variable name="hrid" select="./@hrid" />
-    <table class="datum-table">
-      <thead>
-        <!-- Build the head from the Default structure -->
-        <xsl:for-each select="//category[@name=$hrid]/default/field">
-          <xsl:if test="./@title">
-            <th><xsl:value-of select="@name" /></th>
-          </xsl:if>
-          <xsl:if test="./@table">
-            <th class="content"><xsl:value-of select="@name" /></th>
-          </xsl:if>
-        </xsl:for-each>
-      </thead>
-      <!-- Build the body of the table from the datums found -->
-      <xsl:for-each select="//category[@name=$hrid]/datum">
-        <tr>
-          <xsl:for-each select="field" >
-            <xsl:if test="./@title">
-              <td>
-                <a href="#{../../../@name}-{$hrid}-{.}">
-                  <xsl:apply-templates select="." />
-                </a>
-              </td>
-            </xsl:if>
-            <xsl:if test="./@table">
-              <td class="content"><xsl:apply-templates select="." /></td>
-            </xsl:if>
-          </xsl:for-each>
-        </tr>
-      </xsl:for-each>
-    </table>
-    <!-- Builds the descriptor lists -->
-    <xsl:for-each select="//category[@name=$hrid]/datum">
-      <xsl:variable name="datum-title" select="field[@title='yes']" />
-      <div class="datum-description"
-        id="{../../@name}-{$hrid}-{$datum-title}">
-        <h1><xsl:value-of select="field[@title='yes']" /></h1>
-        <p><xsl:value-of select="field[@description='yes']" /></p>
-      </div>
-    </xsl:for-each>
-  </xsl:template>
-
-  <!-- Math is dropped in place -->
-  <xsl:template match="m">
-    <math xmlns="http://www.w3.org/1998/Math/MathML"
-      id="equation-{generate-id(.)}">
-      <xsl:copy-of select="child::node()" />
-    </math>
-  </xsl:template>
-
-  <!-- "n/a" notappl -->
-  <xsl:template match="notappl">
-    <span class="notappl">n/a</span>
-  </xsl:template>
+  <!-- Apathy -->
+  <xsl:template match="Apathy">\APATHY{}</xsl:template>
 
 </xsl:stylesheet>
