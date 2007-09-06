@@ -160,6 +160,22 @@
   <xsl:template match="ldquo">&#8220;</xsl:template>
   <!-- special "rdquo" word -->
   <xsl:template match="rdquo">&#8221;</xsl:template>
+  <!-- special "lsquo" word -->
+  <xsl:template match="ldquo">&#8216;</xsl:template>
+  <!-- special "rsquo" word -->
+  <xsl:template match="rdquo">&#8217;</xsl:template>
+  <!-- special "times" word -->
+  <xsl:template match="times">&#215;</xsl:template>
+  <!-- special "ouml" word -->
+  <xsl:template match="ouml">&#246;</xsl:template>
+  <!-- special "oslash" word -->
+  <xsl:template match="oslash">&#248;</xsl:template>
+  <!-- special "ndash" word -->
+  <xsl:template match="ouml">&#8211;</xsl:template>
+  <!-- special "mdash" word -->
+  <xsl:template match="oslash">&#8212;</xsl:template>
+  <!-- special "trademark" word -->
+  <xsl:template match="trademark">&#8482;</xsl:template>
   <!-- dice rolls -->
   <xsl:template match="roll">
     <xsl:choose>

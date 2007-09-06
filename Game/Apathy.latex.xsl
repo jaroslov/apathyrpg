@@ -178,8 +178,25 @@ Josh Kramer}
   <xsl:template match="percent">\%</xsl:template>
   <!-- special "rightarrow" word -->
   <xsl:template match="rightarrow">$\rightarrow$</xsl:template>
+  <!-- special "ldquo" word -->
   <xsl:template match="ldquo">``</xsl:template>
   <!-- special "rdquo" word -->
   <xsl:template match="rdquo">''</xsl:template>
+  <!-- special "lsquo" word -->
+  <xsl:template match="ldquo">`</xsl:template>
+  <!-- special "rsquo" word -->
+  <xsl:template match="rdquo">'</xsl:template>
+  <!-- special "times" word -->
+  <xsl:template match="times">\ensuremath{\times}</xsl:template>
+  <!-- special "ouml" word -->
+  <xsl:template match="ouml">\"o</xsl:template>
+  <!-- special "oslash" word -->
+  <xsl:template match="oslash">\o</xsl:template>
+  <!-- special "ndash" word -->
+  <xsl:template match="ouml">--</xsl:template>
+  <!-- special "mdash" word -->
+  <xsl:template match="oslash">---</xsl:template>
+  <!-- special "trademark" word -->
+  <xsl:template match="trademark">$^{TM}$</xsl:template>
 
 </xsl:stylesheet>

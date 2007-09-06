@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE stylesheet [
-<!ENTITY lsquo  "&#8216;" ><!-- left quote -->
-<!ENTITY rsquo  "&#8217;" ><!-- right quote -->
-<!ENTITY times  "&#215;" ><!-- times -->
-<!ENTITY Sigma  "&#931;" ><!-- sigma -->
-<!ENTITY trade  "&#8482;" ><!-- trademark -->
-<!ENTITY ouml   "&#246;" ><!-- o-umlaut -->
-<!ENTITY oslash "&#248;" ><!-- o-slash -->
-<!ENTITY ndash  "&#8211;" ><!-- n-dash -->
-<!ENTITY mdash  "&#8212;" ><!-- m-dash -->
-<!ENTITY aelig  "&#230;" ><!-- ae-lig -->
-<!ENTITY hellip  "&#8230;" ><!-- ... -->
-<!ENTITY egrave  "&#232;" ><!-- e' -->
 <!ENTITY sum    "&#8721;" ><!-- mathematical sum char -->
 ]>
 
@@ -26,7 +14,7 @@
         <section>  
           <title>Introduction</title>  
            <text><Apathy />  is a paper <and /> pencil role-playing game.
-            <Apathy />&rsquo;s authors have played a great many RPGs
+            <Apathy /><rdquo />s authors have played a great many RPGs
             including D<and />D, Heroes Unlimited, GURPS, Shadowrun, TMNT,
             various White Wolf games (Vampire, etc.), Deadlands, and a
             few others. While these games are all fun, we felt that each
@@ -63,7 +51,7 @@
                 and skills for characters to use. These range from
                 archaic concepts like martial arts and swords, through
                 ultra-modern concepts such as cybernetics and
-                mecha&mdash;and the supernatural abilities of magic and
+                mecha<mdash/>and the supernatural abilities of magic and
                 psionics. These different elements can be used
                 simultaneously without any one being excessively
                 powerful.
@@ -86,13 +74,13 @@
                 nowhere to be found. <Apathy />  is designed to be fast
                 to play. Most of the <ldquo />tables<rdquo /> in the <Apathy
                 />  manuals are just to explain things to the players and
-                aren&rsquo;t used during play.
+                aren<rdquo />t used during play.
               </text>  
             </item>  
             <item>  
                <text> While <Apathy />  is devoid of many <ldquo />clutter
                 rules<rdquo />, it does have an emphasis on realism.
-                <Apathy />&rsquo;s combat system is an excellent
+                <Apathy /><rdquo />s combat system is an excellent
                 compromise between speed and realism.
               </text>  
             </item>  
@@ -119,10 +107,10 @@
               <description>
                 <define> Base Armor </define>
               </description>  
-                <text>  A character&rsquo;s natural resistance to bodily
+                <text>  A character<rdquo />s natural resistance to bodily
                  harm of unusual varieties. You can think of this as
                  <ldquo />toughness<rdquo /> (not to be confused with the
-                 skill of the same name). A character&rsquo;s base armor
+                 skill of the same name). A character<rdquo />s base armor
                  reduces the damage they suffer from U (undefined)
                  damage. Base Armor does not protect against any other
                  form of damage, such as P, S, C, or D. Note, that if a
@@ -154,14 +142,14 @@
               <description> Character </description>  
                 <text>  A persona within the game world that is adopted
                  by a player. The player sees through the
-                 character&rsquo;s eyes, controls the character&rsquo;s
-                 Actions, and speaks through the character&rsquo;s mouth.
+                 character<rdquo />s eyes, controls the character<rdquo />s
+                 Actions, and speaks through the character<rdquo />s mouth.
                  </text>
             </item>  
             <item>  
               <description> D </description>  
                 <text>  An abbreviation for Direct Damage. D damage is
-                 applied directly against the target&rsquo;s HP. Armor,
+                 applied directly against the target<rdquo />s HP. Armor,
                  including Base Armor, cannot protect against D damage.
                  Fortunately, D damage sources are few and far between.
                  </text>
@@ -178,7 +166,7 @@
             <item>  
               <description> HP </description>  
                 <text>  Abbreviation for Hit Points. Hit Points are used
-                 to represent a character&rsquo;s health. If a character
+                 to represent a character<rdquo />s health. If a character
                  gets injured, their HP decreases. If a character reaches
                  0 HP, they fall unconscious. If a character reaches -X
                  HP, where X is equal to their maximum HP, they are dead.
@@ -203,7 +191,7 @@
                 <text>  Usually, this is short for Luck Points. Luck
                  Points are accumulated during gameplay, and players
                  redeem them for combat bonuses, or for saving their
-                 character&rsquo;s butt if things get rough. This is used
+                 character<rdquo />s butt if things get rough. This is used
                  to help unLuck Pointsy die rolls from screwing over
                  players. All major character in the game, including
                  significant NPCs, villains, etc. will have Luck Points.
@@ -272,7 +260,7 @@
             <item>  
               <description> Player </description>  
                 <text>  An actual person, like the authors of this
-                 manual&ndash;or you&ndash;who controls a character in
+                 manual<ndash/>or you<ndash/>who controls a character in
                  the game world. </text>
             </item>  
             <item>  
@@ -298,14 +286,14 @@
                  objects such as people, mecha, etc. Humans are Size
                  level 2. Each Size level is approximately double the
                  height and weight of the Size below it. So, Size 2
-                 covers things up to about 7&rsquo; tall. Size 3,
-                 therefore, is about 14&rsquo; tall. </text>
+                 covers things up to about 7<rdquo /> tall. Size 3,
+                 therefore, is about 14<rdquo /> tall. </text>
             </item>  
             <item>  
               <description> Turn </description>  
                 <text>  A turn is a unit of time during combat. Each
                  round of combat is broken down into one turn per
-                 combatant. During each player&rsquo;s turn, they get to
+                 combatant. During each player<rdquo />s turn, they get to
                  do whatever they want. A turn is roughly equal to three
                  seconds of time. Each turn is subdivided into Actions.
                  </text>
@@ -372,22 +360,22 @@
             character you might want to play. Your imagination is the
             only real limit as to what your character can be. Perhaps you
             want to play a heroic knight that fights for honor and puts
-            monsters to the sword? Or maybe you&rsquo;d rather play a
+            monsters to the sword? Or maybe you<rdquo />d rather play a
             cunning and seductive thief with a hidden agenda. You could
-            be a young mecha pilot&mdash;inexperienced, but eager to
+            be a young mecha pilot<mdash/>inexperienced, but eager to
             fight for his cause. Your character is a hero in the game.
             You should take this opportunity to have fun and do things
-            you can&rsquo;t do in real life.
+            you can<rdquo />t do in real life.
           </text>  
           <image src='/Monsters/Buer.png' />  
             <text> If you are having trouble thinking up a character
              concept, you might want to look to books, movies, or even
              historical precedent as to what kind of character you want
              to play. You could be a space mercenary like Han Solo from
-             Star Wars, or maybe a secret agent like James Bond&mdash;or
+             Star Wars, or maybe a secret agent like James Bond<mdash/>or
              perhaps an old-west gunslinger. </text>
             <text> Once you have an idea so to what kind of character you
-             want to play, it&rsquo;s time to develop that idea. Think
+             want to play, it<rdquo />s time to develop that idea. Think
              about what your character looks like. How old are they? How
              do they dress? What kinds of possessions do they have? What
              do they do for a living? What was their past? How would they
@@ -395,18 +383,18 @@
              given a lot of money? What are their fears? Their hopes?
              Their goals? </text>
            <text> Now you should have a good understanding of your
-            character&rsquo;s appearance, personality, skills, etc. What
+            character<rdquo />s appearance, personality, skills, etc. What
             you need to do next is represent that idea in the <Apathy /> 
             system rules. Grab a character sheet, and follow along.
           </text>  
           <section>  
             <title>Character Basics</title>  
               <text> The first part of describing your character is very
-               simple. Decide what your character&rsquo;s basic
+               simple. Decide what your character<rdquo />s basic
                description is like. Are they male or female? How tall?
                What do they weigh? Fill in age, sex, height, weight, eyes
                color, and hair color/style on the upper right portion of
-               your character sheet. Decide on your character&rsquo;s
+               your character sheet. Decide on your character<rdquo />s
                name, and fill that in too. There is also a spot on the
                character sheet for your name. Now you can move on to the
                details of your character. </text>
@@ -457,8 +445,8 @@
                 <row>  
                   <cell> WIL </cell>  
                   <cell> Willpower </cell>  
-                    <cell> strength of the mind, ability to &lsquo;stick
-                     it out&rsquo; when things get tough </cell>
+                    <cell> strength of the mind, ability to <lsquo />stick
+                     it out<rdquo /> when things get tough </cell>
                 </row>  
                 <row>  
                   <cell> CHA </cell>  
@@ -488,10 +476,10 @@
                used to purchase the attribute values you want your
                character to have. A normal human has about 40 attribute
                points. An above average human would have about
-               105&ndash;140 attribute points. We recommend that 120
+               105<ndash/>140 attribute points. We recommend that 120
                Attribute Points be assigned to starting
-               characters&mdash;after all, player characters are supposed
-               to be heroic&mdash;though the GM has the final word.
+               characters<mdash/>after all, player characters are supposed
+               to be heroic<mdash/>though the GM has the final word.
                </text>
              <text> The cost of an attribute is computed like a skill
               with Rank 1 (see the skill section later on). However, the
@@ -506,8 +494,8 @@
                adventuring! </note>
               <note> If the GM deems it OK, then you may reduce an
                attribute below 8, but you get NO benefits (you
-               wouldn&rsquo;t get points in another attribute for
-               example). Why would you do this? Simple, it&rsquo;s in
+               wouldn<rdquo />t get points in another attribute for
+               example). Why would you do this? Simple, it<rdquo />s in
                your character concept. Would a 6-year-old child have an 8
                STR? Not likely. </note>
               <text> When recording your attributes on the character
@@ -543,7 +531,7 @@
                      can lift in pounds, in a <ldquo />good<rdquo />
                      situation, such as a weighted barbell or a trunk
                      with handles. </cell>
-                    <cell>  <math>  <mfrac>  <mrow> STR&times;STR&times;BLD
+                    <cell>  <math>  <mfrac>  <mrow> STR<times/>STR<times/>BLD
                      </mrow>  <mn> 10 </mn>  </mfrac>  <mo> + </mo>  <mi>
                      STR </mi>  </math>
                   </cell>  
@@ -581,7 +569,7 @@
                   <cell> Movement </cell>  
                     <cell> How fast the character is in <ldquo />squares
                      per move-equivalent Action <rdquo /> </cell>
-                    <cell>  <math>  <mfrac>  <mrow><mn> 2 </mn><mo> &times;
+                    <cell>  <math>  <mfrac>  <mrow><mn> 2 </mn><mo> <times/>
                      </mo><mi> STR </mi><mo> + </mo><mi> DEX </mi></mrow>
                       <mn> 15 </mn>  </mfrac>  </math>
                   </cell>  
@@ -592,7 +580,7 @@
                      around him. Used just like an attribute check.
                      </cell>
                     <cell>  <math>  <mfrac>  <mrow>  <mi> DEX </mi><mo> +
-                     </mo>  <mn> 2 </mn><mo> &times; </mo>  <mi> KNO
+                     </mo>  <mn> 2 </mn><mo> <times/> </mo>  <mi> KNO
                      </mi><mo> + </mo>  <mi> INT </mi>  </mrow>  <mn> 4
                      </mn>  </mfrac>  </math>
                   </cell>  
@@ -621,7 +609,7 @@
                      </cell>
                     <cell>  <math>  <mrow>  <mo> ( </mo>  <mi> WIL </mi> 
                      <mo> + </mo>  <mi> BLD </mi>  <mo> ) </mo>  <mo>
-                     &times; </mo>  <mn> 10 </mn>  </mrow>  </math>
+                     <times/> </mo>  <mn> 10 </mn>  </mrow>  </math>
                   </cell>  
                 </row>  
               </table>  
@@ -642,7 +630,7 @@
                found that for a group of 3-4 players 125 CP is about
                right. Typically the more players, the fewer CP characters
                should have. This will keep the group from becoming too
-               powerful&mdash;unless this is the GM&rsquo;s intent.
+               powerful<mdash/>unless this is the GM<rdquo />s intent.
                </text>
               <text> You will use your CP to <ldquo />purchase<rdquo /> the
                remainder of your character. The rest of your character is
@@ -736,7 +724,7 @@
           </section>  
           <section>  
             <title>Increasing Attributes (optional)</title>  
-              <text> If your attributes aren&rsquo;t quite where you
+              <text> If your attributes aren<rdquo />t quite where you
                desire, you will need to get more Attribute Points so you
                can purchase a better attribute. Each Attribute Point
                costs 1 Character Point. Once you purchase the number of
@@ -791,7 +779,7 @@
               <item>  
                 <description> WIL </description>  
                   <text> Willpower strength of the mind, ability to
-                   &lsquo;stick it out&rsquo; when things get tough
+                   <lsquo />stick it out<rdquo /> when things get tough
                    </text>
               </item>  
               <item>  
@@ -831,8 +819,8 @@
              ask your GM about his take on a particular skill. </text>
             <text> Level is how good your particular character is at the
              skill. You will use CP to purchase levels in a skill, which
-             is discussed below. If you don&rsquo;t know a skill at all,
-             you have Level 0 in that skill&mdash;meaning you don&rsquo;t
+             is discussed below. If you don<rdquo />t know a skill at all,
+             you have Level 0 in that skill<mdash/>meaning you don<rdquo />t
              know anything about it. The more you know about the skill,
              the higher your level. This is often abbreviated as
              <ldquo />Lvl<rdquo /> (alt. <ldquo />LVL<rdquo />). You must
@@ -934,13 +922,13 @@
             <caption>CP cost of Desired Level, precomputed</caption>  
           </figure>  
           <text> See the trend? </text>  
-            <text> If not, here&rsquo;s yet another way to look at
+            <text> If not, here<rdquo />s yet another way to look at
              purchasing skills. </text>
             <text> To get level 1 of a skill, you must spend the Rank in
              CP. To get to the next level, add the rank of the skill to
              the amount of CP you spent the last time you increase the
              skill (and just that last increase, not the total amount
-             you&rsquo;ve spent on the skill) and that is the amount that
+             you<rdquo />ve spent on the skill) and that is the amount that
              you need to spend. </text>
           <example>  
             <title>Computing Skill Cost</title>  
@@ -951,7 +939,7 @@
                the new cost, in this case I would need to spend a total
                of 4 CP (rank of 2 + 2 CP from last purchase). So now the
                total amount I have spent on this skill is 6 CP. Lets say
-               I&rsquo;m not happy with my Lvl 2 shield skill, and wish
+               I<rdquo />m not happy with my Lvl 2 shield skill, and wish
                to upgrade it to level 3. I would again take the rank (2)
                and add it to the amount I spent on the last increase (4)
                to get the number of CP I must spend to upgrade the skill.
@@ -971,7 +959,7 @@
             <text> Once you are in game and earning experience, you can
              increase the level of a skill you currently have at least
              one level in by paying the appropriate CP cost. If you wish
-             to learn the first level of a skill you don&rsquo;t have
+             to learn the first level of a skill you don<rdquo />t have
              yet, it takes a number of weeks of intense studying equal to
              the rank of the skill. </text>
           <section>  
@@ -988,7 +976,7 @@
                  </text>
               <example>  
                 <title>History<rightarrow />Spanish</title>  
-                  <text> Ralf Gr&ouml;osse-Kunstleve is a historian.
+                  <text> Ralf Gr<ouml/>sse-Kunstleve is a historian.
                    Specifically, he is knowledgeable about Spanish
                    history. He has a LVL 3 History skill with a
                    specialization in Spanish History. This means that if
@@ -1010,7 +998,7 @@
                   Chemistry with a specialty in Chemical weapons and
                   poisons. As well, he has LVL 4 Chemistry with a
                   specialization in the chemistry of explosives. Dr.
-                  Klotzenstein&rsquo;s rolls are as follows:
+                  Klotzenstein<rdquo />s rolls are as follows:
                   <itemized-list>  
                     <item>
                       <text> For Weapons/poisons: 4 dice </text>
@@ -1035,11 +1023,11 @@
                  skills. If a character has a specialized weapon skill
                  that means that he is especially proficient with a very
                  specific type of weapon. When wielding a weapon that
-                 matches a character&rsquo;s specialty, that character
+                 matches a character<rdquo />s specialty, that character
                  receives +1 LVL to the skill. This bonus applies to
                  attack (strike) rolls, and defensive rolls (parry), if
                  applicable. When using a weapon that is outside the
-                 character&rsquo;s specialty, the character is at -1 LVL.
+                 character<rdquo />s specialty, the character is at -1 LVL.
                  Note that Weapon skill specialization does NOT affect
                  damage rolls. </text>
                 <text> Specializing in a weapons skill costs 3 CP in
@@ -1048,13 +1036,13 @@
                  the shield skill. </text>
               <example>  
                 <title>Axes<rightarrow />Nordic War Axe</title>  
-                  <text> Bj&oslash;rgen is a warrior with a liking for
+                  <text> Bj<oslash/>rgen is a warrior with a liking for
                    the Nordic War Axe. He has the skill <ldquo />Archaic
                    Weapons: Axes<rdquo /> at level 3. As well, he is
                    specialized in the Nordic War Axe. The total skill
                    cost is 9 CP. That is 6 CP for Level 3 in a Rank 1
                    skill, Plus 3 CP from the specialization. When welding
-                   a Genuine Nordic War Axe&trade; in combat, Gunnar has
+                   a Genuine Nordic War Axe<trademark/> in combat, Gunnar has
                    4 dice. However, when using any other kind of axe
                    Gunnar only has 2 dice. </text>
               </example>  
@@ -1095,7 +1083,7 @@
                to see if you did something solely based on an attribute.
                They are used whenever a player wants their character to
                do something tricky. Attribute checks are purely based on
-               a character&rsquo;s core attributes. They are completely
+               a character<rdquo />s core attributes. They are completely
                separate from skills. If a player needs to do something
                based on a particular skill, then see the skill roll
                section below. </text>
@@ -1157,13 +1145,13 @@
                  for the solider (a three) and Douglas rolls a 1. The
                  enemy soldier has a total of 15, and Douglas has 14.
                  Therefore, the enemy soldier wrestles the rifle out of
-                 Douglas&rsquo;s hands. </text>
+                 Douglas<rdquo />s hands. </text>
             </example>  
           </section>  
           <section>  
             <title>Skill Rolls</title>  
               <text> Skill rollsare used whenever a player wants to use
-               one of his character&rsquo;s skills. They are also used
+               one of his character<rdquo />s skills. They are also used
                whenever two characters are competing at something
                (Contest of skills) related to a skill. Skill rolls are
                also used <ldquo />to strike<rdquo /> or <ldquo />to
@@ -1236,11 +1224,11 @@
                successes. If a die rolls a 1, regardless of bonuses, etc.
                you get -1 success. </text>
               <text> Note that the Maximum you can ever add to your die
-               roll&mdash;no matter how high your attribute or bonuses to
-               succeed might be&mdash;is 20. </text>
+               roll<mdash/>no matter how high your attribute or bonuses to
+               succeed might be<mdash/>is 20. </text>
               <text> Also, if you are doing something simple with respect
-               to your skill level then you don&rsquo;t have to roll dice
-               at all. It&rsquo;s assumed that you succeed examples.
+               to your skill level then you don<rdquo />t have to roll dice
+               at all. It<rdquo />s assumed that you succeed examples.
                </text>
             <example>  
               <title>Lookup Internt Address</title>  
@@ -1278,18 +1266,18 @@
                  his dice and gets a 1 and a 16. (Chris is rolling two
                  dice because he has a level 2 skill) Adding his DEX to
                  those rolls, Chris now has a 13 and a 28. The 13
-                 isn&rsquo;t 25 or above, so it fails, but the 28
+                 isn<rdquo />t 25 or above, so it fails, but the 28
                  succeeds. So far, Chris has 1 success. However, the
                  <ldquo />1<rdquo /> Chris rolled is -1 success. So, this
-                 gives Chris a total of 0 successes&mdash;meaning the car
-                 didn&rsquo;t get fixed. </text>
+                 gives Chris a total of 0 successes<mdash/>meaning the car
+                 didn<rdquo />t get fixed. </text>
             </example>  
             <example>  
               <title>Shoot a Large Robot</title>  
                 <text> Billy is a cybernetic gunfighter with a 22 DEX. He
                  is trying to shoot an enemy robot. The GM determines
                  that Billy gets a bonus of +3 to shoot the robot because
-                 it&rsquo;s so large. Normally, Billy would roll his dice
+                 it<rdquo />s so large. Normally, Billy would roll his dice
                  and add +25 to each one: +22 from his DEX and +3 from
                  the Size bonus. However, this gets capped at +20. Thus,
                  Billy only gets to add +20 to each of his dice. </text>
@@ -1297,9 +1285,9 @@
             <example>  
               <title>Called Shot to Arm</title>  
                 <text> Billy is still fighting the same giant robot. This
-                 time, he&rsquo;s trying to make a called shot and shoot
+                 time, he<rdquo />s trying to make a called shot and shoot
                  the robot in the arm. The GM determines that Billy gets
-                 a +3 bonus due to the robot&rsquo;s Size, but also a -4
+                 a +3 bonus due to the robot<rdquo />s Size, but also a -4
                  to strike because of the called shot to the arm. Thus,
                  Billy adds up his bonuses: +22 from DEX +3 from Size and
                  -4 for the called shot. This adds up to +21, but the
@@ -1317,34 +1305,34 @@
                sing better, the character with the largest number of
                successes of the singing skill would win. The most common
                example of this is combat. In order to be successful in a
-               combat situation&mdash;such as attempting to hit an
+               combat situation<mdash/>such as attempting to hit an
                opponent with a sword while he is blocking with a shield,
                the initiator (or attacker) of the Action must make more
                successes than the defender. </text>
             <example>  
               <title>Tom and the Shopkeeper in a Contest</title>  
                 <text> Tom is attempting to purchase an expensive suit of
-                 armor, and doesn&rsquo;t want to pay full price. So he
+                 armor, and doesn<rdquo />t want to pay full price. So he
                  is attempting to bring the price down by using the
                  Bargaining skill. The shopkeeper also has the Bargaining
                  skill, so a contest of skills ensues. Tom has a skill
                  level of 3, and a WIS of 13 (the associated attribute
                  for Bargaining); the shopkeeper has a level 4 Bargaining
-                 (he&rsquo;s been at it longer than Tom has), and a WIS
+                 (he<rdquo />s been at it longer than Tom has), and a WIS
                  of 10. </text>
                 <text>  Tom rolls 3 dice and gets a <ldquo />14<rdquo />,
                  <ldquo />20<rdquo />, and a <ldquo />3<rdquo />. Tom now adds
-                 his wisdom (13) to each of these. The GM didn&rsquo;t
+                 his wisdom (13) to each of these. The GM didn<rdquo />t
                  give any negatives or bonuses, so that is all that gets
                  added. After adding, the totals are 27, 33, and 16. Two
                  of these are 25 or higher, so Tom has two successes so
-                 far. Note that Tom rolled one 20&mdash;which gives him
+                 far. Note that Tom rolled one 20<mdash/>which gives him
                  an additional success. Tom has a total of three
                  successes. </text>
                 <text>  The shopkeeper rolls four dice (remember, he has
                  a level 4 Bargaining), and gets a <ldquo />1<rdquo />,
-                 <ldquo />12<rdquo />, <ldquo />15&rsquo;<rdquo />, and an
-                 <ldquo />18<rdquo />. After adding the shopkeeper&rsquo;s
+                 <ldquo />12<rdquo />, <ldquo />15<rdquo /><rdquo />, and an
+                 <ldquo />18<rdquo />. After adding the shopkeeper<rdquo />s
                  WIS of 10, we get the following rolls: <ldquo />11<rdquo />,
                  <ldquo />22<rdquo />, <ldquo />25<rdquo />, and
                  <ldquo />28<rdquo />. The 25 and 28 are both successes, but
@@ -1400,11 +1388,11 @@
                  skills Electrical Engineering: 2, Electrician: 3,
                  Mechanic: General: 3, and Communications/Telco: 3. The
                  GM determines that since this device is purely
-                 electronic, Paul&rsquo;s Mechanic skill is of no use. As
+                 electronic, Paul<rdquo />s Mechanic skill is of no use. As
                  well, the GM decides that since this device is unrelated
-                 to communications, Paul&rsquo;s Communications skill
+                 to communications, Paul<rdquo />s Communications skill
                  does not apply either. However, the GM decides that
-                 Paul&rsquo;s Electrical Engineering and Electrician
+                 Paul<rdquo />s Electrical Engineering and Electrician
                  skills are relevant. The GM assigns Paul a bonus of +5
                  to his roll from his levels in those related skills.
                  </text>
@@ -1430,10 +1418,10 @@
                roll again has the highest value on the die, then another
                rollover happens. This keeps going until the highest value
                on the die is not rolled. Remember, after the first roll,
-               the bonus is not applied; it&rsquo;s just the raw die
+               the bonus is not applied; it<rdquo />s just the raw die
                roll. </text>
-              <text> This may sound confusing, so we&rsquo;ll work with
-               the example from above. Let&rsquo;s say you have to roll
+              <text> This may sound confusing, so we<rdquo />ll work with
+               the example from above. Let<rdquo />s say you have to roll
                <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>. You get some four-sided dice and roll three of
                them. Suppose the results are: 1, 3, and a 4. After adding
                the +1 (from the die bonus), we now have: 2, 4, and 5. We
@@ -1512,12 +1500,12 @@
              attacks or ambushes. </text>
             <note> Most characters will have 3 Actions per turn. All
              three Actions are taken at the same time, on that
-             character&rsquo;s initiative. </note>
+             character<rdquo />s initiative. </note>
           <example>  
-            <title>Tom&rsquo;s Turn in Combat</title>  
+            <title>Tom<rdquo />s Turn in Combat</title>  
               <text> Tom is in combat. Tom has three Actions and he
-               rolled an 11 as his initiative. When it&rsquo;s
-               Tom&rsquo;s turn in combat (11), he takes all three
+               rolled an 11 as his initiative. When it<rdquo />s
+               Tom<rdquo />s turn in combat (11), he takes all three
                Actions at that time. </text>
           </example>  
             <text> The character that has the highest initiative goes
@@ -1525,11 +1513,11 @@
              initiative takes their turn, and so forth down the line
              until all combatants have taken a turn. </text>
             <text> Once all turns are over, the current round of combat
-             is over. It then restarts with everyone&rsquo;s initiative
+             is over. It then restarts with everyone<rdquo />s initiative
              being the same as it was in the previous round. This
              progression continues until combat is over. If the
-             combatants change significantly during combat&mdash;for
-             example, if new characters show up on the scene&mdash;the GM
+             combatants change significantly during combat<mdash/>for
+             example, if new characters show up on the scene<mdash/>the GM
              might want to make everyone re-roll their initiative. If
              something happens during combat that changes how many
              Actions the combatants have, the GM should ask that
@@ -1539,7 +1527,7 @@
              where many spells take several Actions to cast. If you do
              this, you may need to drag this type of Action across
              multiple Actions or even multiple turns. For example,
-             let&rsquo;s say that you want to cast a spell that takes 3
+             let<rdquo />s say that you want to cast a spell that takes 3
              Actions. You can use your first Action to start casting, and
              then use your second and third Actions to finish casting the
              spell. At any time you may cancel (stop casting) the spell
@@ -1561,7 +1549,7 @@
              <ldquo />act later<rdquo /> in combat. When doing so the player
              states what new initiative number he wishes to act on. The
              new initiative must be lower than his current initiative
-             number. Once a character&rsquo;s initiative is delayed it
+             number. Once a character<rdquo />s initiative is delayed it
              remains delayed (though it could be delayed even further).
              That characters initiative remains at the new, lower, number
              for the remainder of combat, unless the GM asks all players
@@ -1570,11 +1558,11 @@
              take all his Actions at his normal initiative, or he must
              delay all his Actions to a later initiative. </text>
           <example>  
-            <title>Tom&rsquo;s initiative</title>  
-              <text> Tom&rsquo;s initiative roll is an 18. He and his
+            <title>Tom<rdquo />s initiative</title>  
+              <text> Tom<rdquo />s initiative roll is an 18. He and his
                fellow players were cornered by ogres for whom the GM has
                secretly rolled initiative. Tom has the highest initiative
-               roll, so he goes first. Tom isn&rsquo;t exactly sure what
+               roll, so he goes first. Tom isn<rdquo />t exactly sure what
                to do, so he delays his initiative until <ldquo />10<rdquo />.
                The GM then resumes combat as normal, with the next
                highest initiative going first. Tom has initiative 10 for
@@ -1582,24 +1570,27 @@
           </example>  
             <text> Some game effects last a certain number of turns, or
              have a certain effect each turn. These effects are counted
-             and take place on the affected character&rsquo;s turn. They
+             and take place on the affected character<rdquo />s turn. They
              only are counted and occur if the character begins that turn
              with the effect in place. These effects occur at the
-             beginning of that character&rsquo;s turn in a given round.
+             beginning of that character<rdquo />s turn in a given round.
              These effects are automatic and do not consume any time from
              the character. Resolve all effects before that character
              takes any Actions. </text>
           <example>  
-            <title>Lucy&rsquo;s turn in combat</title>  
-              <text> It is Lucy&rsquo;s turn in combat and she casts
-               Regeneration on herself. The effect of the spell is that
-               each turn she gains <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>Hit Points. Now the spell has
-               taken effect, but she does not gain any HP yet, nor does
-               this turn count against the duration of the spell. Now all
-               other combatants take their turns. When it is again
-               Lucy&rsquo;s turn (next round) she gains her <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>HP,
-               just before her first Action This is also considered one
-               turn out of the spell&rsquo;s duration. </text>
+            <title>Lucy<rdquo />s turn in combat</title>  
+              <text> It is Lucy<rdquo />s turn in combat and she casts
+               Regeneration on herself. The effect of the spell is
+               that each turn she
+               gains <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>Hit
+               Points. Now the spell has taken effect, but she does
+               not gain any HP yet, nor does this turn count against
+               the duration of the spell. Now all other combatants
+               take their turns. When it is again Lucy<rdquo />s turn
+               (next round) she gains
+               her <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>HP,
+               just before her first Action This is also considered
+               one turn out of the spell<rdquo />s duration. </text>
           </example>  
             <text> It is possible to <ldquo />hold an Action <rdquo /> for
              later. Holding an Action means that the character is
@@ -1613,16 +1604,16 @@
              </text>
           <example>  
             <title>Tom holds an Action</title>  
-              <text> Tom&rsquo;s initiative is 10. During his turn he
+              <text> Tom<rdquo />s initiative is 10. During his turn he
                spends one Action to move behind some cover and another to
                ready his longbow. Tom declares that he is going to hold
                his final Action <ldquo />I am going to cover the hallway
                with my bow. If I see a goblin come out of the hallway,
-               I&rsquo;m going to shoot at it<rdquo />. If a goblin does
+               I<rdquo />m going to shoot at it<rdquo />. If a goblin does
                indeed come out of the hallway (and Tom can see this),
                then Tom may immediately take his held Action to fire an
                arrow at it. However, if no goblin comes down the hallway
-               before Tom&rsquo;s next turn, then the held Action is
+               before Tom<rdquo />s next turn, then the held Action is
                wasted. </text>
           </example>  
           <text> Notes for held Actions: </text>  
@@ -1656,22 +1647,22 @@
               <text> Weapons have a minimum strength requirement (MSR).
                The MSR indicates what strength is required of the
                character to properly wield a given weapon. If the
-               character&rsquo;s strength is less than the MSR, then the
+               character<rdquo />s strength is less than the MSR, then the
                character has -1 to strike and [-1] damage for each point
                of strength difference. </text>
               <text> The raw damage bonus (RDB) is calculated by
-               subtracting 8 from the wielder&rsquo;s Str. The RDB is
-               added as raw damage to total of the weapon&rsquo;s damage.
+               subtracting 8 from the wielder<rdquo />s Str. The RDB is
+               added as raw damage to total of the weapon<rdquo />s damage.
                However, all weapons have a maximum strength bonus (MSB);
                if the RDB is greater than the MSB, then the MSB is used
                as the RDB instead. </text>
             <example>  
               <title>MSR for Bosk</title>  
                <text> Bosk has a STR of 17 and is brandishing a Hercules
-                Club (<roll><num>3</num><face>6</face><bns></bns><kind>C</kind></roll>, MSR: 12, MSB: 13). Because Bosk&rsquo;s Str
+                Club (<roll><num>3</num><face>6</face><bns></bns><kind>C</kind></roll>, MSR: 12, MSB: 13). Because Bosk<rdquo />s Str
                 is higher than the minimum strength requirement of the
                 Hercules Club (12), he is entitled to a damage bonus.
-                Subtract 8 from Bosk&rsquo;s Str score to calculate his
+                Subtract 8 from Bosk<rdquo />s Str score to calculate his
                 bonus: <math><mrow><mn> 17 </mn>  <mo> - </mo><mn> 8
                 </mn><mo> = </mo><mn> 9 </mn></mrow></math> . So this means
                 that Bosk deals <roll><raw>9</raw><num>3</num><face>6</face><bns></bns><kind>C</kind></roll> damage.
@@ -1680,18 +1671,18 @@
             <example>  
               <title>Bosk with Knife</title>  
                 <text> Suppose Bosk pulls out a long knife (<roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll>, MSR:
-                 8; MSB: 4). Bosk&rsquo;s Str is significantly higher
+                 8; MSB: 4). Bosk<rdquo />s Str is significantly higher
                  than the minimum required for the weapon. Calculating
                  his theoretical bonus, we can write: 17 - 8 = 9. At
                  first glance, it appears that Bosk is entitled to a [+9]
                  bonus. However, the maximum strength bonus for the long
-                 knife is 4. Therefore, Bosk&rsquo;s damage roll would be
+                 knife is 4. Therefore, Bosk<rdquo />s damage roll would be
                  <roll><raw>4</raw><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll>. </text>
             </example>  
               <text> Bows never grant a damage bonus to characters with
                higher than required STR. However, it is possible to
                purchase stiffer (stronger) bows that can take advantage
-               of a character&rsquo;s higher STR score. High-draw bows
+               of a character<rdquo />s higher STR score. High-draw bows
                cost 20<percent /> more for every 1 STR point added to the MSR. For
                each point, add [+1] damage. This can be stacked. So, a +1
                bow costs 20<percent /> extra, a +2 bow costs 40<percent /> extra, etc. Note
@@ -1723,7 +1714,7 @@
                Characters that use Faith magic must have a holy symbol in
                their grasp when casting magic; this requires a free hand
                to hold. Spellcasters are free to use two-handed weapons
-               so long as they aren&rsquo;t wielding the weapon at the
+               so long as they aren<rdquo />t wielding the weapon at the
                same time as they are casting spells. (Spellcasters can
                put away a weapon, cast magic freely, and then draw their
                weapon again, though this takes time) </text>
@@ -1767,8 +1758,8 @@
               <item>  
                 <description> Two normal weapons </description>  
                  <text>  When wielding two weapons the weapon in the
-                  character&rsquo;s <ldquo />good<rdquo /> hand receives a -3
-                  to strike and the weapon in the character&rsquo;s
+                  character<rdquo />s <ldquo />good<rdquo /> hand receives a -3
+                  to strike and the weapon in the character<rdquo />s
                   <ldquo />off<rdquo /> hand receives a -6. Some characters
                   can have <ldquo />even-more-offhand<rdquo /> weapons, such
                   as a kick (or two), or literally having extra limbs. To
@@ -1882,7 +1873,7 @@
               <ldquo />basic attack<rdquo /> skill from Martial Arts. Any
               time you make an attack like this, you roll a Strike Roll.
               Strike roll is just a special name for a skill roll in
-              combat&mdash;they work just like normal skill rolls. To
+              combat<mdash/>they work just like normal skill rolls. To
               recap, roll a number of D20s equal to your level of the
               skill you are using to attack with (i.e. use the Large
               Sword skill to strike with your bastard sword), add your
@@ -1891,7 +1882,7 @@
                <note> If you have at least one success, you strike the
                 target. </note>  Otherwise you miss your target.
             </text>  
-              <text> Some attacks don&rsquo;t require a skill roll. This
+              <text> Some attacks don<rdquo />t require a skill roll. This
                includes special attacks that automatically hit your
                opponent (such as certain abilities from Martial Arts) as
                well as magical spells or supernatural powers that are
@@ -1945,7 +1936,7 @@
                 <description> Block </description>  
                  <text>  Blocking is putting a shield between you and an
                   incoming attack.
-                   <note> Upon a successful block, a shield&rsquo;s armor
+                   <note> Upon a successful block, a shield<rdquo />s armor
                     values are added to any armor that you are currently
                     wearing </note>  (see below). You can attempt to
                     block any incoming attack that you are aware of.
@@ -1970,7 +1961,7 @@
                    ducking, throwing yourself to the ground or similar
                    Action you can avoid any attack completely and take no
                    damage. The Dodge skill is used for dodging. On a
-                   successful dodge the blow doesn&rsquo;t hit, period.
+                   successful dodge the blow doesn<rdquo />t hit, period.
                    However, dodge is a high rank skill, so most
                    characters will not be very good at it. </text>
               </item>  
@@ -2004,7 +1995,7 @@
               to use, only ONE defense maneuver may be used against
               any one incoming attack.<footnote> Some magical spells or
               super powers of a defensive nature are active for a set
-              duration&mdash;usually several rounds. Such spells, such
+              duration<mdash/>usually several rounds. Such spells, such
               as full barrier, are not defensive maneuvers. These
               spells are independent of defense. A character using
               such a spell may still use a defensive maneuver if she
@@ -2031,7 +2022,7 @@
                a dagger is a <roll><num>1</num><face>6</face><bns></bns><kind>P</kind></roll> weapon). The damage rating is the
                amount of damage it will do, and the damage type reflects
                how the weapon deals its damage. </text>
-              <text> Here&rsquo;s a key of the different damage types
+              <text> Here<rdquo />s a key of the different damage types
                with abbreviations in parenthesis and what they are
                typically associated with: </text>
             <description-list>  
@@ -2066,7 +2057,7 @@
                    This can include electricity, heat, magic, sickness
                    and other <ldquo />odd<rdquo /> types of damage. Normal
                    armor cannot protect against this type of damage. Only
-                   your character&rsquo;s Base Armor (BA) can protect you
+                   your character<rdquo />s Base Armor (BA) can protect you
                    from undefined damage. Any time someone takes
                    undefined damage he or she will always take at least
                    one point of damage, regardless of the Base Armor.
@@ -2084,14 +2075,14 @@
             <text> Consider the dagger again: <roll><num>1</num><face>6</face><bns></bns><kind>P</kind></roll> </text>  
               <text> This tells us that a strike from a Dagger deals <roll><num>1</num><face>6</face><bns></bns></roll>damage. Also, we know that it deals piercing damage.
                </text>
-              <text> Ok, so now we&rsquo;ve got our weapon&rsquo;s damage
-               rating and it&rsquo;s damage type. Roll the given damage
+              <text> Ok, so now we<rdquo />ve got our weapon<rdquo />s damage
+               rating and it<rdquo />s damage type. Roll the given damage
                as described in the dice rolling section at the beginning
                of the rules section. The higher the damage roll, the more
                severe the attack was upon the target. </text>
               <text> After the damage roll is determined, subtract that
-               damage from the target&rsquo;s Hit Points (HP). Armor can
-               reduce the damage taken, which brings us to&hellip;
+               damage from the target<rdquo />s Hit Points (HP). Armor can
+               reduce the damage taken, which brings us to...
                </text>
           </section>  
           <section>  
@@ -2118,7 +2109,7 @@
                  one success. Since Carlos has fewer successes than the
                  attacker, he fails to parry and takes full damage. The
                  GM rolls damage for the bandit and determines that the
-                 bandit&rsquo;s sword blow deals 8 damage. Carlos is
+                 bandit<rdquo />s sword blow deals 8 damage. Carlos is
                  wearing soft leather armor, which has a P/S/C rating of
                  2/3/0. We know the short sword dealt 8 damage. But it is
                  a Slashing weapon (denoted by the S in the weapon
@@ -2136,14 +2127,14 @@
                  has four successes on her skill roll. This means that
                  she successfully blocked the incoming attack with her
                  shield. The GM rolls damage for the attack and gets 14
-                 P. (that&rsquo;s a strong blow!) Lira is using a Splint
+                 P. (that<rdquo />s a strong blow!) Lira is using a Splint
                  Shield (P/S/C of 9/9/9) and is wearing Hard Leather
                  armor (3/4/1). First, apply the damage against
-                 Lira&rsquo;s shield. Her shield has an armor of 9 versus
+                 Lira<rdquo />s shield. Her shield has an armor of 9 versus
                  P. This means that her shield stops 9 points of the
                  incoming damage. However, since the spear blow dealt
                  more damage than her shield has armor, the weapon
-                 continues through her shield&mdash;which now has a hole
+                 continues through her shield<mdash/>which now has a hole
                  in it. Lira now deals with the remaining 5 damage. (14
                  damage was dealt, minus the 9 taken by the shield = 5).
                  Her armor has a P value of 3, meaning that she only
@@ -2155,14 +2146,14 @@
                so pay attention! </text>
               <text> Weapons that deal undefined or Direct Damage (U or D
                damage) bypass all armor values. Undefined damage can be
-               protected against by your character&rsquo;s Base Armor
+               protected against by your character<rdquo />s Base Armor
                (BA) sub-attribute. Just subtract the BA from the damage
                taken as if the BA was normal armor. Note that Base Armor
                is not used for protecting against anything but undefined
                damage! A target will always lose at least one HP when hit
                with an attack that deals undefined damage. </text>
               <text> Direct Damage cannot be protected against. Not by
-               normal armor, Base Armor, not anything. It&rsquo;s harsh,
+               normal armor, Base Armor, not anything. It<rdquo />s harsh,
                so be careful when on the receiving end of something that
                deals D damage. D damage is applied directly to your Hit
                Points. </text>
@@ -2185,19 +2176,19 @@
                    armor of 7 versus Slashing damage. First, deduct the
                    AP from the armor: 7 armor - 5 AP = 2. Then, deduct
                    the armor from the damage like normal: 11 damage - 2
-                   armor = 9 damage. Lira&rsquo;s opponent takes 9
+                   armor = 9 damage. Lira<rdquo />s opponent takes 9
                    damage. </text>
               </example>  
                 <text>  Consider the same situation as above, but assume
-                 that Lira&rsquo;s opponent&rsquo;s armor is only a 3
+                 that Lira<rdquo />s opponent<rdquo />s armor is only a 3
                  versus Slashing. First, deduct the AP form the armor: 3
                  armor - 5 AP = -2. However, this cannot be negative, so
                  we cap it at zero. Now, deduct the result from the
-                 damage: 11 damage - 0 = 11. Lira&rsquo;s opponent takes
+                 damage: 11 damage - 0 = 11. Lira<rdquo />s opponent takes
                  all 11 damage. </text>
                 <text> AP is effective against armored targets, but it
                  does nothing against unarmored targets. Note, that most
-                 weapons with AP don&rsquo;t deal very much damage. It is
+                 weapons with AP don<rdquo />t deal very much damage. It is
                  usually a good idea to use AP weapons versus armored
                  targets only, and use <ldquo />normal<rdquo /> weapons
                  versus unarmored targets. </text>
@@ -2210,7 +2201,7 @@
                  deal fire damage. Unless stated otherwise Fire weapons
                  deal U damage. As well, Fire effect weapons will ignite
                  the target, as well as readily flammable materials
-                 within a 3&rsquo; radius of the blow. A target that is
+                 within a 3<rdquo /> radius of the blow. A target that is
                  <ldquo />on fire<rdquo /> will suffer an extra <roll><num>1</num><face>6</face><bns></bns><kind>U</kind></roll> damage
                  each turn that the fire is still going. This starts on
                  the <ldquo />next<rdquo /> turn after the target is struck.
@@ -2222,8 +2213,8 @@
                  target is not ignited. Fire protection on armor will
                  only work three times before the armor must be repaired
                  or replaced. Some armor is rated fire protection
-                 &times;2, which will take six fire-effect hits before
-                 loosing it&rsquo;s fire resistance, etc. Note that fire
+                 <times/>2, which will take six fire-effect hits before
+                 loosing it<rdquo />s fire resistance, etc. Note that fire
                  protection armor only resists the ignition effect and
                  any heat (U) damage from the fire specifically.
                  Therefore, if a weapon deals normal damage (P/S/C) AND
@@ -2238,15 +2229,15 @@
                    weapon deals <roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll> Fire. David rolls damage and ends
                    up with 10 U. The target suffers the 10 damage. As
                    well, the Ghoul suffers the fire effect and has been
-                   set on fire. On the ghoul&lsquo;s next turn it will
+                   set on fire. On the ghoul<lsquo />s next turn it will
                    suffer <roll><num>1</num><face>6</face><bns></bns><kind>U</kind></roll> from being on fire. This will continue
                    until the fire is somehow put out. </text>
               </example>  
               <example>  
-                  <title>Travis&rsquo;s armor resists Fire damage</title>
+                  <title>Travis<rdquo />s armor resists Fire damage</title>
                   <text> Travis is wearing Ceramic Plate armor and is
                    shot with a 12-ga shotgun loaded with a meteor round.
-                   The meteor round deals <roll><num>5</num><face>6</face><bns></bns><kind>C</kind></roll> + Fire and Travis&rsquo;s
+                   The meteor round deals <roll><num>5</num><face>6</face><bns></bns><kind>C</kind></roll> + Fire and Travis<rdquo />s
                    armor has 8 points of protection vs. C, and has Fire
                    protection. The attacker rolls 19 C damage. Travis
                    takes 11 damage from the C portion of the blow, but
@@ -2367,10 +2358,10 @@
                most convenient blow that he can make. It is assumed that
                this is a <ldquo />center mass<rdquo /> attack: In other
                words, the attacker hits the largest, most obvious,
-               portion of the target&rsquo;s body. For humans and most
+               portion of the target<rdquo />s body. For humans and most
                animals this is the torso area. </text>
               <text>  However, there are times when a character may want
-               to strike a specific part of the target&rsquo;s body.
+               to strike a specific part of the target<rdquo />s body.
                Attacks that are aimed at a specific portion of a target
                are called shots. Called shots may be attempted with any
                kind of attack or weapon. The attacker must be able to see
@@ -2401,19 +2392,19 @@
               <title>Philip misses the troll</title>  
                 <text>  Philip has engaged a troll in combat, and
                  declares that he wishes to make a called shot, aiming
-                 for the troll&rsquo;s head. The GM assigns a strike
-                 penalty of &mdash;8 for the called shot. Philip fails
+                 for the troll<rdquo />s head. The GM assigns a strike
+                 penalty of <mdash/>8 for the called shot. Philip fails
                  his strike roll, and therefore misses the target
                  completely. </text>
             </example>  
             <example>  
               <title>Morgdar is fighting a lizardman.</title>  
                 <text> He attempts to make a called shot targeted at the
-                 lizardman&rsquo;s eye. He successfully makes his called
+                 lizardman<rdquo />s eye. He successfully makes his called
                  shot and the lizardman fails to defend. The GM asks that
-                 damage be rolled. Morgdar&rsquo;s spear deals 3 damage.
+                 damage be rolled. Morgdar<rdquo />s spear deals 3 damage.
                  The GM rules that enough damage has been dealt to put
-                 out the lizardman&rsquo;s eye, thereby preventing it
+                 out the lizardman<rdquo />s eye, thereby preventing it
                  from attacking properly in combat. The GM notes that had
                  Morgdar rolled higher damage, then the blow could have
                  been instantly lethal. </text>
@@ -2446,26 +2437,26 @@
                covered target. </text>
               <text>  Attempt to strike around cover: The attacker takes
                aim at part(s) of the target that are not behind cover.
-               This assigns a negative to the attacker&rsquo;s strike
+               This assigns a negative to the attacker<rdquo />s strike
                roll, which is determined by the GM. Refer to the
                reference sheet for sample strike penalties for cover. The
                attacker may also attempt a called shot against a portion
-               of the target&rsquo;s body that is not behind cover using
+               of the target<rdquo />s body that is not behind cover using
                the normal called shot negatives. If the attacker fails
                the strike roll, then the attack misses, period. </text>
               <text>  Attempt to strike through cover: The attacker
                strives to hit the target like normal, trusting that the
                weapon will penetrate the cover and strike the target
-               anyway. When doing so, the attacker has a &mdash;2 to
+               anyway. When doing so, the attacker has a <mdash/>2 to
                strike regardless of the severity of the cover. This
-               &mdash;2 is in addition to any other penalties that might
+               <mdash/>2 is in addition to any other penalties that might
                be present as well. Then, deduct the armor value of the
                cover from the damage dealt by the attack, just as if the
                defender were using a shield. </text>
               <text>  A target that has total cover is completely hidden,
                and may not be targeted at all. </text>
               <text>  A magic using character may still attack using an
-               auto-targeting spell if ANY portion of the target&rsquo;s
+               auto-targeting spell if ANY portion of the target<rdquo />s
                body is visible. This incurs no strike penalty whatsoever.
                However, if the magical effect is impeded by the cover,
                then damage may be reduced. </text>
@@ -2476,9 +2467,9 @@
                which case there is no dodge bonus). </text>
               <text>  Targets that are actively attempting to hide behind
                cover are often restricted in their movements. When using
-               cover, defenders are at &mdash;3 to all defensive maneuver
+               cover, defenders are at <mdash/>3 to all defensive maneuver
                rolls that they choose to use. Note that if the cover is
-               sufficiently large then it doesn&rsquo;t require any
+               sufficiently large then it doesn<rdquo />t require any
                special effort to hide behind it. In this case there is no
                penalty to defensive maneuvers. </text>
             <example>  
@@ -2487,7 +2478,7 @@
                 <text> One troll has ducked behind some rocks. The GM
                  states that the troll has half cover due to hiding
                  behind the rocks. If Darin wants to shoot the troll with
-                 her crossbow, she has &mdash;8 to strike, OR she may
+                 her crossbow, she has <mdash/>8 to strike, OR she may
                  choose to make a called shot against some part of the
                  troll that is not behind cover. In that case she must
                  take the called shot penalty for whatever target she
@@ -2497,16 +2488,16 @@
               <title>Mikus is in a gunfight.</title>  
                 <text>  His opponent, a local gangster, has ducked behind
                  the door of a nearby car. The GM rules that the gangster
-                 has dense cover, and thus Mikus has &mdash;12 to strike
-                 him. Mikus decides he&rsquo;d rather take chances with
-                 the armor value of the car&rsquo;s door rather than try
+                 has dense cover, and thus Mikus has <mdash/>12 to strike
+                 him. Mikus decides he<rdquo />d rather take chances with
+                 the armor value of the car<rdquo />s door rather than try
                  and shoot the gangster at such a high penalty. Mikus
-                 takes aim at where he thinks the gangster&rsquo;s body
-                 is situated behind the car door&mdash;thereby incurring
-                 a &mdash;2 for attempting a shot through cover. Mikus
+                 takes aim at where he thinks the gangster<rdquo />s body
+                 is situated behind the car door<mdash/>thereby incurring
+                 a <mdash/>2 for attempting a shot through cover. Mikus
                  makes his roll. Rolling damage for his .224 BOZ, he
-                 deals 19 damage. The car&rsquo;s door provides 8
-                 armor&mdash;not enough to stop the bullet. The
+                 deals 19 damage. The car<rdquo />s door provides 8
+                 armor<mdash/>not enough to stop the bullet. The
                  unfortunate gangster suffers the remaining 11 damage.
                  </text>
             </example>  
@@ -2524,15 +2515,15 @@
         <title>Augmentations</title>  
           <text> Augmentations are modifications to the body made through
            technology. This can be anything from using a metal implant to
-           repair a broken bone, to replacing a person&rsquo;s brain with
+           repair a broken bone, to replacing a person<rdquo />s brain with
            a computerized electronic brain. </text>
           <text> In general, augmentations fall into two categories. They
            are either ADDITIONS to the body or REPLACEMENTS of something
            already there. </text>
           <text> An addition is something that is added to the body that
-           normally isn&rsquo;t there. A good example is a cardiac
+           normally isn<rdquo />t there. A good example is a cardiac
            pacemaker. Additions add new functionality to the
-           body&mdash;either as a <ldquo />fix<rdquo /> for an illness, or as
+           body<mdash/>either as a <ldquo />fix<rdquo /> for an illness, or as
            an upgrade to the body. Some additions are very small devices
            that perform simple functions. Others are large and complex
            systems that might require significant body modification!
@@ -2545,9 +2536,9 @@
         <section>  
           <title>Additions</title>  
             <text> There are two basic types of addition augmentations.
-             The first are small devices that don&rsquo;t take up a lot
+             The first are small devices that don<rdquo />t take up a lot
              of room. These are easy to add to the body because they
-             don&rsquo;t require any power or a lot of space. As a
+             don<rdquo />t require any power or a lot of space. As a
              general rule, this type of augmentation is very small and
              its function is often limited. </text>
             <text> The second type are larger, complex systems, which
@@ -2632,7 +2623,7 @@
                  without total replacement. However, this usually
                  requires surgery. </item>
                 <item>  Cybernetic parts are usually built around the
-                 user&rsquo;s body. Used cybernetic parts are valuable,
+                 user<rdquo />s body. Used cybernetic parts are valuable,
                  but the potential market is limited to those people who
                  are very similar to the original owner. Therefore the
                  used cybernetic parts market tends to be flooded with
@@ -2719,7 +2710,7 @@
                  3 vs. Slashing, and 7 vs. crushing damage. </item>
                 <item>  Armor does not protect from Undefined (U) or
                  Direct (D). </item>
-                <item>  A character&rsquo;s Base Armor is the only thing
+                <item>  A character<rdquo />s Base Armor is the only thing
                  that can protect vs. U damage. Nothing can protect
                  against D damage. </item>
                 <item>  All non D/U damage has an associated damage type
@@ -2729,9 +2720,9 @@
                  takes that amount of damage. </item>
                 <item>  A weapon with an armor piercing (AP) attack will
                  list the amount of AP it has. Subtract this AP number
-                 from all of the armor&rsquo;s damage values when
+                 from all of the armor<rdquo />s damage values when
                  determining its protection against the attack. This
-                 cannot drop the armor&rsquo;s value below 0. </item>
+                 cannot drop the armor<rdquo />s value below 0. </item>
                 <item>  GMs determine when armor is damaged beyond
                  use/protection. </item>
                 <item>  Hard Armor is any armor that uses hard
@@ -2739,11 +2730,11 @@
                  protect the character. Hard armor is MUCH more durable
                  than non-hard armor. Hard armor is denoted by
                  <ldquo />hard<rdquo /> on the armor sheet. Note that the
-                 components of hard armor are hard. They can&rsquo;t be
+                 components of hard armor are hard. They can<rdquo />t be
                  bent without damaging the armor. Hard armor is generally
                  made specifically for the wearer, it will only fit
                  others with nearly identical body proportions. </item>
-                <item>  Soft armor (armor that isn&rsquo;t considered
+                <item>  Soft armor (armor that isn<rdquo />t considered
                  hard) is at least somewhat flexible. It will generally
                  fit anyone of similar size/stature. </item>
                 <item>  Armor with the descriptor of <ldquo />fire<rdquo />
@@ -2775,7 +2766,7 @@
                   <item>  -1 action per 2 full points over ENC </item>  
                 </itemized-list>  
               </item>  
-                <item>  An armor&rsquo;s Class is a general idea of what
+                <item>  An armor<rdquo />s Class is a general idea of what
                  period of history/future the armor would appear. A later
                  period can find the earlier armor. </item>
             </itemized-list>  
@@ -2790,7 +2781,7 @@
                 <item>  On a successful block, a shield will subtract its
                  appropriate armor value from the damage. Any damage that
                  penetrates the shield will then be applied against the
-                 user&rsquo;s armor. </item>
+                 user<rdquo />s armor. </item>
                <item>  Shields can be used to block U attacks that are
                 <ldquo />thrown<rdquo /> at them. These include fireballs,
                 lightning strikes, breath weapons, chemical splashes,
@@ -2919,7 +2910,7 @@
                   <cell> Common </cell>  
                 </row>  
               </table>  
-                <caption>Options for mel&egrave;e weapon construction</caption>
+                <caption>Options for melee weapon construction</caption>
             </figure>  
               <text>  For other than normal sized weapons (mecha, etc.),
                all stats are <math>
@@ -2962,7 +2953,7 @@
               <text>  The Monofilament Whip is length of metallic,
                diamondoid, or silicoid wire that is the thickness of a
                single molecule, with a weight on one end. The Archaic
-               Weapon&mdash;Chain skill is used. A skill roll of 4 or
+               Weapon<mdash/>Chain skill is used. A skill roll of 4 or
                less is considered a critical failure (instead of the
                normal 1). This modified critical failure is there for
                people who are skilled. Those who are not get a critical
@@ -3007,7 +2998,7 @@
                 </row>  
                 <row>  
                   <cell> Power burst </cell>  
-                    <cell> Once per minute the blade&rsquo;s power can be
+                    <cell> Once per minute the blade<rdquo />s power can be
                      increased to deal +3 damage </cell>
                   <cell> x1.5 </cell>  
                 </row>  
@@ -3111,9 +3102,9 @@
             <text>  Magic exists in many forms. It is a supernatural
              energy that permeates everything in the world. Characters
              with the right skills can bend this energy to their
-             will&mdash;and perform amazing feats in the process. Magic
+             will<mdash/>and perform amazing feats in the process. Magic
              is capable of healing the sick, raising the dead, creating a
-             great fireball, protecting the caster from harm&mdash;and
+             great fireball, protecting the caster from harm<mdash/>and
              nearly anything else you can imagine. </text>
             <text>  Magic, whatever type it might be, is all about
              manipulating MANA. Mana, as mentioned above, is a
@@ -3123,11 +3114,11 @@
              laws such as gravity, etc. When a person uses magic, they
              are manipulating mana to do what they want. Normally, this
              is the mana that is in their own body. It is possible to
-             work with mana outside one&rsquo;s body as well. Nobody
+             work with mana outside one<rdquo />s body as well. Nobody
              really knows exactly how mana works, but special gestures
              and body movements handed down throughout time are believed
              to initiate complex quantum-mechanical events that result in
-             seemingly impossible things taking place&mdash;magic.
+             seemingly impossible things taking place<mdash/>magic.
              </text>
             <text>  Mana is found in all things. However, more mana is
              found in some things than others. Gases (air, for example)
@@ -3211,7 +3202,7 @@
                will be written, at least in part, in this special
                language. Wizards and Sorceresses might hail from
                different countries, races, and moral
-               standpoints&mdash;but they all share common ground in the
+               standpoints<mdash/>but they all share common ground in the
                ability to read magical script. Magical script is
                specially designed to describe and transcribe magical
                spells, therefore it is rarely used for other purposes. It
@@ -3224,7 +3215,7 @@
                spellcasters that may teach their skills to junior
                members. Wizards may be children of existing wizards or
                they might be apprentices or students at an established
-               wizard&rsquo;s school or place of business. Wizard secret
+               wizard<rdquo />s school or place of business. Wizard secret
                societies are common as well. Some are devoted to
                particular schools of magic. Others are devoted to a
                certain cause and happen to share arcane secrets to persue
@@ -3236,13 +3227,13 @@
                required, and favors always entail repayment. </text>
               <text>  Spells are purchased (learned) similar to skills.
                However, there are no levels for spells. A character
-               either knows a given spell, or they don&rsquo;t. If you
+               either knows a given spell, or they don<rdquo />t. If you
                like you can think of this as a <ldquo />level 1
                skill<rdquo />. </text>
               <text>  There exist different schools (aka categories) of
                magic. Some Wizards specialize in certain schools, but
                that is purely optional. Any character may learn spells
-               from any category&mdash;but with the following
+               from any category<mdash/>but with the following
                restrictions. A character may only learn a given spell if
                she knows at least one spell of lower rank from the same
                school. As well, the rank of the spell must be no higher
@@ -3289,7 +3280,7 @@
                heavily associated with religion, especially in primitive,
                animistic, or tribal societies. In these cultures ritual
                magic is the domain of the <ldquo />witch doctor<rdquo /> or
-               <ldquo />medicine man<rdquo />&mdash;people who hold important
+               <ldquo />medicine man<rdquo /><mdash/>people who hold important
                positions in the tribe, often including that of a kind of
                priest or spiritual leader. Therefore, there is a strong
                association between ritual magic and primitive, pagan,
@@ -3315,13 +3306,13 @@
                it might be neatly organized or highly messy, it will be
                arrayed exactly how its owner prefers. </text>
               <text>  Most ritual supplies are re-useable, and a
-               ritualist&rsquo;s <ldquo />kitchen<rdquo /> will be well
+               ritualist<rdquo />s <ldquo />kitchen<rdquo /> will be well
                stocked with such items. These include such things as
                wands, knives, scales, measuring devices, a fireplace,
                cauldrons, bottles, pots, strainers, mirrors, precious
                gems, candles, assorted tools, and so on. Approximately
                <dollar />1000 * Rank worth of supplies is required in a
-               ritualist&rsquo;s <ldquo />kitchen<rdquo />. (In other words,
+               ritualist<rdquo />s <ldquo />kitchen<rdquo />. (In other words,
                in order to perform the Ritual Stoneform, which is a rank
                6 spell, <dollar />6000 worth of supplies are required to be on
                hand) These supplies are reuseable and are used for many
@@ -3365,7 +3356,7 @@
                ritualist must seek out items that are rich in MP to use
                when conducting a ritual. This process results in the
                destruction of the items used! This might even entail the
-               sacrifice of living things&mdash;if such an amount of MP
+               sacrifice of living things<mdash/>if such an amount of MP
                is required. Generally, items yielding MP for ritual use
                will cost about <dollar />1 per MP required, though this will vary.
                Much like individual spell components, a ritualist will
@@ -3378,7 +3369,7 @@
             <itemized-list>  
                 <item>  NO MP from the character are required for ritual
                  magic </item>
-                <item>  Each spell&rsquo;s components cost 1/10th of the
+                <item>  Each spell<rdquo />s components cost 1/10th of the
                  <ldquo />scroll/potion<rdquo /> cost from the spell table,
                  PLUS <dollar />1 for each MP required. Components are consumed
                  and can only be used once. (note that costs are
@@ -3526,7 +3517,7 @@
             <title>Religious <and /> Faith Magic</title>  
               <text>  Religious magic is magical effects that are brought
                into reality by the combined will of the caster and the
-               caster&rsquo;s god(s). Whereas primitive religions and
+               caster<rdquo />s god(s). Whereas primitive religions and
                cults tend towards the use of ritual magic, Religious or
                Faith magic is practiced by priests of clearly defined and
                well organized religions. Most religions that practice
@@ -3651,7 +3642,7 @@
               <text>  Anytime a Faith magic caster has to make a
                magic-related roll (<ldquo />Magical Control<rdquo /> roll, or
                a strike roll associated with a magical spell, etc), use
-               the caster&rsquo;s Faith skill. Whatever holy symbol that
+               the caster<rdquo />s Faith skill. Whatever holy symbol that
                the caster has is then applied as a bonus to that roll.
                </text>
           </section>  
@@ -3673,7 +3664,7 @@
                traditional (non-supernatural) combat arts, he may be
                taught martial magic. Since martial magic is highly
                dependent on particular combat forms and stances, it is
-               nearly impossible to learn on one&rsquo;s own or from a
+               nearly impossible to learn on one<rdquo />s own or from a
                book. </text>
               <text>  Magical effects that ordinarily require touch do so
                for the martial magician as well. This is normally done by
@@ -3734,10 +3725,10 @@
                these powers manifest themselves as a result of a
                traumatic event, such as a near-fatal accident, that is
                experienced by the character. They may also be abilities
-               that are passed down through a particular family&mdash;in
+               that are passed down through a particular family<mdash/>in
                which case the character is simply born with his unique
                powers. Mystic characters have an innate ability to
-               perform their abilities&mdash;which are completely
+               perform their abilities<mdash/>which are completely
                independent of any kind of structured <ldquo />method<rdquo />
                or <ldquo />technique<rdquo />. While mystic characters might
                join magical societies they cannot <ldquo />learn<rdquo /> or
@@ -3755,7 +3746,7 @@
                 <item>  Spells are purchased from the spell list at will.
                  There is no need to follow a particular category. The
                  only restriction is that learned spells must be no
-                 higher level than the character&rsquo;s Mysticism skill.
+                 higher level than the character<rdquo />s Mysticism skill.
                  </item>
                 <item>  Mystics always use the WIL attribute for
                  magic-related rolls, such as Magical Control, regardless
@@ -3780,7 +3771,7 @@
                   the caster. The location of appearance must be within
                   direct line of sight of the caster, and no more than 30
                   feet away. Once the creature appears, it is free to do
-                  whatever it wants based on its own free will&mdash;the
+                  whatever it wants based on its own free will<mdash/>the
                   caster simply transports it to a new location. It will
                   return to its original location after <roll><num>3</num><face>6</face><bns></bns></roll>rounds.
               </item>  
@@ -3799,7 +3790,7 @@
                  <description> Pact </description>  allows the caster to
                   form a complex bond with a creature, making that
                   creature his Familiar. The caster must first find a
-                  creature to use pact with&mdash;such as summoning the
+                  creature to use pact with<mdash/>such as summoning the
                   creature by gate or summon) The caster may
                   <ldquo />control<rdquo /> the creature in a manner similar
                   to summon. This is permanent and lasts until either the
@@ -3810,7 +3801,7 @@
                   caster, and vice versa. A basic empathic link exists
                   between the creature and the caster. The caster may
                   make a Magical Control check in order to <ldquo />listen
-                  in<rdquo /> on any of the familiar&rsquo;s senses at any
+                  in<rdquo /> on any of the familiar<rdquo />s senses at any
                   point in time.
               </item>  
               <item>
@@ -3820,7 +3811,7 @@
                   literally operate the creature(s) as though by
                   <ldquo />remote control<rdquo />. While Control is active,
                   the summoner is responsible for literally every action
-                  made by the summoned creature&mdash;it has no will of
+                  made by the summoned creature<mdash/>it has no will of
                   its own.
               </item>  
               <item>
@@ -3913,7 +3904,7 @@
             <itemized-list>  
               <item>  Spellcasting gives additional <math>  <mrow>  
                     <msup>  <mi> LVL </mi><mn> 2 </mn>  
-                     </msup>  <mo> &times; </mo><mi> WIS </mi><mi> MP
+                     </msup>  <mo> <times/> </mo><mi> WIS </mi><mi> MP
                       </mi>  </mrow>  </math> . This is the governing skill
                       for learning Invocation spells.
               </item>  
@@ -3927,23 +3918,23 @@
                  magic; this skill does not provide MP. </item>
               <item>  Magical Control gives additional <math>  <mrow>  
                     <msup>  <mi> LVL </mi><mn> 2 </mn>  
-                     </msup>  <mo> &times; </mo>  <mi> WIL </mi>  <mo>
-                      &times; </mo>  <mn> 2 </mn>  <mi> MP </mi>  </mrow>
+                     </msup>  <mo> <times/> </mo>  <mi> WIL </mi>  <mo>
+                      <times/> </mo>  <mn> 2 </mn>  <mi> MP </mi>  </mrow>
                        </math> , and is used to strike with and to control
                       the effects of some spells. While this skill is not
                       required for magic use, it is commonly used.
               </item>  
               <item>  Mysticism gives an additional <math>  <mrow>  
                     <msup>  <mi> LVL </mi>  <mn> 3 </mn>  
-                     </msup>  <mo> &times; </mo>  <mi> WIS </mi>  <mi> MP
+                     </msup>  <mo> <times/> </mo>  <mi> WIS </mi>  <mi> MP
                       </mi>  </mrow>  </math> . This is the governing skill
                       for learning Mystic / Psionic spells.
               </item>  
                 <item>  Faith is not technically a magic skill. However,
                  it is used for Faith magic, and provides <math>  <mrow>
                     <msup>  <mi> LVL </mi>  <mn> 2 </mn>  
-                     </msup>  <mo> &times; </mo>  <mi> WIL </mi>  <mo>
-                      &times; </mo>  <mfrac><mn> 3 </mn><mn> 2
+                     </msup>  <mo> <times/> </mo>  <mi> WIL </mi>  <mo>
+                      <times/> </mo>  <mfrac><mn> 3 </mn><mn> 2
                       </mn></mfrac>  <mi> MP </mi>  </mrow>  </math> . Faith
                       only provides MP to those characters who actually
                       know Faith magic spells. If a non-faith spellcaster
@@ -3997,7 +3988,7 @@
                   spells, many of which are available at low or middle
                   levels. It is a very useful type of magic for the rogue
                   or healer-type character who wants to be useful but
-                  doesn&rsquo;t want to fight. A few high level light
+                  doesn<rdquo />t want to fight. A few high level light
                   spells can deal excellent damage, but only at a steep
                   MP cost.
               </item>  
@@ -4024,13 +4015,13 @@
               </item>  
               <item>
                  <description> Fire </description>  Fire magic is a
-                  traditional offensive type of magic. It&rsquo;s spells
+                  traditional offensive type of magic. It<rdquo />s spells
                   deal high damage and are without equal for causing
                   large-scale destruction. They are also quite
                   mana-efficient. However, fire magic is the easiest of
                   all <ldquo />supernatural<rdquo /> attacks to defend
                   against. Fire magic is also noisy, flashy, and very
-                  intimidating to one&rsquo;s opponents. Unfortunatley,
+                  intimidating to one<rdquo />s opponents. Unfortunatley,
                   this makes it nearly impossible to use in a stealthy
                   manner.
               </item>  
@@ -4062,7 +4053,7 @@
              these spells, the player must make a skill test using
              Magical Control (or Faith) to determine if the strike is
              successful. See the spell listing for what spells are
-             auto-targeting and which aren&rsquo;t. </text>
+             auto-targeting and which aren<rdquo />t. </text>
            <text>  If the player is interrupted while spell casting (e.g.
             takes damage, gets knocked around, etc.), he must make a
             skill check (Magical Control). If he fails the check, the
@@ -4164,7 +4155,7 @@
                the exact subject matter contained within the volume. They
                may be written in any language. </text>
               <text>  Magical potions or scrolls are single-use magic
-               spells. Anybody can use a potion or scroll&mdash;whether
+               spells. Anybody can use a potion or scroll<mdash/>whether
                they know anything about magic or not. Spells that affect
                the caster or a willing recipient are potions. Drinking
                the potion causes the spell to take effect. Other spells
@@ -4274,16 +4265,16 @@
         <title>Martial Arts</title>  
           <text>  The governing skill for Martial Arts is the Academic
            Skill, Martial Arts, which is rank 2. All combat skills fall
-           under the &aelig;gis of Martial Arts. This means that a
-           character engages in combat&mdash;whether or not they have any
-           facility in Martial Arts&mdash;they must still engage as a
+           under the aegis of Martial Arts. This means that a
+           character engages in combat<mdash/>whether or not they have any
+           facility in Martial Arts<mdash/>they must still engage as a
            Martial Artist. For instance, the Academic skill Hunting
            covers many areas (ambuscade, rifle or bow shooting, skinning,
            stalking etc.), however these skills are related to a
            stress-free environment. Combat, on the other hand, is a
            high-stress environment requiring special training for
            weapons. Those skills considered useful for hunting have
-           little use in a combat arena&mdash;and may even be a
+           little use in a combat arena<mdash/>and may even be a
            detriment. </text>
         <section>  
           <title>Rules</title>  
@@ -4382,12 +4373,12 @@
           <title>Further Commentary</title>  
             <text>  You will note that there is no <ldquo />chi<rdquo /> or
              <ldquo />super-powers<rdquo /> in Martial Arts. In fact, the
-             skills are deliberately kept pedestrian&mdash;those
+             skills are deliberately kept pedestrian<mdash/>those
              possessed (or assumed to be possessed, if possible) by the
              greatest <ldquo />non-mystical<rdquo /> martial artists in the
-             &lsquo;real world.&rsquo; This is done deliberately to
+             <lsquo />real world.<rdquo /> This is done deliberately to
              provide a clear separation between the
-             Supernormal&mdash;governed by Magic and Traits&mdash;and the
+             Supernormal<mdash/>governed by Magic and Traits<mdash/>and the
              mundane reality of kicking, spitting, biting and hurting. If
              you want to create a character that has truly jaw-dropping
              magical abilities, like flying-through the air, or punching
@@ -4443,9 +4434,9 @@
             <text>  Power Armor is an armored suit that is
              <ldquo />worn<rdquo /> like clothing. It provides armor
              protection, but it has the function of increasing the
-             wearer&rsquo;s strength, endurance, and weapon payload. It
+             wearer<rdquo />s strength, endurance, and weapon payload. It
              is easy to use. The internal computers, etc, in the suit
-             allow it to follow the wearer&rsquo;s movements. </text>
+             allow it to follow the wearer<rdquo />s movements. </text>
           <itemized-list>  
               <item> Power Armor does NOT require any skill to use
                </item>
@@ -4473,7 +4464,7 @@
              weaponry (and other hardware), but is usually more
              manueverable. It is often possible to perform major feats of
              dexterity while wearing power armor. This is because the
-             power armor does not hinder the wearer&rsquo;s natural
+             power armor does not hinder the wearer<rdquo />s natural
              skills. As well, power armor is easier to use because the
              Mecha Piloting skill is not required. </text>
             <text>  Mecha tend to be larger and more powerful than power
@@ -4553,7 +4544,7 @@
                 </figure>  
                 <itemized-list>  
                     <item> Mecha can be no smaller than one size level
-                     greater than the wearer&rsquo;s size </item>
+                     greater than the wearer<rdquo />s size </item>
                     <item> Humans are size level 2, weight is given in
                      tons </item>
                     <item> Height and weight indicates the maximum size
@@ -4817,7 +4808,7 @@
                   <caption>Frame Style</caption>  
                 </figure>  
                   <text>  The number of HP and Slots that a mecha has can
-                   be further altered by the internal frame&rsquo;s style
+                   be further altered by the internal frame<rdquo />s style
                    and material makup. Frame Style determines the
                    efficiency of how bulky the internal frame of the
                    mecha is, this adjusts the number of slots that are
@@ -4830,12 +4821,12 @@
                    that configuration. </text>
                   <text>  For example, if you chose a <ldquo />Light Matrix
                    Composite<rdquo /> frame for a size 4 mecha, it will
-                   receive -10<percent /> to it&rsquo;s slot total, would gain +60<percent />
-                   to it&rsquo;s hit points, and cost 16 CP (size of
+                   receive -10<percent /> to it<rdquo />s slot total, would gain +60<percent />
+                   to it<rdquo />s hit points, and cost 16 CP (size of
                    4*4). </text>
                   <text>  If a mecha suit runs out of HP, it is rendered
                    useless until repaired. If it goes -HP then it is
-                   destroyed. Any time the mecha takes 10<percent /> of it&rsquo;s
+                   destroyed. Any time the mecha takes 10<percent /> of it<rdquo />s
                    total HP in one blow, the pilot takes <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> damage.
                    </text>
               </item>  
@@ -4900,12 +4891,12 @@
                    sources take up slots within the suit based on the
                    amount of power that it produces. The more expensive
                    (in CP) a power system is, the more power can be
-                   gotten from one slot&rsquo;s worth of the power
+                   gotten from one slot<rdquo />s worth of the power
                    source. Power is measured in PCs (or Power Cells). All
                    power sources produce the number of listed PC at the
-                   beginning of each of the character&rsquo;s turns. All
+                   beginning of each of the character<rdquo />s turns. All
                    systems on a suit will draw power from this, and if
-                   there isn&rsquo;t enough power available, that piece
+                   there isn<rdquo />t enough power available, that piece
                    of equipment will not function. So it is vital that
                    the suit has adequate power. </text>
                 <figure>  
@@ -5060,7 +5051,7 @@
                     <row>  
                       <cell> Mecha </cell>  
                         <cell>  <math>  <mrow>  <mfrac>  <mrow>  <mn> 2
-                         </mn>  <mo> &times; </mo>  <mi> Size CP </mi> 
+                         </mn>  <mo> <times/> </mo>  <mi> Size CP </mi> 
                          </mrow>  <mrow>  <mi> +1 </mi>  </mrow> 
                          </mfrac>  </mrow>  </math>
                       </cell>  
@@ -5081,12 +5072,12 @@
                          </mfrac>  </mrow>  </math>
                       </cell>  
                         <cell>  <math>  <mrow>  <mfrac>  <mrow>  <mo> (
-                         </mo>  <mn> 2 </mn>  <mo> &times; </mo>  <mi>
+                         </mo>  <mn> 2 </mn>  <mo> <times/> </mo>  <mi>
                          Size Cp </mi>  <mo> ) </mo>  </mrow>  <mrow> 
                          <mi> +1 </mi>  </mrow>  </mfrac>  </mrow>  </math>
                       </cell>  
                         <cell> Power armor STR bonus increases the
-                         wearer&rsquo;s own STR while wearing the armor
+                         wearer<rdquo />s own STR while wearing the armor
                          </cell>
                     </row>  
                   </table>  
@@ -5113,12 +5104,12 @@
                     <row>  
                       <cell> Legs </cell>  
                       <cell> 20 mph </cell>  
-                        <cell>  <math><mrow>  <mn> 5 </mn>  <mo> &times;
+                        <cell>  <math><mrow>  <mn> 5 </mn>  <mo> <times/>
                          </mo>  <mi> Size </mi>  </mrow></math>
                       </cell>  
                         <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
-                         &times; </mo>  <mn> 6 </mn>  </mrow></math>
+                         <times/> </mo>  <mn> 6 </mn>  </mrow></math>
                       </cell>  
                       <cell> 0 </cell>  
                       <cell> 4 </cell>  
@@ -5129,7 +5120,7 @@
                       <cell> 0 </cell>  
                         <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
-                         &times; </mo>  <mn> 2 </mn>  </mrow></math>
+                         <times/> </mo>  <mn> 2 </mn>  </mrow></math>
                       </cell>  
                       <cell> 1 </cell>  
                       <cell> 3 </cell>  
@@ -5148,7 +5139,7 @@
                       <cell> 15&apos; </cell>  
                         <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
-                         &times; </mo>  <mn> 10 </mn>  </mrow></math>
+                         <times/> </mo>  <mn> 10 </mn>  </mrow></math>
                       </cell>  
                       <cell> 4 </cell>  
                       <cell> 8 </cell>  
@@ -5159,7 +5150,7 @@
                       <cell> 200&apos; </cell>  
                         <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
-                         &times; </mo>  <mn> 15 </mn>  </mrow></math>
+                         <times/> </mo>  <mn> 15 </mn>  </mrow></math>
                       </cell>  
                       <cell> 6 </cell>  
                       <cell> 10 </cell>  
@@ -5170,7 +5161,7 @@
                       <cell> 100&apos; </cell>  
                         <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
-                         &times; </mo>  <mn> 10 </mn>  </mrow></math>
+                         <times/> </mo>  <mn> 10 </mn>  </mrow></math>
                       </cell>  
                       <cell> 1 </cell>  
                       <cell>
@@ -5198,12 +5189,12 @@
                       <cell> 5&apos; </cell>  
                         <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
-                         &times; </mo>  <mn> 20 </mn>  </mrow></math>
+                         <times/> </mo>  <mn> 20 </mn>  </mrow></math>
                       </cell>  
                       <cell> 1 </cell>  
                         <cell>  <math><mfrac>  <mrow>  <mn> 3 </mn><mo>
-                         &times; </mo>  <mrow><mo> ( </mo>  <mi> X </mi> 
-                         <mo> &times; </mo>  <mn> 1 </mn>  <mo> )
+                         <times/> </mo>  <mrow><mo> ( </mo>  <mi> X </mi> 
+                         <mo> <times/> </mo>  <mn> 1 </mn>  <mo> )
                          </mo></mrow>  </mrow>  <mn> 4 </mn> 
                          </mfrac></math>
                       </cell>  
@@ -5215,7 +5206,7 @@
                       <cell> Unlimited </cell>  
                         <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
-                         &times; </mo>  <mn> 20 </mn>  </mrow></math>
+                         <times/> </mo>  <mn> 20 </mn>  </mrow></math>
                       </cell>  
                       <cell> 10 </cell>  
                       <cell> 15 </cell>  
@@ -5400,7 +5391,7 @@
                for producing the blast that comes from an energy weapon,
                but all of them share some things in common. First, the
                base damage-table is used to calculate the damage an
-               energy weapon does based on it&rsquo;s class: </text>
+               energy weapon does based on it<rdquo />s class: </text>
             <figure>  
               <table>  
                 <head>  
@@ -5482,7 +5473,7 @@
                  area effect </text>
               </item>  
             </description-list>  
-              <text>  When buying an energy weapon you may pay it&rsquo;s
+              <text>  When buying an energy weapon you may pay it<rdquo />s
                cost again to add an effect. Certain combinations of
                effects are <ldquo />named<rdquo /> below. </text>
               <text>  After every twenty shots an Energy weapon must be
@@ -5548,22 +5539,22 @@
                     <cell>  <math><mrow>  <mi> X </mi>  <mo> &gt; </mo> 
                      <mn> 2 </mn>  </mrow></math>
                   </cell>  
-                    <cell>  <math><mrow>  <mo> &times; </mo>  <mrow>  <mi> X
+                    <cell>  <math><mrow>  <mo> <times/> </mo>  <mrow>  <mi> X
                      </mi>  <mo> - </mo>  <mn> 1 </mn>  </mrow> 
                      </mrow></math>
                   </cell>  
                   <cell> 0 </cell>  
-                  <cell>  <math><mrow>  <mo> &times; </mo>  
+                  <cell>  <math><mrow>  <mo> <times/> </mo>  
                           <msup>  <mn> 2 </mn>  <mrow>  <mi> X </mi> 
                            <mo> - </mo>  <mn> 2 </mn>  </mrow>
                         </msup>  </mrow></math>  
                   </cell>  
-                  <cell>  <math><mrow>  <mo> &times; </mo>  
+                  <cell>  <math><mrow>  <mo> <times/> </mo>  
                           <msup>  <mn> 2 </mn>  <mrow>  <mi> X </mi> 
                            <mo> - </mo>  <mn> 2 </mn>  </mrow>
                         </msup>  </mrow></math>  
                   </cell>  
-                  <cell>  <math><mrow>  <mo> &times; </mo>  
+                  <cell>  <math><mrow>  <mo> <times/> </mo>  
                           <msup>  <mn> 2 </mn>  <mrow>  <mi> X </mi> 
                            <mo> - </mo>  <mn> 2 </mn>  </mrow>
                         </msup>  </mrow></math>  
@@ -5677,7 +5668,7 @@
                   <cell border='none'> Anthropoid </cell>  
                   <cell border='none' span='11'>  Height: <math>  <mrow>  
                         <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> &times; </mo>  <mn> 40 </mn><mi>
+                          </msup>  <mo> <times/> </mo>  <mn> 40 </mn><mi>
                            cm </mi>  </mrow>  </math>
                   </cell>  
                 </row>  
@@ -5738,7 +5729,7 @@
                   <cell border='none'> Bipedal </cell>  
                   <cell border='none' span='11'>  Height: <math>  <mrow>  
                         <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> &times; </mo><mn> 35 </mn><mi> cm
+                          </msup>  <mo> <times/> </mo><mn> 35 </mn><mi> cm
                            </mi>  </mrow>  </math>
                   </cell>  
                 </row>  
@@ -5799,10 +5790,10 @@
                   <cell border='none'> Quadruped </cell>  
                   <cell border='none' span='11'>  Length: <math><mrow>  
                         <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> &times; </mo>  <mn> 35 </mn><mi>
+                          </msup>  <mo> <times/> </mo>  <mn> 35 </mn><mi>
                            cm </mi>  </mrow></math> ; Height: <math><mrow> 
                            <mfrac><mn> 1 </mn><mn> 3 </mn></mfrac>  <mo>
-                           &times; </mo>  <mi> Length </mi>  </mrow></math>
+                           <times/> </mo>  <mi> Length </mi>  </mrow></math>
                   </cell>  
                 </row>  
                 <row>  
@@ -5858,10 +5849,10 @@
                   <cell border='none'> Serpent </cell>  
                   <cell border='none' span='11'>  Length: <math><mrow>  
                         <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> &times; </mo><mn> 40 </mn><mi> cm
+                          </msup>  <mo> <times/> </mo><mn> 40 </mn><mi> cm
                            </mi>  </mrow></math> ; Height: <math><mrow> 
                            <mfrac><mn> 1 </mn><mn> 8 </mn></mfrac>  <mo>
-                           &times; </mo><mi> Length </mi>  </mrow></math>
+                           <times/> </mo><mi> Length </mi>  </mrow></math>
                   </cell>  
                 </row>  
                 <row>  
@@ -5921,7 +5912,7 @@
                   <cell border='none'> Polymelic </cell>  
                   <cell border='none' span='11'>  Size: <math><mrow>  
                         <msup><mi> Size </mi><mn> 2 </mn>
-                         </msup>  <mo> &times; </mo><mn> 30 </mn><mi> cm
+                         </msup>  <mo> <times/> </mo><mn> 30 </mn><mi> cm
                           </mi>  </mrow></math> , in some dimension
                   </cell>  
                 </row>  
@@ -5982,7 +5973,7 @@
                   <cell border='none'> Amorphous </cell>  
                   <cell border='none' span='11'>  Diameter: <math><mrow>  
                         <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> &times; </mo><mn> 50 </mn><mi> cm
+                          </msup>  <mo> <times/> </mo><mn> 50 </mn><mi> cm
                            </mi>  </mrow></math>
                   </cell>  
                 </row>  
@@ -6067,7 +6058,7 @@
            <ldquo />system,<rdquo /> i.e. Magic. Traits are generally bought
            at only one level, but can be purchased at higher levels, if
            it is pertinent. If a Traits needs <ldquo />points<rdquo /> to
-           power it, these are taken from the character&rsquo;s Mana
+           power it, these are taken from the character<rdquo />s Mana
            Points. </text>
           <text> Since many traits overlap magical spells, there is a
            specific trait designed for using abilities to some specific
@@ -6138,7 +6129,7 @@
           <field table='yes' name='Occupation'> Herbalist, magician,
            shaman </field>
           <field name='Description' description='yes'> Knowledge of
-           &lsquo;primitive&rsquo; chemistry and related techniques. A
+           <lsquo />primitive<rdquo /> chemistry and related techniques. A
            person with this skill will know how to prepare simple
            chemicals (including such things as simple medicines, poisons,
            black powder, etc) from natural sources. This skill can also
@@ -6162,7 +6153,7 @@
           <field table='yes' name='Occupation'> Soldier, assassin,
            hunter, law enforcement </field>
           <field name='Description' description='yes'> The knowledge of
-           how to surprise someone or something&mdash;often by means of
+           how to surprise someone or something<mdash/>often by means of
            diversion or camouflage. </field>
       </datum>  
       <datum name='Anatomy'>  
@@ -6372,7 +6363,7 @@
            </field>
           <field name='Description' description='yes'> The knowledge of
            how plants grow, and their biological processes, etc. Persons
-           with this skill can identify plants&mdash;including those that
+           with this skill can identify plants<mdash/>including those that
            are medicinal, poisonous, or edible. </field>
       </datum>  
       <datum name='Bureaucracy'>  
@@ -6385,7 +6376,7 @@
           <field name='Description' description='yes'> Experience with
            dealing with the political, legal, and related processes of
            the time. People with this skill will know ways around
-           &lsquo;red tape&rsquo; and how to favorably deal with public
+           <lsquo />red tape<rdquo /> and how to favorably deal with public
            services and government agencies. </field>
       </datum>  
       <datum name='Business Sense'>  
@@ -6429,7 +6420,7 @@
               <msup>
                 <mi>LVL</mi><mn>2</mn>
               </msup>
-              <mo>&times;</mo><mn>1000</mn>
+              <mo><times/></mo><mn>1000</mn>
             </mrow>
            </math> dollars in cash, equipment, or
            goods. This can be bought many times. </field>
@@ -6483,7 +6474,7 @@
           <field name='Description' description='yes'> The knowledge of
            basic communication such as hand signals and gesturing, as
            well as modern communications methods like telephone, radio,
-           and computerized communication&mdash;and their associated
+           and computerized communication<mdash/>and their associated
            equipment. </field>
       </datum>  
       <datum name='Computer Programming'>  
@@ -6509,7 +6500,7 @@
           <field name='Description' description='yes'> The ability to use
            a computer for work and pleasure. This includes how to perform
            simple computer-related tasks, such as setting up a computer,
-           basic repairs, and how to use common software&mdash;like word
+           basic repairs, and how to use common software<mdash/>like word
            processing, spreadsheets, image viewing, E-mail, and Internet
            browsing. </field>
       </datum>  
@@ -6522,14 +6513,14 @@
            architect, contractor </field>
           <field name='Description' description='yes'> The knowledge of
            working on a construction site. This includes preparing a site
-           for building, reading plans&mdash;blueprints, surveying and
+           for building, reading plans<mdash/>blueprints, surveying and
            laying a foundation, framing, and finishing a building or
            other structure. This also includes the use of common
            construction tools and heavy equipment including power tools,
            dump trucks, cement mixers, backhoes, and cranes. A person
            with this skill will also have experience with mixing
            concrete, laying bricks, and working with lumber and
-           structural steel&mdash;as well as SIMPLE plumbing, electrical,
+           structural steel<mdash/>as well as SIMPLE plumbing, electrical,
            and carpentry tasks. </field>
       </datum>  
       <datum name='Cooking'>  
@@ -6848,7 +6839,7 @@
           <field table='yes' name='Occupation'> Geologist, oil driller,
            professional climber </field>
           <field name='Description' description='yes'> The academic study
-           of the earth and its geological formations&mdash;including
+           of the earth and its geological formations<mdash/>including
            rocks, minerals, and related scientific elements. A person
            with this skill would know how to identify various geological
            features, including gems, etc. </field>
@@ -6874,7 +6865,7 @@
         <field name='MetaTag'> Any </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field table='yes' name='Occupation'> Newspaper&ndash;book
+          <field table='yes' name='Occupation'> Newspaper<ndash/>book
            editor, artist </field>
           <field name='Description' description='yes'> The design and
            layout of printed matter, such as books, magazines,
@@ -6921,7 +6912,7 @@
            knowledge extending from the present until 5000 years in the
            past. Persons with this skill will know about major political
            figures (and other famous people), wars, famines, natural
-           disasters, and major cultural&mdash;scientific&mdash;religious
+           disasters, and major cultural<mdash/>scientific<mdash/>religious
            events and discoveries made during that time. </field>
       </datum>  
       <datum name='Hit Points'>  
@@ -6967,7 +6958,7 @@
            </field>
           <field name='Description' description='yes'> The skills of
            portraying a character or person other than oneself. Includes
-           how to alter voice, habits and mannerisms&mdash;as well as
+           how to alter voice, habits and mannerisms<mdash/>as well as
            basic costuming, etc. in order to play the part. This skill is
            used for professional actors, and for espionage purposes.
            </field>
@@ -7316,7 +7307,7 @@
           <field name='Description' description='yes'> Professional
            medicine. The study of the human body, its ailments, and how
            to treat them. Lvl 1 = Pre-Med Student, Lvl 2 = Med School
-           Graduate&ndash;Resident, Lvl 3 = Inexperienced MD. You may
+           Graduate<ndash/>Resident, Lvl 3 = Inexperienced MD. You may
            choose the area of expertise </field>
       </datum>  
       <datum name='Medical Emergency'>  
@@ -7469,7 +7460,7 @@
            </field>
           <field name='Description' description='yes'> Affinity for
            politics; knowledge of the political process, political groups
-           and their agendas&ndash;public and private. The knowledge of
+           and their agendas<ndash/>public and private. The knowledge of
            current political events, deal making, vote gathering, and
            lobbying fall under this scope of this skill. </field>
       </datum>  
@@ -7584,7 +7575,7 @@
           <field name='Description' description='yes'> Knowledge of how
            and where to look for items, but not from &apos;normal&apos;
            sources. People with this skill are known for their ability to
-           find just about anything&ndash;even if that means digging
+           find just about anything<ndash/>even if that means digging
            around in dumpsters, pawnshops, and similar locations.
            </field>
       </datum>  
@@ -7713,7 +7704,7 @@
            ghosts, monsters, undead, werewolves or vampires, etc. A
            person with this skill will have knowledge of various mythical
            (and real) beasts, monsters, etc. including their appearance,
-           strengths&ndash;weaknesses, etc. </field>
+           strengths<ndash/>weaknesses, etc. </field>
       </datum>  
       <datum name='Survival'>  
         <field name='Name' title='yes'> Survival </field>  
@@ -9730,7 +9721,7 @@
            incapacitate the target animal quickly, even if the vital
            organs are missed. A broadhead is a wide, diamond-shaped head
            that has two or more <ldquo />fins&apos;&apos; on it that are
-           sharpened into blades&mdash;which cut a devastating wound in
+           sharpened into blades<mdash/>which cut a devastating wound in
            the target. </field>
         <field name='Implementation' />  
       </datum>  
@@ -9748,16 +9739,16 @@
            also common arrows for some military use since they are easily
            and cheaply produced. </field>
       </datum>  
-      <datum name='Bullet Point (blunt&ndash;target)'>  
+      <datum name='Bullet Point (blunt/target)'>  
           <field name='Name' title='yes'> Bullet Point
-           (blunt&ndash;target) </field>
+           (blunt<ndash/>target) </field>
         <field name='MetaTag' />  
         <field table='yes' name='Type'> P </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> Bonus 0 </field>  
           <field name='Description' description='yes'> A common military
            arrowhead. This is also the most common type of dart. The head
-           is made of steel, and fashioned into a narrow cone&mdash;much
+           is made of steel, and fashioned into a narrow cone<mdash/>much
            like a pencil. These types of arrows are generally not used
            for hunting, but are very effective for wartime use. </field>
         <field name='Implementation' />  
@@ -9815,7 +9806,7 @@
            coated with cloth soaked in pitch, tar, kerosene, or some
            similar flammable material. It is set alight before firing.
            These arrows are commonly used for sending signals, and for
-           setting enemy structures on fire&mdash;however, they are also
+           setting enemy structures on fire<mdash/>however, they are also
            effective for setting enemy soldiers on fire. </field>
         <field name='Implementation' />  
       </datum>  
@@ -10041,8 +10032,8 @@
            frontline infantry troops. </field>
         <field name='Implementation' />  
       </datum>  
-      <datum name='CLB&ndash;WAF Suit'>  
-        <field name='Name' title='yes'> CLB&ndash;WAF Suit </field>  
+      <datum name='CLB-WAF Suit'>  
+        <field name='Name' title='yes'> CLB<ndash/>WAF Suit </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Cost'> 19000 </field>  
         <field table='yes' name='Note'> Fire </field>  
@@ -10136,7 +10127,7 @@
         <field table='yes' name='Slashing'> 1 </field>  
         <field table='yes' name='Crushing'> 0 </field>  
           <field name='Description' description='yes'> Heavy clothing
-           designed especially for protection&ndash;like a
+           designed especially for protection<ndash/>like a
            woodsman&apos;s coveralls, etc. </field>
         <field name='Implementation' />  
       </datum>  
@@ -10423,7 +10414,7 @@
         <field table='yes' name='Slashing'> 1 </field>  
         <field table='yes' name='Crushing'> 0 </field>  
           <field name='Description' description='yes'> Any sort of
-           unusually thick clothing&ndash;like a parka, leather jacket,
+           unusually thick clothing<ndash/>like a parka, leather jacket,
            heavy denim, etc. </field>
         <field name='Implementation' />  
       </datum>  
@@ -10507,7 +10498,7 @@
         <field table='yes' name='Slashing'> 5 </field>  
         <field table='yes' name='Crushing'> 1 </field>  
           <field name='Description' description='yes'> secondary armor
-           for millitary applications&ndash;a network of metal plates
+           for millitary applications<ndash/>a network of metal plates
            over a cloth vest </field>
         <field name='Implementation' />  
       </datum>  
@@ -10534,7 +10525,7 @@
         <field table='yes' name='Slashing'> 2 </field>  
         <field table='yes' name='Crushing'> 1 </field>  
           <field name='Description' description='yes'> Tough clothing
-           made from NOMEX fibers&mdash;designed for fire protection.
+           made from NOMEX fibers<mdash/>designed for fire protection.
            Worn by firefighters and emergency workers </field>
         <field name='Implementation' />  
       </datum>  
@@ -10918,7 +10909,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> A typical
-           axe&mdash;a tool for chopping and spitting wood. Many
+           axe<mdash/>a tool for chopping and spitting wood. Many
            conscripted soldiers found their farm axes to be devastating
            in combat, often proving more effective than some swords.
            </field>
@@ -10948,7 +10939,7 @@
         <field name='Name' title='yes'> Firemans Axe </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Axes </field>  
-        <field table='yes' name='Type'> P&ndash;S </field>  
+        <field table='yes' name='Type'> P<ndash/>S </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -10994,7 +10985,7 @@
            strongest medieval knights depended on heavy battle axes to
            deliver maximum damage to their enemies, human or otherwise.
            The heavy battle axe is designed for the roughest combat
-           conditions, equipped with a massive, broad, head&mdash;and the
+           conditions, equipped with a massive, broad, head<mdash/>and the
            weight to carry it through it&apos;s target. </field>
         <field name='Implementation' />  
       </datum>  
@@ -11029,7 +11020,7 @@
         <field table='yes' name='Recovery'> 3 </field>  
           <field name='Description' description='yes'> An oversized
            battle-axe subscribing to the idea that more weight equals
-           more damage&mdash;and rightly so. The Lochaber axe&apos;s
+           more damage<mdash/>and rightly so. The Lochaber axe&apos;s
            massive blade deals huge damage, and the spiked backside can
            deal a very nasty piercing attack. </field>
         <field name='Implementation' />  
@@ -11105,8 +11096,8 @@
            round iron or bronze head. </field>
         <field name='Implementation' />  
       </datum>  
-      <datum name='Cane&ndash;Lathi'>  
-        <field name='Name' title='yes'> Cane&ndash;Lathi </field>  
+      <datum name='Cane/Lathi'>  
+        <field name='Name' title='yes'> Cane/Lathi </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Blunt </field>  
         <field table='yes' name='Type'> C </field>  
@@ -11286,7 +11277,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> A large hammer,
-           typically used for construction work&mdash;and sometimes
+           typically used for construction work<mdash/>and sometimes
            conscripted as a weapon. A sledgehammer has an iron head
            weighing several pounds mounted atop a long wooden handle.
            </field>
@@ -11411,7 +11402,7 @@
           <field name='Description' description='yes'> A piece of metal
            designed to fit inside a closed fist. It usually has spikes
            that protrude between the fingers, or rings that surround the
-           fingers&mdash;allowing one to deal more damage with punches.
+           fingers<mdash/>allowing one to deal more damage with punches.
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -11493,7 +11484,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> Fairly
            self-explanatory. These are heavy-duty boots with metal studs
-           or spikes embedded in the toe area&mdash;perfect for
+           or spikes embedded in the toe area<mdash/>perfect for
            delivering a thorough ass kicking. </field>
         <field name='Implementation' />  
       </datum>  
@@ -11535,13 +11526,13 @@
         <field table='yes' name='Class'> Chained </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll>&ndash;<roll><num>2</num><face>6</face><bns></bns><kind>S</kind></roll> </field>  
+        <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll><ndash/><roll><num>2</num><face>6</face><bns></bns><kind>S</kind></roll> </field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 9 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
           <field name='Description' description='yes'> A fairly long
-           chain equipped with weights on either end&mdash;very effective
+           chain equipped with weights on either end<mdash/>very effective
            for striking an opponent, and then entangling him. </field>
         <field name='Implementation' />  
       </datum>  
@@ -11551,7 +11542,7 @@
         <field table='yes' name='Class'> Chained </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll>&ndash;<roll><num>2</num><face>4</face><bns></bns><kind>C</kind></roll> </field>  
+        <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll><ndash/><roll><num>2</num><face>4</face><bns></bns><kind>C</kind></roll> </field>  
         <field table='yes' name='Hands'> 1 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
@@ -11560,14 +11551,14 @@
            chain suitable for striking an opponent with. </field>
         <field name='Implementation' />  
       </datum>  
-      <datum name='Chain with spikes&ndash;blades'>  
-          <field name='Name' title='yes'> Chain with spikes&ndash;blades
+      <datum name='Chain with spikes-blades'>  
+          <field name='Name' title='yes'> Chain with spikes-blades
            </field>
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Chained </field>  
         <field table='yes' name='Type'> C </field>  
         <field table='yes' name='Cost'> 0 </field>  
-        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll>&ndash;<roll><num>3</num><face>4</face><bns></bns><kind>S</kind></roll> </field>  
+        <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll><ndash/><roll><num>3</num><face>4</face><bns></bns><kind>S</kind></roll> </field>  
         <field table='yes' name='Hands'> 2 </field>  
         <field table='yes' name='Minimum Strength'> 13 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
@@ -11949,7 +11940,7 @@
         <field name='Name' title='yes'> Yoroidoshi Tanto </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Exotic </field>  
-        <field table='yes' name='Type'> P&ndash;S </field>  
+        <field table='yes' name='Type'> P<ndash/>S </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
@@ -11968,7 +11959,7 @@
         <field name='Name' title='yes'> Yumi </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Exotic </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -11981,7 +11972,7 @@
            two-thirds of the way down the bow, rather than in the center,
            and it is fired with the bow leaning forward. This means that
            it requires a very high ceiling to fire a Yumi indoors. The
-           design of this bow makes it extremely powerful&mdash;easily
+           design of this bow makes it extremely powerful<mdash/>easily
            capable of defeating heavily armored opponents. Unfortunatley,
            it is very large and therefore it can be difficult to
            transport. </field>
@@ -11991,7 +11982,7 @@
         <field name='Name' title='yes'> Zaghnal </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Exotic </field>  
-        <field table='yes' name='Type'> S&ndash;C </field>  
+        <field table='yes' name='Type'> S<ndash/>C </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
@@ -12138,7 +12129,7 @@
           <field name='Description' description='yes'> A special variety
            of fighting knife. The slender blade is longer than
            8&apos;&apos;, and sharpened along both edges. This is among
-           the largest weapons in this category&mdash;and is effective
+           the largest weapons in this category<mdash/>and is effective
            for both stabbing and slashing. </field>
         <field name='Implementation' />  
       </datum>  
@@ -12173,7 +12164,7 @@
           <field name='Description' description='yes'> This would be a
            typical pocketknife, <ldquo />Swiss army knife&apos;&apos;, or
            any knife with a short blade. Not very effective as a weapon,
-           but easy to conceal&mdash;and a decent backup. </field>
+           but easy to conceal<mdash/>and a decent backup. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Stiletto'>  
@@ -12275,7 +12266,7 @@
         <field table='yes' name='Recovery'> 2 </field>  
           <field name='Description' description='yes'> A famous weapon of
            Scottish origin. This blade requires a very strong person to
-           wield&mdash;even two handed, but deals impressive damage to
+           wield<mdash/>even two handed, but deals impressive damage to
            match. Claymores generally have a blade 5..6 feet long. The
            long reach of the claymore makes it effective for engaging
            multiple targets at once. </field>
@@ -12349,7 +12340,7 @@
            traditional sword. The grand sword appears much like a great
            sword, only larger. It is sufficiently heavy that only a
            mighty warrior might wield it, but is nearly
-           indestructible&mdash;and is only matched by the No-Dachi in
+           indestructible<mdash/>and is only matched by the No-Dachi in
            combat effectiveness. </field>
         <field name='Implementation' />  
       </datum>  
@@ -12599,7 +12590,7 @@
           <field name='Description' description='yes'> A standard
            European-style <ldquo />cut and thrust&apos;&apos; sword. It was
            the mainstay weapon of the footsoldiers of many past
-           armies&mdash;a durable weapon that can be counted on in
+           armies<mdash/>a durable weapon that can be counted on in
            combat. </field>
         <field name='Implementation' />  
       </datum>  
@@ -12640,7 +12631,7 @@
         <field name='Name' title='yes'> Beaked Axe </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Polearms </field>  
-        <field table='yes' name='Type'> P&ndash;S </field>  
+        <field table='yes' name='Type'> P<ndash/>S </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -12650,7 +12641,7 @@
           <field name='Description' description='yes'> A long wooden pole
            topped with an iron head. One side of the head features an axe
            blade; the other is equipped with a spike for piercing armor.
-           Originally used as a tool for ships&mdash;the axe head was
+           Originally used as a tool for ships<mdash/>the axe head was
            used to chop stuck mooring lines; the spike could be used to
            snag ropes or wreckage. </field>
         <field name='Implementation' />  
@@ -12677,7 +12668,7 @@
         <field name='Name' title='yes'> Glaive-Guisarme </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Polearms </field>  
-        <field table='yes' name='Type'> P&ndash;S </field>  
+        <field table='yes' name='Type'> P<ndash/>S </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -12702,7 +12693,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 13 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
           <field name='Description' description='yes'> A simple,
-           effective, weapon&mdash;especially for defensive positions. A
+           effective, weapon<mdash/>especially for defensive positions. A
            halberd is basically a large knife blade mounted on a pole for
            extra reach. </field>
         <field name='Implementation' />  
@@ -12761,7 +12752,7 @@
         <field name='Name' title='yes'> Lucerne Hammer </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Polearms </field>  
-        <field table='yes' name='Type'> P&ndash;C </field>  
+        <field table='yes' name='Type'> P<ndash/>C </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -12788,7 +12779,7 @@
            simple pike. The military fork is a group of thin metal tines
            (spikes) mounted to a long handle. It is much more effective
            for parrying than a pike, since one can catch weapons between
-           its tines. It is also effective for hunting&mdash;it is
+           its tines. It is also effective for hunting<mdash/>it is
            excellent for spearing small animals or fish. </field>
         <field name='Implementation' />  
       </datum>  
@@ -12823,7 +12814,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> A very long sharp
            stick. Pikes are generally much longer than other
-           polearms&mdash;often twenty feet long. The point is generally
+           polearms<mdash/>often twenty feet long. The point is generally
            made from iron, but simple pikes might just have carved
            points. </field>
         <field name='Implementation' />  
@@ -12895,7 +12886,7 @@
         <field name='Name' title='yes'> Voulge </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Polearms </field>  
-        <field table='yes' name='Type'> P&ndash;S </field>  
+        <field table='yes' name='Type'> P<ndash/>S </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -13103,7 +13094,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> An ingeniously
-           designed weapon&mdash;a stout, backswept blade of considerable
+           designed weapon<mdash/>a stout, backswept blade of considerable
            thickness counterbalanced with a tassel and weighted knot.
            When wielded by a strong warrior, a truly fearsome weapon.
            </field>
@@ -13139,7 +13130,7 @@
           <field name='Description' description='yes'> Somwhat like a
            scimitar but with a straight blade. The back of the blade is
            straight, but the cutting edge is curved forward. The blade is
-           very thick and gets wider near the tip&mdash;this concentrates
+           very thick and gets wider near the tip<mdash/>this concentrates
            the weight forward of the balance points of most swords. In
            the right hands, a very effective tool. </field>
         <field name='Implementation' />  
@@ -13148,7 +13139,7 @@
         <field name='Name' title='yes'> Gladius </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Small Swords </field>  
-        <field table='yes' name='Type'> P&ndash;S </field>  
+        <field table='yes' name='Type'> P<ndash/>S </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
@@ -13180,7 +13171,7 @@
         <field name='Name' title='yes'> Kris </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Small Swords </field>  
-        <field table='yes' name='Type'> P&ndash;S </field>  
+        <field table='yes' name='Type'> P<ndash/>S </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
@@ -13249,7 +13240,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> The class
            <ldquo />fencing&apos;&apos; sword used in duels from the
-           [latex]<dollar /><math><msup><mn>16</mn><mi>th</mi></msup></math>&ndash;<dollar /><math><msup><mn>19</mn><mi>th</mi></msup></math>[/latex] c. If the user has
+           [latex]<dollar /><math><msup><mn>16</mn><mi>th</mi></msup></math><ndash/><dollar /><math><msup><mn>19</mn><mi>th</mi></msup></math>[/latex] c. If the user has
            weapon specialization in Small Sword then the weapon can be
            used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns></bns></roll>with 4 AP and a MSB of
            12. If the weapon is used as [latex]\emph{exotic}[/latex]
@@ -13270,7 +13261,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
           <field name='Description' description='yes'> [LaTeX] A
-           14&apos;&ndash;18&apos; flat stone (typically jade) paddle.
+           14&apos;<ndash/>18&apos; flat stone (typically jade) paddle.
            Has a razor-sharp edge. Weighs about 4 pounds for a 14&apos;
            version, and an addition pound per inch. For each additional
            pound/inch add +2 to the MSB.
@@ -13294,7 +13285,7 @@
            (large sword), worn on the hip with the sharp side of the
            blade pointed upwards. The fantastic damage potential of this
            sword is due to the superior metallurgy of the
-           blade&mdash;enabling it to achieve an exceptional level of
+           blade<mdash/>enabling it to achieve an exceptional level of
            sharpness. </field>
         <field name='Implementation' />  
       </datum>  
@@ -14916,7 +14907,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Cost'> 50 </field>  
           <field name='Description' description='yes'> This is for 1 feet
-           of rope. Weighs 1&ndash;2 ounce. </field>
+           of rope. Weighs 1<ndash/>2 ounce. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Statue'>  
@@ -15011,7 +15002,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Cost'> 10000 </field>  
           <field name='Description' description='yes'> A small stone
-           pendant carved with a Yin&ndash;Yang. The size of a quarter of
+           pendant carved with a Yin<ndash/>Yang. The size of a quarter of
            black-granite. Part is inlaid with mother-of-pearl. The back
            is engraved with eight Tao hexagrams in an octagonal pattern
            inlaid in gold. There is a crude fiber cord attached to the
@@ -15137,7 +15128,7 @@
            light-weight steel undercarriage with wicker-work and canvas
            top. The top is oiled and made from doubled-egypt cloth and is
            therefore weather proof. A Postal Carrier weighs approximately
-           1&ndash;4 of an equivalently sized wagon, but uses the same
+           1<ndash/>4 of an equivalently sized wagon, but uses the same
            number of draft animals. It can maintain twice the speed of a
            normal wagon. </field>
         <field name='Implementation' />  
@@ -15293,7 +15284,7 @@
            for capturing animals. The bolo is a bundle of long cords tied
            together in a common knot. The free ends of the cords are
            tipped with weights. The bolo is whirled around the head and
-           then thrown&mdash;upon striking, the cords are likely to
+           then thrown<mdash/>upon striking, the cords are likely to
            entangle the target&apos;s legs. Though not thought of as a
            common weapon of war, bolos have been used in combat, and can
            be very useful. </field>
@@ -15303,7 +15294,7 @@
         <field name='Name' title='yes'> Composite Bow </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15321,7 +15312,7 @@
         <field name='Name' title='yes'> Compound Bow </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15342,7 +15333,7 @@
         <field name='Name' title='yes'> Crossbow - Hand </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
@@ -15356,7 +15347,7 @@
         <field name='Name' title='yes'> Crossbow - Heavy </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15378,7 +15369,7 @@
         <field name='Name' title='yes'> Crossbow - Large </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15424,7 +15415,7 @@
         <field name='Name' title='yes'> Crossbow - Repeating </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 1 </field>  
@@ -15439,7 +15430,7 @@
         <field name='Name' title='yes'> Heavy Recurve Bow </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15453,7 +15444,7 @@
         <field name='Name' title='yes'> Hunters Bow </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15472,7 +15463,7 @@
         <field name='Name' title='yes'> Long Bow </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15489,7 +15480,7 @@
         <field name='Name' title='yes'> Recurve Bow </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15507,7 +15498,7 @@
         <field name='Name' title='yes'> Short Bow </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Class'> Bows </field>  
-        <field table='yes' name='Type'> n&ndash;a </field>  
+        <field table='yes' name='Type'> n<ndash/>a </field>  
         <field table='yes' name='Cost'> 0 </field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
         <field table='yes' name='Hands'> 2 </field>  
@@ -15732,7 +15723,7 @@
         <field table='yes' name='Crushing'> 35 </field>  
         <field table='yes' name='Minimum Strength'> 8 </field>  
           <field name='Description' description='yes'> has 100 HP regen
-           20 HP&ndash;turn </field>
+           20 HP<ndash/>turn </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Plate'>  
@@ -15843,7 +15834,7 @@
           <field name='Description' description='yes'> This spell fires a
            thin beam of compressed gas and wind from the caster&apos;s
            outstretched hand. The beam is very hard to see becasue it
-           looks like a hazy distortion in the air&ndash;it is very
+           looks like a hazy distortion in the air<ndash/>it is very
            nearly transparent. The beam may be fired at any target within
            100 feet range. Air Laser has AP: 50 and is at a +3 to strike.
            Note: this spell is not actually a laser in the true sense of
@@ -17156,7 +17147,7 @@
            magical copy of any one target. Copy will stand beside target
            and will do whatever the target does (effectively doubling the
            actions of target) If shadow takes any damage (even one
-           point!&ndash;and it has NO armor) it vanishes, dealing <roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll>
+           point!<ndash/>and it has NO armor) it vanishes, dealing <roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll>
            to the original target. </field>
         <field name='Implementation' />  
       </datum>  
@@ -17335,16 +17326,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 1 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +1 to summon
            score </field>
@@ -17356,16 +17347,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 10 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +10 to summon
            score </field>
@@ -17377,16 +17368,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 2 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +2 to summon
            score </field>
@@ -17398,16 +17389,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 3 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +3 to summon
            score </field>
@@ -17419,16 +17410,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 4 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +4 to summon
            score </field>
@@ -17440,16 +17431,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 5 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +5 to summon
            score </field>
@@ -17478,16 +17469,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 7 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +7 to summon
            score </field>
@@ -17499,16 +17490,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 8 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +8 to summon
            score </field>
@@ -17520,16 +17511,16 @@
         <field table='yes' name='Type' qsummary='yes'> Beast </field>  
         <field table='yes' name='Rank' qsummary='yes'> 9 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
-           n&ndash;a </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+           n<ndash/>a </field>
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Duration' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Duration' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 0
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
-          <field table='yes' name='Target' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Target' qsummary='yes'> n<ndash/>a
            </field>
           <field name='Description' description='yes'> Adds +9 to summon
            score </field>
@@ -17542,13 +17533,13 @@
         <field table='yes' name='Rank' qsummary='yes'> 6 </field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1
            </field>
-          <field table='yes' name='Damage' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a
            </field>
           <field table='yes' name='Duration' qsummary='yes'> special
            </field>
           <field table='yes' name='Magic Points' qsummary='yes'> 10
            </field>
-          <field table='yes' name='Range' qsummary='yes'> n&ndash;a
+          <field table='yes' name='Range' qsummary='yes'> n<ndash/>a
            </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster may extend
@@ -20008,7 +19999,7 @@
         <field table='yes' name='Range' qsummary='yes'> self </field>  
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster becomes
-           invisible&ndash;cannot be detected via above means, OR
+           invisible<ndash/>cannot be detected via above means, OR
            radar/sonar <and /> similar means </field>
         <field name='Implementation' />  
       </datum>  
@@ -20027,7 +20018,7 @@
         <field table='yes' name='Range' qsummary='yes'> self </field>  
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster becomes
-           invisible&ndash;cannot be detected by any physical
+           invisible<ndash/>cannot be detected by any physical
            (non-magical / psionic) means </field>
         <field name='Implementation' />  
       </datum>  
@@ -20339,7 +20330,7 @@
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> One target (other
-           than caster) becomes invisible&ndash;cannot be detected via
+           than caster) becomes invisible<ndash/>cannot be detected via
            above means, OR radar/sonar <and /> similar means </field>
         <field name='Implementation' />  
       </datum>  
@@ -20358,7 +20349,7 @@
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> One target (other
-           than caster ) becomes invisible&ndash;cannot be detected by
+           than caster ) becomes invisible<ndash/>cannot be detected by
            any physical (non-magical / psionic) means </field>
         <field name='Implementation' />  
       </datum>  
@@ -20378,7 +20369,7 @@
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
           <field name='Description' description='yes'> Caster may project
            a 6x6x6 foot (per X) illusion anywhere within his range of
-           sight&ndash;complete with sound, thermal radiation, smell,
+           sight<ndash/>complete with sound, thermal radiation, smell,
            etc. </field>
         <field name='Implementation' />  
       </datum>  
@@ -22899,7 +22890,7 @@
            \VBoxColumnPicture{Images/MartialArts/two-weapon-style.png}
            \quotexample[Candlestick is ambidextrous]{Candlestick has 3
            levels of ambidexterity; he has -0 to strike with his
-           &lsquo;good&rsquo; hand and -3 to strike with the off hand. If
+           <lsquo />good<rdquo /> hand and -3 to strike with the off hand. If
            Candlestick had 6 levels of ambidexterity he would no negative
            at all when attacking with his <math><msup><mn>2</mn><mi>nd</mi></msup></math> weapon, and a -3 with
            his <math><msup><mn>3</mn><mi>rd</mi></msup></math> weapon, for instance if he were doing two punches
@@ -22952,7 +22943,7 @@
            alls spells are considered to be a \textsc{Special} skill
            whose name is \emph{Spell}. \quotexample[Ulek&apos;s
            Fire-Bomb]{Ulek finds himself having to blast the crap out of
-           opponents&mdash;standing right next to him. He gets a level in
+           opponents<mdash/>standing right next to him. He gets a level in
            \emph{Jitsu} and picks \emph{Spell} (\emph{Combat Casting}).
            He then gets a \emph{Waza} combining \emph{Fireball} and
            \emph{Minor Teleport}. Now, when an opponent get&apos;s too
@@ -23248,7 +23239,7 @@
           <field name='Description' description='yes'> The martial artist
            is unusually sturdy and well built; his training and combat
            experience has hardened the skin and bones. Each level of
-           Toughness provides a 1 bonus to P&ndash;S&ndash;C (as natural
+           Toughness provides a 1 bonus to P<ndash/>S<ndash/>C (as natural
            armor). </field>
           <field name='Implementation'> Piercing += Level; Crushing +=
            Level; Slashing += Level; </field>
@@ -23681,8 +23672,8 @@
            \emph{Multi-Weapon Style} has Rank 3*X, where X is the number
            of \textit{additional} weapons the martial artist intends to
            use. The martial artist can now use more than one
-           weapon&mdash;given that they are <ldquo />in-hand&apos;&apos;
-           (or foot, tentacle etc.)&mdash;in a single action. Note that
+           weapon<mdash/>given that they are <ldquo />in-hand&apos;&apos;
+           (or foot, tentacle etc.)<mdash/>in a single action. Note that
            the additional attacks have the appropriate multi-weapon
            minus; which can be mitigated by using \emph{Ambidexterity}.
            \quotexample[Jesse <ldquo />Capoeira&apos;&apos;: Double-Kick
@@ -23767,8 +23758,8 @@
            at the beginning of the turn. For each action during the
            declared turn, take LVL plus 1 actions instead. The character
            may only make unmodified attacks during this turn. For the
-           next minute the character is at 1 action&ndash;turn and -3 to
-           all skill rolls. This may only be used LVL&ndash;2 (round up)
+           next minute the character is at 1 action<ndash/>turn and -3 to
+           all skill rolls. This may only be used LVL<ndash/>2 (round up)
            times per day. </field>
         <field name='Implementation' />  
       </datum>  
@@ -23816,7 +23807,7 @@
         <field table='yes' name='Attribute'> Dexterity </field>  
           <field name='Description' description='yes'> Slam describes
            various blows such as tackles, body blows, or
-           butting&ndash;goring (beasts with horns). It deals the same
+           butting<ndash/>goring (beasts with horns). It deals the same
            damage as the standard HTH damage chart, but the next category
            up. It us usually C damage. If you attempt a Slam attack and
            miss, then you must spend 1 action to recover. </field>
@@ -23907,9 +23898,9 @@
            care with your attacks in order to set up your opponent for an
            especially devastating attack later on. You may
            &apos;save&apos; up to LVL dice from your to-strike rolls
-           and&ndash;or LVL damage from various attacks versus a specific
+           and<ndash/>or LVL damage from various attacks versus a specific
            target. Then, on your final attack, you may add your
-           &apos;saved&apos; to-strike dice and&ndash;or damage (as raw
+           &apos;saved&apos; to-strike dice and<ndash/>or damage (as raw
            bonus). All these attacks must be made without interruption
            and must be made versus one specific target. All attacks must
            be melee attacks, and must be made with the same weapon(s).
@@ -23934,7 +23925,7 @@
            weapon that you throw. You do not have to be proficient with
            the weapon that you choose to Hurl, and you do not get a STR
            bonus to damage. However, strike penalties from MSR do still
-           apply. The maximum thrown range is 50&ndash;(encumbrance 1)
+           apply. The maximum thrown range is 50<ndash/>(encumbrance 1)
            feet. This is considered a missile attack for the purposes of
            defense. When you use hurl you throw the weapon and let go of
            it in the process. Thereafter, the weapon is no longer in your
@@ -24011,10 +24002,10 @@
            applicable to simple hand-to-hand defense knowledge. This
            skill is used to strike or defend in combat with hand-to-hand
            attacks and body weapons (claws, fangs, etc.) Unarmed combat
-           strikes use the same damage as normal kicks&ndash;punches,
+           strikes use the same damage as normal kicks<ndash/>punches,
            etc, however unarmed combat blows cannot be modified. (This is
            the skill of a &apos;thug&apos; or &apos;brute&apos; character
-           or an animal&ndash;it is not representative of a trained
+           or an animal<ndash/>it is not representative of a trained
            warrior). Without this skill all hand-to-hand blows are
            considered "stunning" blows and not "lethal" blows. </field>
         <field name='Implementation' />  
@@ -24070,15 +24061,15 @@
           <field name='Description' description='yes'> Appearance: A
            babau is a constructed creature, similar to a golem. As such
            they vary in exact appearance. However, all babaus resemble
-           some other creature from which they are made&ndash;most
-           commonly an infant of any humanoid race&ndash;though they
+           some other creature from which they are made<ndash/>most
+           commonly an infant of any humanoid race<ndash/>though they
            could be made from any living creature. A babau looks like the
            creature that it was made from, with the following features:
            they are always naked and carry no equipment or weapons, they
            are perfectly pitch black, and their body lacks much of the
-           detail of the original creature&ndash;most delicate or "sharp"
+           detail of the original creature<ndash/>most delicate or "sharp"
            features are smoothed over. Babaus have no eyes or ears or
-           toes&ndash;they have only the tinest of bumps where these
+           toes<ndash/>they have only the tinest of bumps where these
            features once were. Their fingers are small nubs, and their
            mouth is a tiny wrinkle. Habits: Babaus are constructs and as
            such, they do whatever their creator has "programmed" them do
@@ -24246,7 +24237,7 @@
            cunning, patient, and greedy to the extreme. Cave Horrors
            build their lairs deep in caves or similar areas, keeping well
            hidden from likely disturbance. When the mood suits
-           it&ndash;frequently&ndash;or when disturbed, the beast awakes
+           it<ndash/>frequently<ndash/>or when disturbed, the beast awakes
            and looks for potential prey. The Cave Horror uses its
            exceptional perception skills to track and locate its chosen
            target. It observes its target(s) for some time, before
@@ -24258,7 +24249,7 @@
            attack sentient prey. Combat: The Cave Horror is an
            intelligent combatant. It follows and observes targets before
            beginning combat with a suprise attack. It may make use of
-           ambushes or tricks in order to gain the upper hand&ndash;or
+           ambushes or tricks in order to gain the upper hand<ndash/>or
            simply to confuse, distract, or block of its prey&apos;s
            escape route. When actually fighting the Cave Horror relies on
            its claw attacks and its bite. </field>
@@ -24413,16 +24404,16 @@
            creature&apos;s body, making it look like it might burst at
            any moment. The combination of the slime and the transparent
            skin makes a dirge worm appear to be a writhing tube of
-           mutilated flesh&ndash;when in fact it is a living creature. A
+           mutilated flesh<ndash/>when in fact it is a living creature. A
            Dirge Worm&apos;s head resembles a grotesquely oversized human
            head. It has no hair and is covered with the same transparent
            skin and slime of the body. The forehead is extended, the
            mouth exaggerated, and it has tiny black eyes. The creature
-           has no lips, and thus its mouth&ndash;full of jagged
-           teeth&ndash;is clearly visible. Dirge worms move like a snake
+           has no lips, and thus its mouth<ndash/>full of jagged
+           teeth<ndash/>is clearly visible. Dirge worms move like a snake
            and are capable of extreme speed. Habits: Dirge worms live
            underground. They lair in caves, old dungeons, sewers,
-           abandoned mineshafts, and similar locations&ndash;anywhere
+           abandoned mineshafts, and similar locations<ndash/>anywhere
            damp and dark with sufficient space to accomodate their size.
            Dirge worms eat dead, decaying flesh. To this end they attack
            large prey. They often lair near humanoid settlements, from
@@ -24489,7 +24480,7 @@
            generally rare creatures. The skin of a dragon, which is
            covered in fine armored scales, is very tough and is beautiful
            to look at. All dragons have some sort of breath
-           weapon&mdash;commonly this is fire, but it could be ice,
+           weapon<mdash/>commonly this is fire, but it could be ice,
            poison, acid, etc. Dragons can fly at great speed and have
            powerful bodies. </field>
         <field name='level' />  
@@ -24685,7 +24676,7 @@
            wears is made of heavy chains, riveted into a suit of chain
            mail of gross proportions. Additional iron chains dangle from
            the armor and drag across the ground like a train of a
-           noble&apos;s robe&ndash;a horrific mockery of Asmodius&apos;
+           noble&apos;s robe<ndash/>a horrific mockery of Asmodius&apos;
            former position in life. Habits: Like an Embalmed Zombie, the
            Embalmed Master is the undead servant of it&apos;s creator,
            Duncan Nusukan. His default "programming" is to act as
@@ -25168,7 +25159,7 @@
           <field name='Attacks'> Morning star <roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns><kind>C</kind></roll>; Kick <roll><num>2</num><face>6</face><bOff>+</bOff><bns>4</bns><kind>C</kind></roll>;
            Breathe Fire <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> </field>
           <field name='Description' description='yes'> A minor
-           demon&ndash;red-skinned, muscular humanoid. Knows magic:
+           demon<ndash/>red-skinned, muscular humanoid. Knows magic:
            Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3;
            Bio 1,2; Quake 1,2. 700 MP. Has infravision, can see
            invisible. Immune to posion <and /> sleep. Regenerates <roll><num>3</num><face>6</face><bns></bns></roll>HP
@@ -25268,7 +25259,7 @@
           <field name='Description' description='yes'> A rat-sized pink
            creature with soft, wrinkly skin and four small limbs each of
            which end in a 3-clawed hand. It has a massive head and
-           mouth&ndash;the size of a man&apos;s fist&ndash;with prominent
+           mouth<ndash/>the size of a man&apos;s fist<ndash/>with prominent
            teeth. They eat anything they can catch. </field>
         <field name='level' />  
       </datum>  
@@ -25379,11 +25370,11 @@
            slender arms protrude from the creature&apos;s midsection: two
            on each side. These arms are long and slender and end in
            clawed hands. Habits: The Necrolisk is a powerful
-           carnivore&ndash;it spends its time hunting in order to feed
+           carnivore<ndash/>it spends its time hunting in order to feed
            its ravenous appetite. Its only other pastime is sleeping off
            past meals. Any creature encountered by a Necrolisk is either
            ignored (in the case of tiny vermin) or categorized as food or
-           as a potential threat&ndash;in both cases, it is attacked and
+           as a potential threat<ndash/>in both cases, it is attacked and
            eaten. The necrolisk is fond of impaling dead prey on its back
            spikes to store it for later as it relishes the taste of
            partially-decayed meat. Combat: The Necrolisk is an unsubtle
@@ -25407,7 +25398,7 @@
           <field name='Attacks'> Death touch <roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns><kind>U</kind></roll>; Poisionous breath
            weapon <roll><num>1</num><face>4</face><bOff>+</bOff><bns>2</bns><kind>U</kind></roll> area affect </field>
           <field name='Description' description='yes'> A minor
-           demon&ndash;Guant, grey-skinned humanoid. Knows magic:
+           demon<ndash/>Guant, grey-skinned humanoid. Knows magic:
            Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake
            1,2,3; Geo Transport, Heal 1,2,3. 1200 MP. Can see invisible.
            Immune to posion <and /> sleep. Regenerates <roll><num>4</num><face>6</face><bns></bns></roll>HP per turn
@@ -25476,7 +25467,7 @@
            Rabbat is frightening beast to behold. It consists of a
            bulbous central body which is dominated by a single giant
            eyeball and a huge mouth filled with vicious looking
-           teeth&ndash;leaving no doubt that this beast is a meat eater.
+           teeth<ndash/>leaving no doubt that this beast is a meat eater.
            Two bat-like wings extend from the central body. It has no
            other limbs. Habits: Rabbats are aggressive meat eaters. In
            the wild, they persue and attack anything they think they can
@@ -25639,7 +25630,7 @@
         <field name='Name' title='yes'> Stygian Fly </field>  
         <field name='MetaTag' />  
           <field name='Special Abilities'> Has only one
-           attack&ndash;biting. If bitten, the target will suffer <roll><num>2</num><face>6</face><bOff>+</bOff><bns>2</bns><kind>S</kind></roll>.
+           attack<ndash/>biting. If bitten, the target will suffer <roll><num>2</num><face>6</face><bOff>+</bOff><bns>2</bns><kind>S</kind></roll>.
            If flesh is contacted, target suffers tremendous pain. Wound
            will grow, consuming target&apos;s body, at a rate of <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll>D
            per SECOND. </field>
@@ -25647,7 +25638,7 @@
            WIL: 10 CHA: 1 HP: 10 Actions:: 3 P/S/C: 3/3/3 -9 to strike
            due to size and movement. Size: about 3" long Dice: Strike: 4
            </field>
-        <field name='Attacks'> Bite&ndash;see special. </field>  
+        <field name='Attacks'> Bite<ndash/>see special. </field>  
           <field name='Description' description='yes'> A horrible demonic
            insect from the depths of the underworld. Stupid, lives only
            to feast upon the flesh and souls of the living. Even if the
@@ -25853,7 +25844,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 20 </field>  
           <field name='Description' description='yes'> Character can
-           stick to surfaces, allowing him to run&ndash;climb up wall and
+           stick to surfaces, allowing him to run<ndash/>climb up wall and
            ceilings as if he was walking normally. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26251,7 +26242,7 @@
         <field table='yes' name='Rank'> 0 </field>  
           <field name='Description' description='yes'> You gain +1 CHR
            and +1 BLD. However, this bonus only applies if you have
-           followed a particular diet and&ndash;or training regimen that
+           followed a particular diet and<ndash/>or training regimen that
            day. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26260,10 +26251,10 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 0 </field>  
           <field name='Description' description='yes'> You recive natural
-           armor of X&ndash;X+1&ndash;X where X is equal to half your
+           armor of X<ndash/>X+1<ndash/>X where X is equal to half your
            level in that skill. </field>
-          <field name='Implementation'> Piercing += Level&ndash;2;
-           Crushing += (Level+1)&ndash;2; Slashing += Level&ndash;2;
+          <field name='Implementation'> Piercing += Level<ndash/>2;
+           Crushing += (Level+1)<ndash/>2; Slashing += Level<ndash/>2;
            </field>
       </datum>  
       <datum name='Healing (Others)'>  
@@ -26281,7 +26272,7 @@
         <field table='yes' name='Rank'> 0 </field>  
           <field name='Description' description='yes'> You may choose to
            wear skimpy clothing instead of standard armor. You recive
-           armor equal X&ndash;X&ndash;X where X = (CHA-8 +LVL of Beauty
+           armor equal X<ndash/>X<ndash/>X where X = (CHA-8 +LVL of Beauty
            + LVL of Fashion Skill). This has no encumberance. You cannot
            use ability while wearing armor of any kind. </field>
           <field name='Implementation'> Piercing += (Charisma-8);
@@ -26390,7 +26381,7 @@
         <field table='yes' name='Rank'> 7 </field>  
           <field name='Description' description='yes'> Character can
            absorb up to 5 * Lvl points of damage from kinetic damage
-           (P&ndash;S&ndash;C) per turn. Each 5 points absorbed in this
+           (P<ndash/>S<ndash/>C) per turn. Each 5 points absorbed in this
            way may be converted over to one HP point. </field>
         <field name='Implementation' />  
       </datum>  
@@ -26460,7 +26451,7 @@
           <field name='Description' description='yes'> Character can
            manipulate up to <math><msup><mi>Lvl</mi><mn>3</mn></msup></math> * 10 pounds of metal. Metal pieces may
            be thrown for an attack (one action) that deals Lvl D 6
-           S&ndash;P&ndash;C damage. </field>
+           S<ndash/>P<ndash/>C damage. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Melt'>  
@@ -26508,7 +26499,7 @@
         <field table='yes' name='Rank'> 3 </field>  
           <field name='Description' description='yes'> Character has some
            form of natural (or mystical) covering that gives him <math><msup><mi>Lvl</mi><mn>2</mn></msup></math>
-           P&ndash;S&ndash;C protection and Lvl U protection. </field>
+           P<ndash/>S<ndash/>C protection and Lvl U protection. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Natural Weaponry'>  
@@ -26619,7 +26610,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 50 </field>  
           <field name='Description' description='yes'> Slashing attacks
-           deal 1&ndash;2 damage. </field>
+           deal 1<ndash/>2 damage. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Rot Substance'>  
@@ -26784,9 +26775,9 @@
         <field name='MetaTag' />  
         <field table='yes' name='Rank'> 2 </field>  
           <field name='Description' description='yes'> Character can
-           stretch up to Lvl times as long, or 1&ndash;Lvl times as thin
+           stretch up to Lvl times as long, or 1<ndash/>Lvl times as thin
            as he currently is. This gives the character an additional
-           0&ndash;0&ndash;Lvl*2 personal armor </field>
+           0<ndash/>0<ndash/>Lvl*2 personal armor </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Substance Surfing'>  
@@ -26807,7 +26798,7 @@
           <field name='Description' description='yes'> Purchase per
            attribute that is at least a 20. Increase the max attribute to
            20 + <math><msup><mi>lvl</mi><mn>2</mn></msup></math>, and purchase additional points as if the base
-           attribute is 1&ndash;2 the current attribute. </field>
+           attribute is 1<ndash/>2 the current attribute. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Sure Footed'>  
@@ -26987,7 +26978,7 @@
             <msup>
               <mrow>
                 <mn>2</mn>
-                <mo>&times;</mo>
+                <mo><times/></mo>
                 <mi>X</mi>
               </mrow>
               <mn>2</mn>
@@ -27036,7 +27027,7 @@
         <field table='yes' name='Slots'> Size </field>  
           <field table='yes' name='Character Points'> (<math><msup><mi>Size</mi><mn>2</mn></msup></math>)/2 </field>
           <field name='Description' description='yes'> Range of
-            <math><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo>&times;</mo><mn>150</mn></mrow></math> feet.
+            <math><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo><times/></mo><mn>150</mn></mrow></math> feet.
             Minimum of 50&apos;. Uses 5 PC per use
            </field>
       </datum>  
@@ -27588,7 +27579,7 @@
            Shotgun&apos;s deal half the usual damage of a similar weapon
            of the same size and ammunition, i.e. if it is a 75mm shotgun,
            then it deals (<roll><num>4</num><face>6</face><bns></bns><mul>10</mul></roll>)/2 = <roll><num>4</num><face>6</face><bns></bns><mul>5</mul><kind>C</kind></roll> (Crushing) damage. Shotguns
-           use 5&ndash;25 rounds per shot, depending upon the set-up of
+           use 5<ndash/>25 rounds per shot, depending upon the set-up of
            the weapon. Shotguns get a bonus to Strike of 1+(Class+2)/2.
            The range is 1/4 of the usual weapon range. </field>
       </datum>  
