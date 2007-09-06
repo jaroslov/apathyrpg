@@ -45,8 +45,8 @@
       <li><a href="#Table-of-Contents">Table of Contents</a></li>
       <li><a href="#List-of-Examples">List of Examples</a></li>
       <li><a href="#List-of-Figures">List of Figures</a></li>
-      <li><a href="#List-of-Equations">List of Equations</a></li>
-      <li><a href="#List-of-Rolls">List of Rolls</a></li>
+      <!--<li><a href="#List-of-Equations">List of Equations</a></li>
+      <li><a href="#List-of-Rolls">List of Rolls</a></li>-->
     </ul>
     <div class="toc" id="Table-of-Contents">
       <h1>Table of Contents</h1>
@@ -109,7 +109,7 @@
         </xsl:for-each>
       </ol>
     </div>
-    <div class="equations" id="List-of-Equations">
+    <!--<div class="equations" id="List-of-Equations">
       <h1>List of Equations</h1>
       <ol class="equations">
         <xsl:for-each select="//math">
@@ -132,7 +132,7 @@
           </li>
         </xsl:for-each>
       </ol>
-    </div>
+    </div>-->
     <xsl:apply-templates select="part" />
     <div class="footnotes">
       <xsl:for-each select="//footnote">
