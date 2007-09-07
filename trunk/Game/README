@@ -1,3 +1,3 @@
-In order to transform the file rename one of the Apathy.xsl.* files to just Apathy.xsl (i.e. cp Apathy.xsl.fo Apathy.xsl).
+=== Apathy Documentation ===
 
-Requirements: python 2.5, 4Suite-XML-1.0.2
+Apathy is built using the Apathy system. This folder is the `Game' folder and contains content and actual final-production. A series of tools are included in the `ManagementSystem'
