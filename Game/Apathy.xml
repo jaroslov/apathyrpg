@@ -1407,8 +1407,8 @@
                the duration of magical spells, or the number of monsters
                appearing in a group. </text>
               <text> Rolling dice is represented in the
-                <roll><rOff>&#177;</rOff><raw>R</raw><num>X</num><face>Y</face><bOff>&#177;</bOff><bns>Z</bns><kind>K</kind></roll><footnote> that is,
-                <roll type='alt'><rOff>&#177;</rOff><raw>R</raw><num>X</num><face>Y</face><bOff>&#177;</bOff><bns>Z</bns><kind>K</kind></roll></footnote> format; for
+                <roll><rOff><plusminus/></rOff><raw>R</raw><num>X</num><face>Y</face><bOff><plusminus/></bOff><bns>Z</bns><kind>K</kind></roll><footnote> that is,
+                <roll type='alt'><rOff><plusminus/></rOff><raw>R</raw><num>X</num><face>Y</face><bOff><plusminus/></bOff><bns>Z</bns><kind>K</kind></roll></footnote> format; for
                example <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll>. This means that you roll three individual
                4-sided dice, and add 1 to each die. </text>
               <text> If any die roll with its bonus added in equals or
@@ -5857,9 +5857,9 @@
                 </row>  
                 <row>  
                   <cell />  
-                    <cell span='11'> Weight: <mrow>  <mfrac><mi> Height
+                    <cell span='11'> Weight: <math><mrow>  <mfrac><mi> Height
                      </mi><mn> 2 </mn></mfrac>  <mi> kilograms </mi> 
-                     </mrow>
+                     </mrow></math>
                   </cell>  
                 </row>  
                 <row>  

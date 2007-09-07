@@ -174,6 +174,8 @@ Josh Kramer}
     <xsl:variable name="text" select="." />
     <xsl:value-of select="$text" />
   </xsl:template>
+  <!-- Note -->
+  <xsl:template match="note">&#xa;&#xa;\textscbf{Note!} \textbf{<xsl:apply-templates />}&#xa;&#xa;</xsl:template>
   <!-- examples -->
   <xsl:template match="example">
   &#xa;
@@ -210,5 +212,108 @@ Josh Kramer}
   <xsl:template match="oslash">---</xsl:template>
   <!-- special "trademark" word -->
   <xsl:template match="trademark">$^{TM}$</xsl:template>
+  <!-- special "plusminus" word -->
+  <xsl:template match="plusminus">\ensuremath{\pm}</xsl:template>
+  <!-- "n/a" notappl -->
+  <xsl:template match="notappl">\textit{n/a}</xsl:template>
+  <!-- define -->
+  <xsl:template match="define">\emph{<xsl:apply-templates />}</xsl:template>
+  <!-- footnote -->
+  <xsl:template match="footnote">\footnote{<xsl:apply-templates />}</xsl:template>
+  <!-- dice rolls -->
+  <xsl:template match="roll">
+    <xsl:choose>
+      <xsl:when test="./@type='alt'">
+<xsl:apply-templates select="num"/><xsl:apply-templates select="face"/><xsl:apply-templates select="bOff"/><xsl:apply-templates select="bns"/><xsl:apply-templates select="mul"/><xsl:apply-templates select="kind"/><xsl:if test="raw">[\ensuremath{<xsl:apply-templates select="rOff"/><xsl:apply-templates select="raw"/>}]</xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+<xsl:apply-templates select="rOff"/><xsl:apply-templates select="raw"/><xsl:if test="raw">\texttt{+}</xsl:if><xsl:apply-templates select="num"/><xsl:apply-templates select="face"/><xsl:apply-templates select="bOff"/><xsl:apply-templates select="bns"/><xsl:apply-templates select="mul"/><xsl:apply-templates select="kind"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="rOff">\texttt{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="raw">\ensuremath{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="num">\ensuremath{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="face">\textscbf{d}\ensuremath{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="bOff">\texttt{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="bns">\textscbf{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="mul">\ensuremath{\times{}<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="kind">\textscbf{<xsl:apply-templates />}</xsl:template>
+
+  <!-- LIST KINDS -->
+  <!-- description-lists -->
+  <xsl:template match="description-list">
+\begin{description}
+    <xsl:for-each select="item">
+  \item[<xsl:apply-templates select="description" />] <xsl:apply-templates select="text" />
+    </xsl:for-each>
+\end{description}
+  </xsl:template>
+  <!-- itemized lists -->
+  <xsl:template match="itemized-list">
+\begin{itemize}
+      <xsl:for-each select="item">
+  \item <xsl:apply-templates select="." />
+      </xsl:for-each>
+\end{itemize}
+  </xsl:template>
+  <!-- numbered lists -->
+  <xsl:template match="numbered-list" >
+\begin{enumerate}
+      <xsl:for-each select="item">
+  \item <xsl:apply-templates select="." />
+      </xsl:for-each>
+\end{enumerate}
+  </xsl:template>
+
+  <!-- Figure -->
+  <!-- figure -->
+  <xsl:template match="figure">
+\begin{table}[htb]
+  \begin{center}
+<xsl:apply-templates select="table" />
+<xsl:apply-templates select="caption" />
+  \end{center}
+\end{table}
+  </xsl:template>
+  <!-- caption -->
+  <xsl:template match="caption">
+\caption{<xsl:apply-templates />}
+  </xsl:template>
+  <!-- tables -->
+  <xsl:template match="table">
+  \begin{tabular}{|<xsl:for-each select="head/cell"><xsl:choose><xsl:when test="./@width">p{<xsl:value-of select="./@width" />}|</xsl:when><xsl:when test="./@align='center'">c|</xsl:when><xsl:when test="./@align='left'">l|</xsl:when><xsl:when test="./@align='right'">r|</xsl:when><xsl:otherwise>c|</xsl:otherwise></xsl:choose></xsl:for-each>}
+  \hline
+    <xsl:for-each select="head/cell">
+  \textscbf{<xsl:apply-templates />}<xsl:choose>
+        <xsl:when test="position()=count(../*)">\\</xsl:when>
+        <xsl:otherwise>&amp;</xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+  \hline
+  \hline
+      <xsl:for-each select="row">
+          <xsl:for-each select="cell">
+            <xsl:variable name="cellspan" select="./@span" />
+            <xsl:variable name="border" select="./@border" />
+  <xsl:apply-templates /><xsl:choose>
+              <xsl:when test="position()=count(../*)">\\&#xa;&#xa;\hline&#xa;&#xa;</xsl:when>
+              <xsl:otherwise>&amp;</xsl:otherwise>
+            </xsl:choose>
+          </xsl:for-each>
+      </xsl:for-each>
+  \end{tabular}
+  </xsl:template>
+
+  <!-- math -->
+  <xsl:template match="math">\ensuremath{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="mrow"><xsl:apply-templates /></xsl:template>
+  <xsl:template match="mi"><xsl:apply-templates /></xsl:template>
+  <xsl:template match="mo"><xsl:apply-templates /></xsl:template>
+  <xsl:template match="mn"><xsl:apply-templates /></xsl:template>
+  <xsl:template match="msup">{<xsl:apply-templates select="./*[position()=1]"/>}^{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
+  <xsl:template match="munderover">{<xsl:apply-templates select="./*[position()=1]"/>}_{<xsl:value-of select="./*[position()=2]"/>}^{<xsl:apply-templates select="./*[position()=3]"/>}</xsl:template>
+  <xsl:template match="mfrac">\frac{<xsl:apply-templates select="./*[position()=1]"/>}{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
+  <xsl:template match="mstyle"><xsl:apply-templates /></xsl:template>
 
 </xsl:stylesheet>

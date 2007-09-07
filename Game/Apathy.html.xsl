@@ -148,6 +148,8 @@
   <xsl:template match="Apathy">
     <span class="ApAthy">Apathy</span>
   </xsl:template>
+  <!-- special "plusminus" word -->
+  <xsl:template match="plusminus">&#177;</xsl:template>
   <!-- special "and" word -->
   <xsl:template match="and">&amp;</xsl:template>
   <!-- special "dollar" word -->
@@ -211,43 +213,43 @@
   </xsl:template>
   <xsl:template match="rOff">
     <span class="rOff">
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </span>
   </xsl:template>
   <xsl:template match="raw">
     <span class="raw">
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </span>
   </xsl:template>
   <xsl:template match="num">
     <span class="num">
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </span>
   </xsl:template>
   <xsl:template match="face">
     <span class="D">D</span>
     <span class="face">
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </span>
   </xsl:template>
   <xsl:template match="bOff">
     <span class="bOff">
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </span>
   </xsl:template>
   <xsl:template match="bns">
     <span class="bns">
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </span>
   </xsl:template>
   <xsl:template match="mul">
     <span class="mul">
-      &#215;<xsl:value-of select="." />
+      &#215;<xsl:apply-templates />
     </span>
   </xsl:template>
   <xsl:template match="kind">
     <span class="kind">
-      <xsl:value-of select="." />
+      <xsl:apply-templates />
     </span>
   </xsl:template>
   <!-- "n/a" notappl -->
