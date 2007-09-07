@@ -1,3 +1,54 @@
 === Apathy Documentation ===
 
-Apathy is built using the Apathy system. This folder is the `Game' folder and contains content and actual final-production. A series of tools are included in the `ManagementSystem'
+Apathy is built using the Apathy system. This folder is the `Game' folder and contains content and actual final-production. A series of tools are included in the `ManagementSystem' for migrating from the old Apathy system to this system.
+
+The Game folder should consist of (at least) the following files:
+ * Apathy.xml
+ * Apathy.css
+ * Apathy.latex.xsl
+ * Apathy.html.xsl
+ * Makefile
+ * this README file
+The following files may or may not be included:
+ * Apathy.xsl (a soft link to Apathy.html.xsl)
+ * Apathy.xhtml
+ * Apathy.tex
+ * Apathy.pdf
+
+The likelihood of the existence of the optional files is ordered in the list above.
+
+The Apathy system stores the Apathy data in the Apathy.xml file. Two XSLT files are provided for transforming the Apathy.xml into either LaTeX (for PDF production) or XHTML (for web viewing).
+
+=== Requirements for System ===
+
+ * make or a GNU/make equivalent
+ * an XSLT processor
+ * a TeX distribution that includes pdflatex
+
+=== Building Web Version ===
+
+Move to the directory that contains the files: Apathy.xml, Apathy.css, Apathy.html.xsl. There are two ways to create the web version.
+
+1. Create a softlink called Apathy.xsl pointing to Apathy.html.xsl, i.e.,
+		ln -s Apathy.html.xsl Apathy.xsl
+	 Open an XML 1.0 (XSLT 1.0) compliant webbrowser, and open the file Apathy.xml. The webbrowser will automatically transform the Apathy.xml into an XHTML file and display it.
+2. At the command line type:
+		make xhtml
+	 Open the resulting Apathy.xhtml in a webbrowser.
+
+=== Building Printable Version ===
+
+Move to the directory that contains the files: Apathy.xml, Apathy.latex.xsl. Type at the command line:
+	make latex
+	make pdf
+
+If you simply want to regenerate the PDF file, type:
+	make pdf
+
+If you've updated the Apathy.xml file and want PDF output, type:
+	make pdflatex
+
+=== Building Everything ===
+
+Type:
+	make all
