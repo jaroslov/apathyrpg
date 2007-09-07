@@ -215,7 +215,7 @@ Josh Kramer}
   <!-- special "plusminus" word -->
   <xsl:template match="plusminus">\ensuremath{\pm}</xsl:template>
   <!-- mathematical sum -->
-  <xsl:template match="Sum">\sum</xsl:template>
+  <xsl:template match="Sum">\displaystyle\sum</xsl:template>
   <!-- "n/a" notappl -->
   <xsl:template match="notappl">\textit{n/a}</xsl:template>
   <!-- define -->
@@ -322,7 +322,7 @@ Josh Kramer}
   <xsl:template match="mo"><xsl:apply-templates /></xsl:template>
   <xsl:template match="mn"><xsl:apply-templates /></xsl:template>
   <xsl:template match="msup">{<xsl:apply-templates select="./*[position()=1]"/>}^{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
-  <xsl:template match="munderover">{<xsl:apply-templates select="./*[position()=1]"/>}_{<xsl:value-of select="./*[position()=2]"/>}^{<xsl:apply-templates select="./*[position()=3]"/>}</xsl:template>
+  <xsl:template match="munderover"><xsl:apply-templates select="./*[position()=1]"/>_{<xsl:value-of select="./*[position()=2]"/>}^{<xsl:apply-templates select="./*[position()=3]"/>}</xsl:template>
   <xsl:template match="mfrac">{{<xsl:apply-templates select="./*[position()=1]"/>}\over{<xsl:apply-templates select="./*[position()=2]"/>}}</xsl:template>
   <xsl:template match="mstyle"><xsl:apply-templates /></xsl:template>
 
