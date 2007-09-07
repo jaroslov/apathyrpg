@@ -173,9 +173,9 @@
   <!-- special "oslash" word -->
   <xsl:template match="oslash">&#248;</xsl:template>
   <!-- special "ndash" word -->
-  <xsl:template match="ouml">&#8211;</xsl:template>
+  <xsl:template match="ndash">&#8211;</xsl:template>
   <!-- special "mdash" word -->
-  <xsl:template match="oslash">&#8212;</xsl:template>
+  <xsl:template match="mdash">&#8212;</xsl:template>
   <!-- special "trademark" word -->
   <xsl:template match="trademark">&#8482;</xsl:template>
   <!-- special "mathematical sum" word -->
