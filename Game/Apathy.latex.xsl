@@ -354,6 +354,7 @@ Josh Kramer}
           </xsl:if>
         </xsl:for-each>
   \\
+  \hline
   \endhead
       <xsl:for-each select="//category[@name=$hrid]/datum">
   \raggedright
@@ -367,17 +368,18 @@ Josh Kramer}
             </xsl:if>
           </xsl:for-each>
   \tabularnewline
-  \hline
       </xsl:for-each>
 \end{longtable}
     <!-- Builds the descriptor lists -->
-    <xsl:value-of select="$hrid"/>
+\begin{multicols}{2}
+\hspace{-1.75ex}
     <xsl:for-each select="//category[@name=$hrid]/datum">
       <xsl:variable name="datum-title" select="field[@title='yes']" />
 \hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
 
 \ruledesc{<xsl:apply-templates select="field[@description='yes']" />}\vspace{1ex}
     </xsl:for-each>
+\end{multicols}
   </xsl:template>
 
 </xsl:stylesheet>
