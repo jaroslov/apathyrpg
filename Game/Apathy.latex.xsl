@@ -201,7 +201,7 @@ Josh Kramer}
   <!-- special "rsquo" word -->
   <xsl:template match="rdquo">'</xsl:template>
   <!-- special "times" word -->
-  <xsl:template match="times">\ensuremath{\times}</xsl:template>
+  <xsl:template match="times">\times </xsl:template>
   <!-- special "ouml" word -->
   <xsl:template match="ouml">\"o</xsl:template>
   <!-- special "oslash" word -->
@@ -214,6 +214,8 @@ Josh Kramer}
   <xsl:template match="trademark">$^{TM}$</xsl:template>
   <!-- special "plusminus" word -->
   <xsl:template match="plusminus">\ensuremath{\pm}</xsl:template>
+  <!-- mathematical sum -->
+  <xsl:template match="Sum">\sum</xsl:template>
   <!-- "n/a" notappl -->
   <xsl:template match="notappl">\textit{n/a}</xsl:template>
   <!-- define -->
@@ -306,14 +308,22 @@ Josh Kramer}
   </xsl:template>
 
   <!-- math -->
+  <xsl:template match="equation">&#xa;&#xa;
+    \vspace{-.4in}
+    \begin{center}
+    \begin{equation}
+    <xsl:apply-templates select="math/*" />
+    \end{equation}
+    \end{center}
+  </xsl:template>
   <xsl:template match="math">\ensuremath{<xsl:apply-templates />}</xsl:template>
   <xsl:template match="mrow"><xsl:apply-templates /></xsl:template>
-  <xsl:template match="mi"><xsl:apply-templates /></xsl:template>
+  <xsl:template match="mi"><xsl:choose><xsl:when test="string-length(text())=1"><xsl:apply-templates /></xsl:when><xsl:otherwise>\texttt{<xsl:apply-templates />}</xsl:otherwise></xsl:choose></xsl:template>
   <xsl:template match="mo"><xsl:apply-templates /></xsl:template>
   <xsl:template match="mn"><xsl:apply-templates /></xsl:template>
   <xsl:template match="msup">{<xsl:apply-templates select="./*[position()=1]"/>}^{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
   <xsl:template match="munderover">{<xsl:apply-templates select="./*[position()=1]"/>}_{<xsl:value-of select="./*[position()=2]"/>}^{<xsl:apply-templates select="./*[position()=3]"/>}</xsl:template>
-  <xsl:template match="mfrac">\frac{<xsl:apply-templates select="./*[position()=1]"/>}{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
+  <xsl:template match="mfrac">{{<xsl:apply-templates select="./*[position()=1]"/>}\over{<xsl:apply-templates select="./*[position()=2]"/>}}</xsl:template>
   <xsl:template match="mstyle"><xsl:apply-templates /></xsl:template>
 
 </xsl:stylesheet>
