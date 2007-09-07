@@ -4,19 +4,15 @@
   <xsl:output method="text" encoding="UTF-8" media-type="text/plain" indent="no"/>
   <xsl:template match="/">
 \documentclass[twoside]{book}
-\usepackage{include}
 \usepackage{pslatex}
-\usepackage{psfonts}
 \usepackage{multicol}
 \usepackage{newcent}
-\usepackage{ncntrsbk}
 \usepackage{rotating}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{multirow}
 \usepackage{graphicx}
-\usepackage{multicolumn}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{wrapfig}
@@ -145,13 +141,13 @@ Josh Kramer}
   <xsl:template match="part">
     &#xa;
 \part{<xsl:apply-templates select="title" />}
-    <xsl:apply-templates select="chapter" />
+    <xsl:apply-templates select="chapter|reference" />
   </xsl:template>
   <!-- Chapter -->
   <xsl:template match="chapter">
     &#xa;
 \chapter{<xsl:apply-templates select="title" />}
-    <xsl:apply-templates select="section" />
+    <xsl:apply-templates select="section|reference" />
   </xsl:template>
   <!-- Section -->
   <xsl:template match="section">
@@ -238,7 +234,7 @@ Josh Kramer}
   <xsl:template match="num">\ensuremath{<xsl:apply-templates />}</xsl:template>
   <xsl:template match="face">\textscbf{d}\ensuremath{<xsl:apply-templates />}</xsl:template>
   <xsl:template match="bOff">\texttt{<xsl:apply-templates />}</xsl:template>
-  <xsl:template match="bns">\textscbf{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="bns">\ensuremath{<xsl:apply-templates />}</xsl:template>
   <xsl:template match="mul">\ensuremath{\times{}<xsl:apply-templates />}</xsl:template>
   <xsl:template match="kind">\textscbf{<xsl:apply-templates />}</xsl:template>
 
@@ -316,7 +312,7 @@ Josh Kramer}
     \end{equation}
     \end{center}
   </xsl:template>
-  <xsl:template match="math">\ensuremath{<xsl:apply-templates />}</xsl:template>
+  <xsl:template match="math">\begin{math}<xsl:apply-templates />\end{math}</xsl:template>
   <xsl:template match="mrow"><xsl:apply-templates /></xsl:template>
   <xsl:template match="mi"><xsl:choose><xsl:when test="string-length(text())=1"><xsl:apply-templates /></xsl:when><xsl:otherwise>\texttt{<xsl:apply-templates />}</xsl:otherwise></xsl:choose></xsl:template>
   <xsl:template match="mo"><xsl:apply-templates /></xsl:template>
@@ -325,5 +321,63 @@ Josh Kramer}
   <xsl:template match="munderover"><xsl:apply-templates select="./*[position()=1]"/>_{<xsl:value-of select="./*[position()=2]"/>}^{<xsl:apply-templates select="./*[position()=3]"/>}</xsl:template>
   <xsl:template match="mfrac">{{<xsl:apply-templates select="./*[position()=1]"/>}\over{<xsl:apply-templates select="./*[position()=2]"/>}}</xsl:template>
   <xsl:template match="mstyle"><xsl:apply-templates /></xsl:template>
+
+
+	<!--
+		Given a reference to the raw-data section, we build
+		a table, then build a descriptor-list.
+	-->
+  <xsl:template match="reference">
+    <!-- A unique hrid to the category we need -->
+    <xsl:variable name="hrid" select="./@hrid" />
+    <xsl:variable name="scName" select="../title"/>
+\begin{longtable}{p{1.25in}<xsl:for-each select="//category[@name=$hrid]/default/field"><xsl:if test="./@title"></xsl:if><xsl:if test="./@table"><xsl:value-of select="./@width" /></xsl:if></xsl:for-each>} 
+  <xsl:value-of select="$scName" />
+        <xsl:for-each select="//category[@name=$hrid]/default/field">
+          <xsl:if test="./@title"></xsl:if>
+          <xsl:if test="./@table">
+  &amp;
+  \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
+          </xsl:if>
+        </xsl:for-each>
+  \\
+  \hline
+  \hline
+  \endfirsthead
+  <xsl:value-of select="$scName" /> \textit{cont&apos;d}
+        <xsl:for-each select="//category[@name=$hrid]/default/field">
+          <xsl:if test="./@title">
+          </xsl:if>
+          <xsl:if test="./@table">
+  &amp;
+  \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
+          </xsl:if>
+        </xsl:for-each>
+  \\
+  \endhead
+      <xsl:for-each select="//category[@name=$hrid]/datum">
+  \raggedright
+          <xsl:for-each select="field" >
+            <xsl:if test="./@title">
+  <xsl:apply-templates select="." />
+            </xsl:if>
+            <xsl:if test="./@table">
+  &amp;
+  <xsl:apply-templates select="." />
+            </xsl:if>
+          </xsl:for-each>
+  \tabularnewline
+  \hline
+      </xsl:for-each>
+\end{longtable}
+    <!-- Builds the descriptor lists -->
+    <xsl:value-of select="$hrid"/>
+    <xsl:for-each select="//category[@name=$hrid]/datum">
+      <xsl:variable name="datum-title" select="field[@title='yes']" />
+\hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
+
+\ruledesc{<xsl:apply-templates select="field[@description='yes']" />}\vspace{1ex}
+    </xsl:for-each>
+  </xsl:template>
 
 </xsl:stylesheet>

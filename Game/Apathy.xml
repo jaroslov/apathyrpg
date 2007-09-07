@@ -876,7 +876,7 @@
             <text> For those that are mathematically inclined, here is
              the formula for determining CP of a particular skill level
              and rank: </text>
-	    <equation><math><mrow><munderover accentunder='true' accent='true'><mstyle scriptlevel='-2'><Sum/></mstyle><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>Desired Level</mi><mo>=</mo><mi>N</mi></mrow></munderover><mi>i</mi><mo><times/></mo><mi>Rank</mi><mo>=</mo><mfrac><mfenced><mrow><mi>Rank</mi><mo><times/></mo><mo>(</mo><msup><mi>N</mi><mn>2</mn></msup><mo>+</mo><mi>N</mi><mo>)</mo></mrow></mfenced><mn>2</mn></mfrac></mrow></math>  
+	    <equation><math><mrow><munderover accentunder='true' accent='true'><mstyle scriptlevel='-2'><Sum/></mstyle><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi></mrow></munderover><mi>i</mi><mo><times/></mo><mi>Rank</mi><mo>=</mo><mfrac><mfenced><mrow><mi>Rank</mi><mo><times/></mo><mo>(</mo><msup><mi>N</mi><mn>2</mn></msup><mo>+</mo><mi>N</mi><mo>)</mo></mrow></mfenced><mn>2</mn></mfrac></mrow></math>  
 	    </equation>
             <text> For the rest of us, use this nifty table, and multiply
              the value listed by the rank. </text>
@@ -5434,7 +5434,7 @@
             <description-list>  
               <item>
                 <description> OverFire </description>  
-                <text>  spends twice as much energy but deals 50\<percent /> more
+                <text>  spends twice as much energy but deals 50<percent /> more
                  damage </text>
               </item>  
               <item>
@@ -5600,21 +5600,27 @@
                <ldquo />type<rdquo /> or <ldquo />look<rdquo /> of the monster,
                they are: </text>
             <description-list>  
-                <item description='Anthropoid'>  essentially symmetric,
+                <item><description>Anthropoid</description>
+		  <text>Essentially symmetric,
                  bipedal, a head (and possible tail) etc.; a human-like
-                 monster </item>
-                <item description='Bipedal'>  covers non-anthropoid
+                 monster </text></item>
+                <item><description>Bipedal</description>
+		  <text> covers non-anthropoid
                  bipedal monsters, e.g. Duck, Chipmunk, Wyvern (two legs,
-                 two wings) </item>
-                <item description='Quadruped'>  typical of regular
+                 two wings) </text></item>
+                <item><description>Quadruped</description>
+		  <text>typical of regular
                  animals (mammals), e.g. Dog, Dragon (two legs, two arms,
-                 two wings) </item>
-              <item description='Serpent'>  tubes, e.g. Snail </item>  
-                <item description='Polymelic'>  monsters with many legs
+                 two wings) </text></item>
+              <item><description>Serpent</description>
+		  <text> tubes, e.g. Snail</text> </item>  
+                <item><description>Polymelic</description>
+		  <text>monsters with many legs
                  or many arms, e.g. Angelus Guhendrian (torus with twelve
-                 wings, and an eyeball) </item>
-                <item description='Amorphous'>  blobs, pools, puddles,
-                 whiffs-of-smoke </item>
+                 wings, and an eyeball)</text> </item>
+                <item><description>Amorphous</description>
+		  <text>blobs, pools, puddles,
+                 whiffs-of-smoke </text></item>
             </description-list>  
               <text> When constructing a monster, the base-type must be
                chosen. Based on the base-type, the size of the creature
@@ -6066,9 +6072,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Rank' />  
-        <field table='yes' name='Attribute' />  
-        <field table='yes' name='Occupation' />  
+        <field table='yes' name='Rank' width='l' />  
+        <field table='yes' name='Attribute' width='l' />  
+        <field table='yes' name='Occupation' width='p{12em}' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Acrobatics'>  
@@ -6154,12 +6160,12 @@
         <field table='yes' name='Attribute'> Intelligence </field>  
           <field table='yes' name='Occupation'> Doctor, assassin, hunter
            </field>
-          <field name='Description' description='yes'> [LaTeX] The
+          <field name='Description' description='yes'>  The
            academic knowledge of the bodies of humans and common animals.
            The skill holder will know the location and function of
            various organs, muscles, etc. This skill is helpful for
            medical purposes, and to identify weaknesses of your foes.
-           \VBoxColumnPicture{Images/Misc/Vitruvian.jpg} </field>
+          </field>
       </datum>  
       <datum name='Ancient History'>  
         <field name='Name' title='yes'> Ancient History </field>  
@@ -6406,14 +6412,7 @@
         <field table='yes' name='Occupation'> Any </field>  
           <field name='Description' description='yes'> Unique skill. This
            provides the character money. Character gets
-           <math>
-            <mrow>
-              <msup>
-                <mi>LVL</mi><mn>2</mn>
-              </msup>
-              <mo><times/></mo><mn>1000</mn>
-            </mrow>
-           </math> dollars in cash, equipment, or
+           <math><mrow><msup><mi>LVL</mi><mn>2</mn></msup><mo><times/></mo><mn>1000</mn></mrow></math> dollars in cash, equipment, or
            goods. This can be bought many times. </field>
           <field name='Implementation'> Money += Level*Level*500 </field>
       </datum>  
@@ -6424,12 +6423,12 @@
         <field table='yes' name='Attribute'> Intelligence </field>  
           <field table='yes' name='Occupation'> Chemist, weapons designer
            </field>
-          <field name='Description' description='yes'> [LaTeX] The
+          <field name='Description' description='yes'>  The
            scientific study of chemicals and chemical processes. A person
            with this skill will be able to identify chemicals and
            substances and make various chemical compounds (given the
            needed supplies, of course).
-           \VBoxColumnPicture{Images/Misc/The_Brewer_designed_and_engraved_in_the_Sixteenth_Century_by_J_Amman.png}
+           
            </field>
       </datum>  
       <datum name='Civil Engineering'>  
@@ -6671,7 +6670,7 @@
            skill of building, troubleshooting, and repairing electronic
            devices. A person with this skill would have only basic
            knowledge of designing electronic devices,
-           [latext]\textit{but}[\latex] they are skilled in repairing,
+           but they are skilled in repairing,
            modifying, and working on electronic items. This includes use
            of electronic tools such as test equipment, soldering gear,
            etc. </field>
@@ -6694,11 +6693,11 @@
         <field table='yes' name='Attribute'> Dexterity </field>  
           <field table='yes' name='Occupation'> Thief, spy, stage
            magician </field>
-          <field name='Description' description='yes'> [LaTeX] People
+          <field name='Description' description='yes'>  People
            with this skill have the ability to escape from bonds. This
            includes ropes, handcuffs, straight jackets, and similar
            restrictive bonds.
-           \VBoxColumnPicture{Images/Misc/HarryHoudini-1899.jpg} </field>
+          </field>
       </datum>  
       <datum name='Espionage/surveillance'>  
           <field name='Name' title='yes'> Espionage/surveillance </field>
@@ -7002,11 +7001,11 @@
         <field table='yes' name='Attribute'> Wisdom </field>  
           <field table='yes' name='Occupation'> Law enforcement,
            journalist, private investigator </field>
-          <field name='Description' description='yes'> [LaTeX] Gathering
+          <field name='Description' description='yes'>  Gathering
            information about something or someone using the media,
            interviewing people, looking at firsthand accounts and other
            evidence, etc.
-           \VBoxColumnPicture{Images/Misc/Holmes_by_Paget.jpg} </field>
+          </field>
       </datum>  
       <datum name='Journalism'>  
         <field name='Name' title='yes'> Journalism </field>  
@@ -7108,10 +7107,10 @@
         <field name='Name' title='yes'> Luck </field>  
         <field name='MetaTag'> Any </field>  
         <field table='yes' name='Rank'> 1 </field>  
-        <field table='yes' name='Attribute'> \emph{None} </field>  
+        <field table='yes' name='Attribute'> <none/> </field>  
         <field table='yes' name='Occupation'> Any </field>  
-          <field name='Description' description='yes'> [LaTeX] The
-           maximum value of the character&apos;s \emph{Luck} subattribute
+          <field name='Description' description='yes'>  The
+           maximum value of the character<rsquo/>s Luck subattribute
            is increased by one. </field>
       </datum>  
       <datum name='Lying'>  
@@ -7134,14 +7133,14 @@
         <field table='yes' name='Attribute'> Dexterity </field>  
           <field table='yes' name='Occupation'> Machinist, engineer,
            mechanic </field>
-          <field name='Description' description='yes'> [LaTeX] The skills
+          <field name='Description' description='yes'>  The skills
            of metalworking. This includes how to operate common tools in
            a metalworking shop, as well as processes such as welding,
            flame cutting, etc. A person with this skill can read
            blueprints, and can produce parts and devices from metal given
            the proper equipment. This skill is also useful for repairing
            mechanical devices, such as vehicles, robots, and mecha.
-           \VBoxColumnPicture{Images/Misc/Lathe.png} </field>
+	  </field>
       </datum>  
       <datum name='Magical Control'>  
         <field name='Name' title='yes'> Magical Control </field>  
@@ -7234,7 +7233,7 @@
         <field table='yes' name='Attribute'> Intelligence </field>  
           <field table='yes' name='Occupation'> Teacher, engineer,
            programmer </field>
-          <field name='Description' description='yes'> [LaTeX] Knowledge
+          <field name='Description' description='yes'>  Knowledge
            of mathematical theory and techniques for apply mathematics to
            real life situations. </field>
       </datum>  
@@ -7317,11 +7316,10 @@
         <field table='yes' name='Rank'> 2 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
           <field table='yes' name='Occupation'> Military officer </field>
-          <field name='Description' description='yes'> [LaTeX] The
+          <field name='Description' description='yes'>  The
            strategic deployment and command of troops, tanks, ships, and
            other units in war, police, security, and similar situations.
-           \VBoxColumnPicture{Images/MartialArts/Macedonian_Syntagma.jpg}
-           </field>
+          </field>
       </datum>  
       <datum name='Mining'>  
         <field name='Name' title='yes'> Mining </field>  
@@ -7422,12 +7420,11 @@
         <field table='yes' name='Attribute'> Intelligence </field>  
           <field table='yes' name='Occupation'> Engineer, physicist
            </field>
-          <field name='Description' description='yes'> [LaTeX] The
+          <field name='Description' description='yes'>  The
            academic study of natural laws, including mechanics,
            electricity and magnetism, optics, etc. The study of how and
            why things act the way they do.
-           \VBoxColumnPicture{Images/Misc/Roger_Bacon_optics01.jpg}
-           </field>
+          </field>
       </datum>  
       <datum name='Plumbing'>  
         <field name='Name' title='yes'> Plumbing </field>  
@@ -7629,13 +7626,12 @@
         <field table='yes' name='Attribute'> Wisdom </field>  
           <field table='yes' name='Occupation'> Blacksmith, maintenance
            worker </field>
-          <field name='Description' description='yes'> [LaTeX] The art of
+          <field name='Description' description='yes'>  The art of
            working with metal with primitive techniques. Persons with
            this skill are experienced at forming metal with a forge,
            hammer, and anvil. This skill can be used to make simple
            tools, weapons, and other goods.
-           \VBoxColumnPicture{Images/Misc/Scene-de-forge-edo.jpg}
-           </field>
+          </field>
       </datum>  
       <datum name='Spellcasting'>  
         <field name='Name' title='yes'> Spellcasting </field>  
@@ -7880,9 +7876,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Character Points' />  
-        <field table='yes' name='Prerequisite' />  
-        <field table='yes' name='Location' />  
+        <field table='yes' name='Character Points' width='p{2em}' />  
+        <field table='yes' name='Prerequisite' width='l' />  
+        <field table='yes' name='Location' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Arm Blades'>  
@@ -8074,9 +8070,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Character Points' />  
-        <field table='yes' name='Prerequisite' />  
-        <field table='yes' name='Location' />  
+	<field table='yes' name='Character Points' width='p{2em}' />
+        <field table='yes' name='Prerequisite' width='l' />  
+        <field table='yes' name='Location' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Abnormal Articulation'>  
@@ -8521,9 +8517,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Character Points' />  
-        <field table='yes' name='Prerequisite' />  
-        <field table='yes' name='Location' />  
+        <field table='yes' name='Character Points' width='p{2em}' />  
+        <field table='yes' name='Prerequisite' width='l' />  
+        <field table='yes' name='Location' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Advanced Audio'>  
@@ -9224,9 +9220,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Character Points' />  
-        <field table='yes' name='Prerequisite' />  
-        <field table='yes' name='Location' />  
+        <field table='yes' name='Character Points' width='p{2em}' />  
+        <field table='yes' name='Prerequisite' width='l' />  
+        <field table='yes' name='Location' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Climbing Feet'>  
@@ -9351,9 +9347,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Character Points' />  
-        <field table='yes' name='Prerequisite' />  
-        <field table='yes' name='Location' />  
+        <field table='yes' name='Character Points' width='p{2em}' />  
+        <field table='yes' name='Prerequisite' width='l' />  
+        <field table='yes' name='Location' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Advanced Digestive Sys'>  
@@ -9663,9 +9659,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -9711,7 +9707,7 @@
            desirable for hunting, because it is likely to kill or
            incapacitate the target animal quickly, even if the vital
            organs are missed. A broadhead is a wide, diamond-shaped head
-           that has two or more <ldquo />fins&apos;&apos; on it that are
+           that has two or more <ldquo />fins<rdquo/> on it that are
            sharpened into blades<mdash/>which cut a devastating wound in
            the target. </field>
         <field name='Implementation' />  
@@ -9724,7 +9720,7 @@
         <field table='yes' name='Damage' />  
         <field name='Hands' />  
           <field name='Description' description='yes'> The
-           <ldquo />standard&apos;&apos; type of arrow point. The tip is
+           <ldquo />standard<rdquo/> type of arrow point. The tip is
            pointed, but somewhat blunt, like a rifle bullet. They are
            used for hunting small game, and for target shooting. They are
            also common arrows for some military use since they are easily
@@ -9806,12 +9802,12 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Note' />  
-        <field table='yes' name='Encumbrance' />  
-        <field table='yes' name='Piercing' />  
-        <field table='yes' name='Slashing' />  
-        <field table='yes' name='Crushing' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Note' width='l' />  
+        <field table='yes' name='Encumbrance' width='p{2em}' />  
+        <field table='yes' name='Piercing' width='p{2em}' />  
+        <field table='yes' name='Slashing' width='p{2em}' />  
+        <field table='yes' name='Crushing' width='p{2em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -9935,11 +9931,10 @@
         <field table='yes' name='Piercing'> 7 </field>  
         <field table='yes' name='Slashing'> 8 </field>  
         <field table='yes' name='Crushing'> 9 </field>  
-          <field name='Description' description='yes'> [LaTeX] A leather
+          <field name='Description' description='yes'>  A leather
            suit covered in overlapping and layerd metal plates that curve
            around the body.
-           \VBoxColumnPicture{Images/Equipment/Armor/Hirschvogel_Sigismund.jpg}
-           </field>
+          </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Beast Leather'>  
@@ -10086,13 +10081,12 @@
         <field table='yes' name='Piercing'> 3 </field>  
         <field table='yes' name='Slashing'> 7 </field>  
         <field table='yes' name='Crushing'> 1 </field>  
-          <field name='Description' description='yes'> [LaTeX] Chain mail
+          <field name='Description' description='yes'>  Chain mail
            consists of an armored vest (Hauberk) and pants. The armor is
            a very flexible fabric that is made of thousands of
            interlocking metal rings. Typically this is worn over padded
            armor as the rings are known for chafing against bare skin.
-           \VBoxColumnPicture{Images/Equipment/Armor/Morgan_Bible_28r_detail.jpg}
-           </field>
+          </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Chain and Brigandine'>  
@@ -10241,10 +10235,10 @@
         <field table='yes' name='Piercing'> 5 </field>  
         <field table='yes' name='Slashing'> 5 </field>  
         <field table='yes' name='Crushing'> 4 </field>  
-          <field name='Description' description='yes'> [LaTeX] A thick,
+          <field name='Description' description='yes'>  A thick,
            bulky vest that is padded and contains iron plates that cover
            vital areas of the chest and groin. (Millitary style, WWII,
-           etc.) \VBoxColumnPicture{Images/Equipment/Armor/Sn-42b.jpg}
+           etc.)
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -10859,14 +10853,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -11033,8 +11027,8 @@
            countries, the huge swept blade would easily cleave armor and
            limbs alike, and the carved handle provided for a very
            controllable swing. Many Norse warriors named their war-axes
-           such things as <ldquo />widowmaker&apos;&apos; or
-           <ldquo />swordbreaker&apos;&apos;. </field>
+           such things as <ldquo />widowmaker<rdquo/> or
+           <ldquo />swordbreaker<rdquo/>. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Pickaxe'>  
@@ -11060,14 +11054,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -11285,12 +11279,12 @@
         <field table='yes' name='Minimum Strength'> 8 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 12 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
-          <field name='Description' description='yes'> [LaTeX] A very
+          <field name='Description' description='yes'>  A very
            easy-to-make weapon consisting of a cord with a weight on the
            end. A slungshot is used much like a yo-yo. It is not a
            chained weapon because of it&apos;s use: straight-line shots.
            The range of the weapon can be up to 10 feet. Specialists may
-           use a variant called a <ldquo />loaded sleeve&apos;&apos; which
+           use a variant called a <ldquo />loaded sleeve<rdquo/> which
            is a modification of long robe-sleeves to use the weapon. As
            an Exotic weapon, the slungshot may be used twice in a single
            action. </field>
@@ -11309,7 +11303,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> A common sidearm
            of police and security personnel throughout the ages. It
-           consists of a metal or wooden bar, about 18&apos;&apos; long,
+           consists of a metal or wooden bar, about 18<rdquo/> long,
            equipped with a handle mounted at 90 degrees to the bar, one
            third of the way down. It is quick to swing, and can deal
            crushing blows. As well, it is effective at blocking enemy
@@ -11335,14 +11329,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -11359,7 +11353,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 10 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> Heavy metal brass
-           knuckles, shaped like a <ldquo />D&apos;&apos;; made by Rock
+           knuckles, shaped like a <ldquo />D<rdquo/>; made by Rock
            Trolls. Can be used as Blunt or Body (punch). Can cast any of
            the following spells, but only one of the spells per day
            </field>
@@ -11435,9 +11429,9 @@
            and have a bright white color despite their age and lack of
            care. EAch glove has a large cuff that surrounds the wrist
            ofthe wearer. The left glove has black text reading
-           <ldquo />Speak With The Dead&apos;&apos; superimposed over a
+           <ldquo />Speak With The Dead<rdquo/> superimposed over a
            cross imprinted onto the back of the hand. The right glove has
-           text reading <ldquo />Saint Simon is in Heaven Now.&apos;&apos;
+           text reading <ldquo />Saint Simon is in Heaven Now.<rdquo/>
            These gloves have the following properties, which only work if
            both glvoes are worn </field>
         <field name='Implementation' />  
@@ -11484,14 +11478,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -11617,14 +11611,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -11775,7 +11769,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 28 </field>  
         <field table='yes' name='Recovery'> 3 </field>  
           <field name='Description' description='yes'> Literally
-           <ldquo />Hammer of Iron&apos;&apos;, this is the largest of the
+           <ldquo />Hammer of Iron<rdquo/>, this is the largest of the
            hammer type weapons. It&apos;s fifty-pound iron head requires
            a true brute to swing, but woe to those who would be in its
            path. </field>
@@ -11824,7 +11818,7 @@
         <field table='yes' name='Recovery'> 1 </field>  
           <field name='Description' description='yes'> The largest of the
            Japanese swords. No-Dachi have blades that exceed
-           40&apos;&apos; in length. The entire sword is considerably
+           40<rdquo/> in length. The entire sword is considerably
            longer. They are strongly curved, and were worn slung across
            the back. Though they require significant space to swing,
            there is no more powerful sword in the world. A warrior with
@@ -12007,14 +12001,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -12065,7 +12059,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> Also called a
            Quatar or punch dagger. It consists of a handle mounted
-           perpendicular to the blade, often in a <ldquo />T&apos;&apos;
+           perpendicular to the blade, often in a <ldquo />T<rdquo/>
            shape. The handle is gripped in a closed fist, with a
            triangular blade extending forward. It is used in a punching
            motion. </field>
@@ -12119,7 +12113,7 @@
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> A special variety
            of fighting knife. The slender blade is longer than
-           8&apos;&apos;, and sharpened along both edges. This is among
+           8<rdquo/>, and sharpened along both edges. This is among
            the largest weapons in this category<mdash/>and is effective
            for both stabbing and slashing. </field>
         <field name='Implementation' />  
@@ -12153,7 +12147,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 2 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> This would be a
-           typical pocketknife, <ldquo />Swiss army knife&apos;&apos;, or
+           typical pocketknife, <ldquo />Swiss army knife<rdquo/>, or
            any knife with a short blade. Not very effective as a weapon,
            but easy to conceal<mdash/>and a decent backup. </field>
         <field name='Implementation' />  
@@ -12200,14 +12194,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -12291,12 +12285,11 @@
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 13 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
-          <field name='Description' description='yes'> [LaTeX] A fearsome
+          <field name='Description' description='yes'>  A fearsome
            sword with scalloped, flame-like, blade edges. Sure to inspire
            terror in your enemies, before you cut them down where they
            stand.
-           \VBoxColumnPicture{Images/Equipment/Melee/Flamberge.png}
-           </field>
+          </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Grand Saber'>  
@@ -12478,14 +12471,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -12501,7 +12494,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 0 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
           <field name='Description' description='yes'>
-           [latex]\emph{Special See text above.}[/latex] </field>
+           Special See text above. </field>
         <field name='Implementation' />  
       </datum>  
     </category>  
@@ -12509,14 +12502,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -12579,7 +12572,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 0 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> A standard
-           European-style <ldquo />cut and thrust&apos;&apos; sword. It was
+           European-style <ldquo />cut and thrust<rdquo/> sword. It was
            the mainstay weapon of the footsoldiers of many past
            armies<mdash/>a durable weapon that can be counted on in
            combat. </field>
@@ -12590,14 +12583,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -12947,14 +12940,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -13062,14 +13055,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -13230,11 +13223,11 @@
         <field table='yes' name='Maximum Strength Bonus'> 4 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> The class
-           <ldquo />fencing&apos;&apos; sword used in duels from the
-           [latex]<dollar /><math><msup><mn>16</mn><mi>th</mi></msup></math><ndash/><dollar /><math><msup><mn>19</mn><mi>th</mi></msup></math>[/latex] c. If the user has
+           <ldquo />fencing<rdquo/> sword used in duels from the
+           <math><msup><mn>16</mn><mi>th</mi></msup></math><ndash/><math><msup><mn>19</mn><mi>th</mi></msup></math> c. If the user has
            weapon specialization in Small Sword then the weapon can be
            used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns></bns></roll>with 4 AP and a MSB of
-           12. If the weapon is used as [latex]\emph{exotic}[/latex]
+           12. If the weapon is used as exotic
            (with the accompanying Exotic skill), then the wielder gets a
            bonus die to his pool when using the weapon with Multitarget.
            </field>
@@ -13251,13 +13244,12 @@
         <field table='yes' name='Minimum Strength'> 10 </field>  
         <field table='yes' name='Maximum Strength Bonus'> 8 </field>  
         <field table='yes' name='Recovery'> 1 </field>  
-          <field name='Description' description='yes'> [LaTeX] A
+          <field name='Description' description='yes'>  A
            14&apos;<ndash/>18&apos; flat stone (typically jade) paddle.
            Has a razor-sharp edge. Weighs about 4 pounds for a 14&apos;
            version, and an addition pound per inch. For each additional
            pound/inch add +2 to the MSB.
-           \VBoxColumnPicture{Images/Equipment/Melee/Macahuitl.png}
-           </field>
+          </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Wakizashi'>  
@@ -13285,14 +13277,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -13422,14 +13414,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Maximum Strength Bonus' />  
-        <field table='yes' name='Recovery' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
+        <field table='yes' name='Maximum Strength Bonus' width='p{3em}' />  
+        <field table='yes' name='Recovery' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -13462,7 +13454,7 @@
           <field name='Description' description='yes'> A ring-shaped
            blade hurled at your target, much like a Frisbee. Chakrams are
            available in various sizes, ranging from six inches in
-           diameter to over 16&apos;&apos;. They are generally worn in
+           diameter to over 16<rdquo/>. They are generally worn in
            groups on a belt hook, or slung on the warrior&apos;s arms.
            </field>
         <field name='Implementation' />  
@@ -13526,7 +13518,7 @@
         <field table='yes' name='Maximum Strength Bonus'> 1 </field>  
         <field table='yes' name='Recovery'> 0 </field>  
           <field name='Description' description='yes'> The well known
-           <ldquo />Ninja&apos;s star&apos;&apos;. Shuriken are small
+           <ldquo />Ninja&apos;s star<rdquo/>. Shuriken are small
            starlike bladed throwing weapons, having anywhere from three
            to twelve points on them. The most common have between three
            and six points. They are very easy to conceal, but don&apos;t
@@ -13608,7 +13600,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost' />  
+        <field table='yes' name='Cost' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -15014,7 +15006,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Cost'> <dollar />100.00 </field>  
           <field name='Description' description='yes'> A big
-           <ldquo />cabin&apos;&apos; style tent. Has lots of room inside,
+           <ldquo />cabin<rdquo/> style tent. Has lots of room inside,
            up to 8 adults. </field>
       </datum>  
       <datum name='Tent, small'>  
@@ -15072,7 +15064,7 @@
         <field name='MetaTag' />  
         <field table='yes' name='Cost'> <dollar />75.00 </field>  
           <field name='Description' description='yes'> A pocket tool
-           similar to a <ldquo />swiss army knife&apos;&apos;. It has
+           similar to a <ldquo />swiss army knife<rdquo/>. It has
            common tools inside, like pliers, screwdriver, knife blade,
            etc. Very handy, but not tough enough for serious jobs or
            manuverable enough for delicate work. </field>
@@ -15214,14 +15206,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Damage' />  
-        <field table='yes' name='Hands' />  
-        <field table='yes' name='Minimum Strength' />  
-        <field table='yes' name='Recovery' />  
-        <field table='yes' name='Range' />  
+        <field table='yes' name='Class' width='l' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Damage' width='l' />  
+        <field table='yes' name='Hands' width='p{2em}' />  
+        <field table='yes' name='Minimum Strength' width='p{2em}' />  
+        <field table='yes' name='Recovery' width='l' />  
+        <field table='yes' name='Range' width='p{2em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -15480,7 +15472,7 @@
         <field table='yes' name='Range'> 400 </field>  
           <field name='Description' description='yes'> A recurve bow is
            one that has been specially treated so that the bow itself
-           <ldquo />wants&apos;&apos; to bend in the opposite direction
+           <ldquo />wants<rdquo/> to bend in the opposite direction
            that it actually does when drawn. This puts more force on the
            bowstring therefore equates to a more powerful bow. </field>
         <field name='Implementation' />  
@@ -15550,12 +15542,12 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Cost' />  
-        <field table='yes' name='Note' />  
-        <field table='yes' name='Piercing' />  
-        <field table='yes' name='Slashing' />  
-        <field table='yes' name='Crushing' />  
-        <field table='yes' name='Minimum Strength' />  
+        <field table='yes' name='Cost' width='l' />  
+        <field table='yes' name='Note' width='l' />  
+        <field table='yes' name='Piercing' width='p{3em}' />  
+        <field table='yes' name='Slashing' width='p{3em}' />  
+        <field table='yes' name='Crushing' width='p{3em}' />  
+        <field table='yes' name='Minimum Strength' width='p{3em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -15794,14 +15786,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -16484,14 +16476,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -16648,7 +16640,7 @@
            </field>
           <field table='yes' name='Range' qsummary='yes'> target </field>
         <field table='yes' name='Target' qsummary='yes'> Auto </field>  
-          <field name='Description' description='yes'> [LaTeX] Disenchant
+          <field name='Description' description='yes'>  Disenchant
            is used to remove magical effects from an object or area. Each
            casting of Disenchant affects a single magical spell or
            effect. If disenchant is used on a spell of <math><msup><mn>3</mn><mi>rd</mi></msup></math> rank or
@@ -16657,28 +16649,34 @@
            higher, then the spell may or may not be affected. In this
            case the caster of Disenchant enters a contest of skills
            (Magical Control) with the original caster of the existing
-           spell, with the following conditions: \begin{enumerate} \item
+           spell, with the following conditions:
+	   <enumerated-list>
+	   <item><text>
            The Original caster of the spell (even if he is deceased)
            rolls Magical Control using the statistics he had at the time
            the original spell was first cast. Furthermore, he adds the
-           rank of that spell to his roll. \item The caster of disenchant
+           rank of that spell to his roll.</text></item>
+	   <item><text>
+	       The caster of disenchant
            rolls Magical Control using his current statistics.
            Furthermore, he may add +1 to his roll for each 50 MP spent
-           beyond the original casting cost of Disenchant. \item If the
+           beyond the original casting cost of Disenchant.</text></item>
+	   <item><text> If the
            original caster wins the contest, the original spell remains
            in effect, unchanged. If the disenchant caster wins the
            contest, the original spell instantly stops functioning. In
-           both cases the caster of disenchant looses the MP spent.
-           \end{enumerate} \quotexample[Br\c{a}\"{e}tzn\.{r} attempts to
-           disenchant]{Five years ago Ulek the Pious cast Major Ward on a
+           both cases the caster of disenchant looses the MP spent.</text></item>
+	   </enumerated-list>
+	   <example><title>Bratzner attempts to
+           disenchant</title><text>Five years ago Ulek the Pious cast Major Ward on a
            lockbox containing some scrolls. Now, having slain Ulek, an
-           evil wizard, Br\c{a}\"{e}tzn\.{r} wishes to disenchant Major
+           evil wizard, Bratzner wishes to disenchant Major
            Ward so that he can open the box unharmed. Because Major Ward
            is <math><msup><mn>5</mn><mi>th</mi></msup></math> rank, Disenchant does not automatically work, and
            a skill contest is required. Even though Ulek is dead,
-           <ldquo />he&apos;&apos; is still entitled to a roll. The GM
+           <ldquo />he<rdquo/> is still entitled to a roll. The GM
            determines that Ulek had Magical Control level 4 and WIL 15 at
-           the time Major Ward was first cast. Thus, Ulek&apos;s roll is
+           the time Major Ward was first cast. Thus, Ulek<rsquo/>s roll is
            4 dice + 15 (from wisdom) and +5 from the spell level. The GM
            keeps this information secret, and rolls for Ulek: Three
            successes. The evil wizard now rolls: He has Lvl 5 Magical
@@ -16686,7 +16684,7 @@
            which gives him +5 to his roll. His roll is 5 dice + 19, and
            comes up four successes. Because the evil wizard wins the
            skill contest, disenchant is successful and Major Ward
-           disappears.} </field>
+           disappears.</text></example> </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Enlighten'>  
@@ -17300,14 +17298,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -17818,14 +17816,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -18468,14 +18466,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -19054,14 +19052,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -19921,14 +19919,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -20550,14 +20548,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -21335,14 +21333,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -21995,14 +21993,14 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' />  
-        <field table='yes' name='Rank' qsummary='yes' />  
-        <field table='yes' name='Casting Time' qsummary='yes' />  
-        <field table='yes' name='Damage' qsummary='yes' />  
-        <field table='yes' name='Duration' qsummary='yes' />  
-        <field table='yes' name='Magic Points' qsummary='yes' />  
-        <field table='yes' name='Range' qsummary='yes' />  
-        <field table='yes' name='Target' qsummary='yes' />  
+        <field table='yes' name='Type' qsummary='yes' width='l' />  
+        <field table='yes' name='Rank' qsummary='yes' width='p{2em}' />  
+        <field table='yes' name='Casting Time' qsummary='yes' width='p{3em}' />  
+        <field table='yes' name='Damage' qsummary='yes' width='l' />  
+        <field table='yes' name='Duration' qsummary='yes' width='l' />  
+        <field table='yes' name='Magic Points' qsummary='yes' width='p{7em}' />  
+        <field table='yes' name='Range' qsummary='yes' width='l' />  
+        <field table='yes' name='Target' qsummary='yes' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -22693,9 +22691,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Rank' />  
-        <field table='yes' name='Attribute' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Rank' width='l' />  
+        <field table='yes' name='Attribute' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -22705,37 +22703,52 @@
         <field table='yes' name='Type'> Basic </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] The skill
+          <field name='Description' description='yes'>  The skill
            of attacking with and parrying (if applicable) with the given
            (archaic) weapon type. Archaic weapons include both Melee and
            Ranged. The damage and type of the weapon is listed in the
-           Equipment section. Note that \emph{Archaic Weapons} actually
-           encompasses many different skills. \begin{description}
-           \item[Class] skills are for individual \emph{classes} of
-           archaic weapon, such as \emph{Axe} or \emph{Polearm}. These
-           must be bought individual and are Rank 1 skills. \item[Super
-           Class] skills are for groups of \emph{classes}. These groups
-           are: \textscbf{Stick} Long Swords, Short Swords, Knives, Blunt
-           \textscbf{Axes} Axes, Blunt \textscbf{Flexible} Chained,
-           Monofilament, Ships \textscbf{Great} Staves, Polearms
-           \textscbf{Missile} Ranged, Thrown \emph{SuperClasses} are Rank
-           2 and not Rank 1. A \emph{SuperClass} may \emph{never} be
-           Specialized. \item[Exotic] Certain weapons are Exotic (most of
+           Equipment section. Note that Archaic Weapons actually
+           encompasses many different skills.
+	   <description-list>
+           <item><description>Class</description><text> skills are for
+           individual classes of archaic weapon, such as
+           Axe or Polearm. These must be bought
+           individual and are Rank 1 skills.</text></item>
+	   <item><description>Super Class</description><text> skills
+           are for groups of classes. These groups are:
+	       <description-list>
+		 <item><description>Stick</description>
+		   <text>Long Swords, Short Swords, Knives, Blunt</text></item>
+		 <item><description>Axes</description>
+		   <text>Axes, Blunt</text></item>
+		 <item><description>Flexible</description>
+		   <text>Chained, Monofilament, Ships</text></item>
+		 <item><description>Great</description>
+		   <text>Staves, Polearms</text></item>
+		 <item><description>Missile</description>
+		   <text>Ranged, Thrown</text></item>
+	       </description-list>
+		 Super-Classes are
+           Rank 2 and not Rank 1. A Super-Class may never
+           be Specialized.</text></item>
+	   <item><description>Exotic</description><text> Certain weapons are Exotic (most of
            these are in the Exotic category, but some are within other
-           categories). All Exotic weapons \emph{require} that you
+           categories). All Exotic weapons require that you
            purchase an individual skill for them. For example, the
            Zaghnal is Exotic, in order to use the Zaghnal, a character
-           must purchase the specific skill \emph{Zaghnal}. Exotic skills
-           may be specialized. \end{description} \parindent=5pt
-           \everypar{\hangindent=20pt \hangafter=1} In addition, any
+           must purchase the specific skill Zaghnal. Exotic skills
+           may be specialized.</text></item>
+	   </description-list>
+           <text>
+	   In addition, any
            non-Exotic and non-Chained weapon can be used as a blunt
            weapon. It deals damage as a low-quality club of the same
-           mass. Blunt weapons may be manufactured \emph{ad hoc} from
+           mass. Blunt weapons may be manufactured ad hoc from
            items laying around, i.e. rolling-pins, chair-legs, lead-pipe.
            As we know this will come up, a limb that includes the
-           \emph{joint} and significant portions of both the upper and
-           lower section, is considered chained and thus \emph{may not}
-           be used. </field>
+           joint and significant portions of both the upper and
+           lower section, is considered chained and thus may not
+           be used.</text> </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Barrel Charge'>  
@@ -22744,11 +22757,11 @@
         <field table='yes' name='Type'> Basic </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Strength </field>  
-          <field name='Description' description='yes'> [LaTeX] Knock over
+          <field name='Description' description='yes'>  Knock over
            an opponent (like a trip) by running through or at them. You
            must move at least 10 feet immediately prior to this action.
-           Roll a \textscbf{Str} check against the opponent, where they
-           get a [-LVL] (raw!) to their roll. A \emph{Barrel Charge}
+           Roll a Str check against the opponent, where they
+           get a [-LVL] (raw!) to their roll. A Barrel Charge
            deals <roll><num>1</num><face>6</face><bns></bns><kind>C</kind></roll> damage. </field>
         <field name='Implementation' />  
       </datum>  
@@ -22758,32 +22771,39 @@
         <field table='yes' name='Type'> Basic </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] Grappling
+          <field name='Description' description='yes'>  Grappling
            is an attack that seeks to grab and restrain the target rather
            than dealing immediate damage. It may also be used as a set-up
            for aother martial arts techniques that require the target to
            be grappled first. The target may defend against the grappler
            in one of four different ways.
-           \VBoxColumnPicture{Images/MartialArts/Bubishi.png}
-           \begin{enumerate} \item If the target is not grappled, then he
-           may \emph{Dodge} \item If the target is not grappled and has a
-           melee weapon, then he may defend by parrying \item If the
+	    <enumerated-list>
+              <item><text>If the target is not grappled, then he
+           may Dodge</text></item>
+	      <item><text>If the target is not grappled and has a
+           melee weapon, then he may defend by parrying</text></item>
+	      <item><text>If the
            target is grappled, or not suitably armed but also has the
-           \emph{Grapple} skill, then he may engage in a
-           contest-of-skills with the grappler (wrestling) \item
-           Otherwise the target may attempt a \textscbf{Str} check with a
-           \textsl{raw} minus equal to the Grappler&apos;s LVL in
-           \emph{Grapple} \end{enumerate} \parindent=5pt
-           \everypar{\hangindent=20pt \hangafter=1} Grapples are
+           Grapple skill, then he may engage in a
+           contest-of-skills with the grappler (wrestling)</text></item>
+	      <item><text>
+           Otherwise the target may attempt a Str check with a
+           raw minus equal to the Grappler<rsquo/>s LVL in
+           Grapple</text></item>
+	      </enumerated-list>
+	    <text>
+              Grapples are
            ineffective against amorphous or incorporeal creatures unless
            otherwise noted. Once in a grapple the grappled opponent may
            attempt to break free on any of his actions. A grappled target
            is at -2*LVL to defend against the grappler
-           (\textscbf{Str}-checking, or Grapple-contest). \parindent=5pt
-           \everypar{\hangindent=20pt \hangafter=1} If a target is
-           \emph{Grapple}d they can \emph{Grapple} the attacker without
+           (Str-checking, or Grapple-contest).
+	      </text>
+	    <text>
+              If a target is
+              Grappled they can Grapple the attacker without
            any minuses. If the target succeeds then both are considered
-           \emph{Grappled}. This is called \emph{Wrestling}. </field>
+           Grappled. This is called Wrestling.</text></field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Modern Weapons'>  
@@ -22792,10 +22812,10 @@
         <field table='yes' name='Type'> Basic </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] The skill
+          <field name='Description' description='yes'>  The skill
            of attacking with various modern weapons. Choose the weapon
            type when purchasing this skill. There are no
-           \emph{SuperClass} equivalents (as in \emph{Archaic Weapons}).
+           Super-Class equivalents (as in Archaic Weapons).
            However, for all firearms of roughly the same period it is
            assumed that anyone can at least fire them (given that they
            can figure out how to load, chamber, turn off the safety,
@@ -22810,28 +22830,35 @@
         <field table='yes' name='Type'> Basic </field>  
         <field table='yes' name='Rank'> See description. </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] You
+          <field name='Description' description='yes'>  You
            deliver a P, C, or S blow using your fist or foot
-           (\textsl{Punch} and \textsl{Kick}, respectively). The damage
-           for a for a kick is <dollar />X<dollar />D6 and for a punch is <dollar />X<dollar />D4, where <dollar />X<dollar />
+           (Punch and Kick, respectively). The damage
+           for a for a kick is <roll><num>X</num><face>6</face></roll>
+	    and for a punch is <roll><num>X</num><face>4</face></roll>,
+		where <math><mi>X</mi></math>
            is the Rank of the skill. A martial srtist may increase the
            Rank of this skill even after he has bought it.
-           \quotexample[Rei hits harder]{Rei has decided that he wants to
+           <example>
+	     <title>Rei hits harder</title>
+	     <text>Rei has decided that he wants to
            hit harder with his punches and kicks. He currently has Rank
-           2, Level 4, \emph{Punch/Kick}. He decides to increase the Rank
-           of his \emph{Punch/Kick} to 3. The cost of a Rank 2, Level 4
+           2, Level 4, Punch/Kick. He decides to increase the Rank
+           of his Punch/Kick to 3. The cost of a Rank 2, Level 4
            skill is 20; the cost of a Rank 3, Level 4 skill is 30, so he
-           owes <dollar />30-20=10<dollar /> character points.} The Maximum Strength Bonus
-           (MSB) of \emph{Punch/Kick} is <ldquo />unlimited,&apos;&apos;
+           owes <math><mrow><mn>30</mn><mo>-</mo><mn>20</mn><mo>=</mo><mn>10</mn></mrow></math> character points.</text>
+	   </example>
+	     <text>
+	       The Maximum Strength Bonus
+           (MSB) of Punch/Kick is <ldquo />unlimited,<rdquo/>;
            and the Minimum Strength Requirement (MSR) is 8. Characters
-           with less than an 8 \textscbf{STR} can still purchase
-           \emph{Punch/Kick} but have a negative to the raw damage they
+           with less than an 8 STR can still purchase
+           Punch/Kick but have a negative to the raw damage they
            deal. A kick is always considered the most off-hand weapon;
            that is, if you only kick you are at a -3 to strike. If you
            punch and kick, the punch is at -3, and kick at -6. If you do
            two punches and a kick, then the punches are -3 and -6, and
            the kick is -9 to strike. This can be mitigated by
-           ambidexterity. </field>
+           ambidexterity.</text> </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Throw'>  
@@ -22840,18 +22867,18 @@
         <field table='yes' name='Type'> Basic </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Strength </field>  
-          <field name='Description' description='yes'> [LaTeX] A throw is
+          <field name='Description' description='yes'>  A throw is
            an attack that is performed against a grappled target. It
            causes damage and also knocks the target down, forcing the
            target to spend actions to get back up again. The target takes
            <roll><num>1</num><face>6</face><bns></bns><kind>C</kind></roll> damage per LVL. Once the throw is performed, the
-           \emph{Grapple} is automatically released. The target is thrown
+           Grapple is automatically released. The target is thrown
            in any direction of the martial artist five feet for each LVL
-           in \emph{Throw}. The martial artist may choose to throw the
+           in Throw. The martial artist may choose to throw the
            target straight down at his feet instead. Throw may not be
            blocked, parried, or dodged. However, the target may attempt
            to reduce damage by supernatural means, such as blink, or by a
-           successful \emph{Acrobatics} check with a minus equal to the
+           successful Acrobatics check with a minus equal to the
            damage dealt. </field>
         <field name='Implementation' />  
       </datum>  
@@ -22860,9 +22887,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Rank' />  
-        <field table='yes' name='Attribute' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Rank' width='l' />  
+        <field table='yes' name='Attribute' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -22872,20 +22899,21 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 3 </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] You are
+          <field name='Description' description='yes'>  You are
            trained to fight with two weapons simultaneously. Each skill
            level reduces the dual-wield penalty by 1 point for each hand.
            Note that no matter the level of Ambidexterity, it can never
            provide a positive bonus; it can only reduce or remove the
            normal penalty.
-           \VBoxColumnPicture{Images/MartialArts/two-weapon-style.png}
-           \quotexample[Candlestick is ambidextrous]{Candlestick has 3
+           <example>
+	     <title>Candlestick is ambidextrous</title>
+	     <text>Candlestick has 3
            levels of ambidexterity; he has -0 to strike with his
            <lsquo />good<rdquo /> hand and -3 to strike with the off hand. If
            Candlestick had 6 levels of ambidexterity he would no negative
            at all when attacking with his <math><msup><mn>2</mn><mi>nd</mi></msup></math> weapon, and a -3 with
            his <math><msup><mn>3</mn><mi>rd</mi></msup></math> weapon, for instance if he were doing two punches
-           and a kick.} </field>
+           and a kick.</text></example> </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Blind Fighting'>  
@@ -22894,7 +22922,7 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 2 </field>  
         <field table='yes' name='Attribute'> Perception </field>  
-          <field name='Description' description='yes'> [LaTeX] You have
+          <field name='Description' description='yes'>  You have
            experience fighting when your vision is compromised or
            obscured due to injury, darkness, smoke, or other impediments
            to your vision. Each level in Blind Fighting reduces the
@@ -22922,28 +22950,32 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 5 </field>  
         <field table='yes' name='Attribute'> Willpower </field>  
-          <field name='Description' description='yes'> [LaTeX] You may
+          <field name='Description' description='yes'>  You may
            cast spells in combat. Without this skill, if you are struck
            or must defend, you automatically fail to cast any spell and
-           you lose the Mana Points. With this skill, if you \emph{fail}
+           you lose the Mana Points. With this skill, if you fail
            your defensive roll, then the spell fails, but the Mana Points
-           are not lost. You only ever need one level in \emph{Combat
-           Casting}. All spells you cast now count as \textsc{Special}
+           are not lost. You only ever need one level in Combat
+           Casting. All spells you cast now count as Special
            skills for the purpose of modification, etc. with Martial
-           Arts. For the purposes of \emph{Jitsu}, \emph{Waza}, etc.,
-           alls spells are considered to be a \textsc{Special} skill
-           whose name is \emph{Spell}. \quotexample[Ulek&apos;s
-           Fire-Bomb]{Ulek finds himself having to blast the crap out of
+           Arts. For the purposes of Jitsu, Waza, etc.,
+           alls spells are considered to be a Special skill
+           whose name is Spell.
+	   <example>
+	     <title>Ulek<rsquo/>s Fire-Bomb</title>
+	     <text>Ulek finds himself having to blast the crap out of
            opponents<mdash/>standing right next to him. He gets a level in
-           \emph{Jitsu} and picks \emph{Spell} (\emph{Combat Casting}).
-           He then gets a \emph{Waza} combining \emph{Fireball} and
-           \emph{Minor Teleport}. Now, when an opponent get&apos;s too
-           close, he can fire-off his \emph{Fireball}-\emph{Minor
-           Teleport} (given that he has enough actions).} As in
-           Ulek&apos;s case, note that the effect of the spells are
+           Jitsu and picks Spell (Combat Casting).
+           He then gets a Waza combining Fireball and
+           Minor Teleport. Now, when an opponent get<rsquo/>s too
+           close, he can fire-off his Fireball<ndash/>Minor
+           Teleport (given that he has enough actions).
+	       </text></example>
+	     <text>As in
+           Ulek<rsquo/>s case, note that the effect of the spells are
            delayed until the last spell comes into effect. If order is
            important, this is determined by the Mage; the effects can
-           <ldquo />cross-cut.&apos;&apos; </field>
+           <ldquo />cross-cut.<rdquo/></text></field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Combat Etiquette'>  
@@ -22952,32 +22984,40 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Charisma </field>  
-          <field name='Description' description='yes'> [LaTeX] The skill
-           of how to engage in <ldquo />gentlemanly,&apos;&apos;
-           <ldquo />honorable&apos;&apos; or <ldquo />face-saving&apos;&apos;
+          <field name='Description' description='yes'>  The skill
+           of how to engage in <ldquo />gentlemanly,<rdquo/>
+           <ldquo />honorable<rdquo/> or <ldquo />face-saving<rdquo/>
            combat (duels, sport-combat, etc.). This includes battle-field
            code-of-conduct, rituals, battle-cries, cheers, negotation,
            the art of surrender etc. In any situation in which negotation
-           must occur during the duress of combat, the \emph{Combat
-           Etiquette} skill must be checked first. Without this skill it
-           is \textit{impossible} in most cases to attempt to negotiate
+           must occur during the duress of combat, the Combat
+           Etiquette skill must be checked first. Without this skill it
+           is impossible in most cases to attempt to negotiate
            with the opposing party.
-           \VBoxColumnPicture{Images/MartialArts/Talhoffer_Thott_80r.jpg}
-           \quotexample[Br\H{a}tzefv negotiates peace]{In the dark
-           Br\H{a}tzefv, bumped into some strangers and they began to
+
+           <example>
+	     <title>Bratzefv negotiates peace</title>
+	     <text>In the dark
+           Bratzefv, bumped into some strangers and they began to
            fight, his gut-instinect tells him that this was just an
            accident and he wants to call out to his opponents that they
-           should stop and talk. He rolls his \emph{Combat Etiquette} and
+           should stop and talk. He rolls his Combat Etiquette and
            has two successes; his opponents are not particularly eager to
-           fight, and decide to stop and talk.} \quotexample[Viterexia
-           honorably slays her opponent]{Viterexia has just defeated the
+           fight, and decide to stop and talk.
+	       </text>
+	     </example>
+	   <example>
+	     <title>Viterexia honorably slays her opponent</title>
+	     <text>Viterexia has just defeated the
            Warrior Mother of the Umex Clan in a single combat at the
            center of a stadium filled with 20,000 Umescis. Upon rolling
-           \emph{Trivia} and \emph{Combat Etiquette} she realizes that
+           Trivia and Combat Etiquette she realizes that
            she should cut off her opponents head, or the Warrior Mother
            will be forever disgraced and the Umescis will descend upon
            her and rip her to pieces. With a flourish and a cry she
-           swings her Grand Sabre down and holds up the grizzly prize.}
+           swings her Grand Sabre down and holds up the grizzly prize.
+	       </text>
+	   </example>
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -22987,23 +23027,23 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX]
+          <field name='Description' description='yes'> 
            Understanding of combat terrain, troop movement, weather and
            combat condition impact on the terrain. Adds 3 to your
            Leadership rolls per level. Upon entering combat a character
-           may spend actions to become \textsl{familiar} with the local
-           terrain. \textsl{Familiarity} means that the character takes
+           may spend actions to become familiar with the local
+           terrain. Familiarity means that the character takes
            no minuses from slick, unlevel or otherwise
            difficult-to-traverse terrain, given that he has an
-           appropriate skill knowledge (like \emph{acrobatics} or
-           \emph{climb}). This skill is rolled with a minus equal to the
-           <ldquo />difficulty&apos;&apos; of the terrain and a bonus of
+           appropriate skill knowledge (like acrobatics or
+           Climb). This skill is rolled with a minus equal to the
+           <ldquo />difficulty<rdquo/> of the terrain and a bonus of
            LVL*Actions-spent-studying. If the character is familiar with
            the local terrain then if he has to dodge by <ldquo />throwing
-           himself to the ground&apos;&apos; he gets an additional die.
+           himself to the ground<rdquo/> he gets an additional die.
            The character is also acutely aware in changes in the
            environment and gets a bonus to his Perception equal to 2*LVL
-           in \emph{Combat Terrain}. </field>
+           in Combat Terrain. </field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Combat Training'>  
@@ -23012,31 +23052,36 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 5 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX] Knowledge
+          <field name='Description' description='yes'>  Knowledge
            and practical experience with combat. The primary bonus is
            that for each LVL in combat training gain one move-equivalent
            action. The characteris also familiar with appropriate
            strategies of order-of-battle and platoon, developing
            enfilading fire, retreat, modes of advance, etc. If multiple
-           characters have \emph{Combat Training}, then simple (standard)
+           characters have Combat Training, then simple (standard)
            combat maneuvers can be carried out without verbal (only
            visual) communication, given that they have trained together
            for at least one week prior. With simple verbal commands or
            hand-signals, highly-developed or coordinated maneuvers can be
            carried out (the requirement of previous group practice still
            holds). Characters may also attack and defend <ldquo />as a
-           unit,&apos;&apos; thus if two characters have \emph{Combat
-           Training} and are immediately adjacent to each other
+           unit,<rdquo/> thus if two characters have Combat
+           Training and are immediately adjacent to each other
            (typically 5 feet), then when initiative is rolled, they can
            choose to take either of the rolled initiatives.
-           \quotexample[Myk and Travis: the \textit{machine}]{Myk and
+	    <example>
+	      <title>Myk and Travis: the Machine</title>
+	      <text>Myk and
            Travis have trained together as years: Myk uses
            sword-and-shield, and Travis with the polearm. They both have
-           three levels in \emph{Combat Training}. Travis has three
-           levels in \emph{Readiness}. At the beginning of combat they
+           three levels in Combat Training. Travis has three
+           levels in Readiness. At the beginning of combat they
            both roll initiative, Myk rolls (and gets) a 12, Travis rolls
-           an 11, with his \emph{Readiness} he has <dollar />11+6=17<dollar />. Both Myk
-           and Travis choose to go on the iniative of 17.} </field>
+           an 11, with his Readiness he has
+<math><mrow><mn>11</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>17</mn></mrow></math>.
+		Both Myk
+           and Travis choose to go on the iniative of 17.
+	      </text></example></field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Fast Move'>  
@@ -23045,7 +23090,7 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 5 </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] You are
+          <field name='Description' description='yes'>  You are
            particular quick on your feet in combat. Add LVL to your
            Movement. </field>
         <field name='Implementation'> Speed += Level; </field>  
@@ -23056,7 +23101,7 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Strength </field>  
-          <field name='Description' description='yes'> [LaTeX] You are
+          <field name='Description' description='yes'>  You are
            especially skilled at handling very large weapons. You are
            assumed to have 1 STR per LVL for the purposes of weapon use
            only; but only for weapon-use. This effects your Minimum
@@ -23069,24 +23114,29 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX] For each
-           level in \emph{Jitsu} pick one \textsc{Special} or one
-           \textsc{Defensive} skill that the martial artist already
-           knows. This special skill is now considered a \textsc{Basic}
-           skill, and may be modified and used as a \textsc{Basic} skill.
-           \quotexample[Myk&apos;s Deadly Reciprocal Attack]{Myk is
-           typically out-of-range of any opponent because he uses a
-           Gladius, while Travis uses a 14&apos; Yari. Most of the time,
-           Myk focuses on defending himself and Travis using \emph{Defend
-           Other}. However, because he has such fantastic armor (and gets
-           hit a lot defending Travis), he really wants to be able to
-           <ldquo />lay down the law&apos;&apos; with his \emph{Reciprocal
-           Attack}. When he takes his <math><msup><mn>3</mn><mi>rd</mi></msup></math> level in Jitsu, he chooses
-           \emph{Reciprocal Attack} as his skill; from now on Myk can
-           modify \emph{Reciprocal Attack} as if it were a \textsc{Basic}
-           attack; in particular he has 3 levels in \emph{Deadly} he
-           plans to use<dollar />\ldots<dollar />} </field>
-        <field name='Implementation' />  
+          <field name='Description' description='yes'>  For each
+           level in Jitsu pick one Special or one
+           Defensive skill that the martial artist already
+           knows. This special skill is now considered a Basic
+           skill, and may be modified and used as a Basic skill.
+	    <example>
+	      <title>Myk<rsquo/>s Deadly Reciprocal Attack</title>
+	      <text>Myk is typically out-of-range of any opponent
+           because he uses a Gladius, while Travis uses a 14&apos;
+           Yari. Most of the time, Myk focuses on defending himself
+           and Travis using Defend Other. However, because he
+           has such fantastic armor (and gets hit a lot defending
+           Travis), he really wants to be able to <ldquo />lay down
+           the law<rdquo/>; with his Reciprocal
+           Attack.
+	    When he takes
+           his <math><msup><mn>3</mn><mi>rd</mi></msup></math> level
+           in Jitsu, he chooses Reciprocal Attack as his skill;
+           from now on Myk can modify Reciprocal Attack as if
+           it were a Basic attack; in particular he has 3
+           levels in Deadly he plans to
+           use...</text></example> </field>
+           <field name='Implementation' />
       </datum>  
       <datum name='Kata'>  
         <field name='Name' title='yes'> Kata </field>  
@@ -23094,25 +23144,27 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 3 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX] For each
-           level in \emph{Kata} choose a \textsc{Basic} attack, a
-           \textsc{Modifier} for that Basic attack, and any 0- or
+          <field name='Description' description='yes'>  For each
+           level in Kata choose a Basic attack, a
+           Modifier for that Basic attack, and any 0- or
            1-action Skill (any!). All three of these skills are performed
-           \emph{as a skill action}. All three must be rolled
+           as a skill action. All three must be rolled
            independently, and succeed or fail on their own. Each
-           combination is considered a \textsc{Special} attack.
-           \quotexample[Running a Polearm]{Travis is tired of having
-           those damn spry Elves <ldquo />run&apos;&apos; his polearm, his
+           combination is considered a Special attack.
+	    <example>
+              <title>Running a Polearm</title>
+	      <text>Travis is tired of having
+           those damn spry Elves <ldquo />run<rdquo/> his polearm, his
            original problem was penetrating their armor, but by
-           purchasing his Legendy Yari and learning the \emph{Reciprocal
-           Attack} \emph{Jitsu} he&apos;s been doing better. However,
-           he&apos;s picked up a little magic, and would like to be able
-           to \emph{Bash} his opponent to increase the damage he deals,
-           following by a \emph{Blink} to get the hell out of the way. So
-           he buys a level in \emph{Jitsu} and makes \emph{Reciprocal
-           Attack} a \textsc{Basic} skill. He then choose
-           \emph{Reciprocal Attack}, \emph{Bash}, and \emph{Blink} for
-           the first level he buys in Kata.} </field>
+           purchasing his Legendy Yari and learning the Reciprocal
+           Attack Jitsu he<rsquo/>s been doing better. However,
+           he<rsquo/>s picked up a little magic, and would like to be able
+           to Bash his opponent to increase the damage he deals,
+           following by a Blink to get the hell out of the way. So
+           he buys a level in Jitsu and makes Reciprocal
+           Attack a Basic skill. He then choose
+           Reciprocal Attack, Bash, and Blink for
+           the first level he buys in Kata.</text></example></field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Kung Fu'>  
@@ -23121,22 +23173,22 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX] Pick a
-           \textsc{Basic} skill and a \textsc{Modifier}, this then
-           becomes a new Rank 1 \textsc{Special} skill. Note that this a
-           different mechanism than \emph{Jitsu}; for \emph{Jitsu} each
-           level you purchase converts one \textsc{Special} or
-           \textsc{Defensive} skill into a \textsc{Basic} skill, whereas
-           \emph{Kung Fu} generates a new skill that is a combination of
-           the \textsc{Basic} and \textsc{Modifier} skill you chose.
-           Buying more levels in \emph{Kung Fu} is the same as buying
+          <field name='Description' description='yes'>  Pick a
+           Basic skill and a Modifier, this then
+           becomes a new Rank 1 Special skill. Note that this a
+           different mechanism than Jitsu; for Jitsu each
+           level you purchase converts one Special or
+           Defensive skill into a Basic skill, whereas
+           Kung Fu generates a new skill that is a combination of
+           the Basic and Modifier skill you chose.
+           Buying more levels in Kung Fu is the same as buying
            levels in both skills (cheaper, but less flexible). A martial
-           artist may purchase many different combinations of \emph{Kung
-           Fu}, as suits him. If the martial artist choose a
-           \textsc{Basic} skill that has variable Rank, then the total
-           cost of \emph{Kung Fu} is just the variable cost of the of the
-           \textsc{Basic} skill. You \textit{\textbf{may not}} use a
-           variable cost \textsc{Special} skill in \emph{Kung Fu}.
+           artist may purchase many different combinations of Kung
+           Fu, as suits him. If the martial artist choose a
+           Basic skill that has variable Rank, then the total
+           cost of Kung Fu is just the variable cost of the of the
+           Basic skill. You may not use a
+           variable cost Special skill in Kung Fu.
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -23241,21 +23293,23 @@
         <field table='yes' name='Type'> Combat </field>  
         <field table='yes' name='Rank'> Varies </field>  
         <field table='yes' name='Attribute'> Varies </field>  
-          <field name='Description' description='yes'> [LaTeX] Pick any
-           two \textsc{Basic} skills, this \emph{Waza} is considered a
-           \textsc{Special} skill that is the combination of the two
-           skills. This is similar to \emph{Kung Fu}. The total Rank of
+          <field name='Description' description='yes'>  Pick any
+           two Basic skills, this Waza is considered a
+           Special skill that is the combination of the two
+           skills. This is similar to Kung Fu. The total Rank of
            this skill is one less than the sum of the Ranks of the two
-           \textsc{Basic} skills. \quotexample[Ragnar&apos;s Bar
-           Fights]{Ragnar finds himself in more barfights than he wants,
-           and decides that (a) nothing says <ldquo />I&apos;m
-           serious&apos;&apos; more than a \emph{Barrel Charge} but (b)
-           he&apos;d rather throw a punch or two into the whole
-           operation. As a result he picks up a new \emph{Waza} combining
-           \emph{Barrel Charge} with a Rank 2 \emph{Punch/Kick} at 2
-           levels. This means the \emph{Waza} has <dollar />1+2-1=2<dollar /> Rank, and at
+           Basic skills.
+	    <example>
+	      <title>Ragnar<rsquo/>s Bar Fights</title>
+	      <text>Ragnar finds himself in more barfights than he wants,
+           and decides that (a) nothing says <ldquo />I<rsquo/>m
+           serious<rdquo/> more than a Barrel Charge but (b)
+           he<rsquo/>d rather throw a punch or two into the whole
+           operation. As a result he picks up a new Waza combining
+           Barrel Charge with a Rank 2 Punch/Kick at 2
+           levels. This means the Waza has 1+2-1=2 Rank, and at
            level 2, would cost 6 C.P. Note that Ragnar cannot further
-           \textsc{Modify} this skill because it is \textsc{Special}.}
+           Modify this skill because it is Special.</text></example>
            </field>
         <field name='Implementation' />  
       </datum>  
@@ -23274,9 +23328,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Rank' />  
-        <field table='yes' name='Attribute' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Rank' width='l' />  
+        <field table='yes' name='Attribute' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -23286,13 +23340,13 @@
         <field table='yes' name='Type'> Defensive </field>  
         <field table='yes' name='Rank'> 3 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX] This
-           skills requires \emph{Dodge}. You expect that an attack is
+          <field name='Description' description='yes'>  This
+           skills requires Dodge. You expect that an attack is
            incoming and prepare yourself beforehand. When the attack
            comes, you automatically dodge the attack. This skill has the
-           same restrictions as \emph{Dodge}. You must spend one action
+           same restrictions as Dodge. You must spend one action
            during your turn to do nothing but prepare to perform
-           \emph{Anticipated Dodge}. At this time you must declare a
+           Anticipated Dodge. At this time you must declare a
            specific opponent. You must be able to see this opponent. If
            the declared opponent attacks you before your next turn then
            you may automatically dodge the attack with no skill roll
@@ -23371,17 +23425,17 @@
         <field table='yes' name='Type'> Defensive </field>  
         <field table='yes' name='Rank'> 5 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX] This skill
-           requires \emph{Anticipated Dodge}. This is a defensive
-           maneuver that is similar to \emph{Anticipated Dodge}. The
+          <field name='Description' description='yes'>  This skill
+           requires Anticipated Dodge. This is a defensive
+           maneuver that is similar to Anticipated Dodge. The
            martial artist spends two actions during his turn to prepare
            his defense and an attack. When attacked, the martial artist
            automatically dodges the attack and performs his own
            counter-attack that may not be defended against. This skill
-           works exactly like \emph{Anticipated Dodge}, except that you
+           works exactly like Anticipated Dodge, except that you
            must spend two actions to prepare instead of one. If the
            declared opponent attacks you before your next turn then you
-           may automatically \emph{Dodge} the attack with no skill roll
+           may automatically Dodge the attack with no skill roll
            needed. As well, you may make a counter-attack of your choice.
            You must roll normally to determine if you succeed in your
            counter-attack, however your opponent may not defend against
@@ -23401,18 +23455,18 @@
         <field table='yes' name='Type'> Defensive </field>  
         <field table='yes' name='Rank'> 2 </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] The
+          <field name='Description' description='yes'>  The
            Martial Artist sees an incoming melee attack and actively
            strikes at his opponent during his opponent&apos;s attack.
            This reduces the damage dealt by his opponent.
-           \emph{Preemptive Block} is your defensive maneuver. Roll
-           \emph{Preemptive Block} and also roll to strike with any melee
+           Preemptive Block is your defensive maneuver. Roll
+           Preemptive Block and also roll to strike with any melee
            attack that you could readily make. If you succeed on both of
            your rolls, then you take only half damage from the incoming
            attack. (There is no need to contest rolls with the attacker).
            However, if you fail either roll then you take full damage.
-           \emph{Preemptive Block} may not be used against ranged or
-           missile attacks. \emph{Preemptive Block} does not deal damage
+           Preemptive Block may not be used against ranged or
+           missile attacks. Preemptive Block does not deal damage
            to your opponent. </field>
         <field name='Implementation' />  
       </datum>  
@@ -23488,9 +23542,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Rank' />  
-        <field table='yes' name='Attribute' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Rank' width='l' />  
+        <field table='yes' name='Attribute' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -23500,7 +23554,7 @@
         <field table='yes' name='Type'> Modifier </field>  
         <field table='yes' name='Rank'> 1 </field>  
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX] You take
+          <field name='Description' description='yes'>  You take
            extra time to carefully align your target in your sights
            before attacking with a ranged weapon. This skill only works
            with ranged weapons, such as a bow, crossbow, or rifle. You
@@ -23562,7 +23616,7 @@
         <field table='yes' name='Type'> Modifier </field>  
         <field table='yes' name='Rank'> 4 </field>  
         <field table='yes' name='Attribute'> Wisdom </field>  
-          <field name='Description' description='yes'> [LaTeX]You attempt
+          <field name='Description' description='yes'> You attempt
            to cause an especially lethal wound. You must have knowledge
            of the targets physiology (which may take a roll at the GMs
            discretion). This has no effect versus incorporal, amorphous,
@@ -23656,34 +23710,38 @@
         <field name='Name' title='yes'> Multi-Weapon Style </field>  
         <field name='MetaTag' />  
         <field table='yes' name='Type'> Modifier </field>  
-          <field table='yes' name='Rank'> [LaTeX]\textit{Special, see
-           description.} </field>
+          <field table='yes' name='Rank'> Special, see
+           description. </field>
         <field table='yes' name='Attribute'> Dexterity </field>  
-          <field name='Description' description='yes'> [LaTeX]
-           \emph{Multi-Weapon Style} has Rank 3*X, where X is the number
-           of \textit{additional} weapons the martial artist intends to
+          <field name='Description' description='yes'> 
+           Multi-Weapon Style has Rank 3*X, where X is the number
+           of additional weapons the martial artist intends to
            use. The martial artist can now use more than one
-           weapon<mdash/>given that they are <ldquo />in-hand&apos;&apos;
+           weapon<mdash/>given that they are <ldquo />in-hand<rdquo/>
            (or foot, tentacle etc.)<mdash/>in a single action. Note that
            the additional attacks have the appropriate multi-weapon
-           minus; which can be mitigated by using \emph{Ambidexterity}.
-           \quotexample[Jesse <ldquo />Capoeira&apos;&apos;: Double-Kick
-           \<and /> Double-Punch]{Jesse wants to perform a Capoeira-style
+           minus; which can be mitigated by using Ambidexterity.
+	    <example>
+	      <title>Jesse <ldquo />Capoeira<rdquo/>: Double-Kick
+           <and /> Double-Punch</title>
+	      <text>Jesse wants to perform a Capoeira-style
            Double-Kick followed by a Double-Punch. He purchases
-           \emph{Multi-Weapon Style} for 3 additional weapons; the Rank
-           of the \emph{Multi-Weapon Style} is then <dollar />3*3=9<dollar /> Since
+           Multi-Weapon Style for 3 additional weapons; the Rank
+           of the Multi-Weapon Style is then 3*3=9
+		Since
            it&apos;s so expensive, he only purchases one level, so he can
            only use it once per turn. On top of this he has purchases 3
-           levels of \emph{Ambidexterity}, offset all of his multi-use
-           strikes by +3. This means when he attacks, in \textit{one
-           action} he can perform two kicks and two punches, if he does
+           levels of Ambidexterity, offset all of his multi-use
+           strikes by +3. This means when he attacks, in one
+           action he can perform two kicks and two punches, if he does
            so his first punch is at -0 to strike, his second punch at -3,
            his first kick at -6, and his second kick at -9. He can do all
-           of these strikes \textit{as if it were one action} without.
+           of these strikes as if it were one action without.
            The strikes are considered separate, and pass-or-fail on their
-           own.} Note that because \emph{Multi-Weapon Style} is a
-           \textsc{Modifier}, it may not be modified by \textsc{Basic}
-           attacks. </field>
+           own.</text></example>
+	    <text>Note that because Multi-Weapon Style is a
+           Modifier, it may not be modified by Basic
+           attacks.</text></field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Multitarget'>  
@@ -23859,9 +23917,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' />  
-        <field table='yes' name='Rank' />  
-        <field table='yes' name='Attribute' />  
+        <field table='yes' name='Type' width='l' />  
+        <field table='yes' name='Rank' width='l' />  
+        <field table='yes' name='Attribute' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -24452,7 +24510,7 @@
            however, transform its body (permanently) into the body of any
            other living creature of size 1, 2, or 3. When it does this,
            it gains the attributes and abilities of whatever creature it
-           <ldquo />copied&apos;&apos;. Note that in order for this
+           <ldquo />copied<rdquo/>. Note that in order for this
            transformation to be possible, the doppleganger must first
            have slain the creature to be copied. </field>
         <field name='level' />  
@@ -24521,7 +24579,7 @@
           <field name='Special Abilities'> Can fly 40 mph. Has a breath
            weapon (acid, poison, ice, lightning, or fire) that deals
            <roll><num>4</num><face>4</face><bOff>+</bOff><bns>2</bns><kind>U</kind></roll> damage. 1 "free" breath weapon attack can be made per
-           turn.\ </field>
+           turn.</field>
           <field name='Statistics'> STR: 24 DEX: 18 BLD: 23 INT: 14 WIS:
            16 WIL: 20 CHA: 14 HP: 300 Actions:: 4 P/S/C: 20/20/20 Size:
            20&apos; from head to base of tail with a 10&apos; tail Dice:
@@ -25075,7 +25133,7 @@
            and yelps. They are very fast moving and are totally fearless.
            Imps delight in causing suffering and tormenting anything
            living. Imps are of marginal intelligence and especially hate
-           humans and other <ldquo />smarter&apos;&apos; races. Imps live
+           humans and other <ldquo />smarter<rdquo/> races. Imps live
            in clans consisting of 5x <roll><num>1</num><face>4</face><bns></bns></roll>red imps, 2x <roll><num>1</num><face>4</face><bns></bns></roll>black imps, and
            <roll><num>1</num><face>4</face><bns></bns></roll>Darklings. </field>
         <field name='level' />  
@@ -25793,7 +25851,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Rank' />  
+        <field table='yes' name='Rank' width='l' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
@@ -25871,34 +25929,37 @@
       <datum name='Arcane Talent'>  
         <field name='Name' title='yes'> Arcane Talent </field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Rank'> [LaTeX]\emph{Varies, see
-           description} </field>
-          <field name='Description' description='yes'> [LaTeX] This is a
+          <field table='yes' name='Rank'> Varies, see
+           description </field>
+          <field name='Description' description='yes'>  This is a
            stand in. A character may take a magical spell of any rank as
-           a \emph{Trait}. They do not need to buy \emph{Magical
-           Control}, \emph{Spellcasting}, \emph{Faith}, \emph{Mysticism},
-           etc. The rank of the specific \emph{Trait} is the rank of the
+           a Trait. They do not need to buy Magical
+           Control, Spellcasting, Faith, Mysticism,
+           etc. The rank of the specific Trait is the rank of the
            spell. For purposes of control (striking, LVL, etc.), the
-           level at which the \emph{Spell Ability} has been purchased is
+           level at which the Spell Ability has been purchased is
            used for these calculations. The cost of using the ability is
            the same Mana Point cost as the spell itself.
-           \quotexample[Ignaceous Charcot
-           Flamm\&apos;{e}]{Ignaceous&apos; alter-identity is the mutant
-           superhero, \emph{Flame-On!}\footnote{The exclamation point is
-           part of the name.}. He has the following \emph{Arcane
-           Talents}: \emph{Fireblast} at Level 4, \emph{Fire Shards} at
-           level 4, \emph{Flame Shroud} at level 1, \emph{Living Fire} at
-           level 1, and \emph{Flame Whip} at level 2. Although he feels
+	    <example>
+	      <title>Ignaceous Charcot Flamme</title>
+	      <text>Ignaceous<rsquo/> alter-identity is the mutant
+           superhero, Flame-On!<footnote>The exclamation point is
+           part of the name.</footnote>. He has the following Arcane
+           Talents: Fireblast at Level 4, Fire Shards at
+           level 4, Flame Shroud at level 1, Living Fire at
+           level 1, and Flame Whip at level 2. Although he feels
            it was unnecessary, his secret master has been forcing him to
-           train in the <ldquo />mystic arts&apos;&apos; to learn to
-           control his powers better (\emph{Mysticism}, level 3).
+           train in the <ldquo />mystic arts<rdquo/> to learn to
+           control his powers better (Mysticism, level 3).
            Although he thinks it&apos;s bunk, and wasn&apos;t necessary,
-           he can certainly use his powers longer nowadays.} We note that
-           for \emph{Flame Whip}, \emph{Fire Shards}, and
-           \emph{Fireblast} the description in says to
-           <ldquo />roll&apos;&apos; to determine if Ignaceous strikes.
-           Ignaceous would roll his \emph{level} he has purchased the
-           skills at, i.e. levels 2, 4, and 4, respectively. </field>
+           he can certainly use his powers longer nowadays.</text>
+	      </example>
+	    <text>We note that
+           for Flame Whip, Fire Shards, and
+           Fireblast the description in says to
+           <ldquo />roll<rdquo/> to determine if Ignaceous strikes.
+           Ignaceous would roll his level he has purchased the
+           skills at, i.e. levels 2, 4, and 4, respectively.</text></field>
         <field name='Implementation' />  
       </datum>  
       <datum name='Attention to Detail'>  
@@ -26906,8 +26967,8 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Slots' />  
-        <field table='yes' name='Character Points' />  
+        <field table='yes' name='Slots' width='l' />  
+        <field table='yes' name='Character Points' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Active Stealth'>  
@@ -27452,8 +27513,8 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Slots' />  
-        <field table='yes' name='Character Points' />  
+        <field table='yes' name='Slots' width='l' />  
+        <field table='yes' name='Character Points' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='Auto-Cannon'>  
@@ -27463,7 +27524,7 @@
           <field table='yes' name='Character Points'> (Class+1)*6
            </field>
           <field name='Description' description='yes'>
-           <ldquo />Automatically Loading Cannon&apos;&apos; An autocannon
+           <ldquo />Automatically Loading Cannon<rdquo/> An autocannon
            is similar to a modern semiautomatic rifle, but scaled up to
            an artillery size weapon. Ammunition is stored in a magazine
            and the gun automatically loads a new shell after each is
@@ -27521,11 +27582,11 @@
           <field table='yes' name='Character Points'> (Class+1)*15
            </field>
           <field name='Description' description='yes'> Alternately, the
-           Long Rail Gun can be <ldquo />carried&apos;&apos; like a rifle,
+           Long Rail Gun can be <ldquo />carried<rdquo/> like a rifle,
            but has to be manually reloaded with a recovery time if
            (Class+5) actions. Deals double normal damage, with
            (Class+10)*20 AP. Requires (Class+1)*10
-           <ldquo />free&apos;&apos; energy units from the engines.
+           <ldquo />free<rdquo/> energy units from the engines.
            </field>
       </datum>  
       <datum name='Mortar'>  
@@ -27557,7 +27618,7 @@
            </field>
           <field name='Description' description='yes'> In addition to
            normal damage, the Rail Gun has (Class+4)*10 AP. Requires
-           (Class+1)*3 <ldquo />free&apos;&apos; units of energy to shoot
+           (Class+1)*3 <ldquo />free<rdquo/> units of energy to shoot
            per turn (from the engines). </field>
       </datum>  
       <datum name='Shotgun'>  
@@ -27615,7 +27676,7 @@
         <field name='MetaTag'> Future </field>  
           <field name='Description' description='yes'> A variant of the
            Particle Cannon that is tuned for a special
-           <ldquo />defective&apos;&apos; (non-m-brane modulating) Higgs
+           <ldquo />defective<rdquo/> (non-m-brane modulating) Higgs
            particle; the effective range on the cannon is unlimited.
            It&apos;s range is literally unlimited, but must be purchased
            as if it costs 5 Classes above it&apos;s normal Class.
@@ -27664,9 +27725,9 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Slots' />  
-        <field table='yes' name='Requirements' />  
-        <field table='yes' name='Character Points' />  
+        <field table='yes' name='Slots' width='l' />  
+        <field table='yes' name='Requirements' width='l' />  
+        <field table='yes' name='Character Points' width='l' />  
         <field name='Description' description='yes' />  
       </default>  
       <datum name='A/V Recorder'>  
