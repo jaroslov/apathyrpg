@@ -153,7 +153,13 @@ Josh Kramer}
   <xsl:template match="section">
     &#xa;
 \<xsl:if test="name(../.)='section'">sub</xsl:if><xsl:if test="name(../../.)='section'">sub</xsl:if><xsl:if test="name(../../../.)='section'">sub</xsl:if>section{<xsl:apply-templates select="title" />}
+    <xsl:if test="not(./section)">
+      BEFORE
+    </xsl:if>
     <xsl:apply-templates select="./*[position()&gt;1]" />
+    <xsl:if test="not(./section)">
+      AFTER
+    </xsl:if>
   </xsl:template>
 
 
