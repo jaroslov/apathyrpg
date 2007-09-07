@@ -378,10 +378,10 @@ Josh Kramer}
 \begin{multicols}{2}
     <xsl:for-each select="//category[@name=$hrid]/datum">
       <xsl:variable name="datum-title" select="field[@title='yes']" />
-<xsl:if test="position()=1">\hspace{-1.75ex}</xsl:if>\hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
 &#xa;
-&#xa;
+<xsl:if test="position()=1">\hspace{-2ex}</xsl:if>\hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
 \ruledesc{<xsl:apply-templates select="field[@description='yes']" />}\vspace{1ex}
+&#xa;
     </xsl:for-each>
 \end{multicols}
   </xsl:template>
