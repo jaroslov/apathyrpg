@@ -339,12 +339,9 @@ Josh Kramer}
   <xsl:value-of select="$scName" />
         <xsl:for-each select="//category[@name=$hrid]/default/field">
           <xsl:if test="./@title"></xsl:if>
-          <xsl:if test="./@table">
-  &amp;
-  \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
+<xsl:if test="./@table">&amp; \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
           </xsl:if>
-        </xsl:for-each>
-  \\
+        </xsl:for-each>\\
   \hline
   \hline
   \endfirsthead
@@ -352,26 +349,16 @@ Josh Kramer}
         <xsl:for-each select="//category[@name=$hrid]/default/field">
           <xsl:if test="./@title">
           </xsl:if>
-          <xsl:if test="./@table">
-  &amp;
-  \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
+<xsl:if test="./@table">&amp; \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
           </xsl:if>
-        </xsl:for-each>
-  \\
+        </xsl:for-each> \\
   \hline
   \endhead
-      <xsl:for-each select="//category[@name=$hrid]/datum">
-  \raggedright
-          <xsl:for-each select="field" >
-            <xsl:if test="./@title">
-  <xsl:apply-templates select="." />
+<xsl:for-each select="//category[@name=$hrid]/datum">\raggedright<xsl:for-each select="field" >
+            <xsl:if test="./@title"><xsl:apply-templates select="." /></xsl:if>
+            <xsl:if test="./@table">&amp;<xsl:apply-templates select="." />
             </xsl:if>
-            <xsl:if test="./@table">
-  &amp;
-  <xsl:apply-templates select="." />
-            </xsl:if>
-          </xsl:for-each>
-  \tabularnewline
+          </xsl:for-each>\tabularnewline
       </xsl:for-each>
 \end{longtable}
     <!-- Builds the descriptor lists -->
