@@ -154,11 +154,11 @@ Josh Kramer}
     &#xa;
 \<xsl:if test="name(../.)='section'">sub</xsl:if><xsl:if test="name(../../.)='section'">sub</xsl:if><xsl:if test="name(../../../.)='section'">sub</xsl:if>section{<xsl:apply-templates select="title" />}
     <xsl:if test="not(./section)">
-      BEFORE
+      <!-- pBefore -->
     </xsl:if>
     <xsl:apply-templates select="./*[position()&gt;1]" />
     <xsl:if test="not(./section)">
-      AFTER
+      <!-- pAfter -->
     </xsl:if>
   </xsl:template>
 
@@ -169,13 +169,11 @@ Josh Kramer}
   </xsl:template>
   <!-- Generic Text -->
   <xsl:template match="text">
+    {  
     <xsl:apply-templates />
-    &#xa;&#xa;
+    }
   </xsl:template>
-  <xsl:template match="text()">
-    <xsl:variable name="text" select="." />
-    <xsl:value-of select="$text" />
-  </xsl:template>
+  <xsl:template match="text()"><xsl:variable name="text" select="." /><xsl:value-of select="$text" /></xsl:template>
   <!-- Note -->
   <xsl:template match="note">&#xa;&#xa;\textscbf{Note!} \textbf{<xsl:apply-templates />}&#xa;&#xa;</xsl:template>
   <!-- examples -->
@@ -320,7 +318,7 @@ Josh Kramer}
   </xsl:template>
   <xsl:template match="math">\begin{math}<xsl:apply-templates />\end{math}</xsl:template>
   <xsl:template match="mrow"><xsl:apply-templates /></xsl:template>
-  <xsl:template match="mi"><xsl:choose><xsl:when test="string-length(text())=1"><xsl:apply-templates /></xsl:when><xsl:otherwise>\texttt{<xsl:apply-templates />}</xsl:otherwise></xsl:choose></xsl:template>
+  <xsl:template match="mi"><xsl:choose><xsl:when test="string-length(text())=1"><xsl:apply-templates /></xsl:when><xsl:otherwise>\textrm{<xsl:apply-templates />}</xsl:otherwise></xsl:choose></xsl:template>
   <xsl:template match="mo"><xsl:apply-templates /></xsl:template>
   <xsl:template match="mn"><xsl:apply-templates /></xsl:template>
   <xsl:template match="msup">{<xsl:apply-templates select="./*[position()=1]"/>}^{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
@@ -378,11 +376,11 @@ Josh Kramer}
 \end{longtable}
     <!-- Builds the descriptor lists -->
 \begin{multicols}{2}
-\hspace{-1.75ex}
     <xsl:for-each select="//category[@name=$hrid]/datum">
       <xsl:variable name="datum-title" select="field[@title='yes']" />
-\hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
-
+<xsl:if test="position()=1">\hspace{-1.75ex}</xsl:if>\hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
+&#xa;
+&#xa;
 \ruledesc{<xsl:apply-templates select="field[@description='yes']" />}\vspace{1ex}
     </xsl:for-each>
 \end{multicols}
