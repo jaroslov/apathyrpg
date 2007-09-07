@@ -52,3 +52,28 @@ If you've updated the Apathy.xml file and want PDF output, type:
 
 Type:
 	make all
+
+=== Notes ===
+
+1. NEVER embed non-ASCII content into the Apathy.xml document. This is especially important for:
+	* multiplication symbol `x'; use <times/> embedded in <math>
+	* ampersand symbol; use <and/>
+	* left/right single/double quotes:
+		`` -> <ldquo/>
+		'' -> <rdquo/>
+		`  -> <lsquo/>
+		'  -> <rsquo/>
+	* straight single/double quotes:
+		'  -> &apos;
+		"  -> ???
+	* trademark symbol; <trademark/>
+2. Math markup uses a <math> environment followed by unformatted MathML (do not embed whitespace!). Free-floating (figure) math environments are marked by <equation>.
+3. New <category> environment must have their <default> record first; they must have a unique name, e.g. Content/Academics, Content/Mecha/Equipment/Energy Weapons.
+
+=== TODO ===
+
+* Finish customized table formatting for Apathy.latex.xsl (column span using multicolumn{})
+* Add formatting decorations for <define>
+* Create <refer> system for linking defined phrases to their definition
+* Create glossary/index
+* Create and decorate <content> block to mark sections that need two-column support for Apathy.latex.xsl
