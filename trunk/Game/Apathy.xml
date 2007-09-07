@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE stylesheet [
-<!ENTITY sum    "&#8721;" ><!-- mathematical sum char -->
-]>
-
 <?xml-stylesheet type="text/xsl" href="Apathy.xsl"?>
 
 <apathy-game>  
@@ -533,7 +529,7 @@
                      with handles. </cell>
                     <cell>  <math>  <mfrac>  <mrow> STR<times/>STR<times/>BLD
                      </mrow>  <mn> 10 </mn>  </mfrac>  <mo> + </mo>  <mi>
-                     STR </mi>  </math>
+                     STR</mi>  </math>
                   </cell>  
                 </row>  
                 <row>  
@@ -541,7 +537,7 @@
                     <cell> This is the amount of weight the character can
                      carry about his/her person for a reasonable length
                      of time. </cell>
-                    <cell>  <math>  <mfrac>  <mi> Lift </mi>  <mn> 2 </mn> 
+                    <cell>  <math>  <mfrac>  <mi>Lift</mi>  <mn> 2 </mn> 
                      </mfrac>  </math>
                   </cell>  
                 </row>  
@@ -550,8 +546,8 @@
                     <cell> This represents how much gear the character
                      can wear before encountering adverse effects due to
                      the weight and impaired mobility. </cell>
-                    <cell>  <math>  <mfrac>  <mrow>  <mi> BLD </mi><mo> +
-                     </mo><mi> DEX </mi><mo> + </mo><mi> STR </mi> 
+                    <cell>  <math>  <mfrac>  <mrow>  <mi>BLD</mi><mo> +
+                     </mo><mi>DEX</mi><mo> + </mo><mi>STR</mi> 
                      </mrow>  <mn> 6 </mn>  </mfrac>  </math>
                   </cell>  
                 </row>  
@@ -560,8 +556,8 @@
                     <cell> Determines how resilient the character is to
                      <ldquo />odd<rdquo /> damage, such as lightning and
                      fire. </cell>
-                    <cell>  <math>  <mfrac>  <mrow><mi> BLD </mi><mo> +
-                     </mo><mi> WIL </mi></mrow>  <mn> 6 </mn>  </mfrac> 
+                    <cell>  <math>  <mfrac>  <mrow><mi>BLD</mi><mo> +
+                     </mo><mi>WIL</mi></mrow>  <mn> 6 </mn>  </mfrac> 
                      </math>
                   </cell>  
                 </row>  
@@ -570,7 +566,7 @@
                     <cell> How fast the character is in <ldquo />squares
                      per move-equivalent Action <rdquo /> </cell>
                     <cell>  <math>  <mfrac>  <mrow><mn> 2 </mn><mo> <times/>
-                     </mo><mi> STR </mi><mo> + </mo><mi> DEX </mi></mrow>
+                     </mo><mi>STR</mi><mo> + </mo><mi>DEX</mi></mrow>
                       <mn> 15 </mn>  </mfrac>  </math>
                   </cell>  
                 </row>  
@@ -579,9 +575,9 @@
                     <cell> How well the character can notice things
                      around him. Used just like an attribute check.
                      </cell>
-                    <cell>  <math>  <mfrac>  <mrow>  <mi> DEX </mi><mo> +
-                     </mo>  <mn> 2 </mn><mo> <times/> </mo>  <mi> KNO
-                     </mi><mo> + </mo>  <mi> INT </mi>  </mrow>  <mn> 4
+                    <cell>  <math>  <mfrac>  <mrow>  <mi>DEX</mi><mo> +
+                     </mo>  <mn> 2 </mn><mo> <times/> </mo>  <mi>KNO
+                    </mi><mo> + </mo>  <mi>INT</mi>  </mrow>  <mn> 4
                      </mn>  </mfrac>  </math>
                   </cell>  
                 </row>  
@@ -589,8 +585,8 @@
                   <cell> Interaction </cell>  
                     <cell> The basic ability of a character to interact
                      with other people. </cell>
-                    <cell>  <math>  <mfrac>  <mrow><mi> CHA </mi><mo> +
-                     </mo><mi> KNO </mi><mo> + </mo><mi> INT </mi></mrow>
+                    <cell>  <math>  <mfrac>  <mrow><mi>CHA</mi><mo> +
+                     </mo><mi>KNO</mi><mo> + </mo><mi>INT</mi></mrow>
                       <mn> 3 </mn>  </mfrac>  </math>
                   </cell>  
                 </row>  
@@ -598,8 +594,8 @@
                   <cell> Hit Points </cell>  
                     <cell> The amount of damage you can receive before
                      dying. </cell>
-                    <cell>  <math><mrow><mi> BLD </mi><mo> + </mo><mi> WIL
-                     </mi></mrow></math>
+                    <cell>  <math><mrow><mi>BLD</mi><mo> + </mo><mi>WIL
+                    </mi></mrow></math>
                   </cell>  
                 </row>  
                 <row>  
@@ -607,8 +603,8 @@
                     <cell> The number of Magic Points you can draw on to
                      cast magic spells or perform supernatural feats
                      </cell>
-                    <cell>  <math>  <mrow>  <mo> ( </mo>  <mi> WIL </mi> 
-                     <mo> + </mo>  <mi> BLD </mi>  <mo> ) </mo>  <mo>
+                    <cell>  <math>  <mrow>  <mo> ( </mo>  <mi>WIL</mi> 
+                     <mo> + </mo>  <mi>BLD</mi>  <mo> ) </mo>  <mo>
                      <times/> </mo>  <mn> 10 </mn>  </mrow>  </math>
                   </cell>  
                 </row>  
@@ -879,15 +875,9 @@
              expensive it will be. </text>
             <text> For those that are mathematically inclined, here is
              the formula for determining CP of a particular skill level
-             and rank: </text>  <math>  <mrow>  <munderover
-             accentunder='true' accent='true'>
-                  <mstyle scriptlevel='-2'> &sum; </mstyle>  <mrow><mi> i
-                   </mi><mo> = </mo><mn> 0 </mn></mrow>  <mi> N </mi> 
-                   </munderover>  <mi> i </mi>  <mo> = </mo>  <mfrac>
-                <mfenced>  <mrow>  
-                    <msup><mi> N </mi><mn> 2 </mn>
-                    </msup>  <mo> + </mo>  <mi> N </mi>  </mrow>  
-                </mfenced>  <mn> 2 </mn>  </mfrac>  </mrow>  </math>  
+             and rank: </text>
+	    <equation><math><mrow><munderover accentunder='true' accent='true'><mstyle scriptlevel='-2'><Sum/></mstyle><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>Desired Level</mi><mo>=</mo><mi>N</mi></mrow></munderover><mi>i</mi><mo><times/></mo><mi>Rank</mi><mo>=</mo><mfrac><mfenced><mrow><mi>Rank</mi><mo><times/></mo><mo>(</mo><msup><mi>N</mi><mn>2</mn></msup><mo>+</mo><mi>N</mi><mo>)</mo></mrow></mfenced><mn>2</mn></mfrac></mrow></math>  
+	    </equation>
             <text> For the rest of us, use this nifty table, and multiply
              the value listed by the rank. </text>
           <figure>  
@@ -2213,15 +2203,16 @@
                  target is not ignited. Fire protection on armor will
                  only work three times before the armor must be repaired
                  or replaced. Some armor is rated fire protection
-                 <times/>2, which will take six fire-effect hits before
-                 loosing it<rdquo />s fire resistance, etc. Note that fire
-                 protection armor only resists the ignition effect and
-                 any heat (U) damage from the fire specifically.
-                 Therefore, if a weapon deals normal damage (P/S/C) AND
-                 has either Fire effect or Fire damage (U) then the
-                 fire-related effects are prevented but the standard
-                 damage (P/S/C) is treated as normal. Targets that are
-                 <ldquo />on fire<rdquo /> suffer the damage on each of their
+                 <math><times/></math>2, which will take six
+                 fire-effect hits before loosing it<rdquo />s fire
+                 resistance, etc. Note that fire protection armor only
+                 resists the ignition effect and any heat (U) damage
+                 from the fire specifically.  Therefore, if a weapon
+                 deals normal damage (P/S/C) AND has either Fire
+                 effect or Fire damage (U) then the fire-related
+                 effects are prevented but the standard damage (P/S/C)
+                 is treated as normal. Targets that are <ldquo />on
+                 fire<rdquo /> suffer the damage on each of their
                  turns. </text>
               <example>  
                 <title>David deals Fire damage</title>  
@@ -2315,7 +2306,7 @@
              <text> Your current Hit Points is the most important number.
               It will likely change frequently during combat. Hit Points
               are generally represented as a fraction: <math><mfrac><mi>
-              Current HP </mi><mi> Max HP </mi></mfrac></math> . When the
+              Current HP</mi><mi>Max HP</mi></mfrac></math> . When the
               game begins, your character will be fully healthy and
               uninjured. Thus, when starting, your current HP will be
               equal to your maximum.
@@ -2332,8 +2323,8 @@
                a general rule for minor injuries (less than 5 HP), you
                gain back 1 HP per day of average activity. For
                significant HP losses, it takes <math>  <mrow>
-                    <msup>  <mrow>  <mo> ( </mo>  <mi> Maximum </mi> 
-                     <mo> - </mo>  <mi> Current </mi>  <mo> ) </mo> 
+                    <msup>  <mrow>  <mo> ( </mo>  <mi>Maximum</mi> 
+                     <mo> - </mo>  <mi>Current</mi>  <mo> ) </mo> 
                      </mrow>  <mn> 2 </mn>
                    </msup>  </mrow>  </math>  days to fully recover your HP.
             </text>  
@@ -2904,8 +2895,8 @@
                   <cell> 1/2 damage, C </cell>
                   <cell>  <math>  <mrow>  
                           <msup>  <mfrac><mn> 1 </mn><mn> 10
-                           </mn></mfrac>  <mi> th </mi>
-                        </msup>  <mi> cost </mi>  </mrow>  </math>
+                           </mn></mfrac>  <mi>th</mi>
+                        </msup>  <mi>cost</mi>  </mrow>  </math>
                   </cell>  
                   <cell> Common </cell>  
                 </row>  
@@ -2914,7 +2905,7 @@
             </figure>  
               <text>  For other than normal sized weapons (mecha, etc.),
                all stats are <math>
-                  <msup>  <mn> 2 </mn>  <mrow>  <mi> Size </mi>  <mo> -
+                  <msup>  <mn> 2 </mn>  <mrow>  <mi>Size</mi>  <mo> -
                    </mo>  <mn> 1 </mn>  </mrow>
                  </msup>  </math>  normal. This applies to strength
                   requirement, strength bonus, damage dice number, etc.
@@ -3903,9 +3894,9 @@
             <title>Magic-Related Skill Summary</title>  
             <itemized-list>  
               <item>  Spellcasting gives additional <math>  <mrow>  
-                    <msup>  <mi> LVL </mi><mn> 2 </mn>  
-                     </msup>  <mo> <times/> </mo><mi> WIS </mi><mi> MP
-                      </mi>  </mrow>  </math> . This is the governing skill
+                    <msup>  <mi>LVL</mi><mn> 2 </mn>  
+                     </msup>  <mo> <times/> </mo><mi>WIS</mi><mi>MP
+                     </mi>  </mrow>  </math> . This is the governing skill
                       for learning Invocation spells.
               </item>  
                 <item>  Magical Studies is the academic study of magic
@@ -3917,25 +3908,25 @@
                  script. This skill does not convey the ability to use
                  magic; this skill does not provide MP. </item>
               <item>  Magical Control gives additional <math>  <mrow>  
-                    <msup>  <mi> LVL </mi><mn> 2 </mn>  
-                     </msup>  <mo> <times/> </mo>  <mi> WIL </mi>  <mo>
-                      <times/> </mo>  <mn> 2 </mn>  <mi> MP </mi>  </mrow>
+                    <msup>  <mi>LVL</mi><mn> 2 </mn>  
+                     </msup>  <mo> <times/> </mo>  <mi>WIL</mi>  <mo>
+                      <times/> </mo>  <mn> 2 </mn>  <mi>MP</mi>  </mrow>
                        </math> , and is used to strike with and to control
                       the effects of some spells. While this skill is not
                       required for magic use, it is commonly used.
               </item>  
               <item>  Mysticism gives an additional <math>  <mrow>  
-                    <msup>  <mi> LVL </mi>  <mn> 3 </mn>  
-                     </msup>  <mo> <times/> </mo>  <mi> WIS </mi>  <mi> MP
-                      </mi>  </mrow>  </math> . This is the governing skill
+                    <msup>  <mi>LVL</mi>  <mn> 3 </mn>  
+                     </msup>  <mo> <times/> </mo>  <mi>WIS</mi>  <mi>MP
+                     </mi>  </mrow>  </math> . This is the governing skill
                       for learning Mystic / Psionic spells.
               </item>  
                 <item>  Faith is not technically a magic skill. However,
                  it is used for Faith magic, and provides <math>  <mrow>
-                    <msup>  <mi> LVL </mi>  <mn> 2 </mn>  
-                     </msup>  <mo> <times/> </mo>  <mi> WIL </mi>  <mo>
+                    <msup>  <mi>LVL</mi>  <mn> 2 </mn>  
+                     </msup>  <mo> <times/> </mo>  <mi>WIL</mi>  <mo>
                       <times/> </mo>  <mfrac><mn> 3 </mn><mn> 2
-                      </mn></mfrac>  <mi> MP </mi>  </mrow>  </math> . Faith
+                      </mn></mfrac>  <mi>MP</mi>  </mrow>  </math> . Faith
                       only provides MP to those characters who actually
                       know Faith magic spells. If a non-faith spellcaster
                       has this skill (For example, a Wizard that also
@@ -4178,8 +4169,8 @@
               <item>
                   <description> Scrolls/Potions </description>  Require
                    <math>  <mrow>
-                    <msup>  <mi> LVL </mi><mn> 2 </mn>
-                     </msup>  <mi> hours </mi>  </mrow>  </math>  to create.
+                    <msup>  <mi>LVL</mi><mn> 2 </mn>
+                     </msup>  <mi>hours</mi>  </mrow>  </math>  to create.
                       They require MP equal to a normal casting of the
                       spell to be expended, and require precious
                       materials valued at not less than three-quarters
@@ -5051,14 +5042,14 @@
                     <row>  
                       <cell> Mecha </cell>  
                         <cell>  <math>  <mrow>  <mfrac>  <mrow>  <mn> 2
-                         </mn>  <mo> <times/> </mo>  <mi> Size CP </mi> 
-                         </mrow>  <mrow>  <mi> +1 </mi>  </mrow> 
+                         </mn>  <mo> <times/> </mo>  <mi>Size CP</mi> 
+                         </mrow>  <mrow>  <mi>+1</mi>  </mrow> 
                          </mfrac>  </mrow>  </math>
                       </cell>  
                         <cell>  <math>  <mfrac>  <mrow>  <mo> ( </mo>  <mi>
-                         Size </mi>  <mo> - </mo>  <mn> 1 </mn>  <mo> )
-                         </mo>  <mi> CP </mi>  </mrow>  <mrow>  <mi> +1
-                         </mi>  </mrow>  </mfrac>  </math>
+                         Size</mi>  <mo> - </mo>  <mn> 1 </mn>  <mo> )
+                         </mo>  <mi>CP</mi>  </mrow>  <mrow>  <mi>+1
+                        </mi>  </mrow>  </mfrac>  </math>
                       </cell>  
                         <cell> DEX can only be used to reduce the DEX
                          minus to a +0. </cell>
@@ -5066,15 +5057,15 @@
                     <row>  
                       <cell> Powered Armor </cell>  
                         <cell>  <math>  <mrow>  <mfrac>  <mrow>  <mn> 3
-                         </mn>  <mi> CP </mi>  </mrow>  <mrow>  <mo> +
-                         </mo>  <mo> ( </mo>  <mi> Size </mi>  <mo> -
+                         </mn>  <mi>CP</mi>  </mrow>  <mrow>  <mo> +
+                         </mo>  <mo> ( </mo>  <mi>Size</mi>  <mo> -
                          </mo>  <mn> 1 </mn>  <mo> ) </mo>  </mrow> 
                          </mfrac>  </mrow>  </math>
                       </cell>  
                         <cell>  <math>  <mrow>  <mfrac>  <mrow>  <mo> (
                          </mo>  <mn> 2 </mn>  <mo> <times/> </mo>  <mi>
-                         Size Cp </mi>  <mo> ) </mo>  </mrow>  <mrow> 
-                         <mi> +1 </mi>  </mrow>  </mfrac>  </mrow>  </math>
+                         Size Cp</mi>  <mo> ) </mo>  </mrow>  <mrow> 
+                         <mi>+1</mi>  </mrow>  </mfrac>  </mrow>  </math>
                       </cell>  
                         <cell> Power armor STR bonus increases the
                          wearer<rdquo />s own STR while wearing the armor
@@ -5105,9 +5096,9 @@
                       <cell> Legs </cell>  
                       <cell> 20 mph </cell>  
                         <cell>  <math><mrow>  <mn> 5 </mn>  <mo> <times/>
-                         </mo>  <mi> Size </mi>  </mrow></math>
+                         </mo>  <mi>Size</mi>  </mrow></math>
                       </cell>  
-                        <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
+                        <cell>  <math><mrow>  <mo> ( </mo>  <mi>Size</mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
                          <times/> </mo>  <mn> 6 </mn>  </mrow></math>
                       </cell>  
@@ -5118,7 +5109,7 @@
                       <cell> Wheels </cell>  
                       <cell> 50 mph </cell>  
                       <cell> 0 </cell>  
-                        <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
+                        <cell>  <math><mrow>  <mo> ( </mo>  <mi>Size</mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
                          <times/> </mo>  <mn> 2 </mn>  </mrow></math>
                       </cell>  
@@ -5137,7 +5128,7 @@
                       <cell> Micro-hover </cell>  
                       <cell> 20 mph </cell>  
                       <cell> 15&apos; </cell>  
-                        <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
+                        <cell>  <math><mrow>  <mo> ( </mo>  <mi>Size</mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
                          <times/> </mo>  <mn> 10 </mn>  </mrow></math>
                       </cell>  
@@ -5148,7 +5139,7 @@
                       <cell> True-hover </cell>  
                       <cell> 30 mph </cell>  
                       <cell> 200&apos; </cell>  
-                        <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
+                        <cell>  <math><mrow>  <mo> ( </mo>  <mi>Size</mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
                          <times/> </mo>  <mn> 15 </mn>  </mrow></math>
                       </cell>  
@@ -5159,7 +5150,7 @@
                       <cell> Jump jets </cell>  
                       <cell> 0 mph </cell>  
                       <cell> 100&apos; </cell>  
-                        <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
+                        <cell>  <math><mrow>  <mo> ( </mo>  <mi>Size</mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
                          <times/> </mo>  <mn> 10 </mn>  </mrow></math>
                       </cell>  
@@ -5179,7 +5170,7 @@
                       <cell> 0 </cell>  
                       <cell> 2 </cell>  
                       <cell><math>
-                          <msup><mi> Size </mi><mn> 2 </mn>
+                          <msup><mi>Size</mi><mn> 2 </mn>
                           </msup></math>
                       </cell>  
                     </row>  
@@ -5187,13 +5178,13 @@
                       <cell> Manuever Jets </cell>  
                       <cell> 40 mph </cell>  
                       <cell> 5&apos; </cell>  
-                        <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
+                        <cell>  <math><mrow>  <mo> ( </mo>  <mi>Size</mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
                          <times/> </mo>  <mn> 20 </mn>  </mrow></math>
                       </cell>  
                       <cell> 1 </cell>  
                         <cell>  <math><mfrac>  <mrow>  <mn> 3 </mn><mo>
-                         <times/> </mo>  <mrow><mo> ( </mo>  <mi> X </mi> 
+                         <times/> </mo>  <mrow><mo> ( </mo>  <mi>X</mi> 
                          <mo> <times/> </mo>  <mn> 1 </mn>  <mo> )
                          </mo></mrow>  </mrow>  <mn> 4 </mn> 
                          </mfrac></math>
@@ -5204,7 +5195,7 @@
                       <cell> Jet System </cell>  
                       <cell> 200 mph </cell>  
                       <cell> Unlimited </cell>  
-                        <cell>  <math><mrow>  <mo> ( </mo>  <mi> Size </mi> 
+                        <cell>  <math><mrow>  <mo> ( </mo>  <mi>Size</mi> 
                          <mo> - </mo>  <mn> 1 </mn>  <mo> ) </mo>  <mo>
                          <times/> </mo>  <mn> 20 </mn>  </mrow></math>
                       </cell>  
@@ -5536,26 +5527,26 @@
                   <cell> x8 </cell>  
                 </row>  
                 <row>  
-                    <cell>  <math><mrow>  <mi> X </mi>  <mo> &gt; </mo> 
+                    <cell>  <math><mrow>  <mi>X</mi>  <mo> &gt; </mo> 
                      <mn> 2 </mn>  </mrow></math>
                   </cell>  
-                    <cell>  <math><mrow>  <mo> <times/> </mo>  <mrow>  <mi> X
-                     </mi>  <mo> - </mo>  <mn> 1 </mn>  </mrow> 
+                    <cell>  <math><mrow>  <mo> <times/> </mo>  <mrow>  <mi>X
+                    </mi>  <mo> - </mo>  <mn> 1 </mn>  </mrow> 
                      </mrow></math>
                   </cell>  
                   <cell> 0 </cell>  
                   <cell>  <math><mrow>  <mo> <times/> </mo>  
-                          <msup>  <mn> 2 </mn>  <mrow>  <mi> X </mi> 
+                          <msup>  <mn> 2 </mn>  <mrow>  <mi>X</mi> 
                            <mo> - </mo>  <mn> 2 </mn>  </mrow>
                         </msup>  </mrow></math>  
                   </cell>  
                   <cell>  <math><mrow>  <mo> <times/> </mo>  
-                          <msup>  <mn> 2 </mn>  <mrow>  <mi> X </mi> 
+                          <msup>  <mn> 2 </mn>  <mrow>  <mi>X</mi> 
                            <mo> - </mo>  <mn> 2 </mn>  </mrow>
                         </msup>  </mrow></math>  
                   </cell>  
                   <cell>  <math><mrow>  <mo> <times/> </mo>  
-                          <msup>  <mn> 2 </mn>  <mrow>  <mi> X </mi> 
+                          <msup>  <mn> 2 </mn>  <mrow>  <mi>X</mi> 
                            <mo> - </mo>  <mn> 2 </mn>  </mrow>
                         </msup>  </mrow></math>  
                   </cell>  
@@ -5563,7 +5554,7 @@
                 <row>  
                   <cell> Assisted Melee System </cell>  
                   <cell>  <math>
-                      <msup>  <mi> X </mi>  <mn> 2 </mn>  
+                      <msup>  <mi>X</mi>  <mn> 2 </mn>  
                       </msup></math>  
                   </cell>  
                   <cell> Size </cell>  
@@ -5667,16 +5658,16 @@
                 <row>  
                   <cell border='none'> Anthropoid </cell>  
                   <cell border='none' span='11'>  Height: <math>  <mrow>  
-                        <msup><mi> Size </mi><mn> 2 </mn>
+                        <msup><mi>Size</mi><mn> 2 </mn>
                           </msup>  <mo> <times/> </mo>  <mn> 40 </mn><mi>
-                           cm </mi>  </mrow>  </math>
+                           cm</mi>  </mrow>  </math>
                   </cell>  
                 </row>  
                 <row>  
                   <cell />  
                     <cell span='11'>  Weight: <math>  <mrow>  <mfrac><mi>
-                     Height </mi><mn> 3 </mn></mfrac>  <mi> kilograms
-                     </mi>  </mrow>  </math>
+                     Height</mi><mn> 3 </mn></mfrac>  <mi>kilograms
+                    </mi>  </mrow>  </math>
                   </cell>  
                 </row>  
                 <row>  
@@ -5728,16 +5719,16 @@
                 <row>  
                   <cell border='none'> Bipedal </cell>  
                   <cell border='none' span='11'>  Height: <math>  <mrow>  
-                        <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> <times/> </mo><mn> 35 </mn><mi> cm
-                           </mi>  </mrow>  </math>
+                        <msup><mi>Size</mi><mn> 2 </mn>
+                          </msup>  <mo> <times/> </mo><mn> 35 </mn><mi>cm
+                          </mi>  </mrow>  </math>
                   </cell>  
                 </row>  
                 <row>  
                   <cell />  
                     <cell span='11'> Weight: <math>  <mrow>  <mfrac><mi>
-                     Height </mi><mn> 3 </mn></mfrac>  <mi> kilograms
-                     </mi>  </mrow>  </math>
+                     Height</mi><mn> 3 </mn></mfrac>  <mi>kilograms
+                    </mi>  </mrow>  </math>
                   </cell>  
                 </row>  
                 <row>  
@@ -5789,18 +5780,18 @@
                 <row>  
                   <cell border='none'> Quadruped </cell>  
                   <cell border='none' span='11'>  Length: <math><mrow>  
-                        <msup><mi> Size </mi><mn> 2 </mn>
+                        <msup><mi>Size</mi><mn> 2 </mn>
                           </msup>  <mo> <times/> </mo>  <mn> 35 </mn><mi>
-                           cm </mi>  </mrow></math> ; Height: <math><mrow> 
+                           cm</mi>  </mrow></math> ; Height: <math><mrow> 
                            <mfrac><mn> 1 </mn><mn> 3 </mn></mfrac>  <mo>
-                           <times/> </mo>  <mi> Length </mi>  </mrow></math>
+                           <times/> </mo>  <mi>Length</mi>  </mrow></math>
                   </cell>  
                 </row>  
                 <row>  
                   <cell />  
                     <cell span='11'>  Weight: <math>  <mrow>  <mfrac><mi>
-                     Length </mi><mn> 2 </mn></mfrac>  <mi> kilograms
-                     </mi>  </mrow>  </math>
+                     Length</mi><mn> 2 </mn></mfrac>  <mi>kilograms
+                    </mi>  </mrow>  </math>
                   </cell>  
                 </row>  
                 <row>  
@@ -5848,17 +5839,17 @@
                 <row>  
                   <cell border='none'> Serpent </cell>  
                   <cell border='none' span='11'>  Length: <math><mrow>  
-                        <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> <times/> </mo><mn> 40 </mn><mi> cm
-                           </mi>  </mrow></math> ; Height: <math><mrow> 
+                        <msup><mi>Size</mi><mn> 2 </mn>
+                          </msup>  <mo> <times/> </mo><mn> 40 </mn><mi>cm
+                          </mi>  </mrow></math> ; Height: <math><mrow> 
                            <mfrac><mn> 1 </mn><mn> 8 </mn></mfrac>  <mo>
-                           <times/> </mo><mi> Length </mi>  </mrow></math>
+                           <times/> </mo><mi>Length</mi>  </mrow></math>
                   </cell>  
                 </row>  
                 <row>  
                   <cell />  
-                    <cell span='11'> Weight: <math><mrow>  <mfrac><mi> Height
-                     </mi><mn> 2 </mn></mfrac>  <mi> kilograms </mi> 
+                    <cell span='11'> Weight: <math><mrow>  <mfrac><mi>Height
+                    </mi><mn> 2 </mn></mfrac>  <mi>kilograms</mi> 
                      </mrow></math>
                   </cell>  
                 </row>  
@@ -5911,15 +5902,15 @@
                 <row>  
                   <cell border='none'> Polymelic </cell>  
                   <cell border='none' span='11'>  Size: <math><mrow>  
-                        <msup><mi> Size </mi><mn> 2 </mn>
-                         </msup>  <mo> <times/> </mo><mn> 30 </mn><mi> cm
-                          </mi>  </mrow></math> , in some dimension
+                        <msup><mi>Size</mi><mn> 2 </mn>
+                         </msup>  <mo> <times/> </mo><mn> 30 </mn><mi>cm
+                         </mi>  </mrow></math> , in some dimension
                   </cell>  
                 </row>  
                 <row>  
                   <cell />  
-                    <cell span='11'> Weight: <math><mrow>  <mfrac><mi> Size
-                     </mi><mn> 3 </mn></mfrac>  <mi> kilograms </mi> 
+                    <cell span='11'> Weight: <math><mrow>  <mfrac><mi>Size
+                    </mi><mn> 3 </mn></mfrac>  <mi>kilograms</mi> 
                      </mrow></math>
                   </cell>  
                 </row>  
@@ -5972,16 +5963,16 @@
                 <row>  
                   <cell border='none'> Amorphous </cell>  
                   <cell border='none' span='11'>  Diameter: <math><mrow>  
-                        <msup><mi> Size </mi><mn> 2 </mn>
-                          </msup>  <mo> <times/> </mo><mn> 50 </mn><mi> cm
-                           </mi>  </mrow></math>
+                        <msup><mi>Size</mi><mn> 2 </mn>
+                          </msup>  <mo> <times/> </mo><mn> 50 </mn><mi>cm
+                          </mi>  </mrow></math>
                   </cell>  
                 </row>  
                 <row>  
                   <cell />  
                   <cell span='11'> Weight: <math><mrow>  
-                        <msup><mi> Diameter </mi><mn> 3 </mn>
-                        </msup>  <mi> kilograms </mi>  </mrow></math>  
+                        <msup><mi>Diameter</mi><mn> 3 </mn>
+                        </msup>  <mi>kilograms</mi>  </mrow></math>  
                   </cell>  
                 </row>  
                 <row>  

@@ -587,74 +587,74 @@ Josh Kramer}
        Lift & This determines how much weight the character
                      can lift in pounds, in a `good'
                      situation, such as a weighted barbell or a trunk
-                     with handles. &  \ensuremath{  \frac{ STR\ensuremath{\times}STR\ensuremath{\times}BLD
-                     }{ 10 }   +   
-                     STR   }
+                     with handles. &  \ensuremath{  {{ STR\times STR\times BLD
+                     }\over{ 10 }}   +   \texttt{
+                     STR}  }
                   \\
 
 \hline
 
  Carry & This is the amount of weight the character can
                      carry about his/her person for a reasonable length
-                     of time. &  \ensuremath{  \frac{ Lift }{ 2 }  }
+                     of time. &  \ensuremath{  {{\texttt{Lift}}\over{ 2 }}  }
                   \\
 
 \hline
 
  Encumbrance & This represents how much gear the character
                      can wear before encountering adverse effects due to
-                     the weight and impaired mobility. &  \ensuremath{  \frac{   BLD  +
-                      DEX  +  STR  
-                     }{ 6 }  }
+                     the weight and impaired mobility. &  \ensuremath{  {{  \texttt{BLD} +
+                     \texttt{DEX} + \texttt{STR} 
+                     }\over{ 6 }}  }
                   \\
 
 \hline
 
  Base Armor & Determines how resilient the character is to
                      `odd' damage, such as lightning and
-                     fire. &  \ensuremath{  \frac{ BLD  +
-                      WIL }{ 6 } 
+                     fire. &  \ensuremath{  {{\texttt{BLD} +
+                     \texttt{WIL}}\over{ 6 }} 
                      }
                   \\
 
 \hline
 
  Movement & How fast the character is in `squares
-                     per move-equivalent Action ' &  \ensuremath{  \frac{ 2  \ensuremath{\times}
-                      STR  +  DEX }{ 15 }  }
+                     per move-equivalent Action ' &  \ensuremath{  {{ 2  \times 
+                     \texttt{STR} + \texttt{DEX}}\over{ 15 }}  }
                   \\
 
 \hline
 
  Perception & How well the character can notice things
                      around him. Used just like an attribute check.
-                     &  \ensuremath{  \frac{   DEX  +
-                        2  \ensuremath{\times}    KNO
-                      +    INT   }{ 4
-                     }  }
+                     &  \ensuremath{  {{  \texttt{DEX} +
+                        2  \times    \texttt{KNO
+                    } +   \texttt{INT}  }\over{ 4
+                     }}  }
                   \\
 
 \hline
 
  Interaction & The basic ability of a character to interact
-                     with other people. &  \ensuremath{  \frac{ CHA  +
-                      KNO  +  INT }{ 3 }  }
+                     with other people. &  \ensuremath{  {{\texttt{CHA} +
+                     \texttt{KNO} + \texttt{INT}}\over{ 3 }}  }
                   \\
 
 \hline
 
  Hit Points & The amount of damage you can receive before
-                     dying. &  \ensuremath{ BLD  +  WIL
-                     }
+                     dying. &  \ensuremath{\texttt{BLD} + \texttt{WIL
+                    }}
                   \\
 
 \hline
 
  Magic Points & The number of Magic Points you can draw on to
                      cast magic spells or perform supernatural feats
-                     &  \ensuremath{     (    WIL  
-                      +    BLD    )   
-                     \ensuremath{\times}    10     }
+                     &  \ensuremath{     (   \texttt{WIL} 
+                      +   \texttt{BLD}   )   
+                     \times     10     }
                   \\
 
 \hline
@@ -885,10 +885,16 @@ Josh Kramer}
              be. The higher the level you want in the skill, the more
              expensive it will be.  For those that are mathematically inclined, here is
              the formula for determining CP of a particular skill level
-             and rank: \ensuremath{    { ∑ }_{ i
-                    =  0 }^{ N }   i    =   \frac{    
-                    { N }^{ 2 }   +    N     
-                }{ 2 }    } For the rest of us, use this nifty table, and multiply
+             and rank: 
+
+
+    \vspace{-.4in}
+    \begin{center}
+    \begin{equation}
+    {\sum}_{i=1}^{\texttt{Desired Level}=N}i\times \texttt{Rank}={{\texttt{Rank}\times ({N}^{2}+N)}\over{2}}
+    \end{equation}
+    \end{center}
+   For the rest of us, use this nifty table, and multiply
              the value listed by the rank. 
 \begin{table}[htb]
   \begin{center}
@@ -2199,15 +2205,16 @@ Josh Kramer}
                  target is not ignited. Fire protection on armor will
                  only work three times before the armor must be repaired
                  or replaced. Some armor is rated fire protection
-                 \ensuremath{\times}2, which will take six fire-effect hits before
-                 loosing it's fire resistance, etc. Note that fire
-                 protection armor only resists the ignition effect and
-                 any heat (U) damage from the fire specifically.
-                 Therefore, if a weapon deals normal damage (P/S/C) AND
-                 has either Fire effect or Fire damage (U) then the
-                 fire-related effects are prevented but the standard
-                 damage (P/S/C) is treated as normal. Targets that are
-                 `on fire' suffer the damage on each of their
+                 \ensuremath{\times }2, which will take six
+                 fire-effect hits before loosing it's fire
+                 resistance, etc. Note that fire protection armor only
+                 resists the ignition effect and any heat (U) damage
+                 from the fire specifically.  Therefore, if a weapon
+                 deals normal damage (P/S/C) AND has either Fire
+                 effect or Fire damage (U) then the fire-related
+                 effects are prevented but the standard damage (P/S/C)
+                 is treated as normal. Targets that are `on
+                 fire' suffer the damage on each of their
                  turns. 
   
 
@@ -2289,8 +2296,8 @@ Josh Kramer}
                attributes, and will rarely change unless your attributes
                change.  Your current Hit Points is the most important number.
               It will likely change frequently during combat. Hit Points
-              are generally represented as a fraction: \ensuremath{\frac{
-              Current HP }{ Max HP }} . When the
+              are generally represented as a fraction: \ensuremath{{{\texttt{
+              Current HP}}\over{\texttt{Max HP}}}} . When the
               game begins, your character will be fully healthy and
               uninjured. Thus, when starting, your current HP will be
               equal to your maximum.
@@ -2304,8 +2311,8 @@ Josh Kramer}
                a general rule for minor injuries (less than 5 HP), you
                gain back 1 HP per day of average activity. For
                significant HP losses, it takes \ensuremath{  
-                    {   (    Maximum  
-                      -    Current    )  
+                    {   (   \texttt{Maximum} 
+                      -   \texttt{Current}   )  
                      }^{ 2 }    }  days to fully recover your HP.
              If a character is resting and is under basic medical
                care, then your healing time is cut in HALF. If your
@@ -2760,14 +2767,14 @@ Josh Kramer}
 \begin{itemize}
       
   \item   Buckler: Full damage 
-  \item   Small: \ensuremath{\frac{ 1 }{ 4
-                   }}
+  \item   Small: \ensuremath{{{ 1 }\over{ 4
+                   }}}
                   
-  \item   Large: \ensuremath{\frac{ 1 }{ 2
-                   }}
+  \item   Large: \ensuremath{{{ 1 }\over{ 2
+                   }}}
                   
-  \item   Tower: \ensuremath{\frac{ 3 }{ 4
-                   }}
+  \item   Tower: \ensuremath{{{ 3 }\over{ 4
+                   }}}
                   
 \end{itemize}
     
@@ -2849,8 +2856,8 @@ Josh Kramer}
 \hline
 
  Wooden Training & 1/2 damage, C &  \ensuremath{    
-                          {\frac{ 1 }{ 10
-                           }}^{ th }   cost     }
+                          {{{ 1 }\over{ 10
+                           }}}^{\texttt{th}}  \texttt{cost}    }
                   & Common \\
 
 \hline
@@ -2864,7 +2871,7 @@ Josh Kramer}
 \end{table}
     For other than normal sized weapons (mecha, etc.),
                all stats are \ensuremath{
-                  { 2 }^{   Size    -
+                  { 2 }^{  \texttt{Size}   -
                       1   }  }  normal. This applies to strength
                   requirement, strength bonus, damage dice number, etc.
             
@@ -3749,8 +3756,8 @@ Josh Kramer}
 \begin{itemize}
       
   \item   Spellcasting gives additional \ensuremath{    
-                    { LVL }^{ 2 }   \ensuremath{\times}  WIS  MP
-                          } . This is the governing skill
+                    {\texttt{LVL}}^{ 2 }   \times  \texttt{WIS}\texttt{MP
+                     }    } . This is the governing skill
                       for learning Invocation spells.
               
   \item   Magical Studies is the academic study of magic
@@ -3762,22 +3769,22 @@ Josh Kramer}
                  script. This skill does not convey the ability to use
                  magic; this skill does not provide MP. 
   \item   Magical Control gives additional \ensuremath{    
-                    { LVL }^{ 2 }   \ensuremath{\times}    WIL   
-                      \ensuremath{\times}    2    MP   
+                    {\texttt{LVL}}^{ 2 }   \times    \texttt{WIL}  
+                      \times     2   \texttt{MP}  
                        } , and is used to strike with and to control
                       the effects of some spells. While this skill is not
                       required for magic use, it is commonly used.
               
   \item   Mysticism gives an additional \ensuremath{    
-                    { LVL }^{ 3 }   \ensuremath{\times}    WIS    MP
-                          } . This is the governing skill
+                    {\texttt{LVL}}^{ 3 }   \times    \texttt{WIS}  \texttt{MP
+                     }    } . This is the governing skill
                       for learning Mystic / Psionic spells.
               
   \item   Faith is not technically a magic skill. However,
                  it is used for Faith magic, and provides \ensuremath{  
-                    { LVL }^{ 2 }   \ensuremath{\times}    WIL   
-                      \ensuremath{\times}   \frac{ 3 }{ 2
-                      }   MP     } . Faith
+                    {\texttt{LVL}}^{ 2 }   \times    \texttt{WIL}  
+                      \times    {{ 3 }\over{ 2
+                      }}  \texttt{MP}    } . Faith
                       only provides MP to those characters who actually
                       know Faith magic spells. If a non-faith spellcaster
                       has this skill (For example, a Wizard that also
@@ -4631,26 +4638,26 @@ Josh Kramer}
   \textscbf{ Caveats }\\
   \hline
   \hline
-       Mecha &  \ensuremath{    \frac{   2
-                            \ensuremath{\times}    Size CP  
-                         }{   +1   }    }
-                      &  \ensuremath{  \frac{   (   
-                         Size    -    1    )
-                            CP   }{   +1
-                           }  }
+       Mecha &  \ensuremath{    {{   2
+                            \times    \texttt{Size CP} 
+                         }\over{  \texttt{+1}  }}    }
+                      &  \ensuremath{  {{   (   \texttt{
+                         Size}   -    1    )
+                           \texttt{CP}  }\over{  \texttt{+1
+                        }  }}  }
                       & DEX can only be used to reduce the DEX
                          minus to a +0. \\
 
 \hline
 
- Powered Armor &  \ensuremath{    \frac{   3
-                            CP   }{   +
-                            (    Size    -
-                            1    )   }    }
-                      &  \ensuremath{    \frac{   (
-                            2    \ensuremath{\times}   
-                         Size Cp    )   }{ 
-                          +1   }    }
+ Powered Armor &  \ensuremath{    {{   3
+                           \texttt{CP}  }\over{   +
+                            (   \texttt{Size}   -
+                            1    )   }}    }
+                      &  \ensuremath{    {{   (
+                            2    \times    \texttt{
+                         Size Cp}   )   }\over{ 
+                         \texttt{+1}  }}    }
                       & Power armor STR bonus increases the
                          wearer's own STR while wearing the armor
                          \\
@@ -4688,18 +4695,18 @@ Josh Kramer}
   \textscbf{ Notes }\\
   \hline
   \hline
-       Legs & 20 mph &  \ensuremath{   5    \ensuremath{\times}
-                            Size   }
-                      &  \ensuremath{   (    Size  
+       Legs & 20 mph &  \ensuremath{   5    \times 
+                           \texttt{Size}  }
+                      &  \ensuremath{   (   \texttt{Size} 
                           -    1    )   
-                         \ensuremath{\times}    6   }
+                         \times     6   }
                       & 0 & 4 \\
 
 \hline
 
- Wheels & 50 mph & 0 &  \ensuremath{   (    Size  
+ Wheels & 50 mph & 0 &  \ensuremath{   (   \texttt{Size} 
                           -    1    )   
-                         \ensuremath{\times}    2   }
+                         \times     2   }
                       & 1 & 3 \\
 
 \hline
@@ -4708,51 +4715,51 @@ Josh Kramer}
 
 \hline
 
- Micro-hover & 20 mph & 15' &  \ensuremath{   (    Size  
+ Micro-hover & 20 mph & 15' &  \ensuremath{   (   \texttt{Size} 
                           -    1    )   
-                         \ensuremath{\times}    10   }
+                         \times     10   }
                       & 4 & 8 \\
 
 \hline
 
- True-hover & 30 mph & 200' &  \ensuremath{   (    Size  
+ True-hover & 30 mph & 200' &  \ensuremath{   (   \texttt{Size} 
                           -    1    )   
-                         \ensuremath{\times}    15   }
+                         \times     15   }
                       & 6 & 10 \\
 
 \hline
 
- Jump jets & 0 mph & 100' &  \ensuremath{   (    Size  
+ Jump jets & 0 mph & 100' &  \ensuremath{   (   \texttt{Size} 
                           -    1    )   
-                         \ensuremath{\times}    10   }
+                         \times     10   }
                       & 1 &
                         \ensuremath{
-                          {Size}^{2}
+                          {\texttt{Size}}^{2}
                         }
                       \\
 
 \hline
 
  Mech. Jump & 0 mph & 50' & 0 & 2 &\ensuremath{
-                          { Size }^{ 2 }}
+                          {\texttt{Size}}^{ 2 }}
                       \\
 
 \hline
 
- Manuever Jets & 40 mph & 5' &  \ensuremath{   (    Size  
+ Manuever Jets & 40 mph & 5' &  \ensuremath{   (   \texttt{Size} 
                           -    1    )   
-                         \ensuremath{\times}    20   }
-                      & 1 &  \ensuremath{\frac{   3 
-                         \ensuremath{\times}    (    X  
-                          \ensuremath{\times}    1    )
-                           }{ 4 }}
+                         \times     20   }
+                      & 1 &  \ensuremath{{{   3 
+                         \times     (   X 
+                          \times     1    )
+                           }\over{ 4 }}}
                       & Gives [+2X] to dodge \\
 
 \hline
 
- Jet System & 200 mph & Unlimited &  \ensuremath{   (    Size  
+ Jet System & 200 mph & Unlimited &  \ensuremath{   (   \texttt{Size} 
                           -    1    )   
-                         \ensuremath{\times}    20   }
+                         \times     20   }
                       & 10 & 15 \\
 
 \hline
@@ -5000,26 +5007,26 @@ Josh Kramer}
 
 \hline
 
-  \ensuremath{   X    >  
+  \ensuremath{  X   >  
                       2   }
-                  &  \ensuremath{   \ensuremath{\times}      X
-                        -    1    
+                  &  \ensuremath{   \times      \texttt{X
+                    }   -    1    
                      }
-                  & 0 &  \ensuremath{   \ensuremath{\times}   
-                          { 2 }^{   X  
+                  & 0 &  \ensuremath{   \times    
+                          { 2 }^{  X 
                             -    2   }  }  
-                  &  \ensuremath{   \ensuremath{\times}   
-                          { 2 }^{   X  
+                  &  \ensuremath{   \times    
+                          { 2 }^{  X 
                             -    2   }  }  
-                  &  \ensuremath{   \ensuremath{\times}   
-                          { 2 }^{   X  
+                  &  \ensuremath{   \times    
+                          { 2 }^{  X 
                             -    2   }  }  
                   \\
 
 \hline
 
  Assisted Melee System &  \ensuremath{
-                      { X }^{ 2 }}  
+                      {X}^{ 2 }}  
                   & Size & +X to damage & Uses 5x power. \\
 
 \hline
@@ -5107,15 +5114,15 @@ Josh Kramer}
 \hline
 
  Anthropoid &  Height: \ensuremath{    
-                        { Size }^{ 2 }   \ensuremath{\times}    40 
-                           cm     }
+                        {\texttt{Size}}^{ 2 }   \times     40 \texttt{
+                           cm}    }
                   \\
 
 \hline
 
-&  Weight: \ensuremath{    \frac{
-                     Height }{ 3 }   kilograms
-                         }
+&  Weight: \ensuremath{    {{\texttt{
+                     Height}}\over{ 3 }}  \texttt{kilograms
+                    }    }
                   \\
 
 \hline
@@ -5137,15 +5144,15 @@ Josh Kramer}
 \hline
 
  Bipedal &  Height: \ensuremath{    
-                        { Size }^{ 2 }   \ensuremath{\times}  35  cm
-                               }
+                        {\texttt{Size}}^{ 2 }   \times   35 \texttt{cm
+                          }    }
                   \\
 
 \hline
 
-& Weight: \ensuremath{    \frac{
-                     Height }{ 3 }   kilograms
-                         }
+& Weight: \ensuremath{    {{\texttt{
+                     Height}}\over{ 3 }}  \texttt{kilograms
+                    }    }
                   \\
 
 \hline
@@ -5167,17 +5174,17 @@ Josh Kramer}
 \hline
 
  Quadruped &  Length: \ensuremath{  
-                        { Size }^{ 2 }   \ensuremath{\times}    35 
-                           cm   } ; Height: \ensuremath{ 
-                           \frac{ 1 }{ 3 }  
-                           \ensuremath{\times}    Length   }
+                        {\texttt{Size}}^{ 2 }   \times     35 \texttt{
+                           cm}  } ; Height: \ensuremath{ 
+                           {{ 1 }\over{ 3 }}  
+                           \times    \texttt{Length}  }
                   \\
 
 \hline
 
-&  Weight: \ensuremath{    \frac{
-                     Length }{ 2 }   kilograms
-                         }
+&  Weight: \ensuremath{    {{\texttt{
+                     Length}}\over{ 2 }}  \texttt{kilograms
+                    }    }
                   \\
 
 \hline
@@ -5195,16 +5202,16 @@ Josh Kramer}
 \hline
 
  Serpent &  Length: \ensuremath{  
-                        { Size }^{ 2 }   \ensuremath{\times}  40  cm
-                             } ; Height: \ensuremath{ 
-                           \frac{ 1 }{ 8 }  
-                           \ensuremath{\times}  Length   }
+                        {\texttt{Size}}^{ 2 }   \times   40 \texttt{cm
+                          }  } ; Height: \ensuremath{ 
+                           {{ 1 }\over{ 8 }}  
+                           \times  \texttt{Length}  }
                   \\
 
 \hline
 
-& Weight: \ensuremath{  \frac{ Height
-                     }{ 2 }   kilograms  
+& Weight: \ensuremath{  {{\texttt{Height
+                    }}\over{ 2 }}  \texttt{kilograms} 
                      }
                   \\
 
@@ -5227,14 +5234,14 @@ Josh Kramer}
 \hline
 
  Polymelic &  Size: \ensuremath{  
-                        { Size }^{ 2 }   \ensuremath{\times}  30  cm
-                            } , in some dimension
+                        {\texttt{Size}}^{ 2 }   \times   30 \texttt{cm
+                         }  } , in some dimension
                   \\
 
 \hline
 
-& Weight: \ensuremath{  \frac{ Size
-                     }{ 3 }   kilograms  
+& Weight: \ensuremath{  {{\texttt{Size
+                    }}\over{ 3 }}  \texttt{kilograms} 
                      }
                   \\
 
@@ -5257,14 +5264,14 @@ Josh Kramer}
 \hline
 
  Amorphous &  Diameter: \ensuremath{  
-                        { Size }^{ 2 }   \ensuremath{\times}  50  cm
-                             }
+                        {\texttt{Size}}^{ 2 }   \times   50 \texttt{cm
+                          }  }
                   \\
 
 \hline
 
 & Weight: \ensuremath{  
-                        { Diameter }^{ 3 }   kilograms   }  
+                        {\texttt{Diameter}}^{ 3 }  \texttt{kilograms}  }  
                   \\
 
 \hline

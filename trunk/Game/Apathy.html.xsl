@@ -178,6 +178,8 @@
   <xsl:template match="oslash">&#8212;</xsl:template>
   <!-- special "trademark" word -->
   <xsl:template match="trademark">&#8482;</xsl:template>
+  <!-- special "mathematical sum" word -->
+  <xsl:template match="Sum">&#8721;</xsl:template>
   <!-- dice rolls -->
   <xsl:template match="roll">
     <xsl:choose>
@@ -445,6 +447,11 @@
   </xsl:template>
 
   <!-- math -->
+  <xsl:template match="equation">
+    <div class="math-equation">
+      <xsl:apply-templates />
+    </div>
+  </xsl:template>
   <xsl:template match="math">
     <span id="{generate-id(.)}">
       <xsl:element name="math"
