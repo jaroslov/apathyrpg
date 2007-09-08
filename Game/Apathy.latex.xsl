@@ -360,14 +360,26 @@ Josh Kramer}
     <!-- Builds the descriptor lists -->
 \begin{multicols}{2}
 &#xa;
-\hspace{-2ex}\rulename{Name}
+\hspace{-3.75ex}\rulename{Name}
 \ruledesc{Description thereof.}\vspace{1ex}
 &#xa;
     <xsl:for-each select="//category[@name=$hrid]/datum">
       <xsl:variable name="datum-title" select="field[@title='yes']" />
 &#xa;
 \hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
-\ruledesc{<xsl:apply-templates select="field[@description='yes']" />}\vspace{1ex}
+\ruledesc{<xsl:if test="field[@description='yes']">
+  <xsl:for-each select="./field[@description='yes']/child::node()">
+    <xsl:choose>
+      <xsl:when test="name()='text'">
+\parindent=5pt
+\everypar{\hangindent=20pt \hangafter=1}<xsl:apply-templates select="." />
+      </xsl:when>
+      <xsl:otherwise>
+<xsl:apply-templates select="." />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:for-each>
+</xsl:if>}\vspace{1ex}
 &#xa;
     </xsl:for-each>
 \end{multicols}
