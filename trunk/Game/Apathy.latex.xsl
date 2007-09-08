@@ -284,13 +284,9 @@ Josh Kramer}
   </xsl:template>
   <!-- tables -->
   <xsl:template match="table">
-  \begin{tabular}{|<xsl:for-each select="head/cell"><xsl:choose><xsl:when test="./@width">p{<xsl:value-of select="./@width" />}|</xsl:when><xsl:when test="./@align='center'">c|</xsl:when><xsl:when test="./@align='left'">l|</xsl:when><xsl:when test="./@align='right'">r|</xsl:when><xsl:otherwise>c|</xsl:otherwise></xsl:choose></xsl:for-each>}
+  \begin{tabular}{|<xsl:for-each select="head/cell"><xsl:choose><xsl:when test="./@colfmt"><xsl:value-of select="./@colfmt" />|</xsl:when><xsl:otherwise>c|</xsl:otherwise></xsl:choose></xsl:for-each>}
   \hline
-    <xsl:for-each select="head/cell">
-  \textscbf{<xsl:apply-templates />}<xsl:choose>
-        <xsl:when test="position()=count(../*)">\\</xsl:when>
-        <xsl:otherwise>&amp;</xsl:otherwise>
-      </xsl:choose>
+<xsl:for-each select="head/cell">\textscbf{<xsl:apply-templates />}<xsl:choose><xsl:when test="position()=count(../*)">\\</xsl:when><xsl:otherwise>&amp;</xsl:otherwise></xsl:choose>
     </xsl:for-each>
   \hline
   \hline
@@ -318,7 +314,7 @@ Josh Kramer}
   </xsl:template>
   <xsl:template match="math">\begin{math}<xsl:apply-templates />\end{math}</xsl:template>
   <xsl:template match="mrow"><xsl:apply-templates /></xsl:template>
-  <xsl:template match="mi"><xsl:choose><xsl:when test="string-length(text())=1"><xsl:apply-templates /></xsl:when><xsl:otherwise>\textrm{<xsl:apply-templates />}</xsl:otherwise></xsl:choose></xsl:template>
+  <xsl:template match="mi"><xsl:choose><xsl:when test="string-length(text())=1"><xsl:apply-templates /></xsl:when><xsl:otherwise><xsl:apply-templates /></xsl:otherwise></xsl:choose></xsl:template>
   <xsl:template match="mo"><xsl:apply-templates /></xsl:template>
   <xsl:template match="mn"><xsl:apply-templates /></xsl:template>
   <xsl:template match="msup">{<xsl:apply-templates select="./*[position()=1]"/>}^{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
@@ -335,7 +331,7 @@ Josh Kramer}
     <!-- A unique hrid to the category we need -->
     <xsl:variable name="hrid" select="./@hrid" />
     <xsl:variable name="scName" select="../title"/>
-\begin{longtable}{p{1.25in}<xsl:for-each select="//category[@name=$hrid]/default/field"><xsl:if test="./@title"></xsl:if><xsl:if test="./@table"><xsl:value-of select="./@width" /></xsl:if></xsl:for-each>} 
+\begin{longtable}{p{1.25in}<xsl:for-each select="//category[@name=$hrid]/default/field"><xsl:if test="./@title"></xsl:if><xsl:if test="./@table"><xsl:value-of select="./@colfmt" /></xsl:if></xsl:for-each>} 
   <xsl:value-of select="$scName" />
         <xsl:for-each select="//category[@name=$hrid]/default/field">
           <xsl:if test="./@title"></xsl:if>
@@ -354,7 +350,7 @@ Josh Kramer}
         </xsl:for-each> \\
   \hline
   \endhead
-<xsl:for-each select="//category[@name=$hrid]/datum">\raggedright<xsl:for-each select="field" >
+<xsl:for-each select="//category[@name=$hrid]/datum">\raggedright <xsl:for-each select="field" >
             <xsl:if test="./@title"><xsl:apply-templates select="." /></xsl:if>
             <xsl:if test="./@table">&amp;<xsl:apply-templates select="." />
             </xsl:if>
@@ -363,10 +359,14 @@ Josh Kramer}
 \end{longtable}
     <!-- Builds the descriptor lists -->
 \begin{multicols}{2}
+&#xa;
+\hspace{-2ex}\rulename{Name}
+\ruledesc{Description thereof.}\vspace{1ex}
+&#xa;
     <xsl:for-each select="//category[@name=$hrid]/datum">
       <xsl:variable name="datum-title" select="field[@title='yes']" />
 &#xa;
-<xsl:if test="position()=1">\hspace{-2ex}</xsl:if>\hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
+\hspace{-2ex}\rulename{<xsl:apply-templates select="field[@title='yes']" />}
 \ruledesc{<xsl:apply-templates select="field[@description='yes']" />}\vspace{1ex}
 &#xa;
     </xsl:for-each>
