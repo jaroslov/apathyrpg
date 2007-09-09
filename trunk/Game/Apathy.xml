@@ -5584,14 +5584,14 @@
              is not available to them. The Monster section is thus
              divided into three parts: </text>
           <description-list>  
-              <item description='Base types'> : the fundamental
+              <item><description>Base types</description><text>the fundamental
                attributes, abilities, and <ldquo />look<rdquo /> of the base
-               creature </item>
-              <item description='Templates'> : modifications to the
+               creature</text></item>
+              <item><description>Templates</description><text>modifications to the
                base-type that give the <ldquo />flavor<rdquo /> of the
-               monster </item>
-              <item description='Examples'> : that have been
-               pre-generated </item>
+               monster</text></item>
+              <item><description>Examples</description><text> that have been
+               pre-generated</text></item>
           </description-list>  
           <section>  
             <title>Base Types</title>  
@@ -9904,7 +9904,7 @@
         <field table='yes' name='Slashing'> 8</field>  
         <field table='yes' name='Crushing'> 3</field>  
           <field name='Description' description='yes'> CLB-WAF, called
-           <ldquo/>Clubwaf</rdquo> by it<rdquo/>s wearers, is the most effective
+           <ldquo/>Clubwaf<rdquo/> by it<rdquo/>s wearers, is the most effective
            <ldquo/>bulletproof vest<rdquo/> developed. It consists of a Spectra-boron
            nanocomposite thread that is woven into armored cloth. This
            armor delivers remarkable protection but is light enough to be
