@@ -271,7 +271,7 @@ Josh Kramer}
   <!-- Figure -->
   <!-- figure -->
   <xsl:template match="figure">
-\begin{table}[htb]
+\begin{table}[!htb]
   \begin{center}
 <xsl:apply-templates select="table" />
 <xsl:apply-templates select="caption" />
@@ -294,8 +294,12 @@ Josh Kramer}
           <xsl:for-each select="cell">
             <xsl:variable name="cellspan" select="./@span" />
             <xsl:variable name="border" select="./@border" />
-  <xsl:apply-templates /><xsl:choose>
-              <xsl:when test="position()=count(../*)">\\&#xa;&#xa;\hline&#xa;&#xa;</xsl:when>
+            <xsl:variable name="span" select="./@span" />
+            <xsl:if test="$span">
+\multicolumn{<xsl:value-of select="$span" />}{c}{
+            </xsl:if>
+  <xsl:apply-templates /><xsl:if test="$span">}</xsl:if><xsl:choose>
+              <xsl:when test="position()=count(../*)">\\&#xa;&#xa;<xsl:if test="not($border='none')">\hline</xsl:if>&#xa;&#xa;</xsl:when>
               <xsl:otherwise>&amp;</xsl:otherwise>
             </xsl:choose>
           </xsl:for-each>
