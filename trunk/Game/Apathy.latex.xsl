@@ -372,7 +372,7 @@ Josh Kramer}
     <xsl:choose>
       <xsl:when test="name()='text'">
 \parindent=5pt
-\everypar{\hangindent=20pt \hangafter=1}<xsl:apply-templates select="." />
+\everypar{\hangindent=20pt \hangafter=1}<xsl:apply-templates select="child::node()" />
       </xsl:when>
       <xsl:otherwise>
 <xsl:apply-templates select="." />
