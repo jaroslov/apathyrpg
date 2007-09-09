@@ -3061,7 +3061,7 @@
                charges.<rdquo /> When these are used up, they must be
                refilled before the weapon can be used. Each charge costs
                <dollar />100 to refill. </text>
-              <reference hrid='Content/Equipment/Melee/Rocket Assisted' />
+              <reference hrid='Content/Equipment/Melee/Rocket-Assisted' />
           </section>  
           <section>  
             <title>Staves</title>  
@@ -15579,21 +15579,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Air Laser'>  
         <field name='Name' title='yes'> Air Laser</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>2</bns><kind>P</kind></roll></field>
@@ -15615,7 +15615,7 @@
       <datum name='Air Scythe'>  
         <field name='Name' title='yes'> Air Scythe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>4</bns><kind>S</kind></roll></field>
@@ -15635,7 +15635,7 @@
       <datum name='Ball lightning'>  
         <field name='Name' title='yes'> Ball lightning</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bns></bns><mul>5</mul><kind>U</kind></roll></field>
@@ -15673,7 +15673,7 @@
       <datum name='Call Lightning'>  
         <field name='Name' title='yes'> Call Lightning</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bns></bns><mul>5</mul><kind>U</kind></roll></field>
@@ -15692,7 +15692,7 @@
       <datum name='Chain Lightning'>  
         <field name='Name' title='yes'> Chain Lightning</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> varies</field>
@@ -15719,7 +15719,7 @@
       <datum name='Corona'>  
         <field name='Name' title='yes'> Corona</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>10</face><bns></bns><mul>5</mul></roll></field>
@@ -15741,7 +15741,7 @@
       <datum name='Create Smoke'>  
         <field name='Name' title='yes'> Create Smoke</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -15759,7 +15759,7 @@
       <datum name='Deflection'>  
         <field name='Name' title='yes'> Deflection</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -15780,7 +15780,7 @@
       <datum name='Electric Bolt'>  
         <field name='Name' title='yes'> Electric Bolt</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>10</face><bns></bns><kind>U</kind></roll></field>
@@ -15796,7 +15796,7 @@
       <datum name='Electrospark'>  
         <field name='Name' title='yes'> Electrospark</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>6</face><bOff>-</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -15816,7 +15816,7 @@
       <datum name='Energy Field'>  
         <field name='Name' title='yes'> Energy Field</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -15837,7 +15837,7 @@
       <datum name='Explodet'>  
         <field name='Name' title='yes'> Explodet</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2X-1</field>
           <field table='yes' name='Damage' qsummary='yes'> 3X*<roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll></field>
@@ -15855,7 +15855,7 @@
       <datum name='Focused Gust'>  
         <field name='Name' title='yes'> Focused Gust</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -15874,7 +15874,7 @@
       <datum name='Gas Slash'>  
         <field name='Name' title='yes'> Gas Slash</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> 5x<roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll></field>
@@ -15892,7 +15892,7 @@
       <datum name='Grand Storm'>  
         <field name='Name' title='yes'> Grand Storm</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 10</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
           <field table='yes' name='Damage' qsummary='yes'> Varies</field>
@@ -15915,7 +15915,7 @@
       <datum name='Great Bolt'>  
         <field name='Name' title='yes'> Great Bolt</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bns></bns><mul>10</mul><kind>U</kind></roll></field>
@@ -15932,7 +15932,7 @@
       <datum name='Heavy Spark'>  
         <field name='Name' title='yes'> Heavy Spark</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>10</face><bns></bns><kind>U</kind></roll></field>
@@ -15948,7 +15948,7 @@
       <datum name='Invert pressure'>  
         <field name='Name' title='yes'> Invert pressure</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>4</face><bns></bns><mul>10</mul><kind>C</kind></roll></field>
@@ -15963,7 +15963,7 @@
       <datum name='Lightning Gauntlet'>  
         <field name='Name' title='yes'> Lightning Gauntlet</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bns></bns><mul>5</mul><kind>U</kind></roll></field>
@@ -15982,7 +15982,7 @@
       <datum name='Lightning Stream'>  
         <field name='Name' title='yes'> Lightning Stream</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bns></bns><mul>5</mul></roll></field>
@@ -16003,7 +16003,7 @@
       <datum name='Pressure shift'>  
         <field name='Name' title='yes'> Pressure shift</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>6</face><bOff>+</bOff><bns>3</bns></roll>x2 C</field>
@@ -16020,7 +16020,7 @@
       <datum name='Sandstorm'>  
         <field name='Name' title='yes'> Sandstorm</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll></field>
@@ -16035,7 +16035,7 @@
       <datum name='Spark Shower'>  
         <field name='Name' title='yes'> Spark Shower</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>10</face><bns></bns><mul>5</mul><kind>U</kind></roll></field>
@@ -16052,7 +16052,7 @@
       <datum name='Web Lightning'>  
         <field name='Name' title='yes'> Web Lightning</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>10</face><bns></bns></roll></field>  
@@ -16069,7 +16069,7 @@
       <datum name='Whirlwind'>  
         <field name='Name' title='yes'> Whirlwind</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll></field>
@@ -16085,7 +16085,7 @@
       <datum name='Willy-Willy'>  
         <field name='Name' title='yes'> Willy-Willy</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16106,7 +16106,7 @@
       <datum name='Wind Screen'>  
         <field name='Name' title='yes'> Wind Screen</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16123,7 +16123,7 @@
       <datum name='Wind Shear'>  
         <field name='Name' title='yes'> Wind Shear</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>4</bns><kind>C</kind></roll></field>
@@ -16141,7 +16141,7 @@
       <datum name='Wind Wall'>  
         <field name='Name' title='yes'> Wind Wall</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Air</field>  
+        <field name='Type' qsummary='yes'> Air</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16164,21 +16164,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Advanced Haste'>  
         <field name='Name' title='yes'> Advanced Haste</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16193,7 +16193,7 @@
       <datum name='Advanced Slow'>  
         <field name='Name' title='yes'> Advanced Slow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16209,7 +16209,7 @@
       <datum name='Anti-Magic Cloud'>  
         <field name='Name' title='yes'> Anti-Magic Cloud</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 9</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16231,7 +16231,7 @@
       <datum name='Autolevitation'>  
         <field name='Name' title='yes'> Autolevitation</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16246,7 +16246,7 @@
       <datum name='Dark Servant'>  
         <field name='Name' title='yes'> Dark Servant</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16264,7 +16264,7 @@
       <datum name='Destroy Barrier'>  
         <field name='Name' title='yes'> Destroy Barrier</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16279,7 +16279,7 @@
       <datum name='Dimensional Shift'>  
         <field name='Name' title='yes'> Dimensional Shift</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16296,7 +16296,7 @@
       <datum name='Disenchant'>  
         <field name='Name' title='yes'> Disenchant</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16352,7 +16352,7 @@
       <datum name='Enlighten'>  
         <field name='Name' title='yes'> Enlighten</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16367,7 +16367,7 @@
       <datum name='Field of Retribution'>  
         <field name='Name' title='yes'> Field of Retribution</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16383,7 +16383,7 @@
       <datum name='Field of Silence'>  
         <field name='Name' title='yes'> Field of Silence</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16400,7 +16400,7 @@
       <datum name='Glorious Aura'>  
         <field name='Name' title='yes'> Glorious Aura</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16416,7 +16416,7 @@
       <datum name='Halt Time'>  
         <field name='Name' title='yes'> Halt Time</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16433,7 +16433,7 @@
       <datum name='Haste'>  
         <field name='Name' title='yes'> Haste</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16448,7 +16448,7 @@
       <datum name='Imprison'>  
         <field name='Name' title='yes'> Imprison</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16465,7 +16465,7 @@
       <datum name='Levitate Object'>  
         <field name='Name' title='yes'> Levitate Object</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16481,7 +16481,7 @@
       <datum name='Light Curtain'>  
         <field name='Name' title='yes'> Light Curtain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16499,7 +16499,7 @@
       <datum name='Mana Burn'>  
         <field name='Name' title='yes'> Mana Burn</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 10</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16515,7 +16515,7 @@
       <datum name='Mana Drain-2'>  
         <field name='Name' title='yes'> Mana Drain-2</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16531,7 +16531,7 @@
       <datum name='Mana Sap'>  
         <field name='Name' title='yes'> Mana Sap</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16546,7 +16546,7 @@
       <datum name='Mass Haste'>  
         <field name='Name' title='yes'> Mass Haste</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16563,7 +16563,7 @@
       <datum name='Mass Silence'>  
         <field name='Name' title='yes'> Mass Silence</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16578,7 +16578,7 @@
       <datum name='Mass Slow'>  
         <field name='Name' title='yes'> Mass Slow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16595,7 +16595,7 @@
       <datum name='Minor Mana Sap'>  
         <field name='Name' title='yes'> Minor Mana Sap</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16609,7 +16609,7 @@
       <datum name='Negate'>  
         <field name='Name' title='yes'> Negate</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16628,7 +16628,7 @@
       <datum name='Questioning'>  
         <field name='Name' title='yes'> Questioning</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> n/a</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16647,7 +16647,7 @@
       <datum name='Quicken'>  
         <field name='Name' title='yes'> Quicken</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16662,7 +16662,7 @@
       <datum name='Redirect Effect'>  
         <field name='Name' title='yes'> Redirect Effect</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16678,7 +16678,7 @@
       <datum name='Scan'>  
         <field name='Name' title='yes'> Scan</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16698,7 +16698,7 @@
       <datum name='Sense magic'>  
         <field name='Name' title='yes'> Sense magic</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16717,7 +16717,7 @@
       <datum name='Shadow Servant'>  
         <field name='Name' title='yes'> Shadow Servant</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16736,7 +16736,7 @@
       <datum name='Silence'>  
         <field name='Name' title='yes'> Silence</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16751,7 +16751,7 @@
       <datum name='Simple Mana Drain'>  
         <field name='Name' title='yes'> Simple Mana Drain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16768,7 +16768,7 @@
       <datum name='Slow'>  
         <field name='Name' title='yes'> Slow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16784,7 +16784,7 @@
       <datum name='Strengthen'>  
         <field name='Name' title='yes'> Strengthen</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16800,7 +16800,7 @@
       <datum name='Tainted Mana'>  
         <field name='Name' title='yes'> Tainted Mana</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16817,7 +16817,7 @@
       <datum name='True Flight'>  
         <field name='Name' title='yes'> True Flight</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16832,7 +16832,7 @@
       <datum name='Twink'>  
         <field name='Name' title='yes'> Twink</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16849,7 +16849,7 @@
       <datum name='Unbind'>  
         <field name='Name' title='yes'> Unbind</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Arcane</field>  
+        <field name='Type' qsummary='yes'> Arcane</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16868,21 +16868,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Beast Lore 1'>  
         <field name='Name' title='yes'> Beast Lore 1</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -16898,7 +16898,7 @@
       <datum name='Beast Lore 10'>  
         <field name='Name' title='yes'> Beast Lore 10</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 10</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -16914,7 +16914,7 @@
       <datum name='Beast Lore 2'>  
         <field name='Name' title='yes'> Beast Lore 2</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -16930,7 +16930,7 @@
       <datum name='Beast Lore 3'>  
         <field name='Name' title='yes'> Beast Lore 3</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -16946,7 +16946,7 @@
       <datum name='Beast Lore 4'>  
         <field name='Name' title='yes'> Beast Lore 4</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -16962,7 +16962,7 @@
       <datum name='Beast Lore 5'>  
         <field name='Name' title='yes'> Beast Lore 5</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -16978,7 +16978,7 @@
       <datum name='Beast Lore 6'>  
         <field name='Name' title='yes'> Beast Lore 6</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> n</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -16993,7 +16993,7 @@
       <datum name='Beast Lore 7'>  
         <field name='Name' title='yes'> Beast Lore 7</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -17009,7 +17009,7 @@
       <datum name='Beast Lore 8'>  
         <field name='Name' title='yes'> Beast Lore 8</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -17025,7 +17025,7 @@
       <datum name='Beast Lore 9'>  
         <field name='Name' title='yes'> Beast Lore 9</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'>
            n<ndash/>a</field>
@@ -17041,7 +17041,7 @@
       <datum name='Bolster Circle'>  
         <field name='Name' title='yes'> Bolster Circle</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> n<ndash/>a</field>
@@ -17056,7 +17056,7 @@
       <datum name='Channel Summon'>  
         <field name='Name' title='yes'> Channel Summon</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17071,7 +17071,7 @@
       <datum name='Circle Against Beasts'>  
         <field name='Name' title='yes'> Circle Against Beasts</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17089,7 +17089,7 @@
       <datum name='Circle Against Constructs'>  
           <field name='Name' title='yes'> Circle Against Constructs</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17107,7 +17107,7 @@
       <datum name='Circle Against Demons'>  
         <field name='Name' title='yes'> Circle Against Demons</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17125,7 +17125,7 @@
       <datum name='Circle Against Monsters'>  
           <field name='Name' title='yes'> Circle Against Monsters</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17143,7 +17143,7 @@
       <datum name='Circle Against Outsiders'>  
           <field name='Name' title='yes'> Circle Against Outsiders</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17161,7 +17161,7 @@
       <datum name='Circle Against Undead'>  
         <field name='Name' title='yes'> Circle Against Undead</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17179,7 +17179,7 @@
       <datum name='Command'>  
         <field name='Name' title='yes'> Command</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17199,7 +17199,7 @@
       <datum name='Communicate with Animals'>  
           <field name='Name' title='yes'> Communicate with Animals</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17214,7 +17214,7 @@
       <datum name='Gate'>  
         <field name='Name' title='yes'> Gate</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17231,7 +17231,7 @@
       <datum name='Pact'>  
         <field name='Name' title='yes'> Pact</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17249,7 +17249,7 @@
       <datum name='Summon'>  
         <field name='Name' title='yes'> Summon</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17266,7 +17266,7 @@
       <datum name='Transform'>  
         <field name='Name' title='yes'> Transform</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Beast</field>  
+        <field name='Type' qsummary='yes'> Beast</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17285,21 +17285,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Alter Size'>  
         <field name='Name' title='yes'> Alter Size</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17316,7 +17316,7 @@
       <datum name='Cataclysm'>  
         <field name='Name' title='yes'> Cataclysm</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll></field>
@@ -17333,7 +17333,7 @@
       <datum name='Chasm'>  
         <field name='Name' title='yes'> Chasm</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17349,7 +17349,7 @@
       <datum name='Create Portal'>  
         <field name='Name' title='yes'> Create Portal</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17365,7 +17365,7 @@
       <datum name='Create stone'>  
         <field name='Name' title='yes'> Create stone</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17382,7 +17382,7 @@
       <datum name='Crumble'>  
         <field name='Name' title='yes'> Crumble</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17402,7 +17402,7 @@
       <datum name='Dance of Stalagmites'>  
         <field name='Name' title='yes'> Dance of Stalagmites</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>P</kind></roll></field>
@@ -17423,7 +17423,7 @@
       <datum name='Deformation'>  
         <field name='Name' title='yes'> Deformation</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2 hours</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17441,7 +17441,7 @@
       <datum name='Dustcloud'>  
         <field name='Name' title='yes'> Dustcloud</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17458,7 +17458,7 @@
       <datum name='Earth to Stone'>  
         <field name='Name' title='yes'> Earth to Stone</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17473,7 +17473,7 @@
       <datum name='Earthen Fist'>  
         <field name='Name' title='yes'> Earthen Fist</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> varies</field>
@@ -17494,7 +17494,7 @@
       <datum name='Earthen Maw'>  
         <field name='Name' title='yes'> Earthen Maw</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>2</bns></roll>x3 C</field>
@@ -17515,7 +17515,7 @@
       <datum name='Fissure'>  
         <field name='Name' title='yes'> Fissure</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bns></bns><kind>C</kind></roll></field>
@@ -17532,7 +17532,7 @@
       <datum name='Geo Press'>  
         <field name='Name' title='yes'> Geo Press</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>6</bns><kind>C</kind></roll> per
@@ -17550,7 +17550,7 @@
       <datum name='Geo Transport'>  
         <field name='Name' title='yes'> Geo Transport</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17569,7 +17569,7 @@
       <datum name='Greatly Alter Size'>  
         <field name='Name' title='yes'> Greatly Alter Size</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17586,7 +17586,7 @@
       <datum name='Invoke Quake'>  
         <field name='Name' title='yes'> Invoke Quake</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>6</face><bns></bns><kind>C</kind></roll></field>
@@ -17602,7 +17602,7 @@
       <datum name='Manipulate Earth'>  
         <field name='Name' title='yes'> Manipulate Earth</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17619,7 +17619,7 @@
       <datum name='Push'>  
         <field name='Name' title='yes'> Push</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17638,7 +17638,7 @@
       <datum name='Rock Bomb'>  
         <field name='Name' title='yes'> Rock Bomb</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>10</num><face>6</face><bns></bns></roll>+1 S</field>
@@ -17656,7 +17656,7 @@
       <datum name='Rock Encasement'>  
         <field name='Name' title='yes'> Rock Encasement</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17673,7 +17673,7 @@
       <datum name='Rock Serpent'>  
         <field name='Name' title='yes'> Rock Serpent</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17692,7 +17692,7 @@
       <datum name='Rock to Mud'>  
         <field name='Name' title='yes'> Rock to Mud</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17708,7 +17708,7 @@
       <datum name='Rockslide'>  
         <field name='Name' title='yes'> Rockslide</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -17728,7 +17728,7 @@
       <datum name='Screen of Stones'>  
         <field name='Name' title='yes'> Screen of Stones</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17749,7 +17749,7 @@
       <datum name='Seismic Wave'>  
         <field name='Name' title='yes'> Seismic Wave</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> (X*3)D4 C</field>
@@ -17768,7 +17768,7 @@
       <datum name='Stone Rain'>  
         <field name='Name' title='yes'> Stone Rain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns><kind>C</kind></roll></field>
@@ -17784,7 +17784,7 @@
       <datum name='Stone Sentry'>  
         <field name='Name' title='yes'> Stone Sentry</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll></field>
@@ -17803,7 +17803,7 @@
       <datum name='Stone Skin'>  
         <field name='Name' title='yes'> Stone Skin</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17820,7 +17820,7 @@
       <datum name='Stoneform'>  
         <field name='Name' title='yes'> Stoneform</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Earth</field>  
+        <field name='Type' qsummary='yes'> Earth</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17840,21 +17840,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Ashen cloud'>  
         <field name='Name' title='yes'> Ashen cloud</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> Special</field>
@@ -17876,7 +17876,7 @@
       <datum name='Burning Blade'>  
         <field name='Name' title='yes'> Burning Blade</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17894,7 +17894,7 @@
       <datum name='Effigy'>  
         <field name='Name' title='yes'> Effigy</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> Special</field>
@@ -17920,7 +17920,7 @@
       <datum name='Extinguish Fire'>  
         <field name='Name' title='yes'> Extinguish Fire</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -17935,7 +17935,7 @@
       <datum name='Fireball'>  
         <field name='Name' title='yes'> Fireball</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> (4+X)D4 U</field>
@@ -17952,7 +17952,7 @@
       <datum name='Fireblast'>  
         <field name='Name' title='yes'> Fireblast</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -17967,7 +17967,7 @@
       <datum name='Firestorm'>  
         <field name='Name' title='yes'> Firestorm</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -17984,7 +17984,7 @@
       <datum name='Flame'>  
         <field name='Name' title='yes'> Flame</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -18001,7 +18001,7 @@
       <datum name='Flame Shards'>  
         <field name='Name' title='yes'> Flame Shards</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -18017,7 +18017,7 @@
       <datum name='Flame Shroud'>  
         <field name='Name' title='yes'> Flame Shroud</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18035,7 +18035,7 @@
       <datum name='Flame Wall'>  
         <field name='Name' title='yes'> Flame Wall</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18052,7 +18052,7 @@
       <datum name='Flame Wave'>  
         <field name='Name' title='yes'> Flame Wave</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll></field>
@@ -18070,7 +18070,7 @@
       <datum name='Flame Whip'>  
         <field name='Name' title='yes'> Flame Whip</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -18089,7 +18089,7 @@
       <datum name='Great Fireball'>  
         <field name='Name' title='yes'> Great Fireball</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> (4+X)D4 U</field>
@@ -18107,7 +18107,7 @@
       <datum name='Heat Item'>  
         <field name='Name' title='yes'> Heat Item</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18123,7 +18123,7 @@
       <datum name='Hellstorm'>  
         <field name='Name' title='yes'> Hellstorm</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -18145,7 +18145,7 @@
       <datum name='Living Fire'>  
         <field name='Name' title='yes'> Living Fire</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bns></bns><kind>U</kind></roll></field>
@@ -18165,7 +18165,7 @@
       <datum name='Magma Fountain'>  
         <field name='Name' title='yes'> Magma Fountain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 5</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> * Size</field>
@@ -18187,7 +18187,7 @@
       <datum name='Magma dart'>  
         <field name='Name' title='yes'> Magma dart</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -18208,7 +18208,7 @@
       <datum name='Meteor'>  
         <field name='Name' title='yes'> Meteor</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
           <field table='yes' name='Damage' qsummary='yes'> Special</field>
@@ -18229,7 +18229,7 @@
       <datum name='Ray of Heat'>  
         <field name='Name' title='yes'> Ray of Heat</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -18249,7 +18249,7 @@
       <datum name='Red Arrow'>  
         <field name='Name' title='yes'> Red Arrow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -18265,7 +18265,7 @@
       <datum name='Resist Fire'>  
         <field name='Name' title='yes'> Resist Fire</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18281,7 +18281,7 @@
       <datum name='Ring of Fire'>  
         <field name='Name' title='yes'> Ring of Fire</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18298,7 +18298,7 @@
       <datum name='Soak Fire'>  
         <field name='Name' title='yes'> Soak Fire</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
           <field table='yes' name='Damage' qsummary='yes'> Special</field>
@@ -18320,7 +18320,7 @@
       <datum name='Spark'>  
         <field name='Name' title='yes'> Spark</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Fire</field>  
+        <field name='Type' qsummary='yes'> Fire</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18339,21 +18339,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Animate'>  
         <field name='Name' title='yes'> Animate</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -18374,7 +18374,7 @@
       <datum name='Antidote'>  
         <field name='Name' title='yes'> Antidote</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18398,7 +18398,7 @@
       <datum name='Battle Aura'>  
         <field name='Name' title='yes'> Battle Aura</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> life</field>  
+        <field name='Type' qsummary='yes'> life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes' />  
@@ -18416,7 +18416,7 @@
       <datum name='Breathe Without Air'>  
         <field name='Name' title='yes'> Breathe Without Air</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18436,7 +18436,7 @@
       <datum name='Communicate with Humans'>  
           <field name='Name' title='yes'> Communicate with Humans</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18452,7 +18452,7 @@
       <datum name='Corrupt'>  
         <field name='Name' title='yes'> Corrupt</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
           <field table='yes' name='Damage' qsummary='yes'> varies</field>
@@ -18468,7 +18468,7 @@
       <datum name='Curse'>  
         <field name='Name' title='yes'> Curse</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18484,7 +18484,7 @@
       <datum name='Curse of the Uu'>  
         <field name='Name' title='yes'> Curse of the Uu</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 10</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2 hrs</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18505,7 +18505,7 @@
       <datum name='Deathly Haze'>  
         <field name='Name' title='yes'> Deathly Haze</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>12</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -18521,7 +18521,7 @@
       <datum name='Disinfect'>  
         <field name='Name' title='yes'> Disinfect</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18537,7 +18537,7 @@
       <datum name='Disrupt life'>  
         <field name='Name' title='yes'> Disrupt life</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18558,7 +18558,7 @@
       <datum name='Doom'>  
         <field name='Name' title='yes'> Doom</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> death / varies</field>
@@ -18580,7 +18580,7 @@
       <datum name='Drain'>  
         <field name='Name' title='yes'> Drain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -18596,7 +18596,7 @@
       <datum name='Greater Regeneration'>  
         <field name='Name' title='yes'> Greater Regeneration</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18611,7 +18611,7 @@
       <datum name='Heal Battle Wounds'>  
         <field name='Name' title='yes'> Heal Battle Wounds</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>8</face><bOff>+</bOff><bns>4</bns></roll>(healing)</field>
@@ -18625,7 +18625,7 @@
       <datum name='Heal Major Wounds'>  
         <field name='Name' title='yes'> Heal Major Wounds</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>8</face><bOff>+</bOff><bns>3</bns></roll>(healing)</field>
@@ -18640,7 +18640,7 @@
       <datum name='Heal Mortal Wounds'>  
         <field name='Name' title='yes'> Heal Mortal Wounds</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>8</face><bOff>+</bOff><bns>4</bns></roll>(healing)</field>
@@ -18654,7 +18654,7 @@
       <datum name='Heal Wounds'>  
         <field name='Name' title='yes'> Heal Wounds</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll>(healing)</field>
@@ -18669,7 +18669,7 @@
       <datum name='Hold Life'>  
         <field name='Name' title='yes'> Hold Life</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18686,7 +18686,7 @@
       <datum name='Lesser Heal'>  
         <field name='Name' title='yes'> Lesser Heal</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns></roll>(healing)</field>
@@ -18701,7 +18701,7 @@
       <datum name='Limited Divination'>  
         <field name='Name' title='yes'> Limited Divination</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18718,7 +18718,7 @@
       <datum name='Magic Healing'>  
         <field name='Name' title='yes'> Magic Healing</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> X, healing.</field>
@@ -18733,7 +18733,7 @@
       <datum name='Poison'>  
         <field name='Name' title='yes'> Poison</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -18752,7 +18752,7 @@
       <datum name='Purge'>  
         <field name='Name' title='yes'> Purge</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0 or 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18775,7 +18775,7 @@
       <datum name='Purify'>  
         <field name='Name' title='yes'> Purify</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18792,7 +18792,7 @@
       <datum name='Raise Dead'>  
         <field name='Name' title='yes'> Raise Dead</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18810,7 +18810,7 @@
       <datum name='Regeneration'>  
         <field name='Name' title='yes'> Regeneration</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18831,7 +18831,7 @@
       <datum name='Regrowth'>  
         <field name='Name' title='yes'> Regrowth</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18853,7 +18853,7 @@
       <datum name='Reincarnation'>  
         <field name='Name' title='yes'> Reincarnation</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2 hrs</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18876,7 +18876,7 @@
       <datum name='Restore'>  
         <field name='Name' title='yes'> Restore</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18893,7 +18893,7 @@
       <datum name='Resurrection'>  
         <field name='Name' title='yes'> Resurrection</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 30 min</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18909,7 +18909,7 @@
       <datum name='Reverse Aging'>  
         <field name='Name' title='yes'> Reverse Aging</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 12</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18926,7 +18926,7 @@
       <datum name='Reverse Damage'>  
         <field name='Name' title='yes'> Reverse Damage</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18941,7 +18941,7 @@
       <datum name='Soul Burn'>  
         <field name='Name' title='yes'> Soul Burn</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18962,7 +18962,7 @@
       <datum name='Sterilize'>  
         <field name='Name' title='yes'> Sterilize</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18978,7 +18978,7 @@
       <datum name='Ties of Life'>  
         <field name='Name' title='yes'> Ties of Life</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 12</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -18995,7 +18995,7 @@
       <datum name='True Resurrection'>  
         <field name='Name' title='yes'> True Resurrection</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2 hrs</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19012,7 +19012,7 @@
       <datum name='Vampiric Drain'>  
         <field name='Name' title='yes'> Vampiric Drain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> 2 + X D4 U</field>
@@ -19029,7 +19029,7 @@
       <datum name='Venom'>  
         <field name='Name' title='yes'> Venom</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>10</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -19047,7 +19047,7 @@
       <datum name='Virus'>  
         <field name='Name' title='yes'> Virus</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -19065,7 +19065,7 @@
       <datum name='Winds of Resurrection'>  
         <field name='Name' title='yes'> Winds of Resurrection</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Life</field>  
+        <field name='Type' qsummary='yes'> Life</field>  
         <field table='yes' name='Rank' qsummary='yes'> 10</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 12</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19091,21 +19091,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Aura Sight'>  
         <field name='Name' title='yes'> Aura Sight</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19127,7 +19127,7 @@
       <datum name='Autoinvisibility'>  
         <field name='Name' title='yes'> Autoinvisibility</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19142,7 +19142,7 @@
       <datum name='Autoinvisibility 2'>  
         <field name='Name' title='yes'> Autoinvisibility 2</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19158,7 +19158,7 @@
       <datum name='Autoinvisibility 3'>  
         <field name='Name' title='yes'> Autoinvisibility 3</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19174,7 +19174,7 @@
       <datum name='Bend Light'>  
         <field name='Name' title='yes'> Bend Light</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19192,7 +19192,7 @@
       <datum name='Bend Light II'>  
         <field name='Name' title='yes'> Bend Light II</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19209,7 +19209,7 @@
       <datum name='Blinding Flash'>  
         <field name='Name' title='yes'> Blinding Flash</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19224,7 +19224,7 @@
       <datum name='Burning Beacon'>  
         <field name='Name' title='yes'> Burning Beacon</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -19244,7 +19244,7 @@
       <datum name='Chameleon Coat'>  
         <field name='Name' title='yes'> Chameleon Coat</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19261,7 +19261,7 @@
       <datum name='Create Darkness'>  
         <field name='Name' title='yes'> Create Darkness</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19279,7 +19279,7 @@
       <datum name='Dark Beam'>  
         <field name='Name' title='yes'> Dark Beam</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19296,7 +19296,7 @@
       <datum name='Dark Blast'>  
         <field name='Name' title='yes'> Dark Blast</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>12</num><face>6</face><bns></bns><kind>U</kind></roll></field>
@@ -19313,7 +19313,7 @@
       <datum name='Darkness Globe'>  
         <field name='Name' title='yes'> Darkness Globe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19331,7 +19331,7 @@
       <datum name='Daylight Globe'>  
         <field name='Name' title='yes'> Daylight Globe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19349,7 +19349,7 @@
       <datum name='Dazzling Blast'>  
         <field name='Name' title='yes'> Dazzling Blast</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>4</face><bns></bns><kind>S</kind></roll></field>
@@ -19365,7 +19365,7 @@
       <datum name='Dazzling Gale'>  
         <field name='Name' title='yes'> Dazzling Gale</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>10</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -19383,7 +19383,7 @@
       <datum name='Emanate Light'>  
         <field name='Name' title='yes'> Emanate Light</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19402,7 +19402,7 @@
       <datum name='Grant Invisibility'>  
         <field name='Name' title='yes'> Grant Invisibility</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19418,7 +19418,7 @@
       <datum name='Grant Invisibility 2'>  
         <field name='Name' title='yes'> Grant Invisibility 2</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19434,7 +19434,7 @@
       <datum name='Grant Invisibility 3'>  
         <field name='Name' title='yes'> Grant Invisibility 3</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19450,7 +19450,7 @@
       <datum name='Greater Illusion'>  
         <field name='Name' title='yes'> Greater Illusion</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19467,7 +19467,7 @@
       <datum name='Illusion'>  
         <field name='Name' title='yes'> Illusion</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19483,7 +19483,7 @@
       <datum name='Infravision'>  
         <field name='Name' title='yes'> Infravision</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19499,7 +19499,7 @@
       <datum name='Laze'>  
         <field name='Name' title='yes'> Laze</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>P</kind></roll></field>
@@ -19515,7 +19515,7 @@
       <datum name='Lesser Illusion'>  
         <field name='Name' title='yes'> Lesser Illusion</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19532,7 +19532,7 @@
       <datum name='Light Beam'>  
         <field name='Name' title='yes'> Light Beam</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19548,7 +19548,7 @@
       <datum name='Midnight Haze'>  
         <field name='Name' title='yes'> Midnight Haze</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -19568,7 +19568,7 @@
       <datum name='See Invisible'>  
         <field name='Name' title='yes'> See Invisible</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19586,7 +19586,7 @@
       <datum name='Selective Vision'>  
         <field name='Name' title='yes'> Selective Vision</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19603,7 +19603,7 @@
       <datum name='Spreading Darkness'>  
         <field name='Name' title='yes'> Spreading Darkness</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Light</field>  
+        <field name='Type' qsummary='yes'> Light</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19622,21 +19622,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Autophase'>  
         <field name='Name' title='yes'> Autophase</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19655,7 +19655,7 @@
       <datum name='Barrier'>  
         <field name='Name' title='yes'> Barrier</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19672,7 +19672,7 @@
       <datum name='Blink'>  
         <field name='Name' title='yes'> Blink</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19706,7 +19706,7 @@
       <datum name='Carpet of Adhesion'>  
         <field name='Name' title='yes'> Carpet of Adhesion</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19722,7 +19722,7 @@
       <datum name='Carpet of Slipperiness'>  
           <field name='Name' title='yes'> Carpet of Slipperiness</field>
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19738,7 +19738,7 @@
       <datum name='Communicate with Machines'>  
           <field name='Name' title='yes'> Communicate with Machines</field>
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19754,7 +19754,7 @@
       <datum name='Dark Matter'>  
         <field name='Name' title='yes'> Dark Matter</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><raw>10</raw><num>4</num><face>6</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll></field>
@@ -19770,7 +19770,7 @@
       <datum name='Energy Shield'>  
         <field name='Name' title='yes'> Energy Shield</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19787,7 +19787,7 @@
       <datum name='Enhance Gravity'>  
         <field name='Name' title='yes'> Enhance Gravity</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19804,7 +19804,7 @@
       <datum name='Expound Strength'>  
         <field name='Name' title='yes'> Expound Strength</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19821,7 +19821,7 @@
       <datum name='Extend Presence'>  
         <field name='Name' title='yes'> Extend Presence</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19838,7 +19838,7 @@
       <datum name='Extraordinary Senses'>  
         <field name='Name' title='yes'> Extraordinary Senses</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19854,7 +19854,7 @@
       <datum name='Force Blast'>  
         <field name='Name' title='yes'> Force Blast</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>6</face><bns></bns><kind>C</kind></roll></field>
@@ -19870,7 +19870,7 @@
       <datum name='Full Barrier'>  
         <field name='Name' title='yes'> Full Barrier</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19887,7 +19887,7 @@
       <datum name='Gravity Crush'>  
         <field name='Name' title='yes'> Gravity Crush</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>2</bns><kind>U</kind></roll></field>
@@ -19902,7 +19902,7 @@
       <datum name='Gravity Distortion'>  
         <field name='Name' title='yes'> Gravity Distortion</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll></field>
@@ -19918,7 +19918,7 @@
       <datum name='Gravity Well'>  
         <field name='Name' title='yes'> Gravity Well</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>4</bns><kind>U</kind></roll></field>
@@ -19935,7 +19935,7 @@
       <datum name='Greater Teleport'>  
         <field name='Name' title='yes'> Greater Teleport</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 9</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19952,7 +19952,7 @@
       <datum name='Kekkai'>  
         <field name='Name' title='yes'> Kekkai</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19970,7 +19970,7 @@
       <datum name='LesserTeleport'>  
         <field name='Name' title='yes'> LesserTeleport</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -19986,7 +19986,7 @@
       <datum name='Magic Barrier'>  
         <field name='Name' title='yes'> Magic Barrier</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20003,7 +20003,7 @@
       <datum name='Magic Cup'>  
         <field name='Name' title='yes'> Magic Cup</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20026,7 +20026,7 @@
       <datum name='Magic Missile'>  
         <field name='Name' title='yes'> Magic Missile</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -20049,7 +20049,7 @@
       <datum name='Magic Pole'>  
         <field name='Name' title='yes'> Magic Pole</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20070,7 +20070,7 @@
       <datum name='Manipulate Event'>  
         <field name='Name' title='yes'> Manipulate Event</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20088,7 +20088,7 @@
       <datum name='Minor Teleport'>  
         <field name='Name' title='yes'> Minor Teleport</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20105,7 +20105,7 @@
       <datum name='Overhaul'>  
         <field name='Name' title='yes'> Overhaul</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20121,7 +20121,7 @@
       <datum name='Phased Matter'>  
         <field name='Name' title='yes'> Phased Matter</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20138,7 +20138,7 @@
       <datum name='Prismatic Wall'>  
         <field name='Name' title='yes'> Prismatic Wall</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20155,7 +20155,7 @@
       <datum name='Psi Barrier'>  
         <field name='Name' title='yes'> Psi Barrier</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20173,7 +20173,7 @@
       <datum name='Reflect Shield'>  
         <field name='Name' title='yes'> Reflect Shield</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20190,7 +20190,7 @@
       <datum name='Repair Damage'>  
         <field name='Name' title='yes'> Repair Damage</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>6</face><bns></bns></roll>(healing)</field>
@@ -20205,7 +20205,7 @@
       <datum name='Repair Major Damage'>  
         <field name='Name' title='yes'> Repair Major Damage</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>8</face><bns></bns></roll>(healing)</field>
@@ -20220,7 +20220,7 @@
       <datum name='Repair Minor Damage'>  
         <field name='Name' title='yes'> Repair Minor Damage</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>4</face><bns></bns></roll>(healing)</field>
@@ -20236,7 +20236,7 @@
       <datum name='Spider Climb'>  
         <field name='Name' title='yes'> Spider Climb</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20254,7 +20254,7 @@
       <datum name='Void Shield'>  
         <field name='Name' title='yes'> Void Shield</field>  
         <field name='MetaTag' />  
-          <field table='yes' name='Type' qsummary='yes'> Physical</field>
+          <field name='Type' qsummary='yes'> Physical</field>
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20272,21 +20272,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Banshee&apos;s Wail'>  
         <field name='Name' title='yes'> Banshee&apos;s Wail</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -20305,7 +20305,7 @@
       <datum name='Barrier Ward'>  
         <field name='Name' title='yes'> Barrier Ward</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20325,7 +20325,7 @@
       <datum name='Black Beam'>  
         <field name='Name' title='yes'> Black Beam</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>10</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -20340,7 +20340,7 @@
       <datum name='Black Wrath'>  
         <field name='Name' title='yes'> Black Wrath</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -20359,7 +20359,7 @@
       <datum name='Cleansing Wave'>  
         <field name='Name' title='yes'> Cleansing Wave</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> 4 x <roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll></field>
@@ -20379,7 +20379,7 @@
       <datum name='Communicate with Spirits'>  
           <field name='Name' title='yes'> Communicate with Spirits</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20395,7 +20395,7 @@
       <datum name='Dark Apocalypse'>  
         <field name='Name' title='yes'> Dark Apocalypse</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> 8 x <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -20415,7 +20415,7 @@
       <datum name='Dark Curse'>  
         <field name='Name' title='yes'> Dark Curse</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -20432,7 +20432,7 @@
       <datum name='Demon Song'>  
         <field name='Name' title='yes'> Demon Song</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>8</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -20451,7 +20451,7 @@
       <datum name='Energy Blast'>  
         <field name='Name' title='yes'> Energy Blast</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1+X</field>
           <field table='yes' name='Damage' qsummary='yes'> (5+X)D6+2
@@ -20471,7 +20471,7 @@
       <datum name='Evil Essence'>  
         <field name='Name' title='yes'> Evil Essence</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> 5X <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -20491,7 +20491,7 @@
       <datum name='Great Gospel'>  
         <field name='Name' title='yes'> Great Gospel</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> 4x <roll><num>3</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll></field>
@@ -20515,7 +20515,7 @@
       <datum name='Healing Rain'>  
         <field name='Name' title='yes'> Healing Rain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 6</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -20531,7 +20531,7 @@
       <datum name='Holy Sigil'>  
         <field name='Name' title='yes'> Holy Sigil</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -20550,7 +20550,7 @@
       <datum name='Light Scrying'>  
         <field name='Name' title='yes'> Light Scrying</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20566,7 +20566,7 @@
       <datum name='Major Ward'>  
         <field name='Name' title='yes'> Major Ward</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1 min</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -20585,7 +20585,7 @@
       <datum name='Minor Ward'>  
         <field name='Name' title='yes'> Minor Ward</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1 min</field>
           <field table='yes' name='Damage' qsummary='yes'> special</field>
@@ -20602,7 +20602,7 @@
       <datum name='Pulse of Life'>  
         <field name='Name' title='yes'> Pulse of Life</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll></field>
@@ -20621,7 +20621,7 @@
       <datum name='Sanctuary'>  
         <field name='Name' title='yes'> Sanctuary</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1 min +</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20642,7 +20642,7 @@
       <datum name='Seal Evil'>  
         <field name='Name' title='yes'> Seal Evil</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll></field>
@@ -20660,7 +20660,7 @@
       <datum name='Seeking'>  
         <field name='Name' title='yes'> Seeking</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20676,7 +20676,7 @@
       <datum name='Spirit Bomb'>  
         <field name='Name' title='yes'> Spirit Bomb</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> 3+X D4 P</field>
@@ -20695,7 +20695,7 @@
       <datum name='Spirit Nail'>  
         <field name='Name' title='yes'> Spirit Nail</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> 5+X D4 P</field>
@@ -20712,7 +20712,7 @@
       <datum name='Spirit Scatter'>  
         <field name='Name' title='yes'> Spirit Scatter</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20730,7 +20730,7 @@
       <datum name='Storm of Spirits'>  
         <field name='Name' title='yes'> Storm of Spirits</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bOff>-</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -20751,7 +20751,7 @@
       <datum name='Touch of Fate'>  
         <field name='Name' title='yes'> Touch of Fate</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> varies</field>
@@ -20771,7 +20771,7 @@
       <datum name='True Sense'>  
         <field name='Name' title='yes'> True Sense</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20789,7 +20789,7 @@
       <datum name='White Beacon'>  
         <field name='Name' title='yes'> White Beacon</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> 6x <roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll></field>
@@ -20809,7 +20809,7 @@
       <datum name='White Beam'>  
         <field name='Name' title='yes'> White Beam</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Spirit</field>  
+        <field name='Type' qsummary='yes'> Spirit</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>10</face><bns></bns><kind>U</kind></roll></field>
@@ -20825,21 +20825,21 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes' colfmt='l' />  
+        <field name='Type' qsummary='yes' colfmt='l' />  
         <field table='yes' name='Rank' qsummary='yes' colfmt='p{2em}' />  
         <field table='yes' name='Casting Time' qsummary='yes' colfmt='p{1.5em}' />  
-        <field table='yes' name='Damage' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Duration' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Damage' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Duration' qsummary='yes' colfmt='p{4em}' />  
         <field table='yes' name='Magic Points' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Range' qsummary='yes' colfmt='l' />  
-        <field table='yes' name='Target' qsummary='yes' colfmt='l' />  
+        <field table='yes' name='Range' qsummary='yes' colfmt='p{4em}' />  
+        <field table='yes' name='Target' qsummary='yes' colfmt='p{4em}' />  
         <field name='Description' description='yes' />  
         <field name='Implementation' />  
       </default>  
       <datum name='Absolute Zero'>  
         <field name='Name' title='yes'> Absolute Zero</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 9</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> 3*X* <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -20857,7 +20857,7 @@
       <datum name='Biting Frost'>  
         <field name='Name' title='yes'> Biting Frost</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll></field>
@@ -20876,7 +20876,7 @@
       <datum name='Breathe Water'>  
         <field name='Name' title='yes'> Breathe Water</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20897,7 +20897,7 @@
       <datum name='Create Water'>  
         <field name='Name' title='yes'> Create Water</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20916,7 +20916,7 @@
       <datum name='Dissociate'>  
         <field name='Name' title='yes'> Dissociate</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> 2x <roll><num>5</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -20935,7 +20935,7 @@
       <datum name='Driving Rain'>  
         <field name='Name' title='yes'> Driving Rain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns><kind>S</kind></roll></field>
@@ -20951,7 +20951,7 @@
       <datum name='Dry Touch'>  
         <field name='Name' title='yes'> Dry Touch</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -20969,7 +20969,7 @@
       <datum name='Freezing Touch'>  
         <field name='Name' title='yes'> Freezing Touch</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>4</face><bns></bns><kind>U</kind></roll></field>
@@ -20985,7 +20985,7 @@
       <datum name='Freezing Wind'>  
         <field name='Name' title='yes'> Freezing Wind</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>6</face><bns></bns><kind>U</kind></roll></field>
@@ -21001,7 +21001,7 @@
       <datum name='Frozen Spear'>  
         <field name='Name' title='yes'> Frozen Spear</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 8</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>P</kind></roll> <roll><num>6</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -21017,7 +21017,7 @@
       <datum name='Hailstorm'>  
         <field name='Name' title='yes'> Hailstorm</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>6</face><bns></bns><kind>U</kind></roll> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll></field>
@@ -21032,7 +21032,7 @@
       <datum name='Hydroblast'>  
         <field name='Name' title='yes'> Hydroblast</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll></field>
@@ -21052,7 +21052,7 @@
       <datum name='Hydrospear'>  
         <field name='Name' title='yes'> Hydrospear</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll></field>
@@ -21070,7 +21070,7 @@
       <datum name='Ice Dart'>  
         <field name='Name' title='yes'> Ice Dart</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll></field>
@@ -21085,7 +21085,7 @@
       <datum name='Ice Fortress'>  
         <field name='Name' title='yes'> Ice Fortress</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21101,7 +21101,7 @@
       <datum name='Ice Wall'>  
         <field name='Name' title='yes'> Ice Wall</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21118,7 +21118,7 @@
       <datum name='Liquid Cloak'>  
         <field name='Name' title='yes'> Liquid Cloak</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 2</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21139,7 +21139,7 @@
       <datum name='Maelstrom Wall'>  
         <field name='Name' title='yes'> Maelstrom Wall</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21158,7 +21158,7 @@
       <datum name='Mist Veil'>  
         <field name='Name' title='yes'> Mist Veil</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21181,7 +21181,7 @@
       <datum name='Mistform'>  
         <field name='Name' title='yes'> Mistform</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 9</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21200,7 +21200,7 @@
       <datum name='Puff of Cold'>  
         <field name='Name' title='yes'> Puff of Cold</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>2</num><face>6</face><bns></bns><kind>U</kind></roll></field>
@@ -21215,7 +21215,7 @@
       <datum name='Resist Poison'>  
         <field name='Name' title='yes'> Resist Poison</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21234,7 +21234,7 @@
       <datum name='Sheet of ice'>  
         <field name='Name' title='yes'> Sheet of ice</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21252,7 +21252,7 @@
       <datum name='Thermal Drain'>  
         <field name='Name' title='yes'> Thermal Drain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll></field>
@@ -21267,7 +21267,7 @@
       <datum name='Thunderclap'>  
         <field name='Name' title='yes'> Thunderclap</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 1</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21282,7 +21282,7 @@
       <datum name='Vapor Cone'>  
         <field name='Name' title='yes'> Vapor Cone</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 2</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21301,7 +21301,7 @@
       <datum name='Walk on Water'>  
         <field name='Name' title='yes'> Walk on Water</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21318,7 +21318,7 @@
       <datum name='Water Laser'>  
         <field name='Name' title='yes'> Water Laser</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 4</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 1</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll> 20 AP</field>
@@ -21334,7 +21334,7 @@
       <datum name='Water Wall'>  
         <field name='Name' title='yes'> Water Wall</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 3</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
         <field table='yes' name='Damage' qsummary='yes'><notappl/></field>  
@@ -21353,7 +21353,7 @@
       <datum name='Wicked Rain'>  
         <field name='Name' title='yes'> Wicked Rain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 5</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll></field>
@@ -21373,7 +21373,7 @@
       <datum name='Wisp of Frost'>  
         <field name='Name' title='yes'> Wisp of Frost</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 6</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 0</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>1</num><face>6</face><bns></bns><kind>U</kind></roll></field>
@@ -21390,7 +21390,7 @@
       <datum name='lcy prison'>  
         <field name='Name' title='yes'> lcy prison</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Type' qsummary='yes'> Water</field>  
+        <field name='Type' qsummary='yes'> Water</field>  
         <field table='yes' name='Rank' qsummary='yes'> 7</field>  
           <field table='yes' name='Casting Time' qsummary='yes'> 3</field>
           <field table='yes' name='Damage' qsummary='yes'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll></field>
