@@ -3061,8 +3061,7 @@
                charges.<rdquo /> When these are used up, they must be
                refilled before the weapon can be used. Each charge costs
                <dollar />100 to refill. </text>
-              <reference hrid='Content/Equipment/Melee/Rocket Assisted'
-               />
+              <reference hrid='Content/Equipment/Melee/Rocket Assisted' />
           </section>  
           <section>  
             <title>Staves</title>  
@@ -5628,39 +5627,25 @@
             <figure>  
               <table>  
                 <head>  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
-                  <cell colfmt='c' border-right='1px black' />  
+                  <cell colfmt='c' border-right='1px black'>Type</cell>  
+                  <cell colfmt='c' border-right='1px black'>1/2</cell>  
+                  <cell colfmt='c' border-right='1px black'>1</cell>  
+                  <cell colfmt='c' border-right='1px black'>2</cell>  
+                  <cell colfmt='c' border-right='1px black'>3</cell>  
+                  <cell colfmt='c' border-right='1px black'>4</cell>  
+                  <cell colfmt='c' border-right='1px black'>5</cell>  
+                  <cell colfmt='c' border-right='1px black'>6</cell>  
+                  <cell colfmt='c' border-right='1px black'>7</cell>  
+                  <cell colfmt='c' border-right='1px black'>8</cell>  
+                  <cell colfmt='c' border-right='1px black'>9</cell>  
+                  <cell colfmt='c' border-right='1px black'>10</cell>  
                 </head>  
                 <row>  
                   <cell span='12'>
                     <title>The fundamental base-types for monsters</title>
                   </cell>  
                 </row>  
-                <row>  
-                  <cell> Type </cell>  
-                  <cell> 1/2 </cell>  
-                  <cell> 1 </cell>  
-                  <cell> 2 </cell>  
-                  <cell> 3 </cell>  
-                  <cell> 4 </cell>  
-                  <cell> 5 </cell>  
-                  <cell> 6 </cell>  
-                  <cell> 7 </cell>  
-                  <cell> 8 </cell>  
-                  <cell> 9 </cell>  
-                  <cell> 10 </cell>  
-                </row>  
-                <row>  
+		<row>  
                   <cell border='none'> Anthropoid </cell>  
                   <cell border='none' span='11'>  Height: <math>  <mrow>  
                         <msup><mi>Size</mi><mn> 2 </mn>
