@@ -107,7 +107,7 @@ Chris Cook \\
 Josh Kramer}
 
 \vskip 2in
-\textsc{Revision \#1.100000 (06 September 2007)}
+\textsc{Revision \#241 (09 September 2007)}
 \end{center}
 
 \end{titlepage}
