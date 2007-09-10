@@ -33,7 +33,7 @@ div.toc h1 {
 ol.toc {
   list-style-position: outside;
   list-style-type: decimal;
-  margin-left: 1em;
+  margin-left: 2em;
   padding-left: .1em;
 }
 ol.toc ol {
@@ -55,7 +55,7 @@ div.examples h1 {
 ol.examples {
   list-style-position: outside;
   list-style-type: upper-roman;
-  margin-left: 1em;
+  margin-left: 2em;
   padding-left: .1em;
 }
 ol.examples li {
@@ -68,7 +68,7 @@ div.figures h1 {
 ol.figures {
   list-style-position: outside;
   list-style-type: upper-roman;
-  margin-left: 1em;
+  margin-left: 2em;
   padding-left: .1em;
 }
 ol.figures li {
