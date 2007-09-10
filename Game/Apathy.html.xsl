@@ -163,9 +163,9 @@
   <!-- special "rdquo" word -->
   <xsl:template match="rdquo">&#8221;</xsl:template>
   <!-- special "lsquo" word -->
-  <xsl:template match="ldquo">&#8216;</xsl:template>
+  <xsl:template match="lsquo">&#8216;</xsl:template>
   <!-- special "rsquo" word -->
-  <xsl:template match="rdquo">&#8217;</xsl:template>
+  <xsl:template match="rsquo">&#8217;</xsl:template>
   <!-- special "times" word -->
   <xsl:template match="times">&#215;</xsl:template>
   <!-- special "ouml" word -->
