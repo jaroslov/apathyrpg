@@ -139,6 +139,16 @@ table.description-list {
   margin-right: 3em;
   margin-left: 3em;
 }
+table.description-list tr {
+  margin: 0em;
+}
+table.description-list td {
+  margin: 0em;
+}
+table.description-list p {
+  margin: 0;
+  padding: 0;
+}
 p.figure-caption {
   font-weight: bold;
   text-align: center;
