@@ -10702,7 +10702,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -10716,7 +10716,7 @@
       <datum name='2-Headed Axe'>  
         <field name='Name' title='yes'> 2-Headed Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10734,7 +10734,7 @@
       <datum name='Axe'>  
         <field name='Name' title='yes'> Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -10751,7 +10751,7 @@
       <datum name='Berzerker Axe'>  
         <field name='Name' title='yes'> Berzerker Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10771,7 +10771,7 @@
       <datum name='Firemans Axe'>  
         <field name='Name' title='yes'> Firemans Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> P<ndash/>S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll></field>  
@@ -10789,7 +10789,7 @@
       <datum name='Hatchet'>  
         <field name='Name' title='yes'> Hatchet</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10806,7 +10806,7 @@
       <datum name='Heavy Battle Axe'>  
         <field name='Name' title='yes'> Heavy Battle Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10825,7 +10825,7 @@
       <datum name='Light Battle Axe'>  
         <field name='Name' title='yes'> Light Battle Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
@@ -10843,7 +10843,7 @@
       <datum name='Lochaber Axe'>  
         <field name='Name' title='yes'> Lochaber Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10861,7 +10861,7 @@
       <datum name='Nordic War Axe'>  
         <field name='Name' title='yes'> Nordic War Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10882,7 +10882,7 @@
       <datum name='Pickaxe'>  
         <field name='Name' title='yes'> Pickaxe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Axes</field>  
+        <field name='Class'> Axes</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10902,7 +10902,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -10916,7 +10916,7 @@
       <datum name='Arab Mace'>  
         <field name='Name' title='yes'> Arab Mace</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -10932,7 +10932,7 @@
       <datum name='Cane/Lathi'>  
         <field name='Name' title='yes'> Cane/Lathi</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -10947,7 +10947,7 @@
       <datum name='Club'>  
         <field name='Name' title='yes'> Club</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -10963,7 +10963,7 @@
       <datum name='Cudgel'>  
         <field name='Name' title='yes'> Cudgel</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -10978,7 +10978,7 @@
       <datum name='Great Maul'>  
         <field name='Name' title='yes'> Great Maul</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bns></bns></roll></field>  
@@ -10992,7 +10992,7 @@
       <datum name='Hammer'>  
         <field name='Name' title='yes'> Hammer</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -11008,7 +11008,7 @@
       <datum name='Hercules Club'>  
         <field name='Name' title='yes'> Hercules Club</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
@@ -11022,7 +11022,7 @@
       <datum name='Iron Cane'>  
         <field name='Name' title='yes'> Iron Cane</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -11037,7 +11037,7 @@
       <datum name='Mace'>  
         <field name='Name' title='yes'> Mace</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -11054,7 +11054,7 @@
       <datum name='Maul'>  
         <field name='Name' title='yes'> Maul</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -11071,7 +11071,7 @@
       <datum name='Morning Star'>  
         <field name='Name' title='yes'> Morning Star</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll></field>  
@@ -11085,7 +11085,7 @@
       <datum name='Sjambok'>  
         <field name='Name' title='yes'> Sjambok</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11100,7 +11100,7 @@
       <datum name='Sledge Hammer'>  
         <field name='Name' title='yes'> Sledge Hammer</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -11117,7 +11117,7 @@
       <datum name='Slungshot'>  
         <field name='Name' title='yes'> Slungshot</field>  
         <field name='MetaTag'> Ancient</field>  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -11139,7 +11139,7 @@
       <datum name='Tonfa or Truncheon'>  
         <field name='Name' title='yes'> Tonfa or Truncheon</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11159,7 +11159,7 @@
       <datum name='War Hammer'>  
         <field name='Name' title='yes'> War Hammer</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Blunt</field>  
+        <field name='Class'> Blunt</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11175,7 +11175,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='p{4em}' />  
@@ -11189,7 +11189,7 @@
       <datum name='Boxing Irons of the Troll'>  
           <field name='Name' title='yes'> Boxing Irons of the Troll</field>
         <field name='MetaTag'> Unique</field>  
-        <field table='yes' name='Class'> Body</field>  
+        <field name='Class'> Body</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 50000</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -11206,7 +11206,7 @@
       <datum name='Brass Body'>  
         <field name='Name' title='yes'> Brass Body</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Body</field>  
+        <field name='Class'> Body</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> [+2] to Punch</field>  
@@ -11220,7 +11220,7 @@
       <datum name='Brass Knuckles'>  
         <field name='Name' title='yes'> Brass Knuckles</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
+        <field name='Class' />  
         <field table='yes' name='Type' />  
         <field table='yes' name='Cost' />  
         <field table='yes' name='Damage' />  
@@ -11237,7 +11237,7 @@
       <datum name='Cestus'>  
         <field name='Name' title='yes'> Cestus</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Body</field>  
+        <field name='Class'> Body</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> +1 to Punch</field>  
@@ -11255,7 +11255,7 @@
           <field name='Name' title='yes'> Gloves of Anointing and
            Retribution</field>
         <field name='MetaTag'> Unique</field>  
-        <field table='yes' name='Class'> Body</field>  
+        <field name='Class'> Body</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
           <field table='yes' name='Damage'> +1 to Punch; [+3] to Punch</field>
@@ -11281,7 +11281,7 @@
       <datum name='Sap Glove'>  
         <field name='Name' title='yes'> Sap Glove</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Body</field>  
+        <field name='Class'> Body</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> [+1] Punch</field>  
@@ -11300,7 +11300,7 @@
       <datum name='Studded or Spiked boots'>  
           <field name='Name' title='yes'> Studded or Spiked boots</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Body</field>  
+        <field name='Class'> Body</field>  
         <field table='yes' name='Type'> -</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> +1 to Kick</field>  
@@ -11319,7 +11319,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -11333,7 +11333,7 @@
       <datum name='Ball and Chain'>  
         <field name='Name' title='yes'> Ball and Chain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Chained</field>  
+        <field name='Class'> Chained</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -11348,7 +11348,7 @@
       <datum name='Chain (weapon)'>  
         <field name='Name' title='yes'> Chain (weapon)</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Chained</field>  
+        <field name='Class'> Chained</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll><ndash/><roll><num>2</num><face>6</face><bns></bns><kind>S</kind></roll></field>  
@@ -11364,7 +11364,7 @@
       <datum name='Chain - Normal'>  
         <field name='Name' title='yes'> Chain - Normal</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Chained</field>  
+        <field name='Class'> Chained</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll><ndash/><roll><num>2</num><face>4</face><bns></bns><kind>C</kind></roll></field>  
@@ -11379,7 +11379,7 @@
       <datum name='Chain with spikes-blades'>  
           <field name='Name' title='yes'> Chain with spikes-blades</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Chained</field>  
+        <field name='Class'> Chained</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll><ndash/><roll><num>3</num><face>4</face><bns></bns><kind>S</kind></roll></field>  
@@ -11396,7 +11396,7 @@
       <datum name='Flail'>  
         <field name='Name' title='yes'> Flail</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Chained</field>  
+        <field name='Class'> Chained</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11413,7 +11413,7 @@
       <datum name='Nunchaku'>  
         <field name='Name' title='yes'> Nunchaku</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Chained</field>  
+        <field name='Class'> Chained</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11430,7 +11430,7 @@
       <datum name='War Flail'>  
         <field name='Name' title='yes'> War Flail</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Chained</field>  
+        <field name='Class'> Chained</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11450,7 +11450,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -11464,7 +11464,7 @@
       <datum name='Atalatl'>  
         <field name='Name' title='yes'> Atalatl</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><raw>2</raw><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -11480,7 +11480,7 @@
       <datum name='Cicada Wing Blade'>  
         <field name='Name' title='yes'> Cicada Wing Blade</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11498,7 +11498,7 @@
       <datum name='Crescent Knives (pair)'>  
           <field name='Name' title='yes'> Crescent Knives (pair)</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -11512,7 +11512,7 @@
       <datum name='Dragons Beard Halberd'>  
         <field name='Name' title='yes'> Dragons Beard Halberd</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11526,7 +11526,7 @@
       <datum name='Iron Claws (pair)'>  
         <field name='Name' title='yes'> Iron Claws (pair)</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11541,7 +11541,7 @@
       <datum name='Jumonji Yari'>  
         <field name='Name' title='yes'> Jumonji Yari</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11555,7 +11555,7 @@
       <datum name='Kama (pair)'>  
         <field name='Name' title='yes'> Kama (pair)</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11569,7 +11569,7 @@
       <datum name='Kpinga'>  
         <field name='Name' title='yes'> Kpinga</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11583,7 +11583,7 @@
       <datum name='Kris Datoh'>  
         <field name='Name' title='yes'> Kris Datoh</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11598,7 +11598,7 @@
       <datum name='Martel de Fer'>  
         <field name='Name' title='yes'> Martel de Fer</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11616,7 +11616,7 @@
       <datum name='Monks Spade'>  
         <field name='Name' title='yes'> Monks Spade</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> C or S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
@@ -11631,7 +11631,7 @@
       <datum name='Nine-section Chain'>  
         <field name='Name' title='yes'> Nine-section Chain</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>10</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11646,7 +11646,7 @@
       <datum name='No-Dachi'>  
         <field name='Name' title='yes'> No-Dachi</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11666,7 +11666,7 @@
       <datum name='Ox Ear Knives (pair)'>  
         <field name='Name' title='yes'> Ox Ear Knives (pair)</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11681,7 +11681,7 @@
       <datum name='Sai (pair)'>  
         <field name='Name' title='yes'> Sai (pair)</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -11699,7 +11699,7 @@
       <datum name='Shortel'>  
         <field name='Name' title='yes'> Shortel</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11716,7 +11716,7 @@
       <datum name='Sun-Ring Knives (pair)'>  
           <field name='Name' title='yes'> Sun-Ring Knives (pair)</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11730,7 +11730,7 @@
       <datum name='Three Section Staff'>  
         <field name='Name' title='yes'> Three Section Staff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -11745,7 +11745,7 @@
       <datum name='Wolfs Teeth Mace'>  
         <field name='Name' title='yes'> Wolfs Teeth Mace</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11759,7 +11759,7 @@
       <datum name='Yoroidoshi Tanto'>  
         <field name='Name' title='yes'> Yoroidoshi Tanto</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> P<ndash/>S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -11778,7 +11778,7 @@
       <datum name='Yumi'>  
         <field name='Name' title='yes'> Yumi</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11801,7 +11801,7 @@
       <datum name='Zaghnal'>  
         <field name='Name' title='yes'> Zaghnal</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S<ndash/>C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11819,7 +11819,7 @@
       <datum name='Zandaiken'>  
         <field name='Name' title='yes'> Zandaiken</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Exotic</field>  
+        <field name='Class'> Exotic</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>6</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11835,7 +11835,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -11849,7 +11849,7 @@
       <datum name='Cleaver'>  
         <field name='Name' title='yes'> Cleaver</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -11867,7 +11867,7 @@
       <datum name='Dagger'>  
         <field name='Name' title='yes'> Dagger</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -11883,7 +11883,7 @@
       <datum name='Katar'>  
         <field name='Name' title='yes'> Katar</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11902,7 +11902,7 @@
       <datum name='Knife'>  
         <field name='Name' title='yes'> Knife</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -11916,7 +11916,7 @@
       <datum name='Kukri'>  
         <field name='Name' title='yes'> Kukri</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -11935,7 +11935,7 @@
       <datum name='Long Knife'>  
         <field name='Name' title='yes'> Long Knife</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> S or P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -11953,7 +11953,7 @@
       <datum name='Serrated knife'>  
         <field name='Name' title='yes'> Serrated knife</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>10</face><bns></bns></roll></field>  
@@ -11970,7 +11970,7 @@
       <datum name='Small Knife'>  
         <field name='Name' title='yes'> Small Knife</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>-</bOff><bns>1</bns></roll></field>  
@@ -11987,7 +11987,7 @@
       <datum name='Stiletto'>  
         <field name='Name' title='yes'> Stiletto</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns></bns></roll></field>  
@@ -12006,7 +12006,7 @@
       <datum name='Tanto'>  
         <field name='Name' title='yes'> Tanto</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Knives</field>  
+        <field name='Class'> Knives</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -12026,7 +12026,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -12040,7 +12040,7 @@
       <datum name='Bastard Sword'>  
         <field name='Name' title='yes'> Bastard Sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -12056,7 +12056,7 @@
       <datum name='Broadsword'>  
         <field name='Name' title='yes'> Broadsword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12071,7 +12071,7 @@
       <datum name='Claymore'>  
         <field name='Name' title='yes'> Claymore</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12090,7 +12090,7 @@
       <datum name='Espandon'>  
         <field name='Name' title='yes'> Espandon</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
+        <field name='Class' />  
         <field table='yes' name='Type' />  
         <field table='yes' name='Cost' />  
         <field table='yes' name='Damage' />  
@@ -12107,7 +12107,7 @@
       <datum name='Flamberge'>  
         <field name='Name' title='yes'> Flamberge</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12124,7 +12124,7 @@
       <datum name='Grand Saber'>  
         <field name='Name' title='yes'> Grand Saber</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bns></bns></roll></field>  
@@ -12141,7 +12141,7 @@
       <datum name='Grand Sword'>  
         <field name='Name' title='yes'> Grand Sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12160,7 +12160,7 @@
       <datum name='Great Sword'>  
         <field name='Name' title='yes'> Great Sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bns></bns></roll></field>  
@@ -12178,7 +12178,7 @@
       <datum name='Katana'>  
         <field name='Name' title='yes'> Katana</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12199,7 +12199,7 @@
       <datum name='Long Sword'>  
         <field name='Name' title='yes'> Long Sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12215,7 +12215,7 @@
       <datum name='Massive Sword'>  
         <field name='Name' title='yes'> Massive Sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12232,7 +12232,7 @@
       <datum name='Ram Dao'>  
         <field name='Name' title='yes'> Ram Dao</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12247,7 +12247,7 @@
       <datum name='Rapier'>  
         <field name='Name' title='yes'> Rapier</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12261,7 +12261,7 @@
       <datum name='Tachi'>  
         <field name='Name' title='yes'> Tachi</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12280,7 +12280,7 @@
       <datum name='Tai Chi sword'>  
         <field name='Name' title='yes'> Tai Chi sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Large Swords</field>  
+        <field name='Class'> Large Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll></field>  
@@ -12300,7 +12300,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -12314,7 +12314,7 @@
       <datum name='Whip'>  
         <field name='Name' title='yes'> Whip</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Monofilament</field>  
+        <field name='Class'> Monofilament</field>  
         <field table='yes' name='Type'> D</field>  
         <field table='yes' name='Cost'> <dollar />20000</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll></field>  
@@ -12331,7 +12331,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -12345,7 +12345,7 @@
       <datum name='Axe'>  
         <field name='Name' title='yes'> Axe</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Plasma</field>  
+        <field name='Class'> Plasma</field>  
         <field table='yes' name='Type'> U/C</field>  
         <field table='yes' name='Cost'> <dollar />4000</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll>/ <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -12360,7 +12360,7 @@
       <datum name='Knife'>  
         <field name='Name' title='yes'> Knife</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Plasma</field>  
+        <field name='Class'> Plasma</field>  
         <field table='yes' name='Type'> U</field>  
         <field table='yes' name='Cost'> <dollar />1000</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -12377,7 +12377,7 @@
       <datum name='Long Sword'>  
         <field name='Name' title='yes'> Long Sword</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Plasma</field>  
+        <field name='Class'> Plasma</field>  
         <field table='yes' name='Type'> U</field>  
         <field table='yes' name='Cost'> <dollar />4000</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
@@ -12391,7 +12391,7 @@
       <datum name='Short Sword'>  
         <field name='Name' title='yes'> Short Sword</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Plasma</field>  
+        <field name='Class'> Plasma</field>  
         <field table='yes' name='Type'> U</field>  
         <field table='yes' name='Cost'> <dollar />2000</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -12411,7 +12411,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -12425,7 +12425,7 @@
       <datum name='Awl Pike'>  
         <field name='Name' title='yes'> Awl Pike</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12442,7 +12442,7 @@
       <datum name='Beaked Axe'>  
         <field name='Name' title='yes'> Beaked Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P<ndash/>S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12461,7 +12461,7 @@
       <datum name='Bicento'>  
         <field name='Name' title='yes'> Bicento</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
+        <field name='Class' />  
         <field table='yes' name='Type' />  
         <field table='yes' name='Cost' />  
         <field table='yes' name='Damage' />  
@@ -12478,7 +12478,7 @@
       <datum name='Glaive-Guisarme'>  
         <field name='Name' title='yes'> Glaive-Guisarme</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P<ndash/>S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns></bns></roll></field>  
@@ -12494,7 +12494,7 @@
       <datum name='Halberd'>  
         <field name='Name' title='yes'> Halberd</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
@@ -12511,7 +12511,7 @@
       <datum name='Katakamayari'>  
         <field name='Name' title='yes'> Katakamayari</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
+        <field name='Class' />  
         <field table='yes' name='Type' />  
         <field table='yes' name='Cost' />  
         <field table='yes' name='Damage' />  
@@ -12528,7 +12528,7 @@
       <datum name='Lance'>  
         <field name='Name' title='yes'> Lance</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll>+X</field>  
@@ -12545,7 +12545,7 @@
       <datum name='Long Spear'>  
         <field name='Name' title='yes'> Long Spear</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12561,7 +12561,7 @@
       <datum name='Lucerne Hammer'>  
         <field name='Name' title='yes'> Lucerne Hammer</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P<ndash/>C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12577,7 +12577,7 @@
       <datum name='Military Fork'>  
         <field name='Name' title='yes'> Military Fork</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12596,7 +12596,7 @@
       <datum name='Naginata'>  
         <field name='Name' title='yes'> Naginata</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12614,7 +12614,7 @@
       <datum name='Pike'>  
         <field name='Name' title='yes'> Pike</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bns></bns></roll></field>  
@@ -12632,7 +12632,7 @@
       <datum name='Sabre Halberd'>  
         <field name='Name' title='yes'> Sabre Halberd</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
@@ -12647,7 +12647,7 @@
       <datum name='Sankaku Yari'>  
         <field name='Name' title='yes'> Sankaku Yari</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12661,7 +12661,7 @@
       <datum name='Short Spear'>  
         <field name='Name' title='yes'> Short Spear</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -12677,7 +12677,7 @@
       <datum name='Trident'>  
         <field name='Name' title='yes'> Trident</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12694,7 +12694,7 @@
       <datum name='Voulge'>  
         <field name='Name' title='yes'> Voulge</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> P<ndash/>S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12710,7 +12710,7 @@
       <datum name='War Scythe'>  
         <field name='Name' title='yes'> War Scythe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns></bns></roll></field>  
@@ -12726,7 +12726,7 @@
       <datum name='Yari'>  
         <field name='Name' title='yes'> Yari</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Polearms</field>  
+        <field name='Class'> Polearms</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -12745,7 +12745,7 @@
       <datum name='Yoroidoshi Yari'>  
         <field name='Name' title='yes'> Yoroidoshi Yari</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' />  
+        <field name='Class' />  
         <field table='yes' name='Type' />  
         <field table='yes' name='Cost' />  
         <field table='yes' name='Damage' />  
@@ -12765,7 +12765,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -12779,7 +12779,7 @@
       <datum name='Battle Axe'>  
         <field name='Name' title='yes'> Battle Axe</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Rocket-Assisted</field>  
+        <field name='Class'> Rocket-Assisted</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> <dollar />20000</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
@@ -12793,7 +12793,7 @@
       <datum name='Great Maul'>  
         <field name='Name' title='yes'> Great Maul</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Rocket-Assisted</field>  
+        <field name='Class'> Rocket-Assisted</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> <dollar />18000</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -12810,7 +12810,7 @@
       <datum name='Heavy Staff'>  
         <field name='Name' title='yes'> Heavy Staff</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Rocket-Assisted</field>  
+        <field name='Class'> Rocket-Assisted</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> <dollar />10000</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
@@ -12824,7 +12824,7 @@
       <datum name='Hercules Club'>  
         <field name='Name' title='yes'> Hercules Club</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Rocket-Assisted</field>  
+        <field name='Class'> Rocket-Assisted</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> <dollar />14000</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -12842,7 +12842,7 @@
       <datum name='Morning Star'>  
         <field name='Name' title='yes'> Morning Star</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Rocket-Assisted</field>  
+        <field name='Class'> Rocket-Assisted</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> <dollar />10000</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -12860,7 +12860,7 @@
       <datum name='War Hammer'>  
         <field name='Name' title='yes'> War Hammer</field>  
         <field name='MetaTag'> Ultramodern</field>  
-        <field table='yes' name='Class'> Rocket-Assisted</field>  
+        <field name='Class'> Rocket-Assisted</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> <dollar />20000</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
@@ -12880,7 +12880,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -12894,7 +12894,7 @@
       <datum name='Chinese war sword'>  
         <field name='Name' title='yes'> Chinese war sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -12911,7 +12911,7 @@
       <datum name='Cutlass'>  
         <field name='Name' title='yes'> Cutlass</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -12927,7 +12927,7 @@
       <datum name='Falchion'>  
         <field name='Name' title='yes'> Falchion</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -12946,7 +12946,7 @@
       <datum name='Gladius'>  
         <field name='Name' title='yes'> Gladius</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> P<ndash/>S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>  
@@ -12963,7 +12963,7 @@
       <datum name='Jambiya'>  
         <field name='Name' title='yes'> Jambiya</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -12978,7 +12978,7 @@
       <datum name='Kris'>  
         <field name='Name' title='yes'> Kris</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> P<ndash/>S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -12993,7 +12993,7 @@
       <datum name='Saber'>  
         <field name='Name' title='yes'> Saber</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -13008,7 +13008,7 @@
       <datum name='Scimitar'>  
         <field name='Name' title='yes'> Scimitar</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -13024,7 +13024,7 @@
       <datum name='Short Sword'>  
         <field name='Name' title='yes'> Short Sword</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -13038,7 +13038,7 @@
       <datum name='Small Sword'>  
         <field name='Name' title='yes'> Small Sword</field>  
         <field name='MetaTag'> Medieval</field>  
-        <field table='yes' name='Class'> Small Sword</field>  
+        <field name='Class'> Small Sword</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost' />  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -13059,7 +13059,7 @@
       <datum name='Stone Bat'>  
         <field name='Name' title='yes'> Stone Bat</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 140</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns></bns></roll></field>  
@@ -13077,7 +13077,7 @@
       <datum name='Wakizashi'>  
         <field name='Name' title='yes'> Wakizashi</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Small Swords</field>  
+        <field name='Class'> Small Swords</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -13099,7 +13099,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -13113,7 +13113,7 @@
       <datum name='Bo Staff'>  
         <field name='Name' title='yes'> Bo Staff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Staves</field>  
+        <field name='Class'> Staves</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -13130,7 +13130,7 @@
       <datum name='Full metal staff'>  
         <field name='Name' title='yes'> Full metal staff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Staves</field>  
+        <field name='Class'> Staves</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -13148,7 +13148,7 @@
       <datum name='Heavy Staff'>  
         <field name='Name' title='yes'> Heavy Staff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Staves</field>  
+        <field name='Class'> Staves</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -13165,7 +13165,7 @@
       <datum name='Jo Staff'>  
         <field name='Name' title='yes'> Jo Staff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Staves</field>  
+        <field name='Class'> Staves</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -13182,7 +13182,7 @@
       <datum name='Long Staff'>  
         <field name='Name' title='yes'> Long Staff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Staves</field>  
+        <field name='Class'> Staves</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -13199,7 +13199,7 @@
       <datum name='Quarterstaff'>  
         <field name='Name' title='yes'> Quarterstaff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Staves</field>  
+        <field name='Class'> Staves</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bns></bns></roll></field>  
@@ -13217,7 +13217,7 @@
       <datum name='Short Staff'>  
         <field name='Name' title='yes'> Short Staff</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Staves</field>  
+        <field name='Class'> Staves</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -13234,7 +13234,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -13248,7 +13248,7 @@
       <datum name='Chakram (large)'>  
         <field name='Name' title='yes'> Chakram (large)</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -13263,7 +13263,7 @@
       <datum name='Chakram (small)'>  
         <field name='Name' title='yes'> Chakram (small)</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -13281,7 +13281,7 @@
       <datum name='Javelin'>  
         <field name='Name' title='yes'> Javelin</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -13299,7 +13299,7 @@
       <datum name='Masai Spear'>  
         <field name='Name' title='yes'> Masai Spear</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -13313,7 +13313,7 @@
       <datum name='Short Spear'>  
         <field name='Name' title='yes'> Short Spear</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -13328,7 +13328,7 @@
       <datum name='Shuriken, Common'>  
         <field name='Name' title='yes'> Shuriken, Common</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>3</face><bOff>-</bOff><bns>1</bns></roll></field>  
@@ -13349,7 +13349,7 @@
       <datum name='Shuriken, True'>  
         <field name='Name' title='yes'> Shuriken, True</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -13363,7 +13363,7 @@
       <datum name='Throwing Axe'>  
         <field name='Name' title='yes'> Throwing Axe</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -13380,7 +13380,7 @@
       <datum name='Throwing Knife'>  
         <field name='Name' title='yes'> Throwing Knife</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> S</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>6</face><bns></bns></roll></field>  
@@ -13399,7 +13399,7 @@
       <datum name='Thrown Spike'>  
         <field name='Name' title='yes'> Thrown Spike</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Thrown</field>  
+        <field name='Class'> Thrown</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns></bns></roll></field>  
@@ -15003,7 +15003,7 @@
       <default name=''>  
         <field name='Name' title='yes' />  
         <field name='MetaTag' />  
-        <field table='yes' name='Class' colfmt='l' />  
+        <field name='Class' colfmt='l' />  
         <field table='yes' name='Type' colfmt='l' />  
         <field table='yes' name='Cost' colfmt='l' />  
         <field table='yes' name='Damage' colfmt='l' />  
@@ -15017,7 +15017,7 @@
       <datum name='Blow Gun - Long'>  
         <field name='Name' title='yes'> Blow Gun - Long</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Missile</field>  
+        <field name='Class'> Missile</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -15036,7 +15036,7 @@
       <datum name='Blow Gun - Short'>  
         <field name='Name' title='yes'> Blow Gun - Short</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Missile</field>  
+        <field name='Class'> Missile</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bns></bns></roll></field>  
@@ -15051,7 +15051,7 @@
       <datum name='Bolo'>  
         <field name='Name' title='yes'> Bolo</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Missile</field>  
+        <field name='Class'> Missile</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -15072,7 +15072,7 @@
       <datum name='Composite Bow'>  
         <field name='Name' title='yes'> Composite Bow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -15090,7 +15090,7 @@
       <datum name='Compound Bow'>  
         <field name='Name' title='yes'> Compound Bow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>  
@@ -15111,7 +15111,7 @@
       <datum name='Crossbow - Hand'>  
         <field name='Name' title='yes'> Crossbow - Hand</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -15125,7 +15125,7 @@
       <datum name='Crossbow - Heavy'>  
         <field name='Name' title='yes'> Crossbow - Heavy</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>5</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -15147,7 +15147,7 @@
       <datum name='Crossbow - Large'>  
         <field name='Name' title='yes'> Crossbow - Large</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -15161,7 +15161,7 @@
       <datum name='Crossbow - Pellet, hand'>  
           <field name='Name' title='yes'> Crossbow - Pellet, hand</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -15176,7 +15176,7 @@
       <datum name='Crossbow - Pellet, large'>  
           <field name='Name' title='yes'> Crossbow - Pellet, large</field>
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> P</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -15191,7 +15191,7 @@
       <datum name='Crossbow - Repeating'>  
         <field name='Name' title='yes'> Crossbow - Repeating</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -15206,7 +15206,7 @@
       <datum name='Heavy Recurve Bow'>  
         <field name='Name' title='yes'> Heavy Recurve Bow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -15220,7 +15220,7 @@
       <datum name='Hunters Bow'>  
         <field name='Name' title='yes'> Hunters Bow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>6</face><bns></bns></roll></field>  
@@ -15239,7 +15239,7 @@
       <datum name='Long Bow'>  
         <field name='Name' title='yes'> Long Bow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>  
@@ -15256,7 +15256,7 @@
       <datum name='Recurve Bow'>  
         <field name='Name' title='yes'> Recurve Bow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>4</num><face>4</face><bns></bns></roll></field>  
@@ -15274,7 +15274,7 @@
       <datum name='Short Bow'>  
         <field name='Name' title='yes'> Short Bow</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Bows</field>  
+        <field name='Class'> Bows</field>  
         <field table='yes' name='Type'> n<ndash/>a</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>2</num><face>4</face><bns></bns></roll></field>  
@@ -15291,7 +15291,7 @@
       <datum name='Sling'>  
         <field name='Name' title='yes'> Sling</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Missile</field>  
+        <field name='Class'> Missile</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>  
@@ -15312,7 +15312,7 @@
       <datum name='Slingshot'>  
         <field name='Name' title='yes'> Slingshot</field>  
         <field name='MetaTag' />  
-        <field table='yes' name='Class'> Missile</field>  
+        <field name='Class'> Missile</field>  
         <field table='yes' name='Type'> C</field>  
         <field table='yes' name='Cost'> 0</field>  
         <field table='yes' name='Damage'> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>  
