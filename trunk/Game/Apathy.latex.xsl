@@ -173,7 +173,7 @@ Josh Kramer}
     <xsl:apply-templates />
     }
   </xsl:template>
-  <xsl:template match="text()"><xsl:variable name="text" select="." /><xsl:value-of select="$text" /></xsl:template>
+  <xsl:template match="text()"><xsl:variable name="text" select="." /><xsl:value-of select="normalize-space($text)" /></xsl:template>
   <!-- Note -->
   <xsl:template match="note">&#xa;&#xa;\textscbf{Note!} \textbf{<xsl:apply-templates />}&#xa;&#xa;</xsl:template>
   <!-- examples -->
@@ -286,7 +286,7 @@ Josh Kramer}
   <xsl:template match="table">
   \begin{tabular}{|<xsl:for-each select="head/cell"><xsl:choose><xsl:when test="./@colfmt"><xsl:value-of select="./@colfmt" />|</xsl:when><xsl:otherwise>c|</xsl:otherwise></xsl:choose></xsl:for-each>}
   \hline
-<xsl:for-each select="head/cell">\textscbf{<xsl:apply-templates />}<xsl:choose><xsl:when test="position()=count(../*)">\\</xsl:when><xsl:otherwise>&amp;</xsl:otherwise></xsl:choose>
+<xsl:for-each select="head/cell">\textscbf{<xsl:apply-templates />}<xsl:choose><xsl:when test="position()=count(../*)"> \\</xsl:when><xsl:otherwise> &amp;</xsl:otherwise></xsl:choose>
     </xsl:for-each>
   \hline
   \hline
@@ -299,7 +299,7 @@ Josh Kramer}
 \multicolumn{<xsl:value-of select="$span" />}{c}{
             </xsl:if>
   <xsl:apply-templates /><xsl:if test="$span">}</xsl:if><xsl:choose>
-              <xsl:when test="position()=count(../*)">\\&#xa;&#xa;<xsl:if test="not($border='none')">\hline</xsl:if>&#xa;&#xa;</xsl:when>
+              <xsl:when test="position()=count(../*)">\\&#xa;<xsl:if test="not($border='none')">\hline&#xa;</xsl:if>&#xa;</xsl:when>
               <xsl:otherwise>&amp;</xsl:otherwise>
             </xsl:choose>
           </xsl:for-each>

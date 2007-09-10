@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet
   version="1.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns="http://www.w3.org/1999/xhtml">
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:output version="1.0"
     method="xml"
@@ -10,7 +9,7 @@
     media-type="text/xml"
     indent="yes"/>
   <xsl:preserve-space elements="" />
-  <xsl:strip-space elements="description caption title field" />
+  <xsl:strip-space elements=""/><!--description caption title field" />-->
 
   <xsl:template match="/">
     <apathy-game>
@@ -32,18 +31,20 @@
     <xsl:apply-templates select="part" />
   </xsl:template>
   <xsl:template match="part">
-    <xsl:apply-templates select="title" />
-    <xsl:apply-templates select="chapter" />
+    <part>
+      <xsl:apply-templates select="title" />
+      <xsl:apply-templates select="chapter" />
+    </part>
   </xsl:template>
   <xsl:template match="chapter">
     <chapter>
       <xsl:apply-templates select="title" />
-      <xsl:apply-templates select="section" />
+      <xsl:apply-templates select="section|reference" />
     </chapter>
   </xsl:template>
   <xsl:template match="section">
     <section>
-      <xsl:apply-templates select="section|reference|title|text|example|description-list|itemized-list|enumerated-list|figure|equation"/>
+      <xsl:apply-templates select="section|reference|title|text|example|description-list|itemized-list|numbered-list|figure|equation|note"/>
     </section>
   </xsl:template>
   <xsl:template match="raw-data">
@@ -63,14 +64,14 @@
       <xsl:apply-templates select="item"/>
     </description-list>
   </xsl:template>
-  <xsl:template match="enumerated-list">
-    <enumerated-list>
+  <xsl:template match="numbered-list">
+    <numbered-list>
       <xsl:apply-templates select="item"/>
-    </enumerated-list>
+    </numbered-list>
   </xsl:template>
   <xsl:template match="item">
     <item>
-      <xsl:apply-templates select="description|text|text()" />
+      <xsl:apply-templates select="description|text|text()|description-list|numbered-list|itemized-list|figure|equation|example|note" />
     </item>
   </xsl:template>
   <xsl:template match="description">
@@ -103,6 +104,10 @@
   </xsl:template>
 
   <!-- INLINE -->
+  <xsl:template match="text()">
+    <xsl:variable name="text" select="." />
+    <xsl:value-of select="normalize-space($text)" />
+  </xsl:template>
   <xsl:template match="reference">
     <xsl:variable name="hrid" select="./@hrid" />
     <reference hrid='{$hrid}' />
@@ -219,10 +224,19 @@
   <xsl:template match="cell">
     <xsl:variable name="cellspan" select="./@span" />
     <xsl:variable name="border" select="./@border" />
-    <xsl:variable name="width" select="./@width" />
-    <cell span='{$cellspan}' border='{$border}' width='{$width}' >
+    <xsl:variable name="colfmt" select="./@colfmt" />
+    <xsl:element name="cell">
+      <xsl:if test="$cellspan">
+        <xsl:attribute name="span"><xsl:value-of select="$cellspan" /></xsl:attribute>
+      </xsl:if>
+      <xsl:if test="$border">
+        <xsl:attribute name="border"><xsl:value-of select="$border" /></xsl:attribute>
+      </xsl:if>
+      <xsl:if test="$colfmt">
+        <xsl:attribute name="colfmt"><xsl:value-of select="$colfmt" /></xsl:attribute>
+      </xsl:if>
       <xsl:apply-templates />
-    </cell>
+    </xsl:element>
   </xsl:template>
 
   <!-- MATH -->
@@ -282,6 +296,7 @@
     <xsl:variable name="table" select="./@table" />
     <xsl:variable name="description" select="./@description" />
     <xsl:variable name="qsummary" select="./@qsummary" />
+    <xsl:variable name="colfmt" select="./@colfmt" />
     <xsl:element name="field">
       <xsl:attribute name="name">
         <xsl:value-of select="$name" />
@@ -306,7 +321,12 @@
           <xsl:value-of select="$qsummary" />
         </xsl:attribute>
       </xsl:if>
-      <xsl:value-of select="." />
+      <xsl:if test="./@colfmt">
+        <xsl:attribute name="colfmt">
+          <xsl:value-of select="$colfmt" />
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:apply-templates />
     </xsl:element>
   </xsl:template>
 
