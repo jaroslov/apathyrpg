@@ -92,7 +92,7 @@
       <ol class="examples">
         <xsl:for-each select="//example">
           <li><a href="#{generate-id(.)}">
-            <xsl:value-of select="title" />
+            <xsl:apply-templates select="title/child::node()" />
           </a></li>
         </xsl:for-each>
       </ol>
@@ -103,7 +103,7 @@
         <xsl:for-each select="//figure">
           <li>
             <a href="#{generate-id(.)}">
-              <xsl:value-of select="caption" />
+              <xsl:apply-templates select="caption/child::node()" />
             </a>
           </li>
         </xsl:for-each>
@@ -310,7 +310,7 @@
     <div class="example" id="{generate-id(.)}">
       <h1>
         <span class="example-title">Example:</span>
-        <xsl:value-of select="title" />
+        <xsl:apply-templates select="title" />
       </h1>
       <xsl:apply-templates select="text" />
     </div>
@@ -372,7 +372,7 @@
   </xsl:template>
   <!-- caption -->
   <xsl:template match="caption">
-    <p class="figure-caption"><xsl:value-of select="." /></p>
+    <p class="figure-caption"><xsl:apply-templates /></p>
   </xsl:template>
   <!-- tables -->
   <xsl:template match="table">
