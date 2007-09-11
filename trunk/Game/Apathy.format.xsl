@@ -48,9 +48,7 @@
     </section>
   </xsl:template>
   <xsl:template match="raw-data">
-    <raw-data>
-      <xsl:apply-templates select="category"/>
-    </raw-data>
+    <xsl:apply-templates select="category"/>
   </xsl:template>
 
   <!-- LISTS -->
@@ -106,7 +104,16 @@
   <!-- INLINE -->
   <xsl:template match="text()">
     <xsl:variable name="text" select="." />
-    <xsl:value-of select="normalize-space($text)" />
+    <xsl:variable name="parent" select="name(parent::node())" />
+    <xsl:choose>
+      <!-- If you have a problem child... fix here -->
+      <xsl:when test="$parent=''">
+        <FROOB><xsl:value-of select="normalize-space($text)" /></FROOB>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="normalize-space($text)" />
+      </xsl:otherwise>  
+    </xsl:choose>
   </xsl:template>
   <xsl:template match="reference">
     <xsl:variable name="hrid" select="./@hrid" />
