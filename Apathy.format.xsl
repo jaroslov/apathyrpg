@@ -108,7 +108,7 @@
     <xsl:choose>
       <!-- If you have a problem child... fix here -->
       <xsl:when test="$parent=''">
-        <FROOB><xsl:value-of select="normalize-space($text)" /></FROOB>
+        <text><xsl:value-of select="normalize-space($text)" /></text>
       </xsl:when>
       <xsl:otherwise>
         <xsl:value-of select="normalize-space($text)" />

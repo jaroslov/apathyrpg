@@ -184,6 +184,10 @@ ul.Fast-Find-List {
 table.datum-table {
   border-collapse: collapse;
 }
+table.datum-table p {
+  margin: 0;
+  padding: 0;
+}
 table.datum-table a {
   font-variant: small-caps;
 }

@@ -423,8 +423,8 @@
           <xsl:for-each select="field" >
             <xsl:if test="./@title">
               <td>
-                <a href="#{../../../@name}-{$hrid}-{translate(.,' ','')}">
-                  <xsl:apply-templates select="." />
+                <a href="#{generate-id(.)}">
+                  <xsl:apply-templates />
                 </a>
               </td>
             </xsl:if>
@@ -438,8 +438,9 @@
     <!-- Builds the descriptor lists -->
     <xsl:for-each select="//category[@name=$hrid]/datum">
       <xsl:variable name="datum-title" select="field[@title='yes']" />
+      <xsl:variable name="title-id" select="generate-id(field)"/>
       <div class="datum-description"
-        id="{../../@name}-{$hrid}-{translate($datum-title,' ','')}">
+        id="{$title-id}">
         <span class="datum-description"><xsl:value-of select="field[@title='yes']" /></span>
         <p><xsl:value-of select="field[@description='yes']" /></p>
       </div>
