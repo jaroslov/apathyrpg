@@ -1,7 +1,7 @@
 LATEX = pdflatex
 XSLTP = xsltproc
 
-all: xhtml latex pdf
+all: xhtml PDF
 
 format: Apathy.xml Apathy.format.xsl
 	xsltproc -o Apathy-R.xml Apathy.format.xsl Apathy.xml
@@ -13,6 +13,16 @@ latex: Apathy.tex
 	xsltproc -o Apathy.tex Apathy.latex.xsl Apathy.xml
 
 pdf: Apathy.tex
-	pdflatex Apathy.tex
+	pdflatex Apathy.tex >& Apathy.pdflatex
 
-pdflatex: latex pdf
+pdf2: Apathy.tex
+	pdflatex Apathy.tex >& Apathy.pdflatex
+	pdflatex Apathy.tex >& Apathy.pdflatex
+
+pdfclean:
+	rm -rf *.aux *.lof *.log *.lot *.out *.pdflatex *.toc
+
+pdflatex: latex pdf pdfclean
+
+PDF: pdflatex pdf2
+	rm -rf *.aux *.lof *.log *.lot *.out *.pdflatex *.toc
