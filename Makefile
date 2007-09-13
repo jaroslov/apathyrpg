@@ -9,7 +9,7 @@ format: Apathy.xml Apathy.format.xsl
 xhtml: Apathy.xml Apathy.html.xsl Apathy.css
 	xsltproc -o Apathy.xhtml Apathy.html.xsl Apathy.xml
 
-latex: Apathy.tex
+latex: Apathy.xml Apathy.latex.xsl
 	xsltproc -o Apathy.tex Apathy.latex.xsl Apathy.xml
 
 pdf: Apathy.tex
@@ -22,7 +22,6 @@ pdf2: Apathy.tex
 pdfclean:
 	rm -rf *.aux *.lof *.log *.lot *.out *.pdflatex *.toc
 
-pdflatex: latex pdf pdfclean
+pdflatex: latex pdf
 
-PDF: pdflatex pdf2
-	rm -rf *.aux *.lof *.log *.lot *.out *.pdflatex *.toc
+PDF: pdflatex pdf2 pdfclean
