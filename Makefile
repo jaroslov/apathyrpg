@@ -26,6 +26,3 @@ pdflatex: latex pdf pdfclean
 
 PDF: pdflatex pdf2
 	rm -rf *.aux *.lof *.log *.lot *.out *.pdflatex *.toc
-
-split: Apathy.xml Apathy.split.xsl
-	xsltproc -o Apathy.split.xml Apathy.split.xsl Apathy.xml
