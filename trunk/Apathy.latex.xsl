@@ -309,7 +309,7 @@ Josh Kramer}
 
   <!-- math -->
   <xsl:template match="equation">&#xa;&#xa;
-    \vspace{-.4in}
+    \vspace{-.3in}
     \begin{center}
     \begin{equation}
     <xsl:apply-templates select="math/*" />
