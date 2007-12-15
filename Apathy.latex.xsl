@@ -107,7 +107,7 @@ Chris Cook \\
 Josh Kramer}
 
 \vskip 2in
-\textsc{Revision \#241 (09 September 2007)}
+\textsc{Revision \#259 (15 December 2007)}
 \end{center}
 
 \end{titlepage}
@@ -173,7 +173,7 @@ Josh Kramer}
     <xsl:apply-templates />
     }
   </xsl:template>
-  <xsl:template match="text()"><xsl:variable name="text" select="." /><xsl:value-of select="normalize-space($text)" /></xsl:template>
+  <!--<xsl:template match="text()"><xsl:variable name="text" select="." /><xsl:value-of select="normalize-space($text)" /></xsl:template>-->
   <!-- Note -->
   <xsl:template match="note">&#xa;&#xa;\textscbf{Note!} \textbf{<xsl:apply-templates />}&#xa;&#xa;</xsl:template>
   <!-- examples -->
