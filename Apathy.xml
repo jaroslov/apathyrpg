@@ -7,7 +7,7 @@
         <title>Core Rules</title>
         <section>
           <title>Introduction</title>
-          <text><Apathy/> is a paper <and/> pencil role-playing game. <Apathy/><rdquo/>s authors have played a great many RPGs including D  <and/>  D, Heroes Unlimited, GURPS, Shadowrun, TMNT, various White Wolf games (Vampire, etc.), Deadlands, and a few others. While these games are all fun, we felt that each game had various shortcomings that could be improved upon. Enter <Apathy/>. <Apathy/> is designed to be a very flexible role-playing system. <Apathy/> can handle classic games with knights and dragons, as well as modern-day, Cyberpunk, superhero, or futuristic scenarios. It excels at fantasy games that blend all genres.</text>
+          <text><Apathy/> is a paper <and/> pencil role-playing game. <Apathy/><rsquo/>s authors have played a great many RPGs including D<and/>D, Heroes Unlimited, GURPS, Shadowrun, TMNT, various White Wolf games (Vampire, etc.), Deadlands, and a few others. While these games are all fun, we felt that each game had various shortcomings that could be improved upon. Enter <Apathy/>. <Apathy/> is designed to be a very flexible role-playing system. <Apathy/> can handle classic games with knights and dragons, as well as modern-day, Cyberpunk, superhero, or futuristic scenarios. It excels at fantasy games that blend all genres.</text>
           <text><Apathy/> is recommended for advanced role-players (or at least for experienced DM/GM/Storytellers). This is because the <Apathy/> system is designed for a unique mix of speed and realism rather than carefully <ldquo/>balanced<rdquo/> rules. The <Apathy/> rules make it very easy to make unbalanced (<ldquo/>min-maxed<rdquo/>) or tweaked characters. <Apathy/> is likewise not appropriate for <ldquo/>rules lawyers<rdquo/> or excessively anal GMs and players.</text>
           <text><Apathy/> was created around several core features. These are what make <Apathy/> a unique game system:</text>
           <itemized-list>
@@ -24,7 +24,7 @@
               <text>The game rules are purposely devoid of <ldquo/>fluff<rdquo/> rules. Time-consuming (and therefore not fun) look-up tables and thick books of rules are nowhere to be found. <Apathy/> is designed to be fast to play. Most of the <ldquo/>tables<rdquo/> in the <Apathy/> manuals are just to explain things to the players and aren<rdquo/>t used during play.</text>
             </item>
             <item>
-              <text>While <Apathy/> is devoid of many <ldquo/>clutter rules<rdquo/>, it does have an emphasis on realism. <Apathy/><rdquo/>s combat system is an excellent compromise between speed and realism.</text>
+              <text>While <Apathy/> is devoid of many <ldquo/>clutter rules<rdquo/>, it does have an emphasis on realism. <Apathy/><rsquo/>s combat system is an excellent compromise between speed and realism.</text>
             </item>
           </itemized-list>
           <text>In any game of <Apathy/>, the CHARACTERS are the heroes!</text>
@@ -80,7 +80,7 @@
             </item>
             <item>
               <description>Luck Points</description>
-              <text>Usually, this is short for Luck Points. Luck Points are accumulated during gameplay, and players redeem them for combat bonuses, or for saving their character<rdquo/>s butt if things get rough. This is used to help unLuck Pointsy die rolls from screwing over players. All major character in the game, including significant NPCs, villains, etc. will have Luck Points. The GM is responsible for distributing Luck Points.</text>
+              <text>Usually, this is short for Luck Points. Luck Points are accumulated during gameplay, and players redeem them for combat bonuses, or for saving their character<rdquo/>s butt if things get rough. This is used to help unlucky die rolls from screwing over players. All major character in the game, including significant NPCs, villains, etc. will have Luck Points. The GM is responsible for distributing Luck Points.</text>
             </item>
             <item>
               <description>MA</description>
@@ -529,7 +529,7 @@
           </section>
           <section>
             <title>Skill Rolls</title>
-            <text>Skill rollsare used whenever a player wants to use one of his character<rdquo/>s skills. They are also used whenever two characters are competing at something (Contest of skills) related to a skill. Skill rolls are also used <ldquo/>to strike<rdquo/> or <ldquo/>to defend<rdquo/> in combat.</text>
+            <text>Skill rolls are used whenever a player wants to use one of his character<rdquo/>s skills. They are also used whenever two characters are competing at something (Contest of skills) related to a skill. Skill rolls are also used <ldquo/>to strike<rdquo/> or <ldquo/>to defend<rdquo/> in combat.</text>
             <text>To determine if you are successful in performing a skill, roll a number of D20s equal to the Level you have purchased the skill in. To each die, add your current attribute referenced by the associated attribute value of the skill. Each time a die with this value added to it reaches 25 or above, this is called a success. If you have at least one success, you successfully performed the skill. Rolling a <ldquo/>20<rdquo/> on a die will give you +1 successes to however many you rolled normally. Note that this makes it possible to have more successes than you have levels in a given skill. Likewise, a roll of <ldquo/>1<rdquo/> is -1 successes to your total. If you have negative successes (caused by rolling more 1s than successes) then you have a critical failure! In the case of a critical failure the GM will determine what (negative) outcome happens!</text>
             <figure>
               <table>
@@ -569,7 +569,7 @@
             <text>Note that the Maximum you can ever add to your die roll<mdash/>no matter how high your attribute or bonuses to succeed might be<mdash/>is 20.</text>
             <text>Also, if you are doing something simple with respect to your skill level then you don<rdquo/>t have to roll dice at all. It<rdquo/>s assumed that you succeed examples.</text>
             <example>
-              <title>Lookup Internt Address</title>
+              <title>Lookup Internet Address</title>
               <text>Amy has the Computer Use skill at level 3. She wants to look up an Internet address on the computer that she thinks might give the players some needed information. Since this is a simple task and she has a significant level in the associated skill (Computer Use), then the GM rules that she does so automatically, with no roll needed.</text>
             </example>
             <example>
@@ -700,7 +700,7 @@
             <description-list>
               <item>
                 <description>Two normal weapons</description>
-                <text>When wielding two weapons the weapon in the character<rsquo/>s <ldquo/>good<rdquo/> hand receives a -3 to strike and the weapon in the character<rsquo/>s <ldquo/>off<rdquo/> hand receives a -6. Some characters can have <ldquo/>even-more-offhand<rdquo/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the kthweapon is at -3*k to strike.</text>
+                <text>When wielding two weapons the weapon in the character<rsquo/>s <ldquo/>good<rdquo/> hand receives a -3 to strike and the weapon in the character<rsquo/>s <ldquo/>off<rdquo/> hand receives a -6. Some characters can have <ldquo/>even-more-offhand<rdquo/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the <math><mrow><msup><mi>k</mi><mi>th</mi></msup></mrow></math> weapon is at <math><mrow><mn>-3</mn><mo><times/></mo><mi>k</mi></mrow></math> to strike.</text>
               </item>
               <item>
                 <description>Paired weapons</description>
