@@ -29,17 +29,19 @@ def buildOutLine(book):
 def printOutline(outline,indent="",number=[1]):
   keys = outline.keys()
   keys.sort()
+  res = ""
   for key in keys:
     num = ""
     if len(number) > 0:
       num = str(number[0])
     for n in number[1:]:
       num += "."+str(n)
-    print indent + num + " " + key[1]
+    res += indent + num + " " + key[1]
     subnum = [n for n in number]
     subnum.append(1)
-    printOutline(outline[key],indent+"  ",subnum)
+    res += printOutline(outline[key],indent+"  ",subnum)
     number[-1] += 1
+  return res 
 
 def stripGameAndBook(outline):
   if type(outline) == tuple:
@@ -78,9 +80,80 @@ def buildText(book):
 def printText(book):
   return ""
 
-apathy = parseXml("Apathy.xml")
-outline = stripGameAndBook(buildOutLine(apathy))
+def yesnoToBoolean(yn):
+  if yn == "yes": return True
+  return False
 
-#printOutline(outline)
-text = stripGameAndBook(buildText(apathy))
-printText(text)
+class Field(object):
+  def __init__(self, Fld):
+    self.Name = Fld.getAttribute("name")
+    self.Title = ""
+    if Fld.hasAttribute("title"):
+      self.Title = yesnoToBoolean(Fld.getAttribute("title"))
+    self.Table = False
+    if Fld.hasAttribute("table"):
+      self.Table = yesnoToBoolean(Fld.getAttribute("table"))
+    self.ColumnFormat = ""
+    if Fld.hasAttribute("colfmt"):
+      self.ColumnFormat = Fld.getAttribute("colfmt")
+    self.Description = False
+    if Fld.hasAttribute("description"):
+      self.Description = yesnoToBoolean(Fld.getAttribute("description"))
+    self.Value = Fld.nodeValue
+  def toString(self,indent=""):
+    return indent+self.Name
+  def __str__(self): return self.toString()
+  def __repr__(self): return str(self)
+
+class DefaultEntry(object):
+  def __init__(self, Def):
+    self.Fields = []
+    for child in Def.childNodes:
+      if child.nodeType == child.ELEMENT_NODE:
+        self.Fields.append(Field(child))
+  def toString(self,indent=""):
+    res = ""
+    if len(self.Fields) > 0:
+      res = self.Fields[0].toString(indent+"  ")
+    for fld in self.Fields[1:]:
+      res += "\n"+fld.toString(indent+"  ")
+    return res
+  def __str__(self): return self.toString()
+  def __repr__(self): return str(self)
+
+class Category(object):
+  def __init__(self, Cat):
+    self.Name = Cat.getAttribute("name")
+    self.Node = Cat
+    self.Default = None
+    for child in self.Node.childNodes:
+      if child.nodeType == child.ELEMENT_NODE:
+        if child.tagName == "default":
+          self.Default = DefaultEntry(child)
+  def toString(self, indent=""):
+    res = self.Name
+    res += "\n"+self.Default.toString(indent+"  ")
+    return res
+  def __str__(self): return self.toString()
+  def __repr__(self): return str(self)
+
+def getRawData(apathy):
+  game = None
+  for child in apathy.childNodes:
+    game = child
+  rawdata = None
+  for child in game.childNodes:
+    if child.nodeType == child.ELEMENT_NODE:
+      if child.tagName == "raw-data":
+        rawdata = child
+  for child in rawdata.childNodes:
+    if child.nodeType == child.ELEMENT_NODE:
+      if child.tagName in ["category"]:
+        cat = Category(child)
+        print cat
+
+apathy = parseXml("Apathy.xml")
+outline = printOutline(stripGameAndBook(buildOutLine(apathy)))
+#text = stripGameAndBook(buildText(apathy))
+#printText(text)
+getRawData(apathy)
