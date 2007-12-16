@@ -46,9 +46,10 @@
             </item>
             <item>
               <description>
-                <define>C</define>
+                <define>Crushing</define>,
+		<define>C</define>
               </description>
-              <text>An abbreviation for<define>crushing</define>. When used in conjunction with a weapon, it indicates that the weapon in question deals Crushing type damage. When used in conjunction with armor, it indicates how much Crushing damage the armor will defend against.</text>
+              <text>An abbreviation for <define>crushing</define>. When used in conjunction with a weapon, it indicates that the weapon in question deals Crushing type damage. When used in conjunction with armor, it indicates how much Crushing damage the armor will defend against.</text>
             </item>
             <item>
               <description>CP</description>
