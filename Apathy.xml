@@ -7,7 +7,7 @@
         <title>Core Rules</title>
         <section>
           <title>Introduction</title>
-          <text><Apathy/> is a paper <and/>pencil role-playing game. <Apathy/><rdquo/>s authors have played a great many RPGs including D  <and/> D, Heroes Unlimited, GURPS, Shadowrun, TMNT, various White Wolf games (Vampire, etc.), Deadlands, and a few others. While these games are all fun, we felt that each game had various shortcomings that could be improved upon. Enter <Apathy/>. <Apathy/> is designed to be a very flexible role-playing system. <Apathy/> can handle classic games with knights and dragons, as well as modern-day, Cyberpunk, superhero, or futuristic scenarios. It excels at fantasy games that blend all genres.</text>
+          <text><Apathy/> is a paper <and/> pencil role-playing game. <Apathy/><rdquo/>s authors have played a great many RPGs including D  <and/>  D, Heroes Unlimited, GURPS, Shadowrun, TMNT, various White Wolf games (Vampire, etc.), Deadlands, and a few others. While these games are all fun, we felt that each game had various shortcomings that could be improved upon. Enter <Apathy/>. <Apathy/> is designed to be a very flexible role-playing system. <Apathy/> can handle classic games with knights and dragons, as well as modern-day, Cyberpunk, superhero, or futuristic scenarios. It excels at fantasy games that blend all genres.</text>
           <text><Apathy/> is recommended for advanced role-players (or at least for experienced DM/GM/Storytellers). This is because the <Apathy/> system is designed for a unique mix of speed and realism rather than carefully <ldquo/>balanced<rdquo/> rules. The <Apathy/> rules make it very easy to make unbalanced (<ldquo/>min-maxed<rdquo/>) or tweaked characters. <Apathy/> is likewise not appropriate for <ldquo/>rules lawyers<rdquo/> or excessively anal GMs and players.</text>
           <text><Apathy/> was created around several core features. These are what make <Apathy/> a unique game system:</text>
           <itemized-list>
@@ -321,7 +321,7 @@
                 <text>Arcane / Magic<description-list><item><description>Spellcasting</description><text/></item><item><description>Psionics</description><text/></item><item><description>Witchcraft or Ritual Magic</description><text/></item><item><description>Supernatural abilities (super powers)</description><text/></item></description-list></text>
               </item>
               <item>
-                <text>Technology<description-list><item><description>Mecha and Robotics</description><text>Robotic bodies, limbs, powered armor, and robotic suits</text></item><item><description>Augmentations</description><text>Cybernetics, genetic mutations, and chemical augmentations</text></item><item><description>Weapons</description><text/></item><item><description>Armor</description><text/></item><item><description>Equipment</description><text> <and/>other material possessions</text></item></description-list></text>
+                <text>Technology<description-list><item><description>Mecha and Robotics</description><text>Robotic bodies, limbs, powered armor, and robotic suits</text></item><item><description>Augmentations</description><text>Cybernetics, genetic mutations, and chemical augmentations</text></item><item><description>Weapons</description><text/></item><item><description>Armor</description><text/></item><item><description>Equipment</description><text> <and/> other material possessions</text></item></description-list></text>
               </item>
             </itemized-list>
             <note><Apathy/> does not have <ldquo/>character classes<rdquo/> that are common to many role-playing systems. The <Apathy/> system allows the player to decide every detail pertaining to his character, rather than being stuck with a <ldquo/>default<rdquo/> set of abilities and skills. It is up to the player to use his CP to develop a well-rounded character. Note that there are NO skills that come <ldquo/>free.<rdquo/> If your character is literate, then that skill needs to be purchased. Know how to drive a car? Buy the skill.</note>
@@ -628,7 +628,7 @@
           </section>
         </section>
         <section>
-          <title>Combat Sequence <and/>Initiative</title>
+          <title>Combat Sequence <and/> Initiative</title>
           <text>Combat is based on a system of Rounds, Turns, and Actions. A <ldquo/>round<rdquo/> lasts about five seconds. It is the length of time in which all combatants have done something. Each round is broken down into Actions. An Action lasts about 1 second. Each combatant gets one or more Actions during each round. When all combatants have used up their Actions, the current round is over and a new one starts.</text>
           <text>During your turn, you determine what you wish to do with your available Actions. Almost everything that you do of significance during your turn consumes an Action Simple examples of what can be done in an Action are shooting a gun, swing a sword, moving, or using a mystical ability. Keep in mind that a lot of <ldquo/>boring<rdquo/> combat stuff also takes up Actions: reloading your weapon, moving around, ducking behind cover, or taking an item out of your pack. Some things that you will want to do will consume multiple Actions per turn.</text>
           <text>All characters, by default, have three Actions per round. Certain skills or in-game effects might change this. When combat is going to start, all players need to figure out how many Actions they get. (typically, this will be 3 each).</text>
@@ -674,7 +674,7 @@
             </item>
           </numbered-list>
           <section>
-            <title>Weapons <and/>Equipment</title>
+            <title>Weapons <and/> Equipment</title>
             <text>Most characters will carry equipment in combat. This usually includes weapons and armor. There are no <ldquo/>class<rdquo/> restrictions for weapons or armor. Any character can wear any armor and wield any weapon, provided that the character has the appropriate attributes and skills.</text>
             <text>Weapons have a minimum strength requirement (MSR). The MSR indicates what strength is required of the character to properly wield a given weapon. If the character<rsquo/>s strength is less than the MSR, then the character has -1 to strike and [-1] damage for each point of strength difference.</text>
             <text>The raw damage bonus (RDB) is calculated by subtracting 8 from the wielder<rsquo/>s Str. The RDB is added as raw damage to total of the weapon<rsquo/>s damage. However, all weapons have a maximum strength bonus (MSB); if the RDB is greater than the MSB, then the MSB is used as the RDB instead.</text>
@@ -695,7 +695,7 @@
             <text>It is possible to use some two-handed weapons with one hand. To do so, add 4 to the minimum strength requirement of the weapon. Note that many two-handed weapons always require two hands, period. These are large firearms (rifles, shotguns), staves, pole arms, chains, and bows.</text>
           </section>
           <section>
-            <title>Dual-wielding Weapons or Weapon <and/>Shield</title>
+            <title>Dual-wielding Weapons or Weapon <and/> Shield</title>
             <text>As noted above, it is possible for characters to wield two weapons in combat, or a weapon and a shield. A character cannot attack with both weapons during the same Action unless he takes the Multi-weapon style skill in Martial Arts. A character using a weapon and a shield may not attack with his weapon and shield bash in the same Action for the same reason. When attacking with both weapons the character makes two separate attack rolls, one for each weapon; each attack is resolved separately. This takes two separate Actions.</text>
             <description-list>
               <item>
@@ -1378,7 +1378,7 @@
             <text>Ritual magicians may also perform a ritual in a special manner, infusing the spell into an object, such as a weapon or magical totem. Infusing a spell takes the same amount of time as performing the ritual in normal fashion. Once the spell is infused in an item, it may be released very quickly. Releasing a charge (the energy and magical effects of a stored ritual) requires 1 action, regardless of the original casting time of the spell. Infused ritual items are only good for twenty-four hours, at which point the charge is lost and the item returns to normal. The ritualist may create charges of extended duration when he first performs the infusion, but each 24 hours of time requires another batch of the requisite spell ingredients (not Mana). Therefore, it can become very expensive to make long duration infused items. An infused item may be used by anyone, not just the ritualist.</text>
           </section>
           <section>
-            <title>Religious <and/>Faith Magic</title>
+            <title>Religious <and/> Faith Magic</title>
             <text>Religious magic is magical effects that are brought into reality by the combined will of the caster and the caster<rsquo/>s god(s). Whereas primitive religions and cults tend towards the use of ritual magic, Religious or Faith magic is practiced by priests of clearly defined and well organized religions. Most religions that practice Faith magic have a clearly organized hierarchy within the church. Religious dogma and/or scripture is well defined and is extensively documented. Faith-magic using religions are not necessarily <ldquo/>good<rdquo/>, but they are usually known to the general public and often actively recruit new members.</text>
             <text>Religious magic is taught by a particular Church. Each faith has one or more magic schools associated with it. These nearly always include Spiritual and Life magic, and may include others. Most faiths have 3 or 4 schools of spells. A faith caster has access to all spells in the school(s) associated with his Faith, except those whose rank is higher than his level of faith, and those which are specifically prohibited by his Church. For example, a <ldquo/>good<rdquo/> tending religion would typically deny harmful Life-magic spells to their adherents, for example curse.</text>
             <itemized-list>
@@ -1387,7 +1387,7 @@
               <item>A successful Faith check must be made for casting faith magic.</item>
             </itemized-list>
             <text>Priests, monks, and warriors of faith practice religious magic. All religious spells are channeled through a holy symbol (see below).</text>
-            <text>Once a day the caster must engage in prayer. The exact means of praying is left up to the players <and/>GM, but during this time the priest will choose which spells he as access to for the remainder of the day. The caster may choose any combination of spells he has access to, provided that he has enough MP (at the time of prayer) for that particular combination. The caster must allocate MP and spells during this prayer session. Until the next prayer session those are the spells the caster may use. A holy symbol of at least +0 quality is required for this prayer, otherwise the caster cannot allocate spells for that day.</text>
+            <text>Once a day the caster must engage in prayer. The exact means of praying is left up to the players <and/> GM, but during this time the priest will choose which spells he as access to for the remainder of the day. The caster may choose any combination of spells he has access to, provided that he has enough MP (at the time of prayer) for that particular combination. The caster must allocate MP and spells during this prayer session. Until the next prayer session those are the spells the caster may use. A holy symbol of at least +0 quality is required for this prayer, otherwise the caster cannot allocate spells for that day.</text>
             <text>A faith magic user always uses the Faith skill for any and all magic-related skill rolls, including those that would normally require Spellcasting or Magical Control, etc.</text>
             <text>A Holy Symbol is always required to cast Faith magic. If a holy symbol is not available, then Faith magic simply cannot be cast. Thankfully, a simple gesture or trinket often suffices. There are different types of holy symbols. <ldquo/>Better<rdquo/> and more significant holy symbols offer a better bonus to Faith magic casting:</text>
             <figure>
@@ -1592,7 +1592,7 @@
             </description-list>
           </section>
           <section>
-            <title>Magic Terminology <and/>Misc.</title>
+            <title>Magic Terminology <and/> Misc.</title>
             <description-list>
               <item><description>Black</description>spells are those associated with evil, death energy, and demonic influence. While they are not necissiarily evil, they are generally indescriminate in their targets. Black spells never affect demons, undead, or targets that are not living, such as ghosts or robots.</item>
               <item><description>White</description>spells are those that are comprised of life energy. They are technically notgoodaligned, though they are a favorite of good religious orders. White spells that cause damage only affect demons, undead, and spirits.</item>
@@ -1702,7 +1702,7 @@
       <chapter>
         <title>Mecha</title>
         <section>
-          <title>Mecha Suits <and/>Powered Armor</title>
+          <title>Mecha Suits <and/> Powered Armor</title>
           <text>A robot in which the pilot is completely protected by armor and other mechanisms.Mecha are controlled by abstract means and requires the Mecha Piloting skill.</text>
           <text>Mecha denotes armored mechanical vehicles that are built in the form of a human. There are two basic types of mecha: Power Armor and Mecha.</text>
           <text>Power Armor is an armored suit that is <ldquo/>worn<rdquo/> like clothing. It provides armor protection, but it has the function of increasing the wearer<rsquo/>s strength, endurance, and weapon payload. It is easy to use. The internal computers, etc, in the suit allow it to follow the wearer<rsquo/>s movements.</text>
@@ -2080,7 +2080,7 @@
                 </figure>
               </item>
               <item>
-                <text>Various parts of a mecha or powered suit require power to operate. This can come from any number of different sources. A mecha will generally have an ENGINE of some sort that supplies power for moving around, and operating equipment <and/>weapons. Some mecha will have supplimentary power sources used for especially power-hungry equipment. All power sources take up slots within the suit based on the amount of power that it produces. The more expensive (in CP) a power system is, the more power can be gotten from one slot<rsquo/>s worth of the power source. Power is measured in PCs (or Power Cells). All power sources produce the number of listed PC at the beginning of each of the character<rsquo/>s turns. All systems on a suit will draw power from this, and if there isn<rdquo/>t enough power available, that piece of equipment will not function. So it is vital that the suit has adequate power.</text>
+                <text>Various parts of a mecha or powered suit require power to operate. This can come from any number of different sources. A mecha will generally have an ENGINE of some sort that supplies power for moving around, and operating equipment <and/> weapons. Some mecha will have supplimentary power sources used for especially power-hungry equipment. All power sources take up slots within the suit based on the amount of power that it produces. The more expensive (in CP) a power system is, the more power can be gotten from one slot<rsquo/>s worth of the power source. Power is measured in PCs (or Power Cells). All power sources produce the number of listed PC at the beginning of each of the character<rsquo/>s turns. All systems on a suit will draw power from this, and if there isn<rdquo/>t enough power available, that piece of equipment will not function. So it is vital that the suit has adequate power.</text>
                 <figure>
                   <table>
                     <head>
@@ -5058,7 +5058,7 @@
         <field name="Character Points" table="yes"/>
         <field name="Prerequisite" table="yes"/>
         <field name="Location" table="yes">Head</field>
-        <field name="Description" description="yes">Character can completely change his or her facial <and/>head hair. This includes style, sparseness, color, and placement</field>
+        <field name="Description" description="yes">Character can completely change his or her facial <and/> head hair. This includes style, sparseness, color, and placement</field>
       </datum>
       <datum name="False teeth">
         <field name="Name" title="yes">False teeth</field>
@@ -5288,7 +5288,7 @@
         <field name="Name" title="yes">Sonar</field>
         <field name="MetaTag"/>
         <field name="Character Points" table="yes">4</field>
-        <field name="Prerequisite" table="yes">Hearing <and/>Vocal Systems</field>
+        <field name="Prerequisite" table="yes">Hearing <and/> Vocal Systems</field>
         <field name="Location" table="yes">Head</field>
         <field name="Description" description="yes">req. vocal system, range 500'</field>
       </datum>
@@ -10356,7 +10356,7 @@
         <field name="Name" title="yes">Fishing Kit, portable</field>
         <field name="MetaTag"/>
         <field name="Cost" table="yes"> <dollar/>100.00</field>
-        <field name="Description" description="yes">A small box containing a multi-piece rod <and/>reel, line, hooks, lures, and a small folding net.</field>
+        <field name="Description" description="yes">A small box containing a multi-piece rod <and/> reel, line, hooks, lures, and a small folding net.</field>
       </datum>
       <datum name="Flannel Shirt">
         <field name="Name" title="yes">Flannel Shirt</field>
@@ -10641,7 +10641,7 @@
         <field name="Name" title="yes">Jerry Can</field>
         <field name="MetaTag"/>
         <field name="Cost" table="yes"> <dollar/>25.00</field>
-        <field name="Description" description="yes">A metal or plastic container for storing <and/>transporting gas, water, oil, etc. Very rugged. Has a 5 gallon capacity, and can be used with most chemicals.</field>
+        <field name="Description" description="yes">A metal or plastic container for storing <and/> transporting gas, water, oil, etc. Very rugged. Has a 5 gallon capacity, and can be used with most chemicals.</field>
       </datum>
       <datum name="Lantern">
         <field name="Name" title="yes">Lantern</field>
@@ -10690,7 +10690,7 @@
         <field name="Name" title="yes">Medical Kit - Large</field>
         <field name="MetaTag"/>
         <field name="Cost" table="yes"> <dollar/>2,000.00</field>
-        <field name="Description" description="yes">A large duffel bag crammed with most of an emergency room. Enough to complete simple many surgical procedures. A full assortment of bandages, many drugs (painkillers, disease treatments, anesthetic, antibiotics, etc), surgical tools, splints, portable EKG machine, emergency fluids <and/>blood supply, sutures, etc.</field>
+        <field name="Description" description="yes">A large duffel bag crammed with most of an emergency room. Enough to complete simple many surgical procedures. A full assortment of bandages, many drugs (painkillers, disease treatments, anesthetic, antibiotics, etc), surgical tools, splints, portable EKG machine, emergency fluids <and/> blood supply, sutures, etc.</field>
       </datum>
       <datum name="Mess Kit">
         <field name="Name" title="yes">Mess Kit</field>
@@ -10956,7 +10956,7 @@
         <field name="Name" title="yes">Survival Kit, full</field>
         <field name="MetaTag"/>
         <field name="Cost" table="yes"> <dollar/>500.00</field>
-        <field name="Description" description="yes">A backpack with enough gear to survive for a long time: first aid supplies, 15 days of mini-rations, knife, fishing supplies, snare, guidebook to animals <and/>plants, 4 days of water, water filter, compass, flashlight, signal equipment, flare launcher, matches, assorted drugs, compact sleeping blanket, battery powered radio, and a .22 caliber gun with 200 rounds.</field>
+        <field name="Description" description="yes">A backpack with enough gear to survive for a long time: first aid supplies, 15 days of mini-rations, knife, fishing supplies, snare, guidebook to animals <and/> plants, 4 days of water, water filter, compass, flashlight, signal equipment, flare launcher, matches, assorted drugs, compact sleeping blanket, battery powered radio, and a .22 caliber gun with 200 rounds.</field>
       </datum>
       <datum name="T-shirt">
         <field name="Name" title="yes">T-shirt</field>
@@ -12394,7 +12394,7 @@
         <field name="Magic Points" table="yes" qsummary="yes">400</field>
         <field name="Range" table="yes" qsummary="yes">target</field>
         <field name="Target" table="yes" qsummary="yes">Auto</field>
-        <field name="Description" description="yes">Caster creates a magical copy of any one target, as Shadow Servant. It has armor <and/>HP equivalent to the target. It vanishes if it's HP goes negative. Copy cannot, however, use any defensive skills, dodge, etc.</field>
+        <field name="Description" description="yes">Caster creates a magical copy of any one target, as Shadow Servant. It has armor <and/> HP equivalent to the target. It vanishes if it's HP goes negative. Copy cannot, however, use any defensive skills, dodge, etc.</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Destroy Barrier">
@@ -13890,7 +13890,7 @@
         <field name="Magic Points" table="yes" qsummary="yes">70</field>
         <field name="Range" table="yes" qsummary="yes">target</field>
         <field name="Target" table="yes" qsummary="yes">Auto</field>
-        <field name="Description" description="yes">The caster's body is covered with magical fire. The caster <and/>his carried items suffer no damage, but anything contacting the fire suffers <roll><num>2</num><face>4</face><bns/><kind>U</kind></roll> damage. Caster also gains 4/4/4 Armor, and +4 to base armor.</field>
+        <field name="Description" description="yes">The caster's body is covered with magical fire. The caster <and/> his carried items suffer no damage, but anything contacting the fire suffers <roll><num>2</num><face>4</face><bns/><kind>U</kind></roll> damage. Caster also gains 4/4/4 Armor, and +4 to base armor.</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Flame Wall">
@@ -13925,7 +13925,7 @@
         <field name="Magic Points" table="yes" qsummary="yes">75</field>
         <field name="Range" table="yes" qsummary="yes">special</field>
         <field name="Target" table="yes" qsummary="yes">Roll</field>
-        <field name="Description" description="yes">The caster creates a three-foot high wave of magical fire that travels out from the caster to a maximum range of 50 feet. +2 to strike. Will travel up, over <and/>down surfaces it contacts, but cannot bridge gaps, etc.</field>
+        <field name="Description" description="yes">The caster creates a three-foot high wave of magical fire that travels out from the caster to a maximum range of 50 feet. +2 to strike. Will travel up, over <and/> down surfaces it contacts, but cannot bridge gaps, etc.</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Flame Whip">
@@ -14124,7 +14124,7 @@
         <field name="Magic Points" table="yes" qsummary="yes">30</field>
         <field name="Range" table="yes" qsummary="yes">target</field>
         <field name="Target" table="yes" qsummary="yes">Auto</field>
-        <field name="Description" description="yes">One target gains permanent fire protection (cannot be set on fire) <and/>sustains half damage from fire or heat-based sources.</field>
+        <field name="Description" description="yes">One target gains permanent fire protection (cannot be set on fire) <and/> sustains half damage from fire or heat-based sources.</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Ring of Fire">
@@ -14868,7 +14868,7 @@
         <field name="Magic Points" table="yes" qsummary="yes">80</field>
         <field name="Range" table="yes" qsummary="yes">self</field>
         <field name="Target" table="yes" qsummary="yes">Auto</field>
-        <field name="Description" description="yes">Caster becomes invisible<ndash/>cannot be detected via above means, OR radar/sonar <and/>similar means</field>
+        <field name="Description" description="yes">Caster becomes invisible<ndash/>cannot be detected via above means, OR radar/sonar <and/> similar means</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Autoinvisibility 3">
@@ -15114,7 +15114,7 @@
         <field name="Magic Points" table="yes" qsummary="yes">80</field>
         <field name="Range" table="yes" qsummary="yes">target</field>
         <field name="Target" table="yes" qsummary="yes">Auto</field>
-        <field name="Description" description="yes">One target (other than caster) becomes invisible<ndash/>cannot be detected via above means, OR radar/sonar <and/>similar means</field>
+        <field name="Description" description="yes">One target (other than caster) becomes invisible<ndash/>cannot be detected via above means, OR radar/sonar <and/> similar means</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Grant Invisibility 3">
@@ -17403,7 +17403,7 @@
         <field name="Type" table="yes">Modifier</field>
         <field name="Rank" table="yes">Special, see description.</field>
         <field name="Attribute" table="yes">Dexterity</field>
-        <field name="Description" description="yes">Multi-Weapon Style has Rank 3*X, where X is the number of additional weapons the martial artist intends to use. The martial artist can now use more than one weapon<mdash/>given that they are <ldquo/>in-hand<rdquo/>(or foot, tentacle etc.)<mdash/>in a single action. Note that the additional attacks have the appropriate multi-weapon minus; which can be mitigated by using Ambidexterity.<example><title>Jesse <ldquo/>Capoeira<rdquo/>: Double-Kick <and/>Double-Punch</title><text>Jesse wants to perform a Capoeira-style Double-Kick followed by a Double-Punch. He purchases Multi-Weapon Style for 3 additional weapons; the Rank of the Multi-Weapon Style is then 3*3=9 Since it's so expensive, he only purchases one level, so he can only use it once per turn. On top of this he has purchases 3 levels of Ambidexterity, offset all of his multi-use strikes by +3. This means when he attacks, in one action he can perform two kicks and two punches, if he does so his first punch is at -0 to strike, his second punch at -3, his first kick at -6, and his second kick at -9. He can do all of these strikes as if it were one action without. The strikes are considered separate, and pass-or-fail on their own.</text></example><text>Note that because Multi-Weapon Style is a Modifier, it may not be modified by Basic attacks.</text></field>
+        <field name="Description" description="yes">Multi-Weapon Style has Rank 3*X, where X is the number of additional weapons the martial artist intends to use. The martial artist can now use more than one weapon<mdash/>given that they are <ldquo/>in-hand<rdquo/>(or foot, tentacle etc.)<mdash/>in a single action. Note that the additional attacks have the appropriate multi-weapon minus; which can be mitigated by using Ambidexterity.<example><title>Jesse <ldquo/>Capoeira<rdquo/>: Double-Kick <and/> Double-Punch</title><text>Jesse wants to perform a Capoeira-style Double-Kick followed by a Double-Punch. He purchases Multi-Weapon Style for 3 additional weapons; the Rank of the Multi-Weapon Style is then 3*3=9 Since it's so expensive, he only purchases one level, so he can only use it once per turn. On top of this he has purchases 3 levels of Ambidexterity, offset all of his multi-use strikes by +3. This means when he attacks, in one action he can perform two kicks and two punches, if he does so his first punch is at -0 to strike, his second punch at -3, his first kick at -6, and his second kick at -9. He can do all of these strikes as if it were one action without. The strikes are considered separate, and pass-or-fail on their own.</text></example><text>Note that because Multi-Weapon Style is a Modifier, it may not be modified by Basic attacks.</text></field>
         <field name="Implementation"/>
       </datum>
       <datum name="Multitarget">
@@ -17639,7 +17639,7 @@
         <field name="MetaTag"/>
         <field name="Special Abilities">Dodge (stats above; is generally used as a last resport. Add +2 dice when jumping away to escape) Heat Sense (as a viper: can "see" warm-blooded targets even in complete darkness) Leap: 15 feet Ambidexterity: A Cave Droll, once latched in place, can attack with both knees and a bite in one action.</field>
         <field name="Statistics">Beast 20 HP (Female) 28 HP (Male) Size: 1 Actions: 3 Attack: 4-13 (+2 vs. medium targets such as humans) Dodge: 2-16 Natural Armor: 4/6/2 (Male: 5/7/3) Base Armor: 0</field>
-        <field name="Attacks">Bite (once per round only) Male: <roll><num>2</num><face>4</face><bns/><kind>S</kind></roll>  <and/> <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> from poison for <roll><num>1</num><face>12</face><bns/></roll> turns Female: <roll><num>1</num><face>4</face><bns/><kind>S</kind></roll>  <and/> <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> from poison for <roll><num>2</num><face>6</face><bns/></roll> turns Knee Attack (male only) May attack with both knees simulaneously in one action with no penalty <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><rOff>+</rOff><raw>3</raw><kind>P</kind></roll> each Spit Poison (female only) up to 5 times per day, range of 15 feet. <roll><num>2</num><face>6</face><bns/><kind>U</kind></roll> for <roll><num>1</num><face>4</face><bns/></roll> turns</field>
+        <field name="Attacks">Bite (once per round only) Male: <roll><num>2</num><face>4</face><bns/><kind>S</kind></roll>  <and/>  <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> from poison for <roll><num>1</num><face>12</face><bns/></roll> turns Female: <roll><num>1</num><face>4</face><bns/><kind>S</kind></roll>  <and/>  <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> from poison for <roll><num>2</num><face>6</face><bns/></roll> turns Knee Attack (male only) May attack with both knees simulaneously in one action with no penalty <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><rOff>+</rOff><raw>3</raw><kind>P</kind></roll> each Spit Poison (female only) up to 5 times per day, range of 15 feet. <roll><num>2</num><face>6</face><bns/><kind>U</kind></roll> for <roll><num>1</num><face>4</face><bns/></roll> turns</field>
         <field name="Description" description="yes">Apperance: The Cave Droll is a small reptile with a bulbous, bean-shaped body. Its body is approximatley one foot long and is reminiscent of a fat, bloated, sack. It has two spindly forelimbs that have 3-fingered hands and opposeable thumbs. Its legs are narrow but are much more muscled than the forelimbs and have 3-toed feet. Both the fingers and toes feature sharp claws. The body is completely covered with scales; those on the back are keeled and are quite hard. Coloration is chiefly a dark olive green, with streaks of brown and other earth tones throughout. The sexes are different in appearance: Males have a bright orange or yellow patch on the throat area, directly below a large mouth lined with sharp teeth. The male's knees are capped with large horny spikes. Females lack the colored throat patch and the knee spikes. Their mouths are considerably smaller and have far smaller teeth. Habits: Cave Drolls are omnivorous predators. They lair in secluded areas, most commonly caves, but any dark location with shelter from the elements will do. Cave Drolls will eat any kind of animal or insect they can subdue and kill, and are also known to eat sweet fruits or berries when they can find them. Hunting tactics generally involve subduing prey with brute force. While Cave Drolls are not active man-hunters, they have been known to kill and eat humans that stray too near their lairs. Combat: The animalistic intelligence of Cave Drolls prevents them from utilizing strategy. They are not subtle combatants and have no concept of trickery or prioritizing targets. However, their hunting instincts are strong, and they are known to hide motionless while prey approaches, suddenly making an ambush attack to kill it. Individuals simply grab and devour small prey, such as rodents or lizards. Larger animals are swarmed and attacked en masse: Males attack prey by first jumping at it and latching on with their claws. Then, they repeatedly pummel it with repeated blows from their spiked knees, and deliver their poison bite. Females keep their distance from prey, surround it, and spit poison globs.</field>
         <field name="level"/>
       </datum>
@@ -17693,7 +17693,7 @@
         <field name="MetaTag"/>
         <field name="Special Abilities">poison resistance burrowing infravision tremorsense Paralyzing slime: touching slime or being constricted requires the victim to make a BLD check at -3. Failure drops the user to half STR. (pass= no effect)</field>
         <field name="Statistics">Takes half damage form poison. 500 HP Size: 2 (25' long, but diminished size due to narrow body) Actions: 3 plus 1 move Attack: 7-6 (bite or stinger) Dodge: 5-6 Natural Armor: 10/15/30 Base Armor: 15</field>
-        <field name="Attacks">Bite <roll><num>4</num><face>10</face><bns/><rOff>+</rOff><raw>10</raw><kind>P</kind></roll> Stinger <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>P</kind></roll> , 20 AP and poision for <roll><num>2</num><face>6</face><bns/></roll> turns: <roll><num>3</num><face>6</face><bns/><kind>U</kind></roll>  <and/> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> BLD Constrict (must bite first), 4x <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll> Spell-like abilities: Darkness 1/turn Carpet of Adhesion or slipperyness at will Spider Climb 2/day Rock to Mud 2/day Create Portal 2/day Advanced Slow 2/day Negate 1/day Geo Transport 1/day</field>
+        <field name="Attacks">Bite <roll><num>4</num><face>10</face><bns/><rOff>+</rOff><raw>10</raw><kind>P</kind></roll> Stinger <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>P</kind></roll> , 20 AP and poision for <roll><num>2</num><face>6</face><bns/></roll> turns: <roll><num>3</num><face>6</face><bns/><kind>U</kind></roll>  <and/>  <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> BLD Constrict (must bite first), 4x <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll> Spell-like abilities: Darkness 1/turn Carpet of Adhesion or slipperyness at will Spider Climb 2/day Rock to Mud 2/day Create Portal 2/day Advanced Slow 2/day Negate 1/day Geo Transport 1/day</field>
         <field name="Description" description="yes">Apperance: The dirge worm is a revolting and horrific monster which is constantly surrounded with the stench of decaying flesh. The creature's body resembles a bloated grub or worm, except it is twenty-five feet long and two feet in diameter. Its skin is a tough, transparent membrane which is coated in a yellowish slime. The skin is stretched tight around the creature's body, making it look like it might burst at any moment. The combination of the slime and the transparent skin makes a dirge worm appear to be a writhing tube of mutilated flesh<ndash/>when in fact it is a living creature. A Dirge Worm's head resembles a grotesquely oversized human head. It has no hair and is covered with the same transparent skin and slime of the body. The forehead is extended, the mouth exaggerated, and it has tiny black eyes. The creature has no lips, and thus its mouth<ndash/>full of jagged teeth<ndash/>is clearly visible. Dirge worms move like a snake and are capable of extreme speed. Habits: Dirge worms live underground. They lair in caves, old dungeons, sewers, abandoned mineshafts, and similar locations<ndash/>anywhere damp and dark with sufficient space to accomodate their size. Dirge worms eat dead, decaying flesh. To this end they attack large prey. They often lair near humanoid settlements, from which they raid livestock and people alike. They haul the dead back to their lair and leave the bodies to rot. Once the flesh is sufficienly putrid, the creature consumes it. Dirge worms are fond of eating minor undead, such as zombies, as they are "instant" sources of dead, decayed flesh. They are also attracted to graveyards, burial pits, or battlefields where they collect great quantities of corpses to feed their insatiable hunger. Dirge Worm slime is valued by Necromancers for use in fell ritals. Thus some powerful necromancers seek out dirge worms and even supply them with zombies and other hapless victims in order to have a source of slime readily available. Though they are powerful, Dirge Worms prefer not to fight directly. They use their abilities to hide and move in darkness to suprise and overwhelm prey. Combat: When "hunting" prey, the dirge worm waits for its target to pass close by. It then bursts forth from the ground or from a hiding spot in a nearby marshy area, to attack. Usually one bite is sufficent to kill a potential victim. If facing multiple targets it uses its spell-like abilities immedietly to gain an advantage early on, then fights with its teeth and stinger.</field>
         <field name="level"/>
       </datum>
@@ -18018,7 +18018,7 @@
         <field name="Special Abilities">Can raise minor and normal zombies/skeleton for one action each.</field>
         <field name="Statistics">STR: 18 DEX: 16 BLD: 16 INT: 14 WIS: 13 WIL: 13 CHA: 12 HP: 250 Actions:: 5 P/S/C: 12/14/13 Size: 8' tall humanoid Dice: Strike: 5; Block: 5; Dodge: 3</field>
         <field name="Attacks">Morning star <roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns><kind>C</kind></roll> ; Kick <roll><num>2</num><face>6</face><bOff>+</bOff><bns>4</bns><kind>C</kind></roll> ; Breathe Fire <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> </field>
-        <field name="Description" description="yes">A minor demon<ndash/>red-skinned, muscular humanoid. Knows magic: Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3; Bio 1,2; Quake 1,2. 700 MP. Has infravision, can see invisible. Immune to posion <and/>sleep. Regenerates <roll><num>3</num><face>6</face><bns/></roll> HP per turn</field>
+        <field name="Description" description="yes">A minor demon<ndash/>red-skinned, muscular humanoid. Knows magic: Fire1..3; Black 1,2; Time 1,2; Flame Shroud, Counter 1,2,3; Bio 1,2; Quake 1,2. 700 MP. Has infravision, can see invisible. Immune to posion <and/> sleep. Regenerates <roll><num>3</num><face>6</face><bns/></roll> HP per turn</field>
         <field name="level"/>
       </datum>
       <datum name="Kobold">
@@ -18035,7 +18035,7 @@
         <field name="MetaTag"/>
         <field name="Special Abilities">Each tentacle can make 2 "free" slaps or constricions per turn. The other actions are for moving. Immune to water and ice/cold attacks. A kraken's eye is susceptable to damage.</field>
         <field name="Statistics">STR: 30 DEX: 15 BLD: 40 INT: 5 WIS: 5 WIL: 10 CHA: 4 HP: 4000 Actions:: 2 P/S/C: 10/10/20 Size: Main body is 80' long, with 100' tentacles Dice: Strike: 4</field>
-        <field name="Attacks">Tentacle slap <and/>grab <roll><num>10</num><face>4</face><bns/><kind>C</kind></roll>. Tentacle Constriction: <roll><num>6</num><face>4</face><bns/><kind>C</kind></roll> , doubles each consecutive action. Full body constriction: ( <roll><num>8</num><face>4</face><bns/></roll> )x4 C as above</field>
+        <field name="Attacks">Tentacle slap <and/> grab <roll><num>10</num><face>4</face><bns/><kind>C</kind></roll>. Tentacle Constriction: <roll><num>6</num><face>4</face><bns/><kind>C</kind></roll> , doubles each consecutive action. Full body constriction: ( <roll><num>8</num><face>4</face><bns/></roll> )x4 C as above</field>
         <field name="Description" description="yes">Krakens are gargantuan creatures of the deep oceans. Rarely seen, but when they are, they instill panic and will often attack nearby sailing vessels thinking they are their favorite prey (whales). Not a vicious animal naturally.</field>
         <field name="level"/>
       </datum>
@@ -18099,7 +18099,7 @@
         <field name="Special Abilities">Can raise minor and normal zombies/skeleton for one action each, can summon zombies at will for 1,2,3 actions respectivley</field>
         <field name="Statistics">STR: 12 DEX: 16 BLD: 14 INT: 15 WIS: 15 WIL: 16 CHA: 10 HP: 400 Actions:: 5 P/S/C: 16/16/16 Size: Human sized Dice: Strike: 3; Dodge: 5;</field>
         <field name="Attacks">Death touch <roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns><kind>U</kind></roll> ; Poisionous breath weapon <roll><num>1</num><face>4</face><bOff>+</bOff><bns>2</bns><kind>U</kind></roll> area affect</field>
-        <field name="Description" description="yes">A minor demon<ndash/>Guant, grey-skinned humanoid. Knows magic: Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake 1,2,3; Geo Transport, Heal 1,2,3. 1200 MP. Can see invisible. Immune to posion <and/>sleep. Regenerates <roll><num>4</num><face>6</face><bns/></roll> HP per turn</field>
+        <field name="Description" description="yes">A minor demon<ndash/>Guant, grey-skinned humanoid. Knows magic: Fire1..3; Black 1,2,3; Time 1,2; Counter 1,2,3; Bio 1,2; Quake 1,2,3; Geo Transport, Heal 1,2,3. 1200 MP. Can see invisible. Immune to posion <and/> sleep. Regenerates <roll><num>4</num><face>6</face><bns/></roll> HP per turn</field>
         <field name="level"/>
       </datum>
       <datum name="Nightmare">
@@ -19293,7 +19293,7 @@
         <field name="MetaTag"/>
         <field name="Slots" table="yes">0</field>
         <field name="Character Points" table="yes">4</field>
-        <field name="Description" description="yes">Modifications <and/>repairs can be done in 1/2 the normal time</field>
+        <field name="Description" description="yes">Modifications <and/> repairs can be done in 1/2 the normal time</field>
       </datum>
       <datum name="Environmental protection">
         <field name="Name" title="yes">Environmental protection</field>
@@ -19307,7 +19307,7 @@
         <field name="MetaTag"/>
         <field name="Slots" table="yes">X</field>
         <field name="Character Points" table="yes">X/2</field>
-        <field name="Description" description="yes">Protects a certain piece of equipment from electronic effects (EM pulse, Logic Bomb). The sheilding <and/>equipment it protects are immune to electronic effects + damage but other types of weapons (bullets, bombs, missiles, lasers, etc.) will destroy BOTH</field>
+        <field name="Description" description="yes">Protects a certain piece of equipment from electronic effects (EM pulse, Logic Bomb). The sheilding <and/> equipment it protects are immune to electronic effects + damage but other types of weapons (bullets, bombs, missiles, lasers, etc.) will destroy BOTH</field>
       </datum>
       <datum name="Extra Jammer Emitter">
         <field name="Name" title="yes">Extra Jammer Emitter</field>
@@ -19719,7 +19719,7 @@
         <field name="Slots" table="yes">0</field>
         <field name="Requirements" table="yes">Basic Sensor Package</field>
         <field name="Character Points" table="yes">2</field>
-        <field name="Description" description="yes">Has 2 hour of recording time, can take pictures or record video <and/>sound</field>
+        <field name="Description" description="yes">Has 2 hour of recording time, can take pictures or record video <and/> sound</field>
       </datum>
       <datum name="Advanced Audio">
         <field name="Name" title="yes">Advanced Audio</field>
@@ -19879,7 +19879,7 @@
         <field name="Slots" table="yes">0</field>
         <field name="Requirements" table="yes">Basic Sensor Package</field>
         <field name="Character Points" table="yes">1</field>
-        <field name="Description" description="yes">3D Compass, Elevation, artificial horizon, GPS <and/>Mapping system</field>
+        <field name="Description" description="yes">3D Compass, Elevation, artificial horizon, GPS <and/> Mapping system</field>
       </datum>
       <datum name="Seismic Detector">
         <field name="Name" title="yes">Seismic Detector</field>
