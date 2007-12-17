@@ -1,9 +1,6 @@
 <html>
   <head>
     <script type="text/javascript">
-    function findElementById(what) {
-      return document.getElementById(what);
-    }
     function ajaxFunction() {
       xmlHttp=new XMLHttpRequest();
       xmlHttp.onreadystatechange = function () {
@@ -16,7 +13,8 @@
           document.getElementById(target).value = payload;
         }
       }
-      xmlHttp.open("GET","time.php?username="+escape(document.myForm.username.value),true);
+      xmlHttp.open("GET","ajax.php?request="
+        +escape(document.myForm.username.value),true);
       xmlHttp.send(null);
     }
     </script>
@@ -27,8 +25,8 @@
     </div>
     <div>
       <form name="myForm">
-      Name: <input type="text" onkeyup="ajaxFunction();" id="username" />
-      Time: <input type="text" id="time" />
+      Name: <input type="text" onkeyup="ajaxFunction();" name="username" />
+      Time: <input type="text" id="time"/>
       </form>
     </div>
   </body>
