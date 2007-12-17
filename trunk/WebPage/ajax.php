@@ -1,6 +1,6 @@
 <?php
 
-$message = $_GET["username"];
+$message = $_GET["request"];
 
 function build_response ($target, $payload) {
   return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" .
