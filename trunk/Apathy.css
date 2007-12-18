@@ -325,6 +325,10 @@ div.part div.chapter div.section div.section div.section {
 div.figure {
   align: center;
 }
+span.defined {
+  font-weight: bold;
+  font-variant: small-caps;
+}
 span.roll span.rOff {
   font-size: 9pt;
   font-weight: bold;

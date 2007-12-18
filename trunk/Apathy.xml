@@ -825,7 +825,7 @@
               </example>
               <example>
                 <title>Travis<rsquo/>s armor resists Fire damage</title>
-                <text>Travis is wearing Ceramic Plate armor and is shot with a 12-ga shotgun loaded with a meteor round. The meteor round deals <roll><num>5</num><face>6</face><bns/><kind>C</kind></roll> + Fire and Travis<rsquo/>s armor has 8 points of protection vs. C, and has Fire protection. The attacker rolls 19 C damage. Travis takes 11 damage from the C portion of the blow, but his armor resists the ignition effect so he is not set on fire and suffers no further damage from the attack.</text>
+                <text>Travis is wearing Ceramic Plate armor and is shot with a 12-ga shotgun loaded with a meteor round. The meteor round deals <roll><num>5</num><face>6</face><bns/><kind>C</kind></roll> + Fire and Travis<rsquo/>s armor has 8 points of protection vs. C, and has Fire protection. The attacker rolls 19 <C/> damage. Travis takes 11 damage from the <C/> portion of the blow, but his armor resists the ignition effect so he is not set on fire and suffers no further damage from the attack.</text>
               </example>
             </section>
           </section>
@@ -1206,6 +1206,21 @@
           <title>Shields</title>
           <reference hrid="Content/Equipment/Shields"/>
         </section>
+	<section>
+	  <title>Firearms <and/> Guns</title>
+	  <section>
+	    <title>Hand Weapons</title>
+	  </section>
+	  <section>
+	    <title>Long Weapons</title>
+	  </section>
+	  <section>
+	    <title>Heavy Weapons</title>
+	  </section>
+	  <section>
+	    <title>Mounted Weapons <and/> Guns</title>
+	  </section>
+	</section>
       </chapter>
       <chapter>
         <title>Magic</title>
@@ -2059,7 +2074,7 @@
                     <row>
                       <cell>Reactive</cell>
                       <cell>80<percent/>/ 80<percent/>/ 140<percent/></cell>
-                      <cell>Armor will detonate against all attacks, blunting the blow of C damage</cell>
+                      <cell>Armor will detonate against all attacks, blunting the blow of <C/> damage</cell>
                     </row>
                     <row>
                       <cell>Ultrahard</cell>
@@ -2697,7 +2712,7 @@
               </item>
               <item>
                 <description>Higgs Particle</description>
-                <text>weapon deals C (Crushing) damage, but the maximum range is (Class+1)*100 feet</text>
+                <text>weapon deals <C/> (Crushing) damage, but the maximum range is (Class+1)*100 feet</text>
               </item>
               <item>
                 <description>Area Effect</description>
@@ -7825,7 +7840,7 @@
         <field name="Name" title="yes">Monks Spade</field>
         <field name="MetaTag"/>
         <field name="Class">Exotic</field>
-        <field name="Type" table="yes">C or S</field>
+        <field name="Type" table="yes"><C/> or S</field>
         <field name="Cost" table="yes">0</field>
         <field name="Damage" table="yes">
            <roll>
@@ -17175,7 +17190,7 @@
         <field name="Type" table="yes">Combat</field>
         <field name="Rank" table="yes">3</field>
         <field name="Attribute" table="yes">Build</field>
-        <field name="Description" description="yes">The martial artist is unusually sturdy and well built; his training and combat experience has hardened the skin and bones. Each level of Toughness provides a 1 bonus to P<ndash/>S<ndash/>C (as natural armor).</field>
+        <field name="Description" description="yes">The martial artist is unusually sturdy and well built; his training and combat experience has hardened the skin and bones. Each level of Toughness provides a 1 bonus to P<ndash/>S<ndash/><C/> (as natural armor).</field>
         <field name="Implementation">Piercing += Level; Crushing += Level; Slashing += Level;</field>
       </datum>
       <datum name="Waza">
@@ -17294,7 +17309,7 @@
         <field name="Type" table="yes">Defensive</field>
         <field name="Rank" table="yes">1</field>
         <field name="Attribute" table="yes">Build</field>
-        <field name="Description" description="yes">You trust in the toughness of your body to shrug off minor blows in combat. This is a defensive maneuver. You allow the blow to hit you. Roll BLD with a negative equal to the amount of damage sustained from the attack (after considering armor). If you succeed in your roll, then you take only 1 damage. If you fail in your roll, then you suffer normal damage and loose your next action (even if your armor absorbed all the damage). This skill is only effective versus standard attacks that deal P, S, or C damage. It has no effect versus U attacks.</field>
+        <field name="Description" description="yes">You trust in the toughness of your body to shrug off minor blows in combat. This is a defensive maneuver. You allow the blow to hit you. Roll BLD with a negative equal to the amount of damage sustained from the attack (after considering armor). If you succeed in your roll, then you take only 1 damage. If you fail in your roll, then you suffer normal damage and loose your next action (even if your armor absorbed all the damage). This skill is only effective versus standard attacks that deal P, S, or <C/> damage. It has no effect versus U attacks.</field>
         <field name="Implementation"/>
       </datum>
     </category>
@@ -17476,7 +17491,7 @@
         <field name="Type" table="yes">Modifier</field>
         <field name="Rank" table="yes">1</field>
         <field name="Attribute" table="yes">Dexterity</field>
-        <field name="Description" description="yes">Slam describes various blows such as tackles, body blows, or butting<ndash/>goring (beasts with horns). It deals the same damage as the standard HTH damage chart, but the next category up. It us usually C damage. If you attempt a Slam attack and miss, then you must spend 1 action to recover.</field>
+        <field name="Description" description="yes">Slam describes various blows such as tackles, body blows, or butting<ndash/>goring (beasts with horns). It deals the same damage as the standard HTH damage chart, but the next category up. It us usually <C/> damage. If you attempt a Slam attack and miss, then you must spend 1 action to recover.</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Spray">
@@ -18036,7 +18051,7 @@
         <field name="MetaTag"/>
         <field name="Special Abilities">Each tentacle can make 2 "free" slaps or constricions per turn. The other actions are for moving. Immune to water and ice/cold attacks. A kraken's eye is susceptable to damage.</field>
         <field name="Statistics">STR: 30 DEX: 15 BLD: 40 INT: 5 WIS: 5 WIL: 10 CHA: 4 HP: 4000 Actions:: 2 P/S/C: 10/10/20 Size: Main body is 80' long, with 100' tentacles Dice: Strike: 4</field>
-        <field name="Attacks">Tentacle slap <and/> grab <roll><num>10</num><face>4</face><bns/><kind>C</kind></roll>. Tentacle Constriction: <roll><num>6</num><face>4</face><bns/><kind>C</kind></roll> , doubles each consecutive action. Full body constriction: ( <roll><num>8</num><face>4</face><bns/></roll> )x4 C as above</field>
+        <field name="Attacks">Tentacle slap <and/> grab <roll><num>10</num><face>4</face><bns/><kind>C</kind></roll>. Tentacle Constriction: <roll><num>6</num><face>4</face><bns/><kind>C</kind></roll> , doubles each consecutive action. Full body constriction: ( <roll><num>8</num><face>4</face><bns/></roll> )x4 <C/> as above</field>
         <field name="Description" description="yes">Krakens are gargantuan creatures of the deep oceans. Rarely seen, but when they are, they instill panic and will often attack nearby sailing vessels thinking they are their favorite prey (whales). Not a vicious animal naturally.</field>
         <field name="level"/>
       </datum>
@@ -18745,7 +18760,7 @@
         <field name="Name" title="yes">Kinetic Acceleration</field>
         <field name="MetaTag"/>
         <field name="Rank" table="yes">4</field>
-        <field name="Description" description="yes">Can throw just about anything with amazing force. Thrown objects deal an additional Lvl D 4 P, S, or C damage.</field>
+        <field name="Description" description="yes">Can throw just about anything with amazing force. Thrown objects deal an additional Lvl D 4 P, S, or <C/> damage.</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Light Emit">
@@ -18871,7 +18886,7 @@
         <field name="Name" title="yes">Plant Control</field>
         <field name="MetaTag"/>
         <field name="Rank" table="yes">6</field>
-        <field name="Description" description="yes">Character can control up to<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 10 pounds of plant material. Can be used to attack others (takes one action) with the plants, deals Lvl D 6 C damage.</field>
+        <field name="Description" description="yes">Character can control up to<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 10 pounds of plant material. Can be used to attack others (takes one action) with the plants, deals Lvl D 6 <C/> damage.</field>
         <field name="Implementation"/>
       </datum>
       <datum name="Possession">
@@ -19647,7 +19662,7 @@
         <field name="MetaTag">Future</field>
         <field name="Slots" table="yes">(Class+1)*10</field>
         <field name="Character Points" table="yes">(Class+1)*5</field>
-        <field name="Description" description="yes">Uses a very heavy barrel and a much more powerful detonant. Deals (Class+1)/2 (rounded up!) x20 C (Crushing) damage. Has a 100' maximum range. The mecha may not fire while moving or the next action after firing. Recovery time is 3, and requires dextrous, working arms and hands.</field>
+        <field name="Description" description="yes">Uses a very heavy barrel and a much more powerful detonant. Deals (Class+1)/2 (rounded up!) x20 <C/> (Crushing) damage. Has a 100' maximum range. The mecha may not fire while moving or the next action after firing. Recovery time is 3, and requires dextrous, working arms and hands.</field>
       </datum>
       <datum name="Vulcan">
         <field name="Name" title="yes">Vulcan</field>

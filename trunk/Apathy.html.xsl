@@ -148,6 +148,8 @@
   <xsl:template match="Apathy">
     <span class="ApAthy">Apathy</span>
   </xsl:template>
+  <!-- special "C" word -->
+  <xsl:template match="C"><span class="defined">C</span></xsl:template>
   <!-- special "plusminus" word -->
   <xsl:template match="plusminus">&#177;</xsl:template>
   <!-- special "and" word -->
