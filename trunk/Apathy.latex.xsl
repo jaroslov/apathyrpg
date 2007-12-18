@@ -293,7 +293,8 @@ Josh Kramer}
   \hline
   \hline
   \endfirsthead
-<xsl:for-each select="head/cell">\textscbf{<xsl:apply-templates />}<xsl:choose><xsl:when test="position()=count(../*)"> \\</xsl:when><xsl:otherwise> &amp;</xsl:otherwise></xsl:choose>
+  \hline
+<xsl:for-each select="head/cell">\textscbf{<xsl:apply-templates />} \emph{cont'd}<xsl:choose><xsl:when test="position()=count(../*)"> \\</xsl:when><xsl:otherwise> &amp;</xsl:otherwise></xsl:choose>
     </xsl:for-each>
   \hline
   \endhead
