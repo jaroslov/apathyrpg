@@ -5884,7 +5884,7 @@
 	<field name="Burst" table="yes" colfmt="p{2em}" />
 	<field name="Range" table="yes" colfmt="p{2.5em}" />
 	<field name="Minimum Strength" table="yes" colfmt="p{2em}"/>
-	<field name="Cost" table="yes" colfmt="p{3em}"/>
+	<field name="Cost" table="yes" colfmt="p{4em}"/>
 	<field name="Ammo" table="yes" colfmt="p{3em}"/>
 	<field name="Description" description="yes"/>
       </default>
