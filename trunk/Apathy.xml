@@ -5883,9 +5883,9 @@
       <default name="">
 	<field name="Name" title="yes"/>
 	<field name="MetaTag"/>
-	<filed name="Kind" table="yes" colfmt="c"/>
+	<field name="Kind" table="yes" colfmt="p{4em}"/>
 	<field name="Damage" table="yes" colfmt="p{3em}"/>
-	<field name="Capacity" table="yes" colfmt="p{44em}"/>
+	<field name="Capacity" table="yes" colfmt="p{4em}"/>
 	<field name="Burst" table="yes" colfmt="p{2em}" />
 	<field name="Range" table="yes" colfmt="p{2.5em}" />
 	<field name="Minimum Strength" table="yes" colfmt="p{2em}"/>
