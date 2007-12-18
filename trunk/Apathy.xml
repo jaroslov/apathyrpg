@@ -1213,7 +1213,7 @@
 	      <table>
 		<head>
 		  <cell colfmt="l">Option</cell>
-		  <cell colfmt="l">Effect</cell>
+		  <cell colfmt="p{2.5in}">Effect</cell>
 		  <cell colfmt="r">Cost</cell>
 		</head>
 		<row>
