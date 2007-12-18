@@ -1210,6 +1210,11 @@
 	  <title>Firearms <and/> Guns</title>
 	  <section>
 	    <title>Hand Weapons</title>
+	    <section>
+	      <title>Revolvers</title>
+	      <text>All revolvers are +1 to strike. A speedloader can be purchased which loads all the rounds at once.</text>
+	      <reference hrid="Content/Equipment/Firearms and Guns/Hand Weapons/Revolvers"/>
+	    </section>
 	  </section>
 	  <section>
 	    <title>Long Weapons</title>
@@ -5868,6 +5873,140 @@
         <field name="Damage" table="yes"/>
         <field name="Description" description="yes">An arrow that is coated with cloth soaked in pitch, tar, kerosene, or some similar flammable material. It is set alight before firing. These arrows are commonly used for sending signals, and for setting enemy structures on fire<mdash/>however, they are also effective for setting enemy soldiers on fire.</field>
         <field name="Implementation"/>
+      </datum>
+    </category>
+    <category name="Content/Equipment/Firearms and Guns/Hand Weapons/Revolvers">
+      <default name="">
+	<field name="Name" title="yes"/>
+	<field name="MetaTag"/>
+	<field name="Damage" table="yes" colfmt="p{3em}"/>
+	<field name="Capacity" table="yes" colfmt="p{3em}"/>
+	<field name="Burst" table="yes" colfmt="p{3.5em}" />
+	<field name="Range" table="yes" colfmt="p{2.5em}" />
+	<field name="Minimum Strength" table="yes" colfmt="p{2em}"/>
+	<field name="Cost" table="yes" colfmt="p{3em}"/>
+	<field name="Ammo" table="yes" colfmt="p{3em}"/>
+	<field name="Description" description="yes"/>
+      </default>
+      <datum name=".22 short">
+	<field name="Name" title="yes">.22 short</field>
+	<field name="Damage" table="yes"><roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">5</field>
+	<field name="Burst" table="yes">8</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">75</field>
+	<field name="Ammo" table="yes">4</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".22 LR">
+	<field name="Name" title="yes">.22 LR</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff></bOff><bns></bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">8</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">100</field>
+	<field name="Ammo" table="yes">5</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".32">
+	<field name="Name" title="yes">.32</field>
+	<field name="Damage" table="yes"><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">6 or 8</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">100</field>
+	<field name="Ammo" table="yes">6</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".38 special">
+	<field name="Name" title="yes">.38 special</field>
+	<field name="Damage" table="yes"><roll><num>1</num><face>8</face><bOff>+</bOff><bns>2</bns></roll></field>
+	<field name="Capacity" table="yes">9</field>
+	<field name="Burst" table="yes">6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">150</field>
+	<field name="Ammo" table="yes">8</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".357 magnum">
+	<field name="Name" title="yes">.357 magnum</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">12</field>
+	<field name="Burst" table="yes">6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">200</field>
+	<field name="Ammo" table="yes">10</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".44 magnum">
+	<field name="Name" title="yes">.44 magnum</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">15</field>
+	<field name="Burst" table="yes">6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">200</field>
+	<field name="Ammo" table="yes">11</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".45 Long Colt">
+	<field name="Name" title="yes">.45 Long Colt</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">10</field>
+	<field name="Burst" table="yes">6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">150</field>
+	<field name="Ammo" table="yes">10</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".454 Casull">
+	<field name="Name" title="yes">.454 Casull</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">18</field>
+	<field name="Burst" table="yes">5 or 6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">200</field>
+	<field name="Ammo" table="yes">12</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".455 Supermag">
+	<field name="Name" title="yes">.455 Supermag</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
+	<field name="Capacity" table="yes">20</field>
+	<field name="Burst" table="yes">6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">150</field>
+	<field name="Ammo" table="yes">13</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".500 SW">
+	<field name="Name" title="yes">.500 S<and/>W</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
+	<field name="Capacity" table="yes">20</field>
+	<field name="Burst" table="yes">6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">150</field>
+	<field name="Ammo" table="yes">13</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".500 Linebaugh">
+	<field name="Name" title="yes">.500 Linebaugh</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
+	<field name="Capacity" table="yes">21</field>
+	<field name="Burst" table="yes">5 or 6</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">200</field>
+	<field name="Ammo" table="yes">14</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".500 Linebaugh Long">
+	<field name="Name" title="yes">.500 Linebaugh Long</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
+	<field name="Capacity" table="yes">24</field>
+	<field name="Burst" table="yes">5</field>
+	<field name="Minimum Strength" table="yes">1</field>
+	<field name="Cost" table="yes">200</field>
+	<field name="Ammo" table="yes">15</field>
+	<field name="Description" description="yes" />
       </datum>
     </category>
     <category name="Content/Equipment/Armor">
