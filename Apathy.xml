@@ -5888,6 +5888,138 @@
 	<field name="Ammo" table="yes" colfmt="p{3em}"/>
 	<field name="Description" description="yes"/>
       </default>
+      <datum name=".22 short">
+	<field name="Name" title="yes">.22 short</field>
+	<field name="Damage" table="yes"><roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">8</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">75</field>
+	<field name="Minimum Strength" table="yes">4</field>
+	<field name="Cost" table="yes"><dollar/>100.00</field>
+	<field name="Ammo" table="yes"><dollar/>0.10</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".22 LR">
+	<field name="Name" title="yes">.22 LR</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff></bOff><bns></bns></roll></field>
+	<field name="Capacity" table="yes">8</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">100</field>
+	<field name="Minimum Strength" table="yes">5</field>
+	<field name="Cost" table="yes"><dollar/>125.00</field>
+	<field name="Ammo" table="yes"><dollar/>0.10</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".32">
+	<field name="Name" title="yes">.32</field>
+	<field name="Damage" table="yes"><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">6 or 8</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">100</field>
+	<field name="Minimum Strength" table="yes">6</field>
+	<field name="Cost" table="yes"><dollar/>150.00</field>
+	<field name="Ammo" table="yes"><dollar/>0.15</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".38 special">
+	<field name="Name" title="yes">.38 special</field>
+	<field name="Damage" table="yes"><roll><num>1</num><face>8</face><bOff>+</bOff><bns>2</bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">150</field>
+	<field name="Minimum Strength" table="yes">8</field>
+	<field name="Cost" table="yes"><dollar/>200.00</field>
+	<field name="Ammo" table="yes"><dollar/>0.25</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".357 magnum">
+	<field name="Name" title="yes">.357 magnum</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">200</field>
+	<field name="Minimum Strength" table="yes">10</field>
+	<field name="Cost" table="yes"><dollar/>300.00</field>
+	<field name="Ammo" table="yes"><dollar/>0.50</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".44 magnum">
+	<field name="Name" title="yes">.44 magnum</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">200</field>
+	<field name="Minimum Strength" table="yes">11</field>
+	<field name="Cost" table="yes"><dollar/>350.00</field>
+	<field name="Ammo" table="yes"><dollar/>0.75</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".45 Long Colt">
+	<field name="Name" title="yes">.45 Long Colt</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">150</field>
+	<field name="Minimum Strength" table="yes">10</field>
+	<field name="Cost" table="yes"><dollar/>400.00</field>
+	<field name="Ammo" table="yes"><dollar/>0.75</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".454 Casull">
+	<field name="Name" title="yes">.454 Casull</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
+	<field name="Capacity" table="yes">5 or 6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">200</field>
+	<field name="Minimum Strength" table="yes">12</field>
+	<field name="Cost" table="yes"><dollar/>800.00</field>
+	<field name="Ammo" table="yes"><dollar/>1.00</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".455 Supermag">
+	<field name="Name" title="yes">.455 Supermag</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">150</field>
+	<field name="Minimum Strength" table="yes">13</field>
+	<field name="Cost" table="yes"><dollar/>1,000.00</field>
+	<field name="Ammo" table="yes"><dollar/>2.00</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".500 SW">
+	<field name="Name" title="yes">.500 S<and/>W</field>
+	<field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
+	<field name="Capacity" table="yes">6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">150</field>
+	<field name="Minimum Strength" table="yes">13</field>
+	<field name="Cost" table="yes"><dollar/>1,000.00</field>
+	<field name="Ammo" table="yes"><dollar/>2.00</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".500 Linebaugh">
+	<field name="Name" title="yes">.500 Linebaugh</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
+	<field name="Capacity" table="yes">5 or 6</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">200</field>
+	<field name="Minimum Strength" table="yes">14</field>
+	<field name="Cost" table="yes"><dollar/>1,200.00</field>
+	<field name="Ammo" table="yes"><dollar/>2.00</field>
+	<field name="Description" description="yes" />
+      </datum>
+      <datum name=".500 Linebaugh Long">
+	<field name="Name" title="yes">.500 Linebaugh Long</field>
+	<field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
+	<field name="Capacity" table="yes">5</field>
+	<field name="Burst" table="yes">1</field>
+	<field name="Range" table="yes">200</field>
+	<field name="Minimum Strength" table="yes">15</field>
+	<field name="Cost" table="yes"><dollar/>2,000.00</field>
+	<field name="Ammo" table="yes"><dollar/>4.00</field>
+	<field name="Description" description="yes" />
+      </datum>
     </category>
     <category name="Content/Equipment/Armor">
       <default name="">
