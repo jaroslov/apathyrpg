@@ -9,10 +9,9 @@ dlist {
 }
 section {
   title : String
-  subsection : Join(section,[]Join(text,note,dlist,math))
+  subsection : Join{section,[]Join{text,note,dlist,math}}
 }
 chapter {
-  title : String
   sections : []section
 }
 part {
@@ -23,15 +22,23 @@ game {
 }
 
 game := Apathy {
-  parts := [
+  parts := {
     part := Book {
-      chapters := [
-        chapter := Intro {
-          title := Introduction
-          sections := []
+      chapters := {
+        chapter := Introduction {
+          sections := {}
         }
-      ],
+      },
     },
-    part := Data {
-    }]
+    part := Rules {
+      chapters := {
+        chapter := `Academic Skills` {
+        }
+      }
+    }
+  }
+}
+
+[]category := `raw data {
+  category := 
 }
