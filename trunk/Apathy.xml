@@ -3345,7 +3345,129 @@
 	      <row><cell>Leg</cell><cell>-4</cell></row>
 	      <row><cell>Neck</cell><cell>-9</cell></row>
 	      <row><cell>Toso</cell><cell>-0</cell></row>
-	      <row><cell>Weapon</cell><cell>-4<ndash/>-10</cell></row>
+	      <row><cell>Weapon</cell><cell>-4 to -10</cell></row>
+	    </table>
+	  </figure>
+	</section>
+	<section>
+	  <title>Damage and Its Effects</title>
+	  <figure>
+	    <table>
+	      <head>
+		<cell colfmt="l">Current Hit Point value</cell>
+		<cell colfmt="p{3.5in}">Effect</cell>
+	      </head>
+	      <row><cell><math><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></math></cell><cell>Character has one few actions (regular and movement) and -3 to all die rolls.</cell></row>
+	      <row><cell>0</cell><cell>Character falls unconscious.</cell></row>
+	      <row><cell><math><mrow><mo>&lt;</mo><mn>0</mn></mrow></math></cell><cell>Character is unconscious and loses 1 Hit Point per turn until stabilized.</cell></row>
+	      <row><cell>-HP</cell><cell>Character dies.</cell></row>
+	    </table>
+	  </figure>
+	</section>
+	<section>
+	  <title>Armor Value of Common Things</title>
+	  <figure>
+	    <table>
+	      <head>
+		<cell colfmt="p{2.5in}">Thing</cell><cell>Generalized Armor</cell>
+	      </head>
+	      <row><cell>Brush, medium</cell><cell>2</cell></row>
+	      <row><cell>Brush, heavy</cell><cell>4</cell></row>
+	      <row><cell>Modern security door</cell><cell>15</cell></row>
+	      <row><cell>Interior wall</cell><cell>5</cell></row>
+	      <row><cell>Brick wall</cell><cell>20</cell></row>
+	      <row><cell>Reinfored brick wall</cell><cell>40</cell></row>
+	      <row><cell>Human body</cell><cell></cell>10</row>
+	      <row><cell>Interior house door</cell><cell>3</cell></row>
+	      <row><cell>Car windshield</cell><cell>6</cell></row>
+	      <row><cell>Heavy wooden door</cell><cell>10</cell></row>
+	      <row><cell>Office (metal) door</cell><cell>10</cell></row>
+	      <row><cell>Car door</cell><cell>8</cell></row>
+	      <row><cell>Residential window</cell><cell>3</cell></row>
+	      <row><cell>Armored glass (normal)</cell><cell>10</cell></row>
+	      <row><cell>Manhole cover</cell><cell>15</cell></row>
+	      <row><cell>Plywood</cell><cell>5</cell></row>
+	      <row><cell>USS Enterprise</cell><cell>3500</cell></row>
+	    </table>
+	  </figure>
+	</section>
+	<section>
+	  <title>Hit Points of common things</title>
+	  <figure>
+	    <head>
+	      <cell colfmt="l">Thing</cell><cell colfmt="r">Hit Points</cell>
+	    </head>
+	      <row><cell>Chicken or cat</cell><cell>5</cell></row>
+	      <row><cell>Large dog</cell><cell>15</cell></row>
+	      <row><cell>Human</cell><cell>20</cell></row>
+	      <row><cell>Deer</cell><cell>20</cell></row>
+	      <row><cell>Antelope, Donkey</cell><cell>70</cell></row>
+	      <row><cell>Elk, Horse</cell><cell>100</cell></row>
+	      <row><cell>Bear, Moose</cell><cell>200</cell></row>
+	      <row><cell>Hippo, Elephant</cell><cell>500</cell></row>
+	      <row><cell>Small car</cell><cell>300</cell></row>
+	      <row><cell>Large car, truck</cell><cell>400</cell></row>
+	      <row><cell>Semi tractor trailer</cell><cell>1000</cell></row>
+	  </figure>
+	</section>
+	<section>
+	  <title>Number of actions of common actions in combat</title>
+	  <figure>
+	    <table>
+	      <head><cell colfmt="p{3in}">What</cell><cell colfmt="p{2in}">Time</cell></head>
+	      <row><cell>Walking movement</cell><cell>1 move or regular</cell></row>
+	      <row><cell>Simple speech</cell><cell>0</cell></row>
+	      <row><cell>Complex speech</cell><cell>at least 1 move or regular</cell></row>
+	      <row><cell>Drop something</cell><cell>0</cell></row>
+	      <row><cell>Pick something up within 5 feet</cell><cell>1 move or regular</cell></row>
+	      <row><cell>Get something out of pouch/pack (small)</cell><cell>2 or 3 move or regular</cell></row>
+	      <row><cell>Load weapon, knock arrow</cell><cell>1 action</cell></row>
+	      <row><cell>Reload revolver or rocket launcher</cell><cell>3 regular</cell></row>
+	      <row><cell>Reload double barrel rifle or shotgun (both)</cell><cell>1 regular</cell></row>
+	      <row><cell>Reload other rifle or shotgun (per 2)</cell><cell>1 regular</cell></row>
+	      <row><cell>Cycle bolt or pump action weapon</cell><cell>1 regular</cell></row>
+	      <row><cell>Load a magazine with bullets (per bullet)</cell><cell>1 regular</cell></row>
+	      <row><cell>Draw a weapon from holster or sling</cell><cell>1 regular</cell></row>
+	      <row><cell>Holster or sheath a weapon</cell><cell>1 regular</cell></row>
+	      <row><cell>Put something down carefully</cell><cell>2 regular</cell></row>
+	      <row><cell>Use a potion</cell><cell>1 regular</cell></row>
+	      <row><cell>Read a scroll</cell><cell>3 regular</cell></row>
+	      <row><cell>Set up a complex weapon (bipod, etc.)</cell><cell>3 or more regular</cell></row>
+	      <row><cell>Throw grenade or similar</cell><cell>1 regular</cell></row>
+	    </table>
+	  </figure>
+	</section>
+	<section>
+	  <title>Spending luck</title>
+	  <figure>
+	    <table>
+	      <head><cell colfmt="l">What</cell><cell colfmt="p{3in}">How</cell></head>
+	      <row><cell>Skills</cell><cell>Roll your full skill's worth of dice and bonus again, and add the number of successes to your previous roll. Can only be done once per roll.</cell></row>
+	      <row><cell>Damage</cell><cell>Add +1 to damage roll per luck point spent.</cell></row>
+	      <row><cell>Dodge</cell><cell>Add +5 to some dodge-related skill per luck point spent. If you don<rsquo/>t have a dodge-related skill, then you are assumed to have one die in Dodge. Alternately, get a 25<percent/> chance to dodge for each luck point spent, cumulatively.</cell></row>
+	      <row><cell>Soak</cell><cell>For each luck point spent, reduce the damage by 2 points. Alternately, for each luck point spent, you get a 20<percent/> chance to take no damage; this accumulates.</cell></row>
+	      <row><cell>Action</cell><cell>Take an extra action at any time.</cell></row>
+	      <row><cell>Healing</cell><cell>Gain 5 Hit Points instantaneously.</cell></row>
+	      <row><cell>Magic</cell><cell>Gain 50 Mana Points instantaneously.</cell></row>
+	    </table>
+	  </figure>
+	</section>
+	<section>
+	  <title>Modifications to strike</title>
+	  <figure>
+	    <table>
+	      <head><cell colfmt="p{10em}">What</cell><cell colfmt="p{3in}">Bonus</cell></head>
+	      <row><cell>Larget Target</cell><cell>+3 per size level difference</cell></row>
+	      <row><cell>Point Blank Range</cell><cell>+3 to strike</cell></row>
+	      <row><cell>Small Target</cell><cell>-3 per size level difference</cell></row>
+	      <row><cell>Moving Target</cell><cell>-3 for slow; -6 for quick (running)</cell></row>
+	      <row><cell>Prone Target</cell><cell>-5</cell></row>
+	      <row><cell>Partial (quarter) cover</cell><cell>-4</cell></row>
+	      <row><cell>Half cover</cell><cell>-8</cell></row>
+	      <row><cell>Dense cover</cell><cell>-12</cell></row>
+	      <row><cell>Full cover</cell><cell>Cannot be normally targeted</cell></row>
+	      <row><cell>In shadows</cell><cell>-6</cell></row>
+	      <row><cell>Extremely hot, at range</cell><cell>-20</cell></row>
 	    </table>
 	  </figure>
 	</section>
