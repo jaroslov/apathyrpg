@@ -286,12 +286,17 @@ Josh Kramer}
   </xsl:template>
   <!-- tables -->
   <xsl:template match="table">
-  \begin{tabular}{|<xsl:for-each select="head/cell"><xsl:choose><xsl:when test="./@colfmt"><xsl:value-of select="./@colfmt" />|</xsl:when><xsl:otherwise>c|</xsl:otherwise></xsl:choose></xsl:for-each>}
+  \begin{longtable}{|<xsl:for-each select="head/cell"><xsl:choose><xsl:when test="./@colfmt"><xsl:value-of select="./@colfmt" />|</xsl:when><xsl:otherwise>c|</xsl:otherwise></xsl:choose></xsl:for-each>}
   \hline
 <xsl:for-each select="head/cell">\textscbf{<xsl:apply-templates />}<xsl:choose><xsl:when test="position()=count(../*)"> \\</xsl:when><xsl:otherwise> &amp;</xsl:otherwise></xsl:choose>
     </xsl:for-each>
   \hline
   \hline
+  \endfirsthead
+<xsl:for-each select="head/cell">\textscbf{<xsl:apply-templates />}<xsl:choose><xsl:when test="position()=count(../*)"> \\</xsl:when><xsl:otherwise> &amp;</xsl:otherwise></xsl:choose>
+    </xsl:for-each>
+  \hline
+  \endhead
       <xsl:for-each select="row">
           <xsl:for-each select="cell">
             <xsl:variable name="cellspan" select="./@span" />
@@ -306,7 +311,7 @@ Josh Kramer}
             </xsl:choose>
           </xsl:for-each>
       </xsl:for-each>
-  \end{tabular}
+  \end{longtable}
   </xsl:template>
 
   <!-- math -->
