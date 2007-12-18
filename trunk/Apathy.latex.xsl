@@ -331,6 +331,42 @@ Josh Kramer}
 
 	<!--
 		Given a reference to the raw-data section, we build
+		a table.
+	-->
+  <xsl:template match="summarize">
+    <!-- A unique hrid to the category we need -->
+    <xsl:variable name="hrid" select="./@hrid" />
+    <xsl:variable name="scName" select="../title"/>
+\begin{longtable}{p{1.25in}<xsl:for-each select="//category[@name=$hrid]/default/field"><xsl:if test="./@title"></xsl:if><xsl:if test="./@table"><xsl:value-of select="./@colfmt" /></xsl:if></xsl:for-each>} 
+  <xsl:value-of select="$scName" />
+        <xsl:for-each select="//category[@name=$hrid]/default/field">
+          <xsl:if test="./@title"></xsl:if>
+<xsl:if test="./@table">&amp; \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
+          </xsl:if>
+        </xsl:for-each>\\
+  \hline
+  \hline
+  \endfirsthead
+  <xsl:value-of select="$scName" /> \textit{cont&apos;d}
+        <xsl:for-each select="//category[@name=$hrid]/default/field">
+          <xsl:if test="./@title">
+          </xsl:if>
+<xsl:if test="./@table">&amp; \begin{turn}{70}{<xsl:value-of select="@name" />}\end{turn}
+          </xsl:if>
+        </xsl:for-each> \\
+  \hline
+  \endhead
+<xsl:for-each select="//category[@name=$hrid]/datum">\raggedright <xsl:for-each select="field" >
+            <xsl:if test="./@title"><xsl:apply-templates select="." /></xsl:if>
+            <xsl:if test="./@table">&amp;<xsl:apply-templates select="." />
+            </xsl:if>
+          </xsl:for-each>\tabularnewline
+      </xsl:for-each>
+\end{longtable}
+  </xsl:template>
+
+	<!--
+		Given a reference to the raw-data section, we build
 		a table, then build a descriptor-list.
 	-->
   <xsl:template match="reference">
