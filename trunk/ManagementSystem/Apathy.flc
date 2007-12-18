@@ -1,0 +1,37 @@
+text : String
+note : String
+ditem {
+  term : String
+  definition : String
+}
+dlist {
+  items : []ditem
+}
+section {
+  title : String
+  subsection : Join(section,[]Join(text,note,dlist,math))
+}
+chapter {
+  title : String
+  sections : []section
+}
+part {
+  chapters : []chapter
+}
+game {
+  parts : []part
+}
+
+game := Apathy {
+  parts := [
+    part := Book {
+      chapters := [
+        chapter := Intro {
+          title := Introduction
+          sections := []
+        }
+      ],
+    },
+    part := Data {
+    }]
+}
