@@ -1208,6 +1208,56 @@
         </section>
 	<section>
 	  <title>Firearms <and/> Guns</title>
+	    <text>The following table lists common options for Hand Weapons and Long Guns.</text>
+	    <figure>
+	      <table>
+		<head>
+		  <cell colfmt="l">Option</cell>
+		  <cell colfmt="l">Effect</cell>
+		  <cell colfmt="r">Cost</cell>
+		</head>
+		<row>
+		  <cell>Laser Sight</cell>
+		  <cell>Gives +1 to strike (no bonus for sprays or wild firing) at ranges under 100 yards.</cell>
+		  <cell><dollar/>100</cell>
+		</row>
+		<row>
+		  <cell>Compensate Barrel</cell>
+		  <cell>For burst-fire: 50<percent/> of the missing bullets now hit.  Makes gun LOUD, easy to see</cell>
+		  <cell>+20<percent/></cell>
+		</row>
+		<row>
+		  <cell>Optical Scope</cell>
+		  <cell>Gives extra +2 to strike for single aimed shots, allows long-distance firing.</cell>
+		  <cell><dollar/>200</cell>
+		</row>
+		<row>
+		  <cell>Sniper Scope</cell>
+		  <cell>Gives extra +3 to strike for single aimed shots, allows long-distance firing.</cell>
+		  <cell><dollar/>2000</cell>
+		</row>
+		<row>
+		  <cell>Weighted Barrel</cell>
+		  <cell>Gives +1 to strike on non-aim shots only; Lower str req by 1; Makes gun hard to conceal.</cell>
+		  <cell>+10<percent/></cell>
+		</row>
+		<row>
+		  <cell>Flash Suppressor</cell>
+		  <cell>Hides muzzle flash.  CANNOT be used with compensated barrel.</cell>
+		  <cell>+5<percent/></cell>
+		</row>
+		<row>
+		  <cell>Silencer</cell>
+		  <cell>Hides muzzle flash and makes gun nearly silent.  Very large<mdash/>no concealment.</cell>
+		  <cell>+15<percent/></cell>
+		</row>
+		<row>
+		  <cell>Match Trigger</cell>
+		  <cell>Gives +1 to strike for single aimed shots.  Cannot be added to full-auto weapons.</cell>
+		  <cell><dollar/>200</cell>
+		</row>
+	      </table>
+	    </figure>
 	  <section>
 	    <title>Hand Weapons</title>
 	    <section>
@@ -1234,6 +1284,51 @@
 	  </section>
 	  <section>
 	    <title>Long Weapons</title>
+	    <section>
+	      <title>Sporting Rifles</title>
+	      <text>All sporting rifles, except for the .22 LR are bolt action and magazine. They can fire one round per action.</text>
+	    </section>
+	    <section>
+	      <title>Big Game Rifles</title>
+	      <text>All Big Game Rifles deal double damage against unarmored targets. They can only use bronze and soft-point ammunition with standard powder.</text>
+	    </section>
+	    <section>
+	      <title>Anti-armor Rifles</title>
+	      <text>These weapons are usually used with armor-piercing ammunation against tanks or mecha. The listed strength requirement is for firing the weapon off the ground or a hard mount; if used offhand, it requires an additional 10 to the minium strenght.</text>
+	      <note>These weapons are very large and heavy; at least 30 lbs. if not 70<ndash/>80 lbs. or more. They are five to eight feet long.</note>
+	    </section>
+	    <section>
+	      <title>Sniper Rifles</title>
+	      <text>All sniper rifles are +1 to strike. These weapons do not include a scope, which is required for this bonus. Only the .50 BMG can fire non-normal ammunation.</text>
+	    </section>
+	    <section>
+	      <title>Sporting Shotguns</title>
+	      <text>Modern shotguns are either 2 round breech-load (can fire 2 rnd burst) or 6 round pump-action/semiauto, which fire 1 rnd burst.</text>
+	    </section>
+	    <section>
+	      <title>Military Shotguns</title>
+	      <text></text>
+	    </section>
+	    <section>
+	      <title>Submachine Pistol</title>
+	      <text>These weapons are all at a -1 to strike.</text>
+	    </section>
+	    <section>
+	      <title>Submachine Gun</title>
+	      <text>These weapons are all ata  -2 to strike. This can be reduced by one by doubling the cost, down to a -0 to strike.</text>
+	    </section>
+	    <section>
+	      <title>Assault Rifles</title>
+	      <text>Assault rifles are at a -1 to strike. This can be reduced by one by doubling the cost, down to a -0 to strike.</text>
+	    </section>
+	    <section>
+	      <title>Machine Guns</title>
+	      <text>While it is possible to hold a machine gun and fire it, it is very difficult and imparts a -6 to strike.</text>
+	    </section>
+	    <section>
+	      <title>Archaic Long-arms</title>
+	      <text>Blunderbuss' deal half damage against armor. Muskets are at a -1 to strike.</text>
+	    </section>
 	    <reference hrid="Content/Equipment/Firearms and Guns/Long Guns"/>
 	  </section>
 	  <section>
