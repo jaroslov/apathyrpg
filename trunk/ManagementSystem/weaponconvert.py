@@ -52,8 +52,9 @@ def buildOutput(Name,data):
     for fielddata in zip(Parts,parts):
       if fielddata[0] == "Name":
         result += "  <field name=\""+fielddata[0]+"\" title=\"yes\">"+fielddata[1]+"</field>\n"
-      elif fielddata[0] == "Average":
         result += "  <field name=\"Kind\" table=\"yes\">"+Name+"</field>\n"
+      elif fielddata[0] == "Average":
+        pass
       else:
         result += "  <field name=\""+fielddata[0]+"\" table=\"yes\">"+fielddata[1]+"</field>\n"
     result += "  <field name=\"Description\" description=\"yes\" />\n"
