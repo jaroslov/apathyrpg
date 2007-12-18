@@ -404,6 +404,45 @@
 		Given a reference to the raw-data section, we build
 		a table, then build a descriptor-list.
 	-->
+  <xsl:template match="summary">
+    <!-- A unique hrid to the category we need -->
+    <xsl:variable name="hrid" select="./@hrid" />
+    <table class="datum-table">
+      <thead>
+        <!-- Build the head from the Default structure -->
+        <xsl:for-each select="//category[@name=$hrid]/default/field">
+          <xsl:if test="./@title">
+            <th><xsl:value-of select="@name" /></th>
+          </xsl:if>
+          <xsl:if test="./@table">
+            <th class="content"><xsl:value-of select="@name" /></th>
+          </xsl:if>
+        </xsl:for-each>
+      </thead>
+      <!-- Build the body of the table from the datums found -->
+      <xsl:for-each select="//category[@name=$hrid]/datum">
+        <tr>
+          <xsl:for-each select="field" >
+            <xsl:if test="./@title">
+              <td>
+                <a href="#{generate-id(.)}">
+                  <xsl:apply-templates />
+                </a>
+              </td>
+            </xsl:if>
+            <xsl:if test="./@table">
+              <td class="content"><xsl:apply-templates select="." /></td>
+            </xsl:if>
+          </xsl:for-each>
+        </tr>
+      </xsl:for-each>
+    </table>
+  </xsl:template>
+
+	<!--
+		Given a reference to the raw-data section, we build
+		a table, then build a descriptor-list.
+	-->
   <xsl:template match="reference">
     <!-- A unique hrid to the category we need -->
     <xsl:variable name="hrid" select="./@hrid" />
