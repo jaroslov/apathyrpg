@@ -1218,7 +1218,7 @@
 	      <title>Pistols</title>
 	      <text>Extra magazines cost <dollar/><math><mrow><mn>150</mn><mo><times/></mo><mfrac><mi>Cost of Gun</mi><mn>1000</mn></mfrac></mrow></math> each. High-capacity magazines holds 50<percent/> more rounds, but cost twice as much.</text>
 	    </section>
-	    <reference hrid="Content/Equipment/Firearms and Guns/Hand Weapons/Hand Weapons"/>
+	    <reference hrid="Content/Equipment/Firearms and Guns/Hand Weapons"/>
 	  </section>
 	  <section>
 	    <title>Long Weapons</title>
@@ -5895,8 +5895,8 @@
       </default>
 <datum name=".22 short">
   <field name="Name" title="yes">.22 short</field>
-  <field name="Damage" table="yes"><roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">8</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">75</field>
@@ -5907,8 +5907,8 @@
 </datum>
 <datum name=".22 LR">
   <field name="Name" title="yes">.22 LR</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff></bOff><bns></bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff></bOff><bns></bns></roll></field>
   <field name="Capacity" table="yes">8</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -5919,8 +5919,8 @@
 </datum>
 <datum name=".32">
   <field name="Name" title="yes">.32</field>
-  <field name="Damage" table="yes"><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">6 or 8</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -5931,8 +5931,8 @@
 </datum>
 <datum name=".38 special">
   <field name="Name" title="yes">.38 special</field>
-  <field name="Damage" table="yes"><roll><num>1</num><face>8</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>1</num><face>8</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">150</field>
@@ -5943,8 +5943,8 @@
 </datum>
 <datum name=".357 magnum">
   <field name="Name" title="yes">.357 magnum</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -5955,8 +5955,8 @@
 </datum>
 <datum name=".44 magnum">
   <field name="Name" title="yes">.44 magnum</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -5967,8 +5967,8 @@
 </datum>
 <datum name=".45 Long Colt">
   <field name="Name" title="yes">.45 Long Colt</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">150</field>
@@ -5979,8 +5979,8 @@
 </datum>
 <datum name=".454 Casull">
   <field name="Name" title="yes">.454 Casull</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">5 or 6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -5991,8 +5991,8 @@
 </datum>
 <datum name=".455 Supermag">
   <field name="Name" title="yes">.455 Supermag</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Capacity" table="yes">6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">150</field>
@@ -6003,8 +6003,8 @@
 </datum>
 <datum name=".500 S W">
   <field name="Name" title="yes">.500 S<and/>W</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Capacity" table="yes">6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">150</field>
@@ -6015,8 +6015,8 @@
 </datum>
 <datum name=".500 Linebaugh">
   <field name="Name" title="yes">.500 Linebaugh</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">5 or 6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -6027,8 +6027,8 @@
 </datum>
 <datum name=".500 Linebaugh Long">
   <field name="Name" title="yes">.500 Linebaugh Long</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Revolvers</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">5</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -6039,8 +6039,8 @@
 </datum>
 <datum name=".25 Auto">
   <field name="Name" title="yes">.25 Auto</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff></bOff><bns></bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff></bOff><bns></bns></roll></field>
   <field name="Capacity" table="yes">14 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -6051,8 +6051,8 @@
 </datum>
 <datum name=".32 Auto">
   <field name="Name" title="yes">.32 Auto</field>
-  <field name="Damage" table="yes"><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">14 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -6063,8 +6063,8 @@
 </datum>
 <datum name="9mm Parabellum">
   <field name="Name" title="yes">9mm Parabellum</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff></bOff><bns></bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff></bOff><bns></bns></roll></field>
   <field name="Capacity" table="yes">10 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -6075,8 +6075,8 @@
 </datum>
 <datum name=".40 S W">
   <field name="Name" title="yes">.40 S<and/>W</field>
-  <field name="Damage" table="yes"><roll><num>1</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>1</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Capacity" table="yes">10 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -6087,8 +6087,8 @@
 </datum>
 <datum name=".357 Sig">
   <field name="Name" title="yes">.357 Sig</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">10 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">250</field>
@@ -6099,8 +6099,8 @@
 </datum>
 <datum name="10mm Auto">
   <field name="Name" title="yes">10mm Auto</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">9 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">150</field>
@@ -6111,8 +6111,8 @@
 </datum>
 <datum name=".45 Auto">
   <field name="Name" title="yes">.45 Auto</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">8 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">75</field>
@@ -6123,8 +6123,8 @@
 </datum>
 <datum name=".440 Cor-Bon">
   <field name="Name" title="yes">.440 Cor-Bon</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">7 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">300</field>
@@ -6135,8 +6135,8 @@
 </datum>
 <datum name=".50 Action Express">
   <field name="Name" title="yes">.50 Action Express</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">7 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -6147,8 +6147,8 @@
 </datum>
 <datum name=".223 Remington (5.56mm NATO)">
   <field name="Name" title="yes">.223 Remington (5.56mm NATO)</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Hunting Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">1 (single shot bolt)</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">500</field>
@@ -6159,8 +6159,8 @@
 </datum>
 <datum name=".243 Winchester">
   <field name="Name" title="yes">.243 Winchester</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Kind" table="yes">Hunting Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Capacity" table="yes">1 (single shot bolt)</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">500</field>
@@ -6171,8 +6171,8 @@
 </datum>
 <datum name=".308 Winchester (7.62 mm NATO)">
   <field name="Name" title="yes">.308 Winchester (7.62 mm NATO)</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Hunting Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">1 (single shot bolt)</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">500</field>
@@ -6183,8 +6183,8 @@
 </datum>
 <datum name=".30-06 Springfield">
   <field name="Name" title="yes">.30-06 Springfield</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Hunting Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">1 (single shot bolt)</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">500</field>
@@ -6195,8 +6195,8 @@
 </datum>
 <datum name=".224 BOZ">
   <field name="Name" title="yes">.224 BOZ</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">9 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">200</field>
@@ -6207,8 +6207,8 @@
 </datum>
 <datum name=".30 Willis Magnum">
   <field name="Name" title="yes">.30 Willis Magnum</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">10 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">400</field>
@@ -6219,8 +6219,8 @@
 </datum>
 <datum name=".357 Supermagnum">
   <field name="Name" title="yes">.357 Supermagnum</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">6 (revolver)</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">300</field>
@@ -6231,8 +6231,8 @@
 </datum>
 <datum name="10 x 64 Borgmaster">
   <field name="Name" title="yes">10 x 64 Borgmaster</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></field>
   <field name="Capacity" table="yes">8 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -6243,8 +6243,8 @@
 </datum>
 <datum name="12 x 70 Borg King">
   <field name="Name" title="yes">12 x 70 Borg King</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Capacity" table="yes">6 (revolver)</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -6255,8 +6255,8 @@
 </datum>
 <datum name=".500 Sledgehammer">
   <field name="Name" title="yes">.500 Sledgehammer</field>
-  <field name="Damage" table="yes"><roll><num>6</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>6</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">6 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -6267,8 +6267,8 @@
 </datum>
 <datum name=".525 Sweitzer Ultramax">
   <field name="Name" title="yes">.525 Sweitzer Ultramax</field>
-  <field name="Damage" table="yes"><roll><num>4</num><face>6</face><bOff>+</bOff><bns>4</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>4</num><face>6</face><bOff>+</bOff><bns>4</bns></roll></field>
   <field name="Capacity" table="yes">5 rnd magazine</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">50</field>
@@ -6279,8 +6279,8 @@
 </datum>
 <datum name=".600 NE-MOD Earth Shaker">
   <field name="Name" title="yes">.600 NE-MOD Earth Shaker</field>
-  <field name="Damage" table="yes"><roll><num>6</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Kind" table="yes">Heavy Pistols</field>
+  <field name="Damage" table="yes"><roll><num>6</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></field>
   <field name="Capacity" table="yes">3 (revolver)</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">75</field>
@@ -6291,8 +6291,8 @@
 </datum>
 <datum name="10mm  Light Gyropistol">
   <field name="Name" title="yes">10mm  Light Gyropistol</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff></bOff><bns></bns></roll></field>
   <field name="Kind" table="yes">Gyro and Rocket Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff></bOff><bns></bns></roll></field>
   <field name="Capacity" table="yes">8</field>
   <field name="Burst" table="yes">4</field>
   <field name="Range" table="yes">100</field>
@@ -6303,8 +6303,8 @@
 </datum>
 <datum name="13mm Gyropistol">
   <field name="Name" title="yes">13mm Gyropistol</field>
-  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Kind" table="yes">Gyro and Rocket Pistols</field>
+  <field name="Damage" table="yes"><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></field>
   <field name="Capacity" table="yes">6</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
@@ -6315,8 +6315,8 @@
 </datum>
 <datum name="16mm  Heavy Gyropistol (FIRE eff.)">
   <field name="Name" title="yes">16mm  Heavy Gyropistol (FIRE eff.)</field>
-  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> F</field>
   <field name="Kind" table="yes">Gyro and Rocket Pistols</field>
+  <field name="Damage" table="yes"><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> F</field>
   <field name="Capacity" table="yes">5</field>
   <field name="Burst" table="yes">1</field>
   <field name="Range" table="yes">100</field>
