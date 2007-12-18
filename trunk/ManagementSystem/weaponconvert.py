@@ -36,7 +36,7 @@ HeavyPistols = """.224 BOZ	<roll><num>2</num><face>4</face><bOff>+</bOff><bns>2<
 12 x 70 Borg King	<roll><num>3</num><face>6</face><bOff>+</bOff><bns>3</bns></roll>	30	6 (revolver)	1	100	15	<dollar/>4,000.00	<dollar/>5.00
 .500 Sledgehammer	<roll><num>6</num><face>6</face><bOff>+</bOff><bns>1</bns></roll>	36	6 rnd magazine	1	100	16	<dollar/>7,200.00	<dollar/>3.00
 .525 Sweitzer Ultramax	<roll><num>4</num><face>6</face><bOff>+</bOff><bns>4</bns></roll>	44	5 rnd magazine	1	50	18	<dollar/>10,000.00	<dollar/>8.00
-.600 NE-MOD  "Earth Shaker"	<roll><num>6</num><face>4</face><bOff>+</bOff><bns>3</bns></roll>	54	3 (revolver)	1	75	20	<dollar/>25,000.00	<dollar/>100.00"""
+.600 NE-MOD Earth Shaker	<roll><num>6</num><face>4</face><bOff>+</bOff><bns>3</bns></roll>	54	3 (revolver)	1	75	20	<dollar/>25,000.00	<dollar/>100.00"""
 
 GyroRocket = """10mm  Light Gyropistol	<roll><num>2</num><face>6</face><bOff></bOff><bns></bns></roll>	8	8	4	100	8	<dollar/>750.00	<dollar/>5.00
 13mm Gyropistol	<roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll>	12	6	1	100	8	<dollar/>1,100.00	<dollar/>7.00
