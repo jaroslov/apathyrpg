@@ -184,6 +184,8 @@ Josh Kramer}
   </xsl:template>
   <!-- Apathy -->
   <xsl:template match="Apathy">\APATHY{}</xsl:template>
+  <!-- C -->
+  <xsl:template match="C">\textsc{C}</xsl:template>
   <!-- and -->
   <xsl:template match="and">\&amp;</xsl:template>
   <!-- special "dollar" word -->
