@@ -9,7 +9,7 @@
       }
       return nstr;
     }
-    function ajaxFunction(Source,Target) {
+    function ajaxFunction(Source,Target,Message) {
       xmlHttp=new XMLHttpRequest();
       xmlHttp.onreadystatechange = function () {
         if (4 == xmlHttp.readyState) {
@@ -21,23 +21,23 @@
           document.getElementById(target).innerHTML = realUnescape(payload);
         }
       }
-      xmlHttp.open("GET","ajax.php?source="
-        +escape(document.getElementById(Source).id)
+      xmlHttp.open("GET","ajax.php?source="+Source
         +"&target="+Target
-        +"&message="+escape(document.getElementById(Source).value),true);
+        +"&message="+Message,true);
       xmlHttp.send(null);
     }
     </script>
   </head>
-  <body>
+  <body onLoad="ajaxFunction('body','CategoryChoices','LoadCategory/Choices')">
     <div>
       <a href="apathy.xhtml">Apathy</a> will go here.<br/>
     </div>
     <div>
-      <form name="myForm">
-      Source: <input type="text" onkeyup="ajaxFunction(id,'target');" id="source" />
-      </form>
-      <p id="target"></p>
+      <select id="CategoryChoices"
+        onChange="ajaxFunction(id,'Body',value)">
+      </select>
+    </div>
+    <div id="Body">
     </div>
   </body>
 </html>
