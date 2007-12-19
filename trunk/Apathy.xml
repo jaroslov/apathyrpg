@@ -1797,7 +1797,7 @@
           <note>A Modifier may not be used more than Lvl times per turn.</note>
           <example>
             <title>Candlestick modifies his punch</title>
-            <text>Candlestick has two levels in Martial Arts; he has bought Punch at rank 3 and level 3, and chosen it as his bonus; he also has Bash at level 1 and Feint at level 1. He is striking at the Giant Hispaniola Solenodon with a Bashing Punch. Because he is using Bash with his Punch his punch is now considered <ldquo/>special<rdquo/> and may not be further modified, even though he could still use his Feint this turn.</text>
+            <text>Candlestick has three levels in Martial Arts; he has bought Punch at rank 3 and level 3, and chosen it as his bonus; he also has Bash at level 1 and Feint at level 1. He is striking at the Giant Hispaniola Solenodon with a Bashing Punch. Because he is using Bash with his Punch his punch is now considered <ldquo/>special<rdquo/> and may not be further modified, even though he could still use his Feint this turn.</text>
           </example>
         </section>
         <section>

@@ -28,15 +28,7 @@
     }
     </script>
   </head>
-  <body onLoad="ajaxFunction('body','CategoryChoices','LoadCategory/Choices')">
-    <div>
-      <a href="apathy.xhtml">Apathy</a> will go here.<br/>
-    </div>
-    <div>
-      <select id="CategoryChoices"
-        onChange="ajaxFunction(id,'Body',value)">
-      </select>
-    </div>
+  <body onLoad="ajaxFunction('body','Body','LoadCategory:Content')">
     <div id="Body">
     </div>
   </body>

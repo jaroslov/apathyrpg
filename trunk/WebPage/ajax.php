@@ -7,6 +7,7 @@ $ApathyName = "Apathy.xml";
 $Apathy = simplexml_load_file($ApathyName);
 
 function encode_html ($html) {
+  $html = str_replace("&","&amp;",$html);
   $html = str_replace("<","&lt;",$html);
   $html = str_replace(">","&gt;",$html);
   return $html;
@@ -21,7 +22,7 @@ function build_response ($target, $payload) {
       "</payload></response>";
 }
 
-function get_categories($apathy,$within) {
+function get_categories($apathy,$path) {
   $result = array();
   if ($apathy === false) {
     array_push($result,"Failed to load the xml file.");
@@ -31,50 +32,99 @@ function get_categories($apathy,$within) {
       $attrs = $categories[$idx]->attributes();
       foreach($attrs as $key => $value)
         if ($key === "name") {
-          $subcats = explode("/",$value);
-          for ($jdx = 0; $jdx < sizeof($subcats); $jdx++)
-            if ($within === $subcats[$jdx])
-              if (false === array_search($subcats[$jdx+1],$result))
-                array_push($result,$subcats[$jdx+1]);
+          if (false !== strpos($value, $path)) {
+            $vparts = explode("/",$value);
+            $pparts = explode("/",$path);
+            $npath = implode("/",array_slice($vparts,0,sizeof($pparts)+1));
+            if (false === in_array($npath, $result))
+              array_push($result, $npath);
+          }
         }
     }
   }
   sort($result);
-  $result = array_reverse($result);
-  array_push($result,"---");
-  return array_reverse($result);
+  return $result;
+}
+
+function find_category($apathy,$path) {
+  $result = array();
+  if ($apathy === false) {
+    return "<p>Failed to load the xml file.</p>";
+  } else {
+    $categories = $apathy->{'raw-data'}->category;
+    $category = array();
+    for ($idx = 0; $idx < sizeof($categories); $idx++) {
+      $attrs = $categories[$idx]->attributes();
+      foreach ($attrs as $key => $value)
+        if ($key === "name")
+          if (false !== strpos($value, $path))
+            $category = $categories[$idx];
+    }
+    return $category;
+  }
+}
+
+function get_category($apathy,$path) {
+  $result = array();
+  if ($apathy === false) {
+    return "<p>Failed to load the xml file.</p>";
+  } else {
+    $category = find_category($apathy,$path);
+    $select = "<select style='width:20em;' ";
+    $select .= "onChange=\"ajaxFunction(id,'Display',value)\">";
+    $select .= "<option value='None'>Choose...</option>";
+    for ($idx = 0; $idx < sizeof($category->datum); $idx++) {
+      $name = (string)$category->datum[$idx]->field[0];
+      $select .= "<option value='Display:".$name."@".$path."'>";
+      $select .= (string)$category->datum[$idx]->field[0];
+      $select .= "</option>";
+    }
+    $select .= "</select>";
+    $result = "<div id='Display'>";
+    $result .= "</div>";
+    return "&raquo; " . $select . $result;
+  }
 }
 
 function determine_response($from,$to,$msg,$apathy) {
-  $parts = explode("/",$msg);
+  $parts = explode(":",$msg);
   if (sizeof($parts) > 1) {
     if ($parts[0] === "LoadCategory") {
-      if ($parts[1] === "Choices") {
-        $cats = get_categories($apathy,"Content");
-        $res = "";
-        for ($i=0; $i<sizeof($cats); $i++) {
-          $res = $res . "<option value='LoadCategory/SubCat/Content/";
-          $res = $res . $cats[$i];
-          $res = $res . "'>" . $cats[$i] . "</option>";
-        }
-        return $res;
-      } else if ($parts[1] === "SubCat") {
-        $cats = get_categories($apathy,$parts[3]);
-        $res = "<div id='".$parts[3].
-          "'><select onChange=\"ajaxFunction(id,'".
-          $parts[3]."Message',value)\">";
-        for ($i=0; $i<sizeof($cats); $i++) {
-          $nparts = array_values($parts);
-          array_push($nparts, $cats[$i]);
-          $res = $res . "<option value='";
-          $res = $res . implode("/",$nparts);
-          $res = $res . "'>" . $cats[$i] . "</option>";
-        }
-        return $res . "</select><p id='".$parts[3]."Message'>Message.</p></div>";
+      $cats = get_categories($apathy,$parts[1]);
+      $res = "<select style='width:20em;' ";
+      $res .= "onChange=\"ajaxFunction('body','Body',value)\">";
+      $res .= "<option value='None'>Choose...</option>";
+      $res .= "<option value='LoadCategory:";
+      $pathp = explode("/",$parts[1]);
+      $uppath = implode("/",array_slice($pathp,0,sizeof($pathp)-1));
+      if (false === strpos($uppath, "Content"))
+        $uppath = "Content";
+      $res .= $uppath;
+      $backto = "";
+      if (sizeof($pathp) > 1)
+        $backto = $pathp[sizeof($pathp)-2];
+      else
+        $backto = "Content";
+      $res .= "'>&laquo; ".$backto."</option>";
+      for ($i=0; $i<sizeof($cats); $i++) {
+        $res .= "<option value='LoadCategory:";
+        $res .= $cats[$i];
+        $name = explode("/",$cats[$i]);
+        $res .= "'>" . $name[sizeof($name)-1] . "</option>";
       }
+      $res .= "</select>";
+      $curpos = "Apathy";
+      for ($idx = 1; $idx < sizeof($pathp); $idx++)
+        $curpos = $curpos . " &raquo; " . $pathp[$idx];
+      $result = $res . " &raquo; " . $curpos . " ";
+      if (1 === sizeof($cats))
+        $result = $result . get_category($apathy,$parts[1]);
+      return $result;
+    } else if ($parts[0] === "Display") {
+      return "<p>Going to display ".$parts[1]."</p>";
     }
   }
-  return "I don't know that message: ".$msg;
+  return "<p>I don't know that message: ".$msg."</p>";
 }
 
 echo build_response($target, determine_response($source,$target,$message,$Apathy));
