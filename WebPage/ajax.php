@@ -111,7 +111,7 @@ function display_datum($apathy,$path) {
     if ($kind === "title" or $kind === "table") {
       $tablep = "<textarea style='width:35em;height:"
         .(string) $tablepartheight."em;' rows=\"1\">";
-      $tablep .= (string) $datum->field[$idx];
+      $tablep .= (string) $datum->field[$idx]->asXML();
       $tablep .= "</textarea>";
       array_push($tablepartform,$tablep);
       $input .= $tablep;
