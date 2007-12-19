@@ -7,6 +7,49 @@
         border-spacing: 0px;
         border-collapse: collapse;
       }
+      .MainChooser {
+        width: 8em;
+      }
+      .Chooser {
+        width: 20em;
+      }
+      ol.RomanList {
+        list-style-position: outside;
+        list-style-type: decimal;
+        margin-left: 2em;
+        padding-left: .1em;
+      }
+      ol.RomanList ol {
+        list-style-type: upper-roman;
+        padding-left: .1em;
+        margin-left: 1em;
+      }
+      ol.RomanList ol ol {
+        list-style-type: lower-roman;
+        padding-left: .1em;
+        margin-left: 1em;
+      }
+      ol.RomanList ol ol ol {
+        list-style-type: lower-alpha;
+        padding-left: .1em;
+        margin-left: 1em;
+      }
+      ol.RomanList ol ol ol ol {
+        list-style-type: lower-alpha;
+        padding-left: .1em;
+        margin-left: 1em;
+      }
+      ol.RomanList ol ol ol ol ol {
+        list-style-type: lower-alpha;
+        padding-left: .1em;
+        margin-left: 1em;
+      }
+      .BookStyled {
+        width: 50em;
+        padding: 0em;
+        border: 0px solid black;
+        margin: 0em;
+      }
     </style>
     <script type="text/javascript">
     function realUnescape(string) {
@@ -36,7 +79,7 @@
     }
     </script>
   </head>
-  <body onLoad="ajaxFunction('body','Body','LoadCategory:Content')">
+  <body onLoad="ajaxFunction('body','Body','LoadApathy')">
     <div id="Body">
     </div>
   </body>
