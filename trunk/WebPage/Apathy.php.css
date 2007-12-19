@@ -1,0 +1,89 @@
+body {
+  margin: 2em;
+  padding: 0;
+  font-family: serif;
+  font-size: 10pt;
+}
+.StdTextArea {
+  font-family: serif;
+  font-size: 10pt;
+  border: 1px solid black;
+  margin: 0;
+}
+p {
+  font-family: serif;
+  font-size: 10pt;
+}
+.TableLabel {
+  font-family: serif;
+  font-size: 12pt;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.CurrentPosition {
+  font-family: serif;
+  font-size: 12pt;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.DisplayForm {
+  border: 1px solid black;
+  border-width: 0px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  font-family: serif;
+  font-size: 10pt;
+}
+.MainChooser {
+  width: 8em;
+  font-family: serif;
+  font-size: 10pt;
+}
+.Chooser {
+  width: 20em;
+  font-family: serif;
+  font-size: 10pt;
+}
+ol.RomanList {
+  list-style-position: outside;
+  list-style-type: decimal;
+  margin-left: 2em;
+  padding-left: .1em;
+  font-family: serif;
+  font-size: 10pt;
+}
+ol.RomanList ol {
+  list-style-type: upper-roman;
+  padding-left: .1em;
+  margin-left: 1em;
+}
+ol.RomanList ol ol {
+  list-style-type: lower-roman;
+  padding-left: .1em;
+  margin-left: 1em;
+}
+ol.RomanList ol ol ol {
+  list-style-type: lower-alpha;
+  padding-left: .1em;
+  margin-left: 1em;
+}
+ol.RomanList ol ol ol ol {
+  list-style-type: lower-alpha;
+  padding-left: .1em;
+  margin-left: 1em;
+}
+ol.RomanList ol ol ol ol ol {
+  list-style-type: lower-alpha;
+  padding-left: .1em;
+  margin-left: 1em;
+}
+.BookStyled {
+  width: 50em;
+  padding: 0em;
+  border: 0px solid black;
+  margin: 0em;
+  font-family: serif;
+  font-size: 10pt;
+}
