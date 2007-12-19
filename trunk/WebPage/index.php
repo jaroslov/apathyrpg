@@ -1,56 +1,6 @@
 <html>
   <head>
-    <style>
-      .DisplayForm {
-        border: 1px solid black;
-        border-width: 0px;
-        border-spacing: 0px;
-        border-collapse: collapse;
-      }
-      .MainChooser {
-        width: 8em;
-      }
-      .Chooser {
-        width: 20em;
-      }
-      ol.RomanList {
-        list-style-position: outside;
-        list-style-type: decimal;
-        margin-left: 2em;
-        padding-left: .1em;
-      }
-      ol.RomanList ol {
-        list-style-type: upper-roman;
-        padding-left: .1em;
-        margin-left: 1em;
-      }
-      ol.RomanList ol ol {
-        list-style-type: lower-roman;
-        padding-left: .1em;
-        margin-left: 1em;
-      }
-      ol.RomanList ol ol ol {
-        list-style-type: lower-alpha;
-        padding-left: .1em;
-        margin-left: 1em;
-      }
-      ol.RomanList ol ol ol ol {
-        list-style-type: lower-alpha;
-        padding-left: .1em;
-        margin-left: 1em;
-      }
-      ol.RomanList ol ol ol ol ol {
-        list-style-type: lower-alpha;
-        padding-left: .1em;
-        margin-left: 1em;
-      }
-      .BookStyled {
-        width: 50em;
-        padding: 0em;
-        border: 0px solid black;
-        margin: 0em;
-      }
-    </style>
+    <link rel="stylesheet" href="Apathy.php.css">
     <script type="text/javascript">
     function realUnescape(string) {
       var parts = unescape(string).split("\\");
@@ -60,7 +10,7 @@
       }
       return nstr;
     }
-    function ajaxFunction(Source,Target,Message) {
+    function ajaxFunction(Source,Target,Code,Message) {
       xmlHttp=new XMLHttpRequest();
       xmlHttp.onreadystatechange = function () {
         if (4 == xmlHttp.readyState) {
@@ -68,18 +18,20 @@
           var domp = new DOMParser();
           var responseXml = domp.parseFromString(xmlR, "text/xml");
           var target = responseXml.getElementsByTagName("target")[0].firstChild.nodeValue;
+          document.title = target;
           var payload = responseXml.getElementsByTagName("payload")[0].firstChild.nodeValue;
           document.getElementById(target).innerHTML = realUnescape(payload);
         }
       }
       xmlHttp.open("GET","ajax.php?source="+Source
         +"&target="+Target
+        +"&code="+Code
         +"&message="+Message,true);
       xmlHttp.send(null);
     }
     </script>
   </head>
-  <body onLoad="ajaxFunction('body','Body','LoadApathy')">
+  <body onLoad="ajaxFunction('body','Body','InitialLoad','LoadApathy')">
     <div id="Body">
     </div>
   </body>
