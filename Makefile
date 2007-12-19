@@ -1,7 +1,7 @@
 LATEX = pdflatex
 XSLTP = xsltproc
 
-all: xhtml PDF
+all: xhtml PDF charactersheet
 
 format: Apathy.xml Apathy.format.xsl
 	xsltproc -o Apathy-R.xml Apathy.format.xsl Apathy.xml
@@ -11,6 +11,9 @@ xhtml: Apathy.xml Apathy.html.xsl Apathy.css
 
 latex: Apathy.xml Apathy.latex.xsl
 	xsltproc -o Apathy.tex Apathy.latex.xsl Apathy.xml
+
+charactersheet: CharacterSheet.tex
+	pdflatex CharacterSheet.tex >& CharacterSheet.pdflatex
 
 pdf: Apathy.tex
 	pdflatex Apathy.tex >& Apathy.pdflatex
