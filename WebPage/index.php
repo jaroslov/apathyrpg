@@ -1,5 +1,13 @@
 <html>
   <head>
+    <style>
+      .DisplayForm {
+        border: 1px solid black;
+        border-width: 0px;
+        border-spacing: 0px;
+        border-collapse: collapse;
+      }
+    </style>
     <script type="text/javascript">
     function realUnescape(string) {
       var parts = unescape(string).split("\\");

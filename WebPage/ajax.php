@@ -14,6 +14,15 @@ function encode_html ($html) {
   return $html;
 }
 
+function pseudo_html ($html) {
+  $html = str_replace("&","&amp;",$html);
+  $html = str_replace("[","&amp;[;",$html);
+  $html = str_replace("]","&amp;];;",$html);
+  $html = str_replace("<","[;",$html);
+  $html = str_replace(">","];",$html);
+  return $html;
+}
+
 function build_response ($target, $payload) {
   return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" .
       "<response><target>" .
@@ -77,33 +86,55 @@ function display_datum($apathy,$path) {
   if (false === $datum) {
     return "<p>Could not find: ".$path."</p>";
   }
-  $displaytable = "<table id='DatumDisplayTable'>";
+  $displaytable = "<table id='DatumDisplayTable' class='DisplayForm'>";
+  $tablepartname = array();
+  $tablepartform = array();
+  $description = "";
+  $tablepartheight = 5;
   for ($idx = 0; $idx < sizeof($datum->field); $idx++) {
-    $input = "<tr><td>";
     $attrs = $datum->field[$idx]->attributes();
     $kind = "table";
     foreach ($attrs as $key => $value) {
-      if ($key === "name")
-        $input .= (string) $value;
-      else if ($key === "description") {
+      if ($key === "name") {
+        if (!$attrs["description"])
+          array_push($tablepartname, (string) $value);
+      }
+      if ($key === "description") {
         if ("yes" === (string) $value)
           $kind = "description";
-      } else if ($key === "title")
-        if ("yes" === (string) $value)
-          $kind = "title";
+      } else {
+        if ($key === "title")
+          if ("yes" === (string) $value)
+            $kind = "title";
+      }
     }
-    $input .= "</td><td><form>";
     if ($kind === "title" or $kind === "table") {
-      $input .= "<textarea style='width:35em;height:3em;' rows=\"1\">";
-      $input .= (string) $datum->field[$idx];
-      $input .= "</textarea>";
+      $tablep = "<textarea style='width:35em;height:"
+        .(string) $tablepartheight."em;' rows=\"1\">";
+      $tablep .= (string) $datum->field[$idx];
+      $tablep .= "</textarea>";
+      array_push($tablepartform,$tablep);
+      $input .= $tablep;
     } else if ($kind === "description") {
-      $input .= "<textarea style='width:35em;height:14em;'>";
-      $input .= (string) $datum->field[$idx];
-      $input .= "</textarea>";
+      $description = "<textarea style='width:35em;height:%HEIGHT%;'>";
+      $dom = dom_import_simplexml($datum->field[$idx]);
+      $dom->hasChildNodes();
+      $description .= (string) $datum->field[$idx]->asXML();
+      $description .= "</textarea>";
     }
-    $displaytable .= "</form></td></tr>";
-    $displaytable .= $input;
+  }
+  if (sizeof($tablepartform) > 0) {
+    $description = str_replace("%HEIGHT%",
+      (string)(sizeof($tablepartform)*$tablepartheight-1)."em",$description);
+    $displaytable .= "<tr><td><p align='right'>".$tablepartname[0]
+      ."</p></td><td>".$tablepartform[0]."</td><td rowspan=\"".
+      (string) sizeof($tablepartform)."\">"
+      ."Description<br/>".$description."</td></tr>";
+  }
+  if (sizeof($tablepartform) > 1) {
+    for ($idx = 1; $idx < sizeof($tablepartform); $idx++)
+      $displaytable .= "<tr><td><p align='right'>".$tablepartname[$idx]
+        ."</p></td><td>".$tablepartform[$idx]."</td><td></td></tr>";
   }
   $displaytable .= "</table>";
   return "<br/>" . $displaytable;
