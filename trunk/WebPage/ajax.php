@@ -164,21 +164,23 @@ function show_category($apathy,$path) {
 
 function load_category($apathy,$path) {
   $cats = get_categories($apathy,$path);
-  $res = "<select style='width:20em;' ";
+  $res = "<select class='Chooser' ";
   $res .= "onChange=\"ajaxFunction('body','Body',value)\">";
   $res .= "<option value='None'>Choose...</option>";
-  $res .= "<option value='LoadCategory:";
-  $pathp = explode("/",$path);
-  $uppath = implode("/",array_slice($pathp,0,sizeof($pathp)-1));
-  if (false === strpos($uppath, "Content"))
-    $uppath = "Content";
-  $res .= $uppath;
-  $backto = "";
-  if (sizeof($pathp) > 1)
-    $backto = $pathp[sizeof($pathp)-2];
-  else
-    $backto = "Content";
-  $res .= "'>&laquo; ".$backto."</option>";
+  if ($path !== "Content") {
+    $res .= "<option value='LoadCategory:";
+    $pathp = explode("/",$path);
+    $uppath = implode("/",array_slice($pathp,0,sizeof($pathp)-1));
+    if (false === strpos($uppath, "Content"))
+      $uppath = "Content";
+    $res .= $uppath;
+    $backto = "";
+    if (sizeof($pathp) > 1)
+      $backto = $pathp[sizeof($pathp)-2];
+    else
+      $backto = "Content";
+    $res .= "'>&lsaquo; ".$backto."</option>";
+  }
   for ($i=0; $i<sizeof($cats); $i++) {
     $res .= "<option value='LoadCategory:";
     $res .= $cats[$i];
@@ -186,25 +188,127 @@ function load_category($apathy,$path) {
     $res .= "'>" . $name[sizeof($name)-1] . "</option>";
   }
   $res .= "</select>";
-  $curpos = "Apathy";
+  $curpos = "Apathy Raw-Data";
   for ($idx = 1; $idx < sizeof($pathp); $idx++)
     $curpos = $curpos . " &raquo; " . $pathp[$idx];
   $result = $res . " &raquo; " . $curpos . " ";
   if (1 === sizeof($cats))
     $result = $result . show_category($apathy,$path);
+  return load_apathy() . " " . $result;
+}
+
+function load_all_book($position) {
+  if ("book" === (string) $position->getName()) {
+    $parts = $position->part;
+    $result = "<br /><ol class=\"RomanList\">";
+    foreach ($parts as $v => $part) {
+      $result .= "<li>".load_all_book($part)."</li>";
+    }
+    $result .= "</ol>";
+    return $result;
+  } else if ("part" === (string) $position->getName()) {
+    $result = "<div class='BookStyled'>";
+    $result .= "<textarea style='width:80%;height:3em;'>"
+      .(string) $position->title[0]."</textarea>";
+    $result .= "<ol class=\"RomanList\">";
+    foreach ($position->chapter as $v => $chapter) {
+      $result .= "<li>".load_all_book($chapter)."</li>";
+    }
+    $result .= "</ol>";
+    $result .= "</div>";
+    return $result;
+  } else if ("chapter" === (string) $position->getName()) {
+    $result = "<div class='BookStyled'>";
+    $result .= "<textarea style='width:80%;height:3em;'>"
+      .(string) $position->title[0]."</textarea>";
+    $result .= "<ol class=\"RomanList\">";
+    foreach ($position->section as $v => $section) {
+      $result .= "<li>".load_all_book($section)."</li>";
+    }
+    $result .= "</ol>";
+    $result .= "</div>";
+    return $result;
+  } else if ("section" === (string) $position->getName()) {
+    $result = "<div class='BookStyled'>";
+    $result .= "<textarea style='width:80%;height:3em;'>"
+      .(string) $position->title[0]."</textarea>";
+    $result .= "<ol class=\"RomanList\">";
+    foreach ($position->children() as $v => $child) {
+      if ("title" !== $child->getName())
+        $result .= "<li>".load_all_book($child)."</li>";
+    }
+    $result .= "</ol>";
+    $result .= "</div>";
+    return $result;
+  } else if ("text" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("itemized-list" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("numbered-list" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("description-list" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("figure" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("note" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("equation" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("example" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("reference" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("table" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  } else if ("summarize" === (string) $position->getName()) {
+    return "<textarea style='width:80%;height:12em;'>"
+      . (string) $position->asXML() . "</textarea>";
+  }
+  return "What is: " . (string) $position->getName();
+}
+
+function load_book($apathy) {
+  $result = load_apathy() . " &raquo; Apathy Book";
+  $result .= load_all_book($apathy->book);
   return $result;
+}
+
+function load_apathy() {
+  $select = "<select class='MainChooser'"
+    ." onChange=\"ajaxFunction(id,'Body',value)\">";
+  $select .= "<option value='None'>Choose...</option>";
+  $select .= "<option value='LoadBook:Book'>Book</option>";
+  $select .= "<option value='LoadCategory:Content'>Raw Data</option>";
+  $select .= "</select>";
+  return $select;
 }
 
 function determine_response($from,$to,$msg,$apathy) {
   $parts = explode(":",$msg);
+  if ("LoadApathy" === $msg) {
+    return load_apathy();
+  }
   if (sizeof($parts) > 1) {
     if ($parts[0] === "LoadCategory") {
       return load_category($apathy,$parts[1]);
     } else if ($parts[0] === "Display") {
       return display_datum($apathy,$parts[1]);
     }
+    if ("LoadBook" === $parts[0]) {
+      return load_book($apathy,$parts[1]);
+    }
   }
-  return "<p>I don't know that message: ".$msg."</p>";
+  return load_apathy() . "<p>I don't know that message: ".$msg."</p>";
 }
 
 echo build_response($target, determine_response($source,$target,$message,$Apathy));
