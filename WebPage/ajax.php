@@ -2,24 +2,43 @@
 
 $source = $_GET["source"];
 $target = $_GET["target"];
+$code = $_GET["code"];
 $message = $_GET["message"];
 $ApathyName = "Apathy.xml";
 $Apathy = simplexml_load_file($ApathyName);
 
 function encode_html ($html) {
+  $html = str_replace("<lsquo/>","&lsquo;",$html);
+  $html = str_replace("<ldquo/>","&ldquo;",$html);
+  $html = str_replace("<rsquo/>","&rsquo;",$html);
+  $html = str_replace("<rdquo/>","&rdquo;",$html);
   $html = str_replace("&","&amp;",$html);
   $html = str_replace("<dollar/>","$",$html);
+  $html = str_replace("<Apathy/>","Apathy",$html);
   $html = str_replace("<","&lt;",$html);
   $html = str_replace(">","&gt;",$html);
   return $html;
 }
 
 function pseudo_html ($html) {
+  $html = str_replace("<lsquo/>","&lsquo;",$html);
+  $html = str_replace("<ldquo/>","&ldquo;",$html);
+  $html = str_replace("<rsquo/>","&rsquo;",$html);
+  $html = str_replace("<rdquo/>","&rdquo;",$html);
   $html = str_replace("&","&amp;",$html);
   $html = str_replace("[","&amp;[;",$html);
   $html = str_replace("]","&amp;];;",$html);
   $html = str_replace("<","[;",$html);
   $html = str_replace(">","];",$html);
+  return $html;
+}
+
+function depseudo_html ($html) {
+  $html = str_replace("[;","<",$html);
+  $html = str_replace("];",">",$html);
+  $html = str_replace("&amp;[;","[",$html);
+  $html = str_replace("&amp;];","]",$html);
+  $html = str_replace("&amp;","&",$html);
   return $html;
 }
 
@@ -76,13 +95,17 @@ function find_datum($category,$name) {
   return false;
 }
 
-function display_datum($apathy,$path) {
+function get_datum($apathy,$path) {
   $pathparts = explode("@",$path);
   $datumname = $pathparts[0];
   $categorypath = $pathparts[1];
   $position = (int) $pathparts[2];
   $category = find_category($apathy,$categorypath);
-  $datum = $category->datum[$position];
+  return $category->datum[$position];
+}
+
+function display_datum($apathy,$path) {
+  $datum = get_datum($apathy,$path);
   if (false === $datum) {
     return "<p>Could not find: ".$path."</p>";
   }
@@ -91,6 +114,7 @@ function display_datum($apathy,$path) {
   $tablepartform = array();
   $description = "";
   $tablepartheight = 5;
+  $fieldname = "";
   for ($idx = 0; $idx < sizeof($datum->field); $idx++) {
     $attrs = $datum->field[$idx]->attributes();
     $kind = "table";
@@ -104,38 +128,43 @@ function display_datum($apathy,$path) {
           $kind = "description";
       } else {
         if ($key === "title")
-          if ("yes" === (string) $value)
+          if ("yes" === (string) $value) {
             $kind = "title";
+            $fieldname = (string) $datum->field[$idx];
+          }
       }
     }
     if ($kind === "title" or $kind === "table") {
-      $tablep = "<textarea style='width:35em;height:"
-        .(string) $tablepartheight."em;' rows=\"1\">";
-      $tablep .= (string) $datum->field[$idx]->asXML();
-      $tablep .= "</textarea>";
+      $tablep = render_as_editable($datum->field[$idx],
+        "35em",(string) $tablepartheight."em");
       array_push($tablepartform,$tablep);
-      $input .= $tablep;
-    } else if ($kind === "description") {
-      $description = "<textarea style='width:35em;height:%HEIGHT%;'>";
-      $dom = dom_import_simplexml($datum->field[$idx]);
-      $dom->hasChildNodes();
-      $description .= (string) $datum->field[$idx]->asXML();
-      $description .= "</textarea>";
-    }
+    } else if ($kind === "description")
+      $description = $datum->field[$idx];
   }
   if (sizeof($tablepartform) > 0) {
-    $description = str_replace("%HEIGHT%",
-      (string)(sizeof($tablepartform)*$tablepartheight-1)."em",$description);
-    $displaytable .= "<tr><td><p align='right'>".$tablepartname[0]
-      ."</p></td><td>".$tablepartform[0]."</td><td rowspan=\"".
+    $height = sizeof($tablepartform)*$tablepartheight;
+    $displaytable .= "<tr><td></td><td>"
+      ."<p align='center' class='TableLabel'>Aspects</p></td><td>"
+      ."<p align='center' class='TableLabel'>Description</p></td></tr>";
+    $displaytable .= "<tr><td><p align='right' class='TableLabel'>"
+      .$tablepartname[0]
+      .":&rsaquo;</p></td><td>".$tablepartform[0]."</td><td rowspan=\"".
       (string) sizeof($tablepartform)."\">"
-      ."Description<br/>".$description."</td></tr>";
+      .render_as_editable($description,"35em",(string)$height."em")
+      ."</td></tr>";
   }
   if (sizeof($tablepartform) > 1) {
     for ($idx = 1; $idx < sizeof($tablepartform); $idx++)
-      $displaytable .= "<tr><td><p align='right'>".$tablepartname[$idx]
-        ."</p></td><td>".$tablepartform[$idx]."</td><td></td></tr>";
+      $displaytable .= "<tr><td><p align='right' class='TableLabel'>"
+        .$tablepartname[$idx]
+        .":&rsaquo;</p></td><td>".$tablepartform[$idx]."</td><td></td></tr>";
   }
+  $displaytable .= "<tr><td></td><td colspan='2'>";
+  $displaytable .= "<p align='center'><input style='width:40em;' "
+    ."type='button' onClick=\"\" value='Save changes to \""
+    //.(string) $fieldname."\"'/></p>";
+    .(string) $path."\"'/></p>";
+  $displaytable .= "</tr>";
   $displaytable .= "</table>";
   return "<br/>" . $displaytable;
 }
@@ -147,11 +176,11 @@ function show_category($apathy,$path) {
   } else {
     $category = find_category($apathy,$path);
     $select = "<select style='width:20em;' ";
-    $select .= "onChange=\"ajaxFunction(id,'Display',value)\">";
-    $select .= "<option value='None'>Choose...</option>";
+    $select .= "onChange=\"ajaxFunction(id,'Display','Display',value)\">";
+    $select .= "<option value='NoResponse'>Choose...</option>";
     for ($idx = 0; $idx < sizeof($category->datum); $idx++) {
       $name = (string)$category->datum[$idx]->field[0];
-      $select .= "<option value='Display:".$name."@".$path."@".(string) $idx."'>";
+      $select .= "<option value='".$name."@".$path."@".(string) $idx."'>";
       $select .= (string)$category->datum[$idx]->field[0];
       $select .= "</option>";
     }
@@ -165,10 +194,10 @@ function show_category($apathy,$path) {
 function load_category($apathy,$path) {
   $cats = get_categories($apathy,$path);
   $res = "<select class='Chooser' ";
-  $res .= "onChange=\"ajaxFunction('body','Body',value)\">";
-  $res .= "<option value='None'>Choose...</option>";
+  $res .= "onChange=\"ajaxFunction('body','Body','LoadCategory',value)\">";
+  $res .= "<option value='NoResponse'>Choose...</option>";
   if ($path !== "Content") {
-    $res .= "<option value='LoadCategory:";
+    $res .= "<option value='";
     $pathp = explode("/",$path);
     $uppath = implode("/",array_slice($pathp,0,sizeof($pathp)-1));
     if (false === strpos($uppath, "Content"))
@@ -182,56 +211,73 @@ function load_category($apathy,$path) {
     $res .= "'>&lsaquo; ".$backto."</option>";
   }
   for ($i=0; $i<sizeof($cats); $i++) {
-    $res .= "<option value='LoadCategory:";
+    $res .= "<option value='";
     $res .= $cats[$i];
     $name = explode("/",$cats[$i]);
     $res .= "'>" . $name[sizeof($name)-1] . "</option>";
   }
   $res .= "</select>";
-  $curpos = "Apathy Raw-Data";
+  $curpos = "<span class='CurrentPosition'>Apathy Raw-Data";
   for ($idx = 1; $idx < sizeof($pathp); $idx++)
     $curpos = $curpos . " &raquo; " . $pathp[$idx];
-  $result = $res . " &raquo; " . $curpos . " ";
+  $result = $res . " &raquo; " . $curpos . "</span> ";
   if (1 === sizeof($cats))
     $result = $result . show_category($apathy,$path);
   return load_apathy() . " " . $result;
 }
 
-function load_all_book($position) {
+function make_textarea($contents,$width,$height,$Id,$target) {
+  $result= "<textarea class='StdTextArea' id="
+    .$Id.""
+//    ."' onKeyUp=\"ajaxFunction(id,"
+//    .$target
+//    .",'ChangeValue:"
+//    ."',value)\""
+    ." style='width:"
+    .$width
+    .";height:"
+    .$height
+    .";'>"
+    .$contents
+    ."</textarea>";
+  return $result;
+}
+
+function render_as_editable($position,$width,$height) {
   if ("book" === (string) $position->getName()) {
     $parts = $position->part;
     $result = "<br /><ol class=\"RomanList\">";
     foreach ($parts as $v => $part) {
-      $result .= "<li>".load_all_book($part)."</li>";
+      $result .= "<li>".load_all_book($part,$width,$height)."</li>";
     }
     $result .= "</ol>";
     return $result;
   } else if ("part" === (string) $position->getName()) {
     $result = "<div class='BookStyled'>";
-    $result .= "<textarea style='width:80%;height:3em;'>"
-      .(string) $position->title[0]."</textarea>";
+    $result .= make_textarea((string)$position->title[0],
+      $width,"3em","'None'","this.id");
     $result .= "<ol class=\"RomanList\">";
     foreach ($position->chapter as $v => $chapter) {
-      $result .= "<li>".load_all_book($chapter)."</li>";
+      $result .= "<li>".load_all_book($chapter,$width,$height)."</li>";
     }
     $result .= "</ol>";
     $result .= "</div>";
     return $result;
   } else if ("chapter" === (string) $position->getName()) {
     $result = "<div class='BookStyled'>";
-    $result .= "<textarea style='width:80%;height:3em;'>"
-      .(string) $position->title[0]."</textarea>";
+    $result .= make_textarea((string) $position->title[0],
+      $width,"3em","'None'","this.id");
     $result .= "<ol class=\"RomanList\">";
     foreach ($position->section as $v => $section) {
-      $result .= "<li>".load_all_book($section)."</li>";
+      $result .= "<li>".load_all_book($section,$width,$height)."</li>";
     }
     $result .= "</ol>";
     $result .= "</div>";
     return $result;
   } else if ("section" === (string) $position->getName()) {
     $result = "<div class='BookStyled'>";
-    $result .= "<textarea style='width:80%;height:3em;'>"
-      .(string) $position->title[0]."</textarea>";
+    $result .= make_textarea((string) $position->title[0],
+      $width,"3em","'None'","this.id");
     $result .= "<ol class=\"RomanList\">";
     foreach ($position->children() as $v => $child) {
       if ("title" !== $child->getName())
@@ -241,40 +287,40 @@ function load_all_book($position) {
     $result .= "</div>";
     return $result;
   } else if ("text" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("itemized-list" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("numbered-list" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("description-list" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("figure" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("note" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("equation" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("example" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("reference" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("table" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
   } else if ("summarize" === (string) $position->getName()) {
-    return "<textarea style='width:80%;height:12em;'>"
-      . (string) $position->asXML() . "</textarea>";
+    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+  } else if ("field" === (string) $position->getName()) {
+    $uniquename = "'None'";
+    foreach ($position->attributes() as $key => $value)
+      if ("name" === (string) $key)
+        $uniquename = (string) $value;
+    return make_textarea((string) $position->asXML(),
+      $width,$height,(string)$uniquename,"id");
   }
   return "What is: " . (string) $position->getName();
+}
+
+function load_all_book($position) {
+  return render_as_editable($position,"80%","12em");
 }
 
 function load_book($apathy) {
@@ -285,33 +331,47 @@ function load_book($apathy) {
 
 function load_apathy() {
   $select = "<select class='MainChooser'"
-    ." onChange=\"ajaxFunction(id,'Body',value)\">";
-  $select .= "<option value='None'>Choose...</option>";
+    ." onChange=\"ajaxFunction(id,'Body','InitialLoad',value)\">";
+  $select .= "<option value='LoadApathy'>Choose...</option>";
   $select .= "<option value='LoadBook:Book'>Book</option>";
   $select .= "<option value='LoadCategory:Content'>Raw Data</option>";
   $select .= "</select>";
   return $select;
 }
 
-function determine_response($from,$to,$msg,$apathy) {
-  $parts = explode(":",$msg);
-  if ("LoadApathy" === $msg) {
-    return load_apathy();
-  }
-  if (sizeof($parts) > 1) {
-    if ($parts[0] === "LoadCategory") {
-      return load_category($apathy,$parts[1]);
-    } else if ($parts[0] === "Display") {
-      return display_datum($apathy,$parts[1]);
+function determine_response($from,$to,$code,$msg,$apathy) {
+  if ("InitialLoad" === $code) {
+    if ("LoadApathy" === $msg)
+      return load_apathy();
+    $parts = explode(":",$msg);
+    if (sizeof($parts) > 1) {
+      if ($parts[0] === "LoadCategory") {
+        return load_category($apathy,$parts[1]);
+      } else if ($parts[0] === "Display") {
+        return display_datum($apathy,$parts[1]);
+      }
+      if ("LoadBook" === $parts[0]) {
+        return load_book($apathy,$parts[1]);
+      }
     }
-    if ("LoadBook" === $parts[0]) {
-      return load_book($apathy,$parts[1]);
-    }
+  } else if ("LoadCategory" == $code) {
+    return load_category($apathy,$msg);
+  } else if ("Display" == $code) {
+    return display_datum($apathy,$msg);
   }
-  return load_apathy() . "<p>I don't know that message: ".$msg."</p>";
+  if ("NoResponse" === $msg)
+    return "<p>&nbsp;</p>";
+  $parts = explode(":",$code);
+  if ("ChangeValue" === $parts[0]) {
+    $bits = explode("/",$parts[1]);
+    return "@".encode_html($msg);
+    //return make_textarea($bits[0],$bits[1],$bits[2],$bits[3],encode_html($msg));
+  }
+  return "I don't know that message: ".pseudo_html($code."@".$msg)."";
 }
 
-echo build_response($target, determine_response($source,$target,$message,$Apathy));
+echo build_response($target,
+  determine_response($source,$target,$code,$message,$Apathy));
 
 $handle = fopen($ApathyName, "w");
 fwrite($handle, $Apathy->saveXML());
