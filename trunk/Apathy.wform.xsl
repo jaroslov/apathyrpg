@@ -203,7 +203,6 @@
   <!-- part -->
   <xsl:template match="part">
     <xsl:variable name="pt-uid" select="./@unique-id" />
-    <div class="part" id="{generate-id(.)}" name="{$pt-uid}">
       <xsl:apply-templates />
     </div>
   </xsl:template>
