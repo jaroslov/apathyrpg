@@ -134,7 +134,7 @@ function translate_text($node) {
   else if ("mrow" === $node->tagName)
     return "{".translate_child_text($node)."}";
   else if ("mi" === $node->tagName)
-    return translate_child_text($node);
+    return "{".translate_child_text($node)."}";
   else if ("mo" === $node->tagName)
     return translate_child_text($node);
   else if ("mn" === $node->tagName)
