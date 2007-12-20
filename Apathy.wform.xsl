@@ -481,7 +481,9 @@
       <xsl:variable name="title-id" select="generate-id(field)"/>
       <div class="datum-description"
         id="{$title-id}">
-        <span class="datum-description"><xsl:value-of select="field[@title='yes']" /></span>
+        <textarea class="TitleText">
+          <xsl:value-of select="field[@title='yes']" />
+        </textarea><br/>
         <textarea class="Text"><xsl:value-of select="field[@description='yes']" /></textarea>
       </div>
     </xsl:for-each>
