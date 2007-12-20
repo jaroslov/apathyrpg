@@ -42,6 +42,10 @@ div.toc h1 {
   width: 20em;
   height: 1.5em;
 }
+.DescLText {
+  width: 15em;
+  height: 1.5em;
+}
 .TableHeadText {
   width: 10em;
   height: 1.5em;

@@ -333,7 +333,7 @@
     <xsl:for-each select="item">
       <tr>
         <td class="description-term">
-          <xsl:apply-templates select="description" />
+          <textarea class="DescLText"><xsl:apply-templates select="description" /></textarea>
         </td>
         <td class="description-definition">
           <xsl:apply-templates select="text" />
@@ -482,7 +482,7 @@
       <div class="datum-description"
         id="{$title-id}">
         <span class="datum-description"><xsl:value-of select="field[@title='yes']" /></span>
-        <p><xsl:value-of select="field[@description='yes']" /></p>
+        <textarea class="Text"><xsl:value-of select="field[@description='yes']" /></textarea>
       </div>
     </xsl:for-each>
   </xsl:template>
