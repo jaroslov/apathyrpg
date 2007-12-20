@@ -61,9 +61,28 @@ function build_responses($targets, $payloads) {
   return $result;
 }
 
+function translate_child_text($node) {
+  $text = "";
+  foreach ($node->childNodes as $child)
+    $text .= translate_text($node);
+  return $text;
+}
+
 function translate_text($node) {
   if ("Apathy" === $node->tagName)
     return "{Apathy}";
+  else if ("C" === $node->tagName)
+    return "{C}";
+  else if ("plusminus" === $node->tagName)
+    return "&#177";
+  else if ("and" === $node->tagName)
+    return "&";
+  else if ("dollar" === $node->tagName)
+    return "$";
+  else if ("percent" === $node->tagName)
+    return "%";
+  else if ("rightarrow" === $node->tagName)
+    return "&#8594";
   else if ("ldquo" === $node->tagName)
     return "&ldquo;";
   else if ("lsquo" === $node->tagName)
@@ -76,13 +95,65 @@ function translate_text($node) {
     return "&mdash;";
   else if ("ndash" === $node->tagName)
     return "&ndash;";
+  else if ("ouml" === $node->tagName)
+    return "&ouml;";
+  else if ("oslash" === $node->tagName)
+    return "&#248;";
+  else if ("trademark" === $node->tagName)
+    return "&#8482;";
+  else if ("times" === $node->tagName)
+    return "*";
+  else if ("Sum" === $node->tagName)
+    return "&#8721;";
+  else if ("roll" === $node->tagName) {
+    $res = "{roll ";
+    foreach ($node->childNodes as $child)
+      $res .= translate_text($child);
+    return $res."}";
+  } else if ("raw" === $node->tagName)
+    return "[".$node->nodeValue."]";
+  else if ("rOff" === $node->tagName) {
+    return "{rOff ".translate_child_text($node)."}";
+  } else if ("num" === $node->tagName)
+    return "{num ".$node->nodeValue."}";
+  else if ("face" === $node->tagName)
+    return "{face ".$node->nodeValue."}";
+  else if ("bOff" === $node->tagName)
+    return "{bOff ".$node->nodeValue."}";
+  else if ("bns" === $node->tagName)
+    return "{bns ".$node->nodeValue."}";
+  else if ("mul" === $node->tagName)
+    return "{mul ".$node->nodeValue."}";
+  else if ("kind" === $node->tagName)
+    return "{kind ".$node->nodeValue."}";
+  else if ("notappl" === $node->tagName)
+    return "{n/a}";
+  else if ("define" === $node->tagName)
+    return "{def".translate_text($node->childNodes)."}";
   else if ("crushing" === $node->tagName)
-    return "{def crushing}";
+    return "crushing";
   else if ("math" === $node->tagName)
-    return "{math }";
+    return "{math ".translate_text($node->childNodes)."}";
+  else if ("mrow" === $node->tagName)
+    return "{mrow ".translate_text($node->childNodes)."}";
+  else if ("mi" === $node->tagName)
+    return "{mi ".translate_text($node->childNodes)."}";
+  else if ("mo" === $node->tagName)
+    return "{mo ".translate_text($node->childNodes)."}";
+  else if ("mn" === $node->tagName)
+    return "{mn ".translate_text($node->childNodes)."}";
+  else if ("msup" === $node->tagName)
+    return "{msup ".translate_text($node->childNodes)."}";
+  else if ("munderover" === $node->tagName)
+    return "{munderover ".translate_text($node->childNodes)."}";
+  else if ("mfrac" === $node->tagName)
+    return "{mfrac ".translate_text($node->childNodes)."}";
+  else if ("mstyle" === $node->tagName)
+    return "{mstyle ".translate_text($node->childNodes)."}";
   else if ($node->nodeType === 3)
     return $node->nodeValue;
-  return "{nodeType ".(string) $node->nodeType."}";
+  else
+    return "{nodeType ".$node->nodevalue."@".$node->tagName.":".(string) $node->nodeType."}";
 }
 
 function text_click($apathy,$unique_id,$target) {
