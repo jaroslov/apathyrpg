@@ -58,36 +58,6 @@
             <a href="#{generate-id(.)}" name="{$pt-uid}">
               <xsl:value-of select="title" />
             </a>
-            <ol class="toc" >
-              <xsl:for-each select="chapter">
-                <xsl:variable name="ch-uid" select="title/@unique-id" />
-                <li>
-                  <a href="#{generate-id(.)}" name="{$ch-uid}">
-                    <xsl:value-of select="title" />
-                  </a>
-                  <ol class="toc" >
-                    <xsl:for-each select="section">
-                      <xsl:variable name="secO-uid" select="title/@unique-id" />
-                      <li>
-                        <a href="#{generate-id(.)}" name="{$secO-uid}">
-                          <xsl:value-of select="title" />
-                        </a>
-                        <ol class="toc" >
-                          <xsl:for-each select="section">
-                            <xsl:variable name="secI-uid" select="title/@unique-id" />
-                            <li>
-                              <a href="#{generate-id(.)}" name="{$secI-uid}">
-                                <xsl:value-of select="title" />
-                              </a>
-                            </li>
-                          </xsl:for-each>
-                        </ol>
-                      </li>
-                    </xsl:for-each>
-                  </ol>
-                </li>
-              </xsl:for-each>
-            </ol>
           </li>
         </xsl:for-each>
       </ol>
@@ -257,7 +227,9 @@
   <xsl:template match="text">
     <xsl:variable name="text-uid" select="./@unique-id" />
     <p name="{$text-uid}" class="regular-text"
-      onClick="ajaxFunction('{$text-uid}','{$text-uid}','Click',value)"><xsl:apply-templates /></p>
+      onClick="ajaxFunction('{$text-uid}','{$text-uid}','Click','')">
+        <xsl:apply-templates />
+    </p>
   </xsl:template>
   <!-- examples -->
   <xsl:template match="example">
