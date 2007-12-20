@@ -50,13 +50,13 @@ div.toc h1 {
   font-weight: bold;
 }
 .Chooser {
-  width: 10em;
+  width: 15em;
 }
 .Chooser option {
   font-variant: small-caps;
 }
 .MainChooser {
-  width: 10em;
+  width: 15em;
 }
 .OutlineItem {
   width: 30em;
