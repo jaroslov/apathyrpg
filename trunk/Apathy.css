@@ -30,6 +30,35 @@ div.toc h1 {
   font-variant: small-caps;
   font-size: 16pt;
 }
+.OutlineItem {
+  width: 30em;
+  height: 1.3em;
+}
+.Text {
+  width: 50em;
+  height: 8em;
+}
+.TitleText {
+  width: 20em;
+  height: 1.5em;
+}
+.TableHeadText {
+  width: 10em;
+  height: 1.5em;
+}
+.TableRowText {
+  width: 15em;
+  height: 4em;
+}
+ul.itemized-list li textarea.Text {
+  height: 5em;
+}
+ol.numbered-list li textarea.Text {
+  height: 5em;
+}
+table.description-list td.Text {
+  height: 5em;
+}
 ol.toc {
   list-style-position: outside;
   list-style-type: decimal;
@@ -38,12 +67,18 @@ ol.toc {
 }
 ol.toc ol {
   list-style-type: upper-roman;
+  margin-left: .5em;
+  padding-left: 0em;
 }
 ol.toc ol ol {
   list-style-type: lower-roman;
+  margin-left: .5em;
+  padding-left: 0em;
 }
 ol.toc ol ol ol {
   list-style-type: lower-alpha;
+  margin-left: .5em;
+  padding-left: 0em;
 }
 ol.toc li {
   font-variant: small-caps;
@@ -123,6 +158,8 @@ div.example span.example-title {
   font-variant: small-caps;
   font-weight: bold;
   padding-right: 1em;
+  width: 35em;
+  height: 3em;
 }
 span.ApAthy {
   font-variant: small-caps;
