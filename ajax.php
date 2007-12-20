@@ -5,7 +5,8 @@ $target = $_GET["target"];
 $code = $_GET["code"];
 $message = $_GET["message"];
 $ApathyName = "Apathy.tmp.xml";
-$Apathy = simplexml_load_file($ApathyName);
+$ApathyXml = simplexml_load_file($ApathyName);
+$ApathyDom = dom_import_simplexml($ApathyXml)->ownerDocument;
 
 function encode_html ($html) {
   $html = str_replace("<lsquo/>","&lsquo;",$html);
