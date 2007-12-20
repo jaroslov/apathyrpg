@@ -67,8 +67,9 @@ function build_responses($targets, $payloads) {
   return $result;
 }
 
-function text_click($Apathy,$unique_id,$target) {
-  return build_response($target,"<b>".$unique_id."@".$target."</b>");
+function text_click($apathy,$unique_id,$target) {
+  $element = $apathy->getElementById($unique_id);
+  return build_response($target,"<b>".$unique_id." ? ".(string) $element."</b>");
 }
 
 function respond($trg,$src,$code,$msg,$apathy) {
@@ -82,7 +83,7 @@ function respond($trg,$src,$code,$msg,$apathy) {
     ." with ".$trg."->".$src."@".$msg."</p>");
 }
 
-echo respond($target,$source,$code,$message,$Apathy);
+echo respond($target,$source,$code,$message,$ApathyDom);
 
 $handle = fopen($ApathyName, "w");
 fwrite($handle, $Apathy->saveXML());
