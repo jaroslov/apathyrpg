@@ -9,6 +9,9 @@ format: Apathy.xml Apathy.format.xsl
 xhtml: Apathy.xml Apathy.html.xsl Apathy.css
 	xsltproc -o Apathy.xhtml Apathy.html.xsl Apathy.xml
 
+wform: Apathy.xml Apathy.wform.xsl Apathy.css
+	xsltproc -o Apathy.php Apathy.wform.xsl Apathy.xml
+
 latex: Apathy.xml Apathy.latex.xsl
 	xsltproc -o Apathy.tex Apathy.latex.xsl Apathy.xml
 

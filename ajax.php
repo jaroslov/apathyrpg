@@ -159,8 +159,21 @@ function get_attribute ($element,$which) {
 function make_chooser_path($apathy,$path) {
   $selects = array();
   $pathparts = explode("/",$path);
+  $element = $apathy;
+  $newpath = array();
   foreach ($pathparts as $pdx => $pathpart) {
-    $select = "<select class='Chooser'>";
+    $nelement = $element->children()[$pathpart];
+    $select = "<select class='MainChooser'>";
+    $select .= make_option_for_select("NoResponse","Choose...",false);
+    $select .= make_option_for_select("NoResponse",(string) $pathpart,false);
+    foreach ($nelement->children() as $child) {
+      $tagname = $child->getName();
+      if ($tagname === "part" or $tagname === "chapter"
+        or $tagname === "section" or $tagname === "book") {
+        $title = (string) $child->title;
+        $select .= make_option_for_select("",$title,false);
+      }
+    }
     $select .= "</select>";
     array_push($selects,$select);
   }
@@ -200,10 +213,14 @@ function respond($trg,$src,$code,$msg,$apathy) {
     $result = initial_load($trg,$src,$code,$msg,$apathy);
     if (false !== $result)
       return $result;
+  } else if ("ChoosePath" === $code) {
+    $result = initial_load($trg,$src,$code,$msg,$apathy);
+    if (false !== $result)
+      return $result;
   } else if ("NoResponse" === $code) {
     return build_empty_response();
   }
-  return build_response("Body","<p>Not a known code:".$code."</p>");
+  return build_response($trg,"<p>Not a known code:".$code."</p>");
 }
 
 echo respond($target,$source,$code,$message,$Apathy);
