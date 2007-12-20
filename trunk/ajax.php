@@ -69,7 +69,7 @@ function build_responses($targets, $payloads) {
 
 function text_click($apathy,$unique_id,$target) {
   $element = $apathy->getElementById($unique_id);
-  return build_response($target,"<b>".$unique_id." ? ".(string) $element."</b>");
+  return build_response($target,"<b>".$unique_id." ? ".$element->name."</b>");
 }
 
 function respond($trg,$src,$code,$msg,$apathy) {
