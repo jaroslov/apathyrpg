@@ -4,7 +4,7 @@ $source = $_GET["source"];
 $target = $_GET["target"];
 $code = $_GET["code"];
 $message = $_GET["message"];
-$ApathyName = "Apathy.xml";
+$ApathyName = "Apathy.tmp.xml";
 $Apathy = simplexml_load_file($ApathyName);
 
 function encode_html ($html) {
