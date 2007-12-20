@@ -249,7 +249,7 @@ Josh Kramer}
   <xsl:template match="description-list">
 \begin{description}
     <xsl:for-each select="item">
-  \item[<xsl:apply-templates select="description" />] <xsl:apply-templates select="text" />
+  \item[<xsl:apply-templates select="description" />] <xsl:apply-templates select="text|numbered-list|description-list|note|example|table|figure|math" />
     </xsl:for-each>
 \end{description}
   </xsl:template>

@@ -64,7 +64,7 @@ function build_responses($targets, $payloads) {
 function translate_child_text($node) {
   $text = "";
   foreach ($node->childNodes as $child)
-    $text .= translate_text($node);
+    $text .= translate_text($child);
   return $text;
 }
 
@@ -105,27 +105,24 @@ function translate_text($node) {
     return "*";
   else if ("Sum" === $node->tagName)
     return "&#8721;";
-  else if ("roll" === $node->tagName) {
-    $res = "{roll ";
-    foreach ($node->childNodes as $child)
-      $res .= translate_text($child);
-    return $res."}";
-  } else if ("raw" === $node->tagName)
-    return "[".$node->nodeValue."]";
-  else if ("rOff" === $node->tagName) {
+  else if ("roll" === $node->tagName)
+    return "{roll ".translate_child_text($node)."}";
+  else if ("raw" === $node->tagName)
+    return "[".translate_child_text($node)."]";
+  else if ("rOff" === $node->tagName)
     return "{rOff ".translate_child_text($node)."}";
-  } else if ("num" === $node->tagName)
-    return "{num ".$node->nodeValue."}";
+  else if ("num" === $node->tagName)
+    return "{num ".translate_child_text($node)."}";
   else if ("face" === $node->tagName)
-    return "{face ".$node->nodeValue."}";
+    return "{face ".translate_child_text($node)."}";
   else if ("bOff" === $node->tagName)
-    return "{bOff ".$node->nodeValue."}";
+    return "{bOff ".translate_child_text($node)."}";
   else if ("bns" === $node->tagName)
-    return "{bns ".$node->nodeValue."}";
+    return "{bns ".translate_child_text($node)."}";
   else if ("mul" === $node->tagName)
-    return "{mul ".$node->nodeValue."}";
+    return "{mul ".translate_child_text($node)."}";
   else if ("kind" === $node->tagName)
-    return "{kind ".$node->nodeValue."}";
+    return "{kind ".translate_child_text($node)."}";
   else if ("notappl" === $node->tagName)
     return "{n/a}";
   else if ("define" === $node->tagName)
@@ -133,23 +130,25 @@ function translate_text($node) {
   else if ("crushing" === $node->tagName)
     return "crushing";
   else if ("math" === $node->tagName)
-    return "{math ".translate_text($node->childNodes)."}";
+    return "{math ".translate_child_text($node)."}";
   else if ("mrow" === $node->tagName)
-    return "{mrow ".translate_text($node->childNodes)."}";
+    return "{".translate_child_text($node)."}";
   else if ("mi" === $node->tagName)
-    return "{mi ".translate_text($node->childNodes)."}";
+    return translate_child_text($node);
   else if ("mo" === $node->tagName)
-    return "{mo ".translate_text($node->childNodes)."}";
+    return translate_child_text($node);
   else if ("mn" === $node->tagName)
-    return "{mn ".translate_text($node->childNodes)."}";
+    return translate_child_text($node);
   else if ("msup" === $node->tagName)
-    return "{msup ".translate_text($node->childNodes)."}";
+    return "{msup ".translate_child_text($node)."}";
   else if ("munderover" === $node->tagName)
-    return "{munderover ".translate_text($node->childNodes)."}";
+    return "{munderover ".translate_child_text($node)."}";
   else if ("mfrac" === $node->tagName)
-    return "{mfrac ".translate_text($node->childNodes)."}";
+    return "{mfrac ".translate_child_text($node)."}";
   else if ("mstyle" === $node->tagName)
-    return "{mstyle ".translate_text($node->childNodes)."}";
+    return "{mstyle ".translate_child_text($node)."}";
+  else if ("footnote" === $node->tagName)
+    return "{footnote}";
   else if ($node->nodeType === 3)
     return $node->nodeValue;
   else

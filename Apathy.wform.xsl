@@ -309,7 +309,7 @@
           <xsl:apply-templates select="description" />
         </td>
         <td class="description-definition">
-          <xsl:apply-templates select="text" />
+          <xsl:apply-templates select="text|numbered-list|description-list|note|example|table|figure|math" />
         </td>
       </tr>
     </xsl:for-each>
