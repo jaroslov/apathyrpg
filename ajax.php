@@ -42,15 +42,6 @@ function depseudo_html ($html) {
   return $html;
 }
 
-function build_response ($target, $payload) {
-  return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" .
-      "<response><target>" .
-      $target .
-      "</target><payload>" .
-      encode_html($payload) .
-      "</payload></response>";
-}
-
 function get_categories($apathy,$path) {
   $result = array();
   if ($apathy === false) {
@@ -113,18 +104,26 @@ function display_datum($apathy,$path) {
   $tablepartname = array();
   $tablepartform = array();
   $description = "";
+  $desc_uid = "";
   $tablepartheight = 5;
   $fieldname = "";
   for ($idx = 0; $idx < sizeof($datum->field); $idx++) {
     $attrs = $datum->field[$idx]->attributes();
+    $uid = "";
     $kind = "table";
+    foreach ($attrs as $key => $value)
+      if ($key === "unique-id") 
+        $uid = (string) $value;
     foreach ($attrs as $key => $value) {
       if ($key === "name") {
-          array_push($tablepartname, (string) $value);
+          array_push($tablepartname,
+            "<sup class='display-uid'>".$uid."</sup>".(string) $value);
       }
       if ($key === "description") {
-        if ("yes" === (string) $value)
+        if ("yes" === (string) $value) {
           $kind = "description";
+          $desc_uid = $uid;
+        }
       } else {
         if ($key === "title")
           if ("yes" === (string) $value) {
@@ -140,12 +139,12 @@ function display_datum($apathy,$path) {
     } else if ($kind === "description")
       $description = $datum->field[$idx];
   }
-  //return "<p>FOO</p>";
   if (sizeof($tablepartform) > 0) {
     $height = sizeof($tablepartform)*$tablepartheight;
     $displaytable .= "<tr><td></td><td>"
       ."<p align='center' class='TableLabel'>Aspects</p></td><td>"
-      ."<p align='center' class='TableLabel'>Description</p></td></tr>";
+      ."<p align='center' class='TableLabel'>Description<br/>"
+      ."<span class='display-uid'>".$uid."</span></p></td></tr>";
     $displaytable .= "<tr><td><p align='right' class='TableLabel'>"
       .$tablepartname[0]
       .":&rsaquo;</p></td><td>".$tablepartform[0]."</td><td rowspan=\"".
@@ -166,7 +165,7 @@ function display_datum($apathy,$path) {
     .(string) $path."\"'/></p>";
   $displaytable .= "</tr>";
   $displaytable .= "</table>";
-  return "<br/>" . $displaytable;
+  return "<br id=\"DropDead\"/>" . $displaytable;
 }
 
 function show_category($apathy,$path) {
@@ -227,23 +226,20 @@ function load_category($apathy,$path) {
 }
 
 function make_textarea($contents,$width,$height,$Id,$target) {
-  $result= "<textarea class='StdTextArea' id="
-    .$Id.""
-//    ."' onKeyUp=\"ajaxFunction(id,"
-//    .$target
-//    .",'ChangeValue:"
-//    ."',value)\""
-    ." style='width:"
-    .$width
-    .";height:"
-    .$height
-    .";'>"
+  $result= "<textarea class='StdTextArea' id=".$Id.""
+    ."' onChange=\"ajaxFunction(".$Id.",".$Id.",'ChangeValue:"."',value)\""
+    ." style='width:".$width.";height:".$height.";'>"
     .$contents
     ."</textarea>";
-  return $result;
+  //return $result;
+  return "<textarea>".$Id."@".$target."</textarea>";
 }
 
 function render_as_editable($position,$width,$height) {
+  $attrs = $position->attributes();
+  foreach ($attrs as $key => $value)
+    if ("unique-id" === (string) $value)
+      $uid = (string) $value;
   if ("book" === (string) $position->getName()) {
     $parts = $position->part;
     $result = "<br /><ol class=\"RomanList\">";
@@ -255,7 +251,7 @@ function render_as_editable($position,$width,$height) {
   } else if ("part" === (string) $position->getName()) {
     $result = "<div class='BookStyled'>";
     $result .= make_textarea((string)$position->title[0],
-      $width,"3em","'None'","this.id");
+      $width,"3em",$uid,"this.id");
     $result .= "<ol class=\"RomanList\">";
     foreach ($position->chapter as $v => $chapter) {
       $result .= "<li>".load_all_book($chapter,$width,$height)."</li>";
@@ -266,7 +262,7 @@ function render_as_editable($position,$width,$height) {
   } else if ("chapter" === (string) $position->getName()) {
     $result = "<div class='BookStyled'>";
     $result .= make_textarea((string) $position->title[0],
-      $width,"3em","'None'","this.id");
+      $width,"3em",$uid,"this.id");
     $result .= "<ol class=\"RomanList\">";
     foreach ($position->section as $v => $section) {
       $result .= "<li>".load_all_book($section,$width,$height)."</li>";
@@ -277,7 +273,7 @@ function render_as_editable($position,$width,$height) {
   } else if ("section" === (string) $position->getName()) {
     $result = "<div class='BookStyled'>";
     $result .= make_textarea((string) $position->title[0],
-      $width,"3em","'None'","this.id");
+      $width,"3em",$uid,"this.id");
     $result .= "<ol class=\"RomanList\">";
     foreach ($position->children() as $v => $child) {
       if ("title" !== $child->getName())
@@ -287,34 +283,30 @@ function render_as_editable($position,$width,$height) {
     $result .= "</div>";
     return $result;
   } else if ("text" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("itemized-list" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("numbered-list" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("description-list" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("figure" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("note" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("equation" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("example" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("reference" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("table" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("summarize" === (string) $position->getName()) {
-    return make_textarea($position->asXML(),$width,$height,"'None'","this.id");
+    return make_textarea($position->asXML(),$width,$height,$uid,"this.id");
   } else if ("field" === (string) $position->getName()) {
-    $uniquename = "'None'";
-    foreach ($position->attributes() as $key => $value)
-      if ("name" === (string) $key)
-        $uniquename = (string) $value;
     return make_textarea((string) $position->asXML(),
-      $width,$height,(string)$uniquename,"id");
+      $width,$height,$uid,"this.id");
   }
   return "What is: " . (string) $position->getName();
 }
@@ -364,14 +356,147 @@ function determine_response($from,$to,$code,$msg,$apathy) {
   $parts = explode(":",$code);
   if ("ChangeValue" === $parts[0]) {
     $bits = explode("/",$parts[1]);
-    return "@".encode_html($msg);
-    //return make_textarea($bits[0],$bits[1],$bits[2],$bits[3],encode_html($msg));
+    return encode_html($msg);
   }
   return "I don't know that message: ".pseudo_html($code."@".$msg)."";
 }
 
-echo build_response($target,
-  determine_response($source,$target,$code,$message,$Apathy));
+function make_option_for_select($value,$message,$selected) {
+  $result = "<option";
+  if ($selected)
+    $result .= " selected";
+  $result .= " value='".$value."'>".$message."</option>";
+  return $result;
+}
+
+function make_main_chooser($which) {
+  $select = "<select class='MainChooser'"
+    ." onChange=\"ajaxFunction(id,'Body',value,value)\""
+    .">";
+  if ("None" === $which)
+    $select .= make_option_for_select("InitialLoad","Choose...",true);
+  else
+    $select .= make_option_for_select("InitialLoad","Choose...",false);
+  if ("Book" === $which)
+    $select .= make_option_for_select("InitializeBook","Book",true);
+  else
+    $select .= make_option_for_select("InitializeBook","Book",false);
+  if ("RawData" === $which)
+    $select .= make_option_for_select("InitializeRawData","Raw Data",true);
+  else
+    $select .= make_option_for_select("InitializeRawData","Raw Data",false);
+  $select .= "</select>";
+  return $select;
+}
+
+function location_path($path) {
+  $result = "<span class=''>";
+  if (is_array($path)) {
+    foreach ($path as $S => $value)
+      $result .= " &raquo; " . (string) $value;
+  } else {
+    $result .= " &raquo; " . (string) $path;
+  }
+  $result .= "</span>";
+  return $result;
+}
+
+function get_attribute ($element,$which) {
+  foreach ($element->attributes() as $key => $value)
+    if ($which === (string) $key)
+      return (string) $value;
+  return "";
+}
+
+function select_categories_on_path($categories,$path) {
+  $result = array();
+  foreach ($categories as $nn => $category) {
+    $namepath = explode("/",get_attribute($category,"name"));
+    $pathlen = sizeof($path);
+    if (sizeof($namepath) > $pathlen)
+      $pathlen = sizeof($namepath);
+    $usecategory = true;
+    for ($idx = 0; $idx < $pathlen; $idx++)
+      if ($path[$idx] !== $namepath[$idx])
+        $usecategory = false;
+    if ($usecategory)
+      array_push($result, $category);
+  }
+  return $result;
+}
+
+// returns a list
+function load_category_from_path($apathy,$path) {
+  $result = array();
+  $pathparts = explode("/",$path);
+  $categories = $apathy->{'raw-data'}->category;
+  $newpath = array();
+  foreach ($pathparts as $idx => $part) {
+    array_push($newpath,$part);
+    $categories = select_categories_on_path($categories,$newpath);
+    $select = "<select class='Chooser'>";
+    $select .= make_option_for_select("","Choose...",true);
+    foreach ($categories as $nn => $category) {
+      $select .= make_option_for_select(get_attribute($category,"unique-id"),
+        get_attribute($category,"name"),false);
+    }
+    $select .= "</select>";
+    array_push($result,$select);
+  }
+  return $result;
+}
+
+function initialize_raw_data($trg,$src,$code,$msg,$apathy) {
+  $result = make_main_chooser("RawData");
+  $path = load_category_from_path($apathy,"Content");
+  $result .= location_path($path);
+  return build_response("Body",$result);
+}
+
+function initial_load($trg,$src,$code,$msg,$apathy) {
+  return build_response("Body", make_main_chooser("None"));
+}
+
+function build_empty_response() {
+  $targets = array();
+  $payloads = array();
+  return build_responses($targets, $payloads);
+}
+
+function build_response($target, $payload) {
+  $targets = array();
+  array_push($targets,$target);
+  $payloads = array();
+  array_push($payloads,$payload);
+  return build_responses($targets, $payloads);
+}
+
+function build_responses($targets, $payloads) {
+  $result = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><reply>";
+  for ($idx = 0; $idx < sizeof($targets); $idx++) {
+    $result .= "<response><target>".$targets[$idx]."</target>";
+    $result .= "<payload>".encode_html($payloads[$idx])."</payload></response>";
+  }
+  $result .= "</reply>";
+  return $result;
+}
+
+function respond($trg,$src,$code,$msg,$apathy) {
+  if ("InitialLoad" === $code) {
+    $result = initial_load($trg,$src,$code,$msg,$apathy);
+    if (false !== $result)
+      return $result;
+  } else if ("InitializeRawData" === $code) {
+    $result = initialize_raw_data($trg,$src,$code,$msg,$apathy);
+    if (false !== $result)
+      return $result;
+  } else if ("NoResponse" === $code) {
+    return build_empty_response();
+  }
+  return build_response("Body","<p>Not a known code:".$code."</p>");
+}
+
+echo respond($target,$source,$code,$message,$Apathy);
 
 $handle = fopen($ApathyName, "w");
 fwrite($handle, $Apathy->saveXML());
