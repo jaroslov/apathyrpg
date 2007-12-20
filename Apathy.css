@@ -16,6 +16,16 @@ a:hover {
   color: black;
   text-decoration: underline;
 }
+a.regular-text {
+  font-size: 12pt;
+  text-align: justify;
+  font-color: black;
+}
+a.regular-text:hover {
+  font-size: 12pt;
+  text-align: justify;
+  font-color: black;
+}
 div.equations a:hover {
   text-decoration: none;
   color: red;

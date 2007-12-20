@@ -19,6 +19,7 @@
       <head>
         <title>Apathy Manual (ARPG)</title>
         <link rel="stylesheet" type="text/css" href="Apathy.css" title="Apathy" />
+        <script lanaguage="javascript" src="ajax.js" />
       </head>
       <body>
         <xsl:apply-templates select="//book" />      
@@ -174,7 +175,7 @@
   <!-- special "rsquo" word -->
   <xsl:template match="rsquo">&#8217;</xsl:template>
   <!-- special "times" word -->
-  <xsl:template match="times">&#215;</xsl:template>
+  <xsl:template match="times">*</xsl:template>
   <!-- special "ouml" word -->
   <xsl:template match="ouml">&#246;</xsl:template>
   <!-- special "oslash" word -->
@@ -255,7 +256,8 @@
   <!-- text blocks -->
   <xsl:template match="text">
     <xsl:variable name="text-uid" select="./@unique-id" />
-    <p name="{$text-uid}"><xsl:apply-templates /></p>
+    <p name="{$text-uid}" class="regular-text"
+      onClick="ajaxFunction('{$text-uid}','{$text-uid}','Click',value)"><xsl:apply-templates /></p>
   </xsl:template>
   <!-- examples -->
   <xsl:template match="example">
