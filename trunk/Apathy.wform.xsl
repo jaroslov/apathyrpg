@@ -154,7 +154,7 @@
   <!-- special "Apathy" word -->
   <xsl:template match="Apathy">[Apathy/]</xsl:template>
   <!-- special "C" word -->
-  <xsl:template match="C"><span class="defined">C</span></xsl:template>
+  <xsl:template match="C">[C/]</xsl:template>
   <!-- special "plusminus" word -->
   <xsl:template match="plusminus">&#177;</xsl:template>
   <!-- special "and" word -->
@@ -262,15 +262,9 @@
     </span>
   </xsl:template>
   <!-- "n/a" notappl -->
-  <xsl:template match="notappl">
-    <span class="notappl">n/a</span>
-  </xsl:template>
+  <xsl:template match="notappl">[n/a/]</xsl:template>
   <!-- define -->
-  <xsl:template match="define">
-    <span class="definition" id=".">
-      <xsl:value-of select="." />
-    </span>
-  </xsl:template>
+  <xsl:template match="define">[<xsl:value-of select="." />/]</xsl:template>
   <!-- all titles -->
   <xsl:template match="title">
     <h1><xsl:apply-templates /></h1>
@@ -310,7 +304,7 @@
   <!-- Block Non-Structure -->
   <!-- text blocks -->
   <xsl:template match="text">
-    <textarea class='Text'><xsl:apply-templates /></textarea>
+    <textarea class='Text'><xsl:apply-templates /></textarea><br/>
   </xsl:template>
   <!-- examples -->
   <xsl:template match="example">
@@ -327,7 +321,7 @@
     <div class="note">
       <p>
         <span class="note-exclaim">Note!</span>
-        <xsl:apply-templates />
+        <textarea class="Text"><xsl:apply-templates /></textarea>
       </p>
     </div>
   </xsl:template>
