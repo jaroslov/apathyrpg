@@ -14,9 +14,8 @@ function ajaxFunction(Source,Target,Code,Message) {
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var target = responseXml.getElementsByTagName("target")[0].firstChild.nodeValue;
-      document.title = target;
       var payload = responseXml.getElementsByTagName("payload")[0].firstChild.nodeValue;
-      document.getElementById(target).innerHTML = realUnescape(payload);
+      document.getElementsByName(target)[0].innerHTML = realUnescape(payload);
     }
   }
   xmlHttp.open("GET","ajax.php?source="+Source
