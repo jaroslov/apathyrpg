@@ -267,7 +267,7 @@
   <xsl:template match="define">[<xsl:value-of select="." />/]</xsl:template>
   <!-- all titles -->
   <xsl:template match="title">
-    <h1><xsl:apply-templates /></h1>
+    <h1><xsl:apply-templates /><textarea class="TitleText"><xsl:apply-templates /></textarea></h1>
   </xsl:template>
   <!-- footnote -->
   <xsl:template match="footnote">
@@ -310,7 +310,7 @@
   <xsl:template match="example">
     <div class="example" id="{generate-id(.)}">
       <h1>
-        <textarea class="example-title">Example:</textarea>
+        Example:
         <xsl:apply-templates select="title" />
       </h1>
       <xsl:apply-templates select="text" />
@@ -391,7 +391,7 @@
             <xsl:variable name="cellspan" select="./@span" />
             <xsl:variable name="border" select="./@border" />
             <td colspan="{$cellspan}" class="{$border}" >
-              <xsl:apply-templates />
+              <textarea class="TableRowText"><xsl:apply-templates /></textarea>
             </td>
           </xsl:for-each>
         </tr>
