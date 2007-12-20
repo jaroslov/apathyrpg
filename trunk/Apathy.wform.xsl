@@ -203,30 +203,73 @@
   <!-- part -->
   <xsl:template match="part">
     <xsl:variable name="pt-uid" select="./@unique-id" />
-      <xsl:apply-templates />
+    <div name="{$pt-uid}" id="{generate-id(.)}">
+      <xsl:apply-templates select="title"/>
+      <div class="toc" id="Table-of-Contents">
+        <ol class="toc">
+          <xsl:for-each select="chapter">
+            <xsl:variable name="ch-uid" select="title/@unique-id" />
+            <li>
+              <a href="#{generate-id(.)}" name="{$ch-uid}">
+                <xsl:value-of select="title" />
+              </a>
+            </li>
+          </xsl:for-each>
+        </ol>
+      </div>
+      <xsl:apply-templates select="chapter"/>
     </div>
   </xsl:template>
   <!-- chapter -->
   <xsl:template match="chapter">
     <xsl:variable name="ch-uid" select="./@unique-id" />
     <div class="chapter" id="{generate-id(.)}" name="{$ch-uid}">
-      <xsl:apply-templates />
+      <xsl:apply-templates select="title" />
+      <div class="toc" id="Table-of-Contents">
+        <ol class="toc">
+          <xsl:for-each select="section">
+            <xsl:variable name="sec-uid" select="title/@unique-id" />
+            <li>
+              <a href="#{generate-id(.)}" name="{$sec-uid}">
+                <xsl:value-of select="title" />
+              </a>
+            </li>
+          </xsl:for-each>
+        </ol>
+      </div>
+      <xsl:apply-templates select="section" />
     </div>
   </xsl:template>
   <!-- section -->
   <xsl:template match="section">
     <xsl:variable name="sec-uid" select="./@unique-id" />
     <div class="section" id="{generate-id(.)}" name="{$sec-uid}">
-      <xsl:apply-templates />
+      <xsl:apply-templates select="title"/>
+      <div class="toc" id="Table-of-Contents">
+        <ol class="toc">
+          <xsl:for-each select="section">
+            <xsl:variable name="sub-uid" select="title/@unique-id" />
+            <li>
+              <a href="#{generate-id(.)}" name="{$sub-uid}">
+                <xsl:value-of select="title" />
+              </a>
+            </li>
+          </xsl:for-each>
+        </ol>
+      </div>
+      <xsl:apply-templates select="section|reference|text|example|description-list|itemized-list|numbered-list|figure|equation|note|table"/>
     </div>
   </xsl:template>
 
   <!-- Block Non-Structure -->
+  <xsl:template match="text()">
+    <xsl:value-of select="."/>
+  </xsl:template>
   <!-- text blocks -->
   <xsl:template match="text">
     <xsl:variable name="text-uid" select="./@unique-id" />
-    <p name="{$text-uid}" class="regular-text"
-      onClick="ajaxFunction('{$text-uid}','{$text-uid}','Click','')">
+    <p name="{$text-uid}" class="regular-text" id="{generate-id(.)}"
+      onClick="ajaxFunction(id,id,'Click:text','{$text-uid}@'+id)">
         <xsl:apply-templates />
     </p>
   </xsl:template>
@@ -257,6 +300,7 @@
   <xsl:template match="description-list">
     <xsl:variable name="dlist-uid" select="./@unique-id" />
     <table class="description-list" name="{$dlist-uid}">
+    <tr><td></td><td></td></tr>
     <xsl:for-each select="item">
       <xsl:variable name="ditem-uid" select="./@unique-id" />
       <xsl:variable name="desc-uid" select="description/@unique-id" />

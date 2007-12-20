@@ -93,7 +93,7 @@ table.description-list td.Text {
 }
 ol.toc {
   list-style-position: outside;
-  list-style-type: decimal;
+  list-style-type: upper-roman;
   margin-left: 2em;
   padding-left: .1em;
 }
@@ -207,12 +207,20 @@ span.definition {
 table.description-list {
   margin-right: 3em;
   margin-left: 3em;
+  border-collapse: collapse;
 }
 table.description-list tr {
   margin: 0em;
+  border-top: 1px solid black;
+}
+table.description-list th {
+  margin: 0em;
+  border: 0;
+  border-bottom: 1px solid black;
 }
 table.description-list td {
   margin: 0em;
+  border-bottom: 1px solid black;
 }
 table.description-list p {
   margin: 0;

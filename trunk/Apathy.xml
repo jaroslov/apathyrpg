@@ -739,7 +739,9 @@
           </section>
           <section unique-id="G0001171">
             <title unique-id="G0001172">Defending</title>
-            <text unique-id="G0001173">The target of an attack usually receives an attempt to defend himself.<note unique-id="G0001174">Defending is using your skills to avoid getting hit by an incoming attack.</note>There are many different skills that are available for defense. They are called defensive maneuvers. A defensive maneuver is a special skill or ability that you use specifically in response to being attacked; otherwise they work like normal skills. A target of an attack may attempt to use any one defensive maneuver in order to protect himself from the attack. The most common are parrying, blocking, and the Dodge skill. These are described below. Other defensive maneuvers may be found in the Martial Arts section.</text>
+            <text unique-id="G0001173">The target of an attack usually receives an attempt to defend himself.</text>
+	    <note unique-id="G0001174">Defending is using your skills to avoid getting hit by an incoming attack.</note>
+	    <text unique-id="H0">There are many different skills that are available for defense. They are called defensive maneuvers. A defensive maneuver is a special skill or ability that you use specifically in response to being attacked; otherwise they work like normal skills. A target of an attack may attempt to use any one defensive maneuver in order to protect himself from the attack. The most common are parrying, blocking, and the Dodge skill. These are described below. Other defensive maneuvers may be found in the Martial Arts section.</text>
             <description-list unique-id="G0001175">
               <item unique-id="G0001176">
                 <description unique-id="G0001177">Parry</description>
