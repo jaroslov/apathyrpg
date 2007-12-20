@@ -304,7 +304,7 @@
   <!-- Block Non-Structure -->
   <!-- text blocks -->
   <xsl:template match="text">
-    <textarea class='Text'><xsl:apply-templates /></textarea><br/>
+    <textarea class='Text'><xsl:apply-templates /></textarea>
   </xsl:template>
   <!-- examples -->
   <xsl:template match="example">
@@ -381,7 +381,7 @@
       <thead>
         <xsl:for-each select="head/cell">
           <th>
-            <xsl:apply-templates />
+            <textarea class="TableHeadText"><xsl:apply-templates /></textarea>
           </th>
         </xsl:for-each>
       </thead>
