@@ -369,26 +369,6 @@ function make_option_for_select($value,$message,$selected) {
   return $result;
 }
 
-function make_main_chooser($which) {
-  $select = "<select class='MainChooser'"
-    ." onChange=\"ajaxFunction(id,'Body',value,value)\""
-    .">";
-  if ("None" === $which)
-    $select .= make_option_for_select("InitialLoad","Choose...",true);
-  else
-    $select .= make_option_for_select("InitialLoad","Choose...",false);
-  if ("Book" === $which)
-    $select .= make_option_for_select("InitializeBook","Book",true);
-  else
-    $select .= make_option_for_select("InitializeBook","Book",false);
-  if ("RawData" === $which)
-    $select .= make_option_for_select("InitializeRawData","Raw Data",true);
-  else
-    $select .= make_option_for_select("InitializeRawData","Raw Data",false);
-  $select .= "</select>";
-  return $select;
-}
-
 function location_path($path) {
   $result = "<span class=''>";
   if (is_array($path)) {
@@ -408,53 +388,8 @@ function get_attribute ($element,$which) {
   return "";
 }
 
-function select_categories_on_path($categories,$path) {
-  $result = array();
-  foreach ($categories as $nn => $category) {
-    $namepath = explode("/",get_attribute($category,"name"));
-    $pathlen = sizeof($path);
-    if (sizeof($namepath) > $pathlen)
-      $pathlen = sizeof($namepath);
-    $usecategory = true;
-    for ($idx = 0; $idx < $pathlen; $idx++)
-      if ($path[$idx] !== $namepath[$idx])
-        $usecategory = false;
-    if ($usecategory)
-      array_push($result, $category);
-  }
-  return $result;
-}
-
-// returns a list
-function load_category_from_path($apathy,$path) {
-  $result = array();
-  $pathparts = explode("/",$path);
-  $categories = $apathy->{'raw-data'}->category;
-  $newpath = array();
-  foreach ($pathparts as $idx => $part) {
-    array_push($newpath,$part);
-    $categories = select_categories_on_path($categories,$newpath);
-    $select = "<select class='Chooser'>";
-    $select .= make_option_for_select("","Choose...",true);
-    foreach ($categories as $nn => $category) {
-      $select .= make_option_for_select(get_attribute($category,"unique-id"),
-        get_attribute($category,"name"),false);
-    }
-    $select .= "</select>";
-    array_push($result,$select);
-  }
-  return $result;
-}
-
-function initialize_raw_data($trg,$src,$code,$msg,$apathy) {
-  $result = make_main_chooser("RawData");
-  $path = load_category_from_path($apathy,"Content");
-  $result .= location_path($path);
-  return build_response("Body",$result);
-}
-
 function initial_load($trg,$src,$code,$msg,$apathy) {
-  return build_response("Body", make_main_chooser("None"));
+  return build_response("Body", make_chooser_path($apathy,$msg));
 }
 
 function build_empty_response() {
@@ -482,12 +417,8 @@ function build_responses($targets, $payloads) {
 }
 
 function respond($trg,$src,$code,$msg,$apathy) {
-  if ("InitialLoad" === $code) {
+  if ("Initialize" === $code) {
     $result = initial_load($trg,$src,$code,$msg,$apathy);
-    if (false !== $result)
-      return $result;
-  } else if ("InitializeRawData" === $code) {
-    $result = initialize_raw_data($trg,$src,$code,$msg,$apathy);
     if (false !== $result)
       return $result;
   } else if ("NoResponse" === $code) {
