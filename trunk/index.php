@@ -4,7 +4,6 @@
     <script type="text/javascript" src="ajax.js"></script>
   </head>
   <body onLoad="ajaxFunction('body','Body','InitialLoad','LoadApathy')">
-    <div id="Body">
-    </div>
+    <div id="Body"></div>
   </body>
 </html>
