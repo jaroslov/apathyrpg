@@ -40,6 +40,20 @@ div.toc h1 {
   font-variant: small-caps;
   font-size: 16pt;
 }
+.CurrentPosition {
+  font-variant: small-caps;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.Chooser {
+  width: 10em;
+}
+.Chooser option {
+  font-variant: small-caps;
+}
+.MainChooser {
+  width: 10em;
+}
 .OutlineItem {
   width: 30em;
   height: 1.3em;

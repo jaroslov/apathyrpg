@@ -54,7 +54,7 @@ function build_response ($target, $payload) {
 function get_categories($apathy,$path) {
   $result = array();
   if ($apathy === false) {
-    array_push($result,"Failed to load the xml file.");
+    array_push($result,"Failed to load the xml file; make sure \"Apathy.tmp.xml\" exists.");
   } else {
     $categories = $apathy->{'raw-data'}->category;
     for ($idx = 0; $idx < sizeof($categories); $idx++) {
@@ -120,7 +120,6 @@ function display_datum($apathy,$path) {
     $kind = "table";
     foreach ($attrs as $key => $value) {
       if ($key === "name") {
-        if (!$attrs["description"])
           array_push($tablepartname, (string) $value);
       }
       if ($key === "description") {
@@ -141,6 +140,7 @@ function display_datum($apathy,$path) {
     } else if ($kind === "description")
       $description = $datum->field[$idx];
   }
+  //return "<p>FOO</p>";
   if (sizeof($tablepartform) > 0) {
     $height = sizeof($tablepartform)*$tablepartheight;
     $displaytable .= "<tr><td></td><td>"
@@ -172,7 +172,7 @@ function display_datum($apathy,$path) {
 function show_category($apathy,$path) {
   $result = array();
   if ($apathy === false) {
-    return "<p>Failed to load the xml file.</p>";
+    return "<p>Failed to load the xml file. Make sure \"Apathy.tmp.xml\" exists.</p>";
   } else {
     $category = find_category($apathy,$path);
     $select = "<select style='width:20em;' ";
