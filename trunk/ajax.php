@@ -42,189 +42,6 @@ function depseudo_html ($html) {
   return $html;
 }
 
-function get_categories($apathy,$path) {
-  $result = array();
-  if ($apathy === false) {
-    array_push($result,"Failed to load the xml file; make sure \"Apathy.tmp.xml\" exists.");
-  } else {
-    $categories = $apathy->{'raw-data'}->category;
-    for ($idx = 0; $idx < sizeof($categories); $idx++) {
-      $attrs = $categories[$idx]->attributes();
-      foreach($attrs as $key => $value)
-        if ($key === "name") {
-          if (false !== strpos($value, $path)) {
-            $vparts = explode("/",$value);
-            $pparts = explode("/",$path);
-            $npath = implode("/",array_slice($vparts,0,sizeof($pparts)+1));
-            if (false === in_array($npath, $result))
-              array_push($result, $npath);
-          }
-        }
-    }
-  }
-  sort($result);
-  return $result;
-}
-
-function find_category($apathy,$path) {
-  $categories = $apathy->{'raw-data'}->category;
-  $category = false;
-  for ($idx = 0; $idx < sizeof($categories); $idx++) {
-    $attrs = $categories[$idx]->attributes();
-    foreach ($attrs as $key => $value)
-      if ($key === "name")
-        if (false !== strpos($value, $path))
-          $category = $categories[$idx];
-  }
-  return $category;
-}
-
-function find_datum($category,$name) {
-  for ($idx = 0; $idx < sizeof($category->datum); $idx++)
-    if ($name === (string) $category->datum[$idx]->field[0])
-      return $category->datum[$idx];
-  return false;
-}
-
-function get_datum($apathy,$path) {
-  $pathparts = explode("@",$path);
-  $datumname = $pathparts[0];
-  $categorypath = $pathparts[1];
-  $position = (int) $pathparts[2];
-  $category = find_category($apathy,$categorypath);
-  return $category->datum[$position];
-}
-
-function display_datum($apathy,$path) {
-  $datum = get_datum($apathy,$path);
-  if (false === $datum) {
-    return "<p>Could not find: ".$path."</p>";
-  }
-  $displaytable = "<table id='DatumDisplayTable' class='DisplayForm'>";
-  $tablepartname = array();
-  $tablepartform = array();
-  $description = "";
-  $desc_uid = "";
-  $tablepartheight = 5;
-  $fieldname = "";
-  for ($idx = 0; $idx < sizeof($datum->field); $idx++) {
-    $attrs = $datum->field[$idx]->attributes();
-    $uid = "";
-    $kind = "table";
-    foreach ($attrs as $key => $value)
-      if ($key === "unique-id") 
-        $uid = (string) $value;
-    foreach ($attrs as $key => $value) {
-      if ($key === "name") {
-          array_push($tablepartname,
-            "<sup class='display-uid'>".$uid."</sup>".(string) $value);
-      }
-      if ($key === "description") {
-        if ("yes" === (string) $value) {
-          $kind = "description";
-          $desc_uid = $uid;
-        }
-      } else {
-        if ($key === "title")
-          if ("yes" === (string) $value) {
-            $kind = "title";
-            $fieldname = (string) $datum->field[$idx];
-          }
-      }
-    }
-    if ($kind === "title" or $kind === "table") {
-      $tablep = render_as_editable($datum->field[$idx],
-        "35em",(string) $tablepartheight."em");
-      array_push($tablepartform,$tablep);
-    } else if ($kind === "description")
-      $description = $datum->field[$idx];
-  }
-  if (sizeof($tablepartform) > 0) {
-    $height = sizeof($tablepartform)*$tablepartheight;
-    $displaytable .= "<tr><td></td><td>"
-      ."<p align='center' class='TableLabel'>Aspects</p></td><td>"
-      ."<p align='center' class='TableLabel'>Description<br/>"
-      ."<span class='display-uid'>".$uid."</span></p></td></tr>";
-    $displaytable .= "<tr><td><p align='right' class='TableLabel'>"
-      .$tablepartname[0]
-      .":&rsaquo;</p></td><td>".$tablepartform[0]."</td><td rowspan=\"".
-      (string) sizeof($tablepartform)."\">"
-      .render_as_editable($description,"35em",(string)$height."em")
-      ."</td></tr>";
-  }
-  if (sizeof($tablepartform) > 1) {
-    for ($idx = 1; $idx < sizeof($tablepartform); $idx++)
-      $displaytable .= "<tr><td><p align='right' class='TableLabel'>"
-        .$tablepartname[$idx]
-        .":&rsaquo;</p></td><td>".$tablepartform[$idx]."</td><td></td></tr>";
-  }
-  $displaytable .= "<tr><td></td><td colspan='2'>";
-  $displaytable .= "<p align='center'><input style='width:40em;' "
-    ."type='button' onClick=\"\" value='Save changes to \""
-    //.(string) $fieldname."\"'/></p>";
-    .(string) $path."\"'/></p>";
-  $displaytable .= "</tr>";
-  $displaytable .= "</table>";
-  return "<br id=\"DropDead\"/>" . $displaytable;
-}
-
-function show_category($apathy,$path) {
-  $result = array();
-  if ($apathy === false) {
-    return "<p>Failed to load the xml file. Make sure \"Apathy.tmp.xml\" exists.</p>";
-  } else {
-    $category = find_category($apathy,$path);
-    $select = "<select style='width:20em;' ";
-    $select .= "onChange=\"ajaxFunction(id,'Display','Display',value)\">";
-    $select .= "<option value='NoResponse'>Choose...</option>";
-    for ($idx = 0; $idx < sizeof($category->datum); $idx++) {
-      $name = (string)$category->datum[$idx]->field[0];
-      $select .= "<option value='".$name."@".$path."@".(string) $idx."'>";
-      $select .= (string)$category->datum[$idx]->field[0];
-      $select .= "</option>";
-    }
-    $select .= "</select>";
-    $result = "<div id='Display'>";
-    $result .= "</div>";
-    return "&raquo; " . $select . $result;
-  }
-}
-
-function load_category($apathy,$path) {
-  $cats = get_categories($apathy,$path);
-  $res = "<select class='Chooser' ";
-  $res .= "onChange=\"ajaxFunction('body','Body','LoadCategory',value)\">";
-  $res .= "<option value='NoResponse'>Choose...</option>";
-  if ($path !== "Content") {
-    $res .= "<option value='";
-    $pathp = explode("/",$path);
-    $uppath = implode("/",array_slice($pathp,0,sizeof($pathp)-1));
-    if (false === strpos($uppath, "Content"))
-      $uppath = "Content";
-    $res .= $uppath;
-    $backto = "";
-    if (sizeof($pathp) > 1)
-      $backto = $pathp[sizeof($pathp)-2];
-    else
-      $backto = "Content";
-    $res .= "'>&lsaquo; ".$backto."</option>";
-  }
-  for ($i=0; $i<sizeof($cats); $i++) {
-    $res .= "<option value='";
-    $res .= $cats[$i];
-    $name = explode("/",$cats[$i]);
-    $res .= "'>" . $name[sizeof($name)-1] . "</option>";
-  }
-  $res .= "</select>";
-  $curpos = "<span class='CurrentPosition'>Apathy Raw-Data";
-  for ($idx = 1; $idx < sizeof($pathp); $idx++)
-    $curpos = $curpos . " &raquo; " . $pathp[$idx];
-  $result = $res . " &raquo; " . $curpos . "</span> ";
-  if (1 === sizeof($cats))
-    $result = $result . show_category($apathy,$path);
-  return load_apathy() . " " . $result;
-}
-
 function make_textarea($contents,$width,$height,$Id,$target) {
   $result= "<textarea class='StdTextArea' id=".$Id.""
     ."' onChange=\"ajaxFunction(".$Id.",".$Id.",'ChangeValue:"."',value)\""
@@ -311,56 +128,6 @@ function render_as_editable($position,$width,$height) {
   return "What is: " . (string) $position->getName();
 }
 
-function load_all_book($position) {
-  return render_as_editable($position,"80%","12em");
-}
-
-function load_book($apathy) {
-  $result = load_apathy() . " &raquo; Apathy Book";
-  $result .= load_all_book($apathy->book);
-  return $result;
-}
-
-function load_apathy() {
-  $select = "<select class='MainChooser'"
-    ." onChange=\"ajaxFunction(id,'Body','InitialLoad',value)\">";
-  $select .= "<option value='LoadApathy'>Choose...</option>";
-  $select .= "<option value='LoadBook:Book'>Book</option>";
-  $select .= "<option value='LoadCategory:Content'>Raw Data</option>";
-  $select .= "</select>";
-  return $select;
-}
-
-function determine_response($from,$to,$code,$msg,$apathy) {
-  if ("InitialLoad" === $code) {
-    if ("LoadApathy" === $msg)
-      return load_apathy();
-    $parts = explode(":",$msg);
-    if (sizeof($parts) > 1) {
-      if ($parts[0] === "LoadCategory") {
-        return load_category($apathy,$parts[1]);
-      } else if ($parts[0] === "Display") {
-        return display_datum($apathy,$parts[1]);
-      }
-      if ("LoadBook" === $parts[0]) {
-        return load_book($apathy,$parts[1]);
-      }
-    }
-  } else if ("LoadCategory" == $code) {
-    return load_category($apathy,$msg);
-  } else if ("Display" == $code) {
-    return display_datum($apathy,$msg);
-  }
-  if ("NoResponse" === $msg)
-    return "<p>&nbsp;</p>";
-  $parts = explode(":",$code);
-  if ("ChangeValue" === $parts[0]) {
-    $bits = explode("/",$parts[1]);
-    return encode_html($msg);
-  }
-  return "I don't know that message: ".pseudo_html($code."@".$msg)."";
-}
-
 function make_option_for_select($value,$message,$selected) {
   $result = "<option";
   if ($selected)
@@ -370,14 +137,15 @@ function make_option_for_select($value,$message,$selected) {
 }
 
 function location_path($path) {
-  $result = "<span class=''>";
+  $result = "";
   if (is_array($path)) {
-    foreach ($path as $S => $value)
-      $result .= " &raquo; " . (string) $value;
+    if (sizeof($path) > 0)
+      $result .= location_path($path[0]);
+    for ($pdx = 1; $pdx < sizeof($path); $pdx++)
+      $result .= " <span class=''>&raquo;</span> " . (string) $path[$pdx];
   } else {
-    $result .= " &raquo; " . (string) $path;
+    $result .= (string) $path;
   }
-  $result .= "</span>";
   return $result;
 }
 
@@ -386,6 +154,17 @@ function get_attribute ($element,$which) {
     if ($which === (string) $key)
       return (string) $value;
   return "";
+}
+
+function make_chooser_path($apathy,$path) {
+  $selects = array();
+  $pathparts = explode("/",$path);
+  foreach ($pathparts as $pdx => $pathpart) {
+    $select = "<select class='Chooser'>";
+    $select .= "</select>";
+    array_push($selects,$select);
+  }
+  return location_path($selects);
 }
 
 function initial_load($trg,$src,$code,$msg,$apathy) {
