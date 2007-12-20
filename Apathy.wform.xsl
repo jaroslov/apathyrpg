@@ -53,7 +53,7 @@
       <h1>Table of Contents</h1>
       <ol class="toc">
         <xsl:for-each select="//part">
-          <xsl:variable name="pt-uid" select="title/@id" />
+          <xsl:variable name="pt-uid" select="title/@xml:id" />
           <li>
             <a href="#{generate-id(.)}" name="{$pt-uid}">
               <xsl:value-of select="title" />
@@ -66,7 +66,7 @@
       <h1>List of Examples</h1>
       <ol class="examples">
         <xsl:for-each select="//example">
-          <xsl:variable name="ex-uid" select="title/@id" />
+          <xsl:variable name="ex-uid" select="title/@xml:id" />
           <li><a href="#{generate-id(.)}" name="{$ex-uid}">
             <xsl:apply-templates select="title/child::node()" />
           </a></li>
@@ -77,7 +77,7 @@
       <h1>List of Figures</h1>
       <ol class="figures">
         <xsl:for-each select="//figure">
-          <xsl:variable name="fig-uid" select="./@id" />
+          <xsl:variable name="fig-uid" select="./@xml:id" />
           <li>
             <a href="#{generate-id(.)}" name="{$fig-uid}">
               <xsl:apply-templates select="caption/child::node()" />
@@ -113,7 +113,7 @@
     <xsl:apply-templates select="part" />
     <div class="footnotes">
       <xsl:for-each select="//footnote">
-        <xsl:variable name="foot-uid" select="title/@id" />
+        <xsl:variable name="foot-uid" select="title/@xml:id" />
         <div class="footnote" id="{generate-id(.)}" name="{$foot-uid}">
           <p><xsl:number value="position()" /><xsl:apply-templates /></p>
         </div>
@@ -184,7 +184,7 @@
   <xsl:template match="define">{def <xsl:value-of select="." />}</xsl:template>
   <!-- all titles -->
   <xsl:template match="title">
-    <xsl:variable name="title-uid" select="./@id" />
+    <xsl:variable name="title-uid" select="./@xml:id" />
     <h1 name="{$title-uid}"><xsl:apply-templates /></h1>
   </xsl:template>
   <!-- footnote -->
@@ -202,13 +202,13 @@
   <!-- structure elements -->
   <!-- part -->
   <xsl:template match="part">
-    <xsl:variable name="pt-uid" select="./@id" />
+    <xsl:variable name="pt-uid" select="./@xml:id" />
     <div name="{$pt-uid}" id="{generate-id(.)}">
       <xsl:apply-templates select="title"/>
       <div class="toc" id="Table-of-Contents">
         <ol class="toc">
           <xsl:for-each select="chapter">
-            <xsl:variable name="ch-uid" select="title/@id" />
+            <xsl:variable name="ch-uid" select="title/@xml:id" />
             <li>
               <a href="#{generate-id(.)}" name="{$ch-uid}">
                 <xsl:value-of select="title" />
@@ -222,13 +222,13 @@
   </xsl:template>
   <!-- chapter -->
   <xsl:template match="chapter">
-    <xsl:variable name="ch-uid" select="./@id" />
+    <xsl:variable name="ch-uid" select="./@xml:id" />
     <div class="chapter" id="{generate-id(.)}" name="{$ch-uid}">
       <xsl:apply-templates select="title" />
       <div class="toc" id="Table-of-Contents">
         <ol class="toc">
           <xsl:for-each select="section">
-            <xsl:variable name="sec-uid" select="title/@id" />
+            <xsl:variable name="sec-uid" select="title/@xml:id" />
             <li>
               <a href="#{generate-id(.)}" name="{$sec-uid}">
                 <xsl:value-of select="title" />
@@ -242,13 +242,13 @@
   </xsl:template>
   <!-- section -->
   <xsl:template match="section">
-    <xsl:variable name="sec-uid" select="./@id" />
+    <xsl:variable name="sec-uid" select="./@xml:id" />
     <div class="section" id="{generate-id(.)}" name="{$sec-uid}">
       <xsl:apply-templates select="title"/>
       <div class="toc" id="Table-of-Contents">
         <ol class="toc">
           <xsl:for-each select="section">
-            <xsl:variable name="sub-uid" select="title/@id" />
+            <xsl:variable name="sub-uid" select="title/@xml:id" />
             <li>
               <a href="#{generate-id(.)}" name="{$sub-uid}">
                 <xsl:value-of select="title" />
@@ -267,7 +267,7 @@
   </xsl:template>
   <!-- text blocks -->
   <xsl:template match="text">
-    <xsl:variable name="text-uid" select="./@id" />
+    <xsl:variable name="text-uid" select="./@xml:id" />
     <p name="{$text-uid}" class="regular-text" id="{generate-id(.)}"
       onClick="ajaxFunction(id,id,'Click:text','{$text-uid}@'+id)">
         <xsl:apply-templates />
@@ -275,7 +275,7 @@
   </xsl:template>
   <!-- examples -->
   <xsl:template match="example">
-    <xsl:variable name="ex-uid" select="./@id" />
+    <xsl:variable name="ex-uid" select="./@xml:id" />
     <div class="example" id="{generate-id(.)}" name="{$ex-uid}">
       <h1>
         <span class="example-title">Example:</span>
@@ -286,7 +286,7 @@
   </xsl:template>
   <!-- Note -->
   <xsl:template match="note">
-    <xsl:variable name="note-uid" select="./@id" />
+    <xsl:variable name="note-uid" select="./@xml:id" />
     <div class="note">
       <p name="{$note-uid}">
         <span class="note-exclaim">Note!</span>
@@ -298,12 +298,12 @@
   <!-- LIST KINDS -->
   <!-- description-lists -->
   <xsl:template match="description-list">
-    <xsl:variable name="dlist-uid" select="./@id" />
+    <xsl:variable name="dlist-uid" select="./@xml:id" />
     <table class="description-list" name="{$dlist-uid}">
     <tr><td></td><td></td></tr>
     <xsl:for-each select="item">
-      <xsl:variable name="ditem-uid" select="./@id" />
-      <xsl:variable name="desc-uid" select="description/@id" />
+      <xsl:variable name="ditem-uid" select="./@xml:id" />
+      <xsl:variable name="desc-uid" select="description/@xml:id" />
       <tr name="{$ditem-uid}">
         <td class="description-term" name="{$desc-uid}">
           <xsl:apply-templates select="description" />
@@ -317,10 +317,10 @@
   </xsl:template>
   <!-- itemized lists -->
   <xsl:template match="itemized-list">
-    <xsl:variable name="ilist-uid" select="./@id" />
+    <xsl:variable name="ilist-uid" select="./@xml:id" />
     <ul class="itemized-list" name="{$ilist-uid}">
       <xsl:for-each select="item">
-        <xsl:variable name="iitem-uid" select="./@id" />
+        <xsl:variable name="iitem-uid" select="./@xml:id" />
         <li name="{$iitem-uid}">
           <xsl:apply-templates select="." />
         </li>
@@ -329,10 +329,10 @@
   </xsl:template>
   <!-- numbered lists -->
   <xsl:template match="numbered-list" >
-    <xsl:variable name="num-uid" select="./@id" />
+    <xsl:variable name="num-uid" select="./@xml:id" />
     <ol class="numbered-list" name="{$num-uid}">
       <xsl:for-each select="item">
-        <xsl:variable name="nitem-uid" select="./@id" />
+        <xsl:variable name="nitem-uid" select="./@xml:id" />
         <li name="{$nitem-uid}">
           <xsl:apply-templates select="." />
         </li>
@@ -343,7 +343,7 @@
   <!-- Figure -->
   <!-- figure -->
   <xsl:template match="figure">
-    <xsl:variable name="fig-uid" select="./@id" />
+    <xsl:variable name="fig-uid" select="./@xml:id" />
     <div class="figure" id="{generate-id(.)}" name="{$fig-uid}">
       <xsl:apply-templates select="table" />
       <xsl:apply-templates select="caption" />
@@ -351,16 +351,16 @@
   </xsl:template>
   <!-- caption -->
   <xsl:template match="caption">
-    <xsl:variable name="cap-uid" select="./@id" />
+    <xsl:variable name="cap-uid" select="./@xml:id" />
     <p class="figure-caption" name="{$cap-uid}"><xsl:apply-templates /></p>
   </xsl:template>
   <!-- tables -->
   <xsl:template match="table">
-    <xsl:variable name="tbl-uid" select="./@id" />
+    <xsl:variable name="tbl-uid" select="./@xml:id" />
     <table class="content-table" name="{$tbl-uid}">
       <thead>
         <xsl:for-each select="head/cell">
-          <xsl:variable name="head-uid" select="./@id" />
+          <xsl:variable name="head-uid" select="./@xml:id" />
           <th name="{$head-uid}">
             <xsl:apply-templates />
           </th>
@@ -369,7 +369,7 @@
       <xsl:for-each select="row">
         <tr>
           <xsl:for-each select="cell">
-            <xsl:variable name="cell-uid" select="./@id" />
+            <xsl:variable name="cell-uid" select="./@xml:id" />
             <xsl:variable name="cellspan" select="./@span" />
             <xsl:variable name="border" select="./@border" />
             <td colspan="{$cellspan}" class="{$border}" name="{$cell-uid}">
@@ -399,11 +399,11 @@
         <!-- Build the head from the Default structure -->
         <xsl:for-each select="//category[@name=$hrid]/default/field">
           <xsl:if test="./@title">
-            <xsl:variable name="title-uid" select="./@id" />
+            <xsl:variable name="title-uid" select="./@xml:id" />
             <th name="{$title-uid}"><xsl:value-of select="@name" /></th>
           </xsl:if>
           <xsl:if test="./@table">
-            <xsl:variable name="table-uid" select="./@id" />
+            <xsl:variable name="table-uid" select="./@xml:id" />
             <th class="content" name="{$table-uid}"><xsl:value-of select="@name" /></th>
           </xsl:if>
         </xsl:for-each>
@@ -413,7 +413,7 @@
         <tr>
           <xsl:for-each select="field" >
             <xsl:if test="./@title">
-              <xsl:variable name="bdtt-uid" select="./@id" />
+              <xsl:variable name="bdtt-uid" select="./@xml:id" />
               <td>
                 <a href="#{generate-id(.)}" name="{$bdtt-uid}">
                   <xsl:apply-templates />
@@ -421,7 +421,7 @@
               </td>
             </xsl:if>
             <xsl:if test="./@table">
-              <xsl:variable name="body-uid" select="./@id" />
+              <xsl:variable name="body-uid" select="./@xml:id" />
               <td class="content" name="{$body-uid}"><xsl:apply-templates select="." /></td>
             </xsl:if>
           </xsl:for-each>
@@ -430,11 +430,11 @@
     </table>
     <!-- Builds the descriptor lists -->
     <xsl:for-each select="//category[@name=$hrid]/datum">
-      <xsl:variable name="datum-uid" select="./@id" />
+      <xsl:variable name="datum-uid" select="./@xml:id" />
       <xsl:variable name="datum-title" select="field[@title='yes']" />
-      <xsl:variable name="title-uid" select="field[@title='yes']/@id" />
+      <xsl:variable name="title-uid" select="field[@title='yes']/@xml:id" />
       <xsl:variable name="title-id" select="generate-id(field)"/>
-      <xsl:variable name="desc-uid" select="field[@description='yes']/@id" />
+      <xsl:variable name="desc-uid" select="field[@description='yes']/@xml:id" />
       <div class="datum-description"
         id="{$title-id}" name="{$datum-uid}">
         <span class="datum-description" name="{$title-uid}">
@@ -447,7 +447,7 @@
 
   <!-- math -->
   <xsl:template match="equation">
-    <xsl:variable name="eqn-uid" select="./@id" />
+    <xsl:variable name="eqn-uid" select="./@xml:id" />
     <div class="math-equation" name="{$eqn-uid}">
       <xsl:apply-templates />
     </div>

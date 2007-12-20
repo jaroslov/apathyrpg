@@ -9,13 +9,7 @@ $ApathyXml = simplexml_load_file($ApathyName);
 $ApathyDom = dom_import_simplexml($ApathyXml)->ownerDocument;
 
 function encode_html ($html) {
-  $html = str_replace("<lsquo/>","&lsquo;",$html);
-  $html = str_replace("<ldquo/>","&ldquo;",$html);
-  $html = str_replace("<rsquo/>","&rsquo;",$html);
-  $html = str_replace("<rdquo/>","&rdquo;",$html);
   $html = str_replace("&","&amp;",$html);
-  $html = str_replace("<dollar/>","$",$html);
-  $html = str_replace("<Apathy/>","Apathy",$html);
   $html = str_replace("<","&lt;",$html);
   $html = str_replace(">","&gt;",$html);
   return $html;
@@ -67,9 +61,37 @@ function build_responses($targets, $payloads) {
   return $result;
 }
 
+function translate_text($node) {
+  if ("Apathy" === $node->tagName)
+    return "{Apathy}";
+  else if ("ldquo" === $node->tagName)
+    return "&ldquo;";
+  else if ("lsquo" === $node->tagName)
+    return "&lsquo;";
+  else if ("rdquo" === $node->tagName)
+    return "&rdquo;";
+  else if ("rsquo" === $node->tagName)
+    return "&rsquo;";
+  else if ("mdash" === $node->tagName)
+    return "&mdash;";
+  else if ("ndash" === $node->tagName)
+    return "&ndash;";
+  else if ("crushing" === $node->tagName)
+    return "{def crushing}";
+  else if ("math" === $node->tagName)
+    return "{math }";
+  else if ($node->nodeType === 3)
+    return $node->nodeValue;
+  return "{nodeType ".(string) $node->nodeType."}";
+}
+
 function text_click($apathy,$unique_id,$target) {
   $element = $apathy->getElementById($unique_id);
-  return build_response($target,"<b>".$unique_id." ? ".$element->name."</b>");
+  $children = $element->childNodes;
+  $text = "";
+  foreach ($children as $child)
+    $text .= translate_text($child);
+  return build_response($target,"<b style='color:green'>".$text."</b>");
 }
 
 function respond($trg,$src,$code,$msg,$apathy) {
