@@ -269,7 +269,7 @@
   <xsl:template match="text">
     <xsl:variable name="text-uid" select="./@xml:id" />
     <p name="{$text-uid}" class="regular-text" id="{generate-id(.)}"
-      onClick="ajaxFunction(id,id,'Click:text','{$text-uid}@'+id)">
+      onClick="ajaxFunction(id,id,'Click:text','{$text-uid}@'+id+'@'+this.offsetHeight+':'+this.offsetWidth)">
         <xsl:apply-templates />
     </p>
   </xsl:template>
