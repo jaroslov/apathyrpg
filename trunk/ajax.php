@@ -302,7 +302,7 @@ function build_category_path($apathy,$path) {
   return $result;
 }
 
-function load_category_response($trg,$src,$code,$msg,$apathy) {
+function build_category_heading($apathy,$msg) {
   $main_menu_get = make_main_menu("RawData");
 
   $path = array();
@@ -314,11 +314,30 @@ function load_category_response($trg,$src,$code,$msg,$apathy) {
 
   $path_get = make_arrow_path($path);
   $result = $main_menu_get . " " . $path_get;
-  return build_response($trg,$result);
+  return $result;
+}
+
+function load_category_response($trg,$src,$code,$msg,$apathy) {
+  return build_response($trg,build_category_heading($apathy,$msg));
+}
+
+function message_to_datum($apathy,$message) {
+  $atparts = explode("@",$message);
+  $category_datum = $atparts[1];
+  $bangparts = explode("!",$category_datum);
+  $category_id = $bangparts[0];
+  $datum_id = $bangparts[1];
+  return $apathy->getElementById($datum_id);
 }
 
 function load_datum_response($trg,$src,$code,$msg,$apathy) {
-  return load_category_response($trg,$src,$code,$msg,$apathy);
+  $result = build_category_heading($apathy,$msg);
+  $result .= "<br/><div class='Datum' id='Datum'>";
+  $datum = message_to_datum($apathy,$msg);
+  $name = $datum->getAttribute("name");
+  $result .= $msg." is ".$name;
+  $result .= "</div>";
+  return build_response($trg,$result);
 }
 
 function raw_data_response($trg,$src,$code,$msg,$apathy) {
