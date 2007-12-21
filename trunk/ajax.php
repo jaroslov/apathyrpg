@@ -76,7 +76,7 @@ function translate_text($node) {
   else if ("C" === $node->tagName)
     return "{C}";
   else if ("plusminus" === $node->tagName)
-    return "&#177";
+    return "&#177;";
   else if ("and" === $node->tagName)
     return "&";
   else if ("dollar" === $node->tagName)
