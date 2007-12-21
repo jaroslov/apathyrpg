@@ -153,7 +153,13 @@ function translate_text($node) {
     return "{footnote}";
   else if ($node->nodeType === 3)
     return $node->nodeValue;
-  else
+  else if ("numbered-list" === $node->tagName) {
+    return "\n{numbered-list }\n";
+  } else if ("itemized-list" === $node->tagName) {
+    return "\n{itemized-list }\n";
+  } else if ("description-list" === $node->tagName) {
+    return "\n{description-list }\n";
+  } else
     return "{nodeType ".$node->nodevalue."@".$node->tagName.":".(string) $node->nodeType."}";
 }
 
