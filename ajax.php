@@ -170,7 +170,8 @@ function text_click($apathy,$unique_id,$target,$dimensions) {
           .$text
         ."</textarea>"
       ."</td></tr><td align='right'>"
-      ."<input type='button' value='Save' onClick=\"document.title='Save!'\" />"
+      ."<input style='width:20em;' type='button' value='Save'"
+        ." onClick=\"document.title='Save! ".$unique_id."@".$target."'\" />"
     ."</td></tr></table>");
 }
 
