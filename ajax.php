@@ -71,6 +71,8 @@ function translate_child_text($node) {
 function translate_text($node) {
   if ("Apathy" === $node->tagName)
     return "{Apathy}";
+  if ("text" === $node->tagName)
+    return translate_child_text($node);
   else if ("C" === $node->tagName)
     return "{C}";
   else if ("plusminus" === $node->tagName)
@@ -352,7 +354,7 @@ function load_datum_response($trg,$src,$code,$msg,$apathy) {
     ."<td align='center'>Description</td></tr>";
   $title = $titlenode->getAttribute("name");
   $rows = sizeof($tablenodes)+1;
-  $table .= "<tr><td align='right'>Name</td><td><textarea>"
+  $table .= "<tr><td align='right'>Name:&rsaquo;</td><td><textarea>"
     .translate_child_text($titlenode)
     ."</textarea></td><td rowspan='".$rows."'>"
     ."<textarea class='ModifyDatumDescription' style='width:40em;height:"
@@ -361,7 +363,7 @@ function load_datum_response($trg,$src,$code,$msg,$apathy) {
     ."</textarea></td></tr>";
   foreach ($tablenodes as $tablenode) {
     $name = $tablenode->getAttribute("name");
-    $table .= "<tr><td align='right'>".$name."</td><td>";
+    $table .= "<tr><td align='right'><pre>".$name.":&rsaquo;</pre></td><td>";
     $table .= "<textarea>";
     $table .= translate_child_text($tablenode);
     $table .= "</textarea></td></tr>";
