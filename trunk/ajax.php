@@ -165,8 +165,9 @@ function text_click($apathy,$unique_id,$target,$dimensions) {
   foreach ($children as $child)
     $text .= translate_text($child);
   return build_response($target,
-    "<table style='width:100%'><tr><td>"
-        ."<textarea style='height:".$height."px;width:".$width."px;color:green;'>"
+    "<table class='UpdateTable' style='width:100%'><tr><td>"
+        ."<textarea style='height:".$height."px;width:"
+          .$width."px;color:black;font-family:helvetica;'>"
           .$text
         ."</textarea>"
       ."</td></tr><td align='right'>"

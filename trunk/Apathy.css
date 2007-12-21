@@ -36,6 +36,18 @@ ol {
 table {
   empty-cells: show;
 }
+table.UpdateTable {
+  border: 0;
+}
+table.UpdateTable tr {
+  border: 0;
+}
+table.UpdateTable td {
+  border: 0;
+}
+table.UpdateTable th {
+  border: 0;
+}
 .display-uid {
   font-weight: bold;
   font-size: 6pt;
