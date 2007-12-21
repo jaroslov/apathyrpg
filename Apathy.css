@@ -56,6 +56,31 @@ div.toc h1 {
   font-variant: small-caps;
   font-size: 16pt;
 }
+table.ModifyDatumTable {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table.ModifyDatumTable td {
+  border-collapse: collapse;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 12pt;
+  border: 0;
+  padding: 1px;
+  margin: 0;
+}
+table.ModifyDatumTable textarea {
+  border: 1px solid black;
+  width: 25em;
+  height: 4em;
+  font-size: 12pt;
+  font-family: times, serif;
+}
+.ModifyDatumDescription {
+  border: 1px solid black;
+  width: 40em;
+  height: 100%;
+}
 .CurrentPosition {
   font-variant: small-caps;
   font-size: 10pt;

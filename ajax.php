@@ -335,7 +335,41 @@ function load_datum_response($trg,$src,$code,$msg,$apathy) {
   $result .= "<br/><div class='Datum' id='Datum'>";
   $datum = message_to_datum($apathy,$msg);
   $name = $datum->getAttribute("name");
-  $result .= $msg." is ".$name;
+  $table = "<table class='ModifyDatumTable'>";
+  $titlenode = null;
+  $tablenodes = array();
+  $descriptionnode = null;
+  foreach ($datum->childNodes as $field)
+    if ($field->tagName === "field") {
+      if (false !== $field->hasAttribute("title"))
+        $titlenode = $field;
+      else if (false !== $field->hasAttribute("description"))
+        $descriptionnode = $field;
+      else if (false !== $field->hasAttribute("table"))
+        array_push($tablenodes,$field);
+    }
+  $table .= "<tr><td></td><td align='center'>Aspect</td>"
+    ."<td align='center'>Description</td></tr>";
+  $title = $titlenode->getAttribute("name");
+  $rows = sizeof($tablenodes)+1;
+  $table .= "<tr><td align='right'>Name</td><td><textarea>"
+    .translate_child_text($titlenode)
+    ."</textarea></td><td rowspan='".$rows."'>"
+    ."<textarea class='ModifyDatumDescription' style='width:40em;height:"
+    .(string)($rows*4)."em'>"
+    .translate_child_text($descriptionnode)
+    ."</textarea></td></tr>";
+  foreach ($tablenodes as $tablenode) {
+    $name = $tablenode->getAttribute("name");
+    $table .= "<tr><td align='right'>".$name."</td><td>";
+    $table .= "<textarea>";
+    $table .= translate_child_text($tablenode);
+    $table .= "</textarea></td></tr>";
+  }
+  $table .= "<tr><td></td><td colspan='2' align='right'>"
+    ."<input style='width:15em;' type='Button' value='Save'/></td></tr>";
+  $table .= "</table>";
+  $result .= $table;
   $result .= "</div>";
   return build_response($trg,$result);
 }
