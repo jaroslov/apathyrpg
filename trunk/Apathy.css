@@ -7,6 +7,7 @@ body {
   text-align: justify;
   font-color: black;
   background-color: white;
+  font-family: times, serif;
 }
 a {
   color: blue;
@@ -69,8 +70,17 @@ table.ModifyDatumTable td {
   padding: 1px;
   margin: 0;
 }
+table.ModifyDatumTable pre {
+  font-family: times, serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 12pt;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 table.ModifyDatumTable textarea {
-  border: 1px solid black;
+  border: 1px solid gray;
   width: 25em;
   height: 4em;
   font-size: 12pt;
