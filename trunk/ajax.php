@@ -165,9 +165,13 @@ function text_click($apathy,$unique_id,$target,$dimensions) {
   foreach ($children as $child)
     $text .= translate_text($child);
   return build_response($target,
-    "<div style='padding:2em;margin:1em;'><textarea onKeyPress=\"ajaxFunction(id,id,'DOYOURTHANGS!','FOOP')\""
-    ."style='height:".$height."px;width:".$width."px;color:green;'>"
-    .$text."</textarea></div>");
+    "<table style='width:100%'><tr><td>"
+        ."<textarea style='height:".$height."px;width:".$width."px;color:green;'>"
+          .$text
+        ."</textarea>"
+      ."</td></tr><td align='right'>"
+      ."<input type='button' value='Save' onClick=\"document.title='Save!'\" />"
+    ."</td></tr></table>");
 }
 
 function respond($trg,$src,$code,$msg,$apathy) {
@@ -176,7 +180,7 @@ function respond($trg,$src,$code,$msg,$apathy) {
     $unique_id = $msg_parts[0];
     $target = $msg_parts[1];
     $dimensions = $msg_parts[2];
-    return text_click($apathy,$unique_id,$target,$dimensions);
+    return text_click($apathy,$unique_id,$trg,$dimensions);
   }
   return build_response($trg,"<p>Not a known code:".$code
     ." with ".$trg."->".$src."@".$msg."</p>");
