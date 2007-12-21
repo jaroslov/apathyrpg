@@ -363,7 +363,7 @@ function load_datum_response($trg,$src,$code,$msg,$apathy) {
   $table .= "<tr><td align='right'>Name:&rsaquo;</td><td><textarea>"
     .translate_child_text($titlenode)
     ."</textarea></td><td rowspan='".$rows."'>"
-    ."<textarea class='ModifyDatumDescription' style='width:40em;height:"
+    ."<textarea class='ModifyDatumDescription' style='width:30em;height:"
     .(string)($rows*4)."em'>"
     .translate_child_text($descriptionnode)
     ."</textarea></td></tr>";
