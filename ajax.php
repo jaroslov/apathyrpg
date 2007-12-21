@@ -176,16 +176,191 @@ function text_click($apathy,$unique_id,$target,$dimensions) {
     ."</td></tr></table>");
 }
 
-function respond($trg,$src,$code,$msg,$apathy) {
-  if ("Click:text" === $code) {
-    $msg_parts = explode("@",$msg);
-    $unique_id = $msg_parts[0];
-    $target = $msg_parts[1];
-    $dimensions = $msg_parts[2];
-    return text_click($apathy,$unique_id,$trg,$dimensions);
+function text_click_response($trg,$src,$code,$msg,$apathy) {
+  $msg_parts = explode("@",$msg);
+  $unique_id = $msg_parts[0];
+  $target = $msg_parts[1];
+  $dimensions = $msg_parts[2];
+  return text_click($apathy,$unique_id,$trg,$dimensions);
+}
+
+function make_ajax_function($event,$source,$target,$code,$message) {
+  return $event."=\"ajaxFunction(".$source.","
+                                  .$target.","
+                                  .$code.","
+                                  .$message.")\"";
+}
+
+function make_select_statement($options,$source,$target,$code,$message) {
+  $select = "<select class='MainChooser' ";
+  $select .= make_ajax_function("onChange",$source,$target,$code,$message);
+  $select .= ">";
+  if (is_array($options))
+    foreach ($options as $option)
+      $select .= $option;
+  else
+    $select .= $options;
+  $select .= "</select>";
+  return $select;
+}
+
+function make_option_for_select($value,$content,$selected) {
+  $option = "<option ";
+  if ($selected)
+    $option .= "selected ";
+  $option .= "value='".$value."'>".$content."</option>";
+  return $option;
+}
+
+function make_arrow_path($parts) {
+  $raquo = "&raquo;";
+  $path = "<span class='CurrentPosition'>";
+  if (is_array($parts))
+    foreach ($parts as $part)
+      $path .= $raquo . " " . $part . " ";
+  else
+    $path .= $parts;
+  return $path."</span>";
+}
+
+function build_category_path($apathy,$path) {
+  /*
+    Nontrivial function: we have a list of categories where
+    the organization is implicit rather than explicit. That is,
+    the categories are held flat, but maintain a pointer into
+    an explicit structure (the `name' attribute). The pointer
+    is like a path:
+    Content/Augmentations/Arm, Hand
+    We need to collate everybody.
+  */
+  $categories = $apathy->getElementsByTagName("category");
+  $msg = $path;
+  $result = array();
+  $cats = array();
+  for ($cdx = 0; $cdx < $categories->length; $cdx++)
+    array_push($cats,$categories->item($cdx));
+  $path = explode("/",$path);
+  $newpath = array();
+  for ($pdx = 1; $pdx < sizeof($path); $pdx++) {
+    array_push($newpath,$path[$pdx-1]);
+    if (strpos($path[$pdx],"@") !== false) {
+      $options = array();
+      array_push($options,make_option_for_select($newmessage,"Choose...",false));
+      $atparts = explode("@",$path[$pdx]);
+      $bangparts = explode("!",$atparts[1]);
+      $id = $bangparts[0];
+      $newmessage = implode("/",$newpath)."/@".$id;
+      $datumid = "";
+      if (sizeof($bangparts) > 1)
+        $datumid = $bangparts[1];
+      $cat = $apathy->getElementById($id);
+      $data = $cat->getElementsByTagName("datum");
+      for ($ddx=0; $ddx<$data->length; $ddx++) {
+        $datum = $data->item($ddx);
+        $name = $datum->getAttribute("name");
+        $did = $datum->getAttribute("xml:id");
+        $selected = false;
+        if ($did === $datumid)
+          $selected = true;
+        array_push($options,make_option_for_select($newmessage."!".$did,$name,$selected));
+      }
+      $select = make_select_statement($options,
+        "'Body'","'Body'","'LoadDatum'","value");
+      array_push($result,$select);
+    } else {
+      $options = array();
+      array_push($options,make_option_for_select("Content/","Choose...",false));
+      $newcats = array();
+      $uniquenames = array();
+      foreach ($cats as $category) {
+        $name = explode("/",$category->getAttribute("name"));
+        $keep = true;
+        for ($kdx = 0; $kdx < $pdx; $kdx++)
+          if ($name[$kdx] !== $path[$kdx])
+            $keep = false;
+        if ($keep) {
+            if (!in_array($name[$pdx],$uniquenames)) {
+              $selected = false;
+              if ($name[$pdx] === $path[$pdx])
+                $selected = true;
+              $hasmore = "/@" . $category->getAttribute("xml:id");
+              if (sizeof($name) > ($pdx+1))
+                $hasmore = "/";
+              $option = make_option_for_select(implode("/",$newpath)."/".$name[$pdx].$hasmore,
+                            $id." ".$name[$pdx],$selected);
+              array_push($options,$option);
+              array_push($uniquenames,$name[$pdx]);
+            }
+            array_push($newcats,$category);
+        }
+      }
+      $cats = $newcats;
+      $select = make_select_statement($options,"'Body'","'Body'","'LoadCategory'","value");
+      array_push($result,$select);
+    }
   }
-  return build_response($trg,"<p>Not a known code:".$code
-    ." with ".$trg."->".$src."@".$msg."</p>");
+  return $result;
+}
+
+function load_category_response($trg,$src,$code,$msg,$apathy) {
+  $main_menu_get = make_main_menu("RawData");
+
+  $path = array();
+  $catsels = build_category_path($apathy,$msg);
+
+  array_push($path,"Raw Data");
+  foreach ($catsels as $catsel)
+    array_push($path,$catsel);
+
+  $path_get = make_arrow_path($path);
+  $result = $main_menu_get . " " . $path_get;
+  return build_response($trg,$result);
+}
+
+function load_datum_response($trg,$src,$code,$msg,$apathy) {
+  return load_category_response($trg,$src,$code,$msg,$apathy);
+}
+
+function raw_data_response($trg,$src,$code,$msg,$apathy) {
+  return load_category_response($trg,$src,$code,"Content/",$apathy);
+}
+
+function make_main_menu($which) {
+  $options = array();
+  $chsel = false;
+  $bksel = false;
+  $rdsel = false;
+  switch ($which) {
+    case "Choose": $chsel = true; break;
+    case "Book": $bksel = true; break;
+    case "RawData": $rdsel = true; break;
+  }
+  array_push($options,make_option_for_select("Initialize","Choose...",$chsel));
+  array_push($options,make_option_for_select("NoResponse","Book",$bksel));
+  array_push($options,make_option_for_select("RawData","Raw Data",$rdsel));
+  return make_select_statement($options,"'Body'","'Body'","value","''");
+}
+
+function initialize_system($target,$source,$code,$message,$apathy) {
+  return build_response($target,make_main_menu("Choose"));
+}
+
+function respond($trg,$src,$code,$msg,$apathy) {
+  if ("Initialize" === $code) {
+    return initialize_system($trg,$src,$code,$msg,$apathy);
+  } else if ("Click:text" === $code) {
+    return text_click_response($trg,$src,$code,$msg,$apathy);
+  } else if ("NoResponse" === $code) {
+    return build_empty_response();
+  } else if ("RawData" === $code) {
+    return raw_data_response($trg,$src,$code,$msg,$apathy);
+  } else if ("LoadCategory" === $code) {
+    return load_category_response($trg,$src,$code,$msg,$apathy);
+  } else if ("LoadDatum" === $code) {
+    return load_datum_response($trg,$src,$code,$msg,$apathy);
+  } else
+    return build_response($trg,"<p>Not a known code:".$code
+      ." with ".$trg."->".$src."@".$msg."</p>");
 }
 
 echo respond($target,$source,$code,$message,$ApathyDom);
