@@ -155,13 +155,19 @@ function translate_text($node) {
     return "{nodeType ".$node->nodevalue."@".$node->tagName.":".(string) $node->nodeType."}";
 }
 
-function text_click($apathy,$unique_id,$target) {
+function text_click($apathy,$unique_id,$target,$dimensions) {
+  $dimpts = explode(":",$dimensions);
+  $height = $dimpts[0]-6;
+  $width = $dimpts[1];
   $element = $apathy->getElementById($unique_id);
   $children = $element->childNodes;
   $text = "";
   foreach ($children as $child)
     $text .= translate_text($child);
-  return build_response($target,"<b style='color:green'>".$text."</b>");
+  return build_response($target,
+    "<div style='padding:2em;margin:1em;'><textarea onKeyPress=\"ajaxFunction(id,id,'DOYOURTHANGS!','FOOP')\""
+    ."style='height:".$height."px;width:".$width."px;color:green;'>"
+    .$text."</textarea></div>");
 }
 
 function respond($trg,$src,$code,$msg,$apathy) {
@@ -169,7 +175,8 @@ function respond($trg,$src,$code,$msg,$apathy) {
     $msg_parts = explode("@",$msg);
     $unique_id = $msg_parts[0];
     $target = $msg_parts[1];
-    return text_click($apathy,$unique_id,$target);
+    $dimensions = $msg_parts[2];
+    return text_click($apathy,$unique_id,$target,$dimensions);
   }
   return build_response($trg,"<p>Not a known code:".$code
     ." with ".$trg."->".$src."@".$msg."</p>");
