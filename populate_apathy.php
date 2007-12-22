@@ -8,9 +8,21 @@ $Apathy = $ApathyDom->ownerDocument;
 // Connecting, selecting database
 $link = mysql_connect('localhost', 'thechao', 'ha1l3r1S')
     or die('Could not connect: ' . mysql_error());
-echo 'Connected successfully';
+
+echo '<p>Connected successfully.</p>';
+
 mysql_select_db('Apathy') or die('Could not select database');
 
-echo "HERE";
+echo '<p>Connected to Apathy database.</p>';
+
+$categories = $Apathy->getElementsByTagName("category");
+$academics = null;
+for ($cat = 0; $cat < $categories->length; $cdx++) {
+  $category = $categories->item($cdx);
+  $name = $category->getAttribute("name");
+  echo "<p>Selecting ".$name."</p>";
+  if ("Content/Academic" === $name)
+    $academics = $category;
+}
 
 ?>
