@@ -16,13 +16,15 @@ mysql_select_db('Apathy') or die('Could not select database');
 echo '<p>Connected to Apathy database.</p>';
 
 $categories = $Apathy->getElementsByTagName("category");
-$academics = null;
 for ($cat = 0; $cat < $categories->length; $cdx++) {
   $category = $categories->item($cdx);
   $name = $category->getAttribute("name");
   echo "<p>Selecting ".$name."</p>";
-  if ("Content/Academic" === $name)
-    $academics = $category;
+  foreach ($category->childNodes as $child)
+    if ("datum" === $child->tagName) {
+      
+      echo "<p>".$chname."</p>";
+    }
 }
 
 ?>
