@@ -372,17 +372,28 @@ function build_datum_response($trg,$src,$code,$msg,$apathy) {
     ."<td align='center'>Description</td></tr>";
   $title = $titlenode->getAttribute("name");
   $rows = sizeof($tablenodes)+1;
-  $table .= "<tr><td align='right'>Name:&rsaquo;</td><td><textarea>"
+  $blurFocusResponse = " onFocus='focusStyle(this);'"
+    ." onBlur='blurStyle(this);'";
+  $onChange = " onChange=\"ajaxFunction('Log','Log','LogMessage',value)\"";
+  $table .= "<tr><td align='right'>Name:&rsaquo;</td><td>"
+    ."<textarea tabindex=1".$blurFocusResponse.$onChange.">"
     .translate_child_text($titlenode)
     ."</textarea></td><td rowspan='".$rows."'>"
-    ."<textarea class='ModifyDatumDescription' style='width:30em;height:"
+    ."<textarea class='ModifyDatumDescription'"
+    .$blurFocusResponse.$onChange
+    ." tabindex=".(string)($rows+2)
+    ." style='width:30em;height:"
     .(string)($rows*4)."em'>"
     .translate_child_text($descriptionnode)
     ."</textarea></td></tr>";
+  $tabindex = 1;
   foreach ($tablenodes as $tablenode) {
+    $tabindex++;
     $name = $tablenode->getAttribute("name");
     $table .= "<tr><td align='right'><pre>".$name.":&rsaquo;</pre></td><td>";
-    $table .= "<textarea>";
+    $table .= "<textarea tabindex=".(string)$tabindex
+      .$blurFocusResponse
+      .$onChange.">";
     $table .= translate_child_text($tablenode);
     $table .= "</textarea></td></tr>";
   }
@@ -454,6 +465,9 @@ function respond($trg,$src,$code,$msg,$apathy) {
     return load_category_response($trg,$src,$code,$msg,$apathy);
   } else if ("LoadDatum" === $code) {
     return load_datum_response($trg,$src,$code,$msg,$apathy);
+  } else if ("LogMessage" === $code) {
+    return build_response("Log",
+      "<b>\"</b><span style='color:green;'>".$msg."</span><b>\"</b>");
   } else
     return build_response($trg,"<p>Not a known code:".$code
       ." with ".$trg."->".$src."@".$msg."</p>");

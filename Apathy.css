@@ -16,6 +16,7 @@ div.MainPart {
 div.Log {
   padding: 1em;
   border: 1px solid red;
+  overflow: scroll;
 }
 div.Path {
   padding: 1em;
@@ -98,6 +99,8 @@ table.ModifyDatumTable pre {
   margin: 0;
 }
 table.ModifyDatumTable textarea {
+  padding: .5em;
+  text-align: justify;
   border: 1px solid gray;
   width: 25em;
   height: 4em;
@@ -105,6 +108,8 @@ table.ModifyDatumTable textarea {
   font-family: times, serif;
 }
 .ModifyDatumDescription {
+  padding: .5em;
+  text-align: justify;
   border: 1px solid black;
   width: 40em;
   height: 100%;
