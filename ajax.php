@@ -179,7 +179,7 @@ function text_click($apathy,$unique_id,$target,$dimensions) {
           .$text
         ."</textarea>"
       ."</td></tr><td align='right'>"
-      ."<input style='width:20em;' type='button' value='Save'"
+      ."<input id='SaveButton' style='width:20em;' type='button' value='Save'"
         ." onClick=\"document.title='Save! ".$unique_id."@".$target."'\" />"
     ."</td></tr></table>");
 }
@@ -403,7 +403,8 @@ function build_datum_response($trg,$src,$code,$msg,$apathy) {
     $table .= "</td></tr>";
   }
   $table .= "<tr><td></td><td colspan='2' align='right'>"
-    ."<input style='width:15em;' type='Button' value='Save'/></td></tr>";
+    ."<input id='SaveButton' style='width:15em;' disabled "
+    ."type='Button' value='Save'/></td></tr>";
   $table .= "</table>";
   return $table;
 }
@@ -457,12 +458,15 @@ function initialize_system($target,$source,$code,$message,$apathy) {
   return build_responses($targets,$payloads);
 }
 
-function update_value_response($trg,$src,$code,$msg,$apathy) {
+function update_value_response($trg,$src,$code,$msg,$apathydom) {
+  $apathy = $apathydom->ownerDocument;
   $atcodes = explode("@",$code);
   $code = $atcodes[0];
   $target_id = $atcodes[1];
   $node = $apathy->getElementById($target_id);
   $node->nodeValue = $msg;
+  $sxml = simplexml_import_dom($apathy);
+  $worked = $sxml->asXML("Apathy.tmp.xml");
   return build_response("Log",
     "<b>".$target_id
       ." &laquo;</b><span style='color:blue;'>"
@@ -488,7 +492,7 @@ function respond($trg,$src,$code,$msg,$apathydom) {
       "<b>\"</b><span style='color:green;'>".$msg."</span><b>\"</b>");
   } else {
     if (false !== strpos($code,"@")) {
-      return update_value_response($trg,$src,$code,$msg,$apathy);
+      return update_value_response($trg,$src,$code,$msg,$apathydom);
     }
   }
   return build_response($trg,
