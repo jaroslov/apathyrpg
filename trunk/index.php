@@ -6,6 +6,24 @@
   <body onLoad="ajaxFunction('MainPart','MainPart','Initialize','')">
     <div id="Path" class="Path"></div>
     <div id="Datum" class="Datum"></div>
-    <!--<div id="Log" class="Log">Log</div>-->
+    <table valign="top">
+      <tr valign="top">
+        <td width="30%";>
+          <div id="Ajax" class="Log" style="visibility:show;">
+            <em>Ajax</em>
+          </div>
+        </td>
+        <td width="30%";>
+          <div id="Log" class="Log" style="visibility:show;">
+            <em>Log</em>
+          </div>
+        </td>
+        <td width="30%";>
+          <div id="LogResponse" class="Log" style="visibility:show;">
+            <em>Response</em>
+          </div>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
