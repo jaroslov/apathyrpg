@@ -428,16 +428,16 @@
             <table xml:id="G0000592">
               <head xml:id="G0000593">
                 <cell xml:id="G0000594">Desired Level</cell>
-                <cell xml:id="G0000595">1</cell>
-                <cell xml:id="G0000596">2</cell>
-                <cell xml:id="G0000597">3</cell>
-                <cell xml:id="G0000598">4</cell>
-                <cell xml:id="G0000599">5</cell>
-                <cell xml:id="G0000600">6</cell>
-                <cell xml:id="G0000601">7</cell>
-                <cell xml:id="G0000602">8</cell>
-                <cell xml:id="G0000603">9</cell>
-                <cell xml:id="G0000604">10</cell>
+                <cell xml:id="G0000595" colfmt="p{1.2em}">1</cell>
+                <cell xml:id="G0000596" colfmt="p{1.2em}">2</cell>
+                <cell xml:id="G0000597" colfmt="p{1.2em}">3</cell>
+                <cell xml:id="G0000598" colfmt="p{1.2em}">4</cell>
+                <cell xml:id="G0000599" colfmt="p{1.2em}">5</cell>
+                <cell xml:id="G0000600" colfmt="p{1.2em}">6</cell>
+                <cell xml:id="G0000601" colfmt="p{1.2em}">7</cell>
+                <cell xml:id="G0000602" colfmt="p{1.2em}">8</cell>
+                <cell xml:id="G0000603" colfmt="p{1.2em}">9</cell>
+                <cell xml:id="G0000604" colfmt="p{1.2em}">10</cell>
               </head>
               <row xml:id="G0000605">
                 <cell xml:id="G0000606">CP Cost for Rank 1</cell>
