@@ -48,7 +48,7 @@
     <div class="toc" id="Table-of-Contents">
       <h1>Table of Contents</h1>
       <ol class="toc">
-        <xsl:for-each select="//part">
+        <xsl:for-each select="section">
           <xsl:variable name="pt-uid" select="title/@xml:id" />
           <li>
             <a href="#{generate-id(.)}" name="{$pt-uid}">
@@ -104,7 +104,7 @@
         </xsl:for-each>
       </ol>
     </div>-->
-    <xsl:apply-templates select="part" />
+    <xsl:apply-templates select="section" />
     <div class="footnotes">
       <xsl:for-each select="//footnote">
         <div class="footnote" id="{generate-id(.)}">
@@ -239,7 +239,10 @@
   </xsl:template>
   <!-- all titles -->
   <xsl:template match="title">
-    <h1><xsl:apply-templates /></h1>
+    <xsl:variable name="gpkind" select="../../../@kind" />
+    <xsl:variable name="pkind" select="../../@kind" />
+    <xsl:variable name="kind" select="../@kind" />
+    <h1 class="sector-{$gpkind}{$pkind}{$kind}"><xsl:apply-templates /></h1>
   </xsl:template>
   <!-- footnote -->
   <xsl:template match="footnote">
@@ -254,49 +257,10 @@
   </xsl:template>
 
   <!-- structure elements -->
-  <!-- part -->
-  <xsl:template match="part">
-    <xsl:variable name="pt-uid" select="./@xml:id" />
-    <div name="{$pt-uid}" id="{generate-id(.)}">
-      <xsl:apply-templates select="title"/>
-      <div class="toc" id="Table-of-Contents">
-        <ol class="toc">
-          <xsl:for-each select="chapter">
-            <xsl:variable name="ch-uid" select="title/@xml:id" />
-            <li>
-              <a href="#{generate-id(.)}" name="{$ch-uid}">
-                <xsl:value-of select="title" />
-              </a>
-            </li>
-          </xsl:for-each>
-        </ol>
-      </div>
-      <xsl:apply-templates select="chapter"/>
-    </div>
-  </xsl:template>
-  <!-- chapter -->
-  <xsl:template match="chapter">
-    <xsl:variable name="ch-uid" select="./@xml:id" />
-    <div class="chapter" id="{generate-id(.)}" name="{$ch-uid}">
-      <xsl:apply-templates select="title" />
-      <div class="toc" id="Table-of-Contents">
-        <ol class="toc">
-          <xsl:for-each select="section">
-            <xsl:variable name="sec-uid" select="title/@xml:id" />
-            <li>
-              <a href="#{generate-id(.)}" name="{$sec-uid}">
-                <xsl:value-of select="title" />
-              </a>
-            </li>
-          </xsl:for-each>
-        </ol>
-      </div>
-      <xsl:apply-templates select="section" />
-    </div>
-  </xsl:template>
   <!-- section -->
   <xsl:template match="section">
     <xsl:variable name="sec-uid" select="./@xml:id" />
+    <xsl:variable name="kind" select="./@kind" />
     <div class="section" id="{generate-id(.)}" name="{$sec-uid}">
       <xsl:apply-templates select="title"/>
       <div class="toc" id="Table-of-Contents">

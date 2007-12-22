@@ -6,7 +6,7 @@ $code = $_GET["code"];
 $message = $_GET["message"];
 $ApathyName = "Apathy.tmp.xml";
 $ApathyXml = simplexml_load_file($ApathyName);
-$ApathyDom = dom_import_simplexml($ApathyXml)->ownerDocument;
+$ApathyDom = dom_import_simplexml($ApathyXml);
 
 function encode_html ($html) {
   $html = str_replace("&","&amp;",$html);
@@ -357,7 +357,8 @@ function build_modifyable_text($tabindex,$node,$style) {
     $class="";
   $blurFocusResponse = " onFocus='focusStyle(this);'"
     ." onBlur='blurStyle(this);'";
-  $onChange = " onChange=\"ajaxFunction('Log','Log','LogMessage',value)\"";
+  $onChange = " onChange=\"ajaxFunction('Log','Log','UpdateValue@"
+    .$node->getAttribute("xml:id")."',value)\"";
   return "<textarea tabindex="
     .$tabindex.$blurFocusResponse.$onChange
     ."style='".$style."'"
@@ -456,7 +457,20 @@ function initialize_system($target,$source,$code,$message,$apathy) {
   return build_responses($targets,$payloads);
 }
 
-function respond($trg,$src,$code,$msg,$apathy) {
+function update_value_response($trg,$src,$code,$msg,$apathy) {
+  $atcodes = explode("@",$code);
+  $code = $atcodes[0];
+  $target_id = $atcodes[1];
+  $node = $apathy->getElementById($target_id);
+  $node->nodeValue = $msg;
+  return build_response("Log",
+    "<b>".$target_id
+      ." &laquo;</b><span style='color:blue;'>"
+      .$msg."</span><b>&raquo;</b>");
+}
+
+function respond($trg,$src,$code,$msg,$apathydom) {
+  $apathy = $apathydom->ownerDocument;
   if ("Initialize" === $code) {
     return initialize_system($trg,$src,$code,$msg,$apathy);
   } else if ("Click:text" === $code) {
@@ -472,15 +486,15 @@ function respond($trg,$src,$code,$msg,$apathy) {
   } else if ("LogMessage" === $code) {
     return build_response("Log",
       "<b>\"</b><span style='color:green;'>".$msg."</span><b>\"</b>");
-  } else
-    return build_response($trg,"<p>Not a known code:".$code
-      ." with ".$trg."->".$src."@".$msg."</p>");
+  } else {
+    if (false !== strpos($code,"@")) {
+      return update_value_response($trg,$src,$code,$msg,$apathy);
+    } else
+      return build_response($trg,"<p>Not a known code:".$code
+        ." with ".$trg."->".$src."@".$msg."</p>");
+  }
 }
 
 echo respond($target,$source,$code,$message,$ApathyDom);
-
-$handle = fopen($ApathyName, "w");
-fwrite($handle, $Apathy->saveXML());
-fclose($handle);
 
 ?>
