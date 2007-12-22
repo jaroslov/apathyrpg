@@ -16,10 +16,11 @@
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{wrapfig}
-\usepackage[text={5.5in,8in},textheight=8in]{geometry}
+\usepackage[text={6.5in,8in},textheight=8in]{geometry}
 
 \begin{document}
 
+%\renewcommand{\normalsize}{\fontsize{8.8pt}{10pt}\selectfont}
 \newfont{\GIANT}{rpncr scaled 9500}
 \newfont{\Giant}{rpncr scaled 4500}
 \DeclareFixedFont{\apathyscbf}{OT1}{pnc}{b}{sc}{8}
