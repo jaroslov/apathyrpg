@@ -257,7 +257,7 @@
           </xsl:for-each>
         </ol>
       </div>
-      <xsl:apply-templates select="section|reference|text|example|description-list|itemized-list|numbered-list|figure|equation|note|table"/>
+      <xsl:apply-templates select="section|reference|title|text|example|description-list|itemized-list|numbered-list|figure|equation|note"/>
     </div>
   </xsl:template>
 
