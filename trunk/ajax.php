@@ -60,14 +60,6 @@ function build_responses($targets, $payloads) {
   return $result;
 }
 
-function text_click_response($trg,$src,$code,$msg,$apathy) {
-  $msg_parts = explode("@",$msg);
-  $unique_id = $msg_parts[0];
-  $target = $msg_parts[1];
-  $dimensions = $msg_parts[2];
-  return text_click($apathy,$unique_id,$trg,$dimensions);
-}
-
 function make_ajax_function($event,$source,$target,$code,$message) {
   return $event."=\"ajaxFunction(".$source.","
                                   .$target.","
@@ -211,23 +203,6 @@ function load_category_response($trg,$src,$code,$msg,$apathy) {
   return build_responses($targets,$payloads);
 }
 
-function message_to_datum($apathy,$message) {
-  $atparts = explode("@",$message);
-  $category_datum = $atparts[1];
-  $bangparts = explode("!",$category_datum);
-  $category_id = $bangparts[0];
-  $datum_id = $bangparts[1];
-  return $apathy->getElementById($datum_id);
-}
-
-function get_name_of_datum($datum) {
-  foreach ($datum->childNodes as $field)
-    if ($field->tagName === "field")
-      if (false !== $field->hasAttribute("title"))
-        return translate_child_text($field);
-  return "No name.";
-}
-
 function build_modifyable_text($tabindex,$node,$style) {
   if (!$style)
     $class="";
@@ -353,8 +328,6 @@ function respond($trg,$src,$code,$msg,$apathydom) {
   $apathy = $apathydom->ownerDocument;
   if ("Initialize" === $code) {
     return initialize_system($trg,$src,$code,$msg,$apathy);
-  } else if ("Click:text" === $code) {
-    return text_click_response($trg,$src,$code,$msg,$apathy);
   } else if ("NoResponse" === $code) {
     return build_empty_response();
   } else if ("RawData" === $code) {

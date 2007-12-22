@@ -114,4 +114,21 @@ function translate_text($node) {
     return "{nodeType ".$node->nodevalue."@".$node->tagName.":".(string) $node->nodeType."}";
 }
 
+function message_to_datum($apathy,$message) {
+  $atparts = explode("@",$message);
+  $category_datum = $atparts[1];
+  $bangparts = explode("!",$category_datum);
+  $category_id = $bangparts[0];
+  $datum_id = $bangparts[1];
+  return $apathy->getElementById($datum_id);
+}
+
+function get_name_of_datum($datum) {
+  foreach ($datum->childNodes as $field)
+    if ($field->tagName === "field")
+      if (false !== $field->hasAttribute("title"))
+        return translate_child_text($field);
+  return "No name.";
+}
+
 ?>
