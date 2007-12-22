@@ -135,7 +135,7 @@ Josh Kramer}
   <!-- Book -->
   <xsl:template match="book">
     &#xa;
-    <xsl:apply-templates select="part" />
+    <xsl:apply-templates select="section" />
   </xsl:template>
   <!-- Part -->
   <xsl:template match="part">
@@ -151,15 +151,30 @@ Josh Kramer}
   </xsl:template>
   <!-- Section -->
   <xsl:template match="section">
-    &#xa;
-\<xsl:if test="name(../.)='section'">sub</xsl:if><xsl:if test="name(../../.)='section'">sub</xsl:if><xsl:if test="name(../../../.)='section'">sub</xsl:if>section{<xsl:apply-templates select="title" />}
-    <xsl:if test="not(./section)">
-      <!-- pBefore -->
-    </xsl:if>
-    <xsl:apply-templates select="./*[position()&gt;1]" />
-    <xsl:if test="not(./section)">
-      <!-- pAfter -->
-    </xsl:if>
+    <xsl:variable name="kind" select="./@kind" />
+    <xsl:choose>
+      <xsl:when test="$kind='part'">
+        &#xa;
+\part{<xsl:apply-templates select="title" />}
+        <xsl:apply-templates select="section|reference" />
+      </xsl:when>
+      <xsl:when test="$kind='chapter'">
+        &#xa;
+\chapter{<xsl:apply-templates select="title" />}
+      <xsl:apply-templates select="section|reference" />
+      </xsl:when>
+      <xsl:otherwise>
+          &#xa;
+\<xsl:if test="../@kind='section'">sub</xsl:if><xsl:if test="../../@kind='section'">sub</xsl:if><xsl:if test="../../../@kind='section'">sub</xsl:if>section{<xsl:apply-templates select="title" />}
+        <xsl:if test="not(./section)">
+          <!-- pBefore -->
+        </xsl:if>
+        <xsl:apply-templates select="./*[position()&gt;1]" />
+        <xsl:if test="not(./section)">
+          <!-- pAfter -->
+        </xsl:if>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 

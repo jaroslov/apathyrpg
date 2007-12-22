@@ -23,28 +23,34 @@ div.MainPart {
 h1.sector-part {
   color: black;
   font-size: 35pt;
+  margin-left: -.5em;
 }
 h1.sector-partchapter {
   color: black;
   font-size: 30pt;
+  margin-left: -.5em;
 }
 h1.sector-partchaptersection {
   color: black;
   font-size: 26pt;
+  margin-left: -.5em;
 }
 h1.sector-chaptersection {
   color: black;
   font-size: 26pt;
+  margin-left: -.5em;
 }
 h1.sector-chaptersectionsection {
   color: black;
-  font-size: 22pt;
+  font-size: 18pt;
   font-variant: small-caps;
+  margin-left: -.5em;
 }
 h1.sector-sectionsectionsection {
   color: black;
-  font-size: 22pt;
+  font-size: 18pt;
   font-variant: small-caps;
+  margin-left: -.5em;
 }
 div.Log {
   padding: 1em;
