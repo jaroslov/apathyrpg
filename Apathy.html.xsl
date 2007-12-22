@@ -28,18 +28,14 @@
 
   <xsl:template match="book">
     <div class="titlepage">
-      <img src="Apathy.png" />
-      <span class="apathy-A1">A</span>
-      <span class="apathy-P">P</span>
-      <span class="apathy-A2">A</span>
-      <span class="apathy-thy">THY</span>
+      <img src="Apathy.png" width="100%" />
       <table class="apathy-authors">
-        <tr><td>Allan Moyse</td></tr>
-        <tr><td>Nathan Jones</td></tr>
-        <tr><td>Jacob Smith</td></tr>
-        <tr><td>Noah Smith</td></tr>
-        <tr><td>Chris Cook</td></tr>
-        <tr><td>Josh Kramer</td></tr>
+        <tr><td align='center'><pre>Allan Moyse</pre></td></tr>
+        <tr><td align='center'><pre>Nathan Jones</pre></td></tr>
+        <tr><td align='center'><pre>Jacob Smith</pre></td></tr>
+        <tr><td align='center'><pre>Noah Smith</pre></td></tr>
+        <tr><td align='center'><pre>Chris Cook</pre></td></tr>
+        <tr><td align='center'><pre>Josh Kramer</pre></td></tr>
       </table>
     </div>
     <ul class="Fast-Find-List">

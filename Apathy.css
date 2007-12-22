@@ -9,6 +9,13 @@ body {
   background-color: white;
   font-family: times, serif;
 }
+pre {
+  padding: 0;
+  margin: 0;
+  font-family: courier, serif;
+  font-size: 14pt;
+  font-variant: small-caps;
+}
 div.MainPart {
   padding: 1em;
   border: 0px solid blue;
@@ -233,10 +240,13 @@ span.apathy-thy {
 }
 table.apathy-authors {
   position: relative;
-  text-align: center;
-  right: -11em;
-  top: -3em;
-}
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+} 
 div.titlepage {
   border: double black;
   padding: 2em;
