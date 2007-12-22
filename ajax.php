@@ -4,7 +4,7 @@ $source = $_GET["source"];
 $target = $_GET["target"];
 $code = $_GET["code"];
 $message = $_GET["message"];
-$ApathyName = "Apathy.xml";
+$ApathyName = "Apathy.tmp.xml";
 $ApathyXml = simplexml_load_file($ApathyName);
 $ApathyDom = dom_import_simplexml($ApathyXml);
 
@@ -403,7 +403,7 @@ function build_datum_response($trg,$src,$code,$msg,$apathy) {
     $table .= "</td></tr>";
   }
   $table .= "<tr><td></td><td colspan='2' align='right'>"
-    ."<input id='SaveButton' style='width:15em;' disabled "
+    ."<input id='SaveButton' style='width:15em;' "
     ."type='Button' value='Save'/></td></tr>";
   $table .= "</table>";
   return $table;
