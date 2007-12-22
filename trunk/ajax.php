@@ -4,7 +4,7 @@ $source = $_GET["source"];
 $target = $_GET["target"];
 $code = $_GET["code"];
 $message = $_GET["message"];
-$ApathyName = "Apathy.tmp.xml";
+$ApathyName = "Apathy.xml";
 $ApathyXml = simplexml_load_file($ApathyName);
 $ApathyDom = dom_import_simplexml($ApathyXml);
 
@@ -489,10 +489,12 @@ function respond($trg,$src,$code,$msg,$apathydom) {
   } else {
     if (false !== strpos($code,"@")) {
       return update_value_response($trg,$src,$code,$msg,$apathy);
-    } else
-      return build_response($trg,"<p>Not a known code:".$code
-        ." with ".$trg."->".$src."@".$msg."</p>");
+    }
   }
+  return build_response($trg,
+      "<p>Not a known code:".$code
+      ." with ".$trg."->".$src."@".$msg."<br/>With Dom: "
+      .gettype($apathydom)."</p>");
 }
 
 echo respond($target,$source,$code,$message,$ApathyDom);
