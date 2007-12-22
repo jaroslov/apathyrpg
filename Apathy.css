@@ -9,6 +9,22 @@ body {
   background-color: white;
   font-family: times, serif;
 }
+div.MainPart {
+  padding: 1em;
+  border: 0px solid blue;
+}
+div.Log {
+  padding: 1em;
+  border: 1px solid red;
+}
+div.Path {
+  padding: 1em;
+  border: 0px solid red;
+}
+div.Datum {
+  padding: 1em;
+  border: 0px solid green;
+}
 a {
   color: blue;
   text-decoration: none;
@@ -62,7 +78,6 @@ table.ModifyDatumTable {
   border: 1px solid black;
   left: 1em;
   right: 1em;
-  position: absolute;
 }
 table.ModifyDatumTable td {
   border-collapse: collapse;

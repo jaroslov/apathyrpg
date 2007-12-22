@@ -52,7 +52,7 @@ function build_response($target, $payload) {
 }
 
 function build_responses($targets, $payloads) {
-  $result = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><reply>";
+  $result = "<reply>";
   for ($idx = 0; $idx < sizeof($targets); $idx++) {
     $result .= "<response><target>".$targets[$idx]."</target>";
     $result .= "<payload>".encode_html($payloads[$idx])."</payload></response>";
@@ -273,7 +273,7 @@ function build_category_path($apathy,$path) {
         array_push($options,make_option_for_select($newmessage."!".$did,$name,$selected));
       }
       $select = make_select_statement($options,
-        "'Body'","'Body'","'LoadDatum'","value");
+        "'Path'","'Path'","'LoadDatum'","value");
       array_push($result,$select);
     } else {
       $options = array();
@@ -303,7 +303,7 @@ function build_category_path($apathy,$path) {
         }
       }
       $cats = $newcats;
-      $select = make_select_statement($options,"'Body'","'Body'","'LoadCategory'","value");
+      $select = make_select_statement($options,"'Path'","'Path'","'LoadCategory'","value");
       array_push($result,$select);
     }
   }
@@ -326,7 +326,13 @@ function build_category_heading($apathy,$msg) {
 }
 
 function load_category_response($trg,$src,$code,$msg,$apathy) {
-  return build_response($trg,build_category_heading($apathy,$msg));
+  $payloads = array();
+  array_push($payloads,build_category_heading($apathy,$msg));
+  array_push($payloads,"<em>Please select more specifically.</em>");
+  $targets = array();
+  array_push($targets,"Path");
+  array_push($targets,"Datum");
+  return build_responses($targets,$payloads);
 }
 
 function message_to_datum($apathy,$message) {
@@ -338,9 +344,15 @@ function message_to_datum($apathy,$message) {
   return $apathy->getElementById($datum_id);
 }
 
-function load_datum_response($trg,$src,$code,$msg,$apathy) {
-  $result = build_category_heading($apathy,$msg);
-  $result .= "<br/><div class='Datum' id='Datum'>";
+function get_name_of_datum($datum) {
+  foreach ($datum->childNodes as $field)
+    if ($field->tagName === "field")
+      if (false !== $field->hasAttribute("title"))
+        return translate_child_text($field);
+  return "No name.";
+}
+
+function build_datum_response($trg,$src,$code,$msg,$apathy) {
   $datum = message_to_datum($apathy,$msg);
   $name = $datum->getAttribute("name");
   $table = "<table class='ModifyDatumTable'>";
@@ -377,9 +389,26 @@ function load_datum_response($trg,$src,$code,$msg,$apathy) {
   $table .= "<tr><td></td><td colspan='2' align='right'>"
     ."<input style='width:15em;' type='Button' value='Save'/></td></tr>";
   $table .= "</table>";
-  $result .= $table;
-  $result .= "</div>";
-  return build_response($trg,$result);
+  return $table;
+}
+
+function load_datum_response($trg,$src,$code,$msg,$apathy) {
+  $datum = message_to_datum($apathy,$msg);
+  $name = "None";
+  try {
+    $name = get_name_of_datum($datum);
+  } catch(Exception $e) {
+    $name = $e->getMessage();
+  }
+  $payloads = array();
+  array_push($payloads,$name);
+  array_push($payloads,build_category_heading($apathy,$msg));
+  array_push($payloads,build_datum_response($trg,$src,$code,$msg,$apathy));
+  $targets = array();
+  array_push($targets,"@title");
+  array_push($targets,"Path");
+  array_push($targets,"Datum");
+  return build_responses($targets,$payloads);
 }
 
 function raw_data_response($trg,$src,$code,$msg,$apathy) {
@@ -399,11 +428,17 @@ function make_main_menu($which) {
   array_push($options,make_option_for_select("Initialize","Choose...",$chsel));
   array_push($options,make_option_for_select("NoResponse","Book",$bksel));
   array_push($options,make_option_for_select("RawData","Raw Data",$rdsel));
-  return make_select_statement($options,"'Body'","'Body'","value","''");
+  return make_select_statement($options,"'Path'","'Path'","value","''");
 }
 
 function initialize_system($target,$source,$code,$message,$apathy) {
-  return build_response($target,make_main_menu("Choose"));
+  $payloads = array();
+  array_push($payloads,make_main_menu("Choose"));
+  array_push($payloads,"<em>No data shown.</em>");
+  $targets = array();
+  array_push($targets,"Path");
+  array_push($targets,"Datum");
+  return build_responses($targets,$payloads);
 }
 
 function respond($trg,$src,$code,$msg,$apathy) {

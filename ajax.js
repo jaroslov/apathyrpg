@@ -18,7 +18,15 @@ function ajaxFunction(Source,Target,Code,Message) {
       for (i = 0; i<replies.length; i++) {
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
         var payload = replies[i].getElementsByTagName("payload")[0].firstChild.nodeValue;
-        document.getElementById(target).innerHTML = realUnescape(payload);
+        if ("@" == target[0]) {
+          target = target.split("@")[1];
+          document.title = payload;
+        } else {
+          document.getElementById(target).innerHTML = realUnescape(payload);
+          var log = document.getElementById('Log');
+          if (log)
+            log.innerHTML = xmlR;
+        }
       }
     }
   }
