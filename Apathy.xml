@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <apathy-game>
   <book xml:id="G0000001">
-    <part xml:id="G0000002">
+    <section kind="part" xml:id="G0000002">
       <title xml:id="G0000003">Game Manual</title>
-      <chapter xml:id="G0000004">
+      <section kind="chapter" xml:id="G0000004">
         <title xml:id="G0000005">Core Rules</title>
-        <section xml:id="G0000006">
+        <section kind="section" xml:id="G0000006">
           <title xml:id="G0000007">Introduction</title>
           <text xml:id="G0000008"><Apathy xml:id="G0000009"/> is a paper <and xml:id="G0000010"/> pencil role-playing game. <Apathy xml:id="G0000011"/><rsquo xml:id="G0000012"/>s authors have played a great many RPGs including D<and xml:id="G0000013"/>D, Heroes Unlimited, GURPS, Shadowrun, TMNT, various White Wolf games (Vampire, etc.), Deadlands, and a few others. While these games are all fun, we felt that each game had various shortcomings that could be improved upon. Enter <Apathy xml:id="G0000014"/>. <Apathy xml:id="G0000015"/> is designed to be a very flexible role-playing system. <Apathy xml:id="G0000016"/> can handle classic games with knights and dragons, as well as modern-day, Cyberpunk, superhero, or futuristic scenarios. It excels at fantasy games that blend all genres.</text>
           <text xml:id="G0000017"><Apathy xml:id="G0000018"/> is recommended for advanced role-players (or at least for experienced DM/GM/Storytellers). This is because the <Apathy xml:id="G0000019"/> system is designed for a unique mix of speed and realism rather than carefully <ldquo xml:id="G0000020"/>balanced<rdquo xml:id="G0000021"/> rules. The <Apathy xml:id="G0000022"/> rules make it very easy to make unbalanced (<ldquo xml:id="G0000023"/>min-maxed<rdquo xml:id="G0000024"/>) or tweaked characters. <Apathy xml:id="G0000025"/> is likewise not appropriate for <ldquo xml:id="G0000026"/>rules lawyers<rdquo xml:id="G0000027"/> or excessively anal GMs and players.</text>
@@ -29,7 +29,7 @@
           </itemized-list>
           <text xml:id="G0000065">In any game of <Apathy xml:id="G0000066"/>, the CHARACTERS are the heroes!</text>
         </section>
-        <section xml:id="G0000067">
+        <section kind="section" xml:id="G0000067">
           <title xml:id="G0000068">Basic Terms</title>
           <description-list xml:id="G0000069">
             <item xml:id="G0000070">
@@ -141,7 +141,7 @@
             </item>
           </description-list>
         </section>
-        <section xml:id="G0000173">
+        <section kind="section" xml:id="G0000173">
           <title xml:id="G0000174">Game World</title>
           <text xml:id="G0000175"><Apathy xml:id="G0000176"/>, like most role-playing games, can be thought of like a play or a movie. The players are like the actors; their characters are the heroes and heroines of the story. Like a movie, a game can take place in any number of settings. The GM is like the director, and decides the intricacies of the game world.</text>
           <text xml:id="G0000177">The GM should talk with the players and decide upon what kind of game world they would like to use. The GM can then finalize the details of that world, and should tell the players about it before the players make their characters and the game starts.</text>
@@ -162,17 +162,17 @@
           </numbered-list>
           <text xml:id="G0000188">The <Apathy xml:id="G0000189"/> system contains sections for many different types of games and many different historical settings. The GM should decide which ones to allow for each game.</text>
         </section>
-        <section xml:id="G0000190">
+        <section kind="section" xml:id="G0000190">
           <title xml:id="G0000191">Creating a Character</title>
           <text xml:id="G0000192">The first step in playing <Apathy xml:id="G0000193"/> is determining your character concept. Talk to the GM and your fellow players for ideas about the game setting and what kind of character you might want to play. Your imagination is the only real limit as to what your character can be. Perhaps you want to play a heroic knight that fights for honor and puts monsters to the sword? Or maybe you<rdquo xml:id="G0000194"/>d rather play a cunning and seductive thief with a hidden agenda. You could be a young mecha pilot<mdash xml:id="G0000195"/>inexperienced, but eager to fight for his cause. Your character is a hero in the game. You should take this opportunity to have fun and do things you can<rdquo xml:id="G0000196"/>t do in real life.</text>
           <text xml:id="G0000197">If you are having trouble thinking up a character concept, you might want to look to books, movies, or even historical precedent as to what kind of character you want to play. You could be a space mercenary like Han Solo from Star Wars, or maybe a secret agent like James Bond<mdash xml:id="G0000198"/>or perhaps an old-west gunslinger.</text>
           <text xml:id="G0000199">Once you have an idea so to what kind of character you want to play, it<rdquo xml:id="G0000200"/>s time to develop that idea. Think about what your character looks like. How old are they? How do they dress? What kinds of possessions do they have? What do they do for a living? What was their past? How would they react in a fight? What would they do if they were suddenly given a lot of money? What are their fears? Their hopes? Their goals?</text>
           <text xml:id="G0000201">Now you should have a good understanding of your character<rdquo xml:id="G0000202"/>s appearance, personality, skills, etc. What you need to do next is represent that idea in the <Apathy xml:id="G0000203"/> system rules. Grab a character sheet, and follow along.</text>
-          <section xml:id="G0000204">
+          <section kind="section" xml:id="G0000204">
             <title xml:id="G0000205">Character Basics</title>
             <text xml:id="G0000206">The first part of describing your character is very simple. Decide what your character<rdquo xml:id="G0000207"/>s basic description is like. Are they male or female? How tall? What do they weigh? Fill in age, sex, height, weight, eyes color, and hair color/style on the upper right portion of your character sheet. Decide on your character<rdquo xml:id="G0000208"/>s name, and fill that in too. There is also a spot on the character sheet for your name. Now you can move on to the details of your character.</text>
           </section>
-          <section xml:id="G0000209">
+          <section kind="section" xml:id="G0000209">
             <title xml:id="G0000210">Attributes</title>
             <text xml:id="G0000211"> <Apathy xml:id="G0000212"/> models characters by means of a core attribute system. These attributes are numbers that describe the most basic characteristics of any given character. They are:</text>
             <figure xml:id="G0000213">
@@ -231,7 +231,7 @@
             <note xml:id="G0000272">No attribute can be above a 20 for a natural human. A 20 is considered the peak of human ability. 11 or so is average. Below 8 is considered handicapped for an adult human. Note that certain things can increase attributes above 20, such as supernatural powers, magic, cybernetics, etc.</note>
             <text xml:id="G0000273">Character Points (see next section) can be used to purchase Attribute Points for increasing your attributes later on.</text>
           </section>
-          <section xml:id="G0000274">
+          <section kind="section" xml:id="G0000274">
             <title xml:id="G0000275">Sub-Attributes</title>
             <text xml:id="G0000276">There are a number of <ldquo xml:id="G0000277"/>sub-attributes<rdquo xml:id="G0000278"/> that rely on your attributes to determine their value. The names, description, and method for determining their value are listed below.</text>
             <figure xml:id="G0000279">
@@ -310,7 +310,7 @@
             <text xml:id="G0000400">If the above equations generate any fractions, round them to the nearest whole number.</text>
             <text xml:id="G0000401">Encumbrance, Base Armor, HP, and MP will be discussed in more detail in later sections. Keep this in mind as you may need to update them later.</text>
           </section>
-          <section xml:id="G0000402">
+          <section kind="section" xml:id="G0000402">
             <title xml:id="G0000403">Character Points</title>
             <text xml:id="G0000404">The remainder of the character creation process is done through the expenditure of Character Points, otherwise known as CP. Talk with your GM about how many CP you should use to create your character with. We have found that for a group of 3-4 players 125 CP is about right. Typically the more players, the fewer CP characters should have. This will keep the group from becoming too powerful<mdash xml:id="G0000405"/>unless this is the GM<rdquo xml:id="G0000406"/>s intent.</text>
             <text xml:id="G0000407">You will use your CP to <ldquo xml:id="G0000408"/>purchase<rdquo xml:id="G0000409"/> the remainder of your character. The rest of your character is broken into three categories where you will spend these points:</text>
@@ -327,7 +327,7 @@
             </itemized-list>
             <note xml:id="G0000457"><Apathy xml:id="G0000458"/> does not have <ldquo xml:id="G0000459"/>character classes<rdquo xml:id="G0000460"/> that are common to many role-playing systems. The <Apathy xml:id="G0000461"/> system allows the player to decide every detail pertaining to his character, rather than being stuck with a <ldquo xml:id="G0000462"/>default<rdquo xml:id="G0000463"/> set of abilities and skills. It is up to the player to use his CP to develop a well-rounded character. Note that there are NO skills that come <ldquo xml:id="G0000464"/>free.<rdquo xml:id="G0000465"/> If your character is literate, then that skill needs to be purchased. Know how to drive a car? Buy the skill.</note>
           </section>
-          <section xml:id="G0000466">
+          <section kind="section" xml:id="G0000466">
             <title xml:id="G0000467">Increasing Attributes (optional)</title>
             <text xml:id="G0000468">If your attributes aren<rdquo xml:id="G0000469"/>t quite where you desire, you will need to get more Attribute Points so you can purchase a better attribute. Each Attribute Point costs 1 Character Point. Once you purchase the number of Attribute Points you want, just look at the table found in the Attributes section above to see how many total Attribute Points you must spend to get that attribute.</text>
             <text xml:id="G0000470">You must pay a number of Attribute Points equal to the difference between what you want, and what you already have. For example: if you currently have an 11 STR (6 Attribute Points) and wish to increase it to a 14 (21 Attribute Points) that will cost you 15 Attribute Points (<math xml:id="G0000471"><mrow xml:id="G0000472"><mn xml:id="G0000473">9</mn><mo xml:id="G0000474">-</mo><mn xml:id="G0000475">4</mn><mo xml:id="G0000476">=</mo><mn xml:id="G0000477">5</mn></mrow></math>). Since Attribute Points cost 1 Character Point each, going from an 11 in an attribute to a 14 will cost 15 CP.</text>
@@ -365,7 +365,7 @@
             </description-list>
           </section>
         </section>
-        <section xml:id="G0000506">
+        <section kind="section" xml:id="G0000506">
           <title xml:id="G0000507">Skills</title>
           <text xml:id="G0000508">All characters have skills. Skills represent what your character has learned and what they know how to do. Other than being useful in game, skills help to distinguish your character from everyone else in the world. Are you going to play a diplomat? You better have diplomacy, law, and similar skills. A warrior? Better have that shield and/or weapon skills handy!</text>
           <text xml:id="G0000509">Skills have a number of pieces of information associated with them. They have a Rank, Associated Attribute, Description, and Level.</text>
@@ -465,9 +465,9 @@
           <text xml:id="G0000627">If you take a look at the little chart above, you will see that at the desired skill level (3) the CP cost is a 6, which I then multiply by the rank (2) to get 12 CP, the same thing I got when I did it out by hand.</text>
           <text xml:id="G0000628">Note that the chart will only tell you how many total Character Points. To get the number of CP needed to increase to the next level, just subtract the upper number from the lower one. A more complete version of the above table can be found at the end of this manual.</text>
           <text xml:id="G0000629">Once you are in game and earning experience, you can increase the level of a skill you currently have at least one level in by paying the appropriate CP cost. If you wish to learn the first level of a skill you don<rdquo xml:id="G0000630"/>t have yet, it takes a number of weeks of intense studying equal to the rank of the skill.</text>
-          <section xml:id="G0000631">
+          <section kind="section" xml:id="G0000631">
             <title xml:id="G0000632">Skill Specialization (optional)</title>
-            <section xml:id="G0000633">
+            <section kind="section" xml:id="G0000633">
               <title xml:id="G0000634">Specialization in most Skills</title>
               <text xml:id="G0000635">It is possible to specialize in many skills. When specialized, a character knows more about a certain aspect of the skill than other parts of the skill. In game terms, you are +1 LVL when performing a check in the area of your specialization, but are -4 to your roll when you are performing a check outside of your specialization. Specializing does NOT cost any extra CP.</text>
               <example xml:id="G0000636">
@@ -482,7 +482,7 @@
               <text xml:id="G0000656">It is possible to specialize in most skills. Talk to your GM about specializing to see which skills you think are appropriate and which ones are not.</text>
               <text xml:id="G0000657">Specializing in skills is purely optional.</text>
             </section>
-            <section xml:id="G0000658">
+            <section kind="section" xml:id="G0000658">
               <title xml:id="G0000659">Specialization applied to Weapon skills</title>
               <text xml:id="G0000660">It is also possible to specialize in weapon skills. If a character has a specialized weapon skill that means that he is especially proficient with a very specific type of weapon. When wielding a weapon that matches a character<rdquo xml:id="G0000661"/>s specialty, that character receives +1 LVL to the skill. This bonus applies to attack (strike) rolls, and defensive rolls (parry), if applicable. When using a weapon that is outside the character<rdquo xml:id="G0000662"/>s specialty, the character is at -1 LVL. Note that Weapon skill specialization does NOT affect damage rolls.</text>
               <text xml:id="G0000663">Specializing in a weapons skill costs 3 CP in addition to the normal cost of the skill. Specializing can be applied to all weapon proficiency type skills and the shield skill.</text>
@@ -496,12 +496,12 @@
             </section>
           </section>
         </section>
-        <section xml:id="G0000675">
+        <section kind="section" xml:id="G0000675">
           <title xml:id="G0000676">Rules (Rolls)</title>
           <text xml:id="G0000677">What would an RPG be without rules? <Apathy xml:id="G0000678"/> has a set of rules that allow for just about any occurrence that an imaginative GM can put the players through.</text>
           <text xml:id="G0000679">Lets start with the basics (some of this will be review):</text>
           <text xml:id="G0000680">In <Apathy xml:id="G0000681"/>, there are three different types of die rolls. Every time you roll a die when playing <Apathy xml:id="G0000682"/>, you will use one of these sets of rules.</text>
-          <section xml:id="G0000683">
+          <section kind="section" xml:id="G0000683">
             <title xml:id="G0000684">Attribute Checks</title>
             <text xml:id="G0000685">Attribute checks are required anytime the GM wants to see if you did something solely based on an attribute. They are used whenever a player wants their character to do something tricky. Attribute checks are purely based on a character<rdquo xml:id="G0000686"/>s core attributes. They are completely separate from skills. If a player needs to do something based on a particular skill, then see the skill roll section below.</text>
             <example xml:id="G0000687">
@@ -518,7 +518,7 @@
               <text xml:id="G0000696">Attribute checks are always rolled the same. Roll ONE twenty-sided die, add the attribute to the die, and add any bonuses or negatives. If the total (die roll + attribute + bonuses + negatives) is 25 or higher, then the check succeeded. If you roll a 1, you fail automatically, no matter what your bonuses or attributes are. If you roll a 20, you succeed automatically, no matter what the negatives might be. For an attribute check, you always roll just one 20-sided die.</text>
             </example>
           </section>
-          <section xml:id="G0000697">
+          <section kind="section" xml:id="G0000697">
             <title xml:id="G0000698">Contest of Attributes</title>
             <text xml:id="G0000699">Contests of Attributes occur whenever two characters are competing at something that is largely dependent on an attribute and nothing else. Arm wrestling is a contest of strength. Racing to complete a puzzle is a contest of intelligence. A trivia game would be a contest of wisdom, etc.</text>
             <text xml:id="G0000700">A contest of attributes occurs only when there are multiple competitors (generally two) and only when there is no particular skill involved. For example, arm wrestling is a contest of strength but a game of 1-on-1 basketball is generally not, because basketball is a complex game.</text>
@@ -528,7 +528,7 @@
               <text xml:id="G0000708">Douglas (STR 13) is fighting with an enemy solider (STR 12) over the possession of a single rifle. The GM declares that a contest of strength will resolve who manages to gain possession of the rifle. The GM rolls for the solider (a three) and Douglas rolls a 1. The enemy soldier has a total of 15, and Douglas has 14. Therefore, the enemy soldier wrestles the rifle out of Douglas<rdquo xml:id="G0000709"/>s hands.</text>
             </example>
           </section>
-          <section xml:id="G0000710">
+          <section kind="section" xml:id="G0000710">
             <title xml:id="G0000711">Skill Rolls</title>
             <text xml:id="G0000712">Skill rolls are used whenever a player wants to use one of his character<rdquo xml:id="G0000713"/>s skills. They are also used whenever two characters are competing at something (Contest of skills) related to a skill. Skill rolls are also used <ldquo xml:id="G0000714"/>to strike<rdquo xml:id="G0000715"/> or <ldquo xml:id="G0000716"/>to defend<rdquo xml:id="G0000717"/> in combat.</text>
             <text xml:id="G0000718">To determine if you are successful in performing a skill, roll a number of D20s equal to the Level you have purchased the skill in. To each die, add your current attribute referenced by the associated attribute value of the skill. Each time a die with this value added to it reaches 25 or above, this is called a success. If you have at least one success, you successfully performed the skill. Rolling a <ldquo xml:id="G0000719"/>20<rdquo xml:id="G0000720"/> on a die will give you +1 successes to however many you rolled normally. Note that this makes it possible to have more successes than you have levels in a given skill. Likewise, a roll of <ldquo xml:id="G0000721"/>1<rdquo xml:id="G0000722"/> is -1 successes to your total. If you have negative successes (caused by rolling more 1s than successes) then you have a critical failure! In the case of a critical failure the GM will determine what (negative) outcome happens!</text>
@@ -590,7 +590,7 @@
               <text xml:id="G0000785">Billy is still fighting the same giant robot. This time, he<rdquo xml:id="G0000786"/>s trying to make a called shot and shoot the robot in the arm. The GM determines that Billy gets a +3 bonus due to the robot<rdquo xml:id="G0000787"/>s Size, but also a -4 to strike because of the called shot to the arm. Thus, Billy adds up his bonuses: +22 from DEX +3 from Size and -4 for the called shot. This adds up to +21, but the bonus is capped at +20. Again, Billy adds +20 to his dice. Notice that the <ldquo xml:id="G0000788"/>+20 cap<rdquo xml:id="G0000789"/> is applied AFTER all the bonuses and negatives are added up.</text>
             </example>
           </section>
-          <section xml:id="G0000790">
+          <section kind="section" xml:id="G0000790">
             <title xml:id="G0000791">Contest of Skills</title>
             <text xml:id="G0000792">A contest of skills occurs when two people are trying to defeat each other in some manner with their skills. If two characters were competing to see who could sing better, the character with the largest number of successes of the singing skill would win. The most common example of this is combat. In order to be successful in a combat situation<mdash xml:id="G0000793"/>such as attempting to hit an opponent with a sword while he is blocking with a shield, the initiator (or attacker) of the Action must make more successes than the defender.</text>
             <example xml:id="G0000794">
@@ -606,7 +606,7 @@
             <text xml:id="G0000843">If the contest entails an ongoing event (such as the haggling over a suit of armor detailed above) then it is assumed that the competitors <ldquo xml:id="G0000844"/>keep at it<rdquo xml:id="G0000845"/> and a second roll is in order.</text>
             <text xml:id="G0000846">The rules for combat are slightly more complicated; see below.</text>
           </section>
-          <section xml:id="G0000847">
+          <section kind="section" xml:id="G0000847">
             <title xml:id="G0000848">Skill Rolls and Related Skills</title>
             <text xml:id="G0000849">If a character needs to make a skill roll and that character knows other skills that are somehow related to (or are similar to) the skill to be rolled, that character is generally entitled to a bonus to his or her roll. The exact terms of the bonus, including what skills qualify as <ldquo xml:id="G0000850"/>related<rdquo xml:id="G0000851"/>, is determined by the GM on a case-by-case basis. The general rule is that each level of a related skill conveys a +1 to the roll. The maximum possible bonus from related skills is +5, regardless of the circumstances.</text>
             <example xml:id="G0000852">
@@ -615,7 +615,7 @@
             </example>
             <text xml:id="G0000858">Related Skill bonuses NEVER apply to combat skills or any skill used in a combat situation.</text>
           </section>
-          <section xml:id="G0000859">
+          <section kind="section" xml:id="G0000859">
             <title xml:id="G0000860">All Other Rolls</title>
             <text xml:id="G0000861">This type of die rolling is used for just about everything else in the game: rolling damage from combat, the duration of magical spells, or the number of monsters appearing in a group.</text>
             <text xml:id="G0000862">Rolling dice is represented in the <roll xml:id="G0000863"><rOff xml:id="G0000864"><plusminus xml:id="G0000865"/></rOff><raw xml:id="G0000866">R</raw><num xml:id="G0000867">X</num><face xml:id="G0000868">Y</face><bOff xml:id="G0000869"><plusminus xml:id="G0000870"/></bOff><bns xml:id="G0000871">Z</bns><kind xml:id="G0000872">K</kind></roll><footnote xml:id="G0000873">that is, <roll xml:id="G0000874"><rOff xml:id="G0000875"><plusminus xml:id="G0000876"/></rOff><raw xml:id="G0000877">R</raw><num xml:id="G0000878">X</num><face xml:id="G0000879">Y</face><bOff xml:id="G0000880"><plusminus xml:id="G0000881"/></bOff><bns xml:id="G0000882">Z</bns><kind xml:id="G0000883">K</kind></roll></footnote> format; for example <roll xml:id="G0000884"><num xml:id="G0000885">3</num><face xml:id="G0000886">4</face><bOff xml:id="G0000887">+</bOff><bns xml:id="G0000888">1</bns></roll>. This means that you roll three individual 4-sided dice, and add 1 to each die.</text>
@@ -628,7 +628,7 @@
             <text xml:id="G0000945">Unless otherwise stated, all non-skill die rolls use this system.</text>
           </section>
         </section>
-        <section xml:id="G0000946">
+        <section kind="section" xml:id="G0000946">
           <title xml:id="G0000947">Combat Sequence <and xml:id="G0000948"/> Initiative</title>
           <text xml:id="G0000949">Combat is based on a system of Rounds, Turns, and Actions. A <ldquo xml:id="G0000950"/>round<rdquo xml:id="G0000951"/> lasts about five seconds. It is the length of time in which all combatants have done something. Each round is broken down into Actions. An Action lasts about 1 second. Each combatant gets one or more Actions during each round. When all combatants have used up their Actions, the current round is over and a new one starts.</text>
           <text xml:id="G0000952">During your turn, you determine what you wish to do with your available Actions. Almost everything that you do of significance during your turn consumes an Action Simple examples of what can be done in an Action are shooting a gun, swing a sword, moving, or using a mystical ability. Keep in mind that a lot of <ldquo xml:id="G0000953"/>boring<rdquo xml:id="G0000954"/> combat stuff also takes up Actions: reloading your weapon, moving around, ducking behind cover, or taking an item out of your pack. Some things that you will want to do will consume multiple Actions per turn.</text>
@@ -674,7 +674,7 @@
               <text xml:id="G0001032">Held Actions are lost if their triggering conditions never occur.</text>
             </item>
           </numbered-list>
-          <section xml:id="G0001033">
+          <section kind="section" xml:id="G0001033">
             <title xml:id="G0001034">Weapons <and xml:id="G0001035"/> Equipment</title>
             <text xml:id="G0001036">Most characters will carry equipment in combat. This usually includes weapons and armor. There are no <ldquo xml:id="G0001037"/>class<rdquo xml:id="G0001038"/> restrictions for weapons or armor. Any character can wear any armor and wield any weapon, provided that the character has the appropriate attributes and skills.</text>
             <text xml:id="G0001039">Weapons have a minimum strength requirement (MSR). The MSR indicates what strength is required of the character to properly wield a given weapon. If the character<rsquo xml:id="G0001040"/>s strength is less than the MSR, then the character has -1 to strike and [-1] damage for each point of strength difference.</text>
@@ -695,7 +695,7 @@
             <text xml:id="G0001094">It is possible to use two hands to fight with a one-handed weapon. In this case, the wielder has -1 to strike and effectively adds +3 to his strength.</text>
             <text xml:id="G0001095">It is possible to use some two-handed weapons with one hand. To do so, add 4 to the minimum strength requirement of the weapon. Note that many two-handed weapons always require two hands, period. These are large firearms (rifles, shotguns), staves, pole arms, chains, and bows.</text>
           </section>
-          <section xml:id="G0001096">
+          <section kind="section" xml:id="G0001096">
             <title xml:id="G0001097">Dual-wielding Weapons or Weapon <and xml:id="G0001098"/> Shield</title>
             <text xml:id="G0001099">As noted above, it is possible for characters to wield two weapons in combat, or a weapon and a shield. A character cannot attack with both weapons during the same Action unless he takes the Multi-weapon style skill in Martial Arts. A character using a weapon and a shield may not attack with his weapon and shield bash in the same Action for the same reason. When attacking with both weapons the character makes two separate attack rolls, one for each weapon; each attack is resolved separately. This takes two separate Actions.</text>
             <description-list xml:id="G0001100">
@@ -715,7 +715,7 @@
             <text xml:id="G0001144">If a character is wielding two weapons, he may always choose to attack with the main weapon only at no penalty. In this case the weapon in his off hand is considered merely carried, and is not <ldquo xml:id="G0001145"/>ready<rdquo xml:id="G0001146"/> for combat. An attack with the off-hand weapon is always made with the full penalty, regardless of what the <ldquo xml:id="G0001147"/>main hand<rdquo xml:id="G0001148"/> is doing.</text>
             <text xml:id="G0001149">Note that the Ambidexterity skill from Martial Arts can reduce the dual-weapon penalty; and that the Multi-weapon Style skill allows the character to strike more than once during a single Action A different approach is the use of the Multitarget skill which allows the martial artist to strike multiple times with a single weapon in a single Action</text>
           </section>
-          <section xml:id="G0001150">
+          <section kind="section" xml:id="G0001150">
             <title xml:id="G0001151">Combat Overview</title>
             <text xml:id="G0001152">Resolving an attack is a three-step process:</text>
             <numbered-list xml:id="G0001153">
@@ -731,13 +731,13 @@
             </numbered-list>
             <text xml:id="G0001160">This process is explained in detail below.</text>
           </section>
-          <section xml:id="G0001161">
+          <section kind="section" xml:id="G0001161">
             <title xml:id="G0001162">Attacking</title>
             <text xml:id="G0001163">An attack is nearly anything that you try to do to an opponent during your turn. Typically an attack is a physical strike against your opponent with a weapon (such as your fist or a sword), but it could also be the use of a supernatural ability, magic spell, or a modern device such as a gun.</text>
             <text xml:id="G0001164">When you attack, you use one of your skills in an attempt to damage your opponent. Normally, this will be a <ldquo xml:id="G0001165"/>basic attack<rdquo xml:id="G0001166"/>skill from Martial Arts. Any time you make an attack like this, you roll a Strike Roll. Strike roll is just a special name for a skill roll in combat<mdash xml:id="G0001167"/>they work just like normal skill rolls. To recap, roll a number of D20s equal to your level of the skill you are using to attack with (i.e. use the Large Sword skill to strike with your bastard sword), add your attribute and any bonuses or negatives. For each die that hits 25 or better, you have a success.<note xml:id="G0001168">If you have at least one success, you strike the target.</note>Otherwise you miss your target.</text>
             <text xml:id="G0001169">Some attacks don<rsquo xml:id="G0001170"/>t require a skill roll. This includes special attacks that automatically hit your opponent (such as certain abilities from Martial Arts) as well as magical spells or supernatural powers that are auto-targeting. For example, the magic spell Ray of Heat automatically hits your opponent, with no strike roll needed.</text>
           </section>
-          <section xml:id="G0001171">
+          <section kind="section" xml:id="G0001171">
             <title xml:id="G0001172">Defending</title>
             <text xml:id="G0001173">The target of an attack usually receives an attempt to defend himself.</text>
 	    <note xml:id="G0001174">Defending is using your skills to avoid getting hit by an incoming attack.</note>
@@ -761,7 +761,7 @@
             <text xml:id="G0001197">If you are struck you will likely take damage from the attack. Also note that you cannot defend (parry, block, or dodge) an attack that you did not know about!</text>
             <text xml:id="G0001198">Note that there are other defensive maneuvers aside from Dodge, Parry, and Block. These include certain magic spells (Blink, for example), martial arts abilities (such as Preemptive Dodge), or supernatural powers. Regardless of what defense a character chooses to use, only ONE defense maneuver may be used against any one incoming attack.<footnote xml:id="G0001199">Some magical spells or super powers of a defensive nature are active for a set duration<mdash xml:id="G0001200"/>usually several rounds. Such spells, such as full barrier, are not defensive maneuvers. These spells are independent of defense. A character using such a spell may still use a defensive maneuver if she chooses to. Magical spells, martial arts techniques, and supernatural abilities are considered defense maneuvers whenever they are single-use effects that are used against only one specific attack (such as Blink).</footnote><footnote xml:id="G0001201">Some attacks, such as automatically targeting magical spells, will strike your opponent regardless of defense. Defensive maneuvers are ineffective against these spells. For example, Ray of Heat as discussed above will always strike its target. Call Lightning will always strike its target, if the caster succeeds on his magical control roll to cast the spell. For these abilities, defensive maneuvers have no effect.</footnote></text>
           </section>
-          <section xml:id="G0001202">
+          <section kind="section" xml:id="G0001202">
             <title xml:id="G0001203">Damage</title>
             <text xml:id="G0001204">When an attack hits its target, it will inflict damage upon it. Every weapon has a damage rating associated with it as well as a damage type (for example: a dagger is a <roll xml:id="G0001205"><num xml:id="G0001206">1</num><face xml:id="G0001207">6</face><bns xml:id="G0001208"/><kind xml:id="G0001209">P</kind></roll> weapon). The damage rating is the amount of damage it will do, and the damage type reflects how the weapon deals its damage.</text>
             <text xml:id="G0001210">Here<rsquo xml:id="G0001211"/>s a key of the different damage types with abbreviations in parenthesis and what they are typically associated with:</text>
@@ -792,7 +792,7 @@
             <text xml:id="G0001242">Ok, so now we<rsquo xml:id="G0001243"/>ve got our weapon<rsquo xml:id="G0001244"/>s damage rating and it<rsquo xml:id="G0001245"/>s damage type. Roll the given damage as described in the dice rolling section at the beginning of the rules section. The higher the damage roll, the more severe the attack was upon the target.</text>
             <text xml:id="G0001246">After the damage roll is determined, subtract that damage from the target<rsquo xml:id="G0001247"/>s Hit Points (HP). Armor can reduce the damage taken, which brings us to...</text>
           </section>
-          <section xml:id="G0001248">
+          <section kind="section" xml:id="G0001248">
             <title xml:id="G0001249">Armor</title>
             <text xml:id="G0001250">Armor is any covering that you are wearing or behind that will absorb some of the damage applied to you. All armor is given three numerical ratings for piercing, Slashing, and Crushing protection. The higher any one number is, the better it will protect you from that type of damage. Typically this value sequence is represented as P/S/C (Piercing/Slashing/Crushing). An example would be 3/2/3, which provides 3 points of piercing protection, two points of Slashing protection, and 3 points of Crushing protection.</text>
             <text xml:id="G0001251">When taking damage subtract the armor value, which matches the damage type of the weapon, from the damage amount.</text>
@@ -808,7 +808,7 @@
             <text xml:id="G0001263">Now that you have that, lets introduce a few tricks. The entire next two paragraphs are incredibly important, so pay attention!</text>
             <text xml:id="G0001264">Weapons that deal undefined or Direct Damage (U or D damage) bypass all armor values. Undefined damage can be protected against by your character<rsquo xml:id="G0001265"/>s Base Armor (BA) sub-attribute. Just subtract the BA from the damage taken as if the BA was normal armor. Note that Base Armor is not used for protecting against anything but undefined damage! A target will always lose at least one HP when hit with an attack that deals undefined damage.</text>
             <text xml:id="G0001266">Direct Damage cannot be protected against. Not by normal armor, Base Armor, not anything. it<rsquo xml:id="G0001267"/>s harsh, so be careful when on the receiving end of something that deals D damage. D damage is applied directly to your Hit Points.</text>
-            <section xml:id="G0001268">
+            <section kind="section" xml:id="G0001268">
               <title xml:id="G0001269">Armor Piercing</title>
               <text xml:id="G0001270">Some weapons have a note that says <ldquo xml:id="G0001271"/>AP<rdquo xml:id="G0001272"/> followed by some number. This kind of weapon has an unusual ability to pierce armor. If an armored target is struck by a weapon with <ldquo xml:id="G0001273"/>AP<rdquo xml:id="G0001274"/>, the armor is reduced by the AP number for the purposes of damage calculation. Note, that this cannot go negative. If an <ldquo xml:id="G0001275"/>AP: 10<rdquo xml:id="G0001276"/> weapon strikes someone wearing 5 armor, then the armor is totally ignored. It does not, however, go to -5.</text>
               <example xml:id="G0001277">
@@ -818,7 +818,7 @@
               <text xml:id="G0001281">Consider the same situation as above, but assume that Lira<rsquo xml:id="G0001282"/>s opponent<rsquo xml:id="G0001283"/>s armor is only a 3 versus Slashing. First, deduct the AP form the armor: 3 armor - 5 AP = -2. However, this cannot be negative, so we cap it at zero. Now, deduct the result from the damage: 11 damage - 0 = 11. Lira<rsquo xml:id="G0001284"/>s opponent takes all 11 damage.</text>
               <text xml:id="G0001285">AP is effective against armored targets, but it does nothing against unarmored targets. Note, that most weapons with AP don<rdquo xml:id="G0001286"/>t deal very much damage. It is usually a good idea to use AP weapons versus armored targets only, and use <ldquo xml:id="G0001287"/>normal<rdquo xml:id="G0001288"/> weapons versus unarmored targets.</text>
             </section>
-            <section xml:id="G0001289">
+            <section kind="section" xml:id="G0001289">
               <title xml:id="G0001290">Fire (F)</title>
               <text xml:id="G0001291">Some weapons and spells have a note that says <ldquo xml:id="G0001292"/>F<rdquo xml:id="G0001293"/>, <ldquo xml:id="G0001294"/>Fire<rdquo xml:id="G0001295"/>, <ldquo xml:id="G0001296"/>Fire Effect<rdquo xml:id="G0001297"/>, or<rdquo xml:id="G0001298"/> U Fire<rdquo xml:id="G0001299"/>. These weapons deal fire damage. Unless stated otherwise Fire weapons deal U damage. As well, Fire effect weapons will ignite the target, as well as readily flammable materials within a 3<rdquo xml:id="G0001300"/> radius of the blow. A target that is <ldquo xml:id="G0001301"/>on fire<rdquo xml:id="G0001302"/> will suffer an extra <roll xml:id="G0001303"><num xml:id="G0001304">1</num><face xml:id="G0001305">6</face><bns xml:id="G0001306"/><kind xml:id="G0001307">U</kind></roll> damage each turn that the fire is still going. This starts on the <ldquo xml:id="G0001308"/>next<rdquo xml:id="G0001309"/> turn after the target is struck. Certain types of armor have Fire Protection. This means that this armor has the unique ability to resist heat and the damage caused by fire-effect sources. If a target with fire protection is struck with a fire-effect attack, damage dealt from the fire is zero and the target is not ignited. Fire protection on armor will only work three times before the armor must be repaired or replaced. Some armor is rated fire protection<math xml:id="G0001310"><times xml:id="G0001311"/></math>2, which will take six fire-effect hits before loosing it<rsquo xml:id="G0001312"/>s fire resistance, etc. Note that fire protection armor only resists the ignition effect and any heat (U) damage from the fire specifically. Therefore, if a weapon deals normal damage (P/S/C) AND has either Fire effect or Fire damage (U) then the fire-related effects are prevented but the standard damage (P/S/C) is treated as normal. Targets that are <ldquo xml:id="G0001313"/>on fire<rdquo xml:id="G0001314"/>suffer the damage on each of their turns.</text>
               <example xml:id="G0001315">
@@ -831,7 +831,7 @@
               </example>
             </section>
           </section>
-          <section xml:id="G0001341">
+          <section kind="section" xml:id="G0001341">
             <title xml:id="G0001342">Combat with Different types of Weapons and Effects</title>
             <text xml:id="G0001343">Apathy includes rules for combat with melee weapons, ranged weapons, firearms, magic, and so forth. The rules for attacking and defending with different kinds of weapons and effects are detailed here.</text>
             <description-list xml:id="G0001344">
@@ -857,7 +857,7 @@
               </item>
             </description-list>
           </section>
-          <section xml:id="G0001362">
+          <section kind="section" xml:id="G0001362">
             <title xml:id="G0001363">Hit Points</title>
             <text xml:id="G0001364">Hit Points are numbers used to represent how injured or healthy a character is. A character will have TWO Hit Point numbers. Your maximum Hit Points determines how tough your character is at full health. This number will rarely change. It is determined by your BLD and WIL attributes, and will rarely change unless your attributes change.</text>
             <text xml:id="G0001365">Your current Hit Points is the most important number. It will likely change frequently during combat. Hit Points are generally represented as a fraction:<math xml:id="G0001366"><mfrac xml:id="G0001367"><mi xml:id="G0001368">Current HP</mi><mi xml:id="G0001369">Max HP</mi></mfrac></math>. When the game begins, your character will be fully healthy and uninjured. Thus, when starting, your current HP will be equal to your maximum.</text>
@@ -866,7 +866,7 @@
             <text xml:id="G0001382">If a character is resting and is under basic medical care, then your healing time is cut in HALF. If your character is under the care of a professional Doctor or Healer, healing time is cut to one QUARTER of normal time.</text>
             <text xml:id="G0001383">If your current HP falls below 0, your character falls unconscious. It is possible to remain conscious by making a willpower check at -X, where X is the amount below zero your HP are. If your current HP are below 0, your character is bleeding badly (internal bleeding is possible too) and you will loose 1 HP per round, unless you receive medical attention. If your current HP ever reaches the negative of your maximum HP, you have died.</text>
           </section>
-          <section xml:id="G0001384">
+          <section kind="section" xml:id="G0001384">
             <title xml:id="G0001385">Called Shots</title>
             <text xml:id="G0001386">Whenever a character attacks he is aiming for the most convenient blow that he can make. It is assumed that this is a <ldquo xml:id="G0001387"/>center mass<rdquo xml:id="G0001388"/> attack: In other words, the attacker hits the largest, most obvious, portion of the target<rsquo xml:id="G0001389"/>s body. For humans and most animals this is the torso area.</text>
             <text xml:id="G0001390">However, there are times when a character may want to strike a specific part of the target<rsquo xml:id="G0001391"/>s body. Attacks that are aimed at a specific portion of a target are called shots. Called shots may be attempted with any kind of attack or weapon. The attacker must be able to see and identify the exact target that he is trying to hit.</text>
@@ -882,7 +882,7 @@
               <text xml:id="G0001406">He attempts to make a called shot targeted at the lizardman<rsquo xml:id="G0001407"/>s eye. He successfully makes his called shot and the lizardman fails to defend. The GM asks that damage be rolled. Morgdar<rsquo xml:id="G0001408"/>s spear deals 3 damage. The GM rules that enough damage has been dealt to put out the lizardman<rsquo xml:id="G0001409"/>s eye, thereby preventing it from attacking properly in combat. The GM notes that had Morgdar rolled higher damage, then the blow could have been instantly lethal.</text>
             </example>
           </section>
-          <section xml:id="G0001410">
+          <section kind="section" xml:id="G0001410">
             <title xml:id="G0001411">Cover</title>
             <text xml:id="G0001412">Cover is something that a character or a creature is obscured by. Cover has two effects:</text>
             <numbered-list xml:id="G0001413">
@@ -911,32 +911,32 @@
             </example>
           </section>
         </section>
-      </chapter>
-    </part>
-    <part xml:id="G0001448">
+      </section>
+    </section>
+    <section kind="part" xml:id="G0001448">
       <title xml:id="G0001449">Rule Sections</title>
-      <chapter xml:id="G0001450">
+      <section kind="chapter" xml:id="G0001450">
         <title xml:id="G0001451">Academics</title>
         <reference hrid="Content/Academic" xml:id="G0001452"/>
-      </chapter>
-      <chapter xml:id="G0001453">
+      </section>
+      <section kind="chapter" xml:id="G0001453">
         <title xml:id="G0001454">Augmentations</title>
-        <section xml:id="G0001455">
+        <section kind="section" xml:id="G0001455">
           <title xml:id="G0001456">Additions</title>
           <text xml:id="G0001457">There are two basic types of addition augmentations. The first are small devices that don<rdquo xml:id="G0001458"/>t take up a lot of room. These are easy to add to the body because they don<rdquo xml:id="G0001459"/>t require any power or a lot of space. As a general rule, this type of augmentation is very small and its function is often limited.</text>
           <text xml:id="G0001460">The second type are larger, complex systems, which take up a lot of space in the body. Generally, the only way to add something like this to your body is to remove, move, replace, or otherwise modify some other part of your body in order to accommodate it. This works on a system of slots (see below) which is similar to the Mecha system.</text>
         </section>
-        <section xml:id="G0001461">
+        <section kind="section" xml:id="G0001461">
           <title xml:id="G0001462">Replacements</title>
           <text xml:id="G0001463">Augmentation replacements, in their most basic forms, are exactly the same function-wise as normal body parts. Of course, many augmentation parts are upgrades of some sort. They might be stronger, faster, or more durable than normal. Some augmentation replacements have new functions or different abilities than normal.</text>
         </section>
-        <section xml:id="G0001464">
+        <section kind="section" xml:id="G0001464">
           <title xml:id="G0001465">Augmentation Limbs and Bodies</title>
           <text xml:id="G0001466">Entire limbs or even entire bodies may be replaced with augmented versions. There are two basic types of replacement limbs and bodies: Robotic or Cybernetic.</text>
           <text xml:id="G0001467">Robotic limbs are built entirely from non-organic materials. They are machines made of steel, high-tensile alloys, wires and high pressure hoses. Movement comes from hydraulics, electric motors, gears and levers. Robotic body parts contain no flesh or blood.</text>
           <text xml:id="G0001468">Cybernetic limbs are basically organic. They consist of bone, tendons, and muscles just like <ldquo xml:id="G0001469"/>natural<rdquo xml:id="G0001470"/> limbs. However, cybernetic limbs are enhanced with technology including electric implants, genetically modified tissues, and some synthetic material reinforcements.</text>
           <text xml:id="G0001471">These rules apply to cybernetic and robotic components:</text>
-          <section xml:id="G0001472">
+          <section kind="section" xml:id="G0001472">
             <title xml:id="G0001473">Robotics</title>
             <itemized-list xml:id="G0001474">
               <item xml:id="G0001475">Do not bleed when injured (though they might leak oil or make sparks)</item>
@@ -951,7 +951,7 @@
               <item xml:id="G0001484">Robotic parts do not heal automatically. If damaged, repairs must be made by a mechanic or by replacing the damaged parts with new ones.</item>
             </itemized-list>
           </section>
-          <section xml:id="G0001485">
+          <section kind="section" xml:id="G0001485">
             <title xml:id="G0001486">Cybernetics</title>
             <itemized-list xml:id="G0001487">
               <item xml:id="G0001488">Bleed when injured</item>
@@ -965,7 +965,7 @@
             </itemized-list>
           </section>
         </section>
-        <section xml:id="G0001496">
+        <section kind="section" xml:id="G0001496">
           <title xml:id="G0001497">General Augmentation Rules</title>
           <itemized-list xml:id="G0001498">
             <item xml:id="G0001499">All humanoid characters have, by default, (size) free slots in the body. These are assumed to be located in the torso. (Humans, which are size 2, start with +2 slots) If you want more slots to store things in, you have to purchase augmentations that give you back additional slots.</item>
@@ -973,40 +973,40 @@
             <item xml:id="G0001501">A robotic limb may be attached to any kind of torso. However, a cybernetic limb can only be attached to a natural (non-robotic) torso. This is because all cybernetic limbs depend on the support organs and blood supply found in the torso.</item>
           </itemized-list>
         </section>
-        <section xml:id="G0001502">
+        <section kind="section" xml:id="G0001502">
           <title xml:id="G0001503">Determining the Cost of an Augmentation body part</title>
           <note xml:id="G0001504">This section is incomplete.</note>
         </section>
-        <section xml:id="G0001505">
+        <section kind="section" xml:id="G0001505">
           <title xml:id="G0001506">Arm, Hand</title>
           <reference hrid="Content/Augmentations/Arm, Hand" xml:id="G0001507"/>
         </section>
-        <section xml:id="G0001508">
+        <section kind="section" xml:id="G0001508">
           <title xml:id="G0001509">Body</title>
           <reference hrid="Content/Augmentations/Body" xml:id="G0001510"/>
         </section>
-        <section xml:id="G0001511">
+        <section kind="section" xml:id="G0001511">
           <title xml:id="G0001512">Head</title>
           <reference hrid="Content/Augmentations/Head" xml:id="G0001513"/>
         </section>
-        <section xml:id="G0001514">
+        <section kind="section" xml:id="G0001514">
           <title xml:id="G0001515">Leg</title>
           <reference hrid="Content/Augmentations/Leg" xml:id="G0001516"/>
         </section>
-        <section xml:id="G0001517">
+        <section kind="section" xml:id="G0001517">
           <title xml:id="G0001518">Torso</title>
           <reference hrid="Content/Augmentations/Torso" xml:id="G0001519"/>
         </section>
-      </chapter>
-      <chapter xml:id="G0001520">
+      </section>
+      <section kind="chapter" xml:id="G0001520">
         <title xml:id="G0001521">Equipment</title>
-        <section xml:id="G0001522">
+        <section kind="section" xml:id="G0001522">
           <title xml:id="G0001523">Ammunition</title>
           <reference hrid="Content/Equipment/Ammunition" xml:id="G0001524"/>
         </section>
-        <section xml:id="G0001525">
+        <section kind="section" xml:id="G0001525">
           <title xml:id="G0001526">Armor</title>
-          <section xml:id="G0001527">
+          <section kind="section" xml:id="G0001527">
             <title xml:id="G0001528">Basics for Armor and Damage</title>
             <itemized-list xml:id="G0001529">
               <item xml:id="G0001530">Armor has 3 main values: Piercing, slashing, and crushing. Armor values are represented by 3 numbers separated by slashes (represented by: P/S/C; piercing/slashing/crushing). Example: Armor with values of 4/3/7 would have 4 points of protection vs. Piercing, 3 vs. Slashing, and 7 vs. crushing damage.</item>
@@ -1025,7 +1025,7 @@
               <item xml:id="G0001546">An armors Class is a general idea of what period of history/future the armor would appear. A later period can find the earlier armor.</item>
             </itemized-list>
           </section>
-          <section xml:id="G0001547">
+          <section kind="section" xml:id="G0001547">
             <title xml:id="G0001548">Shields</title>
             <itemized-list xml:id="G0001549">
               <item xml:id="G0001550">When creating a shield, there are 2 factors. The material the shield is made of, and the type of shield. Choose both of these values when creating a shield to get the full set of statistics for the shield.</item>
@@ -1035,11 +1035,11 @@
           </section>
           <reference hrid="Content/Equipment/Armor" xml:id="G0001558"/>
         </section>
-        <section xml:id="G0001559">
+        <section kind="section" xml:id="G0001559">
           <title xml:id="G0001560">Energy Weapons</title>
           <text xml:id="G0001561">Most energy weapons are powered by a battery pack. These are interchangable between weapons. Energy within the packs is consumed as the weapon is fired, like normal bullets. They are called <ldquo xml:id="G0001562"/>batts<rdquo xml:id="G0001563"/> or <ldquo xml:id="G0001564"/>b-paks<rdquo xml:id="G0001565"/> in slang. B-paks store energy in units of EU. Different weapons consume EU at different rates. Smaller weapons use 1 EU per shot. Larger weapons might use more. Pistols can hold ONE pack. Rifles/cannons can usually hold 3. B-paks can be recharged. Recharging a pack takes about thirty seconds per EU that has been used. As a general rule, it costs <dollar xml:id="G0001566"/>1 per EU to have pack recharged. HD paks require special equipment to charge and these cost about <dollar xml:id="G0001567"/>1.50 per EU to charge.</text>
         </section>
-        <section xml:id="G0001568">
+        <section kind="section" xml:id="G0001568">
           <title xml:id="G0001569">Melee</title>
           <text xml:id="G0001570">For damage type listed as X/Y, the weapon can deal either type of damage for a given attack. For a P/S weapon, the attcker can choose to do a P or S attack. For every point of STR under Min. STR, the attack gets -1 damage and -2 to strike/parry. STR Req is the minimum strength required to wield the weapon. For every point of STR over the Strength Requirement, add one point of damage to the raw roll, up to a maximum of the MSB (Max Strength Bonus) A raw bonus is always indicated with square brackets. So <roll xml:id="G0001571"><num xml:id="G0001572">3</num><face xml:id="G0001573">4</face><bOff xml:id="G0001574">+</bOff><bns xml:id="G0001575">1</bns><rOff xml:id="G0001576">+</rOff><raw xml:id="G0001577">4</raw><kind xml:id="G0001578"/></roll> would be a normal <roll xml:id="G0001579"><num xml:id="G0001580">3</num><face xml:id="G0001581">4</face><bOff xml:id="G0001582">+</bOff><bns xml:id="G0001583">1</bns></roll> roll, with an additional 4 added to the final result. When wielding a 1-H weapon with two hands, assume the wielder has +2 STR.</text>
           <description-list xml:id="G0001584">
@@ -1048,7 +1048,7 @@
             <item xml:id="G0001589"><description xml:id="G0001590">Enc</description>Represents the weight of the weapon. This consumes Encumbrance just like armor. Only use this when the weapon is actually being used.</item>
             <item xml:id="G0001591"><description xml:id="G0001592">Range</description>the effectiveReachof the weapon in feet. If your target is beyond your range, you cannot strike them. You can spend an action to gain range on your opponent. If your target is closer than 1/2 range, then you are at -6 to strike the target.</item>
           </description-list>
-          <section xml:id="G0001593">
+          <section kind="section" xml:id="G0001593">
             <title xml:id="G0001594">Options for Melee Weapons</title>
             <text xml:id="G0001595">Prices listed are for basic weapons with enough durability to function in real combat situations. They are not showpieces or wallhangers. However, other options are available for an extra cost:</text>
             <figure xml:id="G0001596">
@@ -1098,41 +1098,41 @@
             </figure>
             <text xml:id="G0001638">For other than normal sized weapons (mecha, etc.), all stats are<math xml:id="G0001639"><msup xml:id="G0001640"><mn xml:id="G0001641">2</mn><mrow xml:id="G0001642"><mi xml:id="G0001643">Size</mi><mo xml:id="G0001644">-</mo><mn xml:id="G0001645">1</mn></mrow></msup></math>normal. This applies to strength requirement, strength bonus, damage dice number, etc.</text>
           </section>
-          <section xml:id="G0001646">
+          <section kind="section" xml:id="G0001646">
             <title xml:id="G0001647">Axes</title>
             <reference hrid="Content/Equipment/Melee/Axes" xml:id="G0001648"/>
           </section>
-          <section xml:id="G0001649">
+          <section kind="section" xml:id="G0001649">
             <title xml:id="G0001650">Blunt</title>
             <reference hrid="Content/Equipment/Melee/Blunt" xml:id="G0001651"/>
           </section>
-          <section xml:id="G0001652">
+          <section kind="section" xml:id="G0001652">
             <title xml:id="G0001653">Body</title>
             <reference hrid="Content/Equipment/Melee/Body" xml:id="G0001654"/>
           </section>
-          <section xml:id="G0001655">
+          <section kind="section" xml:id="G0001655">
             <title xml:id="G0001656">Chained</title>
             <reference hrid="Content/Equipment/Melee/Chained" xml:id="G0001657"/>
           </section>
-          <section xml:id="G0001658">
+          <section kind="section" xml:id="G0001658">
             <title xml:id="G0001659">Exotic</title>
             <reference hrid="Content/Equipment/Melee/Exotic" xml:id="G0001660"/>
           </section>
-          <section xml:id="G0001661">
+          <section kind="section" xml:id="G0001661">
             <title xml:id="G0001662">Knives</title>
             <reference hrid="Content/Equipment/Melee/Knives" xml:id="G0001663"/>
           </section>
-          <section xml:id="G0001664">
+          <section kind="section" xml:id="G0001664">
             <title xml:id="G0001665">Large Swords</title>
             <reference hrid="Content/Equipment/Melee/Large Swords" xml:id="G0001666"/>
           </section>
-          <section xml:id="G0001667">
+          <section kind="section" xml:id="G0001667">
             <title xml:id="G0001668">Monofilament</title>
             <text xml:id="G0001669">The Monofilament Whip is length of metallic, diamondoid, or silicoid wire that is the thickness of a single molecule, with a weight on one end. The Archaic Weapon<mdash xml:id="G0001670"/>Chain skill is used. A skill roll of 4 or less is considered a critical failure (instead of the normal 1). This modified critical failure is there for people who are skilled. Those who are not get a critical failure on a 9 or below.</text>
             <text xml:id="G0001671">The recover time of the Monofilament Whip cannot be reduced by strength, and will always require a 1 action to recover from safely. The user can attempt to reduce the recover time to 0, but there is a 50<percent xml:id="G0001672"/>chance that the user will strike himself with the whip dealing full damage to himself.</text>
             <reference hrid="Content/Equipment/Melee/Monofilament" xml:id="G0001673"/>
           </section>
-          <section xml:id="G0001674">
+          <section kind="section" xml:id="G0001674">
             <title xml:id="G0001675">Plasma</title>
             <text xml:id="G0001676">Plasma weapons are designed for a specific set of modifications. These are:</text>
             <figure xml:id="G0001677">
@@ -1165,7 +1165,7 @@
               </table>
               <caption xml:id="G0001700">Plasma Weapon Modifiers</caption>
             </figure>
-            <section xml:id="G0001701">
+            <section kind="section" xml:id="G0001701">
               <title xml:id="G0001702">Notes: specific to Plasma Weapons</title>
               <itemized-list xml:id="G0001703">
                 <item xml:id="G0001704">Plasma weapons are a bladeless handle (typically looks like a normal weapon handle or a flashlight) from which a glowing blade of extremely hot plasma vents forth. The plasma is held in the shape of a cylinder (or blade) by a magnetic field. They take an action to turn on.</item>
@@ -1175,11 +1175,11 @@
               </itemized-list>
             </section>
           </section>
-          <section xml:id="G0001708">
+          <section kind="section" xml:id="G0001708">
             <title xml:id="G0001709">Polearms</title>
             <reference hrid="Content/Equipment/Melee/Polearms" xml:id="G0001710"/>
           </section>
-          <section xml:id="G0001711">
+          <section kind="section" xml:id="G0001711">
             <title xml:id="G0001712">Rocket Assisted</title>
             <text xml:id="G0001713">Rocket-assisted weapons are modern versions of traditional archaic weapons. They have small rocket motors contained in the weapon. When the weapon is swung, the motor ignites, giving extra force to the blow. They are used with the same skill as normal archaic weapons.</text>
             <text xml:id="G0001714">If such a weapon is used, and the target is missed, then it takes an extra two actions to recover. If the target is hit but the blow is parried or blocked, then it takes the normal time to recover.</text>
@@ -1187,28 +1187,28 @@
             <text xml:id="G0001716">Each weapon can store up to 5 <ldquo xml:id="G0001717"/>rocket charges.<rdquo xml:id="G0001718"/> When these are used up, they must be refilled before the weapon can be used. Each charge costs <dollar xml:id="G0001719"/>100 to refill.</text>
             <reference hrid="Content/Equipment/Melee/Rocket-Assisted" xml:id="G0001720"/>
           </section>
-          <section xml:id="G0001721">
+          <section kind="section" xml:id="G0001721">
             <title xml:id="G0001722">Staves</title>
             <reference hrid="Content/Equipment/Melee/Staves" xml:id="G0001723"/>
           </section>
-          <section xml:id="G0001724">
+          <section kind="section" xml:id="G0001724">
             <title xml:id="G0001725">Thrown</title>
             <reference hrid="Content/Equipment/Melee/Thrown" xml:id="G0001726"/>
           </section>
         </section>
-        <section xml:id="G0001727">
+        <section kind="section" xml:id="G0001727">
           <title xml:id="G0001728">Miscellaneous</title>
           <reference hrid="Content/Equipment/Miscellaneous" xml:id="G0001729"/>
         </section>
-        <section xml:id="G0001730">
+        <section kind="section" xml:id="G0001730">
           <title xml:id="G0001731">Ranged</title>
           <reference hrid="Content/Equipment/Ranged" xml:id="G0001732"/>
         </section>
-        <section xml:id="G0001733">
+        <section kind="section" xml:id="G0001733">
           <title xml:id="G0001734">Shields</title>
           <reference hrid="Content/Equipment/Shields" xml:id="G0001735"/>
         </section>
-	<section xml:id="G0001736">
+	<section kind="section" xml:id="G0001736">
 	  <title xml:id="G0001737">Firearms <and xml:id="G0001738"/> Guns</title>
 	    <text xml:id="G0001739">The following table lists common options for Hand Weapons and Long Guns.</text>
 	    <figure xml:id="G0001740">
@@ -1260,90 +1260,90 @@
 		</row>
 	      </table>
 	    </figure>
-	  <section xml:id="G0001788">
+	  <section kind="section" xml:id="G0001788">
 	    <title xml:id="G0001789">Hand Weapons</title>
-	    <section xml:id="G0001790">
+	    <section kind="section" xml:id="G0001790">
 	      <title xml:id="G0001791">Revolvers</title>
 	      <text xml:id="G0001792">All revolvers are +1 to strike. A speedloader can be purchased which loads all the rounds at once.</text>
 	    </section>
-	    <section xml:id="G0001793">
+	    <section kind="section" xml:id="G0001793">
 	      <title xml:id="G0001794">Pistols</title>
 	      <text xml:id="G0001795">Extra magazines cost <dollar xml:id="G0001796"/><math xml:id="G0001797"><mrow xml:id="G0001798"><mn xml:id="G0001799">150</mn><mo xml:id="G0001800"><times xml:id="G0001801"/></mo><mfrac xml:id="G0001802"><mi xml:id="G0001803">Cost of Gun</mi><mn xml:id="G0001804">1000</mn></mfrac></mrow></math> each. High-capacity magazines holds 50<percent xml:id="G0001805"/> more rounds, but cost twice as much.</text>
 	    </section>
-	    <section xml:id="G0001806">
+	    <section kind="section" xml:id="G0001806">
 	      <title xml:id="G0001807">Hunting Pistols</title>
 	      <text xml:id="G0001808">No special Information</text>
 	    </section>
-	    <section xml:id="G0001809">
+	    <section kind="section" xml:id="G0001809">
 	      <title xml:id="G0001810">Heavy Pistols</title>
 	      <text xml:id="G0001811">Normal rules apply for magazines, etc. These are generally rare weapons.</text>
 	    </section>
-	    <section xml:id="G0001812">
+	    <section kind="section" xml:id="G0001812">
 	      <title xml:id="G0001813">Gyroject and Rocket Handguns</title>
 	      <text xml:id="G0001814">These are very rare weapons. They appear similar to automatics (pistols) but he cartridges are essentially tiney, computer-controlled rockets. They are no louder than opening a soda can when fired. Damage at ranges less than 30 feet is half of normal. Damage at ranges greater than 60 feet is +2 per die. Accuracy is a -1 to strike, plus a -1 for every 10 feet to the target. These guns have virtually no recoil. Gyrojet carbines are an available option, however, the cost is an additional <dollar xml:id="G0001815"/>500, and teh accuracy is at +1 to strike. They have double the ammunition capacity.</text>
 	    </section>
 	    <reference hrid="Content/Equipment/Firearms and Guns/Hand Weapons" xml:id="G0001816"/>
 	  </section>
-	  <section xml:id="G0001817">
+	  <section kind="section" xml:id="G0001817">
 	    <title xml:id="G0001818">Long Weapons</title>
-	    <section xml:id="G0001819">
+	    <section kind="section" xml:id="G0001819">
 	      <title xml:id="G0001820">Sporting Rifles</title>
 	      <text xml:id="G0001821">All sporting rifles, except for the .22 LR are bolt action and magazine. They can fire one round per action.</text>
 	    </section>
-	    <section xml:id="G0001822">
+	    <section kind="section" xml:id="G0001822">
 	      <title xml:id="G0001823">Big Game Rifles</title>
 	      <text xml:id="G0001824">All Big Game Rifles deal double damage against unarmored targets. They can only use bronze and soft-point ammunition with standard powder.</text>
 	    </section>
-	    <section xml:id="G0001825">
+	    <section kind="section" xml:id="G0001825">
 	      <title xml:id="G0001826">Anti-armor Rifles</title>
 	      <text xml:id="G0001827">These weapons are usually used with armor-piercing ammunation against tanks or mecha. The listed strength requirement is for firing the weapon off the ground or a hard mount; if used offhand, it requires an additional 10 to the minium strenght.</text>
 	      <note xml:id="G0001828">These weapons are very large and heavy; at least 30 lbs. if not 70<ndash xml:id="G0001829"/>80 lbs. or more. They are five to eight feet long.</note>
 	    </section>
-	    <section xml:id="G0001830">
+	    <section kind="section" xml:id="G0001830">
 	      <title xml:id="G0001831">Sniper Rifles</title>
 	      <text xml:id="G0001832">All sniper rifles are +1 to strike. These weapons do not include a scope, which is required for this bonus. Only the .50 BMG can fire non-normal ammunation.</text>
 	    </section>
-	    <section xml:id="G0001833">
+	    <section kind="section" xml:id="G0001833">
 	      <title xml:id="G0001834">Sporting Shotguns</title>
 	      <text xml:id="G0001835">Modern shotguns are either 2 round breech-load (can fire 2 rnd burst) or 6 round pump-action/semiauto, which fire 1 rnd burst.</text>
 	    </section>
-	    <section xml:id="G0001836">
+	    <section kind="section" xml:id="G0001836">
 	      <title xml:id="G0001837">Military Shotguns</title>
 	      <text xml:id="G0001838"/>
 	    </section>
-	    <section xml:id="G0001839">
+	    <section kind="section" xml:id="G0001839">
 	      <title xml:id="G0001840">Submachine Pistol</title>
 	      <text xml:id="G0001841">These weapons are all at a -1 to strike.</text>
 	    </section>
-	    <section xml:id="G0001842">
+	    <section kind="section" xml:id="G0001842">
 	      <title xml:id="G0001843">Submachine Gun</title>
 	      <text xml:id="G0001844">These weapons are all at a -2 to strike. This can be reduced by one by doubling the cost, down to a -0 to strike.</text>
 	    </section>
-	    <section xml:id="G0001845">
+	    <section kind="section" xml:id="G0001845">
 	      <title xml:id="G0001846">Assault Rifles</title>
 	      <text xml:id="G0001847">Assault rifles are at a -1 to strike. This can be reduced by one by doubling the cost, down to a -0 to strike.</text>
 	    </section>
-	    <section xml:id="G0001848">
+	    <section kind="section" xml:id="G0001848">
 	      <title xml:id="G0001849">Machine Guns</title>
 	      <text xml:id="G0001850">While it is possible to hold a machine gun and fire it, it is very difficult and imparts a -6 to strike.</text>
 	    </section>
-	    <section xml:id="G0001851">
+	    <section kind="section" xml:id="G0001851">
 	      <title xml:id="G0001852">Archaic Long-arms</title>
 	      <text xml:id="G0001853">Blunderbuss' deal half damage against armor. Muskets are at a -1 to strike.</text>
 	    </section>
 	    <reference hrid="Content/Equipment/Firearms and Guns/Long Guns" xml:id="G0001854"/>
 	  </section>
-	  <section xml:id="G0001855">
+	  <section kind="section" xml:id="G0001855">
 	    <title xml:id="G0001856">Heavy Weapons</title>
 	  </section>
-	  <section xml:id="G0001857">
+	  <section kind="section" xml:id="G0001857">
 	    <title xml:id="G0001858">Mounted Weapons <and xml:id="G0001859"/> Guns</title>
 	  </section>
 	</section>
-      </chapter>
-      <chapter xml:id="G0001860">
+      </section>
+      <section kind="chapter" xml:id="G0001860">
         <title xml:id="G0001861">Magic</title>
-        <section xml:id="G0001862">
+        <section kind="section" xml:id="G0001862">
           <title xml:id="G0001863">Introduction</title>
           <text xml:id="G0001864">Magic exists in many forms. It is a supernatural energy that permeates everything in the world. Characters with the right skills can bend this energy to their will<mdash xml:id="G0001865"/>and perform amazing feats in the process. Magic is capable of healing the sick, raising the dead, creating a great fireball, protecting the caster from harm<mdash xml:id="G0001866"/>and nearly anything else you can imagine.</text>
           <text xml:id="G0001867">Magic, whatever type it might be, is all about manipulating MANA. Mana, as mentioned above, is a supernatural energy that is present in everything. It is in the air, the ground, in your food, even in your body. Mana is what is responsible for <ldquo xml:id="G0001868"/>enforcing<rdquo xml:id="G0001869"/> physical laws such as gravity, etc. When a person uses magic, they are manipulating mana to do what they want. Normally, this is the mana that is in their own body. It is possible to work with mana outside one<rsquo xml:id="G0001870"/>s body as well. Nobody really knows exactly how mana works, but special gestures and body movements handed down throughout time are believed to initiate complex quantum-mechanical events that result in seemingly impossible things taking place<mdash xml:id="G0001871"/>magic.</text>
@@ -1375,9 +1375,9 @@
             <item xml:id="G0001901">Newly cleared land</item>
           </itemized-list>
         </section>
-        <section xml:id="G0001902">
+        <section kind="section" xml:id="G0001902">
           <title xml:id="G0001903">Types of Magic</title>
-          <section xml:id="G0001904">
+          <section kind="section" xml:id="G0001904">
             <title xml:id="G0001905">Invocation Magic (spellcasting)</title>
             <text xml:id="G0001906">Invocation spellcasting is the most common and basic form of magic. This is the art of the wizard and sorceress, where characters use innate mana to cast spells. Invocation spells are based on methodical, practiced, gestures and chanting of magical incantations.</text>
             <text xml:id="G0001907">Incantation magic is learned. The invocation magician will have a list of spells that she has studied and memorized. As long as she has mana (MP) available, she may cast any spell that she knows. Because invocation magicians use innate mana and well defined, repeatable, forms it is the easiest type of magic to learn.</text>
@@ -1390,7 +1390,7 @@
             <text xml:id="G0001924">Note that a Wizard or Sorceress character must have at least one level in Magical Studies in order to read spell books and to learn the intonations required for magical incantations. Beyond that Magical Studies is a purely optional skill.</text>
             <text xml:id="G0001925">Characters that cast Invocation magic must have at least two free points of Encumberance available. If not, they are not able to cast magic.</text>
           </section>
-          <section xml:id="G0001926">
+          <section kind="section" xml:id="G0001926">
             <title xml:id="G0001927">Ritual Magic</title>
             <text xml:id="G0001928">Ritual magic is performed in elaborate <ldquo xml:id="G0001929"/>performances<rdquo xml:id="G0001930"/> involving a much human involvement. Magic rituals involve material components (ingredients) and a great deal of chanting, mumbling, gesturing, and the like. The traditional image of a witch, bent over a bubbling cauldron containing newt eyes and salamander toenails is a good example of ritual magic. Whereas traditional spellcasting is an almost scientific pursuit, ritual magic is more of an art. Rituals are conducted with a trained eye and experience. Because ritual ingredients vary in quality and potency, precision has little use. Ritual magicians are shamans, witches and warlocks.</text>
             <text xml:id="G0001931">Ritual magic is not religious. In fact, it is no more religious than making a bowl of oatmeal or mixing some cement. However, in many cultures ritual magic is heavily associated with religion, especially in primitive, animistic, or tribal societies. In these cultures ritual magic is the domain of the <ldquo xml:id="G0001932"/>witch doctor<rdquo xml:id="G0001933"/> or <ldquo xml:id="G0001934"/>medicine man<rdquo xml:id="G0001935"/><mdash xml:id="G0001936"/>people who hold important positions in the tribe, often including that of a kind of priest or spiritual leader. Therefore, there is a strong association between ritual magic and primitive, pagan, religions. Many ritual magicians are religious figures, members of mysterious cults, etc. Some ritual magicians have been known to practice animal or even human sacrifice (an excellent, though horrific, source of MP for rituals). In these societies ritual magic is often believed to be religious in nature despite the fact that it is decidedly not.</text>
@@ -1512,7 +1512,7 @@
             </figure>
             <text xml:id="G0002055">Ritual magicians may also perform a ritual in a special manner, infusing the spell into an object, such as a weapon or magical totem. Infusing a spell takes the same amount of time as performing the ritual in normal fashion. Once the spell is infused in an item, it may be released very quickly. Releasing a charge (the energy and magical effects of a stored ritual) requires 1 action, regardless of the original casting time of the spell. Infused ritual items are only good for twenty-four hours, at which point the charge is lost and the item returns to normal. The ritualist may create charges of extended duration when he first performs the infusion, but each 24 hours of time requires another batch of the requisite spell ingredients (not Mana). Therefore, it can become very expensive to make long duration infused items. An infused item may be used by anyone, not just the ritualist.</text>
           </section>
-          <section xml:id="G0002056">
+          <section kind="section" xml:id="G0002056">
             <title xml:id="G0002057">Religious <and xml:id="G0002058"/> Faith Magic</title>
             <text xml:id="G0002059">Religious magic is magical effects that are brought into reality by the combined will of the caster and the caster<rsquo xml:id="G0002060"/>s god(s). Whereas primitive religions and cults tend towards the use of ritual magic, Religious or Faith magic is practiced by priests of clearly defined and well organized religions. Most religions that practice Faith magic have a clearly organized hierarchy within the church. Religious dogma and/or scripture is well defined and is extensively documented. Faith-magic using religions are not necessarily <ldquo xml:id="G0002061"/>good<rdquo xml:id="G0002062"/>, but they are usually known to the general public and often actively recruit new members.</text>
             <text xml:id="G0002063">Religious magic is taught by a particular Church. Each faith has one or more magic schools associated with it. These nearly always include Spiritual and Life magic, and may include others. Most faiths have 3 or 4 schools of spells. A faith caster has access to all spells in the school(s) associated with his Faith, except those whose rank is higher than his level of faith, and those which are specifically prohibited by his Church. For example, a <ldquo xml:id="G0002064"/>good<rdquo xml:id="G0002065"/> tending religion would typically deny harmful Life-magic spells to their adherents, for example curse.</text>
@@ -1567,7 +1567,7 @@
             </figure>
             <text xml:id="G0002117">Anytime a Faith magic caster has to make a magic-related roll ( <ldquo xml:id="G0002118"/>Magical Control<rdquo xml:id="G0002119"/> roll, or a strike roll associated with a magical spell, etc), use the caster<rsquo xml:id="G0002120"/>s Faith skill. Whatever holy symbol that the caster has is then applied as a bonus to that roll.</text>
           </section>
-          <section xml:id="G0002121">
+          <section kind="section" xml:id="G0002121">
             <title xml:id="G0002122">Martial Magic / Super Power Combat</title>
             <text xml:id="G0002123">Martial magic is the ability to perform supernatural <ldquo xml:id="G0002124"/>attacks<rdquo xml:id="G0002125"/> in conjunction with normal combat, such as fist fighting, martial arts, or combat with weapons.</text>
             <text xml:id="G0002126">Martial Magic always works in conjunction with some kind of verbal or somatic component. This means that the fighter must perform a particular combat form (kata), stance, or must shout a particular phrase in order to use the ability.</text>
@@ -1587,7 +1587,7 @@
             </itemized-list>
             <text xml:id="G0002141">Rather than purchasing the Spellcasting skill, a Super Power Fighter adds together his skill level of Martial Arts and Mysticism. The total is considered the skill level of <ldquo xml:id="G0002142"/>Martial Magic<rdquo xml:id="G0002143"/></text>
           </section>
-          <section xml:id="G0002144">
+          <section kind="section" xml:id="G0002144">
             <title xml:id="G0002145">Mysticism / Psionics</title>
             <text xml:id="G0002146">Psionics is the ability to perform magic or supernatural acts by pure force of will. No incantations, materials, or special preparation is required. A character that can perform these feats is called a Mystic.</text>
             <text xml:id="G0002147">Whereas most magic users have trained to develop their abilities, Mystic characters are more often <ldquo xml:id="G0002148"/>gifted<rdquo xml:id="G0002149"/> with magical abilities. Quite often these powers manifest themselves as a result of a traumatic event, such as a near-fatal accident, that is experienced by the character. They may also be abilities that are passed down through a particular family<mdash xml:id="G0002150"/>in which case the character is simply born with his unique powers. Mystic characters have an innate ability to perform their abilities<mdash xml:id="G0002151"/>which are completely independent of any kind of structured <ldquo xml:id="G0002152"/>method<rdquo xml:id="G0002153"/> or <ldquo xml:id="G0002154"/>technique<rdquo xml:id="G0002155"/>. While mystic characters might join magical societies they cannot <ldquo xml:id="G0002156"/>learn<rdquo xml:id="G0002157"/> or <ldquo xml:id="G0002158"/>teach<rdquo xml:id="G0002159"/>mystic techniques to others. Psionic abilities are something that a mystic discovers herself.</text>
@@ -1599,7 +1599,7 @@
               <item xml:id="G0002165">Mystics always use the WIL attribute for magic-related rolls, such as Magical Control, regardless of the normal attribute that would be used for that roll.</item>
             </itemized-list>
           </section>
-          <section xml:id="G0002166">
+          <section kind="section" xml:id="G0002166">
             <title xml:id="G0002167">Beast Magic (summoning)</title>
             <text xml:id="G0002168">Beast Magic is a unique magic school. It is the art of summoning creatures to aid their master. Any magic user (spellcasting, ritual, etc.) may purchase summoning spells as normal. However, a spellcaster that specializes in Beast Magic (and has no other magical aptitudes) may purchase summoning spells as if they are one rank lower than normal.</text>
             <text xml:id="G0002169">There are five basic summoning spells:</text>
@@ -1648,7 +1648,7 @@
             <text xml:id="G0002211">For generic animals follow the table above. For very specific, exotic, or rare animals jump to the next higher rank. (Example: Summon Frog: rank 1. Summon Brazilian Poison-dart frog: rank 2.)</text>
             <text xml:id="G0002212">Whenever a summoning spell is cast the Summoner must make a Magical Control skill check. The negative to the roll is the total summoning rank(s) of the creatures to be summoned. A summoner can attempt to summon multiple of the same creature simultaneously, but not a mixture of different creatures. The caster has a bonus to this check based on what <ldquo xml:id="G0002213"/>Beast Lore<rdquo xml:id="G0002214"/>skills he knows.</text>
           </section>
-          <section xml:id="G0002215">
+          <section kind="section" xml:id="G0002215">
             <title xml:id="G0002216">Magic-Related Skill Summary</title>
             <itemized-list xml:id="G0002217">
               <item xml:id="G0002218">Spellcasting gives additional. This is the governing skill for learning Invocation spells.</item>
@@ -1672,14 +1672,14 @@
             </description-list>
           </section>
         </section>
-        <section xml:id="G0002244">
+        <section kind="section" xml:id="G0002244">
           <title xml:id="G0002245">General notes</title>
           <text xml:id="G0002246">Most spells automatically succeed (there is no skill check necessary, except for Faith Magic). Once cast, it is possible for some spells to miss their target however. For these spells, the player must make a skill test using Magical Control (or Faith) to determine if the strike is successful. See the spell listing for what spells are auto-targeting and which aren<rdquo xml:id="G0002247"/>t.</text>
           <text xml:id="G0002248">If the player is interrupted while spell casting (e.g. takes damage, gets knocked around, etc.), he must make a skill check (Magical Control). If he fails the check, the spell fails, but the MP are not lost.<note xml:id="G0002249">The caster may not speak while spellcasting, but may move around, dodge, and perform very simple physical activities.</note></text>
           <text xml:id="G0002250">A spell always takes effect at the end of the casting period. The MP are consumed at the exact instant that the spell takes effect.</text>
           <text xml:id="G0002251">A casting time of zero (0) means that the caster may cast the spell anytime, even in response to something (e.g. getting shot at), or having no actions remaining at the time. Such spells require no command words, components, or gesturing of any kind.</text>
           <text xml:id="G0002252">Note that a Faith magic caster must always make a Faith roll in order to cast any magical spell.</text>
-          <section xml:id="G0002253">
+          <section kind="section" xml:id="G0002253">
             <title xml:id="G0002254">Magic Points (MP)</title>
             <text xml:id="G0002255">Any character has innate MP; magic related skills will give additional MP.</text>
             <text xml:id="G0002256">MP are consumed whenever spells are cast. They are recovered according to the following chart:</text>
@@ -1713,7 +1713,7 @@
               <caption xml:id="G0002277">Mana Point replacement per hour.</caption>
             </figure>
           </section>
-          <section xml:id="G0002278">
+          <section kind="section" xml:id="G0002278">
             <title xml:id="G0002279">Magical <ldquo xml:id="G0002280"/>Tools<rdquo xml:id="G0002281"/>: Books, Scrolls, and Potions</title>
             <text xml:id="G0002282">There exist three different kinds of magic-related books.</text>
             <text xml:id="G0002283">Type 1 is a volume that contains detailed information on how to cast a particular spell (or spells). Books of this type are always written in magical script. Anyone with the Magical Studies skill can read and understand this kind of book. However, only those with Spellcasting can make real use of the contents. A Spellcasting character can easily learn new spells from a book of this type. Books of this type are very valuable. The cost of a spell book like this is equal to the <ldquo xml:id="G0002284"/>Book<rdquo xml:id="G0002285"/> price column of the magic table. If the book contains multiple spells, then its value is equal to the sum of the costs for each spell contained. Generally speaking, books of this type only contain multiple spells when they are compendia of low-level spells in a given school of magic.</text>
@@ -1726,7 +1726,7 @@
               <item xml:id="G0002300"><description xml:id="G0002301">Scrolls/Potions</description>Requireto create. They require MP equal to a normal casting of the spell to be expended, and require precious materials valued at not less than three-quarters the value of the finished item. A ritualist may prepare a potion in half that time.</item>
             </description-list>
           </section>
-          <section xml:id="G0002302">
+          <section kind="section" xml:id="G0002302">
             <title xml:id="G0002303">Magic Terminology <and xml:id="G0002304"/> Misc.</title>
             <description-list xml:id="G0002305">
               <item xml:id="G0002306"><description xml:id="G0002307">Black</description>spells are those associated with evil, death energy, and demonic influence. While they are not necissiarily evil, they are generally indescriminate in their targets. Black spells never affect demons, undead, or targets that are not living, such as ghosts or robots.</item>
@@ -1735,53 +1735,53 @@
             </description-list>
           </section>
         </section>
-        <section xml:id="G0002312">
+        <section kind="section" xml:id="G0002312">
           <title xml:id="G0002313">Schools</title>
-          <section xml:id="G0002314">
+          <section kind="section" xml:id="G0002314">
             <title xml:id="G0002315">Air</title>
             <reference hrid="Content/Magic/Air" xml:id="G0002316"/>
           </section>
-          <section xml:id="G0002317">
+          <section kind="section" xml:id="G0002317">
             <title xml:id="G0002318">Arcane</title>
             <reference hrid="Content/Magic/Arcane" xml:id="G0002319"/>
           </section>
-          <section xml:id="G0002320">
+          <section kind="section" xml:id="G0002320">
             <title xml:id="G0002321">Beast</title>
             <reference hrid="Content/Magic/Beast" xml:id="G0002322"/>
           </section>
-          <section xml:id="G0002323">
+          <section kind="section" xml:id="G0002323">
             <title xml:id="G0002324">Earth</title>
             <reference hrid="Content/Magic/Earth" xml:id="G0002325"/>
           </section>
-          <section xml:id="G0002326">
+          <section kind="section" xml:id="G0002326">
             <title xml:id="G0002327">Fire</title>
             <reference hrid="Content/Magic/Fire" xml:id="G0002328"/>
           </section>
-          <section xml:id="G0002329">
+          <section kind="section" xml:id="G0002329">
             <title xml:id="G0002330">Life</title>
             <reference hrid="Content/Magic/Life" xml:id="G0002331"/>
           </section>
-          <section xml:id="G0002332">
+          <section kind="section" xml:id="G0002332">
             <title xml:id="G0002333">Light</title>
             <reference hrid="Content/Magic/Light" xml:id="G0002334"/>
           </section>
-          <section xml:id="G0002335">
+          <section kind="section" xml:id="G0002335">
             <title xml:id="G0002336">Physical</title>
             <reference hrid="Content/Magic/Physical" xml:id="G0002337"/>
           </section>
-          <section xml:id="G0002338">
+          <section kind="section" xml:id="G0002338">
             <title xml:id="G0002339">Spirit</title>
             <reference hrid="Content/Magic/Spirit" xml:id="G0002340"/>
           </section>
-          <section xml:id="G0002341">
+          <section kind="section" xml:id="G0002341">
             <title xml:id="G0002342">Water</title>
             <reference hrid="Content/Magic/Water" xml:id="G0002343"/>
           </section>
         </section>
-      </chapter>
-      <chapter xml:id="G0002344">
+      </section>
+      <section kind="chapter" xml:id="G0002344">
         <title xml:id="G0002345">Martial Arts</title>
-        <section xml:id="G0002346">
+        <section kind="section" xml:id="G0002346">
           <title xml:id="G0002347">Rules</title>
           <text xml:id="G0002348">Martial Arts covers the use of all weapons (ranged, melee, ultratech, mecha, et al.), in addition to hand-to-hand (HtH) combat, and the set of specialized skills that are associated with the Martial Arts governing skill. The maximum level that any character may have in any Martial Arts skill is less than or equal to his level in Martial Arts, i.e. if he has 3 Levels in Martial Arts, then all of his Martial Arts skills must be Level 3 or less. The basic Martial Art skill confers upon the martial artist the ability to purchase the different skills listed in this section.</text>
           <text xml:id="G0002349">For each level the martial artist has in Martial Arts they may choose one Martial Arts skill; for this skill, any time the martial artist would have to roll the skill, they get an extra die to do so. A skill may only be chosen Level-in-Martial Arts/2 times (the Lvl in Martial Arts, divided by two, rounded-down).</text>
@@ -1802,41 +1802,41 @@
             <text xml:id="G0002371">Candlestick has three levels in Martial Arts; he has bought Punch at rank 3 and level 3, and chosen it as his bonus; he also has Bash at level 1 and Feint at level 1. He is striking at the Giant Hispaniola Solenodon with a Bashing Punch. Because he is using Bash with his Punch his punch is now considered <ldquo xml:id="G0002372"/>special<rdquo xml:id="G0002373"/> and may not be further modified, even though he could still use his Feint this turn.</text>
           </example>
         </section>
-        <section xml:id="G0002374">
+        <section kind="section" xml:id="G0002374">
           <title xml:id="G0002375">Further Commentary</title>
           <text xml:id="G0002376">You will note that there is no <ldquo xml:id="G0002377"/>chi<rdquo xml:id="G0002378"/> or <ldquo xml:id="G0002379"/>super-powers<rdquo xml:id="G0002380"/> in Martial Arts. In fact, the skills are deliberately kept pedestrian<mdash xml:id="G0002381"/>those possessed (or assumed to be possessed, if possible) by the greatest <ldquo xml:id="G0002382"/>non-mystical<rdquo xml:id="G0002383"/>martial artists in the<lsquo xml:id="G0002384"/>real world.<rdquo xml:id="G0002385"/> This is done deliberately to provide a clear separation between the Supernormal<mdash xml:id="G0002386"/>governed by Magic and Traits<mdash xml:id="G0002387"/>and the mundane reality of kicking, spitting, biting and hurting. If you want to create a character that has truly jaw-dropping magical abilities, like flying-through the air, or punching through a fired-brick wall, bending steel, or leaping from roof-top-to-roof-top, consider looking into the Magic and Traits section. In Magic there a several categories that would benefit a Martial Artist tremondously.</text>
-          <section xml:id="G0002388">
+          <section kind="section" xml:id="G0002388">
             <title xml:id="G0002389">Advanced Martial Arts</title>
             <text xml:id="G0002390">Also there are several para-skills which are tremondously important to the dedicated Martial Artist: Kata, Kung Fu, Waza, and Jitsu. These skills allow the Martial Artist to transform his very Basic and Defensive attacks, allowing him to perform prodigious feats: a Savage Feinting Death Strike is only possible by using these skills.</text>
           </section>
         </section>
-        <section xml:id="G0002391">
+        <section kind="section" xml:id="G0002391">
           <title xml:id="G0002392">Categories</title>
-          <section xml:id="G0002393">
+          <section kind="section" xml:id="G0002393">
             <title xml:id="G0002394">Basic</title>
             <reference hrid="Content/Martial Arts/Basic" xml:id="G0002395"/>
           </section>
-          <section xml:id="G0002396">
+          <section kind="section" xml:id="G0002396">
             <title xml:id="G0002397">Combat</title>
             <reference hrid="Content/Martial Arts/Combat" xml:id="G0002398"/>
           </section>
-          <section xml:id="G0002399">
+          <section kind="section" xml:id="G0002399">
             <title xml:id="G0002400">Defensive</title>
             <reference hrid="Content/Martial Arts/Defensive" xml:id="G0002401"/>
           </section>
-          <section xml:id="G0002402">
+          <section kind="section" xml:id="G0002402">
             <title xml:id="G0002403">Modifier</title>
             <reference hrid="Content/Martial Arts/Modifier" xml:id="G0002404"/>
           </section>
-          <section xml:id="G0002405">
+          <section kind="section" xml:id="G0002405">
             <title xml:id="G0002406">Special</title>
             <reference hrid="Content/Martial Arts/Special" xml:id="G0002407"/>
           </section>
         </section>
-      </chapter>
-      <chapter xml:id="G0002408">
+      </section>
+      <section kind="chapter" xml:id="G0002408">
         <title xml:id="G0002409">Mecha</title>
-        <section xml:id="G0002410">
+        <section kind="section" xml:id="G0002410">
           <title xml:id="G0002411">Mecha Suits <and xml:id="G0002412"/> Powered Armor</title>
           <text xml:id="G0002413">A robot in which the pilot is completely protected by armor and other mechanisms.Mecha are controlled by abstract means and requires the Mecha Piloting skill.</text>
           <text xml:id="G0002414">Mecha denotes armored mechanical vehicles that are built in the form of a human. There are two basic types of mecha: Power Armor and Mecha.</text>
@@ -1853,7 +1853,7 @@
           </itemized-list>
           <text xml:id="G0002428">As a general summary: Power Armor tends to be a lighter and smaller than mecha. Power Armor can carry less weaponry (and other hardware), but is usually more manueverable. It is often possible to perform major feats of dexterity while wearing power armor. This is because the power armor does not hinder the wearer<rsquo xml:id="G0002429"/>s natural skills. As well, power armor is easier to use because the Mecha Piloting skill is not required.</text>
           <text xml:id="G0002430">Mecha tend to be larger and more powerful than power armor. Mecha generally have more and heavier weapons, better armor, and superior auxiliary systems compared to powered armor. However, the pilot needs to be skilled to maximize the potential of a mecha.</text>
-          <section xml:id="G0002431">
+          <section kind="section" xml:id="G0002431">
             <title xml:id="G0002432">Building a Mecha</title>
             <numbered-list xml:id="G0002433">
               <item xml:id="G0002434">
@@ -2523,13 +2523,13 @@
             </numbered-list>
           </section>
         </section>
-        <section xml:id="G0003162">
+        <section kind="section" xml:id="G0003162">
           <title xml:id="G0003163">Equipment</title>
-          <section xml:id="G0003164">
+          <section kind="section" xml:id="G0003164">
             <title xml:id="G0003165">Auxiliary</title>
             <reference hrid="Content/Mecha/Equipment/Auxiliary" xml:id="G0003166"/>
           </section>
-          <section xml:id="G0003167">
+          <section kind="section" xml:id="G0003167">
             <title xml:id="G0003168">Ballistics</title>
             <text xml:id="G0003169">Ballistic weapons are scaled firearms or missiles (not energy weapons). The following chart details the information for various sized ammuntion for firearm-like ballistics weapons.</text>
             <figure xml:id="G0003170">
@@ -2727,7 +2727,7 @@
             </description-list>
             <reference hrid="Content/Mecha/Equipment/Ballistic" xml:id="G0003336"/>
           </section>
-          <section xml:id="G0003337">
+          <section kind="section" xml:id="G0003337">
             <title xml:id="G0003338">Energy Weapons</title>
             <text xml:id="G0003339">Energy weapons draw energy straight from the engines or batteries. There are multiple different methods for producing the blast that comes from an energy weapon, but all of them share some things in common. First, the base damage-table is used to calculate the damage an energy weapon does based on it<rsquo xml:id="G0003340"/>s class:</text>
             <figure xml:id="G0003341">
@@ -2842,7 +2842,7 @@
             <text xml:id="G0003432">After every twenty shots an Energy weapon must be retuned or else it will suffer damage. For every five shots after the twenty-limit, roll a <roll xml:id="G0003433"><num xml:id="G0003434">1</num><face xml:id="G0003435">20</face><bns xml:id="G0003436"/></roll> with a minus equal to the number of shots, plus (Class+1)*2. If the die-roll fails, the weapon is slagged and requires (Class+1)*10 hours of repair in a professional shop.</text>
             <reference hrid="Content/Mecha/Equipment/Energy Weapons" xml:id="G0003437"/>
           </section>
-          <section xml:id="G0003438">
+          <section kind="section" xml:id="G0003438">
             <title xml:id="G0003439">Weapons</title>
             <text xml:id="G0003440">Melee weapons for Mecha and Powered Armor are simply <ldquo xml:id="G0003441"/>scaled<rdquo xml:id="G0003442"/> up Melee weapons. The following table details the rule for scaling <ldquo xml:id="G0003443"/>human<rdquo xml:id="G0003444"/>sized weapons for Mechanized Battle Armor. For the Damage multiplier listed below, this is a multiplier to the number of dice.</text>
             <figure xml:id="G0003445">
@@ -2919,15 +2919,15 @@
             </figure>
             <reference hrid="Content/Mecha/Equipment/Melee Weapons" xml:id="G0003543"/>
           </section>
-          <section xml:id="G0003544">
+          <section kind="section" xml:id="G0003544">
             <title xml:id="G0003545">Sensors and Controls</title>
             <reference hrid="Content/Mecha/Equipment/Sensors and Controls" xml:id="G0003546"/>
           </section>
         </section>
-      </chapter>
-      <chapter xml:id="G0003547">
+      </section>
+      <section kind="chapter" xml:id="G0003547">
         <title xml:id="G0003548">Monsters</title>
-        <section xml:id="G0003549">
+        <section kind="section" xml:id="G0003549">
           <title xml:id="G0003550">Building a Monster</title>
           <text xml:id="G0003551">Because of the wide variety of monstrous creatures available in literature and fantasy, it is a somewhat futile task to attempt to construct an exhaustive list. In addition, most GameMasters find that while any particular monster is okay, the specific monster they are envisioning is not available to them. The Monster section is thus divided into three parts:</text>
           <description-list xml:id="G0003552">
@@ -2935,7 +2935,7 @@
             <item xml:id="G0003558"><description xml:id="G0003559">Templates</description><text xml:id="G0003560">modifications to the base-type that give the <ldquo xml:id="G0003561"/>flavor<rdquo xml:id="G0003562"/> of the monster</text></item>
             <item xml:id="G0003563"><description xml:id="G0003564">Examples</description><text xml:id="G0003565">that have been pre-generated</text></item>
           </description-list>
-          <section xml:id="G0003566">
+          <section kind="section" xml:id="G0003566">
             <title xml:id="G0003567">Base Types</title>
             <text xml:id="G0003568">The base-types are the fundamental <ldquo xml:id="G0003569"/>type<rdquo xml:id="G0003570"/> or <ldquo xml:id="G0003571"/>look<rdquo xml:id="G0003572"/> of the monster, they are:</text>
             <description-list xml:id="G0003573">
@@ -3306,29 +3306,29 @@
               <caption xml:id="G0003995">Monster Construction Table</caption>
             </figure>
           </section>
-          <section xml:id="G0003996">
+          <section kind="section" xml:id="G0003996">
             <title xml:id="G0003997">Adding a Template</title>
             <text xml:id="G0003998">There are several important items missing from the base-type. These are covered by Monstrous Templates which add things such as mental attributes (and Cha!), special abilities, and a description of the monster, including any relavent interaction statistics, such as combat, elocution etc.</text>
           </section>
         </section>
-        <section xml:id="G0003999">
+        <section kind="section" xml:id="G0003999">
           <title xml:id="G0004000">Monsters</title>
           <reference hrid="Content/Monsters" xml:id="G0004001"/>
         </section>
-      </chapter>
-      <chapter xml:id="G0004002">
+      </section>
+      <section kind="chapter" xml:id="G0004002">
         <title xml:id="G0004003">Traits</title>
-        <section xml:id="G0004004">
+        <section kind="section" xml:id="G0004004">
           <title xml:id="G0004005">Traits</title>
           <reference hrid="Content/Traits" xml:id="G0004006"/>
         </section>
-      </chapter>
-    </part>
-    <part xml:id="G0004007">
+      </section>
+    </section>
+    <section kind="part" xml:id="G0004007">
       <title xml:id="G0004008">Appendices</title>
-      <chapter xml:id="G0004009">
+      <section kind="chapter" xml:id="G0004009">
 	<title xml:id="G0004010">Summary of Decisions</title>
-	<section xml:id="G0004011">
+	<section kind="section" xml:id="G0004011">
 	  <title xml:id="G0004012">Called Shots</title>
 	  <text xml:id="G0004013">Bonus (minus) to hit certain portions of the anatomy.</text>
 	  <table xml:id="G0004014">
@@ -3349,7 +3349,7 @@
 	    <row xml:id="G0004048"><cell xml:id="G0004049">Weapon</cell><cell xml:id="G0004050">-4 to -10</cell></row>
 	  </table>
 	</section>
-	<section xml:id="G0004051">
+	<section kind="section" xml:id="G0004051">
 	  <title xml:id="G0004052">Damage and Its Effects</title>
 	  <table xml:id="G0004053">
 	    <head xml:id="G0004054">
@@ -3362,7 +3362,7 @@
 	    <row xml:id="G0004075"><cell xml:id="G0004076">-HP</cell><cell xml:id="G0004077">Character dies.</cell></row>
 	  </table>
 	</section>
-	<section xml:id="G0004078">
+	<section kind="section" xml:id="G0004078">
 	  <title xml:id="G0004079">Armor Value of Common Things</title>
 	  <table xml:id="G0004080">
 	    <head xml:id="G0004081">
@@ -3387,7 +3387,7 @@
 	    <row xml:id="G0004132"><cell xml:id="G0004133">USS Enterprise</cell><cell xml:id="G0004134">3500</cell></row>
 	  </table>
 	</section>
-	<section xml:id="G0004135">
+	<section kind="section" xml:id="G0004135">
 	  <title xml:id="G0004136">Hit Points of common things</title>
 	  <table xml:id="G0004137">
 	    <head xml:id="G0004138">
@@ -3406,7 +3406,7 @@
 	    <row xml:id="G0004171"><cell xml:id="G0004172">Semi tractor trailer</cell><cell xml:id="G0004173">1000</cell></row>
 	  </table>
 	</section>
-	<section xml:id="G0004174">
+	<section kind="section" xml:id="G0004174">
 	  <title xml:id="G0004175">Number of actions of common actions in combat</title>
 	  <table xml:id="G0004176">
 	    <head xml:id="G0004177"><cell colfmt="p{3in}" xml:id="G0004178">What</cell><cell colfmt="p{2in}" xml:id="G0004179">Time</cell></head>
@@ -3431,7 +3431,7 @@
 	    <row xml:id="G0004234"><cell xml:id="G0004235">Throw grenade or similar</cell><cell xml:id="G0004236">1 regular</cell></row>
 	  </table>
 	</section>
-	<section xml:id="G0004237">
+	<section kind="section" xml:id="G0004237">
 	  <title xml:id="G0004238">Spending luck</title>
 	  <table xml:id="G0004239">
 	    <head xml:id="G0004240"><cell colfmt="l" xml:id="G0004241">What</cell><cell colfmt="p{3in}" xml:id="G0004242">How</cell></head>
@@ -3444,7 +3444,7 @@
 	    <row xml:id="G0004264"><cell xml:id="G0004265">Magic</cell><cell xml:id="G0004266">Gain 50 Mana Points instantaneously.</cell></row>
 	  </table>
 	</section>
-	<section xml:id="G0004267">
+	<section kind="section" xml:id="G0004267">
 	  <title xml:id="G0004268">Modifications to strike</title>
 	  <table xml:id="G0004269">
 	    <head xml:id="G0004270"><cell colfmt="p{10em}" xml:id="G0004271">What</cell><cell colfmt="p{3in}" xml:id="G0004272">Bonus</cell></head>
@@ -3461,226 +3461,226 @@
 	    <row xml:id="G0004303"><cell xml:id="G0004304">Extremely hot, at range</cell><cell xml:id="G0004305">-20</cell></row>
 	  </table>
 	</section>
-      </chapter>
-      <chapter xml:id="G0004306">
+      </section>
+      <section kind="chapter" xml:id="G0004306">
 	<title xml:id="G0004307">Summary of Tables</title>
-	<section xml:id="G0004308">
+	<section kind="section" xml:id="G0004308">
 	  <title xml:id="G0004309">Academic Skills</title>
 	  <summarize hrid="Content/Academic" xml:id="G0004310"/>
 	</section>
-	<section xml:id="G0004311">
+	<section kind="section" xml:id="G0004311">
 	  <title xml:id="G0004312">Augmentations</title>
-	  <section xml:id="G0004313">
+	  <section kind="section" xml:id="G0004313">
 	    <title xml:id="G0004314">Augmentations: Arm, Hand</title>
 	    <summarize hrid="Content/Augmentations/Arm, Hand" xml:id="G0004315"/>
 	  </section>
-	  <section xml:id="G0004316">
+	  <section kind="section" xml:id="G0004316">
 	    <title xml:id="G0004317">Augmentations: Body</title>
 	    <summarize hrid="Content/Augmentations/Body" xml:id="G0004318"/>
 	  </section>
-	  <section xml:id="G0004319">
+	  <section kind="section" xml:id="G0004319">
 	    <title xml:id="G0004320">Augmentations: Head</title>
 	    <summarize hrid="Content/Augmentations/Head" xml:id="G0004321"/>
 	  </section>
-	  <section xml:id="G0004322">
+	  <section kind="section" xml:id="G0004322">
 	    <title xml:id="G0004323">Augmentations: Leg</title>
 	    <summarize hrid="Content/Augmentations/Leg" xml:id="G0004324"/>
 	  </section>
-	  <section xml:id="G0004325">
+	  <section kind="section" xml:id="G0004325">
 	    <title xml:id="G0004326">Augmentations: Torso</title>
 	    <summarize hrid="Content/Augmentations/Torso" xml:id="G0004327"/>
 	  </section>
 	</section>
-	<section xml:id="G0004328">
+	<section kind="section" xml:id="G0004328">
 	  <title xml:id="G0004329">Equipment</title>
-	  <section xml:id="G0004330">
+	  <section kind="section" xml:id="G0004330">
 	    <title xml:id="G0004331">Ammunition</title>
 	    <summarize hrid="Content/Equipment/Ammunition" xml:id="G0004332"/>
 	  </section>
-	  <section xml:id="G0004333">
+	  <section kind="section" xml:id="G0004333">
 	    <title xml:id="G0004334">Long Guns</title>
 	    <summarize hrid="Content/Equipment/Firearms and Guns/Long Guns" xml:id="G0004335"/>
 	  </section>
-	  <section xml:id="G0004336">
+	  <section kind="section" xml:id="G0004336">
 	    <title xml:id="G0004337">Hand Guns</title>
 	    <summarize hrid="Content/Equipment/Firearms and Guns/Hand Weapons" xml:id="G0004338"/>
 	  </section>
-	  <section xml:id="G0004339">
+	  <section kind="section" xml:id="G0004339">
 	    <title xml:id="G0004340">Armor</title>
 	    <summarize hrid="Content/Equipment/Armor" xml:id="G0004341"/>
 	  </section>
-	  <section xml:id="G0004342">
+	  <section kind="section" xml:id="G0004342">
 	    <title xml:id="G0004343">Energy Weapons</title>
 	    <summarize hrid="Content/Equipment/Energy Weapons" xml:id="G0004344"/>
 	  </section>
-	  <section xml:id="G0004345">
+	  <section kind="section" xml:id="G0004345">
 	    <title xml:id="G0004346">Axes</title>
 	    <summarize hrid="Content/Equipment/Melee/Axes" xml:id="G0004347"/>
 	  </section>
-	  <section xml:id="G0004348">
+	  <section kind="section" xml:id="G0004348">
 	    <title xml:id="G0004349">Blunt</title>
 	    <summarize hrid="Content/Equipment/Melee/Blunt" xml:id="G0004350"/>
 	  </section>
-	  <section xml:id="G0004351">
+	  <section kind="section" xml:id="G0004351">
 	    <title xml:id="G0004352">Body</title>
 	    <summarize hrid="Content/Equipment/Melee/Body" xml:id="G0004353"/>
 	  </section>
-	  <section xml:id="G0004354">
+	  <section kind="section" xml:id="G0004354">
 	    <title xml:id="G0004355">Chained</title>
 	    <summarize hrid="Content/Equipment/Melee/Chained" xml:id="G0004356"/>
 	  </section>
-	  <section xml:id="G0004357">
+	  <section kind="section" xml:id="G0004357">
 	    <title xml:id="G0004358">Exotic</title>
 	    <summarize hrid="Content/Equipment/Melee/Exotic" xml:id="G0004359"/>
 	  </section>
-	  <section xml:id="G0004360">
+	  <section kind="section" xml:id="G0004360">
 	    <title xml:id="G0004361">Knives</title>
 	    <summarize hrid="Content/Equipment/Melee/Knives" xml:id="G0004362"/>
 	  </section>
-	  <section xml:id="G0004363">
+	  <section kind="section" xml:id="G0004363">
 	    <title xml:id="G0004364">Large Swords</title>
 	    <summarize hrid="Content/Equipment/Melee/Large Swords" xml:id="G0004365"/>
 	  </section>
-	  <section xml:id="G0004366">
+	  <section kind="section" xml:id="G0004366">
 	    <title xml:id="G0004367">Monofilament</title>
 	    <summarize hrid="Content/Equipment/Melee/Monofilament" xml:id="G0004368"/>
 	  </section>
-	  <section xml:id="G0004369">
+	  <section kind="section" xml:id="G0004369">
 	    <title xml:id="G0004370">Plasma Melee</title>
 	    <summarize hrid="Content/Equipment/Melee/Plasma" xml:id="G0004371"/>
 	  </section>
-	  <section xml:id="G0004372">
+	  <section kind="section" xml:id="G0004372">
 	    <title xml:id="G0004373">Polearms</title>
 	    <summarize hrid="Content/Equipment/Melee/Polearms" xml:id="G0004374"/>
 	  </section>
-	  <section xml:id="G0004375">
+	  <section kind="section" xml:id="G0004375">
 	    <title xml:id="G0004376">Rocket Assisted</title>
 	    <summarize hrid="Content/Equipment/Melee/Rocket-Assisted" xml:id="G0004377"/>
 	  </section>
-	  <section xml:id="G0004378">
+	  <section kind="section" xml:id="G0004378">
 	    <title xml:id="G0004379">Small Swords</title>
 	    <summarize hrid="Content/Equipment/Melee/Small Swords" xml:id="G0004380"/>
 	  </section>
-	  <section xml:id="G0004381">
+	  <section kind="section" xml:id="G0004381">
 	    <title xml:id="G0004382">Staves</title>
 	    <summarize hrid="Content/Equipment/Melee/Staves" xml:id="G0004383"/>
 	  </section>
-	  <section xml:id="G0004384">
+	  <section kind="section" xml:id="G0004384">
 	    <title xml:id="G0004385">Thrown</title>
 	    <summarize hrid="Content/Equipment/Melee/Thrown" xml:id="G0004386"/>
 	  </section>
-	  <section xml:id="G0004387">
+	  <section kind="section" xml:id="G0004387">
 	    <title xml:id="G0004388">Miscellaneous Equipment</title>
 	    <summarize hrid="Content/Equipment/Miscellaneous" xml:id="G0004389"/>
 	  </section>
-	  <section xml:id="G0004390">
+	  <section kind="section" xml:id="G0004390">
 	    <title xml:id="G0004391">Ranged Archaic Weapons</title>
 	    <summarize hrid="Content/Equipment/Ranged" xml:id="G0004392"/>
 	  </section>
-	  <section xml:id="G0004393">
+	  <section kind="section" xml:id="G0004393">
 	    <title xml:id="G0004394">Shields</title>
 	    <summarize hrid="Content/Equipment/Shields" xml:id="G0004395"/>
 	  </section>
 	</section>
-	<section xml:id="G0004396">
+	<section kind="section" xml:id="G0004396">
 	  <title xml:id="G0004397">Magic</title>
-	  <section xml:id="G0004398">
+	  <section kind="section" xml:id="G0004398">
 	    <title xml:id="G0004399">Magic: Air</title>
 	    <summarize hrid="Content/Magic/Air" xml:id="G0004400"/>
 	  </section>
-	  <section xml:id="G0004401">
+	  <section kind="section" xml:id="G0004401">
 	    <title xml:id="G0004402">Magic: Arcane</title>
 	    <summarize hrid="Content/Magic/Arcane" xml:id="G0004403"/>
 	  </section>
-	  <section xml:id="G0004404">
+	  <section kind="section" xml:id="G0004404">
 	    <title xml:id="G0004405">Magic: Beast</title>
 	    <summarize hrid="Content/Magic/Beast" xml:id="G0004406"/>
 	  </section>
-	  <section xml:id="G0004407">
+	  <section kind="section" xml:id="G0004407">
 	    <title xml:id="G0004408">Magic: Earth</title>
 	    <summarize hrid="Content/Magic/Earth" xml:id="G0004409"/>
 	  </section>
-	  <section xml:id="G0004410">
+	  <section kind="section" xml:id="G0004410">
 	    <title xml:id="G0004411">Magic: Fire</title>
 	    <summarize hrid="Content/Magic/Fire" xml:id="G0004412"/>
 	  </section>
-	  <section xml:id="G0004413">
+	  <section kind="section" xml:id="G0004413">
 	    <title xml:id="G0004414">Magic: Life</title>
 	    <summarize hrid="Content/Magic/Life" xml:id="G0004415"/>
 	  </section>
-	  <section xml:id="G0004416">
+	  <section kind="section" xml:id="G0004416">
 	    <title xml:id="G0004417">Magic: Light</title>
 	    <summarize hrid="Content/Magic/Light" xml:id="G0004418"/>
 	  </section>
-	  <section xml:id="G0004419">
+	  <section kind="section" xml:id="G0004419">
 	    <title xml:id="G0004420">Magic: Physical</title>
 	    <summarize hrid="Content/Magic/Physical" xml:id="G0004421"/>
 	  </section>
-	  <section xml:id="G0004422">
+	  <section kind="section" xml:id="G0004422">
 	    <title xml:id="G0004423">Magic: Spirit</title>
 	    <summarize hrid="Content/Magic/Spirit" xml:id="G0004424"/>
 	  </section>
-	  <section xml:id="G0004425">
+	  <section kind="section" xml:id="G0004425">
 	    <title xml:id="G0004426">Magic: Water</title>
 	    <summarize hrid="Content/Magic/Water" xml:id="G0004427"/>
 	  </section>
 	</section>
-	<section xml:id="G0004428">
+	<section kind="section" xml:id="G0004428">
 	  <title xml:id="G0004429">Martial Arts</title>
-	  <section xml:id="G0004430">
+	  <section kind="section" xml:id="G0004430">
 	    <title xml:id="G0004431">Martial Arts: Basic</title>
 	    <summarize hrid="Content/Martial Arts/Basic" xml:id="G0004432"/>
 	  </section>
-	  <section xml:id="G0004433">
+	  <section kind="section" xml:id="G0004433">
 	    <title xml:id="G0004434">Martial Arts: Combat</title>
 	    <summarize hrid="Content/Martial Arts/Combat" xml:id="G0004435"/>
 	  </section>
-	  <section xml:id="G0004436">
+	  <section kind="section" xml:id="G0004436">
 	    <title xml:id="G0004437">Martial Arts: Defensive</title>
 	    <summarize hrid="Content/Martial Arts/Defensive" xml:id="G0004438"/>
 	  </section>
-	  <section xml:id="G0004439">
+	  <section kind="section" xml:id="G0004439">
 	    <title xml:id="G0004440">Martial Arts: Modifier</title>
 	    <summarize hrid="Content/Martial Arts/Modifier" xml:id="G0004441"/>
 	  </section>
-	  <section xml:id="G0004442">
+	  <section kind="section" xml:id="G0004442">
 	    <title xml:id="G0004443">Martial Arts: Special</title>
 	    <summarize hrid="Content/Martial Arts/Special" xml:id="G0004444"/>
 	  </section>
 	</section>
-	<section xml:id="G0004445">
+	<section kind="section" xml:id="G0004445">
 	  <title xml:id="G0004446">Monsters</title>
 	  <summarize hrid="Content/Monsters" xml:id="G0004447"/>
 	</section>
-	<section xml:id="G0004448">
+	<section kind="section" xml:id="G0004448">
 	  <title xml:id="G0004449">Traits</title>
 	  <summarize hrid="Content/Traits" xml:id="G0004450"/>
 	</section>
-	<section xml:id="G0004451">
+	<section kind="section" xml:id="G0004451">
 	  <title xml:id="G0004452">Mecha</title>
-	  <section xml:id="G0004453">
+	  <section kind="section" xml:id="G0004453">
 	    <title xml:id="G0004454">Mecha: Auxiliary</title>
 	    <summarize hrid="Content/Mecha/Equipment/Auxiliary" xml:id="G0004455"/>
 	  </section>
-	  <section xml:id="G0004456">
+	  <section kind="section" xml:id="G0004456">
 	    <title xml:id="G0004457">Mecha: Ballistic</title>
 	    <summarize hrid="Content/Mecha/Equipment/Ballistic" xml:id="G0004458"/>
 	  </section>
-	  <section xml:id="G0004459">
+	  <section kind="section" xml:id="G0004459">
 	    <title xml:id="G0004460">Mecha: Energy Weapons</title>
 	    <summarize hrid="Content/Mecha/Equipment/Energy Weapons" xml:id="G0004461"/>
 	  </section>
-	  <section xml:id="G0004462">
+	  <section kind="section" xml:id="G0004462">
 	    <title xml:id="G0004463">Mecha: Melee Weapons</title>
 	    <summarize hrid="Content/Mecha/Equipment/Melee Weapons" xml:id="G0004464"/>
 	  </section>
-	  <section xml:id="G0004465">
+	  <section kind="section" xml:id="G0004465">
 	    <title xml:id="G0004466">Mecha: Sensors and Controls</title>
 	    <summarize hrid="Content/Mecha/Equipment/Sensors and Controls" xml:id="G0004467"/>
 	  </section>
 	</section>
-      </chapter>
-    </part>
+      </section>
+    </section>
   </book>
   <raw-data xml:id="G0004468">
     <category name="Content/Academic" xml:id="G0004469">

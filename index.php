@@ -8,17 +8,17 @@
     <div id="Datum" class="Datum"></div>
     <table valign="top">
       <tr valign="top">
-        <td width="30%";>
+        <td>
           <div id="Ajax" class="Log" style="visibility:show;">
             <em>Ajax</em>
           </div>
         </td>
-        <td width="30%";>
+        <td>
           <div id="Log" class="Log" style="visibility:show;">
             <em>Log</em>
           </div>
         </td>
-        <td width="30%";>
+        <td>
           <div id="LogResponse" class="Log" style="visibility:show;">
             <em>Response</em>
           </div>
