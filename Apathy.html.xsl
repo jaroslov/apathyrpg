@@ -28,6 +28,7 @@
 
   <xsl:template match="book">
     <div class="titlepage">
+      <img src="Apathy.png" />
       <span class="apathy-A1">A</span>
       <span class="apathy-P">P</span>
       <span class="apathy-A2">A</span>
@@ -52,37 +53,11 @@
       <h1>Table of Contents</h1>
       <ol class="toc">
         <xsl:for-each select="//part">
+          <xsl:variable name="pt-uid" select="title/@xml:id" />
           <li>
-            <a href="#{generate-id(.)}">
+            <a href="#{generate-id(.)}" name="{$pt-uid}">
               <xsl:value-of select="title" />
             </a>
-            <ol class="toc" >
-              <xsl:for-each select="chapter">
-                <li>
-                  <a href="#{generate-id(.)}">
-                    <xsl:value-of select="title" />
-                  </a>
-                  <ol class="toc" >
-                    <xsl:for-each select="section">
-                      <li>
-                        <a href="#{generate-id(.)}">
-                          <xsl:value-of select="title" />
-                        </a>
-                        <ol class="toc" >
-                          <xsl:for-each select="section">
-                            <li>
-                              <a href="#{generate-id(.)}">
-                                <xsl:value-of select="title" />
-                              </a>
-                            </li>
-                          </xsl:for-each>
-                        </ol>
-                      </li>
-                    </xsl:for-each>
-                  </ol>
-                </li>
-              </xsl:for-each>
-            </ol>
           </li>
         </xsl:for-each>
       </ol>
@@ -285,20 +260,62 @@
   <!-- structure elements -->
   <!-- part -->
   <xsl:template match="part">
-    <div class="part" id="{generate-id(.)}" >
-      <xsl:apply-templates />
+    <xsl:variable name="pt-uid" select="./@xml:id" />
+    <div name="{$pt-uid}" id="{generate-id(.)}">
+      <xsl:apply-templates select="title"/>
+      <div class="toc" id="Table-of-Contents">
+        <ol class="toc">
+          <xsl:for-each select="chapter">
+            <xsl:variable name="ch-uid" select="title/@xml:id" />
+            <li>
+              <a href="#{generate-id(.)}" name="{$ch-uid}">
+                <xsl:value-of select="title" />
+              </a>
+            </li>
+          </xsl:for-each>
+        </ol>
+      </div>
+      <xsl:apply-templates select="chapter"/>
     </div>
   </xsl:template>
   <!-- chapter -->
   <xsl:template match="chapter">
-    <div class="chapter" id="{generate-id(.)}" >
-      <xsl:apply-templates />
+    <xsl:variable name="ch-uid" select="./@xml:id" />
+    <div class="chapter" id="{generate-id(.)}" name="{$ch-uid}">
+      <xsl:apply-templates select="title" />
+      <div class="toc" id="Table-of-Contents">
+        <ol class="toc">
+          <xsl:for-each select="section">
+            <xsl:variable name="sec-uid" select="title/@xml:id" />
+            <li>
+              <a href="#{generate-id(.)}" name="{$sec-uid}">
+                <xsl:value-of select="title" />
+              </a>
+            </li>
+          </xsl:for-each>
+        </ol>
+      </div>
+      <xsl:apply-templates select="section" />
     </div>
   </xsl:template>
   <!-- section -->
   <xsl:template match="section">
-    <div class="section" id="{generate-id(.)}" >
-      <xsl:apply-templates />
+    <xsl:variable name="sec-uid" select="./@xml:id" />
+    <div class="section" id="{generate-id(.)}" name="{$sec-uid}">
+      <xsl:apply-templates select="title"/>
+      <div class="toc" id="Table-of-Contents">
+        <ol class="toc">
+          <xsl:for-each select="section">
+            <xsl:variable name="sub-uid" select="title/@xml:id" />
+            <li>
+              <a href="#{generate-id(.)}" name="{$sub-uid}">
+                <xsl:value-of select="title" />
+              </a>
+            </li>
+          </xsl:for-each>
+        </ol>
+      </div>
+      <xsl:apply-templates select="section|reference|text|example|description-list|itemized-list|numbered-list|figure|equation|note"/>
     </div>
   </xsl:template>
 
