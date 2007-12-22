@@ -352,6 +352,18 @@ function get_name_of_datum($datum) {
   return "No name.";
 }
 
+function build_modifyable_text($tabindex,$node,$style) {
+  if (!$style)
+    $class="";
+  $blurFocusResponse = " onFocus='focusStyle(this);'"
+    ." onBlur='blurStyle(this);'";
+  $onChange = " onChange=\"ajaxFunction('Log','Log','LogMessage',value)\"";
+  return "<textarea tabindex="
+    .$tabindex.$blurFocusResponse.$onChange
+    ."style='".$style."'"
+    .">".translate_child_text($node)."</textarea>";
+}
+
 function build_datum_response($trg,$src,$code,$msg,$apathy) {
   $datum = message_to_datum($apathy,$msg);
   $name = $datum->getAttribute("name");
@@ -376,26 +388,18 @@ function build_datum_response($trg,$src,$code,$msg,$apathy) {
     ." onBlur='blurStyle(this);'";
   $onChange = " onChange=\"ajaxFunction('Log','Log','LogMessage',value)\"";
   $table .= "<tr><td align='right'>Name:&rsaquo;</td><td>"
-    ."<textarea tabindex=1".$blurFocusResponse.$onChange.">"
-    .translate_child_text($titlenode)
-    ."</textarea></td><td rowspan='".$rows."'>"
-    ."<textarea class='ModifyDatumDescription'"
-    .$blurFocusResponse.$onChange
-    ." tabindex=".(string)($rows+2)
-    ." style='width:30em;height:"
-    .(string)($rows*4)."em'>"
-    .translate_child_text($descriptionnode)
+    .build_modifyable_text(1,$titlenode)
+    ."</td><td rowspan='".$rows."'>"
+    .build_modifyable_text($rows+2,$descriptionnode,
+      "width:30em;height:".(string)($rows*4)."em")
     ."</textarea></td></tr>";
   $tabindex = 1;
   foreach ($tablenodes as $tablenode) {
     $tabindex++;
     $name = $tablenode->getAttribute("name");
     $table .= "<tr><td align='right'><pre>".$name.":&rsaquo;</pre></td><td>";
-    $table .= "<textarea tabindex=".(string)$tabindex
-      .$blurFocusResponse
-      .$onChange.">";
-    $table .= translate_child_text($tablenode);
-    $table .= "</textarea></td></tr>";
+    $table .= build_modifyable_text($tabindex,$tablenode);
+    $table .= "</td></tr>";
   }
   $table .= "<tr><td></td><td colspan='2' align='right'>"
     ."<input style='width:15em;' type='Button' value='Save'/></td></tr>";
