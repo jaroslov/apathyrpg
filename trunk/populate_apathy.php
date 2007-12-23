@@ -67,25 +67,88 @@ function insert_field_anon_element($BelongsTo) {
   return insert_field_data_element($BelongsTo,0,0,0);
 }
 
-function populate_structured_text($Node,$ParentId,$Indent) {
+function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
   $indent = "";
   $nindent = "";
   if (is_string($Indent)) {
     $indent = $Indent;
     $nindent = "&nbsp;&nbsp;" . $indent;
   }
-  echo $indent.$ParentId."<br/>";
-  $curP = $ParentId;
-  foreach ($Node->childNodes as $Child) {
-    populate_structured_text($Child,$ParentId+1,$nindent);
+  $belongsto = $ParentId;
+  $tagname = $Node->tagName;
+  $extra = "";
+  $rawtext = null;
+  $recurse = true;
+  $default_print = false;
+  switch ($tagname) {
+    // structure elements
+    case "book": break;
+    case "section": $saverawtext = true;
+      $extra = $Node->getAttribute("kind"); break;
+    // structured text elements
+    case "title": $saverawtext = true; break;
+    case "text": $saverawtext = true; break;
+    case "itemized-list": $saverawtext = false; break;
+    case "description-list": $saverawtext = false; break;
+    case "numbered-list": $saverawtext = false; break;
+    case "description": $saverawtext = true; break;
+    case "item": $saverawtext = true; break;
+    case "define": $saverawtext = true; break;
+    case "figure": $saverawtext = false; break;
+    case "table": $saverawtext = false; break;
+    case "head": $saverawtext = false; break;
+    case "row": $saverawtext = false; break;
+    case "cell": $saverawtext = true;
+      $extra = $Node->getAttribute("colfmt"); break;
+    case "caption": $saverawtext = true; break;
+    case "note": $saverawtext = false; break;
+    case "math": $saverawtext = false; break;
+    case "mrow": $saverawtext = false; break;
+    case "mfrac": $saverawtext = false; break;
+    case "mn": $saverawtext = true; break;
+    case "mo": $saverawtext = true; break;
+    case "mi": $saverawtext = true; break;
+    case "example": $saverawtext = false; break;
+    case "roll": $saverawtext = false; break;
+    case "num": $saverawtext = true; break;
+    case "face": $saverawtext = true; break;
+    case "bns": $saverawtext = true; break;
+    case "bOff": $saverawtext = true; break;
+    case "rOff": $saverawtext = true; break;
+    case "raw": $saverawtext = true; break;
+    case "kind": $saverawtext = true; break;
+    // unstructured elements
+    case "Apathy": $saverawtext = false; $recurse=false; break;
+    case "and": $saverawtext = false; $recurse=false; break;
+    case "rsquo": $saverawtext = false; $recurse=false; break;
+    case "lsquo": $saverawtext = false; $recurse=false; break;
+    case "rdquo": $saverawtext = false; $recurse=false; break;
+    case "ldquo": $saverawtext = false; $recurse=false; break;
+    case "mdash": $saverawtext = false; $recurse=false; break;
+    case "ndash": $saverawtext = false; $recurse=false; break;
+    case "times": $saverawtext = false; $recurse=false; break;
+    case "rightarrow": $saverawtext = false; $recurse=false; break;
+    case "ouml": $saverawtext = false; $recurse=false; break;
+    case "oslash": $saverawtext = false; $recurse=false; break;
+    case "trademark": $saverawtext = false; $recurse=false; break;
+    case "plusminus": $saverawtext = false; $recurse=false; break;
+    default:
+      $default_print = true;
+      echo $indent.$ParentId."(?".$saverawtext."):&laquo;".$Node->tagName."&raquo;<br/>"; 
   }
+  if (!$default_print)
+      ;//echo $indent.$ParentId."(".$saverawtext."): ".$Node->tagName."<br/>"; 
+  if ($recurse)
+    foreach ($Node->childNodes as $Child) {
+      populate_structured_text($Child,$ParentId+1,$saverawtext,$nindent);
+    }
 }
 
 function populate_database($Apathy) {
   $books = $Apathy->getElementsByTagName("book");
   for ($bad = 0; $bad < $books->length; $bad++) {
     $book = $books->item($bad);
-    populate_structured_text($book,0,"");
+    populate_structured_text($book,0,false,"");
     echo "<p>".$book->getAttribute("xml:id")."</p>";
   }
   return "<b>Books Finished</b><br/>";
