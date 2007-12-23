@@ -67,6 +67,35 @@ function insert_field_anon_element($BelongsTo) {
   return insert_field_data_element($BelongsTo,0,0,0);
 }
 
+function insert_structured_element($BelongsTo,$TagName,$ExtraName,$ExtraValue) {
+  $query = "INSERT INTO `Apathy`.`StructuredText` (
+              `StructuredId` ,
+              `BelongsTo` ,
+              `TagName` ,
+              `ExtraName` ,
+              `ExtraValue`
+            )
+            VALUES (
+              NULL , '".$BelongsTo."', '".$TagName."', '"
+              .$ExtraName."', '".$ExtraValue."'
+            );";
+  $resource = mysql_query($query);
+  return mysql_insert_id();
+}
+
+function insert_raw_text_chunk($BelongsTo,$Text) {
+  $query = "INSERT INTO `Apathy`.`RawText` (
+              `TextId` ,
+              `BelongsTo` ,
+              `Value`
+            )
+            VALUES (
+              NULL , '".$BelongsTo."', '".$Text."'
+            );";
+  $resource = mysql_query($query);
+  return mysql_insert_id();
+}
+
 function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
   $indent = "";
   $nindent = "";
@@ -76,7 +105,8 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
   }
   $belongsto = $ParentId;
   $tagname = $Node->tagName;
-  $extra = "";
+  $extraname = "";
+  $extravalue = "";
   $rawtext = null;
   $recurse = true;
   $default_print = false;
@@ -84,14 +114,15 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     // structure elements
     case "book": $saverawtext = false; break;
     case "section": $saverawtext = false;
-      $extra = $Node->getAttribute("kind"); break;
+      $extraname = "kind";
+      $extravalue = $Node->getAttribute($extraname); break;
     // structured text elements
     case "title": $saverawtext = true; break;
     case "text": $saverawtext = true; break;
     case "itemized-list": $saverawtext = false; break;
     case "description-list": $saverawtext = false; break;
     case "numbered-list": $saverawtext = false; break;
-    case "description": $saverawtext = true; break;
+    case "description": $saverawtext = false; break;
     case "item": $saverawtext = false; break;
     case "define": $saverawtext = true; break;
     case "footnote": $saverawtext = false; break;
@@ -99,9 +130,10 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "table": $saverawtext = false; break;
     case "head": $saverawtext = false; break;
     case "row": $saverawtext = false; break;
-    case "cell": $saverawtext = true;
-      $extra = $Node->getAttribute("colfmt"); break;
-    case "caption": $saverawtext = true; break;
+    case "cell": $saverawtext = false;
+      $extraname = "colfmt";
+      $extravalue = $Node->getAttribute($extraname); break;
+    case "caption": $saverawtext = false; break;
     case "note": $saverawtext = false; break;
     case "equation": $saverawtext = false; break;
     case "math": $saverawtext = false; break;
@@ -125,11 +157,13 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "mul": $saverawtext = true; break;
     // unstructured elements
     case "reference": $saverawtext = false;
-      $recurse=false;
-      $extra=$Node->getAttribute("hrid"); break;
+      $recurse = false;
+      $extraname = "hrid";
+      $extravalue = $Node->getAttribute($extraname); break;
     case "summarize": $saverawtext = false;
-      $recurse=false;
-      $extra=$Node->getAttribute("hrid"); break;
+      $recurse = false;
+      $extraname = "hrid";
+      $extravalue = $Node->getAttribute($extraname); break;
     case "Apathy": $saverawtext = false; $recurse=false; break;
     case "C": $saverawtext = false; $recurse=false; break;
     case "notappl": $saverawtext = false; $recurse=false; break;
@@ -157,6 +191,16 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
           .$Node->tagName."</span><br/>";
       }
   }
+  /*$node_id = null;
+  if ($Node->nodeType == XML_ELEMENT_NODE) {
+    $node_id = insert_structured_element($ParentId,$tagname,$extraname,$extravalue);
+    if ($recurse)
+      foreach ($Node->childNodes as $Child)
+        populate_structured_text($Child,$node_id,$saverawtext,$nindent);
+  } else if ($Node->nodeType == XML_TEXT_NODE) {
+    if ($saverawtext)
+      
+  }*/
   if ($Node->nodeType == XML_TEXT_NODE) {
     $spaces = array(" ","\t","\n","\r");
     $value = str_replace(" ","",$Node->nodeValue);
@@ -175,10 +219,8 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
   } else {
     echo $indent.$ParentId."(".$saverawtext."): ".$tagname."<br/>";
   }
-  if (true)//$recurse)
-    foreach ($Node->childNodes as $Child) {
-      populate_structured_text($Child,$ParentId+1,$saverawtext,$nindent);
-    }
+  foreach ($Node->childNodes as $Child)
+    populate_structured_text($Child,$node_id,$saverawtext,$nindent);
 }
 
 function populate_database($Apathy) {
