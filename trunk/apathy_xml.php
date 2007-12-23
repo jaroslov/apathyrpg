@@ -131,4 +131,41 @@ function get_name_of_datum($datum) {
   return "No name.";
 }
 
+function get_title_of_datum($datum) {
+  foreach ($datum->childNodes as $field)
+    if ($field->tagName === "field")
+      if (false !== $field->hasAttribute("title"))
+        return translate_child_text($field);
+  return "No title.";
+}
+
+function get_description_of_datum($datum) {
+  foreach ($datum->childNodes as $field)
+    if ($field->tagName === "field")
+      if (false !== $field->hasAttribute("description"))
+        return translate_child_text($field);
+  return "No description.";
+}
+
+function get_table_of_datum($datum) {
+  $tables = array();
+  foreach ($datum->childNodes as $field)
+    if ($field->tagName === "field")
+      if (false !== $field->hasAttribute("table"))
+        array_push($tables,translate_child_text($field));
+  return $tables;
+}
+
+function format_datum($title,$tables,$description) {
+  $result = "<table>";
+  $rows = sizeof($tables)+1;
+  $result .= "<tr><td></td><td>Aspects</td><td>Description</td></tr>";
+  $result .= "<tr><td>Title</td><td>".$title."</td>"
+  $result .= "<td rowspan='".$rows."'>".$description."</td></tr>";
+  foreach ($tables as $table)
+    $result .= "<tr></tr>";
+  $result .= "</table>";
+  return $result;
+}
+
 ?>
