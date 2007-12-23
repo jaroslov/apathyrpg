@@ -2196,21 +2196,21 @@
                     </row>
                     <row xml:id="G0002763">
                       <cell xml:id="G0002764"><text>Ultrahard</text></cell>
-                      <cell xml:id="G0002765">130<percent xml:id="G0002766"/>/ 90<percent xml:id="G0002767"/>/ 80<percent xml:id="G0002768"/></cell>
-                      <cell xml:id="G0002769">Extra hard armor fragments piercing weapons</cell>
+                      <cell xml:id="G0002765"><text>130<percent xml:id="G0002766"/>/ 90<percent xml:id="G0002767"/>/ 80<percent xml:id="G0002768"/></text></cell>
+                      <cell xml:id="G0002769"><text>Extra hard armor fragments piercing weapons</text></cell>
                     </row>
                     <row xml:id="G0002770">
-                      <cell xml:id="G0002771">Slick-steel</cell>
-                      <cell xml:id="G0002772">90<percent xml:id="G0002773"/>/ 120<percent xml:id="G0002774"/>/ 90<percent xml:id="G0002775"/></cell>
-                      <cell xml:id="G0002776">Slashing attacks tend to slide off the armor</cell>
+                      <cell xml:id="G0002771"><text>Slick-steel</text></cell>
+                      <cell xml:id="G0002772"><text>90<percent xml:id="G0002773"/>/ 120<percent xml:id="G0002774"/>/ 90<percent xml:id="G0002775"/></text></cell>
+                      <cell xml:id="G0002776"><text>Slashing attacks tend to slide off the armor</text></cell>
                     </row>
                     <row xml:id="G0002777">
-                      <cell xml:id="G0002778">Reflective</cell>
-                      <cell xml:id="G0002779">70<percent xml:id="G0002780"/>/ 70<percent xml:id="G0002781"/>/ 70<percent xml:id="G0002782"/></cell>
-                      <cell xml:id="G0002783">Armor will protect against energy based attacks as if the attack was not U</cell>
+                      <cell xml:id="G0002778"><text>Reflective</text></cell>
+                      <cell xml:id="G0002779"><text>70<percent xml:id="G0002780"/>/ 70<percent xml:id="G0002781"/>/ 70<percent xml:id="G0002782"/></text></cell>
+                      <cell xml:id="G0002783"><text>Armor will protect against energy based attacks as if the attack was not U</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0002784">Armor</caption>
+                  <caption xml:id="G0002784"><text>Armor</text></caption>
                 </figure>
               </item>
               <item xml:id="G0002785">
