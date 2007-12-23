@@ -1659,15 +1659,15 @@
             </itemized-list>
             <text xml:id="G0002224">There exist different types or categories of magic. The different types of magic are:</text>
             <description-list xml:id="G0002225">
-              <item xml:id="G0002226"><description xml:id="G0002227">Air</description><text>Air magic is varied and effective for combat mages. The lower rank spells are a mixture between utility types and damaging spells. The higher level combat spells are quite powerful. Air magic contains Lightning spells, which have wildly varying damage potential.</text></item>
-              <item xml:id="G0002228"><description xml:id="G0002229">Life</description><text>Life magic is capable of curing the wounded, healing the sick, and even inflicting horrible diseases upon your opponents. It is a favorite of religious orders, either for good or evil. Most combat magic in this category is limited because the spells require touch to cast. Some spells are capable of dealing a great deal of damage, but usually over a period of time. Sufficiently advanced mages who practice life magic can raise the dead or kill the living with a simple gesture.</text></item>
-              <item xml:id="G0002230"><description xml:id="G0002231">Spiritual</description><text>Magic of the Spiritual category is uncommon at best. With relatively few low-rank spells it is usually reserved to advanced practitioners of magic. However, it has some unique spells that make it very effective. Spiritual magic is particularly well suited for combating demons or spirits. Higher level mages can lay waste to legions of their enemies with single spell.</text></item>
-              <item xml:id="G0002232"><description xml:id="G0002233">Light</description><text>With few exceptions, Light magic is a utility category. It can be used to illuminate dark passages beneath the earth or deceive with illusion and tricks. Light magic has many useful spells, many of which are available at low or middle levels. It is a very useful type of magic for the rogue or healer-type character who wants to be useful but doesnt want to fight. A few high level light spells can deal excellent damage, but only at a steep MP cost.</text></item>
-              <item xml:id="G0002234"><description xml:id="G0002235">Physical</description><text>Physical magic is an excellent choice fordual-classedcharacters that practice magic and also fight in melee combat. At lower and middle levels, physical magic allows one to improve the abilities of others, and to manipulate the physical world with magic. He can also repair broken weapons or mend machines. At higher levels the school offers very effective defensive spells and the highly effective gravity-based offensive magic, which always deals solid damage.</text></item>
-              <item xml:id="G0002236"><description xml:id="G0002237">Arcane</description><text>Arcane magic has no direct offensive capability; this would appear to be a weak form of magic that has little use for an adventurer. However, the ability of arcane magic to support, enhance, and empower the caster or his allies is unmatched. It is excellent when paired with other magic of a more offensive nature.</text></item>
-              <item xml:id="G0002238"><description xml:id="G0002239">Fire</description><text>Fire magic is a traditional offensive type of magic. Its spells deal high damage and are without equal for causing large-scale destruction. They are also quite mana-efficient. However, fire magic is the easiest of allsupernaturalattacks to defend against. Fire magic is also noisy, flashy, and very intimidating to ones opponents. Unfortunatley, this makes it nearly impossible to use in a stealthy manner.</text></item>
-              <item xml:id="G0002240"><description xml:id="G0002241">Earth</description><text>Earth magic is a varied school that combines defensive and offensive spells. While neither type of spell is the most powerful available, they are not to be underestimated. Earth magic has a number of very useful utility spells.</text></item>
-              <item xml:id="G0002242"><description xml:id="G0002243">Water</description><text>At lower levels, water magic is fairly weak, though it does combine both offensive and defensive spells. Middle ranks offer effective protection and more effective combat spells. Higher-level water magic is legendary in effectiveness and is very powerful, Though many of the offensive spells have a long casting time, they are nearly impossible to defend against.</text></item>
+              <item xml:id="G0002226"><description xml:id="G0002227"><text>Air</text></description><text>Air magic is varied and effective for combat mages. The lower rank spells are a mixture between utility types and damaging spells. The higher level combat spells are quite powerful. Air magic contains Lightning spells, which have wildly varying damage potential.</text></item>
+              <item xml:id="G0002228"><description xml:id="G0002229"><text>Life</text></description><text>Life magic is capable of curing the wounded, healing the sick, and even inflicting horrible diseases upon your opponents. It is a favorite of religious orders, either for good or evil. Most combat magic in this category is limited because the spells require touch to cast. Some spells are capable of dealing a great deal of damage, but usually over a period of time. Sufficiently advanced mages who practice life magic can raise the dead or kill the living with a simple gesture.</text></item>
+              <item xml:id="G0002230"><description xml:id="G0002231"><text>Spiritual</text></description><text>Magic of the Spiritual category is uncommon at best. With relatively few low-rank spells it is usually reserved to advanced practitioners of magic. However, it has some unique spells that make it very effective. Spiritual magic is particularly well suited for combating demons or spirits. Higher level mages can lay waste to legions of their enemies with single spell.</text></item>
+              <item xml:id="G0002232"><description xml:id="G0002233"><text>Light</text></description><text>With few exceptions, Light magic is a utility category. It can be used to illuminate dark passages beneath the earth or deceive with illusion and tricks. Light magic has many useful spells, many of which are available at low or middle levels. It is a very useful type of magic for the rogue or healer-type character who wants to be useful but doesnt want to fight. A few high level light spells can deal excellent damage, but only at a steep MP cost.</text></item>
+              <item xml:id="G0002234"><description xml:id="G0002235"><text>Physical</text></description><text>Physical magic is an excellent choice fordual-classedcharacters that practice magic and also fight in melee combat. At lower and middle levels, physical magic allows one to improve the abilities of others, and to manipulate the physical world with magic. He can also repair broken weapons or mend machines. At higher levels the school offers very effective defensive spells and the highly effective gravity-based offensive magic, which always deals solid damage.</text></item>
+              <item xml:id="G0002236"><description xml:id="G0002237"><text>Arcane</text></description><text>Arcane magic has no direct offensive capability; this would appear to be a weak form of magic that has little use for an adventurer. However, the ability of arcane magic to support, enhance, and empower the caster or his allies is unmatched. It is excellent when paired with other magic of a more offensive nature.</text></item>
+              <item xml:id="G0002238"><description xml:id="G0002239"><text>Fire</text></description><text>Fire magic is a traditional offensive type of magic. Its spells deal high damage and are without equal for causing large-scale destruction. They are also quite mana-efficient. However, fire magic is the easiest of allsupernaturalattacks to defend against. Fire magic is also noisy, flashy, and very intimidating to ones opponents. Unfortunatley, this makes it nearly impossible to use in a stealthy manner.</text></item>
+              <item xml:id="G0002240"><description xml:id="G0002241"><text>Earth</text></description><text>Earth magic is a varied school that combines defensive and offensive spells. While neither type of spell is the most powerful available, they are not to be underestimated. Earth magic has a number of very useful utility spells.</text></item>
+              <item xml:id="G0002242"><description xml:id="G0002243"><text>Water</text></description><text>At lower levels, water magic is fairly weak, though it does combine both offensive and defensive spells. Middle ranks offer effective protection and more effective combat spells. Higher-level water magic is legendary in effectiveness and is very powerful, Though many of the offensive spells have a long casting time, they are nearly impossible to defend against.</text></item>
             </description-list>
           </section>
         </section>
@@ -1689,27 +1689,27 @@
                   <cell colfmt="l" xml:id="G0002261"/>
                 </head>
                 <row xml:id="G0002262">
-                  <cell xml:id="G0002263">Strenuous Activity:</cell>
-                  <cell xml:id="G0002264">0 per hour</cell>
+                  <cell xml:id="G0002263"><text>Strenuous Activity:</text></cell>
+                  <cell xml:id="G0002264"><text>0 per hour</text></cell>
                 </row>
                 <row xml:id="G0002265">
-                  <cell xml:id="G0002266">Normal Activity:</cell>
-                  <cell xml:id="G0002267">5 per hour</cell>
+                  <cell xml:id="G0002266"><text>Normal Activity:</text></cell>
+                  <cell xml:id="G0002267"><text>5 per hour</text></cell>
                 </row>
                 <row xml:id="G0002268">
-                  <cell xml:id="G0002269">Restful Activity:</cell>
-                  <cell xml:id="G0002270">10 per hour</cell>
+                  <cell xml:id="G0002269"><text>Restful Activity:</text></cell>
+                  <cell xml:id="G0002270"><text>10 per hour</text></cell>
                 </row>
                 <row xml:id="G0002271">
-                  <cell xml:id="G0002272">Sleeping:</cell>
-                  <cell xml:id="G0002273">20 per hour</cell>
+                  <cell xml:id="G0002272"><text>Sleeping:</text></cell>
+                  <cell xml:id="G0002273"><text>20 per hour</text></cell>
                 </row>
                 <row xml:id="G0002274">
-                  <cell xml:id="G0002275">Meditation or prayer:</cell>
-                  <cell xml:id="G0002276">20 per hour</cell>
+                  <cell xml:id="G0002275"><text>Meditation or prayer:</text></cell>
+                  <cell xml:id="G0002276"><text>20 per hour</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0002277">Mana Point replacement per hour.</caption>
+              <caption xml:id="G0002277"><text>Mana Point replacement per hour.</text></caption>
             </figure>
           </section>
           <section kind="section" xml:id="G0002278">
@@ -1721,16 +1721,16 @@
             <text xml:id="G0002294">Magical potions or scrolls are single-use magic spells. Anybody can use a potion or scroll<mdash xml:id="G0002295"/>whether they know anything about magic or not. Spells that affect the caster or a willing recipient are potions. Drinking the potion causes the spell to take effect. Other spells take the form of scrolls. Reading the scroll aloud causes the spell to take effect. Both scrolls and potions are single-use only. Potions can be drunk in one action. Scrolls ALWAYS take 3 actions to use regardless of the spell.</text>
             <text xml:id="G0002296">A person with Magical Studies can create Books, Scrolls, and Potions of any spell he/she knows. Producing such works is a long and expensive process:</text>
             <description-list xml:id="G0002297">
-              <item xml:id="G0002298"><description xml:id="G0002299">Books</description><text>Requires a number of days equal to twice the rank of the spell squared to create. No MP are required, but special precious inks and paper are required. These materials cost approximately half the value of the book.</text></item>
-              <item xml:id="G0002300"><description xml:id="G0002301">Scrolls/Potions</description><text>Requireto create. They require MP equal to a normal casting of the spell to be expended, and require precious materials valued at not less than three-quarters the value of the finished item. A ritualist may prepare a potion in half that time.</text></item>
+              <item xml:id="G0002298"><description xml:id="G0002299"><text>Books</text></description><text>Requires a number of days equal to twice the rank of the spell squared to create. No MP are required, but special precious inks and paper are required. These materials cost approximately half the value of the book.</text></item>
+              <item xml:id="G0002300"><description xml:id="G0002301"><text>Scrolls/Potions</text></description><text>Requireto create. They require MP equal to a normal casting of the spell to be expended, and require precious materials valued at not less than three-quarters the value of the finished item. A ritualist may prepare a potion in half that time.</text></item>
             </description-list>
           </section>
           <section kind="section" xml:id="G0002302">
             <title xml:id="G0002303">Magic Terminology <and xml:id="G0002304"/> Misc.</title>
             <description-list xml:id="G0002305">
-              <item xml:id="G0002306"><description xml:id="G0002307">Black</description><text>spells are those associated with evil, death energy, and demonic influence. While they are not necissiarily evil, they are generally indescriminate in their targets. Black spells never affect demons, undead, or targets that are not living, such as ghosts or robots.</text></item>
-              <item xml:id="G0002308"><description xml:id="G0002309">White</description><text>spells are those that are comprised of life energy. They are technically notgoodaligned, though they are a favorite of good religious orders. White spells that cause damage only affect demons, undead, and spirits.</text></item>
-              <item xml:id="G0002310"><description xml:id="G0002311">Auto</description><text>spells are those that are automatically targeting. That means that once cast the spell will never miss or malfunction. However, in order to cast an auto-targeting spell, the caster must be able to clearly see and identify his target.</text></item>
+              <item xml:id="G0002306"><description xml:id="G0002307"><text>Black</text></description><text>spells are those associated with evil, death energy, and demonic influence. While they are not necissiarily evil, they are generally indescriminate in their targets. Black spells never affect demons, undead, or targets that are not living, such as ghosts or robots.</text></item>
+              <item xml:id="G0002308"><description xml:id="G0002309"><text>White</text></description><text>spells are those that are comprised of life energy. They are technically notgoodaligned, though they are a favorite of good religious orders. White spells that cause damage only affect demons, undead, and spirits.</text></item>
+              <item xml:id="G0002310"><description xml:id="G0002311"><text>Auto</text></description><text>spells are those that are automatically targeting. That means that once cast the spell will never miss or malfunction. However, in order to cast an auto-targeting spell, the caster must be able to clearly see and identify his target.</text></item>
             </description-list>
           </section>
         </section>
@@ -1790,10 +1790,10 @@
           </example>
           <text xml:id="G0002357">After the Martial Arts skill has been purchased, skills from the four basic categories may be acquired; the four categories represent different capabilities that Martial Arts covers. The five categories are Basic, Combat, Defensive, and Modifier. The different categories focus on different phases of Combat, such that Combat skills are designed to aid the Martial Artist with movement, entering/exiting combat, the knowledge of combat, deployment, and higher-level strategy. Basic skills are involved in the nitty-gritty (basic) postures and moves to actually strike the opponent and inflict harm or death. Defensive skills are designed to deflect, dodge, and/or otherwise avoid the mishap of being harmed by another pugilist. Modifiers represent ways to modify Basic skills.</text>
           <description-list xml:id="G0002358">
-            <item xml:id="G0002359"><description xml:id="G0002360">Basic</description><text>These skills represent Basic combat actions, such as punching or kicking, grappling, the use of weapons and other primitive attacks.</text><note xml:id="G0002361"><text>Only Basic attacks may be modified by a Modifier.</text></note></item>
-            <item xml:id="G0002362"><description xml:id="G0002363">Combat</description><text>These are the skills for being in, around, or preparing for combat. For example, knowledge of the terrain, etiquette, being prepared to move quickly and with assurance.</text></item>
-            <item xml:id="G0002364"><description xml:id="G0002365">Defensive</description><text>These are the skills used for defending against an attack. They are the foil to the Basic skills.</text></item>
-            <item xml:id="G0002366"><description xml:id="G0002367">Modifier</description><text>A Modifier is a skill used to modify a Basic attack. A Modifier changes the behaviour of a Basic attack; the Basic attack is now considered a Special attack of the same name with the Modifier as the adjective, for instance, if the Martial Artist is modifying a Punch with a Bash, then this is now a Special attack,Bashing Punch.Since a modified Basic attack counts as a Special attack, it may not be further modified, as only Basic attacks can be modified. There are certain Combat skills which enable the Martial Artist to consider certain specific combinations of Modifier/Basic to be Basic attacks.</text></item>
+            <item xml:id="G0002359"><description xml:id="G0002360"><text>Basic</text></description><text>These skills represent Basic combat actions, such as punching or kicking, grappling, the use of weapons and other primitive attacks.</text><note xml:id="G0002361"><text>Only Basic attacks may be modified by a Modifier.</text></note></item>
+            <item xml:id="G0002362"><description xml:id="G0002363"><text>Combat</text></description><text>These are the skills for being in, around, or preparing for combat. For example, knowledge of the terrain, etiquette, being prepared to move quickly and with assurance.</text></item>
+            <item xml:id="G0002364"><description xml:id="G0002365"><text>Defensive</text></description><text>These are the skills used for defending against an attack. They are the foil to the Basic skills.</text></item>
+            <item xml:id="G0002366"><description xml:id="G0002367"><text>Modifier</text></description><text>A Modifier is a skill used to modify a Basic attack. A Modifier changes the behaviour of a Basic attack; the Basic attack is now considered a Special attack of the same name with the Modifier as the adjective, for instance, if the Martial Artist is modifying a Punch with a Bash, then this is now a Special attack,Bashing Punch.Since a modified Basic attack counts as a Special attack, it may not be further modified, as only Basic attacks can be modified. There are certain Combat skills which enable the Martial Artist to consider certain specific combinations of Modifier/Basic to be Basic attacks.</text></item>
           </description-list>
           <note xml:id="G0002368"><text>A Modifier may not be used more than Lvl times per turn.</text></note>
           <example xml:id="G0002369">
@@ -1859,67 +1859,67 @@
                 <figure xml:id="G0002435">
                   <table xml:id="G0002436">
                     <head xml:id="G0002437">
-                      <cell xml:id="G0002438">Size</cell>
-                      <cell xml:id="G0002439">1</cell>
-                      <cell xml:id="G0002440">2</cell>
-                      <cell xml:id="G0002441">3</cell>
-                      <cell xml:id="G0002442">4</cell>
-                      <cell xml:id="G0002443">5</cell>
-                      <cell xml:id="G0002444">6</cell>
-                      <cell xml:id="G0002445">7</cell>
-                      <cell xml:id="G0002446">8</cell>
-                      <cell xml:id="G0002447">9</cell>
+                      <cell xml:id="G0002438"><text>Size</text></cell>
+                      <cell xml:id="G0002439"><text>1</text></cell>
+                      <cell xml:id="G0002440"><text>2</text></cell>
+                      <cell xml:id="G0002441"><text>3</text></cell>
+                      <cell xml:id="G0002442"><text>4</text></cell>
+                      <cell xml:id="G0002443"><text>5</text></cell>
+                      <cell xml:id="G0002444"><text>6</text></cell>
+                      <cell xml:id="G0002445"><text>7</text></cell>
+                      <cell xml:id="G0002446"><text>8</text></cell>
+                      <cell xml:id="G0002447"><text>9</text></cell>
                     </head>
                     <row xml:id="G0002448">
-                      <cell xml:id="G0002449">Height</cell>
-                      <cell xml:id="G0002450">4'</cell>
-                      <cell xml:id="G0002451">7'</cell>
-                      <cell xml:id="G0002452">15'</cell>
-                      <cell xml:id="G0002453">30'</cell>
-                      <cell xml:id="G0002454">60'</cell>
-                      <cell xml:id="G0002455">125'</cell>
-                      <cell xml:id="G0002456">250'</cell>
-                      <cell xml:id="G0002457">500'</cell>
-                      <cell xml:id="G0002458">1000'</cell>
+                      <cell xml:id="G0002449"><text>Height</text></cell>
+                      <cell xml:id="G0002450"><text>4'</text></cell>
+                      <cell xml:id="G0002451"><text>7'</text></cell>
+                      <cell xml:id="G0002452"><text>15'</text></cell>
+                      <cell xml:id="G0002453"><text>30'</text></cell>
+                      <cell xml:id="G0002454"><text>60'</text></cell>
+                      <cell xml:id="G0002455"><text>125'</text></cell>
+                      <cell xml:id="G0002456"><text>250'</text></cell>
+                      <cell xml:id="G0002457"><text>500'</text></cell>
+                      <cell xml:id="G0002458"><text>1000'</text></cell>
                     </row>
                     <row xml:id="G0002459">
-                      <cell xml:id="G0002460">Mecha Weight (tons)</cell>
-                      <cell xml:id="G0002461">0.5</cell>
-                      <cell xml:id="G0002462">1</cell>
-                      <cell xml:id="G0002463">2</cell>
-                      <cell xml:id="G0002464">16</cell>
-                      <cell xml:id="G0002465">125</cell>
-                      <cell xml:id="G0002466">1000</cell>
-                      <cell xml:id="G0002467">8000</cell>
-                      <cell xml:id="G0002468">65000</cell>
-                      <cell xml:id="G0002469">500000</cell>
+                      <cell xml:id="G0002460"><text>Mecha Weight (tons)</text></cell>
+                      <cell xml:id="G0002461"><text>0.5</text></cell>
+                      <cell xml:id="G0002462"><text>1</text></cell>
+                      <cell xml:id="G0002463"><text>2</text></cell>
+                      <cell xml:id="G0002464"><text>16</text></cell>
+                      <cell xml:id="G0002465"><text>125</text></cell>
+                      <cell xml:id="G0002466"><text>1000</text></cell>
+                      <cell xml:id="G0002467"><text>8000</text></cell>
+                      <cell xml:id="G0002468"><text>65000</text></cell>
+                      <cell xml:id="G0002469"><text>500000</text></cell>
                     </row>
                     <row xml:id="G0002470">
-                      <cell xml:id="G0002471">Mecha CP Cost</cell>
-                      <cell xml:id="G0002472">5</cell>
-                      <cell xml:id="G0002473">10</cell>
-                      <cell xml:id="G0002474">20</cell>
-                      <cell xml:id="G0002475">40</cell>
-                      <cell xml:id="G0002476">80</cell>
-                      <cell xml:id="G0002477">160</cell>
-                      <cell xml:id="G0002478">320</cell>
-                      <cell xml:id="G0002479">640</cell>
-                      <cell xml:id="G0002480">1280</cell>
+                      <cell xml:id="G0002471"><text>Mecha CP Cost</text></cell>
+                      <cell xml:id="G0002472"><text>5</text></cell>
+                      <cell xml:id="G0002473"><text>10</text></cell>
+                      <cell xml:id="G0002474"><text>20</text></cell>
+                      <cell xml:id="G0002475"><text>40</text></cell>
+                      <cell xml:id="G0002476"><text>80</text></cell>
+                      <cell xml:id="G0002477"><text>160</text></cell>
+                      <cell xml:id="G0002478"><text>320</text></cell>
+                      <cell xml:id="G0002479"><text>640</text></cell>
+                      <cell xml:id="G0002480"><text>1280</text></cell>
                     </row>
                     <row xml:id="G0002481">
-                      <cell xml:id="G0002482">Power Armor CP Cost</cell>
-                      <cell xml:id="G0002483">1</cell>
-                      <cell xml:id="G0002484">4</cell>
-                      <cell xml:id="G0002485">9</cell>
-                      <cell xml:id="G0002486">16</cell>
-                      <cell xml:id="G0002487">25</cell>
-                      <cell xml:id="G0002488">50</cell>
-                      <cell xml:id="G0002489">100</cell>
-                      <cell xml:id="G0002490">200</cell>
-                      <cell xml:id="G0002491">400</cell>
+                      <cell xml:id="G0002482"><text>Power Armor CP Cost</text></cell>
+                      <cell xml:id="G0002483"><text>1</text></cell>
+                      <cell xml:id="G0002484"><text>4</text></cell>
+                      <cell xml:id="G0002485"><text>9</text></cell>
+                      <cell xml:id="G0002486"><text>16</text></cell>
+                      <cell xml:id="G0002487"><text>25</text></cell>
+                      <cell xml:id="G0002488"><text>50</text></cell>
+                      <cell xml:id="G0002489"><text>100</text></cell>
+                      <cell xml:id="G0002490"><text>200</text></cell>
+                      <cell xml:id="G0002491"><text>400</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0002492">Size Level and Starting CP Cost</caption>
+                  <caption xml:id="G0002492"><text>Size Level and Starting CP Cost</text></caption>
                 </figure>
                 <itemized-list xml:id="G0002493">
                   <item xml:id="G0002494"><text>Mecha can be no smaller than one size level greater than the wearers size</text></item>
