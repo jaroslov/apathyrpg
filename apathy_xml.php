@@ -156,16 +156,35 @@ function get_table_of_datum($datum) {
   return $tables;
 }
 
-function format_datum($title,$tables,$description) {
+function get_anon_of_datum($datum) {
+  $tables = array();
+  foreach ($datum->childNodes as $field)
+    if ($field->tagName === "field")
+      if (false !== $field->hasAttribute("table"))
+        array_push($tables,translate_child_text($field));
+  return $tables;
+}
+
+function format_datum_from($title,$tables,$description) {
   $result = "<table>";
   $rows = sizeof($tables)+1;
   $result .= "<tr><td></td><td>Aspects</td><td>Description</td></tr>";
-  $result .= "<tr><td>Title</td><td>".$title."</td>"
+  $result .= "<tr><td>Title</td><td>".$title."</td>";
   $result .= "<td rowspan='".$rows."'>".$description."</td></tr>";
   foreach ($tables as $table)
-    $result .= "<tr></tr>";
+    $result .= "<tr><td>"
+      .$table->getAttribute("name")
+      ."</td><td>"
+      .$table->nodeValue."</td><td></td></tr>";
   $result .= "</table>";
   return $result;
+}
+
+function format_datum($datum) {
+  return format_datum_from(
+    get_title_of_datum($datum),
+    get_table_of_datum($datum),
+    get_description_of_datum($datum));
 }
 
 ?>
