@@ -82,8 +82,8 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
   $default_print = false;
   switch ($tagname) {
     // structure elements
-    case "book": break;
-    case "section": $saverawtext = true;
+    case "book": $saverawtext = false; break;
+    case "section": $saverawtext = false;
       $extra = $Node->getAttribute("kind"); break;
     // structured text elements
     case "title": $saverawtext = true; break;
@@ -92,8 +92,9 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "description-list": $saverawtext = false; break;
     case "numbered-list": $saverawtext = false; break;
     case "description": $saverawtext = true; break;
-    case "item": $saverawtext = true; break;
+    case "item": $saverawtext = false; break;
     case "define": $saverawtext = true; break;
+    case "footnote": $saverawtext = false; break;
     case "figure": $saverawtext = false; break;
     case "table": $saverawtext = false; break;
     case "head": $saverawtext = false; break;
@@ -102,9 +103,13 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
       $extra = $Node->getAttribute("colfmt"); break;
     case "caption": $saverawtext = true; break;
     case "note": $saverawtext = false; break;
+    case "equation": $saverawtext = false; break;
     case "math": $saverawtext = false; break;
     case "mrow": $saverawtext = false; break;
     case "mfrac": $saverawtext = false; break;
+    case "munderover": $saverawtext = false; break;
+    case "mstyle": $saverawtext = false; break;
+    case "msup": $saverawtext = false; break;
     case "mn": $saverawtext = true; break;
     case "mo": $saverawtext = true; break;
     case "mi": $saverawtext = true; break;
@@ -118,8 +123,21 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "raw": $saverawtext = true; break;
     case "kind": $saverawtext = true; break;
     // unstructured elements
+    case "reference": $saverawtext = false;
+      $recurse=false;
+      $extra=$Node->getAttribute("hrid"); break;
+    case "summarize": $saverawtext = false;
+      $recurse=false;
+      $extra=$Node->getAttribute("hrid"); break;
     case "Apathy": $saverawtext = false; $recurse=false; break;
+    case "C": $saverawtext = false; $recurse=false; break;
+    case "notappl": $saverawtext = false; $recurse=false; break;
+    case "mul": $tagname = "times";
+      $saverawtext = false;
+      $recurse=false; break;
     case "and": $saverawtext = false; $recurse=false; break;
+    case "percent": $saverawtext = false; $recurse=false; break;
+    case "dollar": $saverawtext = false; $recurse=false; break;
     case "rsquo": $saverawtext = false; $recurse=false; break;
     case "lsquo": $saverawtext = false; $recurse=false; break;
     case "rdquo": $saverawtext = false; $recurse=false; break;
@@ -132,13 +150,34 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "oslash": $saverawtext = false; $recurse=false; break;
     case "trademark": $saverawtext = false; $recurse=false; break;
     case "plusminus": $saverawtext = false; $recurse=false; break;
+    case "Sum": $saverawtext = false; $recurse=false; break;
     default:
-      $default_print = true;
-      echo $indent.$ParentId."(?".$saverawtext."):&laquo;".$Node->tagName."&raquo;<br/>"; 
+      if ($Node->nodeType != XML_TEXT_NODE) {
+        $default_print = true;
+        echo $indent."<span style='color:red;'>".$ParentId
+          ."(".$saverawtext."):"
+          .$Node->tagName."</span><br/>";
+      }
   }
-  if (!$default_print)
-      ;//echo $indent.$ParentId."(".$saverawtext."): ".$Node->tagName."<br/>"; 
-  if ($recurse)
+  if ($Node->nodeType == XML_TEXT_NODE) {
+    $spaces = array(" ","\t","\n","\r");
+    $value = str_replace(" ","",$Node->nodeValue);
+    $value = str_replace("\t","t",$value);
+    $value = str_replace("\r","r",$value);
+    $value = str_replace("\n","",$value);
+    if (!$saverawtext) {
+      if (0 < strlen($value)) {
+        echo $indent."[Redact!]<span style='color:blue'>&laquo;"
+          .$Node->nodeValue."&raquo;</span><br/>"; 
+      }
+    } else {
+      echo $indent."<span style='font-weight:bold'>&laquo;"
+        .$Node->nodeValue."&raquo;</span><br/>"; 
+    }
+  } else {
+    echo $indent.$ParentId."(".$saverawtext."): ".$tagname."<br/>";
+  }
+  if (true)//$recurse)
     foreach ($Node->childNodes as $Child) {
       populate_structured_text($Child,$ParentId+1,$saverawtext,$nindent);
     }
