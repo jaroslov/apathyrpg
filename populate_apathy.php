@@ -122,6 +122,7 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "rOff": $saverawtext = true; break;
     case "raw": $saverawtext = true; break;
     case "kind": $saverawtext = true; break;
+    case "mul": $saverawtext = true; break;
     // unstructured elements
     case "reference": $saverawtext = false;
       $recurse=false;
@@ -132,9 +133,6 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "Apathy": $saverawtext = false; $recurse=false; break;
     case "C": $saverawtext = false; $recurse=false; break;
     case "notappl": $saverawtext = false; $recurse=false; break;
-    case "mul": $tagname = "times";
-      $saverawtext = false;
-      $recurse=false; break;
     case "and": $saverawtext = false; $recurse=false; break;
     case "percent": $saverawtext = false; $recurse=false; break;
     case "dollar": $saverawtext = false; $recurse=false; break;
