@@ -2298,74 +2298,70 @@
                 <figure xml:id="G0002856">
                   <table xml:id="G0002857">
                     <head xml:id="G0002858">
-                      <cell colfmt="l" xml:id="G0002859">System</cell>
-                      <cell colfmt="c" xml:id="G0002860">PC / Slot</cell>
-                      <cell colfmt="c" xml:id="G0002861">CP / Slot</cell>
-                      <cell colfmt="p{2in}" xml:id="G0002862">Description</cell>
+                      <cell colfmt="l" xml:id="G0002859"><text>System</text></cell>
+                      <cell colfmt="c" xml:id="G0002860"><text>PC / Slot</text></cell>
+                      <cell colfmt="c" xml:id="G0002861"><text>CP / Slot</text></cell>
+                      <cell colfmt="p{2in}" xml:id="G0002862"><text>Description</text></cell>
                     </head>
                     <row xml:id="G0002863">
-                      <cell xml:id="G0002864">Standard</cell>
-                      <cell xml:id="G0002865">50</cell>
-                      <cell xml:id="G0002866">1</cell>
-                      <cell xml:id="G0002867">Simple capacitors store power</cell>
+                      <cell xml:id="G0002864"><text>Standard</text></cell>
+                      <cell xml:id="G0002865"><text>50</text></cell>
+                      <cell xml:id="G0002866"><text>1</text></cell>
+                      <cell xml:id="G0002867"><text>Simple capacitors store power</text></cell>
                     </row>
                     <row xml:id="G0002868">
-                      <cell xml:id="G0002869">HG</cell>
-                      <cell xml:id="G0002870">80</cell>
-                      <cell xml:id="G0002871">2</cell>
-                      <cell xml:id="G0002872">special high grade power cell</cell>
+                      <cell xml:id="G0002869"><text>HG</text></cell>
+                      <cell xml:id="G0002870"><text>80</text></cell>
+                      <cell xml:id="G0002871"><text>2</text></cell>
+                      <cell xml:id="G0002872"><text>special high grade power cell</text></cell>
                     </row>
                     <row xml:id="G0002873">
-                      <cell xml:id="G0002874">HD</cell>
-                      <cell xml:id="G0002875">120</cell>
-                      <cell xml:id="G0002876">3</cell>
-                      <cell xml:id="G0002877">High-density power cell</cell>
+                      <cell xml:id="G0002874"><text>HD</text></cell>
+                      <cell xml:id="G0002875"><text>120</text></cell>
+                      <cell xml:id="G0002876"><text>3</text></cell>
+                      <cell xml:id="G0002877"><text>High-density power cell</text></cell>
                     </row>
                     <row xml:id="G0002878">
-                      <cell xml:id="G0002879">Super</cell>
-                      <cell xml:id="G0002880">170</cell>
-                      <cell xml:id="G0002881">4</cell>
-                      <cell xml:id="G0002882">Most efficent power cell</cell>
+                      <cell xml:id="G0002879"><text>Super</text></cell>
+                      <cell xml:id="G0002880"><text>170</text></cell>
+                      <cell xml:id="G0002881"><text>4</text></cell>
+                      <cell xml:id="G0002882"><text>Most efficent power cell</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0002883">Power Cells</caption>
+                  <caption xml:id="G0002883"><text>Power Cells</text></caption>
                 </figure>
               </item>
               <item xml:id="G0002884">
                 <figure xml:id="G0002885">
                   <table xml:id="G0002886">
                     <head xml:id="G0002887">
-                      <cell colfmt="l" xml:id="G0002888">Kind</cell>
-                      <cell colfmt="c" xml:id="G0002889">DEX Bonus</cell>
-                      <cell colfmt="c" xml:id="G0002890">STR Bonus</cell>
-                      <cell colfmt="p{2in}" xml:id="G0002891">Caveats</cell>
+                      <cell colfmt="l" xml:id="G0002888"><text>Kind</text></cell>
+                      <cell colfmt="c" xml:id="G0002889"><text>DEX Bonus</text></cell>
+                      <cell colfmt="c" xml:id="G0002890"><text>STR Bonus</text></cell>
+                      <cell colfmt="p{2in}" xml:id="G0002891"><text>Caveats</text></cell>
                     </head>
                     <row xml:id="G0002892">
-                      <cell xml:id="G0002893">Mecha</cell>
-                      <cell xml:id="G0002894">
-                        <math xml:id="G0002895"><mrow xml:id="G0002896"><mfrac xml:id="G0002897"><mrow xml:id="G0002898"><mn xml:id="G0002899">2</mn><mo xml:id="G0002900"><times xml:id="G0002901"/></mo><mi xml:id="G0002902">Size CP</mi></mrow>
-                              <mrow xml:id="G0002903"><mi xml:id="G0002904">+1</mi></mrow></mfrac></mrow></math>
-                      </cell>
-                      <cell xml:id="G0002905">
-                        <math xml:id="G0002906"><mfrac xml:id="G0002907"><mrow xml:id="G0002908"><mo xml:id="G0002909">(</mo><mi xml:id="G0002910">Size</mi><mo xml:id="G0002911">-</mo><mn xml:id="G0002912">1</mn><mo xml:id="G0002913">)</mo><mi xml:id="G0002914">CP</mi></mrow>
-                            <mrow xml:id="G0002915"><mi xml:id="G0002916">+1</mi></mrow></mfrac></math>
-                      </cell>
-                      <cell xml:id="G0002917">DEX can only be used to reduce the DEX minus to a +0.</cell>
+                      <cell xml:id="G0002893"><text>Mecha</text></cell>
+                      <cell xml:id="G0002894"><text>
+                        <math xml:id="G0002895"><mrow xml:id="G0002896"><mfrac xml:id="G0002897"><mrow xml:id="G0002898"><mn xml:id="G0002899">2</mn><mo xml:id="G0002900"><times xml:id="G0002901"/></mo><mi xml:id="G0002902">Size CP</mi></mrow><mrow xml:id="G0002903"><mi xml:id="G0002904">+1</mi></mrow></mfrac></mrow></math>
+		      </text></cell>
+                      <cell xml:id="G0002905"><text>
+                        <math xml:id="G0002906"><mfrac xml:id="G0002907"><mrow xml:id="G0002908"><mo xml:id="G0002909">(</mo><mi xml:id="G0002910">Size</mi><mo xml:id="G0002911">-</mo><mn xml:id="G0002912">1</mn><mo xml:id="G0002913">)</mo><mi xml:id="G0002914">CP</mi></mrow><mrow xml:id="G0002915"><mi xml:id="G0002916">+1</mi></mrow></mfrac></math>
+                      <text></cell>
+                      <cell xml:id="G0002917"><text>DEX can only be used to reduce the DEX minus to a +0.</text></cell>
                     </row>
                     <row xml:id="G0002918">
-                      <cell xml:id="G0002919">Powered Armor</cell>
-                      <cell xml:id="G0002920">
-                        <math xml:id="G0002921"><mrow xml:id="G0002922"><mfrac xml:id="G0002923"><mrow xml:id="G0002924"><mn xml:id="G0002925">3</mn><mi xml:id="G0002926">CP</mi></mrow>
-                              <mrow xml:id="G0002927"><mo xml:id="G0002928">+</mo><mo xml:id="G0002929">(</mo><mi xml:id="G0002930">Size</mi><mo xml:id="G0002931">-</mo><mn xml:id="G0002932">1</mn><mo xml:id="G0002933">)</mo></mrow></mfrac></mrow></math>
-                      </cell>
-                      <cell xml:id="G0002934">
-                        <math xml:id="G0002935"><mrow xml:id="G0002936"><mfrac xml:id="G0002937"><mrow xml:id="G0002938"><mo xml:id="G0002939">(</mo><mn xml:id="G0002940">2</mn><mo xml:id="G0002941"><times xml:id="G0002942"/></mo><mi xml:id="G0002943">Size Cp</mi><mo xml:id="G0002944">)</mo></mrow>
-                              <mrow xml:id="G0002945"><mi xml:id="G0002946">+1</mi></mrow></mfrac></mrow></math>
-                      </cell>
-                      <cell xml:id="G0002947">Power armor STR bonus increases the wearer<rsquo xml:id="G0002948"/>s own STR while wearing the armor</cell>
+                      <cell xml:id="G0002919"><text>Powered Armor</text></cell>
+                      <cell xml:id="G0002920"><text>
+                        <math xml:id="G0002921"><mrow xml:id="G0002922"><mfrac xml:id="G0002923"><mrow xml:id="G0002924"><mn xml:id="G0002925">3</mn><mi xml:id="G0002926">CP</mi></mrow><mrow xml:id="G0002927"><mo xml:id="G0002928">+</mo><mo xml:id="G0002929">(</mo><mi xml:id="G0002930">Size</mi><mo xml:id="G0002931">-</mo><mn xml:id="G0002932">1</mn><mo xml:id="G0002933">)</mo></mrow></mfrac></mrow></math>
+		      </text></cell>
+                      <cell xml:id="G0002934"><text>
+                        <math xml:id="G0002935"><mrow xml:id="G0002936"><mfrac xml:id="G0002937"><mrow xml:id="G0002938"><mo xml:id="G0002939">(</mo><mn xml:id="G0002940">2</mn><mo xml:id="G0002941"><times xml:id="G0002942"/></mo><mi xml:id="G0002943">Size Cp</mi><mo xml:id="G0002944">)</mo></mrow><mrow xml:id="G0002945"><mi xml:id="G0002946">+1</mi></mrow></mfrac></mrow></math>
+		      </text></cell>
+                      <cell xml:id="G0002947"><text>Power armor STR bonus increases the wearer<rsquo xml:id="G0002948"/>s own STR while wearing the armor</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0002949">DEX and STR modification.</caption>
+                  <caption xml:id="G0002949"><text>DEX and STR modification.</text></caption>
                 </figure>
               </item>
               <item xml:id="G0002950">
@@ -2373,143 +2369,139 @@
                 <figure xml:id="G0002952">
                   <table xml:id="G0002953">
                     <head xml:id="G0002954">
-                      <cell colfmt="l" xml:id="G0002955">Type</cell>
-                      <cell xml:id="G0002956">Speed</cell>
-                      <cell xml:id="G0002957">Altitude</cell>
-                      <cell xml:id="G0002958">Power</cell>
-                      <cell xml:id="G0002959">Slots</cell>
-                      <cell colfmt="p{2em}" xml:id="G0002960">CP</cell>
-                      <cell colfmt="p{5em}" xml:id="G0002961">Notes</cell>
+                      <cell colfmt="l" xml:id="G0002955"><text>Type</text></cell>
+                      <cell xml:id="G0002956"><text>Speed</text></cell>
+                      <cell xml:id="G0002957"><text>Altitude</text></cell>
+                      <cell xml:id="G0002958"><text>Power</text></cell>
+                      <cell xml:id="G0002959"><text>Slots</text></cell>
+                      <cell colfmt="p{2em}" xml:id="G0002960"><text>CP</text></cell>
+                      <cell colfmt="p{5em}" xml:id="G0002961"><text>Notes</text></cell>
                     </head>
                     <row xml:id="G0002962">
-                      <cell xml:id="G0002963">Legs</cell>
-                      <cell xml:id="G0002964">20 mph</cell>
-                      <cell xml:id="G0002965">
+                      <cell xml:id="G0002963"><text>Legs</text></cell>
+                      <cell xml:id="G0002964"><text>20 mph</text></cell>
+                      <cell xml:id="G0002965"><text>
                         <math xml:id="G0002966"><mrow xml:id="G0002967"><mn xml:id="G0002968">5</mn><mo xml:id="G0002969"><times xml:id="G0002970"/></mo><mi xml:id="G0002971">Size</mi></mrow></math>
-                      </cell>
-                      <cell xml:id="G0002972">
+		      </text></cell>
+                      <cell xml:id="G0002972"><text>
                         <math xml:id="G0002973"><mrow xml:id="G0002974"><mo xml:id="G0002975">(</mo><mi xml:id="G0002976">Size</mi><mo xml:id="G0002977">-</mo><mn xml:id="G0002978">1</mn><mo xml:id="G0002979">)</mo><mo xml:id="G0002980"><times xml:id="G0002981"/></mo><mn xml:id="G0002982">6</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0002983">0</cell>
-                      <cell xml:id="G0002984">4</cell>
+		      </text></cell>
+                      <cell xml:id="G0002983"><text>0</text></cell>
+                      <cell xml:id="G0002984"><text>4</text></cell>
                     </row>
                     <row xml:id="G0002985">
-                      <cell xml:id="G0002986">Wheels</cell>
-                      <cell xml:id="G0002987">50 mph</cell>
-                      <cell xml:id="G0002988">0</cell>
-                      <cell xml:id="G0002989">
+                      <cell xml:id="G0002986"><text>Wheels</text></cell>
+                      <cell xml:id="G0002987"><text>50 mph</text></cell>
+                      <cell xml:id="G0002988"><text>0</text></cell>
+                      <cell xml:id="G0002989"><text>
                         <math xml:id="G0002990"><mrow xml:id="G0002991"><mo xml:id="G0002992">(</mo><mi xml:id="G0002993">Size</mi><mo xml:id="G0002994">-</mo><mn xml:id="G0002995">1</mn><mo xml:id="G0002996">)</mo><mo xml:id="G0002997"><times xml:id="G0002998"/></mo><mn xml:id="G0002999">2</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0003000">1</cell>
-                      <cell xml:id="G0003001">3</cell>
+		      </text></cell>
+                      <cell xml:id="G0003000"><text>1</text></cell>
+                      <cell xml:id="G0003001"><text>3</text></cell>
                     </row>
                     <row xml:id="G0003002">
-                      <cell xml:id="G0003003">Treads</cell>
-                      <cell xml:id="G0003004">30 mph</cell>
-                      <cell xml:id="G0003005">0</cell>
-                      <cell xml:id="G0003006">
+                      <cell xml:id="G0003003"><text>Treads</text></cell>
+                      <cell xml:id="G0003004"><text>30 mph</text></cell>
+                      <cell xml:id="G0003005"><text>0</text></cell>
+                      <cell xml:id="G0003006"><text>
                         <math xml:id="G0003007"><mrow xml:id="G0003008"><mo xml:id="G0003009">(</mo><mi xml:id="G0003010">Size</mi><mo xml:id="G0003011">-</mo><mn xml:id="G0003012">1</mn><mo xml:id="G0003013">)</mo><mo xml:id="G0003014"><times xml:id="G0003015"/></mo><mn xml:id="G0003016">4</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0003017">2</cell>
-                      <cell xml:id="G0003018">4</cell>
+		      </text></cell>
+                      <cell xml:id="G0003017"><text>2</text></cell>
+                      <cell xml:id="G0003018"><text>4</text></cell>
                     </row>
                     <row xml:id="G0003019">
-                      <cell xml:id="G0003020">Micro-hover</cell>
-                      <cell xml:id="G0003021">20 mph</cell>
-                      <cell xml:id="G0003022">15'</cell>
-                      <cell xml:id="G0003023">
+                      <cell xml:id="G0003020"><text>Micro-hover</text></cell>
+                      <cell xml:id="G0003021"><text>20 mph</text></cell>
+                      <cell xml:id="G0003022"><text>15'</text></cell>
+                      <cell xml:id="G0003023"><text>
                         <math xml:id="G0003024"><mrow xml:id="G0003025"><mo xml:id="G0003026">(</mo><mi xml:id="G0003027">Size</mi><mo xml:id="G0003028">-</mo><mn xml:id="G0003029">1</mn><mo xml:id="G0003030">)</mo><mo xml:id="G0003031"><times xml:id="G0003032"/></mo><mn xml:id="G0003033">10</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0003034">4</cell>
-                      <cell xml:id="G0003035">8</cell>
+		      </text></cell>
+                      <cell xml:id="G0003034"><text>4</text></cell>
+                      <cell xml:id="G0003035"><text>8</text></cell>
                     </row>
                     <row xml:id="G0003036">
-                      <cell xml:id="G0003037">True-hover</cell>
-                      <cell xml:id="G0003038">30 mph</cell>
-                      <cell xml:id="G0003039">200'</cell>
-                      <cell xml:id="G0003040">
+                      <cell xml:id="G0003037"><text>True-hover</text></cell>
+                      <cell xml:id="G0003038"><text>30 mph</text></cell>
+                      <cell xml:id="G0003039"><text>200'</text></cell>
+                      <cell xml:id="G0003040"><text>
                         <math xml:id="G0003041"><mrow xml:id="G0003042"><mo xml:id="G0003043">(</mo><mi xml:id="G0003044">Size</mi><mo xml:id="G0003045">-</mo><mn xml:id="G0003046">1</mn><mo xml:id="G0003047">)</mo><mo xml:id="G0003048"><times xml:id="G0003049"/></mo><mn xml:id="G0003050">15</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0003051">6</cell>
-                      <cell xml:id="G0003052">10</cell>
+		      </text></cell>
+                      <cell xml:id="G0003051"><text>6</text></cell>
+                      <cell xml:id="G0003052"><text>10</text></cell>
                     </row>
                     <row xml:id="G0003053">
-                      <cell xml:id="G0003054">Jump jets</cell>
-                      <cell xml:id="G0003055">0 mph</cell>
-                      <cell xml:id="G0003056">100'</cell>
-                      <cell xml:id="G0003057">
+                      <cell xml:id="G0003054"><text>Jump jets</text></cell>
+                      <cell xml:id="G0003055"><text>0 mph</text></cell>
+                      <cell xml:id="G0003056"><text>100'</text></cell>
+                      <cell xml:id="G0003057"><text>
                         <math xml:id="G0003058"><mrow xml:id="G0003059"><mo xml:id="G0003060">(</mo><mi xml:id="G0003061">Size</mi><mo xml:id="G0003062">-</mo><mn xml:id="G0003063">1</mn><mo xml:id="G0003064">)</mo><mo xml:id="G0003065"><times xml:id="G0003066"/></mo><mn xml:id="G0003067">10</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0003068">1</cell>
-                      <cell xml:id="G0003069">
+		      </text></cell>
+                      <cell xml:id="G0003068"><text>1</text></cell>
+                      <cell xml:id="G0003069"><text>
                         <math xml:id="G0003070"><msup xml:id="G0003071"><mi xml:id="G0003072">Size</mi><mn xml:id="G0003073">2</mn></msup></math>
-                      </cell>
+		      </text></cell>
                     </row>
                     <row xml:id="G0003074">
-                      <cell xml:id="G0003075">Mech. Jump</cell>
-                      <cell xml:id="G0003076">0 mph</cell>
-                      <cell xml:id="G0003077">50'</cell>
-                      <cell xml:id="G0003078">0</cell>
-                      <cell xml:id="G0003079">2</cell>
-                      <cell xml:id="G0003080">
+                      <cell xml:id="G0003075"><text>Mech. Jump</text></cell>
+                      <cell xml:id="G0003076"><text>0 mph</text></cell>
+                      <cell xml:id="G0003077"><text>50'</text></cell>
+                      <cell xml:id="G0003078"><text>0</text></cell>
+                      <cell xml:id="G0003079"><text>2</text></cell>
+                      <cell xml:id="G0003080"><text>
                         <math xml:id="G0003081"><msup xml:id="G0003082"><mi xml:id="G0003083">Size</mi><mn xml:id="G0003084">2</mn></msup></math>
-                      </cell>
+		      </text></cell>
                     </row>
                     <row xml:id="G0003085">
-                      <cell xml:id="G0003086">Manuever Jets</cell>
-                      <cell xml:id="G0003087">40 mph</cell>
-                      <cell xml:id="G0003088">5'</cell>
-                      <cell xml:id="G0003089">
+                      <cell xml:id="G0003086"><text>Manuever Jets</text></cell>
+                      <cell xml:id="G0003087"><text>40 mph</text></cell>
+                      <cell xml:id="G0003088"><text>5'</text></cell>
+                      <cell xml:id="G0003089"><text>
                         <math xml:id="G0003090"><mrow xml:id="G0003091"><mo xml:id="G0003092">(</mo><mi xml:id="G0003093">Size</mi><mo xml:id="G0003094">-</mo><mn xml:id="G0003095">1</mn><mo xml:id="G0003096">)</mo><mo xml:id="G0003097"><times xml:id="G0003098"/></mo><mn xml:id="G0003099">20</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0003100">1</cell>
-                      <cell xml:id="G0003101">
+		      </text></cell>
+                      <cell xml:id="G0003100"><text>1</text></cell>
+                      <cell xml:id="G0003101"><text>
                         <math xml:id="G0003102"><mfrac xml:id="G0003103"><mrow xml:id="G0003104"><mn xml:id="G0003105">3</mn><mo xml:id="G0003106"><times xml:id="G0003107"/></mo><mrow xml:id="G0003108"><mo xml:id="G0003109">(</mo><mi xml:id="G0003110">X</mi><mo xml:id="G0003111"><times xml:id="G0003112"/></mo><mn xml:id="G0003113">1</mn><mo xml:id="G0003114">)</mo></mrow></mrow><mn xml:id="G0003115">4</mn></mfrac></math>
-                      </cell>
-                      <cell xml:id="G0003116">Gives [+2X] to dodge</cell>
+		      </text></cell>
+                      <cell xml:id="G0003116"><text>Gives [+2X] to dodge</text></cell>
                     </row>
                     <row xml:id="G0003117">
-                      <cell xml:id="G0003118">Jet System</cell>
-                      <cell xml:id="G0003119">200 mph</cell>
-                      <cell xml:id="G0003120">Unlimited</cell>
-                      <cell xml:id="G0003121">
+                      <cell xml:id="G0003118"><text>Jet System</text></cell>
+                      <cell xml:id="G0003119"><text>200 mph</text></cell>
+                      <cell xml:id="G0003120"><text>Unlimited</text></cell>
+                      <cell xml:id="G0003121"><text>
                         <math xml:id="G0003122"><mrow xml:id="G0003123"><mo xml:id="G0003124">(</mo><mi xml:id="G0003125">Size</mi><mo xml:id="G0003126">-</mo><mn xml:id="G0003127">1</mn><mo xml:id="G0003128">)</mo><mo xml:id="G0003129"><times xml:id="G0003130"/></mo><mn xml:id="G0003131">20</mn></mrow></math>
-                      </cell>
-                      <cell xml:id="G0003132">10</cell>
-                      <cell xml:id="G0003133">15</cell>
+		      </text></cell>
+                      <cell xml:id="G0003132"><text>10</text></cell>
+                      <cell xml:id="G0003133"><text>15</text></cell>
                     </row>
                     <row xml:id="G0003134">
-                      <cell xml:id="G0003135">Added Speed</cell>
-                      <cell xml:id="G0003136">+15 mph</cell>
-                      <cell xml:id="G0003137">
-                        <notappl xml:id="G0003138"/>
-                      </cell>
-                      <cell xml:id="G0003139">
-                        <notappl xml:id="G0003140"/>
-                      </cell>
+                      <cell xml:id="G0003135"><text>Added Speed</text></cell>
+                      <cell xml:id="G0003136"><text>+15 mph</text></cell>
+                      <cell xml:id="G0003137"><text><notappl xml:id="G0003138"/></text></cell>
+                      <cell xml:id="G0003139"><text><notappl xml:id="G0003140"/></text></cell>
                       <cell xml:id="G0003141">
-                        <notappl xml:id="G0003142"/>
+                        <text><notappl xml:id="G0003142"/></text>
                       </cell>
-                      <cell xml:id="G0003143">1</cell>
-                      <cell xml:id="G0003144">Not for jet system</cell>
+                      <cell xml:id="G0003143"><text>1</text></cell>
+                      <cell xml:id="G0003144"><text>Not for jet system</text></cell>
                     </row>
                     <row xml:id="G0003145">
-                      <cell xml:id="G0003146">Added Speed</cell>
-                      <cell xml:id="G0003147">+50 mph</cell>
+                      <cell xml:id="G0003146"><text>Added Speed</text></cell>
+                      <cell xml:id="G0003147"><text>+50 mph</text></cell>
                       <cell xml:id="G0003148">
-                        <notappl xml:id="G0003149"/>
+                        <text><notappl xml:id="G0003149"/></text>
                       </cell>
                       <cell xml:id="G0003150">
-                        <notappl xml:id="G0003151"/>
+                        <text><notappl xml:id="G0003151"/></text>
                       </cell>
                       <cell xml:id="G0003152">
-                        <notappl xml:id="G0003153"/>
+                        <text><notappl xml:id="G0003153"/></text>
                       </cell>
-                      <cell xml:id="G0003154">1</cell>
-                      <cell xml:id="G0003155">For jet system only</cell>
+                      <cell xml:id="G0003154"><text>1<text></cell>
+                      <cell xml:id="G0003155"><text>For jet system only</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0003156">Movement Systems</caption>
+                  <caption xml:id="G0003156"><text>Movement Systems</text></caption>
                 </figure>
               </item>
               <item xml:id="G0003157">
