@@ -2218,43 +2218,43 @@
                 <figure xml:id="G0002791">
                   <table xml:id="G0002792">
                     <head xml:id="G0002793">
-                      <cell colfmt="l" xml:id="G0002794">System</cell>
-                      <cell colfmt="c" xml:id="G0002795">PC / Slot</cell>
-                      <cell colfmt="c" xml:id="G0002796">CP / Slot</cell>
-                      <cell colfmt="p{2in}" xml:id="G0002797">Description</cell>
+                      <cell colfmt="l" xml:id="G0002794"><text>System</text></cell>
+                      <cell colfmt="c" xml:id="G0002795"><text>PC / Slot</text></cell>
+                      <cell colfmt="c" xml:id="G0002796"><text>CP / Slot</text></cell>
+                      <cell colfmt="p{2in}" xml:id="G0002797"><text>Description</text></cell>
                     </head>
                     <row xml:id="G0002798">
-                      <cell xml:id="G0002799">Solar</cell>
-                      <cell xml:id="G0002800">2</cell>
-                      <cell xml:id="G0002801">.5</cell>
-                      <cell xml:id="G0002802">Solar panels on the suit provide power. No light = no power</cell>
+                      <cell xml:id="G0002799"><text>Solar</text></cell>
+                      <cell xml:id="G0002800"><text>2</text></cell>
+                      <cell xml:id="G0002801"><text>.5</text></cell>
+                      <cell xml:id="G0002802"><text>Solar panels on the suit provide power. No light = no power</text></cell>
                     </row>
                     <row xml:id="G0002803">
-                      <cell xml:id="G0002804">Fuel</cell>
-                      <cell xml:id="G0002805">4</cell>
-                      <cell xml:id="G0002806">1</cell>
-                      <cell xml:id="G0002807">A standard fuel powered engine. Easily accessible fuel (gasoline).</cell>
+                      <cell xml:id="G0002804"><text>Fuel</text></cell>
+                      <cell xml:id="G0002805"><text>4</text></cell>
+                      <cell xml:id="G0002806"><text>1</text></cell>
+                      <cell xml:id="G0002807"><text>A standard fuel powered engine. Easily accessible fuel (gasoline).</text></cell>
                     </row>
                     <row xml:id="G0002808">
-                      <cell xml:id="G0002809">Turbine</cell>
-                      <cell xml:id="G0002810">6</cell>
-                      <cell xml:id="G0002811">2</cell>
-                      <cell xml:id="G0002812">A high efficiency fuel engine. Fuel is hard to come by and expensive.</cell>
+                      <cell xml:id="G0002809"><text>Turbine</text></cell>
+                      <cell xml:id="G0002810"><text>6</text></cell>
+                      <cell xml:id="G0002811"><text>2</text></cell>
+                      <cell xml:id="G0002812"><text>A high efficiency fuel engine. Fuel is hard to come by and expensive.</text></cell>
                     </row>
                     <row xml:id="G0002813">
-                      <cell xml:id="G0002814">Fission</cell>
-                      <cell xml:id="G0002815">8</cell>
-                      <cell xml:id="G0002816">4</cell>
-                      <cell xml:id="G0002817">A small nuclear reactor provides power.</cell>
+                      <cell xml:id="G0002814"><text>Fission</text></cell>
+                      <cell xml:id="G0002815"><text>8</text></cell>
+                      <cell xml:id="G0002816"><text>4</text></cell>
+                      <cell xml:id="G0002817"><text>A small nuclear reactor provides power.</text></cell>
                     </row>
                     <row xml:id="G0002818">
-                      <cell xml:id="G0002819">Fusion</cell>
-                      <cell xml:id="G0002820">10</cell>
-                      <cell xml:id="G0002821">6</cell>
-                      <cell xml:id="G0002822">Most efficient, and most expensive.</cell>
+                      <cell xml:id="G0002819"><text>Fusion</text></cell>
+                      <cell xml:id="G0002820"><text>10</text></cell>
+                      <cell xml:id="G0002821"><text>6</text></cell>
+                      <cell xml:id="G0002822"><text>Most efficient, and most expensive.</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0002823">Power Sources</caption>
+                  <caption xml:id="G0002823"><text>Power Sources</text></caption>
                 </figure>
                 <text xml:id="G0002824">When turned on, booster engines provide power every turn for three turns in a row. They cannot be shut offonce they are turned on. They must be refueled before they can be used again. These are useful for emergency applications or powering large engergy weapons in combat.</text>
                 <text xml:id="G0002825">Booster Engines (provide temporary power for 3 turns only before refueling)</text>
