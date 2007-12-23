@@ -3349,7 +3349,8 @@
           <title xml:id="G0004079">Armor Value of Common Things</title>
           <table xml:id="G0004080">
             <head xml:id="G0004081">
-              <cell colfmt="p{2.5in}" xml:id="G0004082">Thing</cell><cell xml:id="G0004083"><text>Generalized Armor</text></cell>
+              <cell colfmt="p{2.5in}" xml:id="G0004082"><text>Thing</text></cell>
+              <cell xml:id="G0004083"><text>Generalized Armor</text></cell>
             </head>
             <row xml:id="G0004084"><cell xml:id="G0004085"><text>Brush, medium</text></cell><cell xml:id="G0004086"><text>2</text></cell></row>
             <row xml:id="G0004087"><cell xml:id="G0004088"><text>Brush, heavy</text></cell><cell xml:id="G0004089"><text>4</text></cell></row>
@@ -3393,25 +3394,25 @@
           <title xml:id="G0004175">Number of actions of common actions in combat</title>
           <table xml:id="G0004176">
             <head xml:id="G0004177"><cell colfmt="p{3in}" xml:id="G0004178"><text>What</text></cell><cell colfmt="p{2in}" xml:id="G0004179"><text>Time</text></cell></head>
-            <row xml:id="G0004180"><cell xml:id="G0004181"><text>Walking movement</text></cell><cell xml:id="G0004182"><text>1</text> move or regular</cell></row>
+            <row xml:id="G0004180"><cell xml:id="G0004181"><text>Walking movement</text></cell><cell xml:id="G0004182"><text>1 move or regular</text></cell></row>
             <row xml:id="G0004183"><cell xml:id="G0004184"><text>Simple speech</text></cell><cell xml:id="G0004185"><text>0</text></cell></row>
             <row xml:id="G0004186"><cell xml:id="G0004187"><text>Complex speech</text></cell><cell xml:id="G0004188"><text>at least 1 move or regular</text></cell></row>
             <row xml:id="G0004189"><cell xml:id="G0004190"><text>Drop something</text></cell><cell xml:id="G0004191"><text>0</text></cell></row>
-            <row xml:id="G0004192"><cell xml:id="G0004193"><text>Pick something up within 5 feet</text></cell><cell xml:id="G0004194"><text>1</text> move or regular</cell></row>
-            <row xml:id="G0004195"><cell xml:id="G0004196"><text>Get something out of pouch/pack (small)</text></cell><cell xml:id="G0004197"><text>2</text> or 3 move or regular</cell></row>
-            <row xml:id="G0004198"><cell xml:id="G0004199"><text>Load weapon, knock arrow</text></cell><cell xml:id="G0004200"><text>1</text> action</cell></row>
-            <row xml:id="G0004201"><cell xml:id="G0004202"><text>Reload revolver or rocket launcher</text></cell><cell xml:id="G0004203"><text>3</text> regular</cell></row>
-            <row xml:id="G0004204"><cell xml:id="G0004205"><text>Reload double barrel rifle or shotgun (both)</text></cell><cell xml:id="G0004206"><text>1</text> regular</cell></row>
-            <row xml:id="G0004207"><cell xml:id="G0004208"><text>Reload other rifle or shotgun (per 2)</text></cell><cell xml:id="G0004209"><text>1</text> regular</cell></row>
-            <row xml:id="G0004210"><cell xml:id="G0004211"><text>Cycle bolt or pump action weapon</text></cell><cell xml:id="G0004212"><text>1</text> regular</cell></row>
-            <row xml:id="G0004213"><cell xml:id="G0004214"><text>Load a magazine with bullets (per bullet)</text></cell><cell xml:id="G0004215"><text>1</text> regular</cell></row>
-            <row xml:id="G0004216"><cell xml:id="G0004217"><text>Draw a weapon from holster or sling</text></cell><cell xml:id="G0004218"><text>1</text> regular</cell></row>
-            <row xml:id="G0004219"><cell xml:id="G0004220"><text>Holster or sheath a weapon</text></cell><cell xml:id="G0004221"><text>1</text> regular</cell></row>
-            <row xml:id="G0004222"><cell xml:id="G0004223"><text>Put something down carefully</text></cell><cell xml:id="G0004224"><text>2</text> regular</cell></row>
-            <row xml:id="G0004225"><cell xml:id="G0004226"><text>Use a potion</text></cell><cell xml:id="G0004227"><text>1</text> regular</cell></row>
-            <row xml:id="G0004228"><cell xml:id="G0004229"><text>Read a scroll</text></cell><cell xml:id="G0004230"><text>3</text> regular</cell></row>
-            <row xml:id="G0004231"><cell xml:id="G0004232"><text>Set up a complex weapon (bipod, etc.)</text></cell><cell xml:id="G0004233"><text>3</text> or more regular</cell></row>
-            <row xml:id="G0004234"><cell xml:id="G0004235"><text>Throw grenade or similar</text></cell><cell xml:id="G0004236"><text>1</text> regular</cell></row>
+            <row xml:id="G0004192"><cell xml:id="G0004193"><text>Pick something up within 5 feet</text></cell><cell xml:id="G0004194"><text>1 move or regular</text></cell></row>
+            <row xml:id="G0004195"><cell xml:id="G0004196"><text>Get something out of pouch/pack (small)</text></cell><cell xml:id="G0004197"><text>2 or 3 move or regular</text></cell></row>
+            <row xml:id="G0004198"><cell xml:id="G0004199"><text>Load weapon, knock arrow</text></cell><cell xml:id="G0004200"><text>1 action</text></cell></row>
+            <row xml:id="G0004201"><cell xml:id="G0004202"><text>Reload revolver or rocket launcher</text></cell><cell xml:id="G0004203"><text>3 regular</text></cell></row>
+            <row xml:id="G0004204"><cell xml:id="G0004205"><text>Reload double barrel rifle or shotgun (both)</text></cell><cell xml:id="G0004206"><text>1 regular</text></cell></row>
+            <row xml:id="G0004207"><cell xml:id="G0004208"><text>Reload other rifle or shotgun (per 2)</text></cell><cell xml:id="G0004209"><text>1 regular</text></cell></row>
+            <row xml:id="G0004210"><cell xml:id="G0004211"><text>Cycle bolt or pump action weapon</text></cell><cell xml:id="G0004212"><text>1 regular</text></cell></row>
+            <row xml:id="G0004213"><cell xml:id="G0004214"><text>Load a magazine with bullets (per bullet)</text></cell><cell xml:id="G0004215"><text>1 regular</text></cell></row>
+            <row xml:id="G0004216"><cell xml:id="G0004217"><text>Draw a weapon from holster or sling</text></cell><cell xml:id="G0004218"><text>1 regular</text></cell></row>
+            <row xml:id="G0004219"><cell xml:id="G0004220"><text>Holster or sheath a weapon</text></cell><cell xml:id="G0004221"><text>1 regular</text></cell></row>
+            <row xml:id="G0004222"><cell xml:id="G0004223"><text>Put something down carefully</text></cell><cell xml:id="G0004224"><text>2 regular</text></cell></row>
+            <row xml:id="G0004225"><cell xml:id="G0004226"><text>Use a potion</text></cell><cell xml:id="G0004227"><text>1 regular</text></cell></row>
+            <row xml:id="G0004228"><cell xml:id="G0004229"><text>Read a scroll</text></cell><cell xml:id="G0004230"><text>3 regular</text></cell></row>
+            <row xml:id="G0004231"><cell xml:id="G0004232"><text>Set up a complex weapon (bipod, etc.)</text></cell><cell xml:id="G0004233"><text>3 or more regular</text></cell></row>
+            <row xml:id="G0004234"><cell xml:id="G0004235"><text>Throw grenade or similar</text></cell><cell xml:id="G0004236"><text>1 regular</text></cell></row>
           </table>
         </section>
         <section kind="section" xml:id="G0004237">
