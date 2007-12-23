@@ -45,98 +45,97 @@
               <text xml:id="G0000077">A character<rdquo xml:id="G0000078"/>s natural resistance to bodily harm of unusual varieties. You can think of this as <ldquo xml:id="G0000079"/>toughness<rdquo xml:id="G0000080"/> (not to be confused with the skill of the same name). A character<rdquo xml:id="G0000081"/>s base armor reduces the damage they suffer from U (undefined) damage. Base Armor does not protect against any other form of damage, such as P, S, C, or D. Note, that if a character suffers any U damage, no matter how high their Base Armor might be, they always loose at least 1 HP.</text>
             </item>
             <item xml:id="G0000082">
-              <description xml:id="G0000083">
-                <define xml:id="G0000084">Crushing</define>,
-                <define xml:id="G0000085">C</define>
+              <description xml:id="G0000083"><text><define xml:id="G0000084">Crushing</define>,<define xml:id="G0000085">C</define>
+		</text>
               </description>
               <text xml:id="G0000086">An abbreviation for <define xml:id="G0000087">crushing</define>. When used in conjunction with a weapon, it indicates that the weapon in question deals Crushing type damage. When used in conjunction with armor, it indicates how much Crushing damage the armor will defend against.</text>
             </item>
             <item xml:id="G0000088">
-              <description xml:id="G0000089">CP</description>
+              <description xml:id="G0000089"><text>CP</text></description>
               <text xml:id="G0000090">Character Points. These are points you use to <ldquo xml:id="G0000091"/>purchase<rdquo xml:id="G0000092"/> skills, equipment, etc. for your character. CP can also be used to increase attributes according to a special table. See the section on character creation.</text>
             </item>
             <item xml:id="G0000093">
-              <description xml:id="G0000094">Character</description>
+              <description xml:id="G0000094"><text>Character</text></description>
               <text xml:id="G0000095">A persona within the game world that is adopted by a player. The player sees through the character<rdquo xml:id="G0000096"/>s eyes, controls the character<rdquo xml:id="G0000097"/>s Actions, and speaks through the character<rdquo xml:id="G0000098"/>s mouth.</text>
             </item>
             <item xml:id="G0000099">
-              <description xml:id="G0000100">D</description>
+              <description xml:id="G0000100"><text>D</text></description>
               <text xml:id="G0000101">An abbreviation for Direct Damage. D damage is applied directly against the target<rdquo xml:id="G0000102"/>s HP. Armor, including Base Armor, cannot protect against D damage. Fortunately, D damage sources are few and far between.</text>
             </item>
             <item xml:id="G0000103">
-              <description xml:id="G0000104">Game Master</description>
+              <description xml:id="G0000104"><text>Game Master</text></description>
               <text xml:id="G0000105">A person who is in the game that is not a player. The Game Master controls the game world that the players inhabit. He/she controls everything that is not the players. This includes other people (sometimes called non-player characters), monsters, natural events, etc. This is usually abbreviated as <ldquo xml:id="G0000106"/>GM<rdquo xml:id="G0000107"/>.</text>
             </item>
             <item xml:id="G0000108">
-              <description xml:id="G0000109">HP</description>
+              <description xml:id="G0000109"><text>HP</text></description>
               <text xml:id="G0000110">Abbreviation for Hit Points. Hit Points are used to represent a character<rdquo xml:id="G0000111"/>s health. If a character gets injured, their HP decreases. If a character reaches 0 HP, they fall unconscious. If a character reaches -X HP, where X is equal to their maximum HP, they are dead. Note that if a character is below 0 HP, they will loose 1 HP per turn (1 HP per 3 seconds when not in combat) due to bleeding, unless they are given medical attention.</text>
             </item>
             <item xml:id="G0000112">
-              <description xml:id="G0000113">HTH</description>
+              <description xml:id="G0000113"><text>HTH</text></description>
               <text xml:id="G0000114">see Hand-to-Hand</text>
             </item>
             <item xml:id="G0000115">
-              <description xml:id="G0000116">Hand-to-Hand</description>
+              <description xml:id="G0000116"><text>Hand-to-Hand</text></description>
               <text xml:id="G0000117">Hand-to-hand is a special type of combat. It takes place when the combatants use no weapons of any kind. Thus, in hand-to-hand combat, only punches, kicks, and similar attacks will take place.</text>
             </item>
             <item xml:id="G0000118">
-              <description xml:id="G0000119">Luck Points</description>
+              <description xml:id="G0000119"><text>Luck Points</text></description>
               <text xml:id="G0000120">Usually, this is short for Luck Points. Luck Points are accumulated during gameplay, and players redeem them for combat bonuses, or for saving their character<rdquo xml:id="G0000121"/>s butt if things get rough. This is used to help unlucky die rolls from screwing over players. All major character in the game, including significant NPCs, villains, etc. will have Luck Points. The GM is responsible for distributing Luck Points.</text>
             </item>
             <item xml:id="G0000122">
-              <description xml:id="G0000123">MA</description>
+              <description xml:id="G0000123"><text>MA</text></description>
               <text xml:id="G0000124">Abbreviation for Martial Arts. It is sometimes used to refer to the Martial Arts skill. See the Martial Arts section for more information.</text>
             </item>
             <item xml:id="G0000125">
-              <description xml:id="G0000126">MP</description>
+              <description xml:id="G0000126"><text>MP</text></description>
               <text xml:id="G0000127">Magic Points, also called Mana. Magic points measure how much magic a character can use in a certain amount of time. Each time magic is used (a spell is cast, or the character makes a rune) MP are consumed. If a character has no MP, they cannot use any magic until the MP replenish. MP replenish naturally over time. See the Magic section for details.</text>
             </item>
             <item xml:id="G0000128">
-              <description xml:id="G0000129">Melee</description>
+              <description xml:id="G0000129"><text>Melee</text></description>
               <text xml:id="G0000130">Melee is a special type of combat. Melee combat takes place when there are no projectile (launched, thrown, shot, etc.) weapons or attacks of any kind. Melee combat includes things like hand-to-hand fighting, or using weapons like swords, clubs, etc.</text>
             </item>
             <item xml:id="G0000131">
-              <description xml:id="G0000132">Missile</description>
+              <description xml:id="G0000132"><text>Missile</text></description>
               <text xml:id="G0000133">A missile weapon is one that flies through the air in some manner. Throwing knives, slings, thrown stones, spears, and arrows are examples of missile weapons.</text>
             </item>
             <item xml:id="G0000134">
-              <description xml:id="G0000135">Non-Player Character</description>
+              <description xml:id="G0000135"><text>Non-Player Character</text></description>
               <text xml:id="G0000136">A person controlled by the Game Master who interacts with the players. A non-player character is anyone in the game world not controlled by a player.</text>
             </item>
             <item xml:id="G0000137">
-              <description xml:id="G0000138">NPC</description>
+              <description xml:id="G0000138"><text>NPC</text></description>
               <text xml:id="G0000139">See Non Player Character.</text>
             </item>
             <item xml:id="G0000140">
-              <description xml:id="G0000141">P</description>
+              <description xml:id="G0000141"><text>P</text></description>
               <text xml:id="G0000142">An abbreviation for Piercing. When used in conjunction with a weapon, it indicates that the weapon in question deals piercing type damage. When used in conjunction with armor, it indicates how much piercing damage the armor will defend against.</text>
             </item>
             <item xml:id="G0000143">
-              <description xml:id="G0000144">PC</description>
+              <description xml:id="G0000144"><text>PC</text></description>
               <text xml:id="G0000145">Power Cells. This is a measurement of energy or power for things like mecha, vehicles, robots, and power armor. Power, measured in PC, is produced by things like engines and is consumed by movement systems and weapons, etc. PC can also mean <ldquo xml:id="G0000146"/>player character<rdquo xml:id="G0000147"/>.</text>
             </item>
             <item xml:id="G0000148">
-              <description xml:id="G0000149">Player</description>
+              <description xml:id="G0000149"><text>Player</text></description>
               <text xml:id="G0000150">An actual person, like the authors of this manual<ndash xml:id="G0000151"/>or you<ndash xml:id="G0000152"/>who controls a character in the game world.</text>
             </item>
             <item xml:id="G0000153">
-              <description xml:id="G0000154">Round</description>
+              <description xml:id="G0000154"><text>Round</text></description>
               <text xml:id="G0000155">A <ldquo xml:id="G0000156"/>round<rdquo xml:id="G0000157"/> is the most general unit of time during combat. Any sequence of combat is broken down into one or more rounds. During each round, each combatant gets to take one turn. A round is over whenever all combatants have taken a turn (or are unable to for some reason).</text>
             </item>
             <item xml:id="G0000158">
-              <description xml:id="G0000159">S</description>
+              <description xml:id="G0000159"><text>S</text></description>
               <text xml:id="G0000160">An abbreviation for Slashing. When used in conjunction with a weapon, it indicates that the weapon in question deals Slashing type damage. When used in conjunction with armor, it indicates how much Slashing damage the armor will defend against.</text>
             </item>
             <item xml:id="G0000161">
-              <description xml:id="G0000162">Size</description>
+              <description xml:id="G0000162"><text>Size</text></description>
               <text xml:id="G0000163">A representation of the approximate Size of objects such as people, mecha, etc. Humans are Size level 2. Each Size level is approximately double the height and weight of the Size below it. So, Size 2 covers things up to about 7<rdquo xml:id="G0000164"/> tall. Size 3, therefore, is about 14<rdquo xml:id="G0000165"/> tall.</text>
             </item>
             <item xml:id="G0000166">
-              <description xml:id="G0000167">Turn</description>
+              <description xml:id="G0000167"><text>Turn</text></description>
               <text xml:id="G0000168">A turn is a unit of time during combat. Each round of combat is broken down into one turn per combatant. During each player<rdquo xml:id="G0000169"/>s turn, they get to do whatever they want. A turn is roughly equal to three seconds of time. Each turn is subdivided into Actions.</text>
             </item>
             <item xml:id="G0000170">
-              <description xml:id="G0000171">U</description>
+              <description xml:id="G0000171"><text>U</text></description>
               <text xml:id="G0000172">An abbreviation for undefined damage. Undefined damage is a special type of damage that cannot be prevented by normal armor. It is usually caused by supernatural powers, magic, high tech weapons, and similar unusual sources. Normal (P/S/C) armor cannot protect against U damage. With very few exceptions, the ONLY thing that can protect a character from U damage is his or her Base Armor. Note, that if a character suffers any U damage, no matter how high their Base Armor might be, they ALWAYS loose 1 HP.</text>
             </item>
           </description-list>
@@ -178,44 +177,44 @@
             <figure xml:id="G0000213">
               <table xml:id="G0000214">
                 <head xml:id="G0000215">
-                  <cell colfmt="p{.5in}" xml:id="G0000216">Abbr.</cell>
-                  <cell colfmt="p{1in}" xml:id="G0000217">Name</cell>
-                  <cell colfmt="p{2.5in}" xml:id="G0000218">Definition</cell>
+                  <cell colfmt="p{.5in}" xml:id="G0000216"><text>Abbr.</text></cell>
+                  <cell colfmt="p{1in}" xml:id="G0000217"><text>Name</text></cell>
+                  <cell colfmt="p{2.5in}" xml:id="G0000218"><text>Definition</text></cell>
                 </head>
                 <row xml:id="G0000219">
-                  <cell xml:id="G0000220">STR</cell>
-                  <cell xml:id="G0000221">Strength</cell>
-                  <cell xml:id="G0000222">raw physical strength, muscle power</cell>
+                  <cell xml:id="G0000220"><text>STR</text></cell>
+                  <cell xml:id="G0000221"><text>Strength</text></cell>
+                  <cell xml:id="G0000222"><text>raw physical strength, muscle power</text></cell>
                 </row>
                 <row xml:id="G0000223">
-                  <cell xml:id="G0000224">DEX</cell>
-                  <cell xml:id="G0000225">Dexterity</cell>
-                  <cell xml:id="G0000226">quickness, coordination, fine motor control, balance</cell>
+                  <cell xml:id="G0000224"><text>DEX</text></cell>
+                  <cell xml:id="G0000225"><text>Dexterity</text></cell>
+                  <cell xml:id="G0000226"><text>quickness, coordination, fine motor control, balance</text></cell>
                 </row>
                 <row xml:id="G0000227">
-                  <cell xml:id="G0000228">BLD</cell>
-                  <cell xml:id="G0000229">Build</cell>
-                  <cell xml:id="G0000230">the toughness and durability of your body, stamina, <ldquo xml:id="G0000231"/>guts<rdquo xml:id="G0000232"/></cell>
+                  <cell xml:id="G0000228"><text>BLD</text></cell>
+                  <cell xml:id="G0000229"><text>Build</text></cell>
+                  <cell xml:id="G0000230"><text>the toughness and durability of your body, stamina, <ldquo xml:id="G0000231"/>guts<rdquo xml:id="G0000232"/></text></cell>
                 </row>
                 <row xml:id="G0000233">
-                  <cell xml:id="G0000234">INT</cell>
-                  <cell xml:id="G0000235">Intelligence</cell>
-                  <cell xml:id="G0000236">computational power of the mind, ability to grasp complex problems</cell>
+                  <cell xml:id="G0000234"><text>INT</text></cell>
+                  <cell xml:id="G0000235"><text>Intelligence</text></cell>
+                  <cell xml:id="G0000236"><text>computational power of the mind, ability to grasp complex problems</text></cell>
                 </row>
                 <row xml:id="G0000237">
-                  <cell xml:id="G0000238">KNO</cell>
-                  <cell xml:id="G0000239">Knowledge</cell>
-                  <cell xml:id="G0000240">experience and background knowledge, common sense, etc.</cell>
+                  <cell xml:id="G0000238"><text>KNO</text></cell>
+                  <cell xml:id="G0000239"><text>Knowledge</text></cell>
+                  <cell xml:id="G0000240"><text>experience and background knowledge, common sense, etc.</text></cell>
                 </row>
                 <row xml:id="G0000241">
-                  <cell xml:id="G0000242">WIL</cell>
-                  <cell xml:id="G0000243">Willpower</cell>
-                  <cell xml:id="G0000244">strength of the mind, ability to<lsquo xml:id="G0000245"/>stick it out<rdquo xml:id="G0000246"/> when things get tough</cell>
+                  <cell xml:id="G0000242"><text>WIL</text></cell>
+                  <cell xml:id="G0000243"><text>Willpower</text></cell>
+                  <cell xml:id="G0000244"><text>strength of the mind, ability to<lsquo xml:id="G0000245"/>stick it out<rdquo xml:id="G0000246"/> when things get tough</text></cell>
                 </row>
                 <row xml:id="G0000247">
-                  <cell xml:id="G0000248">CHA</cell>
-                  <cell xml:id="G0000249">Charisma</cell>
-                  <cell xml:id="G0000250">friendliness, dealing with people, etc.</cell>
+                  <cell xml:id="G0000248"><text>CHA</text></cell>
+                  <cell xml:id="G0000249"><text>Charisma</text></cell>
+                  <cell xml:id="G0000250"><text>friendliness, dealing with people, etc.</text></cell>
                 </row>
               </table>
               <caption xml:id="G0000251">Basic Terms</caption>
