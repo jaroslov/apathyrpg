@@ -217,7 +217,7 @@
                   <cell xml:id="G0000250"><text>friendliness, dealing with people, etc.</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0000251">Basic Terms</caption>
+              <caption xml:id="G0000251"><text>Basic Terms</text></caption>
             </figure>
             <note xml:id="G0000252"><text>Throughout this document the attributes will usually be mentioned using the three-letter abbreviation instead of the full name.</text></note>
             <text xml:id="G0000253">The first three attributes (STR, DEX, and BLD) are considered Physical Attributes. The second three attributes (INT, WIS, and WIL) are Mental Attributes. The seventh, CHA, is a little of both, but is generally considered to be a Mental Attribute.</text>
@@ -236,75 +236,75 @@
             <figure xml:id="G0000279">
               <table xml:id="G0000280">
                 <head xml:id="G0000281">
-                  <cell colfmt="p{1in}" xml:id="G0000282">Abbr.</cell>
-                  <cell colfmt="p{3in}" xml:id="G0000283">Definition</cell>
-                  <cell colfmt="p{1.5in}" xml:id="G0000284">Computation</cell>
+                  <cell colfmt="p{1in}" xml:id="G0000282"><text>Abbr.</text></cell>
+                  <cell colfmt="p{3in}" xml:id="G0000283"><text>Definition</text></cell>
+                  <cell colfmt="p{1.5in}" xml:id="G0000284"><text>Computation</text></cell>
                 </head>
                 <row xml:id="G0000285">
-                  <cell xml:id="G0000286">Lift</cell>
-                  <cell xml:id="G0000287">This determines how much weight the character can lift in pounds, in a <ldquo xml:id="G0000288"/>good<rdquo xml:id="G0000289"/> situation, such as a weighted barbell or a trunk with handles.</cell>
-                  <cell xml:id="G0000290">
+                  <cell xml:id="G0000286"><text>Lift</text></cell>
+                  <cell xml:id="G0000287"><text>This determines how much weight the character can lift in pounds, in a <ldquo xml:id="G0000288"/>good<rdquo xml:id="G0000289"/> situation, such as a weighted barbell or a trunk with handles.</text></cell>
+                  <cell xml:id="G0000290"><text>
                     <math xml:id="G0000291"><mfrac xml:id="G0000292"><mrow xml:id="G0000293"><mi>STR</mi><times xml:id="G0000294"/><mi>STR</mi><times xml:id="G0000295"/><mi>BLD</mi></mrow><mn xml:id="G0000296">10</mn></mfrac></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000297">
-                  <cell xml:id="G0000298">Carry</cell>
-                  <cell xml:id="G0000299">This is the amount of weight the character can carry about his/her person for a reasonable length of time.</cell>
-                  <cell xml:id="G0000300">
+                  <cell xml:id="G0000298"><text>Carry</text></cell>
+                  <cell xml:id="G0000299"><text>This is the amount of weight the character can carry about his/her person for a reasonable length of time.</text></cell>
+                  <cell xml:id="G0000300"><text>
                     <math xml:id="G0000301"><mfrac xml:id="G0000302"><mi xml:id="G0000303">Lift</mi><mn xml:id="G0000304">2</mn></mfrac></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000305">
-                  <cell xml:id="G0000306">Encumbrance</cell>
-                  <cell xml:id="G0000307">This represents how much gear the character can wear before encountering adverse effects due to the weight and impaired mobility.</cell>
-                  <cell xml:id="G0000308">
+                  <cell xml:id="G0000306"><text>Encumbrance</text></cell>
+                  <cell xml:id="G0000307"><text>This represents how much gear the character can wear before encountering adverse effects due to the weight and impaired mobility.</text></cell>
+                  <cell xml:id="G0000308"><text>
                     <math xml:id="G0000309"><mfrac xml:id="G0000310"><mrow xml:id="G0000311"><mi xml:id="G0000312">BLD</mi><mo xml:id="G0000313">+</mo><mi xml:id="G0000314">DEX</mi><mo xml:id="G0000315">+</mo><mi xml:id="G0000316">STR</mi></mrow><mn xml:id="G0000317">6</mn></mfrac></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000318">
-                  <cell xml:id="G0000319">Base Armor</cell>
-                  <cell xml:id="G0000320">Determines how resilient the character is to <ldquo xml:id="G0000321"/>odd<rdquo xml:id="G0000322"/> damage, such as lightning and fire.</cell>
-                  <cell xml:id="G0000323">
+                  <cell xml:id="G0000319"><text>Base Armor</text></cell>
+                  <cell xml:id="G0000320"><text>Determines how resilient the character is to <ldquo xml:id="G0000321"/>odd<rdquo xml:id="G0000322"/> damage, such as lightning and fire.</text></cell>
+                  <cell xml:id="G0000323"><text>
                     <math xml:id="G0000324"><mfrac xml:id="G0000325"><mrow xml:id="G0000326"><mi xml:id="G0000327">BLD</mi><mo xml:id="G0000328">+</mo><mi xml:id="G0000329">WIL</mi></mrow><mn xml:id="G0000330">6</mn></mfrac></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000331">
-                  <cell xml:id="G0000332">Movement</cell>
-                  <cell xml:id="G0000333">How fast the character is in <ldquo xml:id="G0000334"/>squares per move-equivalent Action<rdquo xml:id="G0000335"/></cell>
-                  <cell xml:id="G0000336">
+                  <cell xml:id="G0000332"><text>Movement</text></cell>
+                  <cell xml:id="G0000333"><text>How fast the character is in <ldquo xml:id="G0000334"/>squares per move-equivalent Action<rdquo xml:id="G0000335"/></text></cell>
+                  <cell xml:id="G0000336"><text>
                     <math xml:id="G0000337"><mfrac xml:id="G0000338"><mrow xml:id="G0000339"><mn xml:id="G0000340">2</mn><mo xml:id="G0000341"><times xml:id="G0000342"/></mo><mi xml:id="G0000343">STR</mi><mo xml:id="G0000344">+</mo><mi xml:id="G0000345">DEX</mi></mrow><mn xml:id="G0000346">15</mn></mfrac></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000347">
-                  <cell xml:id="G0000348">Perception</cell>
-                  <cell xml:id="G0000349">How well the character can notice things around him. Used just like an attribute check.</cell>
-                  <cell xml:id="G0000350">
+                  <cell xml:id="G0000348"><text>Perception</text></cell>
+                  <cell xml:id="G0000349"><text>How well the character can notice things around him. Used just like an attribute check.</text></cell>
+                  <cell xml:id="G0000350"><text>
                     <math xml:id="G0000351"><mfrac xml:id="G0000352"><mrow xml:id="G0000353"><mi xml:id="G0000354">DEX</mi><mo xml:id="G0000355">+</mo><mn xml:id="G0000356">2</mn><mo xml:id="G0000357"><times xml:id="G0000358"/></mo><mi xml:id="G0000359">KNO</mi><mo xml:id="G0000360">+</mo><mi xml:id="G0000361">INT</mi></mrow><mn xml:id="G0000362">4</mn></mfrac></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000363">
-                  <cell xml:id="G0000364">Interaction</cell>
-                  <cell xml:id="G0000365">The basic ability of a character to interact with other people.</cell>
-                  <cell xml:id="G0000366">
+                  <cell xml:id="G0000364"><text>Interaction</text></cell>
+                  <cell xml:id="G0000365"><text>The basic ability of a character to interact with other people.</text></cell>
+                  <cell xml:id="G0000366"><text>
                     <math xml:id="G0000367"><mfrac xml:id="G0000368"><mrow xml:id="G0000369"><mi xml:id="G0000370">CHA</mi><mo xml:id="G0000371">+</mo><mi xml:id="G0000372">KNO</mi><mo xml:id="G0000373">+</mo><mi xml:id="G0000374">INT</mi></mrow><mn xml:id="G0000375">3</mn></mfrac></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000376">
-                  <cell xml:id="G0000377">Hit Points</cell>
-                  <cell xml:id="G0000378">The amount of damage you can receive before dying.</cell>
-                  <cell xml:id="G0000379">
+                  <cell xml:id="G0000377"><text>Hit Points</text></cell>
+                  <cell xml:id="G0000378"><text>The amount of damage you can receive before dying.</text></cell>
+                  <cell xml:id="G0000379"><text>
                     <math xml:id="G0000380"><mrow xml:id="G0000381"><mi xml:id="G0000382">BLD</mi><mo xml:id="G0000383">+</mo><mi xml:id="G0000384">WIL</mi></mrow></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0000385">
-                  <cell xml:id="G0000386">Magic Points</cell>
-                  <cell xml:id="G0000387">The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</cell>
-                  <cell xml:id="G0000388">
+                  <cell xml:id="G0000386"><text>Magic Points</text></cell>
+                  <cell xml:id="G0000387"><text>The number of Magic Points you can draw on to cast magic spells or perform supernatural feats</text></cell>
+                  <cell xml:id="G0000388"><text>
                     <math xml:id="G0000389"><mrow xml:id="G0000390"><mo xml:id="G0000391">(</mo><mi xml:id="G0000392">WIL</mi><mo xml:id="G0000393">+</mo><mi xml:id="G0000394">BLD</mi><mo xml:id="G0000395">)</mo><mo xml:id="G0000396"><times xml:id="G0000397"/></mo><mn xml:id="G0000398">10</mn></mrow></math>
-                  </cell>
+                  </text></cell>
                 </row>
               </table>
-              <caption xml:id="G0000399">Sub-Attributes</caption>
+              <caption xml:id="G0000399"><text>Sub-Attributes</text></caption>
             </figure>
             <text xml:id="G0000400">If the above equations generate any fractions, round them to the nearest whole number.</text>
             <text xml:id="G0000401">Encumbrance, Base Armor, HP, and MP will be discussed in more detail in later sections. Keep this in mind as you may need to update them later.</text>
@@ -315,13 +315,13 @@
             <text xml:id="G0000407">You will use your CP to <ldquo xml:id="G0000408"/>purchase<rdquo xml:id="G0000409"/> the remainder of your character. The rest of your character is broken into three categories where you will spend these points:</text>
             <itemized-list xml:id="G0000410">
               <item xml:id="G0000411">
-                <text xml:id="G0000412">Mundane<description-list xml:id="G0000413"><item xml:id="G0000414"><description xml:id="G0000415">Attributes</description><text xml:id="G0000416">increasing starting attributes</text></item><item xml:id="G0000417"><description xml:id="G0000418">Skills</description><text xml:id="G0000419">normal skills, proficiency and knowledge of various topics</text></item><item xml:id="G0000420"><description xml:id="G0000421">Combat Skills</description><text xml:id="G0000422">techniques for fighting and defense.</text></item></description-list></text>
+                <text xml:id="G0000412">Mundane<description-list xml:id="G0000413"><item xml:id="G0000414"><description xml:id="G0000415"><text>Attributes</text></description><text xml:id="G0000416">increasing starting attributes</text></item><item xml:id="G0000417"><description xml:id="G0000418"><text>Skills</text></description><text xml:id="G0000419">normal skills, proficiency and knowledge of various topics</text></item><item xml:id="G0000420"><description xml:id="G0000421"><text>Combat Skills</text></description><text xml:id="G0000422">techniques for fighting and defense.</text></item></description-list></text>
               </item>
               <item xml:id="G0000423">
-                <text xml:id="G0000424">Arcane / Magic<description-list xml:id="G0000425"><item xml:id="G0000426"><description xml:id="G0000427">Spellcasting</description><text xml:id="G0000428"/></item><item xml:id="G0000429"><description xml:id="G0000430">Psionics</description><text xml:id="G0000431"/></item><item xml:id="G0000432"><description xml:id="G0000433">Witchcraft or Ritual Magic</description><text xml:id="G0000434"/></item><item xml:id="G0000435"><description xml:id="G0000436">Supernatural abilities (super powers)</description><text xml:id="G0000437"/></item></description-list></text>
+                <text xml:id="G0000424">Arcane / Magic<description-list xml:id="G0000425"><item xml:id="G0000426"><description xml:id="G0000427"><text>Spellcasting</text></description><text xml:id="G0000428"/></item><item xml:id="G0000429"><description xml:id="G0000430"><text>Psionics</text></description><text xml:id="G0000431"/></item><item xml:id="G0000432"><description xml:id="G0000433"><text>Witchcraft or Ritual Magic</text></description><text xml:id="G0000434"/></item><item xml:id="G0000435"><description xml:id="G0000436"><text>Supernatural abilities (super powers)</text></description><text xml:id="G0000437"/></item></description-list></text>
               </item>
               <item xml:id="G0000438">
-                <text xml:id="G0000439">Technology<description-list xml:id="G0000440"><item xml:id="G0000441"><description xml:id="G0000442">Mecha and Robotics</description><text xml:id="G0000443">Robotic bodies, limbs, powered armor, and robotic suits</text></item><item xml:id="G0000444"><description xml:id="G0000445">Augmentations</description><text xml:id="G0000446">Cybernetics, genetic mutations, and chemical augmentations</text></item><item xml:id="G0000447"><description xml:id="G0000448">Weapons</description><text xml:id="G0000449"/></item><item xml:id="G0000450"><description xml:id="G0000451">Armor</description><text xml:id="G0000452"/></item><item xml:id="G0000453"><description xml:id="G0000454">Equipment</description><text xml:id="G0000455"> <and xml:id="G0000456"/> other material possessions</text></item></description-list></text>
+                <text xml:id="G0000439">Technology<description-list xml:id="G0000440"><item xml:id="G0000441"><description xml:id="G0000442"><text>Mecha and Robotics</text></description><text xml:id="G0000443">Robotic bodies, limbs, powered armor, and robotic suits</text></item><item xml:id="G0000444"><description xml:id="G0000445"><text>Augmentations</text></description><text xml:id="G0000446">Cybernetics, genetic mutations, and chemical augmentations</text></item><item xml:id="G0000447"><description xml:id="G0000448"><text>Weapons</text></description><text xml:id="G0000449"/></item><item xml:id="G0000450"><description xml:id="G0000451"><text>Armor</text></description><text xml:id="G0000452"/></item><item xml:id="G0000453"><description xml:id="G0000454"><text>Equipment</text></description><text xml:id="G0000455"> <and xml:id="G0000456"/> other material possessions</text></item></description-list></text>
               </item>
             </itemized-list>
             <note xml:id="G0000457"><text><Apathy xml:id="G0000458"/> does not have <ldquo xml:id="G0000459"/>character classes<rdquo xml:id="G0000460"/> that are common to many role-playing systems. The <Apathy xml:id="G0000461"/> system allows the player to decide every detail pertaining to his character, rather than being stuck with a <ldquo xml:id="G0000462"/>default<rdquo xml:id="G0000463"/> set of abilities and skills. It is up to the player to use his CP to develop a well-rounded character. Note that there are NO skills that come <ldquo xml:id="G0000464"/>free.<rdquo xml:id="G0000465"/> If your character is literate, then that skill needs to be purchased. Know how to drive a car? Buy the skill.</text></note>
@@ -334,31 +334,31 @@
             <text xml:id="G0000479">Note that attribute increases are major additions to your character, and they should be role-played as such. Significant attribute changes represent months if not years of hard work! Here are some examples of possible means of increasing attributes:</text>
             <description-list xml:id="G0000480">
               <item xml:id="G0000481">
-                <description xml:id="G0000482">STR</description>
+                <description xml:id="G0000482"><text>STR</text></description>
                 <text xml:id="G0000483">Strength raw physical strength. Muscle power.</text>
               </item>
               <item xml:id="G0000484">
-                <description xml:id="G0000485">DEX</description>
+                <description xml:id="G0000485"><text>DEX</text></description>
                 <text xml:id="G0000486">Dexterity quickness, coordination, fine motor control, balance</text>
               </item>
               <item xml:id="G0000487">
-                <description xml:id="G0000488">BLD</description>
+                <description xml:id="G0000488"><text>BLD</text></description>
                 <text xml:id="G0000489">Build the toughness and durability of your body, stamina, <ldquo xml:id="G0000490"/>guts<rdquo xml:id="G0000491"/></text>
               </item>
               <item xml:id="G0000492">
-                <description xml:id="G0000493">INT</description>
+                <description xml:id="G0000493"><text>INT</text></description>
                 <text xml:id="G0000494">Intelligence computational power of the mind, ability to grasp complex problems</text>
               </item>
               <item xml:id="G0000495">
-                <description xml:id="G0000496">WIS</description>
+                <description xml:id="G0000496"><text>WIS</text></description>
                 <text xml:id="G0000497">Wisdom experience, worldliness, background knowledge, and common sense</text>
               </item>
               <item xml:id="G0000498">
-                <description xml:id="G0000499">WIL</description>
+                <description xml:id="G0000499"><text>WIL</text></description>
                 <text xml:id="G0000500">Willpower strength of the mind, ability to<lsquo xml:id="G0000501"/>stick it out<rdquo xml:id="G0000502"/> when things get tough</text>
               </item>
               <item xml:id="G0000503">
-                <description xml:id="G0000504">CHA</description>
+                <description xml:id="G0000504"><text>CHA</text></description>
                 <text xml:id="G0000505">Charisma appearance, personal presence, ability to make friends or influence others</text>
               </item>
             </description-list>
@@ -375,47 +375,47 @@
           <figure xml:id="G0000525">
             <table xml:id="G0000526">
               <head xml:id="G0000527">
-                <cell colfmt="c" xml:id="G0000528">Level</cell>
-                <cell colfmt="l" xml:id="G0000529">What it means</cell>
+                <cell colfmt="c" xml:id="G0000528"><text>Level</text></cell>
+                <cell colfmt="l" xml:id="G0000529"><text>What it means</text></cell>
               </head>
               <row xml:id="G0000530">
-                <cell xml:id="G0000531">0</cell>
-                <cell xml:id="G0000532">No knowledge of the skill.</cell>
+                <cell xml:id="G0000531"><text>0</text></cell>
+                <cell xml:id="G0000532"><text>No knowledge of the skill.</text></cell>
               </row>
               <row xml:id="G0000533">
-                <cell xml:id="G0000534">1</cell>
-                <cell xml:id="G0000535">Amateur. You know something about it.</cell>
+                <cell xml:id="G0000534"><text>1</text></cell>
+                <cell xml:id="G0000535"><text>Amateur. You know something about it.</text></cell>
               </row>
               <row xml:id="G0000536">
-                <cell xml:id="G0000537">2</cell>
-                <cell xml:id="G0000538">Had some training or experience</cell>
+                <cell xml:id="G0000537"><text>2</text></cell>
+                <cell xml:id="G0000538"><text>Had some training or experience</text></cell>
               </row>
               <row xml:id="G0000539">
-                <cell xml:id="G0000540">3</cell>
-                <cell xml:id="G0000541">Beginning professional or serious hobbyist</cell>
+                <cell xml:id="G0000540"><text>3</text></cell>
+                <cell xml:id="G0000541"><text>Beginning professional or serious hobbyist</text></cell>
               </row>
               <row xml:id="G0000542">
-                <cell xml:id="G0000543">4</cell>
-                <cell xml:id="G0000544">Professional</cell>
+                <cell xml:id="G0000543"><text>4</text></cell>
+                <cell xml:id="G0000544"><text>Professional</text></cell>
               </row>
               <row xml:id="G0000545">
-                <cell xml:id="G0000546">5</cell>
-                <cell xml:id="G0000547">Experienced professional</cell>
+                <cell xml:id="G0000546"><text>5</text></cell>
+                <cell xml:id="G0000547"><text>Experienced professional</text></cell>
               </row>
               <row xml:id="G0000548">
-                <cell xml:id="G0000549">6</cell>
-                <cell xml:id="G0000550">Exceptionally good. Among the best in the country.</cell>
+                <cell xml:id="G0000549"><text>6</text></cell>
+                <cell xml:id="G0000550"><text>Exceptionally good. Among the best in the country.</text></cell>
               </row>
               <row xml:id="G0000551">
-                <cell xml:id="G0000552">7</cell>
-                <cell xml:id="G0000553">Among the best in the world.</cell>
+                <cell xml:id="G0000552"><text>7</text></cell>
+                <cell xml:id="G0000553"><text>Among the best in the world.</text></cell>
               </row>
               <row xml:id="G0000554">
-                <cell xml:id="G0000555">8+</cell>
-                <cell xml:id="G0000556">Among the best ever</cell>
+                <cell xml:id="G0000555"><text>8+</text></cell>
+                <cell xml:id="G0000556"><text>Among the best ever</text></cell>
               </row>
             </table>
-            <caption xml:id="G0000557">Skill Level and Descriptive Equivalents</caption>
+            <caption xml:id="G0000557"><text>Skill Level and Descriptive Equivalents</text></caption>
           </figure>
           <text xml:id="G0000558">Like most of character creation, skills are purchased using CP. The higher the rank, the more expensive it will be. The higher the level you want in the skill, the more expensive it will be.</text>
           <text xml:id="G0000559">For those that are mathematically inclined, here is the formula for determining CP of a particular skill level and rank:</text>
@@ -426,33 +426,33 @@
           <figure xml:id="G0000591">
             <table xml:id="G0000592">
               <head xml:id="G0000593">
-                <cell xml:id="G0000594">Desired Level</cell>
-                <cell xml:id="G0000595" colfmt="p{1.2em}">1</cell>
-                <cell xml:id="G0000596" colfmt="p{1.2em}">2</cell>
-                <cell xml:id="G0000597" colfmt="p{1.2em}">3</cell>
-                <cell xml:id="G0000598" colfmt="p{1.2em}">4</cell>
-                <cell xml:id="G0000599" colfmt="p{1.2em}">5</cell>
-                <cell xml:id="G0000600" colfmt="p{1.2em}">6</cell>
-                <cell xml:id="G0000601" colfmt="p{1.2em}">7</cell>
-                <cell xml:id="G0000602" colfmt="p{1.2em}">8</cell>
-                <cell xml:id="G0000603" colfmt="p{1.2em}">9</cell>
-                <cell xml:id="G0000604" colfmt="p{1.2em}">10</cell>
+                <cell xml:id="G0000594"><text>Desired Level</text></cell>
+                <cell xml:id="G0000595" colfmt="p{1.2em}"><text>1</text></cell>
+                <cell xml:id="G0000596" colfmt="p{1.2em}"><text>2</text></cell>
+                <cell xml:id="G0000597" colfmt="p{1.2em}"><text>3</text></cell>
+                <cell xml:id="G0000598" colfmt="p{1.2em}"><text>4</text></cell>
+                <cell xml:id="G0000599" colfmt="p{1.2em}"><text>5</text></cell>
+                <cell xml:id="G0000600" colfmt="p{1.2em}"><text>6</text></cell>
+                <cell xml:id="G0000601" colfmt="p{1.2em}"><text>7</text></cell>
+                <cell xml:id="G0000602" colfmt="p{1.2em}"><text>8</text></cell>
+                <cell xml:id="G0000603" colfmt="p{1.2em}"><text>9</text></cell>
+                <cell xml:id="G0000604" colfmt="p{1.2em}"><text>10</text></cell>
               </head>
               <row xml:id="G0000605">
-                <cell xml:id="G0000606">CP Cost for Rank 1</cell>
-                <cell xml:id="G0000607">1</cell>
-                <cell xml:id="G0000608">3</cell>
-                <cell xml:id="G0000609">6</cell>
-                <cell xml:id="G0000610">10</cell>
-                <cell xml:id="G0000611">15</cell>
-                <cell xml:id="G0000612">21</cell>
-                <cell xml:id="G0000613">28</cell>
-                <cell xml:id="G0000614">36</cell>
-                <cell xml:id="G0000615">45</cell>
-                <cell xml:id="G0000616">55</cell>
+                <cell xml:id="G0000606"><text>CP Cost for Rank 1</text></cell>
+                <cell xml:id="G0000607"><text>1</text></cell>
+                <cell xml:id="G0000608"><text>3</text></cell>
+                <cell xml:id="G0000609"><text>6</text></cell>
+                <cell xml:id="G0000610"><text>10</text></cell>
+                <cell xml:id="G0000611"><text>15</text></cell>
+                <cell xml:id="G0000612"><text>21</text></cell>
+                <cell xml:id="G0000613"><text>28</text></cell>
+                <cell xml:id="G0000614"><text>36</text></cell>
+                <cell xml:id="G0000615"><text>45</text></cell>
+                <cell xml:id="G0000616"><text>55</text></cell>
               </row>
             </table>
-            <caption xml:id="G0000617">CP cost of Desired Level, precomputed</caption>
+            <caption xml:id="G0000617"><text>CP cost of Desired Level, precomputed</text></caption>
           </figure>
           <text xml:id="G0000618">See the trend?</text>
           <text xml:id="G0000619">If not, here<rdquo xml:id="G0000620"/>s yet another way to look at purchasing skills.</text>
@@ -534,35 +534,35 @@
             <figure xml:id="G0000723">
               <table xml:id="G0000724">
                 <head xml:id="G0000725">
-                  <cell colfmt="c" xml:id="G0000726">Roll</cell>
-                  <cell colfmt="l" xml:id="G0000727">Sample Outcome</cell>
+                  <cell colfmt="c" xml:id="G0000726"><text>Roll</text></cell>
+                  <cell colfmt="l" xml:id="G0000727"><text>Sample Outcome</text></cell>
                 </head>
                 <row xml:id="G0000728">
-                  <cell xml:id="G0000729">Strike (sword)</cell>
-                  <cell xml:id="G0000730">Sword breaks or is dropped</cell>
+                  <cell xml:id="G0000729"><text>Strike (sword)</text></cell>
+                  <cell xml:id="G0000730"><text>Sword breaks or is dropped</text></cell>
                 </row>
                 <row xml:id="G0000731">
-                  <cell xml:id="G0000732">Strike (gun)</cell>
-                  <cell xml:id="G0000733">gun jams or misfires</cell>
+                  <cell xml:id="G0000732"><text>Strike (gun)</text></cell>
+                  <cell xml:id="G0000733"><text>gun jams or misfires</text></cell>
                 </row>
                 <row xml:id="G0000734">
-                  <cell xml:id="G0000735">Parry</cell>
-                  <cell xml:id="G0000736">you drop your weapon and are struck by the incoming blow</cell>
+                  <cell xml:id="G0000735"><text>Parry</text></cell>
+                  <cell xml:id="G0000736"><text>you drop your weapon and are struck by the incoming blow</text></cell>
                 </row>
                 <row xml:id="G0000737">
-                  <cell xml:id="G0000738">Diplomacy</cell>
-                  <cell xml:id="G0000739">you make a faux pas that offends the parties involved</cell>
+                  <cell xml:id="G0000738"><text>Diplomacy</text></cell>
+                  <cell xml:id="G0000739"><text>you make a faux pas that offends the parties involved</text></cell>
                 </row>
                 <row xml:id="G0000740">
-                  <cell xml:id="G0000741">Deception</cell>
-                  <cell xml:id="G0000742">you are caught <ldquo xml:id="G0000743"/>red handed<rdquo xml:id="G0000744"/> in a blatant lie</cell>
+                  <cell xml:id="G0000741"><text>Deception</text></cell>
+                  <cell xml:id="G0000742"><text>you are caught <ldquo xml:id="G0000743"/>red handed<rdquo xml:id="G0000744"/> in a blatant lie</text></cell>
                 </row>
                 <row xml:id="G0000745">
-                  <cell xml:id="G0000746">Medicine</cell>
-                  <cell xml:id="G0000747">you make an outright mistake, harming the patient.</cell>
+                  <cell xml:id="G0000746"><text>Medicine</text></cell>
+                  <cell xml:id="G0000747"><text>you make an outright mistake, harming the patient.</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0000748">Sample outcome for Skill Rolls</caption>
+              <caption xml:id="G0000748"><text>Sample outcome for Skill Rolls</text></caption>
             </figure>
             <text xml:id="G0000749">The GM will give penalties and/or bonuses to your skill roll based on the difficulty of the Action you are performing and what circumstances may be surrounding it. When such a negative or bonus is given, this is subtracted from the associated attribute value, not the number of dice rolled for a skill.</text>
             <text xml:id="G0000750">Basically stated, skill rolls work like this: Roll <roll xml:id="G0000751"><num xml:id="G0000752">1</num><face xml:id="G0000753">20</face><bns xml:id="G0000754"/></roll> for each level you have in the skill. To each die, add your associated attribute and any negatives or bonuses the GM gives you. If the total on each die is 25 or greater that is a success. If the die rolls a 20, regardless of bonuses, attributes, etc. you get +1 successes. If a die rolls a 1, regardless of bonuses, etc. you get -1 success.</text>
@@ -699,15 +699,15 @@
             <text xml:id="G0001099">As noted above, it is possible for characters to wield two weapons in combat, or a weapon and a shield. A character cannot attack with both weapons during the same Action unless he takes the Multi-weapon style skill in Martial Arts. A character using a weapon and a shield may not attack with his weapon and shield bash in the same Action for the same reason. When attacking with both weapons the character makes two separate attack rolls, one for each weapon; each attack is resolved separately. This takes two separate Actions.</text>
             <description-list xml:id="G0001100">
               <item xml:id="G0001101">
-                <description xml:id="G0001102">Two normal weapons</description>
+                <description xml:id="G0001102"><text>Two normal weapons</text></description>
                 <text xml:id="G0001103">When wielding two weapons the weapon in the character<rsquo xml:id="G0001104"/>s <ldquo xml:id="G0001105"/>good<rdquo xml:id="G0001106"/> hand receives a -3 to strike and the weapon in the character<rsquo xml:id="G0001107"/>s <ldquo xml:id="G0001108"/>off<rdquo xml:id="G0001109"/> hand receives a -6. Some characters can have <ldquo xml:id="G0001110"/>even-more-offhand<rdquo xml:id="G0001111"/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the <math xml:id="G0001112"><mrow xml:id="G0001113"><msup xml:id="G0001114"><mi xml:id="G0001115">k</mi><mi xml:id="G0001116">th</mi></msup></mrow></math> weapon is at <math xml:id="G0001117"><mrow xml:id="G0001118"><mn xml:id="G0001119">-3</mn><mo xml:id="G0001120"><times xml:id="G0001121"/></mo><mi xml:id="G0001122">k</mi></mrow></math> to strike.</text>
               </item>
               <item xml:id="G0001123">
-                <description xml:id="G0001124">Paired weapons</description>
+                <description xml:id="G0001124"><text>Paired weapons</text></description>
                 <text xml:id="G0001125">, or one normal weapon and one backup weapon: Some weapons are well suited to, or even designed for, use in the <ldquo xml:id="G0001126"/>off<rdquo xml:id="G0001127"/> hand. When using these weapons the penalty for the offhand weapon is -3 as opposed to -6. The penalty for the primary weapon remains -3. Specifically, these combinations are:</text><numbered-list xml:id="G0001128"><item xml:id="G0001129"><text xml:id="G0001130">Any type of knife may be used in the off-hand in combination with any standard (non exotic) one-handed weapon in the main hand.</text></item><item xml:id="G0001131"><text xml:id="G0001132">Two Kris, or one Kris Datoh (main hand) and one Kris (off hand).</text></item><item xml:id="G0001133"><text xml:id="G0001134">One Katana (main hand) and one Wakizashi (off hand), but only if the wielder is specialized in both weapons and takes the appropriate penalty for using the Katana one-handed.</text></item><item xml:id="G0001135"><text xml:id="G0001136">Any weapon that is normally used in pairs, such as Sai, Kama, tonfa, nunchaku, or Iron Claws.</text></item><item xml:id="G0001137"><text xml:id="G0001138">Two identical handguns, but only with the appropriate penalty for using them one-handed.</text></item></numbered-list>
               </item>
               <item xml:id="G0001139">
-                <description xml:id="G0001140">One normal weapon and a shield or item</description>
+                <description xml:id="G0001140"><text>One normal weapon and a shield or item</text></description>
                 <text xml:id="G0001141">If the character is wielding a 1-handed weapon in his <ldquo xml:id="G0001142"/>good<rdquo xml:id="G0001143"/> hand, and his other hand is carrying a shield, a non-weapon holy symbol, or a utility item then there is NO strike penalty at all. For the purposes of this rule a utility item is something such as a torch, walking stick, magical totem, leash, or bag. Utility items are not weapons and must not require particular attention to carry.</text>
               </item>
             </description-list>
@@ -743,15 +743,15 @@
             <text xml:id="G0001175">There are many different skills that are available for defense. They are called defensive maneuvers. A defensive maneuver is a special skill or ability that you use specifically in response to being attacked; otherwise they work like normal skills. A target of an attack may attempt to use any one defensive maneuver in order to protect himself from the attack. The most common are parrying, blocking, and the Dodge skill. These are described below. Other defensive maneuvers may be found in the Martial Arts section.</text>
             <description-list xml:id="G0001176">
               <item xml:id="G0001177">
-                <description xml:id="G0001178">Parry</description>
+                <description xml:id="G0001178"><text>Parry</text></description>
                 <text xml:id="G0001179">Parrying is using your weapon to deflect a blow from another weapon. Parrying may only be performed with melee weapons, against either a melee or hand to hand attack. Parrying is ineffective versus other attacks, such as explosives, bullets, chemical splashes, magical energy, etc. Parry is not a skill itself, rather the skill roll for parrying is based on the weapon skill you are trying to parry with. For example, you would use your Knife skill to parry using your dagger. You must have your weapon drawn and ready in order to use it to parry. Note, that this is the same skill that is used for attacking with your weapon, so most characters will have a good chance at parrying.</text><note xml:id="G0001180"><text>A weapon or similar combat skill is used for parrying. Also note that parrying is always subject to GM approval. The GM determines the outcome of a successful parry, though it usually means that the defender avoids all damage. However, if you are parrying an attack from a heavy or large weapon with a small weapon, the GM might want to impose a different outcome.</text></note>
               </item>
               <item xml:id="G0001181">
-                <description xml:id="G0001182">Block</description>
+                <description xml:id="G0001182"><text>Block</text></description>
                 <text xml:id="G0001183">Blocking is putting a shield between you and an incoming attack.</text><note xml:id="G0001184"><text>Upon a successful block, a shield<rsquo xml:id="G0001185"/>s armor values are added to any armor that you are currently wearing</text></note><text xml:id="G0001186">(see below). You can attempt to block any incoming attack that you are aware of. Blocking can be used against melee attacks, missile weapons, arrows, gunshots, and unusual attacks such as a fireball or an acid splash. Larger shields will make it easier to block, more info can be found in the shields section.</text><note xml:id="G0001187"><text>The Shield skill is used for blocking. Blocking means that the blow hits, but the defender gets to add the armor of the shield to his own armor value.</text></note><text xml:id="G0001188">In the case of a non-standard attack, such as a splash of acid, the shield simply stops a certain percentage of the damage outright.</text>
               </item>
               <item xml:id="G0001189">
-                <description xml:id="G0001190">Dodge</description>
+                <description xml:id="G0001190"><text>Dodge</text></description>
                 <text xml:id="G0001191">one of the best types of defense. Dodge is an (expensive) skill; dodging is moving your body out of the way of an incoming attack. By sidestepping, ducking, throwing yourself to the ground or similar Action you can avoid any attack completely and take no damage. The Dodge skill is used for dodging. On a successful dodge the blow doesn<rsquo xml:id="G0001192"/>t hit, period. However, dodge is a high rank skill, so most characters will not be very good at it.</text>
               </item>
             </description-list>
@@ -766,23 +766,23 @@
             <text xml:id="G0001210">Here<rsquo xml:id="G0001211"/>s a key of the different damage types with abbreviations in parenthesis and what they are typically associated with:</text>
             <description-list xml:id="G0001212">
               <item xml:id="G0001213">
-                <description xml:id="G0001214">Piercing (P)</description>
+                <description xml:id="G0001214"><text>Piercing (P)</text></description>
                 <text xml:id="G0001215">using a sharp tip to penetrate the target creating a hole or deep cut within the target. Some melee weapons, most bullets, and other penetrating weapons deal piercing damage. Armor can protect against this type of damage.</text>
               </item>
               <item xml:id="G0001216">
-                <description xml:id="G0001217">Slashing (S)</description>
+                <description xml:id="G0001217"><text>Slashing (S)</text></description>
                 <text xml:id="G0001218">using a cutting edge to slice the target creating a fairly shallow long cut within the target. Most melee weapons such as knives and swords, as well as lasers deal Slashing damage. Armor can protect against this type of damage.</text>
               </item>
               <item xml:id="G0001219">
-                <description xml:id="G0001220">Crushing (C)</description>
+                <description xml:id="G0001220"><text>Crushing (C)</text></description>
                 <text xml:id="G0001221">using a heavy blunt edge in an attempt to fracture or break the target. This is typically the hardest damage to protect against, and as such, is a favorite type of damage for melee combat. Punches, clubs, staves, and explosions deal Crushing damage. Armor can protect against this type of damage.</text>
               </item>
               <item xml:id="G0001222">
-                <description xml:id="G0001223">Undefined (U)</description>
+                <description xml:id="G0001223"><text>Undefined (U)</text></description>
                 <text xml:id="G0001224">using energy to cause damage within the target. This can include electricity, heat, magic, sickness and other <ldquo xml:id="G0001225"/>odd<rdquo xml:id="G0001226"/> types of damage. Normal armor cannot protect against this type of damage. Only your character<rsquo xml:id="G0001227"/>s Base Armor (BA) can protect you from undefined damage. Any time someone takes undefined damage he or she will always take at least one point of damage, regardless of the Base Armor.</text>
               </item>
               <item xml:id="G0001228">
-                <description xml:id="G0001229">Direct (D)</description>
+                <description xml:id="G0001229"><text>Direct (D)</text></description>
                 <text xml:id="G0001230">extremely damaging attacks deal D damage. There is no way to protect yourself from Direct Damage, as it will bypass all armor and other protections that you have on. Damage from D attacks is subtracted directly from Hit Points (HP).</text>
               </item>
             </description-list>
@@ -835,23 +835,23 @@
             <text xml:id="G0001343">Apathy includes rules for combat with melee weapons, ranged weapons, firearms, magic, and so forth. The rules for attacking and defending with different kinds of weapons and effects are detailed here.</text>
             <description-list xml:id="G0001344">
               <item xml:id="G0001345">
-                <description xml:id="G0001346">Hand-to-Hand attacks:</description>
+                <description xml:id="G0001346"><text>Hand-to-Hand attacks:</text></description>
                 <text xml:id="G0001347">Hand-to-hand attacks include things like punches, kicks, and body weapons (teeth, claws, etc.). Hand-to-hand combat may be Parried, Dodged, or Blocked.</text>
               </item>
               <item xml:id="G0001348">
-                <description xml:id="G0001349">Melee Weapons:</description>
+                <description xml:id="G0001349"><text>Melee Weapons:</text></description>
                 <text xml:id="G0001350">Melee weapons are handheld weapons that are not thrown or launched. This includes swords, knives, axes, hammers, most polearms, etc. Melee weapon attacks may be Parried, Dodged, or Blocked.</text>
               </item>
               <item xml:id="G0001351">
-                <description xml:id="G0001352">Missile Weapons:</description>
+                <description xml:id="G0001352"><text>Missile Weapons:</text></description>
                 <text xml:id="G0001353">Missile weapons are archaic type weapons which are thrown or launched at the target. This includes throwing knives, thrown spears, arrows, crossbow bolts, sling bullets, etc. Missile weapons may be Dodged, or Blocked normally but may not be parried (except for special abilities that may allow one to parry them)</text>
               </item>
               <item xml:id="G0001354">
-                <description xml:id="G0001355">Projectile Weapons:</description>
+                <description xml:id="G0001355"><text>Projectile Weapons:</text></description>
                 <text xml:id="G0001356">Projectile weapons are guns, shotguns, rifles, pistols, lasers, particle beams, and other fast moving kinetic weapons. Projectile weapons may be Dodged or Blocked, but NOT Parried.</text>
               </item>
               <item xml:id="G0001357">
-                <description xml:id="G0001358">Explosives:</description>
+                <description xml:id="G0001358"><text>Explosives:</text></description>
                 <text xml:id="G0001359"> <ldquo xml:id="G0001360"/>Explosives<rdquo xml:id="G0001361"/> in this case includes such things as grenades, molotov cocktails, bottles of acid, etc. These attacks may be Dodged or Blocked. Note, these attacks have a blast radius. If the defender has 1 more success than the attacker, it means that a direct hit was avoided but the defender still suffers the radius damage. If the defender has two or more successes over the attacker it means the entire attack was defended against. If the attacker ties or beats the defender then the defender takes full damage. Note that most true explosives, such as grenades, missiles, or bombs, deal double damage on a direct hit and normal damage in their blast radius.</text>
               </item>
             </description-list>
@@ -1042,10 +1042,10 @@
           <title xml:id="G0001569">Melee</title>
           <text xml:id="G0001570">For damage type listed as X/Y, the weapon can deal either type of damage for a given attack. For a P/S weapon, the attcker can choose to do a P or S attack. For every point of STR under Min. STR, the attack gets -1 damage and -2 to strike/parry. STR Req is the minimum strength required to wield the weapon. For every point of STR over the Strength Requirement, add one point of damage to the raw roll, up to a maximum of the MSB (Max Strength Bonus) A raw bonus is always indicated with square brackets. So <roll xml:id="G0001571"><num xml:id="G0001572">3</num><face xml:id="G0001573">4</face><bOff xml:id="G0001574">+</bOff><bns xml:id="G0001575">1</bns><rOff xml:id="G0001576">+</rOff><raw xml:id="G0001577">4</raw><kind xml:id="G0001578"/></roll> would be a normal <roll xml:id="G0001579"><num xml:id="G0001580">3</num><face xml:id="G0001581">4</face><bOff xml:id="G0001582">+</bOff><bns xml:id="G0001583">1</bns></roll> roll, with an additional 4 added to the final result. When wielding a 1-H weapon with two hands, assume the wielder has +2 STR.</text>
           <description-list xml:id="G0001584">
-            <item xml:id="G0001585"><description xml:id="G0001586">Hands</description><text>Number of hands required to use the weapon</text></item>
-            <item xml:id="G0001587"><description xml:id="G0001588">Rec</description><text>Number of actions it takes to recover after attacking with the weapon. This many actions must be spent to get the weapon ready for attack again.</text></item>
-            <item xml:id="G0001589"><description xml:id="G0001590">Enc</description><text>Represents the weight of the weapon. This consumes Encumbrance just like armor. Only use this when the weapon is actually being used.</text></item>
-            <item xml:id="G0001591"><description xml:id="G0001592">Range</description><text>the effective reach of the weapon in feet. If your target is beyond your range, you cannot strike them. You can spend an action to gain range on your opponent. If your target is closer than 1/2 range, then you are at -6 to strike the target.</text></item>
+            <item xml:id="G0001585"><description xml:id="G0001586"><text>Hands</text></description><text>Number of hands required to use the weapon</text></item>
+            <item xml:id="G0001587"><description xml:id="G0001588"><text>Rec</text></description><text>Number of actions it takes to recover after attacking with the weapon. This many actions must be spent to get the weapon ready for attack again.</text></item>
+            <item xml:id="G0001589"><description xml:id="G0001590"><text>Enc</text></description><text>Represents the weight of the weapon. This consumes Encumbrance just like armor. Only use this when the weapon is actually being used.</text></item>
+            <item xml:id="G0001591"><description xml:id="G0001592"><text>Range</text></description><text>the effective reach of the weapon in feet. If your target is beyond your range, you cannot strike them. You can spend an action to gain range on your opponent. If your target is closer than 1/2 range, then you are at -6 to strike the target.</text></item>
           </description-list>
           <section kind="section" xml:id="G0001593">
             <title xml:id="G0001594">Options for Melee Weapons</title>
@@ -1053,47 +1053,47 @@
             <figure xml:id="G0001596">
               <table xml:id="G0001597">
                 <head xml:id="G0001598">
-                  <cell colfmt="l" xml:id="G0001599">Quality</cell>
-                  <cell colfmt="c" xml:id="G0001600">Bonus to damage</cell>
-                  <cell colfmt="c" xml:id="G0001601">Cost factor</cell>
-                  <cell colfmt="c" xml:id="G0001602">Rarity</cell>
+                  <cell colfmt="l" xml:id="G0001599"><text>Quality</text></cell>
+                  <cell colfmt="c" xml:id="G0001600"><text>Bonus to damage</text></cell>
+                  <cell colfmt="c" xml:id="G0001601"><text>Cost factor</text></cell>
+                  <cell colfmt="c" xml:id="G0001602"><text>Rarity</text></cell>
                 </head>
                 <row xml:id="G0001603"/>
                 <row xml:id="G0001604">
-                  <cell xml:id="G0001605">Exceptional Quality</cell>
-                  <cell xml:id="G0001606">+1 damage</cell>
-                  <cell xml:id="G0001607">double cost</cell>
-                  <cell xml:id="G0001608">Adds 1 to rarity</cell>
+                  <cell xml:id="G0001605"><text>Exceptional Quality</text></cell>
+                  <cell xml:id="G0001606"><text>+1 damage</text></cell>
+                  <cell xml:id="G0001607"><text>double cost</text></cell>
+                  <cell xml:id="G0001608"><text>Adds 1 to rarity</text></cell>
                 </row>
                 <row xml:id="G0001609">
-                  <cell xml:id="G0001610">Master Quality</cell>
-                  <cell xml:id="G0001611">+2 damage</cell>
-                  <cell xml:id="G0001612">10 times cost</cell>
-                  <cell xml:id="G0001613">Adds 3 to rarity</cell>
+                  <cell xml:id="G0001610"><text>Master Quality</text></cell>
+                  <cell xml:id="G0001611"><text>+2 damage</text></cell>
+                  <cell xml:id="G0001612"><text>10 times cost</text></cell>
+                  <cell xml:id="G0001613"><text>Adds 3 to rarity</text></cell>
                 </row>
                 <row xml:id="G0001614">
-                  <cell xml:id="G0001615">Legendary Quality</cell>
-                  <cell xml:id="G0001616">+3 damage</cell>
-                  <cell xml:id="G0001617">100 times cost</cell>
-                  <cell xml:id="G0001618">Adds 5 to rarity</cell>
+                  <cell xml:id="G0001615"><text>Legendary Quality</text></cell>
+                  <cell xml:id="G0001616"><text>+3 damage</text></cell>
+                  <cell xml:id="G0001617"><text>100 times cost</text></cell>
+                  <cell xml:id="G0001618"><text>Adds 5 to rarity</text></cell>
                 </row>
                 <row xml:id="G0001619">
-                  <cell xml:id="G0001620">Vibro-edge (bladed only)</cell>
-                  <cell xml:id="G0001621">+10 AP</cell>
-                  <cell xml:id="G0001622">5 times cost</cell>
-                  <cell xml:id="G0001623">ULTRAMODERN</cell>
+                  <cell xml:id="G0001620"><text>Vibro-edge (bladed only)</text></cell>
+                  <cell xml:id="G0001621"><text>+10 AP</text></cell>
+                  <cell xml:id="G0001622"><text>5 times cost</text></cell>
+                  <cell xml:id="G0001623"><text>ULTRAMODERN</text></cell>
                 </row>
                 <row xml:id="G0001624">
-                  <cell xml:id="G0001625">Wooden Training</cell>
-                  <cell xml:id="G0001626">1/2 damage, C</cell>
-                  <cell xml:id="G0001627">
+                  <cell xml:id="G0001625"><text>Wooden Training</text></cell>
+                  <cell xml:id="G0001626"><text>1/2 damage, C</text></cell>
+                  <cell xml:id="G0001627"><text>
                     <math xml:id="G0001628"><mrow xml:id="G0001629"><msup xml:id="G0001630"><mfrac xml:id="G0001631"><mn xml:id="G0001632">1</mn><mn xml:id="G0001633">10</mn></mfrac>
                           <mi xml:id="G0001634">th</mi></msup><mi xml:id="G0001635">cost</mi></mrow></math>
-                  </cell>
-                  <cell xml:id="G0001636">Common</cell>
+                  </text></cell>
+                  <cell xml:id="G0001636"><text>Common</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0001637">Options for melee weapon construction</caption>
+              <caption xml:id="G0001637"><text>Options for melee weapon construction</text></caption>
             </figure>
             <text xml:id="G0001638">For other than normal sized weapons (mecha, etc.), all stats are<math xml:id="G0001639"><msup xml:id="G0001640"><mn xml:id="G0001641">2</mn><mrow xml:id="G0001642"><mi xml:id="G0001643">Size</mi><mo xml:id="G0001644">-</mo><mn xml:id="G0001645">1</mn></mrow></msup></math>normal. This applies to strength requirement, strength bonus, damage dice number, etc.</text>
           </section>
@@ -1137,32 +1137,32 @@
             <figure xml:id="G0001677">
               <table xml:id="G0001678">
                 <head xml:id="G0001679">
-                  <cell colfmt="l" xml:id="G0001680">Type</cell>
-                  <cell colfmt="p{1.5in}" xml:id="G0001681">Effect</cell>
-                  <cell colfmt="c" xml:id="G0001682">Cost Factor</cell>
+                  <cell colfmt="l" xml:id="G0001680"><text>Type</text></cell>
+                  <cell colfmt="p{1.5in}" xml:id="G0001681"><text>Effect</text></cell>
+                  <cell colfmt="c" xml:id="G0001682"><text>Cost Factor</text></cell>
                 </head>
                 <row xml:id="G0001683">
-                  <cell xml:id="G0001684">High temperature</cell>
-                  <cell xml:id="G0001685">Blade is hotter than normal, dealing +1 damage, can be purchased up to 3 times (each time double cost)</cell>
-                  <cell xml:id="G0001686">x2</cell>
+                  <cell xml:id="G0001684"><text>High temperature</text></cell>
+                  <cell xml:id="G0001685"><text>Blade is hotter than normal, dealing +1 damage, can be purchased up to 3 times (each time double cost)</text></cell>
+                  <cell xml:id="G0001686"><text>x2</text></cell>
                 </row>
                 <row xml:id="G0001687">
-                  <cell xml:id="G0001688">Over powered field</cell>
-                  <cell xml:id="G0001689">The magnetic field is stronger than normal, giving a +5 STR when breaking from a lock</cell>
-                  <cell xml:id="G0001690">x2</cell>
+                  <cell xml:id="G0001688"><text>Over powered field</text></cell>
+                  <cell xml:id="G0001689"><text>The magnetic field is stronger than normal, giving a +5 STR when breaking from a lock</text></cell>
+                  <cell xml:id="G0001690"><text>x2</text></cell>
                 </row>
                 <row xml:id="G0001691">
-                  <cell xml:id="G0001692">High speed blade</cell>
-                  <cell xml:id="G0001693">The plasma weapon can be turned on in 0 actions</cell>
-                  <cell xml:id="G0001694">x1.5</cell>
+                  <cell xml:id="G0001692"><text>High speed blade</text></cell>
+                  <cell xml:id="G0001693"><text>The plasma weapon can be turned on in 0 actions</text></cell>
+                  <cell xml:id="G0001694"><text>x1.5</text></cell>
                 </row>
                 <row xml:id="G0001695">
-                  <cell xml:id="G0001696">Power burst</cell>
-                  <cell xml:id="G0001697">Once per minute the blade<rsquo xml:id="G0001698"/>s power can be increased to deal +3 damage</cell>
-                  <cell xml:id="G0001699">x1.5</cell>
+                  <cell xml:id="G0001696"><text>Power burst</text></cell>
+                  <cell xml:id="G0001697"><text>Once per minute the blade<rsquo xml:id="G0001698"/>s power can be increased to deal +3 damage</text></cell>
+                  <cell xml:id="G0001699"><text>x1.5</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0001700">Plasma Weapon Modifiers</caption>
+              <caption xml:id="G0001700"><text>Plasma Weapon Modifiers</text></caption>
             </figure>
             <section kind="section" xml:id="G0001701">
               <title xml:id="G0001702">Notes: specific to Plasma Weapons</title>
