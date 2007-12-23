@@ -2971,11 +2971,11 @@
                 </row>
                 <row xml:id="G0003611">
                   <cell border="none" xml:id="G0003612"><text>Anthropoid</text></cell>
-                  <cell border="none" span="11" xml:id="G0003613">Height:<math xml:id="G0003614"><mrow xml:id="G0003615"><msup xml:id="G0003616"><mi xml:id="G0003617">Size</mi><mn xml:id="G0003618">2</mn></msup><mo xml:id="G0003619"><times xml:id="G0003620"/></mo><mn xml:id="G0003621">40</mn><mi xml:id="G0003622">cm</mi></mrow></math></cell>
+                  <cell border="none" span="11" xml:id="G0003613"><text>Height:<math xml:id="G0003614"><mrow xml:id="G0003615"><msup xml:id="G0003616"><mi xml:id="G0003617">Size</mi><mn xml:id="G0003618">2</mn></msup><mo xml:id="G0003619"><times xml:id="G0003620"/></mo><mn xml:id="G0003621">40</mn><mi xml:id="G0003622">cm</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003623">
                   <cell xml:id="G0003624"/>
-                  <cell span="11" xml:id="G0003625">Weight:<math xml:id="G0003626"><mrow xml:id="G0003627"><mfrac xml:id="G0003628"><mi xml:id="G0003629">Height</mi><mn xml:id="G0003630">3</mn></mfrac><mi xml:id="G0003631">kilograms</mi></mrow></math></cell>
+                  <cell span="11" xml:id="G0003625"><text>Weight:<math xml:id="G0003626"><mrow xml:id="G0003627"><mfrac xml:id="G0003628"><mi xml:id="G0003629">Height</mi><mn xml:id="G0003630">3</mn></mfrac><mi xml:id="G0003631">kilograms</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003632">
                   <cell xml:id="G0003633"><text>Str</text></cell>
@@ -3024,12 +3024,12 @@
                   <cell xml:id="G0003672"><text>8</text></cell>
                 </row>
                 <row xml:id="G0003673">
-                  <cell border="none" xml:id="G0003674">Bipedal</cell>
-                  <cell border="none" span="11" xml:id="G0003675">Height:<math xml:id="G0003676"><mrow xml:id="G0003677"><msup xml:id="G0003678"><mi xml:id="G0003679">Size</mi><mn xml:id="G0003680">2</mn></msup><mo xml:id="G0003681"><times xml:id="G0003682"/></mo><mn xml:id="G0003683">35</mn><mi xml:id="G0003684">cm</mi></mrow></math></cell>
+                  <cell border="none" xml:id="G0003674"><text>Bipedal</text></cell>
+                  <cell border="none" span="11" xml:id="G0003675"><text>Height:<math xml:id="G0003676"><mrow xml:id="G0003677"><msup xml:id="G0003678"><mi xml:id="G0003679">Size</mi><mn xml:id="G0003680">2</mn></msup><mo xml:id="G0003681"><times xml:id="G0003682"/></mo><mn xml:id="G0003683">35</mn><mi xml:id="G0003684">cm</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003685">
                   <cell xml:id="G0003686"/>
-                  <cell span="11" xml:id="G0003687">Weight:<math xml:id="G0003688"><mrow xml:id="G0003689"><mfrac xml:id="G0003690"><mi xml:id="G0003691">Height</mi><mn xml:id="G0003692">3</mn></mfrac><mi xml:id="G0003693">kilograms</mi></mrow></math></cell>
+                  <cell span="11" xml:id="G0003687"><text>Weight:<math xml:id="G0003688"><mrow xml:id="G0003689"><mfrac xml:id="G0003690"><mi xml:id="G0003691">Height</mi><mn xml:id="G0003692">3</mn></mfrac><mi xml:id="G0003693">kilograms</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003694">
                   <cell xml:id="G0003695"><text>Str</text></cell>
@@ -3078,12 +3078,12 @@
                   <cell xml:id="G0003734"><text>9</text></cell>
                 </row>
                 <row xml:id="G0003735">
-                  <cell border="none" xml:id="G0003736">Quadruped</cell>
-                  <cell border="none" span="11" xml:id="G0003737">Length:<math xml:id="G0003738"><mrow xml:id="G0003739"><msup xml:id="G0003740"><mi xml:id="G0003741">Size</mi><mn xml:id="G0003742">2</mn></msup><mo xml:id="G0003743"><times xml:id="G0003744"/></mo><mn xml:id="G0003745">35</mn><mi xml:id="G0003746">cm</mi></mrow></math>; Height:<math xml:id="G0003747"><mrow xml:id="G0003748"><mfrac xml:id="G0003749"><mn xml:id="G0003750">1</mn><mn xml:id="G0003751">3</mn></mfrac><mo xml:id="G0003752"><times xml:id="G0003753"/></mo><mi xml:id="G0003754">Length</mi></mrow></math></cell>
+                  <cell border="none" xml:id="G0003736"><text>Quadruped</text></cell>
+                  <cell border="none" span="11" xml:id="G0003737"><text>Length:<math xml:id="G0003738"><mrow xml:id="G0003739"><msup xml:id="G0003740"><mi xml:id="G0003741">Size</mi><mn xml:id="G0003742">2</mn></msup><mo xml:id="G0003743"><times xml:id="G0003744"/></mo><mn xml:id="G0003745">35</mn><mi xml:id="G0003746">cm</mi></mrow></math>; Height:<math xml:id="G0003747"><mrow xml:id="G0003748"><mfrac xml:id="G0003749"><mn xml:id="G0003750">1</mn><mn xml:id="G0003751">3</mn></mfrac><mo xml:id="G0003752"><times xml:id="G0003753"/></mo><mi xml:id="G0003754">Length</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003755">
                   <cell xml:id="G0003756"/>
-                  <cell span="11" xml:id="G0003757">Weight:<math xml:id="G0003758"><mrow xml:id="G0003759"><mfrac xml:id="G0003760"><mi xml:id="G0003761">Length</mi><mn xml:id="G0003762">2</mn></mfrac><mi xml:id="G0003763">kilograms</mi></mrow></math></cell>
+                  <cell span="11" xml:id="G0003757"><text>Weight:<math xml:id="G0003758"><mrow xml:id="G0003759"><mfrac xml:id="G0003760"><mi xml:id="G0003761">Length</mi><mn xml:id="G0003762">2</mn></mfrac><mi xml:id="G0003763">kilograms</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003764">
                   <cell xml:id="G0003765"><text>Str</text></cell>
@@ -3128,12 +3128,12 @@
                   <cell xml:id="G0003802"><text>6</text></cell>
                 </row>
                 <row xml:id="G0003803">
-                  <cell border="none" xml:id="G0003804">Serpent</cell>
-                  <cell border="none" span="11" xml:id="G0003805">Length:<math xml:id="G0003806"><mrow xml:id="G0003807"><msup xml:id="G0003808"><mi xml:id="G0003809">Size</mi><mn xml:id="G0003810">2</mn></msup><mo xml:id="G0003811"><times xml:id="G0003812"/></mo><mn xml:id="G0003813">40</mn><mi xml:id="G0003814">cm</mi></mrow></math>; Height:<math xml:id="G0003815"><mrow xml:id="G0003816"><mfrac xml:id="G0003817"><mn xml:id="G0003818">1</mn><mn xml:id="G0003819">8</mn></mfrac><mo xml:id="G0003820"><times xml:id="G0003821"/></mo><mi xml:id="G0003822">Length</mi></mrow></math></cell>
+                  <cell border="none" xml:id="G0003804"><text>Serpent</text></cell>
+                  <cell border="none" span="11" xml:id="G0003805"><text>Length:<math xml:id="G0003806"><mrow xml:id="G0003807"><msup xml:id="G0003808"><mi xml:id="G0003809">Size</mi><mn xml:id="G0003810">2</mn></msup><mo xml:id="G0003811"><times xml:id="G0003812"/></mo><mn xml:id="G0003813">40</mn><mi xml:id="G0003814">cm</mi></mrow></math>; Height:<math xml:id="G0003815"><mrow xml:id="G0003816"><mfrac xml:id="G0003817"><mn xml:id="G0003818">1</mn><mn xml:id="G0003819">8</mn></mfrac><mo xml:id="G0003820"><times xml:id="G0003821"/></mo><mi xml:id="G0003822">Length</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003823">
                   <cell xml:id="G0003824"/>
-                  <cell span="11" xml:id="G0003825">Weight:<math xml:id="G0003826"><mrow xml:id="G0003827"><mfrac xml:id="G0003828"><mi xml:id="G0003829">Height</mi><mn xml:id="G0003830">2</mn></mfrac><mi xml:id="G0003831">kilograms</mi></mrow></math></cell>
+                  <cell span="11" xml:id="G0003825"><text>Weight:<math xml:id="G0003826"><mrow xml:id="G0003827"><mfrac xml:id="G0003828"><mi xml:id="G0003829">Height</mi><mn xml:id="G0003830">2</mn></mfrac><mi xml:id="G0003831">kilograms</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003832">
                   <cell xml:id="G0003833"><text>Str</text></cell>
@@ -3182,12 +3182,12 @@
                   <cell xml:id="G0003872"><text>8</text></cell>
                 </row>
                 <row xml:id="G0003873">
-                  <cell border="none" xml:id="G0003874">Polymelic</cell>
-                  <cell border="none" span="11" xml:id="G0003875">Size:<math xml:id="G0003876"><mrow xml:id="G0003877"><msup xml:id="G0003878"><mi xml:id="G0003879">Size</mi><mn xml:id="G0003880">2</mn></msup><mo xml:id="G0003881"><times xml:id="G0003882"/></mo><mn xml:id="G0003883">30</mn><mi xml:id="G0003884">cm</mi></mrow></math>, in some dimension</cell>
+                  <cell border="none" xml:id="G0003874"><text>Polymelic</text></cell>
+                  <cell border="none" span="11" xml:id="G0003875"><text>Size:<math xml:id="G0003876"><mrow xml:id="G0003877"><msup xml:id="G0003878"><mi xml:id="G0003879">Size</mi><mn xml:id="G0003880">2</mn></msup><mo xml:id="G0003881"><times xml:id="G0003882"/></mo><mn xml:id="G0003883">30</mn><mi xml:id="G0003884">cm</mi></mrow></math>, in some dimension</text></cell>
                 </row>
                 <row xml:id="G0003885">
                   <cell xml:id="G0003886"/>
-                  <cell span="11" xml:id="G0003887">Weight:<math xml:id="G0003888"><mrow xml:id="G0003889"><mfrac xml:id="G0003890"><mi xml:id="G0003891">Size</mi><mn xml:id="G0003892">3</mn></mfrac><mi xml:id="G0003893">kilograms</mi></mrow></math></cell>
+                  <cell span="11" xml:id="G0003887"><text>Weight:<math xml:id="G0003888"><mrow xml:id="G0003889"><mfrac xml:id="G0003890"><mi xml:id="G0003891">Size</mi><mn xml:id="G0003892">3</mn></mfrac><mi xml:id="G0003893">kilograms</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003894">
                   <cell xml:id="G0003895"><text>Str</text></cell>
@@ -3236,12 +3236,12 @@
                   <cell xml:id="G0003934"><text>7</text></cell>
                 </row>
                 <row xml:id="G0003935">
-                  <cell border="none" xml:id="G0003936">Amorphous</cell>
-                  <cell border="none" span="11" xml:id="G0003937">Diameter:<math xml:id="G0003938"><mrow xml:id="G0003939"><msup xml:id="G0003940"><mi xml:id="G0003941">Size</mi><mn xml:id="G0003942">2</mn></msup><mo xml:id="G0003943"><times xml:id="G0003944"/></mo><mn xml:id="G0003945">50</mn><mi xml:id="G0003946">cm</mi></mrow></math></cell>
+                  <cell border="none" xml:id="G0003936"><text>Amorphous</text></cell>
+                  <cell border="none" span="11" xml:id="G0003937"><text>Diameter:<math xml:id="G0003938"><mrow xml:id="G0003939"><msup xml:id="G0003940"><mi xml:id="G0003941">Size</mi><mn xml:id="G0003942">2</mn></msup><mo xml:id="G0003943"><times xml:id="G0003944"/></mo><mn xml:id="G0003945">50</mn><mi xml:id="G0003946">cm</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003947">
                   <cell xml:id="G0003948"/>
-                  <cell span="11" xml:id="G0003949">Weight:<math xml:id="G0003950"><mrow xml:id="G0003951"><msup xml:id="G0003952"><mi xml:id="G0003953">Diameter</mi><mn xml:id="G0003954">3</mn></msup><mi xml:id="G0003955">kilograms</mi></mrow></math></cell>
+                  <cell span="11" xml:id="G0003949"><text>Weight:<math xml:id="G0003950"><mrow xml:id="G0003951"><msup xml:id="G0003952"><mi xml:id="G0003953">Diameter</mi><mn xml:id="G0003954">3</mn></msup><mi xml:id="G0003955">kilograms</mi></mrow></math></text></cell>
                 </row>
                 <row xml:id="G0003956">
                   <cell xml:id="G0003957"><text>Str</text></cell>
@@ -3337,7 +3337,7 @@
           <table xml:id="G0004053">
             <head xml:id="G0004054">
               <cell colfmt="l" xml:id="G0004055"><text>Current Hit Point value</text></cell>
-              <cell colfmt="p{3.5in}" xml:id="G0004056">Effect</cell>
+              <cell colfmt="p{3.5in}" xml:id="G0004056"><text>Effect</text></cell>
             </head>
             <row xml:id="G0004057"><cell xml:id="G0004058"><math xml:id="G0004059"><mrow xml:id="G0004060"><mfrac xml:id="G0004061"><mn xml:id="G0004062">1</mn><mn xml:id="G0004063">4</mn></mfrac></mrow></math></cell><cell xml:id="G0004064"><text>Character has one few actions (regular and movement) and -3 to all die rolls.</text></cell></row>
             <row xml:id="G0004065"><cell xml:id="G0004066"><text>0</text></cell><cell xml:id="G0004067"><text>Character falls unconscious.</text></cell></row>
