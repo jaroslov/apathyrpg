@@ -162,8 +162,8 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
   if ($Node->nodeType == XML_TEXT_NODE) {
     $spaces = array(" ","\t","\n","\r");
     $value = str_replace(" ","",$Node->nodeValue);
-    $value = str_replace("\t","t",$value);
-    $value = str_replace("\r","r",$value);
+    $value = str_replace("\t","",$value);
+    $value = str_replace("\r","",$value);
     $value = str_replace("\n","",$value);
     if (!$saverawtext) {
       if (0 < strlen($value)) {
