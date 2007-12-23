@@ -2055,31 +2055,31 @@
                 </figure>
                 <description-list xml:id="G0002611">
                   <item xml:id="G0002612">
-                    <description xml:id="G0002613">Slots</description>
+                    <description xml:id="G0002613"><text>Slots</text></description>
                     <text xml:id="G0002614">The amount of equipment that can be installed on the suit</text>
                   </item>
                   <item xml:id="G0002615">
-                    <description xml:id="G0002616">Armor</description>
+                    <description xml:id="G0002616"><text>Armor</text></description>
                     <text xml:id="G0002617">Starting armor value of the suit (All equal for P/S/C)</text>
                   </item>
                   <item xml:id="G0002618">
-                    <description xml:id="G0002619">Dex Minus</description>
+                    <description xml:id="G0002619"><text>Dex Minus</text></description>
                     <text xml:id="G0002620">Robots have some control-lag, this is represented by a DEX minus to the pilots DEX attribute</text>
                   </item>
                   <item xml:id="G0002621">
-                    <description xml:id="G0002622">A. Penalty</description>
+                    <description xml:id="G0002622"><text>A. Penalty</text></description>
                     <text xml:id="G0002623">Armor Penalty. For every full amount of this value, the DEX of the pilot is reduced by 1.</text>
                   </item>
                   <item xml:id="G0002624">
-                    <description xml:id="G0002625">Power</description>
+                    <description xml:id="G0002625"><text>Power</text></description>
                     <text xml:id="G0002626">is the number of PC per turn consumed by the robot, just to run basic needed systems</text>
                   </item>
                   <item xml:id="G0002627">
-                    <description xml:id="G0002628">Hit Points</description>
+                    <description xml:id="G0002628"><text>Hit Points</text></description>
                     <text xml:id="G0002629">The starting number of HP that a mecha has</text>
                   </item>
                   <item xml:id="G0002630">
-                    <description xml:id="G0002631">Strength</description>
+                    <description xml:id="G0002631"><text>Strength</text></description>
                     <text xml:id="G0002632">The starting strength value for the mecha</text>
                   </item>
                 </description-list>
@@ -2089,88 +2089,88 @@
                 <figure xml:id="G0002635">
                   <table xml:id="G0002636">
                     <head xml:id="G0002637">
-                      <cell colfmt="p{12em}" xml:id="G0002638">Frame Material (Added HP)</cell>
-                      <cell colfmt="p{4em}" xml:id="G0002639">Cost Factor</cell>
-                      <cell colfmt="p{4em}" xml:id="G0002640">Very Light (-20<percent xml:id="G0002641"/>)</cell>
-                      <cell colfmt="p{4em}" xml:id="G0002642">Light (-10<percent xml:id="G0002643"/>)</cell>
-                      <cell colfmt="p{4em}" xml:id="G0002644">Medium (0<percent xml:id="G0002645"/>)</cell>
-                      <cell colfmt="p{4em}" xml:id="G0002646">Heavy (+10<percent xml:id="G0002647"/>)</cell>
-                      <cell colfmt="p{4em}" xml:id="G0002648">Very Heavy (-10<percent xml:id="G0002649"/>)</cell>
+                      <cell colfmt="p{12em}" xml:id="G0002638"><text>Frame Material (Added HP)</text></cell>
+                      <cell colfmt="p{4em}" xml:id="G0002639"><text>Cost Factor</text></cell>
+                      <cell colfmt="p{4em}" xml:id="G0002640"><text>Very Light (-20<percent xml:id="G0002641"/>)</text></cell>
+                      <cell colfmt="p{4em}" xml:id="G0002642"><text>Light (-10<percent xml:id="G0002643"/>)</text></cell>
+                      <cell colfmt="p{4em}" xml:id="G0002644"><text>Medium (0<percent xml:id="G0002645"/>)</text></cell>
+                      <cell colfmt="p{4em}" xml:id="G0002646"><text>Heavy (+10<percent xml:id="G0002647"/>)</text></cell>
+                      <cell colfmt="p{4em}" xml:id="G0002648"><text>Very Heavy (-10<percent xml:id="G0002649"/>)</text></cell>
                     </head>
                     <row xml:id="G0002650">
-                      <cell xml:id="G0002651">Carbon Composite</cell>
-                      <cell xml:id="G0002652">-20<percent xml:id="G0002653"/></cell>
-                      <cell xml:id="G0002654">XXXX</cell>
-                      <cell xml:id="G0002655">XXXX</cell>
-                      <cell xml:id="G0002656">XXXX</cell>
-                      <cell xml:id="G0002657">XXXX</cell>
-                      <cell xml:id="G0002658">0</cell>
+                      <cell xml:id="G0002651"><text>Carbon Composite</text></cell>
+                      <cell xml:id="G0002652"><text>-20<percent xml:id="G0002653"/></text></cell>
+                      <cell xml:id="G0002654"><text>XXXX</text></cell>
+                      <cell xml:id="G0002655"><text>XXXX</text></cell>
+                      <cell xml:id="G0002656"><text>XXXX</text></cell>
+                      <cell xml:id="G0002657"><text>XXXX</text></cell>
+                      <cell xml:id="G0002658"><text>0</text></cell>
                     </row>
                     <row xml:id="G0002659">
-                      <cell xml:id="G0002660">Aluminum Alloy</cell>
-                      <cell xml:id="G0002661">-10<percent xml:id="G0002662"/></cell>
-                      <cell xml:id="G0002663">XXXX</cell>
-                      <cell xml:id="G0002664">XXXX</cell>
-                      <cell xml:id="G0002665">XXXX</cell>
-                      <cell xml:id="G0002666">0</cell>
-                      <cell xml:id="G0002667">20</cell>
+                      <cell xml:id="G0002660"><text>Aluminum Alloy</text></cell>
+                      <cell xml:id="G0002661"><text>-10<percent xml:id="G0002662"/></text></cell>
+                      <cell xml:id="G0002663"><text>XXXX</text></cell>
+                      <cell xml:id="G0002664"><text>XXXX</text></cell>
+                      <cell xml:id="G0002665"><text>XXXX</text></cell>
+                      <cell xml:id="G0002666"><text>0</text></cell>
+                      <cell xml:id="G0002667"><text>20</text></cell>
                     </row>
                     <row xml:id="G0002668">
-                      <cell xml:id="G0002669">Standard Steel</cell>
-                      <cell xml:id="G0002670">+0<percent xml:id="G0002671"/></cell>
-                      <cell xml:id="G0002672">XXXX</cell>
-                      <cell xml:id="G0002673">XXXX</cell>
-                      <cell xml:id="G0002674">0</cell>
-                      <cell xml:id="G0002675">2</cell>
-                      <cell xml:id="G0002676">40</cell>
+                      <cell xml:id="G0002669"><text>Standard Steel</text></cell>
+                      <cell xml:id="G0002670"><text>+0<percent xml:id="G0002671"/></text></cell>
+                      <cell xml:id="G0002672"><text>XXXX</text></cell>
+                      <cell xml:id="G0002673"><text>XXXX</text></cell>
+                      <cell xml:id="G0002674"><text>0</text></cell>
+                      <cell xml:id="G0002675"><text>2</text></cell>
+                      <cell xml:id="G0002676"><text>40</text></cell>
                     </row>
                     <row xml:id="G0002677">
-                      <cell xml:id="G0002678">Heavy Steel</cell>
-                      <cell xml:id="G0002679">+20<percent xml:id="G0002680"/></cell>
-                      <cell xml:id="G0002681">XXXX</cell>
-                      <cell xml:id="G0002682">0</cell>
-                      <cell xml:id="G0002683">2</cell>
-                      <cell xml:id="G0002684">4</cell>
-                      <cell xml:id="G0002685">60</cell>
+                      <cell xml:id="G0002678"><text>Heavy Steel</text></cell>
+                      <cell xml:id="G0002679"><text>+20<percent xml:id="G0002680"/></text></cell>
+                      <cell xml:id="G0002681"><text>XXXX</text></cell>
+                      <cell xml:id="G0002682"><text>0</text></cell>
+                      <cell xml:id="G0002683"><text>2</text></cell>
+                      <cell xml:id="G0002684"><text>4</text></cell>
+                      <cell xml:id="G0002685"><text>60</text></cell>
                     </row>
                     <row xml:id="G0002686">
-                      <cell xml:id="G0002687">Duralimin Alloy</cell>
-                      <cell xml:id="G0002688">+40<percent xml:id="G0002689"/></cell>
-                      <cell xml:id="G0002690">0</cell>
-                      <cell xml:id="G0002691">2</cell>
-                      <cell xml:id="G0002692">4</cell>
-                      <cell xml:id="G0002693">6</cell>
-                      <cell xml:id="G0002694">80</cell>
+                      <cell xml:id="G0002687"><text>Duralimin Alloy</text></cell>
+                      <cell xml:id="G0002688"><text>+40<percent xml:id="G0002689"/></text></cell>
+                      <cell xml:id="G0002690"><text>0</text></cell>
+                      <cell xml:id="G0002691"><text>2</text></cell>
+                      <cell xml:id="G0002692"><text>4</text></cell>
+                      <cell xml:id="G0002693"><text>6</text></cell>
+                      <cell xml:id="G0002694"><text>80</text></cell>
                     </row>
                     <row xml:id="G0002695">
-                      <cell xml:id="G0002696">Matrix Composite</cell>
-                      <cell xml:id="G0002697">+60<percent xml:id="G0002698"/></cell>
-                      <cell xml:id="G0002699">2</cell>
-                      <cell xml:id="G0002700">4</cell>
-                      <cell xml:id="G0002701">6</cell>
-                      <cell xml:id="G0002702">8</cell>
-                      <cell xml:id="G0002703">100</cell>
+                      <cell xml:id="G0002696"><text>Matrix Composite</text></cell>
+                      <cell xml:id="G0002697"><text>+60<percent xml:id="G0002698"/></text></cell>
+                      <cell xml:id="G0002699"><text>2</text></cell>
+                      <cell xml:id="G0002700"><text>4</text></cell>
+                      <cell xml:id="G0002701"><text>6</text></cell>
+                      <cell xml:id="G0002702"><text>8</text></cell>
+                      <cell xml:id="G0002703"><text>100</text></cell>
                     </row>
                     <row xml:id="G0002704">
-                      <cell xml:id="G0002705">Adamantite Alloy</cell>
-                      <cell xml:id="G0002706">+80<percent xml:id="G0002707"/></cell>
-                      <cell xml:id="G0002708">4</cell>
-                      <cell xml:id="G0002709">6</cell>
-                      <cell xml:id="G0002710">8</cell>
-                      <cell xml:id="G0002711">10</cell>
-                      <cell xml:id="G0002712">120</cell>
+                      <cell xml:id="G0002705"><text>Adamantite Alloy</text></cell>
+                      <cell xml:id="G0002706"><text>+80<percent xml:id="G0002707"/></text></cell>
+                      <cell xml:id="G0002708"><text>4</text></cell>
+                      <cell xml:id="G0002709"><text>6</text></cell>
+                      <cell xml:id="G0002710"><text>8</text></cell>
+                      <cell xml:id="G0002711"><text>10</text></cell>
+                      <cell xml:id="G0002712"><text>120</text></cell>
                     </row>
                     <row xml:id="G0002713">
-                      <cell xml:id="G0002714">Gundanium Alloy</cell>
-                      <cell xml:id="G0002715">+100<percent xml:id="G0002716"/></cell>
-                      <cell xml:id="G0002717">6</cell>
-                      <cell xml:id="G0002718">8</cell>
-                      <cell xml:id="G0002719">10</cell>
-                      <cell xml:id="G0002720">12</cell>
-                      <cell xml:id="G0002721">140</cell>
+                      <cell xml:id="G0002714"><text>Gundanium Alloy</text></cell>
+                      <cell xml:id="G0002715"><text>+100<percent xml:id="G0002716"/></text></cell>
+                      <cell xml:id="G0002717"><text>6</text></cell>
+                      <cell xml:id="G0002718"><text>8</text></cell>
+                      <cell xml:id="G0002719"><text>10</text></cell>
+                      <cell xml:id="G0002720"><text>12</text></cell>
+                      <cell xml:id="G0002721"><text>140</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0002722">Frame Style</caption>
+                  <caption xml:id="G0002722"><text>Frame Style</text></caption>
                 </figure>
                 <text xml:id="G0002723">The number of HP and Slots that a mecha has can be further altered by the internal frame<rsquo xml:id="G0002724"/>s style and material makup. Frame Style determines the efficiency of how bulky the internal frame of the mecha is, this adjusts the number of slots that are within the mecha. Frame Material is the makeup of the frame, what it is made of. Different materials offer decreased or added hit points to the mecha. Choose the type of Frame Style, as well as the Material. Cross reference them on the chart below, and multiply the number by the size of the mecha to get the CP cost for that configuration.</text>
                 <text xml:id="G0002725">For example, if you chose a <ldquo xml:id="G0002726"/>Light Matrix Composite<rdquo xml:id="G0002727"/> frame for a size 4 mecha, it will receive -10<percent xml:id="G0002728"/>to it<rsquo xml:id="G0002729"/>s slot total, would gain +60<percent xml:id="G0002730"/>to it<rsquo xml:id="G0002731"/>s hit points, and cost 16 CP (size of 4*4).</text>
@@ -2180,22 +2180,22 @@
                 <figure xml:id="G0002742">
                   <table xml:id="G0002743">
                     <head xml:id="G0002744">
-                      <cell colfmt="c" xml:id="G0002745">Type</cell>
-                      <cell colfmt="c" xml:id="G0002746">Ratio of P/S/C</cell>
-                      <cell colfmt="p{2.5in}" xml:id="G0002747">Description</cell>
+                      <cell colfmt="c" xml:id="G0002745"><text>Type</text></cell>
+                      <cell colfmt="c" xml:id="G0002746"><text>Ratio of P/S/C</text></cell>
+                      <cell colfmt="p{2.5in}" xml:id="G0002747"><text>Description</text></cell>
                     </head>
                     <row xml:id="G0002748">
-                      <cell xml:id="G0002749">Normal</cell>
-                      <cell xml:id="G0002750">100<percent xml:id="G0002751"/>/ 100<percent xml:id="G0002752"/>/ 100<percent xml:id="G0002753"/></cell>
-                      <cell xml:id="G0002754">Standard protective armor</cell>
+                      <cell xml:id="G0002749"><text>Normal</text></cell>
+                      <cell xml:id="G0002750"><text>100<percent xml:id="G0002751"/>/ 100<percent xml:id="G0002752"/>/ 100<percent xml:id="G0002753"/></text></cell>
+                      <cell xml:id="G0002754"><text>Standard protective armor</text></cell>
                     </row>
                     <row xml:id="G0002755">
-                      <cell xml:id="G0002756">Reactive</cell>
-                      <cell xml:id="G0002757">80<percent xml:id="G0002758"/>/ 80<percent xml:id="G0002759"/>/ 140<percent xml:id="G0002760"/></cell>
-                      <cell xml:id="G0002761">Armor will detonate against all attacks, blunting the blow of <C xml:id="G0002762"/> damage</cell>
+                      <cell xml:id="G0002756"><text>Reactive</text></cell>
+                      <cell xml:id="G0002757"><text>80<percent xml:id="G0002758"/>/ 80<percent xml:id="G0002759"/>/ 140<percent xml:id="G0002760"/></text></cell>
+                      <cell xml:id="G0002761"><text>Armor will detonate against all attacks, blunting the blow of <C xml:id="G0002762"/> damage</text></cell>
                     </row>
                     <row xml:id="G0002763">
-                      <cell xml:id="G0002764">Ultrahard</cell>
+                      <cell xml:id="G0002764"><text>Ultrahard</text></cell>
                       <cell xml:id="G0002765">130<percent xml:id="G0002766"/>/ 90<percent xml:id="G0002767"/>/ 80<percent xml:id="G0002768"/></cell>
                       <cell xml:id="G0002769">Extra hard armor fragments piercing weapons</cell>
                     </row>
