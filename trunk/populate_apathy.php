@@ -67,16 +67,18 @@ function insert_field_anon_element($BelongsTo) {
   return insert_field_data_element($BelongsTo,0,0,0);
 }
 
-function insert_structured_element($BelongsTo,$TagName,$ExtraName,$ExtraValue) {
+function insert_structured_element($BelongsTo,$Order,$TagName,$ExtraName,$ExtraValue) {
   $query = "INSERT INTO `Apathy`.`StructuredText` (
               `StructuredId` ,
               `BelongsTo` ,
+              `Order` ,
               `TagName` ,
               `ExtraName` ,
               `ExtraValue`
             )
             VALUES (
-              NULL , '".$BelongsTo."', '".$TagName."', '"
+              NULL , '".$BelongsTo."', '".$Order."', '"
+              .$TagName."', '"
               .$ExtraName."', '".$ExtraValue."'
             );";
   $resource = mysql_query($query);
@@ -96,7 +98,29 @@ function insert_raw_text_chunk($BelongsTo,$Text) {
   return mysql_insert_id();
 }
 
-function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
+function mark_as_populated () {
+  $query = "INSERT INTO `Apathy`.`Populated` (
+              `Populated`
+            ) VALUES (
+              NULL
+            );";
+  $resource = mysql_query($query);
+  return mysql_insert_id();  
+}
+
+function populated_p() {
+  $query = "SELECT *
+            FROM `Populated`
+            LIMIT 0 , 30 ";
+  $resource = mysql_query($query);
+  $populated = false;
+  while ($row = mysql_fetch_array($resource))
+    $populated = true;
+  mysql_free_result($result);
+  return $populated;
+}
+
+function populate_structured_text($Node,$ParentId,$Order,$saverawtext,$Indent) {
   $indent = "";
   $nindent = "";
   if (is_string($Indent)) {
@@ -110,6 +134,7 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
   $rawtext = null;
   $recurse = true;
   $default_print = false;
+  $inlinde = false;
   switch ($tagname) {
     // structure elements
     case "book": $saverawtext = false; break;
@@ -131,8 +156,18 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     case "head": $saverawtext = false; break;
     case "row": $saverawtext = false; break;
     case "cell": $saverawtext = false;
-      $extraname = "colfmt";
-      $extravalue = $Node->getAttribute($extraname); break;
+      $colfmt = "";
+      $border = "";
+      $span = "";
+      if ($Node->hasAttribute("colfmt"))
+        $colfmt = $Node->getAttribute("colfmt");
+      if ($Node->hasAttribute("border"))
+        $border = $Node->getAttribute("border");
+      if ($Node->hasAttribute("span"))
+        $span = $Node->getAttribute("span");
+      $extraname = "colfmt,border,span";
+      $extravalue = implode(",",array($colfmt,$border,$span));
+      break;
     case "caption": $saverawtext = false; break;
     case "note": $saverawtext = false; break;
     case "equation": $saverawtext = false; break;
@@ -191,17 +226,28 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
           .$Node->tagName."</span><br/>";
       }
   }
-  /*$node_id = null;
+  $node_id = null;
   if ($Node->nodeType == XML_ELEMENT_NODE) {
-    $node_id = insert_structured_element($ParentId,$tagname,$extraname,$extravalue);
-    if ($recurse)
-      foreach ($Node->childNodes as $Child)
-        populate_structured_text($Child,$node_id,$saverawtext,$nindent);
-  } else if ($Node->nodeType == XML_TEXT_NODE) {
-    if ($saverawtext)
-      
-  }*/
-  if ($Node->nodeType == XML_TEXT_NODE) {
+    if ($tagname === "text") {
+      $sxml = simplexml_import_dom($Node);
+      $node_id = insert_structured_element($ParentId,$Order,"text","","");
+      insert_raw_text_chunk($node_id,$sxml->asXML());
+      return true;
+    } else {
+      $node_id = insert_structured_element($ParentId,$Order,$tagname,$extraname,$extravalue);
+      if ($recurse) {
+        $order = 0;
+        foreach ($Node->childNodes as $Child) {
+          $increment = populate_structured_text($Child,$node_id,$order,$saverawtext,$nindent);
+          if ($increment)
+            $order++;
+        }
+      }
+      return true;
+    }
+  }
+  return false;
+  /*if ($Node->nodeType == XML_TEXT_NODE) {
     $spaces = array(" ","\t","\n","\r");
     $value = str_replace(" ","",$Node->nodeValue);
     $value = str_replace("\t","",$value);
@@ -220,30 +266,33 @@ function populate_structured_text($Node,$ParentId,$saverawtext,$Indent) {
     echo $indent.$ParentId."(".$saverawtext."): ".$tagname."<br/>";
   }
   foreach ($Node->childNodes as $Child)
-    populate_structured_text($Child,$node_id,$saverawtext,$nindent);
+    populate_structured_text($Child,$node_id,$saverawtext,$nindent);*/
 }
 
 function populate_database($Apathy) {
+  if (!populated_p())
+    force_populate_database($Apathy);
+  return populated_p();
+}
+
+function force_populate_database($Apathy) {
+  mark_as_populated();
   $books = $Apathy->getElementsByTagName("book");
   for ($bad = 0; $bad < $books->length; $bad++) {
     $book = $books->item($bad);
-    populate_structured_text($book,0,false,"");
-    echo "<p>".$book->getAttribute("xml:id")."</p>";
+    populate_structured_text($book,0,$bad,false,"");
   }
-  return "<b>Books Finished</b><br/>";
   $categories = $Apathy->getElementsByTagName("category");
   for ($cat = 0; $cat < $categories->length; $cdx++) {
     $category = $categories->item($cdx);
     $path = $category->getAttribute("name");
     // (1) insert the category
     $cat_id = insert_raw_category_element($path);
-    echo "<p><em>".$cat_id."</em> ".$path."</p>";
     foreach ($category->childNodes as $datum_p)
       if ("datum" === $datum_p->tagName) {
         $datum_name = $datum_p->getAttribute("name");
         // (2) insert the datum
         $datum_id = insert_raw_datum_element($cat_id,$datum_name);
-        echo "<p>&nbsp;&nbsp;<em>".$datum_id."</em> ".$datum_name."</p>";
         foreach ($datum_p->childNodes as $field_p)
           if ("field" === $field_p->tagName) {
             // (3) insert the fields
@@ -264,6 +313,9 @@ function populate_database($Apathy) {
   }
 }
 
-echo populate_database($Apathy);
+if (populate_database($Apathy))
+  echo "Populated.";
+else
+  echo "Not Populated.";
 
 ?>
