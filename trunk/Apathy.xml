@@ -2347,7 +2347,7 @@
 		      </text></cell>
                       <cell xml:id="G0002905"><text>
                         <math xml:id="G0002906"><mfrac xml:id="G0002907"><mrow xml:id="G0002908"><mo xml:id="G0002909">(</mo><mi xml:id="G0002910">Size</mi><mo xml:id="G0002911">-</mo><mn xml:id="G0002912">1</mn><mo xml:id="G0002913">)</mo><mi xml:id="G0002914">CP</mi></mrow><mrow xml:id="G0002915"><mi xml:id="G0002916">+1</mi></mrow></mfrac></math>
-                      <text></cell>
+		      </text></cell>
                       <cell xml:id="G0002917"><text>DEX can only be used to reduce the DEX minus to a +0.</text></cell>
                     </row>
                     <row xml:id="G0002918">
@@ -2497,7 +2497,7 @@
                       <cell xml:id="G0003152">
                         <text><notappl xml:id="G0003153"/></text>
                       </cell>
-                      <cell xml:id="G0003154"><text>1<text></cell>
+                      <cell xml:id="G0003154"><text>1</text></cell>
                       <cell xml:id="G0003155"><text>For jet system only</text></cell>
                     </row>
                   </table>
