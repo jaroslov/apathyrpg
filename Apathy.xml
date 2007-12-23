@@ -1213,49 +1213,49 @@
             <figure xml:id="G0001740">
               <table xml:id="G0001741">
                 <head xml:id="G0001742">
-                  <cell colfmt="l" xml:id="G0001743">Option</cell>
-                  <cell colfmt="p{2.5in}" xml:id="G0001744">Effect</cell>
-                  <cell colfmt="r" xml:id="G0001745">Cost</cell>
+                  <cell colfmt="l" xml:id="G0001743"><text>Option</text></cell>
+                  <cell colfmt="p{2.5in}" xml:id="G0001744"><text>Effect</text></cell>
+                  <cell colfmt="r" xml:id="G0001745"><text>Cost</text></cell>
                 </head>
                 <row xml:id="G0001746">
-                  <cell xml:id="G0001747">Laser Sight</cell>
-                  <cell xml:id="G0001748">Gives +1 to strike (no bonus for sprays or wild firing) at ranges under 100 yards.</cell>
-                  <cell xml:id="G0001749"><dollar xml:id="G0001750"/>100</cell>
+                  <cell xml:id="G0001747"><text>Laser Sight</text></cell>
+                  <cell xml:id="G0001748"><text>Gives +1 to strike (no bonus for sprays or wild firing) at ranges under 100 yards.</text></cell>
+                  <cell xml:id="G0001749"><text><dollar xml:id="G0001750"/>100</text></cell>
                 </row>
                 <row xml:id="G0001751">
-                  <cell xml:id="G0001752">Compensate Barrel</cell>
-                  <cell xml:id="G0001753">For burst-fire: 50<percent xml:id="G0001754"/> of the missing bullets now hit.  Makes gun LOUD, easy to see</cell>
-                  <cell xml:id="G0001755">+20<percent xml:id="G0001756"/></cell>
+                  <cell xml:id="G0001752"><text>Compensate Barrel</text></cell>
+                  <cell xml:id="G0001753"><text>For burst-fire: 50<percent xml:id="G0001754"/> of the missing bullets now hit.  Makes gun LOUD, easy to see</text></cell>
+                  <cell xml:id="G0001755"><text>+20<percent xml:id="G0001756"/></text></cell>
                 </row>
                 <row xml:id="G0001757">
-                  <cell xml:id="G0001758">Optical Scope</cell>
-                  <cell xml:id="G0001759">Gives extra +2 to strike for single aimed shots, allows long-distance firing.</cell>
-                  <cell xml:id="G0001760"><dollar xml:id="G0001761"/>200</cell>
+                  <cell xml:id="G0001758"><text>Optical Scope</text></cell>
+                  <cell xml:id="G0001759"><text>Gives extra +2 to strike for single aimed shots, allows long-distance firing.</text></cell>
+                  <cell xml:id="G0001760"><text><dollar xml:id="G0001761"/>200</text></cell>
                 </row>
                 <row xml:id="G0001762">
-                  <cell xml:id="G0001763">Sniper Scope</cell>
-                  <cell xml:id="G0001764">Gives extra +3 to strike for single aimed shots, allows long-distance firing.</cell>
-                  <cell xml:id="G0001765"><dollar xml:id="G0001766"/>2000</cell>
+                  <cell xml:id="G0001763"><text>Sniper Scope</text></cell>
+                  <cell xml:id="G0001764"><text>Gives extra +3 to strike for single aimed shots, allows long-distance firing.</text></cell>
+                  <cell xml:id="G0001765"><text><dollar xml:id="G0001766"/>2000</text></cell>
                 </row>
                 <row xml:id="G0001767">
-                  <cell xml:id="G0001768">Weighted Barrel</cell>
-                  <cell xml:id="G0001769">Gives +1 to strike on non-aim shots only; Lower str req by 1; Makes gun hard to conceal.</cell>
-                  <cell xml:id="G0001770">+10<percent xml:id="G0001771"/></cell>
+                  <cell xml:id="G0001768"><text>Weighted Barrel</text></cell>
+                  <cell xml:id="G0001769"><text>Gives +1 to strike on non-aim shots only; Lower str req by 1; Makes gun hard to conceal.</text></cell>
+                  <cell xml:id="G0001770"><text>+10<percent xml:id="G0001771"/></text></cell>
                 </row>
                 <row xml:id="G0001772">
-                  <cell xml:id="G0001773">Flash Suppressor</cell>
-                  <cell xml:id="G0001774">Hides muzzle flash.  CANNOT be used with compensated barrel.</cell>
-                  <cell xml:id="G0001775">+5<percent xml:id="G0001776"/></cell>
+                  <cell xml:id="G0001773"><text>Flash Suppressor</text></cell>
+                  <cell xml:id="G0001774"><text>Hides muzzle flash.  CANNOT be used with compensated barrel.</text></cell>
+                  <cell xml:id="G0001775"><text>+5<percent xml:id="G0001776"/></text></cell>
                 </row>
                 <row xml:id="G0001777">
-                  <cell xml:id="G0001778">Silencer</cell>
-                  <cell xml:id="G0001779">Hides muzzle flash and makes gun nearly silent.  Very large<mdash xml:id="G0001780"/>no concealment.</cell>
-                  <cell xml:id="G0001781">+15<percent xml:id="G0001782"/></cell>
+                  <cell xml:id="G0001778"><text>Silencer</text></cell>
+                  <cell xml:id="G0001779"><text>Hides muzzle flash and makes gun nearly silent.  Very large<mdash xml:id="G0001780"/>no concealment.</text></cell>
+                  <cell xml:id="G0001781"><text>+15<percent xml:id="G0001782"/></text></cell>
                 </row>
                 <row xml:id="G0001783">
-                  <cell xml:id="G0001784">Match Trigger</cell>
-                  <cell xml:id="G0001785">Gives +1 to strike for single aimed shots.  Cannot be added to full-auto weapons.</cell>
-                  <cell xml:id="G0001786"><dollar xml:id="G0001787"/>200</cell>
+                  <cell xml:id="G0001784"><text>Match Trigger</text></cell>
+                  <cell xml:id="G0001785"><text>Gives +1 to strike for single aimed shots.  Cannot be added to full-auto weapons.</text></cell>
+                  <cell xml:id="G0001786"><text><dollar xml:id="G0001787"/>200</text></cell>
                 </row>
               </table>
             </figure>
@@ -1409,105 +1409,105 @@
             <figure xml:id="G0001965">
               <table xml:id="G0001966">
                 <head xml:id="G0001967">
-                  <cell colfmt="c" xml:id="G0001968">Level of Ritual Magic</cell>
-                  <cell colfmt="r" xml:id="G0001969">1</cell>
-                  <cell colfmt="r" xml:id="G0001970">2</cell>
-                  <cell colfmt="r" xml:id="G0001971">3</cell>
-                  <cell colfmt="r" xml:id="G0001972">4</cell>
-                  <cell colfmt="r" xml:id="G0001973">5</cell>
-                  <cell colfmt="r" xml:id="G0001974">6</cell>
-                  <cell colfmt="r" xml:id="G0001975">7</cell>
-                  <cell colfmt="r" xml:id="G0001976">8</cell>
-                  <cell colfmt="r" xml:id="G0001977">9</cell>
-                  <cell colfmt="r" xml:id="G0001978">10</cell>
+                  <cell colfmt="c" xml:id="G0001968"><text>Level of Ritual Magic</text></cell>
+                  <cell colfmt="r" xml:id="G0001969"><text>1</text></cell>
+                  <cell colfmt="r" xml:id="G0001970"><text>2</text></cell>
+                  <cell colfmt="r" xml:id="G0001971"><text>3</text></cell>
+                  <cell colfmt="r" xml:id="G0001972"><text>4</text></cell>
+                  <cell colfmt="r" xml:id="G0001973"><text>5</text></cell>
+                  <cell colfmt="r" xml:id="G0001974"><text>6</text></cell>
+                  <cell colfmt="r" xml:id="G0001975"><text>7</text></cell>
+                  <cell colfmt="r" xml:id="G0001976"><text>8</text></cell>
+                  <cell colfmt="r" xml:id="G0001977"><text>9</text></cell>
+                  <cell colfmt="r" xml:id="G0001978"><text>10</text></cell>
                 </head>
                 <row xml:id="G0001979">
-                  <cell xml:id="G0001980">1</cell>
-                  <cell xml:id="G0001981">3</cell>
+                  <cell xml:id="G0001980"><text>1</text></cell>
+                  <cell xml:id="G0001981"><text>3</text></cell>
                 </row>
                 <row xml:id="G0001982">
-                  <cell xml:id="G0001983">2</cell>
-                  <cell xml:id="G0001984">5</cell>
-                  <cell xml:id="G0001985">2</cell>
+                  <cell xml:id="G0001983"><text>2</text></cell>
+                  <cell xml:id="G0001984"><text>5</text></cell>
+                  <cell xml:id="G0001985"><text>2</text></cell>
                 </row>
                 <row xml:id="G0001986">
-                  <cell xml:id="G0001987">3</cell>
-                  <cell xml:id="G0001988">7</cell>
-                  <cell xml:id="G0001989">4</cell>
-                  <cell xml:id="G0001990">2</cell>
+                  <cell xml:id="G0001987"><text>3</text></cell>
+                  <cell xml:id="G0001988"><text>7</text></cell>
+                  <cell xml:id="G0001989"><text>4</text></cell>
+                  <cell xml:id="G0001990"><text>2</text></cell>
                 </row>
                 <row xml:id="G0001991">
-                  <cell xml:id="G0001992">4</cell>
-                  <cell xml:id="G0001993">8</cell>
-                  <cell xml:id="G0001994">5</cell>
-                  <cell xml:id="G0001995">3</cell>
-                  <cell xml:id="G0001996">2</cell>
+                  <cell xml:id="G0001992"><text>4</text></cell>
+                  <cell xml:id="G0001993"><text>8</text></cell>
+                  <cell xml:id="G0001994"><text>5</text></cell>
+                  <cell xml:id="G0001995"><text>3</text></cell>
+                  <cell xml:id="G0001996"><text>2</text></cell>
                 </row>
                 <row xml:id="G0001997">
-                  <cell xml:id="G0001998">5</cell>
-                  <cell xml:id="G0001999">9</cell>
-                  <cell xml:id="G0002000">6</cell>
-                  <cell xml:id="G0002001">4</cell>
-                  <cell xml:id="G0002002">3</cell>
-                  <cell xml:id="G0002003">2</cell>
+                  <cell xml:id="G0001998"><text>5</text></cell>
+                  <cell xml:id="G0001999"><text>9</text></cell>
+                  <cell xml:id="G0002000"><text>6</text></cell>
+                  <cell xml:id="G0002001"><text>4</text></cell>
+                  <cell xml:id="G0002002"><text>3</text></cell>
+                  <cell xml:id="G0002003"><text>2</text></cell>
                 </row>
                 <row xml:id="G0002004">
-                  <cell xml:id="G0002005">6</cell>
-                  <cell xml:id="G0002006">10</cell>
-                  <cell xml:id="G0002007">7</cell>
-                  <cell xml:id="G0002008">5</cell>
-                  <cell xml:id="G0002009">4</cell>
-                  <cell xml:id="G0002010">3</cell>
-                  <cell xml:id="G0002011">2</cell>
+                  <cell xml:id="G0002005"><text>6</text></cell>
+                  <cell xml:id="G0002006"><text>10</text></cell>
+                  <cell xml:id="G0002007"><text>7</text></cell>
+                  <cell xml:id="G0002008"><text>5</text></cell>
+                  <cell xml:id="G0002009"><text>4</text></cell>
+                  <cell xml:id="G0002010"><text>3</text></cell>
+                  <cell xml:id="G0002011"><text>2</text></cell>
                 </row>
                 <row xml:id="G0002012">
-                  <cell xml:id="G0002013">7</cell>
-                  <cell xml:id="G0002014">11</cell>
-                  <cell xml:id="G0002015">8</cell>
-                  <cell xml:id="G0002016">6</cell>
-                  <cell xml:id="G0002017">5</cell>
-                  <cell xml:id="G0002018">4</cell>
-                  <cell xml:id="G0002019">3</cell>
-                  <cell xml:id="G0002020">2</cell>
+                  <cell xml:id="G0002013"><text>7</text></cell>
+                  <cell xml:id="G0002014"><text>11</text></cell>
+                  <cell xml:id="G0002015"><text>8</text></cell>
+                  <cell xml:id="G0002016"><text>6</text></cell>
+                  <cell xml:id="G0002017"><text>5</text></cell>
+                  <cell xml:id="G0002018"><text>4</text></cell>
+                  <cell xml:id="G0002019"><text>3</text></cell>
+                  <cell xml:id="G0002020"><text>2</text></cell>
                 </row>
                 <row xml:id="G0002021">
-                  <cell xml:id="G0002022">8</cell>
-                  <cell xml:id="G0002023">12</cell>
-                  <cell xml:id="G0002024">8</cell>
-                  <cell xml:id="G0002025">7</cell>
-                  <cell xml:id="G0002026">6</cell>
-                  <cell xml:id="G0002027">5</cell>
-                  <cell xml:id="G0002028">4</cell>
-                  <cell xml:id="G0002029">3</cell>
-                  <cell xml:id="G0002030">2</cell>
+                  <cell xml:id="G0002022"><text>8</text></cell>
+                  <cell xml:id="G0002023"><text>12</text></cell>
+                  <cell xml:id="G0002024"><text>8</text></cell>
+                  <cell xml:id="G0002025"><text>7</text></cell>
+                  <cell xml:id="G0002026"><text>6</text></cell>
+                  <cell xml:id="G0002027"><text>5</text></cell>
+                  <cell xml:id="G0002028"><text>4</text></cell>
+                  <cell xml:id="G0002029"><text>3</text></cell>
+                  <cell xml:id="G0002030"><text>2</text></cell>
                 </row>
                 <row xml:id="G0002031">
-                  <cell xml:id="G0002032">9</cell>
-                  <cell xml:id="G0002033">12</cell>
-                  <cell xml:id="G0002034">8</cell>
-                  <cell xml:id="G0002035">7</cell>
-                  <cell xml:id="G0002036">7</cell>
-                  <cell xml:id="G0002037">6</cell>
-                  <cell xml:id="G0002038">5</cell>
-                  <cell xml:id="G0002039">4</cell>
-                  <cell xml:id="G0002040">3</cell>
-                  <cell xml:id="G0002041">2</cell>
+                  <cell xml:id="G0002032"><text>9</text></cell>
+                  <cell xml:id="G0002033"><text>12</text></cell>
+                  <cell xml:id="G0002034"><text>8</text></cell>
+                  <cell xml:id="G0002035"><text>7</text></cell>
+                  <cell xml:id="G0002036"><text>7</text></cell>
+                  <cell xml:id="G0002037"><text>6</text></cell>
+                  <cell xml:id="G0002038"><text>5</text></cell>
+                  <cell xml:id="G0002039"><text>4</text></cell>
+                  <cell xml:id="G0002040"><text>3</text></cell>
+                  <cell xml:id="G0002041"><text>2</text></cell>
                 </row>
                 <row xml:id="G0002042">
-                  <cell xml:id="G0002043">10</cell>
-                  <cell xml:id="G0002044">12</cell>
-                  <cell xml:id="G0002045">8</cell>
-                  <cell xml:id="G0002046">7</cell>
-                  <cell xml:id="G0002047">7</cell>
-                  <cell xml:id="G0002048">6</cell>
-                  <cell xml:id="G0002049">5</cell>
-                  <cell xml:id="G0002050">4</cell>
-                  <cell xml:id="G0002051">3</cell>
-                  <cell xml:id="G0002052">3</cell>
-                  <cell xml:id="G0002053">1</cell>
+                  <cell xml:id="G0002043"><text>10</text></cell>
+                  <cell xml:id="G0002044"><text>12</text></cell>
+                  <cell xml:id="G0002045"><text>8</text></cell>
+                  <cell xml:id="G0002046"><text>7</text></cell>
+                  <cell xml:id="G0002047"><text>7</text></cell>
+                  <cell xml:id="G0002048"><text>6</text></cell>
+                  <cell xml:id="G0002049"><text>5</text></cell>
+                  <cell xml:id="G0002050"><text>4</text></cell>
+                  <cell xml:id="G0002051"><text>3</text></cell>
+                  <cell xml:id="G0002052"><text>3</text></cell>
+                  <cell xml:id="G0002053"><text>1</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0002054">Rank of Ritual Spells per Ritual Magic Level</caption>
+              <caption xml:id="G0002054"><text>Rank of Ritual Spells per Ritual Magic Level</text></caption>
             </figure>
             <text xml:id="G0002055">Ritual magicians may also perform a ritual in a special manner, infusing the spell into an object, such as a weapon or magical totem. Infusing a spell takes the same amount of time as performing the ritual in normal fashion. Once the spell is infused in an item, it may be released very quickly. Releasing a charge (the energy and magical effects of a stored ritual) requires 1 action, regardless of the original casting time of the spell. Infused ritual items are only good for twenty-four hours, at which point the charge is lost and the item returns to normal. The ritualist may create charges of extended duration when he first performs the infusion, but each 24 hours of time requires another batch of the requisite spell ingredients (not Mana). Therefore, it can become very expensive to make long duration infused items. An infused item may be used by anyone, not just the ritualist.</text>
           </section>
@@ -1527,44 +1527,44 @@
             <figure xml:id="G0002077">
               <table xml:id="G0002078">
                 <head xml:id="G0002079">
-                  <cell colfmt="p{6em}" xml:id="G0002080">Bonus</cell>
-                  <cell colfmt="p{3.25in}" xml:id="G0002081">Description</cell>
-                  <cell colfmt="p{1.5in}" xml:id="G0002082">Cost</cell>
+                  <cell colfmt="p{6em}" xml:id="G0002080"><text>Bonus</text></cell>
+                  <cell colfmt="p{3.25in}" xml:id="G0002081"><text>Description</text></cell>
+                  <cell colfmt="p{1.5in}" xml:id="G0002082"><text>Cost</text></cell>
                 </head>
                 <row xml:id="G0002083">
-                  <cell xml:id="G0002084">-1</cell>
-                  <cell xml:id="G0002085">A gesture made by the Faithful, or a crude marking (such as a cross hastily drawn on a parchment)</cell>
-                  <cell xml:id="G0002086"><dollar xml:id="G0002087"/>0</cell>
+                  <cell xml:id="G0002084"><text>-1</text></cell>
+                  <cell xml:id="G0002085"><text>A gesture made by the Faithful, or a crude marking (such as a cross hastily drawn on a parchment)</text></cell>
+                  <cell xml:id="G0002086"><text><dollar xml:id="G0002087"/>0</text></cell>
                 </row>
                 <row xml:id="G0002088">
-                  <cell xml:id="G0002089">0</cell>
-                  <cell xml:id="G0002090">An inexpensive <ldquo xml:id="G0002091"/>trinket<rdquo xml:id="G0002092"/> type holy symbol, or a common copy of a holy book / scripture. Generally mass-produced. Might be given away at a particular church, or might be available for purchase. Also a holy symbol made by a marginally skilled craftsman or apprentice. Example: prayer beads, a simple carved wooden cross, a mass-printed holy book, etc.</cell>
-                  <cell xml:id="G0002093">Cost: <dollar xml:id="G0002094"/>5 or more.</cell>
+                  <cell xml:id="G0002089"><text>0</text></cell>
+                  <cell xml:id="G0002090"><text>An inexpensive <ldquo xml:id="G0002091"/>trinket<rdquo xml:id="G0002092"/> type holy symbol, or a common copy of a holy book / scripture. Generally mass-produced. Might be given away at a particular church, or might be available for purchase. Also a holy symbol made by a marginally skilled craftsman or apprentice. Example: prayer beads, a simple carved wooden cross, a mass-printed holy book, etc.</text></cell>
+                  <cell xml:id="G0002093"><text>Cost: <dollar xml:id="G0002094"/>5 or more.</text></cell>
                 </row>
                 <row xml:id="G0002095">
-                  <cell xml:id="G0002096">1</cell>
-                  <cell xml:id="G0002097">An unusually high quality trinket made by a good craftsman (such as a fine gold crucifix necklace). Or, a good quality weapon bearing religious inscription and symbols. Or, an item from a particular church which is not available to the general public (such as the robes of an ordained priest), or a fine quality holy book.</cell>
-                  <cell xml:id="G0002098">Cost: At least <dollar xml:id="G0002099"/>500 plus the cost of the <ldquo xml:id="G0002100"/>base item<rdquo xml:id="G0002101"/></cell>
+                  <cell xml:id="G0002096"><text>1</text></cell>
+                  <cell xml:id="G0002097"><text>An unusually high quality trinket made by a good craftsman (such as a fine gold crucifix necklace). Or, a good quality weapon bearing religious inscription and symbols. Or, an item from a particular church which is not available to the general public (such as the robes of an ordained priest), or a fine quality holy book.</text></cell>
+                  <cell xml:id="G0002098"><text>Cost: At least <dollar xml:id="G0002099"/>500 plus the cost of the <ldquo xml:id="G0002100"/>base item<rdquo xml:id="G0002101"/></text></cell>
                 </row>
                 <row xml:id="G0002102">
-                  <cell xml:id="G0002103">2</cell>
-                  <cell xml:id="G0002104">A trinket or jewelry made by a master craftsman and of fine pedigree and history. Or, a weapon or other object of superior quality with appropriate engravings and blessings.</cell>
-                  <cell xml:id="G0002105">Cost: at least <dollar xml:id="G0002106"/>5000 plus the base cost of the item.</cell>
+                  <cell xml:id="G0002103"><text>2</text></cell>
+                  <cell xml:id="G0002104"><text>A trinket or jewelry made by a master craftsman and of fine pedigree and history. Or, a weapon or other object of superior quality with appropriate engravings and blessings.</text></cell>
+                  <cell xml:id="G0002105"><text>Cost: at least <dollar xml:id="G0002106"/>5000 plus the base cost of the item.</text></cell>
                 </row>
                 <row xml:id="G0002107">
-                  <cell xml:id="G0002108">3</cell>
-                  <cell xml:id="G0002109">An artifact or relic of religious significance, generally has a famous history within the church, or a Legendary quality weapon blessed by a member of the church with Faith: 7 or higher.</cell>
-                  <cell xml:id="G0002110">Cost: <dollar xml:id="G0002111"/>1,000,000 or more.</cell>
+                  <cell xml:id="G0002108"><text>3</text></cell>
+                  <cell xml:id="G0002109"><text>An artifact or relic of religious significance, generally has a famous history within the church, or a Legendary quality weapon blessed by a member of the church with Faith: 7 or higher.</text></cell>
+                  <cell xml:id="G0002110"><text>Cost: <dollar xml:id="G0002111"/>1,000,000 or more.</text></cell>
                 </row>
                 <row xml:id="G0002112">
-                  <cell xml:id="G0002113">4</cell>
-                  <cell xml:id="G0002114">An artifact or relic of tremendous religious significance. Items like this are literally worshipped in the particular religion. There will only be a handful of items like this in existence for any one religion at any given time (if any at all). Examples: Spear of Destiny, Holy Grail, piece of the true cross, skull of a major saint.</cell>
-                  <cell xml:id="G0002115">Cost: priceless.</cell>
+                  <cell xml:id="G0002113"><text>4</text></cell>
+                  <cell xml:id="G0002114"><text>An artifact or relic of tremendous religious significance. Items like this are literally worshipped in the particular religion. There will only be a handful of items like this in existence for any one religion at any given time (if any at all). Examples: Spear of Destiny, Holy Grail, piece of the true cross, skull of a major saint.</text></cell>
+                  <cell xml:id="G0002115"><text>Cost: priceless.</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0002116">Bonuses provided by a Holy Symbol</caption>
+              <caption xml:id="G0002116"><text>Bonuses provided by a Holy Symbol</text></caption>
             </figure>
-            <text xml:id="G0002117">Anytime a Faith magic caster has to make a magic-related roll ( <ldquo xml:id="G0002118"/>Magical Control<rdquo xml:id="G0002119"/> roll, or a strike roll associated with a magical spell, etc), use the caster<rsquo xml:id="G0002120"/>s Faith skill. Whatever holy symbol that the caster has is then applied as a bonus to that roll.</text>
+            <text xml:id="G0002117">Anytime a Faith magic caster has to make a magic-related roll (<ldquo xml:id="G0002118"/>Magical Control<rdquo xml:id="G0002119"/> roll, or a strike roll associated with a magical spell, etc), use the caster<rsquo xml:id="G0002120"/>s Faith skill. Whatever holy symbol that the caster has is then applied as a bonus to that roll.</text>
           </section>
           <section kind="section" xml:id="G0002121">
             <title xml:id="G0002122">Martial Magic / Super Power Combat</title>
@@ -1603,46 +1603,46 @@
             <text xml:id="G0002168">Beast Magic is a unique magic school. It is the art of summoning creatures to aid their master. Any magic user (spellcasting, ritual, etc.) may purchase summoning spells as normal. However, a spellcaster that specializes in Beast Magic (and has no other magical aptitudes) may purchase summoning spells as if they are one rank lower than normal.</text>
             <text xml:id="G0002169">There are five basic summoning spells:</text>
             <description-list xml:id="G0002170">
-              <item xml:id="G0002171"><description xml:id="G0002172">Gate</description><text>allows the summoner to call forth a creature that appears somewhere near the caster. The location of appearance must be within direct line of sight of the caster, and no more than 30 feet away. Once the creature appears, it is free to do whatever it wants based on its own free willthe caster simply transports it to a new location. It will return to its original location afterrounds.</text></item>
-              <item xml:id="G0002173"><description xml:id="G0002174">Summon</description><text>allows the summoner to call forth a creature near the caster (like Gate). This creature is bound to follow SIMPLE directives given by the caster. The creature will not act in a hostile manner towards the caster. If a summoner casts another Summon spell while another one is currently active, he must make a Magical Control roll. Failure means that the new spell fails and the first expires immediately.</text></item>
-              <item xml:id="G0002175"><description xml:id="G0002176">Pact</description><text>allows the caster to form a complex bond with a creature, making that creature his Familiar. The caster must first find a creature to use pact withsuch as summoning the creature by gate or summon) The caster maycontrolthe creature in a manner similar to summon. This is permanent and lasts until either the caster or the Familiar is slain. If the caster casts Pact a while he already has a Familiar, the original spell expires and the caster suffers. While active, the Familar is aware of what happens to the caster, and vice versa. A basic empathic link exists between the creature and the caster. The caster may make a Magical Control check in order tolisten inon any of the familiars senses at any point in time.</text></item>
-              <item xml:id="G0002177"><description xml:id="G0002178">Control</description><text>is very similar to summon except that the caster has exacting and specific control over the creature(s) summoned. The caster can literally operate the creature(s) as though byremote control. While Control is active, the summoner is responsible for literally every action made by the summoned creatureit has no will of its own.</text></item>
-              <item xml:id="G0002179"><description xml:id="G0002180">Transform</description><text>is a powerful technique in which the caster takes the form of the creature summoned. The caster literally becomes the creature in question, but retains his own mental state and skills in addition to the skills of the summoned creature. All physical attributes (STR, DEX, BLD) of the summoned creature replace those of the character, but the character retains his own mental attributes (INT, WIS, WIL, CHA). This effect lasts 4xturns. It cannot be ended at will. The transformation requires three actions to complete. When the spell expires, the caster will be very tired, and will suffer the effects of slow, loosing 1 action per turn forturns.</text></item>
+              <item xml:id="G0002171"><description xml:id="G0002172"><text>Gate</text></description><text>allows the summoner to call forth a creature that appears somewhere near the caster. The location of appearance must be within direct line of sight of the caster, and no more than 30 feet away. Once the creature appears, it is free to do whatever it wants based on its own free willthe caster simply transports it to a new location. It will return to its original location afterrounds.</text></item>
+              <item xml:id="G0002173"><description xml:id="G0002174"><text>Summon</text></description><text>allows the summoner to call forth a creature near the caster (like Gate). This creature is bound to follow SIMPLE directives given by the caster. The creature will not act in a hostile manner towards the caster. If a summoner casts another Summon spell while another one is currently active, he must make a Magical Control roll. Failure means that the new spell fails and the first expires immediately.</text></item>
+              <item xml:id="G0002175"><description xml:id="G0002176"><text>Pact</text></description><text>allows the caster to form a complex bond with a creature, making that creature his Familiar. The caster must first find a creature to use pact withsuch as summoning the creature by gate or summon) The caster maycontrolthe creature in a manner similar to summon. This is permanent and lasts until either the caster or the Familiar is slain. If the caster casts Pact a while he already has a Familiar, the original spell expires and the caster suffers. While active, the Familar is aware of what happens to the caster, and vice versa. A basic empathic link exists between the creature and the caster. The caster may make a Magical Control check in order tolisten inon any of the familiars senses at any point in time.</text></item>
+              <item xml:id="G0002177"><description xml:id="G0002178"><text>Control</text></description><text>is very similar to summon except that the caster has exacting and specific control over the creature(s) summoned. The caster can literally operate the creature(s) as though byremote control. While Control is active, the summoner is responsible for literally every action made by the summoned creatureit has no will of its own.</text></item>
+              <item xml:id="G0002179"><description xml:id="G0002180"><text>Transform</text></description><text>is a powerful technique in which the caster takes the form of the creature summoned. The caster literally becomes the creature in question, but retains his own mental state and skills in addition to the skills of the summoned creature. All physical attributes (STR, DEX, BLD) of the summoned creature replace those of the character, but the character retains his own mental attributes (INT, WIS, WIL, CHA). This effect lasts 4xturns. It cannot be ended at will. The transformation requires three actions to complete. When the spell expires, the caster will be very tired, and will suffer the effects of slow, loosing 1 action per turn forturns.</text></item>
             </description-list>
             <text xml:id="G0002181">These summon spells are used in conjunction with whatever creature <ldquo xml:id="G0002182"/>spells<rdquo xml:id="G0002183"/> a summoner knows. In order to learn a creature spell, the Summoner must have encountered such a creature. The rank of example creatures is shown below. For others, see the Beastiary section.</text>
             <text xml:id="G0002184">These summon spells are used in conjunction with whatever creature <ldquo xml:id="G0002185"/>spells<rdquo xml:id="G0002186"/> a summoner knows. In order to learn a creature spell, the Summoner must have encountered such a creature. The rank of example creatures is shown below. For others, see the Beastiary section.</text>
             <figure xml:id="G0002187">
               <table xml:id="G0002188">
                 <head xml:id="G0002189">
-                  <cell colfmt="c" xml:id="G0002190">Rank</cell>
-                  <cell colfmt="p{4.5in}" xml:id="G0002191">Spell (choose specifically)</cell>
+                  <cell colfmt="c" xml:id="G0002190"><text>Rank</text></cell>
+                  <cell colfmt="p{4.5in}" xml:id="G0002191"><text>Spell (choose specifically)</text></cell>
                 </head>
                 <row xml:id="G0002192">
-                  <cell xml:id="G0002193">1</cell>
-                  <cell xml:id="G0002194">Insects, songbirds, rats, mice, other small rodents, frogs/toads, salamanders, misc. other small reptiles or amphibians.</cell>
+                  <cell xml:id="G0002193"><text>1</text></cell>
+                  <cell xml:id="G0002194"><text>Insects, songbirds, rats, mice, other small rodents, frogs/toads, salamanders, misc. other small reptiles or amphibians.</text></cell>
                 </row>
                 <row xml:id="G0002195">
-                  <cell xml:id="G0002196">2</cell>
-                  <cell xml:id="G0002197">Dogs, cats, exotic small animals, larger birds (crow, raven, owl, etc.), common snakes. Raccoon, possum, etc. Bats, small flying/gliding mammals. Wallaby.</cell>
+                  <cell xml:id="G0002196"><text>2</text></cell>
+                  <cell xml:id="G0002197"><text>Dogs, cats, exotic small animals, larger birds (crow, raven, owl, etc.), common snakes. Raccoon, possum, etc. Bats, small flying/gliding mammals. Wallaby.</text></cell>
                 </row>
                 <row xml:id="G0002198">
-                  <cell xml:id="G0002199">3</cell>
-                  <cell xml:id="G0002200">Very large dogs, Cow, goat, sheep, deer, antelope. Large predatory birds (hawk, eagle), large reptiles (small crocodile, monitor lizard, large snake). Lesser monkeys. Lynx, Kangaroo</cell>
+                  <cell xml:id="G0002199"><text>3</text></cell>
+                  <cell xml:id="G0002200"><text>Very large dogs, Cow, goat, sheep, deer, antelope. Large predatory birds (hawk, eagle), large reptiles (small crocodile, monitor lizard, large snake). Lesser monkeys. Lynx, Kangaroo</text></cell>
                 </row>
                 <row xml:id="G0002201">
-                  <cell xml:id="G0002202">4</cell>
-                  <cell xml:id="G0002203">Crocodile, Horse, Bull. Exotic 4-legged animals. Large constricting snakes. Apes.</cell>
+                  <cell xml:id="G0002202"><text>4</text></cell>
+                  <cell xml:id="G0002203"><text>Crocodile, Horse, Bull. Exotic 4-legged animals. Large constricting snakes. Apes.</text></cell>
                 </row>
                 <row xml:id="G0002204">
-                  <cell xml:id="G0002205">5</cell>
-                  <cell xml:id="G0002206">Hippo, Cape buffalo, Lion, Black Bear</cell>
+                  <cell xml:id="G0002205"><text>5</text></cell>
+                  <cell xml:id="G0002206"><text>Hippo, Cape buffalo, Lion, Black Bear</text></cell>
                 </row>
                 <row xml:id="G0002207">
-                  <cell xml:id="G0002208">6</cell>
-                  <cell xml:id="G0002209">Elephant, Rhinocerous, Grizzly or Polar bear. Mammoth</cell>
+                  <cell xml:id="G0002208"><text>6</text></cell>
+                  <cell xml:id="G0002209"><text>Elephant, Rhinocerous, Grizzly or Polar bear. Mammoth</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0002210">Summonable animals by Rank</caption>
+              <caption xml:id="G0002210"><text>Summonable animals by Rank</text></caption>
             </figure>
             <text xml:id="G0002211">For generic animals follow the table above. For very specific, exotic, or rare animals jump to the next higher rank. (Example: Summon Frog: rank 1. Summon Brazilian Poison-dart frog: rank 2.)</text>
             <text xml:id="G0002212">Whenever a summoning spell is cast the Summoner must make a Magical Control skill check. The negative to the roll is the total summoning rank(s) of the creatures to be summoned. A summoner can attempt to summon multiple of the same creature simultaneously, but not a mixture of different creatures. The caster has a bonus to this check based on what <ldquo xml:id="G0002213"/>Beast Lore<rdquo xml:id="G0002214"/>skills he knows.</text>
