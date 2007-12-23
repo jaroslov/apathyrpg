@@ -18,10 +18,18 @@ mysql_select_db('Apathy') or die('Could not select database');
 
 echo '<p>Connected to Apathy database.</p>';
 
-function insert_raw_category_element($Path,$Name) {
+function insert_raw_category_element($Path) {
   $query = "INSERT INTO `Apathy`.`RawCategories` ("
-            ."`EntryId`, `Category`, `Name`)"
-            ."VALUES ( NULL, '".$Path."', '".$Name."');";
+            ."`CategoryId`, `Name`)"
+            ."VALUES ( NULL, '".$Path."');";
+  $resource = mysql_query($query);
+  return mysql_insert_id();
+}
+
+function insert_raw_datum_element($BelongsTo,$Name) {
+  $query = "INSERT INTO `Apathy`.`RawDatums` ("
+            ."`DatumId`, `BelongsTo`,`Name`)"
+            ."VALUES ( NULL, '".$BelongsTo."','".$Name."');";
   $resource = mysql_query($query);
   return mysql_insert_id();
 }
@@ -56,13 +64,14 @@ $categories = $Apathy->getElementsByTagName("category");
 for ($cat = 0; $cat < $categories->length; $cdx++) {
   $category = $categories->item($cdx);
   $path = $category->getAttribute("name");
-  echo "<p>Selecting ".$path."</p>";
-  foreach ($category->childNodes as $child)
-    if ("datum" === $child->tagName) {
-      $title = get_title_of_datum($child);
-      $tables = get_table_of_datum($child);
-      $description = get_description_of_datum($child);
-      echo "<p>".$title." ".sizeof($tables)." ".$description."</p>";
+  // (1) insert the category
+  foreach ($category->childNodes as $datum_p)
+    if ("datum" === $datum_p->tagName) {
+      // (2) insert the datum
+      foreach ($datum_p->childNodes as $field_p)
+        if ("field" === $field_p->tagName) {
+          // (3) insert the fields
+        }
     }
 }
 
