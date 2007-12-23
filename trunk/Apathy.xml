@@ -2261,37 +2261,37 @@
                 <figure xml:id="G0002826">
                   <table xml:id="G0002827">
                     <head xml:id="G0002828">
-                      <cell colfmt="l" xml:id="G0002829">System</cell>
-                      <cell colfmt="c" xml:id="G0002830">PC / Slot</cell>
-                      <cell colfmt="c" xml:id="G0002831">CP / Slot</cell>
-                      <cell colfmt="p{2in}" xml:id="G0002832">Description</cell>
+                      <cell colfmt="l" xml:id="G0002829"><text>System</text></cell>
+                      <cell colfmt="c" xml:id="G0002830"><text>PC / Slot</text></cell>
+                      <cell colfmt="c" xml:id="G0002831"><text>CP / Slot</text></cell>
+                      <cell colfmt="p{2in}" xml:id="G0002832"><text>Description</text></cell>
                     </head>
                     <row xml:id="G0002833">
-                      <cell xml:id="G0002834">LPG</cell>
-                      <cell xml:id="G0002835">7</cell>
-                      <cell xml:id="G0002836">1</cell>
-                      <cell xml:id="G0002837">Liquified Petroleum Gas micro-turbine</cell>
+                      <cell xml:id="G0002834"><text>LPG</text></cell>
+                      <cell xml:id="G0002835"><text>7</text></cell>
+                      <cell xml:id="G0002836"><text>1</text></cell>
+                      <cell xml:id="G0002837"><text>Liquified Petroleum Gas micro-turbine</text></cell>
                     </row>
                     <row xml:id="G0002838">
-                      <cell xml:id="G0002839">Alcohol</cell>
-                      <cell xml:id="G0002840">10</cell>
-                      <cell xml:id="G0002841">2</cell>
-                      <cell xml:id="G0002842">Alcohol-driven high-speed rotary generator</cell>
+                      <cell xml:id="G0002839"><text>Alcohol</text></cell>
+                      <cell xml:id="G0002840"><text>10</text></cell>
+                      <cell xml:id="G0002841"><text>2</text></cell>
+                      <cell xml:id="G0002842"><text>Alcohol-driven high-speed rotary generator</text></cell>
                     </row>
                     <row xml:id="G0002843">
-                      <cell xml:id="G0002844">Hydrazine</cell>
-                      <cell xml:id="G0002845">15</cell>
-                      <cell xml:id="G0002846">3</cell>
-                      <cell xml:id="G0002847">Hydrazine-Gasoline fueled generator.</cell>
+                      <cell xml:id="G0002844"><text>Hydrazine</text></cell>
+                      <cell xml:id="G0002845"><text>15</text></cell>
+                      <cell xml:id="G0002846"><text>3</text></cell>
+                      <cell xml:id="G0002847"><text>Hydrazine-Gasoline fueled generator.</text></cell>
                     </row>
                     <row xml:id="G0002848">
-                      <cell xml:id="G0002849">LOX</cell>
-                      <cell xml:id="G0002850">22</cell>
-                      <cell xml:id="G0002851">4</cell>
-                      <cell xml:id="G0002852">Liquid-Oxygen / Aluminum fueled generator.</cell>
+                      <cell xml:id="G0002849"><text>LOX</text></cell>
+                      <cell xml:id="G0002850"><text>22</text></cell>
+                      <cell xml:id="G0002851"><text>4</text></cell>
+                      <cell xml:id="G0002852"><text>Liquid-Oxygen / Aluminum fueled generator.</text></cell>
                     </row>
                   </table>
-                  <caption xml:id="G0002853">Booster Engines</caption>
+                  <caption xml:id="G0002853"><text>Booster Engines</text></caption>
                 </figure>
                 <text xml:id="G0002854">Power cells store energy like a rechargeable battery. They contain a certain amount of power, which can be drawn from them at will. Once the power is used up, they must be recharged before they can be used again. Better power cells can store more energy in a smaller amount of space.</text>
                 <text xml:id="G0002855">Power Cells store power like a battery; can be recharged.</text>
