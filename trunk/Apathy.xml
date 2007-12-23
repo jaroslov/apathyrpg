@@ -2684,27 +2684,27 @@
             </figure>
             <description-list xml:id="G0003315">
               <item xml:id="G0003316">
-                <description xml:id="G0003317">Class</description>
+                <description xml:id="G0003317"><text>Class</text></description>
                 <text xml:id="G0003318">the size of the weapon being bought; used to calculate various expenses</text>
               </item>
               <item xml:id="G0003319">
-                <description xml:id="G0003320">Size</description>
+                <description xml:id="G0003320"><text>Size</text></description>
                 <text xml:id="G0003321">the size of the mecha or powered armor</text>
               </item>
               <item xml:id="G0003322">
-                <description xml:id="G0003323">Slots</description>
+                <description xml:id="G0003323"><text>Slots</text></description>
                 <text xml:id="G0003324">the number of slots a <ldquo xml:id="G0003325"/>pod<rdquo xml:id="G0003326"/> of ammunition uses</text>
               </item>
               <item xml:id="G0003327">
-                <description xml:id="G0003328">Capacity per</description>
+                <description xml:id="G0003328"><text>Capacity per</text></description>
                 <text xml:id="G0003329">the number of rounds per pod</text>
               </item>
               <item xml:id="G0003330">
-                <description xml:id="G0003331">Damage</description>
+                <description xml:id="G0003331"><text>Damage</text></description>
                 <text xml:id="G0003332">the damage the ammunition does</text>
               </item>
               <item xml:id="G0003333">
-                <description xml:id="G0003334">Cost</description>
+                <description xml:id="G0003334"><text>Cost</text></description>
                 <text xml:id="G0003335">the cost in dollars to purchase the ammunition pod</text>
               </item>
             </description-list>
@@ -2719,25 +2719,25 @@
                   <cell xml:id="G0003344"><text>Class</text></cell>
                   <cell xml:id="G0003345"><text>Energy Units</text></cell>
                   <cell xml:id="G0003346"><text>Damage</text></cell>
-                  <cell xml:id="G0003347">C.P.</cell>
+                  <cell xml:id="G0003347"><text>C.P.</text></cell>
                 </head>
                 <row xml:id="G0003348">
                   <cell xml:id="G0003349"><text>0</text></cell>
                   <cell xml:id="G0003350"><text>5</text></cell>
-                  <cell xml:id="G0003351">
+                  <cell xml:id="G0003351"><text>
                      <roll xml:id="G0003352">
                       <num xml:id="G0003353">5</num>
                       <face xml:id="G0003354">6</face>
                       <bns xml:id="G0003355"/>
                       <kind xml:id="G0003356">P</kind>
                     </roll> 
-                  </cell>
+                  </text></cell>
                   <cell xml:id="G0003357"><text>2</text></cell>
                 </row>
                 <row xml:id="G0003358">
                   <cell xml:id="G0003359"><text>1</text></cell>
                   <cell xml:id="G0003360"><text>10</text></cell>
-                  <cell xml:id="G0003361">
+                  <cell xml:id="G0003361"><text>
                      <roll xml:id="G0003362">
                       <num xml:id="G0003363">1</num>
                       <face xml:id="G0003364">6</face>
@@ -2745,13 +2745,13 @@
                       <mul xml:id="G0003366">10</mul>
                       <kind xml:id="G0003367">P</kind>
                     </roll> 
-                  </cell>
+                  </text></cell>
                   <cell xml:id="G0003368"><text>4</text></cell>
                 </row>
                 <row xml:id="G0003369">
                   <cell xml:id="G0003370"><text>2</text></cell>
                   <cell xml:id="G0003371"><text>15</text></cell>
-                  <cell xml:id="G0003372">
+                  <cell xml:id="G0003372"><text>
                      <roll xml:id="G0003373">
                       <num xml:id="G0003374">2</num>
                       <face xml:id="G0003375">6</face>
@@ -2759,13 +2759,13 @@
                       <mul xml:id="G0003377">10</mul>
                       <kind xml:id="G0003378">P</kind>
                     </roll> 
-                  </cell>
+                  </text></cell>
                   <cell xml:id="G0003379"><text>6</text></cell>
                 </row>
                 <row xml:id="G0003380">
                   <cell xml:id="G0003381"><text>3</text></cell>
                   <cell xml:id="G0003382"><text>20</text></cell>
-                  <cell xml:id="G0003383">
+                  <cell xml:id="G0003383"><text>
                      <roll xml:id="G0003384">
                       <num xml:id="G0003385">4</num>
                       <face xml:id="G0003386">6</face>
@@ -2773,13 +2773,13 @@
                       <mul xml:id="G0003388">10</mul>
                       <kind xml:id="G0003389">P</kind>
                     </roll> 
-                  </cell>
+                  </text></cell>
                   <cell xml:id="G0003390"><text>8</text></cell>
                 </row>
                 <row xml:id="G0003391">
                   <cell xml:id="G0003392"><text>4</text></cell>
                   <cell xml:id="G0003393"><text>25</text></cell>
-                  <cell xml:id="G0003394">
+                  <cell xml:id="G0003394"><text>
                      <roll xml:id="G0003395">
                       <num xml:id="G0003396">8</num>
                       <face xml:id="G0003397">6</face>
@@ -2787,37 +2787,37 @@
                       <mul xml:id="G0003399">10</mul>
                       <kind xml:id="G0003400">P</kind>
                     </roll> 
-                  </cell>
+                  </text></cell>
                   <cell xml:id="G0003401"><text>10</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0003402">Sizes, number of die with multiplier, and energy usage for energy weapons.</caption>
+              <caption xml:id="G0003402"><text>Sizes, number of die with multiplier, and energy usage for energy weapons.</text></caption>
             </figure>
             <text xml:id="G0003403">Energy weapons use Class+2 slots.</text>
             <text xml:id="G0003404">All Energy weapons can be <ldquo xml:id="G0003405"/>tuned<rdquo xml:id="G0003406"/> for various effects (one or the other), which takes (Class+1) hours to do in a professional shop. Unless otherwise stated all weapons have a range of (Class+3)*10000 feet.</text>
             <description-list xml:id="G0003407">
               <item xml:id="G0003408">
-                <description xml:id="G0003409">OverFire</description>
+                <description xml:id="G0003409"><text>OverFire</text></description>
                 <text xml:id="G0003410">spends twice as much energy but deals 50<percent xml:id="G0003411"/>more damage</text>
               </item>
               <item xml:id="G0003412">
-                <description xml:id="G0003413">Flame</description>
+                <description xml:id="G0003413"><text>Flame</text></description>
                 <text xml:id="G0003414">spends twice as much energy but also causes the target to suffer the damage as U (Undefined) Fire</text>
               </item>
               <item xml:id="G0003415">
-                <description xml:id="G0003416">Drawing</description>
+                <description xml:id="G0003416"><text>Drawing</text></description>
                 <text xml:id="G0003417">spends three times as much energy, deals S (Slashing) damage instead of P</text>
               </item>
               <item xml:id="G0003418">
-                <description xml:id="G0003419">Pulse</description>
+                <description xml:id="G0003419"><text>Pulse</text></description>
                 <text xml:id="G0003420">spends 1/2 as much energy, use four-sided dice (D4) instead of 6.</text>
               </item>
               <item xml:id="G0003421">
-                <description xml:id="G0003422">Higgs Particle</description>
+                <description xml:id="G0003422"><text>Higgs Particle</text></description>
                 <text xml:id="G0003423">weapon deals <C xml:id="G0003424"/> (Crushing) damage, but the maximum range is (Class+1)*100 feet</text>
               </item>
               <item xml:id="G0003425">
-                <description xml:id="G0003426">Area Effect</description>
+                <description xml:id="G0003426"><text>Area Effect</text></description>
                 <text xml:id="G0003427">uses twice the energy, but has (Class+1)*5' area effect</text>
               </item>
             </description-list>
@@ -2832,11 +2832,11 @@
               <table xml:id="G0003446">
                 <head xml:id="G0003447">
                   <cell xml:id="G0003448"><text>Size</text></cell>
-                  <cell xml:id="G0003449">C.P. Cost</cell>
+                  <cell xml:id="G0003449"><text>C.P. Cost</text></cell>
                   <cell xml:id="G0003450"><text>Slots</text></cell>
                   <cell xml:id="G0003451"><text>Damage</text></cell>
-                  <cell xml:id="G0003452">Max.Str.Bns.</cell>
-                  <cell xml:id="G0003453">Min.Str.Req.</cell>
+                  <cell xml:id="G0003452"><text>Max.Str.Bns.</text></cell>
+                  <cell xml:id="G0003453"><text>Min.Str.Req.</text></cell>
                 </head>
                 <row xml:id="G0003454">
                   <cell xml:id="G0003455"><text>2</text></cell>
@@ -2871,34 +2871,34 @@
                   <cell xml:id="G0003481"><text>x8</text></cell>
                 </row>
                 <row xml:id="G0003482">
-                  <cell xml:id="G0003483">
+                  <cell xml:id="G0003483"><text>
                     <math xml:id="G0003484"><mrow xml:id="G0003485"><mi xml:id="G0003486">X</mi><mo xml:id="G0003487">&gt;</mo><mn xml:id="G0003488">2</mn></mrow></math>
-                  </cell>
-                  <cell xml:id="G0003489">
+                  </text></cell>
+                  <cell xml:id="G0003489"><text>
                     <math xml:id="G0003490"><mrow xml:id="G0003491"><mo xml:id="G0003492"><times xml:id="G0003493"/></mo><mrow xml:id="G0003494"><mi xml:id="G0003495">X</mi><mo xml:id="G0003496">-</mo><mn xml:id="G0003497">1</mn></mrow></mrow></math>
-                  </cell>
+                  </text></cell>
                   <cell xml:id="G0003498"><text>0</text></cell>
-                  <cell xml:id="G0003499">
+                  <cell xml:id="G0003499"><text>
                     <math xml:id="G0003500"><mrow xml:id="G0003501"><mo xml:id="G0003502"><times xml:id="G0003503"/></mo><msup xml:id="G0003504"><mn xml:id="G0003505">2</mn><mrow xml:id="G0003506"><mi xml:id="G0003507">X</mi><mo xml:id="G0003508">-</mo><mn xml:id="G0003509">2</mn></mrow></msup></mrow></math>
-                  </cell>
-                  <cell xml:id="G0003510">
+                  </text></cell>
+                  <cell xml:id="G0003510"><text>
                     <math xml:id="G0003511"><mrow xml:id="G0003512"><mo xml:id="G0003513"><times xml:id="G0003514"/></mo><msup xml:id="G0003515"><mn xml:id="G0003516">2</mn><mrow xml:id="G0003517"><mi xml:id="G0003518">X</mi><mo xml:id="G0003519">-</mo><mn xml:id="G0003520">2</mn></mrow></msup></mrow></math>
-                  </cell>
-                  <cell xml:id="G0003521">
+                  </text></cell>
+                  <cell xml:id="G0003521"><text>
                     <math xml:id="G0003522"><mrow xml:id="G0003523"><mo xml:id="G0003524"><times xml:id="G0003525"/></mo><msup xml:id="G0003526"><mn xml:id="G0003527">2</mn><mrow xml:id="G0003528"><mi xml:id="G0003529">X</mi><mo xml:id="G0003530">-</mo><mn xml:id="G0003531">2</mn></mrow></msup></mrow></math>
-                  </cell>
+                  </text></cell>
                 </row>
                 <row xml:id="G0003532">
                   <cell xml:id="G0003533"><text>Assisted Melee System</text></cell>
-                  <cell xml:id="G0003534">
+                  <cell xml:id="G0003534"><text>
                     <math xml:id="G0003535"><msup xml:id="G0003536"><mi xml:id="G0003537">X</mi><mn xml:id="G0003538">2</mn></msup></math>
-                  </cell>
+                  </text></cell>
                   <cell xml:id="G0003539"><text>Size</text></cell>
                   <cell xml:id="G0003540"><text>+X to damage</text></cell>
                   <cell span="2" xml:id="G0003541"><text>Uses 5x power.</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0003542">Mecha and Power Armor Melee Weapons</caption>
+              <caption xml:id="G0003542"><text>Mecha and Power Armor Melee Weapons</text></caption>
             </figure>
             <reference hrid="Content/Mecha/Equipment/Melee Weapons" xml:id="G0003543"/>
           </section>
@@ -2914,36 +2914,36 @@
           <title xml:id="G0003550">Building a Monster</title>
           <text xml:id="G0003551">Because of the wide variety of monstrous creatures available in literature and fantasy, it is a somewhat futile task to attempt to construct an exhaustive list. In addition, most GameMasters find that while any particular monster is okay, the specific monster they are envisioning is not available to them. The Monster section is thus divided into three parts:</text>
           <description-list xml:id="G0003552">
-            <item xml:id="G0003553"><description xml:id="G0003554">Base types</description><text xml:id="G0003555">the fundamental attributes, abilities, and <ldquo xml:id="G0003556"/>look<rdquo xml:id="G0003557"/> of the base creature</text></item>
-            <item xml:id="G0003558"><description xml:id="G0003559">Templates</description><text xml:id="G0003560">modifications to the base-type that give the <ldquo xml:id="G0003561"/>flavor<rdquo xml:id="G0003562"/> of the monster</text></item>
-            <item xml:id="G0003563"><description xml:id="G0003564">Examples</description><text xml:id="G0003565">that have been pre-generated</text></item>
+            <item xml:id="G0003553"><description xml:id="G0003554"><text>Base types</text></description><text xml:id="G0003555">the fundamental attributes, abilities, and <ldquo xml:id="G0003556"/>look<rdquo xml:id="G0003557"/> of the base creature</text></item>
+            <item xml:id="G0003558"><description xml:id="G0003559"><text>Templates</text></description><text xml:id="G0003560">modifications to the base-type that give the <ldquo xml:id="G0003561"/>flavor<rdquo xml:id="G0003562"/> of the monster</text></item>
+            <item xml:id="G0003563"><description xml:id="G0003564"><text>Examples</text></description><text xml:id="G0003565">that have been pre-generated</text></item>
           </description-list>
           <section kind="section" xml:id="G0003566">
             <title xml:id="G0003567">Base Types</title>
             <text xml:id="G0003568">The base-types are the fundamental <ldquo xml:id="G0003569"/>type<rdquo xml:id="G0003570"/> or <ldquo xml:id="G0003571"/>look<rdquo xml:id="G0003572"/> of the monster, they are:</text>
             <description-list xml:id="G0003573">
               <item xml:id="G0003574">
-                <description xml:id="G0003575">Anthropoid</description>
+                <description xml:id="G0003575"><text>Anthropoid</text></description>
                 <text xml:id="G0003576">Essentially symmetric, bipedal, a head (and possible tail) etc.; a human-like monster</text>
               </item>
               <item xml:id="G0003577">
-                <description xml:id="G0003578">Bipedal</description>
+                <description xml:id="G0003578"><text>Bipedal</text></description>
                 <text xml:id="G0003579">covers non-anthropoid bipedal monsters, e.g. Duck, Chipmunk, Wyvern (two legs, two wings)</text>
               </item>
               <item xml:id="G0003580">
-                <description xml:id="G0003581">Quadruped</description>
+                <description xml:id="G0003581"><text>Quadruped</text></description>
                 <text xml:id="G0003582">typical of regular animals (mammals), e.g. Dog, Dragon (two legs, two arms, two wings)</text>
               </item>
               <item xml:id="G0003583">
-                <description xml:id="G0003584">Serpent</description>
+                <description xml:id="G0003584"><text>Serpent</text></description>
                 <text xml:id="G0003585">tubes, e.g. Snail</text>
               </item>
               <item xml:id="G0003586">
-                <description xml:id="G0003587">Polymelic</description>
+                <description xml:id="G0003587"><text>Polymelic</text></description>
                 <text xml:id="G0003588">monsters with many legs or many arms, e.g. Angelus Guhendrian (torus with twelve wings, and an eyeball)</text>
               </item>
               <item xml:id="G0003589">
-                <description xml:id="G0003590">Amorphous</description>
+                <description xml:id="G0003590"><text>Amorphous</text></description>
                 <text xml:id="G0003591">blobs, pools, puddles, whiffs-of-smoke</text>
               </item>
             </description-list>
@@ -2951,18 +2951,18 @@
             <figure xml:id="G0003593">
               <table xml:id="G0003594">
                 <head xml:id="G0003595">
-                  <cell colfmt="c" xml:id="G0003596">Type</cell>
-                  <cell colfmt="c" xml:id="G0003597">1/2</cell>
-                  <cell colfmt="c" xml:id="G0003598">1</cell>
-                  <cell colfmt="c" xml:id="G0003599">2</cell>
-                  <cell colfmt="c" xml:id="G0003600">3</cell>
-                  <cell colfmt="c" xml:id="G0003601">4</cell>
-                  <cell colfmt="c" xml:id="G0003602">5</cell>
-                  <cell colfmt="c" xml:id="G0003603">6</cell>
-                  <cell colfmt="c" xml:id="G0003604">7</cell>
-                  <cell colfmt="c" xml:id="G0003605">8</cell>
-                  <cell colfmt="c" xml:id="G0003606">9</cell>
-                  <cell colfmt="c" xml:id="G0003607">10</cell>
+                  <cell colfmt="c" xml:id="G0003596"><text>Type</text></cell>
+                  <cell colfmt="c" xml:id="G0003597"><text>1/2</text></cell>
+                  <cell colfmt="c" xml:id="G0003598"><text>1</text></cell>
+                  <cell colfmt="c" xml:id="G0003599"><text>2</text></cell>
+                  <cell colfmt="c" xml:id="G0003600"><text>3</text></cell>
+                  <cell colfmt="c" xml:id="G0003601"><text>4</text></cell>
+                  <cell colfmt="c" xml:id="G0003602"><text>5</text></cell>
+                  <cell colfmt="c" xml:id="G0003603"><text>6</text></cell>
+                  <cell colfmt="c" xml:id="G0003604"><text>7</text></cell>
+                  <cell colfmt="c" xml:id="G0003605"><text>8</text></cell>
+                  <cell colfmt="c" xml:id="G0003606"><text>9</text></cell>
+                  <cell colfmt="c" xml:id="G0003607"><text>10</text></cell>
                 </head>
                 <row xml:id="G0003608">
                   <cell span="12" xml:id="G0003609">
@@ -2970,7 +2970,7 @@
                   </cell>
                 </row>
                 <row xml:id="G0003611">
-                  <cell border="none" xml:id="G0003612">Anthropoid</cell>
+                  <cell border="none" xml:id="G0003612"><text>Anthropoid</text></cell>
                   <cell border="none" span="11" xml:id="G0003613">Height:<math xml:id="G0003614"><mrow xml:id="G0003615"><msup xml:id="G0003616"><mi xml:id="G0003617">Size</mi><mn xml:id="G0003618">2</mn></msup><mo xml:id="G0003619"><times xml:id="G0003620"/></mo><mn xml:id="G0003621">40</mn><mi xml:id="G0003622">cm</mi></mrow></math></cell>
                 </row>
                 <row xml:id="G0003623">
@@ -2980,7 +2980,7 @@
                 <row xml:id="G0003632">
                   <cell xml:id="G0003633"><text>Str</text></cell>
                   <cell xml:id="G0003634">
-                    <notappl xml:id="G0003635"/>
+                    <text><notappl xml:id="G0003635"/></text>
                   </cell>
                   <cell xml:id="G0003636"><text>4</text></cell>
                   <cell xml:id="G0003637"><text>9</text></cell>
@@ -2996,7 +2996,7 @@
                 <row xml:id="G0003646">
                   <cell xml:id="G0003647"><text>Bld</text></cell>
                   <cell xml:id="G0003648">
-                    <notappl xml:id="G0003649"/>
+                    <text><notappl xml:id="G0003649"/></text>
                   </cell>
                   <cell xml:id="G0003650"><text>4</text></cell>
                   <cell xml:id="G0003651"><text>9</text></cell>
@@ -3034,7 +3034,7 @@
                 <row xml:id="G0003694">
                   <cell xml:id="G0003695"><text>Str</text></cell>
                   <cell xml:id="G0003696">
-                    <notappl xml:id="G0003697"/>
+                    <text><notappl xml:id="G0003697"/></text>
                   </cell>
                   <cell xml:id="G0003698"><text>4</text></cell>
                   <cell xml:id="G0003699"><text>9</text></cell>
@@ -3050,7 +3050,7 @@
                 <row xml:id="G0003708">
                   <cell xml:id="G0003709"><text>Bld</text></cell>
                   <cell xml:id="G0003710">
-                    <notappl xml:id="G0003711"/>
+                    <text><notappl xml:id="G0003711"/></text>
                   </cell>
                   <cell xml:id="G0003712"><text>4</text></cell>
                   <cell xml:id="G0003713"><text>9</text></cell>
@@ -3152,10 +3152,10 @@
                 <row xml:id="G0003845">
                   <cell xml:id="G0003846"><text>Bld</text></cell>
                   <cell xml:id="G0003847">
-                    <notappl xml:id="G0003848"/>
+                    <text><notappl xml:id="G0003848"/></text>
                   </cell>
                   <cell xml:id="G0003849">
-                    <notappl xml:id="G0003850"/>
+                    <text><notappl xml:id="G0003850"/></text>
                   </cell>
                   <cell xml:id="G0003851"><text>4</text></cell>
                   <cell xml:id="G0003852"><text>9</text></cell>
@@ -3192,7 +3192,7 @@
                 <row xml:id="G0003894">
                   <cell xml:id="G0003895"><text>Str</text></cell>
                   <cell xml:id="G0003896">
-                    <notappl xml:id="G0003897"/>
+                    <text><notappl xml:id="G0003897"/></text>
                   </cell>
                   <cell xml:id="G0003898"><text>4</text></cell>
                   <cell xml:id="G0003899"><text>9</text></cell>
@@ -3208,7 +3208,7 @@
                 <row xml:id="G0003908">
                   <cell xml:id="G0003909"><text>Bld</text></cell>
                   <cell xml:id="G0003910">
-                    <notappl xml:id="G0003911"/>
+                    <text><notappl xml:id="G0003911"/></text>
                   </cell>
                   <cell xml:id="G0003912"><text>4</text></cell>
                   <cell xml:id="G0003913"><text>9</text></cell>
@@ -3286,7 +3286,7 @@
                   <cell xml:id="G0003994"><text>1</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0003995">Monster Construction Table</caption>
+              <caption xml:id="G0003995"><text>Monster Construction Table</text></caption>
             </figure>
           </section>
           <section kind="section" xml:id="G0003996">
@@ -3316,33 +3316,33 @@
           <text xml:id="G0004013">Bonus (minus) to hit certain portions of the anatomy.</text>
           <table xml:id="G0004014">
             <head xml:id="G0004015">
-              <cell colfmt="r" xml:id="G0004016">Where</cell>
-              <cell colfmt="l" xml:id="G0004017">Bonus</cell>
+              <cell colfmt="r" xml:id="G0004016"><text>Where</text></cell>
+              <cell colfmt="l" xml:id="G0004017"><text>Bonus</text></cell>
             </head>
-            <row xml:id="G0004018"><cell xml:id="G0004019"><text>Arm</text></cell><cell xml:id="G0004020">-4</cell></row>
-            <row xml:id="G0004021"><cell xml:id="G0004022"><text>Eye</text></cell><cell xml:id="G0004023">-12</cell></row>
-            <row xml:id="G0004024"><cell xml:id="G0004025"><text>Foot</text></cell><cell xml:id="G0004026">-7</cell></row>
-            <row xml:id="G0004027"><cell xml:id="G0004028"><text>Groin</text></cell><cell xml:id="G0004029">-6</cell></row>
-            <row xml:id="G0004030"><cell xml:id="G0004031"><text>Hand</text></cell><cell xml:id="G0004032">-10</cell></row>
-            <row xml:id="G0004033"><cell xml:id="G0004034"><text>Head</text></cell><cell xml:id="G0004035">-8</cell></row>
-            <row xml:id="G0004036"><cell xml:id="G0004037"><text>Knee</text></cell><cell xml:id="G0004038">-6</cell></row>
-            <row xml:id="G0004039"><cell xml:id="G0004040"><text>Leg</text></cell><cell xml:id="G0004041">-4</cell></row>
-            <row xml:id="G0004042"><cell xml:id="G0004043"><text>Neck</text></cell><cell xml:id="G0004044">-9</cell></row>
-            <row xml:id="G0004045"><cell xml:id="G0004046"><text>Toso</text></cell><cell xml:id="G0004047">-0</cell></row>
-            <row xml:id="G0004048"><cell xml:id="G0004049"><text>Weapon</text></cell><cell xml:id="G0004050">-4 to -10</cell></row>
+            <row xml:id="G0004018"><cell xml:id="G0004019"><text>Arm</text></cell><cell xml:id="G0004020"><text>-4</text></cell></row>
+            <row xml:id="G0004021"><cell xml:id="G0004022"><text>Eye</text></cell><cell xml:id="G0004023"><text>-12</text></cell></row>
+            <row xml:id="G0004024"><cell xml:id="G0004025"><text>Foot</text></cell><cell xml:id="G0004026"><text>-7</text></cell></row>
+            <row xml:id="G0004027"><cell xml:id="G0004028"><text>Groin</text></cell><cell xml:id="G0004029"><text>-6</text></cell></row>
+            <row xml:id="G0004030"><cell xml:id="G0004031"><text>Hand</text></cell><cell xml:id="G0004032"><text>-10</text></cell></row>
+            <row xml:id="G0004033"><cell xml:id="G0004034"><text>Head</text></cell><cell xml:id="G0004035"><text>-8</text></cell></row>
+            <row xml:id="G0004036"><cell xml:id="G0004037"><text>Knee</text></cell><cell xml:id="G0004038"><text>-6</text></cell></row>
+            <row xml:id="G0004039"><cell xml:id="G0004040"><text>Leg</text></cell><cell xml:id="G0004041"><text>-4</text></cell></row>
+            <row xml:id="G0004042"><cell xml:id="G0004043"><text>Neck</text></cell><cell xml:id="G0004044"><text>-9</text></cell></row>
+            <row xml:id="G0004045"><cell xml:id="G0004046"><text>Toso</text></cell><cell xml:id="G0004047"><text>-0</text></cell></row>
+            <row xml:id="G0004048"><cell xml:id="G0004049"><text>Weapon</text></cell><cell xml:id="G0004050"><text>-4 to -10</text></cell></row>
           </table>
         </section>
         <section kind="section" xml:id="G0004051">
           <title xml:id="G0004052">Damage and Its Effects</title>
           <table xml:id="G0004053">
             <head xml:id="G0004054">
-              <cell colfmt="l" xml:id="G0004055">Current Hit Point value</cell>
+              <cell colfmt="l" xml:id="G0004055"><text>Current Hit Point value</text></cell>
               <cell colfmt="p{3.5in}" xml:id="G0004056">Effect</cell>
             </head>
-            <row xml:id="G0004057"><cell xml:id="G0004058"><math xml:id="G0004059"><mrow xml:id="G0004060"><mfrac xml:id="G0004061"><mn xml:id="G0004062">1</mn><mn xml:id="G0004063">4</mn></mfrac></mrow></math></cell><cell xml:id="G0004064">Character has one few actions (regular and movement) and -3 to all die rolls.</cell></row>
-            <row xml:id="G0004065"><cell xml:id="G0004066"><text>0</text></cell><cell xml:id="G0004067">Character falls unconscious.</cell></row>
-            <row xml:id="G0004068"><cell xml:id="G0004069"><math xml:id="G0004070"><mrow xml:id="G0004071"><mo xml:id="G0004072">&lt;</mo><mn xml:id="G0004073">0</mn></mrow></math></cell><cell xml:id="G0004074">Character is unconscious and loses 1 Hit Point per turn until stabilized.</cell></row>
-            <row xml:id="G0004075"><cell xml:id="G0004076">-HP</cell><cell xml:id="G0004077">Character dies.</cell></row>
+            <row xml:id="G0004057"><cell xml:id="G0004058"><math xml:id="G0004059"><mrow xml:id="G0004060"><mfrac xml:id="G0004061"><mn xml:id="G0004062">1</mn><mn xml:id="G0004063">4</mn></mfrac></mrow></math></cell><cell xml:id="G0004064"><text>Character has one few actions (regular and movement) and -3 to all die rolls.</text></cell></row>
+            <row xml:id="G0004065"><cell xml:id="G0004066"><text>0</text></cell><cell xml:id="G0004067"><text>Character falls unconscious.</text></cell></row>
+            <row xml:id="G0004068"><cell xml:id="G0004069"><math xml:id="G0004070"><mrow xml:id="G0004071"><mo xml:id="G0004072">&lt;</mo><mn xml:id="G0004073">0</mn></mrow></math></cell><cell xml:id="G0004074"><text>Character is unconscious and loses 1 Hit Point per turn until stabilized.</text></cell></row>
+            <row xml:id="G0004075"><cell xml:id="G0004076"><text>-HP</text></cell><cell xml:id="G0004077"><text>Character dies.</text></cell></row>
           </table>
         </section>
         <section kind="section" xml:id="G0004078">
@@ -3351,8 +3351,8 @@
             <head xml:id="G0004081">
               <cell colfmt="p{2.5in}" xml:id="G0004082">Thing</cell><cell xml:id="G0004083"><text>Generalized Armor</text></cell>
             </head>
-            <row xml:id="G0004084"><cell xml:id="G0004085">Brush, medium</cell><cell xml:id="G0004086"><text>2</text></cell></row>
-            <row xml:id="G0004087"><cell xml:id="G0004088">Brush, heavy</cell><cell xml:id="G0004089"><text>4</text></cell></row>
+            <row xml:id="G0004084"><cell xml:id="G0004085"><text>Brush, medium</text></cell><cell xml:id="G0004086"><text>2</text></cell></row>
+            <row xml:id="G0004087"><cell xml:id="G0004088"><text>Brush, heavy</text></cell><cell xml:id="G0004089"><text>4</text></cell></row>
             <row xml:id="G0004090"><cell xml:id="G0004091"><text>Modern security door</text></cell><cell xml:id="G0004092"><text>15</text></cell></row>
             <row xml:id="G0004093"><cell xml:id="G0004094"><text>Interior wall</text></cell><cell xml:id="G0004095"><text>5</text></cell></row>
             <row xml:id="G0004096"><cell xml:id="G0004097"><text>Brick wall</text></cell><cell xml:id="G0004098"><text>20</text></cell></row>
@@ -3361,10 +3361,10 @@
             <row xml:id="G0004105"><cell xml:id="G0004106"><text>Interior house door</text></cell><cell xml:id="G0004107"><text>3</text></cell></row>
             <row xml:id="G0004108"><cell xml:id="G0004109"><text>Car windshield</text></cell><cell xml:id="G0004110"><text>6</text></cell></row>
             <row xml:id="G0004111"><cell xml:id="G0004112"><text>Heavy wooden door</text></cell><cell xml:id="G0004113"><text>10</text></cell></row>
-            <row xml:id="G0004114"><cell xml:id="G0004115">Office (metal) door</cell><cell xml:id="G0004116"><text>10</text></cell></row>
+            <row xml:id="G0004114"><cell xml:id="G0004115"><text>Office (metal) door</text></cell><cell xml:id="G0004116"><text>10</text></cell></row>
             <row xml:id="G0004117"><cell xml:id="G0004118"><text>Car door</text></cell><cell xml:id="G0004119"><text>8</text></cell></row>
             <row xml:id="G0004120"><cell xml:id="G0004121"><text>Residential window</text></cell><cell xml:id="G0004122"><text>3</text></cell></row>
-            <row xml:id="G0004123"><cell xml:id="G0004124">Armored glass (normal)</cell><cell xml:id="G0004125"><text>10</text></cell></row>
+            <row xml:id="G0004123"><cell xml:id="G0004124"><text>Armored glass (normal)</text></cell><cell xml:id="G0004125"><text>10</text></cell></row>
             <row xml:id="G0004126"><cell xml:id="G0004127"><text>Manhole cover</text></cell><cell xml:id="G0004128"><text>15</text></cell></row>
             <row xml:id="G0004129"><cell xml:id="G0004130"><text>Plywood</text></cell><cell xml:id="G0004131"><text>5</text></cell></row>
             <row xml:id="G0004132"><cell xml:id="G0004133"><text>USS Enterprise</text></cell><cell xml:id="G0004134"><text>3500</text></cell></row>
@@ -3374,74 +3374,74 @@
           <title xml:id="G0004136">Hit Points of common things</title>
           <table xml:id="G0004137">
             <head xml:id="G0004138">
-              <cell colfmt="l" xml:id="G0004139">Thing</cell><cell colfmt="r" xml:id="G0004140">Hit Points</cell>
+              <cell colfmt="l" xml:id="G0004139"><text>Thing</text></cell><cell colfmt="r" xml:id="G0004140"><text>Hit Points</text></cell>
             </head>
             <row xml:id="G0004141"><cell xml:id="G0004142"><text>Chicken or cat</text></cell><cell xml:id="G0004143"><text>5</text></cell></row>
             <row xml:id="G0004144"><cell xml:id="G0004145"><text>Large dog</text></cell><cell xml:id="G0004146"><text>15</text></cell></row>
             <row xml:id="G0004147"><cell xml:id="G0004148"><text>Human</text></cell><cell xml:id="G0004149"><text>20</text></cell></row>
             <row xml:id="G0004150"><cell xml:id="G0004151"><text>Deer</text></cell><cell xml:id="G0004152"><text>20</text></cell></row>
-            <row xml:id="G0004153"><cell xml:id="G0004154">Antelope, Donkey</cell><cell xml:id="G0004155"><text>70</text></cell></row>
-            <row xml:id="G0004156"><cell xml:id="G0004157">Elk, Horse</cell><cell xml:id="G0004158"><text>100</text></cell></row>
-            <row xml:id="G0004159"><cell xml:id="G0004160">Bear, Moose</cell><cell xml:id="G0004161"><text>200</text></cell></row>
-            <row xml:id="G0004162"><cell xml:id="G0004163">Hippo, Elephant</cell><cell xml:id="G0004164"><text>500</text></cell></row>
+            <row xml:id="G0004153"><cell xml:id="G0004154"><text>Antelope, Donkey</text></cell><cell xml:id="G0004155"><text>70</text></cell></row>
+            <row xml:id="G0004156"><cell xml:id="G0004157"><text>Elk, Horse</text></cell><cell xml:id="G0004158"><text>100</text></cell></row>
+            <row xml:id="G0004159"><cell xml:id="G0004160"><text>Bear, Moose</text></cell><cell xml:id="G0004161"><text>200</text></cell></row>
+            <row xml:id="G0004162"><cell xml:id="G0004163"><text>Hippo, Elephant</text></cell><cell xml:id="G0004164"><text>500</text></cell></row>
             <row xml:id="G0004165"><cell xml:id="G0004166"><text>Small car</text></cell><cell xml:id="G0004167"><text>300</text></cell></row>
-            <row xml:id="G0004168"><cell xml:id="G0004169">Large car, truck</cell><cell xml:id="G0004170"><text>400</text></cell></row>
+            <row xml:id="G0004168"><cell xml:id="G0004169"><text>Large car, truck</text></cell><cell xml:id="G0004170"><text>400</text></cell></row>
             <row xml:id="G0004171"><cell xml:id="G0004172"><text>Semi tractor trailer</text></cell><cell xml:id="G0004173"><text>1000</text></cell></row>
           </table>
         </section>
         <section kind="section" xml:id="G0004174">
           <title xml:id="G0004175">Number of actions of common actions in combat</title>
           <table xml:id="G0004176">
-            <head xml:id="G0004177"><cell colfmt="p{3in}" xml:id="G0004178">What</cell><cell colfmt="p{2in}" xml:id="G0004179">Time</cell></head>
+            <head xml:id="G0004177"><cell colfmt="p{3in}" xml:id="G0004178"><text>What</text></cell><cell colfmt="p{2in}" xml:id="G0004179"><text>Time</text></cell></head>
             <row xml:id="G0004180"><cell xml:id="G0004181"><text>Walking movement</text></cell><cell xml:id="G0004182"><text>1</text> move or regular</cell></row>
             <row xml:id="G0004183"><cell xml:id="G0004184"><text>Simple speech</text></cell><cell xml:id="G0004185"><text>0</text></cell></row>
             <row xml:id="G0004186"><cell xml:id="G0004187"><text>Complex speech</text></cell><cell xml:id="G0004188"><text>at least 1 move or regular</text></cell></row>
             <row xml:id="G0004189"><cell xml:id="G0004190"><text>Drop something</text></cell><cell xml:id="G0004191"><text>0</text></cell></row>
             <row xml:id="G0004192"><cell xml:id="G0004193"><text>Pick something up within 5 feet</text></cell><cell xml:id="G0004194"><text>1</text> move or regular</cell></row>
-            <row xml:id="G0004195"><cell xml:id="G0004196">Get something out of pouch/pack (small)</cell><cell xml:id="G0004197"><text>2</text> or 3 move or regular</cell></row>
-            <row xml:id="G0004198"><cell xml:id="G0004199">Load weapon, knock arrow</cell><cell xml:id="G0004200"><text>1</text> action</cell></row>
+            <row xml:id="G0004195"><cell xml:id="G0004196"><text>Get something out of pouch/pack (small)</text></cell><cell xml:id="G0004197"><text>2</text> or 3 move or regular</cell></row>
+            <row xml:id="G0004198"><cell xml:id="G0004199"><text>Load weapon, knock arrow</text></cell><cell xml:id="G0004200"><text>1</text> action</cell></row>
             <row xml:id="G0004201"><cell xml:id="G0004202"><text>Reload revolver or rocket launcher</text></cell><cell xml:id="G0004203"><text>3</text> regular</cell></row>
-            <row xml:id="G0004204"><cell xml:id="G0004205">Reload double barrel rifle or shotgun (both)</cell><cell xml:id="G0004206"><text>1</text> regular</cell></row>
-            <row xml:id="G0004207"><cell xml:id="G0004208">Reload other rifle or shotgun (per 2)</cell><cell xml:id="G0004209"><text>1</text> regular</cell></row>
+            <row xml:id="G0004204"><cell xml:id="G0004205"><text>Reload double barrel rifle or shotgun (both)</text></cell><cell xml:id="G0004206"><text>1</text> regular</cell></row>
+            <row xml:id="G0004207"><cell xml:id="G0004208"><text>Reload other rifle or shotgun (per 2)</text></cell><cell xml:id="G0004209"><text>1</text> regular</cell></row>
             <row xml:id="G0004210"><cell xml:id="G0004211"><text>Cycle bolt or pump action weapon</text></cell><cell xml:id="G0004212"><text>1</text> regular</cell></row>
-            <row xml:id="G0004213"><cell xml:id="G0004214">Load a magazine with bullets (per bullet)</cell><cell xml:id="G0004215"><text>1</text> regular</cell></row>
+            <row xml:id="G0004213"><cell xml:id="G0004214"><text>Load a magazine with bullets (per bullet)</text></cell><cell xml:id="G0004215"><text>1</text> regular</cell></row>
             <row xml:id="G0004216"><cell xml:id="G0004217"><text>Draw a weapon from holster or sling</text></cell><cell xml:id="G0004218"><text>1</text> regular</cell></row>
             <row xml:id="G0004219"><cell xml:id="G0004220"><text>Holster or sheath a weapon</text></cell><cell xml:id="G0004221"><text>1</text> regular</cell></row>
             <row xml:id="G0004222"><cell xml:id="G0004223"><text>Put something down carefully</text></cell><cell xml:id="G0004224"><text>2</text> regular</cell></row>
             <row xml:id="G0004225"><cell xml:id="G0004226"><text>Use a potion</text></cell><cell xml:id="G0004227"><text>1</text> regular</cell></row>
             <row xml:id="G0004228"><cell xml:id="G0004229"><text>Read a scroll</text></cell><cell xml:id="G0004230"><text>3</text> regular</cell></row>
-            <row xml:id="G0004231"><cell xml:id="G0004232">Set up a complex weapon (bipod, etc.)</cell><cell xml:id="G0004233"><text>3</text> or more regular</cell></row>
+            <row xml:id="G0004231"><cell xml:id="G0004232"><text>Set up a complex weapon (bipod, etc.)</text></cell><cell xml:id="G0004233"><text>3</text> or more regular</cell></row>
             <row xml:id="G0004234"><cell xml:id="G0004235"><text>Throw grenade or similar</text></cell><cell xml:id="G0004236"><text>1</text> regular</cell></row>
           </table>
         </section>
         <section kind="section" xml:id="G0004237">
           <title xml:id="G0004238">Spending luck</title>
           <table xml:id="G0004239">
-            <head xml:id="G0004240"><cell colfmt="l" xml:id="G0004241">What</cell><cell colfmt="p{3in}" xml:id="G0004242">How</cell></head>
-            <row xml:id="G0004243"><cell xml:id="G0004244"><text>Skills</text></cell><cell xml:id="G0004245">Roll your full skill's worth of dice and bonus again, and add the number of successes to your previous roll. Can only be done once per roll.</cell></row>
-            <row xml:id="G0004246"><cell xml:id="G0004247"><text>Damage</text></cell><cell xml:id="G0004248">Add +1 to damage roll per luck point spent.</cell></row>
-            <row xml:id="G0004249"><cell xml:id="G0004250"><text>Dodge</text></cell><cell xml:id="G0004251">Add +5 to some dodge-related skill per luck point spent. If you don<rsquo xml:id="G0004252"/>t have a dodge-related skill, then you are assumed to have one die in Dodge. Alternately, get a 25<percent xml:id="G0004253"/> chance to dodge for each luck point spent, cumulatively.</cell></row>
-            <row xml:id="G0004254"><cell xml:id="G0004255"><text>Soak</text></cell><cell xml:id="G0004256">For each luck point spent, reduce the damage by 2 points. Alternately, for each luck point spent, you get a 20<percent xml:id="G0004257"/> chance to take no damage; this accumulates.</cell></row>
-            <row xml:id="G0004258"><cell xml:id="G0004259"><text>Action</text></cell><cell xml:id="G0004260">Take an extra action at any time.</cell></row>
-            <row xml:id="G0004261"><cell xml:id="G0004262"><text>Healing</text></cell><cell xml:id="G0004263">Gain 5 Hit Points instantaneously.</cell></row>
-            <row xml:id="G0004264"><cell xml:id="G0004265"><text>Magic</text></cell><cell xml:id="G0004266">Gain 50 Mana Points instantaneously.</cell></row>
+            <head xml:id="G0004240"><cell colfmt="l" xml:id="G0004241"><text>What</text></cell><cell colfmt="p{3in}" xml:id="G0004242"><text>How</text></cell></head>
+            <row xml:id="G0004243"><cell xml:id="G0004244"><text>Skills</text></cell><cell xml:id="G0004245"><text>Roll your full skill's worth of dice and bonus again, and add the number of successes to your previous roll. Can only be done once per roll.</text></cell></row>
+            <row xml:id="G0004246"><cell xml:id="G0004247"><text>Damage</text></cell><cell xml:id="G0004248"><text>Add +1 to damage roll per luck point spent.</text></cell></row>
+            <row xml:id="G0004249"><cell xml:id="G0004250"><text>Dodge</text></cell><cell xml:id="G0004251"><text>Add +5 to some dodge-related skill per luck point spent. If you don<rsquo xml:id="G0004252"/>t have a dodge-related skill, then you are assumed to have one die in Dodge. Alternately, get a 25<percent xml:id="G0004253"/> chance to dodge for each luck point spent, cumulatively.</text></cell></row>
+            <row xml:id="G0004254"><cell xml:id="G0004255"><text>Soak</text></cell><cell xml:id="G0004256"><text>For each luck point spent, reduce the damage by 2 points. Alternately, for each luck point spent, you get a 20<percent xml:id="G0004257"/> chance to take no damage; this accumulates.</text></cell></row>
+            <row xml:id="G0004258"><cell xml:id="G0004259"><text>Action</text></cell><cell xml:id="G0004260"><text>Take an extra action at any time.</text></cell></row>
+            <row xml:id="G0004261"><cell xml:id="G0004262"><text>Healing</text></cell><cell xml:id="G0004263"><text>Gain 5 Hit Points instantaneously.</text></cell></row>
+            <row xml:id="G0004264"><cell xml:id="G0004265"><text>Magic</text></cell><cell xml:id="G0004266"><text>Gain 50 Mana Points instantaneously.</text></cell></row>
           </table>
         </section>
         <section kind="section" xml:id="G0004267">
           <title xml:id="G0004268">Modifications to strike</title>
           <table xml:id="G0004269">
-            <head xml:id="G0004270"><cell colfmt="p{10em}" xml:id="G0004271">What</cell><cell colfmt="p{3in}" xml:id="G0004272">Bonus</cell></head>
-            <row xml:id="G0004273"><cell xml:id="G0004274"><text>Larget Target</text></cell><cell xml:id="G0004275">+3 per size level difference</cell></row>
-            <row xml:id="G0004276"><cell xml:id="G0004277"><text>Point Blank Range</text></cell><cell xml:id="G0004278">+3 to strike</cell></row>
-            <row xml:id="G0004279"><cell xml:id="G0004280"><text>Small Target</text></cell><cell xml:id="G0004281">-3 per size level difference</cell></row>
-            <row xml:id="G0004282"><cell xml:id="G0004283"><text>Moving Target</text></cell><cell xml:id="G0004284">-3 for slow; -6 for quick (running)</cell></row>
-            <row xml:id="G0004285"><cell xml:id="G0004286"><text>Prone Target</text></cell><cell xml:id="G0004287">-5</cell></row>
-            <row xml:id="G0004288"><cell xml:id="G0004289">Partial (quarter) cover</cell><cell xml:id="G0004290">-4</cell></row>
-            <row xml:id="G0004291"><cell xml:id="G0004292"><text>Half cover</text></cell><cell xml:id="G0004293">-8</cell></row>
-            <row xml:id="G0004294"><cell xml:id="G0004295"><text>Dense cover</text></cell><cell xml:id="G0004296">-12</cell></row>
+            <head xml:id="G0004270"><cell colfmt="p{10em}" xml:id="G0004271"><text>What</text></cell><cell colfmt="p{3in}" xml:id="G0004272"><text>Bonus</text></cell></head>
+            <row xml:id="G0004273"><cell xml:id="G0004274"><text>Larget Target</text></cell><cell xml:id="G0004275"><text>+3 per size level difference</text></cell></row>
+            <row xml:id="G0004276"><cell xml:id="G0004277"><text>Point Blank Range</text></cell><cell xml:id="G0004278"><text>+3 to strike</text></cell></row>
+            <row xml:id="G0004279"><cell xml:id="G0004280"><text>Small Target</text></cell><cell xml:id="G0004281"><text>-3 per size level difference</text></cell></row>
+            <row xml:id="G0004282"><cell xml:id="G0004283"><text>Moving Target</text></cell><cell xml:id="G0004284"><text>-3 for slow; -6 for quick (running)</text></cell></row>
+            <row xml:id="G0004285"><cell xml:id="G0004286"><text>Prone Target</text></cell><cell xml:id="G0004287"><text>-5</text></cell></row>
+            <row xml:id="G0004288"><cell xml:id="G0004289"><text>Partial (quarter) cover</text></cell><cell xml:id="G0004290"><text>-4</text></cell></row>
+            <row xml:id="G0004291"><cell xml:id="G0004292"><text>Half cover</text></cell><cell xml:id="G0004293"><text>-8</text></cell></row>
+            <row xml:id="G0004294"><cell xml:id="G0004295"><text>Dense cover</text></cell><cell xml:id="G0004296"><text>-12</text></cell></row>
             <row xml:id="G0004297"><cell xml:id="G0004298"><text>Full cover</text></cell><cell xml:id="G0004299"><text>Cannot be normally targeted</text></cell></row>
-            <row xml:id="G0004300"><cell xml:id="G0004301"><text>In shadows</text></cell><cell xml:id="G0004302">-6</cell></row>
-            <row xml:id="G0004303"><cell xml:id="G0004304">Extremely hot, at range</cell><cell xml:id="G0004305">-20</cell></row>
+            <row xml:id="G0004300"><cell xml:id="G0004301"><text>In shadows</text></cell><cell xml:id="G0004302"><text>-6</text></cell></row>
+            <row xml:id="G0004303"><cell xml:id="G0004304"><text>Extremely hot, at range</text></cell><cell xml:id="G0004305"><text>-20</text></cell></row>
           </table>
         </section>
       </section>
@@ -18730,7 +18730,7 @@
         <field name="Type" table="yes" xml:id="G0020435">Basic</field>
         <field name="Rank" table="yes" xml:id="G0020436">1</field>
         <field name="Attribute" table="yes" xml:id="G0020437">Dexterity</field>
-        <field description="yes" name="Description" xml:id="G0020438">The skill of attacking with and parrying (if applicable) with the given (archaic) weapon type. Archaic weapons include both Melee and Ranged. The damage and type of the weapon is listed in the Equipment section. Note that Archaic Weapons actually encompasses many different skills.<description-list xml:id="G0020439"><item xml:id="G0020440"><description xml:id="G0020441">Class</description><text xml:id="G0020442">skills are for individual classes of archaic weapon, such as Axe or Polearm. These must be bought individual and are Rank 1 skills.</text></item><item xml:id="G0020443"><description xml:id="G0020444">Super Class</description><text xml:id="G0020445">skills are for groups of classes. These groups are:<description-list xml:id="G0020446"><item xml:id="G0020447"><description xml:id="G0020448">Stick</description><text xml:id="G0020449">Long Swords, Short Swords, Knives, Blunt</text></item><item xml:id="G0020450"><description xml:id="G0020451">Axes</description><text xml:id="G0020452">Axes, Blunt</text></item><item xml:id="G0020453"><description xml:id="G0020454">Flexible</description><text xml:id="G0020455">Chained, Monofilament, Ships</text></item><item xml:id="G0020456"><description xml:id="G0020457">Great</description><text xml:id="G0020458">Staves, Polearms</text></item><item xml:id="G0020459"><description xml:id="G0020460">Missile</description><text xml:id="G0020461">Ranged, Thrown</text></item></description-list>Super-Classes are Rank 2 and not Rank 1. A Super-Class may never be Specialized.</text></item><item xml:id="G0020462"><description xml:id="G0020463">Exotic</description><text xml:id="G0020464">Certain weapons are Exotic (most of these are in the Exotic category, but some are within other categories). All Exotic weapons require that you purchase an individual skill for them. For example, the Zaghnal is Exotic, in order to use the Zaghnal, a character must purchase the specific skill Zaghnal. Exotic skills may be specialized.</text></item></description-list><text xml:id="G0020465">In addition, any non-Exotic and non-Chained weapon can be used as a blunt weapon. It deals damage as a low-quality club of the same mass. Blunt weapons may be manufactured ad hoc from items laying around, i.e. rolling-pins, chair-legs, lead-pipe. As we know this will come up, a limb that includes the joint and significant portions of both the upper and lower section, is considered chained and thus may not be used.</text></field>
+        <field description="yes" name="Description" xml:id="G0020438">The skill of attacking with and parrying (if applicable) with the given (archaic) weapon type. Archaic weapons include both Melee and Ranged. The damage and type of the weapon is listed in the Equipment section. Note that Archaic Weapons actually encompasses many different skills.<description-list xml:id="G0020439"><item xml:id="G0020440"><description xml:id="G0020441"><text>Class</text></description><text xml:id="G0020442">skills are for individual classes of archaic weapon, such as Axe or Polearm. These must be bought individual and are Rank 1 skills.</text></item><item xml:id="G0020443"><description xml:id="G0020444"><text>Super Class</text></description><text xml:id="G0020445">skills are for groups of classes. These groups are:<description-list xml:id="G0020446"><item xml:id="G0020447"><description xml:id="G0020448"><text>Stick</text></description><text xml:id="G0020449">Long Swords, Short Swords, Knives, Blunt</text></item><item xml:id="G0020450"><description xml:id="G0020451"><text>Axes</text></description><text xml:id="G0020452">Axes, Blunt</text></item><item xml:id="G0020453"><description xml:id="G0020454"><text>Flexible</text></description><text xml:id="G0020455">Chained, Monofilament, Ships</text></item><item xml:id="G0020456"><description xml:id="G0020457"><text>Great</text></description><text xml:id="G0020458">Staves, Polearms</text></item><item xml:id="G0020459"><description xml:id="G0020460"><text>Missile</text></description><text xml:id="G0020461">Ranged, Thrown</text></item></description-list>Super-Classes are Rank 2 and not Rank 1. A Super-Class may never be Specialized.</text></item><item xml:id="G0020462"><description xml:id="G0020463"><text>Exotic</text></description><text xml:id="G0020464">Certain weapons are Exotic (most of these are in the Exotic category, but some are within other categories). All Exotic weapons require that you purchase an individual skill for them. For example, the Zaghnal is Exotic, in order to use the Zaghnal, a character must purchase the specific skill Zaghnal. Exotic skills may be specialized.</text></item></description-list><text xml:id="G0020465">In addition, any non-Exotic and non-Chained weapon can be used as a blunt weapon. It deals damage as a low-quality club of the same mass. Blunt weapons may be manufactured ad hoc from items laying around, i.e. rolling-pins, chair-legs, lead-pipe. As we know this will come up, a limb that includes the joint and significant portions of both the upper and lower section, is considered chained and thus may not be used.</text></field>
         <field name="Implementation" xml:id="G0020466"/>
       </datum>
       <datum name="Barrel Charge" xml:id="G0020467">
