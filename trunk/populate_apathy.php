@@ -44,6 +44,10 @@ function insert_field_table_element($Belongs,$Description) {
   return insert_field_data_element(0,1,0,$Belong,$Description);
 }
 
+function insert_field_anon_element($Belongs,$Description) {
+  return insert_field_data_element(0,0,0,$Belong,$Description);
+}
+
 function insert_field_desc_element($Belongs,$Description) {
   return insert_field_data_element(0,0,1,$Belong,$Description);
 }
@@ -56,8 +60,9 @@ for ($cat = 0; $cat < $categories->length; $cdx++) {
   foreach ($category->childNodes as $child)
     if ("datum" === $child->tagName) {
       $title = get_title_of_datum($child);
-      $tables = get_tables_of_datum($child);
+      $tables = get_table_of_datum($child);
       $description = get_description_of_datum($child);
+      echo "<p>".$title." ".sizeof($tables)." ".$description."</p>";
     }
 }
 
