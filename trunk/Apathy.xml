@@ -2526,27 +2526,27 @@
             <figure xml:id="G0003170">
               <table xml:id="G0003171">
                 <head xml:id="G0003172">
-                  <cell xml:id="G0003173">Class</cell>
-                  <cell xml:id="G0003174">Size</cell>
-                  <cell xml:id="G0003175">Slots</cell>
-                  <cell xml:id="G0003176">Capacity per</cell>
-                  <cell xml:id="G0003177">Damage</cell>
-                  <cell xml:id="G0003178">Cost</cell>
+                  <cell xml:id="G0003173"><text>Class</text></cell>
+                  <cell xml:id="G0003174"><text>Size</text></cell>
+                  <cell xml:id="G0003175"><text>Slots</text></cell>
+                  <cell xml:id="G0003176"><text>Capacity per</text></cell>
+                  <cell xml:id="G0003177"><text>Damage</text></cell>
+                  <cell xml:id="G0003178"><text>Cost</text></cell>
                 </head>
                 <row xml:id="G0003179">
-                  <cell xml:id="G0003180">0</cell>
-                  <cell xml:id="G0003181">&lt; 20mm</cell>
-                  <cell xml:id="G0003182">1</cell>
-                  <cell xml:id="G0003183">500 rounds</cell>
-                  <cell xml:id="G0003184">As per normal</cell>
-                  <cell xml:id="G0003185">Varies</cell>
+                  <cell xml:id="G0003180"><text>0</text></cell>
+                  <cell xml:id="G0003181"><text>&lt; 20mm</text></cell>
+                  <cell xml:id="G0003182"><text>1</text></cell>
+                  <cell xml:id="G0003183"><text>500 rounds</text></cell>
+                  <cell xml:id="G0003184"><text>As per normal</text></cell>
+                  <cell xml:id="G0003185"><text>Varies</text></cell>
                 </row>
                 <row xml:id="G0003186">
-                  <cell xml:id="G0003187">1</cell>
-                  <cell xml:id="G0003188">20 mm</cell>
-                  <cell xml:id="G0003189">1</cell>
-                  <cell xml:id="G0003190">20 rounds</cell>
-                  <cell xml:id="G0003191">
+                  <cell xml:id="G0003187"><text>1</text></cell>
+                  <cell xml:id="G0003188"><text>20 mm</text></cell>
+                  <cell xml:id="G0003189"><text>1</text></cell>
+                  <cell xml:id="G0003190"><text>20 rounds</text></cell>
+                  <cell xml:id="G0003191"><text>
                      <roll xml:id="G0003192">
                       <num xml:id="G0003193">2</num>
                       <face xml:id="G0003194">4</face>
@@ -2554,15 +2554,15 @@
                       <mul xml:id="G0003196">10</mul>
                       <kind xml:id="G0003197">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003198"> <dollar xml:id="G0003199"/>10</cell>
+		  </text></cell>
+                  <cell xml:id="G0003198"><text><dollar xml:id="G0003199"/>10</text></cell>
                 </row>
                 <row xml:id="G0003200">
-                  <cell xml:id="G0003201">2</cell>
-                  <cell xml:id="G0003202">30 mm</cell>
-                  <cell xml:id="G0003203">1</cell>
-                  <cell xml:id="G0003204">10 rounds</cell>
-                  <cell xml:id="G0003205">
+                  <cell xml:id="G0003201"><text>2</text></cell>
+                  <cell xml:id="G0003202"><text>30 mm</text></cell>
+                  <cell xml:id="G0003203"><text>1</text></cell>
+                  <cell xml:id="G0003204"><text>10 rounds</text></cell>
+                  <cell xml:id="G0003205"><text>
                      <roll xml:id="G0003206">
                       <num xml:id="G0003207">2</num>
                       <face xml:id="G0003208">6</face>
@@ -2570,15 +2570,15 @@
                       <mul xml:id="G0003210">10</mul>
                       <kind xml:id="G0003211">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003212"> <dollar xml:id="G0003213"/>20</cell>
+		  </text></cell>
+                  <cell xml:id="G0003212"><text><dollar xml:id="G0003213"/>20</text></cell>
                 </row>
                 <row xml:id="G0003214">
-                  <cell xml:id="G0003215">3</cell>
-                  <cell xml:id="G0003216">40 mm</cell>
-                  <cell xml:id="G0003217">1</cell>
-                  <cell xml:id="G0003218">2 rounds</cell>
-                  <cell xml:id="G0003219">
+                  <cell xml:id="G0003215"><text>3</text></cell>
+                  <cell xml:id="G0003216"><text>40 mm</text></cell>
+                  <cell xml:id="G0003217"><text>1</text></cell>
+                  <cell xml:id="G0003218"><text>2 rounds</text></cell>
+                  <cell xml:id="G0003219"><text>
                      <roll xml:id="G0003220">
                       <num xml:id="G0003221">2</num>
                       <face xml:id="G0003222">4</face>
@@ -2587,15 +2587,15 @@
                       <mul xml:id="G0003225">10</mul>
                       <kind xml:id="G0003226">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003227"> <dollar xml:id="G0003228"/>50</cell>
+		  </text></cell>
+                  <cell xml:id="G0003227"><text><dollar xml:id="G0003228"/>50</text></cell>
                 </row>
                 <row xml:id="G0003229">
-                  <cell xml:id="G0003230">4</cell>
-                  <cell xml:id="G0003231">50 mm</cell>
-                  <cell xml:id="G0003232">1</cell>
-                  <cell xml:id="G0003233">1 round</cell>
-                  <cell xml:id="G0003234">
+                  <cell xml:id="G0003230"><text>4</text></cell>
+                  <cell xml:id="G0003231"><text>50 mm</text></cell>
+                  <cell xml:id="G0003232"><text>1</text></cell>
+                  <cell xml:id="G0003233"><text>1 round</text></cell>
+                  <cell xml:id="G0003234"><text>
                      <roll xml:id="G0003235">
                       <num xml:id="G0003236">3</num>
                       <face xml:id="G0003237">6</face>
@@ -2603,15 +2603,15 @@
                       <mul xml:id="G0003239">10</mul>
                       <kind xml:id="G0003240">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003241"> <dollar xml:id="G0003242"/>75</cell>
+		  </text></cell>
+                  <cell xml:id="G0003241"><text><dollar xml:id="G0003242"/>75</text></cell>
                 </row>
                 <row xml:id="G0003243">
-                  <cell xml:id="G0003244">5</cell>
-                  <cell xml:id="G0003245">75 mm</cell>
-                  <cell xml:id="G0003246">2</cell>
-                  <cell xml:id="G0003247">1 round</cell>
-                  <cell xml:id="G0003248">
+                  <cell xml:id="G0003244"><text>5</text></cell>
+                  <cell xml:id="G0003245"><text>75 mm</text></cell>
+                  <cell xml:id="G0003246"><text>2</text></cell>
+                  <cell xml:id="G0003247"><text>1 round</text></cell>
+                  <cell xml:id="G0003248"><text>
                      <roll xml:id="G0003249">
                       <num xml:id="G0003250">4</num>
                       <face xml:id="G0003251">6</face>
@@ -2619,15 +2619,15 @@
                       <mul xml:id="G0003253">10</mul>
                       <kind xml:id="G0003254">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003255"> <dollar xml:id="G0003256"/>100</cell>
+		  </text></cell>
+                  <cell xml:id="G0003255"><text><dollar xml:id="G0003256"/>100</text></cell>
                 </row>
                 <row xml:id="G0003257">
-                  <cell xml:id="G0003258">6</cell>
-                  <cell xml:id="G0003259">100 mm</cell>
-                  <cell xml:id="G0003260">3</cell>
-                  <cell xml:id="G0003261">1 round</cell>
-                  <cell xml:id="G0003262">
+                  <cell xml:id="G0003258"><text>6</text></cell>
+                  <cell xml:id="G0003259"><text>100 mm</text></cell>
+                  <cell xml:id="G0003260"><text>3</text></cell>
+                  <cell xml:id="G0003261"><text>1 round</text></cell>
+                  <cell xml:id="G0003262"><text>
                      <roll xml:id="G0003263">
                       <num xml:id="G0003264">4</num>
                       <face xml:id="G0003265">4</face>
@@ -2636,15 +2636,15 @@
                       <mul xml:id="G0003268">10</mul>
                       <kind xml:id="G0003269">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003270"> <dollar xml:id="G0003271"/>150</cell>
+		  </text></cell>
+                  <cell xml:id="G0003270"><text><dollar xml:id="G0003271"/>150</text></cell>
                 </row>
                 <row xml:id="G0003272">
-                  <cell xml:id="G0003273">7</cell>
-                  <cell xml:id="G0003274">125 mm</cell>
-                  <cell xml:id="G0003275">4</cell>
-                  <cell xml:id="G0003276">1 round</cell>
-                  <cell xml:id="G0003277">
+                  <cell xml:id="G0003273"><text>7</text></cell>
+                  <cell xml:id="G0003274"><text>125 mm</text></cell>
+                  <cell xml:id="G0003275"><text>4</text></cell>
+                  <cell xml:id="G0003276"><text>1 round</text></cell>
+                  <cell xml:id="G0003277"><text>
                      <roll xml:id="G0003278">
                       <num xml:id="G0003279">4</num>
                       <face xml:id="G0003280">4</face>
@@ -2652,15 +2652,15 @@
                       <mul xml:id="G0003282">20</mul>
                       <kind xml:id="G0003283">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003284"> <dollar xml:id="G0003285"/>200</cell>
+		  </text></cell>
+                  <cell xml:id="G0003284"><text><dollar xml:id="G0003285"/>200</text></cell>
                 </row>
                 <row xml:id="G0003286">
-                  <cell xml:id="G0003287">8</cell>
-                  <cell xml:id="G0003288">150 mm</cell>
-                  <cell xml:id="G0003289">5</cell>
-                  <cell xml:id="G0003290">1 round</cell>
-                  <cell xml:id="G0003291">
+                  <cell xml:id="G0003287"><text>8</text></cell>
+                  <cell xml:id="G0003288"><text>150 mm</text></cell>
+                  <cell xml:id="G0003289"><text>5</text></cell>
+                  <cell xml:id="G0003290"><text>1 round</text></cell>
+                  <cell xml:id="G0003291"><text>
                      <roll xml:id="G0003292">
                       <num xml:id="G0003293">5</num>
                       <face xml:id="G0003294">4</face>
@@ -2668,15 +2668,15 @@
                       <mul xml:id="G0003296">20</mul>
                       <kind xml:id="G0003297">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003298"> <dollar xml:id="G0003299"/>400</cell>
+		  </text></cell>
+                  <cell xml:id="G0003298"><text><dollar xml:id="G0003299"/>400</text></cell>
                 </row>
                 <row xml:id="G0003300">
-                  <cell xml:id="G0003301">9</cell>
-                  <cell xml:id="G0003302">200 mm</cell>
-                  <cell xml:id="G0003303">6</cell>
-                  <cell xml:id="G0003304">1 round</cell>
-                  <cell xml:id="G0003305">
+                  <cell xml:id="G0003301"><text>9</text></cell>
+                  <cell xml:id="G0003302"><text>200 mm</text></cell>
+                  <cell xml:id="G0003303"><text>6</text></cell>
+                  <cell xml:id="G0003304"><text>1 round</text></cell>
+                  <cell xml:id="G0003305"><text>
                      <roll xml:id="G0003306">
                       <num xml:id="G0003307">5</num>
                       <face xml:id="G0003308">6</face>
@@ -2684,11 +2684,11 @@
                       <mul xml:id="G0003310">20</mul>
                       <kind xml:id="G0003311">P</kind>
                     </roll> 
-                  </cell>
-                  <cell xml:id="G0003312"> <dollar xml:id="G0003313"/>800</cell>
+		  </text></cell>
+                  <cell xml:id="G0003312"><text><dollar xml:id="G0003313"/>800</text></cell>
                 </row>
               </table>
-              <caption xml:id="G0003314">Sizes, costs, capacity for firearm ballistic weapons.</caption>
+              <caption xml:id="G0003314"><text>Sizes, costs, capacity for firearm ballistic weapons.</text></caption>
             </figure>
             <description-list xml:id="G0003315">
               <item xml:id="G0003316">
