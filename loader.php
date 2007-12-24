@@ -13,7 +13,7 @@ function make_main_menu($which) {
     case "Book": $bksel = true; break;
     case "RawData": $rdsel = true; break;
   }
-  array_push($options,make_option_for_select("Initialize","Choose...",$chsel));
+  array_push($options,make_option_for_select("RebuildMainMenu","Choose...",$chsel));
   array_push($options,make_option_for_select("Book","Book",$bksel));
   array_push($options,make_option_for_select("RawData","Raw Data",$rdsel));
   $env = array("Responder"=>"loader.php",
@@ -39,9 +39,11 @@ function respond() {
   $env["Connection"] = connect_to_apathy("Apathy.xml");
   if ("Initialize" === $env["Code"]) {
     return initialize_system($env);
-  } else if ("NoResponse" === $code) {
+  } else if ("NoResponse" === $env["Code"]) {
     return build_empty_response();
-  }/* else if ("RawData" === $code) {
+  } else if ("RebuildMainMenu" === $env["Code"]) {
+    return build_response("Path",make_main_menu("Choose"));
+  } /* else if ("RawData" === $code) {
     return raw_data_response($trg,$src,$code,$msg,$apathy);
   } else if ("LoadCategory" === $code) {
     return load_category_response($trg,$src,$code,$msg,$apathy);
