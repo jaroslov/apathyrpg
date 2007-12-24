@@ -393,7 +393,12 @@ function extract_categories($connection) {
         $table_p = $field_record["TableP"];
         $desc_p = $field_record["DescP"];
         echo "<p>&nbsp;&nbsp;&nbsp;&nbsp;".$name." ".$title_p."/".$table_p."/".$desc_p."</p>";
-        extract_structured_text($field_id,"categories",$connection);
+        $stexts = extract_structured_text($field_id,"categories",$connection);
+        foreach ($stexts as $stext) {
+          echo "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+          echo $stext["Id"]." ".
+          echo "</p>";
+        }
       }
     }
   }
