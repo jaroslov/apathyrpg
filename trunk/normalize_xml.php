@@ -108,6 +108,20 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
   return $elements;
 }
 
+function xmldb_table_setElementValue($Table,$Connection,$Element,$Value) {
+  $query = "UPDATE `".$Table."`.`Structural` SET
+            `Value` ='".$Value."'
+            WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
+  mysql_query($query,$Connection);
+}
+
+function xmldb_setElementValue($Connection,$Element,$Value) {
+  $query = "UPDATE `Structural` SET
+            `Value` ='".$Value."'
+            WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
+  mysql_query($query,$Connection);
+}
+
 function xmldb_attributes($Connection,$Element) {
   $query = "SELECT * FROM `Structural`
             WHERE `ChildOf` = ".$Element["ID"]."
@@ -116,11 +130,42 @@ function xmldb_attributes($Connection,$Element) {
   $attributes = array();
   while ($record = mysql_fetch_array($resource)) {
     $attribute = array();
+    $attribute["ID"] = $record["ID"];
     $attribute["Name"] = $record["Name"];
     $attribute["Value"] = $record["Value"];
     array_push($attributes,$attribute);
   }
   return $attributes;
+}
+
+function xmld_getAttribute($Connection,$Element,$Name) {
+  $query = "SELECT * FROM `Structural`
+            WHERE `ChildOf` = ".$Element["ID"]."
+            AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )
+            AND `Name` = CONVERT( _utf8 '".$Name."' USING latin1 )";
+  $resource = mysql_query($query,$Connection);
+  while ($record = mysql_fetch_array($resoruce)) {
+    $attribute = array();
+    $attribute["ID"] = $record["ID"];
+    $attribute["Name"] = $Name;
+    $attribute["Value"] = $record["Value"];
+    return $attribute;
+  }
+  return false;
+}
+
+function xmldb_table_setAttribute($Table,$Connection,$Attribute,$Value) {
+  $query = "UPDATE `".$Table."`.`Structural` SET
+            `Value` = '".$Value."'
+            WHERE `Structural`.`ID` =".$Attribute["ID"]." LIMIT 1 ;";
+  mysql_query($query,$Connection);
+}
+
+function xmldb_setAttribute($Connection,$Attribute,$Value) {
+  $query = "UPDATE `Structural` SET
+            `Value` = '".$Value."'
+            WHERE `Structural`.`ID` =".$Attribute["ID"]." LIMIT 1 ;";
+  mysql_query($query,$Connection);
 }
 
 function xmldb_is_populated($Connection) {
