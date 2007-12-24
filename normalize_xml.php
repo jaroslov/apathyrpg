@@ -105,21 +105,23 @@ function xmldb_getElementById($Connection,$ID) {
   return $resource;
 }
 
+function xmldb_convert_record($record) {
+  return array("ID"=>$record["ID"],
+                "ChildOf"=>$record["ChildOf"],
+                "Kind"=>$record["Kind"],
+                "Order"=>$record["Order"],
+                "Name"=>$record["Name"],
+                "Value"=>$record["Value"]);
+}
+
 function xmldb_getElementsByTagName($Connection,$TagName) {
   $query = "SELECT * FROM `Structural`
             WHERE `Kind` = CONVERT( _utf8 'element' USING latin1 )
             AND `Name` LIKE CONVERT( _utf8 '".$TagName."' USING latin1 )";
   $resource = mysql_query($query,$Connection);
   $elements = array();
-  while ($record = mysql_fetch_array($resource)) {
-    $element = array();
-    $element["ID"] = $record["ID"];
-    $element["ChildOf"] = (int)$record["ChildOf"];
-    $element["Kind"] = $record["Kind"];
-    $element["Order"] = (int)$record["Order"];
-    $element["Value"] = $record["Value"];
-    array_push($elements,$element);
-  }
+  while ($record = mysql_fetch_array($resource))
+    array_push($elements,xmldb_convert_record($record));
   return $elements;
 }
 
@@ -143,13 +145,8 @@ function xmldb_attributes($Connection,$Element) {
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
   $resource = mysql_query($query);
   $attributes = array();
-  while ($record = mysql_fetch_array($resource)) {
-    $attribute = array();
-    $attribute["ID"] = $record["ID"];
-    $attribute["Name"] = $record["Name"];
-    $attribute["Value"] = $record["Value"];
-    array_push($attributes,$attribute);
-  }
+  while ($record = mysql_fetch_array($resource))
+    array_push($attributes,xmldb_convert_record($record));
   return $attributes;
 }
 
@@ -159,13 +156,8 @@ function xmldb_getAttribute($Connection,$Element,$Name) {
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )
             AND `Name` = CONVERT( _utf8 '".$Name."' USING latin1 )";
   $resource = mysql_query($query,$Connection);
-  while ($record = mysql_fetch_array($resoruce)) {
-    $attribute = array();
-    $attribute["ID"] = $record["ID"];
-    $attribute["Name"] = $Name;
-    $attribute["Value"] = $record["Value"];
-    return $attribute;
-  }
+  while ($record = mysql_fetch_array($resource))
+    return xmldb_convert_record($record);
   return false;
 }
 
@@ -174,15 +166,20 @@ function xmldb_getAttributeOfTagName($Connection,$TagName,$AttrName) {
             WHERE `Structural`.`ID`=`Attributes`.`ChildOf`
             AND `Structural`.`Name` = '".$TagName."'
             AND `Attributes`.`Name` = '".$AttrName."';";
-  $resource = mysql_query($query);
+  $resource = mysql_query($query,$Connection);
   $attributes = array();
-  while ($record = mysql_fetch_array($resource)) {
-    $attribute = array("ID"=>$record["ID"],
-                      "Name"=>$AttrNAme,
-                      "Value"=>$record["Value"]);
-    array_push($attributes,$attribute);
-  }
+  while ($record = mysql_fetch_array($resource))
+    array_push($attributes,xmldb_convert_record($record));
   return $attributes;
+}
+
+function xmldb_parentOfAttribute($Connection,$Attribute) {
+  $query = "SELECT * FROM `Structural`
+            WHERE `ID` = ".$Attribute["ChildOf"];
+  $resource = mysql_query($query,$Connection);
+  while ($record = mysql_fetch_array($resource))
+    return xmldb_convert_record($record);
+  return false;
 }
 
 function xmldb_table_setAttribute($Table,$Connection,$Attribute,$Value) {
