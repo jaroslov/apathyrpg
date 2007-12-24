@@ -32,6 +32,8 @@ function test() {
   $sections = xmldb_getElementsByTagName($Connection,"section");
   foreach ($sections as $section) {
     $attrs = xmldb_attributes($Connection,$section);
+    echo "<br/>";
+    print_r($section);
     foreach ($attrs as $attr)
       echo "&nbsp;&nbsp;&nbsp;<em>".$attr["Name"]." = ".$attr["Value"]."</em><br/>";
   }
