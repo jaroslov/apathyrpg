@@ -173,9 +173,23 @@ function xmldb_getAttributeOfTagName($Connection,$TagName,$AttrName) {
   return $attributes;
 }
 
-function xmldb_parentOfAttribute($Connection,$Attribute) {
+
+function xmldb_getAttributeOfAllChildren($Connection,$Parent,$ChildName,$AttrName) {
+  $query = "SELECT * FROM `Structural`,`Attributes`
+            WHERE `Structural`.`ChildOf` = '".$Parent["ID"]."'
+            AND `Structural`.`ID`=`Attributes`.`ChildOf`
+            AND `Structural`.`Name` = '".$ChildName."'
+            AND `Attributes`.`Name` = '".$AttrName."';";
+  $resource = mysql_query($query,$Connection);
+  $attributes = array();
+  while ($record = mysql_fetch_array($resource))
+    array_push($attributes,xmldb_convert_record($record));
+  return $attributes;
+}
+
+function xmldb_getParentById($Connection,$ID) {
   $query = "SELECT * FROM `Structural`
-            WHERE `ID` = ".$Attribute["ChildOf"];
+            WHERE `ID` = ".$ID;
   $resource = mysql_query($query,$Connection);
   while ($record = mysql_fetch_array($resource))
     return xmldb_convert_record($record);
@@ -194,6 +208,15 @@ function xmldb_setAttribute($Connection,$Attribute,$Value) {
             `Value` = '".$Value."'
             WHERE `Structural`.`ID` =".$Attribute["ID"]." LIMIT 1 ;";
   mysql_query($query,$Connection);
+}
+
+function xmldb_getChildNodes($Connection,$Node) {
+  $query = "SELECT * FROM `Structural` WHERE `ChildOf`=".$Node["ID"];
+  $resource = mysql_query($query,$Connection);
+  $children = array();
+  while ($record = mysql_fetch_array($resource))
+    array_push($children,xmldb_convert_record($record));
+  return $children;
 }
 
 function xmldb_is_populated($Connection) {
