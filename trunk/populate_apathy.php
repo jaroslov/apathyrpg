@@ -2,26 +2,27 @@
 
 include 'apathy_xml.php';
 
-// Load the apathy xml-database
-$ApathyName = "Apathy.xml";
-$ApathyDom = get_apathy_dom($ApathyName);
-$Apathy = get_apathy_xml($ApathyDom);
+function create_connection() {
+  // Connecting, selecting database
+  $link = mysql_connect('localhost', 'thechao', 'ha1l3r1S')
+      or die('Could not connect: ' . mysql_error());  
+  mysql_select_db('Apathy') or die('Could not select database');
+  return $link;
+}
 
-// Connecting, selecting database
-$link = mysql_connect('localhost', 'thechao', 'ha1l3r1S')
-    or die('Could not connect: ' . mysql_error());
+function close_connection($connection) {
+  mysql_close($connection);
+}
 
-mysql_select_db('Apathy') or die('Could not select database');
-
-function insert_raw_category_element($Path) {
+function insert_raw_category_element($Path,$connection) {
   $query = "INSERT INTO `Apathy`.`RawCategories` ("
-            ."`CategoryId`, `Name`)"
+            ."`CategoryId`, `Path`)"
             ."VALUES ( NULL, '".$Path."');";
-  $resource = mysql_query($query);
+  $resource = mysql_query($query,$connection);
   return mysql_insert_id();
 }
 
-function insert_raw_datum_element($BelongsTo,$Name) {
+function insert_raw_datum_element($BelongsTo,$Name,$connection) {
   $query = "INSERT INTO `Apathy`.`RawDatums` (
               `DatumId` ,
               `BelongsTo` ,
@@ -30,97 +31,99 @@ function insert_raw_datum_element($BelongsTo,$Name) {
             VALUES (
               NULL , '".$BelongsTo."', '".$Name."'
             );";
-  $resource = mysql_query($query);
+  $resource = mysql_query($query,$connection);
   return mysql_insert_id();
 }
 
-function insert_field_data_element($BelongsTo,$Title,$Table,$Desc,$Description) {
+function insert_field_data_element($BelongsTo,$Name,$Title,$Table,$Desc,$connection) {
   $query = "INSERT INTO `Apathy`.`RawDataFields` (
               `FieldId`,
               `BelongsTo`,
+              `Name`,
               `TitleP`,
               `TableP`,
               `DescP`
             ) VALUES (
               NULL,
               '".$BelongsTo."',
+              '".$Name."',
               '".$Title."',
               '".$Table."',
               '".$Desc."');";
-  $resource = mysql_query($query);
+  $resource = mysql_query($query,$connection);
   return mysql_insert_id();
 }
 
-function insert_field_title_element($BelongsTo) {
-  return insert_field_data_element($BelongsTo,1,0,0);
+function insert_field_title_element($BelongsTo,$Name,$connection) {
+  return insert_field_data_element($BelongsTo,$Name,'yes','no','no',$connection);
 }
 
-function insert_field_table_element($BelongsTo) {
-  return insert_field_data_element($BelongsTo,0,1,0);
+function insert_field_table_element($BelongsTo,$Name,$connection) {
+  return insert_field_data_element($BelongsTo,$Name,'no','yes','no',$connection);
 }
 
-function insert_field_desc_element($BelongsTo) {
-  return insert_field_data_element($BelongsTo,0,0,1);
+function insert_field_desc_element($BelongsTo,$Name,$connection) {
+  return insert_field_data_element($BelongsTo,$Name,'no','no','yes',$connection);
 }
 
-function insert_field_anon_element($BelongsTo) {
-  return insert_field_data_element($BelongsTo,0,0,0);
+function insert_field_anon_element($BelongsTo,$Name,$connection) {
+  return insert_field_data_element($BelongsTo,$Name,'no','no','no',$connection);
 }
 
-function insert_structured_element($BelongsTo,$Order,$TagName,$ExtraName,$ExtraValue) {
+function insert_structured_element($BelongsTo,$Whom,$Order,$TagName,
+                                   $ExtraName,$ExtraValue,$connection) {
   $query = "INSERT INTO `Apathy`.`StructuredText` (
               `StructuredId` ,
               `BelongsTo` ,
+              `OrderKind` ,
               `Order` ,
               `TagName` ,
               `ExtraName` ,
               `ExtraValue`
             )
             VALUES (
-              NULL , '".$BelongsTo."', '".$Order."', '"
-              .$TagName."', '"
+              NULL , '".$BelongsTo."', '".$Whom."', '"
+              .$Order."', '".$TagName."', '"
               .$ExtraName."', '".$ExtraValue."'
             );";
-  $resource = mysql_query($query);
+  $resource = mysql_query($query,$connection);
   return mysql_insert_id();
 }
 
-function insert_raw_text_chunk($BelongsTo,$Text) {
+function insert_raw_text_chunk($BelongsTo,$Text,$connection) {
   $query = "INSERT INTO `Apathy`.`RawText` (
               `TextId` ,
               `BelongsTo` ,
+              `OwnerKind` ,
               `Value`
             )
             VALUES (
               NULL , '".$BelongsTo."', '".$Text."'
             );";
-  $resource = mysql_query($query);
+  $resource = mysql_query($query,$connection);
   return mysql_insert_id();
 }
 
-function mark_as_populated () {
+function mark_as_populated ($connection) {
   $query = "INSERT INTO `Apathy`.`Populated` (
               `Populated`
             ) VALUES (
               NULL
             );";
-  $resource = mysql_query($query);
+  $resource = mysql_query($query,$connection);
   return mysql_insert_id();  
 }
 
-function populated_p() {
-  $query = "SELECT *
-            FROM `Populated`
-            LIMIT 0 , 30 ";
-  $resource = mysql_query($query);
+function populated_p($connection) {
+  $query = "SELECT * FROM `Populated`";
+  $resource = mysql_query($query,$connection);
   $populated = false;
   while ($row = mysql_fetch_array($resource))
     $populated = true;
-  mysql_free_result($result);
   return $populated;
 }
 
-function populate_structured_text($Node,$ParentId,$Order,$saverawtext,$Indent) {
+function populate_structured_text($Node,$Whom,$ParentId,$Order,$saverawtext,$Indent,$connection) {
   $indent = "";
   $nindent = "";
   if (is_string($Indent)) {
@@ -141,9 +144,15 @@ function populate_structured_text($Node,$ParentId,$Order,$saverawtext,$Indent) {
     case "section": $saverawtext = false;
       $extraname = "kind";
       $extravalue = $Node->getAttribute($extraname); break;
+    case "datum": $saverawtext = false; break;
+    case "default": $saverawtext = false; break;
     // structured text elements
     case "title": $saverawtext = true; break;
     case "text": $saverawtext = true; break;
+    case "field": $saverawtext = true;
+      $extraname = "colfmt";
+      $extravalue = $Node->getAttribute($extraname);
+      break;
     case "itemized-list": $saverawtext = false; break;
     case "description-list": $saverawtext = false; break;
     case "numbered-list": $saverawtext = false; break;
@@ -228,17 +237,17 @@ function populate_structured_text($Node,$ParentId,$Order,$saverawtext,$Indent) {
   }
   $node_id = null;
   if ($Node->nodeType == XML_ELEMENT_NODE) {
-    if ($tagname === "text") {
+    if ($tagname === "text" or $tagname === "field") {
       $sxml = simplexml_import_dom($Node);
-      $node_id = insert_structured_element($ParentId,$Order,"text","","");
-      insert_raw_text_chunk($node_id,$sxml->asXML());
+      $node_id = insert_structured_element($ParentId,$Whom,$Order,$tagname,"","",$connection);
+      insert_raw_text_chunk($node_id,$sxml->asXML(),$connection);
       return true;
     } else {
-      $node_id = insert_structured_element($ParentId,$Order,$tagname,$extraname,$extravalue);
+      $node_id = insert_structured_element($ParentId,$Whom,$Order,$tagname,$extraname,$extravalue,$connection);
       if ($recurse) {
         $order = 0;
         foreach ($Node->childNodes as $Child) {
-          $increment = populate_structured_text($Child,$node_id,$order,$saverawtext,$nindent);
+          $increment = populate_structured_text($Child,$Whom,$node_id,$order,$saverawtext,$nindent,$connection);
           if ($increment)
             $order++;
         }
@@ -269,53 +278,128 @@ function populate_structured_text($Node,$ParentId,$Order,$saverawtext,$Indent) {
     populate_structured_text($Child,$node_id,$saverawtext,$nindent);*/
 }
 
-function populate_database($Apathy) {
-  if (!populated_p())
-    force_populate_database($Apathy);
-  return populated_p();
+function populate_database($Apathy,$connection) {
+  if (!populated_p($connection))
+    DO_NOT_USE_force_populate_database($Apathy,$connection);
+  return populated_p($connection);
 }
 
-function force_populate_database($Apathy) {
-  mark_as_populated();
+function DO_NOT_USE_force_populate_database($Apathy,$connection) {
+  mark_as_populated($connection);
+  populate_books($Apathy,$connection);
+  populate_categories($Apathy,$connection);
+}
+
+function populate_books($Apathy,$connection) {
   $books = $Apathy->getElementsByTagName("book");
   for ($bad = 0; $bad < $books->length; $bad++) {
     $book = $books->item($bad);
-    populate_structured_text($book,0,$bad,false,"");
+    populate_structured_text($book,"books",0,$bad,false,"",$connection);
   }
+}
+
+function populate_categories($Apathy,$connection) {
   $categories = $Apathy->getElementsByTagName("category");
   for ($cat = 0; $cat < $categories->length; $cdx++) {
     $category = $categories->item($cdx);
     $path = $category->getAttribute("name");
     // (1) insert the category
-    $cat_id = insert_raw_category_element($path);
+    $cat_id = insert_raw_category_element($path,$connection);
     foreach ($category->childNodes as $datum_p)
       if ("datum" === $datum_p->tagName) {
         $datum_name = $datum_p->getAttribute("name");
         // (2) insert the datum
-        $datum_id = insert_raw_datum_element($cat_id,$datum_name);
+        $datum_id = insert_raw_datum_element($cat_id,$datum_name,$connection);
         foreach ($datum_p->childNodes as $field_p)
           if ("field" === $field_p->tagName) {
             // (3) insert the fields
+            $name = $field_p->getAttribute("name");
             $strxml = translate_child_text($field_p);
+            $field_id = null;
             if (false !== $field_p->hasAttribute("title")
               and "yes" === $field_p->getAttribute("title"))
-              insert_field_title_element($datum_id);
+              $field_id = insert_field_title_element($datum_id,$name,$connection);
             else if (false !== $field_p->hasAttribute("table")
               and "yes" === $field_p->getAttribute("table"))
-              insert_field_table_element($datum_id);
+              $field_id = insert_field_table_element($datum_id,$name,$connection);
             else if (false !== $field_p->hasAttribute("description")
               and "yes" === $field_p->getAttribute("description"))
-              insert_field_desc_element($datum_id);
+              $field_id = insert_field_desc_element($datum_id,$name,$connection);
             else
-              insert_field_anon_element($datum_id);
+              $field_id = insert_field_anon_element($datum_id,$name,$connection);
+            $sxml = simplexml_import_dom($field);
+            populate_structured_text($field_p,"categories",$field_id,0,false,"",$connection);
           }
       }
   }
 }
 
-if (populate_database($Apathy))
-  echo "Populated.";
-else
-  echo "Not Populated.";
+function empty_database($connection) {
+  $query = "TRUNCATE TABLE `Populated`";
+  mysql_query($query);
+  $query = "TRUNCATE TABLE `RawCategories`";
+  mysql_query($query);
+  $query = "TRUNCATE TABLE `RawDataFields`";
+  mysql_query($query);
+  $query = "TRUNCATE TABLE `RawDatums`";
+  mysql_query($query);
+  $query = "TRUNCATE TABLE `RawText`";
+  mysql_query($query);
+  $query = "TRUNCATE TABLE `StructuredText`";
+  mysql_query($query);
+}
+
+function extract_categories($connection) {
+  $query = "SELECT * FROM `RawCategories`";
+  $cat_resource = mysql_query($query);
+  while ($cat_record = mysql_fetch_array($cat_resource)) {
+    $category_id = $cat_record["CategoryId"];
+    $path = $cat_record["Path"];
+    echo "<p><b>".$category_id."</b> <em>".$path."</em></p>";
+    $query = "SELECT * FROM `RawDatums` WHERE `BelongsTo` = ".$category_id;
+    $datum_resource = mysql_query($query);
+    while ($datum_record = mysql_fetch_array($datum_resource)) {
+      $datum_id = $datum_record["DatumId"];
+      $datum_name = $datum_record["Name"];
+      echo "<p>&nbsp;&nbsp;<b>".$datum_id."</b> <em>".$datum_name."</em></p>";
+      $query = "SELECt * FROM `RawDataFields` WHERE `BelongsTo` = ".$datum_id;
+      $field_resource = mysql_query($query);
+      while ($field_record = mysql_fetch_array($field_resource)) {
+        $name = $field_record["Name"];
+        $title_p = $field_record["TitleP"];
+        $table_p = $field_record["TableP"];
+        $desc_p = $field_record["DescP"];
+        echo "<p>&nbsp;&nbsp;&nbsp;&nbsp;".$name." ".$title_p."/".$table_p."/".$desc_p."</p>";
+      }
+    }
+  }
+}
+
+function populate_or_empty ($populate) {
+  // Load the apathy xml-database
+  $ApathyName = "Apathy.xml";
+  $ApathyDom = get_apathy_dom($ApathyName);
+  $Apathy = get_apathy_xml($ApathyDom);
+
+  $connection = create_connection();
+  if (!$populate)
+    empty_database($connection);
+  else
+    populate_database($Apathy,$connection);
+  if (populated_p($connection))
+    echo "<p>Database populated.</p>";
+  else
+    echo "<p>Database unpopulated.</p>";
+  close_connection($connection);
+}
+
+function extract_apathy_as_xml() {
+  $connection = create_connection();
+  extract_categories($connection);
+  close_connection($connection);
+}
+
+populate_or_empty(true);
+//extract_apathy_as_xml();
 
 ?>
