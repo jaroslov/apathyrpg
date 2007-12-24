@@ -6,7 +6,7 @@ function realUnescape(string) {
   }
   return nstr;
 }
-function ajaxFunction(Source,Target,Code,Message) {
+function ajaxFunction(Responder,Source,Target,Code,Message) {
   xmlHttp=new XMLHttpRequest();
   xmlHttp.onreadystatechange = function () {
     if (4 == xmlHttp.readyState) {
@@ -29,7 +29,9 @@ function ajaxFunction(Source,Target,Code,Message) {
       }
     }
   }
-  xmlHttp.open("GET","ajax.php?source="+Source
+  xmlHttp.open("GET",Responder+"?"
+    +"responder="+Responder
+    +"&source="+Source
     +"&target="+Target
     +"&code="+Code
     +"&message="+Message,true);

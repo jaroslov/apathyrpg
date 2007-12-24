@@ -2,11 +2,15 @@
 
 include 'normalize_xml.php';
 
+function apathy_serialized_xml_nodes() {
+  return array("title","text","define",
+              "mn","mo","mi",
+              "num","face","bns","bOff",
+              "rOff","raw","kind","mul");
+}
+
 function FORCE_create_apathy($Connection,$DatabaseName,$ApathyDom) {
-  $HasTextPs = array("title","text","define",
-                      "mn","mo","mi",
-                      "num","face","bns","bOff",
-                      "rOff","raw","kind","mul");
+  $HasTextPs = apathy_serialized_xml_nodes();
   normalize_xml($DatabaseName,$Connection,
     $ApathyDom,$Connection,$HasTextPs,true);
   //empty_all_xml($Connection);
@@ -21,7 +25,7 @@ function create_apathy($ApathyName,$DatabaseName) {
   return $Connection;
 }
 
-function test() {
+function POPULATE_APATHY_PHP_test() {
   $ApathyName = "Apathy.xml";
   $ApathyDB = "ApathyRPG";
   $Connection = create_apathy($ApathyName,$ApathyDB);
@@ -35,10 +39,11 @@ function test() {
     echo "<br/>";
     print_r($section);
     foreach ($attrs as $attr)
-      echo "&nbsp;&nbsp;&nbsp;<em>".$attr["Name"]." = ".$attr["Value"]."</em><br/>";
+      echo "&nbsp;&nbsp;&nbsp;<em>".$attr["Name"]
+            ." = ".$attr["Value"]."</em><br/>";
   }
 }
 
-test();
+POPULATE_APATHY_PHP_test();
 
 ?>
