@@ -60,9 +60,8 @@ function normalize_xml_node($Table,$Connection,
         $Attribute = $Attributes->item($adx);
         $Name = $Attribute->nodeName;
         $Value = $Attribute->nodeValue;
-        if ($DropId and ($Name === "xml:id" or $Name === "id"))
-          continue;
-        insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
+        if (!($DropId and ($Name === "xml:id" or $Name === "id")))
+          insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
       }
       if (!$Serialize) {
         normalize_xml_node($Table,$Connection,
@@ -72,11 +71,27 @@ function normalize_xml_node($Table,$Connection,
   }
 }
 
+function create_kind_view($Table,$Connection,$KTable,$Kind) {
+  $query = "CREATE VIEW ".$KTable." AS SELECT * FROM `Structural`
+            WHERE `Kind` = '".$Kind."';";
+  mysql_query($query,$Connection);
+}
+
+function create_attribute_view($Table,$Connection) {
+  $query = "CREATE VIEW attributes AS SELECT * FROM `Structural`
+            WHERE `Kind` = 'attribute';";
+  mysql_query($query,$Connection);
+}
+
 function normalize_xml($Table,$Connection,
   $DOMDocument,$Connection,$HasTextPs,$DropId) {
   $Node = $DOMDocument->ownerDocument;
   normalize_xml_node($Table,$Connection,
     -1,$Node,$Connection,$HasTextPs,$DropId);
+  // need views of elements and attributes
+  create_kind_view($Table,$Connection,"Attributes","attribute");
+  create_kind_view($Table,$Connection,"Elements","element");
+  create_kind_view($Table,$Connection,"Comments","comment");
 }
 
 function xmldb_empty_all_xml($Connection) {
@@ -138,7 +153,7 @@ function xmldb_attributes($Connection,$Element) {
   return $attributes;
 }
 
-function xmld_getAttribute($Connection,$Element,$Name) {
+function xmldb_getAttribute($Connection,$Element,$Name) {
   $query = "SELECT * FROM `Structural`
             WHERE `ChildOf` = ".$Element["ID"]."
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )
@@ -152,6 +167,22 @@ function xmld_getAttribute($Connection,$Element,$Name) {
     return $attribute;
   }
   return false;
+}
+
+function xmldb_getAttributeOfTagName($Connection,$TagName,$AttrName) {
+  $query = "SELECT * FROM `Structural`,`Attributes`
+            WHERE `Structural`.`ID`=`Attributes`.`ChildOf`
+            AND `Structural`.`Name` = '".$TagName."'
+            AND `Attributes`.`Name` = '".$AttrName."';";
+  $resource = mysql_query($query);
+  $attributes = array();
+  while ($record = mysql_fetch_array($resource)) {
+    $attribute = array("ID"=>$record["ID"],
+                      "Name"=>$AttrNAme,
+                      "Value"=>$record["Value"]);
+    array_push($attributes,$attribute);
+  }
+  return $attributes;
 }
 
 function xmldb_table_setAttribute($Table,$Connection,$Attribute,$Value) {

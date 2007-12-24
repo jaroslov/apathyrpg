@@ -92,19 +92,8 @@ function make_option_for_select($value,$content,$selected) {
   return $option;
 }
 
-function make_arrow_path($parts) {
-  $raquo = "&raquo;";
-  $path = "<span class='CurrentPosition'>";
-  if (is_array($parts))
-    foreach ($parts as $part)
-      $path .= $raquo . " " . $part . " ";
-  else
-    $path .= $parts;
-  return $path."</span>";
-}
-
-function build_category_path($apathy,$path) {
-  /*
+/*function build_category_path($apathy,$path) {
+  / *
     Nontrivial function: we have a list of categories where
     the organization is implicit rather than explicit. That is,
     the categories are held flat, but maintain a pointer into
@@ -112,7 +101,7 @@ function build_category_path($apathy,$path) {
     is like a path:
     Content/Augmentations/Arm, Hand
     We need to collate everybody.
-  */
+  * /
   $categories = $apathy->getElementsByTagName("category");
   $msg = $path;
   $result = array();
@@ -300,6 +289,6 @@ function update_value_response($trg,$src,$code,$msg,$apathydom) {
     "<b>".$target_id
       ." &laquo;</b><span style='color:blue;'>"
       .$msg."</span><b>&raquo;</b>");
-}
+}*/
 
 ?>
