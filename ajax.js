@@ -11,6 +11,7 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
   xmlHttp.onreadystatechange = function () {
     if (4 == xmlHttp.readyState) {
       var xmlR = xmlHttp.responseText;
+      document.title = xmlR;
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var replies = responseXml.getElementsByTagName("response");

@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="Apathy.css">
     <script type="text/javascript" src="ajax.js"></script>
   </head>
-  <body onLoad="ajaxFunction('ajax.php','MainPart','MainPart','Initialize','')">
+  <body onLoad="ajaxFunction('loader.php','MainPart','MainPart','Initialize','')">
     <div id="Path" class="Path"></div>
     <div id="Datum" class="Datum"></div>
     <table valign="top">

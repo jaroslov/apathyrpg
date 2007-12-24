@@ -1,11 +1,14 @@
 <?php
 
-include 'apathy_xml.php';
-
-$source = $_GET["source"];
-$target = $_GET["target"];
-$code = $_GET["code"];
-$message = $_GET["message"];
+function get_environment() {
+  $environment = array();
+  $environment["Responder"] = $_GET["responder"];
+  $environment["Target"] = $_GET["target"];
+  $environment["Source"] = $_GET["source"];
+  $environment["Code"] = $_GET["code"];
+  $environment["Message"] = $_GET["message"];
+  return $environment;
+}
 
 function encode_html ($html) {
   $html = str_replace("&","&amp;",$html);
@@ -60,17 +63,17 @@ function build_responses($targets, $payloads) {
   return $result;
 }
 
-function make_ajax_function($event,$source,$target,$code,$message) {
-  return $event."=\"ajaxFunction('ajax.php',"
-                                  .$source.","
-                                  .$target.","
-                                  .$code.","
-                                  .$message.")\"";
+function make_ajax_function($event,$environment) {
+  return $event."=\"ajaxFunction('".$environment["Responder"]."',"
+                                  .$environment["Target"].","
+                                  .$environment["Source"].","
+                                  .$environment["Code"].","
+                                  .$environment["Message"].")\"";
 }
 
-function make_select_statement($options,$source,$target,$code,$message) {
+function make_select_statement($options,$environment) {
   $select = "<select class='MainChooser' ";
-  $select .= make_ajax_function("onChange",$source,$target,$code,$message);
+  $select .= make_ajax_function("onChange",$environment);
   $select .= ">";
   if (is_array($options))
     foreach ($options as $option)
@@ -300,16 +303,6 @@ function make_main_menu($which) {
   return make_select_statement($options,"'Path'","'Path'","value","''");
 }
 
-function initialize_system($target,$source,$code,$message,$apathy) {
-  $payloads = array();
-  array_push($payloads,make_main_menu("Choose"));
-  array_push($payloads,"<em>No data shown.</em>");
-  $targets = array();
-  array_push($targets,"Path");
-  array_push($targets,"Datum");
-  return build_responses($targets,$payloads);
-}
-
 function update_value_response($trg,$src,$code,$msg,$apathydom) {
   $apathy = $apathydom->ownerDocument;
   $atcodes = explode("@",$code);
@@ -324,33 +317,5 @@ function update_value_response($trg,$src,$code,$msg,$apathydom) {
       ." &laquo;</b><span style='color:blue;'>"
       .$msg."</span><b>&raquo;</b>");
 }
-
-function respond($trg,$src,$code,$msg,$apathydom) {
-  $apathy = $apathydom->ownerDocument;
-  if ("Initialize" === $code) {
-    return initialize_system($trg,$src,$code,$msg,$apathy);
-  } else if ("NoResponse" === $code) {
-    return build_empty_response();
-  } else if ("RawData" === $code) {
-    return raw_data_response($trg,$src,$code,$msg,$apathy);
-  } else if ("LoadCategory" === $code) {
-    return load_category_response($trg,$src,$code,$msg,$apathy);
-  } else if ("LoadDatum" === $code) {
-    return load_datum_response($trg,$src,$code,$msg,$apathy);
-  } else if ("LogMessage" === $code) {
-    return build_response("Log",
-      "<b>\"</b><span style='color:green;'>".$msg."</span><b>\"</b>");
-  } else {
-    if (false !== strpos($code,"@")) {
-      return update_value_response($trg,$src,$code,$msg,$apathydom);
-    }
-  }
-  return build_response($trg,
-      "<p>Not a known code:".$code
-      ." with ".$trg."->".$src."@".$msg."<br/>With Dom: "
-      .gettype($apathydom)."</p>");
-}
-
-echo respond($target,$source,$code,$message,get_apathy_dom());
 
 ?>
