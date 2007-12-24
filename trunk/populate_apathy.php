@@ -71,7 +71,8 @@ function insert_field_anon_element($BelongsTo,$Name,$connection) {
 }
 
 function insert_structured_element($BelongsTo,$OwnerKind,$Order,$TagName,
-                                   $ExtraName,$ExtraValue,$connection) {
+                                   $ExtraName,$ExtraValue,
+                                   $RawTextP,$connection) {
   $query = "INSERT INTO `Apathy`.`StructuredText` (
               `StructuredId` ,
               `BelongsTo` ,
@@ -79,11 +80,13 @@ function insert_structured_element($BelongsTo,$OwnerKind,$Order,$TagName,
               `Order` ,
               `TagName` ,
               `ExtraName` ,
-              `ExtraValue`
+              `ExtraValue` ,
+              `RawTextP`
             ) VALUES (
               NULL , '".$BelongsTo."', '".$OwnerKind."', '"
               .$Order."', '".$TagName."', '"
-              .$ExtraName."', '".$ExtraValue."'
+              .$ExtraName."', '".$ExtraValue."', '"
+              .$RawTextP."'
             );";
   $resource = mysql_query($query,$connection);
   return mysql_insert_id();
@@ -234,13 +237,13 @@ function populate_structured_text($Node,$Whom,$ParentId,$Order,$saverawtext,$Ind
   }
   $node_id = null;
   if ($Node->nodeType == XML_ELEMENT_NODE) {
-    if ($tagname === "text" or $tagname === "field") {
+    if ($saverawtext) {
       $sxml = simplexml_import_dom($Node);
-      $node_id = insert_structured_element($ParentId,$Whom,$Order,$tagname,"","",$connection);
+      $node_id = insert_structured_element($ParentId,$Whom,$Order,$tagname,"","","yes",$connection);
       insert_raw_text_chunk($node_id,$sxml->asXML(),$connection);
       return true;
     } else {
-      $node_id = insert_structured_element($ParentId,$Whom,$Order,$tagname,$extraname,$extravalue,$connection);
+      $node_id = insert_structured_element($ParentId,$Whom,$Order,$tagname,$extraname,$extravalue,"no",$connection);
       if ($recurse) {
         $order = 0;
         foreach ($Node->childNodes as $Child) {
@@ -346,6 +349,28 @@ function empty_database($connection) {
   mysql_query($query);
 }
 
+function extract_structured_text($owner_id,$ownerkind,$connection) {
+  $query = "SELECT * FROM `StructuredText`
+              WHERE `BelongsTo` = ".$owner_id
+            ."AND `OwnerKind` = CONVERT(_utf8 '".$ownerkind."'
+              USING latin1)";
+  $stext_resource = mysql_query($query);
+  $result = array();
+  while ($stext_resource = mysql_fetch_array($stext_resource)) {
+    $lre = array();
+    $lre["Id"] = $stext_resource["StructuredId"];
+    $lre["Order"] = (int)$stext_resource["Order"];
+    $lre["TagName"] = $stext_resource["TagName"];
+    $extran = explode(",",$stext_resource["ExtraName"]);
+    $extrav = explode(",",$stext_resource["ExtraValue"]);
+    for ($edx = 0; $edx < sizeof($extran); $edx++)
+      $lre[$extran[$edx]] = $extrav[$edx];
+    $lre["RawText?"] = $stext_resource["RawTextP"];
+    array_push($result,$lre);
+  }
+  return $result;
+}
+
 function extract_categories($connection) {
   $query = "SELECT * FROM `RawCategories`";
   $cat_resource = mysql_query($query);
@@ -362,11 +387,13 @@ function extract_categories($connection) {
       $query = "SELECt * FROM `RawDataFields` WHERE `BelongsTo` = ".$datum_id;
       $field_resource = mysql_query($query);
       while ($field_record = mysql_fetch_array($field_resource)) {
+        $field_id = $field_record["FieldId"];
         $name = $field_record["Name"];
         $title_p = $field_record["TitleP"];
         $table_p = $field_record["TableP"];
         $desc_p = $field_record["DescP"];
         echo "<p>&nbsp;&nbsp;&nbsp;&nbsp;".$name." ".$title_p."/".$table_p."/".$desc_p."</p>";
+        extract_structured_text($field_id,"categories",$connection);
       }
     }
   }
