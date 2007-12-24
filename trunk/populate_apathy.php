@@ -25,6 +25,10 @@ function create_apathy($ApathyName,$DatabaseName) {
   return $Connection;
 }
 
+function connect_to_apathy($ApathyFileName) {
+  return create_apathy($ApathyFileName,"ApathyRPG");
+}
+
 function POPULATE_APATHY_PHP_test() {
   $ApathyName = "Apathy.xml";
   $ApathyDB = "ApathyRPG";
@@ -43,7 +47,5 @@ function POPULATE_APATHY_PHP_test() {
             ." = ".$attr["Value"]."</em><br/>";
   }
 }
-
-POPULATE_APATHY_PHP_test();
 
 ?>
