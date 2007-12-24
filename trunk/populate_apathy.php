@@ -396,7 +396,6 @@ function extract_categories($connection) {
         $stexts = extract_structured_text($field_id,"categories",$connection);
         foreach ($stexts as $stext) {
           echo "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-          echo $stext["Id"]." ".
           echo "</p>";
         }
       }
