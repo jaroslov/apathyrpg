@@ -70,19 +70,18 @@ function insert_field_anon_element($BelongsTo,$Name,$connection) {
   return insert_field_data_element($BelongsTo,$Name,'no','no','no',$connection);
 }
 
-function insert_structured_element($BelongsTo,$Whom,$Order,$TagName,
+function insert_structured_element($BelongsTo,$OwnerKind,$Order,$TagName,
                                    $ExtraName,$ExtraValue,$connection) {
   $query = "INSERT INTO `Apathy`.`StructuredText` (
               `StructuredId` ,
               `BelongsTo` ,
-              `OrderKind` ,
+              `OwnerKind` ,
               `Order` ,
               `TagName` ,
               `ExtraName` ,
               `ExtraValue`
-            )
-            VALUES (
-              NULL , '".$BelongsTo."', '".$Whom."', '"
+            ) VALUES (
+              NULL , '".$BelongsTo."', '".$OwnerKind."', '"
               .$Order."', '".$TagName."', '"
               .$ExtraName."', '".$ExtraValue."'
             );";
@@ -94,10 +93,8 @@ function insert_raw_text_chunk($BelongsTo,$Text,$connection) {
   $query = "INSERT INTO `Apathy`.`RawText` (
               `TextId` ,
               `BelongsTo` ,
-              `OwnerKind` ,
               `Value`
-            )
-            VALUES (
+            ) VALUES (
               NULL , '".$BelongsTo."', '".$Text."'
             );";
   $resource = mysql_query($query,$connection);
@@ -327,7 +324,7 @@ function populate_categories($Apathy,$connection) {
               $field_id = insert_field_desc_element($datum_id,$name,$connection);
             else
               $field_id = insert_field_anon_element($datum_id,$name,$connection);
-            $sxml = simplexml_import_dom($field);
+            $sxml = simplexml_import_dom($field_p);
             populate_structured_text($field_p,"categories",$field_id,0,false,"",$connection);
           }
       }
@@ -400,6 +397,6 @@ function extract_apathy_as_xml() {
 }
 
 populate_or_empty(true);
-//extract_apathy_as_xml();
+extract_apathy_as_xml();
 
 ?>
