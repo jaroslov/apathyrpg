@@ -51,6 +51,9 @@ function load_category_path($environment) {
       array_push($npath,$path[$pdx]);
     array_push($options,
       make_option_for_select(implode("/",$npath),"&laquo; ".$path[$pathlen-2],false));
+  } else {
+    array_push($options,
+      make_option_for_select("Content","&laquo; Content",false));
   }
 
   // grab all of the possible candidates
@@ -59,7 +62,16 @@ function load_category_path($environment) {
     $catpath = $catname["Value"];
     if ($catpath === $environment["Message"]) {
       // populate the datums
-      array_push($options,make_option_for_select("NONE",$catname["ID"],false));
+      $parent = xmldb_getParentById($environment["Connection"],$catname["ChildOf"]);
+      if (!$parent)
+        array_push($options,make_option_for_select("Content","Could not resolve path",false));
+      $names = xmldb_getAttributeOfAllChildren($environment["Connection"],
+                  $parent,"datum","name");
+      foreach ($names as $name) {
+        array_push($options,
+          make_option_for_select($environment["Message"]."@".$name["ID"],
+            $name["Value"],false));
+      }
       break;
     } else {
       // populate the categories
