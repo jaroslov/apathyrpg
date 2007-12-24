@@ -10,23 +10,25 @@ function apathy_serialized_xml_nodes() {
 }
 
 function FORCE_create_apathy($Connection,$DatabaseName,$ApathyDom) {
-  $HasTextPs = apathy_serialized_xml_nodes();
-  normalize_xml($DatabaseName,$Connection,
-    $ApathyDom,$Connection,$HasTextPs,true);
-  //empty_all_xml($Connection);
 }
 
-function create_apathy($ApathyName,$DatabaseName) {
+function internal_create_apathy($ApathyName,$DatabaseName) {
   $Connection = create_connection($DatabaseName);
   if (!xmldb_is_populated($Connection)) {
     $ApathyDom = get_apathy_dom($ApathyName);
-    FORCE_create_apathy($Connection,$DatabaseName,$ApathyDom);
+    $HasTextPs = apathy_serialized_xml_nodes();
+    normalize_xml($DatabaseName,$Connection,
+                  $ApathyDom,$Connection,$HasTextPs,true);
   }
   return $Connection;
 }
 
-function connect_to_apathy($ApathyFileName) {
-  return create_apathy($ApathyFileName,"ApathyRPG");
+function create_apathy($ApathyName) {
+  return internal_create_apathy($ApathyName,"ApathyRPG");
+}
+
+function connect_to_apathy() {
+  return create_connection("ApathyRPG");
 }
 
 function POPULATE_APATHY_PHP_test() {
