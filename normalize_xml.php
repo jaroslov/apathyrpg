@@ -54,7 +54,7 @@ function normalize_xml_node($Table,$Connection,
         $sxml = simplexml_import_dom($Child);
         $Value = $sxml->asXML();
       }
-      $Child_Id = insert_element($Table,$Connection,
+      $ChildId = insert_element($Table,$Connection,
         $ParentId,$Order,$TagName,$Value);
       for ($adx = 0; $adx < $Attributes->length; $adx++) {
         $Attribute = $Attributes->item($adx);
@@ -62,11 +62,11 @@ function normalize_xml_node($Table,$Connection,
         $Value = $Attribute->nodeValue;
         if ($DropId and ($Name === "xml:id" or $Name === "id"))
           continue;
-        insert_attribute($Table,$Connection,$ParentId,$Name,$Value);
+        insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
       }
       if (!$Serialize) {
         normalize_xml_node($Table,$Connection,
-          $Child_Id,$Child,$Connection,$HasTextPs,$DropId);
+          $ChildId,$Child,$Connection,$HasTextPs,$DropId);
       }
     }
   }
@@ -79,9 +79,56 @@ function normalize_xml($Table,$Connection,
     -1,$Node,$Connection,$HasTextPs,$DropId);
 }
 
-function empty_all_xml($Connection) {
+function xmldb_empty_all_xml($Connection) {
   $query = "TRUNCATE TABLE `Structural`";
   mysql_query($query,$Connection);
+}
+
+function xmldb_getElementById($Connection,$ID) {
+  $query = "SELECT * FROM `Structural` WHERE `ID` =".$ID;
+  $resource = mysql_query($query,$Connection);
+  return $resource;
+}
+
+function xmldb_getElementsByTagName($Connection,$TagName) {
+  $query = "SELECT * FROM `Structural`
+            WHERE `Kind` = CONVERT( _utf8 'element' USING latin1 )
+            AND `Name` LIKE CONVERT( _utf8 '".$TagName."' USING latin1 )";
+  $resource = mysql_query($query,$Connection);
+  $elements = array();
+  while ($record = mysql_fetch_array($resource)) {
+    $element = array();
+    $element["ID"] = $record["ID"];
+    $element["ChildOf"] = (int)$record["ChildOf"];
+    $element["Kind"] = $record["Kind"];
+    $element["Order"] = (int)$record["Order"];
+    $element["Value"] = $record["Value"];
+    array_push($elements,$element);
+  }
+  return $elements;
+}
+
+function xmldb_attributes($Connection,$Element) {
+  $query = "SELECT * FROM `Structural`
+            WHERE `ChildOf` = ".$Element["ID"]."
+            AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
+  $resource = mysql_query($query);
+  $attributes = array();
+  while ($record = mysql_fetch_array($resource)) {
+    $attribute = array();
+    $attribute["Name"] = $record["Name"];
+    $attribute["Value"] = $record["Value"];
+    array_push($attributes,$attribute);
+  }
+  return $attributes;
+}
+
+function xmldb_is_populated($Connection) {
+  $query = "SELECT * FROM `Structural` WHERE `ID` =1";
+  $resource = mysql_query($query,$Connection);
+  while ($record = mysql_fetch_array($resource))
+    return true;
+  return false;
 }
 
 ?>
