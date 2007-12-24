@@ -287,22 +287,6 @@ function raw_data_response($trg,$src,$code,$msg,$apathy) {
   return load_category_response($trg,$src,$code,"Content/",$apathy);
 }
 
-function make_main_menu($which) {
-  $options = array();
-  $chsel = false;
-  $bksel = false;
-  $rdsel = false;
-  switch ($which) {
-    case "Choose": $chsel = true; break;
-    case "Book": $bksel = true; break;
-    case "RawData": $rdsel = true; break;
-  }
-  array_push($options,make_option_for_select("Initialize","Choose...",$chsel));
-  array_push($options,make_option_for_select("NoResponse","Book",$bksel));
-  array_push($options,make_option_for_select("RawData","Raw Data",$rdsel));
-  return make_select_statement($options,"'Path'","'Path'","value","''");
-}
-
 function update_value_response($trg,$src,$code,$msg,$apathydom) {
   $apathy = $apathydom->ownerDocument;
   $atcodes = explode("@",$code);
