@@ -35,7 +35,7 @@ function make_arrow_path($parts) {
   return $path."</span>";
 }
 
-function load_category_path($environment) {
+function load_category_path($environment,$WhichDatum) {
   $catparts = array();
   $catnames
     = xmldb_getAttributeOfTagName($environment["Connection"],"category","name");
@@ -56,8 +56,15 @@ function load_category_path($environment) {
       make_option_for_select("Content","&laquo; Content",false));
   }
 
+  // first, do we have an exact match?
+  $exact = null;
+  foreach ($catnames as $catname)
+    if ($catname["Value"] === $environment["Message"])
+      $exact = $catname;
+
   // grab all of the possible candidates
   $uniquenames = array();
+  $Code = "'LoadCategory'";
   foreach ($catnames as $catname) {
     $catpath = $catname["Value"];
     if ($catpath === $environment["Message"]) {
@@ -68,10 +75,14 @@ function load_category_path($environment) {
       $names = xmldb_getAttributeOfAllChildren($environment["Connection"],
                   $parent,"datum","name");
       foreach ($names as $name) {
+        $selected = false;
+        if ($name["Value"] === $WhichDatum)
+          $selected = true;
         array_push($options,
           make_option_for_select($environment["Message"]."@".$name["ID"],
-            $name["Value"],false));
+            $name["Value"],$selected));
       }
+      $Code = "'LoadDatum'";
       break;
     } else {
       // populate the categories
@@ -91,22 +102,47 @@ function load_category_path($environment) {
     }
   }
   $nenv = array("Responder"=>"loader.php","Target"=>"'Path'","Source"=>"'Path'",
-                "Code"=>"'LoadCategory'","Message"=>"value");
+                "Code"=>$Code,"Message"=>"value");
   $select = make_select_statement($options,$nenv);
   array_push($catparts,$select);
   return $catparts;
 }
 
-function load_category_response($environment) {
-  $parts = array();
-  $parts[0] = "Raw Data";
+function build_datum_table($environment,$datum) {
+  $attrs = xmldb_attributes($environment["Connection"],$datum);
+  $children = xmldb_getChildNodes($environment["Connection"],$datum);
+  $table = "<table>";
+  $table = "<tr><td>".sizeof($children)."</td></tr>";
+  $table .= "</table>";
+  return $table;
+}
 
-  $catpath = load_category_path($environment);
+function load_datum_response($environment) {
+  $OMsg = $environment["Message"];
+  $NMsg = explode("@",$OMsg);
+  $environment["Message"] = $NMsg[0];
+  $nameattr = xmldb_getNodeById($environment["Connection"],$NMsg[1]);
+  $datum = xmldb_getParent($environment["Connection"],$nameattr);
+  $catpath = build_category_path($environment,$nameattr["Value"]);
+  $datum_table = build_datum_table($environment,$datum);
+  $targets = array("Path","Datum");
+  $payloads = array($catpath,$datum_table);
+  return build_responses($targets,$payloads);
+}
+
+function build_category_path($environment,$WhichDatum) {
+  $parts = array();
+
+  $catpath = load_category_path($environment,$WhichDatum);
   foreach ($catpath as $catpart)
     array_push($parts,$catpart);
 
   $result = make_main_menu("RawData") . " " . make_arrow_path($parts);
-  return build_response("Path",$result);
+  return $result;
+}
+
+function load_category_response($environment) {
+  return build_response("Path",build_category_path($environment,null));
 }
 
 function raw_data_response($environment) {
@@ -140,9 +176,9 @@ function respond() {
     return raw_data_response($env);
   } else if ("LoadCategory" === $env["Code"]) {
     return load_category_response($env);
-  } /*else if ("LoadDatum" === $code) {
-    return load_datum_response($trg,$src,$code,$msg,$apathy);
-  } else if ("LogMessage" === $code) {
+  } else if ("LoadDatum" === $env["Code"]) {
+    return load_datum_response($env);
+  } /*else if ("LogMessage" === $code) {
     return build_response("Log",
       "<b>\"</b><span style='color:green;'>".$msg."</span><b>\"</b>");
   } else {
