@@ -172,6 +172,16 @@ function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
   return $result;
 }
 
+function sanitize_xml($PseudoXML,$NodeName) {
+  // Okay, some of the elements are `structural`
+  // and others are non-structural.
+  $LDom = new DOMDocument();
+  $LDom->loadXML("<apathy:pseudo-xml-root>"
+            .$PseudoXML."</apathy:pseudo-xml-root>");
+  $Node = $LDom->getElementsByTagName($NodeName)->item(0);
+  
+}
+
 function build_modifyable_area($PseudoXML,$TabOrder,$ExtraStyle) {
   return build_text_area($PseudoXML,$TabOrder,$ExtraStyle);
 }
