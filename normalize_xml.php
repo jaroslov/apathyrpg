@@ -17,6 +17,11 @@ function sanitize_for_xml($String) {
   return $String;
 }
 
+function sanitize_for_sql($String) {
+  $String = str_replace("'","''",$String);
+  return $String;
+}
+
 function insert_structural($Table,$Connection,
   $ParentId,$Kind,$Order,$Name,$Value) {
   $Kind = sanitize_for_xml($Kind);
@@ -155,6 +160,7 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
 }
 
 function xmldb_table_setElementValue($Table,$Connection,$Element,$Value) {
+  $Value = sanitize_for_sql($Value);
   $query = "UPDATE `".$Table."`.`Structural` SET
             `Value` ='".$Value."'
             WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
@@ -162,10 +168,21 @@ function xmldb_table_setElementValue($Table,$Connection,$Element,$Value) {
 }
 
 function xmldb_setElementValue($Connection,$Element,$Value) {
+  $Value = sanitize_for_sql($Value);
   $query = "UPDATE `Structural` SET
             `Value` ='".$Value."'
             WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
   mysql_query($query,$Connection);
+}
+
+function xmldb_setNodeValue($Connection,$ID,$Value) {
+  $Value = sanitize_for_sql($Value);
+  $query = "UPDATE `Structural` SET
+            `Value` ='".$Value."'
+            WHERE `Structural`.`ID` =".$ID." LIMIT 1 ;";
+  if (!mysql_query($query,$Connection))
+    return array("Error"=>mysql_error());
+  return array("Error"=>"none");
 }
 
 function xmldb_attributes($Connection,$Element) {
