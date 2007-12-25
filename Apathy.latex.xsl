@@ -96,9 +96,9 @@ $\underbrace{\hspace{.8\columnwidth}}$
 \begin{titlepage}
 ~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
 \begin{center}
-\ARPG \\
+\includegraphics[width=\textwidth]{Apathy.png}\\[1cm]
 
-\hspace*{6em}
+\hspace*{0em}
 \vbox{\vspace{-2em}
 \small Allan Moyse \\
 Nathan Jones \\
@@ -108,7 +108,7 @@ Chris Cook \\
 Josh Kramer}
 
 \vskip 2in
-\textsc{Revision \#259 (15 December 2007)}
+\textsc{Revision \#429 (25 December 2007)}
 \end{center}
 
 \end{titlepage}
