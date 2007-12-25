@@ -122,13 +122,12 @@ function load_category_path($environment,$WhichDatum) {
   return $catparts;
 }
 
-function render_text_values($environment,$datum) {
-  return "<textarea>FOO</textarea>";
-}
-
 function encapsulate_free_text($PseudoXML) {
   // The most common offender is the FIELD element;
   // Most of them contain free text.
+
+  // comment out the next line if your fields are well formed.
+  return __Free_text($PseudoXML);
   $LDom = new DOMDocument();
   $LDom->loadXML("<apathy:pseudo-xml-root>"
             .$PseudoXML."</apathy:pseudo-xml-root>");
@@ -143,6 +142,19 @@ function encapsulate_free_text($PseudoXML) {
   return "<field>".$result."</field>";
 }
 
+function __Free_text($PseudoXML) {
+  $LDom = new DOMDocument();
+  $LDom->loadXML("<apathy:pseudo-xml-root>"
+            .$PseudoXML."</apathy:pseudo-xml-root>");
+  $field = $LDom->getElementsByTagName("field")->item(0);
+  foreach ($field->childNodes as $child)
+    if ($child->nodeType == XML_TEXT_NODE)
+      $result .= $child->nodeValue;
+    else if ($child->nodeType == XML_ELEMENT_NODE)
+      $result .= $LDom->saveXML($child);
+  return "<field><text name='__Free_text'>\n".$result."\n</text></field>";
+}
+
 function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
   $result = "<textarea tabindex='".$TabOrder."'"
               ."onFocus=\"focusStyle(this);\"
@@ -154,10 +166,24 @@ function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
                      text-align:justify;
                      ".$ExtraStyle."'
               onChange=\"ajaxFunction('loader.php',
-                'Load','Load','UpdateValue',value)\">";
+                'Load','Load','UpdateValue@".$PseudoXML["ID"]."',value)\">";
   $result .= encapsulate_free_text($PseudoXML["Value"]);
   $result .= "</textarea>";
   return $result;
+}
+
+function update_value_response($environment) {
+  $at_parts = explode("@",$environment["Code"]);
+  $field = xmldb_getElementById($environment["Connection"],$at_parts[1]);
+  $res = "";
+  foreach ($field as $part)
+    $res .= $res;
+  return build_responses(array("Log"),
+    array("<em style='color:blue'>".$at_parts[1]
+        ."</em>&loz;<b>&laquo;</b><span style='color:green'>"
+        .$field["Value"]."</span><b>&raquo;</b>&rArr;"
+        ."<b>&laquo;</b><span style='color:red'>"
+        .$environment["Message"]."</span><b>&raquo;</b>"));
 }
 
 function build_datum_table($environment,$datum) {
@@ -196,6 +222,10 @@ function build_datum_table($environment,$datum) {
                 .build_text_area($children[$id],$taborder)
                 ."</td></tr>";
   }
+  $table .= "<tr><td></td>
+              <td colspan='2' align='right'>
+                <input type='button' value='Force Save' class='ForceSave'/>
+            </td></tr>";
   $table .= "</table>";
   return $table;
 }
@@ -268,19 +298,19 @@ function respond() {
     return load_category_response($env);
   } else if ("LoadDatum" === $env["Code"]) {
     return load_datum_response($env);
-  } /*else if ("LogMessage" === $code) {
-    return build_response("Log",
-      "<b>\"</b><span style='color:green;'>".$msg."</span><b>\"</b>");
   } else {
-    if (false !== strpos($code,"@")) {
-      return update_value_response($trg,$src,$code,$msg,$apathydom);
-    }
-  }*/
-  return build_response("Log",
-      "<p style='color:red;' >Not a known code:".$env["Code"]
-      ." with ".$env["Target"]."&rArr;".$env["Source"]
-      ."&loz;".$env["Message"]." with ("
-      .$con.")</p>");
+    $at_parts = explode("@",$env["Code"]);
+    if ("UpdateValue" === $at_parts[0])
+      return update_value_response($env);
+    else
+      return build_response("Log",
+        "<p><span style='color:red;'>Not a known code:</span>"
+          .$env["Code"]." with <span style='color:red;'>"
+          .$env["Target"]."&rArr;".$env["Source"]
+          ."</span>&loz;<b>&laquo;</b><span style='color:green;'>"
+          .$env["Message"]."</span><b>&raquo;</b> with ("
+          .$con.")</p>");
+  }
 }
 
 echo respond();

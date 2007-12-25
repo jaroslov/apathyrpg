@@ -9,6 +9,9 @@ body {
   background-color: white;
   font-family: times, serif;
 }
+.ForceSave {
+  width: 12em;
+}
 pre {
   padding: 0;
   margin: 0;
@@ -152,7 +155,7 @@ table.ModifyDatumTable textarea {
   padding: .5em;
   text-align: justify;
   border: 1px solid black;
-  width: 40em;
+  width: 25em;
   height: 100%;
 }
 .CurrentPosition {
