@@ -126,6 +126,30 @@ function render_text_values($environment,$datum) {
   return "<textarea>FOO</textarea>";
 }
 
+function force_safe_xml($PseudoXML) {
+  $LDom = new DOMDocument();
+  $LDom->loadXML("<apathy:pseudo-xml-root>"
+            .$PseudoXML."</apathy:pseudo-xml-root>");
+  return $LDom->saveXML();
+}
+
+function encapsulate_free_text($PseudoXML) {
+  // The most common offender is the FIELD element;
+  // it will contain free text.
+  $LDom = new DOMDocument();
+  $LDom->loadXML("<apathy:pseudo-xml-root>"
+            .$PseudoXML."</apathy:pseudo-xml-root>");
+  $field = $LDom->getElementsByTagName("field")->item(0);
+  foreach ($field->childNodes as $child)
+    if ($child->nodeType == XML_TEXT_NODE)
+      $result .= "<text>".$child->nodeValue."</text>";
+    else if ($child->nodeType == XML_ELEMENT_NODE) {
+      $sxml = simplexml_load_dom($child);
+      $result .= $sxml->asXML();
+    }
+  return "<field>".$result."</field>";
+}
+
 function build_datum_table($environment,$datum) {
   $attrs = xmldb_attributes($environment["Connection"],$datum);
   $children = xmldb_getChildNodes($environment["Connection"],$datum);
@@ -150,7 +174,7 @@ function build_datum_table($environment,$datum) {
               ."</textarea>"
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
               ."<textarea style='height:".((sizeof($entries)+1)*4)."em;width:25em;'>"
-              .$children[$description]["Value"]
+              .encapsulate_free_text($children[$description]["Value"])
               ."</textarea>"
               ."</td></tr>";
   foreach ($entries as $id => $entry) {
