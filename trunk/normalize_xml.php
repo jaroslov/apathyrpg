@@ -2,6 +2,7 @@
 
 // Normalize XML
 // convert an XML document into a database
+include 'apathy_xml.php';
 
 function create_connection($Database) {
   // Connecting, selecting database
@@ -11,15 +12,23 @@ function create_connection($Database) {
   return $link;
 }
 
+function sanitize_for_xml($String) {
+  $String = str_replace("'","&apos;",$String);
+  return $String;
+}
+
 function insert_structural($Table,$Connection,
   $ParentId,$Kind,$Order,$Name,$Value) {
+  $Kind = sanitize_for_xml($Kind);
+  $Name = sanitize_for_xml($Name);
+  $Value = sanitize_for_xml($Value);
   $query = "INSERT INTO `".$Table."`.`Structural` (
             `ID`, `ChildOf`, `Kind`, `Order`, `Name`, `Value`
             ) VALUES (
               NULL , '".$ParentId."', '".$Kind."',
               '".$Order."', '".$Name."', '".$Value."'
             );";
-  mysql_query($query,$Connection);
+  mysql_query($query,$Connection) or die('Query failed: ' . mysql_error());;
   return mysql_insert_id($Connection);
 }
 
@@ -39,7 +48,7 @@ function insert_comment($Table,$Connection,$ChildOf,$Order,$Value) {
 }
 
 
-function normalize_xml_node($Table,$Connection,
+function normalize_xml_node($DOMDocument,$Table,$Connection,
   $ParentId,$Node,$Connection,$HasTextPs,$DropId) {
   $Order = 0;
   foreach ($Node->childNodes as $Child) {
@@ -63,7 +72,7 @@ function normalize_xml_node($Table,$Connection,
           insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
       }
       if (!$Serialize) {
-        normalize_xml_node($Table,$Connection,
+        normalize_xml_node($DOMDocument,$Table,$Connection,
           $ChildId,$Child,$Connection,$HasTextPs,$DropId);
       }
     }
@@ -84,9 +93,9 @@ function create_attribute_view($Table,$Connection) {
 
 function normalize_xml($Table,$Connection,
   $DOMDocument,$Connection,$HasTextPs,$DropId) {
-  $Node = $DOMDocument->ownerDocument;
-  normalize_xml_node($Table,$Connection,
-    -1,$Node,$Connection,$HasTextPs,$DropId);
+  //$Node = $DOMDocument->ownerDocument;
+  normalize_xml_node($DOMDocument,$Table,$Connection,
+    -1,$DOMDocument->ownerDocument,$Connection,$HasTextPs,$DropId);
   // need views of elements and attributes
   create_kind_view($Table,$Connection,"Attributes","attribute");
   create_kind_view($Table,$Connection,"Elements","element");
