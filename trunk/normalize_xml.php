@@ -169,6 +169,25 @@ function xmldb_attributes($Connection,$Element) {
   return $attributes;
 }
 
+function xmldb_attributesOfSet($Connection,$Elements) {
+  $ElementSet = "";
+  if (sizeof($Elements) > 0)
+    $ElementSet .= $Elements[0]["ID"];
+  for ($edx = 1; $edx < sizeof($Elements); $edx++)
+    $ElementSet .= "," . $Elements[$edx]["ID"];
+  $query = "SELECT * FROM `Structural`
+            WHERE `ChildOf` IN (".$ElementSet.")
+            AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
+  $resource = mysql_query($query,$Connection);
+  $attributeset = array();
+  while ($record = mysql_fetch_array($resource))
+    if (in_array($record["ChildOf"],array_keys($attributeset)))
+      array_push($attributeset[$record["ChildOf"]],xmldb_convert_record($record));
+    else
+      $attributeset[$record["ChildOf"]] = array(xmldb_convert_record($record));
+  return $attributeset;
+}
+
 function xmldb_getAttribute($Connection,$Element,$Name) {
   $query = "SELECT * FROM `Structural`
             WHERE `ChildOf` = ".$Element["ID"]."
@@ -191,7 +210,6 @@ function xmldb_getAttributeOfTagName($Connection,$TagName,$AttrName) {
     array_push($attributes,xmldb_convert_record($record));
   return $attributes;
 }
-
 
 function xmldb_getAttributeOfAllChildren($Connection,$Parent,$ChildName,$AttrName) {
   $query = "SELECT * FROM `Structural`,`Attributes`
@@ -238,7 +256,7 @@ function xmldb_getChildNodes($Connection,$Node) {
   $resource = mysql_query($query,$Connection);
   $children = array();
   while ($record = mysql_fetch_array($resource))
-    array_push($children,xmldb_convert_record($record));
+    $child[$record["ID"]] = xmldb_convert_record($record);
   return $children;
 }
 
