@@ -144,12 +144,14 @@ function encapsulate_free_text($PseudoXML) {
 }
 
 function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
-  $result = "<textarea tabindex='".$TabOrder."'
-              onFocus=\"focusStyle(this);\"
-              onBlur=\"blurStyle(this);\"
-              style='background-image:url(pin-2x2.png);
+  $result = "<textarea tabindex='".$TabOrder."'"
+              ."onFocus=\"focusStyle(this);\"
+                onBlur=\"blurStyle(this);\"" 
+              ." id='G".$PseudoXML["ID"]."'"
+              ." style='background-image:url(pin-2x2.png);
                      background-repeat:repeat-x;
                      background-position:bottom;
+                     text-align:justify;
                      ".$ExtraStyle."'
               onChange=\"ajaxFunction('loader.php',
                 'Load','Load','UpdateValue',value)\">";
@@ -175,8 +177,10 @@ function build_datum_table($environment,$datum) {
     else
       $entries[$id] = $attributeset[$id]["name"]["Value"];
   $table = "<table class='ModifyDatumTable'>
-              <tr><td>Code<em>#".$datum["ID"]."</em></td><td>Aspects</td><td>Description</td></tr>
-              <tr><td>Title:&rsaquo;</td><td>"
+              <tr><td>Code<em>#".$datum["ID"]."</em></td>
+              <td align='center'>Aspects</td>
+              <td align='center'>Description</td></tr>
+              <tr><td align='right'>Title:&rsaquo;</td><td>"
               .build_text_area($children[$title],1)
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
               .build_text_area($children[$description],
@@ -186,7 +190,7 @@ function build_datum_table($environment,$datum) {
   $taborder = 1;
   foreach ($entries as $id => $entry) {
     $taborder++;
-    $table .= "\n<tr><td><pre>".$entry
+    $table .= "\n<tr><td align='right'><pre>".$entry
                 .":&rsaquo;</pre>"
                 ."</td><td>"
                 .build_text_area($children[$id],$taborder)
@@ -274,8 +278,8 @@ function respond() {
   }*/
   return build_response("Log",
       "<p style='color:red;' >Not a known code:".$env["Code"]
-      ." with ".$env["Target"]."->".$env["Source"]
-      ."@".$env["Message"]." with ("
+      ." with ".$env["Target"]."&rArr;".$env["Source"]
+      ."&loz;".$env["Message"]." with ("
       .$con.")</p>");
 }
 
