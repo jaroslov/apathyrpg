@@ -122,25 +122,46 @@ function load_category_path($environment,$WhichDatum) {
   return $catparts;
 }
 
+function render_text_values($environment,$datum) {
+  return "<textarea>FOO</textarea>";
+}
+
 function build_datum_table($environment,$datum) {
   $attrs = xmldb_attributes($environment["Connection"],$datum);
   $children = xmldb_getChildNodes($environment["Connection"],$datum);
   $attributeset = xmldb_attributesOfSet($environment["Connection"],$children);
   $title = null;
   $description = null;
-  $others = array();
-  foreach ($attributeset as $id => $attributes) {
-    foreach ($attributes as $attribute)
-      if ($attribute["Name"] === "title"
-        and $attribute["Value"] === "yes")
-        $title = $id;
-      else if ($attribute["Name"] === "description"
-        and $attribute["Value"] === "yes")
-        $description = $id;
-      else
-        array_push($others,$id);
+  $entries = array();
+  foreach ($children as $id => $child)
+    if (array_key_exists("title",$attributeset[$id])
+      and $attributeset[$id]["title"]["Value"] === "yes")
+      $title = $id;
+    else if (array_key_exists("description",$attributeset[$id])
+      and $attributeset[$id]["description"]["Value"] === "yes")
+      $description = $id;
+    else
+      $entries[$id] = $attributeset[$id]["name"]["Value"];
+  $table = "<table class='ModifyDatumTable'>
+              <tr><td></td><td>Aspects</td><td>Description</td></tr>
+              <tr><td>Title:&rsaquo;</td><td>"
+              ."<textarea>"
+              .$children[$title]["Value"]
+              ."</textarea>"
+              ."</td><td rowspan='".(sizeof($entries)+1)."'>"
+              ."<textarea style='height:".((sizeof($entries)+1)*4)."em;width:25em;'>"
+              .$children[$description]["Value"]
+              ."</textarea>"
+              ."</td></tr>";
+  foreach ($entries as $id => $entry) {
+    $table .= "\n<tr><td><pre>".$entry
+                .":&rsaquo;</pre>"
+                ."</td><td>"
+                ."<textarea>"
+                .$children[$id]["Value"]
+                ."</textarea>"
+                ."</td></tr>";
   }
-  $table = "<table>";
   $table .= "</table>";
   return $table;
 }
@@ -175,7 +196,9 @@ function build_category_path($environment,$WhichDatum) {
 }
 
 function load_category_response($environment) {
-  return build_response("Path",build_category_path($environment,null));
+  return build_responses(
+    array("Path","Datum"),
+    array(build_category_path($environment,null),"<em>Data not shown.</em>"));
 }
 
 function raw_data_response($environment) {
