@@ -50,7 +50,8 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
 }
 function focusStyle(element) {
   element.style.backgroundColor = "#FFFFFF";
-  element.style.borderColor = "black";
+  element.style.borderWidth = "1px";
+  element.style.borderColor = "blue";
   element.style.backgroundImage = 'url(highlight-textarea.png)';
   element.style.backgroundRepeat = 'repeat-x';
   //element.style.backgroundAttachment = 'fixed';
@@ -59,5 +60,7 @@ function focusStyle(element) {
 function blurStyle(element) {
   element.style.backgroundColor = "#FFFFFF";
   element.style.borderColor = "gray";
-  element.style.backgroundImage = 'none';
+  element.style.borderWidth = "1px";
+  element.style.backgroundPosition = 'bottom';
+  element.style.backgroundImage = 'url(pin-2x2.png)';
 }

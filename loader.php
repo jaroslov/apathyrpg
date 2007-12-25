@@ -143,13 +143,16 @@ function encapsulate_free_text($PseudoXML) {
   return "<field>".$result."</field>";
 }
 
-function build_text_area($PseudoXML,$TabOrder,$Extra) {
+function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
   $result = "<textarea tabindex='".$TabOrder."'
               onFocus=\"focusStyle(this);\"
               onBlur=\"blurStyle(this);\"
+              style='background-image:url(pin-2x2.png);
+                     background-repeat:repeat-x;
+                     background-position:bottom;
+                     ".$ExtraStyle."'
               onChange=\"ajaxFunction('loader.php',
-                'Load','Load','UpdateValue',value)\"
-              ".$Extra.">";
+                'Load','Load','UpdateValue',value)\">";
   $result .= encapsulate_free_text($PseudoXML["Value"]);
   $result .= "</textarea>";
   return $result;
@@ -178,8 +181,7 @@ function build_datum_table($environment,$datum) {
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
               .build_text_area($children[$description],
                 sizeof($entries)+2,
-                "style='height:".((sizeof($entries)+1)*4)."em;
-                        width:35em;'")
+                "height:".((sizeof($entries)+1)*4)."em;width:35em;")
               ."</td></tr>";
   $taborder = 1;
   foreach ($entries as $id => $entry) {
