@@ -184,11 +184,7 @@ Josh Kramer}
     <xsl:apply-templates />
   </xsl:template>
   <!-- Generic Text -->
-  <xsl:template match="text">
-    {  
-    <xsl:apply-templates />
-    }
-  </xsl:template>
+  <xsl:template match="text">{<xsl:apply-templates />}</xsl:template>
   <!--<xsl:template match="text()"><xsl:variable name="text" select="." /><xsl:value-of select="normalize-space($text)" /></xsl:template>-->
   <!-- Note -->
   <xsl:template match="note">&#xa;&#xa;\textscbf{Note!} \textbf{<xsl:apply-templates />}&#xa;&#xa;</xsl:template>

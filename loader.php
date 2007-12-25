@@ -160,7 +160,7 @@ function build_datum_table($environment,$datum) {
     else
       $entries[$id] = $attributeset[$id]["name"]["Value"];
   $table = "<table class='ModifyDatumTable'>
-              <tr><td></td><td>Aspects</td><td>Description</td></tr>
+              <tr><td>Code<em>#".$datum["ID"]."</em></td><td>Aspects</td><td>Description</td></tr>
               <tr><td>Title:&rsaquo;</td><td>"
               ."<textarea>"
               .encapsulate_free_text($children[$title]["Value"])

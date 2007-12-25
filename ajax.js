@@ -14,6 +14,9 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var replies = responseXml.getElementsByTagName("response");
+      var log = document.getElementById('LogResponse');
+      if (log)
+        log.innerHTML = xmlR;
       for (i = 0; i<replies.length; i++) {
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
         var payload = replies[i].getElementsByTagName("payload")[0].firstChild.nodeValue;
