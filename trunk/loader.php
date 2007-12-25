@@ -121,10 +121,15 @@ function load_datum_response($environment) {
   $OMsg = $environment["Message"];
   $NMsg = explode("@",$OMsg);
   $environment["Message"] = $NMsg[0];
-  $nameattr = xmldb_getNodeById($environment["Connection"],$NMsg[1]);
-  $datum = xmldb_getParent($environment["Connection"],$nameattr);
-  $catpath = build_category_path($environment,$nameattr["Value"]);
-  $datum_table = build_datum_table($environment,$datum);
+  $catpath = "";
+  $datum_table = "<em>No data shown.</em>";
+  if (sizeof($NMsg) > 1) {
+    $nameattr = xmldb_getNodeById($environment["Connection"],$NMsg[1]);
+    $datum = xmldb_getParent($environment["Connection"],$nameattr);
+    $catpath = build_category_path($environment,$nameattr["Value"]);
+    $datum_table = build_datum_table($environment,$datum);
+  } else
+    $catpath = build_category_path($environment,null);
   $targets = array("Path","Datum");
   $payloads = array($catpath,$datum_table);
   return build_responses($targets,$payloads);
