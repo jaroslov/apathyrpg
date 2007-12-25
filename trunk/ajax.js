@@ -49,10 +49,15 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
   xmlHttp.send(null);
 }
 function focusStyle(element) {
-  element.style.backgroundColor = "#FAFAFA";
+  element.style.backgroundColor = "#FFFFFF";
   element.style.borderColor = "black";
+  element.style.backgroundImage = 'url(highlight-textarea.png)';
+  element.style.backgroundRepeat = 'repeat-x';
+  //element.style.backgroundAttachment = 'fixed';
+  element.style.backgroundPosition = 'top';
 }
 function blurStyle(element) {
   element.style.backgroundColor = "#FFFFFF";
   element.style.borderColor = "gray";
+  element.style.backgroundImage = 'none';
 }
