@@ -58,53 +58,67 @@ function load_category_path($environment,$WhichDatum) {
 
   // first, do we have an exact match?
   $exact = null;
+  $datum_select = null;
+  $WhichCat = null;
   foreach ($catnames as $catname)
-    if ($catname["Value"] === $environment["Message"])
+    if ($catname["Value"] === $environment["Message"]) {
       $exact = $catname;
-
-  // grab all of the possible candidates
-  $uniquenames = array();
-  $Code = "'LoadCategory'";
-  foreach ($catnames as $catname) {
-    $catpath = $catname["Value"];
-    if ($catpath === $environment["Message"]) {
+      $WhichCat = $path[$pathlen-1];
+      $path = array_slice($path,0,$pathlen-1);
+      $pathlen = $pathlen-1;
       // populate the datums
       $parent = xmldb_getParentById($environment["Connection"],$catname["ChildOf"]);
+      $data_options = array();
       if (!$parent)
-        array_push($options,make_option_for_select("Content","Could not resolve path",false));
+        array_push($data_options,
+          make_option_for_select("Content","Could not resolve path",false));
+      array_push($data_options,
+        make_option_for_select($environment["Message"],"Choose...",true));
       $names = xmldb_getAttributeOfAllChildren($environment["Connection"],
                   $parent,"datum","name");
       foreach ($names as $name) {
         $selected = false;
         if ($name["Value"] === $WhichDatum)
           $selected = true;
-        array_push($options,
+        array_push($data_options,
           make_option_for_select($environment["Message"]."@".$name["ID"],
             $name["Value"],$selected));
       }
-      $Code = "'LoadDatum'";
-      break;
-    } else {
-      // populate the categories
-      $catpathparts = explode("/",$catpath);
-      if ($pathlen > sizeof($catpathparts))
-        continue;
-      $keep = true;
-      for ($pdx = 0; $pdx < $pathlen; $pdx++)
-        if ($path[$pdx] !== $catpathparts[$pdx])
-          $keep = false;
-      if ($keep)
-        if (!in_array($catpathparts[$pathlen],$uniquenames)) {
-          $npath = implode("/",$path)."/".$catpathparts[$pathlen];
-          array_push($options,make_option_for_select($npath,$catpathparts[$pathlen],false));
-          array_push($uniquenames,$catpathparts[$pathlen]);
-        }
+      $nenv = array("Responder"=>"loader.php","Target"=>"'Path'",
+                    "Source"=>"'Path'","Code"=>"'LoadDatum'",
+                    "Message"=>"value");
+      $datum_select = make_select_statement($data_options,$nenv);
+    }
+
+  // grab all of the possible candidates
+  $uniquenames = array();
+  foreach ($catnames as $catname) {
+    $catpath = $catname["Value"];
+    $catpathparts = explode("/",$catpath);
+    if ($pathlen > sizeof($catpathparts))
+      continue;
+    $keep = true;
+    for ($pdx = 0; $pdx < $pathlen; $pdx++)
+      if ($path[$pdx] !== $catpathparts[$pdx])
+        $keep = false;
+    if ($keep) {
+      $lastname = $catpathparts[$pathlen];
+      if (!in_array($lastname,$uniquenames)) {
+        $npath = implode("/",$path)."/".$catpathparts[$pathlen];
+        $selected = false;
+        if ($WhichCat === $lastname)
+          $selected = true;
+        array_push($options,make_option_for_select($npath,$lastname,$selected));
+        array_push($uniquenames,$catpathparts[$pathlen]);
+      }
     }
   }
   $nenv = array("Responder"=>"loader.php","Target"=>"'Path'","Source"=>"'Path'",
-                "Code"=>$Code,"Message"=>"value");
+                "Code"=>"'LoadCategory'","Message"=>"value");
   $select = make_select_statement($options,$nenv);
   array_push($catparts,$select);
+  if ($datum_select)
+    array_push($catparts,$datum_select);
   return $catparts;
 }
 
@@ -176,7 +190,7 @@ function respond() {
   } else if ("NoResponse" === $env["Code"]) {
     return build_empty_response();
   } else if ("RebuildMainMenu" === $env["Code"]) {
-    return build_response("Path",make_main_menu("Choose"));
+    return initialize_system($env);
   } else if ("RawData" === $env["Code"]) {
     return raw_data_response($env);
   } else if ("LoadCategory" === $env["Code"]) {
