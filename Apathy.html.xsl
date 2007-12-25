@@ -460,7 +460,7 @@
       <div class="datum-description"
         id="{$title-id}">
         <span class="datum-description"><xsl:value-of select="field[@title='yes']" /></span>
-        <p><xsl:value-of select="field[@description='yes']" /></p>
+        <xsl:apply-templates select="field[@description='yes']" />
       </div>
     </xsl:for-each>
   </xsl:template>
