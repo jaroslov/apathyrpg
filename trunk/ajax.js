@@ -16,7 +16,7 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
       var replies = responseXml.getElementsByTagName("response");
       var log = document.getElementById('LogResponse');
       if (log)
-        log.innerHTML = xmlR;
+        log.innerHTML = realUnescape(xmlR);
       for (i = 0; i<replies.length; i++) {
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
         var payload = replies[i].getElementsByTagName("payload")[0].firstChild.nodeValue;
@@ -27,7 +27,7 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
           document.getElementById(target).innerHTML = realUnescape(payload);
           var log = document.getElementById('LogResponse');
           if (log)
-            log.innerHTML = xmlR;
+            log.innerHTML = realUnescape(xmlR);
         }
       }
     }

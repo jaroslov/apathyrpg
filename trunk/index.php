@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" href="Apathy.css">
     <script type="text/javascript" src="ajax.js"></script>
+    <script language="JavaScript" type="text/javascript" src="wyzz.js"></script>
   </head>
   <body onLoad="ajaxFunction('loader.php','MainPart','MainPart','Initialize','')">
     <div id="Path" class="Path"></div>
