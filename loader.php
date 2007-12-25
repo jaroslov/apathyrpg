@@ -125,8 +125,22 @@ function load_category_path($environment,$WhichDatum) {
 function build_datum_table($environment,$datum) {
   $attrs = xmldb_attributes($environment["Connection"],$datum);
   $children = xmldb_getChildNodes($environment["Connection"],$datum);
+  $attributeset = xmldb_attributesOfSet($environment["Connection"],$children);
+  $title = null;
+  $description = null;
+  $others = array();
+  foreach ($attributeset as $id => $attributes) {
+    foreach ($attributes as $attribute)
+      if ($attribute["Name"] === "title"
+        and $attribute["Value"] === "yes")
+        $title = $id;
+      else if ($attribute["Name"] === "description"
+        and $attribute["Value"] === "yes")
+        $description = $id;
+      else
+        array_push($others,$id);
+  }
   $table = "<table>";
-  $table = "<tr><td>".sizeof($children)."</td></tr>";
   $table .= "</table>";
   return $table;
 }
