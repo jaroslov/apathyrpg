@@ -152,7 +152,7 @@ function __Free_text($PseudoXML) {
       $result .= $child->nodeValue;
     else if ($child->nodeType == XML_ELEMENT_NODE)
       $result .= $LDom->saveXML($child);
-  return "<field><text name='__Free_text'>\n".$result."\n</text></field>";
+  return "<field>\n".$result."\n</field>";
 }
 
 function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
@@ -172,18 +172,23 @@ function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
   return $result;
 }
 
+function build_modifyable_area($PseudoXML,$TabOrder,$ExtraStyle) {
+  return build_text_area($PseudoXML,$TabOrder,$ExtraStyle);
+}
+
 function update_value_response($environment) {
   $at_parts = explode("@",$environment["Code"]);
-  $field = xmldb_getElementById($environment["Connection"],$at_parts[1]);
-  $res = "";
-  foreach ($field as $part)
-    $res .= $res;
+  $Id = $at_parts[1];
+  $field = xmldb_getElementById($environment["Connection"],$Id);
+  $error = xmldb_setNodeValue($environment["Connection"],
+                                $Id,$environment["Message"]);
   return build_responses(array("Log"),
-    array("<em style='color:blue'>".$at_parts[1]
+    array("<em style='color:blue'>".$Id
         ."</em>&loz;<b>&laquo;</b><span style='color:green'>"
         .$field["Value"]."</span><b>&raquo;</b>&rArr;"
         ."<b>&laquo;</b><span style='color:red'>"
-        .$environment["Message"]."</span><b>&raquo;</b>"));
+        .$environment["Message"]."</span><b>&raquo;</b>
+        with error: <em>".$error["Error"]."</em>"));
 }
 
 function build_datum_table($environment,$datum) {
@@ -207,9 +212,9 @@ function build_datum_table($environment,$datum) {
               <td align='center'>Aspects</td>
               <td align='center'>Description</td></tr>
               <tr><td align='right'>Title:&rsaquo;</td><td>"
-              .build_text_area($children[$title],1)
+              .build_modifyable_area($children[$title],1)
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
-              .build_text_area($children[$description],
+              .build_modifyable_area($children[$description],
                 sizeof($entries)+2,
                 "height:".((sizeof($entries)+1)*4)."em;width:35em;")
               ."</td></tr>";
@@ -219,7 +224,7 @@ function build_datum_table($environment,$datum) {
     $table .= "\n<tr><td align='right'><pre>".$entry
                 .":&rsaquo;</pre>"
                 ."</td><td>"
-                .build_text_area($children[$id],$taborder)
+                .build_modifyable_area($children[$id],$taborder)
                 ."</td></tr>";
   }
   $table .= "<tr><td></td>
