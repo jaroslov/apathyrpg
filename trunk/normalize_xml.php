@@ -100,9 +100,28 @@ function xmldb_empty_all_xml($Connection) {
 }
 
 function xmldb_getElementById($Connection,$ID) {
-  $query = "SELECT * FROM `Structural` WHERE `ID` =".$ID;
+  $query = "SELECT * FROM `Elements` WHERE `ID` =".$ID;
   $resource = mysql_query($query,$Connection);
-  return $resource;
+  if ($record = mysql_fetch_array($resource))
+    return xmldb_convert_record($resource);
+  return false;
+}
+
+function xmldb_getAttributeById($Connection,$ID) {
+  $query = "SELECT * FROM `Attributes` WHERE `ID` =".$ID;
+  $resource = mysql_query($query,$Connection);
+  if ($record = mysql_fetch_array($resource))
+    return xmldb_convert_record($resource);
+  return false;
+}
+
+function xmldb_getNodeById($Connection,$ID) {
+  $query = "SELECT * FROM `Structural` WHERE `ID` = ".$ID;
+  $resource = mysql_query($query,$Connection);
+  $record = array();
+  if ($record = mysql_fetch_array($resource))
+    return xmldb_convert_record($record);
+  return false;
 }
 
 function xmldb_convert_record($record) {
@@ -185,6 +204,10 @@ function xmldb_getAttributeOfAllChildren($Connection,$Parent,$ChildName,$AttrNam
   while ($record = mysql_fetch_array($resource))
     array_push($attributes,xmldb_convert_record($record));
   return $attributes;
+}
+
+function xmldb_getParent($Connection,$Node) {
+  return xmldb_getParentById($Connection,$Node["ChildOf"]);
 }
 
 function xmldb_getParentById($Connection,$ID) {
