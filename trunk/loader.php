@@ -126,16 +126,9 @@ function render_text_values($environment,$datum) {
   return "<textarea>FOO</textarea>";
 }
 
-function force_safe_xml($PseudoXML) {
-  $LDom = new DOMDocument();
-  $LDom->loadXML("<apathy:pseudo-xml-root>"
-            .$PseudoXML."</apathy:pseudo-xml-root>");
-  return $LDom->saveXML();
-}
-
 function encapsulate_free_text($PseudoXML) {
   // The most common offender is the FIELD element;
-  // it will contain free text.
+  // Most of them contain free text.
   $LDom = new DOMDocument();
   $LDom->loadXML("<apathy:pseudo-xml-root>"
             .$PseudoXML."</apathy:pseudo-xml-root>");
@@ -143,10 +136,10 @@ function encapsulate_free_text($PseudoXML) {
   foreach ($field->childNodes as $child)
     if ($child->nodeType == XML_TEXT_NODE)
       $result .= "<text>".$child->nodeValue."</text>";
-    else if ($child->nodeType == XML_ELEMENT_NODE) {
-      $sxml = simplexml_load_dom($child);
-      $result .= $sxml->asXML();
-    }
+    else if ($child->nodeType == XML_ELEMENT_NODE)
+      $result .= $LDom->saveXML($child);
+  if (strlen($result) === 0)
+    $result .= "<text></text>";
   return "<field>".$result."</field>";
 }
 
@@ -170,10 +163,10 @@ function build_datum_table($environment,$datum) {
               <tr><td></td><td>Aspects</td><td>Description</td></tr>
               <tr><td>Title:&rsaquo;</td><td>"
               ."<textarea>"
-              .$children[$title]["Value"]
+              .encapsulate_free_text($children[$title]["Value"])
               ."</textarea>"
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
-              ."<textarea style='height:".((sizeof($entries)+1)*4)."em;width:25em;'>"
+              ."<textarea style='height:".((sizeof($entries)+1)*4)."em;width:35em;'>"
               .encapsulate_free_text($children[$description]["Value"])
               ."</textarea>"
               ."</td></tr>";
@@ -182,7 +175,7 @@ function build_datum_table($environment,$datum) {
                 .":&rsaquo;</pre>"
                 ."</td><td>"
                 ."<textarea>"
-                .$children[$id]["Value"]
+                .encapsulate_free_text($children[$id]["Value"])
                 ."</textarea>"
                 ."</td></tr>";
   }
