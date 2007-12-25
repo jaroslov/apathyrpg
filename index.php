@@ -10,17 +10,17 @@
     <table valign="top">
       <tr valign="top">
         <td>
-          <div id="Ajax" class="Log" style="visibility:show;">
+          <div id="Ajax" class="Log" style="visibility:hidden;">
             <em>Ajax</em>
           </div>
         </td>
         <td>
-          <div id="Log" class="Log" style="visibility:show;">
+          <div id="Log" class="Log" style="visibility:hidden;">
             <em>Log</em>
           </div>
         </td>
         <td>
-          <div id="LogResponse" class="Log" style="visibility:show;">
+          <div id="LogResponse" class="Log" style="visibility:hidden;">
             <em>Response</em>
           </div>
         </td>
