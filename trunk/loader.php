@@ -167,7 +167,7 @@ function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
                      ".$ExtraStyle."'
               onChange=\"ajaxFunction('loader.php',
                 'Load','Load','UpdateValue@".$PseudoXML["ID"]."',value)\">";
-  $result .= encapsulate_free_text($PseudoXML["Value"]);
+  $result .= $PseudoXML["Value"];
   $result .= "</textarea>";
   return $result;
 }
