@@ -218,7 +218,7 @@ function build_datum_table($environment,$datum) {
     else
       $entries[$id] = $attributeset[$id]["name"]["Value"];
   $table = "<table class='ModifyDatumTable'>
-              <tr><td>Code<em>#".$datum["ID"]."</em></td>
+              <tr><td>Code <em>#".$datum["ID"]."</em></td>
               <td align='center'>Aspects</td>
               <td align='center'>Description</td></tr>
               <tr><td align='right'>Title:&rsaquo;</td><td>"
@@ -226,7 +226,7 @@ function build_datum_table($environment,$datum) {
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
               .build_modifyable_area($children[$description],
                 sizeof($entries)+2,
-                "height:".((sizeof($entries)+1)*4)."em;width:35em;")
+                "height:".((sizeof($entries)+1)*77-2)."px;width:35em;")
               ."</td></tr>";
   $taborder = 1;
   foreach ($entries as $id => $entry) {
@@ -237,9 +237,9 @@ function build_datum_table($environment,$datum) {
                 .build_modifyable_area($children[$id],$taborder)
                 ."</td></tr>";
   }
-  $table .= "<tr><td></td>
-              <td colspan='2' align='right'>
-                <input type='button' value='Force Save' class='ForceSave'/>
+  $table .= "<tr><td></td><td></td>
+              <td align='center'>
+                <input type='button' value='Force Update' class='ForceSave'/>
             </td></tr>";
   $table .= "</table>";
   return $table;
