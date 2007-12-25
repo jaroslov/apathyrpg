@@ -143,6 +143,18 @@ function encapsulate_free_text($PseudoXML) {
   return "<field>".$result."</field>";
 }
 
+function build_text_area($PseudoXML,$TabOrder,$Extra) {
+  $result = "<textarea tabindex='".$TabOrder."'
+              onFocus=\"focusStyle(this);\"
+              onBlur=\"blurStyle(this);\"
+              onChange=\"ajaxFunction('loader.php',
+                'Load','Load','UpdateValue',value)\"
+              ".$Extra.">";
+  $result .= encapsulate_free_text($PseudoXML["Value"]);
+  $result .= "</textarea>";
+  return $result;
+}
+
 function build_datum_table($environment,$datum) {
   $attrs = xmldb_attributes($environment["Connection"],$datum);
   $children = xmldb_getChildNodes($environment["Connection"],$datum);
@@ -162,21 +174,20 @@ function build_datum_table($environment,$datum) {
   $table = "<table class='ModifyDatumTable'>
               <tr><td>Code<em>#".$datum["ID"]."</em></td><td>Aspects</td><td>Description</td></tr>
               <tr><td>Title:&rsaquo;</td><td>"
-              ."<textarea>"
-              .encapsulate_free_text($children[$title]["Value"])
-              ."</textarea>"
+              .build_text_area($children[$title],1)
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
-              ."<textarea style='height:".((sizeof($entries)+1)*4)."em;width:35em;'>"
-              .encapsulate_free_text($children[$description]["Value"])
-              ."</textarea>"
+              .build_text_area($children[$description],
+                sizeof($entries)+2,
+                "style='height:".((sizeof($entries)+1)*4)."em;
+                        width:35em;'")
               ."</td></tr>";
+  $taborder = 1;
   foreach ($entries as $id => $entry) {
+    $taborder++;
     $table .= "\n<tr><td><pre>".$entry
                 .":&rsaquo;</pre>"
                 ."</td><td>"
-                ."<textarea>"
-                .encapsulate_free_text($children[$id]["Value"])
-                ."</textarea>"
+                .build_text_area($children[$id],$taborder)
                 ."</td></tr>";
   }
   $table .= "</table>";
