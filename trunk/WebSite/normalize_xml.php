@@ -7,8 +7,9 @@ function create_connection($Database) {
   // Connecting, selecting database
   $link = mysql_connect('localhost', 'thechao', 'ha1l3r1S')
       or die('Could not connect: ' . mysql_error());  
-  mysql_select_db($Database) or die('Could not select database');
-  return $link;
+  if (mysql_select_db($Database))
+    return $link;
+  return 'Could not select database';
 }
 
 function sanitize_for_xml($String) {
