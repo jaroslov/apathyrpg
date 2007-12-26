@@ -277,7 +277,7 @@ function insert_editable_response($environment) {
   $parent_html_id = $at_code[3];
   $sizes = explode(":",$at_code[1]);
   $width = $sizes[0];
-  $height = (int)$sizes[1]*1.25;
+  $height = (int)$sizes[1]*3;
   $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
   $target = $environment["Target"];
   $payload = "<table class='NoStyle'><tr><td colspan='2'><textarea
