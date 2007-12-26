@@ -5,26 +5,28 @@
   </head>
   <body
     onLoad="ajaxFunction('loader.php','MainPart','MainPart','Initialize','')">
-    <div id="Path" class="Path"></div>
-    <div id="Datum" class="Datum"></div>
-    <table valign="top">
-      <tr valign="top">
-        <td>
-          <div id="Ajax" class="Log" style="visibility:show;">
-            <em>Ajax</em>
-          </div>
-        </td>
-        <td>
-          <div id="Log" class="Log" style="visibility:show;">
-            <em>Log</em>
-          </div>
-        </td>
-        <td>
-          <div id="LogResponse" class="Log" style="visibility:show;">
-            <em>Response</em>
-          </div>
-        </td>
-      </tr>
-    </table>
+    <div class="Main">
+      <div id="Path" class="Path"></div>
+      <div id="Datum" class="Datum"></div>
+      <table valign="top">
+        <tr valign="top">
+          <td>
+            <div id="Ajax" class="Log" style="visibility:hidden;">
+              <em>Ajax</em>
+            </div>
+          </td>
+          <td>
+            <div id="Log" class="Log" style="visibility:hidden;">
+              <em>Log</em>
+            </div>
+          </td>
+          <td>
+            <div id="LogResponse" class="Log" style="visibility:hidden;">
+              <em>Response</em>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
