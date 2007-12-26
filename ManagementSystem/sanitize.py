@@ -6,7 +6,7 @@ from xml.dom.minidom import parse as parseXml
 #only inlines contain raw text
 INLINES = ["text","equation"]
 
-FIX = ["title","description"]
+FIX = ["title"]
 
 def sanitize(apathy,inline,fix,indent=""):
   result = ""
@@ -41,7 +41,8 @@ def sanitize(apathy,inline,fix,indent=""):
                              "note"]:
           Problem = True
     if Problem:
-      pass#print >> sys.stderr, apathy.toxml()
+      #print >> sys.stderr, apathy.toxml()
+      pass
   else:
     for child in apathy.childNodes:
       hasChildren = True

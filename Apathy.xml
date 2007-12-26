@@ -32,154 +32,154 @@
           <title><text>Basic Terms</text></title>
           <description-list>
             <item>
-              <description><text>
-                <define>Action</define>
-              </text></description>
+              <description>
+                <text><define>Action</define></text>
+              </description>
               <text>An action is the most basic unit of time during combat. It is roughly equal to one second of time. Most characters will have three Actions per turn, though certain things can increase or decrease this number. Note that as long as a character is unconscious, he or she always has at least one Action per turn.</text>
             </item>
             <item>
-              <description><text>
-                <define>Base Armor</define>
-              </text></description>
+              <description>
+                <text><define>Base Armor</define></text>
+              </description>
               <text>A character<rdquo/>s natural resistance to bodily harm of unusual varieties. You can think of this as <ldquo/>toughness<rdquo/> (not to be confused with the skill of the same name). A character<rdquo/>s base armor reduces the damage they suffer from U (undefined) damage. Base Armor does not protect against any other form of damage, such as P, S, C, or D. Note, that if a character suffers any U damage, no matter how high their Base Armor might be, they always loose at least 1 HP.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text><define>Crushing</define>,<define>C</define>
 		</text>
-              </text></description>
+              </description>
               <text>An abbreviation for <define>crushing</define>. When used in conjunction with a weapon, it indicates that the weapon in question deals Crushing type damage. When used in conjunction with armor, it indicates how much Crushing damage the armor will defend against.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>CP</text>
-              </text></description>
+              </description>
               <text>Character Points. These are points you use to <ldquo/>purchase<rdquo/> skills, equipment, etc. for your character. CP can also be used to increase attributes according to a special table. See the section on character creation.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Character</text>
-              </text></description>
+              </description>
               <text>A persona within the game world that is adopted by a player. The player sees through the character<rdquo/>s eyes, controls the character<rdquo/>s Actions, and speaks through the character<rdquo/>s mouth.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>D</text>
-              </text></description>
+              </description>
               <text>An abbreviation for Direct Damage. D damage is applied directly against the target<rdquo/>s HP. Armor, including Base Armor, cannot protect against D damage. Fortunately, D damage sources are few and far between.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Game Master</text>
-              </text></description>
+              </description>
               <text>A person who is in the game that is not a player. The Game Master controls the game world that the players inhabit. He/she controls everything that is not the players. This includes other people (sometimes called non-player characters), monsters, natural events, etc. This is usually abbreviated as <ldquo/>GM<rdquo/>.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>HP</text>
-              </text></description>
+              </description>
               <text>Abbreviation for Hit Points. Hit Points are used to represent a character<rdquo/>s health. If a character gets injured, their HP decreases. If a character reaches 0 HP, they fall unconscious. If a character reaches -X HP, where X is equal to their maximum HP, they are dead. Note that if a character is below 0 HP, they will loose 1 HP per turn (1 HP per 3 seconds when not in combat) due to bleeding, unless they are given medical attention.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>HTH</text>
-              </text></description>
+              </description>
               <text>see Hand-to-Hand</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Hand-to-Hand</text>
-              </text></description>
+              </description>
               <text>Hand-to-hand is a special type of combat. It takes place when the combatants use no weapons of any kind. Thus, in hand-to-hand combat, only punches, kicks, and similar attacks will take place.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Luck Points</text>
-              </text></description>
+              </description>
               <text>Usually, this is short for Luck Points. Luck Points are accumulated during gameplay, and players redeem them for combat bonuses, or for saving their character<rdquo/>s butt if things get rough. This is used to help unlucky die rolls from screwing over players. All major character in the game, including significant NPCs, villains, etc. will have Luck Points. The GM is responsible for distributing Luck Points.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>MA</text>
-              </text></description>
+              </description>
               <text>Abbreviation for Martial Arts. It is sometimes used to refer to the Martial Arts skill. See the Martial Arts section for more information.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>MP</text>
-              </text></description>
+              </description>
               <text>Magic Points, also called Mana. Magic points measure how much magic a character can use in a certain amount of time. Each time magic is used (a spell is cast, or the character makes a rune) MP are consumed. If a character has no MP, they cannot use any magic until the MP replenish. MP replenish naturally over time. See the Magic section for details.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Melee</text>
-              </text></description>
+              </description>
               <text>Melee is a special type of combat. Melee combat takes place when there are no projectile (launched, thrown, shot, etc.) weapons or attacks of any kind. Melee combat includes things like hand-to-hand fighting, or using weapons like swords, clubs, etc.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Missile</text>
-              </text></description>
+              </description>
               <text>A missile weapon is one that flies through the air in some manner. Throwing knives, slings, thrown stones, spears, and arrows are examples of missile weapons.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Non-Player Character</text>
-              </text></description>
+              </description>
               <text>A person controlled by the Game Master who interacts with the players. A non-player character is anyone in the game world not controlled by a player.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>NPC</text>
-              </text></description>
+              </description>
               <text>See Non Player Character.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>P</text>
-              </text></description>
+              </description>
               <text>An abbreviation for Piercing. When used in conjunction with a weapon, it indicates that the weapon in question deals piercing type damage. When used in conjunction with armor, it indicates how much piercing damage the armor will defend against.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>PC</text>
-              </text></description>
+              </description>
               <text>Power Cells. This is a measurement of energy or power for things like mecha, vehicles, robots, and power armor. Power, measured in PC, is produced by things like engines and is consumed by movement systems and weapons, etc. PC can also mean <ldquo/>player character<rdquo/>.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Player</text>
-              </text></description>
+              </description>
               <text>An actual person, like the authors of this manual<ndash/>or you<ndash/>who controls a character in the game world.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Round</text>
-              </text></description>
+              </description>
               <text>A <ldquo/>round<rdquo/> is the most general unit of time during combat. Any sequence of combat is broken down into one or more rounds. During each round, each combatant gets to take one turn. A round is over whenever all combatants have taken a turn (or are unable to for some reason).</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>S</text>
-              </text></description>
+              </description>
               <text>An abbreviation for Slashing. When used in conjunction with a weapon, it indicates that the weapon in question deals Slashing type damage. When used in conjunction with armor, it indicates how much Slashing damage the armor will defend against.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Size</text>
-              </text></description>
+              </description>
               <text>A representation of the approximate Size of objects such as people, mecha, etc. Humans are Size level 2. Each Size level is approximately double the height and weight of the Size below it. So, Size 2 covers things up to about 7<rdquo/> tall. Size 3, therefore, is about 14<rdquo/> tall.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Turn</text>
-              </text></description>
+              </description>
               <text>A turn is a unit of time during combat. Each round of combat is broken down into one turn per combatant. During each player<rdquo/>s turn, they get to do whatever they want. A turn is roughly equal to three seconds of time. Each turn is subdivided into Actions.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>U</text>
-              </text></description>
+              </description>
               <text>An abbreviation for undefined damage. Undefined damage is a special type of damage that cannot be prevented by normal armor. It is usually caused by supernatural powers, magic, high tech weapons, and similar unusual sources. Normal (P/S/C) armor cannot protect against U damage. With very few exceptions, the ONLY thing that can protect a character from U damage is his or her Base Armor. Note, that if a character suffers any U damage, no matter how high their Base Armor might be, they ALWAYS loose 1 HP.</text>
             </item>
           </description-list>
@@ -500,45 +500,45 @@
             <text>Note that attribute increases are major additions to your character, and they should be role-played as such. Significant attribute changes represent months if not years of hard work! Here are some examples of possible means of increasing attributes:</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>STR</text>
-                </text></description>
+                </description>
                 <text>Strength raw physical strength. Muscle power.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>DEX</text>
-                </text></description>
+                </description>
                 <text>Dexterity quickness, coordination, fine motor control, balance</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>BLD</text>
-                </text></description>
+                </description>
                 <text>Build the toughness and durability of your body, stamina, <ldquo/>guts<rdquo/></text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>INT</text>
-                </text></description>
+                </description>
                 <text>Intelligence computational power of the mind, ability to grasp complex problems</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>WIS</text>
-                </text></description>
+                </description>
                 <text>Wisdom experience, worldliness, background knowledge, and common sense</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>WIL</text>
-                </text></description>
+                </description>
                 <text>Willpower strength of the mind, ability to<lsquo/>stick it out<rdquo/> when things get tough</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>CHA</text>
-                </text></description>
+                </description>
                 <text>Charisma appearance, personal presence, ability to make friends or influence others</text>
               </item>
             </description-list>
@@ -999,15 +999,15 @@
             <text>As noted above, it is possible for characters to wield two weapons in combat, or a weapon and a shield. A character cannot attack with both weapons during the same Action unless he takes the Multi-weapon style skill in Martial Arts. A character using a weapon and a shield may not attack with his weapon and shield bash in the same Action for the same reason. When attacking with both weapons the character makes two separate attack rolls, one for each weapon; each attack is resolved separately. This takes two separate Actions.</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Two normal weapons</text>
-                </text></description>
+                </description>
                 <text>When wielding two weapons the weapon in the character<rsquo/>s <ldquo/>good<rdquo/> hand receives a -3 to strike and the weapon in the character<rsquo/>s <ldquo/>off<rdquo/> hand receives a -6. Some characters can have <ldquo/>even-more-offhand<rdquo/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the <math><mrow><msup><mi>k</mi><mi>th</mi></msup></mrow></math> weapon is at <math><mrow><mn>-3</mn><mo><times/></mo><mi>k</mi></mrow></math> to strike.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Paired weapons</text>
-                </text></description>
+                </description>
                 <text>, or one normal weapon and one backup weapon: Some weapons are well suited to, or even designed for, use in the <ldquo/>off<rdquo/> hand. When using these weapons the penalty for the offhand weapon is -3 as opposed to -6. The penalty for the primary weapon remains -3. Specifically, these combinations are:</text>
                 <numbered-list>
                   <item>
@@ -1028,9 +1028,9 @@
                 </numbered-list>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>One normal weapon and a shield or item</text>
-                </text></description>
+                </description>
                 <text>If the character is wielding a 1-handed weapon in his <ldquo/>good<rdquo/> hand, and his other hand is carrying a shield, a non-weapon holy symbol, or a utility item then there is NO strike penalty at all. For the purposes of this rule a utility item is something such as a torch, walking stick, magical totem, leash, or bag. Utility items are not weapons and must not require particular attention to carry.</text>
               </item>
             </description-list>
@@ -1072,18 +1072,18 @@
             <text>There are many different skills that are available for defense. They are called defensive maneuvers. A defensive maneuver is a special skill or ability that you use specifically in response to being attacked; otherwise they work like normal skills. A target of an attack may attempt to use any one defensive maneuver in order to protect himself from the attack. The most common are parrying, blocking, and the Dodge skill. These are described below. Other defensive maneuvers may be found in the Martial Arts section.</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Parry</text>
-                </text></description>
+                </description>
                 <text>Parrying is using your weapon to deflect a blow from another weapon. Parrying may only be performed with melee weapons, against either a melee or hand to hand attack. Parrying is ineffective versus other attacks, such as explosives, bullets, chemical splashes, magical energy, etc. Parry is not a skill itself, rather the skill roll for parrying is based on the weapon skill you are trying to parry with. For example, you would use your Knife skill to parry using your dagger. You must have your weapon drawn and ready in order to use it to parry. Note, that this is the same skill that is used for attacking with your weapon, so most characters will have a good chance at parrying.</text>
                 <note>
                   <text>A weapon or similar combat skill is used for parrying. Also note that parrying is always subject to GM approval. The GM determines the outcome of a successful parry, though it usually means that the defender avoids all damage. However, if you are parrying an attack from a heavy or large weapon with a small weapon, the GM might want to impose a different outcome.</text>
                 </note>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Block</text>
-                </text></description>
+                </description>
                 <text>Blocking is putting a shield between you and an incoming attack.</text>
                 <note>
                   <text>Upon a successful block, a shield<rsquo/>s armor values are added to any armor that you are currently wearing</text>
@@ -1095,9 +1095,9 @@
                 <text>In the case of a non-standard attack, such as a splash of acid, the shield simply stops a certain percentage of the damage outright.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Dodge</text>
-                </text></description>
+                </description>
                 <text>one of the best types of defense. Dodge is an (expensive) skill; dodging is moving your body out of the way of an incoming attack. By sidestepping, ducking, throwing yourself to the ground or similar Action you can avoid any attack completely and take no damage. The Dodge skill is used for dodging. On a successful dodge the blow doesn<rsquo/>t hit, period. However, dodge is a high rank skill, so most characters will not be very good at it.</text>
               </item>
             </description-list>
@@ -1112,33 +1112,33 @@
             <text>Here<rsquo/>s a key of the different damage types with abbreviations in parenthesis and what they are typically associated with:</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Piercing (P)</text>
-                </text></description>
+                </description>
                 <text>using a sharp tip to penetrate the target creating a hole or deep cut within the target. Some melee weapons, most bullets, and other penetrating weapons deal piercing damage. Armor can protect against this type of damage.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Slashing (S)</text>
-                </text></description>
+                </description>
                 <text>using a cutting edge to slice the target creating a fairly shallow long cut within the target. Most melee weapons such as knives and swords, as well as lasers deal Slashing damage. Armor can protect against this type of damage.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Crushing (C)</text>
-                </text></description>
+                </description>
                 <text>using a heavy blunt edge in an attempt to fracture or break the target. This is typically the hardest damage to protect against, and as such, is a favorite type of damage for melee combat. Punches, clubs, staves, and explosions deal Crushing damage. Armor can protect against this type of damage.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Undefined (U)</text>
-                </text></description>
+                </description>
                 <text>using energy to cause damage within the target. This can include electricity, heat, magic, sickness and other <ldquo/>odd<rdquo/> types of damage. Normal armor cannot protect against this type of damage. Only your character<rsquo/>s Base Armor (BA) can protect you from undefined damage. Any time someone takes undefined damage he or she will always take at least one point of damage, regardless of the Base Armor.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Direct (D)</text>
-                </text></description>
+                </description>
                 <text>extremely damaging attacks deal D damage. There is no way to protect yourself from Direct Damage, as it will bypass all armor and other protections that you have on. Damage from D attacks is subtracted directly from Hit Points (HP).</text>
               </item>
             </description-list>
@@ -1191,33 +1191,33 @@
             <text>Apathy includes rules for combat with melee weapons, ranged weapons, firearms, magic, and so forth. The rules for attacking and defending with different kinds of weapons and effects are detailed here.</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Hand-to-Hand attacks:</text>
-                </text></description>
+                </description>
                 <text>Hand-to-hand attacks include things like punches, kicks, and body weapons (teeth, claws, etc.). Hand-to-hand combat may be Parried, Dodged, or Blocked.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Melee Weapons:</text>
-                </text></description>
+                </description>
                 <text>Melee weapons are handheld weapons that are not thrown or launched. This includes swords, knives, axes, hammers, most polearms, etc. Melee weapon attacks may be Parried, Dodged, or Blocked.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Missile Weapons:</text>
-                </text></description>
+                </description>
                 <text>Missile weapons are archaic type weapons which are thrown or launched at the target. This includes throwing knives, thrown spears, arrows, crossbow bolts, sling bullets, etc. Missile weapons may be Dodged, or Blocked normally but may not be parried (except for special abilities that may allow one to parry them)</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Projectile Weapons:</text>
-                </text></description>
+                </description>
                 <text>Projectile weapons are guns, shotguns, rifles, pistols, lasers, particle beams, and other fast moving kinetic weapons. Projectile weapons may be Dodged or Blocked, but NOT Parried.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Explosives:</text>
-                </text></description>
+                </description>
                 <text> <ldquo/>Explosives<rdquo/> in this case includes such things as grenades, molotov cocktails, bottles of acid, etc. These attacks may be Dodged or Blocked. Note, these attacks have a blast radius. If the defender has 1 more success than the attacker, it means that a direct hit was avoided but the defender still suffers the radius damage. If the defender has two or more successes over the attacker it means the entire attack was defended against. If the attacker ties or beats the defender then the defender takes full damage. Note that most true explosives, such as grenades, missiles, or bombs, deal double damage on a direct hit and normal damage in their blast radius.</text>
               </item>
             </description-list>
@@ -1509,27 +1509,27 @@
           <text>For damage type listed as X/Y, the weapon can deal either type of damage for a given attack. For a P/S weapon, the attcker can choose to do a P or S attack. For every point of STR under Min. STR, the attack gets -1 damage and -2 to strike/parry. STR Req is the minimum strength required to wield the weapon. For every point of STR over the Strength Requirement, add one point of damage to the raw roll, up to a maximum of the MSB (Max Strength Bonus) A raw bonus is always indicated with square brackets. So <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns><rOff>+</rOff><raw>4</raw><kind/></roll> would be a normal <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> roll, with an additional 4 added to the final result. When wielding a 1-H weapon with two hands, assume the wielder has +2 STR.</text>
           <description-list>
             <item>
-              <description><text>
+              <description>
                 <text>Hands</text>
-              </text></description>
+              </description>
               <text>Number of hands required to use the weapon</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Rec</text>
-              </text></description>
+              </description>
               <text>Number of actions it takes to recover after attacking with the weapon. This many actions must be spent to get the weapon ready for attack again.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Enc</text>
-              </text></description>
+              </description>
               <text>Represents the weight of the weapon. This consumes Encumbrance just like armor. Only use this when the weapon is actually being used.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Range</text>
-              </text></description>
+              </description>
               <text>the effective reach of the weapon in feet. If your target is beyond your range, you cannot strike them. You can spend an action to gain range on your opponent. If your target is closer than 1/2 range, then you are at -6 to strike the target.</text>
             </item>
           </description-list>
@@ -2506,33 +2506,33 @@
             <text>There are five basic summoning spells:</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Gate</text>
-                </text></description>
+                </description>
                 <text>allows the summoner to call forth a creature that appears somewhere near the caster. The location of appearance must be within direct line of sight of the caster, and no more than 30 feet away. Once the creature appears, it is free to do whatever it wants based on its own free willthe caster simply transports it to a new location. It will return to its original location afterrounds.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Summon</text>
-                </text></description>
+                </description>
                 <text>allows the summoner to call forth a creature near the caster (like Gate). This creature is bound to follow SIMPLE directives given by the caster. The creature will not act in a hostile manner towards the caster. If a summoner casts another Summon spell while another one is currently active, he must make a Magical Control roll. Failure means that the new spell fails and the first expires immediately.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Pact</text>
-                </text></description>
+                </description>
                 <text>allows the caster to form a complex bond with a creature, making that creature his Familiar. The caster must first find a creature to use pact withsuch as summoning the creature by gate or summon) The caster maycontrolthe creature in a manner similar to summon. This is permanent and lasts until either the caster or the Familiar is slain. If the caster casts Pact a while he already has a Familiar, the original spell expires and the caster suffers. While active, the Familar is aware of what happens to the caster, and vice versa. A basic empathic link exists between the creature and the caster. The caster may make a Magical Control check in order tolisten inon any of the familiars senses at any point in time.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Control</text>
-                </text></description>
+                </description>
                 <text>is very similar to summon except that the caster has exacting and specific control over the creature(s) summoned. The caster can literally operate the creature(s) as though byremote control. While Control is active, the summoner is responsible for literally every action made by the summoned creatureit has no will of its own.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Transform</text>
-                </text></description>
+                </description>
                 <text>is a powerful technique in which the caster takes the form of the creature summoned. The caster literally becomes the creature in question, but retains his own mental state and skills in addition to the skills of the summoned creature. All physical attributes (STR, DEX, BLD) of the summoned creature replace those of the character, but the character retains his own mental attributes (INT, WIS, WIL, CHA). This effect lasts 4xturns. It cannot be ended at will. The transformation requires three actions to complete. When the spell expires, the caster will be very tired, and will suffer the effects of slow, loosing 1 action per turn forturns.</text>
               </item>
             </description-list>
@@ -2629,57 +2629,57 @@
             <text>There exist different types or categories of magic. The different types of magic are:</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Air</text>
-                </text></description>
+                </description>
                 <text>Air magic is varied and effective for combat mages. The lower rank spells are a mixture between utility types and damaging spells. The higher level combat spells are quite powerful. Air magic contains Lightning spells, which have wildly varying damage potential.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Life</text>
-                </text></description>
+                </description>
                 <text>Life magic is capable of curing the wounded, healing the sick, and even inflicting horrible diseases upon your opponents. It is a favorite of religious orders, either for good or evil. Most combat magic in this category is limited because the spells require touch to cast. Some spells are capable of dealing a great deal of damage, but usually over a period of time. Sufficiently advanced mages who practice life magic can raise the dead or kill the living with a simple gesture.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Spiritual</text>
-                </text></description>
+                </description>
                 <text>Magic of the Spiritual category is uncommon at best. With relatively few low-rank spells it is usually reserved to advanced practitioners of magic. However, it has some unique spells that make it very effective. Spiritual magic is particularly well suited for combating demons or spirits. Higher level mages can lay waste to legions of their enemies with single spell.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Light</text>
-                </text></description>
+                </description>
                 <text>With few exceptions, Light magic is a utility category. It can be used to illuminate dark passages beneath the earth or deceive with illusion and tricks. Light magic has many useful spells, many of which are available at low or middle levels. It is a very useful type of magic for the rogue or healer-type character who wants to be useful but doesnt want to fight. A few high level light spells can deal excellent damage, but only at a steep MP cost.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Physical</text>
-                </text></description>
+                </description>
                 <text>Physical magic is an excellent choice fordual-classedcharacters that practice magic and also fight in melee combat. At lower and middle levels, physical magic allows one to improve the abilities of others, and to manipulate the physical world with magic. He can also repair broken weapons or mend machines. At higher levels the school offers very effective defensive spells and the highly effective gravity-based offensive magic, which always deals solid damage.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Arcane</text>
-                </text></description>
+                </description>
                 <text>Arcane magic has no direct offensive capability; this would appear to be a weak form of magic that has little use for an adventurer. However, the ability of arcane magic to support, enhance, and empower the caster or his allies is unmatched. It is excellent when paired with other magic of a more offensive nature.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Fire</text>
-                </text></description>
+                </description>
                 <text>Fire magic is a traditional offensive type of magic. Its spells deal high damage and are without equal for causing large-scale destruction. They are also quite mana-efficient. However, fire magic is the easiest of allsupernaturalattacks to defend against. Fire magic is also noisy, flashy, and very intimidating to ones opponents. Unfortunatley, this makes it nearly impossible to use in a stealthy manner.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Earth</text>
-                </text></description>
+                </description>
                 <text>Earth magic is a varied school that combines defensive and offensive spells. While neither type of spell is the most powerful available, they are not to be underestimated. Earth magic has a number of very useful utility spells.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Water</text>
-                </text></description>
+                </description>
                 <text>At lower levels, water magic is fairly weak, though it does combine both offensive and defensive spells. Middle ranks offer effective protection and more effective combat spells. Higher-level water magic is legendary in effectiveness and is very powerful, Though many of the offensive spells have a long casting time, they are nearly impossible to defend against.</text>
               </item>
             </description-list>
@@ -2761,15 +2761,15 @@
             <text>A person with Magical Studies can create Books, Scrolls, and Potions of any spell he/she knows. Producing such works is a long and expensive process:</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Books</text>
-                </text></description>
+                </description>
                 <text>Requires a number of days equal to twice the rank of the spell squared to create. No MP are required, but special precious inks and paper are required. These materials cost approximately half the value of the book.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Scrolls/Potions</text>
-                </text></description>
+                </description>
                 <text>Requireto create. They require MP equal to a normal casting of the spell to be expended, and require precious materials valued at not less than three-quarters the value of the finished item. A ritualist may prepare a potion in half that time.</text>
               </item>
             </description-list>
@@ -2778,21 +2778,21 @@
             <title><text>Magic Terminology <and/> Misc.</text></title>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Black</text>
-                </text></description>
+                </description>
                 <text>spells are those associated with evil, death energy, and demonic influence. While they are not necissiarily evil, they are generally indescriminate in their targets. Black spells never affect demons, undead, or targets that are not living, such as ghosts or robots.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>White</text>
-                </text></description>
+                </description>
                 <text>spells are those that are comprised of life energy. They are technically notgoodaligned, though they are a favorite of good religious orders. White spells that cause damage only affect demons, undead, and spirits.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Auto</text>
-                </text></description>
+                </description>
                 <text>spells are those that are automatically targeting. That means that once cast the spell will never miss or malfunction. However, in order to cast an auto-targeting spell, the caster must be able to clearly see and identify his target.</text>
               </item>
             </description-list>
@@ -2855,30 +2855,30 @@
           <text>After the Martial Arts skill has been purchased, skills from the four basic categories may be acquired; the four categories represent different capabilities that Martial Arts covers. The five categories are Basic, Combat, Defensive, and Modifier. The different categories focus on different phases of Combat, such that Combat skills are designed to aid the Martial Artist with movement, entering/exiting combat, the knowledge of combat, deployment, and higher-level strategy. Basic skills are involved in the nitty-gritty (basic) postures and moves to actually strike the opponent and inflict harm or death. Defensive skills are designed to deflect, dodge, and/or otherwise avoid the mishap of being harmed by another pugilist. Modifiers represent ways to modify Basic skills.</text>
           <description-list>
             <item>
-              <description><text>
+              <description>
                 <text>Basic</text>
-              </text></description>
+              </description>
               <text>These skills represent Basic combat actions, such as punching or kicking, grappling, the use of weapons and other primitive attacks.</text>
               <note>
                 <text>Only Basic attacks may be modified by a Modifier.</text>
               </note>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Combat</text>
-              </text></description>
+              </description>
               <text>These are the skills for being in, around, or preparing for combat. For example, knowledge of the terrain, etiquette, being prepared to move quickly and with assurance.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Defensive</text>
-              </text></description>
+              </description>
               <text>These are the skills used for defending against an attack. They are the foil to the Basic skills.</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Modifier</text>
-              </text></description>
+              </description>
               <text>A Modifier is a skill used to modify a Basic attack. A Modifier changes the behaviour of a Basic attack; the Basic attack is now considered a Special attack of the same name with the Modifier as the adjective, for instance, if the Martial Artist is modifying a Punch with a Bash, then this is now a Special attack,Bashing Punch.Since a modified Basic attack counts as a Special attack, it may not be further modified, as only Basic attacks can be modified. There are certain Combat skills which enable the Martial Artist to consider certain specific combinations of Modifier/Basic to be Basic attacks.</text>
             </item>
           </description-list>
@@ -3464,45 +3464,45 @@
                 </figure>
                 <description-list>
                   <item>
-                    <description><text>
+                    <description>
                       <text>Slots</text>
-                    </text></description>
+                    </description>
                     <text>The amount of equipment that can be installed on the suit</text>
                   </item>
                   <item>
-                    <description><text>
+                    <description>
                       <text>Armor</text>
-                    </text></description>
+                    </description>
                     <text>Starting armor value of the suit (All equal for P/S/C)</text>
                   </item>
                   <item>
-                    <description><text>
+                    <description>
                       <text>Dex Minus</text>
-                    </text></description>
+                    </description>
                     <text>Robots have some control-lag, this is represented by a DEX minus to the pilots DEX attribute</text>
                   </item>
                   <item>
-                    <description><text>
+                    <description>
                       <text>A. Penalty</text>
-                    </text></description>
+                    </description>
                     <text>Armor Penalty. For every full amount of this value, the DEX of the pilot is reduced by 1.</text>
                   </item>
                   <item>
-                    <description><text>
+                    <description>
                       <text>Power</text>
-                    </text></description>
+                    </description>
                     <text>is the number of PC per turn consumed by the robot, just to run basic needed systems</text>
                   </item>
                   <item>
-                    <description><text>
+                    <description>
                       <text>Hit Points</text>
-                    </text></description>
+                    </description>
                     <text>The starting number of HP that a mecha has</text>
                   </item>
                   <item>
-                    <description><text>
+                    <description>
                       <text>Strength</text>
-                    </text></description>
+                    </description>
                     <text>The starting strength value for the mecha</text>
                   </item>
                 </description-list>
@@ -4725,39 +4725,39 @@
             </figure>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Class</text>
-                </text></description>
+                </description>
                 <text>the size of the weapon being bought; used to calculate various expenses</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Size</text>
-                </text></description>
+                </description>
                 <text>the size of the mecha or powered armor</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Slots</text>
-                </text></description>
+                </description>
                 <text>the number of slots a <ldquo/>pod<rdquo/> of ammunition uses</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Capacity per</text>
-                </text></description>
+                </description>
                 <text>the number of rounds per pod</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Damage</text>
-                </text></description>
+                </description>
                 <text>the damage the ammunition does</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Cost</text>
-                </text></description>
+                </description>
                 <text>the cost in dollars to purchase the ammunition pod</text>
               </item>
             </description-list>
@@ -4900,39 +4900,39 @@
             <text>All Energy weapons can be <ldquo/>tuned<rdquo/> for various effects (one or the other), which takes (Class+1) hours to do in a professional shop. Unless otherwise stated all weapons have a range of (Class+3)*10000 feet.</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>OverFire</text>
-                </text></description>
+                </description>
                 <text>spends twice as much energy but deals 50<percent/>more damage</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Flame</text>
-                </text></description>
+                </description>
                 <text>spends twice as much energy but also causes the target to suffer the damage as U (Undefined) Fire</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Drawing</text>
-                </text></description>
+                </description>
                 <text>spends three times as much energy, deals S (Slashing) damage instead of P</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Pulse</text>
-                </text></description>
+                </description>
                 <text>spends 1/2 as much energy, use four-sided dice (D4) instead of 6.</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Higgs Particle</text>
-                </text></description>
+                </description>
                 <text>weapon deals <C/> (Crushing) damage, but the maximum range is (Class+1)*100 feet</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Area Effect</text>
-                </text></description>
+                </description>
                 <text>uses twice the energy, but has (Class+1)*5' area effect</text>
               </item>
             </description-list>
@@ -5114,21 +5114,21 @@
           <text>Because of the wide variety of monstrous creatures available in literature and fantasy, it is a somewhat futile task to attempt to construct an exhaustive list. In addition, most GameMasters find that while any particular monster is okay, the specific monster they are envisioning is not available to them. The Monster section is thus divided into three parts:</text>
           <description-list>
             <item>
-              <description><text>
+              <description>
                 <text>Base types</text>
-              </text></description>
+              </description>
               <text>the fundamental attributes, abilities, and <ldquo/>look<rdquo/> of the base creature</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Templates</text>
-              </text></description>
+              </description>
               <text>modifications to the base-type that give the <ldquo/>flavor<rdquo/> of the monster</text>
             </item>
             <item>
-              <description><text>
+              <description>
                 <text>Examples</text>
-              </text></description>
+              </description>
               <text>that have been pre-generated</text>
             </item>
           </description-list>
@@ -5137,39 +5137,39 @@
             <text>The base-types are the fundamental <ldquo/>type<rdquo/> or <ldquo/>look<rdquo/> of the monster, they are:</text>
             <description-list>
               <item>
-                <description><text>
+                <description>
                   <text>Anthropoid</text>
-                </text></description>
+                </description>
                 <text>Essentially symmetric, bipedal, a head (and possible tail) etc.; a human-like monster</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Bipedal</text>
-                </text></description>
+                </description>
                 <text>covers non-anthropoid bipedal monsters, e.g. Duck, Chipmunk, Wyvern (two legs, two wings)</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Quadruped</text>
-                </text></description>
+                </description>
                 <text>typical of regular animals (mammals), e.g. Dog, Dragon (two legs, two arms, two wings)</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Serpent</text>
-                </text></description>
+                </description>
                 <text>tubes, e.g. Snail</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Polymelic</text>
-                </text></description>
+                </description>
                 <text>monsters with many legs or many arms, e.g. Angelus Guhendrian (torus with twelve wings, and an eyeball)</text>
               </item>
               <item>
-                <description><text>
+                <description>
                   <text>Amorphous</text>
-                </text></description>
+                </description>
                 <text>blobs, pools, puddles, whiffs-of-smoke</text>
               </item>
             </description-list>
@@ -38924,15 +38924,21 @@
           <text>The skill of attacking with and parrying (if applicable) with the given (archaic) weapon type. Archaic weapons include both Melee and Ranged. The damage and type of the weapon is listed in the Equipment section. Note that Archaic Weapons actually encompasses many different skills.</text>
           <description-list>
             <item>
-              <description><text><text>Class</text></text></description>
+              <description>
+                <text>Class</text>
+              </description>
               <text>skills are for individual classes of archaic weapon, such as Axe or Polearm. These must be bought individual and are Rank 1 skills.</text>
             </item>
             <item>
-              <description><text><text>Super Class</text></text></description>
+              <description>
+                <text>Super Class</text>
+              </description>
               <text>skills are for groups of classes. These groups are:<description-list><item><description><text>Stick</text></description><text>Long Swords, Short Swords, Knives, Blunt</text></item><item><description><text>Axes</text></description><text>Axes, Blunt</text></item><item><description><text>Flexible</text></description><text>Chained, Monofilament, Ships</text></item><item><description><text>Great</text></description><text>Staves, Polearms</text></item><item><description><text>Missile</text></description><text>Ranged, Thrown</text></item></description-list>Super-Classes are Rank 2 and not Rank 1. A Super-Class may never be Specialized.</text>
             </item>
             <item>
-              <description><text><text>Exotic</text></text></description>
+              <description>
+                <text>Exotic</text>
+              </description>
               <text>Certain weapons are Exotic (most of these are in the Exotic category, but some are within other categories). All Exotic weapons require that you purchase an individual skill for them. For example, the Zaghnal is Exotic, in order to use the Zaghnal, a character must purchase the specific skill Zaghnal. Exotic skills may be specialized.</text>
             </item>
           </description-list>

@@ -3,10 +3,10 @@
 include 'normalize_xml.php';
 
 function apathy_serialized_xml_nodes() {
-  return array("title","text","define","field",
+  return array("text"/*,"title","define","field",
               "mn","mo","mi",
               "num","face","bns","bOff",
-              "rOff","raw","kind","mul");
+              "rOff","raw","kind","mul"*/);
 }
 
 function FORCE_create_apathy($Connection,$DatabaseName,$ApathyDom) {
