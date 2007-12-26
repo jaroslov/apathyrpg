@@ -68,7 +68,7 @@ function xmldb_serialize_as_raw_text($Node) {
   return implode(" ",$words);
 }
 
-function xmldb_xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
+function xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
   $ParentId,$Node,$Connection,$HasTextPs,$DropId) {
   $Order = 0;
   foreach ($Node->childNodes as $Child) {
@@ -90,7 +90,7 @@ function xmldb_xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
           xmldb_insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
       }
       if (!$Serialize) {
-        xmldb_xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
+        xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
           $ChildId,$Child,$Connection,$HasTextPs,$DropId);
       }
     }
@@ -112,7 +112,7 @@ function xmldb_create_attribute_view($Table,$Connection) {
 function xmldb_normalize_xml($Table,$Connection,
   $DOMDocument,$Connection,$HasTextPs,$DropId) {
   //$Node = $DOMDocument->ownerDocument;
-  xmldb_xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
+  xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
     -1,$DOMDocument->ownerDocument,$Connection,$HasTextPs,$DropId);
   // need views of elements and attributes
   xmldb_create_kind_view($Table,$Connection,"Attributes","attribute");
@@ -177,14 +177,6 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
   while ($record = mysql_fetch_array($resource))
     array_push($elements,xmldb_convert_record($record));
   return $elements;
-}
-
-function xmldb_table_setElementValue($Table,$Connection,$Element,$Value) {
-  $Value = xmldb_sanitize_for_sql($Value);
-  $query = "UPDATE `".$Table."`.`Structural` SET
-            `Value` ='".$Value."'
-            WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
-  mysql_query($query,$Connection);
 }
 
 function xmldb_setElementValue($Connection,$Element,$Value) {
@@ -307,13 +299,6 @@ function xmldb_getParentById($Connection,$ID) {
   while ($record = mysql_fetch_array($resource))
     return xmldb_convert_record($record);
   return false;
-}
-
-function xmldb_table_setAttribute($Table,$Connection,$Attribute,$Value) {
-  $query = "UPDATE `".$Table."`.`Structural` SET
-            `Value` = '".$Value."'
-            WHERE `Structural`.`ID` =".$Attribute["ID"]." LIMIT 1 ;";
-  mysql_query($query,$Connection);
 }
 
 function xmldb_setAttribute($Connection,$Attribute,$Value) {
