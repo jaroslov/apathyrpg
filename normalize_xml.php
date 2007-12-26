@@ -52,6 +52,21 @@ function insert_comment($Table,$Connection,$ChildOf,$Order,$Value) {
     $ChildOf,"comment",$Order,"",$Value);
 }
 
+function xmldb_serialize_as_raw_text($Node) {
+  $result = "";
+  foreach ($Node->childNodes as $Child)
+    switch ($Child->nodeType) {
+    case XML_TEXT_NODE: $result .= $Child->nodeValue; break;
+    case XML_ELEMENT_NODE:
+      $sxml = simplexml_import_dom($Child);
+      $result .= $sxml->asXML();
+      break;
+    default: "{UNKNOWN-NODE-TYPE}"; break;
+    }
+  $result = trim($result);
+  $words = split("[\t\n\r ]+", $result);
+  return implode(" ",$words);
+}
 
 function normalize_xml_node($DOMDocument,$Table,$Connection,
   $ParentId,$Node,$Connection,$HasTextPs,$DropId) {
@@ -63,10 +78,8 @@ function normalize_xml_node($DOMDocument,$Table,$Connection,
       $Serialize = in_array($TagName,$HasTextPs);
       $Attributes = $Child->attributes;
       $Value = "";
-      if ($Serialize) {
-        $sxml = simplexml_import_dom($Child);
-        $Value = $sxml->asXML();
-      }
+      if ($Serialize)
+        $Value = xmldb_serialize_as_raw_text($Child);
       $ChildId = insert_element($Table,$Connection,
         $ParentId,$Order,$TagName,$Value);
       for ($adx = 0; $adx < $Attributes->length; $adx++) {
