@@ -3,7 +3,7 @@
 // Normalize XML
 // convert an XML document into a database
 
-function create_connection($Database) {
+function xmldb_create_connection($Database) {
   // Connecting, selecting database
   $link = mysql_connect('localhost', 'thechao', 'ha1l3r1S')
       or die('Could not connect: ' . mysql_error());  
@@ -12,21 +12,21 @@ function create_connection($Database) {
   return 'Could not select database';
 }
 
-function sanitize_for_xml($String) {
+function xmldb_sanitize_for_xml($String) {
   $String = str_replace("'","&apos;",$String);
   return $String;
 }
 
-function sanitize_for_sql($String) {
+function xmldb_sanitize_for_sql($String) {
   $String = str_replace("'","''",$String);
   return $String;
 }
 
-function insert_structural($Table,$Connection,
+function xmldb_insert_structural($Table,$Connection,
   $ParentId,$Kind,$Order,$Name,$Value) {
-  $Kind = sanitize_for_xml($Kind);
-  $Name = sanitize_for_xml($Name);
-  $Value = sanitize_for_xml($Value);
+  $Kind = xmldb_sanitize_for_xml($Kind);
+  $Name = xmldb_sanitize_for_xml($Name);
+  $Value = xmldb_sanitize_for_xml($Value);
   $query = "INSERT INTO `".$Table."`.`Structural` (
             `ID`, `ChildOf`, `Kind`, `Order`, `Name`, `Value`
             ) VALUES (
@@ -37,18 +37,18 @@ function insert_structural($Table,$Connection,
   return mysql_insert_id($Connection);
 }
 
-function insert_element($Table,$Connection,$ChildOf,$Order,$Name,$Value) {
-  return insert_structural($Table,$Connection,
+function xmldb_insert_element($Table,$Connection,$ChildOf,$Order,$Name,$Value) {
+  return xmldb_insert_structural($Table,$Connection,
     $ChildOf,"element",$Order,$Name,$Value);
 }
 
-function insert_attribute($Table,$Connection,$ChildOf,$Name,$Value) {
-  return insert_structural($Table,$Connection,
+function xmldb_insert_attribute($Table,$Connection,$ChildOf,$Name,$Value) {
+  return xmldb_insert_structural($Table,$Connection,
             $ChildOf,"attribute",-1,$Name,$Value);
 }
 
-function insert_comment($Table,$Connection,$ChildOf,$Order,$Value) {
-  return insert_structural($Table,$Connection,
+function xmldb_insert_comment($Table,$Connection,$ChildOf,$Order,$Value) {
+  return xmldb_insert_structural($Table,$Connection,
     $ChildOf,"comment",$Order,"",$Value);
 }
 
@@ -68,7 +68,7 @@ function xmldb_serialize_as_raw_text($Node) {
   return implode(" ",$words);
 }
 
-function normalize_xml_node($DOMDocument,$Table,$Connection,
+function xmldb_xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
   $ParentId,$Node,$Connection,$HasTextPs,$DropId) {
   $Order = 0;
   foreach ($Node->childNodes as $Child) {
@@ -80,44 +80,51 @@ function normalize_xml_node($DOMDocument,$Table,$Connection,
       $Value = "";
       if ($Serialize)
         $Value = xmldb_serialize_as_raw_text($Child);
-      $ChildId = insert_element($Table,$Connection,
+      $ChildId = xmldb_insert_element($Table,$Connection,
         $ParentId,$Order,$TagName,$Value);
       for ($adx = 0; $adx < $Attributes->length; $adx++) {
         $Attribute = $Attributes->item($adx);
         $Name = $Attribute->nodeName;
         $Value = $Attribute->nodeValue;
         if (!($DropId and ($Name === "xml:id" or $Name === "id")))
-          insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
+          xmldb_insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
       }
       if (!$Serialize) {
-        normalize_xml_node($DOMDocument,$Table,$Connection,
+        xmldb_xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
           $ChildId,$Child,$Connection,$HasTextPs,$DropId);
       }
     }
   }
 }
 
-function create_kind_view($Table,$Connection,$KTable,$Kind) {
+function xmldb_create_kind_view($Table,$Connection,$KTable,$Kind) {
   $query = "CREATE VIEW ".$KTable." AS SELECT * FROM `Structural`
             WHERE `Kind` = '".$Kind."';";
   mysql_query($query,$Connection);
 }
 
-function create_attribute_view($Table,$Connection) {
+function xmldb_create_attribute_view($Table,$Connection) {
   $query = "CREATE VIEW attributes AS SELECT * FROM `Structural`
             WHERE `Kind` = 'attribute';";
   mysql_query($query,$Connection);
 }
 
-function normalize_xml($Table,$Connection,
+function xmldb_normalize_xml($Table,$Connection,
   $DOMDocument,$Connection,$HasTextPs,$DropId) {
   //$Node = $DOMDocument->ownerDocument;
-  normalize_xml_node($DOMDocument,$Table,$Connection,
+  xmldb_xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
     -1,$DOMDocument->ownerDocument,$Connection,$HasTextPs,$DropId);
   // need views of elements and attributes
-  create_kind_view($Table,$Connection,"Attributes","attribute");
-  create_kind_view($Table,$Connection,"Elements","element");
-  create_kind_view($Table,$Connection,"Comments","comment");
+  xmldb_create_kind_view($Table,$Connection,"Attributes","attribute");
+  xmldb_create_kind_view($Table,$Connection,"Elements","element");
+  xmldb_create_kind_view($Table,$Connection,"Comments","comment");
+}
+
+function xmldb_extract_xml($Connection) {
+  $query = "SELECT * FROM `Structural`";
+  $resource = mysql_query($query,$Connection);
+  $DOM = new DOMDocument();
+  return $DOM;
 }
 
 function xmldb_empty_all_xml($Connection) {
@@ -173,7 +180,7 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
 }
 
 function xmldb_table_setElementValue($Table,$Connection,$Element,$Value) {
-  $Value = sanitize_for_sql($Value);
+  $Value = xmldb_sanitize_for_sql($Value);
   $query = "UPDATE `".$Table."`.`Structural` SET
             `Value` ='".$Value."'
             WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
@@ -181,7 +188,7 @@ function xmldb_table_setElementValue($Table,$Connection,$Element,$Value) {
 }
 
 function xmldb_setElementValue($Connection,$Element,$Value) {
-  $Value = sanitize_for_sql($Value);
+  $Value = xmldb_sanitize_for_sql($Value);
   $query = "UPDATE `Structural` SET
             `Value` ='".$Value."'
             WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
@@ -189,7 +196,7 @@ function xmldb_setElementValue($Connection,$Element,$Value) {
 }
 
 function xmldb_setNodeValue($Connection,$ID,$Value) {
-  $Value = sanitize_for_sql($Value);
+  $Value = xmldb_sanitize_for_sql($Value);
   $query = "UPDATE `Structural` SET
             `Value` ='".$Value."'
             WHERE `Structural`.`ID` =".$ID." LIMIT 1 ;";
