@@ -13,6 +13,27 @@ body {
   background-attachment: fixed;
   background-position: bottom;
 }
+table.NoStyle {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+table.NoStyle td {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+table.NoStyle td {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+table.NoStyle tr {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 .ForceSave {
   width: 12em;
 }
@@ -124,7 +145,7 @@ div.toc h1 {
 }
 div.DatumLeftDiv {
   border: 1px solid black;
-  width: 20em;
+  width: 30em;
   height: 25em;
   padding: 1em;
   text-align: justify;
