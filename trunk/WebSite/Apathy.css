@@ -1,7 +1,7 @@
 body {
-  padding: 1em;
-  padding-right: 3em;
-  padding-left: 3em;
+  padding: 0em;
+  padding-right: 0em;
+  padding-left: 0em;
   margin: 0em;
   font-size: 12pt;
   text-align: justify;
@@ -12,6 +12,15 @@ body {
   background-repeat: repeat-x;
   background-attachment: fixed;
   background-position: bottom;
+}
+div.Main {
+  padding: 1em;
+  padding-right: 3em;
+  padding-left: 3em;
+  margin: 0em;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
+  background-position: top;
 }
 table.NoStyle {
   border: 0;
@@ -150,6 +159,8 @@ div.DatumLeftDiv {
   padding: 1em;
   text-align: justify;
   overflow: scroll;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
 }
 div.DatumRightDiv {
   border: 1px solid black;
@@ -158,6 +169,8 @@ div.DatumRightDiv {
   padding: 1em;
   text-align: justify;
   overflow: scroll;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
 }
 table.ModifyDatumTable td {
   border-top: 1px solid gray;
