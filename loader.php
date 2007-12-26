@@ -199,8 +199,7 @@ function build_modifyable_area($PseudoXMLs,$TabOrder,$ExtraStyle) {
   $result = "";
   foreach ($PseudoXMLs as $ID => $PseudoXML)
     if ("text" === $PseudoXML["Name"]) {
-      $result .= "<div name='text' id='DP".$PseudoXML["ID"]."'
-                    style='padding:1em;border:1px solid red;'>
+      $result .= "<div name='text' id='DP".$PseudoXML["ID"]."'>
                   <p id='P".$PseudoXML["ID"]."
                     style='border:1px solid blue;'
                     onClick=\"ajaxFunction('loader.php',id,
@@ -218,9 +217,11 @@ function insert_editable_response($environment) {
   $at_code = explode("@",$environment["Code"]);
   $sizes = explode(":",$at_code[1]);
   $width = $sizes[0];
-  $height = $sizes[1];
+  $height = (int)$sizes[1]*1.5;
   $target = $environment["Target"];
-  $payload = "<textarea style='height:".$height."px;width:".$width."px;'>
+  $payload = "<textarea 
+                onClick=\"\"
+                style='height:".$height."px;width:".$width."px;'>
                 ".$environment["Message"]."
               </textarea>";
   return build_response($target,$payload);
