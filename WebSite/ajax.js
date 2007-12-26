@@ -7,13 +7,18 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
   xmlHttp.onreadystatechange = function () {
     if (4 == xmlHttp.readyState) {
       var xmlR = xmlHttp.responseText;
+      document.title = "HERE1";
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var replies = responseXml.getElementsByTagName("response");
       var log = document.getElementById('LogResponse');
+      document.title = "HERE2";
       if (log)
         log.innerHTML = realUnescape(xmlR);
+      document.title = "HERE3";
+      document.title = xmlR;
       for (i = 0; i<replies.length; i++) {
+        document.title = "HERE4"+i;
         replies[i].normalize();
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
         var payload = replies[i].getElementsByTagName("payload")[0].firstChild.nodeValue;
