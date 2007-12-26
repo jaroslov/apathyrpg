@@ -218,6 +218,28 @@ function xmldb_attributesOfSet($Connection,$Elements) {
   return $attributeset;
 }
 
+function xmldb_getChildNodeValuesOfSet($Connection,$Elements) {
+  $ElementSet = "";
+  $Keys = array_keys($Elements);
+  $ValueSet = array();
+  if (sizeof($Elements) > 0) {
+    $ElementSet .= $Elements[$Keys[0]]["ID"];
+    $ValueSet[$Elements[$Keys[0]]["ID"]] = array();
+  }
+  for ($edx = 1; $edx < sizeof($Elements); $edx++) {
+    $ElementSet .= "," . $Elements[$Keys[$edx]]["ID"];
+    $ValueSet[$Elements[$Keys[$edx]]["ID"]] = array();
+  }
+  $query = "SELECT * FROM `Structural`
+            WHERE `ChildOf` IN (".$ElementSet.")
+            AND `Kind` = CONVERT( _utf8 'element' USING latin1 )";
+  $resource = mysql_query($query,$Connection);
+  while ($record = mysql_fetch_array($resource))
+    $ValueSet[$record["ChildOf"]][$record["ID"]]
+        = xmldb_convert_record($record);
+  return $ValueSet;
+}
+
 function xmldb_getAttribute($Connection,$Element,$Name) {
   $query = "SELECT * FROM `Structural`
             WHERE `ChildOf` = ".$Element["ID"]."
