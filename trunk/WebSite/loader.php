@@ -326,7 +326,7 @@ function build_datum_table($environment,$datum) {
             <tr><td><div class='DatumLeftDiv'>";
   $DIVS .= "<table class='ModifyDatumTable' style='width:100%'>
                 <thead><th><pre>Title</pre></th><th>"
-                .build_modifyable_area($valueset[$title],1)."</th></thead>";
+                .build_modifyable_area($valueset[$title],1,"")."</th></thead>";
   foreach ($entries as $id => $entry )
     $DIVS .= "<tr><td align='right'
                 style='width:10em;
@@ -334,11 +334,11 @@ function build_datum_table($environment,$datum) {
                        font-weight:bold;
                        font-style:italic;'>"
                   .$entry."&rsaquo;&rsaquo;&rsaquo;</td><td>"
-                  .build_modifyable_area($valueset[$id],1)."</td></tr>";
+                  .build_modifyable_area($valueset[$id],1,"")."</td></tr>";
   $DIVS .= "</table>";
   $DIVS .= "</div></td><td>";
   $DIVS .= "<div class='DatumRightDiv'>"
-            .build_modifyable_area($valueset[$description],1)
+            .build_modifyable_area($valueset[$description],1,"")
             ."</div></td></tr></table>";
   return $DIVS;
 }
