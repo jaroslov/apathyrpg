@@ -252,6 +252,9 @@ function build_modifyable_area($PseudoXMLs,$TabOrder,$ExtraStyle) {
         $result .= build_modifyable_raw_text($PseudoXML);
         $some_result = true;
         break;
+      case "description-list":
+        $some_result = true;
+        $result .= "Handle in: build-modifyable-raw-text<br/>";
       default:
         $some_result = true;
         $result .= $PseudoXML["Name"]."@".$PseudoXML["ID"]."<br/>";
@@ -274,7 +277,7 @@ function insert_editable_response($environment) {
   $parent_html_id = $at_code[3];
   $sizes = explode(":",$at_code[1]);
   $width = $sizes[0];
-  $height = (int)$sizes[1]*3;
+  $height = (int)$sizes[1]*1.25;
   $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
   $target = $environment["Target"];
   $payload = "<table class='NoStyle'><tr><td colspan='2'><textarea

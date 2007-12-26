@@ -92,7 +92,7 @@ h1.sector-sectionsectionsection {
 div.Log {
   padding: 1em;
   border: 1px solid red;
-  overflow: scroll;
+  overflow: auto;
   width: 20em;
   height: 15em;
 }
@@ -158,7 +158,7 @@ div.DatumLeftDiv {
   height: 25em;
   padding: 1em;
   text-align: justify;
-  overflow: scroll;
+  overflow: auto;
   background-image: url(highlight-textarea.png);
   background-repeat: repeat-x;
 }
@@ -168,7 +168,7 @@ div.DatumRightDiv {
   height: 25em;
   padding: 1em;
   text-align: justify;
-  overflow: scroll;
+  overflow: auto;
   background-image: url(highlight-textarea.png);
   background-repeat: repeat-x;
 }
