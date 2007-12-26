@@ -230,7 +230,7 @@ function build_datum_table($environment,$datum) {
               ."</td><td rowspan='".(sizeof($entries)+1)."'>"
               .build_modifyable_area($children[$description],
                 sizeof($entries)+2,
-                "height:".((sizeof($entries)+1)*77-2)."px;width:35em;")
+                "height:".((sizeof($entries)+1)*77+6)."px;width:35em;")
               ."</td><td>&nbsp;</td></tr>";
   $taborder = 1;
   foreach ($entries as $id => $entry) {
