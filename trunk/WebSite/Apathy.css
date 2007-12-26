@@ -156,13 +156,13 @@ table.ModifyDatumTable pre {
   font-weight: bold;
 }
 .Chooser {
-  width: 15em;
+  width: 20em;
 }
 .Chooser option {
   font-variant: small-caps;
 }
 .MainChooser {
-  width: 15em;
+  width: 20em;
 }
 .OutlineItem {
   width: 30em;

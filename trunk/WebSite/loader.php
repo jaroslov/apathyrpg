@@ -122,39 +122,6 @@ function load_category_path($environment,$WhichDatum) {
   return $catparts;
 }
 
-function encapsulate_free_text($PseudoXML) {
-  // The most common offender is the FIELD element;
-  // Most of them contain free text.
-
-  // comment out the next line if your fields are well formed.
-  return __Free_text($PseudoXML);
-  $LDom = new DOMDocument();
-  $LDom->loadXML("<apathy:pseudo-xml-root>"
-            .$PseudoXML."</apathy:pseudo-xml-root>");
-  $field = $LDom->getElementsByTagName("field")->item(0);
-  foreach ($field->childNodes as $child)
-    if ($child->nodeType == XML_TEXT_NODE)
-      $result .= "<text>".$child->nodeValue."</text>";
-    else if ($child->nodeType == XML_ELEMENT_NODE)
-      $result .= $LDom->saveXML($child);
-  if (strlen($result) === 0)
-    $result .= "<text></text>";
-  return "<field>".$result."</field>";
-}
-
-function __Free_text($PseudoXML) {
-  $LDom = new DOMDocument();
-  $LDom->loadXML("<apathy:pseudo-xml-root>"
-            .$PseudoXML."</apathy:pseudo-xml-root>");
-  $field = $LDom->getElementsByTagName("field")->item(0);
-  foreach ($field->childNodes as $child)
-    if ($child->nodeType == XML_TEXT_NODE)
-      $result .= $child->nodeValue;
-    else if ($child->nodeType == XML_ELEMENT_NODE)
-      $result .= $LDom->saveXML($child);
-  return "<field>\n".$result."\n</field>";
-}
-
 function build_text_area($PseudoXML,$TabOrder,$ExtraStyle) {
   $result = "<textarea tabindex='".$TabOrder."'"
               ."onFocus=\"focusStyle(this);\"
@@ -195,57 +162,115 @@ function update_value_response($environment) {
         with error: <em>".$error["Error"]."</em>"));
 }
 
-function convert_serialized_elements($PseudoXML) {
+function simple_display_map() {
+  return array(
+          "<Apathy/>"=>"<b>Apathy</b>",
+          "<and/>"=>"&amp;",
+          "<dollar/>"=>"$",
+          "<percent/>"=>"%",
+          "<rightarrow/>"=>"&rarr;",
+          "<ldquo/>"=>"&ldquo;",
+          "<rdquo/>"=>"&rdquo;",
+          "<lsquo/>"=>"&lsquo;",
+          "<rsquo/>"=>"&rsquo;",
+          "<mdash/>"=>"&mdash;",
+          "<ndash/>"=>"&ndash;",
+          "<times/>"=>"&#215;",
+          "<ouml/>"=>"&#246;",
+          "<oslash/>"=>"&#248;",
+          "<trademark/>"=>"&#8482;",
+          "<Sum/>"=>"&#8721;");
+}
+
+function simple_edit_map() {
+  return array(
+          "<Apathy/>"=>"{Apathy}",
+          "<and/>"=>"&",
+          "<dollar/>"=>"$",
+          "<percent/>"=>"%",
+          "<rightarrow/>"=>"->",
+          "<ldquo/>"=>"``",
+          "<rdquo/>"=>"''",
+          "<lsquo/>"=>"`",
+          "<rsquo/>"=>"'",
+          "<mdash/>"=>"---",
+          "<ndash/>"=>"--",
+          "<times/>"=>"{x}",
+          "<ouml/>"=>"{\\\"o}",
+          "<oslash/>"=>"{/o}",
+          "<trademark/>"=>"{TM}",
+          "<Sum/>"=>"{Sum}");
+}
+
+function serialize_elements_for_display($PseudoXML,$DisplayMap) {
   $result = $PseudoXML["Value"];
-  $result = str_replace("<Apathy/>","{Apathy}",$result);
-  $result = str_replace("<and/>","&amp;",$result);
-  $result = str_replace("<dollar/>","$",$result);
-  $result = str_replace("<percent/>","%",$result);
-  $result = str_replace("<rightarrow/>","&rarr;",$result);
-  $result = str_replace("<ldquo/>","&ldquo;",$result);
-  $result = str_replace("<rdquo/>","&rdquo;",$result);
-  $result = str_replace("<lsquo/>","&lsquo;",$result);
-  $result = str_replace("<rsquo/>","&rsquo;",$result);
-  $result = str_replace("<mdash/>","&mdash;",$result);
-  $result = str_replace("<ndash/>","&ndash;",$result);
-  $result = str_replace("<times/>","&#215;",$result);
-  $result = str_replace("<ouml/>","&#246;",$result);
-  $result = str_replace("<oslash/>","&#248;",$result);
-  $result = str_replace("<trademark/>","&#8482;",$result);
-  $result = str_replace("<Sum/>","&#8721;",$result);
+  foreach ($DisplayMap as $what => $toreplace)
+    $result = str_replace($what,$toreplace,$result);
   return $result;
+}
+
+function build_modifyable_click_area($PseudoXML) {
+  return "<p id='P".$PseudoXML["ID"]."
+            style='border:1px solid blue;'
+            onClick=\"ajaxFunction('loader.php',id,
+              'DP".$PseudoXML["ID"]."',
+              'InsertEditable@'+this.scrollWidth+':'+this.scrollHeight"
+              ."+'@".$PseudoXML["ID"]."@DP".$PseudoXML["ID"]."',"
+              ."this.innerHTML);\">"
+            .serialize_elements_for_display($PseudoXML,simple_display_map())
+          ."</p>";
+}
+
+function build_modifyable_raw_text($PseudoXML) {
+  return "<div name='text' id='DP".$PseudoXML["ID"]."'>"
+          .build_modifyable_click_area($PseudoXML)."</div>";
 }
 
 function build_modifyable_area($PseudoXMLs,$TabOrder,$ExtraStyle) {
   $result = "";
+  $some_result = false;
   foreach ($PseudoXMLs as $ID => $PseudoXML)
-    if ("text" === $PseudoXML["Name"]) {
-      $result .= "<div name='text' id='DP".$PseudoXML["ID"]."'>
-                  <p id='P".$PseudoXML["ID"]."
-                    style='border:1px solid blue;'
-                    onClick=\"ajaxFunction('loader.php',id,
-                      'DP".$PseudoXML["ID"]."',
-                      'InsertEditable@'+this.scrollWidth+':'+this.scrollHeight,
-                      this.innerHTML);\">"
-                    .convert_serialized_elements($PseudoXML)
-                  ."</p></div>";
-    } else
-      $result .= $PseudoXML["Name"]."@".$PseudoXML["ID"]."<br/>";
+    switch ($PseudoXML["Name"]) {
+      case "text":
+        $result .= build_modifyable_raw_text($PseudoXML);
+        $some_result = true;
+        break;
+      default:
+        $some_result = true;
+        $result .= $PseudoXML["Name"]."@".$PseudoXML["ID"]."<br/>";
+    }
+  if (!$some_result)
+    $result = "<em>No value.</em>";
   return $result;
+}
+
+function unload_editable_response($environment) {
+  $rawtext_source = $environment["Message"];
+  $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
+  return build_response($environment["Target"],
+    build_modifyable_click_area($rawtext));
 }
 
 function insert_editable_response($environment) {
   $at_code = explode("@",$environment["Code"]);
+  $rawtext_source = $at_code[2];
+  $parent_html_id = $at_code[3];
   $sizes = explode(":",$at_code[1]);
   $width = $sizes[0];
   $height = (int)$sizes[1]*1.5;
+  $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
   $target = $environment["Target"];
-  $payload = "<textarea 
-                onClick=\"\"
+  $payload = "<textarea
+                id='RTS".$rawtext_source."'
+                onFocus=\"focusStyle(this);\"
+                onBlur=\"ajaxFunction('loader.php',id,'"
+                  .$parent_html_id."','UnloadEditable','".$rawtext_source."')\"
                 style='height:".$height."px;width:".$width."px;'>"
-                .$environment["Message"]."
-              </textarea>";
-  return build_response($target,$payload);
+                .serialize_elements_for_display($rawtext,
+                    simple_edit_map()).
+              "</textarea>";
+  return build_responses(array($target,"@Focus@RTS".$rawtext_source),
+    array($payload,"PAIN"));
 }
 
 function build_datum_table($environment,$datum) {
@@ -297,8 +322,8 @@ function load_datum_response($environment) {
     $datum_table = build_datum_table($environment,$datum);
   } else
     $catpath = build_category_path($environment,null);
-  $targets = array("Path","Datum");
-  $payloads = array($catpath,$datum_table);
+  $targets = array(/*"Path",*/"Datum");
+  $payloads = array(/*$catpath,*/$datum_table);
   return build_responses($targets,$payloads);
 }
 
@@ -354,6 +379,8 @@ function respond() {
     return load_datum_response($env);
   } else if ("InsertEditable" === $env["Code"]) {
     return insert_editable_response($env);
+  } else if ("UnloadEditable" === $env["Code"]) {
+    return unload_editable_response($env);
   } else {
     $at_parts = explode("@",$env["Code"]);
     if ("UpdateValue" === $at_parts[0])
