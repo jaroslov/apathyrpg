@@ -20,7 +20,8 @@ function make_main_menu($which) {
                "Target"=>"'Path'",
                "Source"=>"'Path'",
                "Code"=>"value",
-               "Message"=>"''");
+               "Message"=>"''",
+               "ID"=>"MainMenu");
   return arpg_make_select_statement($options,$env);
 }
 
@@ -86,7 +87,7 @@ function load_category_path($environment,$WhichDatum) {
       }
       $nenv = array("Responder"=>"loader.php","Target"=>"'Path'",
                     "Source"=>"'Path'","Code"=>"'LoadDatum'",
-                    "Message"=>"value");
+                    "Message"=>"value","ID"=>"DatumLoader");
       $datum_select = arpg_make_select_statement($data_options,$nenv);
     }
 
@@ -114,7 +115,7 @@ function load_category_path($environment,$WhichDatum) {
     }
   }
   $nenv = array("Responder"=>"loader.php","Target"=>"'Path'","Source"=>"'Path'",
-                "Code"=>"'LoadCategory'","Message"=>"value");
+                "Code"=>"'LoadCategory'","Message"=>"value","ID"=>"CatLoader");
   $select = arpg_make_select_statement($options,$nenv);
   array_push($catparts,$select);
   if ($datum_select)
@@ -369,9 +370,15 @@ function build_category_path($environment,$WhichDatum) {
 }
 
 function load_category_response($environment) {
+  // this picks the correct thing to focus on
+  // b/c if DatumLoader doesn't exist, the javascript
+  // barfs; if it does exist, then it focusses on the datum loader AFTER it
+  // focusses on the catloader
   return arpg_build_responses(
-    array("Path","Datum"),
-    array(build_category_path($environment,null),"<em>Data not shown.</em>"));
+    array("Path","Datum","@Focus@CatLoader","@Focus@DatumLoader"),
+    array(build_category_path($environment,null),
+      "<em>Data not shown.</em>",
+      "@Focus@CatLoader","@Focus@CatLoader"));
 }
 
 function raw_data_response($environment) {
@@ -382,13 +389,15 @@ function raw_data_response($environment) {
 }
 
 function initialize_system($environment) {
-  $env["Connection"] = arpg_create_apathy("Apathy.xml");
+  $env["Connection"] = arpg_create_apathy("../Apathy.xml");
   $payloads = array();
   array_push($payloads,make_main_menu("Choose"));
   array_push($payloads,"<em>No data shown.</em>");
+  array_push($payloads,"Nothing");
   $targets = array();
   array_push($targets,"Path");
   array_push($targets,"Datum");
+  array_push($targets,"@Focus@MainMenu");
   return arpg_build_responses($targets,$payloads);
 }
 
