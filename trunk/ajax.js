@@ -1,10 +1,6 @@
 function realUnescape(string) {
-  var parts = unescape(string).split("\\");
-  var nstr = ""
-  for (var idx=0; idx<parts.length; idx=idx+1) {
-    nstr = nstr + parts[idx];
-  }
-  return nstr;
+  var str = string.replace(/\\/,"");
+  return str;
 }
 function ajaxFunction(Responder,Source,Target,Code,Message) {
   xmlHttp=new XMLHttpRequest();
@@ -18,15 +14,14 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
       if (log)
         log.innerHTML = realUnescape(xmlR);
       for (i = 0; i<replies.length; i++) {
+        replies[i].normalize();
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
         var payload = replies[i].getElementsByTagName("payload")[0].firstChild.nodeValue;
         if ("@" == target[0]) {
           target = target.split("@")[1];
           document.title = payload;
         } else {
-          var targetNode = document.getElementById(target);
-          targetNode.innerHTML = realUnescape(payload);
-          //targetNode.firstChild = createElementFromString(payload);
+          document.getElementById(target).innerHTML = realUnescape(payload);
           var log = document.getElementById('LogResponse');
           if (log)
             log.innerHTML = realUnescape(xmlR);
