@@ -72,7 +72,7 @@ function arpg_make_ajax_function($event,$environment) {
 }
 
 function arpg_make_select_statement($options,$environment) {
-  $select = "<select class='MainChooser' ";
+  $select = "<select class='MainChooser' id='".$environment["ID"]."' ";
   $select .= arpg_make_ajax_function("onChange",$environment);
   $select .= ">\n";
   if (is_array($options))

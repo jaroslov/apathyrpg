@@ -1812,7 +1812,7 @@
               </row>
               <row>
                 <cell>
-                  <text>Compensate Barrel</text>
+                  <text>Compensated Barrel</text>
                 </cell>
                 <cell>
                   <text>For burst-fire: 50<percent/> of the missing bullets now hit.  Makes gun LOUD, easy to see</text>
@@ -1888,6 +1888,7 @@
                 </cell>
               </row>
             </table>
+	    <caption><text>Options for firearms</text></caption>
           </figure>
           <section kind="section">
             <title><text>Hand Weapons</text></title>
