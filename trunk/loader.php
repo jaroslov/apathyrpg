@@ -195,6 +195,27 @@ function update_value_response($environment) {
         with error: <em>".$error["Error"]."</em>"));
 }
 
+function convert_serialized_elements($PseudoXML) {
+  $result = $PseudoXML["Value"];
+  $result = str_replace("<Apathy/>","{Apathy}",$result);
+  $result = str_replace("<and/>","&amp;",$result);
+  $result = str_replace("<dollar/>","$",$result);
+  $result = str_replace("<percent/>","%",$result);
+  $result = str_replace("<rightarrow/>","&rarr;",$result);
+  $result = str_replace("<ldquo/>","&ldquo;",$result);
+  $result = str_replace("<rdquo/>","&rdquo;",$result);
+  $result = str_replace("<lsquo/>","&lsquo;",$result);
+  $result = str_replace("<rsquo/>","&rsquo;",$result);
+  $result = str_replace("<mdash/>","&mdash;",$result);
+  $result = str_replace("<ndash/>","&ndash;",$result);
+  $result = str_replace("<times/>","&#215;",$result);
+  $result = str_replace("<ouml/>","&#246;",$result);
+  $result = str_replace("<oslash/>","&#248;",$result);
+  $result = str_replace("<trademark/>","&#8482;",$result);
+  $result = str_replace("<Sum/>","&#8721;",$result);
+  return $result;
+}
+
 function build_modifyable_area($PseudoXMLs,$TabOrder,$ExtraStyle) {
   $result = "";
   foreach ($PseudoXMLs as $ID => $PseudoXML)
@@ -206,7 +227,7 @@ function build_modifyable_area($PseudoXMLs,$TabOrder,$ExtraStyle) {
                       'DP".$PseudoXML["ID"]."',
                       'InsertEditable@'+this.scrollWidth+':'+this.scrollHeight,
                       this.innerHTML);\">"
-                    .$PseudoXML["Value"]
+                    .convert_serialized_elements($PseudoXML)
                   ."</p></div>";
     } else
       $result .= $PseudoXML["Name"]."@".$PseudoXML["ID"]."<br/>";
@@ -221,8 +242,8 @@ function insert_editable_response($environment) {
   $target = $environment["Target"];
   $payload = "<textarea 
                 onClick=\"\"
-                style='height:".$height."px;width:".$width."px;'>
-                ".$environment["Message"]."
+                style='height:".$height."px;width:".$width."px;'>"
+                .$environment["Message"]."
               </textarea>";
   return build_response($target,$payload);
 }
