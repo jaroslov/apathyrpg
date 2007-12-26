@@ -13,15 +13,15 @@ function make_main_menu($which) {
     case "Book": $bksel = true; break;
     case "RawData": $rdsel = true; break;
   }
-  array_push($options,make_option_for_select("RebuildMainMenu","Choose...",$chsel));
-  array_push($options,make_option_for_select("Book","Book",$bksel));
-  array_push($options,make_option_for_select("RawData","Raw Data",$rdsel));
+  array_push($options,arpg_make_option_for_select("RebuildMainMenu","Choose...",$chsel));
+  array_push($options,arpg_make_option_for_select("Book","Book",$bksel));
+  array_push($options,arpg_make_option_for_select("RawData","Raw Data",$rdsel));
   $env = array("Responder"=>"loader.php",
                "Target"=>"'Path'",
                "Source"=>"'Path'",
                "Code"=>"value",
                "Message"=>"''");
-  return make_select_statement($options,$env);
+  return arpg_make_select_statement($options,$env);
 }
 
 function make_arrow_path($parts) {
@@ -44,16 +44,16 @@ function load_category_path($environment,$WhichDatum) {
   $options = array();
 
   // buld the "Choose..." and "Go up a level" options
-  array_push($options,make_option_for_select("NoResponse","Choose...",true));
+  array_push($options,arpg_make_option_for_select("NoResponse","Choose...",true));
   if (sizeof($path) > 1) {
     $npath = array();
     for ($pdx = 0; $pdx < $pathlen-1; $pdx++)
       array_push($npath,$path[$pdx]);
     array_push($options,
-      make_option_for_select(implode("/",$npath),"&laquo; ".$path[$pathlen-2],false));
+      arpg_make_option_for_select(implode("/",$npath),"&laquo; ".$path[$pathlen-2],false));
   } else {
     array_push($options,
-      make_option_for_select("Content","&laquo; Content",false));
+      arpg_make_option_for_select("Content","&laquo; Content",false));
   }
 
   // first, do we have an exact match?
@@ -71,9 +71,9 @@ function load_category_path($environment,$WhichDatum) {
       $data_options = array();
       if (!$parent)
         array_push($data_options,
-          make_option_for_select("Content","Could not resolve path",false));
+          arpg_make_option_for_select("Content","Could not resolve path",false));
       array_push($data_options,
-        make_option_for_select($environment["Message"],"Choose...",true));
+        arpg_make_option_for_select($environment["Message"],"Choose...",true));
       $names = xmldb_getAttributeOfAllChildren($environment["Connection"],
                   $parent,"datum","name");
       foreach ($names as $name) {
@@ -81,13 +81,13 @@ function load_category_path($environment,$WhichDatum) {
         if ($name["Value"] === $WhichDatum)
           $selected = true;
         array_push($data_options,
-          make_option_for_select($environment["Message"]."@".$name["ID"],
+          arpg_make_option_for_select($environment["Message"]."@".$name["ID"],
             $name["Value"],$selected));
       }
       $nenv = array("Responder"=>"loader.php","Target"=>"'Path'",
                     "Source"=>"'Path'","Code"=>"'LoadDatum'",
                     "Message"=>"value");
-      $datum_select = make_select_statement($data_options,$nenv);
+      $datum_select = arpg_make_select_statement($data_options,$nenv);
     }
 
   // grab all of the possible candidates
@@ -108,14 +108,14 @@ function load_category_path($environment,$WhichDatum) {
         $selected = false;
         if ($WhichCat === $lastname)
           $selected = true;
-        array_push($options,make_option_for_select($npath,$lastname,$selected));
+        array_push($options,arpg_make_option_for_select($npath,$lastname,$selected));
         array_push($uniquenames,$catpathparts[$pathlen]);
       }
     }
   }
   $nenv = array("Responder"=>"loader.php","Target"=>"'Path'","Source"=>"'Path'",
                 "Code"=>"'LoadCategory'","Message"=>"value");
-  $select = make_select_statement($options,$nenv);
+  $select = arpg_make_select_statement($options,$nenv);
   array_push($catparts,$select);
   if ($datum_select)
     array_push($catparts,$datum_select);
@@ -155,7 +155,7 @@ function update_value_response($environment) {
   $field = xmldb_getElementById($environment["Connection"],$Id);
   $error = xmldb_setNodeValue($environment["Connection"],
                                 $Id,$imsg);
-  return build_responses(array("Log"),
+  return arpg_build_responses(array("Log"),
     array("<em style='color:blue'>".$Id
         ."</em>&loz;<b>&laquo;</b><span style='color:green'>"
         .$field["Value"]."</span><b>&raquo;</b>&rArr;"
@@ -263,7 +263,7 @@ function build_modifyable_area($PseudoXMLs,$TabOrder,$ExtraStyle) {
 function unload_editable_response($environment) {
   $rawtext_source = $environment["Message"];
   $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
-  return build_response($environment["Target"],
+  return arpg_build_response($environment["Target"],
     build_modifyable_click_area($rawtext));
 }
 
@@ -295,7 +295,7 @@ function insert_editable_response($environment) {
                   .$parent_html_id."','UpdateValue@".$rawtext_source."',
                   document.getElementById('RTS".$rawtext_source."').value)\" />
               </td></tr></table>";
-  return build_responses(array($target,"@Focus@RTS".$rawtext_source),
+  return arpg_build_responses(array($target,"@Focus@RTS".$rawtext_source),
     array($payload,"PAIN"));
 }
 
@@ -354,7 +354,7 @@ function load_datum_response($environment) {
     $catpath = build_category_path($environment,null);
   $targets = array(/*"Path",*/"Datum");
   $payloads = array(/*$catpath,*/$datum_table);
-  return build_responses($targets,$payloads);
+  return arpg_build_responses($targets,$payloads);
 }
 
 function build_category_path($environment,$WhichDatum) {
@@ -369,7 +369,7 @@ function build_category_path($environment,$WhichDatum) {
 }
 
 function load_category_response($environment) {
-  return build_responses(
+  return arpg_build_responses(
     array("Path","Datum"),
     array(build_category_path($environment,null),"<em>Data not shown.</em>"));
 }
@@ -382,23 +382,23 @@ function raw_data_response($environment) {
 }
 
 function initialize_system($environment) {
-  $env["Connection"] = create_apathy("Apathy.xml");
+  $env["Connection"] = arpg_create_apathy("Apathy.xml");
   $payloads = array();
   array_push($payloads,make_main_menu("Choose"));
   array_push($payloads,"<em>No data shown.</em>");
   $targets = array();
   array_push($targets,"Path");
   array_push($targets,"Datum");
-  return build_responses($targets,$payloads);
+  return arpg_build_responses($targets,$payloads);
 }
 
 function respond() {
-  $env = get_environment();
-  $env["Connection"] = connect_to_apathy();
+  $env = arpg_get_environment();
+  $env["Connection"] = arpg_connect_to_apathy();
   if ("Initialize" === $env["Code"]) {
     return initialize_system($env);
   } else if ("NoResponse" === $env["Code"]) {
-    return build_empty_response();
+    return arpg_build_empty_response();
   } else if ("RebuildMainMenu" === $env["Code"]) {
     return initialize_system($env);
   } else if ("RawData" === $env["Code"]) {
@@ -418,7 +418,7 @@ function respond() {
     else if ("InsertEditable" === $at_parts[0])
     return insert_editable_response($env);
   }
-  return build_response("Log",
+  return arpg_build_response("Log",
     "<p><span style='color:red;'>Not a known code:</span>"
       .$env["Code"]." with <span style='color:red;'>"
       .$env["Target"]."&rArr;".$env["Source"]

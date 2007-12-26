@@ -2,7 +2,7 @@
 
 include 'normalize_xml.php';
 
-function get_apathy_dom($name) {
+function arpg_get_apathy_dom($name) {
   if ($name === null)
     $name = "Apathy.xml";
   $ApathyXml = simplexml_load_file($name);
@@ -10,36 +10,36 @@ function get_apathy_dom($name) {
   return $ApathyDom;
 }
 
-function apathy_serialized_xml_nodes() {
+function arpg_apathy_serialized_xml_nodes() {
   return array("text");
 }
 
-function FORCE_create_apathy($Connection,$DatabaseName,$ApathyDom) {
+function arpg_FORCE_arpg_create_apathy($Connection,$DatabaseName,$ApathyDom) {
 }
 
-function internal_create_apathy($ApathyName,$DatabaseName) {
-  $Connection = create_connection($DatabaseName);
+function arpg_internal_arpg_create_apathy($ApathyName,$DatabaseName) {
+  $Connection = xmldb_create_connection($DatabaseName);
   if (!xmldb_is_populated($Connection)) {
-    $ApathyDom = get_apathy_dom($ApathyName) or die("No xml");
-    $HasTextPs = apathy_serialized_xml_nodes();
-    normalize_xml($DatabaseName,$Connection,
+    $ApathyDom = arpg_get_apathy_dom($ApathyName) or die("No xml");
+    $HasTextPs = arpg_apathy_serialized_xml_nodes();
+    xmldb_normalize_xml($DatabaseName,$Connection,
                   $ApathyDom,$Connection,$HasTextPs,true);
   }
   return $Connection;
 }
 
-function create_apathy($ApathyName) {
-  return internal_create_apathy($ApathyName,"ApathyRPG");
+function arpg_create_apathy($ApathyName) {
+  return arpg_internal_arpg_create_apathy($ApathyName,"ApathyRPG");
 }
 
-function connect_to_apathy() {
-  return create_connection("ApathyRPG");
+function arpg_connect_to_apathy() {
+  return xmldb_create_connection("ApathyRPG");
 }
 
 function POPULATE_APATHY_PHP_test() {
   $ApathyName = "Apathy.xml";
   $ApathyDB = "ApathyRPG";
-  $Connection = create_apathy($ApathyName,$ApathyDB);
+  $Connection = arpg_create_apathy($ApathyName,$ApathyDB);
   if (xmldb_is_populated($Connection))
     echo "Populated";
   else
