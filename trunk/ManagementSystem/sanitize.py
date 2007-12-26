@@ -4,11 +4,9 @@ import sys, os
 from xml.dom.minidom import parse as parseXml
 
 #only inlines contain raw text
-INLINES = ["text",
-           "title",
-           "define"]
+INLINES = ["text","equation"]
 
-FIX = ["field"]
+FIX = ["title","description"]
 
 def sanitize(apathy,inline,fix,indent=""):
   result = ""
