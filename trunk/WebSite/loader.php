@@ -260,15 +260,25 @@ function insert_editable_response($environment) {
   $height = (int)$sizes[1]*1.5;
   $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
   $target = $environment["Target"];
-  $payload = "<textarea
+  $payload = "<table class='NoStyle'><tr><td colspan='2'><textarea
                 id='RTS".$rawtext_source."'
                 onFocus=\"focusStyle(this);\"
-                onBlur=\"ajaxFunction('loader.php',id,'"
-                  .$parent_html_id."','UnloadEditable','".$rawtext_source."')\"
+                onBlur=\"blurStyle(this);\"
                 style='height:".$height."px;width:".$width."px;'>"
                 .serialize_elements_for_display($rawtext,
                     simple_edit_map()).
-              "</textarea>";
+              "</textarea></td></tr><tr>
+              <td><input type='button'
+                value='Close without saving' class='ForceSave'
+                onClick=\"ajaxFunction('loader.php',id,'"
+                  .$parent_html_id."','UnloadEditable','"
+                  .$rawtext_source."')\" /></td>
+              <td align='right'><input type='button'
+                value='Update database' class='ForceSave'
+                onClick=\"ajaxFunction('loader.php',id,'"
+                  .$parent_html_id."','UpdateValueW00T!','"
+                  .$rawtext_source."')\" />
+              </td></tr></table>";
   return build_responses(array($target,"@Focus@RTS".$rawtext_source),
     array($payload,"PAIN"));
 }
