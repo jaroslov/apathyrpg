@@ -150,9 +150,11 @@ function __Build_modifyable_area($Node) {
 function update_value_response($environment) {
   $at_parts = explode("@",$environment["Code"]);
   $Id = $at_parts[1];
+  $message = $environment["Message"];
+  $imsg = serialize_elements_for_sql($message,simple_edit_map());
   $field = xmldb_getElementById($environment["Connection"],$Id);
   $error = xmldb_setNodeValue($environment["Connection"],
-                                $Id,$environment["Message"]);
+                                $Id,$imsg);
   return build_responses(array("Log"),
     array("<em style='color:blue'>".$Id
         ."</em>&loz;<b>&laquo;</b><span style='color:green'>"
@@ -202,11 +204,25 @@ function simple_edit_map() {
           "<Sum/>"=>"{Sum}");
 }
 
+function inverse_map($Map) {
+  $imap = array();
+  foreach ($Map as $key => $value)
+    $imap[$value] = $key;
+  return $imap;
+}
+
 function serialize_elements_for_display($PseudoXML,$DisplayMap) {
-  $result = $PseudoXML["Value"];
+  $result = $PseudoXML;
+  if (is_array($PseudoXML))
+    $result = $PseudoXML["Value"];
   foreach ($DisplayMap as $what => $toreplace)
     $result = str_replace($what,$toreplace,$result);
   return $result;
+}
+
+function serialize_elements_for_sql($PseudoXML,$DisplayMap) {
+  $imap = inverse_map($DisplayMap);
+  return serialize_elements_for_display($PseudoXML,$imap);
 }
 
 function build_modifyable_click_area($PseudoXML) {
@@ -257,7 +273,7 @@ function insert_editable_response($environment) {
   $parent_html_id = $at_code[3];
   $sizes = explode(":",$at_code[1]);
   $width = $sizes[0];
-  $height = (int)$sizes[1]*1.5;
+  $height = (int)$sizes[1]*3;
   $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
   $target = $environment["Target"];
   $payload = "<table class='NoStyle'><tr><td colspan='2'><textarea
@@ -276,8 +292,8 @@ function insert_editable_response($environment) {
               <td align='right'><input type='button'
                 value='Update database' class='ForceSave'
                 onClick=\"ajaxFunction('loader.php',id,'"
-                  .$parent_html_id."','UpdateValueW00T!','"
-                  .$rawtext_source."')\" />
+                  .$parent_html_id."','UpdateValue@".$rawtext_source."',
+                  document.getElementById('RTS".$rawtext_source."').value)\" />
               </td></tr></table>";
   return build_responses(array($target,"@Focus@RTS".$rawtext_source),
     array($payload,"PAIN"));
@@ -308,8 +324,12 @@ function build_datum_table($environment,$datum) {
                 <thead><th><pre>Title</pre></th><th>"
                 .build_modifyable_area($valueset[$title],1)."</th></thead>";
   foreach ($entries as $id => $entry )
-    $DIVS .= "<tr><td align='right'>
-                <pre>".$entry.":&rsaquo;</pre></td><td>"
+    $DIVS .= "<tr><td align='right'
+                style='width:10em;
+                       font-variant:small-caps;
+                       font-weight:bold;
+                       font-style:italic;'>"
+                  .$entry."&rsaquo;&rsaquo;&rsaquo;</td><td>"
                   .build_modifyable_area($valueset[$id],1)."</td></tr>";
   $DIVS .= "</table>";
   $DIVS .= "</div></td><td>";
