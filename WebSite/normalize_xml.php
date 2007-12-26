@@ -2,7 +2,6 @@
 
 // Normalize XML
 // convert an XML document into a database
-include 'apathy_xml.php';
 
 function create_connection($Database) {
   // Connecting, selecting database
