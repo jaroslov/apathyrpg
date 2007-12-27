@@ -333,6 +333,41 @@ function build_modifyable_area($environment,$PseudoXMLs,$ExtraInfo) {
           $result .= build_modifyable_area($environment,$children);
           $result .= "</div>";
           break;
+        case "table":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<table class='table' style='table'>";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</table>";
+          break;
+        case "head":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<thead class='thead' style='thead'>";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</thead>";
+          break;
+        case "row":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<tr class='thead' style='thead'>";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</tr>";
+          break;
+        case "cell":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<td class='cell' style='cell'>";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</td>";
+          break;
+        case "caption":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<div class='caption' style='caption'>Caption:";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</div>";
+          break;
         case "note":
           $some_result = true;
           $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
