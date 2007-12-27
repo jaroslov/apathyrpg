@@ -18,7 +18,7 @@ define("XMLDB_DBC","`".XMLDB_DBName.".`Comment`",true);
 function xmldb_create_connection() {
   // Connecting, selecting database
   $link = mysql_connect(XMLDB_HostTarget, XMLDB_DBUser, XMLDB_DBPass)
-      or die('Could not connect: ' . mysql_error());  
+      or die('Could not connect: ' . mysql_error());
   if (mysql_select_db(XMLDB_DBName))
     return $link;
   return 'Could not select database';
