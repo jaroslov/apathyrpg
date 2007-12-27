@@ -271,7 +271,7 @@ function build_modifyable_area($environment,$PseudoXMLs,$ExtraInfo) {
             case "section":
               $result .= "<h1>".$mresult."</h1>";
               break;
-            default: $result .= $mresult; break;
+            default: $result .= "<h1>".$mresult."</h1>"; break;
           }
           break;
         case "example":
