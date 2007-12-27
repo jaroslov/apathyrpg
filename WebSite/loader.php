@@ -245,72 +245,119 @@ function build_modifyable_area($environment,$PseudoXMLs,$ExtraInfo) {
   $result = "";
   $some_result = false;
   foreach ($PseudoXMLs as $ID => $PseudoXML)
-    switch ($PseudoXML["Name"]) {
-      case "text":
-        $mresult = build_modifyable_raw_text($PseudoXML);
-        switch ($ExtraInfo) {
-          case "description-list":
-            $result .= "<td>".$mresult."</td>"; break;
-          default:
-            $result .= $mresult; break;
-        }
-        $some_result = true;
-        break;
-      case "title":
-        $some_result = true;
-        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
-        $mresult = build_modifyable_area($environment,$children,"example");
-        switch ($ExtraInfo) {
-          case "example":
-            $result .= "<h1>".$mresult."</h1>"; break;
-            break;
-          default: $result .= $mresult; break;
-        }
-        break;
-      case "example":
-        $some_result = true;
-        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
-        $result .= "<div class='example' name='example'>"
-          .build_modifyable_area($environment,$children,"example")."</div>";
-        break;
-      case "description-list":
-        $some_result = true;
-        // get items
-        $result .= "<table name='description-list' class='description-list'>";
-        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
-        $result .= build_modifyable_area($environment,$children,"description-list");
-        $result .= "</table>";
-        break;
-      case "numbered-list":
-        $some_result = true;
-        // get items
-        $result .= "<ol class='numbered-list'>";
-        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
-        $result .= build_modifyable_area($environment,$children,"numbered-list");
-        $result .= "</ol>";
-        break;
-      case "description":
-        $some_result = true;
-        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
-        $result .= "<td>".build_modifyable_area($environment,$children)."</td>";
-        break;
-      case "item":
-        $some_result = true;
-        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
-        switch ($ExtraInfo) {
-          case "description-list":
-            $result .= "<tr>".build_modifyable_area($environment,$children,"description-list")."</tr>";
-            break;
-          case "numbered-list":
-            $result .= "<li>".build_modifyable_area($environment,$children,"numbered-list")."</li>";
-            break;
-          default:
-            $result .= "ITEM<br/>";
-        }
-        break;
-      default:
-        $some_result = true;
-        $result .= $PseudoXML["Name"]."@".$PseudoXML["ID"]."<br/>";
+    if ($PseudoXML["Kind"] === "element") {
+      switch ($PseudoXML["Name"]) {
+        case "text":
+          $mresult = build_modifyable_raw_text($PseudoXML);
+          switch ($ExtraInfo) {
+            case "description-list":
+              $result .= "<td>".$mresult."</td>"; break;
+            default:
+              $result .= $mresult; break;
+          }
+          $some_result = true;
+          break;
+        case "title":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $mresult = build_modifyable_area($environment,$children,"example");
+          switch ($ExtraInfo) {
+            case "example":
+              $result .= "<h1>".$mresult."</h1>"; break;
+              break;
+            case "book":
+            case "part":
+            case "chapter":
+            case "section":
+              $result .= "<h1>".$mresult."</h1>";
+              break;
+            default: $result .= $mresult; break;
+          }
+          break;
+        case "example":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<div class='example' name='example'>"
+            .build_modifyable_area($environment,$children,"example")."</div>";
+          break;
+        case "description-list":
+          $some_result = true;
+          // get items
+          $result .= "<table name='description-list' class='description-list'>";
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= build_modifyable_area($environment,$children,"description-list");
+          $result .= "</table>";
+          break;
+        case "itemized-list":
+          $some_result = true;
+          // get items
+          $result .= "<ul class='itemized-list'>";
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= build_modifyable_area($environment,$children,"numbered-list");
+          $result .= "</ul>";
+          break;
+        case "numbered-list":
+          $some_result = true;
+          // get items
+          $result .= "<ol class='numbered-list'>";
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= build_modifyable_area($environment,$children,"numbered-list");
+          $result .= "</ol>";
+          break;
+        case "description":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<td>".build_modifyable_area($environment,$children)."</td>";
+          break;
+        case "item":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          switch ($ExtraInfo) {
+            case "description-list":
+              $result .= "<tr>".build_modifyable_area($environment,$children,"description-list")."</tr>";
+              break;
+            case "itemized-list":
+              $result .= "<li>".build_modifyable_area($environment,$children,"itemized-list")."</li>";
+              break;
+            case "numbered-list":
+              $result .= "<li>".build_modifyable_area($environment,$children,"numbered-list")."</li>";
+              break;
+            default:
+              $result .= "ITEM<br/>";
+          }
+          break;
+        case "note":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<div class='note' name='note'>";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</div>";
+          break;
+        case "section":
+          $MyInfo = "section";
+          switch ($ExtraInfo) {
+            case "book": $MyInfo = "part"; break;
+            case "part": $MyInfo = "chapter"; break;
+            case "chapter": $MyInfo = "section"; break;
+            default: $MyInfo = "section"; break;
+          }
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<div class='".$MyInfo."' name='".$MyInfo."'>";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</div>";
+          break;
+        case "book":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<div class='book' name='book'>";
+          $result .= build_modifyable_area($environment,$children,"book");
+          $result .= "</div>";
+          break;
+        default:
+          $some_result = true;
+          $result .= $PseudoXML["Name"]."@".$PseudoXML["ID"]."<br/>";
+      }
     }
   if (!$some_result)
     $result = "<em>No value.</em>";
@@ -445,6 +492,18 @@ function raw_data_response($environment) {
   return load_category_response($environment);
 }
 
+function build_book($environment) {
+  $children = xmldb_getElementsByTagName($environment["Connection"],"book");
+  return build_modifyable_area($environment,$children);
+}
+
+function book_response($environment) {
+  $mmenu = make_main_menu("Book");
+  return arpg_build_responses(
+    array("Path","Datum"),
+    array(make_main_menu("Book"),build_book($environment)));
+}
+
 function initialize_system($environment) {
   $env["Connection"] = arpg_create_apathy("../Apathy.xml");
   $payloads = array();
@@ -465,6 +524,8 @@ function respond() {
     return initialize_system($env);
   } else if ("NoResponse" === $env["Code"]) {
     return arpg_build_empty_response();
+  } else if ("Book" === $env["Code"]) {
+    return book_response($env);
   } else if ("RebuildMainMenu" === $env["Code"]) {
     return initialize_system($env);
   } else if ("RawData" === $env["Code"]) {

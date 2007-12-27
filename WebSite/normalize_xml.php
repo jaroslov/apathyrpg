@@ -244,7 +244,7 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
   $resource = mysql_query($query,$Connection);
   $elements = array();
   while ($record = mysql_fetch_array($resource))
-    array_push($elements,xmldb_convert_record($record));
+    $elements[$record["ID"]] = xmldb_convert_record($record);
   return $elements;
 }
 
