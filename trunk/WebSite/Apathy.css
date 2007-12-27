@@ -22,6 +22,15 @@ div.Main {
   background-repeat: repeat-x;
   background-position: top;
 }
+div.Book {
+  border: 1px solid black;
+  width: 65em;
+  height: 30em;
+  overflow: auto;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
+  background-position: top;
+}
 table.NoStyle {
   border: 0;
   padding: 0;
