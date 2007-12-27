@@ -538,7 +538,7 @@ function load_book_section_response($environment) {
   $section_id = $environment["Message"];
   $children = xmldb_getChildNodes($environment["Connection"],$section_id);
   return arpg_build_response("Datum",
-    "<div class='Book'>".build_modifyable_area($environment,$children)."</div>");
+    build_modifyable_area($environment,$children));
 }
 
 function book_response($environment) {
