@@ -66,6 +66,11 @@ div.MainPart {
   padding: 1em;
   border: 0px solid blue;
 }
+div.Book h1 {
+  color: black;
+  font-size: 35pt;
+  margin-left: -.5em;
+}
 h1.sector-part {
   color: black;
   font-size: 35pt;
