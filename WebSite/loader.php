@@ -326,6 +326,13 @@ function build_modifyable_area($environment,$PseudoXMLs,$ExtraInfo) {
               $result .= "ITEM<br/>";
           }
           break;
+        case "figure":
+          $some_result = true;
+          $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+          $result .= "<div class='figure' name='figure'>";
+          $result .= build_modifyable_area($environment,$children);
+          $result .= "</div>";
+          break;
         case "note":
           $some_result = true;
           $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
@@ -499,6 +506,7 @@ function build_book($environment) {
 
 function book_response($environment) {
   $mmenu = make_main_menu("Book");
+  $books = xmldb_getElementsByTagName($environment["Connection"],"book");
   return arpg_build_responses(
     array("Path","Datum"),
     array(make_main_menu("Book"),build_book($environment)));
