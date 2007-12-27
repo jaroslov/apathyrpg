@@ -419,7 +419,7 @@ function insert_editable_response($environment) {
   $parent_html_id = $at_code[3];
   $sizes = explode(":",$at_code[1]);
   $width = $sizes[0];
-  $height = (int)$sizes[1]*3;
+  $height = (int)$sizes[1]*1.1;
   $rawtext = xmldb_getElementById($environment["Connection"],$rawtext_source);
   $target = $environment["Target"];
   $payload = "<table class='NoStyle'><tr><td colspan='2'><textarea
@@ -534,16 +534,89 @@ function raw_data_response($environment) {
   return load_category_response($environment);
 }
 
-function build_book($environment) {
-  $children = xmldb_getElementsByTagName($environment["Connection"],"book");
-  return build_modifyable_area($environment,$children);
+function load_book_section_response($environment) {
+  $section_id = $environment["Message"];
+  $children = xmldb_getChildNodes($environment["Connection"],$section_id);
+  return arpg_build_response("Datum",
+    "<div class='Book'>".build_modifyable_area($environment,$children)."</div>");
 }
 
 function book_response($environment) {
   $mmenu = make_main_menu("Book");
+  // okay, we're going to make a selection list
+  // with each book->part->chapter->section
+  // to minimize the nuttiness
+  $books = xmldb_getElementsByTagName($environment["Connection"],"book");
+  $booksattrs = xmldb_attributesOfSet($environment["Connection"],$books);
+  $options = array(arpg_make_option_for_select("NoResponse","Choose...",true));
+  foreach ($books as $book_id => $book) {
+    array_push($options,
+      arpg_make_option_for_select("NoResponse",
+        $booksattrs[$book_id]["name"]["Value"],false));
+    $parts = xmldb_getChildNodes($environment["Connection"],$book_id);
+    foreach ($parts as $part_id => $part)
+      if ($part["Kind"] === "element") {
+        $ttlchps = xmldb_getChildNodes($environment["Connection"],$part_id);
+        $title = null;
+        $chapters = array();
+        foreach ($ttlchps as $tch_id => $ttlchp) {
+          if ($ttlchp["Name"] === "title") {
+            $tch = xmldb_getChildNodes($environment["Connection"],$tch_id);
+            $keys = array_keys($tch);
+            $title = $tch[$keys[0]]["Value"];
+          } else if ($ttlchp["Kind"] === "element")
+            $chapters[$tch_id] = $ttlchp;
+        }
+        array_push($options,
+          arpg_make_option_for_select("NoResponse",
+            "&nbsp;&nbsp;".$title,false));
+        foreach ($chapters as $ch_id => $chapter) {
+          $ttlsecs = xmldb_getChildNodes($environment["Connection"],$ch_id);
+          $title = null;
+          $sections = array();
+          foreach ($ttlsecs as $tsc_id => $ttlsec) {
+            if ($ttlsec["Name"] === "title") {
+              $tsc = xmldb_getChildNodes($environment["Connection"],$tsc_id);
+              $keys = array_keys($tsc);
+              $title = $tsc[$keys[0]]["Value"];
+            } else if ($ttlsec["Kind"] === "element"
+              and $ttlsec["Name"] === "section")
+              $sections[$tsc_id] = $ttlsec;
+          }
+          array_push($options,
+            arpg_make_option_for_select("NoResponse",
+              "&nbsp;&nbsp;&nbsp;&nbsp;".$title,false));
+          foreach ($sections as $sec_id => $section) {
+            $ttlsecs = xmldb_getChildNodes($environment["Connection"],$sec_id);
+            $title = null;
+            $sections = array();
+            foreach ($ttlsecs as $tsc_id => $ttlsec) {
+              if ($ttlsec["Name"] === "title") {
+                $tsc = xmldb_getChildNodes($environment["Connection"],$tsc_id);
+                $keys = array_keys($tsc);
+                $title = $tsc[$keys[0]]["Value"];
+              } else if ($ttlsec["Kind"] === "element"
+                and $ttlsec["Name"] === "section")
+                $sections[$tsc_id] = $ttlsec;
+            }
+            array_push($options,
+              arpg_make_option_for_select($sec_id,
+                "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$title,false));
+          }
+        }
+      }
+  }
+  $env = array("Responder"=>"loader.php",
+               "Target"=>"'Datum'",
+               "Source"=>"'Datum'",
+               "Code"=>"'LoadBookSection'",
+               "Message"=>"value",
+               "ID"=>"BookSectionSelector");
+  $select = arpg_make_select_statement($options,$env);
+  $mmenu = make_main_menu("Book")." &raquo; ".$select;
   return arpg_build_responses(
-    array("Path","Datum"),
-    array(make_main_menu("Book"),build_book($environment)));
+    array("Path","Datum","@Focus@BookSectionSelector"),
+    array($mmenu,"<em>Please select a section.</em>","FOO"));
 }
 
 function initialize_system($environment) {
@@ -568,6 +641,8 @@ function respond() {
     return arpg_build_empty_response();
   } else if ("Book" === $env["Code"]) {
     return book_response($env);
+  } else if ("LoadBookSection" === $env["Code"]) {
+    return load_book_section_response($env);
   } else if ("RebuildMainMenu" === $env["Code"]) {
     return initialize_system($env);
   } else if ("RawData" === $env["Code"]) {

@@ -23,9 +23,11 @@ div.Main {
   background-position: top;
 }
 div.Book {
+  padding-left: 3em;
+  padding-right: 3em;
   border: 1px solid black;
-  width: 65em;
-  height: 30em;
+  width: 60em;
+  height: 35em;
   overflow: auto;
   background-image: url(highlight-textarea.png);
   background-repeat: repeat-x;
