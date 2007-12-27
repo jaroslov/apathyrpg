@@ -241,18 +241,73 @@ function build_modifyable_raw_text($PseudoXML) {
           .build_modifyable_click_area($PseudoXML)."</div>";
 }
 
-function build_modifyable_area($PseudoXMLs,$TabOrder,$ExtraStyle) {
+function build_modifyable_area($environment,$PseudoXMLs,$ExtraInfo) {
   $result = "";
   $some_result = false;
   foreach ($PseudoXMLs as $ID => $PseudoXML)
     switch ($PseudoXML["Name"]) {
       case "text":
-        $result .= build_modifyable_raw_text($PseudoXML);
+        $mresult = build_modifyable_raw_text($PseudoXML);
+        switch ($ExtraInfo) {
+          case "description-list":
+            $result .= "<td>".$mresult."</td>"; break;
+          default:
+            $result .= $mresult; break;
+        }
         $some_result = true;
+        break;
+      case "title":
+        $some_result = true;
+        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+        $mresult = build_modifyable_area($environment,$children,"example");
+        switch ($ExtraInfo) {
+          case "example":
+            $result .= "<h1>".$mresult."</h1>"; break;
+            break;
+          default: $result .= $mresult; break;
+        }
+        break;
+      case "example":
+        $some_result = true;
+        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+        $result .= "<div class='example' name='example'>"
+          .build_modifyable_area($environment,$children,"example")."</div>";
         break;
       case "description-list":
         $some_result = true;
-        $result .= "Handle in: build-modifyable-raw-text<br/>";
+        // get items
+        $result .= "<table name='description-list' class='description-list'>";
+        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+        $result .= build_modifyable_area($environment,$children,"description-list");
+        $result .= "</table>";
+        break;
+      case "numbered-list":
+        $some_result = true;
+        // get items
+        $result .= "<ol class='numbered-list'>";
+        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+        $result .= build_modifyable_area($environment,$children,"numbered-list");
+        $result .= "</ol>";
+        break;
+      case "description":
+        $some_result = true;
+        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+        $result .= "<td>".build_modifyable_area($environment,$children)."</td>";
+        break;
+      case "item":
+        $some_result = true;
+        $children = xmldb_getChildNodes($environment["Connection"],$PseudoXML["ID"]);
+        switch ($ExtraInfo) {
+          case "description-list":
+            $result .= "<tr>".build_modifyable_area($environment,$children,"description-list")."</tr>";
+            break;
+          case "numbered-list":
+            $result .= "<li>".build_modifyable_area($environment,$children,"numbered-list")."</li>";
+            break;
+          default:
+            $result .= "ITEM<br/>";
+        }
+        break;
       default:
         $some_result = true;
         $result .= $PseudoXML["Name"]."@".$PseudoXML["ID"]."<br/>";
@@ -316,7 +371,8 @@ function build_datum_table($environment,$datum) {
     else if (array_key_exists("description",$attributeset[$id])
       and $attributeset[$id]["description"]["Value"] === "yes")
       $description = $id;
-    else
+    else if (array_key_exists("table",$attributeset[$id])
+      and $attributeset[$id]["table"]["Value"] === "yes")
       $entries[$id] = $attributeset[$id]["name"]["Value"];
   $DIVS = "<table>
             <tr><td colspan='2' align='center'>
@@ -324,7 +380,7 @@ function build_datum_table($environment,$datum) {
             <tr><td><div class='DatumLeftDiv'>";
   $DIVS .= "<table class='ModifyDatumTable' style='width:100%'>
                 <thead><th><pre>Title</pre></th><th>"
-                .build_modifyable_area($valueset[$title],1,"")."</th></thead>";
+                .build_modifyable_area($environment,$valueset[$title])."</th></thead>";
   foreach ($entries as $id => $entry )
     $DIVS .= "<tr><td align='right'
                 style='width:10em;
@@ -332,11 +388,11 @@ function build_datum_table($environment,$datum) {
                        font-weight:bold;
                        font-style:italic;'>"
                   .$entry."&rsaquo;&rsaquo;&rsaquo;</td><td>"
-                  .build_modifyable_area($valueset[$id],1,"")."</td></tr>";
+                  .build_modifyable_area($environment,$valueset[$id])."</td></tr>";
   $DIVS .= "</table>";
   $DIVS .= "</div></td><td>";
   $DIVS .= "<div class='DatumRightDiv'>"
-            .build_modifyable_area($valueset[$description],1,"")
+            .build_modifyable_area($environment,$valueset[$description])
             ."</div></td></tr></table>";
   return $DIVS;
 }

@@ -298,7 +298,7 @@ function xmldb_attributesOfSet($Connection,$Elements) {
     $ElementSet .= $Elements[$Keys[0]]["ID"];
   for ($edx = 1; $edx < sizeof($Elements); $edx++)
     $ElementSet .= "," . $Elements[$Keys[$edx]]["ID"];
-  $query = "SELECT * FROM ".XMLDB_DBT."
+  $query = "SELECT * FROM ".XMLDB_DBA."
             WHERE `ChildOf` IN (".$ElementSet.")
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
   $resource = mysql_query($query,$Connection);
@@ -313,6 +313,10 @@ function xmldb_attributesOfSet($Connection,$Elements) {
   return $attributeset;
 }
 
+function xmldb_getChildNodesOfSet($Connection,$Elements) {
+  return xmldb_getChildNodeValuesOfSet($Connection,$Elements);
+}
+
 function xmldb_getChildNodeValuesOfSet($Connection,$Elements) {
   $ElementSet = "";
   $Keys = array_keys($Elements);
@@ -325,7 +329,7 @@ function xmldb_getChildNodeValuesOfSet($Connection,$Elements) {
     $ElementSet .= "," . $Elements[$Keys[$edx]]["ID"];
     $ValueSet[$Elements[$Keys[$edx]]["ID"]] = array();
   }
-  $query = "SELECT * FROM ".XMLDB_DBT."
+  $query = "SELECT * FROM ".XMLDB_DBE."
             WHERE `ChildOf` IN (".$ElementSet.")
             AND `Kind` = CONVERT( _utf8 'element' USING latin1 )";
   $resource = mysql_query($query,$Connection);
@@ -384,8 +388,10 @@ function xmldb_getParentById($Connection,$ID) {
   return false;
 }
 
-function xmldb_getChildNodes($Connection,$Node) {
-  $query = "SELECT * FROM ".XMLDB_DBE." WHERE `ChildOf`=".$Node["ID"];
+function xmldb_getChildNodes($Connection,$ID) {
+  if (is_array($ID))
+    $ID = $ID["ID"];
+  $query = "SELECT * FROM ".XMLDB_DBT." WHERE `ChildOf`=".$ID;
   $resource = mysql_query($query,$Connection);
   $children = array();
   while ($record = mysql_fetch_array($resource))
