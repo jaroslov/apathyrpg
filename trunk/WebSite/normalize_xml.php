@@ -2,6 +2,7 @@
 
 // Normalize XML
 // convert an XML document into a database
+include 'config.php';
 
 function xmldb_create_connection($Database) {
   // Connecting, selecting database
