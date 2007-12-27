@@ -4,13 +4,54 @@
 // convert an XML document into a database
 include 'config.php';
 
-function xmldb_create_connection($Database) {
+// shorthand
+define("XMLDB_DBT","`".XMLDB_DBName."`.`".XMLDB_MainTable."`",true);
+define("XMLDB_History","History",true);
+define("XMLDB_DBH","`".XMLDB_DBName."`.`".XMLDB_History."`",true);
+define("XMLDB_Attributes","`Attributes`",true);
+define("XMLDB_Elements","`Elements`",true);
+define("XMLDB_Comments","`Comments`",true);
+define("XMLDB_DBA","`".XMLDB_DBName."`.`Attributes`",true);
+define("XMLDB_DBE","`".XMLDB_DBName."`.`Elements`",true);
+define("XMLDB_DBC","`".XMLDB_DBName.".`Comment`",true);
+
+function xmldb_create_connection() {
   // Connecting, selecting database
-  $link = mysql_connect('localhost', 'thechao', 'ha1l3r1S')
+  $link = mysql_connect(XMLDB_HostTarget, XMLDB_DBUser, XMLDB_DBPass)
       or die('Could not connect: ' . mysql_error());  
-  if (mysql_select_db($Database))
+  if (mysql_select_db(XMLDB_DBName))
     return $link;
   return 'Could not select database';
+}
+
+function xmldb_create_main_table($Connection) {
+  return xmldb_create_table($Connection,XMLDB_MainTable);
+}
+function xmldb_create_history_table($Connection) {
+  return xmldb_create_table($Connection,XMLDB_History);
+}
+
+function xmldb_create_table($Connection,$Name) {
+  $query = "CREATE TABLE  `".XMLDB_DBName."`.`".$Name."` (
+              `ID` INT(10)
+                  NOT NULL AUTO_INCREMENT ,
+              `ChildOf` INT(10)
+                  NOT NULL DEFAULT  '-1',
+              `Kind` ENUM('element',
+                          'attribute',
+                          'comment')
+                  NOT NULL DEFAULT  'element',
+              `Order` INT(10)
+                  NOT NULL DEFAULT  '-1',
+              `Name` VARCHAR(255)
+                  NOT NULL DEFAULT  'default-tag-name',
+              `Value`
+                  TEXT NULL ,
+              `TimeStamp` TIMESTAMP
+                  NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+              PRIMARY KEY (`ID`)
+            ) ENGINE = MYISAM";
+  mysql_query($query,$Connection) or die("Table creation ".mysql_error());
 }
 
 function xmldb_sanitize_for_xml($String) {
@@ -23,34 +64,69 @@ function xmldb_sanitize_for_sql($String) {
   return $String;
 }
 
-function xmldb_insert_structural($Table,$Connection,
-  $ParentId,$Kind,$Order,$Name,$Value) {
-  $Kind = xmldb_sanitize_for_xml($Kind);
-  $Name = xmldb_sanitize_for_xml($Name);
-  $Value = xmldb_sanitize_for_xml($Value);
-  $query = "INSERT INTO `".$Table."`.`Structural` (
-            `ID`, `ChildOf`, `Kind`, `Order`, `Name`, `Value`
+function xmldb_insert_structural($Connection,$Record) {
+  $record = array();
+  foreach ($Record as $key => $value)
+    $record[$key] = xmldb_sanitize_for_sql($value);
+  $query = "INSERT INTO  ".XMLDB_DBT." (
+            `ID`,`ChildOf`,`Kind`,`Order`,`Name`,`Value`,`TimeStamp`
             ) VALUES (
-              NULL , '".$ParentId."', '".$Kind."',
-              '".$Order."', '".$Name."', '".$Value."'
+              NULL,
+              '".$record["ChildOf"]."',
+              '".$record["Kind"]."',
+              '".$record["Order"]."',
+              '".$record["Name"]."',
+              '".$record["Value"]."', 
+              CURRENT_TIMESTAMP
             );";
   mysql_query($query,$Connection) or die('Query failed: ' . mysql_error());;
   return mysql_insert_id($Connection);
 }
 
-function xmldb_insert_element($Table,$Connection,$ChildOf,$Order,$Name,$Value) {
-  return xmldb_insert_structural($Table,$Connection,
-    $ChildOf,"element",$Order,$Name,$Value);
+function xmldb_insert_history($Connection,$Record) {
+  $record = array();
+  foreach ($Record as $key => $value)
+    $record[$key] = xmldb_sanitize_for_sql($value);
+  $query = "INSERT INTO  ".XMLDB_DBH." (
+            `ID`,`ChildOf`,`Kind`,`Order`,`Name`,`Value`,`TimeStamp`
+            ) VALUES (
+              NULL,
+              '".$record["ChildOf"]."',
+              '".$record["Kind"]."',
+              '".$record["Order"]."',
+              '".$record["Name"]."',
+              '".$record["Value"]."', 
+              '".$record["TimeStamp"]."'
+            );";
+  mysql_query($query,$Connection) or die('Query failed: ' . mysql_error());;
+  return mysql_insert_id($Connection);
 }
 
-function xmldb_insert_attribute($Table,$Connection,$ChildOf,$Name,$Value) {
-  return xmldb_insert_structural($Table,$Connection,
-            $ChildOf,"attribute",-1,$Name,$Value);
+function xmldb_insert_element($Connection,$ChildOf,$Order,$Name,$Value) {
+  return xmldb_insert_structural($Connection,
+      array("ChildOf"=>$ChildOf,
+            "Kind"=>"element",
+            "Order"=>$Order,
+            "Name"=>$Name,
+            "Value"=>$Value));
 }
 
-function xmldb_insert_comment($Table,$Connection,$ChildOf,$Order,$Value) {
-  return xmldb_insert_structural($Table,$Connection,
-    $ChildOf,"comment",$Order,"",$Value);
+function xmldb_insert_attribute($Connection,$ChildOf,$Name,$Value) {
+  return xmldb_insert_structural($Connection,
+      array("ChildOf"=>$ChildOf,
+            "Kind"=>"attribute",
+            "Order"=>-1,
+            "Name"=>$Name,
+            "Value"=>$Value));
+}
+
+function xmldb_insert_comment($Connection,$ChildOf,$Order,$Value) {
+  return xmldb_insert_structural($Connection,
+    array("ChildOf"=>$ChildOf,
+          "Kind"=>"comment",
+          "Order"=>$Order,
+          "Name"=>$Name,
+          "Value"=>$Value));
 }
 
 function xmldb_serialize_as_raw_text($Node) {
@@ -69,8 +145,7 @@ function xmldb_serialize_as_raw_text($Node) {
   return implode(" ",$words);
 }
 
-function xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
-  $ParentId,$Node,$Connection,$HasTextPs,$DropId) {
+function xmldb_normalize_xml_node($DOMDocument,$Connection,$ParentId,$Node,$Connection,$HasTextPs,$DropId) {
   $Order = 0;
   foreach ($Node->childNodes as $Child) {
     if ($Child->nodeType == XML_ELEMENT_NODE) {
@@ -81,60 +156,52 @@ function xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
       $Value = "";
       if ($Serialize)
         $Value = xmldb_serialize_as_raw_text($Child);
-      $ChildId = xmldb_insert_element($Table,$Connection,
-        $ParentId,$Order,$TagName,$Value);
+      $ChildId = xmldb_insert_element($Connection,$ParentId,$Order,$TagName,$Value);
       for ($adx = 0; $adx < $Attributes->length; $adx++) {
         $Attribute = $Attributes->item($adx);
         $Name = $Attribute->nodeName;
         $Value = $Attribute->nodeValue;
         if (!($DropId and ($Name === "xml:id" or $Name === "id")))
-          xmldb_insert_attribute($Table,$Connection,$ChildId,$Name,$Value);
+          xmldb_insert_attribute($Connection,$ChildId,$Name,$Value);
       }
       if (!$Serialize) {
-        xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
-          $ChildId,$Child,$Connection,$HasTextPs,$DropId);
+        xmldb_normalize_xml_node($DOMDocument,$Connection,$ChildId,$Child,$Connection,$HasTextPs,$DropId);
       }
     }
   }
 }
 
-function xmldb_create_kind_view($Table,$Connection,$KTable,$Kind) {
-  $query = "CREATE VIEW ".$KTable." AS SELECT * FROM `Structural`
+function xmldb_create_kind_view($Connection,$KTable,$Kind) {
+  $query = "CREATE VIEW `".XMLDB_DBName."`.".$KTable."
+            AS SELECT * FROM `".XMLDB_MainTable."`
             WHERE `Kind` = '".$Kind."';";
   mysql_query($query,$Connection);
 }
 
-function xmldb_create_attribute_view($Table,$Connection) {
-  $query = "CREATE VIEW attributes AS SELECT * FROM `Structural`
-            WHERE `Kind` = 'attribute';";
-  mysql_query($query,$Connection);
-}
-
-function xmldb_normalize_xml($Table,$Connection,
-  $DOMDocument,$Connection,$HasTextPs,$DropId) {
-  //$Node = $DOMDocument->ownerDocument;
-  xmldb_normalize_xml_node($DOMDocument,$Table,$Connection,
-    -1,$DOMDocument->ownerDocument,$Connection,$HasTextPs,$DropId);
+function xmldb_normalize_xml($Connection,$DOMDocument,$Connection,$HasTextPs,$DropId) {
+  xmldb_create_main_table($Connection);
+  xmldb_create_history_table($Connection);
+  xmldb_normalize_xml_node($DOMDocument,$Connection,-1,$DOMDocument->ownerDocument,$Connection,$HasTextPs,$DropId);
   // need views of elements and attributes
-  xmldb_create_kind_view($Table,$Connection,"Attributes","attribute");
-  xmldb_create_kind_view($Table,$Connection,"Elements","element");
-  xmldb_create_kind_view($Table,$Connection,"Comments","comment");
+  xmldb_create_kind_view($Connection,"Attributes","attribute");
+  xmldb_create_kind_view($Connection,"Elements","element");
+  xmldb_create_kind_view($Connection,"Comments","comment");
 }
 
 function xmldb_extract_xml($Connection) {
-  $query = "SELECT * FROM `Structural`";
+  $query = "SELECT * FROM ".XMLDB_DBT;
   $resource = mysql_query($query,$Connection);
   $DOM = new DOMDocument();
   return $DOM;
 }
 
 function xmldb_empty_all_xml($Connection) {
-  $query = "TRUNCATE TABLE `Structural`";
+  $query = "TRUNCATE TABLE ".XMLDB_DBT;
   mysql_query($query,$Connection);
 }
 
 function xmldb_getElementById($Connection,$ID) {
-  $query = "SELECT * FROM `Structural` WHERE `ID` =".$ID;
+  $query = "SELECT * FROM ".XMLDB_DBT." WHERE `ID` =".$ID;
   $resource = mysql_query($query,$Connection);
   $record = array();
   if ($record = mysql_fetch_array($resource))
@@ -143,7 +210,7 @@ function xmldb_getElementById($Connection,$ID) {
 }
 
 function xmldb_getAttributeById($Connection,$ID) {
-  $query = "SELECT * FROM `Attributes` WHERE `ID` =".$ID;
+  $query = "SELECT * FROM ".XMLDB_DBA." WHERE `ID` =".$ID;
   $resource = mysql_query($query,$Connection);
   $record = array();
   if ($record = mysql_fetch_array($resource))
@@ -152,7 +219,7 @@ function xmldb_getAttributeById($Connection,$ID) {
 }
 
 function xmldb_getNodeById($Connection,$ID) {
-  $query = "SELECT * FROM `Structural` WHERE `ID` = ".$ID;
+  $query = "SELECT * FROM ".XMLDB_DBT." WHERE `ID` = ".$ID;
   $resource = mysql_query($query,$Connection);
   $record = array();
   if ($record = mysql_fetch_array($resource))
@@ -166,11 +233,12 @@ function xmldb_convert_record($record) {
                 "Kind"=>$record["Kind"],
                 "Order"=>$record["Order"],
                 "Name"=>$record["Name"],
-                "Value"=>$record["Value"]);
+                "Value"=>$record["Value"],
+                "TimeStamp"=>$record["TimeStamp"]);
 }
 
 function xmldb_getElementsByTagName($Connection,$TagName) {
-  $query = "SELECT * FROM `Structural`
+  $query = "SELECT * FROM ".XMLDB_DBT."
             WHERE `Kind` = CONVERT( _utf8 'element' USING latin1 )
             AND `Name` LIKE CONVERT( _utf8 '".$TagName."' USING latin1 )";
   $resource = mysql_query($query,$Connection);
@@ -180,26 +248,40 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
   return $elements;
 }
 
-function xmldb_setElementValue($Connection,$Element,$Value) {
+function xmldb_setAttributeById($Connection,$ID,$Value) {
   $Value = xmldb_sanitize_for_sql($Value);
-  $query = "UPDATE `Structural` SET
-            `Value` ='".$Value."'
-            WHERE `Structural`.`ID` =".$Element["ID"]." LIMIT 1 ;";
+  $oldvalue = xmldb_getElementById($Connection,$ID);
+  xmldb_insert_history($Connection,$oldvalue);
+  $query = "UPDATE ".XMLDB_DBT." SET
+            `Value` = '".$Value."'
+            WHERE ".XMLDB_DBT.".`ID` =".$ID." LIMIT 1 ;";
   mysql_query($query,$Connection);
 }
 
-function xmldb_setNodeValue($Connection,$ID,$Value) {
+function xmldb_setElementValueById($Connection,$ID,$Value) {
   $Value = xmldb_sanitize_for_sql($Value);
-  $query = "UPDATE `Structural` SET
+  $oldvalue = xmldb_getElementById($Connection,$ID);
+  xmldb_insert_history($Connection,$oldvalue);
+  $query = "UPDATE ".XMLDB_DBT." SET
             `Value` ='".$Value."'
-            WHERE `Structural`.`ID` =".$ID." LIMIT 1 ;";
+            WHERE ".XMLDB_DBT.".`ID` =".$ID." LIMIT 1 ;";
+  mysql_query($query,$Connection);
+}
+
+function xmldb_setNodeValueById($Connection,$ID,$Value) {
+  $Value = xmldb_sanitize_for_sql($Value);
+  $oldvalue = xmldb_getElementById($Connection,$ID);
+  xmldb_insert_history($Connection,$oldvalue);
+  $query = "UPDATE ".XMLDB_DBT." SET
+            `Value` ='".$Value."'
+            WHERE ".XMLDB_DBT.".`ID` =".$ID." LIMIT 1 ;";
   if (!mysql_query($query,$Connection))
     return array("Error"=>mysql_error());
   return array("Error"=>"none");
 }
 
 function xmldb_attributes($Connection,$Element) {
-  $query = "SELECT * FROM `Structural`
+  $query = "SELECT * FROM ".XMLDB_DBT."
             WHERE `ChildOf` = ".$Element["ID"]."
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
   $resource = mysql_query($query);
@@ -216,7 +298,7 @@ function xmldb_attributesOfSet($Connection,$Elements) {
     $ElementSet .= $Elements[$Keys[0]]["ID"];
   for ($edx = 1; $edx < sizeof($Elements); $edx++)
     $ElementSet .= "," . $Elements[$Keys[$edx]]["ID"];
-  $query = "SELECT * FROM `Structural`
+  $query = "SELECT * FROM ".XMLDB_DBT."
             WHERE `ChildOf` IN (".$ElementSet.")
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
   $resource = mysql_query($query,$Connection);
@@ -243,7 +325,7 @@ function xmldb_getChildNodeValuesOfSet($Connection,$Elements) {
     $ElementSet .= "," . $Elements[$Keys[$edx]]["ID"];
     $ValueSet[$Elements[$Keys[$edx]]["ID"]] = array();
   }
-  $query = "SELECT * FROM `Structural`
+  $query = "SELECT * FROM ".XMLDB_DBT."
             WHERE `ChildOf` IN (".$ElementSet.")
             AND `Kind` = CONVERT( _utf8 'element' USING latin1 )";
   $resource = mysql_query($query,$Connection);
@@ -254,7 +336,7 @@ function xmldb_getChildNodeValuesOfSet($Connection,$Elements) {
 }
 
 function xmldb_getAttribute($Connection,$Element,$Name) {
-  $query = "SELECT * FROM `Structural`
+  $query = "SELECT * FROM ".XMLDB_DBT."
             WHERE `ChildOf` = ".$Element["ID"]."
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )
             AND `Name` = CONVERT( _utf8 '".$Name."' USING latin1 )";
@@ -265,10 +347,10 @@ function xmldb_getAttribute($Connection,$Element,$Name) {
 }
 
 function xmldb_getAttributeOfTagName($Connection,$TagName,$AttrName) {
-  $query = "SELECT * FROM `Structural`,`Attributes`
-            WHERE `Structural`.`ID`=`Attributes`.`ChildOf`
-            AND `Structural`.`Name` = '".$TagName."'
-            AND `Attributes`.`Name` = '".$AttrName."';";
+  $query = "SELECT * FROM ".XMLDB_DBT.",".XMLDB_DBA."
+            WHERE ".XMLDB_DBT.".`ID`=`Attributes`.`ChildOf`
+            AND ".XMLDB_DBT.".`Name` = '".$TagName."'
+            AND ".XMLDB_DBA.".`Name` = '".$AttrName."';";
   $resource = mysql_query($query,$Connection);
   $attributes = array();
   while ($record = mysql_fetch_array($resource))
@@ -277,11 +359,11 @@ function xmldb_getAttributeOfTagName($Connection,$TagName,$AttrName) {
 }
 
 function xmldb_getAttributeOfAllChildren($Connection,$Parent,$ChildName,$AttrName) {
-  $query = "SELECT * FROM `Structural`,`Attributes`
-            WHERE `Structural`.`ChildOf` = '".$Parent["ID"]."'
-            AND `Structural`.`ID`=`Attributes`.`ChildOf`
-            AND `Structural`.`Name` = '".$ChildName."'
-            AND `Attributes`.`Name` = '".$AttrName."';";
+  $query = "SELECT * FROM ".XMLDB_DBT.",".XMLDB_DBA."
+            WHERE ".XMLDB_DBT.".`ChildOf` = '".$Parent["ID"]."'
+            AND ".XMLDB_DBT.".`ID`=`Attributes`.`ChildOf`
+            AND ".XMLDB_DBT.".`Name` = '".$ChildName."'
+            AND ".XMLDB_DBA.".`Name` = '".$AttrName."';";
   $resource = mysql_query($query,$Connection);
   $attributes = array();
   while ($record = mysql_fetch_array($resource))
@@ -294,7 +376,7 @@ function xmldb_getParent($Connection,$Node) {
 }
 
 function xmldb_getParentById($Connection,$ID) {
-  $query = "SELECT * FROM `Structural`
+  $query = "SELECT * FROM ".XMLDB_DBT."
             WHERE `ID` = ".$ID;
   $resource = mysql_query($query,$Connection);
   while ($record = mysql_fetch_array($resource))
@@ -302,15 +384,8 @@ function xmldb_getParentById($Connection,$ID) {
   return false;
 }
 
-function xmldb_setAttribute($Connection,$Attribute,$Value) {
-  $query = "UPDATE `Structural` SET
-            `Value` = '".$Value."'
-            WHERE `Structural`.`ID` =".$Attribute["ID"]." LIMIT 1 ;";
-  mysql_query($query,$Connection);
-}
-
 function xmldb_getChildNodes($Connection,$Node) {
-  $query = "SELECT * FROM `Elements` WHERE `ChildOf`=".$Node["ID"];
+  $query = "SELECT * FROM ".XMLDB_DBE." WHERE `ChildOf`=".$Node["ID"];
   $resource = mysql_query($query,$Connection);
   $children = array();
   while ($record = mysql_fetch_array($resource))
@@ -319,7 +394,7 @@ function xmldb_getChildNodes($Connection,$Node) {
 }
 
 function xmldb_is_populated($Connection) {
-  $query = "SELECT * FROM `Structural` WHERE `ID` =1";
+  $query = "SELECT * FROM ".XMLDB_DBT." WHERE `ID` =1";
   $resource = mysql_query($query,$Connection);
   while ($record = mysql_fetch_array($resource))
     return true;

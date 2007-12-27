@@ -153,9 +153,7 @@ function update_value_response($environment) {
   $Id = $at_parts[1];
   $message = $environment["Message"];
   $imsg = serialize_elements_for_sql($message,simple_edit_map());
-  $field = xmldb_getElementById($environment["Connection"],$Id);
-  $error = xmldb_setNodeValue($environment["Connection"],
-                                $Id,$imsg);
+  $error = xmldb_setElementValueById($environment["Connection"],$Id,$imsg);
   return arpg_build_responses(array("Log"),
     array("<em style='color:blue'>".$Id
         ."</em>&loz;<b>&laquo;</b><span style='color:green'>"
