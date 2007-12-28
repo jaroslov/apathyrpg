@@ -81,6 +81,15 @@ table.MainPart td,tr,tbody,th,thead {
   border: 0;
   padding: 0;
   margin: 0;
+  border-collapse: collapse;
+}
+table.FieldResponder td {
+  margin: 0;
+  padding: .25em;
+}
+td.FieldResponderAspect {
+  font-variant: small-caps;
+  font-weight: bold;
 }
 a {
   color: blue;

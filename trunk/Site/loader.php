@@ -3,17 +3,87 @@
 include "arpg.php";
 include "ajax.php";
 
+function arpg_unload_datum($Response) {
+  $Connection = arpg_create_apathy();
+  $datum_id = $Response->payload[0];
+  $childNodes = xmldb_getChildNodes($Connection,$datum_id);
+  $name = null;
+  foreach ($childNodes as $id => $child)
+    if ($child["Kind"] === "attribute" and $child["Name"] === "name")
+      $name = $child["Value"];
+  $datum_responder = "<a onClick=\""
+        .arpg_build_ajax("loader.php","LoadDatum",$datum_id)
+        ."\">".$name."</a>";
+
+  $targets = array("Datum$datum_id","Fields$datum_id");
+  $payloads = array($datum_responder,"<em>Click title to expand.</em>");
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function arpg_load_datum($Response) {
   $Connection = arpg_create_apathy();
 
   $datum_id = $Response->payload[0];
   $childNodes = xmldb_getChildNodes($Connection,$datum_id);
-  $attrs = xmldb_attributesOfSet($Connection,$childNodes);
+  $allattrs = xmldb_attributesOfSet($Connection,$childNodes);
 
-  $datum_responder = "<a>".print_r($attrs,true)."</a>";
+  $title = null;
+  $table = array();
+  $other = array();
+  $description = null;
+  foreach ($allattrs as $id => $attrs)
+    if (array_key_exists("title",$attrs)
+      and $attrs["title"]["Value"] === "yes")
+      $title = $id;
+    else if (array_key_exists("table",$attrs)
+      and $attrs["table"]["Value"] === "yes")
+      $table[$id] = "";
+    else if (array_key_exists("description",$attrs)
+      and $attrs["description"]["Value"] === "yes")
+      $description = $id;
+    else
+      $other[$id] = "";
+
+  $elementChNodes = array();
+  foreach ($childNodes as $id => $child)
+    if ($child["Kind"] === "element")
+      $elementChNodes[$id] = $child;
+  $rawTextNodes = xmldb_getChildNodesOfSet($Connection,$elementChNodes);
+
+  $titleVal = $rawTextNodes[$title];
+  foreach ($titleVal as $id => $title)
+    $title = $titleVal[$id];
+  $descVal = $rawTextNodes[$description];
+  foreach ($descVal as $id => $description)
+    $description = $descVal[$id];
+
+  $datum_responder = "<a onClick=\""
+    .arpg_build_ajax("loader.php","UnloadDatum",$datum_id)
+    ."\">".$title["Value"]."</a>";
+
+  $fields_response = "<table class='FieldResponder'>"
+                        ."<thead>"
+                          ."<th colspan='2'>Aspects</th>"
+                          ."<th>Description</th>"
+                        ."</thead><tbody>";
+  $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
+                    ."Title</td><td>"
+                    .$title['Value']."</td>"
+                    ."<td rowspan='"
+                    .(sizeof($table)+1)
+                    ."'>".$description['Value']."</td></tr>";
+  foreach ($table as $id => $S) {
+    $tableVal = $rawTextNodes[$id];
+    $tkeys = array_keys($tableVal);
+    $tableVal = $tableVal[$tkeys[0]];
+    $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
+                      .$allattrs[$id]["name"]["Value"]."</td><td>"
+                      .$tableVal["Value"]."</td></tr>";
+  }
+  $fields_response .= "<tbody></table>";
 
   $targets = array("Datum$datum_id","Fields$datum_id");
-  $payloads = array($datum_responder,"FOO");
+  $payloads = array($datum_responder,$fields_response);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -32,7 +102,7 @@ function arpg_load_category($Response) {
         $Display .= "<span id='Datum$id'><a onClick=\"";
         $Display .= arpg_build_ajax("loader.php","LoadDatum",$id);
         $Display .= "\">".$attrs[$id]["name"]["Value"]."</a></span>";
-        $Display .= "<div id='Fields$id'></div>";
+        $Display .= "<div id='Fields$id'><em>Click title to expand.</em></div>";
         $Display .= "</div>";
       }
 
@@ -107,6 +177,9 @@ function arpg_responder() {
       break;
     case "LoadDatum":
       $lres = arpg_load_datum($response);
+      break;
+    case "UnloadDatum":
+      $lres = arpg_unload_datum($response);
       break;
     }
     foreach ($lres["Targets"] as $target)
