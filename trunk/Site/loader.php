@@ -21,7 +21,7 @@ function arpg_render_raw_text($Connection,$Id,$ExtraInfo) {
       switch ($child["Name"]) {
       case "text":
         $result[$index] = "<p class='text' id='Text$id'>"
-                          .$id." ".arpg_editable_text($id,$child["Value"])
+                          .arpg_editable_text($id,$child["Value"])
                           ."</p>";
         break;
       case "example":
@@ -70,6 +70,17 @@ function arpg_render_raw_text($Connection,$Id,$ExtraInfo) {
   return $result;
 }
 
+function arpg_unmodify_text($Response) {
+  $Connection = arpg_create_apathy();
+  $text_id = $Response->payload[0];
+
+  $editable = xmldb_getElementById($Connection,$text_id);
+
+  $targets = array("Text$text_id");
+  $payloads = array(arpg_editable_text($text_id,$editable["Value"]));
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function arpg_modify_text($Response) {
   $Connection = arpg_create_apathy();
   $at_code = $Response->payload[0];
@@ -90,9 +101,20 @@ function arpg_modify_text($Response) {
   if ($width < 25) $width = 25;
   if ($height < 3) $height = 3;
 
-  $editable = "<textarea rows=$height cols=$width >";
+
+  $editable = "<table class='ModifyTextButton'><tbody><tr>";
+  $editable .= "<td colspan='2'>";
+  $editable .= "<textarea rows=$height cols=$width >";
   $editable .= $text;
-  $editable .= "</textarea>";
+  $editable .= "</textarea><br/>";
+  $editable .= "</td></tr><tr>";
+  $editable .= "<td><input type='button' value='Close'
+                  onClick=\"".arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
+                  class='ModifyTextButton'/></td>";
+  $editable .= "<td align='right'><input type='button' value='Update Database'
+                  onClick=\"".arpg_build_ajax("loader.php","UpdateValue",$text_id)."\"
+                  class='ModifyTextButton'/></td>";
+  $editable .= "</tr></tbody></table>";
 
   $targets = array("Text$text_id");
   $payloads = array($editable);
@@ -147,13 +169,17 @@ function arpg_load_datum($Response) {
   $rawTextNodes = xmldb_getChildNodesOfSet($Connection,$elementChNodes);
 
   $titleVal = $rawTextNodes[$title];
-  foreach ($titleVal as $id => $title)
-    $title = $titleVal[$id];
+  foreach ($titleVal as $id => $S) {
+    $titleVal = $titleVal[$id];
+    break;
+  }
+
+  $title_parts = arpg_render_raw_text($Connection,$title);
   $description_parts = arpg_render_raw_text($Connection,$description);
 
   $datum_responder = "<a onClick=\""
     .arpg_build_ajax("loader.php","UnloadDatum",$datum_id)
-    ."\">".$title["Value"]."</a>";
+    ."\">".$titleVal["Value"]."</a>";
 
   $fields_response = "<table class='FieldResponder'>"
                         ."<thead>"
@@ -162,17 +188,15 @@ function arpg_load_datum($Response) {
                         ."</thead><tbody>";
   $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
                     ."Title</td><td>"
-                    .$title['Value']."</td>"
+                    .implode("<br/>",$title_parts)."</td>"
                     ."<td rowspan='"
                     .(sizeof($table)+1)
                     ."'>".implode("<br/>",$description_parts)."</td></tr>";
   foreach ($table as $id => $S) {
-    $tableVal = $rawTextNodes[$id];
-    $tkeys = array_keys($tableVal);
-    $tableVal = $tableVal[$tkeys[0]];
+    $table_parts = arpg_render_raw_text($Connection,$id);
     $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
                       .$allattrs[$id]["name"]["Value"]."</td><td>"
-                      .$tableVal["Value"]."</td></tr>";
+                      .implode("<br/>",$table_parts)."</td></tr>";
   }
   $fields_response .= "<tbody></table>";
 
@@ -283,6 +307,9 @@ function arpg_responder() {
       break;
     case "ModifyText":
       $lres = arpg_modify_text($response);
+      break;
+    case "UnmodifyText":
+      $lres = arpg_unmodify_text($response);
       break;
     }
     foreach ($lres["Targets"] as $target)

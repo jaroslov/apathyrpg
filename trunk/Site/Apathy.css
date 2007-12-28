@@ -98,6 +98,20 @@ table td.FieldResponderAspect {
   font-weight: bold;
   border-right: 1px dotted black;
 }
+input.ModifyTextButton {
+  min-width: 10em;
+}
+table.ModifyTextButton {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+table.ModifyTextButton td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 a {
   color: blue;
   text-decoration: none;
