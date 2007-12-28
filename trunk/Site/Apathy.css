@@ -1,0 +1,615 @@
+body {
+  padding: 0em;
+  padding-right: 0em;
+  padding-left: 0em;
+  margin: 0em;
+  font-size: 12pt;
+  text-align: justify;
+  font-color: black;
+  background-color: white;
+  font-family: times, serif;
+  background-image: url(pin-2x2.png);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+div.Main {
+  padding: 1em;
+  padding-right: 3em;
+  padding-left: 3em;
+  margin: 0em;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
+  background-position: top;
+}
+div.Book {
+  padding-left: 3em;
+  padding-right: 3em;
+  border: 1px solid black;
+  width: 60em;
+  height: 35em;
+  overflow: auto;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
+  background-position: top;
+}
+table.NoStyle {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+table.NoStyle td {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+table.NoStyle td {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+table.NoStyle tr {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.ForceSave {
+  width: 12em;
+}
+pre {
+  padding: 0;
+  margin: 0;
+  font-family: courier, serif;
+  font-size: 14pt;
+  font-variant: small-caps;
+}
+div.MainPart {
+  padding: 1em;
+  border: 0px solid blue;
+}
+div.Book h1 {
+  color: black;
+  font-size: 35pt;
+  margin-left: -.5em;
+}
+h1.sector-part {
+  color: black;
+  font-size: 35pt;
+  margin-left: -.5em;
+}
+h1.sector-partchapter {
+  color: black;
+  font-size: 30pt;
+  margin-left: -.5em;
+}
+h1.sector-partchaptersection {
+  color: black;
+  font-size: 26pt;
+  margin-left: -.5em;
+}
+h1.sector-chaptersection {
+  color: black;
+  font-size: 26pt;
+  margin-left: -.5em;
+}
+h1.sector-chaptersectionsection {
+  color: black;
+  font-size: 18pt;
+  font-variant: small-caps;
+  margin-left: -.5em;
+}
+h1.sector-sectionsectionsection {
+  color: black;
+  font-size: 18pt;
+  font-variant: small-caps;
+  margin-left: -.5em;
+}
+div.Log {
+  padding: 1em;
+  border: 1px solid red;
+  overflow: auto;
+  width: 20em;
+  height: 15em;
+}
+div.Path {
+  padding: 1em;
+  border: 0px solid red;
+}
+div.Datum {
+  padding: 1em;
+  border: 0px solid green;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+a.regular-text {
+  font-size: 12pt;
+  text-align: justify;
+  font-color: black;
+}
+a.regular-text:hover {
+  font-size: 12pt;
+  text-align: justify;
+  font-color: black;
+}
+div.equations a:hover {
+  text-decoration: none;
+  color: red;
+}
+ol {
+  font-size: 12pt;
+}
+table {
+  empty-cells: show;
+}
+table.UpdateTable {
+  border: 0;
+}
+table.UpdateTable tr {
+  border: 0;
+}
+table.UpdateTable td {
+  border: 0;
+}
+table.UpdateTable th {
+  border: 0;
+}
+.display-uid {
+  font-weight: bold;
+  font-size: 6pt;
+}
+div.toc h1 {
+  font-variant: small-caps;
+  font-size: 16pt;
+}
+div.DatumLeftDiv {
+  border: 1px solid black;
+  width: 30em;
+  height: 25em;
+  padding: 1em;
+  text-align: justify;
+  overflow: auto;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
+}
+div.DatumRightDiv {
+  border: 1px solid black;
+  width: 35em;
+  height: 25em;
+  padding: 1em;
+  text-align: justify;
+  overflow: auto;
+  background-image: url(highlight-textarea.png);
+  background-repeat: repeat-x;
+}
+table.ModifyDatumTable td {
+  border-top: 1px solid gray;
+}
+table.ModifyDatumTable pre {
+  font-family: times, serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 12pt;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.CurrentPosition {
+  font-variant: small-caps;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.Chooser {
+  width: 20em;
+}
+.Chooser option {
+  font-variant: small-caps;
+}
+.MainChooser {
+  width: 20em;
+}
+.OutlineItem {
+  width: 30em;
+  height: 1.3em;
+}
+.Text {
+  width: 50em;
+  height: 8em;
+}
+.TitleText {
+  width: 20em;
+  height: 1.5em;
+}
+.DescLText {
+  width: 15em;
+  height: 1.5em;
+}
+.TableHeadText {
+  width: 10em;
+  height: 1.5em;
+}
+.TableRowText {
+  width: 15em;
+  height: 4em;
+}
+ul.itemized-list li textarea.Text {
+  height: 5em;
+}
+ol.numbered-list li textarea.Text {
+  height: 5em;
+}
+table.description-list td.Text {
+  height: 5em;
+}
+ol.toc {
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  margin-left: 2em;
+  padding-left: .1em;
+}
+ol.toc ol {
+  list-style-type: upper-roman;
+  margin-left: .5em;
+  padding-left: 0em;
+}
+ol.toc ol ol {
+  list-style-type: lower-roman;
+  margin-left: .5em;
+  padding-left: 0em;
+}
+ol.toc ol ol ol {
+  list-style-type: lower-alpha;
+  margin-left: .5em;
+  padding-left: 0em;
+}
+ol.toc li {
+  font-variant: small-caps;
+}
+div.examples h1 {
+  font-variant: small-caps;
+  font-size: 16pt;
+}
+ol.examples {
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  margin-left: 2em;
+  padding-left: .1em;
+}
+ol.examples li {
+  font-variant: small-caps;
+}
+div.figures h1 {
+  font-variant: small-caps;
+  font-size: 16pt;
+}
+ol.figures {
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  margin-left: 2em;
+  padding-left: .1em;
+}
+ol.figures li {
+  font-variant: small-caps;
+}
+span.apathy-A1 {
+  font-size: 90pt;
+}
+span.apathy-P {
+  position: relative;
+  font-size: 60pt;
+  left: -.22em;
+  top: -.25em;
+}
+span.apathy-A2 {
+  position: relative;
+  font-size: 90pt;
+  left: -.4em;
+}
+span.apathy-thy {
+  position: relative;
+  font-size: 60pt;
+  left: -1em;
+  top: -.25em;
+}
+table.apathy-authors {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+} 
+div.titlepage {
+  border: double black;
+  padding: 2em;
+  padding-bottom: 5em;
+}
+div.example {
+  width: 35em;
+  text-align: justify;
+  padding: .5em 2em .5em 2em;
+  margin: 0;
+}
+div.example h1 {
+  font-size: 14pt;
+}
+div.example p {
+  padding: 0 0 .25em 2em;
+  text-indent: -1em;
+  margin: 0;
+}
+div.example span.example-title {
+  font-variant: small-caps;
+  font-weight: bold;
+  padding-right: 1em;
+  width: 35em;
+  height: 3em;
+}
+span.ApAthy {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+span.definition {
+  font-style: italic;
+}
+.description-term {
+  font-weight: bold;
+  min-width: 10em;
+}
+table.description-list {
+  margin-right: 3em;
+  margin-left: 3em;
+  border-collapse: collapse;
+}
+table.description-list tr {
+  margin: 0em;
+  border-top: 1px solid black;
+}
+table.description-list th {
+  margin: 0em;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+table.description-list td {
+  margin: 0em;
+  border-bottom: 1px solid black;
+}
+table.description-list p {
+  margin: 0;
+  padding: 0;
+}
+p.figure-caption {
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+}
+div.note {
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: 1px solid red;
+  margin: .5em;
+}
+div.note p {
+  margin: 0;
+  padding: 0;
+}
+div.note span.note-exclaim {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 16pt;
+  margin-right: .5em;
+}
+span.footnote {
+  color: blue;
+}
+ul.Fast-Find-List {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 18pt;
+  list-style-type: none;
+  margin-left: -1.5em;
+}
+table.datum-table {
+  border-collapse: collapse;
+}
+table.datum-table p {
+  margin: 0;
+  padding: 0;
+}
+table.datum-table a {
+  font-variant: small-caps;
+}
+table.datum-table tr:hover {
+  background-color: #EEF;
+}
+table.datum-table td {
+  border-bottom: 1px solid black;
+}
+table.datum-table td {
+  padding-right: .5em;
+}
+table.datum-table td.content {
+  border-left: 1px dotted black;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+table.datum-table th {
+  border-bottom: double black;
+  padding-right: .5em;
+}
+table.datum-table th.content {
+  border-left: 1px solid black;
+  padding-left: .5em;
+}
+table.content-table {
+  border-collapse: collapse;
+}
+table.content-table th {
+  border-bottom: double black;
+  border-top: 1px solid black;
+  padding-right: .5em;
+  padding-left: .5em;
+}
+table.content-table td {
+  border-bottom: 1px solid black;
+  padding-right: .5em;
+  padding-left: .5em;
+}
+table.content-table td.none {
+  border-bottom: 0;
+}
+table.content-table h1 {
+  font-size: 16pt;
+  font-variant: small-caps;
+  margin: .1em;
+  padding: 0em;
+}
+table.content-table th:first-child {
+  border-left: 0px;
+}
+table.content-table thead th {
+  border-left: 1px solid black;
+}
+table.content-table td:first-child {
+  border-left: 0px;
+}
+table.content-table tr td {
+  border-left: 1px solid black;
+}
+span.math {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-family: arial, serif;
+}
+div.math table {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+table.fraction {
+  font-size: 8pt;
+  border-collapse: collapse;
+  text-align: center;
+  display: inline-block;
+}
+table.fraction td {
+  border: 0px;
+}
+table.fraction td.numerator {
+  border-bottom: 1px solid black;
+}
+table.sum {
+  text-align: left;
+  display: inline-block;
+}
+span.notappl {
+  font-style: italic;
+}
+div.part {
+  padding-left: 0em;
+  width: 50em;
+}
+div.part div.chapter {
+  padding-left: .5em;
+}
+div.part div.chapter div.section {
+  padding-left: .5em;
+}
+div.part div.chapter div.section div.section {
+  padding-left: .5em;
+}
+div.part div.chapter div.section div.section div.section {
+  padding-left: .5em;
+}
+div.figure {
+  align: center;
+}
+span.defined {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+span.roll span.rOff {
+  font-size: 9pt;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+span.roll span.raw {
+  font-style: italic;
+}
+span.roll span.rawPlus {
+  font-size: 9pt;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+span.roll span.num {
+  font-style: italic;
+}
+span.roll span.D {
+  font-size: 9pt;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+span.roll span.face {
+  font-style: italic;
+}
+span.roll span.bOff {
+  font-size: 9pt;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+span.roll span.bns {
+  font-style: italic;
+}
+span.roll span.kind {
+  font-size: 9pt;
+  font-weight: bold;
+  font-variant: small-caps;
+  padding-left: .25em;
+}
+div.datum-description {
+  border-top: double black;
+  padding-top: .5em;
+  margin: .5em;
+  margin-left: .5em;
+  margin-right: .5em;
+  width: 45em;
+}
+div.datum-description p {
+  padding: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-indent: -1em;
+  margin: 0;
+}
+div.datum-description span  {
+  font-size: 16pt;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: black;
+}
+div.footnotes {
+  margin-top: 10em;
+  padding-top: 2em;
+  border-top: double black;
+  font-size: 8pt;
+}
+div.footnote {
+  width: 30em;
+  margin-bottom: 2em;
+}
+div.footnote p {
+  padding-left: 2em;
+  text-indent: -1em;
+}
