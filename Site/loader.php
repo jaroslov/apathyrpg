@@ -206,9 +206,6 @@ function arpg_load_datum($Response) {
   $fields_response .= "<tr><td class='FieldResponderAspect' align='right' valign='top'>"
                     ."Title</td><td>"
                     .implode("<br/>",$title_parts)."</td></tr>";
-//                    ."<td rowspan='"
-//                    .(sizeof($table)+2)
-//                    ."'>".implode("<br/>",$description_parts)."</td></tr>";
   foreach ($table as $id => $S) {
     $table_parts = arpg_render_raw_text($Connection,$id);
     $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
@@ -217,9 +214,10 @@ function arpg_load_datum($Response) {
   }
   $fields_response .= "<tbody></table>";
   $fields_response .= "</td><td>";
-  $fields_response .= "<div class='Description'><h1>Description</h1><div>"
+  $fields_response .= "<table class='FieldResponder'>"
+                    . "<thead><th>Description</th></thead><tbody><tr><td>"
                     . implode("<br/>",$description_parts)
-                    . "</div></div>";
+                    . "</td></tr></tbody></table>";
   $fields_response .= "</td></tr></tbody></table>";
 
   $targets = array("Datum$datum_id","Fields$datum_id");
