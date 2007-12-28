@@ -92,4 +92,20 @@ function arpg_make_option_for_select($value,$content,$selected) {
   return $option;
 }
 
+function arpg_build_ajax($Responder,$Codes,$Payloads) {
+  if (!is_array($Codes))
+    $Codes = array($Codes);
+  if (!is_array($Payloads))
+    $Payloads = array($Payloads);
+  $result = "<reply>";
+  for ($cdx = 0; $cdx < sizeof($Codes); $cdx++)
+    $result .= "<response><code>"
+      .$Codes[$cdx]
+      ."</code><payload>"
+      .$Payloads[$cdx]
+      ."</payload></response>";
+  $result .= "</reply>";
+  return "ajaxFunction('$Responder','$result')";
+}
+
 ?>

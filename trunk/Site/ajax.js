@@ -2,11 +2,12 @@ function realUnescape(string) {
   var str = string.replace(/\\/,"");
   return str;
 }
-function ajaxFunction(Responder,Source,Target,Code,Message) {
+function ajaxFunction(Responder,Message) {
   xmlHttp=new XMLHttpRequest();
   xmlHttp.onreadystatechange = function () {
     if (4 == xmlHttp.readyState) {
       var xmlR = xmlHttp.responseText;
+      document.title = xmlR;
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var replies = responseXml.getElementsByTagName("response");
@@ -34,17 +35,9 @@ function ajaxFunction(Responder,Source,Target,Code,Message) {
     }
   }
   xmlHttp.open("GET",Responder+"?"
-    +"responder="+Responder
-    +"&source="+Source
-    +"&target="+Target
-    +"&code="+Code
-    +"&message="+Message,true);
+    +"&Message="+Message,true);
   document.getElementById("Ajax").innerHTML
     = "<table>"
-    +"<tr><td>Responder:</td><td>"+Responder+"</td></tr>"
-    +"<tr><td>Source:</td><td>"+Source+"</td></tr>"
-    +"<tr><td>Target:</td><td>"+Target+"</td></tr>"
-    +"<tr><td>Code:</td><td>"+Code+"</td></tr>"
     +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
     +"</table>";
   xmlHttp.send(null);
