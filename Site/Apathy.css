@@ -41,8 +41,9 @@ div.Selector {
   border: 1px dotted gray;
   overflow: auto;
 }
-div.Datum {
+div.Display {
   width: 50em;
+  height: 20em;
   padding: 1em;
   border: 1px solid red;
   overflow: auto;
@@ -69,6 +70,12 @@ ol.CategorySelector ol ol {
   list-style-type: upper-alpha;
   margin-left: 1em;
   padding: 0;
+}
+div.Datum {
+  padding: .25em;
+  margin: 0;
+  margin-bottom: 1px;
+  border: 1px dotted gray;
 }
 table.MainPart td,tr,tbody,th,thead {
   border: 0;

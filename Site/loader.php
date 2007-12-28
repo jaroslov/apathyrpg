@@ -3,11 +3,49 @@
 include "arpg.php";
 include "ajax.php";
 
+function arpg_load_datum($Response) {
+  $Connection = arpg_create_apathy();
+
+  $datum_id = $Response->payload[0];
+  $childNodes = xmldb_getChildNodes($Connection,$datum_id);
+  $attrs = xmldb_attributesOfSet($Connection,$childNodes);
+
+  $datum_responder = "<a>".print_r($attrs,true)."</a>";
+
+  $targets = array("Datum$datum_id","Fields$datum_id");
+  $payloads = array($datum_responder,"FOO");
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
+function arpg_load_category($Response) {
+  $Connection = arpg_create_apathy();
+
+  $cat_id = $Response->payload[0];
+  $childNodes = xmldb_getChildNodes($Connection,$cat_id);
+  $attrs = xmldb_attributesOfSet($Connection,$childNodes);
+
+  $Display = "";
+  foreach ($childNodes as $id => $child)
+    if ($child["Kind"] === "element"
+      and $child["Name"] === "datum") {
+        $Display .= "<div class='Datum'>";
+        $Display .= "<span id='Datum$id'><a onClick=\"";
+        $Display .= arpg_build_ajax("loader.php","LoadDatum",$id);
+        $Display .= "\">".$attrs[$id]["name"]["Value"]."</a></span>";
+        $Display .= "<div id='Fields$id'></div>";
+        $Display .= "</div>";
+      }
+
+  $targets = array("Display");
+  $payloads = array($Display);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function arpg_ajax_collated_categories($Categories) {
   function init($Cats,$CurPath)
     { return "<ol class='CategorySelector'>"; };
   function before($path,$CurPath)
-    { return "<li><a>".$path."</a>"; };
+    { return "<li><span>".$path."</span>"; };
   function at_id($path,$id,$CurPath)
     { return "<li><a onClick=\""
         .arpg_build_ajax("loader.php","LoadCategory",$id)
@@ -63,6 +101,12 @@ function arpg_responder() {
       break;
     case "RawData":
       $lres = arpg_raw_data($response);
+      break;
+    case "LoadCategory":
+      $lres = arpg_load_category($response);
+      break;
+    case "LoadDatum":
+      $lres = arpg_load_datum($response);
       break;
     }
     foreach ($lres["Targets"] as $target)

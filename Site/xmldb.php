@@ -283,8 +283,10 @@ function xmldb_setNodeValueById($Connection,$ID,$Value) {
 }
 
 function xmldb_attributes($Connection,$Element) {
+  if (is_array($Element))
+    $Element = $Element["ID"];
   $query = "SELECT * FROM ".XMLDB_DBT."
-            WHERE `ChildOf` = ".$Element["ID"]."
+            WHERE `ChildOf` = ".$ID."
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
   $resource = mysql_query($query);
   $attributes = array();
