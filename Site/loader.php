@@ -70,6 +70,15 @@ function arpg_render_raw_text($Connection,$Id,$ExtraInfo) {
   return $result;
 }
 
+function arpg_update_text_value($Response) {
+  $Connection = arpg_create_apathy();
+  $text_id = $Response->payload[0];
+
+  $targets = array("");
+  $payloads = array("");
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function arpg_unmodify_text($Response) {
   $Connection = arpg_create_apathy();
   $text_id = $Response->payload[0];
@@ -112,7 +121,7 @@ function arpg_modify_text($Response) {
                   onClick=\"".arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
                   class='ModifyTextButton'/></td>";
   $editable .= "<td align='right'><input type='button' value='Update Database'
-                  onClick=\"".arpg_build_ajax("loader.php","UpdateValue",$text_id)."\"
+                  onClick=\"".arpg_build_ajax("loader.php","UpdateTextValue",$text_id)."\"
                   class='ModifyTextButton'/></td>";
   $editable .= "</tr></tbody></table>";
 
@@ -310,6 +319,9 @@ function arpg_responder() {
       break;
     case "UnmodifyText":
       $lres = arpg_unmodify_text($response);
+      break;
+    case "UpdateTextValue":
+      $lres = arpg_update_text_value($response);
       break;
     }
     foreach ($lres["Targets"] as $target)
