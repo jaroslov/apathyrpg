@@ -198,12 +198,12 @@ function arpg_load_datum($Response) {
     ."\">".$titleVal["Value"]."</a>";
 
   $fields_response = "";
-  $fields_response .= "<table><tbody><tr><td>";
+  $fields_response .= "<table><tbody><tr><td valign='top'>";
   $fields_response .= "<table class='FieldResponder'>"
                         ."<thead>"
                           ."<th colspan='2'>Aspects</th>"
                         ."</thead><tbody>";
-  $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
+  $fields_response .= "<tr><td class='FieldResponderAspect' align='right' valign='top'>"
                     ."Title</td><td>"
                     .implode("<br/>",$title_parts)."</td></tr>";
 //                    ."<td rowspan='"
@@ -217,7 +217,7 @@ function arpg_load_datum($Response) {
   }
   $fields_response .= "<tbody></table>";
   $fields_response .= "</td><td>";
-  $fields_response .= "<div><p>Description</p><div>"
+  $fields_response .= "<div class='Description'><h1>Description</h1><div>"
                     . implode("<br/>",$description_parts)
                     . "</div></div>";
   $fields_response .= "</td></tr></tbody></table>";
