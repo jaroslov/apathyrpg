@@ -92,7 +92,7 @@ table.FieldResponder td {
   padding: .25em;
   border-top: 1px solid gray;
 }
-td.FieldResponderAspect {
+table td.FieldResponderAspect {
   min-width: 8em;
   font-variant: small-caps;
   font-weight: bold;
@@ -115,4 +115,27 @@ a.regular-text:hover {
   font-size: 12pt;
   text-align: justify;
   font-color: black;
+}
+
+p.text {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+div.example {
+  padding: 0;
+  padding-left: 1em;
+}
+div.example h1 {
+  font-size: 20pt;
+}
+div.example p {
+  padding-left: 2em;
+  text-indent: -1em;
+}
+
+dl.description-list dt {
+  font-weight: bold;
+  font-variant: small-caps;
+  width: 10em;
 }

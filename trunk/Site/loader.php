@@ -3,8 +3,100 @@
 include "arpg.php";
 include "ajax.php";
 
-function render_raw_text($Id) {
-  $childNodes = xmldb_getChildNodes($Id);
+function arpg_editable_text($Id,$Text) {
+  $result = "<span onClick=\""
+      .arpg_build_ajax("loader.php","ModifyText",
+        $Id."@'+this.scrollWidth+':'+this.scrollHeight+'")
+      ."\">$Text</span>";
+  return $result;
+}
+
+function arpg_render_raw_text($Connection,$Id,$ExtraInfo) {
+  if (!$ExtraInfo) $ExtraInfo = "";
+  $result = array();
+  $childNodes = xmldb_getChildNodes($Connection,$Id);
+  $index = 0;
+  foreach ($childNodes as $id => $child)
+    if ($child["Kind"] === "element") {
+      switch ($child["Name"]) {
+      case "text":
+        $result[$index] = "<p class='text' id='Text$id'>"
+                          .$id." ".arpg_editable_text($id,$child["Value"])
+                          ."</p>";
+        break;
+      case "example":
+        $mresult = arpg_render_raw_text($Connection,$id);
+        $result[$index] = "<div class='example'>".implode("",$mresult)."</div>";
+        break;
+      case "title":
+        $mresult = arpg_render_raw_text($Connection,$id);
+        $result[$index] = "<h1>".implode("",$mresult)."</h1>";
+        break;
+      case "item":
+        switch ($ExtraInfo) {
+        case "description-list": // first one is dt, rest go into dl
+          $mresult = arpg_render_raw_text($Connection,$id);
+          $mrest = array_slice($mresult,1);
+          $mbegin = arpg_render_raw_text($Connection,$mresult[0]);
+          $result[$index] = "<dt>".$mresult[0]
+                            ."</dt><dd>"
+                            .implode("",$mrest)."</dd>";
+          break;
+        default:
+          $mresult = arpg_render_raw_text($Connection,$id);
+          $result[$index] = "<li>".implode("",$mresult)."</li>";
+        }
+        break;
+      case "description":
+        $result[$index] = implode("",arpg_render_raw_text($Connection,$id));
+        break;
+      case "numbered-list":
+        $result[$index] = "<ol class='number-list'>";
+        $mresult = arpg_render_raw_text($Connection,$id);
+        $result[$index] .= implode("",$mresult);
+        $result[$index] .= "</ol>";
+        break;
+      case "description-list":
+        $result[$index] = "<dl class='description-list'>";
+        $mresult = arpg_render_raw_text($Connection,$id,"description-list");
+        $result[$index] .= implode("",$mresult);
+        $result[$index] .= "</dl>";
+        break;
+      default:
+        $result[$index] = "UNKNOWN@".$child["Name"];
+      }
+      $index++;
+    }
+  return $result;
+}
+
+function arpg_modify_text($Response) {
+  $Connection = arpg_create_apathy();
+  $at_code = $Response->payload[0];
+  $at_codes = explode("@",$at_code);
+  $area = $at_codes[1];
+  $text_id = $at_codes[0];
+  $textNode = xmldb_getElementById($Connection,$text_id);
+
+  $text = $textNode["Value"];
+
+  $wh = explode(":",$area);
+  $width = $wh[0];
+  $height = $wh[1];
+  $emw_guess = 8;
+  $emh_guess = 11;
+  $width /= $emw_guess;
+  $height /= $emh_guess;
+  if ($width < 25) $width = 25;
+  if ($height < 3) $height = 3;
+
+  $editable = "<textarea rows=$height cols=$width >";
+  $editable .= $text;
+  $editable .= "</textarea>";
+
+  $targets = array("Text$text_id");
+  $payloads = array($editable);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
 function arpg_unload_datum($Response) {
@@ -57,9 +149,7 @@ function arpg_load_datum($Response) {
   $titleVal = $rawTextNodes[$title];
   foreach ($titleVal as $id => $title)
     $title = $titleVal[$id];
-  $descVal = $rawTextNodes[$description];
-  foreach ($descVal as $id => $description)
-    $description = $descVal[$id];
+  $description_parts = arpg_render_raw_text($Connection,$description);
 
   $datum_responder = "<a onClick=\""
     .arpg_build_ajax("loader.php","UnloadDatum",$datum_id)
@@ -75,7 +165,7 @@ function arpg_load_datum($Response) {
                     .$title['Value']."</td>"
                     ."<td rowspan='"
                     .(sizeof($table)+1)
-                    ."'>".$description['Value']."</td></tr>";
+                    ."'>".implode("<br/>",$description_parts)."</td></tr>";
   foreach ($table as $id => $S) {
     $tableVal = $rawTextNodes[$id];
     $tkeys = array_keys($tableVal);
@@ -190,6 +280,9 @@ function arpg_responder() {
       break;
     case "UnloadDatum":
       $lres = arpg_unload_datum($response);
+      break;
+    case "ModifyText":
+      $lres = arpg_modify_text($response);
       break;
     }
     foreach ($lres["Targets"] as $target)
