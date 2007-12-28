@@ -72,10 +72,13 @@ function arpg_render_raw_text($Connection,$Id,$ExtraInfo) {
 
 function arpg_update_text_value($Response) {
   $Connection = arpg_create_apathy();
-  $text_id = $Response->payload[0];
+  $text_id = $Response->payload[0]->who[0];
+  $text_value = $Response->payload[0]->what[0];
 
-  $targets = array("");
-  $payloads = array("");
+  xmldb_setNodeValueById($Connection,$text_id,$text_value);
+
+  $targets = array("Log");
+  $payloads = array("$text_value");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -113,15 +116,19 @@ function arpg_modify_text($Response) {
 
   $editable = "<table class='ModifyTextButton'><tbody><tr>";
   $editable .= "<td colspan='2'>";
-  $editable .= "<textarea rows=$height cols=$width >";
+  $editable .= "<textarea rows=$height cols=$width id='TA$text_id'>";
   $editable .= $text;
   $editable .= "</textarea><br/>";
   $editable .= "</td></tr><tr>";
-  $editable .= "<td><input type='button' value='Close'
-                  onClick=\"".arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
+  $editable .= "<td><input type='button' value='Close' onClick=\""
+                  .arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
                   class='ModifyTextButton'/></td>";
   $editable .= "<td align='right'><input type='button' value='Update Database'
-                  onClick=\"".arpg_build_ajax("loader.php","UpdateTextValue",$text_id)."\"
+                  onClick=\"".arpg_build_ajax("loader.php","UpdateTextValue",
+                                "<who>$text_id</who><what>'+"
+                                ."document.getElementById('TA$text_id').value+'"
+                                ."</what>"
+                              )."\"
                   class='ModifyTextButton'/></td>";
   $editable .= "</tr></tbody></table>";
 
@@ -190,17 +197,18 @@ function arpg_load_datum($Response) {
     .arpg_build_ajax("loader.php","UnloadDatum",$datum_id)
     ."\">".$titleVal["Value"]."</a>";
 
-  $fields_response = "<table class='FieldResponder'>"
+  $fields_response = "";
+  $fields_response .= "<table><tbody><tr><td>";
+  $fields_response .= "<table class='FieldResponder'>"
                         ."<thead>"
                           ."<th colspan='2'>Aspects</th>"
-                          ."<th>Description</th>"
                         ."</thead><tbody>";
   $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
                     ."Title</td><td>"
-                    .implode("<br/>",$title_parts)."</td>"
-                    ."<td rowspan='"
-                    .(sizeof($table)+1)
-                    ."'>".implode("<br/>",$description_parts)."</td></tr>";
+                    .implode("<br/>",$title_parts)."</td></tr>";
+//                    ."<td rowspan='"
+//                    .(sizeof($table)+2)
+//                    ."'>".implode("<br/>",$description_parts)."</td></tr>";
   foreach ($table as $id => $S) {
     $table_parts = arpg_render_raw_text($Connection,$id);
     $fields_response .= "<tr><td class='FieldResponderAspect' align='right'>"
@@ -208,6 +216,11 @@ function arpg_load_datum($Response) {
                       .implode("<br/>",$table_parts)."</td></tr>";
   }
   $fields_response .= "<tbody></table>";
+  $fields_response .= "</td><td>";
+  $fields_response .= "<div><p>Description</p><div>"
+                    . implode("<br/>",$description_parts)
+                    . "</div></div>";
+  $fields_response .= "</td></tr></tbody></table>";
 
   $targets = array("Datum$datum_id","Fields$datum_id");
   $payloads = array($datum_responder,$fields_response);
