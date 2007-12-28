@@ -1,7 +1,7 @@
 <?php
 
 // configuration for xmldb
-define("XMLDB_DBName","ARPG",true);
+define("XMLDB_DBName","ApathyRPG",true);
 define("XMLDB_MainTable","Structural",true);
 define("XMLDB_HostTarget","localhost",true);
 define("XMLDB_DBUser","thechao",true);

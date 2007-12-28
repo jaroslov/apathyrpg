@@ -32,14 +32,60 @@ function arpg_connect_to_apathy() {
   return xmldb_create_connection();
 }
 
+function arpg_get_categories($Connection) {
+  $childNodes = xmldb_getElementsByTagName($Connection,"category");
+  return xmldb_attributesOfSet($Connection,$childNodes);
+}
+
+function arpg_pp_collated_categories($Categories) {
+  $result = "<ol>";
+  foreach ($Categories as $path => $subpath) {
+    $result .= "<li>" . $path;
+    $result .= arpg_pp_collated_categories($subpath);
+    $result .= "</li>";
+  }
+  return $result."</ol>";
+}
+
+function arpg_retrieve_by_path($Categories,$path) {
+  $local = &$Categories;
+  foreach ($path as $part)
+    if (array_key_exists($part,$local))
+      $local = &$local[$part];
+  return $local;
+}
+
+function arpg_collate_categories_Q($Categories) {
+  // an id-keyed list of string
+  $collation = array();
+  foreach ($Categories as $id => $attributes) {
+    $path = explode("/",$attributes["name"]["Value"]);
+    $local = &$collation;
+    foreach ($path as $part) {
+      if (!array_key_exists($part,$local))
+        $local[$part] = array();
+      $local = &$local[$part];
+    }
+  }
+  return $collation;
+}
+
+function arpg_collate_categories($Connection) {
+  return arpg_collate_categories_Q(arpg_get_categories($Connection));
+}
+
 function POPULATE_APATHY_PHP_test() {
   $Connection = arpg_create_apathy();
   if (xmldb_is_populated($Connection))
-    echo "Populated";
+    echo "Populated<br/>";
   else
-    die("Unable to open an XML file or a Database.");
+    die("Unable to open an XML file or a Database.<br/>");
+
+  $categories = arpg_collate_categories($Connection);
+  $path = array("Content");
+  echo arpg_pp_collated_categories(arpg_retrieve_by_path($categories,$path));
 }
 
-//POPULATE_APATHY_PHP_test();
+POPULATE_APATHY_PHP_test();
 
 ?>
