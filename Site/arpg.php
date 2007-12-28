@@ -1,7 +1,7 @@
 <?php
 
 include 'config.php';
-include 'normalize_xml.php';
+include 'xmldb.php';
 
 function arpg_get_apathy_dom() {
   $name = ARPG_XMLSource;
@@ -41,7 +41,10 @@ function arpg_pp_collated_categories($Categories) {
   $result = "<ol>";
   foreach ($Categories as $path => $subpath) {
     $result .= "<li>" . $path;
-    $result .= arpg_pp_collated_categories($subpath);
+    if (array_key_exists("@ID",$subpath))
+      $result .= " (".$subpath["@ID"].")";
+    else
+      $result .= arpg_pp_collated_categories($subpath);
     $result .= "</li>";
   }
   return $result."</ol>";
@@ -66,6 +69,7 @@ function arpg_collate_categories_Q($Categories) {
         $local[$part] = array();
       $local = &$local[$part];
     }
+    $local["@ID"] = $id;
   }
   return $collation;
 }
