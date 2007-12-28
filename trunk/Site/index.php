@@ -12,7 +12,7 @@
         <tbody>
           <tr>
             <td rowspan='2'><div id="Selector" class="Selector"></div></td>
-            <td><div id="Datum" class="Datum"></div></td>
+            <td><div id="Display" class="Display"></div></td>
           </tr>
           <tr>
             <td>
