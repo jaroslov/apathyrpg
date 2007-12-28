@@ -37,7 +37,41 @@ function arpg_get_categories($Connection) {
   return xmldb_attributesOfSet($Connection,$childNodes);
 }
 
+function arpg_visit_collated_categories($Categories,$Visitor) {
+  $result = $Visitor["Initialize"]($Categories);
+  foreach ($Categories as $path => $subpath) {
+    if (array_key_exists("@ID",$subpath))
+      $result .= $Visitor["@ID"]($path,$subpath["@ID"]);
+    else {
+      $result .= $Visitor["Before"]($path);
+      $result .= arpg_visit_collated_categories($subpath,$Visitor);
+      $result .= $Visitor["After"]($path);
+    }
+  }
+  $result .= $Visitor["Finalize"]($Categories);
+  return $result;
+}
+
+function arpg_pp_collated_visitor() {
+  function init($Cats) { return "<ol>"; };
+  function before($path) { return "<li>".$path; };
+  function at_id($path,$id) { return "<li>".$path." (".$id.")</li>"; };
+  function after($path) { return "</li>"; };
+  function finish($Cats) { return "</ol>"; };
+  $Vis = array("Initialize"=> init,
+               "Before"    => before,
+               "After"     => after,
+               "@ID"       => at_id,
+               "Finalize"  => finish);
+  return $Vis;
+}
+
 function arpg_pp_collated_categories($Categories) {
+  return arpg_visit_collated_categories($Categories,
+    arpg_pp_collated_visitor());
+}
+
+/*function arpg_pp_collated_categories($Categories) {
   $result = "<ol>";
   foreach ($Categories as $path => $subpath) {
     $result .= "<li>" . $path;
@@ -48,7 +82,7 @@ function arpg_pp_collated_categories($Categories) {
     $result .= "</li>";
   }
   return $result."</ol>";
-}
+}*/
 
 function arpg_retrieve_by_path($Categories,$path) {
   $local = &$Categories;
