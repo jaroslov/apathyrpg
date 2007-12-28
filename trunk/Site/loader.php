@@ -3,6 +3,10 @@
 include "arpg.php";
 include "ajax.php";
 
+function render_raw_text($Id) {
+  $childNodes = xmldb_getChildNodes($Id);
+}
+
 function arpg_unload_datum($Response) {
   $Connection = arpg_create_apathy();
   $datum_id = $Response->payload[0];
@@ -154,6 +158,12 @@ function arpg_initialize($Response) {
 
   $targets = array("Path");
   $payloads = array($Path);
+
+  $lres = arpg_raw_data($Response);
+  foreach ($lres["Targets"] as $target)
+    array_push($targets,$target);
+  foreach ($lres["Payloads"] as $payload)
+    array_push($payloads,$payload);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
