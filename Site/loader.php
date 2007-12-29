@@ -3,11 +3,66 @@
 include "arpg.php";
 include "ajax.php";
 
+function arpg_simple_display_map() {
+  return array(
+          "<Apathy/>"=>"<b>Apathy</b>",
+          "<and/>"=>"&amp;",
+          "<dollar/>"=>"$",
+          "<percent/>"=>"%",
+          "<rightarrow/>"=>"&rarr;",
+          "<ldquo/>"=>"&ldquo;",
+          "<rdquo/>"=>"&rdquo;",
+          "<lsquo/>"=>"&lsquo;",
+          "<rsquo/>"=>"&rsquo;",
+          "<mdash/>"=>"&mdash;",
+          "<ndash/>"=>"&ndash;",
+          "<times/>"=>"&#215;",
+          "<ouml/>"=>"&#246;",
+          "<oslash/>"=>"&#248;",
+          "<trademark/>"=>"&#8482;",
+          "<Sum/>"=>"&#8721;");
+}
+
+function arpg_simple_edit_map() {
+  return array(
+          "<Apathy/>"=>"{Apathy}",
+          "<and/>"=>"&",
+          "<dollar/>"=>"$",
+          "<percent/>"=>"%",
+          "<rightarrow/>"=>"->",
+          "<ldquo/>"=>"``",
+          "<rdquo/>"=>"''",
+          "<lsquo/>"=>"`",
+          "<rsquo/>"=>"'",
+          "<mdash/>"=>"---",
+          "<ndash/>"=>"--",
+          "<times/>"=>"{x}",
+          "<ouml/>"=>"{\\\"o}",
+          "<oslash/>"=>"{/o}",
+          "<trademark/>"=>"{TM}",
+          "<Sum/>"=>"{Sum}");
+}
+
+function arpg_inverse_map($Map) {
+  $imap = array();
+  foreach ($Map as $key => $value)
+    $imap[$value] = $key;
+  return $imap;
+}
+
+function arpg_serialize_elements_for_display($Text,$DisplayMap) {
+  $result = $Text;
+  foreach ($DisplayMap as $what => $toreplace)
+    $result = str_replace($what,$toreplace,$result);
+  return $result;
+}
+
 function arpg_editable_text($Id,$Text) {
+  $Text = arpg_serialize_elements_for_display($Text,arpg_simple_display_map());
   $result = "<span onClick=\""
       .arpg_build_ajax("loader.php","ModifyText",
         $Id."@'+this.scrollWidth+':'+this.scrollHeight+'")
-      ."\">$Text</span>";
+      ."\">".$Text."</span>";
   return $result;
 }
 
@@ -75,6 +130,9 @@ function arpg_update_text_value($Response) {
   $text_id = $Response->payload[0]->who[0];
   $text_value = $Response->payload[0]->what[0];
 
+  $text_value = arpg_serialize_elements_for_display($text_value,
+                    arpg_inverse_map(arpg_simple_edit_map()));
+
   xmldb_setNodeValueById($Connection,$text_id,$text_value);
 
   $targets = array("Log");
@@ -117,7 +175,7 @@ function arpg_modify_text($Response) {
   $editable = "<table class='ModifyTextButton'><tbody><tr>";
   $editable .= "<td colspan='2'>";
   $editable .= "<textarea rows=$height cols=$width id='TA$text_id'>";
-  $editable .= $text;
+  $editable .= arpg_serialize_elements_for_display($text,arpg_simple_display_map());
   $editable .= "</textarea><br/>";
   $editable .= "</td></tr><tr>";
   $editable .= "<td><input type='button' value='Close' onClick=\""
