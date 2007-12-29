@@ -5,45 +5,45 @@ include "ajax.php";
 
 function arpg_simple_display_map() {
   return array(
-          "<Apathy/>"=>"<b>Apathy</b>",
-          "<and/>"=>"&amp;",
-          "<dollar/>"=>"$",
-          "<percent/>"=>"%",
-          "<rightarrow/>"=>"&rarr;",
-          "<ldquo/>"=>"&ldquo;",
-          "<rdquo/>"=>"&rdquo;",
-          "<lsquo/>"=>"&lsquo;",
-          "<rsquo/>"=>"&rsquo;",
-          "<mdash/>"=>"&mdash;",
-          "<ndash/>"=>"&ndash;",
-          "<times/>"=>"&#215;",
-          "<ouml/>"=>"&#246;",
-          "<oslash/>"=>"&#248;",
-          "<trademark/>"=>"&#8482;",
-          "<Sum/>"=>"&#8721;");
+          "Apathy"=>"<b>Apathy</b>",
+          "and"=>"&amp;",
+          "dollar"=>"$",
+          "percent"=>"%",
+          "rightarrow"=>"&rarr;",
+          "ldquo"=>"&ldquo;",
+          "rdquo"=>"&rdquo;",
+          "lsquo"=>"&lsquo;",
+          "rsquo"=>"&rsquo;",
+          "mdash"=>"&mdash;",
+          "ndash"=>"&ndash;",
+          "times"=>"&#215;",
+          "ouml"=>"&#246;",
+          "oslash"=>"&#248;",
+          "trademark"=>"&#8482;",
+          "Sum"=>"&#8721;");
 }
 
 function arpg_simple_edit_map() {
   return array(
-          "<Apathy/>"=>"{Apathy}",
-          "<and/>"=>"&",
-          "<dollar/>"=>"$",
-          "<percent/>"=>"%",
-          "<rightarrow/>"=>"->",
-          "<ldquo/>"=>"``",
-          "<rdquo/>"=>"''",
-          "<lsquo/>"=>"`",
-          "<rsquo/>"=>"'",
-          "<mdash/>"=>"---",
-          "<ndash/>"=>"--",
-          "<times/>"=>"{x}",
-          "<ouml/>"=>"{\\\"o}",
-          "<oslash/>"=>"{/o}",
-          "<trademark/>"=>"{TM}",
-          "<Sum/>"=>"{Sum}");
+          "Apathy"=>"{@Apathy}",
+          "and"=>"&",
+          "dollar"=>"$",
+          "percent"=>"%",
+          "rightarrow"=>"->",
+          "ldquo"=>"``",
+          "rdquo"=>"''",
+          "lsquo"=>"`",
+          "rsquo"=>"'",
+          "mdash"=>"---",
+          "ndash"=>"--",
+          "times"=>"{@x}",
+          "ouml"=>"{@\\\"o}",
+          "oslash"=>"{@/o}",
+          "trademark"=>"{@TM}",
+          "Sum"=>"{@Sum}");
 }
 
-function arpg_inverse_map($Map) {
+function arpg_invert_map($Map) {
   $imap = array();
   foreach ($Map as $key => $value)
     $imap[$value] = $key;
@@ -51,41 +51,21 @@ function arpg_inverse_map($Map) {
 }
 
 function argp_simple_translate_for_display($Text,$Strict) {
-  switch ($Text) {
-    case "percent": return "%"; break;
-    case "ldquo": return "&ldquo;"; break;
-    case "rdquo": return "&rdquo;"; break;
-    case "lsquo": return "&lsquo;"; break;
-    case "rsquo": return "&rsquo;"; break;
-    case "mdash": return "&mdash;"; break;
-    case "ndash": return "&ndash;"; break;
-    case "dollar": return "$"; break;
-    case "and": return "&amp;"; break;
-    case "notappl": return "<em>n/a</em>"; break;
-    default:
-      if ($strict)
-        return "{@$Text}";
-      return $Text;
-  }
+  $map = arpg_simple_display_map();
+  if (array_key_exists($Text,$map))
+  return $map[$Text];
+    if ($strict)
+      return "{@$Text}";
+    return $Text;
 }
 
 function argp_simple_translate_for_editing($Text,$Strict) {
-  switch ($Text) {
-    case "percent": return "%"; break;
-    case "ldquo": return "``"; break;
-    case "rdquo": return "''"; break;
-    case "lsquo": return "`"; break;
-    case "rsquo": return "'"; break;
-    case "mdash": return "---"; break;
-    case "ndash": return "--"; break;
-    case "dollar": return "$"; break;
-    case "and": return "&"; break;
-    case "notappl": return "{@na}"; break;
-    default:
-      if ($strict)
-        return "{@$Text}";
-      return $Text;
-  }
+  $map = arpg_simple_edit_map();
+  if (array_key_exists($Text,$map))
+  return $map[$Text];
+    if ($strict)
+      return "{@$Text}";
+    return $Text;
 }
 
 function argp_serialize_roll($PseudoXML,$STran) {
@@ -149,6 +129,12 @@ function arpg_serialize_elements_for_editing($Text) {
 }
 
 function arpg_deserialize_elements_from_editing($Text) {
+  $map = argp_invert_map(arpg_simple_edit_map());
+  foreach ($map as $key => $value)
+    $Text = str_replace($key,$value,$Text);
+  // deserialize roll
+  // deserialize math
+  
   return $Text;
 }
 
