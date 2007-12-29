@@ -50,7 +50,7 @@ function arpg_inverse_map($Map) {
   return $imap;
 }
 
-function argp_simple_translate($Text,$Strict) {
+function argp_simple_translate_for_display($Text,$Strict) {
   switch ($Text) {
     case "percent": return "%"; break;
     case "ldquo": return "&ldquo;"; break;
@@ -61,15 +61,59 @@ function argp_simple_translate($Text,$Strict) {
     case "ndash": return "&ndash;"; break;
     case "dollar": return "$"; break;
     case "and": return "&amp;"; break;
+    case "notappl": return "<em>n/a</em>"; break;
     default:
       if ($strict)
         return "{@$Text}";
       return $Text;
   }
-  
 }
 
-function argp_serialize_elements_for_display_Q($PseudoXMLs) {
+function argp_simple_translate_for_editing($Text,$Strict) {
+  switch ($Text) {
+    case "percent": return "%"; break;
+    case "ldquo": return "``"; break;
+    case "rdquo": return "''"; break;
+    case "lsquo": return "`"; break;
+    case "rsquo": return "'"; break;
+    case "mdash": return "---"; break;
+    case "ndash": return "--"; break;
+    case "dollar": return "$"; break;
+    case "and": return "&"; break;
+    case "notappl": return "{@na}"; break;
+    default:
+      if ($strict)
+        return "{@$Text}";
+      return $Text;
+  }
+}
+
+function argp_serialize_roll($PseudoXML,$STran) {
+  $face = "";
+  $num = "";
+  $bns = "";
+  $bOff = "";
+  $rOff = "";
+  $mul = "";
+  $raw = "";
+  $kind = "";
+  foreach ($PseudoXML->childNodes as $rollparts) {
+    $value = $STran($rollparts->nodeValue,false);
+    switch ($rollparts->tagName) {
+      case "face": $face = $value; break;
+      case "num" : $num  = $value; break;
+      case "bns" : $bns  = $value; break;
+      case "bOff": $bOff = $value; break;
+      case "raw" : $raw  = $value; break;
+      case "rOff": $rOff = $value; break;
+      case "mul" : $mul  = $value; break;
+      case "kind": $kind = $value; break;
+    }
+  }
+  return "{@roll $raw$rOff$num"."D$face$bOff$bns$mul$kind}";
+}
+
+function argp_serialize_elements_for_Q($PseudoXMLs,$STran) {
   $result = "";
   foreach ($PseudoXMLs as $child)
     if ($child->nodeType == XML_TEXT_NODE)
@@ -77,34 +121,13 @@ function argp_serialize_elements_for_display_Q($PseudoXMLs) {
     else if ($child->nodeType == XML_ELEMENT_NODE)
       switch ($child->tagName) {
         case "root":
-          $result .= argp_serialize_elements_for_display_Q($child->childNodes);
+          $result .= argp_serialize_elements_for_Q($child->childNodes,$STran);
           break;
         case "roll":
-          $face = "";
-          $num = "";
-          $bns = "";
-          $bOff = "";
-          $rOff = "";
-          $mul = "";
-          $raw = "";
-          $kind = "";
-          foreach ($child->childNodes as $rollparts) {
-            $value = argp_simple_translate($rollparts->nodeValue,false);
-            switch ($rollparts->tagName) {
-              case "face": $face = $value; break;
-              case "num" : $num  = $value; break;
-              case "bns" : $bns  = $value; break;
-              case "bOff": $bOff = $value; break;
-              case "raw" : $raw  = $value; break;
-              case "rOff": $rOff = $value; break;
-              case "mul" : $mul  = $value; break;
-              case "kind": $kind = $value; break;
-            }
-          }
-          $result .= "{@roll $raw$rOff$num"."D$face$bOff$bns$mul$kind}";
+          $result .= argp_serialize_roll($child,$STran);
           break;
         default:
-          $result .= argp_simple_translate($child->tagName,true);
+          $result .= $STran($child->tagName,true);
       }
   return $result;
 }
@@ -113,15 +136,20 @@ function arpg_serialize_elements_for_display($Text) {
   $PseudoXMLstr = "<root>".$Text."</root>";
   $PseudoXML = new DOMDocument();
   $PseudoXML->loadXML($PseudoXMLstr);
-  return argp_serialize_elements_for_display_Q($PseudoXML->childNodes);
+  return argp_serialize_elements_for_Q($PseudoXML->childNodes,
+    argp_simple_translate_for_display);
 }
 
 function arpg_serialize_elements_for_editing($Text) {
-  return $Text;
+  $PseudoXMLstr = "<root>".$Text."</root>";
+  $PseudoXML = new DOMDocument();
+  $PseudoXML->loadXML($PseudoXMLstr);
+  return argp_serialize_elements_for_Q($PseudoXML->childNodes,
+    argp_simple_translate_for_editing);
 }
 
 function arpg_deserialize_elements_from_editing($Text) {
-  return "EDITED";
+  return $Text;
 }
 
 function arpg_editable_text($Id,$Text) {
