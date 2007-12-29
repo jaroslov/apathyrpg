@@ -121,6 +121,7 @@
   </xsl:template>
   <!-- special "C" word -->
   <xsl:template match="C"><span class="defined">C</span></xsl:template>
+  <xsl:template match="chent">&<xsl:value-of name="value" select="./@value" />;</xsl:template>
   <!-- special "plusminus" word -->
   <xsl:template match="plusminus">&#177;</xsl:template>
   <!-- special "and" word -->
