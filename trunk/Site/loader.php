@@ -175,7 +175,7 @@ function arpg_modify_text($Response) {
   $editable = "<table class='ModifyTextButton'><tbody><tr>";
   $editable .= "<td colspan='2'>";
   $editable .= "<textarea rows=$height cols=$width id='TA$text_id'>";
-  $editable .= arpg_serialize_elements_for_display($text,arpg_simple_display_map());
+  $editable .= arpg_serialize_elements_for_display($text,arpg_simple_edit_map());
   $editable .= "</textarea><br/>";
   $editable .= "</td></tr><tr>";
   $editable .= "<td><input type='button' value='Close' onClick=\""
