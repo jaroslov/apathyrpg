@@ -273,6 +273,16 @@ function arpg_ajax_collated_categories($Categories) {
   return arpg_visit_collated_categories($Categories,$Vis);
 }
 
+function arpg_load_book($Response) {
+  $Connection = arpg_create_apathy();
+
+  $Selector = "&nbsp;";
+
+  $targets = array("Selector");
+  $payloads = array($Selector);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function arpg_raw_data($Response) {
   $Connection = arpg_create_apathy();
   $categories = arpg_collate_categories($Connection);
@@ -317,7 +327,7 @@ function arpg_responder() {
       $lres = arpg_initialize($response);
       break;
     case "LoadBook":
-      $lres = arpg_raw_data($response);
+      $lres = arpg_load_book($response);
       break;
     case "RawData":
       $lres = arpg_raw_data($response);
