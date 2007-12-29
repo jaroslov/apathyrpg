@@ -133,6 +133,8 @@ function arpg_deserialize_elements_from_editing($Text) {
   foreach ($map as $key => $value)
     $Text = str_replace($key,$value,$Text);
   // deserialize roll
+  $Text = preg_replace("\{\@\s*((\d+)\s*([\+\-]))?\s*((\d+)\s*[dD]\s*(\d+))\s*(([\+\-])\s*(\d+))?\s*(x\s*(\d+))?\s*([cCsSpPdDuUfF])?\s*\}",
+      "<roll><raw>\2</raw><rOff>\3</rOff><num>\5</num><face>\6</face><bOff>\8</bOff><bns>\9</bns><mul>\g<11></mul><kind>\g<12></kind></roll>",$Text);
   // deserialize math
   
   return $Text;
