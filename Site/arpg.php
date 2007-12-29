@@ -250,18 +250,43 @@ function arpg_deserialize_elements_from_editing($Text) {
   return $Text;
 }
 
-function POPULATE_APATHY_PHP_test() {
+function argp_rebuild_xml($elements) {
+}
+
+function arpg_get_book_sections($Connection) {
+  $sections = xmldb_getElementsByTagName($Connection,"section");
+  $titles_r = xmldb_getElementsByTagNameOfSet($Connection,$sections,"title");
+  $titles = array();
+  foreach ($titles_r as $id => $title_r) {
+    $keys = array_keys($title_r);
+    $titles[$keys[0]] = $title_r[$keys[0]];
+  }
+  $titles_text = xmldb_getElementsByTagNameOfSet($Connection,$titles,"text");
+  foreach ($titles_text as $id => $text_r) {
+    $keys = array_keys($text_r);
+    echo $text_r[$keys[0]]["Value"]."<br/>";
+  }
+  return $sections;
+}
+
+function arpg_get_books($Connection) {
+  $books = xmldb_getElementsByTagName($Connection,"book");
+  return $books;
+}
+
+function arpg_POPULATE_APATHY_PHP_test() {
   $Connection = arpg_create_apathy();
   if (xmldb_is_populated($Connection))
     echo "Populated<br/>";
   else
     die("Unable to open an XML file or a Database.<br/>");
 
-  $categories = arpg_collate_categories($Connection);
-  $path = array("Content");
-  echo arpg_ajax_collated_categories($categories);
+  $books = arpg_get_books($Connection);
+  foreach ($books as $id => $book) {
+    $sections = arpg_get_book_sections($Connection,$id);
+  }
 }
 
-//POPULATE_APATHY_PHP_test();
+arpg_POPULATE_APATHY_PHP_test();
 
 ?>
