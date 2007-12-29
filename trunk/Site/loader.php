@@ -3,143 +3,6 @@
 include "arpg.php";
 include "ajax.php";
 
-function arpg_simple_display_map() {
-  return array(
-          "Apathy"=>"<b>Apathy</b>",
-          "and"=>"&amp;",
-          "dollar"=>"$",
-          "percent"=>"%",
-          "rightarrow"=>"&rarr;",
-          "ldquo"=>"&ldquo;",
-          "rdquo"=>"&rdquo;",
-          "lsquo"=>"&lsquo;",
-          "rsquo"=>"&rsquo;",
-          "mdash"=>"&mdash;",
-          "ndash"=>"&ndash;",
-          "times"=>"&#215;",
-          "ouml"=>"&#246;",
-          "oslash"=>"&#248;",
-          "trademark"=>"&#8482;",
-          "Sum"=>"&#8721;");
-}
-
-function arpg_simple_edit_map() {
-  return array(
-          "Apathy"=>"{@Apathy}",
-          "and"=>"&",
-          "dollar"=>"$",
-          "percent"=>"%",
-          "rightarrow"=>"->",
-          "ldquo"=>"``",
-          "rdquo"=>"''",
-          "lsquo"=>"`",
-          "rsquo"=>"'",
-          "mdash"=>"---",
-          "ndash"=>"--",
-          "times"=>"{@x}",
-          "ouml"=>"{@\\\"o}",
-          "oslash"=>"{@/o}",
-          "trademark"=>"{@TM}",
-          "Sum"=>"{@Sum}");
-}
-
-function arpg_invert_map($Map) {
-  $imap = array();
-  foreach ($Map as $key => $value)
-    $imap[$value] = $key;
-  return $imap;
-}
-
-function argp_simple_translate_for_display($Text,$Strict) {
-  $map = arpg_simple_display_map();
-  if (array_key_exists($Text,$map))
-  return $map[$Text];
-    if ($strict)
-      return "{@$Text}";
-    return $Text;
-}
-
-function argp_simple_translate_for_editing($Text,$Strict) {
-  $map = arpg_simple_edit_map();
-  if (array_key_exists($Text,$map))
-  return $map[$Text];
-    if ($strict)
-      return "{@$Text}";
-    return $Text;
-}
-
-function argp_serialize_roll($PseudoXML,$STran) {
-  $face = "";
-  $num = "";
-  $bns = "";
-  $bOff = "";
-  $rOff = "";
-  $mul = "";
-  $raw = "";
-  $kind = "";
-  foreach ($PseudoXML->childNodes as $rollparts) {
-    $value = $STran($rollparts->nodeValue,false);
-    switch ($rollparts->tagName) {
-      case "face": $face = $value; break;
-      case "num" : $num  = $value; break;
-      case "bns" : $bns  = $value; break;
-      case "bOff": $bOff = $value; break;
-      case "raw" : $raw  = $value; break;
-      case "rOff": $rOff = $value; break;
-      case "mul" : $mul  = $value; break;
-      case "kind": $kind = $value; break;
-    }
-  }
-  return "{@roll $raw$rOff$num"."D$face$bOff$bns$mul$kind}";
-}
-
-function argp_serialize_elements_for_Q($PseudoXMLs,$STran) {
-  $result = "";
-  foreach ($PseudoXMLs as $child)
-    if ($child->nodeType == XML_TEXT_NODE)
-      $result .= $child->nodeValue;
-    else if ($child->nodeType == XML_ELEMENT_NODE)
-      switch ($child->tagName) {
-        case "root":
-          $result .= argp_serialize_elements_for_Q($child->childNodes,$STran);
-          break;
-        case "roll":
-          $result .= argp_serialize_roll($child,$STran);
-          break;
-        default:
-          $result .= $STran($child->tagName,true);
-      }
-  return $result;
-}
-
-function arpg_serialize_elements_for_display($Text) {
-  $PseudoXMLstr = "<root>".$Text."</root>";
-  $PseudoXML = new DOMDocument();
-  $PseudoXML->loadXML($PseudoXMLstr);
-  return argp_serialize_elements_for_Q($PseudoXML->childNodes,
-    argp_simple_translate_for_display);
-}
-
-function arpg_serialize_elements_for_editing($Text) {
-  $PseudoXMLstr = "<root>".$Text."</root>";
-  $PseudoXML = new DOMDocument();
-  $PseudoXML->loadXML($PseudoXMLstr);
-  return argp_serialize_elements_for_Q($PseudoXML->childNodes,
-    argp_simple_translate_for_editing);
-}
-
-function arpg_deserialize_elements_from_editing($Text) {
-  $map = argp_invert_map(arpg_simple_edit_map());
-  foreach ($map as $key => $value)
-    $Text = str_replace($key,$value,$Text);
-  // deserialize roll
-  $Text = preg_replace("\{\@\s*((\d+)\s*([\+\-]))?\s*((\d+)\s*[dD]\s*(\d+))\s*(([\+\-])\s*(\d+))?\s*(x\s*(\d+))?\s*([cCsSpPdDuUfF])?\s*\}",
-      "<roll><raw>\2</raw><rOff>\3</rOff><num>\5</num><face>\6</face><bOff>\8</bOff><bns>\9</bns><mul>\g<11></mul><kind>\g<12></kind></roll>",$Text);
-  // deserialize math
-  
-  return $Text;
-}
-
 function arpg_editable_text($Id,$Text) {
   $Text = arpg_serialize_elements_for_display($Text);
   $result = "<span onClick=\""
@@ -215,10 +78,10 @@ function arpg_update_text_value($Response) {
 
   $text_value = arpg_deserialize_elements_from_editing($text_value);
 
-  xmldb_setNodeValueById($Connection,$text_id,$text_value);
+  //xmldb_setNodeValueById($Connection,$text_id,$text_value);
 
   $targets = array("Log");
-  $payloads = array("$text_value");
+  $payloads = array(time().": ".$text_value);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -452,6 +315,9 @@ function arpg_responder() {
     switch ($response->code[0]) {
     case "Initialize":
       $lres = arpg_initialize($response);
+      break;
+    case "LoadBook":
+      $lres = arpg_raw_data($response);
       break;
     case "RawData":
       $lres = arpg_raw_data($response);
