@@ -254,17 +254,21 @@ function argp_rebuild_xml($elements) {
 }
 
 function arpg_get_book_sections($Connection) {
+  $Sections = array();
   $sections = xmldb_getElementsByTagName($Connection,"section");
+  foreach ($sections as $id => $section)
+    echo $id."&rArr;".print_r($section,true)."<br/>";
   $titles_r = xmldb_getElementsByTagNameOfSet($Connection,$sections,"title");
   $titles = array();
   foreach ($titles_r as $id => $title_r) {
+    echo $id."&rArr;".print_r($title_r,true)."<br/>";
     $keys = array_keys($title_r);
     $titles[$keys[0]] = $title_r[$keys[0]];
   }
   $titles_text = xmldb_getElementsByTagNameOfSet($Connection,$titles,"text");
   foreach ($titles_text as $id => $text_r) {
     $keys = array_keys($text_r);
-    echo $text_r[$keys[0]]["Value"]."<br/>";
+    echo $id."&rArr;".$text_r[$keys[0]]["Value"]."<br/>";
   }
   return $sections;
 }
