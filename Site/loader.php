@@ -50,15 +50,82 @@ function arpg_inverse_map($Map) {
   return $imap;
 }
 
-function arpg_serialize_elements_for_display($Text,$DisplayMap) {
-  $result = $Text;
-  foreach ($DisplayMap as $what => $toreplace)
-    $result = str_replace($what,$toreplace,$result);
+function argp_simple_translate($Text,$Strict) {
+  switch ($Text) {
+    case "percent": return "%"; break;
+    case "ldquo": return "&ldquo;"; break;
+    case "rdquo": return "&rdquo;"; break;
+    case "lsquo": return "&lsquo;"; break;
+    case "rsquo": return "&rsquo;"; break;
+    case "mdash": return "&mdash;"; break;
+    case "ndash": return "&ndash;"; break;
+    case "dollar": return "$"; break;
+    case "and": return "&amp;"; break;
+    default:
+      if ($strict)
+        return "{@$Text}";
+      return $Text;
+  }
+  
+}
+
+function argp_serialize_elements_for_display_Q($PseudoXMLs) {
+  $result = "";
+  foreach ($PseudoXMLs as $child)
+    if ($child->nodeType == XML_TEXT_NODE)
+      $result .= $child->nodeValue;
+    else if ($child->nodeType == XML_ELEMENT_NODE)
+      switch ($child->tagName) {
+        case "root":
+          $result .= argp_serialize_elements_for_display_Q($child->childNodes);
+          break;
+        case "roll":
+          $face = "";
+          $num = "";
+          $bns = "";
+          $bOff = "";
+          $rOff = "";
+          $mul = "";
+          $raw = "";
+          $kind = "";
+          foreach ($child->childNodes as $rollparts) {
+            $value = argp_simple_translate($rollparts->nodeValue,false);
+            switch ($rollparts->tagName) {
+              case "face": $face = $value; break;
+              case "num" : $num  = $value; break;
+              case "bns" : $bns  = $value; break;
+              case "bOff": $bOff = $value; break;
+              case "raw" : $raw  = $value; break;
+              case "rOff": $rOff = $value; break;
+              case "mul" : $mul  = $value; break;
+              case "kind": $kind = $value; break;
+            }
+          }
+          $result .= "{@roll $raw$rOff$num"."D$face$bOff$bns$mul$kind}";
+          break;
+        default:
+          $result .= argp_simple_translate($child->tagName,true);
+      }
   return $result;
 }
 
+function arpg_serialize_elements_for_display($Text) {
+  $PseudoXMLstr = "<root>".$Text."</root>";
+  $PseudoXML = new DOMDocument();
+  $PseudoXML->loadXML($PseudoXMLstr);
+  return argp_serialize_elements_for_display_Q($PseudoXML->childNodes);
+}
+
+function arpg_serialize_elements_for_editing($Text) {
+  return $Text;
+}
+
+function arpg_deserialize_elements_from_editing($Text) {
+  return "EDITED";
+}
+
 function arpg_editable_text($Id,$Text) {
-  $Text = arpg_serialize_elements_for_display($Text,arpg_simple_display_map());
+  $Text = arpg_serialize_elements_for_display($Text);
   $result = "<span onClick=\""
       .arpg_build_ajax("loader.php","ModifyText",
         $Id."@'+this.scrollWidth+':'+this.scrollHeight+'")
@@ -130,8 +197,7 @@ function arpg_update_text_value($Response) {
   $text_id = $Response->payload[0]->who[0];
   $text_value = $Response->payload[0]->what[0];
 
-  $text_value = arpg_serialize_elements_for_display($text_value,
-                    arpg_inverse_map(arpg_simple_edit_map()));
+  $text_value = arpg_deserialize_elements_from_editing($text_value);
 
   xmldb_setNodeValueById($Connection,$text_id,$text_value);
 
@@ -175,7 +241,7 @@ function arpg_modify_text($Response) {
   $editable = "<table class='ModifyTextButton'><tbody><tr>";
   $editable .= "<td colspan='2'>";
   $editable .= "<textarea rows=$height cols=$width id='TA$text_id'>";
-  $editable .= arpg_serialize_elements_for_display($text,arpg_simple_edit_map());
+  $editable .= arpg_serialize_elements_for_editing($text);
   $editable .= "</textarea><br/>";
   $editable .= "</td></tr><tr>";
   $editable .= "<td><input type='button' value='Close' onClick=\""
@@ -271,7 +337,7 @@ function arpg_load_datum($Response) {
                       .implode("<br/>",$table_parts)."</td></tr>";
   }
   $fields_response .= "<tbody></table>";
-  $fields_response .= "</td><td>";
+  $fields_response .= "</td><td  valign='top'>";
   $fields_response .= "<table class='FieldResponder'>"
                     . "<thead><th>Description</th></thead><tbody><tr><td>"
                     . implode("<br/>",$description_parts)
