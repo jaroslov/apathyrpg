@@ -2,6 +2,18 @@ function realUnescape(string) {
   var str = string.replace(/\\/,"");
   return str;
 }
+function urlencode(str) {
+  str = escape(str);
+  // javascript is megagay
+  for (i = 0; i<str.length; i++) {
+    str = str.replace('%20', '+');
+    str = str.replace('+', '%2B');
+    str = str.replace('*', '%2A');
+    str = str.replace('/', '%2F');
+    str = str.replace('@', '%40');
+  }
+  return str;
+}
 function ajaxFunction(Responder,Message) {
   xmlHttp=new XMLHttpRequest();
   xmlHttp.onreadystatechange = function () {
@@ -34,10 +46,10 @@ function ajaxFunction(Responder,Message) {
     }
   }
   xmlHttp.open("GET",Responder+"?"
-    +"&Message="+Message,true);
+    +"&Message="+urlencode(Message),true);
   document.getElementById("Ajax").innerHTML
     = "<table>"
-    +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
+    +"<tr><td>Message:</td><td>"+urlencode(Message)+"</td></tr>"
     +"</table>";
   xmlHttp.send(null);
 }
