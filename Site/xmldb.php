@@ -321,6 +321,39 @@ function xmldb_getChildNodesOfSet($Connection,$Elements) {
   return xmldb_getChildNodeValuesOfSet($Connection,$Elements);
 }
 
+function xmldb_getElementIdsByIdOfSet($Connection,$IdSet) {
+  $id_set = implode(", ",$IdSet);
+  $query = "SELECT `ID` FROM ".XMLDB_DBT."
+            WHERE `ChildOf` IN (".$id_set.")";
+  $resource = mysql_query($query,$Connection);
+  $NIdSet = array();
+  while ($record = mysql_fetch_array($resource))
+    array_push($NIdSet,$record["ID"]);
+  return $NIdSet;
+}
+
+function xmldb_getNodesOfSet($Connection,$IdSet) {
+  $id_set = implode(", ",$IdSet);
+  $query = "SELECT * FROM ".XMLDB_DBT."
+            WHERE `ChildOf` IN (".$id_set.")";
+  $resource = mysql_query($query,$Connection);
+  $EltSet = array();
+  while ($record = mysql_fetch_array($resource))
+    array_push($EltSet,xmldb_convert_record($record));
+  return $EltSet;
+}
+
+function xmldb_getElementsOfSet($Connection,$IdSet) {
+  $id_set = implode(", ",$IdSet);
+  $query = "SELECT * FROM ".XMLDB_DBT."
+            WHERE `ChildOf` IN (".$id_set.")";
+  $resource = mysql_query($query,$Connection);
+  $EltSet = array();
+  while ($record = mysql_fetch_array($resource))
+    $EltSet[$record["ID"]] = xmldb_convert_record($record);
+  return $EltSet;
+}
+
 function xmldb_getChildNodeValuesOfSet($Connection,$Elements) {
   $ElementSet = "";
   $Keys = array_keys($Elements);

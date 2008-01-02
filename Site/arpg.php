@@ -196,6 +196,71 @@ function argp_serialize_roll($PseudoXML,$STran) {
   return "{@roll $raw$rOff$num"."D$face$bOff$bns$mul$kind}";
 }
 
+function argp_serialize_math($PseudoXML,$STran) {
+  $result = "";
+  if ($PseudoXML->nodeType == XML_TEXT_NODE)
+    $result .= $STran($PseudoXML->nodeValue,true);
+  else
+    switch ($PseudoXML->tagName) {
+    case "math":
+      $result .= "<math xmlns=\"http://www.w3.org/1998/Math/MathML\">";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .="</math>";
+      break;
+    case "mfrac":
+      $result .= "<mfrac>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</mfrac>";
+      break;
+    case "mrow":
+      $result .= "<mrow>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</mrow>";
+      break;
+    case "msup":
+      $result .= "<msup>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</msup>";
+      break;
+    case "mn":
+      $result .= "<mn>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</mn>";
+      break;
+    case "mo":
+      $result .= "<mo>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</mo>";
+      break;
+    case "mi":
+      $result .= "<mi>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</mi>";
+      break;
+    case "mstyle":
+      $result .= "<mstyle>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</mstyle>";
+      break;
+    case "munderover":
+      $result .= "<munderover>";
+      foreach ($PseudoXML->childNodes as $child)
+        $result .= argp_serialize_math($child,$STran);
+      $result .= "</munderover>";
+      break;
+    default: $result.=$STran($PseudoXML->tagName,true); break;
+    }
+  return $result;
+}
+
 function argp_serialize_elements_for_Q($PseudoXMLs,$STran) {
   $result = "";
   foreach ($PseudoXMLs as $child)
@@ -208,6 +273,12 @@ function argp_serialize_elements_for_Q($PseudoXMLs,$STran) {
           break;
         case "roll":
           $result .= argp_serialize_roll($child,$STran);
+          break;
+        case "define":
+          $result .= "{@define ".$child->nodeValue."}";
+          break;
+        case "math":
+          $result .= argp_serialize_math($child,$STran);
           break;
         default:
           $result .= $STran($child->tagName,true);
@@ -250,32 +321,161 @@ function arpg_deserialize_elements_from_editing($Text) {
   return $Text;
 }
 
-function argp_rebuild_xml($elements) {
+function arpg_get_all_children($Connection,$InitialSet) {
+  $all_ids = $InitialSet;
+  $id_set = $InitialSet;
+  $repetitions = 0;
+  do {
+    $old_size = sizeof($id_set);
+    $id_set = xmldb_getElementIdsByIdOfSet($Connection,$id_set);
+    foreach ($id_set as $nid)
+      array_push($all_ids,$nid);
+  } while ($old_size !== sizeof($id_set));
+  sort($all_ids);
+  $all_nodes = xmldb_getNodesOfSet($Connection,$all_ids);
+  return $all_nodes;
 }
 
-function arpg_get_book_sections($Connection) {
-  $Sections = array();
-  $sections = xmldb_getElementsByTagName($Connection,"section");
-  foreach ($sections as $id => $section)
-    echo $id."&rArr;".print_r($section,true)."<br/>";
-  $titles_r = xmldb_getElementsByTagNameOfSet($Connection,$sections,"title");
-  $titles = array();
-  foreach ($titles_r as $id => $title_r) {
-    echo $id."&rArr;".print_r($title_r,true)."<br/>";
-    $keys = array_keys($title_r);
-    $titles[$keys[0]] = $title_r[$keys[0]];
+function arpg_child_of_table($Elements) {
+  $ChildOfTable = array();
+  foreach ($Elements as $element) {
+    if (array_key_exists($element["ChildOf"],$ChildOfTable))
+      $ChildOfTable[$element["ChildOf"]][$element["ID"]] = $element;
+    else
+      $ChildOfTable[$element["ChildOf"]]
+        = array($element["ID"] => $element);
   }
-  $titles_text = xmldb_getElementsByTagNameOfSet($Connection,$titles,"text");
-  foreach ($titles_text as $id => $text_r) {
-    $keys = array_keys($text_r);
-    echo $id."&rArr;".$text_r[$keys[0]]["Value"]."<br/>";
-  }
-  return $sections;
+  return $ChildOfTable;
 }
 
-function arpg_get_books($Connection) {
-  $books = xmldb_getElementsByTagName($Connection,"book");
-  return $books;
+function arpg_build_xml_from($Connection,$what) {
+  $which = xmldb_getElementsByTagName($Connection,$what);
+  $id_set = array_keys($which);
+  $nodes = arpg_get_all_children($Connection,$id_set);
+  $cotable = arpg_child_of_table($nodes);
+  $cokeys = array_keys($cotable);
+  sort($cokeys);
+  echo implode("",arpg_render_raw_text($cotable,$cotable[$cokeys[0]]));
+}
+
+function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
+  $result = array();
+  foreach ($Ids as $Id => $Element) {
+    $children = array();
+    if (array_key_exists($Id,$ChildOfTable))
+      $children = $ChildOfTable[$Id];
+    if ($Element["Kind"] !== "element")
+      continue;
+    switch ($Element["Name"]) {
+    case "text":
+      array_push($result,
+        "<p  class='text'>"
+        .arpg_serialize_elements_for_display($Element["Value"])."</p>");
+      break;
+    case "note":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      array_push($result,
+        "<div class='note'>NOTE!".implode("",$mresult)."</div>");
+      break;
+    case "item":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      switch ($ExtraInfo) {
+        case "description-list":
+          $mhead = $mresult[0];
+          array_push($result,"<dd>".$mhead."</dd>");
+          $mrest = array_splice($mresult,1);
+          array_push($result,"<dt>".implode("</dt><dt>",$mrest)."</dt>");
+          break;
+        default:
+          $mresult = arpg_render_raw_text($ChildOfTable,$children);
+          array_push($result,
+            "<li>".implode("</li><li>",$mresult)."</li>");
+          break;
+      }
+      break;
+    case "define":
+      array_push($result,
+        implode("",arpg_render_raw_text($ChildOfTable,$children)));
+      break;
+    case "description":
+      array_push($result,
+        "<span  class='description'>"
+          .implode("",arpg_render_raw_text($ChildOfTable,$children))."</span>");
+      break;
+    case "description-list":
+      $mresult = arpg_render_raw_text($ChildOfTable,
+                                      $children,"description-list");
+      array_push($result,
+        "<dl class='description-list'>".implode("",$mresult)."</dl>");
+      break;
+    case "numbered-list":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"numbered-list");
+      array_push($result,
+        "<ol class='numbered-list'>".implode("",$mresult)."</ol>");
+      break;
+    case "itemized-list":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"itemized-list");
+      array_push($result,
+        "<ul class='itemized-list'>".implode("",$mresult)."</ul>");
+      break;
+    case "cell":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      array_push($result,"<td>".implode("</td><td>",$mresult)."</td>");
+      break;
+    case "row":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
+      array_push($result,"<tr>".implode("",$mresult)."</tr>");
+      break;
+    case "head":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
+      array_push($result,"<thead>".implode("",$mresult)."</thead>");
+      break;
+    case "table":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
+      array_push($result,
+        "<table class='figtbl'>".implode("",$mresult)."</table>");
+      break;
+    case "caption":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"itemized-list");
+      array_push($result,"<h2 class='caption'>".implode("",$mresult)."</h2>");
+      break;
+    case "figure":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"itemized-list");
+      array_push($result,"<div class='figure'>".implode("",$mresult)."</div>");
+      break;
+    case "example":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
+      array_push($result,"<div class='example'>".implode("",$mresult)."</div>");
+      break;
+    case "equation":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
+      array_push($result,
+        "<div class='equation'>".implode("",$mresult)."</div>");
+      break;
+    case "reference":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
+      foreach ($children as $child)
+        if ($child["Kind"] === "attribute"
+          and $child["Name"] === "hrid")
+          array_push($mresult,$child["Value"]);
+      array_push($result,
+        "<div class='reference'>".implode("",$mresult)."</div>");
+      break;
+    case "title":
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,"Title");
+      array_push($result,"<h1 class='title'>".implode("",$mresult)."</h1>");
+      break;
+    case "section":
+      array_push($result,
+        implode("",arpg_render_raw_text($ChildOfTable,$children)));
+      break;
+    default:
+      array_push($result,
+        "{@".$Element["Name"]."===".$Element["Value"]."}");
+      break;
+    }
+  }
+  return $result;
 }
 
 function arpg_POPULATE_APATHY_PHP_test() {
@@ -285,10 +485,7 @@ function arpg_POPULATE_APATHY_PHP_test() {
   else
     die("Unable to open an XML file or a Database.<br/>");
 
-  $books = arpg_get_books($Connection);
-  foreach ($books as $id => $book) {
-    $sections = arpg_get_book_sections($Connection,$id);
-  }
+  arpg_build_xml_from($Connection,"book");
 }
 
 arpg_POPULATE_APATHY_PHP_test();
