@@ -52,8 +52,10 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
         implode("",arpg_render_raw_text($ChildOfTable,$children)));
       break;
     case "description":
+      array_push($result,"Description($Id)");
+      array_push($result,print_r($children,true));
       array_push($result,
-        "<span  class='description'>"
+        "<span class='description'>"
           .implode("",arpg_render_raw_text($ChildOfTable,$children))."</span>");
       break;
     case "description-list":
