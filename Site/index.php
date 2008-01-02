@@ -11,11 +11,10 @@
       <table class='MainPart'>
         <tbody>
           <tr>
-            <td rowspan='2'><div id="Selector" class="Selector"></div></td>
-            <td><div id="Display" class="Display"></div></td>
-          </tr>
-          <tr>
-            <td>
+            <td rowspan='2' valign='top'>
+              <div id="Selector" class="Selector"></div>
+            </td>
+            <!--<td valign='top'>
               <table valign="top">
                 <tr valign="top">
                   <td>
@@ -35,7 +34,10 @@
                   </td>
                 </tr>
               </table>
-            </td>
+            </td>-->
+          </tr>
+          <tr>
+            <td valign='top'><div id="Display" class="Display"></div></td>
           </tr>
         </tbody>
       </table>
