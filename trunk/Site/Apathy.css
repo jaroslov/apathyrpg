@@ -136,6 +136,9 @@ a.regular-text:hover {
 }
 
 p.text {
+  border: 1px solid blue;
+  min-width: 1em;
+  min-height: 1em;
   margin: 0;
   padding: 0;
   text-align: justify;
