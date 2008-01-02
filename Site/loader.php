@@ -15,7 +15,6 @@ function arpg_editable_text($Id,$Text) {
 function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
   $result = array();
   foreach ($Ids as $Id => $Element) {
-    array_push($result,$Id);
     $children = array();
     if (array_key_exists($Id,$ChildOfTable))
       $children = $ChildOfTable[$Id];
