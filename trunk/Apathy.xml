@@ -641,7 +641,7 @@
           </figure>
           <text>Like most of character creation, skills are purchased using CP. The higher the rank, the more expensive it will be. The higher the level you want in the skill, the more expensive it will be.</text>
           <text>For those that are mathematically inclined, here is the formula for determining CP of a particular skill level and rank:</text>
-          <equation><math><mrow><munderover><mstyle><Sum/></mstyle><mrow><mi/><mo/><mn/></mrow><mrow><mi/></mrow></munderover><mi/><mo><times/></mo><mi/><mo/><mfrac><mrow><mi/><mo><times/></mo><mo/><msup><mi/><mn/></msup><mo/><mi/><mo/></mrow><mn/></mfrac></mrow></math></equation>
+          <equation><text><math><mrow><munderover><Sum/><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mn>2</mn></mfrac></mrow></math></text></equation>
           <text>For the rest of us, use this nifty table, and multiply the value listed by the rank.</text>
           <figure>
             <table>
