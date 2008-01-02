@@ -36,17 +36,13 @@ div.Path {
 }
 div.Selector {
   width: 12em;
-  height: 40em;
   padding: 1em;
   border: 1px dotted gray;
-  overflow: auto;
 }
 div.Display {
   width: 55em;
-  height: 20em;
   padding-left: 1em;
   border: 0px solid red;
-  overflow: auto;
 }
 table.MainPart {
   border-collapse: collapse;

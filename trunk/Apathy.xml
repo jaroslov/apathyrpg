@@ -38934,7 +38934,30 @@
               <description>
                 <text>Super Class</text>
               </description>
-              <text>skills are for groups of classes. These groups are:<description-list><item><description><text>Stick</text></description><text>Long Swords, Short Swords, Knives, Blunt</text></item><item><description><text>Axes</text></description><text>Axes, Blunt</text></item><item><description><text>Flexible</text></description><text>Chained, Monofilament, Ships</text></item><item><description><text>Great</text></description><text>Staves, Polearms</text></item><item><description><text>Missile</text></description><text>Ranged, Thrown</text></item></description-list>Super-Classes are Rank 2 and not Rank 1. A Super-Class may never be Specialized.</text>
+              <text>skills are for groups of classes. These groups are:</text>
+	      <description-list>
+		<item>
+		  <description><text>Stick</text></description>
+		  <text>Long Swords, Short Swords, Knives, Blunt</text>
+		</item>
+		<item>
+		  <description><text>Axes</text></description>
+		  <text>Axes, Blunt</text>
+		</item>
+		<item>
+		  <description><text>Flexible</text></description>
+		  <text>Chained, Monofilament, Ships</text>
+		</item>
+		<item>
+		  <description><text>Great</text></description>
+		  <text>Staves, Polearms</text>
+		</item>
+		<item>
+		  <description><text>Missile</text></description>
+		  <text>Ranged, Thrown</text>
+		</item>
+	      </description-list>
+	      <text>Super-Classes are Rank 2 and not Rank 1. A Super-Class may never be Specialized.</text>
             </item>
             <item>
               <description>

@@ -22,9 +22,9 @@ function ajaxFunction(Responder,Message) {
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var replies = responseXml.getElementsByTagName("response");
-      var log = document.getElementById('LogResponse');
-      if (log)
-        log.innerHTML = realUnescape(xmlR);
+      //var log = document.getElementById('LogResponse');
+      //if (log)
+      //  ;//log.innerHTML = realUnescape(xmlR);
       for (i = 0; i<replies.length; i++) {
         replies[i].normalize();
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
@@ -37,20 +37,22 @@ function ajaxFunction(Responder,Message) {
           } else if (code == "Title")
             document.title = payload;
         } else {
-          document.getElementById(target).innerHTML = realUnescape(payload);
-          var log = document.getElementById('LogResponse');
-          if (log)
-            log.innerHTML = realUnescape(xmlR);
+          var targ = document.getElementById(target);
+          if (targ)
+            targ.innerHTML = realUnescape(payload);
+          //var log = document.getElementById('LogResponse');
+          //if (log)
+            //log.innerHTML = realUnescape(xmlR);
         }
       }
     }
   }
   xmlHttp.open("GET",Responder+"?"
     +"&Message="+urlencode(Message),true);
-  document.getElementById("Ajax").innerHTML
+  /*document.getElementById("Ajax").innerHTML
     = "<table>"
     +"<tr><td>Message:</td><td>"+urlencode(Message)+"</td></tr>"
-    +"</table>";
+    +"</table>";*/
   xmlHttp.send(null);
 }
 function focusStyle(element) {
