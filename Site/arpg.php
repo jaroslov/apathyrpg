@@ -324,6 +324,11 @@ function arpg_get_all_children($Connection,$InitialSet) {
     foreach ($id_set as $nid)
       array_push($all_ids,$nid);
   } while ($old_size !== sizeof($id_set));
+  // N + 1/2 loop
+  $old_size = sizeof($id_set);
+  $id_set = xmldb_getElementIdsByIdOfSet($Connection,$id_set);
+  foreach ($id_set as $nid)
+    array_push($all_ids,$nid);
   sort($all_ids);
   $all_nodes = xmldb_getNodesOfSet($Connection,$all_ids);
   return $all_nodes;
@@ -364,7 +369,10 @@ function arpg_POPULATE_APATHY_PHP_test() {
   else
     die("Unable to open an XML file or a Database.<br/>");
 
-  arpg_build_xml_from($Connection,"book");
+  $cotable = arpg_child_table_of_id($Connection,"51452");
+  foreach ($cotable as $id => $child)
+    foreach ($child as $aid => $arr)
+      echo "$id&rArr;$aid&rarr;".print_r($arr,true)."<br/>";
 }
 
 //arpg_POPULATE_APATHY_PHP_test();

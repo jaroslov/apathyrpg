@@ -52,8 +52,6 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
         implode("",arpg_render_raw_text($ChildOfTable,$children)));
       break;
     case "description":
-      array_push($result,"Description($Id)");
-      array_push($result,print_r($children,true));
       array_push($result,
         "<span class='description'>"
           .implode("",arpg_render_raw_text($ChildOfTable,$children))."</span>");
@@ -92,11 +90,11 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
         "<table class='figtbl'>".implode("",$mresult)."</table>");
       break;
     case "caption":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"itemized-list");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children);
       array_push($result,"<h2 class='caption'>".implode("",$mresult)."</h2>");
       break;
     case "figure":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"itemized-list");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children);
       array_push($result,"<div class='figure'>".implode("",$mresult)."</div>");
       break;
     case "example":
