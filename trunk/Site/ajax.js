@@ -1,17 +1,7 @@
 function initialLoad() {
   document.title = "FO";
   ajaxFunction('loader.php',
-    '[reply][response][code]Initialize[/code][/response][/reply]');
-}
-function sqrToXML(str) {
-  // javascript is megagay
-  for (i = 0; i<str.length; i++) {
-    // oy... don't enable
-    //str = str.replace('%20', ' ');
-    str = str.replace('[', '<');
-    str = str.replace(']', '>');
-  }
-  return str;
+    '<reply><response><code>Initialize</code></response></reply>');
 }
 function realUnescape(string) {
   var str = string.replace(/\\/,"");
@@ -31,7 +21,6 @@ function urlencode(str) {
   return str;
 }
 function ajaxFunction(Responder,Message) {
-  Message = sqrToXML(Message);
   xmlHttp=new XMLHttpRequest();
   xmlHttp.onreadystatechange = function () {
     if (4 == xmlHttp.readyState) {
