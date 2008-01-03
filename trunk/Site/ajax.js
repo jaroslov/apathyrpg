@@ -1,7 +1,16 @@
-function initialLoad(element) {
-  document.title = "FHERE";
-  ajaxFunction('loader.php',
-    '<reply><response><code>Initialize</code></response></reply>');
+function initialLoad() {
+  document.title("HERE");
+  //ajaxFunction('loader.php',
+  //  '[reply][response][code]Initialize[/code][/response][/reply]');
+}
+function translateBracketXML(str) {
+  for (i = 0; i<str.length; i++) {
+    // oy... don't enable
+    //str = str.replace('%20', ' ');
+    str = str.replace('[', '<');
+    str = str.replace(']', '>');
+  }
+  return str;
 }
 function realUnescape(string) {
   var str = string.replace(/\\/,"");
@@ -21,6 +30,7 @@ function urlencode(str) {
   return str;
 }
 function ajaxFunction(Responder,Message) {
+  Message = translateBracketXML(Message);
   xmlHttp=new XMLHttpRequest();
   xmlHttp.onreadystatechange = function () {
     if (4 == xmlHttp.readyState) {
