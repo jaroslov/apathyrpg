@@ -1,3 +1,8 @@
+function initialLoad(element) {
+  document.title = "FHERE";
+  ajaxFunction('loader.php',
+    '<reply><response><code>Initialize</code></response></reply>');
+}
 function realUnescape(string) {
   var str = string.replace(/\\/,"");
   return str;
