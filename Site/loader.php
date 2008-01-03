@@ -32,7 +32,7 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
     case "note":
       $mresult = arpg_render_raw_text($ChildOfTable,$children);
       array_push($result,
-        "<div class='note'>NOTE!".implode("\n",$mresult)."</div>");
+        "<div class='note'>".implode("\n",$mresult)."</div>");
       break;
     case "item":
       $mresult = arpg_render_raw_text($ChildOfTable,$children);

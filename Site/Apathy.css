@@ -25,6 +25,7 @@ div.Log {
   overflow: auto;
   width: 15em;
   height: 15em;
+  visibility:hidden;
 }
 div.Path {
   padding: 1em;
@@ -42,11 +43,9 @@ div.Selector {
   overflow: auto;
 }
 div.Display {
-  width: 55em;
+  min-width: 55em;
   padding-left: 1em;
   border: 0px solid red;
-  height: 25em;
-  overflow: auto;
 }
 table.MainPart {
   border-collapse: collapse;
@@ -148,13 +147,13 @@ p.text {
   border-left: 1px dotted blue;
   border-right: 1px dotted blue;
   text-align: justify;
-  background-color: #F9F9FF;
+  background-color: #FCFCFF;
 }
 div.part {
   padding-left: 1em;
 }
 div.part h1.part {
-  font-size: 36pt;
+  font-size: 250%;
   position: relative;
   padding-left: -1em;
 }
@@ -162,7 +161,7 @@ div.chapter {
   padding-left: 1em;
 }
 div.chapter h1.chapter {
-  font-size: 30pt;
+  font-size: 200%;
   position: relative;
   padding-left: -1em;
 }
@@ -170,13 +169,36 @@ div.section {
   padding-left: 1em;
 }
 div.section h1.section {
-  font-size: 36pt;
+  font-size: 150%;
   position: relative;
   padding-left: -1em;
 }
 div.example {
   padding: 0;
   padding-left: 1em;
+}
+div.note {
+  border: 1px solid red;
+  padding: .5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+div.note p {
+  color: black;
+  font-weight: normal;
+  font-size: 12pt;
+}
+div.note {
+  color: red;
+  font-weight: bold;
+  font-size: 150%;
+}
+div.note:before {
+  content: "Note!";
+}
+div.note span.exclaim {
+  font-size: 125%;
+  font-weight: bold;
 }
 div.example h1 {
   font-size: 20pt;
@@ -185,7 +207,6 @@ div.example p {
   padding-left: 2em;
   text-indent: -1em;
 }
-
 dl.description-list dt {
   font-weight: bold;
   font-variant: small-caps;
