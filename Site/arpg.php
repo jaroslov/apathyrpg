@@ -396,16 +396,11 @@ function arpg_get_all_children($Connection,$InitialSet) {
   $id_set = $InitialSet;
   $repetitions = 0;
   do {
-    $old_size = sizeof($id_set);
+    $old_size = sizeof($all_ids);
     $id_set = xmldb_getElementIdsByIdOfSet($Connection,$id_set);
     foreach ($id_set as $nid)
       array_push($all_ids,$nid);
-  } while ($old_size !== sizeof($id_set));
-  // N + 1/2 loop
-  $old_size = sizeof($id_set);
-  $id_set = xmldb_getElementIdsByIdOfSet($Connection,$id_set);
-  foreach ($id_set as $nid)
-    array_push($all_ids,$nid);
+  } while ($old_size !== sizeof($all_ids));
   sort($all_ids);
   $all_nodes = xmldb_getNodesOfSet($Connection,$all_ids);
   return $all_nodes;
