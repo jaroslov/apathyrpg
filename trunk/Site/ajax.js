@@ -32,13 +32,12 @@ function ajaxFunction(Responder,Message) {
       var logresponse = document.getElementById('LogResponse');
       var log = document.getElementById('Log');
       if (log)
-        ;//log.innerHTML = realUnescape(xmlR);
+        log.innerHTML = realUnescape(xmlR);
       for (i = 0; i<replies.length; i++) {
         replies[i].normalize();
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
         var payload = replies[i].getElementsByTagName("payload")[0];
         var range = document.createRange();
-        //targ.innerHTML = payload.firstChild.nodeValue;
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
         var payload = replies[i].getElementsByTagName("payload")[0];
         if ("@" == target[0]) {
@@ -53,12 +52,6 @@ function ajaxFunction(Responder,Message) {
           if (targ) {
             range.selectNodeContents(targ);
             range.deleteContents();
-            //var domp = new DOMParser();
-            //var payXml =
-            //  domp.parseFromString(
-            //    realUnescape(payload.firstChild.nodeValue), "txt/html");
-            //insertXmlIntoTarget(targ,payXml);
-            //targ.appendChild(payload.firstChild);
             targ.innerHTML = payload.firstChild.nodeValue;
           }
           if (logresponse)
@@ -69,10 +62,12 @@ function ajaxFunction(Responder,Message) {
   }
   xmlHttp.open("GET",Responder+"?"
     +"&Message="+urlencode(Message),true);
-  document.getElementById("Ajax").innerHTML
-    = "<table>"
-    +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
-    +"</table>";
+  var ajax = document.getElementById("Ajax");
+  if (ajax)
+    ajax.innerHTML
+      = "<table>"
+      +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
+      +"</table>";
   xmlHttp.send(null);
 }
 function insertXmlIntoTarget(targ,payXml) {

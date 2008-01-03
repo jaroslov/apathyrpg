@@ -129,7 +129,7 @@ function arpg_simple_display_map() {
 function arpg_simple_edit_map() {
   return array(
           "Apathy"=>"{@Apathy}",
-          "and"=>"&",
+          "and"=>"&amp;",
           "dollar"=>"$",
           "percent"=>"%",
           "rightarrow"=>"->",
