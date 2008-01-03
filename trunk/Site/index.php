@@ -1,4 +1,6 @@
-<html>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <link rel="stylesheet" href="Apathy.css">
     <script type="text/javascript" src="ajax.js"></script>
@@ -7,6 +9,16 @@
     onLoad="ajaxFunction('loader.php',
               '<reply><response><code>Initialize</code></response></reply>')">
     <div class="Main">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <msup>
+            <mi>LVL</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>&#215;</mo>
+          <mn>1000</mn>
+        </mrow>
+      </math>
       <div id="Path" class="Path"></div>
       <table class='MainPart'>
         <tbody>
