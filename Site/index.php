@@ -14,7 +14,7 @@
             <td rowspan='2' valign='top'>
               <div id="Selector" class="Selector"></div>
             </td>
-            <!--<td valign='top'>
+            <td valign='top'>
               <table valign="top">
                 <tr valign="top">
                   <td>
@@ -34,7 +34,7 @@
                   </td>
                 </tr>
               </table>
-            </td>-->
+            </td>
           </tr>
           <tr>
             <td valign='top'><div id="Display" class="Display"></div></td>

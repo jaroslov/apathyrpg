@@ -45,6 +45,8 @@ div.Display {
   width: 55em;
   padding-left: 1em;
   border: 0px solid red;
+  height: 25em;
+  overflow: auto;
 }
 table.MainPart {
   border-collapse: collapse;
