@@ -109,6 +109,7 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
       array_push($result,
         "<div class='equation'>".implode("\n",$mresult)."</div>");
       break;
+    case "summarize":
     case "reference":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
       foreach ($children as $child)

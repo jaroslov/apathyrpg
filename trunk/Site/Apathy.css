@@ -146,6 +146,7 @@ p.text {
   border-top: 1px solid blue;
   border-left: 1px dotted blue;
   border-right: 1px dotted blue;
+  border-bottom: 1px solid gray;
   text-align: justify;
   background-color: #FCFCFF;
 }
@@ -176,6 +177,10 @@ div.section h1.section {
 div.example {
   padding: 0;
   padding-left: 1em;
+  padding: .5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border: 1px solid green;
 }
 div.note {
   border: 1px solid red;
