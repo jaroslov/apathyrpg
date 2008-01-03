@@ -23,91 +23,93 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
       $children = $ChildOfTable[$Id];
     if ($Element["Kind"] !== "element")
       continue;
+    $Order = $Element["Order"];
     switch ($Element["Name"]) {
     case "text":
-      array_push($result,"<p class='text' id='Text".$Element["ID"]."'>"
-                          .arpg_editable_text($Element["ID"],$Element["Value"])
-                          ."</p>\n");
+      $result[$Order] ="<p class='text' id='Text".$Element["ID"]."'>"
+                    .arpg_editable_text($Element["ID"],$Element["Value"])
+                    ."</p>\n";
       break;
     case "note":
       $mresult = arpg_render_raw_text($ChildOfTable,$children);
-      array_push($result,
-        "<div class='note'>".implode("\n",$mresult)."</div>");
+      $result[$Order] =
+        "<div class='note'>".implode("\n",$mresult)."</div>";
       break;
     case "item":
       $mresult = arpg_render_raw_text($ChildOfTable,$children);
       switch ($ExtraInfo) {
         case "description-list":
-          $mhead = $mresult[0];
-          array_push($result,"<dt>".$mhead."</dt>");
+          $mkeys = array_keys($mresult);
+          $mhead = $mresult[$mkeys[0]];
+          $result[$Order] = "<dt>".$mhead."</dt>";
           $mrest = array_splice($mresult,1);
-          array_push($result,"<dd>".implode("</dd>\n<dd>",$mrest)."</dd>");
+          $result[$Order] .= "<dd>".implode("</dd>\n<dd>",$mrest)."</dd>";
           break;
         default:
           $mresult = arpg_render_raw_text($ChildOfTable,$children);
-          array_push($result,
-            "<li>".implode("</li>\n<li>",$mresult)."</li>");
+          $result[$Order] = "<li>".implode("</li>\n<li>",$mresult)."</li>";
           break;
       }
       break;
     case "define":
-      array_push($result,
-        implode("\n",arpg_render_raw_text($ChildOfTable,$children)));
+      $result[$Order] = 
+        implode("\n",arpg_render_raw_text($ChildOfTable,$children));
       break;
     case "description":
-      array_push($result,
+      $result[$Order] = 
         "<span class='description'>"
-          .implode("\n",arpg_render_raw_text($ChildOfTable,$children))."</span>");
+          .implode("\n",arpg_render_raw_text($ChildOfTable,$children))."</span>";
       break;
     case "description-list":
       $mresult = arpg_render_raw_text($ChildOfTable,
                                       $children,"description-list");
-      array_push($result,
-        "<dl class='description-list'>".implode("\n",$mresult)."</dl>");
+      $result[$Order] = 
+        "<dl class='description-list'>".implode("\n",$mresult)."</dl>";
       break;
     case "numbered-list":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"numbered-list");
-      array_push($result,
-        "<ol class='numbered-list'>".implode("\n",$mresult)."</ol>");
+      $result[$Order] = 
+        "<ol class='numbered-list'>".implode("\n",$mresult)."</ol>";
       break;
     case "itemized-list":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"itemized-list");
-      array_push($result,
-        "<ul class='itemized-list'>".implode("\n",$mresult)."</ul>");
+      $result[$Order] = 
+        "<ul class='itemized-list'>".implode("\n",$mresult)."</ul>";
       break;
     case "cell":
       $mresult = arpg_render_raw_text($ChildOfTable,$children);
-      array_push($result,"<td>".implode("</td>\n<td>",$mresult)."</td>");
+      $result[$Order] = "<td>".implode("</td>\n<td>",$mresult)."</td>";
       break;
     case "row":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
-      array_push($result,"<tr>".implode("\n",$mresult)."</tr>");
+      $result[$Order] = "<tr>".implode("\n",$mresult)."</tr>";
       break;
     case "head":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
-      array_push($result,"<thead>".implode("\n",$mresult)."</thead>");
+      $result[$Order] = "<thead>".implode("\n",$mresult)."</thead>";
       break;
     case "table":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
-      array_push($result,
-        "<table class='figtbl'>".implode("\n",$mresult)."</table>");
+      $result[$Order] = 
+        "<table class='figtbl'>".implode("\n",$mresult)."</table>";
       break;
     case "caption":
       $mresult = arpg_render_raw_text($ChildOfTable,$children);
-      array_push($result,"<h2 class='caption'>".implode("\n",$mresult)."</h2>");
+      $result[$Order] = "<h2 class='caption'>".implode("\n",$mresult)."</h2>";
       break;
     case "figure":
       $mresult = arpg_render_raw_text($ChildOfTable,$children);
-      array_push($result,"<div class='figure'>".implode("\n",$mresult)."</div>");
+      $result[$Order] = "<div class='figure'>".implode("\n",$mresult)."</div>";
       break;
     case "example":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
-      array_push($result,"<div class='example'>".implode("\n",$mresult)."</div>");
+      $result[$Order]
+        = "<div class='example'>".implode("\n",$mresult)."</div>";
       break;
     case "equation":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
-      array_push($result,
-        "<div class='equation'>".implode("\n",$mresult)."</div>");
+      $result[$Order] = 
+        "<div class='equation'>".implode("\n",$mresult)."</div>";
       break;
     case "summarize":
     case "reference":
@@ -116,13 +118,13 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
         if ($child["Kind"] === "attribute"
           and $child["Name"] === "hrid")
           array_push($mresult,$child["Value"]);
-      array_push($result,
-        "<div class='reference'>".implode("\n",$mresult)."</div>");
+      $result[$Order] = 
+        "<div class='reference'>".implode("\n",$mresult)."</div>";
       break;
     case "title":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,"Title");
-      array_push($result,"<h1 class='$ExtraInfo'>"
-        .implode("\n",$mresult)."</h1>");
+      $result[$Order] = "<h1 class='$ExtraInfo'>"
+        .implode("\n",$mresult)."</h1>";
       break;
     case "section":
       // what kind of section?
@@ -132,23 +134,24 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
           and $child["Name"] === "kind")
           $kind = $child["Value"];
       $mresult = arpg_render_raw_text($ChildOfTable,$children,$kind);
-      $mhead = $mresult[0];
+      $mkeys = array_keys($mresult);
+      $mhead = $mresult[$mkeys[0]];
       $mrest = array_splice($mresult,1);
-      array_push($result,
+      $result[$Order] = 
         "<div class='$kind'>".
           $mhead
           ."<div class='section-body'>"
             .implode("\n",$mrest)
           ."</div>"
-        ."</div>");
+        ."</div>";
       break;
     case "field":
-      array_push($result,
-        implode("\n",arpg_render_raw_text($ChildOfTable,$children)));
+      $result[$Order] = 
+        implode("\n",arpg_render_raw_text($ChildOfTable,$children));
         break;
     default:
-      array_push($result,
-        "{@".$Element["Name"]."===".$Element["Value"]."}");
+      $result[$Order] = 
+        "{@".$Element["Name"]."===".$Element["Value"]."}";
       break;
     }
   }
@@ -384,9 +387,10 @@ function arpg_raw_data($Response) {
   $Connection = arpg_create_apathy();
   $categories = arpg_collate_categories($Connection);
   $Selector = arpg_ajax_collated_categories($categories["Content"]);
+  $Display = "&#160;";
 
-  $targets = array("Selector");
-  $payloads = array($Selector);
+  $targets = array("Selector","Display");
+  $payloads = array($Selector,$Display);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
