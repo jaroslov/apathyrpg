@@ -211,40 +211,49 @@ function arpg_serialize_math($PseudoXML,$STran) {
   else
     switch ($PseudoXML->tagName) {
     case "math":
-      $result .= "{@math "
-        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."}";
+      $result .= "<math xmlns=\"http://www.w3.org/1998/Math/MathML\">"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</math>";
       break;
     case "mfrac":
-      $result .= "("
-        .implode("|",arpg_serialize_math_Q($PseudoXML,$STran)).")";
+      $result .= "<mfrac>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</mfrac>";
       break;
     case "mrow":
-      $result .= "("
-        .implode("",arpg_serialize_math_Q($PseudoXML,$STran)).")";
+      $result .= "<mrow>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</mrow>";
       break;
     case "msup":
-      $result .= "("
-        .implode("^",arpg_serialize_math_Q($PseudoXML,$STran)).")";
+      $result .= "<msup>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</msup>";
       break;
     case "mn":
-      $result .= ""
-        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."";
+      $result .= "<mn>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</mn>";
       break;
     case "mo":
-      $result .= ""
-        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."";
+      $result .= "<mo>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</mo>";
       break;
     case "mi":
-      $result .= "("
-        .implode("",arpg_serialize_math_Q($PseudoXML,$STran)).")";
+      $result .= "<mi>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</mi>";
       break;
     case "mstyle":
-      $result .= ""
-        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."";
+      $result .= "<mstyle>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</mstyle>";
       break;
     case "munderover":
-      $result .= "["
-        .implode(",",arpg_serialize_math_Q($PseudoXML,$STran))."]";
+      $result .= "<munderover>"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."</munderover>";
       break;
     default: $result.=$STran["Simple"]($PseudoXML->tagName,true); break;
     }
@@ -292,22 +301,6 @@ function arpg_serialize_elements_for_editing($Text) {
     array("Simple"=>arpg_simple_translate_for_editing));
 }
 
-function arpg_build_math_tree($Text) {
-  $Text = preg_replace("/\{@math /","",$Text);
-  $Text = preg_replace("/\}/","",$Text);
-  $Text = preg_replace("/\(/","<p>",$Text);
-  $Text = preg_replace("/\)/","</p>",$Text);
-  $Text = "<m>$Text</m>";
-  $DOM = new DOMDocument();
-  $DOM->loadXML($Text);
-  return $DOM;
-}
-
-function arpg_translate_math_tree($Tree) {
-  $result = "";
-  return $result;
-}
-
 function arpg_deserialize_math($Text) {
   $pos = strpos($Text,"{@math");
   if (!$pos)
@@ -329,7 +322,8 @@ function arpg_deserialize_elements_from_editing($Text) {
     "<roll><rOff>$2</rOff><raw>$3</raw><mul>$5</mul><num>$6</num><face>$7</face><bOff>$9</bOff><bns>$10</bns><kind>$11</kind></roll>",
     $Text);
   // deserialize math
-  $Text = arpg_deserialize_math($Text);
+  // ... not enabled for now
+  // TODO: convert to pseudo-xml and analyze
   return $Text;
 }
 
