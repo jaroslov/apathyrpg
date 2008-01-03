@@ -6131,16 +6131,7 @@
             </head>
             <row>
               <cell>
-                <math>
-                  <mrow>
-                    <mfrac>
-                      <mn>
-                      </mn>
-                      <mn>
-                      </mn>
-                    </mfrac>
-                  </mrow>
-                </math>
+		<text><math><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></text>
               </cell>
               <cell>
                 <text>Character has one few actions (regular and movement) and -3 to all die rolls.</text>
@@ -6156,14 +6147,7 @@
             </row>
             <row>
               <cell>
-                <math>
-                  <mrow>
-                    <mo>
-                    </mo>
-                    <mn>
-                    </mn>
-                  </mrow>
-                </math>
+		<text><math><mrow><mi>less-than</mi><mn>0</mn></mrow></math></text>
               </cell>
               <cell>
                 <text>Character is unconscious and loses 1 Hit Point per turn until stabilized.</text>
@@ -6990,10 +6974,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Rank" table="yes"/>
-        <field colfmt="l" name="Attribute" table="yes"/>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
         <field colfmt="p{12em}" name="Occupation" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Acrobatics">
         <field name="Name" title="yes">
@@ -9871,9 +9855,9 @@
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
         <field colfmt="p{2em}" name="Character Points" table="yes"/>
-        <field colfmt="l" name="Prerequisite" table="yes"/>
-        <field colfmt="l" name="Location" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Arm Blades">
         <field name="Name" title="yes">
@@ -9896,7 +9880,7 @@
           <text>Arm Guards</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -9910,7 +9894,7 @@
           <text>Climbing Hands</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -9972,19 +9956,19 @@
           <text>Finger Blades</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Finger Sprayer">
         <field name="Name" title="yes">
           <text>Finger Sprayer</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -9998,7 +9982,7 @@
           <text>Garrote Wire</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -10028,7 +10012,7 @@
           <text>Heated Hand</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -10042,7 +10026,7 @@
           <text>Hollow Arm</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -10056,7 +10040,7 @@
           <text>Knuckle Spikes</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -10086,7 +10070,7 @@
           <text>Palm Sheild</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -10100,7 +10084,7 @@
           <text>Subdermal Watch</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -10114,7 +10098,7 @@
           <text>Tool Hands</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Arm, Hand</text>
@@ -10145,16 +10129,16 @@
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
         <field colfmt="p{2em}" name="Character Points" table="yes"/>
-        <field colfmt="l" name="Prerequisite" table="yes"/>
-        <field colfmt="l" name="Location" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Abnormal Articulation">
         <field name="Name" title="yes">
           <text>Abnormal Articulation</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10168,7 +10152,7 @@
           <text>Alternate Digestive Orifice</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10182,7 +10166,7 @@
           <text>Climate Adaptability</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10196,7 +10180,7 @@
           <text>Cosmetic Addition</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10210,7 +10194,7 @@
           <text>Dermal Backlight</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10224,7 +10208,7 @@
           <text>Detachable Joint</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10238,7 +10222,7 @@
           <text>Dynochromatic Skin</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10252,7 +10236,7 @@
           <text>Easy Maintenance</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10266,7 +10250,7 @@
           <text>Electrically Shielded Body</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10280,7 +10264,7 @@
           <text>False Bleeding</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10294,7 +10278,7 @@
           <text>Fireproof Skin</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10308,7 +10292,7 @@
           <text>Gills</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10322,7 +10306,7 @@
           <text>Hair Control</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10336,7 +10320,7 @@
           <text>Hard Skin</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10350,7 +10334,7 @@
           <text>Increased STR for muscles</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Muscle Replacement</text>
         </field>
@@ -10366,7 +10350,7 @@
           <text>Increased Twitch Fibers</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10380,7 +10364,7 @@
           <text>Increased perception (sense skin)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Nervous System Replacement</text>
         </field>
@@ -10396,7 +10380,7 @@
           <text>Increased speed of Wings</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Wings</text>
         </field>
@@ -10412,7 +10396,7 @@
           <text>Melanin Control</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10426,7 +10410,7 @@
           <text>Muscle replacement</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10440,7 +10424,7 @@
           <text>Myomer muscle fibers</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10454,7 +10438,7 @@
           <text>Nervous System replacement</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10468,7 +10452,7 @@
           <text>Pain Editior</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Nervous System Replacement</text>
         </field>
@@ -10484,7 +10468,7 @@
           <text>Radiation Immunity</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10498,7 +10482,7 @@
           <text>Reenforced Skeleton</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10512,7 +10496,7 @@
           <text>Replaced Skeleton (Flexible)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Reenforced Skeleton</text>
         </field>
@@ -10528,7 +10512,7 @@
           <text>Replaced Skeleton (Rigid)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Reenforced Skeleton</text>
         </field>
@@ -10544,7 +10528,7 @@
           <text>Self Sealing Blood Vessels</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10558,7 +10542,7 @@
           <text>Slick Skin</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10572,7 +10556,7 @@
           <text>Spongy Skin</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10586,7 +10570,7 @@
           <text>Subdermal Armor (heavy)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10600,7 +10584,7 @@
           <text>Subdermal Armor (light)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10614,7 +10598,7 @@
           <text>Subdermal Armor (med)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10628,7 +10612,7 @@
           <text>Suspended organs</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10642,7 +10626,7 @@
           <text>Tail (balancing)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10656,7 +10640,7 @@
           <text>Tail (cosmetic)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10670,7 +10654,7 @@
           <text>Tail (prehensile)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10684,7 +10668,7 @@
           <text>Toxic Skin</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Body</text>
@@ -10698,7 +10682,7 @@
           <text>Wing blades</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Wings</text>
         </field>
@@ -10714,7 +10698,7 @@
           <text>Wings</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Reenforced Skeleton</text>
         </field>
@@ -10731,16 +10715,16 @@
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
         <field colfmt="p{2em}" name="Character Points" table="yes"/>
-        <field colfmt="l" name="Prerequisite" table="yes"/>
-        <field colfmt="l" name="Location" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Advanced Audio">
         <field name="Name" title="yes">
           <text>Advanced Audio</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Hearing System</text>
         </field>
@@ -10756,7 +10740,7 @@
           <text>Advanced Olfactory System</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -10770,7 +10754,7 @@
           <text>Advanced Tasting</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Advanced Olfactory System</text>
         </field>
@@ -10786,7 +10770,7 @@
           <text>Alternate breathing passage</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -10800,7 +10784,7 @@
           <text>Anti-Dazzle</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -10816,7 +10800,7 @@
           <text>Automatic Reticle</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -10848,7 +10832,7 @@
           <text>Brain casing</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -10862,7 +10846,7 @@
           <text>Built in Translator</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Hearing System, Advanced Vocal System</text>
         </field>
@@ -10878,7 +10862,7 @@
           <text>Camera</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -10894,7 +10878,7 @@
           <text>Chemical Identification</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Advanced Olfactory System</text>
         </field>
@@ -10926,7 +10910,7 @@
           <text>Cosmetic Ear change</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -10940,7 +10924,7 @@
           <text>Cosmetic Eye Change</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -10954,7 +10938,7 @@
           <text>Cyber hair</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -10968,7 +10952,7 @@
           <text>Detachable Jaw</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -10982,7 +10966,7 @@
           <text>Directional Hearing</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Hearing System</text>
         </field>
@@ -10998,7 +10982,7 @@
           <text>Disguise Face (Facial Features)</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11012,7 +10996,7 @@
           <text>Droud</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11026,7 +11010,7 @@
           <text>Dynamic Eye Changing</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11058,7 +11042,7 @@
           <text>Extra Eye</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11072,7 +11056,7 @@
           <text>Eye Laser</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11088,7 +11072,7 @@
           <text>Eye Lights</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11104,7 +11088,7 @@
           <text>Eye Projector</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11120,7 +11104,7 @@
           <text>Eye flash</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11136,7 +11120,7 @@
           <text>Facial Hair Control</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11150,7 +11134,7 @@
           <text>False teeth</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11164,7 +11148,7 @@
           <text>Fangs</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11210,7 +11194,7 @@
           <text>Heat Sensor</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11224,7 +11208,7 @@
           <text>Horns</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11238,7 +11222,7 @@
           <text>Infra-Scanner</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11302,7 +11286,7 @@
           <text>Microscopic Vision</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11350,7 +11334,7 @@
           <text>Multispeech</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Brain Coprocessor</text>
         </field>
@@ -11366,7 +11350,7 @@
           <text>Navigation System</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>1 Brain Slot</text>
         </field>
@@ -11382,7 +11366,7 @@
           <text>Needle hair</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Cyber hair</text>
         </field>
@@ -11398,7 +11382,7 @@
           <text>Noise Filter</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Hearing System</text>
         </field>
@@ -11430,7 +11414,7 @@
           <text>Octopus Board</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Slotted Robotic Brain</text>
         </field>
@@ -11446,7 +11430,7 @@
           <text>Output Jack</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11460,7 +11444,7 @@
           <text>Posion Glands</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Fangs</text>
         </field>
@@ -11476,7 +11460,7 @@
           <text>Prehensile Tongue</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vocal System</text>
         </field>
@@ -11508,19 +11492,19 @@
           <text>Radar Detector</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Radiation Detector">
         <field name="Name" title="yes">
           <text>Radiation Detector</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11534,7 +11518,7 @@
           <text>Radio Receiver/Transmitter</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Hearing System</text>
         </field>
@@ -11550,7 +11534,7 @@
           <text>Remote Eye</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11600,7 +11584,7 @@
           <text>Spitting Glands</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11614,7 +11598,7 @@
           <text>Strengthened Bite</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>False teeth</text>
         </field>
@@ -11630,7 +11614,7 @@
           <text>Suicide system</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11662,7 +11646,7 @@
           <text>Ultrasonic Pickup</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Hearing System</text>
         </field>
@@ -11694,7 +11678,7 @@
           <text>Ventriliquist System</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vocal System</text>
         </field>
@@ -11710,7 +11694,7 @@
           <text>Vision System</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11740,7 +11724,7 @@
           <text>Vocal Screech</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vocal System</text>
         </field>
@@ -11756,7 +11740,7 @@
           <text>Vocal System</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11770,7 +11754,7 @@
           <text>Voice Modulator</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vocal System</text>
         </field>
@@ -11786,19 +11770,19 @@
           <text>Voice Projector</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Volume Control">
         <field name="Name" title="yes">
           <text>Volume Control</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vocal System</text>
         </field>
@@ -11814,7 +11798,7 @@
           <text>Whiskers</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Head</text>
@@ -11828,7 +11812,7 @@
           <text>Wideband Camera</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Vision System</text>
         </field>
@@ -11845,9 +11829,9 @@
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
         <field colfmt="p{2em}" name="Character Points" table="yes"/>
-        <field colfmt="l" name="Prerequisite" table="yes"/>
-        <field colfmt="l" name="Location" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Climbing Feet">
         <field name="Name" title="yes">
@@ -11870,7 +11854,7 @@
           <text>Durable Feet</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Leg</text>
@@ -11900,7 +11884,7 @@
           <text>Foot Blades</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Leg</text>
@@ -11914,7 +11898,7 @@
           <text>Foot Sheild</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Leg</text>
@@ -11944,7 +11928,7 @@
           <text>Heel Spike</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Leg</text>
@@ -11990,7 +11974,7 @@
           <text>Knee Spike</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Leg</text>
@@ -12004,7 +11988,7 @@
           <text>Speed increase</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Leg</text>
@@ -12019,16 +12003,16 @@
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
         <field colfmt="p{2em}" name="Character Points" table="yes"/>
-        <field colfmt="l" name="Prerequisite" table="yes"/>
-        <field colfmt="l" name="Location" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Advanced Digestive Sys">
         <field name="Name" title="yes">
           <text>Advanced Digestive Sys</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12042,7 +12026,7 @@
           <text>Armored Crotch</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12056,7 +12040,7 @@
           <text>Breathing Filter</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12070,7 +12054,7 @@
           <text>Crotch Gun</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12084,7 +12068,7 @@
           <text>Dilating Throat</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12098,7 +12082,7 @@
           <text>Durable Genitalia</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12112,7 +12096,7 @@
           <text>Hyper Kidneys</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12126,7 +12110,7 @@
           <text>Improved Breathing</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12156,7 +12140,7 @@
           <text>Metabolic Controller</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Nervous System Replacement</text>
         </field>
@@ -12172,7 +12156,7 @@
           <text>Nutrient Storage</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12186,7 +12170,7 @@
           <text>Odor Masking</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12200,7 +12184,7 @@
           <text>Oxygen Storage</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12214,7 +12198,7 @@
           <text>Prehensile Genitalia</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12276,7 +12260,7 @@
           <text>Redundant Vital System</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12290,7 +12274,7 @@
           <text>Retractible Genitals</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12304,7 +12288,7 @@
           <text>Sealing Lungs</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12334,7 +12318,7 @@
           <text>Sex Changer</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12348,7 +12332,7 @@
           <text>Silent Running</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12378,7 +12362,7 @@
           <text>Thermal Masking</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12408,7 +12392,7 @@
           <text>Waste Eliminator</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite" table="yes">
           <text>Hyper Kidneys</text>
         </field>
@@ -12424,7 +12408,7 @@
           <text>Weight Control</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Character Points" table="yes"/>
+        <field name="Character Points" table="yes"><text/></field>
         <field name="Prerequisite"  table="yes"><text>No value</text></field>
         <field name="Location" table="yes">
           <text>Torso</text>
@@ -12438,10 +12422,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Anti-armor (arrows only!)">
@@ -12629,7 +12613,7 @@
         <field colfmt="p{2em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{4em}" name="Cost" table="yes"/>
         <field colfmt="p{3em}" name="Ammo" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name=".22 LR">
         <field name="Name" title="yes">
@@ -12659,7 +12643,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".223 Remington (5.56mm NATO)">
         <field name="Name" title="yes">
@@ -12689,7 +12673,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".243 Winchester">
         <field name="Name" title="yes">
@@ -12719,7 +12703,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="6.5 mm x 55 mm Mauser">
         <field name="Name" title="yes">
@@ -12749,7 +12733,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="7.62 x 39 mm Russian">
         <field name="Name" title="yes">
@@ -12779,7 +12763,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.20</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="7 mm Remington Magnum">
         <field name="Name" title="yes">
@@ -12809,7 +12793,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.75</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".30-30">
         <field name="Name" title="yes">
@@ -12839,7 +12823,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.75</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".308 Winchester (7.62 mm NATO)">
         <field name="Name" title="yes">
@@ -12869,7 +12853,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".30-06 Springfield">
         <field name="Name" title="yes">
@@ -12899,7 +12883,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".300 Winchester Magnum">
         <field name="Name" title="yes">
@@ -12929,7 +12913,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".300 Ultra Magnum">
         <field name="Name" title="yes">
@@ -12959,7 +12943,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.40</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".375 H H Magnum">
         <field name="Name" title="yes">
@@ -12989,7 +12973,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="45-70 Gov&apos;t">
         <field name="Name" title="yes">
@@ -13019,7 +13003,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".416 Rigby">
         <field name="Name" title="yes">
@@ -13049,7 +13033,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".416 Remington">
         <field name="Name" title="yes">
@@ -13079,7 +13063,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".458 Winchester Magnum">
         <field name="Name" title="yes">
@@ -13109,7 +13093,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>8.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".500 Nitro Express">
         <field name="Name" title="yes">
@@ -13139,7 +13123,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>12.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".500 Jeffery">
         <field name="Name" title="yes">
@@ -13169,7 +13153,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>12.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".577 A-square Tyrannosaur">
         <field name="Name" title="yes">
@@ -13199,7 +13183,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>20.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".600 Nitro Express">
         <field name="Name" title="yes">
@@ -13229,7 +13213,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>20.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".700 Nitro Express">
         <field name="Name" title="yes">
@@ -13259,7 +13243,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>50.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".375-.50 Mach 5">
         <field name="Name" title="yes">
@@ -13289,7 +13273,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>10.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".50 BMG">
         <field name="Name" title="yes">
@@ -13319,7 +13303,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>4.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="12.7 - 14.5 mm Gungnir">
         <field name="Name" title="yes">
@@ -13349,7 +13333,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>20.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="15 mm Std. Light Anti-Armor Gun">
         <field name="Name" title="yes">
@@ -13379,7 +13363,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>20.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="15 mm S H Longboy">
         <field name="Name" title="yes">
@@ -13409,7 +13393,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>25.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="20 mm Lahti">
         <field name="Name" title="yes">
@@ -13439,7 +13423,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>30.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="20 mm Getemono Mini-14 *">
         <field name="Name" title="yes">
@@ -13469,7 +13453,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>100.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="25 mm S H Thunderbolt">
         <field name="Name" title="yes">
@@ -13499,7 +13483,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>40.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="25 mm S H Azazel">
         <field name="Name" title="yes">
@@ -13529,7 +13513,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>500.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="25 mm S H Fist of God">
         <field name="Name" title="yes">
@@ -13559,7 +13543,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>80.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="30 mm S H Gottdamerung">
         <field name="Name" title="yes">
@@ -13589,7 +13573,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1,000.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".223 Remington (5.56mm NATO)">
         <field name="Name" title="yes">
@@ -13619,7 +13603,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".308 Winchester (7.62 mm NATO)">
         <field name="Name" title="yes">
@@ -13649,7 +13633,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".300 Winchester Magnum">
         <field name="Name" title="yes">
@@ -13679,7 +13663,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".338 Lapua Magnum">
         <field name="Name" title="yes">
@@ -13709,7 +13693,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".409 Cheyenne Tactical">
         <field name="Name" title="yes">
@@ -13739,7 +13723,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".50 BMG">
         <field name="Name" title="yes">
@@ -13769,7 +13753,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>8.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".410 Bore">
         <field name="Name" title="yes">
@@ -13795,7 +13779,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="20 gauge or 28 gauge">
         <field name="Name" title="yes">
@@ -13821,7 +13805,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="16 gauge (rare)">
         <field name="Name" title="yes">
@@ -13847,7 +13831,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="12 gauge">
         <field name="Name" title="yes">
@@ -13873,7 +13857,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="10 gauge (modern)">
         <field name="Name" title="yes">
@@ -13899,7 +13883,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="8 gauge (archaic)">
         <field name="Name" title="yes">
@@ -13929,7 +13913,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="4 gauge (archaic)">
         <field name="Name" title="yes">
@@ -13959,7 +13943,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>10.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="20 gauge auto">
         <field name="Name" title="yes">
@@ -13989,7 +13973,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="20 gauge Lawmaker belt-fed">
         <field name="Name" title="yes">
@@ -14019,7 +14003,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="12 gauge auto">
         <field name="Name" title="yes">
@@ -14049,7 +14033,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="12 Gauge Executioner belt-fed">
         <field name="Name" title="yes">
@@ -14079,7 +14063,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="10 gauge auto">
         <field name="Name" title="yes">
@@ -14109,7 +14093,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="10 gauge BorgBuster belt-fed">
         <field name="Name" title="yes">
@@ -14139,7 +14123,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".223 Remington (5.56mm NATO)">
         <field name="Name" title="yes">
@@ -14169,7 +14153,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="7.62 x 39 mm Russian">
         <field name="Name" title="yes">
@@ -14199,7 +14183,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.20</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".30 BMG">
         <field name="Name" title="yes">
@@ -14229,7 +14213,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".308 Winchester (7.62 mm NATO)">
         <field name="Name" title="yes">
@@ -14259,7 +14243,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="blunderbuss (light)">
         <field name="Name" title="yes">
@@ -14289,7 +14273,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="blunderbuss (medium)">
         <field name="Name" title="yes">
@@ -14319,7 +14303,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>4.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="blunderbuss (heavy)">
         <field name="Name" title="yes">
@@ -14349,7 +14333,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Light Musket">
         <field name="Name" title="yes">
@@ -14379,7 +14363,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>4.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Medium Musket">
         <field name="Name" title="yes">
@@ -14409,7 +14393,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Heavy Musket">
         <field name="Name" title="yes">
@@ -14439,7 +14423,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>6.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Swivel Gun / deck gun">
         <field name="Name" title="yes">
@@ -14469,7 +14453,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="black powder rifle (light)">
         <field name="Name" title="yes">
@@ -14499,7 +14483,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>4.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="black powder rifle (medium)">
         <field name="Name" title="yes">
@@ -14529,7 +14513,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="black powder rifle (heavy)">
         <field name="Name" title="yes">
@@ -14559,7 +14543,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>6.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
     </category>
     <category name="Content/Equipment/Firearms and Guns/Hand Weapons">
@@ -14574,7 +14558,7 @@
         <field colfmt="p{2em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{4em}" name="Cost" table="yes"/>
         <field colfmt="p{3em}" name="Ammo" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name=".22 short">
         <field name="Name" title="yes">
@@ -14604,7 +14588,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".22 LR">
         <field name="Name" title="yes">
@@ -14634,7 +14618,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".32">
         <field name="Name" title="yes">
@@ -14664,7 +14648,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.15</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".38 special">
         <field name="Name" title="yes">
@@ -14694,7 +14678,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".357 magnum">
         <field name="Name" title="yes">
@@ -14724,7 +14708,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".44 magnum">
         <field name="Name" title="yes">
@@ -14754,7 +14738,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.75</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".45 Long Colt">
         <field name="Name" title="yes">
@@ -14784,7 +14768,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.75</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".454 Casull">
         <field name="Name" title="yes">
@@ -14814,7 +14798,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".455 Supermag">
         <field name="Name" title="yes">
@@ -14844,7 +14828,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".500 S W">
         <field name="Name" title="yes">
@@ -14874,7 +14858,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".500 Linebaugh">
         <field name="Name" title="yes">
@@ -14904,7 +14888,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".500 Linebaugh Long">
         <field name="Name" title="yes">
@@ -14934,7 +14918,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>4.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".25 Auto">
         <field name="Name" title="yes">
@@ -14964,7 +14948,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.20</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".32 Auto">
         <field name="Name" title="yes">
@@ -14994,7 +14978,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="9mm Parabellum">
         <field name="Name" title="yes">
@@ -15024,7 +15008,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".40 S W">
         <field name="Name" title="yes">
@@ -15054,7 +15038,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".357 Sig">
         <field name="Name" title="yes">
@@ -15084,7 +15068,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.75</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="10mm Auto">
         <field name="Name" title="yes">
@@ -15114,7 +15098,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.75</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".45 Auto">
         <field name="Name" title="yes">
@@ -15144,7 +15128,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".440 Cor-Bon">
         <field name="Name" title="yes">
@@ -15174,7 +15158,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".50 Action Express">
         <field name="Name" title="yes">
@@ -15204,7 +15188,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".223 Remington (5.56mm NATO)">
         <field name="Name" title="yes">
@@ -15234,7 +15218,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".243 Winchester">
         <field name="Name" title="yes">
@@ -15264,7 +15248,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".308 Winchester (7.62 mm NATO)">
         <field name="Name" title="yes">
@@ -15294,7 +15278,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".30-06 Springfield">
         <field name="Name" title="yes">
@@ -15324,7 +15308,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>1.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".224 BOZ">
         <field name="Name" title="yes">
@@ -15354,7 +15338,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".30 Willis Magnum">
         <field name="Name" title="yes">
@@ -15384,7 +15368,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".357 Supermagnum">
         <field name="Name" title="yes">
@@ -15414,7 +15398,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="10 x 64 Borgmaster">
         <field name="Name" title="yes">
@@ -15444,7 +15428,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>4.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="12 x 70 Borg King">
         <field name="Name" title="yes">
@@ -15474,7 +15458,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".500 Sledgehammer">
         <field name="Name" title="yes">
@@ -15504,7 +15488,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>3.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".525 Sweitzer Ultramax">
         <field name="Name" title="yes">
@@ -15534,7 +15518,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>8.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".600 NE-MOD Earth Shaker">
         <field name="Name" title="yes">
@@ -15564,7 +15548,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>100.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="10mm  Light Gyropistol">
         <field name="Name" title="yes">
@@ -15594,7 +15578,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>5.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="13mm Gyropistol">
         <field name="Name" title="yes">
@@ -15624,7 +15608,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>7.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="16mm  Heavy Gyropistol (FIRE eff.)">
         <field name="Name" title="yes">
@@ -15654,7 +15638,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>12.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="9mm Parabellum">
         <field name="Name" title="yes">
@@ -15684,7 +15668,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".45 Auto">
         <field name="Name" title="yes">
@@ -15714,7 +15698,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="9mm Parabellum">
         <field name="Name" title="yes">
@@ -15744,7 +15728,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.25</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name=".45 Auto">
         <field name="Name" title="yes">
@@ -15774,7 +15758,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>0.50</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Muzzleloading pistol">
         <field name="Name" title="yes">
@@ -15804,7 +15788,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Pepperbox">
         <field name="Name" title="yes">
@@ -15834,7 +15818,7 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
       <datum name="Duck&apos;s Foot pistol">
         <field name="Name" title="yes">
@@ -15862,20 +15846,20 @@
         <field name="Ammo" table="yes">
           <text><dollar/>2.00</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </datum>
     </category>
     <category name="Content/Equipment/Armor">
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Note" table="yes"/>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Note" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Encumbrance" table="yes"/>
         <field colfmt="p{2em}" name="Piercing" table="yes"/>
         <field colfmt="p{2em}" name="Slashing" table="yes"/>
         <field colfmt="p{2em}" name="Crushing" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="ALCAR Plate">
@@ -17824,15 +17808,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="2-Headed Axe">
@@ -18247,15 +18231,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Arab Mace">
@@ -18454,7 +18438,7 @@
         <field name="Recovery" table="yes">
           <text>2</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Hammer">
@@ -18532,7 +18516,7 @@
         <field name="Recovery" table="yes">
           <text>1</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Iron Cane">
@@ -18690,7 +18674,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Sjambok">
@@ -18893,7 +18877,7 @@
         <field name="Recovery" table="yes">
           <text>2</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
@@ -18901,15 +18885,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Damage" table="yes"/>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Boxing Irons of the Troll">
@@ -18983,7 +18967,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Brass Knuckles">
@@ -18996,8 +18980,8 @@
         <field name="Cost"  table="yes"><text>No value</text></field>
         <field name="Damage"  table="yes"><text>No value</text></field>
         <field name="Hands"  table="yes"><text>No value</text></field>
-        <field name="Minimum Strength" table="yes"/>
-        <field name="Maximum Strength Bonus" table="yes"/>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
         <field name="Recovery"  table="yes"><text>No value</text></field>
         <field description="yes" name="Description">
           <text>A piece of metal designed to fit inside a closed fist. It usually has spikes that protrude between the fingers, or rings that surround the fingers<mdash/>allowing one to deal more damage with punches.</text>
@@ -19147,15 +19131,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Ball and Chain">
@@ -19467,15 +19451,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Atalatl">
@@ -19636,7 +19620,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Iron Claws (pair)">
@@ -19757,7 +19741,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Kpinga">
@@ -19796,7 +19780,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Kris Datoh">
@@ -20161,7 +20145,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Three Section Staff">
@@ -20241,7 +20225,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Yoroidoshi Tanto">
@@ -20412,15 +20396,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Cleaver">
@@ -20832,15 +20816,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Bastard Sword">
@@ -20975,8 +20959,8 @@
         <field name="Cost"  table="yes"><text>No value</text></field>
         <field name="Damage"  table="yes"><text>No value</text></field>
         <field name="Hands"  table="yes"><text>No value</text></field>
-        <field name="Minimum Strength" table="yes"/>
-        <field name="Maximum Strength Bonus" table="yes"/>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
         <field name="Recovery"  table="yes"><text>No value</text></field>
         <field description="yes" name="Description">
           <text>A slender Spanish sword, rather like a large saber. Many of the world's greatest swordsmen relied upon this weapon to quell their foes.</text>
@@ -21345,7 +21329,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Tachi">
@@ -21434,15 +21418,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Whip">
@@ -21492,15 +21476,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Axe">
@@ -21618,7 +21602,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Short Sword">
@@ -21668,15 +21652,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Awl Pike">
@@ -21771,8 +21755,8 @@
         <field name="Cost"  table="yes"><text>No value</text></field>
         <field name="Damage"  table="yes"><text>No value</text></field>
         <field name="Hands"  table="yes"><text>No value</text></field>
-        <field name="Minimum Strength" table="yes"/>
-        <field name="Maximum Strength Bonus" table="yes"/>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
         <field name="Recovery"  table="yes"><text>No value</text></field>
         <field description="yes" name="Description">
           <text>Where most polearms consist of a smallish blade with a long handle, the Bicento is a long blade with a long handle. The blade and handle would both measure somewhere around 4 feet in length.</text>
@@ -21869,8 +21853,8 @@
         <field name="Cost"  table="yes"><text>No value</text></field>
         <field name="Damage"  table="yes"><text>No value</text></field>
         <field name="Hands"  table="yes"><text>No value</text></field>
-        <field name="Minimum Strength" table="yes"/>
-        <field name="Maximum Strength Bonus" table="yes"/>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
         <field name="Recovery"  table="yes"><text>No value</text></field>
         <field description="yes" name="Description">
           <text>A vicious Japanese polearm equipped with a cross-like blade. Though not exceptionally damaging in and out of itself, it is unmatched when wielded by a powerful warrior.</text>
@@ -22409,8 +22393,8 @@
         <field name="Cost"  table="yes"><text>No value</text></field>
         <field name="Damage"  table="yes"><text>No value</text></field>
         <field name="Hands"  table="yes"><text>No value</text></field>
-        <field name="Minimum Strength" table="yes"/>
-        <field name="Maximum Strength Bonus" table="yes"/>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
         <field name="Recovery"  table="yes"><text>No value</text></field>
         <field description="yes" name="Description">
           <text>A different type of Japanese spear designed to penetrate armor. The point is narrow and rather small. It is triangular in profile (like a stiletto), forged from hard martensitic steel. It is capable of piercing the toughest armor.</text>
@@ -22422,15 +22406,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Battle Axe">
@@ -22471,7 +22455,7 @@
         <field name="Recovery" table="yes">
           <text>3</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Great Maul">
@@ -22555,7 +22539,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Hercules Club">
@@ -22692,15 +22676,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Chinese war sword">
@@ -23059,7 +23043,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Small Sword">
@@ -23188,15 +23172,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Bo Staff">
@@ -23489,15 +23473,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
         <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Chakram (large)">
@@ -23658,7 +23642,7 @@
         <field name="Recovery" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Short Spear">
@@ -23907,8 +23891,8 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="ALICE Rig">
@@ -24429,7 +24413,7 @@
         <field name="Cost" table="yes">
           <text>0</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation">
           <text>Piercing+=5; Crushing+=5; Slashing+=5; Encumber+=1;</text>
         </field>
@@ -26198,15 +26182,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Class"/>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Damage" table="yes"/>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Hands" table="yes"/>
         <field colfmt="p{2em}" name="Minimum Strength" table="yes"/>
-        <field colfmt="l" name="Recovery" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
         <field colfmt="p{2em}" name="Range" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Blow Gun - Long">
@@ -26448,7 +26432,7 @@
         <field name="Range" table="yes">
           <text>200</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Crossbow - Heavy">
@@ -26690,7 +26674,7 @@
         <field name="Range" table="yes">
           <text>500</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Hunters Bow">
@@ -26941,13 +26925,13 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Cost" table="yes"/>
-        <field colfmt="l" name="Note" table="yes"/>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Note" table="yes"><text/></field>
         <field colfmt="p{3em}" name="Piercing" table="yes"/>
         <field colfmt="p{3em}" name="Slashing" table="yes"/>
         <field colfmt="p{3em}" name="Crushing" table="yes"/>
         <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="ALC Plate">
@@ -26971,7 +26955,7 @@
         <field name="Minimum Strength" table="yes">
           <text>10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Boron-Ceramic Plate">
@@ -26995,7 +26979,7 @@
         <field name="Minimum Strength" table="yes">
           <text>14</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Bound and Studded Wooden">
@@ -27019,7 +27003,7 @@
         <field name="Minimum Strength" table="yes">
           <text>8</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Carbon Fiber Plate">
@@ -27043,7 +27027,7 @@
         <field name="Minimum Strength" table="yes">
           <text>10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Ceramic Plate">
@@ -27067,7 +27051,7 @@
         <field name="Minimum Strength" table="yes">
           <text>14</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Densematter Plate">
@@ -27091,7 +27075,7 @@
         <field name="Minimum Strength" table="yes">
           <text>16</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Fiberglass Plate">
@@ -27115,7 +27099,7 @@
         <field name="Minimum Strength" table="yes">
           <text>8</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="G-Alloy">
@@ -27139,7 +27123,7 @@
         <field name="Minimum Strength" table="yes">
           <text>10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Hard Cast Aramid">
@@ -27163,7 +27147,7 @@
         <field name="Minimum Strength" table="yes">
           <text>14</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Heavy Wooden">
@@ -27187,7 +27171,7 @@
         <field name="Minimum Strength" table="yes">
           <text>6</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Ironbound">
@@ -27211,7 +27195,7 @@
         <field name="Minimum Strength" table="yes">
           <text>12</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Light Wooden">
@@ -27235,7 +27219,7 @@
         <field name="Minimum Strength" table="yes">
           <text>4</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Minkovsky Sheild">
@@ -27285,7 +27269,7 @@
         <field name="Minimum Strength" table="yes">
           <text>14</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="R-Polymer Plate">
@@ -27309,7 +27293,7 @@
         <field name="Minimum Strength" table="yes">
           <text>12</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Riot (transparent)">
@@ -27333,7 +27317,7 @@
         <field name="Minimum Strength" table="yes">
           <text>10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="SEB Hard">
@@ -27357,7 +27341,7 @@
         <field name="Minimum Strength" table="yes">
           <text>12</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Scale">
@@ -27381,7 +27365,7 @@
         <field name="Minimum Strength" table="yes">
           <text>10</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Steel Plate*">
@@ -27405,7 +27389,7 @@
         <field name="Minimum Strength" table="yes">
           <text>12</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
@@ -27413,15 +27397,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Air Laser">
@@ -28555,15 +28539,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Advanced Haste">
@@ -29912,15 +29896,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Beast Lore 1">
@@ -30746,15 +30730,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Alter Size">
@@ -31827,15 +31811,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Ashen cloud">
@@ -32808,15 +32792,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Animate">
@@ -33351,7 +33335,7 @@
         <field name="Target" qsummary="yes" table="yes">
           <text>auto</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Heal Major Wounds">
@@ -33415,7 +33399,7 @@
         <field name="Target" qsummary="yes" table="yes">
           <text>auto</text>
         </field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
       <datum name="Heal Wounds">
@@ -34262,15 +34246,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Aura Sight">
@@ -35328,15 +35312,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Autophase">
@@ -36614,15 +36598,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Banshee&apos;s Wail">
@@ -37677,15 +37661,15 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" qsummary="yes"/>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
         <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
         <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
-        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
         <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
         <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Absolute Zero">
@@ -38901,10 +38885,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Rank" table="yes"/>
-        <field colfmt="l" name="Attribute" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Archaic Weapons">
@@ -39091,10 +39075,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Rank" table="yes"/>
-        <field colfmt="l" name="Attribute" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Ambidexterity">
@@ -39544,10 +39528,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Rank" table="yes"/>
-        <field colfmt="l" name="Attribute" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Anticipated Dodge">
@@ -39745,10 +39729,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Rank" table="yes"/>
-        <field colfmt="l" name="Attribute" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Aimed Shot">
@@ -40179,10 +40163,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Type" table="yes"/>
-        <field colfmt="l" name="Rank" table="yes"/>
-        <field colfmt="l" name="Attribute" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Disarm">
@@ -40342,10 +40326,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Allip">
         <field name="Name" title="yes">
@@ -40580,7 +40564,7 @@
           <text>Dragon</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
         <field description="yes" name="Description">
@@ -40707,10 +40691,10 @@
           <text>Electric Beast</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Elemental - Air">
@@ -40718,10 +40702,10 @@
           <text>Elemental - Air</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Elemental - Earth">
@@ -40729,10 +40713,10 @@
           <text>Elemental - Earth</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Elemental - Fire">
@@ -40740,10 +40724,10 @@
           <text>Elemental - Fire</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Elemental - Water">
@@ -40751,10 +40735,10 @@
           <text>Elemental - Water</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Embalmed Master">
@@ -40857,10 +40841,10 @@
           <text>Ghost</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Ghoul">
@@ -41149,10 +41133,10 @@
           <text>Iron Maiden</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Knorath (minor fire demon)">
@@ -41388,10 +41372,10 @@
           <text>Quickening Demon</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Rabbat">
@@ -41418,10 +41402,10 @@
           <text>Shadow Walker</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Skeleton-greater mage">
@@ -41657,10 +41641,10 @@
           <text>Titan</text>
         </field>
         <field name="MetaTag"><text>No value</text></field>
-        <field name="Special Abilities"/>
+        <field name="Special Abilities"><text/></field>
         <field name="Statistics"><text>No value</text></field>
         <field name="Attacks"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
         <field name="Level"><text>No value</text></field>
       </datum>
       <datum name="Troll">
@@ -41778,8 +41762,8 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Rank" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
         <field name="Implementation"><text>No value</text></field>
       </default>
       <datum name="Absent Minded Genius">
@@ -43297,9 +43281,9 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Slots" table="yes"/>
-        <field colfmt="l" name="Character Points" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Slots" table="yes"><text/></field>
+        <field colfmt="l" name="Character Points" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Active Stealth">
         <field name="Name" title="yes">
@@ -44199,9 +44183,9 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Slots" table="yes"/>
-        <field colfmt="l" name="Character Points" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Slots" table="yes"><text/></field>
+        <field colfmt="l" name="Character Points" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Auto-Cannon">
         <field name="Name" title="yes">
@@ -44412,7 +44396,7 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field description="yes" name="Description"/>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="Beam Cannon">
         <field name="Name" title="yes">
@@ -44508,10 +44492,10 @@
       <default name="">
         <field name="Name"  title="yes"><text>No value</text></field>
         <field name="MetaTag"><text>No value</text></field>
-        <field colfmt="l" name="Slots" table="yes"/>
-        <field colfmt="l" name="Requirements" table="yes"/>
-        <field colfmt="l" name="Character Points" table="yes"/>
-        <field description="yes" name="Description"/>
+        <field colfmt="l" name="Slots" table="yes"><text/></field>
+        <field colfmt="l" name="Requirements" table="yes"><text/></field>
+        <field colfmt="l" name="Character Points" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
       </default>
       <datum name="A/V Recorder">
         <field name="Name" title="yes">
