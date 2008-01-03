@@ -3,7 +3,7 @@ body {
   margin: 0em;
   font-size: 12pt;
   text-align: justify;
-  font-color: black;
+  color: black;
   background-color: white;
   font-family: times, serif;
   background-image: url(pin-2x2.png);
@@ -131,12 +131,12 @@ a:hover {
 a.regular-text {
   font-size: 12pt;
   text-align: justify;
-  font-color: black;
+  color: black;
 }
 a.regular-text:hover {
   font-size: 12pt;
   text-align: justify;
-  font-color: black;
+  color: black;
 }
 
 p.text {

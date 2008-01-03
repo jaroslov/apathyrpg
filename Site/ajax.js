@@ -1,10 +1,11 @@
 function initialLoad() {
-  document.title = "FO";
   ajaxFunction('loader.php',
     '<reply><response><code>Initialize</code></response></reply>');
 }
 function realUnescape(string) {
   var str = string.replace(/\\/,"");
+  //var str = string.replace(/\</,"&lt;");
+  //var str = string.replace(/\>/,"&gt;");
   return str;
 }
 function urlencode(str) {
@@ -28,27 +29,40 @@ function ajaxFunction(Responder,Message) {
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var replies = responseXml.getElementsByTagName("response");
-      var log = document.getElementById('LogResponse');
+      var logresponse = document.getElementById('LogResponse');
+      var log = document.getElementById('Log');
       if (log)
-        log.innerHTML = realUnescape(xmlR);
+        ;//log.innerHTML = realUnescape(xmlR);
       for (i = 0; i<replies.length; i++) {
         replies[i].normalize();
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
-        var payload = replies[i].getElementsByTagName("payload")[0].firstChild.nodeValue;
+        var payload = replies[i].getElementsByTagName("payload")[0];
+        var range = document.createRange();
+        //targ.innerHTML = payload.firstChild.nodeValue;
+        var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
+        var payload = replies[i].getElementsByTagName("payload")[0];
         if ("@" == target[0]) {
           codes = target.split("@");
           code = codes[1];
           if (code == "Focus") {
             document.getElementById(codes[2]).focus();
           } else if (code == "Title")
-            document.title = payload;
+            document.title = payload.firstChild.nodeValue;
         } else {
           var targ = document.getElementById(target);
-          if (targ)
-            targ.innerHTML = realUnescape(payload);
-          var log = document.getElementById('LogResponse');
-          if (log)
-            log.innerHTML = realUnescape(xmlR);
+          if (targ) {
+            range.selectNodeContents(targ);
+            range.deleteContents();
+            //var domp = new DOMParser();
+            //var payXml =
+            //  domp.parseFromString(
+            //    realUnescape(payload.firstChild.nodeValue), "txt/html");
+            //insertXmlIntoTarget(targ,payXml);
+            //targ.appendChild(payload.firstChild);
+            targ.innerHTML = payload.firstChild.nodeValue;
+          }
+          if (logresponse)
+            logresponse.innerHTML = realUnescape(xmlR);
         }
       }
     }
@@ -61,13 +75,18 @@ function ajaxFunction(Responder,Message) {
     +"</table>";
   xmlHttp.send(null);
 }
+function insertXmlIntoTarget(targ,payXml) {
+  var node = document.createElement("p");
+  var text = document.createTextNode("FOO");
+  node.appendChild(text);
+  targ.appendChild(node);
+}
 function focusStyle(element) {
   element.style.backgroundColor = "#FFFFFF";
   element.style.borderWidth = "1px";
   element.style.borderColor = "blue";
   element.style.backgroundImage = 'url(highlight-textarea.png)';
   element.style.backgroundRepeat = 'repeat-x';
-  //element.style.backgroundAttachment = 'fixed';
   element.style.backgroundPosition = 'top';
 }
 function blurStyle(element) {

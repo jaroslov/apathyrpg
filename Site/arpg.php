@@ -179,6 +179,7 @@ function arpg_serialize_roll($PseudoXML,$STran) {
   $rOff = "";
   $mul = "";
   $raw = "";
+  $rawP = "";
   $kind = "";
   foreach ($PseudoXML->childNodes as $rollparts) {
     $value = $STran["Simple"]($rollparts->nodeValue,false);
@@ -187,19 +188,22 @@ function arpg_serialize_roll($PseudoXML,$STran) {
       case "num" : $num  = $value; break;
       case "bns" : $bns  = $value; break;
       case "bOff": $bOff = $value; break;
-      case "raw" : $raw  = $value; break;
+      case "raw" : $raw  = $value;
+        if (strlen($raw) > 0)
+          $rawP="+";
+        break;
       case "rOff": $rOff = $value; break;
       case "mul" : $mul  = $value; break;
       case "kind": $kind = $value; break;
     }
   }
-  return "{@roll $raw$rOff$num"."D$face$bOff$bns$mul$kind}";
+  return "{@roll $rOff$raw$rawP$num"."D$face$bOff$bns$mul$kind}";
 }
 
 function arpg_serialize_math_Q($PseudoXML,$STran) {
   $result = array();
   foreach ($PseudoXML->childNodes as $child)
-    array_push($result,arpg_serialize_math($child,$STran));
+    array_push($result,$STran["Math"]($child,$STran));
   return $result;
 }
 
@@ -260,6 +264,63 @@ function arpg_serialize_math($PseudoXML,$STran) {
   return $result;
 }
 
+function arpg_serialize_math_for_editing($PseudoXML,$STran) {
+  $result = "";
+
+  if ($PseudoXML->nodeType == XML_TEXT_NODE)
+    $result .= $STran["Simple"]($PseudoXML->nodeValue,true);
+  else
+    switch ($PseudoXML->tagName) {
+    case "math":
+      $result .= "[math xmlns=\"http://www.w3.org/1998/Math/MathML\"]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/math]";
+      break;
+    case "mfrac":
+      $result .= "[mfrac]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/mfrac]";
+      break;
+    case "mrow":
+      $result .= "[mrow]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/mrow]";
+      break;
+    case "msup":
+      $result .= "[msup]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/msup]";
+      break;
+    case "mn":
+      $result .= "[mn]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/mn]";
+      break;
+    case "mo":
+      $result .= "[mo]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/mo]";
+      break;
+    case "mi":
+      $result .= "[mi]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/mi]";
+      break;
+    case "mstyle":
+      $result .= "[mstyle]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/mstyle]";
+      break;
+    case "munderover":
+      $result .= "[munderover]"
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
+        ."[/munderover]";
+      break;
+    default: $result.=$STran["Simple"]($PseudoXML->tagName,true); break;
+    }
+  return $result;
+}
+
 function arpg_serialize_elements_for_Q($PseudoXMLs,$STran) {
   $result = "";
   foreach ($PseudoXMLs as $child)
@@ -277,7 +338,7 @@ function arpg_serialize_elements_for_Q($PseudoXMLs,$STran) {
           $result .= "{@define ".$child->nodeValue."}";
           break;
         case "math":
-          $result .= arpg_serialize_math($child,$STran);
+          $result .= $STran["Math"]($child,$STran);
           break;
         default:
           $result .= $STran["Simple"]($child->tagName,true);
@@ -290,7 +351,8 @@ function arpg_serialize_elements_for_display($Text) {
   $PseudoXML = new DOMDocument();
   $PseudoXML->loadXML($PseudoXMLstr);
   return arpg_serialize_elements_for_Q($PseudoXML->childNodes,
-    array("Simple"=>arpg_simple_translate_for_display));
+    array("Simple"=>arpg_simple_translate_for_display,
+          "Math"=>arpg_serialize_math));
 }
 
 function arpg_serialize_elements_for_editing($Text) {
@@ -298,7 +360,8 @@ function arpg_serialize_elements_for_editing($Text) {
   $PseudoXML = new DOMDocument();
   $PseudoXML->loadXML($PseudoXMLstr);
   return arpg_serialize_elements_for_Q($PseudoXML->childNodes,
-    array("Simple"=>arpg_simple_translate_for_editing));
+    array("Simple"=>arpg_simple_translate_for_editing,
+          "Math"=>arpg_serialize_math_for_editing));
 }
 
 function arpg_deserialize_math($Text) {
@@ -323,7 +386,8 @@ function arpg_deserialize_elements_from_editing($Text) {
     $Text);
   // deserialize math
   // ... not enabled for now
-  // TODO: convert to pseudo-xml and analyze
+  $Text = preg_replace("/\[/","<",$Text);
+  $Text = preg_replace("/\]/",">",$Text);
   return $Text;
 }
 
