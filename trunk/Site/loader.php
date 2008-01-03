@@ -5,6 +5,7 @@ include "ajax.php";
 
 function arpg_editable_text($Id,$Text) {
   $Text = arpg_serialize_elements_for_display($Text);
+  $Text = trim($Text);
   if (strlen($Text) < 1)
     $Text = "<em style='font-variant:small-caps;'>No value</em>";
   $result = "<span onClick=\""
