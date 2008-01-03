@@ -1,9 +1,10 @@
 function initialLoad() {
-  document.title("HERE");
-  //ajaxFunction('loader.php',
-  //  '[reply][response][code]Initialize[/code][/response][/reply]');
+  document.title = "FO";
+  ajaxFunction('loader.php',
+    '[reply][response][code]Initialize[/code][/response][/reply]');
 }
-function translateBracketXML(str) {
+function sqrToXML(str) {
+  // javascript is megagay
   for (i = 0; i<str.length; i++) {
     // oy... don't enable
     //str = str.replace('%20', ' ');
@@ -30,7 +31,7 @@ function urlencode(str) {
   return str;
 }
 function ajaxFunction(Responder,Message) {
-  Message = translateBracketXML(Message);
+  Message = sqrToXML(Message);
   xmlHttp=new XMLHttpRequest();
   xmlHttp.onreadystatechange = function () {
     if (4 == xmlHttp.readyState) {
