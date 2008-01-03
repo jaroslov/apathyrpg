@@ -149,7 +149,7 @@ function arpg_simple_edit_map() {
 function arpg_invert_map($Map) {
   $imap = array();
   foreach ($Map as $key => $value)
-    $imap[$value] = $key;
+    $imap[$value] = "<$key/>";
   return $imap;
 }
 
@@ -181,7 +181,7 @@ function arpg_serialize_roll($PseudoXML,$STran) {
   $raw = "";
   $kind = "";
   foreach ($PseudoXML->childNodes as $rollparts) {
-    $value = $STran($rollparts->nodeValue,false);
+    $value = $STran["Simple"]($rollparts->nodeValue,false);
     switch ($rollparts->tagName) {
       case "face": $face = $value; break;
       case "num" : $num  = $value; break;
@@ -196,67 +196,57 @@ function arpg_serialize_roll($PseudoXML,$STran) {
   return "{@roll $raw$rOff$num"."D$face$bOff$bns$mul$kind}";
 }
 
+function arpg_serialize_math_Q($PseudoXML,$STran) {
+  $result = array();
+  foreach ($PseudoXML->childNodes as $child)
+    array_push($result,arpg_serialize_math($child,$STran));
+  return $result;
+}
+
 function arpg_serialize_math($PseudoXML,$STran) {
   $result = "";
+
   if ($PseudoXML->nodeType == XML_TEXT_NODE)
-    $result .= $STran($PseudoXML->nodeValue,true);
+    $result .= $STran["Simple"]($PseudoXML->nodeValue,true);
   else
     switch ($PseudoXML->tagName) {
     case "math":
-      $result .= "<math xmlns=\"http://www.w3.org/1998/Math/MathML\">";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .="</math>";
+      $result .= "{@math "
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."}";
       break;
     case "mfrac":
-      $result .= "<mfrac>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</mfrac>";
+      $result .= "("
+        .implode("|",arpg_serialize_math_Q($PseudoXML,$STran)).")";
       break;
     case "mrow":
-      $result .= "<mrow>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</mrow>";
+      $result .= "("
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran)).")";
       break;
     case "msup":
-      $result .= "<msup>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</msup>";
+      $result .= "("
+        .implode("^",arpg_serialize_math_Q($PseudoXML,$STran)).")";
       break;
     case "mn":
-      $result .= "<mn>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</mn>";
+      $result .= ""
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."";
       break;
     case "mo":
-      $result .= "<mo>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</mo>";
+      $result .= ""
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."";
       break;
     case "mi":
-      $result .= "<mi>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</mi>";
+      $result .= "("
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran)).")";
       break;
     case "mstyle":
-      $result .= "<mstyle>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</mstyle>";
+      $result .= ""
+        .implode("",arpg_serialize_math_Q($PseudoXML,$STran))."";
       break;
     case "munderover":
-      $result .= "<munderover>";
-      foreach ($PseudoXML->childNodes as $child)
-        $result .= arpg_serialize_math($child,$STran);
-      $result .= "</munderover>";
+      $result .= "["
+        .implode(",",arpg_serialize_math_Q($PseudoXML,$STran))."]";
       break;
-    default: $result.=$STran($PseudoXML->tagName,true); break;
+    default: $result.=$STran["Simple"]($PseudoXML->tagName,true); break;
     }
   return $result;
 }
@@ -281,7 +271,7 @@ function arpg_serialize_elements_for_Q($PseudoXMLs,$STran) {
           $result .= arpg_serialize_math($child,$STran);
           break;
         default:
-          $result .= $STran($child->tagName,true);
+          $result .= $STran["Simple"]($child->tagName,true);
       }
   return $result;
 }
@@ -291,7 +281,7 @@ function arpg_serialize_elements_for_display($Text) {
   $PseudoXML = new DOMDocument();
   $PseudoXML->loadXML($PseudoXMLstr);
   return arpg_serialize_elements_for_Q($PseudoXML->childNodes,
-    arpg_simple_translate_for_display);
+    array("Simple"=>arpg_simple_translate_for_display));
 }
 
 function arpg_serialize_elements_for_editing($Text) {
@@ -299,10 +289,38 @@ function arpg_serialize_elements_for_editing($Text) {
   $PseudoXML = new DOMDocument();
   $PseudoXML->loadXML($PseudoXMLstr);
   return arpg_serialize_elements_for_Q($PseudoXML->childNodes,
-    arpg_simple_translate_for_editing);
+    array("Simple"=>arpg_simple_translate_for_editing));
+}
+
+function arpg_build_math_tree($Text) {
+  $Text = preg_replace("/\{@math /","",$Text);
+  $Text = preg_replace("/\}/","",$Text);
+  $Text = preg_replace("/\(/","<p>",$Text);
+  $Text = preg_replace("/\)/","</p>",$Text);
+  $Text = "<m>$Text</m>";
+  $DOM = new DOMDocument();
+  $DOM->loadXML($Text);
+  return $DOM;
+}
+
+function arpg_translate_math_tree($Tree) {
+  $result = "";
+  return $result;
+}
+
+function arpg_deserialize_math($Text) {
+  $pos = strpos($Text,"{@math");
+  if (!$pos)
+    return $Text;
+  $end = strpos($Text,"}",$pos);
+  $STxt = substr($Text,$pos,$end-$pos+1);
+  $Tree = arpg_build_math_tree($STxt);
+  $STxt = arpg_translate_math_tree($Tree);
+  return $Text." ".$STxt;
 }
 
 function arpg_deserialize_elements_from_editing($Text) {
+  //$Text = urldecode($Text);
   $map = arpg_invert_map(arpg_simple_edit_map());
   foreach ($map as $key => $value)
     $Text = str_replace($key,$value,$Text);
@@ -311,6 +329,7 @@ function arpg_deserialize_elements_from_editing($Text) {
     "<roll><rOff>$2</rOff><raw>$3</raw><mul>$5</mul><num>$6</num><face>$7</face><bOff>$9</bOff><bns>$10</bns><kind>$11</kind></roll>",
     $Text);
   // deserialize math
+  $Text = arpg_deserialize_math($Text);
   return $Text;
 }
 

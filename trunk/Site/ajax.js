@@ -6,7 +6,8 @@ function urlencode(str) {
   str = escape(str);
   // javascript is megagay
   for (i = 0; i<str.length; i++) {
-    str = str.replace('%20', '+');
+    // oy... don't enable
+    //str = str.replace('%20', ' ');
     str = str.replace('+', '%2B');
     str = str.replace('*', '%2A');
     str = str.replace('/', '%2F');
@@ -22,9 +23,9 @@ function ajaxFunction(Responder,Message) {
       var domp = new DOMParser();
       var responseXml = domp.parseFromString(xmlR, "text/xml");
       var replies = responseXml.getElementsByTagName("response");
-      //var log = document.getElementById('LogResponse');
-      //if (log)
-      //  ;//log.innerHTML = realUnescape(xmlR);
+      var log = document.getElementById('LogResponse');
+      if (log)
+        log.innerHTML = realUnescape(xmlR);
       for (i = 0; i<replies.length; i++) {
         replies[i].normalize();
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
@@ -40,19 +41,19 @@ function ajaxFunction(Responder,Message) {
           var targ = document.getElementById(target);
           if (targ)
             targ.innerHTML = realUnescape(payload);
-          //var log = document.getElementById('LogResponse');
-          //if (log)
-            //log.innerHTML = realUnescape(xmlR);
+          var log = document.getElementById('LogResponse');
+          if (log)
+            log.innerHTML = realUnescape(xmlR);
         }
       }
     }
   }
   xmlHttp.open("GET",Responder+"?"
     +"&Message="+urlencode(Message),true);
-  /*document.getElementById("Ajax").innerHTML
+  document.getElementById("Ajax").innerHTML
     = "<table>"
     +"<tr><td>Message:</td><td>"+urlencode(Message)+"</td></tr>"
-    +"</table>";*/
+    +"</table>";
   xmlHttp.send(null);
 }
 function focusStyle(element) {
