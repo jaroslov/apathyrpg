@@ -112,13 +112,13 @@ function arpg_simple_display_map() {
           "and"=>"&amp;",
           "dollar"=>"$",
           "percent"=>"%",
-          "rightarrow"=>"&rarr;",
-          "ldquo"=>"&ldquo;",
-          "rdquo"=>"&rdquo;",
-          "lsquo"=>"&lsquo;",
-          "rsquo"=>"&rsquo;",
-          "mdash"=>"&mdash;",
-          "ndash"=>"&ndash;",
+          "rightarrow"=>"&#8594;",
+          "ldquo"=>"&#8220;",
+          "rdquo"=>"&#8221;",
+          "lsquo"=>"&#8216;",
+          "rsquo"=>"&#8217;",
+          "mdash"=>"&#8212;",
+          "ndash"=>"&#8211;",
           "times"=>"&#215;",
           "ouml"=>"&#246;",
           "oslash"=>"&#248;",
@@ -430,6 +430,13 @@ function arpg_build_xml_from($Connection,$what) {
 
 function arpg_child_table_of_id($Connection,$Id) {
   $id_set = array($Id);
+  $nodes = arpg_get_all_children($Connection,$id_set);
+  return arpg_child_table_of_elements($nodes);
+}
+
+function arpg_child_table_of_tagname($Connection,$TagName) {
+  $which = xmldb_getElementsByTagName($Connection,$what);
+  $id_set = array_keys($which);
   $nodes = arpg_get_all_children($Connection,$id_set);
   return arpg_child_table_of_elements($nodes);
 }

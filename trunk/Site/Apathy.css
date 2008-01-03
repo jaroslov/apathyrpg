@@ -150,6 +150,30 @@ p.text {
   text-align: justify;
   background-color: #F9F9FF;
 }
+div.part {
+  padding-left: 1em;
+}
+div.part h1.part {
+  font-size: 36pt;
+  position: relative;
+  padding-left: -1em;
+}
+div.chapter {
+  padding-left: 1em;
+}
+div.chapter h1.chapter {
+  font-size: 30pt;
+  position: relative;
+  padding-left: -1em;
+}
+div.section {
+  padding-left: 1em;
+}
+div.section h1.section {
+  font-size: 36pt;
+  position: relative;
+  padding-left: -1em;
+}
 div.example {
   padding: 0;
   padding-left: 1em;
