@@ -428,6 +428,6 @@ function arpg_responder() {
   return arpg_build_responses($targets,$payloads);
 }
 
-echo arpg_responder();
+echo argp_safe_response(arpg_responder());
 
 ?>

@@ -108,4 +108,10 @@ function arpg_build_ajax($Responder,$Codes,$Payloads) {
   return "ajaxFunction('$Responder','$result')";
 }
 
+function argp_safe_response($Text) {
+  //$Text = str_replace("<","[",$Text);
+  //$Text = str_replace(">","]",$Text);
+  return $Text;
+}
+
 ?>
