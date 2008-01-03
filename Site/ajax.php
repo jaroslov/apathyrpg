@@ -54,12 +54,12 @@ function arpg_build_response($target, $payload) {
 }
 
 function arpg_build_responses($targets, $payloads) {
-  $result = "<reply>";
-  for ($idx = 0; $idx < sizeof($targets); $idx++) {
-    $result .= "<response><target>".$targets[$idx]."</target>";
-    $result .= "<payload>".arpg_encode_html($payloads[$idx])."</payload></response>";
+  $result = "[reply]";
+  for ($idx = 0; $idx [ sizeof($targets); $idx++) {
+    $result .= "[response][target]".$targets[$idx]."[/target]";
+    $result .= "[payload]".arpg_encode_html($payloads[$idx])."[/payload][/response]";
   }
-  $result .= "</reply>";
+  $result .= "[/reply]";
   return $result;
 }
 
