@@ -11,13 +11,13 @@ function arpg_get_environment() {
 }
 
 function arpg_encode_html ($html) {
-  $html = str_replace("&","&amp;",$html);
-  $html = str_replace("<","&lt;",$html);
-  $html = str_replace(">","&gt;",$html);
+  $html = preg_replace("/\&/","&amp;",$html);
+  $html = preg_replace("/\</","&lt;",$html);
+  $html = preg_replace("/\>/","&gt;",$html);
   return $html;
 }
 
-function arpg_pseudo_html ($html) {
+/*function arpg_pseudo_html ($html) {
   $html = str_replace("<lsquo/>","&lsquo;",$html);
   $html = str_replace("<ldquo/>","&ldquo;",$html);
   $html = str_replace("<rsquo/>","&rsquo;",$html);
@@ -37,7 +37,7 @@ function arpg_depseudo_html ($html) {
   $html = str_replace("&amp;];","]",$html);
   $html = str_replace("&amp;","&",$html);
   return $html;
-}
+}*/
 
 function arpg_build_empty_response() {
   $targets = array();
@@ -56,8 +56,12 @@ function arpg_build_response($target, $payload) {
 function arpg_build_responses($targets, $payloads) {
   $result = "<reply>";
   for ($idx = 0; $idx < sizeof($targets); $idx++) {
+    $payload = $payloads[$idx];
+    $payload = arpg_encode_html($payload);
     $result .= "<response><target>".$targets[$idx]."</target>";
-    $result .= "<payload>".arpg_encode_html($payloads[$idx])."</payload></response>";
+    $result .= "<payload>".$payload
+      //.arpg_encode_html($payloads[$idx])
+      ."</payload></response>";
   }
   $result .= "</reply>";
   return $result;
@@ -105,13 +109,8 @@ function arpg_build_ajax($Responder,$Codes,$Payloads) {
       .$Payloads[$cdx]
       ."</payload></response>";
   $result .= "</reply>";
+  $result = arpg_encode_html($result);
   return "ajaxFunction('$Responder','$result')";
-}
-
-function argp_safe_response($Text) {
-  //$Text = str_replace("<","[",$Text);
-  //$Text = str_replace(">","]",$Text);
-  return $Text;
 }
 
 ?>

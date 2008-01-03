@@ -8,7 +8,7 @@ function arpg_editable_text($Id,$Text) {
   $Text = trim($Text);
   if (strlen($Text) < 1)
     $Text = "<em style='font-variant:small-caps;'>No value</em>";
-  $result = "<span onClick=\""
+  $result = "<span onclick=\""
       .arpg_build_ajax("loader.php","ModifyText",
         $Id."@'+this.scrollWidth+':'+this.scrollHeight+'")
       ."\">".$Text."</span>";
@@ -145,7 +145,7 @@ function arpg_update_text_value($Response) {
 
   $text_value = arpg_deserialize_elements_from_editing($text_value);
 
-  //xmldb_setNodeValueById($Connection,$text_id,$text_value);
+  xmldb_setNodeValueById($Connection,$text_id,$text_value);
 
   $targets = array("Log");
   $payloads = array(time().": ".$text_value);
@@ -181,20 +181,24 @@ function arpg_modify_text($Response) {
   $width /= $emw_guess;
   $height /= $emh_guess;
   if ($width < 25) $width = 25;
-  if ($height < 3) $height = 3;
+  if ($height < 6) $height = 6;
+  $height *= $emh_guess;
+  $width *= $emw_guess;
 
 
   $editable = "<table class='ModifyTextButton'><tbody><tr>";
   $editable .= "<td colspan='2'>";
-  $editable .= "<textarea rows=$height cols=$width id='TA$text_id'>";
+  $editable .= "<textarea "
+    ."style='height:".$height."px;width:".$width."px;' "
+    ."id='TA$text_id'>";
   $editable .= arpg_serialize_elements_for_editing($text);
-  $editable .= "</textarea><br/>";
+  $editable .= "</textarea>";
   $editable .= "</td></tr><tr>";
-  $editable .= "<td><input type='button' value='Close' onClick=\""
+  $editable .= "<td><input type='button' value='Close' onclick=\""
                   .arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
                   class='ModifyTextButton'/></td>";
   $editable .= "<td align='right'><input type='button' value='Update Database'
-                  onClick=\"".arpg_build_ajax("loader.php","UpdateTextValue",
+                  onclick=\"".arpg_build_ajax("loader.php","UpdateTextValue",
                                 "<who>$text_id</who><what>'+"
                                 ."document.getElementById('TA$text_id').value+'"
                                 ."</what>"
@@ -215,7 +219,7 @@ function arpg_unload_datum($Response) {
   foreach ($childNodes as $id => $child)
     if ($child["Kind"] === "attribute" and $child["Name"] === "name")
       $name = $child["Value"];
-  $datum_responder = "<a onClick=\""
+  $datum_responder = "<a onclick=\""
         .arpg_build_ajax("loader.php","LoadDatum",$datum_id)
         ."\">".$name."</a>";
 
@@ -265,7 +269,7 @@ function arpg_load_datum($Response) {
   $title_parts = arpg_render_raw_text($ChildOfTable,$ChildOfTable[$title]);
   $description_parts = arpg_render_raw_text($ChildOfTable,$ChildOfTable[$description]);
 
-  $datum_responder = "<a onClick=\""
+  $datum_responder = "<a onclick=\""
     .arpg_build_ajax("loader.php","UnloadDatum",$datum_id)
     ."\">".$titleVal["Value"]."</a>";
 
@@ -284,7 +288,7 @@ function arpg_load_datum($Response) {
                       .$allattrs[$id]["name"]["Value"]."</td><td>"
                       .implode("<br/>",$table_parts)."</td></tr>";
   }
-  $fields_response .= "<tbody></table>";
+  $fields_response .= "</tbody></table>";
   $fields_response .= "</td><td  valign='top'>";
   $fields_response .= "<table class='FieldResponder'>"
                     . "<thead><th>Description</th></thead><tbody><tr><td>"
@@ -309,7 +313,7 @@ function arpg_load_category($Response) {
     if ($child["Kind"] === "element"
       and $child["Name"] === "datum") {
         $Display .= "<div class='Datum'>";
-        $Display .= "<span id='Datum$id'><a onClick=\"";
+        $Display .= "<span id='Datum$id'><a onclick=\"";
         $Display .= arpg_build_ajax("loader.php","LoadDatum",$id);
         $Display .= "\">".$attrs[$id]["name"]["Value"]."</a></span>";
         $Display .= "<div id='Fields$id'><em>Click title to expand.</em></div>";
@@ -327,7 +331,7 @@ function arpg_ajax_collated_categories($Categories) {
   function before($path,$CurPath)
     { return "<li><span>".$path."</span>"; };
   function at_id($path,$id,$CurPath)
-    { return "<li><a onClick=\""
+    { return "<li><a onclick=\""
         .arpg_build_ajax("loader.php","LoadCategory",$id)
         ."\">".$path."</a></li>"; };
   function after($path,$CurPath)
@@ -363,14 +367,14 @@ function arpg_raw_data($Response) {
 }
 
 function arpg_initialize($Response) {
-  $Books = "<a onClick=\""
+  $Books = "<a onclick=\""
     .arpg_build_ajax("loader.php","LoadBook","")
     ."\">Books</a>";
-  $RawData = "<a onClick=\""
+  $RawData = "<a onclick=\""
     .arpg_build_ajax("loader.php","RawData","")
     ."\">Raw Data</a>";
 
-  $Path = "Apathy Role Playing Game &raquo; $Books | $RawData";
+  $Path = "Apathy Role Playing Game &#187; $Books | $RawData";
 
   $targets = array("Path");
   $payloads = array($Path);
@@ -428,6 +432,6 @@ function arpg_responder() {
   return arpg_build_responses($targets,$payloads);
 }
 
-echo argp_safe_response(arpg_responder());
+echo arpg_responder();
 
 ?>
