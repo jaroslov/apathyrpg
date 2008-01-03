@@ -109,6 +109,7 @@ function arpg_collate_categories($Connection) {
 function arpg_simple_display_map() {
   return array(
           "Apathy"=>"<b>Apathy</b>",
+          "notappl"=>"<em>n/a</em>",
           "and"=>"&amp;",
           "dollar"=>"$",
           "percent"=>"%",
@@ -129,6 +130,7 @@ function arpg_simple_display_map() {
 function arpg_simple_edit_map() {
   return array(
           "Apathy"=>"{@Apathy}",
+          "notappl"=>"{@na}",
           "and"=>"&amp;",
           "dollar"=>"$",
           "percent"=>"%",
