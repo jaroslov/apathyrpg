@@ -131,9 +131,15 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
         if ($child["Kind"] === "attribute"
           and $child["Name"] === "kind")
           $kind = $child["Value"];
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,$kind);
+      $mhead = $mresult[0];
+      $mrest = array_splice($mresult,1);
       array_push($result,
-        "<div class='$kind'>"
-        .implode("\n",arpg_render_raw_text($ChildOfTable,$children,$kind))
+        "<div class='$kind'>".
+          $mhead
+          ."<div class='section-body'>"
+            .implode("\n",$mrest)
+          ."</div>"
         ."</div>");
       break;
     case "field":
