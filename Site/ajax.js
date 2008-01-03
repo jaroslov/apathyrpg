@@ -71,7 +71,7 @@ function ajaxFunction(Responder,Message) {
     +"&Message="+urlencode(Message),true);
   document.getElementById("Ajax").innerHTML
     = "<table>"
-    +"<tr><td>Message:</td><td>"+urlencode(Message)+"</td></tr>"
+    +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
     +"</table>";
   xmlHttp.send(null);
 }
