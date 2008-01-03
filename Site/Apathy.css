@@ -146,9 +146,12 @@ p.text {
   border-top: 1px solid blue;
   border-left: 1px dotted blue;
   border-right: 1px dotted blue;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #EEE;
   text-align: justify;
   background-color: #FCFCFF;
+}
+div.section-body {
+  padding-left: 1em;
 }
 div.part {
   padding-left: 1em;
