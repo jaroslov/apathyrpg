@@ -467,7 +467,7 @@ function arpg_ajax_collated_categories($Categories) {
                "After"     => after,
                "@ID"       => at_id,
                "Finalize"  => finish);
-  return arpg_visit_collated_categories($Categories,$Vis);
+  return arpg_visit_collated_categories($Categories,$Vis,"");
 }
 
 function arpg_load_book($Response) {

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(1);
+
 include 'config.php';
 include 'xmldb.php';
 
@@ -50,7 +52,7 @@ function arpg_visit_collated_categories($Categories,$Visitor,$CurPath) {
       $result .= $Visitor["After"]($path,$CurPath);
     }
   }
-  $result .= $Visitor["Finalize"]($Categories);
+  $result .= $Visitor["Finalize"]($Categories,$CurPath);
   return $result;
 }
 
@@ -355,10 +357,14 @@ function arpg_serialize_elements_for_Q($PseudoXMLs,$STran) {
 function arpg_serialize_elements_for_display($Text) {
   $PseudoXMLstr = "<root>".$Text."</root>";
   $PseudoXML = new DOMDocument();
-  $PseudoXML->loadXML($PseudoXMLstr);
-  return arpg_serialize_elements_for_Q($PseudoXML->childNodes,
-    array("Simple"=>arpg_simple_translate_for_display,
-          "Math"=>arpg_serialize_math));
+  try {
+    $PseudoXML->loadXML($PseudoXMLstr);
+    return arpg_serialize_elements_for_Q($PseudoXML->childNodes,
+      array("Simple"=>arpg_simple_translate_for_display,
+            "Math"=>arpg_serialize_math));
+  } catch (Exception $e) {
+    echo $PseudoXMLstr;
+  }
 }
 
 function arpg_serialize_elements_for_editing($Text) {
@@ -453,11 +459,6 @@ function arpg_POPULATE_APATHY_PHP_test() {
     echo "Populated<br/>";
   else
     die("Unable to open an XML file or a Database.<br/>");
-
-  $cotable = arpg_child_table_of_id($Connection,"51452");
-  foreach ($cotable as $id => $child)
-    foreach ($child as $aid => $arr)
-      echo "$id&rArr;$aid&rarr;".print_r($arr,true)."<br/>";
 }
 
 //arpg_POPULATE_APATHY_PHP_test();
