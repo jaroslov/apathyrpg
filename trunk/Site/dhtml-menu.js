@@ -1,7 +1,7 @@
 function arpg_hide_descendents(element) {
   for (var i=0; i<element.childNodes.length; i++) {
     child = element.childNodes[i];
-    if (child.nodeType == 1 && child.tagName == "ul") {
+    if (child.nodeType == 1 && (child.tagName == "ul" || child.tagName == "li")) {
       child.style.display = "none";
       arpg_hide_descendents(child);
     }
@@ -84,6 +84,14 @@ function arpg_add_all_listeners(element) {
 function arpg_register(element) {
   arpg_add_all_listeners(element);
   arpg_set_zindex_by_depth(element,1);
+}
+
+function arpg_act_and_kill(who,message) {
+  var whom = document.getElementById(who);
+  for (var i=0; i<whom.childNodes.length; i++)
+    if (whom.childNodes[i].tagName == "li")
+      arpg_hide_descendents(whom.childNodes[i]);
+  alert(message);
 }
 
 function argp_default(message) {
