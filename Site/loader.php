@@ -207,7 +207,7 @@ function arpg_modify_text($Response) {
 
 
   $editable = "<table class='ModifyTextButton'><tbody><tr>";
-  $editable .= "<td colspan='2'>";
+  $editable .= "<td colspan='3'>";
   $editable .= "<textarea "
     ."style='height:".$height."px;width:".$width."px;' "
     ."id='TA$text_id'>";
@@ -217,6 +217,51 @@ function arpg_modify_text($Response) {
   $editable .= "<td><input type='button' value='Close' onclick=\""
                   .arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
                   class='ModifyTextButton'/></td>";
+  $editable .= "<td>";
+  $editable .= "<div class='ContextMenu'>
+                  <ul>
+                    <li>Edit...
+                      <ul>
+                        <li>Move...
+                          <ul>
+                            <li>Up</li>
+                            <li>Down</li>
+                            <li>Beginning</li>
+                            <li>End</li>
+                          </ul>
+                        </li>
+                        <li>Append...
+                          <ul>
+                            <li>paragraph</li>
+                            <li>description-list</li>
+                            <li>numbered-list</li>
+                            <li>itemized-list</li>
+                            <li>table</li>
+                            <li>equation</li>
+                            <li>note</li>
+                            <li>example</li>
+                            <li>section</li>
+                          </ul>
+                        </li>
+                        <li>Prepend...
+                          <ul>
+                            <li>paragraph</li>
+                            <li>description-list</li>
+                            <li>numbered-list</li>
+                            <li>itemized-list</li>
+                            <li>table</li>
+                            <li>equation</li>
+                            <li>note</li>
+                            <li>example</li>
+                            <li>section</li>
+                          </ul>
+                        </li>
+                        <li>Remove</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>";
+  $editable .= "</td>";
   $editable .= "<td align='right'><input type='button' value='Update Database'
                   onclick=\"".arpg_build_ajax("loader.php","UpdateTextValue",
                                 "<who>$text_id</who><what>'+"
