@@ -15,6 +15,107 @@ function arpg_editable_text($Id,$Text) {
   return $result;
 }
 
+function arpg_default_modify_menu($Id) {
+  return
+    "<ul id='AMM_$id' class='ARPG_MainMenu'>
+      <li onmouseover=\"arpg_register(this)\">
+        <div class='ARPG_HasSubMenu'/>Edit...
+        <ul class='ARPG_Menu' style='display:none;'>
+          <li>
+            <div class='ARPG_HasSubMenu'/>Move...
+            <ul class='ARPG_Menu' style='display:none'>
+              <li onclick=\"arpg_act_and_kill('AMM_$id','MoveUp');\">Up</li>
+              <li onclick=\"arpg_action('MoveDown',argp_default);\">Down</li>
+              <li onclick=\"arpg_action('MoveToTop',argp_default);\">To top</li>
+              <li onclick=\"arpg_action('MoveToBottom',argp_default);\">To bottom</li>
+            </ul>
+          </li>
+          <li>
+            <div class='ARPG_HasSubMenu'/>Append...
+            <ul class='ARPG_Menu' style='display:none'>
+              <li>
+                <div class='ARPG_HasSubMenu'/>Paragraph...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick=\"arpg_action('AppendText',argp_default);\">
+                    Text
+                  </li>
+                  <li onclick=\"arpg_action('AppendNote',argp_default);\">
+                    Note
+                  </li>
+                  <li onclick=\"arpg_action('AppendExample',argp_default);\">
+                    Example
+                  </li>
+                  <li onclick=\"arpg_action('AppendEquation',argp_default);\">
+                    Equation
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class='ARPG_HasSubMenu'/>List...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick=\"arpg_action('AppendListItemized',argp_default);\">
+                    Itemized
+                  </li>
+                  <li onclick=\"arpg_action('AppendListNumbered',argp_default);\">
+                    Numbered
+                  </li>
+                  <li onclick=\"arpg_action('AppendListDescription',argp_default);\">
+                    Description
+                  </li>
+                </ul>
+              </li>
+              <li onclick=\"arpg_action('AppendTable',argp_default);\">
+                Table
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class='ARPG_HasSubMenu'/>Prepend...
+            <ul class='ARPG_Menu' style='display:none'>
+              <li>
+                <div class='ARPG_HasSubMenu'/>Paragraph...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick=\"arpg_action('PrependText',argp_default);\">
+                    Text
+                  </li>
+                  <li onclick=\"arpg_action('PrependNote',argp_default);\">
+                    Note
+                  </li>
+                  <li onclick=\"arpg_action('PrependExample',argp_default);\">
+                    Example
+                  </li>
+                  <li onclick=\"arpg_action('PrependEquation',argp_default);\">
+                    Equation
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class='ARPG_HasSubMenu'/>List...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick=\"arpg_action('PrependListItemized',argp_default);\">
+                    Itemized
+                  </li>
+                  <li onclick=\"arpg_action('PrependListNumbered',argp_default);\">
+                    Numbered
+                  </li>
+                  <li onclick=\"arpg_action('PrependListDescription',argp_default);\">
+                    Description
+                  </li>
+                </ul>
+              </li>
+              <li onclick=\"arpg_action('PrependTable',argp_default);\">
+                Table
+              </li>
+            </ul>
+          </li>
+          <li onclick=\"arpg_action('Remove',argp_default);\">
+            Remove
+          </li>
+        </ul>
+      </li>
+    </ul>";
+}
+
 function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
   $result = array();
   foreach ($Ids as $Id => $Element) {
@@ -218,49 +319,7 @@ function arpg_modify_text($Response) {
                   .arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
                   class='ModifyTextButton'/></td>";
   $editable .= "<td>";
-  $editable .= "<div class='ContextMenu'>
-                  <ul>
-                    <li>Edit...
-                      <ul>
-                        <li>Move...
-                          <ul>
-                            <li>Up</li>
-                            <li>Down</li>
-                            <li>Beginning</li>
-                            <li>End</li>
-                          </ul>
-                        </li>
-                        <li>Append...
-                          <ul>
-                            <li>paragraph</li>
-                            <li>description-list</li>
-                            <li>numbered-list</li>
-                            <li>itemized-list</li>
-                            <li>table</li>
-                            <li>equation</li>
-                            <li>note</li>
-                            <li>example</li>
-                            <li>section</li>
-                          </ul>
-                        </li>
-                        <li>Prepend...
-                          <ul>
-                            <li>paragraph</li>
-                            <li>description-list</li>
-                            <li>numbered-list</li>
-                            <li>itemized-list</li>
-                            <li>table</li>
-                            <li>equation</li>
-                            <li>note</li>
-                            <li>example</li>
-                            <li>section</li>
-                          </ul>
-                        </li>
-                        <li>Remove</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>";
+  $editable .= arpg_default_modify_menu($text_id);
   $editable .= "</td>";
   $editable .= "<td align='right'><input type='button' value='Update Database'
                   onclick=\"".arpg_build_ajax("loader.php","UpdateTextValue",
