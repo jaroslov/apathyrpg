@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <link rel="stylesheet" href="dhtml-menu.css"></link>
+    <script type="text/javascript" src="dhtml-menu.js"></script>
+  </head>
+  <body>
+    <ul class='ARPG_MainMenu'>
+      <li onmouseover="arpg_register(this)">
+        <em>Edit... &raquo;</em>
+        <ul class='ARPG_Menu' style='display:none;'>
+          <li>
+            Move...
+            <ul class='ARPG_Menu' style='display:none'>
+              <li onclick="arpg_action('MoveUp',argp_default);">Up</li>
+              <li onclick="arpg_action('MoveDown',argp_default);">Down</li>
+              <li onclick="arpg_action('MoveToTop',argp_default);">To top</li>
+              <li onclick="arpg_action('MoveToBottom',argp_default);">To bottom</li>
+            </ul>
+          </li>
+          <li>
+            Append...
+            <ul class='ARPG_Menu' style='display:none'>
+              <li>
+                Paragraph...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick="arpg_action('AppendText',argp_default);">
+                    Text
+                  </li>
+                  <li onclick="arpg_action('AppendNote',argp_default);">
+                    Note
+                  </li>
+                  <li onclick="arpg_action('AppendExample',argp_default);">
+                    Example
+                  </li>
+                  <li onclick="arpg_action('AppendEquation',argp_default);">
+                    Equation
+                  </li>
+                </ul>
+              </li>
+              <li>
+                List...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick="arpg_action('AppendListItemized',argp_default);">
+                    Itemized
+                  </li>
+                  <li onclick="arpg_action('AppendListNumbered',argp_default);">
+                    Numbered
+                  </li>
+                  <li onclick="arpg_action('AppendListDescription',argp_default);">
+                    Description
+                  </li>
+                </ul>
+              </li>
+              <li onclick="arpg_action('AppendTable',argp_default);">
+                Table
+              </li>
+            </ul>
+          </li>
+          <li>
+            Prepend...
+            <ul class='ARPG_Menu' style='display:none'>
+              <li>
+                Paragraph...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick="arpg_action('PrependText',argp_default);">
+                    Text
+                  </li>
+                  <li onclick="arpg_action('PrependNote',argp_default);">
+                    Note
+                  </li>
+                  <li onclick="arpg_action('PrependExample',argp_default);">
+                    Example
+                  </li>
+                  <li onclick="arpg_action('PrependEquation',argp_default);">
+                    Equation
+                  </li>
+                </ul>
+              </li>
+              <li>
+                List...
+                <ul class='ARPG_Menu' style='display:none'>
+                  <li onclick="arpg_action('PrependListItemized',argp_default);">
+                    Itemized
+                  </li>
+                  <li onclick="arpg_action('PrependListNumbered',argp_default);">
+                    Numbered
+                  </li>
+                  <li onclick="arpg_action('PrependListDescription',argp_default);">
+                    Description
+                  </li>
+                </ul>
+              </li>
+              <li onclick="arpg_action('PrependTable',argp_default);">
+                Table
+              </li>
+            </ul>
+          </li>
+          <li onclick="arpg_action('Remove',argp_default);">
+            Remove
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
