@@ -1,3 +1,23 @@
+function markInteresting(UpId,TaId) {
+  var what = document.getElementById(UpId);
+  what.style.fontStyle = "italic";
+  what.style.borderTopColor = "red";
+  what.style.borderBottomColor = "red";
+  var what = document.getElementById(TaId);
+  what.style.borderTopColor = "red";
+  what.style.borderBottomColor = "red";
+}
+function markUninteresting(UpId,TaId) {
+  var what = document.getElementById(UpId);
+  what.style.fontStyle = "normal";
+  what.style.borderColor = "black";
+  what.style.borderTopColor = "blue";
+  what.style.borderBottomColor = "blue";
+  var what = document.getElementById(TaId);
+  what.style.borderColor = "black";
+  what.style.borderTopColor = "gray";
+  what.style.borderBottomColor = "gray";
+}
 function initialLoad() {
   ajaxFunction('loader.php',
     '<reply><response><code>Initialize</code></response></reply>');

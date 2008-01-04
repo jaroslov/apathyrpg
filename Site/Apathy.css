@@ -82,6 +82,14 @@ table.MainPart td,tr,tbody,th,thead {
   margin: 0;
   border-collapse: collapse;
 }
+textarea.SimpleEditor {
+  border: 1px solid gray;
+  background-color: white;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+}
 table.FieldResponder {
   border-collapse: collapse;
 }
@@ -97,8 +105,19 @@ table td.FieldResponderAspect {
   font-weight: bold;
   border-right: 1px dotted black;
 }
-input.ModifyTextButton {
+div.ModifyTextButton {
+  font-size: 10pt;
+  font-variant: normal;
+  font-weight: normal;
+  width: 10em;
   min-width: 10em;
+  border: 1px solid blue;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  text-align: center;
+  padding-top: 3px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
 }
 table.ModifyTextButton {
   border: 0;
@@ -151,12 +170,12 @@ p.text {
   min-height: 1em;
   margin: 0;
   padding: 2px;
-  border-top: 1px solid blue;
-  border-left: 1px dotted blue;
-  border-right: 1px dotted blue;
-  border-bottom: 1px solid #EEE;
+  /*border-top: 1px solid blue;
+  //border-left: 1px dotted blue;
+  //border-right: 1px dotted blue;
+  //border-bottom: 1px solid #EEE;*/
   text-align: justify;
-  background-color: #FCFCFF;
+  /*background-color: #FCFCFF;*/
 }
 div.section-body {
   padding-left: 1em;

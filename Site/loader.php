@@ -116,7 +116,8 @@ function arpg_default_modify_menu($Id) {
     </ul>";
 }
 
-function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
+function arpg_render_raw_text($ChildOfTable,$Ids,
+                              $EditText=true,$ExtraInfo="None") {
   $result = array();
   foreach ($Ids as $Id => $Element) {
     $children = array();
@@ -127,17 +128,22 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
     $Order = $Element["Order"];
     switch ($Element["Name"]) {
     case "text":
-      $result[$Order] ="<p class='text' id='Text".$Element["ID"]."'>"
+      if ($EditText)
+        $result[$Order] ="<p class='text' id='Text".$Element["ID"]."'>"
                     .arpg_editable_text($Element["ID"],$Element["Value"])
                     ."</p>\n";
+      else
+        $result[$Order] = "<p class='text'>"
+                  .arpg_serialize_elements_for_display($Element["Value"])
+                  ."</p>";
       break;
     case "note":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText);
       $result[$Order] =
         "<div class='note'>".implode("\n",$mresult)."</div>";
       break;
     case "item":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText);
       switch ($ExtraInfo) {
         case "description-list":
           $mkeys = array_keys($mresult);
@@ -147,74 +153,84 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
           $result[$Order] .= "<dd>".implode("</dd>\n<dd>",$mrest)."</dd>";
           break;
         default:
-          $mresult = arpg_render_raw_text($ChildOfTable,$children);
+          $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText);
           $result[$Order] = "<li>".implode("</li>\n<li>",$mresult)."</li>";
           break;
       }
       break;
     case "define":
       $result[$Order] = 
-        implode("\n",arpg_render_raw_text($ChildOfTable,$children));
+        implode("\n",arpg_render_raw_text($ChildOfTable,$children,$EditText));
       break;
     case "description":
       $result[$Order] = 
         "<span class='description'>"
-          .implode("\n",arpg_render_raw_text($ChildOfTable,$children))."</span>";
+          .implode("\n",
+            arpg_render_raw_text($ChildOfTable,$children,$EditText))
+        ."</span>";
       break;
     case "description-list":
       $mresult = arpg_render_raw_text($ChildOfTable,
-                                      $children,"description-list");
+                                      $children,$EditText,"description-list");
       $result[$Order] = 
         "<dl class='description-list'>".implode("\n",$mresult)."</dl>";
       break;
     case "numbered-list":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"numbered-list");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"numbered-list");
       $result[$Order] = 
         "<ol class='numbered-list'>".implode("\n",$mresult)."</ol>";
       break;
     case "itemized-list":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"itemized-list");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"itemized-list");
       $result[$Order] = 
         "<ul class='itemized-list'>".implode("\n",$mresult)."</ul>";
       break;
     case "cell":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText);
       $result[$Order] = "<td>".implode("</td>\n<td>",$mresult)."</td>";
       break;
     case "row":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"table");
       $result[$Order] = "<tr>".implode("\n",$mresult)."</tr>";
       break;
     case "head":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"table");
       $result[$Order] = "<thead>".implode("\n",$mresult)."</thead>";
       break;
     case "table":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"table");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"table");
       $result[$Order] = 
         "<table class='figtbl'>".implode("\n",$mresult)."</table>";
       break;
     case "caption":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText);
       $result[$Order] = "<h2 class='caption'>".implode("\n",$mresult)."</h2>";
       break;
     case "figure":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children);
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText);
       $result[$Order] = "<div class='figure'>".implode("\n",$mresult)."</div>";
       break;
     case "example":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"example");
       $result[$Order]
         = "<div class='example'>".implode("\n",$mresult)."</div>";
       break;
     case "equation":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"example");
       $result[$Order] = 
         "<div class='equation'>".implode("\n",$mresult)."</div>";
       break;
     case "summarize":
     case "reference":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"example");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"example");
       foreach ($children as $child)
         if ($child["Kind"] === "attribute"
           and $child["Name"] === "hrid")
@@ -223,7 +239,8 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
         "<div class='reference'>".implode("\n",$mresult)."</div>";
       break;
     case "title":
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,"Title");
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,
+                                      $EditText,"Title");
       $result[$Order] = "<h1 class='$ExtraInfo'>"
         .implode("\n",$mresult)."</h1>";
       break;
@@ -234,7 +251,7 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
         if ($child["Kind"] === "attribute"
           and $child["Name"] === "kind")
           $kind = $child["Value"];
-      $mresult = arpg_render_raw_text($ChildOfTable,$children,$kind);
+      $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText,$kind);
       $mkeys = array_keys($mresult);
       $mhead = $mresult[$mkeys[0]];
       $mrest = array_splice($mresult,1);
@@ -248,7 +265,7 @@ function arpg_render_raw_text($ChildOfTable,$Ids,$ExtraInfo="None") {
       break;
     case "field":
       $result[$Order] = 
-        implode("\n",arpg_render_raw_text($ChildOfTable,$children));
+        implode("\n",arpg_render_raw_text($ChildOfTable,$children,$EditText));
         break;
     default:
       $result[$Order] = 
@@ -310,24 +327,27 @@ function arpg_modify_text($Response) {
   $editable = "<table class='ModifyTextButton'><tbody><tr>";
   $editable .= "<td colspan='3'>";
   $editable .= "<textarea "
+    ."onkeypress=\"markInteresting('UPM$text_id','TA$text_id');\" "
+    ."class='SimpleEditor' "
     ."style='height:".$height."px;width:".$width."px;' "
     ."id='TA$text_id'>";
   $editable .= arpg_serialize_elements_for_editing($text);
   $editable .= "</textarea>";
   $editable .= "</td></tr><tr>";
-  $editable .= "<td><input type='button' value='Close' onclick=\""
+  $editable .= "<td><div onclick=\""
                   .arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
-                  class='ModifyTextButton'/></td>";
+                  class='ModifyTextButton'>Close</div></td>";
   $editable .= "<td>";
   $editable .= arpg_default_modify_menu($text_id);
   $editable .= "</td>";
-  $editable .= "<td align='right'><input type='button' value='Update Database'
-                  onclick=\"".arpg_build_ajax("loader.php","UpdateTextValue",
-                                "<who>$text_id</who><what>'+"
-                                ."document.getElementById('TA$text_id').value+'"
-                                ."</what>"
-                              )."\"
-                  class='ModifyTextButton'/></td>";
+  $editable .= "<td align='right'><div id='UPM$text_id'
+                  onclick=\"markUninteresting('UPM$text_id','TA$text_id');"
+                    .arpg_build_ajax("loader.php","UpdateTextValue",
+                      "<who>$text_id</who><what>'+"
+                      ."document.getElementById('TA$text_id').value+'"
+                      ."</what>"
+                    ).";\"
+                  class='ModifyTextButton'>Update Database</div></td>";
   $editable .= "</tr></tbody></table>";
 
   $targets = array("Text$text_id");
@@ -391,11 +411,14 @@ function arpg_load_datum($Response) {
   $ChildOfTable = arpg_child_table_of_id($Connection,$datum_id);
 
   $title_parts = arpg_render_raw_text($ChildOfTable,$ChildOfTable[$title]);
-  $description_parts = arpg_render_raw_text($ChildOfTable,$ChildOfTable[$description]);
+  $unedtitle_parts = arpg_render_raw_text($ChildOfTable,
+                                          $ChildOfTable[$title],false);
+  $description_parts = arpg_render_raw_text($ChildOfTable,
+                            $ChildOfTable[$description]);
 
   $datum_responder = "<a onclick=\""
     .arpg_build_ajax("loader.php","UnloadDatum",$datum_id)
-    ."\">".implode("<br/>",$title_parts)."</a>";
+    ."\">".implode("<br/>",$unedtitle_parts)."</a>";
 
   $fields_response = "";
   $fields_response .= "<table><tbody><tr><td valign='top'>";
@@ -474,6 +497,7 @@ function arpg_load_book($Response) {
   $Connection = arpg_create_apathy();
 
   $Selector = "&#160;";
+
   $book = xmldb_getElementsByTagName($Connection,"book");
   $book_ids = array_keys($book);
   $CoTable = arpg_child_table_of_id($Connection,$book_ids[0]);
