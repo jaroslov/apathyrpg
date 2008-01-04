@@ -122,18 +122,9 @@ div.Description h1 {
 
 div.ContextMenu {
   width: 12em;
-}
-div.ContextMenu ul ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none;
-}
-div.ContextMenu ul:hover ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: block;
 }
 
 a {
