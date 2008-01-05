@@ -418,6 +418,22 @@ function arpg_get_all_children($Connection,$InitialSet) {
   return $all_nodes;
 }
 
+function arpg_cot_attributes($CoTable,$Key) {
+  $attrs = array();
+  foreach ($CoTable[$Key] as $Id => $Child)
+    if ($Child["Kind"] === "attribute")
+      $attrs[$Child["Name"]] = $Child["Value"];
+  return $attrs;
+}
+
+function arpg_cot_childNodes($CoTable,$Key) {
+  $children = array();
+  foreach ($CoTable[$Key] as $Id => $Child)
+    if ($Child["Kind"] === "element")
+      $children[$Child["Order"]] = $Child;
+  return $children;
+}
+
 function arpg_child_table_of_elements($Elements) {
   $ChildOfTable = array();
   foreach ($Elements as $element) {

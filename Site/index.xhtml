@@ -6,45 +6,18 @@
     <link rel="stylesheet" href="dhtml-menu.css"></link>
     <script type="text/javascript" src="ajax.js"></script>
     <script type="text/javascript" src="dhtml-menu.js"></script>-->
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="text/javascript" src="ajax-script.js"></link>
+    <link rel="stylesheet" href="arpg.css"></link>
+    <script type="text/javascript" src="arpg.js"></script>
   </head>
   <body onload="initialLoad();">
     <div class="Main">
-      <div id="Path" class="Path"></div>
-      <table class='MainPart'>
-        <tbody>
-          <tr>
-            <td rowspan='2' valign='top'>
-              <div id="Selector" class="Selector"></div>
-            </td>
-            <td valign='top'>
-              <!--<table valign="top">
-                <tr valign="top">
-                  <td>
-                    <div id="Ajax" class="Log">
-                      <em>Ajax</em>
-                    </div>
-                  </td>
-                  <td>
-                    <div id="Log" class="Log">
-                      <em>Log</em>
-                    </div>
-                  </td>
-                  <td>
-                    <div id="LogResponse" class="Log">
-                      <em>Response</em>
-                    </div>
-                  </td>
-                </tr>
-              </table>-->
-            </td>
-          </tr>
-          <tr>
-            <td valign='top'><div id="Display" class="Display"></div></td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="Display" class="Display"></div>
+    </div>
+    <div class="Selector"><div id="Selector" ></div></div>
+    <div class="Debugger">
+      <div id="LogResponse" class="Log"><em>Response</em></div>
+      <div id="Ajax" class="Log"><em>Ajax</em></div>
+      <div id="Log" class="Log"><em>Log</em></div>
     </div>
   </body>
 </html>
