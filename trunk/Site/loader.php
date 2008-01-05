@@ -15,107 +15,6 @@ function arpg_editable_text($Id,$Text) {
   return $result;
 }
 
-function arpg_default_modify_menu($Id) {
-  return
-    "<ul id='AMM_$id' class='ARPG_MainMenu'>
-      <li onmouseover=\"arpg_register(this)\">
-        <div class='ARPG_HasSubMenu'/>Edit...
-        <ul class='ARPG_Menu' style='display:none;'>
-          <li>
-            <div class='ARPG_HasSubMenu'/>Move...
-            <ul class='ARPG_Menu' style='display:none'>
-              <li onclick=\"arpg_act_and_kill('AMM_$id','MoveUp');\">Up</li>
-              <li onclick=\"arpg_action('MoveDown',argp_default);\">Down</li>
-              <li onclick=\"arpg_action('MoveToTop',argp_default);\">To top</li>
-              <li onclick=\"arpg_action('MoveToBottom',argp_default);\">To bottom</li>
-            </ul>
-          </li>
-          <li>
-            <div class='ARPG_HasSubMenu'/>Append...
-            <ul class='ARPG_Menu' style='display:none'>
-              <li>
-                <div class='ARPG_HasSubMenu'/>Paragraph...
-                <ul class='ARPG_Menu' style='display:none'>
-                  <li onclick=\"arpg_action('AppendText',argp_default);\">
-                    Text
-                  </li>
-                  <li onclick=\"arpg_action('AppendNote',argp_default);\">
-                    Note
-                  </li>
-                  <li onclick=\"arpg_action('AppendExample',argp_default);\">
-                    Example
-                  </li>
-                  <li onclick=\"arpg_action('AppendEquation',argp_default);\">
-                    Equation
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <div class='ARPG_HasSubMenu'/>List...
-                <ul class='ARPG_Menu' style='display:none'>
-                  <li onclick=\"arpg_action('AppendListItemized',argp_default);\">
-                    Itemized
-                  </li>
-                  <li onclick=\"arpg_action('AppendListNumbered',argp_default);\">
-                    Numbered
-                  </li>
-                  <li onclick=\"arpg_action('AppendListDescription',argp_default);\">
-                    Description
-                  </li>
-                </ul>
-              </li>
-              <li onclick=\"arpg_action('AppendTable',argp_default);\">
-                Table
-              </li>
-            </ul>
-          </li>
-          <li>
-            <div class='ARPG_HasSubMenu'/>Prepend...
-            <ul class='ARPG_Menu' style='display:none'>
-              <li>
-                <div class='ARPG_HasSubMenu'/>Paragraph...
-                <ul class='ARPG_Menu' style='display:none'>
-                  <li onclick=\"arpg_action('PrependText',argp_default);\">
-                    Text
-                  </li>
-                  <li onclick=\"arpg_action('PrependNote',argp_default);\">
-                    Note
-                  </li>
-                  <li onclick=\"arpg_action('PrependExample',argp_default);\">
-                    Example
-                  </li>
-                  <li onclick=\"arpg_action('PrependEquation',argp_default);\">
-                    Equation
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <div class='ARPG_HasSubMenu'/>List...
-                <ul class='ARPG_Menu' style='display:none'>
-                  <li onclick=\"arpg_action('PrependListItemized',argp_default);\">
-                    Itemized
-                  </li>
-                  <li onclick=\"arpg_action('PrependListNumbered',argp_default);\">
-                    Numbered
-                  </li>
-                  <li onclick=\"arpg_action('PrependListDescription',argp_default);\">
-                    Description
-                  </li>
-                </ul>
-              </li>
-              <li onclick=\"arpg_action('PrependTable',argp_default);\">
-                Table
-              </li>
-            </ul>
-          </li>
-          <li onclick=\"arpg_action('Remove',argp_default);\">
-            Remove
-          </li>
-        </ul>
-      </li>
-    </ul>";
-}
-
 function arpg_render_raw_text($ChildOfTable,$Ids,
                               $EditText=true,$ExtraInfo="None") {
   $result = array();
@@ -129,13 +28,19 @@ function arpg_render_raw_text($ChildOfTable,$Ids,
     switch ($Element["Name"]) {
     case "text":
       if ($EditText)
-        $result[$Order] ="<p class='text' id='Text".$Element["ID"]."'>"
+        $result[$Order] ="<div class='text' id='Text".$Element["ID"]."'"
+                    //." onclick=\""
+                    //.arpg_build_ajax("loader.php","ModifyText",
+                    //  $Element["ID"]
+                    //  ."@'+this.clientWidth+':'+this.clientHeight+'")
+                    //."\">"
+                    .">"
                     .arpg_editable_text($Element["ID"],$Element["Value"])
-                    ."</p>\n";
+                    ."</div>\n";
       else
-        $result[$Order] = "<p class='text'>"
+        $result[$Order] = "<div class='text'>"
                   .arpg_serialize_elements_for_display($Element["Value"])
-                  ."</p>";
+                  ."</div>";
       break;
     case "note":
       $mresult = arpg_render_raw_text($ChildOfTable,$children,$EditText);
@@ -336,9 +241,8 @@ function arpg_modify_text($Response) {
   $editable .= "</td></tr><tr>";
   $editable .= "<td><div onclick=\""
                   .arpg_build_ajax("loader.php","UnmodifyText",$text_id)."\"
-                  class='ModifyTextButton'>Close</div></td>";
+                  class='ModifyTextButton'><div>Close</div></div></td>";
   $editable .= "<td>";
-  $editable .= arpg_default_modify_menu($text_id);
   $editable .= "</td>";
   $editable .= "<td align='right'><div id='UPM$text_id'
                   onclick=\"markUninteresting('UPM$text_id','TA$text_id');"
@@ -346,8 +250,9 @@ function arpg_modify_text($Response) {
                       "<who>$text_id</who><what>'+"
                       ."document.getElementById('TA$text_id').value+'"
                       ."</what>"
-                    ).";\"
-                  class='ModifyTextButton'>Update Database</div></td>";
+                    ).";\" "
+                  ."class='ModifyTextButton'>"
+                  ."<div>Update Database</div></div></td>";
   $editable .= "</tr></tbody></table>";
 
   $targets = array("Text$text_id");
