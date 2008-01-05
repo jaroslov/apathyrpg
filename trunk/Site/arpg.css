@@ -1,15 +1,116 @@
-<?php
-
-$style = "
 body {
   margin: 0;
   padding: 0;
-  font-family: helvetica, serif;
+  font-family: times, serif;
   color: black;
   font-variant: normal;
 }
-";
+div.Main {
+  margin: 1em;
+  margin-left: 20em;
+  margin-top: 1em;
+  z-index: 1;
+  background-color: #EEE;
+  border: 1px solid gray;
+}
+div.Display {
+  background-color: white;
+  margin: .25em;
+  border: 1px solid gray;
+  height: 35em;
+  overflow: auto;
+  z-index: 2;
+}
+div.part {
+  padding-left: .75em;
+}
+div.chapter {
+  padding-left: .75em;
+}
+div.section {
+  padding-left: .75em;
+}
+div.title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div.text {
+  text-align: justify;
+  margin: .25em;
+  padding: .25em;
+  border: 1px solid gray;
+}
+div.text div {
+  padding: .25em;
+  border: 1px solid white;
+}
+div.text div:hover {
+  border: 1px solid gray;
+}
 
-echo $style;
 
-?>
+div.Selector {
+  position: fixed;
+  border: 1px solid gray;
+  background-color: #EEE;
+  z-index: 20;
+  top: 1em;
+  left: 1em;
+}
+div.Selector div {
+  background-color: white;
+  border: 1px solid gray;
+  overflow: auto;
+  width: 18em;
+  height: 35em;
+  margin: .25em;
+}
+div.Selector ol {
+  list-style-position: inside;
+  margin: 0;
+  margin-left: .5em;
+  padding: 0;
+}
+div.Selector ol.book {
+  list-style-type: none;
+}
+div.Selector ol.part {
+  list-style-type: upper-roman;
+}
+div.Selector ol.chapter {
+  list-style-type: decimal;
+}
+div.Selector ol.section {
+  list-style-type: decimal;
+}
+div.Selector ol.section ol {
+  list-style-type: lower-roman;
+}
+div.Selector ol.section ol ol {
+  list-style-type: lower-alpha;
+}
+div.Selector li {
+  min-width: 18em;
+}
+
+
+div.Debugger {
+  border: 1px solid red;
+  position: fixed;
+  bottom: .5em;
+  right: 1em;
+  padding: .5em;
+  z-index: 10000;
+  background-color: white;
+}
+div.Log {
+  padding: .25em;
+  margin: 0;
+  border: 1px solid red;
+  width: 15em;
+  height: 8em;
+  display: inline-block;
+  overflow: auto;
+  z-index: 10001;
+}
