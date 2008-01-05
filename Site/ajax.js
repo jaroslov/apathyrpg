@@ -1,8 +1,8 @@
 function markInteresting(UpId,TaId) {
   var what = document.getElementById(UpId);
   what.style.fontStyle = "italic";
-  what.style.borderTopColor = "red";
-  what.style.borderBottomColor = "red";
+  //what.style.borderTopColor = "red";
+  //what.style.borderBottomColor = "red";
   var what = document.getElementById(TaId);
   what.style.borderTopColor = "red";
   what.style.borderBottomColor = "red";
@@ -10,9 +10,9 @@ function markInteresting(UpId,TaId) {
 function markUninteresting(UpId,TaId) {
   var what = document.getElementById(UpId);
   what.style.fontStyle = "normal";
-  what.style.borderColor = "black";
-  what.style.borderTopColor = "blue";
-  what.style.borderBottomColor = "blue";
+  //what.style.borderColor = "black";
+  //what.style.borderTopColor = "gray";
+  //what.style.borderBottomColor = "gray";
   var what = document.getElementById(TaId);
   what.style.borderColor = "black";
   what.style.borderTopColor = "gray";

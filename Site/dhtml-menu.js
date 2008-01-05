@@ -27,7 +27,7 @@ function siblings(target) {
   return result;
 }
 
-function arpg_toggle_display(target) {
+function arpg_toggle_display(target,towhat) {
   // turn off all siblings
   if (target.tagName != "li") {
     var par = target;
@@ -41,12 +41,12 @@ function arpg_toggle_display(target) {
   for (var i=0; i<target.childNodes.length; i++) {
     child = target.childNodes[i];
     if (child.nodeType == 1 && child.tagName == "ul") {
-      switch (child.style.display) {
-      case "none":
+      switch (towhat) {
+      case "block":
         child.style.display = "block";
         arpg_show_descendents(child);
         break;
-      case "block":
+      case "none":
       default:
         child.style.display = "none";
         arpg_hide_descendents(child);
@@ -56,9 +56,15 @@ function arpg_toggle_display(target) {
   }
 }
 
-function arpg_click(event) {
+function arpg_out(event) {
   // find parent ul
-  arpg_toggle_display(event.target);
+  arpg_toggle_display(event.target,"none");
+  event.stopPropagation();
+}
+
+function arpg_over(event) {
+  // find parent ul
+  arpg_toggle_display(event.target,"block");
   event.stopPropagation();
 }
 
@@ -75,7 +81,8 @@ function arpg_set_zindex_by_depth(element,index) {
 }
 
 function arpg_add_all_listeners(element) {
-  element.addEventListener('click',arpg_click,false);
+  element.addEventListener('mouseover',arpg_over,false);
+  //element.addEventListener('mouseout',arpg_out,false);
   for (var i=0; i<element.childNodes.length; i++)
     if (element.childNodes[i].nodeType == 1)
       arpg_add_all_listeners(element.childNodes[i]);

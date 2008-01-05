@@ -87,8 +87,8 @@ textarea.SimpleEditor {
   background-color: white;
   border-left: 3px solid black;
   border-right: 3px solid black;
-  -moz-border-radius: 5px 0px 0px 5px;
-  -webkit-border-radius: 5px 0px 0px 5px;
+  <!-- -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;-->
 }
 table.FieldResponder {
   border-collapse: collapse;
@@ -107,17 +107,32 @@ table td.FieldResponderAspect {
 }
 div.ModifyTextButton {
   font-size: 10pt;
-  font-variant: normal;
+  font-variant: small-caps;
   font-weight: normal;
   width: 10em;
   min-width: 10em;
-  border: 1px solid blue;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  border: 1px solid white;
+  /*border-left: 2px solid black;
+  border-right: 2px solid black;*/
   text-align: center;
+  padding: 2px;
+  background-color: #EEE;
+  /*-moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;*/
+}
+div.ModifyTextButton div {
+  padding: 1px;
   padding-top: 3px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 1px solid gray;
+  /*border-left: 2px solid gray;
+  border-right: 2px solid gray;*/
+  background-color: #EEE;
+}
+div.ModifyTextButton div:hover {
+  border: 1px solid black;
+  /*border-left: 2px solid black;
+  border-right: 2px solid black;*/
+  background-color: #D9D9D9;
 }
 table.ModifyTextButton {
   border: 0;
@@ -165,18 +180,26 @@ a.regular-text:hover {
   color: black;
 }
 
-p.text {
+div.text {
   min-width: 1em;
   min-height: 1em;
   margin: 0;
   padding: 2px;
-  /*border-top: 1px solid blue;
-  //border-left: 1px dotted blue;
-  //border-right: 1px dotted blue;
-  //border-bottom: 1px solid #EEE;*/
+  border: 1px solid #EEE;
+  background-color: #FDFDFD;
   text-align: justify;
-  /*background-color: #FCFCFF;*/
+  margin: 1px;
 }
+div.text:hover {
+  border: 1px solid gray;
+}
+div.text span {
+  border: 1px solid white;
+}
+div.text span:hover {
+  color: black;
+}
+
 div.section-body {
   padding-left: 1em;
 }
