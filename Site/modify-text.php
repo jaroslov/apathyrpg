@@ -10,7 +10,7 @@ function arpg_unmodify_text($Response) {
 
   $uneditable = arpg_render_inner_text($text_id,$text);
 
-  $targets = array("InTxt$text_id");
+  $targets = array("Id$text_id");
   $payloads = array($uneditable);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
@@ -25,10 +25,10 @@ function arpg_modify_text($Response) {
   $text = $textNode["Value"];
 
   $wh = explode(":",$area);
-  $width = $wh[0] - 30;
+  $width = $wh[0]-25;
   $height = $wh[1];
 
-  $editable = "<div class='text-homonculus-long'>"
+  $editable = "<div class='text-homonculus'>"
     ."<div class='homonculus-item' onclick=\""
     .arpg_build_ajax("modify-text.php","UnmodifyText",$text_id)
     ."\">Close</div>"
@@ -40,7 +40,8 @@ function arpg_modify_text($Response) {
     ."\">Save Changes</div>"
     ."</div>";
   $editable .= "<textarea id='TA$text_id' "
-    ."style='height:".$height."px;width:".$width."px;margin-left:20px;' >";
+    ."style='min-height:".$height."px;height:100%;"
+          ."min-width:".$width."px;width:100%;' >";
   $editable .= arpg_serialize_elements_for_editing($text);
   $editable .= "</textarea>";
 

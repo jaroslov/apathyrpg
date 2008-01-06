@@ -17,18 +17,22 @@ function arpg_not_title($text) {
 
 function arpg_render_inner_text($Id,$Text) {
   return  "<div class='inner-text' id='InTxt$Id'>"
-            ."<div class='text-homonculus' onclick=\""
+            ."<div class='text-homonculus'>"
+            ."<div class='homonculus-item' onclick=\""
             .arpg_build_ajax("modify-text.php","ModifyText",
               "$Id@'+arpg_size('InTxt$Id')+'")
-            ."\">Edit</div>"
+            ."\">Edit</div></div>"
             .arpg_serialize_elements_for_display($Text)
             ."</div>";
 }
 
 function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
   $result = array();
+  $index = 0;
+  $number_children = sizeof($CoTable[$Key]);
   foreach ($CoTable[$Key] as $Id => $Child) {
     if ($Child["Kind"] === "element") {
+      $index++;
       $ID = $Child["ID"];
       $Order = $Child["Order"];
       $attributes = arpg_cot_attributes($CoTable,$ID);

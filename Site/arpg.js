@@ -1,3 +1,12 @@
+function toggleVisibility(Id) {
+  var who = document.getElementById(Id);
+  if (who.style.display == "none")
+    who.style.display = "block";
+  else
+    who.style.display = "none";
+}
+function moveObject(Id) {
+}
 function initialLoad() {
   ajaxFunction('modifier.php',
     '<reply><response><code>Initialize</code></response></reply>');
@@ -15,6 +24,10 @@ function realUnescape(string) {
 function xmlencode(str) {
   for (i = 0; i<str.length; i++) {
     str = str.replace('&', '{@and}');
+    str = str.replace('<', '{@less}');
+    str = str.replace('>', '{@greater}');
+    str = str.replace("'", '{@apos}');
+    str = str.replace('"', '{@quote}');
   }
   return str;
 }

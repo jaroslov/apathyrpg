@@ -115,6 +115,8 @@ function arpg_simple_display_map() {
           "and"=>"&amp;",
           "lt"=>"&lt;",
           "gt"=>"&gt;",
+          "apos"=>"&apos;",
+          "quote"=>"&quot;",
           "dollar"=>"$",
           "percent"=>"%",
           "rightarrow"=>"&#8594;",
@@ -398,6 +400,10 @@ function arpg_deserialize_elements_from_editing($Text) {
     $Text);
   // some pesky xml characters
   $Text = preg_replace("/\{@and\}/","<and/>",$Text);
+  $Text = preg_replace("/\{@less\}/","<lt/>",$Text);
+  $Text = preg_replace("/\{@greater\}/","<gt/>",$Text);
+  $Text = preg_replace("/\{@apos\}/","<apos/>",$Text);
+  $Text = preg_replace("/\{@quote\}/","<quote/>",$Text);
   // deserialize math
   // ... not enabled for now
   $Text = preg_replace("/\[/","<",$Text);
