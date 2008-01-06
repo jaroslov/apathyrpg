@@ -11,6 +11,10 @@ function arpg_not_description($text) {
   return "Description" !== $text;
 }
 
+function arpg_not_title($text) {
+  return "Title" !== $text;
+}
+
 function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
   $result = array();
   foreach ($CoTable[$Key] as $Id => $Child) {
@@ -21,16 +25,80 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
       $childNodes = arpg_cot_childNodes($CoTable,$ID);
       switch ($Child["Name"]) {
       case "text":
+        $result[$Order] = "";
         if (!$Editable) {
-          $result[$Child["Order"]]
-            = arpg_serialize_elements_for_display($Child["Value"]);
+          $result[$Order]
+            .= arpg_serialize_elements_for_display($Child["Value"]);
           break;
         } else {
-          $result[$Child["Order"]] = "<div class='text'><div class='inner-text'>"
+          $result[$Order] .= "<div class='text'><div class='inner-text'>"
             .arpg_serialize_elements_for_display($Child["Value"])
             ."</div></div>";
           break;
         }
+      case "caption":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $result[$Order] = "<div class='caption'>"
+          .implode("",$mresult)
+          ."</div>";
+        break;
+      case "cell":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $result[$Order] = "<div class='table-cell-$Extra'>"
+          .implode("",$mresult)
+          ."</div>";
+        break;
+      case "row":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"row");
+        $result[$Order] = "<div class='table-head'>"
+          .implode("",$mresult)
+          ."</div>";
+        break;
+      case "head":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"head");
+        $result[$Order] = "<div class='table-head'>"
+          .implode("",$mresult)
+          ."</div>";
+        break;
+      case "table":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $result[$Order] = "<div class='tabular'>"
+          .implode("",$mresult)
+          ."</div>";
+        break;
+      case "figure":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $result[$Order] = "<div class='figure'>"
+          .implode("",$mresult)
+          ."</div>";
+        break;
+      case "note":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $result[$Order] = "<div class='note'>"
+          ."<div class='exclaim'>Note!</div>"
+          ."<div class='note-body'>"
+          .implode("",$mresult)
+          ."</div></div>";
+        break;
+      case "example":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mkeys = array_keys($mresult);
+        $mkeys = array_filter($mkeys, arpg_not_title);
+        $lresult = array();
+        foreach ($mkeys as $mkey)
+          $lresult[$mkey] = $mresult[$mkey];
+        $result[$Order] = "<div class='example'>"
+          .$mresult["Title"]
+          ."<div class='example-body'>"
+          .implode("",$lresult)
+          ."</div></div>";
+        break;
+      case "equation":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $result[$Order] = "<div class='equation'>"
+          .implode("",$mresult)
+          ."</div>";
+        break;
       case "description":
         $result["Description"] =
           implode("",arpg_render_text($CoTable,$ID,$Editable,$Extra));
@@ -79,14 +147,21 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
         break;
       case "title":
         $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
-        $result[$Order] = "<div class='title'>"
+        $result["Title"] = "<div class='title'>"
           .implode("",$mresult)."</div>";
         break;
       case "section":
         $kind = $attributes["kind"];
         $result[$Order] = "<div class='$kind'>";
         $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
-        $result[$Order] .= implode("",$mresult);
+        //$result[$Order] .= implode("",$mresult);
+        $result[$Order] .= $mresult["Title"];
+        $mkeys = array_keys($mresult);
+        $mkeys = array_filter($mkeys, arpg_not_title);
+        $lresult = array();
+        foreach ($mkeys as $mkey)
+          $lresult[$mkey] = $mresult[$mkey];
+        $result[$Order] .= implode("",$lresult);
         $result[$Order] .= "</div>";
         break;
       default:
