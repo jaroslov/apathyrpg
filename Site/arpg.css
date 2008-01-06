@@ -15,7 +15,7 @@ div.Main {
 }
 div.Display {
   background-color: white;
-  margin: .25em;
+  margin: 3px;
   border: 1px solid gray;
   height: 35em;
   overflow: auto;
@@ -30,23 +30,71 @@ div.chapter {
 div.section {
   padding-left: .75em;
 }
-div.title {
-  margin: 0;
-  padding: 0;
-  border: 0;
+div.part div.title {
+  font-size: 300%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+div.chapter div.title {
+  font-size: 250%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+div.section div.title {
+  font-size: 200%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+div.section div.section div.title {
+  font-size: 150%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+div.section div.section div.section div.title {
+  font-size: 125%;
+  font-weight: bold;
+  font-variant: small-caps;
 }
 div.text {
   text-align: justify;
-  margin: .25em;
-  padding: .25em;
+  margin: 3px;
+  padding: 3px;
   border: 1px solid gray;
 }
-div.text div {
-  padding: .25em;
+div.text:hover {
+  background-color: #EEE;
+}
+div.text div.inner-text {
+  padding: 3px;
   border: 1px solid white;
+  background-color: white;
 }
-div.text div:hover {
+div.text div.inner-text:hover {
   border: 1px solid gray;
+  background-color: white;
+}
+div.itemized-list, div.description-list, div.numbered-list {
+  margin-left: 1em;
+  padding: 0;
+  margin: 0;
+  margin-left: 1em;
+}
+div.item {
+  margin: 3px;
+  border: 1px solid gray;
+  background-color: white;
+}
+div.item-indicator {
+  display: table-cell;
+}
+div.item-description {
+  font-variant: small-caps;
+  font-weight: bold;
+  display: table-cell;
+  width: 10em;
+}
+div.item-body {
+  display: table-cell;
 }
 
 
@@ -64,7 +112,7 @@ div.Selector div {
   overflow: auto;
   width: 18em;
   height: 35em;
-  margin: .25em;
+  margin: 3px;
 }
 div.Selector ol {
   list-style-position: inside;
@@ -105,7 +153,7 @@ div.Debugger {
   background-color: white;
 }
 div.Log {
-  padding: .25em;
+  padding: 3px;
   margin: 0;
   border: 1px solid red;
   width: 15em;

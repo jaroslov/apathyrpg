@@ -3,6 +3,14 @@
 include "arpg.php";
 include "ajax.php";
 
+function arpg_render_unknown_text($Child) {
+  return "<em>Don&#8217;t know: &#8220;".$Child["Name"]."&#8221;</em><br/>";
+}
+
+function arpg_not_description($text) {
+  return "Description" !== $text;
+}
+
 function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
   $result = array();
   foreach ($CoTable[$Key] as $Id => $Child) {
@@ -18,11 +26,57 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
             = arpg_serialize_elements_for_display($Child["Value"]);
           break;
         } else {
-          $result[$Child["Order"]] = "<div class='text'><div>"
+          $result[$Child["Order"]] = "<div class='text'><div class='inner-text'>"
             .arpg_serialize_elements_for_display($Child["Value"])
             ."</div></div>";
           break;
         }
+      case "description":
+        $result["Description"] =
+          implode("",arpg_render_text($CoTable,$ID,$Editable,$Extra));
+        break;
+      case "item":
+        switch ($Extra) {
+        case "numbered-list":
+        case "itemized-list":
+          $result[$Order] = "<div class='item'>";
+          if ($Extra === "itemized-list")
+            $result[$Order] .= "<div class='item-indicator'>&#8226;</div>";
+          else
+            $result[$Order] .= "<div class='item-indicator'>$Order.</div>";
+          $result[$Order] .= "<div class='item-body'>";
+          $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+          $result[$Order] .= implode("",$mresult);
+          $result[$Order] .= "</div></div>";
+          break;
+        case "description-list":
+          $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+          $result[$Order] = "<div class='item'>"
+            ."<div class='item-description'>"
+            .$mresult["Description"]
+            ."</div>"
+            ."<div class='item-body'>";
+          $mkeys = array_keys($mresult);
+          $mkeys = array_filter($mkeys, arpg_not_description);
+          $lresult = array();
+          foreach ($mkeys as $mkey)
+            $lresult[$mkey] = $mresult[$mkey];
+          $result[$Order] .= implode("",$lresult);
+          $result[$Order] .= "</div></div>";
+          break;
+        default:
+          $result[$Order] = arpg_render_unknown_text($Child);
+        }
+        break;
+      case "description-list":
+      case "numbered-list":
+      case "itemized-list":
+        $list_kind = $Child["Name"];
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,$list_kind);
+        $result[$Order] = "<div class='$list_kind'>";
+        $result[$Order] .= implode("",$mresult);
+        $result[$Order] .= "</div>";
+        break;
       case "title":
         $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
         $result[$Order] = "<div class='title'>"
@@ -36,8 +90,7 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
         $result[$Order] .= "</div>";
         break;
       default:
-        $result[$Child["Order"]]
-          = "<em>Don&#8217;t know: &#8220;".$Child["Name"]."&#8221;</em><br/>";
+        $result[$Child["Order"]] = arpg_render_unknown_text($Child);
       }
     }
   }
