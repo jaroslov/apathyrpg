@@ -16,12 +16,9 @@ function arpg_not_title($text) {
 }
 
 function arpg_render_inner_text($Id,$Text) {
-  return  "<div class='inner-text' id='InTxt$Id'>"
-            ."<div class='text-homonculus'>"
-            ."<div class='homonculus-item' onclick=\""
-            .arpg_build_ajax("modify-text.php","ModifyText",
-              "$Id@'+arpg_size('InTxt$Id')+'")
-            ."\">Edit</div></div>"
+  return  "<div class='inner-text' id='InTxt$Id' onclick=\""
+            .arpg_build_ajax("modify-text.php","ModifyText",$Id)
+            ."\">"
             .arpg_serialize_elements_for_display($Text)
             ."</div>";
 }

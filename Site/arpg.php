@@ -116,7 +116,6 @@ function arpg_simple_display_map() {
           "lt"=>"&lt;",
           "gt"=>"&gt;",
           "apos"=>"&apos;",
-          "quote"=>"&quot;",
           "dollar"=>"$",
           "percent"=>"%",
           "rightarrow"=>"&#8594;",
@@ -282,7 +281,7 @@ function arpg_serialize_math_for_editing($PseudoXML,$STran) {
   else
     switch ($PseudoXML->tagName) {
     case "math":
-      $result .= "[math xmlns=\"http://www.w3.org/1998/Math/MathML\"]"
+      $result .= "[math]"
         .implode("",arpg_serialize_math_Q($PseudoXML,$STran))
         ."[/math]";
       break;
@@ -398,12 +397,14 @@ function arpg_deserialize_elements_from_editing($Text) {
   $Text = preg_replace("/\{@roll\s*(([\+\- ])\s*(\d+)\s*[\+])?\s*((\d+)\s*x)?\s*(\d+)\s*[dD]\s*(\d+)\s*(([\+\-])\s*(\d+))?\s*([cCsCpPuUdDfF])?\s*\}/",
     "<roll><rOff>$2</rOff><raw>$3</raw><mul>$5</mul><num>$6</num><face>$7</face><bOff>$9</bOff><bns>$10</bns><kind>$11</kind></roll>",
     $Text);
+  // some pesky other bits
+  $Text = preg_replace("/-\{@greater\}/","<rightarrow/>",$Text);
   // some pesky xml characters
   $Text = preg_replace("/\{@and\}/","<and/>",$Text);
   $Text = preg_replace("/\{@less\}/","<lt/>",$Text);
   $Text = preg_replace("/\{@greater\}/","<gt/>",$Text);
   $Text = preg_replace("/\{@apos\}/","<apos/>",$Text);
-  $Text = preg_replace("/\{@quote\}/","<quote/>",$Text);
+  $Text = preg_replace("/\{@quot\}/","<quot/>",$Text);
   // deserialize math
   // ... not enabled for now
   $Text = preg_replace("/\[/","<",$Text);

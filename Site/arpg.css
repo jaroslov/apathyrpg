@@ -4,6 +4,7 @@ body {
   font-family: times, serif;
   color: black;
   font-variant: normal;
+  font-size: 12pt;
 }
 div.Main {
   margin: 1em;
@@ -269,7 +270,76 @@ div.Editor-Body {
   margin: 3px;
   display: none;
 }
-
+div.Edit-Controls {
+  margin: 3px;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 3px;
+}
+a.Editor-Reference {
+  color: blue;
+  font-style: italic;
+}
+a.Editor-Reference:hover {
+  color: black;
+  text-decoration: underline;
+}
+div.Edit-TD {
+  font-size: 75%;
+  padding: 3px;
+  display: table-cell;
+  border: 1px solid blue;
+  color: blue;
+  font-variant: small-caps;
+}
+div.Edit-TD:hover {
+  color: black;
+  border: 1px solid black;
+}
+div.Editor-Body textarea {
+  font-family: times, serif;
+  color: black;
+  font-variant: normal;
+  font-size: 12pt;
+  width: 25em;
+  height: 15em;
+  border: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+ul.MainMenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.MainMenu li:hover > ul.Menu {
+  display: block;
+  color: blue;
+}
+ul.Menu {
+  margin: 0;
+  margin-left: 5em;
+  margin-top: -1em;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+}
+ul.Menu li {
+  width: 8em;
+  border: 1px solid white;
+  color: blue;
+  margin: 3px;
+  padding: 3px;
+}
+ul.Menu li:hover {
+  border: 1px solid black;
+  background-color: #EEE;
+  color: black;
+}
 
 div.Selector {
   z-index: 150;
