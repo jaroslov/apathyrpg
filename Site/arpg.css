@@ -237,6 +237,13 @@ div.Editor-Title-Bar {
   width: 25em;
   height: 2em;
   margin: 3px;
+  font-variant: small-caps;
+  font-style: italic;
+}
+div.Editor-Title {
+  display: inline-block;
+  font-variant: small-caps;
+  font-style: italic;
 }
 div.Editor-Minimize-Button {
   padding: 1px;
@@ -277,6 +284,13 @@ div.Selector-Title-Bar {
   width: 18em;
   height: 2em;
   margin: 3px;
+  font-variant: small-caps;
+  font-style: italic;
+}
+div.Selector-Title {
+  display: inline-block;
+  font-variant: small-caps;
+  font-style: italic;
 }
 div.Selector-Minimize-Button {
   padding: 1px;

@@ -10,8 +10,8 @@ function arpg_unmodify_text($Response) {
 
   $uneditable = arpg_render_inner_text($text_id,$text);
 
-  $targets = array("Id$text_id");
-  $payloads = array($uneditable);
+  $targets = array("Id$text_id","Editor-Title");
+  $payloads = array($uneditable,"Editor");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -45,8 +45,8 @@ function arpg_modify_text($Response) {
   $editable .= arpg_serialize_elements_for_editing($text);
   $editable .= "</textarea>";
 
-  $targets = array("InTxt$text_id");
-  $payloads = array($editable);
+  $targets = array("InTxt$text_id","Editor-Title");
+  $payloads = array($editable,"Editing: #$text_id");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
