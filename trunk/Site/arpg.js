@@ -26,7 +26,7 @@ function xmlencode(str) {
     str = str.replace('&', '{@and}');
     str = str.replace('<', '{@less}');
     str = str.replace('>', '{@greater}');
-    str = str.replace("'", '{@apos}');
+    //str = str.replace("'", '{@apos}');
     str = str.replace('"', '{@quote}');
   }
   return str;
