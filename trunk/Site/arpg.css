@@ -17,9 +17,10 @@ div.Display {
   background-color: white;
   margin: 3px;
   border: 1px solid gray;
+  position: relative;
   /*height: 35em;
   overflow: auto;*/
-  z-index: 2;
+  z-index: 200;
 }
 a.section-link {
   text-decoration: none;
@@ -70,6 +71,32 @@ div.text {
   padding: 3px;
   border: 1px solid gray;
 }
+div.homonculus-item {
+  border: 1px solid blue;
+  margin: 1px;
+  padding: 3px;
+  z-index: 10;
+}
+div.homonculus-item:hover {
+  color: black;
+  border: 1px solid black;
+}
+div.text-homonculus-long {
+  font-size: 8pt;
+  font-variant: small-caps;
+  font-style: normal;
+  color: blue;
+  text-decoration: none;
+  border: 1px solid blue;
+  padding: 3px;
+  width: 8em;
+  position: absolute;
+  background-color: white;
+  display: none;
+  opacity: .8;
+  margin-left: -7em;
+  margin-top: -1em;
+}
 div.text-homonculus {
   font-size: 8pt;
   font-variant: small-caps;
@@ -99,6 +126,9 @@ div.text div.inner-text:hover {
   background-color: white;
 }
 div.inner-text:hover > .text-homonculus {
+  display: block;
+}
+div.inner-text:hover > .text-homonculus-long {
   display: block;
 }
 div.itemized-list, div.description-list, div.numbered-list {
@@ -155,6 +185,21 @@ div.exclaim {
 div.note-body {
   display: table-cell;
 }
+div.edit-bar {}
+div.edit-bar-button {
+  background-color: white;
+  display: table-cell;
+  padding: 3px;
+}
+div.button {
+  font-size: 10pt;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: blue;
+  border: 1px solid blue;
+  padding: 3px;
+  position: relative;
+}
 div.figure {
   border: 1px solid gray;
   margin: 3px;
@@ -203,7 +248,7 @@ div.Selector {
   position: fixed;
   border: 1px solid gray;
   background-color: #EEE;
-  z-index: 20;
+  z-index: 1;
   top: 1em;
   left: 1em;
 }
