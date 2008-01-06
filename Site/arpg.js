@@ -12,6 +12,12 @@ function realUnescape(string) {
   //var str = string.replace(/\>/,"&gt;");
   return str;
 }
+function xmlencode(str) {
+  for (i = 0; i<str.length; i++) {
+    str = str.replace('&', '&amp;');
+  }
+  return str;
+}
 function urlencode(str) {
   str = escape(str);
   // javascript is megagay
@@ -22,6 +28,7 @@ function urlencode(str) {
     str = str.replace('*', '%2A');
     str = str.replace('/', '%2F');
     str = str.replace('@', '%40');
+    str = str.replace('&', '&amp;');
   }
   return str;
 }
