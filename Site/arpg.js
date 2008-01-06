@@ -1,9 +1,9 @@
 function toggleVisibility(Id) {
   var who = document.getElementById(Id);
-  if (who.style.display == "none")
-    who.style.display = "block";
-  else
+  if (who.style.display == "block")
     who.style.display = "none";
+  else
+    who.style.display = "block";
 }
 function moveObject(Id) {
 }

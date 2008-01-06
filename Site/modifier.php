@@ -55,7 +55,7 @@ function arpg_initial_responder () {
   $Selector = arpg_build_selector($BookCoTable,$bookcokeys[0]);
   $Display = arpg_build_display($BookCoTable,$bookcokeys[0]);
 
-  $targets = array("Selector","Display");
+  $targets = array("Selector-Body","Display");
   $payloads = array($Selector,$Display);
   return arpg_build_responses($targets,$payloads);
 }
