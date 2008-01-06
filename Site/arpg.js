@@ -14,7 +14,7 @@ function realUnescape(string) {
 }
 function xmlencode(str) {
   for (i = 0; i<str.length; i++) {
-    str = str.replace('&', '&amp;');
+    str = str.replace('&', '{@and}');
   }
   return str;
 }
@@ -28,7 +28,7 @@ function urlencode(str) {
     str = str.replace('*', '%2A');
     str = str.replace('/', '%2F');
     str = str.replace('@', '%40');
-    str = str.replace('&', '&amp;');
+    str = str.replace('&', '%26');
   }
   return str;
 }
