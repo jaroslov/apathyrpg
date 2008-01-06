@@ -8,16 +8,36 @@
     <script type="text/javascript" src="dhtml-menu.js"></script>-->
     <link rel="stylesheet" href="arpg.css"></link>
     <script type="text/javascript" src="arpg.js"></script>
+    <script type="text/javascript" src="drag.js"></script>
   </head>
   <body onload="initialLoad();">
     <div class="Main">
-      <div id="Display" class="Display"></div>
+      <div id="Display" class="Display">
+        <em>Please wait while the book loads.</em>
+      </div>
     </div>
-    <div class="Selector"><div id="Selector" ></div></div>
-    <div class="Debugger">
-      <div id="LogResponse" class="Log"><em>Response</em></div>
-      <div id="Ajax" class="Log"><em>Ajax</em></div>
-      <div id="Log" class="Log"><em>Log</em></div>
+    <div class="Selector" id="Selector">
+      <div class="Selector-Title-Bar" onmousedown="dragStart(event, 'Selector');">
+        <div class="Selector-Minimize-Button"
+          onclick="toggleVisibility('Selector-Body');">&ndash;</div>
+      </div>
+      <div id="Selector-Body" class="Selector-Body" >
+        <em></em>
+      </div>
+    </div>
+    <div class="Editor" id="Editor">
+      <div class="Editor-Title-Bar" onmousedown="dragStart(event, 'Editor');">
+        <div class="Editor-Minimize-Button"
+          onclick="toggleVisibility('Editor-Body');">&ndash;</div>
+      </div>
+      <div class="Editor-Body" id="Editor-Body">
+        <em>Simple Editor</em>
+      </div>
+    </div>
+    <div class="Debugger" id="Debugger">
+      <div class="Debugger-Title-Bar"
+        onmousedown="dragStart(event, 'Debugger');"></div>
+      <div id="LogResponse" class="Log"><em>Response</em></div><div id="Ajax" class="Log"><em>Ajax</em></div><div id="Log" class="Log"><em>Log</em></div>
     </div>
   </body>
 </html>

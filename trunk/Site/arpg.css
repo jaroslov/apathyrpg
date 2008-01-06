@@ -7,8 +7,6 @@ body {
 }
 div.Main {
   margin: 1em;
-  margin-left: 20em;
-  margin-top: 1em;
   z-index: 1;
   background-color: #EEE;
   border: 1px solid gray;
@@ -18,9 +16,7 @@ div.Display {
   margin: 3px;
   border: 1px solid gray;
   position: relative;
-  /*height: 35em;
-  overflow: auto;*/
-  z-index: 200;
+  z-index: 2;
 }
 a.section-link {
   text-decoration: none;
@@ -66,36 +62,11 @@ div.section div.section div.section div.title {
   font-variant: small-caps;
 }
 div.text {
+  position: relative;
   text-align: justify;
   margin: 3px;
   padding: 3px;
   border: 1px solid gray;
-}
-div.homonculus-item {
-  border: 1px solid blue;
-  margin: 1px;
-  padding: 3px;
-  z-index: 10;
-}
-div.homonculus-item:hover {
-  color: black;
-  border: 1px solid black;
-}
-div.text-homonculus-long {
-  font-size: 8pt;
-  font-variant: small-caps;
-  font-style: normal;
-  color: blue;
-  text-decoration: none;
-  border: 1px solid blue;
-  padding: 3px;
-  width: 8em;
-  position: absolute;
-  background-color: white;
-  display: none;
-  opacity: .8;
-  margin-left: -7em;
-  margin-top: -1em;
 }
 div.text-homonculus {
   font-size: 8pt;
@@ -103,15 +74,23 @@ div.text-homonculus {
   font-style: normal;
   color: blue;
   text-decoration: none;
-  border: 1px solid blue;
-  padding: 3px;
-  width: 4em;
   position: absolute;
   background-color: white;
   display: none;
   opacity: .8;
-  margin-left: -3em;
-  margin-top: -1em;
+  margin-left: 0em;
+  margin-top: -2em;
+}
+div.homonculus-item {
+  border: 1px solid blue;
+  padding: 3px;
+  display: table-cell;
+  height: 1.35em;
+  min-width: 4em;
+}
+div.homonculus-item:hover {
+  color: black;
+  border: 1px solid black;
 }
 div.text:hover {
   background-color: #EEE;
@@ -126,10 +105,9 @@ div.text div.inner-text:hover {
   background-color: white;
 }
 div.inner-text:hover > .text-homonculus {
-  display: block;
-}
-div.inner-text:hover > .text-homonculus-long {
-  display: block;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
 }
 div.itemized-list, div.description-list, div.numbered-list {
   margin-left: 1em;
@@ -244,15 +222,81 @@ div.summarize {
 }
 
 
-div.Selector {
+div.Editor {
   position: fixed;
   border: 1px solid gray;
   background-color: #EEE;
-  z-index: 1;
-  top: 1em;
-  left: 1em;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  /*display:none;*/
+  opacity: .8;
 }
-div.Selector div {
+div.Editor-Title-Bar {
+  background-color: white;
+  border: 1px solid gray;
+  width: 25em;
+  height: 2em;
+  margin: 3px;
+}
+div.Editor-Minimize-Button {
+  padding: 1px;
+  margin: 3px;
+  width: 1em;
+  padding-left: 1ex;
+  display: block;
+  border: 1px solid gray;
+}
+div.Editor-Minimize-Button:hover {
+  color: blue;
+  border: 1px solid blue;
+  background-color: #DDF;
+}
+div.Editor-Body {
+  background-color: white;
+  border: 1px solid gray;
+  overflow: auto;
+  width: 25em;
+  height: 20em;
+  margin: 3px;
+}
+
+
+div.Selector {
+  z-index: 150;
+  position: fixed;
+  border: 1px solid gray;
+  background-color: #EEE;
+  top: 0;
+  left: 0;
+  opacity: .8;
+}
+div.Selector-Title-Bar {
+  background-color: white;
+  border: 1px solid gray;
+  width: 18em;
+  height: 2em;
+  margin: 3px;
+}
+div.Selector-Minimize-Button {
+  padding: 1px;
+  margin: 3px;
+  width: 1em;
+  padding-left: 1ex;
+  display: block;
+  border: 1px solid gray;
+}
+div.Selector-Minimize-Button:hover {
+  color: blue;
+  border: 1px solid blue;
+  background-color: #DDF;
+}
+div.Selector-Close-Button:hover {
+  color: blue;
+  border: 1px solid blue;
+  background-color: #DDF;
+}
+div.Selector-Body {
   background-color: white;
   border: 1px solid gray;
   overflow: auto;
@@ -260,46 +304,52 @@ div.Selector div {
   height: 35em;
   margin: 3px;
 }
-div.Selector ol {
+div.Selector-Body ol {
   list-style-position: inside;
   margin: 0;
   margin-left: .5em;
   padding: 0;
 }
-div.Selector ol.book {
+div.Selector-Body ol.book {
   list-style-type: none;
 }
-div.Selector ol.part {
+div.Selector-Body ol.part {
   list-style-type: upper-roman;
 }
-div.Selector ol.chapter {
+div.Selector-Body ol.chapter {
   list-style-type: decimal;
 }
-div.Selector ol.section {
+div.Selector-Body ol.section {
   list-style-type: decimal;
 }
-div.Selector ol.section ol {
+div.Selector-Body ol.section ol {
   list-style-type: lower-roman;
 }
-div.Selector ol.section ol ol {
+div.Selector-Body ol.section ol ol {
   list-style-type: lower-alpha;
 }
-div.Selector li {
+div.Selector-Body li {
   min-width: 18em;
 }
 
 
 div.Debugger {
   border: 1px solid red;
+  top: 0;
+  left: 0;
   position: fixed;
-  bottom: .5em;
-  right: 1em;
-  padding: .5em;
   z-index: 10000;
   background-color: white;
+  padding: .25em;
+}
+div.Debugger-Title-Bar {
+  background-color: white;
+  border: 1px solid red;
+  width: 45em;
+  height: 1em;
+  margin: .25em;
 }
 div.Log {
-  padding: 3px;
   margin: 0;
   border: 1px solid red;
   width: 15em;
