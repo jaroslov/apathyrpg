@@ -396,6 +396,8 @@ function arpg_deserialize_elements_from_editing($Text) {
   $Text = preg_replace("/\{@roll\s*(([\+\- ])\s*(\d+)\s*[\+])?\s*((\d+)\s*x)?\s*(\d+)\s*[dD]\s*(\d+)\s*(([\+\-])\s*(\d+))?\s*([cCsCpPuUdDfF])?\s*\}/",
     "<roll><rOff>$2</rOff><raw>$3</raw><mul>$5</mul><num>$6</num><face>$7</face><bOff>$9</bOff><bns>$10</bns><kind>$11</kind></roll>",
     $Text);
+  // some pesky xml characters
+  $Text = preg_replace("/\{@and\}/","<and/>",$Text);
   // deserialize math
   // ... not enabled for now
   $Text = preg_replace("/\[/","<",$Text);
