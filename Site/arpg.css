@@ -68,6 +68,15 @@ div.text {
   padding: 3px;
   border: 1px solid gray;
 }
+div.text div.inner-text {
+  padding: 3px;
+  border: 1px solid white;
+  background-color: white;
+}
+div.text div.inner-text:hover {
+  border: 1px solid gray;
+  background-color: white;
+}
 div.text-homonculus {
   font-size: 8pt;
   font-variant: small-caps;
@@ -95,15 +104,6 @@ div.homonculus-item:hover {
 div.text:hover {
   background-color: #EEE;
 }
-div.text div.inner-text {
-  padding: 3px;
-  border: 1px solid white;
-  background-color: white;
-}
-div.text div.inner-text:hover {
-  border: 1px solid gray;
-  background-color: white;
-}
 div.inner-text:hover > .text-homonculus {
   display: table;
   border-collapse: separate;
@@ -117,7 +117,7 @@ div.itemized-list, div.description-list, div.numbered-list {
 }
 div.item {
   margin: 3px;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
   background-color: white;
 }
 div.item-indicator {
@@ -133,18 +133,18 @@ div.item-body {
   display: table-cell;
 }
 div.equation {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   margin: 3px;
 }
 div.example {
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
   margin: 3px;
 }
 div.example div.title {
   font-size: 125%;
 }
 div.example-body {
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
   margin: 3px;
   margin-left: 1em;
 }
@@ -179,7 +179,7 @@ div.button {
   position: relative;
 }
 div.figure {
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
   margin: 3px;
 }
 div.tabular {
@@ -209,7 +209,7 @@ div.caption {
 div.reference {
   margin: 3px;
   padding: 3px;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
 }
 a.referrer {
   font-variant: small-caps;
@@ -224,8 +224,8 @@ div.summarize {
 
 div.Editor {
   position: fixed;
-  border: 1px solid gray;
-  background-color: #EEE;
+  border: 1px solid blue;
+  background-color: #DDF;
   z-index: 150;
   top: 0;
   left: 0;
@@ -233,7 +233,7 @@ div.Editor {
 }
 div.Editor-Title-Bar {
   background-color: white;
-  border: 1px solid gray;
+  border: 1px solid blue;
   width: 25em;
   height: 2em;
   margin: 3px;
@@ -272,15 +272,15 @@ div.Editor-Body {
 div.Selector {
   z-index: 150;
   position: fixed;
-  border: 1px solid gray;
-  background-color: #EEE;
+  border: 1px solid blue;
+  background-color: #DDF;
   top: 0;
   left: 0;
   opacity: .95;
 }
 div.Selector-Title-Bar {
   background-color: white;
-  border: 1px solid gray;
+  border: 1px solid blue;
   width: 18em;
   height: 2em;
   margin: 3px;
@@ -312,7 +312,7 @@ div.Selector-Close-Button:hover {
 }
 div.Selector-Body {
   background-color: white;
-  border: 1px solid gray;
+  border: 1px solid blue;
   overflow: auto;
   width: 16em;
   height: 35em;
