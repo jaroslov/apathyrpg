@@ -327,6 +327,8 @@ ul.Menu {
   border: 1px solid blue;
   background-color: white;
   color: blue;
+  -moz-border-radius: 0px 0px 3px 3px;
+  -webkit-border-radius: 0px 0px 3px 3px;
 }
 ul.Menu li {
   width: 8em;
