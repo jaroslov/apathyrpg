@@ -5,7 +5,12 @@ function toggleVisibility(Id) {
   else
     who.style.display = "block";
 }
-function moveObject(Id) {
+function toggleMinimizeButton(Id) {
+  var who = document.getElementById(Id);
+  if (who.innerHTML == "--")
+    who.innerHTML = "+";
+  else
+    who.innerHTML = "--";
 }
 function initialLoad() {
   ajaxFunction('modifier.php',
@@ -27,7 +32,7 @@ function xmlencode(str) {
     str = str.replace('<', '{@less}');
     str = str.replace('>', '{@greater}');
     //str = str.replace("'", '{@apos}');
-    str = str.replace('"', '{@quote}');
+    str = str.replace('"', '{@quot}');
   }
   return str;
 }
