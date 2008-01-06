@@ -477,17 +477,69 @@
             <title><text>Character Points</text></title>
             <text>The remainder of the character creation process is done through the expenditure of Character Points, otherwise known as CP. Talk with your GM about how many CP you should use to create your character with. We have found that for a group of 3-4 players 125 CP is about right. Typically the more players, the fewer CP characters should have. This will keep the group from becoming too powerful<mdash/>unless this is the GM<rdquo/>s intent.</text>
             <text>You will use your CP to <ldquo/>purchase<rdquo/> the remainder of your character. The rest of your character is broken into three categories where you will spend these points:</text>
-            <itemized-list>
+            <description-list>
               <item>
-                <text>Mundane<description-list><item><description><text>Attributes</text></description><text>increasing starting attributes</text></item><item><description><text>Skills</text></description><text>normal skills, proficiency and knowledge of various topics</text></item><item><description><text>Combat Skills</text></description><text>techniques for fighting and defense.</text></item></description-list></text>
+                <description><text>Mundane</text></description>
+		<description-list>
+		  <item>
+		    <description><text>Attributes</text></description>
+		    <text>increasing starting attributes</text>
+		  </item>
+		  <item>
+		    <description><text>Skills</text></description>
+		    <text>normal skills, proficiency and knowledge of various topics</text>
+		  </item>
+		  <item><description><text>Combat Skills</text></description>
+		  <text>techniques for fighting and defense.</text>
+		  </item>
+		</description-list>
               </item>
               <item>
-                <text>Arcane / Magic<description-list><item><description><text>Spellcasting</text></description><text>No value</text></item><item><description><text>Psionics</text></description><text>No value</text></item><item><description><text>Witchcraft or Ritual Magic</text></description><text>No value</text></item><item><description><text>Supernatural abilities (super powers)</text></description><text>No value</text></item></description-list></text>
-              </item>
-              <item>
-                <text>Technology<description-list><item><description><text>Mecha and Robotics</text></description><text>Robotic bodies, limbs, powered armor, and robotic suits</text></item><item><description><text>Augmentations</text></description><text>Cybernetics, genetic mutations, and chemical augmentations</text></item><item><description><text>Weapons</text></description><text>No value</text></item><item><description><text>Armor</text></description><text>No value</text></item><item><description><text>Equipment</text></description><text> <and/> other material possessions</text></item></description-list></text>
-              </item>
-            </itemized-list>
+                <description><text>Arcane / Magic</text></description>
+		<description-list>
+		  <item>
+		    <description><text>Spellcasting</text></description>
+		    <text>No value</text>
+		  </item>
+		  <item>
+		    <description><text>Psionics</text></description>
+		    <text>No value</text>
+		  </item>
+		  <item>
+		    <description><text>Witchcraft or Ritual Magic</text></description>
+		    <text>No value</text>
+		  </item>
+		  <item>
+		    <description><text>Supernatural abilities (super powers)</text></description>
+		  <text>No value</text></item>
+		</description-list>
+	      </item>
+	      <item>
+		<description><text>Technology</text></description>
+		<description-list>
+		  <item>
+		    <description><text>Mecha and Robotics</text></description>
+		    <text>Robotic bodies, limbs, powered armor, and robotic suits</text>
+		  </item>
+		  <item>
+		    <description><text>Augmentations</text></description>
+		    <text>Cybernetics, genetic mutations, and chemical augmentations</text>
+		  </item>
+		  <item>
+		    <description><text>Weapons</text></description>
+		    <text>No value</text>
+		  </item>
+		  <item>
+		    <description><text>Armor</text></description>
+		    <text>No value</text>
+		  </item>
+		  <item>
+		    <description><text>Equipment</text></description>
+		    <text> <and/> other material possessions</text>
+		  </item>
+		</description-list>
+	      </item>
+	    </description-list>
             <note>
               <text><Apathy/> does not have <ldquo/>character classes<rdquo/> that are common to many role-playing systems. The <Apathy/> system allows the player to decide every detail pertaining to his character, rather than being stuck with a <ldquo/>default<rdquo/> set of abilities and skills. It is up to the player to use his CP to develop a well-rounded character. Note that there are NO skills that come <ldquo/>free.<rdquo/> If your character is literate, then that skill needs to be purchased. Know how to drive a car? Buy the skill.</text>
             </note>
@@ -641,7 +693,9 @@
           </figure>
           <text>Like most of character creation, skills are purchased using CP. The higher the rank, the more expensive it will be. The higher the level you want in the skill, the more expensive it will be.</text>
           <text>For those that are mathematically inclined, here is the formula for determining CP of a particular skill level and rank:</text>
-          <equation><text><math><mrow><munderover><Sum/><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mn>2</mn></mfrac></mrow></math></text></equation>
+          <equation>
+	  <text><math><mrow><munderover><mrow><mi><Sum/></mi><mi>i</mi></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mn>2</mn></mfrac></mrow></math></text>
+	  </equation>
           <text>For the rest of us, use this nifty table, and multiply the value listed by the rank.</text>
           <figure>
             <table>
