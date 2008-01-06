@@ -230,6 +230,8 @@ div.Editor {
   top: 0;
   left: 0;
   opacity: .95;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
 }
 div.Editor-Title-Bar {
   background-color: white;
@@ -260,7 +262,7 @@ div.Editor-Minimize-Button:hover {
 }
 div.Editor-Body {
   background-color: white;
-  border: 1px solid gray;
+  border: 1px solid blue;
   overflow: auto;
   width: 25em;
   height: 20em;
@@ -277,6 +279,8 @@ div.Selector {
   top: 0;
   left: 0;
   opacity: .95;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
 }
 div.Selector-Title-Bar {
   background-color: white;
