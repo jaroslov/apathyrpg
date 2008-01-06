@@ -27,11 +27,17 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
       case "text":
         $result[$Order] = "";
         if (!$Editable) {
-          $result[$Order]
-            .= arpg_serialize_elements_for_display($Child["Value"]);
+          $result[$Order] .= "<a class='section-link' href='#Id$ID'>"
+            .arpg_serialize_elements_for_display($Child["Value"])
+            ."</a>";
           break;
         } else {
-          $result[$Order] .= "<div class='text'><div class='inner-text'>"
+          $result[$Order] .= "<div class='text' id='Id$ID'>"
+            ."<div class='inner-text' id='InTxt$ID'>"
+            ."<div class='text-homonculus' onclick=\""
+            .arpg_build_ajax("text-modify.php","ModifyText",
+              "$ID@'+arpg_size('InTxt$ID')+'")
+            ."\">Edit</div>"
             .arpg_serialize_elements_for_display($Child["Value"])
             ."</div></div>";
           break;
@@ -150,6 +156,17 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
         $result["Title"] = "<div class='title'>"
           .implode("",$mresult)."</div>";
         break;
+      case "reference":
+        $result[$Order] = "<div class='reference'>"
+          ."<a class='referrer'>"
+          ."Click to expand table reference: ".$attributes["hrid"]
+          ."</a></div>";
+        break;
+      case "summarize":
+        $result[$Order] = "<div class='summarize'>"
+          ."<em>Summaries are not rendered in edit-mode.</em>"
+          ."</div>";
+        break;
       case "section":
         $kind = $attributes["kind"];
         $result[$Order] = "<div class='$kind'>";
@@ -186,7 +203,7 @@ function arpg_build_selector_Q($CoTable,$Key) {
         $childNodes = arpg_cot_childNodes($CoTable,$ID);
         $keys = array_keys($childNodes);
         $result[$Order] = implode("",arpg_render_text($CoTable,
-                            $childNodes[$keys[0]]["ID"]));
+                            $childNodes[$keys[0]]["ID"],false,"Link"));
         $mresult = arpg_build_selector_Q($CoTable,$ID);
         $Kind = $mresult["Kind"];
         if (sizeof($mresult["Children"]) > 0)
@@ -218,12 +235,12 @@ function arpg_responder () {
   $Connection = arpg_create_apathy();
   $book = xmldb_getElementsByTagName($Connection,"book");
   $book_ids = array_keys($book);
-  $CoTable = arpg_child_table_of_id($Connection,$book_ids[0]);
-  $cokeys = array_keys($CoTable);
-  sort($cokeys);
+  $BookCoTable = arpg_child_table_of_id($Connection,$book_ids[0]);
+  $bookcokeys = array_keys($BookCoTable);
+  sort($bookcokeys);
 
-  $Selector = arpg_build_selector($CoTable,$cokeys[0]);
-  $Display = arpg_build_display($CoTable,$cokeys[0]);
+  $Selector = arpg_build_selector($BookCoTable,$bookcokeys[0]);
+  $Display = arpg_build_display($BookCoTable,$bookcokeys[0]);
 
   $targets = array("Selector","Display");
   $payloads = array($Selector,$Display);

@@ -2,6 +2,10 @@ function initialLoad() {
   ajaxFunction('modifier.php',
     '<reply><response><code>Initialize</code></response></reply>');
 }
+function arpg_size(Id) {
+  var who = document.getElementById(Id);
+  return who.scrollWidth+":"+who.scrollHeight;
+}
 function realUnescape(string) {
   var str = string.replace(/\\/,"");
   //var str = string.replace(/\</,"&lt;");
