@@ -96,6 +96,65 @@ div.item-description {
 div.item-body {
   display: table-cell;
 }
+div.equation {
+  border: 1px solid green;
+  margin: 3px;
+}
+div.example {
+  border: 1px solid gray;
+  margin: 3px;
+}
+div.example div.title {
+  font-size: 125%;
+}
+div.example-body {
+  border: 1px solid gray;
+  margin: 3px;
+  margin-left: 1em;
+}
+div.note {
+  border: 1px solid red;
+  margin: 3px;
+}
+div.exclaim {
+  border: 0;
+  font-size: 150%;
+  font-weight: bold;
+  color: red;
+  padding: 3px;
+  display: table-cell;
+}
+div.note-body {
+  display: table-cell;
+}
+div.figure {
+  border: 1px solid gray;
+  margin: 3px;
+}
+div.tabular {
+  border: 1px solid gray;
+  margin: 3px;
+  padding: 3px;
+}
+div.tabular div.table-head {
+  display: table-row;
+}
+div.tabular div.table-cell-head {
+  font-variant: small-caps;
+  font-weight: bold;
+  display: table-cell;
+  border-bottom: 1px solid black;
+}
+div.tabular div.table-cell-row {
+  display: table-cell;
+}
+div.caption {
+  border: 1px solid gray;
+  margin: 3px;
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 div.Selector {
