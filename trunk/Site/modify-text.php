@@ -77,7 +77,7 @@ function arpg_build_menu_bar($text_id,$kind) {
             </ul>"
     .   "</li></ul>"
     ."</div>";
-  $spacer = "<div class='Edit-TD' style='width:14em;'>$kind</div>";
+  $spacer = "<div class='Edit-TD' style='width:1000em;min-width:1em;'></div>";
   return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
 }
 
@@ -96,7 +96,8 @@ function arpg_modify_text($Response) {
 
   $targets = array("Editor-Body","Editor-Title");
   $payloads = array($editable,
-    "Editing: <a class='Editor-Reference' href='#Id$text_id'>#$text_id</a>");
+    "Editing: <a class='Editor-Reference'
+      href='#Id$text_id'>#$text_id</a> with $extra");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
