@@ -87,7 +87,7 @@ div.text-homonculus {
   position: absolute;
   background-color: white;
   display: none;
-  opacity: .95;
+  opacity: .35;
   margin-left: 0em;
   margin-top: -2em;
 }
@@ -230,7 +230,7 @@ div.Editor {
   top: 0;
   left: 0;
   min-width: 20em;
-  opacity: .95;
+  opacity: .35;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
 }
@@ -353,7 +353,7 @@ div.Selector {
   background-color: #DDF;
   top: 0;
   left: 0;
-  opacity: .95;
+  opacity: .35;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
 }

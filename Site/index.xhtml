@@ -8,7 +8,7 @@
     <script type="text/javascript" src="dhtml-menu.js"></script>-->
     <link rel="stylesheet" href="arpg.css"></link>
     <script type="text/javascript" src="arpg.js"></script>
-    <script type="text/javascript" src="drag.js"></script>
+    <script type="text/javascript" src="drag-resize.js"></script>
     <title>Apathy RPG Online Structured Editing System</title>
   </head>
   <!--<body>-->
@@ -24,6 +24,7 @@
         <div class="Selector-Minimize-Button"
           id="Selector-Minimize-Button"
           onclick="toggleVisibility('Selector-Body');
+                   toggleOpacity('Selector');
                    toggleMinimizeButton('Selector-Minimize-Button');">+</div>
           <div class="Selector-Title" id="Selector-Title">
             Outline
@@ -40,6 +41,7 @@
         <div class="Editor-Minimize-Button"
           id="Editor-Minimize-Button"
           onclick="toggleVisibility('Editor-Body');
+                   toggleOpacity('Editor');
                    toggleMinimizeButton('Editor-Minimize-Button');">+</div>
         <div class="Editor-Title" id="Editor-Title">Editor</div>
       </div>
