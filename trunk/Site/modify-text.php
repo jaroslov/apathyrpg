@@ -4,7 +4,7 @@ include "modify-common.php";
 
 function arpg_unmodify_text($Response) {
   $Connection = arpg_create_apathy();
-  $text_id = $Response->payload[0];
+  $text_id = $Response->getElementById("Payload0")->firstChild->nodeValue;
   $textNode = xmldb_getElementById($Connection,$text_id);
   $text = $textNode["Value"];
 
@@ -17,8 +17,8 @@ function arpg_unmodify_text($Response) {
 
 function arpg_save_changes($Response) {
   $Connection = arpg_create_apathy();
-  $text_id = $Response->payload[0]->who[0];
-  $text_value = $Response->payload[0]->what[0];
+  $text_id = $Response->getElementById("Payload0")->firstChild->nodeValue;
+  $text_value = $Response->getElementById("Payload1")->firstChild->nodeValue;
 
   $text_value = arpg_deserialize_elements_from_editing($text_value);
   xmldb_setNodeValueById($Connection,$text_id,$text_value);
@@ -37,10 +37,9 @@ function arpg_build_menu_bar($text_id,$kind) {
             .arpg_build_ajax("modify-text.php","UnmodifyText",$text_id)
             ."\">Close</div>";
   $save = "<div class='Edit-TD' onclick=\""
-          .arpg_build_ajax("modify-text.php","SaveChanges",
-              "<who>$text_id</who><what>'+"
-              ."xmlencode(document.getElementById('TA$text_id').value)+'"
-              ."</what>")
+          .arpg_build_ajax("modify-text.php",array("SaveChanges","What"),
+              array($text_id,
+              "'+xmlencode(document.getElementById('TA$text_id').value)+'"))
           ."\">Save Changes</div>";
   $structure = "<div class='Edit-TD'>"
     .   "<ul class='MainMenu'><li>Structure..."
@@ -122,6 +121,7 @@ function arpg_modify_text_responder() {
     case "SaveChanges":
       $lres = arpg_save_changes($replyXML);
       break;
+    case "What":
     case "Extra":
       $lres["Targets"] = array();
       $lres["Payloads"] = array();
