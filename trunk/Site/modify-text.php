@@ -100,6 +100,29 @@ function arpg_modify_text($Response) {
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
+function arpg_expand_category($Response) {
+  $Connection = arpg_create_apathy();
+  $target = $Response->getElementById("Payload0")->firstChild->nodeValue;
+  $hrid = $Response->getElementById("Payload1")->firstChild->nodeValue;
+
+  $categories = xmldb_getElementsByTagName($Connection, "category");
+  $cat_attrs = xmldb_attributesOfSet($Connection, $categories);
+  $Id = null;
+  foreach ($cat_attrs as $cat_id => $attributes)
+    if (array_key_exists("name",$attributes))
+      if ($attributes["name"]["Value"] === $hrid) {
+        $Id = $cat_id;
+        break;
+      }
+
+  $CoTable = arpg_child_table_of_id($Connection, $Id);
+  $cokeys = array_keys($CoTable);
+
+  $targets = array("Id$target");
+  $payloads = array(implode("",arpg_render_text($CoTable,$cokeys[0],true)));
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function arpg_modify_text_responder() {
   $reply = $_GET["Message"];
   $replyXML = new DOMDocument();
@@ -120,6 +143,9 @@ function arpg_modify_text_responder() {
       break;
     case "SaveChanges":
       $lres = arpg_save_changes($replyXML);
+      break;
+    case "ExpandCategory":
+      $lres = arpg_expand_category($replyXML);
       break;
     case "What":
     case "Extra":

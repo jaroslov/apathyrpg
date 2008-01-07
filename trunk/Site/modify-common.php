@@ -29,9 +29,22 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
   $index = 0;
   $number_children = sizeof($CoTable[$Key]);
   foreach ($CoTable[$Key] as $Id => $Child) {
-    if ($Child["Kind"] === "element") {
-      $index++;
-      $ID = $Child["ID"];
+    $index++;
+    $ID = $Child["ID"];
+    if ($Child["Kind"] === "attribute") {
+      switch ($Child["Name"]) {
+      case "hrid":
+        $hrid = $Child["Value"];
+        $result[$Child["Name"]] = "<a id='Id$ID' ";
+        $result[$Child["Name"]] .= "onclick=\""
+          .arpg_build_ajax("modify-text.php",
+            array("ExpandCategory","Extra"),
+            array($ID,$hrid));
+        $result[$Child["Name"]] .= "\">Click to expand: $hrid</a>";
+        break;
+      default:
+      }
+    } else if ($Child["Kind"] === "element") {
       $Order = $Child["Order"];
       $attributes = arpg_cot_attributes($CoTable,$ID);
       $childNodes = arpg_cot_childNodes($CoTable,$ID);
@@ -163,11 +176,25 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
         $result["Title"] = "<div class='title'>"
           .implode("",$mresult)."</div>";
         break;
+      case "field":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"field");
+        $result[$Order] = "<div class='field'>";
+        $result[$Order] .= implode("",$mresult);
+        $result[$Order] .= "</div>";
+        break;
+      case "datum":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"datum");
+        $result[$Order] = "<div class='datum'>";
+        $result[$Order] .= implode("",$mresult);
+        $result[$Order] .= "</div>";
+        break;
+      case "default":
+        break;
       case "reference":
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"$Extra/reference");
         $result[$Order] = "<div class='reference'>"
-          ."<a class='referrer'>"
-          ."Click to expand table reference: ".$attributes["hrid"]
-          ."</a></div>";
+          .implode("",$mresult)
+          ."</div>";
         break;
       case "summarize":
         $result[$Order] = "<div class='summarize'>"
