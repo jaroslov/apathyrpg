@@ -162,6 +162,7 @@ function dragGo(event) {
 
   // Move drag element by the same amount the cursor has moved.
 
+  dragObj.elNode.style.width = dragObj.elNode.clientWidth+"px";
   dragObj.elNode.style.left = (dragObj.elStartLeft + x - dragObj.cursorStartX) + "px";
   dragObj.elNode.style.top  = (dragObj.elStartTop  + y - dragObj.cursorStartY) + "px";
 

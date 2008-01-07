@@ -18,7 +18,8 @@
         <em>Please wait while the book loads.</em>
       </div>
     </div>
-    <div class="Selector" id="Selector">
+    <div class="Selector" id="Selector"
+      onmousedown="resizeStart(event, 'Selector', 'Selector-Body');">
       <div class="Selector-Title-Bar"
         onmousedown="dragStart(event, 'Selector');">
         <div class="Selector-Minimize-Button"
@@ -34,7 +35,8 @@
       <div id="Selector-Body" class="Selector-Body" >
       </div>
     </div>
-    <div class="Editor" id="Editor" onmousedown="resizeStart(event, 'Editor', 'Editor-Body');">
+    <div class="Editor" id="Editor"
+      onmousedown="resizeStart(event, 'Editor', 'Editor-Body');">
       <div class="Editor-Title-Bar" id="Editor-Title-Bar"
         onmousedown="dragStart(event, 'Editor');">
         <div class="Editor-Minimize-Button"

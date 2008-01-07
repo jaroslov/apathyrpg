@@ -264,7 +264,7 @@ div.Editor-Minimize-Button:hover {
 div.Editor-Body {
   background-color: white;
   border: 1px solid blue;
-  overflow: auto;
+  overflow: hidden;
   width: auto;
   height: 20em;
   min-height: 10em;
@@ -360,7 +360,7 @@ div.Selector {
 div.Selector-Title-Bar {
   background-color: white;
   border: 1px solid blue;
-  width: 18em;
+  width: auto;
   height: 2em;
   margin: 3px;
   font-variant: small-caps;
@@ -393,7 +393,7 @@ div.Selector-Body {
   background-color: white;
   border: 1px solid blue;
   overflow: auto;
-  width: 16em;
+  width: auto;
   height: 35em;
   margin: 3px;
   display: none;
