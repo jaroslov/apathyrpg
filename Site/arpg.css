@@ -210,14 +210,17 @@ div.caption {
 div.reference {
   margin: 3px;
   padding: 3px;
-  /*border: 1px solid gray;*/
-}
-a.referrer {
   font-variant: small-caps;
   font-style: italic;
 }
 div.summarize {
   margin: 3px;
+  padding: 3px;
+  border: 1px solid gray;
+}
+div.datum {
+  margin: 3px;
+  min-height: 1em;
   padding: 3px;
   border: 1px solid gray;
 }
@@ -230,6 +233,7 @@ div.Editor {
   top: 0;
   left: 0;
   min-width: 20em;
+  overflow: hidden;
   opacity: .35;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -247,6 +251,7 @@ div.Editor-Title {
   display: inline-block;
   font-variant: small-caps;
   font-style: italic;
+  font-size: 75%;
 }
 div.Editor-Minimize-Button {
   padding: 1px;
@@ -309,6 +314,7 @@ div.Editor-Body textarea {
   border: 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  overflow: auto;
 }
 ul.MainMenu {
   margin: 0;
