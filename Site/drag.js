@@ -15,12 +15,98 @@
 */
 
 var dragObj = new Object();
+dragObj.active = false;
 dragObj.zIndex = 10000;
+
+var resizeObj = new Object();
+resizeObj.active = false;
+resizeObj.zIndex = 10000;
+
+function resizeStart(event, id, body_id) {
+  var el;
+  var x, y;
+
+  if (dragObj.active)
+    return;
+
+  // If an element id was given, find it. Otherwise use the element being
+  // clicked on.
+
+  if (id) {
+    resizeObj.elNode = document.getElementById(id);
+    resizeObj.elBodyNode = document.getElementById(body_id);
+  } else {
+    resizeObj.elNode = event.target;
+
+    // If this is a text node, use its parent element.
+
+    if (resizeObj.elNode.nodeType == 3)
+      resizeObj.elNode = resizeObj.elNode.parentNode;
+  }
+
+  // Get cursor position with respect to the element.
+
+  x = event.clientX;
+  y = event.clientY;
+
+  // Save starting positions of cursor and element.
+
+  resizeObj.cursorStartX = x;
+  resizeObj.cursorStartY = y;
+  resizeObj.elStartLeft  = parseInt(resizeObj.elNode.style.left, 10);
+  resizeObj.elStartTop   = parseInt(resizeObj.elNode.style.top,  10);
+
+  resizeObj.elStartWidth = resizeObj.elNode.clientWidth;
+  resizeObj.elStartHeight = resizeObj.elNode.clientHeight;
+
+  if (isNaN(resizeObj.elStartLeft)) resizeObj.elStartLeft = 0;
+  if (isNaN(resizeObj.elStartTop))  resizeObj.elStartTop  = 0;
+
+  // Update element's z-index.
+
+  resizeObj.elNode.style.zIndex = ++resizeObj.zIndex;
+
+  // Capture mousemove and mouseup events on the page.
+
+  document.addEventListener("mousemove", resizeGo,   true);
+  document.addEventListener("mouseup",   resizeStop, true);
+  event.preventDefault();
+}
+
+function resizeGo(event) {
+
+  var x, y, diff_x, diff_y;
+
+  // Get cursor position with respect to the page.
+
+  x = event.clientX;
+  y = event.clientY;
+
+  // Move drag element by the same amount the cursor has moved.
+
+  diff_x = x-resizeObj.cursorStartX;
+  diff_y = y-resizeObj.cursorStartY;
+
+  resizeObj.elNode.style.width = (resizeObj.elStartWidth + diff_x) + "px";
+  //resizeObj.elNode.style.height = (resizeObj.elStartHeight + diff_y) + "px";
+
+  event.preventDefault();
+}
+
+function resizeStop(event) {
+
+  // Stop capturing mousemove and mouseup events.
+
+  document.removeEventListener("mousemove", resizeGo,   true);
+  document.removeEventListener("mouseup",   resizeStop, true);
+}
 
 function dragStart(event, id) {
 
   var el;
   var x, y;
+
+  dragObj.active = true;
 
   // If an element id was given, find it. Otherwise use the element being
   // clicked on.
@@ -80,6 +166,8 @@ function dragGo(event) {
 }
 
 function dragStop(event) {
+
+  dragObj.active = false;
 
   // Stop capturing mousemove and mouseup events.
 

@@ -32,23 +32,17 @@ function arpg_save_changes($Response) {
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
-function arpg_modify_text($Response) {
-  $Connection = arpg_create_apathy();
-  $text_id = $Response->payload[0];
-  $textNode = xmldb_getElementById($Connection,$text_id);
-  $text = $textNode["Value"];
-
-  $editable = "<div class='Edit-Controls'>"
-    ."<div class='Edit-TD' onclick=\""
-    .arpg_build_ajax("modify-text.php","UnmodifyText",$text_id)
-    ."\">Close</div>"
-    ."<div class='Edit-TD' onclick=\""
-    .arpg_build_ajax("modify-text.php","SaveChanges",
-        "<who>$text_id</who><what>'+"
-        ."xmlencode(document.getElementById('TA$text_id').value)+'"
-        ."</what>")
-    ."\">Save Changes</div>"
-    ."<div class='Edit-TD'>"
+function arpg_build_menu_bar($text_id,$kind) {
+  $close = "<div class='Edit-TD' onclick=\""
+            .arpg_build_ajax("modify-text.php","UnmodifyText",$text_id)
+            ."\">Close</div>";
+  $save = "<div class='Edit-TD' onclick=\""
+          .arpg_build_ajax("modify-text.php","SaveChanges",
+              "<who>$text_id</who><what>'+"
+              ."xmlencode(document.getElementById('TA$text_id').value)+'"
+              ."</what>")
+          ."\">Save Changes</div>";
+  $structure = "<div class='Edit-TD'>"
     .   "<ul class='MainMenu'><li>Structure..."
     .      "<ul class='Menu'>
               <li>Append...
@@ -82,8 +76,20 @@ function arpg_modify_text($Response) {
               <li>Remove</li>
             </ul>"
     .   "</li></ul>"
-    ."</div>"
     ."</div>";
+  $spacer = "<div class='Edit-TD' style='width:14em;'>$kind</div>";
+  return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
+}
+
+function arpg_modify_text($Response) {
+  $Connection = arpg_create_apathy();
+  $text_id = $Response->getElementById("Payload0")->firstChild->nodeValue;
+  $textNode = xmldb_getElementById($Connection,$text_id);
+  $text = $textNode["Value"];
+
+  $extra = $Response->getElementById("Payload1")->firstChild->nodeValue;
+
+  $editable = arpg_build_menu_bar($text_id,$extra);
   $editable .= "<textarea id='TA$text_id'>";
   $editable .= arpg_serialize_elements_for_editing($text);
   $editable .= "</textarea>";
@@ -96,22 +102,28 @@ function arpg_modify_text($Response) {
 
 function arpg_modify_text_responder() {
   $reply = $_GET["Message"];
-  $replyXML = new SimpleXMLElement($reply);
+  $replyXML = new DOMDocument();
+  $replyXML->loadXML($reply);
+
   $targets = array();
   $payloads = array();
 
-  foreach ($replyXML->response as $response) {
-    $lres = array("Targets"=>array("Log"),
-                  "Payloads"=>array("Unknown Code&#8658;".$response->code[0]));
-    switch ($response->code[0]) {
+  foreach ($replyXML->getElementsByTagname("code") as $code) {
+    $lres = array("Targets"=>array("Editor-Body"),
+                  "Payloads"=>array("Unknown Code&#8658;".$code->nodeValue));
+    switch ($code->nodeValue) {
     case "ModifyText":
-      $lres = arpg_modify_text($response);
+      $lres = arpg_modify_text($replyXML);
       break;
     case "UnmodifyText":
-      $lres = arpg_unmodify_text($response);
+      $lres = arpg_unmodify_text($replyXML);
       break;
     case "SaveChanges":
-      $lres = arpg_save_changes($response);
+      $lres = arpg_save_changes($replyXML);
+      break;
+    case "Extra":
+      $lres["Targets"] = array();
+      $lres["Payloads"] = array();
       break;
     }
     foreach ($lres["Targets"] as $target)
