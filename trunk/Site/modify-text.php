@@ -77,7 +77,8 @@ function arpg_build_menu_bar($text_id,$kind) {
             </ul>"
     .   "</li></ul>"
     ."</div>";
-  $spacer = "<div class='Edit-TD' style='width:1000em;min-width:1em;'></div>";
+  //style='width:1000em;padding:0;min-width:0;border:0;'
+  $spacer = "<div class='Edit-TD'></div>";
   return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
 }
 

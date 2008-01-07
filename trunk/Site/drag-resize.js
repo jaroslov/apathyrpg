@@ -68,6 +68,9 @@ function resizeStart(event, id, body_id) {
 
   // Capture mousemove and mouseup events on the page.
 
+  if (event.target.tagName == "textarea")
+    return;
+
   document.addEventListener("mousemove", resizeGo,   true);
   document.addEventListener("mouseup",   resizeStop, true);
   event.preventDefault();
