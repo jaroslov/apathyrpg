@@ -7,10 +7,11 @@ function toggleVisibility(Id) {
 }
 function toggleMinimizeButton(Id) {
   var who = document.getElementById(Id);
-  if (who.innerHTML == "--")
+  if (who.innerHTML == "--") {
     who.innerHTML = "+";
-  else
+  } else {
     who.innerHTML = "--";
+  }
 }
 function initialLoad() {
   ajaxFunction('modifier.php',

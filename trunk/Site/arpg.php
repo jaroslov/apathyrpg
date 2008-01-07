@@ -358,14 +358,14 @@ function arpg_serialize_elements_for_Q($PseudoXMLs,$STran) {
 function arpg_serialize_elements_for_display($Text) {
   $PseudoXMLstr = "<root>".$Text."</root>";
   $PseudoXML = new DOMDocument();
-  try {
+  //try {
     $PseudoXML->loadXML($PseudoXMLstr);
     return arpg_serialize_elements_for_Q($PseudoXML->childNodes,
       array("Simple"=>arpg_simple_translate_for_display,
             "Math"=>arpg_serialize_math));
-  } catch (Exception $e) {
-    echo $PseudoXMLstr;
-  }
+  //} catch (Exception $e) {
+  //  echo $PseudoXMLstr;
+  //}
 }
 
 function arpg_serialize_elements_for_editing($Text) {

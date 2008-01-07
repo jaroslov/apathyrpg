@@ -17,28 +17,6 @@ function arpg_encode_html ($html) {
   return $html;
 }
 
-/*function arpg_pseudo_html ($html) {
-  $html = str_replace("<lsquo/>","&lsquo;",$html);
-  $html = str_replace("<ldquo/>","&ldquo;",$html);
-  $html = str_replace("<rsquo/>","&rsquo;",$html);
-  $html = str_replace("<rdquo/>","&rdquo;",$html);
-  $html = str_replace("&","&amp;",$html);
-  $html = str_replace("[","&amp;[;",$html);
-  $html = str_replace("]","&amp;];;",$html);
-  $html = str_replace("<","[;",$html);
-  $html = str_replace(">","];",$html);
-  return $html;
-}
-
-function arpg_depseudo_html ($html) {
-  $html = str_replace("[;","<",$html);
-  $html = str_replace("];",">",$html);
-  $html = str_replace("&amp;[;","[",$html);
-  $html = str_replace("&amp;];","]",$html);
-  $html = str_replace("&amp;","&",$html);
-  return $html;
-}*/
-
 function arpg_build_empty_response() {
   $targets = array();
   $payloads = array();
@@ -102,12 +80,14 @@ function arpg_build_ajax($Responder,$Codes,$Payloads) {
   if (!is_array($Payloads))
     $Payloads = array($Payloads);
   $result = "<reply>";
-  for ($cdx = 0; $cdx < sizeof($Codes); $cdx++)
-    $result .= "<response><code>"
-      .$Codes[$cdx]
-      ."</code><payload>"
-      .$Payloads[$cdx]
-      ."</payload></response>";
+  for ($cdx = 0; $cdx < sizeof($Codes); $cdx++) {
+      $result .= "<response xml:id=\'Response$cdx\'>"
+        ."<code xml:id=\'Code$cdx\'>"
+        .$Codes[$cdx]
+        ."</code><payload xml:id=\'Payload$cdx\'>"
+        .$Payloads[$cdx]
+        ."</payload></response>";
+  }
   $result .= "</reply>";
   $result = arpg_encode_html($result);
   return "ajaxFunction('$Responder','$result')";

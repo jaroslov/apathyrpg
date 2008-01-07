@@ -15,9 +15,10 @@ function arpg_not_title($text) {
   return "Title" !== $text;
 }
 
-function arpg_render_inner_text($Id,$Text) {
+function arpg_render_inner_text($Id,$Text,$Extra) {
   return  "<div class='inner-text' id='InTxt$Id' onclick=\""
-            .arpg_build_ajax("modify-text.php","ModifyText",$Id)
+            .arpg_build_ajax("modify-text.php",
+              array("ModifyText","Extra"),array($Id,$Extra))
             ."\">"
             .arpg_serialize_elements_for_display($Text)
             ."</div>";
@@ -44,18 +45,18 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
           break;
         } else {
           $result[$Order] .= "<div class='text' id='Id$ID'>"
-            .arpg_render_inner_text($ID,$Child["Value"])
+            .arpg_render_inner_text($ID,$Child["Value"],"$Extra/text")
             ."</div>";
           break;
         }
       case "caption":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"caption");
         $result[$Order] = "<div class='caption'>"
           .implode("",$mresult)
           ."</div>";
         break;
       case "cell":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"$Extra/cell");
         $result[$Order] = "<div class='table-cell-$Extra'>"
           .implode("",$mresult)
           ."</div>";
@@ -73,19 +74,19 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
           ."</div>";
         break;
       case "table":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"table");
         $result[$Order] = "<div class='tabular'>"
           .implode("",$mresult)
           ."</div>";
         break;
       case "figure":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"figure");
         $result[$Order] = "<div class='figure'>"
           .implode("",$mresult)
           ."</div>";
         break;
       case "note":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"note");
         $result[$Order] = "<div class='note'>"
           ."<div class='exclaim'>Note!</div>"
           ."<div class='note-body'>"
@@ -93,7 +94,7 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
           ."</div></div>";
         break;
       case "example":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"example");
         $mkeys = array_keys($mresult);
         $mkeys = array_filter($mkeys, arpg_not_title);
         $lresult = array();
@@ -106,14 +107,14 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
           ."</div></div>";
         break;
       case "equation":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"equation");
         $result[$Order] = "<div class='equation'>"
           .implode("",$mresult)
           ."</div>";
         break;
       case "description":
         $result["Description"] =
-          implode("",arpg_render_text($CoTable,$ID,$Editable,$Extra));
+          implode("",arpg_render_text($CoTable,$ID,$Editable,"$Extra/description"));
         break;
       case "item":
         switch ($Extra) {
@@ -125,12 +126,12 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
           else
             $result[$Order] .= "<div class='item-indicator'>$Order.</div>";
           $result[$Order] .= "<div class='item-body'>";
-          $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+          $mresult = arpg_render_text($CoTable,$ID,$Editable,"$Extra/item");
           $result[$Order] .= implode("",$mresult);
           $result[$Order] .= "</div></div>";
           break;
         case "description-list":
-          $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+          $mresult = arpg_render_text($CoTable,$ID,$Editable,"$Extra/item");
           $result[$Order] = "<div class='item'>"
             ."<div class='item-description'>"
             .$mresult["Description"]
@@ -158,7 +159,7 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
         $result[$Order] .= "</div>";
         break;
       case "title":
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"$Extra/title");
         $result["Title"] = "<div class='title'>"
           .implode("",$mresult)."</div>";
         break;
@@ -176,7 +177,7 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
       case "section":
         $kind = $attributes["kind"];
         $result[$Order] = "<div class='$kind'>";
-        $mresult = arpg_render_text($CoTable,$ID,$Editable,$Extra);
+        $mresult = arpg_render_text($CoTable,$ID,$Editable,"$kind");
         //$result[$Order] .= implode("",$mresult);
         $result[$Order] .= $mresult["Title"];
         $mkeys = array_keys($mresult);
