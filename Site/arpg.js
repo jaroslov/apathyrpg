@@ -1,3 +1,6 @@
+function arpg_focus(self, event) {
+  event.preventDefault();
+}
 function toggleVisibility(Id) {
   var who = document.getElementById(Id);
   if (who.style.display == "block")
