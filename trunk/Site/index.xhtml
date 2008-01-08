@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <link rel="stylesheet" href="arpg.css"></link>
+    <script type="text/javascript" src="arpg.js"></script>
+    <script type="text/javascript" src="drag-resize.js"></script>
+    <title>Apathy RPG Online Structured Editing System</title>
+  </head>
+  <!--<body>-->
+  <body onload="initialLoad();">
+    <div class="Main">
+      <div id="Display" class="Display">
+        <em>Please wait while the book loads.</em>
+      </div>
+    </div>
+    <div class="Selector" id="Selector"
+      onmousedown="resizeStart(event, 'Selector', 'Selector-Body');">
+      <div class="Selector-Title-Bar"
+        onmousedown="dragStart(event, 'Selector');">
+        <div class="Selector-Minimize-Button"
+          id="Selector-Minimize-Button"
+          onclick="toggleVisibility('Selector-Body');
+                   toggleOpacity('Selector');
+                   toggleMinimizeButton('Selector-Minimize-Button');">+</div>
+          <div class="Selector-Title" id="Selector-Title">
+            Outline
+            <span style='font-size:75%;'>(minimize if movement is slow)</span>
+          </div>
+      </div>
+      <div id="Selector-Body" class="Selector-Body" >
+      </div>
+    </div>
+    <div class="Editor" id="Editor"
+      onmousedown="resizeStart(event, 'Editor', 'Editor-Body');">
+      <div class="Editor-Title-Bar" id="Editor-Title-Bar"
+        onmousedown="dragStart(event, 'Editor');">
+        <div class="Editor-Minimize-Button"
+          id="Editor-Minimize-Button"
+          onclick="toggleVisibility('Editor-Body');
+                   toggleOpacity('Editor');
+                   toggleMinimizeButton('Editor-Minimize-Button');">+</div>
+        <div class="Editor-Title" id="Editor-Title">Editor</div>
+      </div>
+      <div class="Editor-Body" id="Editor-Body"></div>
+    </div>
+    <!--<div class="Debugger" id="Debugger">
+      <div class="Debugger-Title-Bar"
+        onmousedown="dragStart(event, 'Debugger');"></div>
+      <div id="LogResponse" class="Log"><em>Response</em></div><div id="Ajax" class="Log"><em>Ajax</em></div><div id="Log" class="Log"><em>Log</em></div>
+    </div>-->
+  <textarea id="GlobalTextArea" style='display:none;'/>
+  </body>
+</html>
