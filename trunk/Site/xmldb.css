@@ -21,17 +21,41 @@ div.Display {
 }
 
 table.xod-table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 1px;
   border: 1px solid black;
 }
 table.xod-table th {
   border-bottom: 1px solid black;
 }
 table.xod-table td {
-  border-bottom: 1px solid gray;
-  border-right: 1px solid gray;
+  border: 0;
+  border-top: 1px solid gray;
 }
-td.xod-attr {
+table.xod-table td:first-child {
+  border: 0;
+}
+table.xod-table td.xod-attr {
   font-variant: small-caps;
   font-weight: bold;
+  text-align: right;
+  border: 0;
+  border-right: 1px solid gray;
+}
+table.xod-table td.xod-descr {
+  border: 0;
+  border-left: 1px dotted gray;
+}
+
+em.xod-no-text {
+  font-variant: small-caps;
+  font-size: 8pt;
+  font-style: italic;
+}
+
+ul.xod-children {
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+  list-style-type: none;
 }
