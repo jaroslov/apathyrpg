@@ -19,8 +19,8 @@ function toggleOpacity(Id) {
   else
     who.style.opacity = .35;
 }
-function initialLoad() {
-  ajaxFunction('modifier.php',
+function initialLoad(who) {
+  ajaxFunction(who,
     '<reply><response><code>Initialize</code></response></reply>');
 }
 function arpg_size(Id) {
