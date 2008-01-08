@@ -32,16 +32,8 @@ function arpg_save_changes($Response) {
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
-function arpg_build_menu_bar($text_id,$kind) {
-  $close = "<div class='Edit-TD' onclick=\""
-            .arpg_build_ajax("modify-text.php","UnmodifyText",$text_id)
-            ."\">Close</div>";
-  $save = "<div class='Edit-TD' onclick=\""
-          .arpg_build_ajax("modify-text.php",array("SaveChanges","What"),
-              array($text_id,
-              "'+xmlencode(document.getElementById('TA$text_id').value)+'"))
-          ."\">Save Changes</div>";
-  $structure = "<div class='Edit-TD'>"
+function arpg_build_structure_menu($text_id,$kind) {
+  return "<div class='Edit-TD'>"
     .   "<ul class='MainMenu'><li>Structure..."
     .      "<ul class='Menu'>
               <li>Append...
@@ -76,6 +68,18 @@ function arpg_build_menu_bar($text_id,$kind) {
             </ul>"
     .   "</li></ul>"
     ."</div>";
+}
+
+function arpg_build_menu_bar($text_id,$kind) {
+  $close = "<div class='Edit-TD' onclick=\""
+            .arpg_build_ajax("modify-text.php","UnmodifyText",$text_id)
+            ."\">Close</div>";
+  $save = "<div class='Edit-TD' onclick=\""
+          .arpg_build_ajax("modify-text.php",array("SaveChanges","What"),
+              array($text_id,
+              "'+xmlencode(document.getElementById('TA$text_id').value)+'"))
+          ."\">Save Changes</div>";
+  $structure = arpg_build_structure_menu($text_id,$kind);
   $spacer = "<div class='Edit-TD' style='width:1000em;padding:0;min-width:0;border:0;'></div>";
   return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
 }
