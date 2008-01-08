@@ -467,4 +467,74 @@ function xmldb_is_populated($Connection) {
   return false;
 }
 
+function xmldb_get_all_children($Connection,$InitialSet) {
+  $all_ids = $InitialSet;
+  $id_set = $InitialSet;
+  $repetitions = 0;
+  do {
+    $old_size = sizeof($all_ids);
+    $id_set = xmldb_getElementIdsByIdOfSet($Connection,$id_set);
+    foreach ($id_set as $nid)
+      array_push($all_ids,$nid);
+  } while ($old_size !== sizeof($all_ids));
+  sort($all_ids);
+  $all_nodes = xmldb_getNodesOfSet($Connection,$all_ids);
+  return $all_nodes;
+}
+
+function xmldb_get_document($Connection) {
+  $query = "SELECT * FROM ".XMLDB_DBT;
+  $resource = mysql_query($query,$Connection);
+  $children = array();
+  while ($record = mysql_fetch_array($resource))
+    $children[$record["ID"]] = xmldb_convert_record($record);
+  return $children;
+}
+
+function xmldb_child_table_of_elements($Elements) {
+  $ChildOfTable = array();
+  foreach ($Elements as $element) {
+    if (array_key_exists($element["ChildOf"],$ChildOfTable))
+      $ChildOfTable[$element["ChildOf"]][$element["ID"]] = $element;
+    else
+      $ChildOfTable[$element["ChildOf"]]
+        = array($element["ID"] => $element);
+  }
+  return $ChildOfTable;
+}
+
+function xmldb_child_table_of_id($Connection,$Id) {
+  $id_set = array($Id);
+  $nodes = xmldb_get_all_children($Connection,$id_set);
+  return xmldb_child_table_of_elements($nodes);
+}
+
+function xmldb_child_table_of_tagname($Connection,$TagName) {
+  $which = xmldb_getElementsByTagName($Connection,$what);
+  $id_set = array_keys($which);
+  $nodes = xmldb_get_all_children($Connection,$id_set);
+  return xmldb_child_table_of_elements($nodes);
+}
+
+function xmldb_child_table_of_document($Connection) {
+  $document = xmldb_get_document($Connection);
+  return xmldb_child_table_of_elements($document);
+}
+
+function xmldb_cot_attributes($CoTable,$Key) {
+  $attrs = array();
+  foreach ($CoTable[$Key] as $Id => $Child)
+    if ($Child["Kind"] === "attribute")
+      $attrs[$Child["Name"]] = $Child["Value"];
+  return $attrs;
+}
+
+function xmldb_cot_childNodes($CoTable,$Key) {
+  $children = array();
+  foreach ($CoTable[$Key] as $Id => $Child)
+    if ($Child["Kind"] === "element")
+      $children[$Child["Order"]] = $Child;
+  return $children;
+}
+
 ?>

@@ -1,0 +1,37 @@
+body.MainBody {
+  margin: 0;
+  padding: 0;
+  font-family: times, serif;
+  color: black;
+  font-variant: normal;
+  font-size: 12pt;
+}
+div.Main {
+  margin: 1em;
+  z-index: 1;
+  background-color: #EEE;
+  border: 1px solid gray;
+}
+div.Display {
+  background-color: white;
+  margin: 3px;
+  border: 1px solid gray;
+  position: relative;
+  z-index: 2;
+}
+
+table.xod-table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table.xod-table th {
+  border-bottom: 1px solid black;
+}
+table.xod-table td {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+td.xod-attr {
+  font-variant: small-caps;
+  font-weight: bold;
+}
