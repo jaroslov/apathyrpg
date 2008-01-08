@@ -4,7 +4,7 @@ include_once "config.php";
 include_once "xmldb.php";
 include_once "ajax.php";
 
-function xod_render_context($node,$attributes,$childNodes,$CoTable) {
+function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNodes) {
   $Id = $node["ID"];
   // build a table
   //  tag-name
@@ -15,8 +15,11 @@ function xod_render_context($node,$attributes,$childNodes,$CoTable) {
   $nodeValue = $node["Value"];
   // build attributes
   $Attrs = "";
+  $attr_class = "class='xod-attr-val'";
   foreach ($attributes as $Name => $Value) {
-    $Attrs .= "<tr><td class='xod-attr'>$Name</td><td>$Value</td></tr>";
+    $Attrs .= "<tr><td class='xod-attr'>$Name</td>
+                <td $attr_class>$Value</td></tr>";
+    $attr_class = "class='xod-attr-val'";
   }
 
   $rowspan = sizeof($attributes)+1;
@@ -39,7 +42,7 @@ function xod_render_context($node,$attributes,$childNodes,$CoTable) {
   $table = "";
   $table .= "<table class='xod-table' id='Id$Id'>";
   $table .= "<thead>
-              <th id='MB$Id' $toggleChildren>+</th>
+              <th id='MB$Id' $toggleChildren>--</th>
               <th $toggleChildren>$tagName</th>
               <th>Text</th>
             </thead>";
@@ -62,7 +65,7 @@ function xod_render_context($node,$attributes,$childNodes,$CoTable) {
   return $table;
 }
 
-function xod_render($CoTable,$Key,$RenderContext=xod_render_context) {
+function xod_render($CoTable,$Key,$RenderContext=array()) {
   $result = array();
   $index = 0;
   $number_children = sizeof($CoTable[$Key]);
@@ -72,7 +75,13 @@ function xod_render($CoTable,$Key,$RenderContext=xod_render_context) {
       $ID = $Child["ID"];
       $attributes = xmldb_cot_attributes($CoTable,$ID);
       $childNodes = xmldb_cot_childNodes($CoTable,$ID);
-      $result[$ID] = $RenderContext($Child,$attributes,$childNodes,$CoTable);
+      $tagName = $Child["Name"];
+      if (array_key_exists($tagName,$RenderContext))
+        $result[$ID] = $RenderContext[$tagName]($CoTable,$RenderContext,
+                          $Child,$attributes,$childNodes);
+      else
+        $result[$ID] = xod_render_context($CoTable,$RenderContext,
+                          $Child,$attributes,$childNodes);
     }
   }
   return $result;
