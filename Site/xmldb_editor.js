@@ -111,7 +111,7 @@ function ajaxFunction(Responder,Message) {
   var ajax = document.getElementById("Ajax");
   if (ajax)
     ajax.innerHTML
-      = "<table class='xod-table'>"
+      = "<table>"
       +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
       +"</table>";
   xmlHttp.send(null);
