@@ -11,34 +11,54 @@ function xod_render_context($node,$attributes,$childNodes,$CoTable) {
   //    attr val    descr
   //    attr val
   //    children...
-  $mresult = xod_render($CoTable,$Id,xod_render_context);
-  $children = "<ol><li>".implode("</li><li>",$mresult)."</li></ol>";
-
   $tagName = $node["Name"];
   $nodeValue = $node["Value"];
   // build attributes
   $Attrs = "";
-  foreach ($attributes as $attrid => $attribute) {
-    $name = $attribute["Name"];
-    $value = $attribute["Value"];
-    $Attrs .= "<tr><td>$name</td><td>$value</td></tr>";
+  foreach ($attributes as $Name => $Value) {
+    $Attrs .= "<tr><td class='xod-attr'>$Name</td><td>$Value</td></tr>";
   }
 
   $rowspan = sizeof($attributes)+1;
+  if (strlen($nodeValue)>0)
+    $Text = $nodeValue;
+  else
+    $Text = "<em class='xod-no-text'>No Text.</em>";
+
+  $onclick = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php",
+      array("LoadChildren"),
+      array($Id))
+    .";\"";
+
+  $toggleChildren = "onclick=\"toggleVisibility('Ul$Id','none','block');
+                              toggleMinimizeButton('MB$Id');\"";
+
+  $NC = sizeof($childNodes);
 
   $table = "";
-  $table .= "<table class='xod-table'>";
-  $table .= "<thead><th colspan='2'>Aspect</th><th>Description</th></thead>";
+  $table .= "<table class='xod-table' id='Id$Id'>";
+  $table .= "<thead>
+              <th id='MB$Id' $toggleChildren>+</th>
+              <th $toggleChildren>$tagName</th>
+              <th>Text</th>
+            </thead>";
   $table .= "<tbody>
               <tr>
-                <td class='xod-attr'>Tag Name</td>
-                <td>$tagName</td>
-                <td rowspan='$rowspan'>Blah</td>
+                <td class='xod-attr'>Attribute</td><td>Value</td>
+                <td rowspan='$rowspan' class='xod-descr'>$Text</td>
               </tr>
               $Attrs
-              <tr><td colspan='3'>$children</td></tr>
             </tbody>";
   $table .= "</table>";
+  $child_num = "Child";
+  if ($NC > 1) $child_num .= "ren";
+  if ($NC > 0)
+    $table .= "<ul id='Children$Id' class='xod-children'>
+                <li $onclick>
+                  Show $NC $child_num
+                </li>
+              </ul>";
   return $table;
 }
 
@@ -56,6 +76,22 @@ function xod_render($CoTable,$Key,$RenderContext=xod_render_context) {
     }
   }
   return $result;
+}
+
+function xod_load_children($replyXML) {
+  $Connection = xmldb_create_connection();
+  $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
+
+  $CoTable = xmldb_child_table_of_document($Connection);
+
+  $mresult = xod_render($CoTable,$target);
+  $result = "<ul class='xod-children' id='Ul$target'>
+              <li>".implode("</li><li>",$mresult)."</li>
+            </ul>";
+
+  $targets = array("Children$target");
+  $payloads = array($result);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
 function xod_initialize($replyXML) {
@@ -87,6 +123,9 @@ function xod_respond() {
     switch ($code->nodeValue) {
     case "Initialize":
       $lres = xod_initialize($replyXML);
+      break;
+    case "LoadChildren":
+      $lres = xod_load_children($replyXML);
       break;
     default: break;
     }

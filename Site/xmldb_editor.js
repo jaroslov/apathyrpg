@@ -1,9 +1,19 @@
-function toggleVisibility(Id) {
+function toggleVisibility(Id,On,Off) {
   var who = document.getElementById(Id);
-  if (who.style.display == "block")
-    who.style.display = "none";
+  if (who.style.display == On)
+    who.style.display = Off;
   else
-    who.style.display = "block";
+    who.style.display = On;
+}
+function toggleChildVisibility(Id,On,Off) {
+  var who = document.getElementById(Id);
+  for (var i=0; i<who.childNodes.length; i++)
+    if (who.childNodes[i].nodeType == 1) {
+      if (who.style.display == On)
+        who.style.display = Off;
+      else
+        who.style.display = On;
+    }
 }
 function toggleMinimizeButton(Id) {
   var who = document.getElementById(Id);
@@ -101,7 +111,7 @@ function ajaxFunction(Responder,Message) {
   var ajax = document.getElementById("Ajax");
   if (ajax)
     ajax.innerHTML
-      = "<table>"
+      = "<table class='xod-table'>"
       +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
       +"</table>";
   xmlHttp.send(null);
