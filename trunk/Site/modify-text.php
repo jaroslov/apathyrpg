@@ -11,7 +11,7 @@ function arpg_unmodify_text($Response) {
   $uneditable = arpg_render_inner_text($text_id,$text);
 
   $targets = array("Id$text_id","Editor-Title","Editor-Body");
-  $payloads = array($uneditable,"Editor","&#160");
+  $payloads = array($uneditable,"Editor","&#160;");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
