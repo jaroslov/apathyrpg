@@ -35,12 +35,12 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
       switch ($Child["Name"]) {
       case "hrid":
         $hrid = $Child["Value"];
-        $result[$Child["Name"]] = "<a id='Id$ID' ";
+        $result[$Child["Name"]] = "<div id='Id$ID'><a ";
         $result[$Child["Name"]] .= "onclick=\""
           .arpg_build_ajax("modify-text.php",
             array("ExpandCategory","Extra"),
             array($ID,$hrid));
-        $result[$Child["Name"]] .= "\">Click to expand: $hrid</a>";
+        $result[$Child["Name"]] .= "\">Click to expand: $hrid</a></div>";
         break;
       default:
       }
@@ -177,15 +177,60 @@ function arpg_render_text($CoTable,$Key,$Editable=false,$Extra=null) {
           .implode("",$mresult)."</div>";
         break;
       case "field":
+        $kind = "table";
+        $name = $attributes["name"];
+        if (array_key_exists("title",$attributes))
+          $kind = "title";
+        else if (array_key_exists("description",$attributes))
+          $kind = "description";
         $mresult = arpg_render_text($CoTable,$ID,$Editable,"field");
-        $result[$Order] = "<div class='field'>";
-        $result[$Order] .= implode("",$mresult);
-        $result[$Order] .= "</div>";
+        if (!array_key_exists($kind,$result))
+          $result[$kind] = array();
+        switch ($kind) {
+        case "table":
+          $result[$kind][$Order] =
+            "<div class='field-name'>$name</div>".
+            "<div class='field-value'>"
+              .implode("",$mresult)
+            ."</div>";
+          break;
+        case "title":
+        case "description":
+        default:
+          $result[$kind][$Order] = implode("",$mresult);
+        }
         break;
       case "datum":
         $mresult = arpg_render_text($CoTable,$ID,$Editable,"datum");
+        $titles_q = $mresult["title"]; // only the first one
+        $tables_q = $mresult["table"];
+        $descrs_q = $mresult["description"]; // one the first one
+        $titles = "<div class='field-name'>Title</div>".
+          "<div class='field-value'>".implode("",$titles_q)."</div>";
+        $rowspan = sizeof($titles_q) + sizeof($tables_q);
+        $descrs = "<div class='field-value' rowspan='$rowspan'>"
+          .implode("",$descrs_q)."</div>";
+        $tables = "<div class='datum-row'>";
+        $tables .= implode("</div><div class='datum-row'>",$tables_q);
+        $tables .= "</div>";
+        $title = "<div class='datum-row'>$titles</div>";
+        $descr = "<div class='datum-row'>$descrs</div>";
+
+        // build table
         $result[$Order] = "<div class='datum'>";
-        $result[$Order] .= implode("",$mresult);
+          $result[$Order] .= "<div class='datum-row'>";
+            $result[$Order] .= "<div class='field-value'>";
+              $result[$Order] .= "<div class='datum' style='width:18em;'>";
+                $result[$Order] .= $title;
+                $result[$Order] .= $tables;
+              $result[$Order] .= "</div>";
+            $result[$Order] .= "</div>";
+            $result[$Order] .= "<div class='field-value'>";
+              $result[$Order] .= "<div class='datum'>";
+                $result[$Order] .= $descr;
+              $result[$Order] .= "</div>";
+            $result[$Order] .= "</div>";
+          $result[$Order] .= "</div>";
         $result[$Order] .= "</div>";
         break;
       case "default":

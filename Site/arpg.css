@@ -223,6 +223,30 @@ div.datum {
   min-height: 1em;
   padding: 3px;
   border: 1px solid gray;
+  display: inline-table;
+}
+div.datum-row {
+  display: table-row;
+}
+div.field-name {
+  display: table-cell;
+  font-variant: small-caps;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+}
+div.field-value {
+  display: table-cell;
+  font-variant: normal;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+}
+div.datum-head {
+  display: table-header-group;
+}
+div.datum-hcell {
+  display: table-cell;
 }
 
 div.Editor {
@@ -299,6 +323,7 @@ div.Edit-TD {
   font-variant: small-caps;
   min-width: 10em;
   width: auto;
+  text-align: center;
 }
 div.Edit-TD:hover {
   color: black;
