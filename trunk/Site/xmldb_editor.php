@@ -159,15 +159,15 @@ function xod_save_changes($replyXML) {
   foreach ($nodes as $Id => $node) {
     if (array_key_exists($Id,$Names)) {
       if ($node["Name"] !== $Names[$Id])
-        $Msg .= xod_translate_for_display($node["Name"]."!==".$Names[$Id])."<br/>";
+        $Msg .= xod_translate_for_display('"'.$node["Name"].'"!=="'.$Names[$Id].'"')."<br/>";
       else
-        $Msg .= xod_translate_for_display($node["Name"]."===".$Names[$Id])."<br/>";
+        $Msg .= xod_translate_for_display('"'.$node["Name"].'"==="'.$Names[$Id].'"')."<br/>";
     }
     if (array_key_exists($Id,$Values)) {
       if ($node["Value"] !== $Values[$Id])
-        $Msg .= xod_translate_for_display($node["Value"]."!==".$Values[$Id])."<br/>";
+        $Msg .= xod_translate_for_display('"'.$node["Value"].'"!=="'.$Values[$Id].'"')."<br/>";
       else
-        $Msg .= xod_translate_for_display($node["Value"]."===".$Values[$Id])."<br/>";
+        $Msg .= xod_translate_for_display('"'.$node["Value"].'"==="'.$Values[$Id].'"')."<br/>";
     }
   }
 
@@ -194,8 +194,9 @@ function xod_modify_element($replyXML) {
   $tagName = $node["Name"];
   $text = $node["Value"];
 
-  $save_codes = array("SaveChanges","Value@$target");
+  $save_codes = array("SaveChanges","Name@$target","Value@$target");
   $save_targets = array($target,
+    xod_save_targets_ajax_coding("Name",$target),
     xod_save_targets_ajax_coding("Value",$target));
   foreach ($attributes as $aid => $attribute) {
     array_push($save_codes,"Name@$aid");
@@ -218,7 +219,12 @@ function xod_modify_element($replyXML) {
   $forEditing = "";
   $forEditing .= "$menu";
   $forEditing .= "<table class='xod-elt-table'>";
-  $forEditing .= "<thead><th class='title' colspan='2'>$tagName</th></thead>";
+  $forEditing .= "<thead>
+                    <th class='title' colspan='2'>
+                      Name: <textarea class='xod-attr-ta'
+                        id='Name$target'>$tagName</textarea>
+                    </th>
+                  </thead>";
   $forEditing .= "<thead>
                     <th class='heading'>Name</th>
                     <th class='heading'>Value</th>
