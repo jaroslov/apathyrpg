@@ -57,7 +57,11 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
       array($Id))
     .";\"";
 
-  $table = "";
+  $table = "<div id='Element$Id'"
+              // TODO: implement dragStartDup so the user can
+              // "drag" to move
+              //." onmousedown=\"dragStartDup(event, 'Element$Id');\""
+              ." class='xod-element'>";
   $table .= "<table class='xod-table' id='Id$Id'>";
   $table .= "<thead>
               <th id='MB$Id' $toggleChildren style='width:1em;'>&#8211;</th>
@@ -78,6 +82,7 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
                   Load $NC $child_num
                 </li>
               </ul>";
+  $table .= "</div>";
   return $table;
 }
 
@@ -213,20 +218,32 @@ function xod_modify_element($replyXML) {
   $save = "<div class='Edit-TD' onclick=\""
           .arpg_build_ajax("xmldb_editor.php",$save_codes,$save_targets)
           ."\">Save Changes</div>";
+  $moveUp = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php","MoveUpOne",$$target)."\"";
+  $moveDown = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php","MoveDownOne",$$target)."\"";
+  $moveTop = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php","MoveToTop",$$target)."\"";
+  $moveBottom = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php","MoveToBottom",$$target)."\"";
+  $appendChild = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php","AppendChild",$$target)."\"";
+  $removeDangerously = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php","RemoveDangerously",$$target)."\"";
   $structure = "<div class='Edit-TD'>
                   <ul class='MainMenu'>
                     <li>Structure...
                       <ul class='Menu'>
                         <li>Move...
                           <ul class='Menu'>
-                            <li>Up one</li>
-                            <li>Down one</li>
-                            <li>To top</li>
-                            <li>To bottom</li>
+                            <li $moveUp>Up one</li>
+                            <li $moveDown>Down one</li>
+                            <li $moveTop>To top</li>
+                            <li $moveBottom>To bottom</li>
                           </ul>
                         </li>
-                        <li>Append Child</li>
-                        <li>Remove</li>
+                        <li $appendChild>Append Child</li>
+                        <li $removeDangerously>Remove</li>
                       </ul>
                     </li>
                   </ul>
