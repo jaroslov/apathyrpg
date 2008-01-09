@@ -42,7 +42,7 @@ div.Editor-Minimize-Button:hover {
 div.Editor-Body {
   background-color: white;
   border: 1px solid blue;
-  overflow: hidden;
+  overflow: scroll;
   width: auto;
   height: 20em;
   min-height: 10em;
@@ -89,6 +89,16 @@ div.Editor-Body textarea {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   overflow: auto;
+  background-color: #F5F5F5;
+}
+div.Editor-Body textarea:focus {
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+}
+div.Editor-Body textarea:blur {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #EEE;
 }
 ul.MainMenu {
   margin: 0;

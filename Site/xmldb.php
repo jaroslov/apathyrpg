@@ -317,10 +317,6 @@ function xmldb_attributesOfSet($Connection,$Elements) {
   return $attributeset;
 }
 
-function xmldb_getChildNodesOfSet($Connection,$Elements) {
-  return xmldb_getChildNodeValuesOfSet($Connection,$Elements);
-}
-
 function xmldb_getElementIdsByIdOfSet($Connection,$IdSet) {
   $id_set = implode(", ",$IdSet);
   $query = "SELECT `ID` FROM ".XMLDB_DBT."
@@ -333,6 +329,17 @@ function xmldb_getElementIdsByIdOfSet($Connection,$IdSet) {
 }
 
 function xmldb_getNodesOfSet($Connection,$IdSet) {
+  $id_set = implode(", ",$IdSet);
+  $query = "SELECT * FROM ".XMLDB_DBT."
+            WHERE `ID` IN (".$id_set.")";
+  $resource = mysql_query($query,$Connection);
+  $EltSet = array();
+  while ($record = mysql_fetch_array($resource))
+    $EltSet[$record["ID"]] = xmldb_convert_record($record);
+  return $EltSet;
+}
+
+function xmldb_getChildNodesOfSet($Connection,$IdSet) {
   $id_set = implode(", ",$IdSet);
   $query = "SELECT * FROM ".XMLDB_DBT."
             WHERE `ChildOf` IN (".$id_set.")";
@@ -478,7 +485,7 @@ function xmldb_get_all_children($Connection,$InitialSet) {
       array_push($all_ids,$nid);
   } while ($old_size !== sizeof($all_ids));
   sort($all_ids);
-  $all_nodes = xmldb_getNodesOfSet($Connection,$all_ids);
+  $all_nodes = xmldb_getChildNodesOfSet($Connection,$all_ids);
   return $all_nodes;
 }
 

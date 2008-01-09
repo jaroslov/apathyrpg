@@ -52,8 +52,15 @@ function xmlencode(str) {
     str = str.replace('&', '{@and}');
     str = str.replace('<', '{@less}');
     str = str.replace('>', '{@greater}');
-    //str = str.replace("'", '{@apos}');
+    str = str.replace("'", '{@apos}');
     str = str.replace('"', '{@quot}');
+  }
+  for (i = 0; i<str.length; i++) {
+    str = str.replace('{@and}', '&amp;');
+    str = str.replace('{@less}', '&lt;');
+    str = str.replace('{@greater}', '&gt;');
+    str = str.replace('{@apos}', '&apos;');
+    str = str.replace('{@quot}', '&quot;');
   }
   return str;
 }
