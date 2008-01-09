@@ -423,7 +423,7 @@ function arpg_get_all_children($Connection,$InitialSet) {
       array_push($all_ids,$nid);
   } while ($old_size !== sizeof($all_ids));
   sort($all_ids);
-  $all_nodes = xmldb_getNodesOfSet($Connection,$all_ids);
+  $all_nodes = xmldb_getChildNodesOfSet($Connection,$all_ids);
   return $all_nodes;
 }
 

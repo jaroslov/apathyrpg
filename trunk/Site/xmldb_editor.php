@@ -40,12 +40,6 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
   else
     $Text = "<em class='xod-no-text'>No Text.</em>";
 
-  $onTextEdit = "onclick=\""
-    .arpg_build_ajax("xmldb_editor.php",
-      array("EditText"),
-      array($Id))
-    .";\"";
-
   $onShowChildren = "onclick=\""
     .arpg_build_ajax("xmldb_editor.php",
       array("LoadChildren"),
@@ -71,7 +65,7 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
             </thead>";
   $table .= "<tbody>
               $Attrs
-              <tr class='xod-descr' $onTextEdit id='Text$Id'>
+              <tr class='xod-descr' $onModifyElement id='Text$Id'>
                 <td colspan='$bodyColSpan' class='xod-descr'>$Text</td>
               </tr>
             </tbody>";
@@ -123,7 +117,7 @@ function xod_text_edit_menu($node) {
   return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
 }
 
-function xod_close_text_editor($replyXML) {
+function xod_close_element_editor($replyXML) {
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
 
   $editingTarget = "Editor";
@@ -134,22 +128,58 @@ function xod_close_text_editor($replyXML) {
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
-function xod_text_editor($replyXML) {
+function xod_save_changes($replyXML) {
   $Connection = xmldb_create_connection();
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
 
-  $node = xmldb_getElementById($Connection, $target);
-  $nodeValue = $node["Value"];
-  $text = xod_translate_for_display($nodeValue);
+  $responses = $replyXML->getElementsByTagName("response");
+  $Names = array();
+  $Values = array();
+  $Ids = array();
+  foreach ($responses as $response) {
+    $code = $response->getElementsByTagName("code")->item(0);
+    $payload = $response->getElementsByTagName("payload")->item(0);
+    $at_code = split("@",$code->nodeValue);
+    if (sizeof($at_code) != 2)
+      continue;
+    switch ($at_code[0]) {
+    case "Name":
+      $Names[$at_code[1]] = $payload->nodeValue;
+      break;
+    case "Value":
+      $Values[$at_code[1]] = $payload->nodeValue;
+      break;
+    }
+    array_push($Ids,$at_code[1]);
+  }
+  $Ids = array_unique($Ids);
 
-  $menuBar = xod_text_edit_menu($node);
-  $forEditing = "$menuBar<textarea id='TA$target'>$text</textarea>";
+  $nodes = xmldb_getNodesOfSet($Connection, $Ids);
+  $Msg = "<br/>".sizeof($nodes)."<br/>";
+  foreach ($nodes as $Id => $node) {
+    if (array_key_exists($Id,$Names)) {
+      if ($node["Name"] !== $Names[$Id])
+        $Msg .= xod_translate_for_display($node["Name"]."!==".$Names[$Id])."<br/>";
+      else
+        $Msg .= xod_translate_for_display($node["Name"]."===".$Names[$Id])."<br/>";
+    }
+    if (array_key_exists($Id,$Values)) {
+      if ($node["Value"] !== $Values[$Id])
+        $Msg .= xod_translate_for_display($node["Value"]."!==".$Values[$Id])."<br/>";
+      else
+        $Msg .= xod_translate_for_display($node["Value"]."===".$Values[$Id])."<br/>";
+    }
+  }
 
-  $editingTarget = "Editing #<a href='#Id$target'>$target</a>";
+  $msg = "Saving #".implode(" #",$Ids)."$Msg";
 
-  $targets = array("Editor-Title","Editor-Body");
-  $payloads = array($editingTarget,$forEditing);
+  $targets = array("Ajax");
+  $payloads = array($msg);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
+function xod_save_targets_ajax_coding($Kind,$Id) {
+  return "'+xmlencode(document.getElementById('$Kind$Id').value)+'";
 }
 
 function xod_modify_element($replyXML) {
@@ -164,7 +194,30 @@ function xod_modify_element($replyXML) {
   $tagName = $node["Name"];
   $text = $node["Value"];
 
-  $forEditing  = "<table class='xod-elt-table'>";
+  $save_codes = array("SaveChanges","Value@$target");
+  $save_targets = array($target,
+    xod_save_targets_ajax_coding("Value",$target));
+  foreach ($attributes as $aid => $attribute) {
+    array_push($save_codes,"Name@$aid");
+    array_push($save_targets,
+      xod_save_targets_ajax_coding("Name",$aid));
+    array_push($save_codes,"Value@$aid");
+    array_push($save_targets,
+      xod_save_targets_ajax_coding("Value",$aid));
+  }
+
+  $close = "<div class='Edit-TD' onclick=\""
+            .arpg_build_ajax("xmldb_editor.php","CloseTextEditor",$target)
+            ."\">Close</div>";
+  $save = "<div class='Edit-TD' onclick=\""
+          .arpg_build_ajax("xmldb_editor.php",$save_codes,$save_targets)
+          ."\">Save Changes</div>";
+  $spacer = "<div class='Edit-TD' style='width:1000em;padding:0;min-width:0;border:0;'></div>";
+  $menu = "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
+
+  $forEditing = "";
+  $forEditing .= "$menu";
+  $forEditing .= "<table class='xod-elt-table'>";
   $forEditing .= "<thead><th class='title' colspan='2'>$tagName</th></thead>";
   $forEditing .= "<thead>
                     <th class='heading'>Name</th>
@@ -176,15 +229,18 @@ function xod_modify_element($replyXML) {
     $value = xod_translate_for_display($attribute["Value"]);
     $forEditing .= "<tr>
                       <td class='xod-attr-name'>
-                        <textarea class='xod-attr-ta'>$name</textarea>
+                        <textarea class='xod-attr-ta'
+                          id='Name$aid'>$name</textarea>
                       </td>
                       <td class='xod-attr-val'>
-                        <textarea class='xod-attr-ta'>$value</textarea>
+                        <textarea class='xod-attr-ta'
+                          id='Value$aid'>$value</textarea>
                       </td>
                     </tr>";
   }
   $forEditing .= "</tbody>";
   $forEditing .= "</table>";
+  $forEditing .= "<textarea id='Value$target'>$text</textarea>";
 
   $targets = array("Editor-Title","Editor-Body");
   $payloads = array($editingTarget,$forEditing);
@@ -243,11 +299,14 @@ function xod_respond() {
     case "ModifyElement":
       $lres = xod_modify_element($replyXML);
       break;
+    case "SaveChanges":
+      $lres = xod_save_changes($replyXML);
+      break;
     case "EditText":
       $lres = xod_text_editor($replyXML);
       break;
     case "CloseTextEditor":
-      $lres = xod_close_text_editor($replyXML);
+      $lres = xod_close_element_editor($replyXML);
       break;
     default: break;
     }
@@ -256,6 +315,8 @@ function xod_respond() {
       array_push($targets,$target);
     foreach ($lres["Payloads"] as $payload)
       array_push($payloads,$payload);
+    // we only really care about code0
+    break;
   }
   return arpg_build_responses($targets,$payloads);
 }
