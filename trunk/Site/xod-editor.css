@@ -74,9 +74,25 @@ div.Edit-TD {
   width: auto;
   text-align: center;
 }
+div.Edit-TD-Spacer {
+  font-size: 75%;
+  padding: 3px;
+  display: table-cell;
+  border: 1px solid blue;
+  color: blue;
+  font-variant: small-caps;
+  min-width: 10em;
+  width: auto;
+  text-align: center;
+  width:1000em;
+  padding:0;
+  min-width:0;
+  border:0;
+}
 div.Edit-TD:hover {
   color: black;
   border: 1px solid black;
+  background-color: #EEE;
 }
 div.Editor-Body textarea {
   font-family: times, serif;
@@ -110,6 +126,7 @@ ul.MainMenu li:hover > ul.Menu {
   color: blue;
 }
 ul.Menu {
+  text-align: left;
   margin: 0;
   margin-left: 5em;
   margin-top: -1em;
