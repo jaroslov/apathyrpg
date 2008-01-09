@@ -85,6 +85,24 @@ table.xod-elt-table textarea.xod-attr-ta {
   display: inline-block;
 }
 
+div.xod-button-emu {
+  font-variant: small-caps;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid gray;
+  background-color: #EEE;
+  color: blue;
+  text-align: center;
+  margin: 3px;
+  padding: 3px;
+}
+div.xod-button-emu:hover {
+  border: 1px solid black;
+  background-color: #DDD;
+  color: black;
+}
+
 em.xod-no-text {
   font-variant: small-caps;
   font-size: 8pt;
