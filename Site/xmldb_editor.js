@@ -1,9 +1,10 @@
 function toggleVisibility(Id,On,Off) {
   var who = document.getElementById(Id);
-  if (who.style.display == On)
-    who.style.display = Off;
-  else
-    who.style.display = On;
+  if (who)
+    if (who.style.display == On)
+      who.style.display = Off;
+    else
+      who.style.display = On;
 }
 function toggleChildVisibility(Id,On,Off) {
   var who = document.getElementById(Id);
@@ -15,19 +16,22 @@ function toggleChildVisibility(Id,On,Off) {
         who.style.display = On;
     }
 }
-function toggleMinimizeButton(Id) {
-  var who = document.getElementById(Id);
-  if (who.innerHTML == "--")
-    who.innerHTML = "+";
-  else
-    who.innerHTML = "--";
+function toggleMinimizeButton(Id,IfId) {
+  var If = document.getElementById(IfId)
+  if (If) {
+    var who = document.getElementById(Id);
+    if (who.innerHTML != "+")
+      who.innerHTML = "+";
+    else
+      who.innerHTML = "&#8211;";
+  }
 }
 function toggleOpacity(Id) {
   var who = document.getElementById(Id);
   if (who.style.opacity < .95)
     who.style.opacity = .95;
   else
-    who.style.opacity = .35;
+    who.style.opacity = .65;
 }
 function initialLoad(who) {
   ajaxFunction(who,

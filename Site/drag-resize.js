@@ -144,6 +144,10 @@ function dragStart(event, id) {
 
   dragObj.elNode.style.zIndex = ++dragObj.zIndex;
 
+  // update opacity
+  dragObj.elOpacity = dragObj.elNode.style.opacity;
+  dragObj.elNode.style.opacity = .65;
+
   // Capture mousemove and mouseup events on the page.
 
   document.addEventListener("mousemove", dragGo,   true);
@@ -172,6 +176,8 @@ function dragGo(event) {
 function dragStop(event) {
 
   dragObj.active = false;
+
+  dragObj.elNode.style.opacity = dragObj.elOpacity;
 
   // Stop capturing mousemove and mouseup events.
 

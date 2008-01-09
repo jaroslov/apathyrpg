@@ -7,7 +7,7 @@ div.Editor {
   left: 0;
   min-width: 20em;
   overflow: hidden;
-  opacity: .35;
+  opacity: .65;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
 }

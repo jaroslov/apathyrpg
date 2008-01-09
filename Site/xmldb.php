@@ -286,12 +286,12 @@ function xmldb_attributes($Connection,$Element) {
   if (is_array($Element))
     $Element = $Element["ID"];
   $query = "SELECT * FROM ".XMLDB_DBT."
-            WHERE `ChildOf` = ".$ID."
+            WHERE `ChildOf` = ".$Element."
             AND `Kind` = CONVERT( _utf8 'attribute' USING latin1 )";
   $resource = mysql_query($query);
   $attributes = array();
   while ($record = mysql_fetch_array($resource))
-    array_push($attributes,xmldb_convert_record($record));
+    $attributes[$record["ID"]] = xmldb_convert_record($record);
   return $attributes;
 }
 
