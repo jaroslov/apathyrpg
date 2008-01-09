@@ -220,20 +220,27 @@ function xod_modify_element($replyXML) {
   $forEditing .= "$menu";
   $forEditing .= "<table class='xod-elt-table'>";
   $forEditing .= "<thead>
-                    <th class='title' colspan='2'>
+                    <th class='title' colspan='3'>
                       Name: <textarea class='xod-attr-ta'
                         id='Name$target'>$tagName</textarea>
                     </th>
                   </thead>";
   $forEditing .= "<thead>
+                    <th class='heading'>Action</th>
                     <th class='heading'>Name</th>
                     <th class='heading'>Value</th>
                   </thead>";
   $forEditing .= "<tbody>";
+  $addAttribute = "onclick=\""
+        .arpg_build_ajax("xmldb_editor.php","Add","New")."\"";
   foreach ($attributes as $aid => $attribute) {
+    $remAttribute = "onclick=\""
+          .arpg_build_ajax("xmldb_editor.php","Remove",$aid)."\"";
     $name = xod_translate_for_display($attribute["Name"]);
     $value = xod_translate_for_display($attribute["Value"]);
     $forEditing .= "<tr>
+                      <td class='xod-attr-name'
+                        $remAttribute>Remove</td>
                       <td class='xod-attr-name'>
                         <textarea class='xod-attr-ta'
                           id='Name$aid'>$name</textarea>
@@ -244,6 +251,16 @@ function xod_modify_element($replyXML) {
                       </td>
                     </tr>";
   }
+  $forEditing .= "<tr>
+                    <td class='xod-attr-name'
+                      $addAttribute>Add</td>
+                    <td class='xod-attr-name'>
+                      <textarea class='xod-attr-ta' id='NameNew'></textarea>
+                    </td>
+                    <td class='xod-attr-val'>
+                      <textarea class='xod-attr-ta' id='ValueNew'></textarea>
+                    </td>
+                  </tr>";
   $forEditing .= "</tbody>";
   $forEditing .= "</table>";
   $forEditing .= "<textarea id='Value$target'>$text</textarea>";
