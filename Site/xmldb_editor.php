@@ -213,7 +213,25 @@ function xod_modify_element($replyXML) {
   $save = "<div class='Edit-TD' onclick=\""
           .arpg_build_ajax("xmldb_editor.php",$save_codes,$save_targets)
           ."\">Save Changes</div>";
-  $spacer = "<div class='Edit-TD' style='width:1000em;padding:0;min-width:0;border:0;'></div>";
+  $structure = "<div class='Edit-TD'>
+                  <ul class='MainMenu'>
+                    <li>Structure...
+                      <ul class='Menu'>
+                        <li>Move...
+                          <ul class='Menu'>
+                            <li>Up one</li>
+                            <li>Down one</li>
+                            <li>To top</li>
+                            <li>To bottom</li>
+                          </ul>
+                        </li>
+                        <li>Append Child</li>
+                        <li>Remove</li>
+                      </ul>
+                    </li>
+                  </ul>
+                 </div>";
+  $spacer = "<div class='Edit-TD-Spacer'></div>";
   $menu = "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
 
   $forEditing = "";
@@ -337,6 +355,8 @@ function xod_respond() {
     case "CloseTextEditor":
       $lres = xod_close_element_editor($replyXML);
       break;
+    case "AddAttribute":
+    case "RemoveAttribute":
     default: break;
     }
 

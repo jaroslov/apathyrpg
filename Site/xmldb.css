@@ -89,9 +89,9 @@ div.xod-button-emu {
   font-variant: small-caps;
   font-size: 8pt;
   font-style: normal;
-  font-weight: bold;
-  border: 1px solid gray;
-  background-color: #EEE;
+  font-weight: normal;
+  border: 1px solid blue;
+  background-color: white;
   color: blue;
   text-align: center;
   margin: 3px;
@@ -99,7 +99,7 @@ div.xod-button-emu {
 }
 div.xod-button-emu:hover {
   border: 1px solid black;
-  background-color: #DDD;
+  background-color: #EEE;
   color: black;
 }
 
