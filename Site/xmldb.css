@@ -81,7 +81,8 @@ table.xod-elt-table th.heading {
 table.xod-elt-table textarea.xod-attr-ta {
   height: 2em;
   border: 1px solid gray;
-  width: 100%;
+  width: 12em;
+  display: inline-block;
 }
 
 em.xod-no-text {
