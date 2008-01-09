@@ -23,13 +23,16 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
   $tagName = $node["Name"];
   $nodeValue = $node["Value"];
   // build attributes
-  $Attrs = "";
+  $Attrs = "<tr>";
   $attr_class = "class='xod-attr-val'";
   foreach ($attributes as $Name => $Value) {
-    $Attrs .= "<tr><td class='xod-attr'>$Name</td>
-                <td $attr_class>$Value</td></tr>";
+    $Attrs .= "<td class='xod-attr-name'>$Name</td>
+                <td $attr_class>$Value</td>";
     $attr_class = "class='xod-attr-val'";
   }
+  $Attrs .= "</tr>";
+  $headColSpan = sizeof($attributes)*2;
+  $bodyColSpan = $headColSpan + 2;
 
   $rowspan = sizeof($attributes)+1;
   if (strlen($nodeValue)>0)
@@ -50,21 +53,26 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
     .";\"";
 
   $toggleChildren = "onclick=\"toggleVisibility('Ul$Id','none','block');
-                              toggleMinimizeButton('MB$Id');\"";
+                              toggleMinimizeButton('MB$Id','Ul$Id');\"";
 
   $NC = sizeof($childNodes);
+
+  $onModifyElement = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php",
+      array("ModifyElement"),
+      array($Id))
+    .";\"";
 
   $table = "";
   $table .= "<table class='xod-table' id='Id$Id'>";
   $table .= "<thead>
-              <th id='MB$Id' $toggleChildren>--</th>
-              <th $toggleChildren>$tagName</th>
-              <th>Text</th>
+              <th id='MB$Id' $toggleChildren style='width:1em;'>&#8211;</th>
+              <th colspan='$headColSpan' $onModifyElement>$tagName</th>
             </thead>";
   $table .= "<tbody>
               $Attrs
               <tr class='xod-descr' $onTextEdit id='Text$Id'>
-                <td colspan='3' class='xod-descr'>$Text</td>
+                <td colspan='$bodyColSpan' class='xod-descr'>$Text</td>
               </tr>
             </tbody>";
   $table .= "</table>";
@@ -72,8 +80,8 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
   if ($NC > 1) $child_num .= "ren";
   if ($NC > 0)
     $table .= "<ul id='Children$Id' class='xod-children'>
-                <li $onShowChildren>
-                  Show $NC $child_num
+                <li $onShowChildren class='xod-load-children'>
+                  Load $NC $child_num
                 </li>
               </ul>";
   return $table;
@@ -115,6 +123,17 @@ function xod_text_edit_menu($node) {
   return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
 }
 
+function xod_close_text_editor($replyXML) {
+  $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
+
+  $editingTarget = "Editor";
+  $forEditing = "&#160;";
+
+  $targets = array("Editor-Title","Editor-Body");
+  $payloads = array($editingTarget,$forEditing);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function xod_text_editor($replyXML) {
   $Connection = xmldb_create_connection();
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
@@ -126,8 +145,49 @@ function xod_text_editor($replyXML) {
   $menuBar = xod_text_edit_menu($node);
   $forEditing = "$menuBar<textarea id='TA$target'>$text</textarea>";
 
+  $editingTarget = "Editing #<a href='#Id$target'>$target</a>";
+
   $targets = array("Editor-Title","Editor-Body");
-  $payloads = array("Editing #$target",$forEditing);
+  $payloads = array($editingTarget,$forEditing);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
+function xod_modify_element($replyXML) {
+  $Connection = xmldb_create_connection();
+  $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
+
+  $node = xmldb_getElementById($Connection,$target);
+  $attributes = xmldb_attributes($Connection,$node);
+
+  $editingTarget = "Edit Element: #<a href='#Id$target'>$target</a>";
+
+  $tagName = $node["Name"];
+  $text = $node["Value"];
+
+  $forEditing  = "<table class='xod-elt-table'>";
+  $forEditing .= "<thead><th class='title' colspan='2'>$tagName</th></thead>";
+  $forEditing .= "<thead>
+                    <th class='heading'>Name</th>
+                    <th class='heading'>Value</th>
+                  </thead>";
+  $forEditing .= "<tbody>";
+  foreach ($attributes as $aid => $attribute) {
+    $name = xod_translate_for_display($attribute["Name"]);
+    $value = xod_translate_for_display($attribute["Value"]);
+    $forEditing .= "<tr>
+                      <td class='xod-attr-name'>
+                        <textarea class='xod-attr-ta'>$name</textarea>
+                      </td>
+                      <td class='xod-attr-val'>
+                        <textarea class='xod-attr-ta'>$value</textarea>
+                      </td>
+                    </tr>";
+  }
+  $forEditing .= "</tbody>";
+  $forEditing .= "</table>";
+
+  $targets = array("Editor-Title","Editor-Body");
+  $payloads = array($editingTarget,$forEditing);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -142,8 +202,8 @@ function xod_load_children($replyXML) {
               <li>".implode("</li><li>",$mresult)."</li>
             </ul>";
 
-  $targets = array("Children$target");
-  $payloads = array($result);
+  $targets = array("Children$target","MB$target");
+  $payloads = array($result,"+");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -170,7 +230,7 @@ function xod_respond() {
   $payloads = array();
 
   foreach ($replyXML->getElementsByTagname("code") as $code) {
-    $lres = array("Targets"=>array("Display"),
+    $lres = array("Targets"=>array("Ajax"),
                   "Payloads"=>array("Unknown Code&#8658;".$code->nodeValue));
 
     switch ($code->nodeValue) {
@@ -180,8 +240,14 @@ function xod_respond() {
     case "LoadChildren":
       $lres = xod_load_children($replyXML);
       break;
+    case "ModifyElement":
+      $lres = xod_modify_element($replyXML);
+      break;
     case "EditText":
       $lres = xod_text_editor($replyXML);
+      break;
+    case "CloseTextEditor":
+      $lres = xod_close_text_editor($replyXML);
       break;
     default: break;
     }

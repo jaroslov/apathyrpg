@@ -21,6 +21,13 @@ div.Display {
   padding: 1px;
 }
 
+.xod-load-children {
+  text-decoration: none;
+}
+.xod-load-children:hover {
+  text-decoration: underline;
+}
+
 table.xod-table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -33,23 +40,48 @@ table.xod-table th {
 table.xod-table td {
   border: 0;
 }
-table.xod-table td.xod-attr {
+table.xod-table td.xod-attr-name {
   font-variant: small-caps;
   font-weight: bold;
-  text-align: right;
+  text-align: center;
   border: 0;
-  border-right: 1px solid gray;
-}
-table.xod-table td.xod-descr {
-  border: 0;
-  border-top: 1px dotted gray;
-}
-table.xod-table td.xod-attr-val-first {
-  border: 0;
+  border-right: 1px dotted gray;
+  min-width: 3em;
 }
 table.xod-table td.xod-attr-val {
   border: 0;
   border-top: 1px solid gray;
+  border-right: 1px solid black;
+  min-width: 3em;
+  text-align: center;
+}
+table.xod-table td.xod-descr {
+  border: 0;
+  border-top: 1px dotted gray;
+  min-width: 3em;
+}
+table.xod-elt-table {
+  border: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+table.xod-elt-table th.title {
+  font-size: 125%;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+table.xod-elt-table th.heading {
+  font-size: 100%;
+  font-variant: small-caps;
+  font-weight: bold;
+  border-bottom: 1px dotted black;
+  border-top: 1px solid black;
+}
+table.xod-elt-table textarea.xod-attr-ta {
+  height: 2em;
+  border: 1px solid gray;
+  width: 100%;
 }
 
 em.xod-no-text {
