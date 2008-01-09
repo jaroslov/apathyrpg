@@ -115,3 +115,9 @@ ul.xod-children {
   padding-left: 1em;
   list-style-type: none;
 }
+
+div.xod-element {
+  border: 1px dotted gray;
+  padding: 1px;
+  margin: 1px;
+}
