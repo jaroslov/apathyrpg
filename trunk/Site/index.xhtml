@@ -3,18 +3,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <link rel="stylesheet" href="xmldb.css"></link>
+    <link rel="stylesheet" href="xod-editor.css"></link>
     <script type="text/javascript" src="xmldb_editor.js"></script>
     <script type="text/javascript" src="drag-resize.js"></script>
     <title>Apathy Online Structured Editing System</title>
   </head>
   <body onload="initialLoad('xmldb_editor.php');" class='MainBody'>
     <div class="Main">
-      <div id="Display" class="Display">
-        <em>Please wait while the xml file loads.</em>
-      </div>
       <div>
         <div id='Ajax'></div>
       </div>
+      <div id="Display" class="Display">
+        <em>Please wait while the xml file loads.</em>
+      </div>
+    </div>
+    <div class="Editor" id="Editor"
+      onmousedown="resizeStart(event, 'Editor', 'Editor-Body');">
+      <div class="Editor-Title-Bar" id="Editor-Title-Bar"
+        onmousedown="dragStart(event, 'Editor');">
+        <div class="Editor-Minimize-Button"
+          id="Editor-Minimize-Button"
+          onclick="toggleVisibility('Editor-Body','block','none');
+                   toggleOpacity('Editor');
+                   toggleMinimizeButton('Editor-Minimize-Button');">+</div>
+        <div class="Editor-Title" id="Editor-Title">Editor</div>
+      </div>
+      <div class="Editor-Body" id="Editor-Body"></div>
     </div>
   </body>
 </html>

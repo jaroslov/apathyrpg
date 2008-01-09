@@ -4,6 +4,15 @@ include_once "config.php";
 include_once "xmldb.php";
 include_once "ajax.php";
 
+function xod_translate_for_display($Text) {
+  $Text = preg_replace("/\&/","&amp;",$Text);
+  $Text = preg_replace("/\</","&lt;",$Text);
+  $Text = preg_replace("/\>/","&gt;",$Text);
+  $Text = preg_replace("/\'/","&apos;",$Text);
+  $Text = preg_replace("/\"/","&quot;",$Text);
+  return $Text;
+}
+
 function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNodes) {
   $Id = $node["ID"];
   // build a table
@@ -24,11 +33,17 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
 
   $rowspan = sizeof($attributes)+1;
   if (strlen($nodeValue)>0)
-    $Text = $nodeValue;
+    $Text = xod_translate_for_display($nodeValue);
   else
     $Text = "<em class='xod-no-text'>No Text.</em>";
 
-  $onclick = "onclick=\""
+  $onTextEdit = "onclick=\""
+    .arpg_build_ajax("xmldb_editor.php",
+      array("EditText"),
+      array($Id))
+    .";\"";
+
+  $onShowChildren = "onclick=\""
     .arpg_build_ajax("xmldb_editor.php",
       array("LoadChildren"),
       array($Id))
@@ -47,18 +62,17 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
               <th>Text</th>
             </thead>";
   $table .= "<tbody>
-              <tr>
-                <td class='xod-attr'>Attribute</td><td>Value</td>
-                <td rowspan='$rowspan' class='xod-descr'>$Text</td>
-              </tr>
               $Attrs
+              <tr class='xod-descr' $onTextEdit id='Text$Id'>
+                <td colspan='3' class='xod-descr'>$Text</td>
+              </tr>
             </tbody>";
   $table .= "</table>";
   $child_num = "Child";
   if ($NC > 1) $child_num .= "ren";
   if ($NC > 0)
     $table .= "<ul id='Children$Id' class='xod-children'>
-                <li $onclick>
+                <li $onShowChildren>
                   Show $NC $child_num
                 </li>
               </ul>";
@@ -85,6 +99,36 @@ function xod_render($CoTable,$Key,$RenderContext=array()) {
     }
   }
   return $result;
+}
+
+function xod_text_edit_menu($node) {
+  $text_id = $node;
+  $close = "<div class='Edit-TD' onclick=\""
+            .arpg_build_ajax("xmldb_editor.php","CloseTextEditor",$text_id)
+            ."\">Close</div>";
+  $save = "<div class='Edit-TD' onclick=\""
+          .arpg_build_ajax("xmldb_editor.php",array("SaveChanges","What"),
+              array($text_id,
+              "'+xmlencode(document.getElementById('TA$text_id').value)+'"))
+          ."\">Save Changes</div>";
+  $spacer = "<div class='Edit-TD' style='width:1000em;padding:0;min-width:0;border:0;'></div>";
+  return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
+}
+
+function xod_text_editor($replyXML) {
+  $Connection = xmldb_create_connection();
+  $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
+
+  $node = xmldb_getElementById($Connection, $target);
+  $nodeValue = $node["Value"];
+  $text = xod_translate_for_display($nodeValue);
+
+  $menuBar = xod_text_edit_menu($node);
+  $forEditing = "$menuBar<textarea id='TA$target'>$text</textarea>";
+
+  $targets = array("Editor-Title","Editor-Body");
+  $payloads = array("Editing #$target",$forEditing);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
 function xod_load_children($replyXML) {
@@ -135,6 +179,9 @@ function xod_respond() {
       break;
     case "LoadChildren":
       $lres = xod_load_children($replyXML);
+      break;
+    case "EditText":
+      $lres = xod_text_editor($replyXML);
       break;
     default: break;
     }
