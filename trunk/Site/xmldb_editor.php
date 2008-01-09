@@ -232,15 +232,19 @@ function xod_modify_element($replyXML) {
                   </thead>";
   $forEditing .= "<tbody>";
   $addAttribute = "onclick=\""
-        .arpg_build_ajax("xmldb_editor.php","Add","New")."\"";
+        .arpg_build_ajax("xmldb_editor.php","AddAttribute",$target)."\"";
   foreach ($attributes as $aid => $attribute) {
     $remAttribute = "onclick=\""
-          .arpg_build_ajax("xmldb_editor.php","Remove",$aid)."\"";
+          .arpg_build_ajax("xmldb_editor.php",
+            array("RemoveAttribute","Who"),
+            array($target,$aid))."\"";
     $name = xod_translate_for_display($attribute["Name"]);
     $value = xod_translate_for_display($attribute["Value"]);
     $forEditing .= "<tr>
                       <td class='xod-attr-name'
-                        $remAttribute>Remove</td>
+                        $remAttribute>
+                        <div class='xod-button-emu'>Remove</div>
+                      </td>
                       <td class='xod-attr-name'>
                         <textarea class='xod-attr-ta'
                           id='Name$aid'>$name</textarea>
@@ -253,7 +257,9 @@ function xod_modify_element($replyXML) {
   }
   $forEditing .= "<tr>
                     <td class='xod-attr-name'
-                      $addAttribute>Add</td>
+                      $addAttribute>
+                      <div class='xod-button-emu'>Add</div>
+                    </td>
                     <td class='xod-attr-name'>
                       <textarea class='xod-attr-ta' id='NameNew'></textarea>
                     </td>
