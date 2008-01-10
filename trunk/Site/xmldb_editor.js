@@ -28,8 +28,8 @@ function toggleMinimizeButton(Id,IfId) {
 }
 function toggleOpacity(Id) {
   var who = document.getElementById(Id);
-  if (who.style.opacity < .95)
-    who.style.opacity = .95;
+  if (who.style.opacity < 1)
+    who.style.opacity = 1;
   else
     who.style.opacity = .65;
 }
