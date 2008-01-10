@@ -85,6 +85,14 @@ table.xod-elt-table textarea.xod-attr-ta {
   width: 100%;
   display: inline-block;
 }
+.xod-attr-ta:hover {
+  border: 1px solid blue;
+  background-color: #F0F0FF;
+}
+.xod-attr-ta:focus {
+  border: 1px solid blue;
+  background-color: #F0F0FF;
+}
 
 div.xod-button-emu {
   font-variant: small-caps;

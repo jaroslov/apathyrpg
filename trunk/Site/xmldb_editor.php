@@ -186,15 +186,15 @@ function xod_save_changes($replyXML) {
   foreach ($nodes as $Id => $node) {
     if (array_key_exists($Id,$Names)) {
       if ($node["Name"] !== $Names[$Id])
-        $Msg .= xod_translate_for_display('"'.$node["Name"].'"!=="'.$Names[$Id].'"')."<br/>";
+        $Msg .= xod_translate_for_display($node["ID"].'"!=="')."<br/>";
       else
-        $Msg .= xod_translate_for_display('"'.$node["Name"].'"==="'.$Names[$Id].'"')."<br/>";
+        $Msg .= xod_translate_for_display($node["ID"].'"==="')."<br/>";
     }
     if (array_key_exists($Id,$Values)) {
       if ($node["Value"] !== $Values[$Id])
-        $Msg .= xod_translate_for_display('"'.$node["Value"].'"!=="'.$Values[$Id].'"')."<br/>";
+        $Msg .= xod_translate_for_display($node["ID"].'"!=="')."<br/>";
       else
-        $Msg .= xod_translate_for_display('"'.$node["Value"].'"==="'.$Values[$Id].'"')."<br/>";
+        $Msg .= xod_translate_for_display($node["ID"].'"==="')."<br/>";
     }
   }
 
@@ -209,6 +209,22 @@ function xod_save_targets_ajax_coding($Kind,$Id) {
   return "'+xmlencode(document.getElementById('$Kind$Id').value)+'";
 }
 
+function xod_modify_attribute($replyXML) {
+  $Connection = xmldb_create_connection();
+  $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
+  $name = $replyXML->getElementById("Payload1")->firstChild->nodeValue;
+  $value = $replyXML->getElementById("Payload2")->firstChild->nodeValue;
+
+  //$node = xmldb_getElementById($Connection,$target);
+  //$attributes = xmldb_attributes($Connection,$node);
+
+  $msg = "$target: $name &#8658; $value";
+
+  $targets = array("Ajax");
+  $payloads = array($msg);
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function xod_modify_element($replyXML) {
   $Connection = xmldb_create_connection();
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
@@ -218,8 +234,8 @@ function xod_modify_element($replyXML) {
 
   $editingTarget = "Edit Element: #<a href='#Id$target'>$target</a>";
 
-  $tagName = $node["Name"];
-  $text = $node["Value"];
+  $tagName = xod_translate_for_display($node["Name"]);
+  $text = xod_translate_for_display($node["Value"]);
 
   $save_codes = array("SaveChanges","Name@$target","Value@$target");
   $save_targets = array($target,
@@ -289,7 +305,11 @@ function xod_modify_element($replyXML) {
                   </thead>";
   $forEditing .= "<tbody>";
   $addAttribute = "onclick=\""
-        .arpg_build_ajax("xmldb_editor.php","AddAttribute",$target)."\"";
+        .arpg_build_ajax("xmldb_editor.php",
+          array("AddAttribute","Name","Value"),
+          array($target,
+            xod_save_targets_ajax_coding("NameNew",$target),
+            xod_save_targets_ajax_coding("ValueNew",$target)))."\"";
   foreach ($attributes as $aid => $attribute) {
     $remAttribute = "onclick=\""
           .arpg_build_ajax("xmldb_editor.php",
@@ -318,10 +338,12 @@ function xod_modify_element($replyXML) {
                       <div class='xod-button-emu'>Add</div>
                     </td>
                     <td class='xod-attr-name'>
-                      <textarea class='xod-attr-ta' id='NameNew'></textarea>
+                      <textarea class='xod-attr-ta'
+                        id='NameNew$target'></textarea>
                     </td>
                     <td class='xod-attr-val'>
-                      <textarea class='xod-attr-ta' id='ValueNew'></textarea>
+                      <textarea class='xod-attr-ta'
+                        id='ValueNew$target'></textarea>
                     </td>
                   </tr>";
   $forEditing .= "</tbody>";
@@ -396,6 +418,8 @@ function xod_respond() {
       break;
     case "AddAttribute":
     case "RemoveAttribute":
+      $lres = xod_modify_attribute($replyXML);
+      break;
     default: break;
     }
 
