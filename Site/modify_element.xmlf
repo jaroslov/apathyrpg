@@ -45,7 +45,7 @@
       Name:
       <textarea class='xod-attr-ta' id='Name%target%'>%tagName%</textarea>
     </th>
-  </thead>";
+  </thead>
   <thead>
     <th class='heading'>Action</th>
     <th class='heading'>Name</th>
