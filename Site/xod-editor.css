@@ -110,6 +110,7 @@ div.Editor-Body textarea {
 div.Editor-Body textarea:focus {
   border-top: 1px solid blue;
   border-bottom: 1px solid blue;
+  background-color: #F0F0FF;
 }
 div.Editor-Body textarea:blur {
   border-top: 1px solid black;
