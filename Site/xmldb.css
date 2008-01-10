@@ -22,6 +22,7 @@ div.Display {
 }
 
 .xod-load-children {
+  font-size: 80%;
   text-decoration: none;
 }
 .xod-load-children:hover {
@@ -109,15 +110,60 @@ em.xod-no-text {
   font-style: italic;
 }
 
+
+.xod-element {
+  border: 1px dotted gray;
+  padding: 1px;
+  margin: 1px;
+  display: inline-table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  background-color: white;
+}
+.xod-tag-text-group {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: table-row;
+}
+.xod-mm-button {
+  display: table-cell;
+  padding: 0;
+  border: 0;
+  font-style: italic;
+  font-weight: normal;
+  font-variant: normal;
+  width: 1em;
+  height: 1em;
+}
+.xod-tagname {
+  display: table-cell;
+  padding: 0;
+  border: 0;
+  font-style: italic;
+  font-weight: normal;
+  font-variant: small-caps;
+  border-right: 1px solid black;
+  padding-right: 3px;
+}
+.xod-tagname:hover {
+  color: blue;
+  font-decoration: underline;
+}
+.xod-text {
+  display: table-cell;
+  padding: 0;
+  border: 0;
+  min-width: 2em;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
 ul.xod-children {
   margin: 0;
   padding: 0;
   padding-left: 1em;
+  font-size: 12pt;
   list-style-type: none;
-}
-
-div.xod-element {
-  border: 1px dotted gray;
-  padding: 1px;
-  margin: 1px;
+  display: inline-table;
 }
