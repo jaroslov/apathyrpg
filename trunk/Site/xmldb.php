@@ -262,14 +262,15 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
   return $elements;
 }
 
-function xmldb_setAttributeById($Connection,$ID,$Value) {
-  $Value = xmldb_sanitize_for_sql($Value);
+function xmldb_setAttributeById($Connection,$ID,$Attribute) {
+  foreach ($Attribute as $Entry => $Value)
+    $Attribute[$Entry] = xmldb_sanitize_for_sql($Value);
   $oldvalue = xmldb_getElementById($Connection,$ID);
   xmldb_insert_history($Connection,$oldvalue);
-  $query = "UPDATE ".XMLDB_DBT." SET
-            `Value` = '".$Value."'
-            WHERE ".XMLDB_DBT.".`ID` =".$ID." LIMIT 1 ;";
-  mysql_query($query,$Connection);
+  return xmldb_insert_attribute($Connection,
+                                $oldvalue["ChildOf"],// always maintain parent
+                                $Attribute["Name"],
+                                $Attribute["Value"]);
 }
 
 function xmldb_setElementValueById($Connection,$ID,$Value) {
