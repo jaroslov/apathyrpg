@@ -72,19 +72,21 @@ function xod_render_context($CoTable,$RenderContext,
   $table .= "<td class='xod-tagname'
                   id='TN$Id' valign='top'
                   $onModifyElement>$tagName</td>";
-  $child_num = "Child";
   if ($RenderDepth == 0) {
-    if ($NC > 1) $child_num .= "ren";
-    if ($NC > 0)
-      $table .= "<td class='xod-children'
-                    id='Children$Id'
-                     valign='top'
-                    rowspan='2'>
-                    <ul id='Children$Id' class='xod-children'>
-                      <li class='xod-load-children'
-                          $onShowChildren>Load $NC $child_num</li>
-                    </ul>
-                </td>";
+    switch($NC) {
+    case 0: $childtext = "None."; break;
+    case 1: $childtext = "Load 1 Child."; break;
+    default: $childtext = "Load $NC Children."; break;
+    }
+    $table .= "<td class='xod-children'
+                  id='Children$Id'
+                   valign='top'
+                  rowspan='2'>
+                  <ul id='Children$Id' class='xod-children'>
+                    <li class='xod-load-children'
+                        $onShowChildren>$childtext</li>
+                  </ul>
+              </td>";
   } else {
     $mresult = xod_render($CoTable,$Id,$RenderContext,$RenderDepth);
     $chcls = "class='xod-children'";
@@ -294,7 +296,7 @@ function xod_modify_element($replyXML) {
   $node = xmldb_getElementById($Connection,$target);
   $attributes = xmldb_attributes($Connection,$node);
 
-  $editingTarget = "Edit Element: #<a href='#Id$target'>$target</a>";
+  $editingTarget = "Edit Element: #<a href='#Element$target'>$target</a>";
 
   $forEditing = xod_build_default_text_editor($target);
 
