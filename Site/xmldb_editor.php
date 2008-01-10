@@ -130,20 +130,6 @@ function xod_render($CoTable,$Key,$RenderContext=array(),$RenderDepth=3) {
   return $result;
 }
 
-function xod_text_edit_menu($node) {
-  $text_id = $node;
-  $close = "<div class='Edit-TD' onclick=\""
-            .arpg_build_ajax("xmldb_editor.php","CloseTextEditor",$text_id)
-            ."\">Close</div>";
-  $save = "<div class='Edit-TD' onclick=\""
-          .arpg_build_ajax("xmldb_editor.php",array("SaveChanges","What"),
-              array($text_id,
-              "'+xmlencode(document.getElementById('TA$text_id').value)+'"))
-          ."\">Save Changes</div>";
-  $spacer = "<div class='Edit-TD' style='width:1000em;padding:0;min-width:0;border:0;'></div>";
-  return "<div class='Edit-Controls'>$structure$save$spacer$close</div>";
-}
-
 function xod_close_element_editor($replyXML) {
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
 
