@@ -170,20 +170,19 @@ function xod_save_changes($replyXML) {
   $Ids = array_unique($Ids);
 
   $nodes = xmldb_getNodesOfSet($Connection, $Ids);
-  $Msg = "<br/>".sizeof($nodes)."<br/>";
+  $Msg = "<br/>";
   foreach ($nodes as $Id => $node) {
+    $save = false;
     if (array_key_exists($Id,$Names)) {
       if ($node["Name"] !== $Names[$Id])
-        $Msg .= xod_translate_for_display($node["ID"].'"!=="')."<br/>";
-      else
-        $Msg .= xod_translate_for_display($node["ID"].'"==="')."<br/>";
+        $save = true;
     }
     if (array_key_exists($Id,$Values)) {
       if ($node["Value"] !== $Values[$Id])
-        $Msg .= xod_translate_for_display($node["ID"].'"!=="')."<br/>";
-      else
-        $Msg .= xod_translate_for_display($node["ID"].'"==="')."<br/>";
+        $save = true;
     }
+    if ($save)
+      $Msg .= " $Id";
   }
 
   $msg = "Saving #".implode(" #",$Ids)."$Msg";
@@ -279,7 +278,7 @@ function xod_add_remove_attribute($replyXML) {
     xmldb_insert_attribute($Connection,$target,$name,$value);
   } else {
     $who = $replyXML->getElementById("Payload1")->firstChild->nodeValue;
-    xmldb_remove_node($Connection,$who);
+    xmldb_removeAttributeById($Connection,$who);
   }
 
   $editorBody = xod_build_default_text_editor($target);

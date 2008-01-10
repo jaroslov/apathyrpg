@@ -262,7 +262,7 @@ function xmldb_getElementsByTagName($Connection,$TagName) {
   return $elements;
 }
 
-function xmldb_setAttributeById($Connection,$ID,$Attribute) {
+function xmldb_putAttributeById($Connection,$ID,$Attribute) {
   foreach ($Attribute as $Entry => $Value)
     $Attribute[$Entry] = xmldb_sanitize_for_sql($Value);
   $oldvalue = xmldb_getElementById($Connection,$ID);
