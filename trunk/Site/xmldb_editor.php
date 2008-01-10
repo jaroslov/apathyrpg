@@ -13,7 +13,8 @@ function xod_translate_for_display($Text) {
   return $Text;
 }
 
-function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNodes) {
+function xod_render_context($CoTable,$RenderContext,
+          $RenderDepth,$node,$attributes,$childNodes) {
   $Id = $node["ID"];
   // build a table
   //  tag-name
@@ -31,14 +32,10 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
     $attr_class = "class='xod-attr-val'";
   }
   $Attrs .= "</tr>";
-  $headColSpan = sizeof($attributes)*2;
-  $bodyColSpan = $headColSpan + 2;
 
   $rowspan = sizeof($attributes)+1;
   if (strlen($nodeValue)>0)
     $Text = xod_translate_for_display($nodeValue);
-  else
-    $Text = "<em class='xod-no-text'>No Text.</em>";
 
   $onShowChildren = "onclick=\""
     .arpg_build_ajax("xmldb_editor.php",
@@ -57,36 +54,61 @@ function xod_render_context($CoTable,$RenderContext,$node,$attributes,$childNode
       array($Id))
     .";\"";
 
-  $table = "<div id='Element$Id'"
+  if ($RenderDepth==0)
+    $MMBut = "&#8211;";
+  else
+    $MMBut = "+";
+
+  $table  = "<table id='Element$Id'"
               // TODO: implement dragStartDup so the user can
               // "drag" to move
               //." onmousedown=\"dragStartDup(event, 'Element$Id');\""
               ." class='xod-element'>";
-  $table .= "<table class='xod-table' id='Id$Id'>";
-  $table .= "<thead>
-              <th id='MB$Id' $toggleChildren style='width:1em;'>&#8211;</th>
-              <th colspan='$headColSpan' $onModifyElement>$tagName</th>
-            </thead>";
-  $table .= "<tbody>
-              $Attrs
-              <tr class='xod-descr' $onModifyElement id='Text$Id'>
-                <td colspan='$bodyColSpan' class='xod-descr'>$Text</td>
-              </tr>
-            </tbody>";
-  $table .= "</table>";
+  $table .= "<tbody>";
+  $table .= "<tr class='xod-tag-text-group'>";
+  $table .= "<td class='xod-mm-button'
+                  id='MB$Id' valign='top'
+                  $toggleChildren>$MMBut</td>";
+  $table .= "<td class='xod-tagname'
+                  id='TN$Id' valign='top'
+                  $onModifyElement>$tagName</td>";
   $child_num = "Child";
-  if ($NC > 1) $child_num .= "ren";
-  if ($NC > 0)
-    $table .= "<ul id='Children$Id' class='xod-children'>
-                <li $onShowChildren class='xod-load-children'>
-                  Load $NC $child_num
-                </li>
-              </ul>";
-  $table .= "</div>";
+  if ($RenderDepth == 0) {
+    if ($NC > 1) $child_num .= "ren";
+    if ($NC > 0)
+      $table .= "<td class='xod-children'
+                    id='Children$Id'
+                     valign='top'
+                    rowspan='2'>
+                    <ul id='Children$Id' class='xod-children'>
+                      <li class='xod-load-children'
+                          $onShowChildren>Load $NC $child_num</li>
+                    </ul>
+                </td>";
+  } else {
+    $mresult = xod_render($CoTable,$Id,$RenderContext,$RenderDepth);
+    $chcls = "class='xod-children'";
+    $children = "<li $chcls>".implode("</li><li $chcls>",$mresult)."</li>";
+    $table .= "<td class='xod-children' id='Children$Id'
+                  valign='top' rowspan='2'>
+                  <ul id='Ul$Id' class='xod-children'>
+                    $children
+                  </ul>
+              </td>";
+  }
+  $table .= "</tr>";
+  $table .= "<tr class='xod-tag-text-group'>";
+  $table .= "<td class='xod-text' colspan='2'
+                id='Text$Id'
+                valign='top'
+                $onModifyElement>$Text</td>";
+  $table .= "</tr>";
+  $table .= "</tbody>";
+  $table .= "</table>";
   return $table;
 }
 
-function xod_render($CoTable,$Key,$RenderContext=array()) {
+function xod_render($CoTable,$Key,$RenderContext=array(),$RenderDepth=3) {
   $result = array();
   $index = 0;
   $number_children = sizeof($CoTable[$Key]);
@@ -99,10 +121,10 @@ function xod_render($CoTable,$Key,$RenderContext=array()) {
       $tagName = $Child["Name"];
       if (array_key_exists($tagName,$RenderContext))
         $result[$ID] = $RenderContext[$tagName]($CoTable,$RenderContext,
-                          $Child,$attributes,$childNodes);
+                          $RenderDepth-1,$Child,$attributes,$childNodes);
       else
         $result[$ID] = xod_render_context($CoTable,$RenderContext,
-                          $Child,$attributes,$childNodes);
+                          $RenderDepth-1,$Child,$attributes,$childNodes);
     }
   }
   return $result;

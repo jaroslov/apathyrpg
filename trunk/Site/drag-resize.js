@@ -22,6 +22,11 @@ var resizeObj = new Object();
 resizeObj.active = false;
 resizeObj.zIndex = 10000;
 
+var dragDupObj = new Object();
+dragDupObj.active = false;
+dragDupObj.zIndex = 10000;
+
+
 function resizeStart(event, id, body_id) {
   var el;
   var x, y;
@@ -178,6 +183,87 @@ function dragStop(event) {
   dragObj.active = false;
 
   dragObj.elNode.style.opacity = dragObj.elOpacity;
+
+  // Stop capturing mousemove and mouseup events.
+
+  document.removeEventListener("mousemove", dragGo,   true);
+  document.removeEventListener("mouseup",   dragStop, true);
+}
+
+function dragStartDup(event, id) {
+
+  var el;
+  var x, y;
+
+  dragDupObj.active = true;
+
+  // If an element id was given, find it. Otherwise use the element being
+  // clicked on.
+
+  if (id)
+    dragDupObj.elNode = document.getElementById(id);
+  else {
+    dragDupObj.elNode = event.target;
+
+    // If this is a text node, use its parent element.
+
+    if (dragDupObj.elNode.nodeType == 3)
+      dragDupObj.elNode = dragDupObj.elNode.parentNode;
+  }
+
+  // Get cursor position with respect to the page.
+
+  x = event.clientX + window.scrollX;
+  y = event.clientY + window.scrollY;
+
+  // Save starting positions of cursor and element.
+
+  dragDupObj.cursorStartX = x;
+  dragDupObj.cursorStartY = y;
+  dragDupObj.elStartLeft  = parseInt(dragDupObj.elNode.style.left, 10);
+  dragDupObj.elStartTop   = parseInt(dragDupObj.elNode.style.top,  10);
+
+  if (isNaN(dragDupObj.elStartLeft)) dragDupObj.elStartLeft = 0;
+  if (isNaN(dragDupObj.elStartTop))  dragDupObj.elStartTop  = 0;
+
+  // Update element's z-index.
+
+  dragDupObj.elNode.style.zIndex = ++dragDupObj.zIndex;
+
+  // update opacity
+  dragDupObj.elOpacity = dragDupObj.elNode.style.opacity;
+  dragDupObj.elNode.style.opacity = .65;
+
+  // Capture mousemove and mouseup events on the page.
+
+  document.addEventListener("mousemove", dragGoDup,   true);
+  document.addEventListener("mouseup",   dragStopDup, true);
+  event.preventDefault();
+}
+
+function dragGoDup(event) {
+
+  var x, y;
+
+  // Get cursor position with respect to the page.
+
+  x = event.clientX + window.scrollX;
+  y = event.clientY + window.scrollY;
+
+  // Move drag element by the same amount the cursor has moved.
+
+  dragDupObj.elNode.style.width = dragDupObj.elNode.clientWidth+"px";
+  dragDupObj.elNode.style.left = (dragDupObj.elStartLeft + x - dragDupObj.cursorStartX) + "px";
+  dragDupObj.elNode.style.top  = (dragDupObj.elStartTop  + y - dragDupObj.cursorStartY) + "px";
+
+  event.preventDefault();
+}
+
+function dragStopDup(event) {
+
+  dragDupObj.active = false;
+
+  dragDupObj.elNode.style.opacity = dragDupObj.elOpacity;
 
   // Stop capturing mousemove and mouseup events.
 
