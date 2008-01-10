@@ -209,19 +209,24 @@ function xod_save_targets_ajax_coding($Kind,$Id) {
   return "'+xmlencode(document.getElementById('$Kind$Id').value)+'";
 }
 
-function xod_modify_attribute($replyXML) {
+function xod_add_remove_attribute($replyXML) {
   $Connection = xmldb_create_connection();
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
-  $name = $replyXML->getElementById("Payload1")->firstChild->nodeValue;
-  $value = $replyXML->getElementById("Payload2")->firstChild->nodeValue;
+  $code = $replyXML->getElementById("Code0")->firstChild->nodeValue;
 
-  //$node = xmldb_getElementById($Connection,$target);
-  //$attributes = xmldb_attributes($Connection,$node);
+  if ("AddAttribute" === $code) {
+    $name = $replyXML->getElementById("Payload1")->firstChild->nodeValue;
+    $value = $replyXML->getElementById("Payload2")->firstChild->nodeValue;
+    xmldb_insert_attribute($Connection,$target,$name,$value);
+  } else {
+    $who = $replyXML->getElementById("Payload1")->firstChild->nodeValue;
+    xmldb_remove_node($Connection,$who);
+  }
 
-  $msg = "$target: $name &#8658; $value";
+  // reload editor-body, somehow
 
-  $targets = array("Ajax");
-  $payloads = array($msg);
+  $targets = array();
+  $payloads = array();
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -418,7 +423,7 @@ function xod_respond() {
       break;
     case "AddAttribute":
     case "RemoveAttribute":
-      $lres = xod_modify_attribute($replyXML);
+      $lres = xod_add_remove_attribute($replyXML);
       break;
     default: break;
     }

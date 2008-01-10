@@ -104,6 +104,12 @@ function xmldb_insert_history($Connection,$Record) {
   return mysql_insert_id($Connection);
 }
 
+function xmldb_remove_node($Connection,$ID) {
+  $query ="DELETE FROM ".XMLDB_DBT." WHERE ".XMLDB_DBT.".`ID` = $ID";
+  return mysql_query($query,$Connection);
+}
+
+
 function xmldb_insert_element($Connection,$ChildOf,$Order,$Name,$Value) {
   return xmldb_insert_structural($Connection,
       array("ChildOf"=>$ChildOf,
@@ -218,6 +224,12 @@ function xmldb_getAttributeById($Connection,$ID) {
   if ($record = mysql_fetch_array($resource))
     return xmldb_convert_record($record);
   return false;
+}
+
+function xmldb_removeAttributeById($Connection,$ID) {
+  $oldattr = xmldb_getElementById($Connection,$ID);
+  xmldb_insert_history($Connection,$oldattr);
+  xmldb_remove_node($Connection,$ID);
 }
 
 function xmldb_getNodeById($Connection,$ID) {

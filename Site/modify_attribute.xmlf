@@ -1,0 +1,21 @@
+<!--
+  attrId                : attribute ID
+  attrName              : attribute Name
+  attrValue             : attribute Value
+  remAttribute          : remove an attribute to this child
+-->
+<!-- Attribute Item -->
+<tr>
+  <td class='xod-attr-name'
+    %remAttribute%>
+    <div class='xod-button-emu'>Remove</div>
+  </td>
+  <td class='xod-attr-name'>
+    <textarea class='xod-attr-ta'
+      id='Name%attrId%'>%attrName%</textarea>
+  </td>
+  <td class='xod-attr-val'>
+    <textarea class='xod-attr-ta'
+      id='Value%attrId%'>%attrValue%</textarea>
+  </td>
+</tr>
