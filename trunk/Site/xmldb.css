@@ -21,14 +21,6 @@ div.Display {
   padding: 1px;
 }
 
-.xod-load-children {
-  font-size: 80%;
-  text-decoration: none;
-}
-.xod-load-children:hover {
-  text-decoration: underline;
-}
-
 table.xod-table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -127,9 +119,6 @@ em.xod-no-text {
   border-collapse: separate;
   border-spacing: 2px;
   background-color: white;
-}
-.xod-element:hover {
-  border: 1px solid #AAF;
 }
 .xod-tag-text-group {
   border: 0;
