@@ -41,8 +41,8 @@
 </div>
 <table class='xod-elt-table'>
   <thead>
-    <th class='title' colspan='3'>
-      Name:
+    <th>Name:</th>
+    <th class='title' colspan='2'>
       <textarea class='xod-attr-ta' id='Name%target%'>%tagName%</textarea>
     </th>
   </thead>
