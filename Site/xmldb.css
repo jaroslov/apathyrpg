@@ -83,15 +83,15 @@ table.xod-elt-table textarea.xod-attr-ta {
   height: 2em;
   border: 1px solid gray;
   width: 100%;
-  display: inline-block;
+  display: block;
 }
-.xod-attr-ta:hover {
+table.xod-elt-table textarea.xod-attr-ta:hover {
   border: 1px solid blue;
   background-color: #F0F0FF;
 }
-.xod-attr-ta:focus {
-  border: 1px solid blue;
-  background-color: #F0F0FF;
+table.xod-elt-table textarea.xod-attr-ta:focus {
+  border: 1px solid black;
+  background-color: #FDFDFD;;
 }
 
 div.xod-button-emu {
@@ -289,15 +289,16 @@ div.Editor-Body textarea {
   overflow: auto;
   background-color: #F5F5F5;
 }
-div.Editor-Body textarea:focus {
+div.Editor-Body textarea:hover {
   border-top: 1px solid blue;
   border-bottom: 1px solid blue;
   background-color: #F0F0FF;
+  color: black;
 }
-div.Editor-Body textarea:blur {
+div.Editor-Body textarea:focus {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  background-color: #EEE;
+  background-color: #FDFDFD;
 }
 ul.MainMenu {
   margin: 0;
@@ -311,7 +312,7 @@ ul.MainMenu li:hover > ul.Menu {
 ul.Menu {
   text-align: left;
   margin: 0;
-  margin-left: 5em;
+  margin-left: 6em;
   margin-top: -1em;
   padding: 0;
   list-style-type: none;
