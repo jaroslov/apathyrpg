@@ -5,10 +5,15 @@
     <link rel="stylesheet" href="xmldb.css"></link>
     <link rel="stylesheet" href="xod-editor.css"></link>
     <script type="text/javascript" src="xmldb_editor.js"></script>
-    <script type="text/javascript" src="drag-resize.js"></script>
+    <script type="text/javascript"
+      src="../yui/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+    <script type="text/javascript"
+      src="../yui/build/dragdrop/dragdrop.js"></script>
     <title>Apathy Online Structured Editing System</title>
   </head>
-  <body onload="initialLoad('xmldb_editor.php');" class='MainBody'>
+  <body
+    onload="initialLoad('xmldb_editor.php');createHandleDraggableEditor();" 
+    class='MainBody'>
     <div class="Main">
       <div>
         <div id='Ajax'></div>
@@ -17,18 +22,12 @@
         <em>Please wait while the xml file loads.</em>
       </div>
     </div>
-    <div class="Editor" id="Editor"
-      onmousedown="resizeStart(event, 'Editor', 'Editor-Body');">
-      <div class="Editor-Title-Bar" id="Editor-Title-Bar"
-        onmousedown="dragStart(event, 'Editor');">
-        <div class="Editor-Minimize-Button"
-          id="Editor-Minimize-Button"
-          onclick="toggleVisibility('Editor-Body','block','none');
-                   toggleOpacity('Editor');
-                   toggleMinimizeButton('Editor-Minimize-Button');">+</div>
+    <div class="Editor" id="Editor">
+      <div class="Editor-Title-Bar" id="Editor-Title-Bar">
         <div class="Editor-Title" id="Editor-Title">Editor</div>
       </div>
       <div class="Editor-Body" id="Editor-Body"></div>
+      <div id="Editor-Handle" class="Editor-Handle"></div>
     </div>
   </body>
 </html>

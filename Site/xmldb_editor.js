@@ -1,6 +1,90 @@
+function createHandleDraggableEditor() {
+  YAHOO.example.DDOnTop = function(id, sGroup, config) {
+      YAHOO.example.DDOnTop.superclass.constructor.apply(this, arguments);
+  };
+
+  YAHOO.example.DDResize = function(panelElId, handleElId, sGroup, config) {
+      YAHOO.example.DDResize.superclass.constructor.apply(this, arguments);
+      if (handleElId) {
+          this.setHandleElId(handleElId);
+      }
+  };
+
+  YAHOO.extend(YAHOO.example.DDOnTop, YAHOO.util.DD, {
+      origZ: 0,
+      origO: 1,
+  
+      startDrag: function(x, y) {
+  
+          var style = this.getEl().style;
+  
+          // store the original z-index
+          this.origZ = style.zIndex;
+          this.origO = style.opacity;
+          document.title = this.origO;
+  
+          // The z-index needs to be set very high so the element will indeed be on top
+          style.zIndex = 10000;
+          style.opacity = .65;
+      },
+  
+      endDrag: function(e) {
+          YAHOO.log(this.id + " endDrag", "info", "example");
+  
+          // restore the original z-index
+          this.getEl().style.zIndex = this.origZ;
+          this.getEl().style.opacity = this.origO;
+      }
+  });
+
+
+  YAHOO.extend(YAHOO.example.DDResize, YAHOO.util.DragDrop, {
+  
+      onMouseDown: function(e) {
+          var panel = this.getEl();
+          this.startWidth = panel.offsetWidth;
+          this.startHeight = panel.offsetHeight;
+  
+          this.startPos = [YAHOO.util.Event.getPageX(e),
+                           YAHOO.util.Event.getPageY(e)];
+      },
+  
+      onDrag: function(e) {
+          var newPos = [YAHOO.util.Event.getPageX(e),
+                        YAHOO.util.Event.getPageY(e)];
+  
+          var offsetX = newPos[0] - this.startPos[0];
+          var offsetY = newPos[1] - this.startPos[1];
+  
+          var newWidth = Math.max(this.startWidth + offsetX, 10);
+          var newHeight = Math.max(this.startHeight + offsetY, 10);
+  
+          var panel = this.getEl();
+          panel.style.width = newWidth + "px";
+          panel.style.height = newHeight + "px";
+      }
+  });
+  
+  (function() {
+      var dd, dd2;
+      YAHOO.util.Event.onDOMReady(function() {
+          // put the resize handle and panel drag and drop instances into different
+          // groups, because we don't want drag and drop interaction events between
+          // the two of them.
+          dd = new YAHOO.example.DDResize("Editor", "Editor-Handle", "panelresize");
+          dd = new YAHOO.example.DDResize("Editor-Body", "Editor-Handle", "panelresize");
+          dd2 = new YAHOO.example.DDOnTop("Editor", "paneldrag");
+          dd2.setHandleElId("Editor-Title-Bar");
+  
+          // addInvalidHandleid will make it so a mousedown on the resize handle will 
+          // not start a drag on the panel instance.  
+          dd2.addInvalidHandleId("Editor-Handle");
+      });
+  })();
+
+}
 function toggleVisibility(Id,On,Off) {
   var who = document.getElementById(Id);
-  document.title = who;
   if (who)
     if (who.style.display == On)
       who.style.display = Off;
