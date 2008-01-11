@@ -20,14 +20,6 @@
     <ul class='MainMenu'>
       <li>Structure...
         <ul class='Menu'>
-          <li>Move...
-            <ul class='Menu'>
-              <li %moveUp%>Up one</li>
-              <li %moveDown%>Down one</li>
-              <li %moveTop%>To top</li>
-              <li %moveBottom%>To bottom</li>
-            </ul>
-          </li>
           <li %appendChild%>Append Child</li>
           <li %removeDangerously%>Remove</li>
         </ul>
