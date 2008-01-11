@@ -1,3 +1,7 @@
+=== Online Editor Documentation ===
+
+We now depend on the YUI library. A zipball is being placed in the Google repository.
+
 === Apathy Documentation ===
 
 Apathy is built using the Apathy system. This folder is the `Game' folder and contains content and actual final-production. A series of tools are included in the `ManagementSystem' for migrating from the old Apathy system to this system.
