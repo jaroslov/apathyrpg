@@ -23,17 +23,8 @@ function xod_render_context($CoTable,$RenderContext,
   //    children...
   $tagName = $node["Name"];
   $nodeValue = $node["Value"];
-  // build attributes
-  $Attrs = "<tr>";
-  $attr_class = "class='xod-attr-val'";
-  foreach ($attributes as $Name => $Value) {
-    $Attrs .= "<td class='xod-attr-name'>$Name</td>
-                <td $attr_class>$Value</td>";
-    $attr_class = "class='xod-attr-val'";
-  }
-  $Attrs .= "</tr>";
 
-  $rowspan = sizeof($attributes)+1;
+  $Text = "";
   if (strlen($nodeValue)>0)
     $Text = xod_translate_for_display($nodeValue);
 
@@ -170,25 +161,35 @@ function xod_save_changes($replyXML) {
   $Ids = array_unique($Ids);
 
   $nodes = xmldb_getNodesOfSet($Connection, $Ids);
-  $Msg = "<br/>";
   foreach ($nodes as $Id => $node) {
     $save = false;
+    $name = $node["Name"];
+    $value = $node["Value"];
     if (array_key_exists($Id,$Names)) {
-      if ($node["Name"] !== $Names[$Id])
+      if ($node["Name"] !== $Names[$Id]) {
         $save = true;
+        $name = $Names[$Id];
+      }
     }
     if (array_key_exists($Id,$Values)) {
-      if ($node["Value"] !== $Values[$Id])
+      if ($node["Value"] !== $Values[$Id]) {
         $save = true;
+        $value = $Values[$Id];
+      }
     }
     if ($save)
-      $Msg .= " $Id";
+      xmldb_setElementNV($Connection,$Id,$name,$value);
   }
 
-  $msg = "Saving #".implode(" #",$Ids)."$Msg";
+  $node = xmldb_getElementById($Connection,$target);
 
-  $targets = array("Ajax");
-  $payloads = array($msg);
+  $tagNameTarget = "TN$target";
+  $tagName = xod_translate_for_display($node["Name"]);
+  $textTarget = "Text$target";
+  $text = xod_translate_for_display($node["Value"]);
+
+  $targets = array($tagNameTarget,$textTarget);
+  $payloads = array($tagName,$text);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
