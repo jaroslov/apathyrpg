@@ -1,0 +1,30 @@
+<!--$children = "<li $chcls>".implode("</li><li $chcls>",$mresult)."</li>";-->
+<!--
+  target           - the target ID
+  tagName          - the tag name of the target
+  MMBut            - default button character + if open, - if closed
+  childrenText     - `Load' message or list of children
+  Text             - text of this node
+  onModifyElement  - modify action for this element
+  onLoadChildren   - loads the children
+  toggleChildren   - toggles whether the children are displayed
+-->
+<table id='Element%target%' class='xod-element'>
+  <tbody>
+    <tr class='xod-tag-text-group'>
+      <td class='xod-mm-button' id='MB%target%' valign='top'
+          %toggleChildren%>%MMBut%</td>
+      <td class='xod-tagname' id='TN%target%' valign='top'
+        %onModifyElement%>%tagName%</td>";
+      <td class='xod-children' id='Children%target%' valign='top' rowspan='2'>
+          <ul id='Ul%target%' class='xod-children' %onLoadChildren%>
+            %childrenText%
+          </ul>
+      </td>
+    </tr>
+    <tr class='xod-tag-text-group'>
+      <td class='xod-text' colspan='2' id='Text%target%' valign='top'
+        %onModifyElement%>%Text%</td>";
+    </tr>
+  </tbody>
+</table>

@@ -273,6 +273,27 @@ function xmldb_putAttributeById($Connection,$ID,$Attribute) {
                                 $Attribute["Value"]);
 }
 
+function xmldb_setElement($Connection,$Record) {
+  $oldvalue = xmldb_getElementById($Connection,$ID);
+  xmldb_insert_history($Connection,$oldvalue);
+  $query = "UPDATE ".XMLDB_DBT." SET
+            `ChildOf` = '".$Record["ChildOf"]."',
+            `Order` = '".$Record["Order"]."',
+            `Name` = '".$Record["Name"]."',
+            `Value` = '".$Record["Value"]."',
+            `TimeStamp` = CURRENT_TIMESTAMP
+            WHERE ".XMLDB_DBT.".`ID` = ".$Record["ID"]." LIMIT 1;";
+  return mysql_query($query,$Connection);
+}
+
+function xmldb_setElementNV($Connection,$ID,$Name,$Value) {
+  $oldvalue = xmldb_getElementById($Connection,$ID);
+  xmldb_insert_history($Connection,$oldvalue);
+  $oldvalue["Name"] = $Name;
+  $oldvalue["Value"] = $Value;
+  return xmldb_setElement($Connection,$oldvalue);
+}
+
 function xmldb_setElementValueById($Connection,$ID,$Value) {
   $Value = xmldb_sanitize_for_sql($Value);
   $oldvalue = xmldb_getElementById($Connection,$ID);
