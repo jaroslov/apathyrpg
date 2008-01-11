@@ -184,9 +184,13 @@ function ajaxFunction(Responder,Message) {
         } else {
           var targ = document.getElementById(target);
           if (targ) {
-            range.selectNodeContents(targ);
-            range.deleteContents();
-            targ.innerHTML = payload.firstChild.nodeValue;
+            if (target == "Ajax") {
+              targ.innerHTML += payload.firstChild.nodeValue;
+            } else {
+              range.selectNodeContents(targ);
+              range.deleteContents();
+              targ.innerHTML = payload.firstChild.nodeValue;
+            }
           }
           if (logresponse)
             logresponse.innerHTML = realUnescape(xmlR);
@@ -200,7 +204,7 @@ function ajaxFunction(Responder,Message) {
   if (ajax)
     ajax.innerHTML
       = "<table>"
-      +"<tr><td>Message:</td><td>"+Message+"</td></tr>"
+      +"<tr><td>Message:</td><td>"+xmlencode(Message)+"</td></tr>"
       +"</table>";
   xmlHttp.send(null);
 }
