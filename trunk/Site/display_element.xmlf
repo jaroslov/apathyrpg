@@ -2,7 +2,7 @@
 <!--
   target           - the target ID
   tagName          - the tag name of the target
-  MMBut            - default button character + if open, - if closed
+  MMButton         - default button character + if open, - if closed
   childrenText     - `Load' message or list of children
   Text             - text of this node
   onModifyElement  - modify action for this element
