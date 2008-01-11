@@ -188,7 +188,7 @@ div.Editor {
   left: 0;
   min-width: 20em;
   overflow: hidden;
-  min-height: 2em;
+  min-height: 4em;
   opacity: 1;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -198,20 +198,21 @@ div.Editor-Handle {
   position:absolute;
   bottom:-1px;
   right:-1px;
-  width:1em;
-  height:1em;
-  background-color:#EEE;
+  width:15px;
+  height:15px;
+  background-image: url(thumb.png);
   border: 0;
-  border: 1px solid gray;
   font-size:100%;
   -moz-border-radius: 0px 0px 3px 0px;
   -webkit-border-radius: 0px 0px 3px 0px;
 }
 div.Editor-Title-Bar {
+  opacity: 1;
   background-color: white;
   border: 1px solid blue;
   width: auto;
-  height: 18px;
+  height: 22px;
+  padding-left: 3px;
   margin: 3px;
   font-variant: small-caps;
   font-style: italic;
@@ -238,10 +239,10 @@ div.Editor-Minimize-Button:hover {
 }
 div.Editor-Body {
   position: absolute;
-  top: 24px;
+  top: 28px;
   left: 3px;
   right: 3px;
-  bottom: 3px;
+  bottom: 10px;
   background-color: white;
   border: 1px solid blue;
   overflow: auto;

@@ -21,7 +21,6 @@ function createHandleDraggableEditor() {
           // store the original z-index
           this.origZ = style.zIndex;
           this.origO = style.opacity;
-          document.title = this.origO;
   
           // The z-index needs to be set very high so the element will indeed be on top
           style.zIndex = 10000;
@@ -33,7 +32,7 @@ function createHandleDraggableEditor() {
   
           // restore the original z-index
           this.getEl().style.zIndex = this.origZ;
-          this.getEl().style.opacity = this.origO;
+          this.getEl().style.opacity = 1;
       }
   });
 
@@ -110,13 +109,6 @@ function toggleMinimizeButton(Id,IfId) {
     else
       who.innerHTML = "&#8211;";
   }
-}
-function toggleOpacity(Id) {
-  var who = document.getElementById(Id);
-  if (who.style.opacity < 1)
-    who.style.opacity = 1;
-  else
-    who.style.opacity = .65;
 }
 function initialLoad(who) {
   ajaxFunction(who,
