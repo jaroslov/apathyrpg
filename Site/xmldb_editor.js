@@ -1,5 +1,6 @@
 function toggleVisibility(Id,On,Off) {
   var who = document.getElementById(Id);
+  document.title = who;
   if (who)
     if (who.style.display == On)
       who.style.display = Off;

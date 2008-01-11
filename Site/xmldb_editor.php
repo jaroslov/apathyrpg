@@ -13,6 +13,20 @@ function xod_translate_for_display($Text) {
   return $Text;
 }
 
+function xod_build_element($node,$RenderDepth) {
+  $element_fragment = file_get_contents("display_element.xmlf");
+
+  $MMBut = "+";
+  if ($RenderDepth==0)
+    $MMBut = "&#8211;";
+
+  $elt_vals = array(
+    "target" => $node["ID"],
+    "tagName" => $node["Name"],
+    "MMButton" => $MMBut,
+    "childrenText" => 'foo');
+}
+
 function xod_render_context($CoTable,$RenderContext,
           $RenderDepth,$node,$attributes,$childNodes) {
   $Id = $node["ID"];
@@ -37,18 +51,17 @@ function xod_render_context($CoTable,$RenderContext,
   $toggleChildren = "onclick=\"toggleVisibility('Ul$Id','none','block');
                               toggleMinimizeButton('MB$Id','Ul$Id');\"";
 
-  $NC = sizeof($childNodes);
-
   $onModifyElement = "onclick=\""
     .arpg_build_ajax("xmldb_editor.php",
       array("ModifyElement"),
       array($Id))
     .";\"";
 
-  if ($RenderDepth==0)
+  $MMBut = "+";
+  if ($RenderDepth==0) {
     $MMBut = "&#8211;";
-  else
-    $MMBut = "+";
+    $toggleChildren = xod_onclick_edit("LoadChildren","$Id");
+  }
 
   $table  = "<table id='Element$Id'"
               // TODO: implement dragStartDup so the user can
@@ -57,25 +70,17 @@ function xod_render_context($CoTable,$RenderContext,
               ." class='xod-element'>";
   $table .= "<tbody>";
   $table .= "<tr class='xod-tag-text-group'>";
-  $table .= "<td class='xod-mm-button'
-                  id='MB$Id' valign='top'
-                  $toggleChildren>$MMBut</td>";
+  $table .= "<td class='xod-mm-button' valign='top' id='MBCtr$Id'>
+                <div id='MB$Id' $toggleChildren>$MMBut</div>
+            </td>";
   $table .= "<td class='xod-tagname'
                   id='TN$Id' valign='top'
                   $onModifyElement>$tagName</td>";
   if ($RenderDepth == 0) {
-    switch($NC) {
-    case 0: $childtext = "None."; break;
-    case 1: $childtext = "Load 1 Child."; break;
-    default: $childtext = "Load $NC Children."; break;
-    }
-    $table .= "<td class='xod-children'
-                  id='Children$Id'
-                   valign='top'
-                  rowspan='2'>
+    $table .= "<td class='xod-children' id='Children$Id'
+                  valign='top' rowspan='2'>
                   <ul id='Children$Id' class='xod-children'>
-                    <li class='xod-load-children'
-                        $onShowChildren>$childtext</li>
+                    <li class='xod-load-children' />
                   </ul>
               </td>";
   } else {
@@ -101,7 +106,7 @@ function xod_render_context($CoTable,$RenderContext,
   return $table;
 }
 
-function xod_render($CoTable,$Key,$RenderContext=array(),$RenderDepth=3) {
+function xod_render($CoTable,$Key,$RenderContext=array(),$RenderDepth=4) {
   $result = array();
   $index = 0;
   $number_children = sizeof($CoTable[$Key]);
@@ -316,8 +321,13 @@ function xod_load_children($replyXML) {
               <li>".implode("</li><li>",$mresult)."</li>
             </ul>";
 
-  $targets = array("Children$target","MB$target");
-  $payloads = array($result,"+");
+  $toggleChildren = "onclick=\"toggleVisibility('Ul$target','none','block');
+                            toggleMinimizeButton('MB$target','Ul$target');\"";
+
+  $MBContent = "<div id='MB$target' $toggleChildren>+</div>";
+
+  $targets = array("Children$target","MBCtr$target");
+  $payloads = array($result,$MBContent);
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 

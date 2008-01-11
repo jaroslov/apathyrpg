@@ -155,8 +155,7 @@ em.xod-no-text {
   font-style: italic;
   font-weight: normal;
   font-variant: small-caps;
-  border-right: 1px solid black;
-  padding-right: 3px;
+  padding-right: 1px;
 }
 .xod-tagname:hover {
   color: blue;
