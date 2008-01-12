@@ -187,8 +187,9 @@ function xod_save_changes($replyXML) {
         $value = $Values[$Id];
       }
     }
-    if ($save)
+    if ($save) {
       xmldb_setElementNV($Connection,$Id,$name,$value);
+    }
   }
 
   $node = xmldb_getElementById($Connection,$target);
