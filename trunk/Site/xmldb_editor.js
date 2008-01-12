@@ -167,6 +167,8 @@ function ajaxFunction(Responder,Message) {
       var log = document.getElementById('Log');
       if (log)
         log.innerHTML = realUnescape(xmlR);
+      if (logresponse)
+        logresponse.innerHTML = realUnescape(xmlR);
       for (i = 0; i<replies.length; i++) {
         replies[i].normalize();
         var target = replies[i].getElementsByTagName("target")[0].firstChild.nodeValue;
@@ -183,7 +185,7 @@ function ajaxFunction(Responder,Message) {
             document.title = payload.firstChild.nodeValue;
         } else {
           var targ = document.getElementById(target);
-          if (targ) {
+          if (targ && payload.firstChild) {
             if (target == "Ajax") {
               targ.innerHTML += payload.firstChild.nodeValue;
             } else {
@@ -192,8 +194,6 @@ function ajaxFunction(Responder,Message) {
               targ.innerHTML = payload.firstChild.nodeValue;
             }
           }
-          if (logresponse)
-            logresponse.innerHTML = realUnescape(xmlR);
         }
       }
     }
