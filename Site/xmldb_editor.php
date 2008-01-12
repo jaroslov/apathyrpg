@@ -97,25 +97,29 @@ function xod_render_context($CoTable,$RenderContext,
   $table .= "</tr>";
   $table .= "<tr class='xod-tag-text-group'>";
   $table .= "<td class='xod-text' colspan='2'
-                id='Text$Id'
-                valign='top'
-                $onModifyElement>$Text</td>";
+                id='Text$Id' valign='top'
+                $onModifyElement>$Text&#160;</td>";
   $table .= "</tr>";
   $table .= "</tbody>";
   $table .= "</table>";
   return $table;
 }
 
-function xod_render($CoTable,$Key,$RenderContext=array(),$RenderDepth=4) {
+function xod_render($CoTable,$Key,$RenderContext=array(),$RenderDepth=1) {
   $result = array();
   $index = 0;
-  $number_children = sizeof($CoTable[$Key]);
+  if (!array_key_exists($Key,$CoTable))
+    return $result;
   foreach ($CoTable[$Key] as $Id => $Child) {
     if ($Child["Kind"] === "element") {
       $index++;
       $ID = $Child["ID"];
-      $attributes = xmldb_cot_attributes($CoTable,$ID);
-      $childNodes = xmldb_cot_childNodes($CoTable,$ID);
+      $attributes = array();
+      $childNodes = array();
+      if (array_key_exists($ID,$CoTable)) {
+        $attributes = xmldb_cot_attributes($CoTable,$ID);
+        $childNodes = xmldb_cot_childNodes($CoTable,$ID);
+      }
       $tagName = $Child["Name"];
       if (array_key_exists($tagName,$RenderContext))
         $result[$ID] = $RenderContext[$tagName]($CoTable,$RenderContext,
@@ -347,6 +351,7 @@ function xod_initialize($replyXML) {
 
 function xod_respond() {
   $reply = $_GET["Message"];
+  $reply = str_replace("\\\"",'"',$reply);
   $replyXML = new DOMDocument();
   $replyXML->loadXML($reply);
 

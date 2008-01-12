@@ -14,6 +14,8 @@ function arpg_encode_html ($html) {
   $html = preg_replace("/\&/","&amp;",$html);
   $html = preg_replace("/\</","&lt;",$html);
   $html = preg_replace("/\>/","&gt;",$html);
+  $html = preg_replace("/\'/","&apos;",$html);
+  $html = preg_replace("/\"/","&quot;",$html);
   return $html;
 }
 
@@ -81,10 +83,10 @@ function arpg_build_ajax($Responder,$Codes,$Payloads) {
     $Payloads = array($Payloads);
   $result = "<reply>";
   for ($cdx = 0; $cdx < sizeof($Codes); $cdx++) {
-      $result .= "<response xml:id=\'Response$cdx\'>"
-        ."<code xml:id=\'Code$cdx\'>"
+      $result .= "<response xml:id=\"Response$cdx\">"
+        ."<code xml:id=\"Code$cdx\">"
         .$Codes[$cdx]
-        ."</code><payload xml:id=\'Payload$cdx\'>"
+        ."</code><payload xml:id=\"Payload$cdx\">"
         .$Payloads[$cdx]
         ."</payload></response>";
   }

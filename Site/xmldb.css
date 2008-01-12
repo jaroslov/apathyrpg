@@ -19,7 +19,7 @@ div.Display {
   border: 1px solid gray;
   position: relative;
   z-index: 2;
-  padding: 1px;
+  padding: 3px;
 }
 div.Ajax-Container {
   position: fixed;
@@ -30,6 +30,18 @@ div.Ajax-Container {
   overflow: hidden;
   background-color: #EEE;
   border-bottom: 1px dotted black;
+  z-index: 1000;
+  font-size: 8pt;
+}
+div.Log-Container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8em;
+  overflow: auto;
+  background-color: #EEE;
+  border-top: 1px dotted black;
   z-index: 1000;
   font-size: 8pt;
 }
@@ -125,9 +137,8 @@ em.xod-no-text {
 
 
 .xod-element {
-  border: 1px dotted gray;
-  padding: 1px;
-  margin: 1px;
+  padding: 0;
+  margin: 0;
   display: inline-table;
   border-collapse: collapse;
   border-spacing: 0;
@@ -146,22 +157,24 @@ em.xod-no-text {
   font-style: italic;
   font-weight: normal;
   font-variant: normal;
-  width: 1em;
+  width: 1.2em;
   height: 1em;
 }
 .xod-tagname {
   display: table-cell;
-  padding: 0;
-  border: 0;
+  padding: 1px;
+  border: 1px solid #DDD;
   margin: 0;
   font-style: italic;
   font-weight: normal;
   font-variant: small-caps;
-  padding-right: 1px;
+  padding-right: 3px;
 }
 .xod-tagname:hover {
   color: blue;
   font-decoration: underline;
+  background-color: #F9F9FF;
+  border: 1px solid blue;
 }
 .xod-text {
   display: table-cell;
@@ -175,7 +188,7 @@ em.xod-no-text {
 ul.xod-children {
   margin: 0;
   padding: 0;
-  padding-left: .1em;
+  padding-left: .25em;
   font-size: 12pt;
   list-style-type: none;
   display: inline-table;
