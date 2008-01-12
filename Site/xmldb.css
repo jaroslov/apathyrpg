@@ -188,10 +188,14 @@ em.xod-no-text {
 ul.xod-children {
   margin: 0;
   padding: 0;
-  padding-left: .25em;
+  padding: .25em;
   font-size: 12pt;
   list-style-type: none;
   display: inline-table;
+  border: 1px solid #DDD;
+}
+.xod-child-item {
+  border: 1px solid #DDF;
 }
 
 div.Editor {
