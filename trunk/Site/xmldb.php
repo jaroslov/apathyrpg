@@ -214,7 +214,7 @@ function xmldb_getElementById($Connection,$ID) {
   $record = array();
   if ($record = mysql_fetch_array($resource))
     return xmldb_convert_record($record);
-  return false;
+  return $record;
 }
 
 function xmldb_getAttributeById($Connection,$ID) {
@@ -274,7 +274,7 @@ function xmldb_putAttributeById($Connection,$ID,$Attribute) {
 }
 
 function xmldb_setElement($Connection,$Record) {
-  $oldvalue = xmldb_getElementById($Connection,$ID);
+  $oldvalue = xmldb_getElementById($Connection,$Record["ID"]);
   xmldb_insert_history($Connection,$oldvalue);
   $query = "UPDATE ".XMLDB_DBT." SET
             `ChildOf` = '".$Record["ChildOf"]."',
