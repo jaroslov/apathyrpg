@@ -102,6 +102,7 @@ function xod_render_context($CoTable,$RenderContext,
   $table .= "</tr>";
   $table .= "</tbody>";
   $table .= "</table>";
+
   return $table;
 }
 
@@ -321,17 +322,31 @@ function xod_load_children($replyXML) {
   $CoTable = xmldb_child_table_of_document($Connection);
 
   $mresult = xod_render($CoTable,$target);
+  $items = "";
+  foreach ($mresult as $key => $item) {
+    $items .= "<li class='xod-child-item' id=\"li$key\">$item</li>";
+  }
   $result = "<ul class='xod-children' id='Ul$target'>
-              <li>".implode("</li><li>",$mresult)."</li>
+              $items
             </ul>";
+
+  $yui_item_ids = "";
+  $children = xmldb_cot_childNodes($CoTable,$target);
+  foreach ($children as $order => $child)
+    $yui_item_ids .= "new YAHOO.example.DDList(\"li".$child["ID"]."\");";
+
+  $reorder_script = file_get_contents("reorder-list.jsf");
+  $rs_rep = array("target"=>$target,"listItemsTarget"=>$yui_item_ids);
+
+  $reorder_script = xod_insert_fragment_values($reorder_script,$rs_rep);
 
   $toggleChildren = "onclick=\"toggleVisibility('Ul$target','none','block');
                             toggleMinimizeButton('MB$target','Ul$target');\"";
 
   $MBContent = "<div id='MB$target' $toggleChildren>+</div>";
 
-  $targets = array("Children$target","MBCtr$target");
-  $payloads = array($result,$MBContent);
+  $targets = array("Children$target","MBCtr$target","@Evaluate","@Evaluate");
+  $payloads = array($result,$MBContent,$reorder_script,"document.getElementById('Ul$target').style.display='block';");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -385,6 +400,9 @@ function xod_respond() {
     case "RemoveAttribute":
       $lres = xod_add_remove_attribute($replyXML);
       break;
+    case "ReorderAndRechild":
+      $lres["Targets"] = array("Log");
+      $lres["Payloads"] = array("Reording is not implemented in the database.");
     default: break;
     }
 

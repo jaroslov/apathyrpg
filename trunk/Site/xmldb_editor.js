@@ -181,8 +181,11 @@ function ajaxFunction(Responder,Message) {
           code = codes[1];
           if (code == "Focus") {
             document.getElementById(codes[2]).focus();
-          } else if (code == "Title")
+          } else if (code == "Title") {
             document.title = payload.firstChild.nodeValue;
+          } else if (code == "Evaluate") {
+            eval(payload.firstChild.nodeValue);
+          }
         } else {
           var targ = document.getElementById(target);
           if (targ && payload.firstChild) {

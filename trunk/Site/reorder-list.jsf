@@ -1,4 +1,7 @@
-<script type="text/javascript">
+/*
+  target          -- target UL
+  listItemsTarget -- the set of list-items targetted
+*/
 
 (function() {
 
@@ -6,13 +9,13 @@ var Dom = YAHOO.util.Dom;
 var Event = YAHOO.util.Event;
 var DDM = YAHOO.util.DragDropMgr;
 
-// example%target% should be tailored to each list
-// e.g. example%target%$TargetId
+// example should be tailored to each list
+// e.g. example$TargetId
 // this allows us to have a bunch of lists which are editable
 //////////////////////////////////////////////////////////////////////////////
-// example%target% app
+// example app
 //////////////////////////////////////////////////////////////////////////////
-YAHOO.example%target%.DDApp = {
+YAHOO.example.DDApp = {
     init: function() {
 
         // we add ULs as DDTargets here
@@ -37,17 +40,18 @@ YAHOO.example%target%.DDApp = {
 // custom drag and drop implementation
 //////////////////////////////////////////////////////////////////////////////
 
-YAHOO.example%target%.DDList = function(id, sGroup, config) {
+YAHOO.example.DDList = function(id, sGroup, config) {
 
-    YAHOO.example%target%.DDList.superclass.constructor.call(this, id, sGroup, config);
+    YAHOO.example.DDList.superclass.constructor.call(this, id, sGroup, config);
 
+    var el = this.getDragEl();
     Dom.setStyle(el, "opacity", 0.67); // The proxy is slightly transparent
 
     this.goingUp = false;
     this.lastY = 0;
 };
 
-YAHOO.extend(YAHOO.example%target%.DDList, YAHOO.util.DDProxy, {
+YAHOO.extend(YAHOO.example.DDList, YAHOO.util.DDProxy, {
 
     startDrag: function(x, y) {
 
@@ -89,6 +93,13 @@ YAHOO.extend(YAHOO.example%target%.DDList, YAHOO.util.DDProxy, {
                 Dom.setStyle(thisid, "visibility", "");
             });
         a.animate();
+        // when we're done with it, clear the proxy so that
+        // the unique-ids that it copies are available again
+        proxy.innerHTML = "";
+        // also, fire a re-ordering message
+        ajaxFunction("xmldb_editor.php",
+          "<reply><response id=\"Response0\"><code id=\"Code0\">ReorderAndRechild</code>"
+            +"<payload id=\"Payload0\">%target%</payload></response></reply>");
     },
 
     onDragDrop: function(e, id) {
@@ -153,9 +164,6 @@ YAHOO.extend(YAHOO.example%target%.DDList, YAHOO.util.DDProxy, {
     }
 });
 
-Event.onDOMReady(YAHOO.example%target%.DDApp.init, YAHOO.example%target%.DDApp, true);
+Event.onDOMReady(YAHOO.example.DDApp.init, YAHOO.example.DDApp, true);
 
 })();
-
-
-</script>
