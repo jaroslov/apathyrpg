@@ -379,7 +379,7 @@ def Debug ():
       print >> tmp, ArpgContent.AsXML ()
 
 def Live ():
-  From = "Game/ARPG-Data.xml"
+  From = "../Apathy.xml"
   To = "Game/ARPG-Data.xml"
   if len(sys.argv) > 1:
     From = sys.argv[1]
