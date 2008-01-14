@@ -358,6 +358,14 @@ function xod_reorder_list($replyXML) {
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
+function xod_append_child($replyXML) {
+  $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
+
+  $targets = array("Log");
+  $payloads = array(xod_translate_for_display($target));
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function xod_initialize($replyXML) {
   $Connection = xmldb_create_connection();
   $CoTable = xmldb_child_table_of_document($Connection);
@@ -410,6 +418,8 @@ function xod_respond() {
       break;
     case "ReorderAndRechild":
       $lres = xod_reorder_list($replyXML);
+    case "AppendChild":
+      $lres = xod_append_child($replyXML);
     default: break;
     }
 
