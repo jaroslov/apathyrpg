@@ -211,19 +211,19 @@ Josh Kramer}
   <!-- special "rdquo" word -->
   <xsl:template match="rdquo">''</xsl:template>
   <!-- special "lsquo" word -->
-  <xsl:template match="ldquo">`</xsl:template>
+  <xsl:template match="lsquo">`</xsl:template>
   <!-- special "rsquo" word -->
-  <xsl:template match="rdquo">'</xsl:template>
+  <xsl:template match="rsquo">'</xsl:template>
   <!-- special "times" word -->
   <xsl:template match="times">\times </xsl:template>
   <!-- special "ouml" word -->
   <xsl:template match="ouml">\"o</xsl:template>
   <!-- special "oslash" word -->
-  <xsl:template match="oslash">\o</xsl:template>
+  <xsl:template match="oslash">o</xsl:template>
   <!-- special "ndash" word -->
-  <xsl:template match="ouml">--</xsl:template>
+  <xsl:template match="ndash">--</xsl:template>
   <!-- special "mdash" word -->
-  <xsl:template match="oslash">---</xsl:template>
+  <xsl:template match="mdash">---</xsl:template>
   <!-- special "trademark" word -->
   <xsl:template match="trademark">$^{TM}$</xsl:template>
   <!-- special "plusminus" word -->
@@ -329,11 +329,9 @@ Josh Kramer}
 
   <!-- math -->
   <xsl:template match="equation">&#xa;&#xa;
-    \vspace{-.3in}
+    \vspace{0in}
     \begin{center}
-    \begin{equation}
-    <xsl:apply-templates select="math/*" />
-    \end{equation}
+		<xsl:apply-templates />
     \end{center}
   </xsl:template>
   <xsl:template match="math">\begin{math}<xsl:apply-templates />\end{math}</xsl:template>
@@ -344,7 +342,7 @@ Josh Kramer}
   <xsl:template match="msup">{<xsl:apply-templates select="./*[position()=1]"/>}^{<xsl:apply-templates select="./*[position()=2]"/>}</xsl:template>
   <xsl:template match="munderover"><xsl:apply-templates select="./*[position()=1]"/>_{<xsl:value-of select="./*[position()=2]"/>}^{<xsl:apply-templates select="./*[position()=3]"/>}</xsl:template>
   <xsl:template match="mfrac">{{<xsl:apply-templates select="./*[position()=1]"/>}\over{<xsl:apply-templates select="./*[position()=2]"/>}}</xsl:template>
-  <xsl:template match="mstyle"><xsl:apply-templates /></xsl:template>
+  <xsl:template match="mstyle"></xsl:template>
 
 
 	<!--
