@@ -361,8 +361,8 @@ function xod_reorder_list($replyXML) {
 function xod_append_child($replyXML) {
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
 
-  $targets = array("Log");
-  $payloads = array(xod_translate_for_display($target));
+  $targets = array("@AppendChild@Ul$target");
+  $payloads = array("<li>".xod_translate_for_display($target)."</li>");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
