@@ -188,9 +188,7 @@ function ajaxFunction(Responder,Message) {
           } else if (code == "AppendChild") {
             var who = document.getElementById(codes[2])
             if (who) {
-              document.title = "BEFORE...";
               who.innerHTML += payload.firstChild.nodeValue
-              document.title += "AFTER";
             }
           }
         } else {
