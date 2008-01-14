@@ -185,6 +185,13 @@ function ajaxFunction(Responder,Message) {
             document.title = payload.firstChild.nodeValue;
           } else if (code == "Evaluate") {
             eval(payload.firstChild.nodeValue);
+          } else if (code == "AppendChild") {
+            var who = document.getElementById(codes[2])
+            if (who) {
+              document.title = "BEFORE...";
+              who.innerHTML += payload.firstChild.nodeValue
+              document.title += "AFTER";
+            }
           }
         } else {
           var targ = document.getElementById(target);
