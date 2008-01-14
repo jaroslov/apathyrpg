@@ -26,13 +26,8 @@ YAHOO.example.DDApp = {
         // new YAHOO.example%target.DDLIST("li-id");
         %listItemsTarget%
 
-        Event.on("showButton", "click", this.showOrder);
-        Event.on("switchButton", "click", this.switchStyles);
-    },
-
-    switchStyles: function() {
-        // switches the class='...' of the dragging ULs
-        Dom.get("UL%target%").className = "draglist_alt";
+        //Event.on("showButton", "click", this.showOrder);
+        //Event.on("switchButton", "click", this.switchStyles);
     }
 };
 
@@ -98,8 +93,12 @@ YAHOO.extend(YAHOO.example.DDList, YAHOO.util.DDProxy, {
         proxy.innerHTML = "";
         // also, fire a re-ordering message
         ajaxFunction("xmldb_editor.php",
-          "<reply><response id=\"Response0\"><code id=\"Code0\">ReorderAndRechild</code>"
-            +"<payload id=\"Payload0\">%target%</payload></response></reply>");
+          "<reply>"
+            +"<response id=\"Response0\">"
+              +"<code id=\"Code0\">ReorderAndRechild</code>"
+              +"<payload id=\"Payload0\">%target%</payload>"
+            +"</response>"
+          +"</reply>");
     },
 
     onDragDrop: function(e, id) {

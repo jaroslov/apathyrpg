@@ -351,6 +351,13 @@ function xod_load_children($replyXML) {
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
+function xod_reorder_list($replyXML) {
+
+  $targets = array("Log");
+  $payloads = array(xod_translate_for_display($replyXML->saveXML()));
+  return array("Targets"=>$targets,"Payloads"=>$payloads);
+}
+
 function xod_initialize($replyXML) {
   $Connection = xmldb_create_connection();
   $CoTable = xmldb_child_table_of_document($Connection);
@@ -402,8 +409,7 @@ function xod_respond() {
       $lres = xod_add_remove_attribute($replyXML);
       break;
     case "ReorderAndRechild":
-      $lres["Targets"] = array("Log");
-      $lres["Payloads"] = array("Reording is not implemented in the database.");
+      $lres = xod_reorder_list($replyXML);
     default: break;
     }
 
