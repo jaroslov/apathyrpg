@@ -63,45 +63,37 @@ function xod_render_context($CoTable,$RenderContext,
     $toggleChildren = xod_onclick_edit("LoadChildren","$Id");
   }
 
-  $table  = "<table id='Element$Id'"
-              // TODO: implement dragStartDup so the user can
-              // "drag" to move
-              //." onmousedown=\"dragStartDup(event, 'Element$Id');\""
-              ." class='xod-element'>";
-  $table .= "<tbody>";
-  $table .= "<tr class='xod-tag-text-group'>";
-  $table .= "<td class='xod-mm-button' valign='top' id='MBCtr$Id'>
+  $table  = "<ul id='Element$Id'>";
+  $table .= "<li>";
+  $table .= "<div class='xod-mm-button' id='MBCtr$Id'>
                 <div id='MB$Id' $toggleChildren>$MMBut</div>
-            </td>";
-  $table .= "<td class='xod-tagname'
+            </div>";
+  $table .= "<div class='xod-tagname'
                   id='TN$Id' valign='top'
-                  $onModifyElement>$tagName</td>";
+                  $onModifyElement>$tagName</div>";
   if ($RenderDepth == 0) {
-    $table .= "<td class='xod-children' id='Children$Id'
+    $table .= "<div class='xod-children' id='Children$Id'
                   valign='top' rowspan='2'>
                   <ul id='Children$Id' class='xod-children'>
                     <li class='xod-load-children' />
                   </ul>
-              </td>";
+              </div>";
   } else {
-    $mresult = xod_render($CoTable,$Id,$RenderContext,$RenderDepth);
+    /*$mresult = xod_render($CoTable,$Id,$RenderContext,$RenderDepth);
     $chcls = "class='xod-children'";
-    $children = "<li $chcls>".implode("</li><li $chcls>",$mresult)."</li>";
-    $table .= "<td class='xod-children' id='Children$Id'
+    $children = "<div $chcls>".implode("</li><li $chcls>",$mresult)."</li>";
+    $table .= "<div class='xod-children' id='Children$Id'
                   valign='top' rowspan='2'>
                   <ul id='Ul$Id' class='xod-children'>
                     $children
                   </ul>
-              </td>";
+              </td>";*/
   }
-  $table .= "</tr>";
-  $table .= "<tr class='xod-tag-text-group'>";
-  $table .= "<td class='xod-text' colspan='2'
-                id='Text$Id' valign='top'
-                $onModifyElement>$Text&#160;</td>";
-  $table .= "</tr>";
-  $table .= "</tbody>";
-  $table .= "</table>";
+  $table .= "</li>";
+  if (strlen($Text) > 0)
+    $table .= "<li id='Text$Id' valign='top'
+                  $onModifyElement>$Text</li>";
+  $table .= "</ul>";
 
   return $table;
 }
@@ -330,16 +322,6 @@ function xod_load_children($replyXML) {
   $result = "<ul class='xod-children' id='Ul$target'>
               $items
             </ul>";
-
-  $yui_item_ids = "";
-  $children = xmldb_cot_childNodes($CoTable,$target);
-  foreach ($children as $order => $child)
-    $yui_item_ids .= "new YAHOO.example.DDList(\"li".$child["ID"]."\");";
-
-  $reorder_script = file_get_contents("reorder-list.jsf");
-  $rs_rep = array("target"=>$target,"listItemsTarget"=>$yui_item_ids);
-
-  $reorder_script = xod_insert_fragment_values($reorder_script,$rs_rep);
 
   $toggleChildren = "onclick=\"toggleVisibility('Ul$target','none','block');
                             toggleMinimizeButton('MB$target','Ul$target');\"";
