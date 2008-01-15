@@ -346,8 +346,8 @@ function xod_load_children($replyXML) {
 
   $MBContent = "<div id='MB$target' $toggleChildren>+</div>";
 
-  $targets = array("Children$target","MBCtr$target","@Evaluate","@Evaluate");
-  $payloads = array($result,$MBContent,$reorder_script,"document.getElementById('Ul$target').style.display='block';");
+  $targets = array("Children$target","MBCtr$target","@Evaluate");
+  $payloads = array($result,$MBContent,"loadAllListsForDragDrop();");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
@@ -361,8 +361,12 @@ function xod_reorder_list($replyXML) {
 function xod_append_child($replyXML) {
   $target = $replyXML->getElementById("Payload0")->firstChild->nodeValue;
 
-  $targets = array("@AppendChild@Ul$target");
-  $payloads = array("<li>".xod_translate_for_display($target)."</li>");
+  $time = time();
+
+  $targets = array("@AppendChild@Ul$target",
+                    "@Evaluate");
+  $payloads = array("<li id='Id$time'>".xod_translate_for_display($target)."</li>",
+                    "loadAllListsForDragDrop();");
   return array("Targets"=>$targets,"Payloads"=>$payloads);
 }
 
