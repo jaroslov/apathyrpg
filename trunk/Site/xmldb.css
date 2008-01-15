@@ -188,7 +188,6 @@ em.xod-no-text {
 ul.xod-children {
   margin: 0;
   padding: 0;
-  padding: .25em;
   font-size: 12pt;
   list-style-type: none;
   display: inline-table;
