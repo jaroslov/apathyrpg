@@ -4,6 +4,8 @@ function loadAllListsForDragDrop() {
   var Dom = YAHOO.util.Dom;
   var Event = YAHOO.util.Event;
   var DDM = YAHOO.util.DragDropMgr;
+  var TargetOfDrop = new Object();
+  TargetOfDrop.elTargetId = "Unknown";
   
   // example should be tailored to each list
   // e.g. example$TargetId
@@ -15,17 +17,19 @@ function loadAllListsForDragDrop() {
       init: function() {
   
           // we add ULs as DDTargets here
-          // new YAHOO.util.DDTarget("ul-id");
-          var ULs = document.getElementsByTagName("ul");
+          var ULs = document.getElementsByName("ElementNodeList");
           for (var i=0; i<ULs.length; i++) {
             var ul_id = ULs[i].id;
             new YAHOO.util.DDTarget(ul_id);
             for (var j=0; j<ULs[i].childNodes.length; j++) {
               // we add the LIs of the DDTargets here
               var child = ULs[i].childNodes[j];
-              if (child.nodeType == 1)
-                if (child.tagName == "li")
+              if (child.nodeType == 1) {
+                var ch_id = child.id;
+                var ch_id_parts = ch_id.split("-");
+                if (ch_id_parts[0] == "ElementNode")
                   new YAHOO.example.DDList(child.id);
+              }
             }
           }
   
@@ -99,7 +103,9 @@ function loadAllListsForDragDrop() {
             "<reply>"
               +"<response id=\"Response0\">"
                 +"<code id=\"Code0\">ReorderAndRechild</code>"
-                +"<payload id=\"Payload0\">%target%</payload>"
+                +"<payload id=\"Payload0\">"
+                  +TargetOfDrop.elTargetId
+                +"</payload>"
               +"</response>"
             +"</reply>");
       },
@@ -156,8 +162,10 @@ function loadAllListsForDragDrop() {
               var p = destEl.parentNode;
   
               if (this.goingUp) {
+                  TargetOfDrop.elTargetId = destEl.parentNode.id;
                   p.insertBefore(srcEl, destEl); // insert above
               } else {
+                  TargetOfDrop.elTargetId = destEl.parentNode.id;
                   p.insertBefore(srcEl, destEl.nextSibling); // insert below
               }
   
@@ -255,6 +263,7 @@ function createHandleDraggableEditor() {
 
 }
 function toggleVisibility(Id,On,Off) {
+  document.title = Id;
   var who = document.getElementById(Id);
   if (who)
     if (who.style.display == On)
