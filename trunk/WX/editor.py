@@ -1,6 +1,7 @@
 #!/usr/bin/env pythonw
 
 import wx
+from wx.lib.foldpanelbar import FoldPanelBar as wxFoldPanelBar
 import sys
 from xml.dom.minidom import parse as parseXml
 
@@ -90,6 +91,38 @@ class outliner(wx.Dialog):
   def GetData(self):
     return self.Data
 
+class XMLEditorPane(wx.VScrolledWindow):
+  def __init__(self,Parent,XML,SerializeChildren,Depth=0):
+    wx.VScrolledWindow.__init__(self,Parent,
+                      style=wx.TAB_TRAVERSAL
+                           |wx.RAISED_BORDER)
+    self.ChildSizer = wx.BoxSizer(orient=wx.VERTICAL)
+
+    self.buildPanes(XML,SerializeChildren,Depth)
+
+    self.SetSizer(self.ChildSizer)
+    self.SetAutoLayout(1)
+    self.ChildSizer.Fit(self)
+
+  def buildPanes(self,Node,SerializeChildren,Depth):
+    if Depth > 6:
+      return
+    if Node.nodeType == Node.DOCUMENT_NODE:
+      pass
+    elif Node.nodeType == Node.ELEMENT_NODE:
+      if Node.tagName in SerializeChildren:
+        Text = serializeChildren(Node)
+        self.ChildSizer.Add(wx.TextCtrl(self,value=serializeChildren(Node)))
+      else:
+        self.ChildSizer.Add(wx.StaticText(self,label=Node.tagName))
+      if Node.tagName in SerializeChildren:
+        return
+    if Node.nodeType in [Node.DOCUMENT_NODE,Node.ELEMENT_NODE]:
+      for child in Node.childNodes:
+        if child.nodeType == Node.ELEMENT_NODE:
+          child_pane = XMLEditorPane(self,child,SerializeChildren,Depth+1)
+          self.ChildSizer.Add(child_pane,flag=wx.LEFT,border=5)
+
 class editor(wx.Frame):
   def __init__(self,From,To,SerializeChildren=None):
     Display = wx.DisplaySize()
@@ -97,7 +130,11 @@ class editor(wx.Frame):
     wx.Frame.__init__(self, None, wx.NewId(), "ARPG-MS",
                       pos=pos,
                       size=(800,600),
-                      style=wx.DEFAULT_FRAME_STYLE|wx.FRAME_EX_METAL|wx.TAB_TRAVERSAL)
+                      style=wx.DEFAULT_FRAME_STYLE
+                           |wx.FRAME_EX_METAL
+                           |wx.TAB_TRAVERSAL)
+    self.SetMinSize((800,600))
+
     self.DisplaySizer = wx.BoxSizer(wx.VERTICAL)
     self.From = From
     self.To = To
@@ -109,6 +146,10 @@ class editor(wx.Frame):
 
     # build the outline
     self.Outline = outliner(self,self.XML,self.SerializeChildren)
+
+    # actually build the XML viewer here
+    self.Editor = XMLEditorPane(self,self.XML,self.SerializeChildren)
+
   def Display(self):
     self.Show(True)
     self.Outline.Show(True)
