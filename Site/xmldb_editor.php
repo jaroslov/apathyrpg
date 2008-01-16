@@ -48,8 +48,8 @@ function xod_render_context($CoTable,$RenderContext,
       array($Id))
     .";\"";
 
-  $toggleChildren = "onclick=\"toggleVisibility('Ul$Id','none','block');
-                              toggleMinimizeButton('MB$Id','Ul$Id');\"";
+  $toggleChildren = "onclick=\"toggleVisibility('ENL$Id','none','block');
+                              toggleMinimizeButton('MB$Id','ENL$Id');\"";
 
   $onModifyElement = "onclick=\""
     .arpg_build_ajax("xmldb_editor.php",
@@ -75,7 +75,7 @@ function xod_render_context($CoTable,$RenderContext,
     $table .= "<div class='xod-children' id='Children$Id'
                   valign='top' rowspan='2'>
                   <ul id='Children$Id' class='xod-children'>
-                    <li class='xod-load-children' />
+                    <li class='xod-load-children'/>
                   </ul>
               </div>";
   } else {
@@ -317,14 +317,15 @@ function xod_load_children($replyXML) {
   $mresult = xod_render($CoTable,$target);
   $items = "";
   foreach ($mresult as $key => $item) {
-    $items .= "<li class='xod-child-item' id=\"li$key\">$item</li>";
+    $items .= "<li class='xod-child-item' id=\"ElementNode-$key\">$item</li>";
   }
-  $result = "<ul class='xod-children' id='Ul$target'>
+  $result = "<ul class='xod-children' id='ENL$target'
+                name='ElementNodeList' >
               $items
             </ul>";
 
-  $toggleChildren = "onclick=\"toggleVisibility('Ul$target','none','block');
-                            toggleMinimizeButton('MB$target','Ul$target');\"";
+  $toggleChildren = "onclick=\"toggleVisibility('ENL$target','none','block');
+                            toggleMinimizeButton('MB$target','ENL$target');\"";
 
   $MBContent = "<div id='MB$target' $toggleChildren>+</div>";
 
