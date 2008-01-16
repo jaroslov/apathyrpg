@@ -76,6 +76,20 @@ class Outline(wx.TreeCtrl):
       print >> sys.stderr, e
     return result
 
+class outliner(wx.Dialog):
+  def __init__(self,Parent,XML,SerializeChildren):
+    wx.Dialog.__init__(self, Parent, wx.NewId(), "Outline",
+                      style=wx.CAPTION|wx.NO_3D|wx.DIALOG_EX_METAL)
+    self.Superior = Parent
+    self.Outline = Outline(self,XML,SerializeChildren=SerializeChildren)
+    self.Bind(wx.EVT_TREE_END_LABEL_EDIT, self.LabelEdit, self.Outline)
+    self.Data = None
+  def LabelEdit(self, event):
+    self.Data = self.Outline.GetItemData(event.GetItem()).GetData()
+    self.Superior.LabelEdit()
+  def GetData(self):
+    return self.Data
+
 class editor(wx.Frame):
   def __init__(self,From,To,SerializeChildren=None):
     Display = wx.DisplaySize()
@@ -94,19 +108,22 @@ class editor(wx.Frame):
     EnforceXmlId(self.XML,SerializeChildren=self.SerializeChildren)
 
     # build the outline
-    self.Outline = Outline(self,self.XML,
-                    SerializeChildren=self.SerializeChildren)
-    self.Bind(wx.EVT_TREE_END_LABEL_EDIT, self.LabelEdit, self.Outline)
-  def LabelEdit(self, event):
-    data = self.Outline.GetItemData(event.GetItem()).GetData()
+    self.Outline = outliner(self,self.XML,self.SerializeChildren)
+  def Display(self):
+    self.Show(True)
+    self.Outline.Show(True)
+  def LabelEdit(self):
+    data = self.Outline.GetData()
     element = self.XML.getElementById(data.Id)
-    print >> sys.stderr, serializeChildren(element)
+    if (element.nodeType == element.ELEMENT_NODE
+        and element.tagName in self.SerializeChildren):
+      print >> sys.stderr, serializeChildren(element)
 
 def run():
   app = wx.App()
   try:
     Ed = editor("TruncApathy.xml","Apathy.xml",["text"])
-    Ed.Show(True)
+    Ed.Display()
   except Exception, e:
     print sys.stderr, e
   app.MainLoop()
