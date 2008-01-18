@@ -242,13 +242,57 @@
     <xsl:param name="categoryDisplayStyle">Reference</xsl:param>
     <xsl:variable name="Name" select="./@name" />
     <category name='{$Name}'>
-      <xsl:value-of select="$categoryDisplayStyle" />
       <xsl:choose>
         <xsl:when test="$categoryDisplayStyle = 'Reference'">
           <xsl:apply-templates select="default|datum" />
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="$categoryDisplayStyle"/>
+          <figure>
+            <table>
+              <head>
+                <xsl:element name="cell">
+                  <text>Title</text>
+                </xsl:element>
+                <xsl:for-each select="default/field">
+                  <xsl:variable name="FieldName" select="./@name" />
+                  <xsl:variable name="TableName" select="./@table" />
+                  <xsl:choose>
+                    <xsl:when test="$TableName = 'yes'">
+                      <cell>
+                        <text>
+                          <xsl:value-of select="$FieldName" />
+                        </text>
+                      </cell>
+                    </xsl:when>
+                    <xsl:otherwise />
+                  </xsl:choose>
+                </xsl:for-each>
+              </head>
+              <xsl:for-each select="datum">
+                <row>
+                  <cell>
+                    <text>
+                      <xsl:value-of select="./field[@title='yes']"/>
+                    </text>
+                  </cell>
+                  <xsl:for-each select="field">
+                    <xsl:variable name="FieldName" select="./@name" />
+                    <xsl:variable name="TableName" select="./@table" />
+                    <xsl:choose>
+                      <xsl:when test="$TableName = 'yes'">
+                        <cell>
+                          <text>
+                            <xsl:value-of select="." />
+                          </text>
+                        </cell>
+                      </xsl:when>
+                      <xsl:otherwise />
+                    </xsl:choose>
+                  </xsl:for-each>
+                </row>
+              </xsl:for-each>
+            </table>
+          </figure>
         </xsl:otherwise>
       </xsl:choose>
     </category>
