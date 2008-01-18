@@ -36,6 +36,7 @@
 
   <!-- STRUCTURAL -->
   <xsl:template match="book">
+    <!--<xsl:copy-of select="document('Resources/Apathy.svg')" />-->
     <xsl:copy-of select="header" />
     <toc-list>
       <xsl:for-each select="section">
