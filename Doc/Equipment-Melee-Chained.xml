@@ -1,0 +1,321 @@
+
+    <category name="Content/Equipment/Melee/Chained">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Ball and Chain">
+        <field name="Name" title="yes">
+          <text>Ball and Chain</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Chained</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>An iron ball, often spiked, attached by a length of chain to a handle.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chain (weapon)">
+        <field name="Name" title="yes">
+          <text>Chain (weapon)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Chained</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+          <ndash/>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A fairly long chain equipped with weights on either end<mdash/>very effective for striking an opponent, and then entangling him.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chain - Normal">
+        <field name="Name" title="yes">
+          <text>Chain - Normal</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Chained</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+          <ndash/>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A length of iron chain suitable for striking an opponent with.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chain with spikes-blades">
+        <field name="Name" title="yes">
+          <text>Chain with spikes-blades</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Chained</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+          <ndash/>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bns/>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A length of chain that is periodically set with spikes or blades. A fairly unusual weapon, but one that is capable of causing serious damage in skilled hands.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Flail">
+        <field name="Name" title="yes">
+          <text>Flail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Chained</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Originally a grain-threshing tool. A flail consists of a stout handle capped with a hinged (or shortly chained) iron head, often studded.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Nunchaku">
+        <field name="Name" title="yes">
+          <text>Nunchaku</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Chained</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A common weapon of martial artists. Usually carried in pairs, nunchaku consist of two wooden or iron bars linked with a short chain. Though compact, they can deal devastating crushing blows.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="War Flail">
+        <field name="Name" title="yes">
+          <text>War Flail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Chained</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>22</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A variant of the flail designed for harsh combat. The war flail has a thick handle, and is equipped with three or more spiked iron balls on chains. It is a heavy and unwieldy weapon, but is very powerful.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

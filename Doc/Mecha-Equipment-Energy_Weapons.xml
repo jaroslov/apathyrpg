@@ -1,0 +1,96 @@
+
+    <category name="Content/Mecha/Equipment/Energy Weapons">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Beam Cannon">
+        <field name="Name" title="yes">
+          <text>Beam Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>An untuned weapon.</text>
+        </field>
+      </datum>
+      <datum name="L-Particle Cannon">
+        <field name="Name" title="yes">
+          <text>L-Particle Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A variant of the Particle Cannon that is tuned for a special <ldquo/>defective<rdquo/>(non-m-brane modulating) Higgs particle; the effective range on the cannon is unlimited. It's range is literally unlimited, but must be purchased as if it costs 5 Classes above it's normal Class.</text>
+        </field>
+      </datum>
+      <datum name="Laser Cannon">
+        <field name="Name" title="yes">
+          <text>Laser Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A weapon tuned for Slashing and (optionally) OverFire.</text>
+        </field>
+      </datum>
+      <datum name="Particle Cannon">
+        <field name="Name" title="yes">
+          <text>Particle Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A weapon tuned for Higgs-Particles and (optionally) OverFire.</text>
+        </field>
+      </datum>
+      <datum name="Plasma Blast Cannon">
+        <field name="Name" title="yes">
+          <text>Plasma Blast Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A weapon tuned for Fire and Area Effect.</text>
+        </field>
+      </datum>
+      <datum name="Plasma Cannaon">
+        <field name="Name" title="yes">
+          <text>Plasma Cannaon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A weapon tuned for Flame and (optionally) OverFire.</text>
+        </field>
+      </datum>
+      <datum name="Pulse Laser Cannon">
+        <field name="Name" title="yes">
+          <text>Pulse Laser Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A weapon tuned for Pulse and (optionally) OverFire.</text>
+        </field>
+      </datum>
+      <datum name="WA-Beam Cannon">
+        <field name="Name" title="yes">
+          <text>WA-Beam Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>(Wide Area); an untuned long-firing weapon; uses twice the energy but can be used on up to 3 targets.</text>
+        </field>
+      </datum>
+    </category>

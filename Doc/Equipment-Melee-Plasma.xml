@@ -1,0 +1,177 @@
+
+    <category name="Content/Equipment/Melee/Plasma">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Axe">
+        <field name="Name" title="yes">
+          <text>Axe</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Plasma</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>U/C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>4000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> / <roll><num>2</num><face>4</face><bns/></roll> </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A steel rod with a plasma blade at one end; damage listed for either end.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Knife">
+        <field name="Name" title="yes">
+          <text>Knife</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Plasma</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>U</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Your average knife. This would be a knife with a fairly large blade. Most sheath knives, kitchen knives, or hunting knives would fall into this category.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Long Sword">
+        <field name="Name" title="yes">
+          <text>Long Sword</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Plasma</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>U</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>4000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Short Sword">
+        <field name="Name" title="yes">
+          <text>Short Sword</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Plasma</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>U</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>2000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A standard European-style <ldquo/>cut and thrust<rdquo/>sword. It was the mainstay weapon of the footsoldiers of many past armies<mdash/>a durable weapon that can be counted on in combat.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

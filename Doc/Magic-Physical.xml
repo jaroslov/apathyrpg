@@ -1,0 +1,1287 @@
+
+    <category name="Content/Magic/Physical">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
+        <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
+        <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
+        <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Autophase">
+        <field name="Name" title="yes">
+          <text>Autophase</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>5 min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster's body becomes permeable to normal matter. He may pass through walls, etc. at will, and can interact with objects as he chooses. Caster, however, walks on floors, stairs, etc. as normal, if he so chooses. While this spell is in effect, caster is totally silent and cannot speak or hear.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Barrier">
+        <field name="Name" title="yes">
+          <text>Barrier</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>45</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hemispherical two-way magical barrier 8 feet in radius. Physical attacks penetrate at half damage Magic/Psionics unaffected. Barrier can be made one-way for double cost.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Blink">
+        <field name="Name" title="yes">
+          <text>Blink</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>70</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This spell is a defensive maneuver. When cast, the caster disappears and instantaneously reappears in random location within 20 feet of original location. Roll randomly to determine the caster's new location. Note that Blink will not put the caster into an iminently dangerous spot such as in the air over a chasm, into a fire, or over a puddle of lava. However, Blink may cause the caster to reappear closer to an opponent. This spell functions as an automatic dodge. In other words, it will allow the caster to automatically avoid being struck by any one targeted blow. Dodge is effective against physical attacks, ranged and melee weapons, projectiles, and magic spells that require a roll to strike. Blink is NOT effective against auto-targeting magic spells (the caster simply gets hit in his new location). Blink is also not effective against area-effect spells or area-effect weapons (such as a grenade), unless the caster's new location happens to be outside the area of effect. Just like the Dodge ability, the caster must be aware of the attack he wishes to Blink from. Blink therefore cannot be used to avoid sneak attacks that the caster did not know about.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Carpet of Adhesion">
+        <field name="Name" title="yes">
+          <text>Carpet of Adhesion</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>5 min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>35</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One surface (10x10 ft) becomes magically adhesive. Objects contacting with surface become stuck (STR check at -8 to un-stick)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Carpet of Slipperiness">
+        <field name="Name" title="yes">
+          <text>Carpet of Slipperiness</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>5 min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>35</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One surface (10x10 ft) becomes extremely slippery. Objects contacting the surface must make a DEX check at -8 or fall down.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Communicate with Machines">
+        <field name="Name" title="yes">
+          <text>Communicate with Machines</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> minutes</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>65</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows caster to communicate mentally (similar to Telepathy) with complicated machines and robots.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dark Matter">
+        <field name="Name" title="yes">
+          <text>Dark Matter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <raw>10</raw>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large gravimetric distortion forcibly compresses one target's body, attracting nearby flying objects</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Energy Shield">
+        <field name="Name" title="yes">
+          <text>Energy Shield</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hemispherical two-way magical barrier 8 feet in radius. Magical/physical/psionic attacks penetrate at one-quarter damage. Barrier can be made one-way for double MP cost.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Enhance Gravity">
+        <field name="Name" title="yes">
+          <text>Enhance Gravity</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One object is pulled to ground as if it were several hundred times it's normal weight (cannot affect living targets, max 20 lbs original weight)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Expound Strength">
+        <field name="Name" title="yes">
+          <text>Expound Strength</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>X*5 turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster can invigorate one target with strength, providing double STR bonus (up to maximum) on melee attacks, and double lift/carry numbers for the duration of the spell.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Extend Presence">
+        <field name="Name" title="yes">
+          <text>Extend Presence</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>30 seconds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Self</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster can manipulate objects far away from himself as if he were touching them. Caster has -1 to attributes for every yard of distance beyond X yards.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Extraordinary Senses">
+        <field name="Name" title="yes">
+          <text>Extraordinary Senses</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>10 min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Target's senses become incredibly acute. (4x better than normal) May be cast cumulatively. Gives +3 to perception rolls.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Force Blast">
+        <field name="Name" title="yes">
+          <text>Force Blast</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bns/>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A quick blast of kinetic energy is imparted to the target. Target must make DEX check at +2*SIZE or be knocked down.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Full Barrier">
+        <field name="Name" title="yes">
+          <text>Full Barrier</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>80</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hemispherical two-way magical barrier 8 feet in radius. Magical/physical/psionic attacks penetrate at half damage. Barrier can be made one-way for double cost.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Gravity Crush">
+        <field name="Name" title="yes">
+          <text>Gravity Crush</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small gravimetric distortion crushes one target</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Gravity Distortion">
+        <field name="Name" title="yes">
+          <text>Gravity Distortion</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Several gravimetric distortions spread throughout target's body, causing immense tissue damage</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Gravity Well">
+        <field name="Name" title="yes">
+          <text>Gravity Well</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>4</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One target gains a massive amount of mass (but not size) for a fraction of a second, causing it to collapse upon itself, and attract large nearby objects within 20 feet.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Greater Teleport">
+        <field name="Name" title="yes">
+          <text>Greater Teleport</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>120</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster may transport himself and up to 1000 Kg of additional mass to one location which he has seen before (photograph waives this requirement)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Kekkai">
+        <field name="Name" title="yes">
+          <text>Kekkai</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a barrier around caster up to 20 feet in radius. Barrier is impenetrable. On expiration, all damage done to objects inside the barrier is reversed. If the caster dies, the barrier fails and explodes violently and any damage done becomes permanent.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="LesserTeleport">
+        <field name="Name" title="yes">
+          <text>LesserTeleport</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster may transport himself and up to 2000 lb of additional mass to one location within his current range of vision</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Magic Barrier">
+        <field name="Name" title="yes">
+          <text>Magic Barrier</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>55</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hemispherical two-way magical barrier 8 feet in radius. Magical attacks penetrate at half damage Physical/Psionic unaffected. Barrier can be made one-way for double cost.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Magic Cup">
+        <field name="Name" title="yes">
+          <text>Magic Cup</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>6</face><bns/></roll> +X min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20+X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a translucent magical cup approximatley the size of a large coffee mug. It can contain up to 2 cups (16 oz) of liquid. The cup can exist only in the caster's hand. If it is let go then the spell instantly expires. The cup can contain anything that a glass or ceramic cup could normally contain including liquids, powders, or small objects. The cup does not transmit heat or chemical effects, so it can be used to safely carry lava, acid, red-hot metal, poison, or other dangerous substances.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Magic Missile">
+        <field name="Name" title="yes">
+          <text>Magic Missile</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster magically propels a small object towards one target at high speed. Damage depends on type of object thrown; usually C. The object must fit in the palm of the hand and must weigh no more than 1 lb. After striking the target, the object falls to the ground naturally. The caster must have an object to propel with this spell. Note that even if a &quot;weapon&quot; is used as the projectile (such as a throwing knife), the damage remains <roll><num>1</num><face>6</face><bns/></roll> , though the damage type is up to the GMs discretion based on what the projectile is.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Magic Pole">
+        <field name="Name" title="yes">
+          <text>Magic Pole</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>6</face><bns/></roll> min.</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a translucent magical pole that is 5 feet long and 1 inch in diameter. The caster can move the pole around with his hands, and can choose to fix it in place (by letting go of the pole) if he so chooses. When fixed, the pole remains held in position magically until the spell expires. Applying in excess of 400 lbs of force to the pole will make it shatter and disappear. The pole may be used as a Jo staff.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Manipulate Event">
+        <field name="Name" title="yes">
+          <text>Manipulate Event</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster can add <roll><num>1</num><face>100</face><bns/></roll> percent effectiveness to a physical event taking place that he is not involved with. This can only be simple things and cannot directly cause any damage, nor can it effect game mechanics rolls.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Minor Teleport">
+        <field name="Name" title="yes">
+          <text>Minor Teleport</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>45</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Transports caster and up to 200 lbs of equipment (must be worn or carried) to any location that is both within the caster's range of vision and is no more than 100 feet away.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Overhaul">
+        <field name="Name" title="yes">
+          <text>Overhaul</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>160</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Magically completely repairs one machine (GM may wish to impose size limit)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Phased Matter">
+        <field name="Name" title="yes">
+          <text>Phased Matter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>5 min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One object (non-living) gains the ability to pass through normal matter. The caster may pick the object up without it passing through his body.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Prismatic Wall">
+        <field name="Name" title="yes">
+          <text>Prismatic Wall</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>220</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hemispherical two-way magical barrier 8 feet in radius. Magical/physical/psionic attacks cannot penetrate. Barrier can be made one-way for double MP cost.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Psi Barrier">
+        <field name="Name" title="yes">
+          <text>Psi Barrier</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>55</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hemispherical two-way magical barrier 8 feet in radius. Psionics attacks penetrate at half damage Physical/Magical attacks unaffected. Barrier can be made one-way for double cost.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Reflect Shield">
+        <field name="Name" title="yes">
+          <text>Reflect Shield</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><raw>3</raw><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>120</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hemispherical barrier 8 feet in radius. 50<percent/>chance to deflect incoming magical/psionic/projectile attacks upon user, or block physical attack</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Repair Damage">
+        <field name="Name" title="yes">
+          <text>Repair Damage</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>5</num><face>6</face><bns/></roll> (healing)</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>45</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Magical curing repairs robots and machines (no effect on living tissue)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Repair Major Damage">
+        <field name="Name" title="yes">
+          <text>Repair Major Damage</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>6</num><face>8</face><bns/></roll> (healing)</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Magical curing repairs robots and machines (no effect on living tissue)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Repair Minor Damage">
+        <field name="Name" title="yes">
+          <text>Repair Minor Damage</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>4</face><bns/></roll> (healing)</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Magical curing repairs robots and machines (no effect on living tissue) Can repair damaged weapons or armor.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Spider Climb">
+        <field name="Name" title="yes">
+          <text>Spider Climb</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> minutes</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One target gains the ability to walk or climb up and over any solid surface. This includes walls and celings. However, surfaces covered with excessive loose debris or slippery/slimy surfaces may not be safely traversed.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Void Shield">
+        <field name="Name" title="yes">
+          <text>Void Shield</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Physical</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>1 turn</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a totally impenetrable 1-way hemispherical barrier 4 feet in radius. This barrier is immune to break barrier, dispel, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

@@ -1,0 +1,1225 @@
+
+    <category name="Content/Magic/Water">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
+        <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
+        <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
+        <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Absolute Zero">
+        <field name="Name" title="yes">
+          <text>Absolute Zero</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>3*X* <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A powerful enchantment causes all atoms within one target to cease all movement for a fraction of a second. X is the size of the target. Cold-resistance of any sort (including magical protection) has no effect versus this spell</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Biting Frost">
+        <field name="Name" title="yes">
+          <text>Biting Frost</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>90</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Freezes the ground (or floor) in a given area no larger than 200 square feet. Anything in the area becomes stuck to the ground, as icy stalagmites form on the ground and spear upwards into the target area. This can only be used on a given area once until the first casting expires.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Breathe Water">
+        <field name="Name" title="yes">
+          <text>Breathe Water</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> + X min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50 + X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows the target to breathe water as if it were normal air. This works with both fresh and salt water. Note that if the character is inhaling dirty water then the character may be affected by any poisions the water may contain. This spell makes it very easy to swim long distances or to deep depths becasue the character does not have to return to the surface to breathe. However, it does not convey extraordinary swimming ability.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Create Water">
+        <field name="Name" title="yes">
+          <text>Create Water</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30 +x</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster can create pure water from his fingertip. 1 liter is created per 1 MP spent beyond the basic casting cost. The water flows out from the finger in a steady stream similar to a faucet. The water created by this spell is normal water in all regards and it remains behind permanently.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dissociate">
+        <field name="Name" title="yes">
+          <text>Dissociate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>2x <roll><num>5</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Converts the water in one target into its gaseous components, which results in an explosion. X is the size of the target. This spell is only effective against targets that contain water (such as most living creatures). It has no effect on sprits, robots, and so on.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Driving Rain">
+        <field name="Name" title="yes">
+          <text>Driving Rain</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>40</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>5' radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll +5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Attacks one target with a fierce assault of rain, sleet, and hail. Can only cause superficial damage. Double armor against this spell.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dry Touch">
+        <field name="Name" title="yes">
+          <text>Dry Touch</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster can drain away the water from a non-living object and transfer it into his body (as if drinking) Can drain about one pint of water at a time. This allows the character to drink dirty or posioned water without suffering any ill effects.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Freezing Touch">
+        <field name="Name" title="yes">
+          <text>Freezing Touch</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>By touching something, the caster can infuse it with a deep cold. This can cause damage in living targets.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Freezing Wind">
+        <field name="Name" title="yes">
+          <text>Freezing Wind</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll 5' radius area</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Freezing cold winds attack the target</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Frozen Spear">
+        <field name="Name" title="yes">
+          <text>Frozen Spear</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>P</kind>
+          </roll> 
+           <roll>
+            <num>6</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Attacks one target with a fast moving, ice spear. Once impaled in the target, it explodes dealing further damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hailstorm">
+        <field name="Name" title="yes">
+          <text>Hailstorm</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>6</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Freezing cold winds and pellets of hail strike the target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hydroblast">
+        <field name="Name" title="yes">
+          <text>Hydroblast</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>X/3 turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster forms a huge ball of water above his head. Portions of the water can be shot off into powerful weapons thereafter. It takes 2 actions to create the ball. Up to 2 shots can be fired per action thereafter. The ball holds X shots. The ball can be detonated to deal normal damage times the number of shots left in the ball in a 10' radius.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hydrospear">
+        <field name="Name" title="yes">
+          <text>Hydrospear</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>2</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>25 yards</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Blasts a snake-like column of pressurized water from the caster's hands, which the caster can control like a weapon. Caster uses magical control to strike with the wave as he sees fit. Can also be used to parry. Can end spell at will</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ice Dart">
+        <field name="Name" title="yes">
+          <text>Ice Dart</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>100' max</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster throws a small knifelike icicle up to 100' away</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ice Fortress">
+        <field name="Name" title="yes">
+          <text>Ice Fortress</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Generates a circular wall, ten feet in radius, three feet thick, thirty feet high, with 400 hit points, of ice surrounding the caster.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ice Wall">
+        <field name="Name" title="yes">
+          <text>Ice Wall</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a large wall of ice, three feet thick, 50 feet x 25 feet in size, with 1000 hit points, oriented as the caster wishes (one edge must be on attached to a structural object).</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Liquid Cloak">
+        <field name="Name" title="yes">
+          <text>Liquid Cloak</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Covers the caster and his clothes, etc, with a coating of water approximatley 1 inch thick. The water will appear to be stuck to the caster and will maintain its thickness and shape as he moves around. The water provides armor of 10/15/20 while the spell is in effect. Fire magic or attacks with fire effect will damage the coating. If 50 HP are dealt by fire damage the spell ends. The spell does not protect vs. U.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Maelstrom Wall">
+        <field name="Name" title="yes">
+          <text>Maelstrom Wall</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Generates a circular wall, ten feet in radius, three feet thick, thirty feet high, and 350 hit points, of fast-moving water surrounding the caster. Other attributes of the wall are similar to water wall, but if a person attempts to enter the wall, they take <roll><num>2</num><face>6</face><bns/><kind>C</kind></roll> damage from the pummeling waters.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Mist Veil">
+        <field name="Name" title="yes">
+          <text>Mist Veil</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bns/></roll> +1 turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A cloud of mist and fog blasts outward from the caster, completley obscuring the caster's square and partially obscuring the surrounding 8 squares. The obscuration of the central square offers dense cover between it and any outside squares. (-12 to strike in or out) The partially obscured outer squares provide half cover (-8 to strike in or out) The obscuring mist affects normal vision as well as thermal vision. The obscured area remains in place for the duration of the spell (it does not follow the caster)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Mistform">
+        <field name="Name" title="yes">
+          <text>Mistform</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>3 min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>65</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster transforms himself into a cloud of fog-like mist. Caster may move the mist around at will, and can travel anywhere that air can normally travel. While in this form caster can see, but cannot hear. Caster cannot suffer physical damage, hold objects, speak, cast magic, etc. in this form.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Puff of Cold">
+        <field name="Name" title="yes">
+          <text>Puff of Cold</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>100'</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster throws a small puff of extremely cold air at the target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Resist Poison">
+        <field name="Name" title="yes">
+          <text>Resist Poison</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>45</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster becomes immune to all forms of poisons, including biological, natural, chemical and neurological types, for the duration of the spell. This instantly nullifies all poisons in the caster's body, and renders the caster immune to outside posions as well.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sheet of ice">
+        <field name="Name" title="yes">
+          <text>Sheet of ice</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bns/></roll> min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Coats a surface up to 10 square feet with a slick, hard, coating of ice. This can only be used on relatively flat, un-moving, surfaces (walls, floors, the ground, etc.) and CANNOT be used on living tissue. Cannot directly cause damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Thermal Drain">
+        <field name="Name" title="yes">
+          <text>Thermal Drain</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>110</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Thermal drain causes the target's fluids to freeze solid</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Thunderclap">
+        <field name="Name" title="yes">
+          <text>Thunderclap</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Generates a loud thunderclap-like noise.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Vapor Cone">
+        <field name="Name" title="yes">
+          <text>Vapor Cone</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster throws a cone of vapor, mist, and water droplets from his outstretched arms. This spell duplicates the effects of Focused Gust (Air magic) except that the force direction is always away from the caster. As well, anything in the target area becomes soaking wet. The water created by the spell remains permanently.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Walk on Water">
+        <field name="Name" title="yes">
+          <text>Walk on Water</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Target gains the ability to walk on water as if it were a normal surface. Target can also walk on wet, oily, slimy, or icy, surfaces without danger of slipping, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Water Laser">
+        <field name="Name" title="yes">
+          <text>Water Laser</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll> 20 AP</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>60 feet</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Shoots a fine stream of pressurized water from the caster's finger. It is excellent for cutting objects.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Water Wall">
+        <field name="Name" title="yes">
+          <text>Water Wall</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a large wall of water, roughly 3 x 50 x 25 feet, with 250 hit points, oriented as the caster wishes. Wall is immune to physical damage. It can only be damaged by electricity, magical fire, or pure magical damage. Something can walk through the wall by making a STR check at -3*size and spending three actions.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wicked Rain">
+        <field name="Name" title="yes">
+          <text>Wicked Rain</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100 + 50X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Summons a fierce shower of frozen, razor-like raindrops. Can deal damage X times, divided how caster chooses, among any number of targets. The same target can be chosen multiple times. Only one target is damaged per turn, so each additional target (X), the duration of Wicked Rain is extended.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wisp of Frost">
+        <field name="Name" title="yes">
+          <text>Wisp of Frost</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>25</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>100'</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster can send out a small wisp of biting cold to strike a target no more than 100' away. Can be cast no more than half the caster's level of Magical Control in a turn.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="lcy prison">
+        <field name="Name" title="yes">
+          <text>lcy prison</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Water</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>6</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>180</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Target is encased in large block of magical ice for the duration of the spell. If the spell is forced to expire by the caster, then it does not shatter. For each turn the target is trapped within the Ice Prison, they take <roll><num>1</num><face>6</face><bOff>-</bOff><bns>1</bns></roll> D damage due to the extreme cold. At the end of the duration the block shatters, causing the listed damage. While within the block of ice, the target is immune to physical attacks. The block of ice has 200 hit points, and if destroyed before the duration of the spell or the target breaks out (requires a STR check at -15 and can be attempted once per turn), then it does not deal the shatter damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

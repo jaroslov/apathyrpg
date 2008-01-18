@@ -1,0 +1,835 @@
+
+    <category name="Content/Magic/Beast">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
+        <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
+        <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
+        <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Beast Lore 1">
+        <field name="Name" title="yes">
+          <text>Beast Lore 1</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +1 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 10">
+        <field name="Name" title="yes">
+          <text>Beast Lore 10</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +10 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 2">
+        <field name="Name" title="yes">
+          <text>Beast Lore 2</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +2 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 3">
+        <field name="Name" title="yes">
+          <text>Beast Lore 3</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +3 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 4">
+        <field name="Name" title="yes">
+          <text>Beast Lore 4</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +4 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 5">
+        <field name="Name" title="yes">
+          <text>Beast Lore 5</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +5 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 6">
+        <field name="Name" title="yes">
+          <text>Beast Lore 6</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>n/a</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +6 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 7">
+        <field name="Name" title="yes">
+          <text>Beast Lore 7</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +7 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 8">
+        <field name="Name" title="yes">
+          <text>Beast Lore 8</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +8 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Lore 9">
+        <field name="Name" title="yes">
+          <text>Beast Lore 9</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds +9 to summon score</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Bolster Circle">
+        <field name="Name" title="yes">
+          <text>Bolster Circle</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster may extend the duration of a Circle spell. +X D6 rounds</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Channel Summon">
+        <field name="Name" title="yes">
+          <text>Channel Summon</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>
+          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>
+        </text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows caster to add +X to his summon score.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Circle Against Beasts">
+        <field name="Name" title="yes">
+          <text>Circle Against Beasts</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>centered at caster</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a circular marking on the floor/ground which is Summon Rank feet in diameter. Beasts must pass a WIL contest vs. the caster in order to enter the circle, with the Caster at +5 to his roll.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Circle Against Constructs">
+        <field name="Name" title="yes">
+          <text>Circle Against Constructs</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>centered at caster</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a circular marking on the floor/ground which is Summon Rank feet in diameter. Constructs must pass a WIL contest vs. the caster in order to enter the circle, with the Caster at +5 to his roll.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Circle Against Demons">
+        <field name="Name" title="yes">
+          <text>Circle Against Demons</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>centered at caster</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a circular marking on the floor/ground which is Summon Rank feet in diameter. Demons must pass a WIL contest vs. the caster in order to enter the circle, with the Caster at +5 to his roll.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Circle Against Monsters">
+        <field name="Name" title="yes">
+          <text>Circle Against Monsters</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>centered at caster</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a circular marking on the floor/ground which is Summon Rank feet in diameter. Monsters must pass a WIL contest vs. the caster in order to enter the circle, with the Caster at +5 to his roll.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Circle Against Outsiders">
+        <field name="Name" title="yes">
+          <text>Circle Against Outsiders</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>centered at caster</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a circular marking on the floor/ground which is Summon Rank feet in diameter. Outsiders must pass a WIL contest vs. the caster in order to enter the circle, with the Caster at +5 to his roll.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Circle Against Undead">
+        <field name="Name" title="yes">
+          <text>Circle Against Undead</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>centered at caster</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a circular marking on the floor/ground which is Summon Rank feet in diameter. Undead must pass a WIL contest vs. the caster in order to enter the circle, with the Caster at +5 to his roll.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Command">
+        <field name="Name" title="yes">
+          <text>Command</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>sight</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>As gate, except that the summoned creature(s) follow complex and specific commands issued by the summoner. While this spell is in effect the creatures are assumed to have the mental attributes of the caster. The caster must remain motionless during this spell's duration. The caster effectivley controls the summoned creatures. (See Beast Magic rules)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Communicate with Animals">
+        <field name="Name" title="yes">
+          <text>Communicate with Animals</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bns/></roll> min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>40</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows caster to communicate mentally (similar to Telepathy) with animals</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Gate">
+        <field name="Name" title="yes">
+          <text>Gate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>sight</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Summons one or more creatures to within sight range of the caster. Creatures maintain their own free will; they are merely transported to the new location. (See Beast Magic rules)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Pact">
+        <field name="Name" title="yes">
+          <text>Pact</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>300</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Cast on one target creature. Target becomes caster's familiar. Caster and Familiar have limited empathic ability. Familiar becomes loyal to the caster, and is bound to obey simple commands as summon. (See Beast Magic rules)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Summon">
+        <field name="Name" title="yes">
+          <text>Summon</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>sight</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>As gate, except that creatures summoned are bound to follow one very simple directive given by the caster. Example: Protect X, or Attack Y (See Beast Magic rules)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Transform">
+        <field name="Name" title="yes">
+          <text>Transform</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Beast</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>6</face><bns/></roll> rounds</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>250</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster transforms himself into an alternate form. Caster retains his own mental attributes but assumes the physical attributes, abilities, and form of the new creature. (See Beast Magic rules)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

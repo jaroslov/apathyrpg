@@ -1,0 +1,421 @@
+
+    <category name="Content/Equipment/Melee/Knives">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Cleaver">
+        <field name="Name" title="yes">
+          <text>Cleaver</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A butcher's cleaver, or combat variation thereof. It is a large, heavy, blade with a razor sharp edge. It has a short reach, but is devastatingly effective for chopping-type attacks. It is useless for stabbing.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dagger">
+        <field name="Name" title="yes">
+          <text>Dagger</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A combat knife, typically with a slender blade and a hand guard. A standard backup weapon for most soldiers.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Katar">
+        <field name="Name" title="yes">
+          <text>Katar</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Also called a Quatar or punch dagger. It consists of a handle mounted perpendicular to the blade, often in a <ldquo/>T<rdquo/>shape. The handle is gripped in a closed fist, with a triangular blade extending forward. It is used in a punching motion.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Knife">
+        <field name="Name" title="yes">
+          <text>Knife</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>-3 to parry</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Kukri">
+        <field name="Name" title="yes">
+          <text>Kukri</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A Southeast Asian knife, as carried by the Gurkha regiments of India. This is a large weapon, nearly the size of a machete. The blade has a strong downward angle. It is nearly useless for stabbing, but is a very effective weapon and chopping tool. A well made kukri is just as effective as a small axe for chopping.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Long Knife">
+        <field name="Name" title="yes">
+          <text>Long Knife</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S or P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A special variety of fighting knife. The slender blade is longer than 8<rdquo/>, and sharpened along both edges. This is among the largest weapons in this category<mdash/>and is effective for both stabbing and slashing.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Serrated knife">
+        <field name="Name" title="yes">
+          <text>Serrated knife</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A knife with a scalloped or otherwise serrated edge. The serrations are very effective for damaging flesh, but reduce the knife's effectiveness at penetrating hard materials.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Small Knife">
+        <field name="Name" title="yes">
+          <text>Small Knife</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>-</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This would be a typical pocketknife, <ldquo/>Swiss army knife<rdquo/>, or any knife with a short blade. Not very effective as a weapon, but easy to conceal<mdash/>and a decent backup.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Stiletto">
+        <field name="Name" title="yes">
+          <text>Stiletto</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Not so much a knife, but a slender metal spike with a handle. It cannot cut things, but is an excellent stabbing weapon, easily penetrating many types of armor. It does not deal much damage, so it is frequently used with poisons, or with called shots to vital organs.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Tanto">
+        <field name="Name" title="yes">
+          <text>Tanto</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Knives</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A Japanese knife forged in the traditional style. The blade is formed from multiple layers of different steels. Tanto are unusually well balanced, and are exceptionally effective slashing weapons. It has a very small hand guard.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

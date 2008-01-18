@@ -1,0 +1,586 @@
+    <category name="Content/Augmentations/Body">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="p{2em}" name="Character Points" table="yes"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Abnormal Articulation">
+        <field name="Name" title="yes">
+          <text>Abnormal Articulation</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A modification to your joints. It enables a given joint to move in a manner in which it normally couldn't. (so, you could bend your knee backwards, for example)</text>
+        </field>
+      </datum>
+      <datum name="Alternate Digestive Orifice">
+        <field name="Name" title="yes">
+          <text>Alternate Digestive Orifice</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds another orificice to the body (or adapts an existing one), enabling you to eat from it. Thus, it's possible to eat through your ear, etc.</text>
+        </field>
+      </datum>
+      <datum name="Climate Adaptability">
+        <field name="Name" title="yes">
+          <text>Climate Adaptability</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Improves your ability to survive and perform in odd enviornments, such as deserts, snow, high altitude, etc.</text>
+        </field>
+      </datum>
+      <datum name="Cosmetic Addition">
+        <field name="Name" title="yes">
+          <text>Cosmetic Addition</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A minor cosmetic modification to the body, such as skin ridges, changing the shape of part of the body, etc.</text>
+        </field>
+      </datum>
+      <datum name="Dermal Backlight">
+        <field name="Name" title="yes">
+          <text>Dermal Backlight</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes your skin glow. You can turn it on and off at will</text>
+        </field>
+      </datum>
+      <datum name="Detachable Joint">
+        <field name="Name" title="yes">
+          <text>Detachable Joint</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables a certain joint in the body (knee, wrist, elbow, etc.) to be detached and re-connected at will. This enables you to switch limbs or <ldquo/>attachments<rdquo/> on your body.</text>
+        </field>
+      </datum>
+      <datum name="Dynochromatic Skin">
+        <field name="Name" title="yes">
+          <text>Dynochromatic Skin</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Change the color of your skin. It can be changed to any color, or patterns, etc. Changing takes a few seconds.</text>
+        </field>
+      </datum>
+      <datum name="Easy Maintenance">
+        <field name="Name" title="yes">
+          <text>Easy Maintenance</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes healing your body and working on your cybernetics unusually easy. Downtime is reduced by half.</text>
+        </field>
+      </datum>
+      <datum name="Electrically Shielded Body">
+        <field name="Name" title="yes">
+          <text>Electrically Shielded Body</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Protects the body from electrical damage. Take only 50<percent/>damage from electrical attacks unless they originate from inside the body.</text>
+        </field>
+      </datum>
+      <datum name="False Bleeding">
+        <field name="Name" title="yes">
+          <text>False Bleeding</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Make yourself bleed at will, for no reason, and without harm. You can stop the false bleeding at will.</text>
+        </field>
+      </datum>
+      <datum name="Fireproof Skin">
+        <field name="Name" title="yes">
+          <text>Fireproof Skin</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Prevents the skin from burning in normal situations. You take half damage from short-term contact with fire.</text>
+        </field>
+      </datum>
+      <datum name="Gills">
+        <field name="Name" title="yes">
+          <text>Gills</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables you to <ldquo/>create<rdquo/> water naturally. Usually installed on the neck, but could be anywhere. The Gills are a sensitive organ.</text>
+        </field>
+      </datum>
+      <datum name="Hair Control">
+        <field name="Name" title="yes">
+          <text>Hair Control</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables you to control the look of your hair at will. This can do anything that normal hair styling can do, and affects the entire body</text>
+        </field>
+      </datum>
+      <datum name="Hard Skin">
+        <field name="Name" title="yes">
+          <text>Hard Skin</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Hardens the skin all over your body. 3/0/0</text>
+        </field>
+      </datum>
+      <datum name="Increased STR for muscles">
+        <field name="Name" title="yes">
+          <text>Increased STR for muscles</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Muscle Replacement</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Upgrade the STR of your muscles. Can be purchased as many times as you want. Each purchase is +1 STR</text>
+        </field>
+      </datum>
+      <datum name="Increased Twitch Fibers">
+        <field name="Name" title="yes">
+          <text>Increased Twitch Fibers</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Increases the amount of fast-twitch muscle fiber in your body. Gain +3 STR for fast applications, but suffer a -1 BLD. You also suffer and -3 STR for anything that takes longer than a second. -2 Enc</text>
+        </field>
+      </datum>
+      <datum name="Increased perception (sense skin)">
+        <field name="Name" title="yes">
+          <text>Increased perception (sense skin)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Nervous System Replacement</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Improves the sensitivity of your skin. You can accuratley determine the shape, size, texture, and temperature of objects touching you.</text>
+        </field>
+      </datum>
+      <datum name="Increased speed of Wings">
+        <field name="Name" title="yes">
+          <text>Increased speed of Wings</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Wings</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds speed to your wings. Each purchase is +20 MPH</text>
+        </field>
+      </datum>
+      <datum name="Melanin Control">
+        <field name="Name" title="yes">
+          <text>Melanin Control</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Change the color of your skin. It works fairly slowly, and can only be used to match normal <ldquo/>human color<rdquo/>skin. It can be white, black, <ldquo/>yellow<rdquo/>. You can simulate tans, etc, but cannot do unnatural colors.</text>
+        </field>
+      </datum>
+      <datum name="Muscle replacement">
+        <field name="Name" title="yes">
+          <text>Muscle replacement</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Replace your muscles with superior lab-grown ones. +1 STR and +1 BLD</text>
+        </field>
+      </datum>
+      <datum name="Myomer muscle fibers">
+        <field name="Name" title="yes">
+          <text>Myomer muscle fibers</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Muscle enhancement which improves motor control. Each purchase adds +1 DEX. Can be purchased more than once, but each consecutive purchase is twice the cost of the previous one.</text>
+        </field>
+      </datum>
+      <datum name="Nervous System replacement">
+        <field name="Name" title="yes">
+          <text>Nervous System replacement</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Replaces your nervous system (except the brain) with an electronic network.</text>
+        </field>
+      </datum>
+      <datum name="Pain Editior">
+        <field name="Name" title="yes">
+          <text>Pain Editior</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Nervous System Replacement</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables you to shut off or dimininsh pain at your will</text>
+        </field>
+      </datum>
+      <datum name="Radiation Immunity">
+        <field name="Name" title="yes">
+          <text>Radiation Immunity</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Protects the body from radiation from outside sources. Will not protect you from ingesting radioactive materials, etc.</text>
+        </field>
+      </datum>
+      <datum name="Reenforced Skeleton">
+        <field name="Name" title="yes">
+          <text>Reenforced Skeleton</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Toughens your skeleton and improves how smoothly it moves, improving your BLD by 1 point</text>
+        </field>
+      </datum>
+      <datum name="Replaced Skeleton (Flexible)">
+        <field name="Name" title="yes">
+          <text>Replaced Skeleton (Flexible)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Reenforced Skeleton</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A replacement for your normal skeleton. The bones are make of many individual joints, and can be bent at will. This enables you to perform amazing feats of contortion. +1 DEX -1 STR</text>
+        </field>
+      </datum>
+      <datum name="Replaced Skeleton (Rigid)">
+        <field name="Name" title="yes">
+          <text>Replaced Skeleton (Rigid)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Reenforced Skeleton</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A replacement for your normal skeleton. It has the ability to be locked rigid, giving you a +3 to STR contests, and an additional +1 BLD</text>
+        </field>
+      </datum>
+      <datum name="Self Sealing Blood Vessels">
+        <field name="Name" title="yes">
+          <text>Self Sealing Blood Vessels</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Your blood vessels will seal themselves very effectivley if cut or otherwise damaged. You don't loose extra HP after going below 0, and don't bleed appreciably.</text>
+        </field>
+      </datum>
+      <datum name="Slick Skin">
+        <field name="Name" title="yes">
+          <text>Slick Skin</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes your skin unusually slick and slightly slimy. It makes it very difficult for something to grab you (-3), and slashing weapons have a tendency to slide off. (0/3/0)</text>
+        </field>
+      </datum>
+      <datum name="Spongy Skin">
+        <field name="Name" title="yes">
+          <text>Spongy Skin</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes your skin tougher and thicker than normal. It cushions impact. (0/0/3)</text>
+        </field>
+      </datum>
+      <datum name="Subdermal Armor (heavy)">
+        <field name="Name" title="yes">
+          <text>Subdermal Armor (heavy)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armored mesh is implanted below the skin. It is located everywhere execpt the face, groin, hands, and feet. Armor is 6/6/5. This is highly visible</text>
+        </field>
+      </datum>
+      <datum name="Subdermal Armor (light)">
+        <field name="Name" title="yes">
+          <text>Subdermal Armor (light)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armored mesh is implanted below the skin. It is located everywhere execpt the face, groin, hands, and feet. Armor is 2/2/2. This is almost invisible</text>
+        </field>
+      </datum>
+      <datum name="Subdermal Armor (med)">
+        <field name="Name" title="yes">
+          <text>Subdermal Armor (med)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armored mesh is implanted below the skin. It is located everywhere execpt the face, groin, hands, and feet. Armor is 4/4/4 this is visible if someone looks for it.,</text>
+        </field>
+      </datum>
+      <datum name="Suspended organs">
+        <field name="Name" title="yes">
+          <text>Suspended organs</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A special network of neuro-activated wire actuators suspends your vital organs. If something penetrates your body, they pull your organs out of the way. Take 50<percent/>piercing damage. Only works if you are not wearing any armor.</text>
+        </field>
+      </datum>
+      <datum name="Tail (balancing)">
+        <field name="Name" title="yes">
+          <text>Tail (balancing)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A tail is added to the body. It is thick and sturdy. It improves your balance, giving +3 to balance-related DEX checks.</text>
+        </field>
+      </datum>
+      <datum name="Tail (cosmetic)">
+        <field name="Name" title="yes">
+          <text>Tail (cosmetic)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A tail is added to the body. It has sensation, but has no real use other than cosmetics.</text>
+        </field>
+      </datum>
+      <datum name="Tail (prehensile)">
+        <field name="Name" title="yes">
+          <text>Tail (prehensile)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A tail is added to the body. It has DEX equal to your normal value. It can be used to hold onto things, etc. Also gives balance dex bonus</text>
+        </field>
+      </datum>
+      <datum name="Toxic Skin">
+        <field name="Name" title="yes">
+          <text>Toxic Skin</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables you to secrete a weak poison from the skin. It is foul tasting, and deals <roll><num>1</num><face>4</face><bOff>-</bOff><bns>1</bns></roll> damage if ingested. Anything biting you must make a WILL check at -8 or immiedtly let go. (except robots, undead)</text>
+        </field>
+      </datum>
+      <datum name="Wing blades">
+        <field name="Name" title="yes">
+          <text>Wing blades</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Wings</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Addes blades to your wings that can be used as weapons. Use with unarmed combat. <roll><num>3</num><face>6</face><bns/></roll> damage.</text>
+        </field>
+      </datum>
+      <datum name="Wings">
+        <field name="Name" title="yes">
+          <text>Wings</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Reenforced Skeleton</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Body</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds a set of wings to the body. They can be used to fly up to 20 MPH. Wings can retract inside the body for 2 slots and 6 more CP.</text>
+        </field>
+      </datum>
+    </category>
