@@ -1,0 +1,423 @@
+<category name="Content/Equipment/Melee/Axes">
+  <default name="">
+    <field name="Name"  title="yes"><text>No value</text></field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field colfmt="l" name="Class"><text/></field>
+    <field colfmt="l" name="Type" table="yes"><text/></field>
+    <field colfmt="l" name="Cost" table="yes"><text/></field>
+    <field colfmt="l" name="Damage" table="yes"><text/></field>
+    <field colfmt="p{2em}" name="Hands" table="yes"/>
+    <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+    <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+    <field colfmt="l" name="Recovery" table="yes"><text/></field>
+    <field description="yes" name="Description"><text/></field>
+    <field name="Implementation"><text>No value</text></field>
+  </default>
+  <datum name="2-Headed Axe">
+    <field name="Name" title="yes">
+      <text>2-Headed Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>2</num>
+        <face>6</face>
+        <bOff>+</bOff>
+        <bns>1</bns>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>10</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>14</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>1</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>The tool of a professional woodsman. The double-headed axe offers more weight and a backup cutting edge to help power through wood chopping chores. It also proved more effective on the battlefield than standard axes.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Axe">
+    <field name="Name" title="yes">
+      <text>Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>2</num>
+        <face>4</face>
+        <bns/>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>1</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>8</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>8</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>0</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>A typical axe<mdash/>a tool for chopping and spitting wood. Many conscripted soldiers found their farm axes to be devastating in combat, often proving more effective than some swords.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Berzerker Axe">
+    <field name="Name" title="yes">
+      <text>Berzerker Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>5</num>
+        <face>6</face>
+        <bOff>+</bOff>
+        <bns>1</bns>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>18</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>32</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>3</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>The strongest Nordic warriors often wielded huge, oversized, versions of the their typical war axe. Equipped with a double-edge head and a design that concentrates most of the blade weight towards the end of the weapon, the Berzerker axe is unequaled for damage potential. However, its massive size limits its use to the strongest heroes.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Firemans Axe">
+    <field name="Name" title="yes">
+      <text>Firemans Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>P<ndash/>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>3</num>
+        <face>4</face>
+        <bns/>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>10</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>14</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>0</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>A tough, heavier, superior version of a normal axe designed for enabling rescue crews to quickly enter buildings. The fireman's axe has a spike on the back of the axe-head, enabling it to be used as a piercing weapon as well.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Hatchet">
+    <field name="Name" title="yes">
+      <text>Hatchet</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>1</num>
+        <face>6</face>
+        <bOff>+</bOff>
+        <bns>1</bns>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>1</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>8</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>4</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>0</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>A small axe used for breaking up firewood and light-duty farmwork. Though not intended as a tool of war, hatchets served many a warrior as a backup weapon.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Heavy Battle Axe">
+    <field name="Name" title="yes">
+      <text>Heavy Battle Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>4</num>
+        <face>6</face>
+        <bOff>+</bOff>
+        <bns>1</bns>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>16</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>24</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>3</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Some of the strongest medieval knights depended on heavy battle axes to deliver maximum damage to their enemies, human or otherwise. The heavy battle axe is designed for the roughest combat conditions, equipped with a massive, broad, head<mdash/>and the weight to carry it through it's target.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Light Battle Axe">
+    <field name="Name" title="yes">
+      <text>Light Battle Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>3</num>
+        <face>6</face>
+        <bns/>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>1</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>12</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>13</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>0</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>An adaptation of a wood-chopping tool to an implement of war. Light enough to be carried by most soldiers, yet capable of dealing high amounts of damage, light battle axes were favored weapons of many medieval armies.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Lochaber Axe">
+    <field name="Name" title="yes">
+      <text>Lochaber Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>5</num>
+        <face>4</face>
+        <bOff>+</bOff>
+        <bns>1</bns>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>17</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>25</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>3</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>An oversized battle-axe subscribing to the idea that more weight equals more damage<mdash/>and rightly so. The Lochaber axe's massive blade deals huge damage, and the spiked backside can deal a very nasty piercing attack.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Nordic War Axe">
+    <field name="Name" title="yes">
+      <text>Nordic War Axe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>S</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>3</num>
+        <face>6</face>
+        <bOff>+</bOff>
+        <bns>1</bns>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>15</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>18</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>2</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Developed by the fiercest Norse barbarian tribes, this is a simple yet fearsome weapon. Forged from the superior steels of the northern countries, the huge swept blade would easily cleave armor and limbs alike, and the carved handle provided for a very controllable swing. Many Norse warriors named their war-axes such things as <ldquo/>widowmaker<rdquo/> or <ldquo/>swordbreaker<rdquo/>.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+  <datum name="Pickaxe">
+    <field name="Name" title="yes">
+      <text>Pickaxe</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Class">
+      <text>Axes</text>
+    </field>
+    <field name="Type" table="yes">
+      <text>P</text>
+    </field>
+    <field name="Cost" table="yes">
+      <text>0</text>
+    </field>
+    <field name="Damage" table="yes">
+      <text>
+       <roll>
+        <num>3</num>
+        <face>6</face>
+        <bOff>+</bOff>
+        <bns>1</bns>
+      </roll> 
+    </text>
+    </field>
+    <field name="Hands" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Minimum Strength" table="yes">
+      <text>14</text>
+    </field>
+    <field name="Maximum Strength Bonus" table="yes">
+      <text>20</text>
+    </field>
+    <field name="Recovery" table="yes">
+      <text>1</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>A common tool for mining, digging, and general construction applications. The pickaxe is a heavy tool with a large, pointed, head. It is effective for breaking up rocks during mining, and breaking up armor in combat.</text>
+    </field>
+    <field name="Implementation"><text>No value</text></field>
+  </datum>
+</category>

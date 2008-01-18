@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet href="xml-apathy.css" type="text/css"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
-  "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<?xml-stylesheet type="text/xsl" href="Apathy.combine.xsl"?>
 <apathy-game>
   <book name="Apathy Rule Book">
     <section kind="part">
@@ -1446,7 +1443,7 @@
         </section>
         <section kind="section">
           <title><text>Arm, Hand</text></title>
-          <reference hrid="Augmentations-Arm_Hand"/>
+          <reference hrid="Augmentations-Arm__Hand"/>
         </section>
         <section kind="section">
           <title><text>Body</text></title>
