@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet href="xml-apathy.css" type="text/css"?>
-<!DOCTYPE html
-  PUBLIC "MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
-<apathy-game>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+  "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<apathy-game xmlns="http://www.w3.org/1999/xhtml"
+	     xmlns:math="http://www.w3.org/1998/Math/MathML"
+	     xmlns:xlink="http://www.w3.org/1999/xlink">
   <book name="Apathy Rule Book">
     <section kind="part">
       <title><text>Game Manual</text></title>
@@ -323,7 +325,7 @@
             <text>The first three attributes (STR, DEX, and BLD) are considered Physical Attributes. The second three attributes (INT, WIS, and WIL) are Mental Attributes. The seventh, CHA, is a little of both, but is generally considered to be a Mental Attribute.</text>
             <text>Attributes are rated on a scale. 1 is the lowest possible attribute score. There is no top end on the scale, though an attribute of 20 is the peak of human ability. A human character can never have an attribute higher than 20 without some supernatural effect (super power, magic, cybernetics, etc).</text>
             <text>When creating a character, the GM allows you a certain number of attribute points. Attribute Points are used to purchase the attribute values you want your character to have. A normal human has about 40 attribute points. An above average human would have about 105<ndash/>140 attribute points. We recommend that 120 Attribute Points be assigned to starting characters<mdash/>after all, player characters are supposed to be heroic<mdash/>though the GM has the final word.</text>
-            <text>The cost of an attribute is computed like a skill with Rank 1 (see the skill section later on). However, the final value for the attribute (for a Human) is increased by 8; that is, if you buy 5 levels of STR (for 15 AP), then the final value of the STR is<math><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>13</mn></mrow></math>.</text>
+            <text>The cost of an attribute is computed like a skill with Rank 1 (see the skill section later on). However, the final value for the attribute (for a Human) is increased by 8; that is, if you buy 5 levels of STR (for 15 AP), then the final value of the STR is<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>13</mn></mrow></math>.</text>
             <note>
               <text>In most cases no player may have an attribute below 8. Attributes below 8 are considered handicapped and/or disabled, and such a character would probably not be adventuring!</text>
             </note>
@@ -361,7 +363,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mfrac><mrow><mi>STR</mi><times/><mi>STR</mi><times/><mi>BLD</mi></mrow><mn>10</mn></mfrac></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>STR</mi><times/><mi>STR</mi><times/><mi>BLD</mi></mrow><mn>10</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -374,7 +376,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mfrac><mi>Lift</mi><mn>2</mn></mfrac></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mi>Lift</mi><mn>2</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -387,7 +389,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>DEX</mi><mo>+</mo><mi>STR</mi></mrow><mn>6</mn></mfrac></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>DEX</mi><mo>+</mo><mi>STR</mi></mrow><mn>6</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -400,7 +402,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow><mn>6</mn></mfrac></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow><mn>6</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -413,7 +415,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>STR</mi><mo>+</mo><mi>DEX</mi></mrow><mn>15</mn></mfrac></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>STR</mi><mo>+</mo><mi>DEX</mi></mrow><mn>15</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -426,7 +428,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mfrac><mrow><mi>DEX</mi><mo>+</mo><mn>2</mn><mo><times/></mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>4</mn></mfrac></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>DEX</mi><mo>+</mo><mn>2</mn><mo><times/></mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>4</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -439,7 +441,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mfrac><mrow><mi>CHA</mi><mo>+</mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>3</mn></mfrac></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>CHA</mi><mo>+</mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>3</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -452,7 +454,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
                   </text>
                   </cell>
                 </row>
@@ -465,7 +467,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mrow><mo>(</mo><mi>WIL</mi><mo>+</mo><mi>BLD</mi><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>WIL</mi><mo>+</mo><mi>BLD</mi><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
                   </text>
                   </cell>
                 </row>
@@ -551,7 +553,7 @@
           <section kind="section">
             <title><text>Increasing Attributes (optional)</text></title>
             <text>If your attributes aren<rdquo/>t quite where you desire, you will need to get more Attribute Points so you can purchase a better attribute. Each Attribute Point costs 1 Character Point. Once you purchase the number of Attribute Points you want, just look at the table found in the Attributes section above to see how many total Attribute Points you must spend to get that attribute.</text>
-            <text>You must pay a number of Attribute Points equal to the difference between what you want, and what you already have. For example: if you currently have an 11 STR (6 Attribute Points) and wish to increase it to a 14 (21 Attribute Points) that will cost you 15 Attribute Points (<math><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>). Since Attribute Points cost 1 Character Point each, going from an 11 in an attribute to a 14 will cost 15 CP.</text>
+            <text>You must pay a number of Attribute Points equal to the difference between what you want, and what you already have. For example: if you currently have an 11 STR (6 Attribute Points) and wish to increase it to a 14 (21 Attribute Points) that will cost you 15 Attribute Points (<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>). Since Attribute Points cost 1 Character Point each, going from an 11 in an attribute to a 14 will cost 15 CP.</text>
             <text>Remember to keep track of how many Attribute Points you have spent on your attributes so you can easily increase them at a later date.</text>
             <text>Note that attribute increases are major additions to your character, and they should be role-played as such. Significant attribute changes represent months if not years of hard work! Here are some examples of possible means of increasing attributes:</text>
             <description-list>
@@ -698,8 +700,8 @@
           <text>Like most of character creation, skills are purchased using CP. The higher the rank, the more expensive it will be. The higher the level you want in the skill, the more expensive it will be.</text>
           <text>For those that are mathematically inclined, here is the formula for determining CP of a particular skill level and rank:</text>
           <equation>
-	  		<text><math><mrow><munderover><mrow><mi><Sum/></mi></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mi>i</mi><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mn>2</mn></mfrac></mrow></math></text>
-	  	  </equation>
+	    <math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msubsup><mstyle displaystyle="true"><mo lspace="thinmathspace" rspace="thinmathspace"><Sum/></mo></mstyle><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow> <mo lspace="0em" rspace="thinmathspace">n</mo></msubsup><mi>i</mi><mo>=</mo><mfrac><mrow><msup><mi>n</mi> <mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mrow><mi>n</mi></mrow></mfrac></mrow></math>
+	  </equation>
           <text>For the rest of us, use this nifty table, and multiply the value listed by the rank.</text>
           <figure>
             <table>
@@ -1038,7 +1040,7 @@
             <text>The raw damage bonus (RDB) is calculated by subtracting 8 from the wielder<rsquo/>s Str. The RDB is added as raw damage to total of the weapon<rsquo/>s damage. However, all weapons have a maximum strength bonus (MSB); if the RDB is greater than the MSB, then the MSB is used as the RDB instead.</text>
             <example>
               <title><text>MSR for Bosk</text></title>
-              <text>Bosk has a STR of 17 and is brandishing a Hercules Club ( <roll><num>3</num><face>6</face><bns/><kind>C</kind></roll> , MSR: 12, MSB: 13). Because Bosk<rsquo/>s Str is higher than the minimum strength requirement of the Hercules Club (12), he is entitled to a damage bonus. Subtract 8 from Bosk<rsquo/>s Str score to calculate his bonus:<math><mrow><mn>17</mn><mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></math>. So this means that Bosk deals <roll><raw>9</raw><num>3</num><face>6</face><bns/><kind>C</kind></roll> damage.</text>
+              <text>Bosk has a STR of 17 and is brandishing a Hercules Club ( <roll><num>3</num><face>6</face><bns/><kind>C</kind></roll> , MSR: 12, MSB: 13). Because Bosk<rsquo/>s Str is higher than the minimum strength requirement of the Hercules Club (12), he is entitled to a damage bonus. Subtract 8 from Bosk<rsquo/>s Str score to calculate his bonus:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>17</mn><mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></math>. So this means that Bosk deals <roll><raw>9</raw><num>3</num><face>6</face><bns/><kind>C</kind></roll> damage.</text>
             </example>
             <example>
               <title><text>Bosk with Knife</text></title>
@@ -1060,7 +1062,7 @@
                 <description>
                   <text>Two normal weapons</text>
                 </description>
-                <text>When wielding two weapons the weapon in the character<rsquo/>s <ldquo/>good<rdquo/> hand receives a -3 to strike and the weapon in the character<rsquo/>s <ldquo/>off<rdquo/> hand receives a -6. Some characters can have <ldquo/>even-more-offhand<rdquo/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the <math><mrow><msup><mi>k</mi><mi>th</mi></msup></mrow></math> weapon is at <math><mrow><mn>-3</mn><mo><times/></mo><mi>k</mi></mrow></math> to strike.</text>
+                <text>When wielding two weapons the weapon in the character<rsquo/>s <ldquo/>good<rdquo/> hand receives a -3 to strike and the weapon in the character<rsquo/>s <ldquo/>off<rdquo/> hand receives a -6. Some characters can have <ldquo/>even-more-offhand<rdquo/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>k</mi><mi>th</mi></msup></mrow></math> weapon is at <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>-3</mn><mo><times/></mo><mi>k</mi></mrow></math> to strike.</text>
               </item>
               <item>
                 <description>
@@ -1233,7 +1235,7 @@
             </section>
             <section kind="section">
               <title><text>Fire (F)</text></title>
-              <text>Some weapons and spells have a note that says <ldquo/>F<rdquo/>, <ldquo/>Fire<rdquo/>, <ldquo/>Fire Effect<rdquo/>, or<rdquo/> U Fire<rdquo/>. These weapons deal fire damage. Unless stated otherwise Fire weapons deal U damage. As well, Fire effect weapons will ignite the target, as well as readily flammable materials within a 3<rdquo/> radius of the blow. A target that is <ldquo/>on fire<rdquo/> will suffer an extra <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> damage each turn that the fire is still going. This starts on the <ldquo/>next<rdquo/> turn after the target is struck. Certain types of armor have Fire Protection. This means that this armor has the unique ability to resist heat and the damage caused by fire-effect sources. If a target with fire protection is struck with a fire-effect attack, damage dealt from the fire is zero and the target is not ignited. Fire protection on armor will only work three times before the armor must be repaired or replaced. Some armor is rated fire protection<math><times/></math>2, which will take six fire-effect hits before loosing it<rsquo/>s fire resistance, etc. Note that fire protection armor only resists the ignition effect and any heat (U) damage from the fire specifically. Therefore, if a weapon deals normal damage (P/S/C) AND has either Fire effect or Fire damage (U) then the fire-related effects are prevented but the standard damage (P/S/C) is treated as normal. Targets that are <ldquo/>on fire<rdquo/>suffer the damage on each of their turns.</text>
+              <text>Some weapons and spells have a note that says <ldquo/>F<rdquo/>, <ldquo/>Fire<rdquo/>, <ldquo/>Fire Effect<rdquo/>, or<rdquo/> U Fire<rdquo/>. These weapons deal fire damage. Unless stated otherwise Fire weapons deal U damage. As well, Fire effect weapons will ignite the target, as well as readily flammable materials within a 3<rdquo/> radius of the blow. A target that is <ldquo/>on fire<rdquo/> will suffer an extra <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> damage each turn that the fire is still going. This starts on the <ldquo/>next<rdquo/> turn after the target is struck. Certain types of armor have Fire Protection. This means that this armor has the unique ability to resist heat and the damage caused by fire-effect sources. If a target with fire protection is struck with a fire-effect attack, damage dealt from the fire is zero and the target is not ignited. Fire protection on armor will only work three times before the armor must be repaired or replaced. Some armor is rated fire protection<math  xmlns='http://www.w3.org/1998/Math/MathML'><times/></math>2, which will take six fire-effect hits before loosing it<rsquo/>s fire resistance, etc. Note that fire protection armor only resists the ignition effect and any heat (U) damage from the fire specifically. Therefore, if a weapon deals normal damage (P/S/C) AND has either Fire effect or Fire damage (U) then the fire-related effects are prevented but the standard damage (P/S/C) is treated as normal. Targets that are <ldquo/>on fire<rdquo/>suffer the damage on each of their turns.</text>
               <example>
                 <title><text>David deals Fire damage</text></title>
                 <text>David shoots a Ghoul with a Flame blaster. This weapon deals <roll><num>2</num><face>6</face><bns/><kind>U</kind></roll> Fire. David rolls damage and ends up with 10 U. The target suffers the 10 damage. As well, the Ghoul suffers the fire effect and has been set on fire. On the ghoul<lsquo/>s next turn it will suffer <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> from being on fire. This will continue until the fire is somehow put out.</text>
@@ -1283,9 +1285,9 @@
           <section kind="section">
             <title><text>Hit Points</text></title>
             <text>Hit Points are numbers used to represent how injured or healthy a character is. A character will have TWO Hit Point numbers. Your maximum Hit Points determines how tough your character is at full health. This number will rarely change. It is determined by your BLD and WIL attributes, and will rarely change unless your attributes change.</text>
-            <text>Your current Hit Points is the most important number. It will likely change frequently during combat. Hit Points are generally represented as a fraction:<math><mfrac><mi>Current HP</mi><mi>Max HP</mi></mfrac></math>. When the game begins, your character will be fully healthy and uninjured. Thus, when starting, your current HP will be equal to your maximum.</text>
+            <text>Your current Hit Points is the most important number. It will likely change frequently during combat. Hit Points are generally represented as a fraction:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mi>Current HP</mi><mi>Max HP</mi></mfrac></math>. When the game begins, your character will be fully healthy and uninjured. Thus, when starting, your current HP will be equal to your maximum.</text>
             <text>As you get injured, any damage you take (after applying armor, etc.) will be applied to your current HP. As you get injured, your current HP drops. Over time, your body will heal itself, and your HP will go up. Seeking medical attention will speed this process. Other things, like magic or cybernetic devices, can heal you as well.</text>
-            <text>Your current HP can never exceed your maximum HP. As a general rule for minor injuries (less than 5 HP), you gain back 1 HP per day of average activity. For significant HP losses, it takes<math><mrow><msup><mrow><mo>(</mo><mi>Maximum</mi><mo>-</mo><mi>Current</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></math>days to fully recover your HP.</text>
+            <text>Your current HP can never exceed your maximum HP. As a general rule for minor injuries (less than 5 HP), you gain back 1 HP per day of average activity. For significant HP losses, it takes<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mo>(</mo><mi>Maximum</mi><mo>-</mo><mi>Current</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></math>days to fully recover your HP.</text>
             <text>If a character is resting and is under basic medical care, then your healing time is cut in HALF. If your character is under the care of a professional Doctor or Healer, healing time is cut to one QUARTER of normal time.</text>
             <text>If your current HP falls below 0, your character falls unconscious. It is possible to remain conscious by making a willpower check at -X, where X is the amount below zero your HP are. If your current HP are below 0, your character is bleeding badly (internal bleeding is possible too) and you will loose 1 HP per round, unless you receive medical attention. If your current HP ever reaches the negative of your maximum HP, you have died.</text>
           </section>
@@ -1676,7 +1678,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mrow><msup><mfrac><mn>1</mn><mn>10</mn></mfrac>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mfrac><mn>1</mn><mn>10</mn></mfrac>
                           <mi>th</mi></msup><mi>cost</mi></mrow></math>
                   </text>
                   </cell>
@@ -1689,7 +1691,7 @@
                 <text>Options for melee weapon construction</text>
               </caption>
             </figure>
-            <text>For other than normal sized weapons (mecha, etc.), all stats are<math><msup><mn>2</mn><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow></msup></math>normal. This applies to strength requirement, strength bonus, damage dice number, etc.</text>
+            <text>For other than normal sized weapons (mecha, etc.), all stats are<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow></msup></math>normal. This applies to strength requirement, strength bonus, damage dice number, etc.</text>
           </section>
           <section kind="section">
             <title><text>Axes</text></title>
@@ -1956,7 +1958,7 @@
             </section>
             <section kind="section">
               <title><text>Pistols</text></title>
-              <text>Extra magazines cost <dollar/><math><mrow><mn>150</mn><mo><times/></mo><mfrac><mi>Cost of Gun</mi><mn>1000</mn></mfrac></mrow></math> each. High-capacity magazines holds 50<percent/> more rounds, but cost twice as much.</text>
+              <text>Extra magazines cost <dollar/><math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>150</mn><mo><times/></mo><mfrac><mi>Cost of Gun</mi><mn>1000</mn></mfrac></mrow></math> each. High-capacity magazines holds 50<percent/> more rounds, but cost twice as much.</text>
             </section>
             <section kind="section">
               <title><text>Hunting Pistols</text></title>
@@ -4138,12 +4140,12 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>Size CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>Size CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
 		      </text>
                       </cell>
                       <cell>
                         <text>
-                        <math><mfrac><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mi>CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mi>CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4156,12 +4158,12 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mfrac><mrow><mn>3</mn><mi>CP</mi></mrow><mrow><mo>+</mo><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mn>3</mn><mi>CP</mi></mrow><mrow><mo>+</mo><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow></math>
 		      </text>
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mfrac><mrow><mo>(</mo><mn>2</mn><mo><times/></mo><mi>Size Cp</mi><mo>)</mo></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mo>(</mo><mn>2</mn><mo><times/></mo><mi>Size Cp</mi><mo>)</mo></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4210,12 +4212,12 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mn>5</mn><mo><times/></mo><mi>Size</mi></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>5</mn><mo><times/></mo><mi>Size</mi></mrow></math>
 		      </text>
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>6</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>6</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4237,7 +4239,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>2</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>2</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4259,7 +4261,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>4</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>4</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4281,7 +4283,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4303,7 +4305,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>15</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>15</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4325,7 +4327,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4333,7 +4335,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><msup><mi>Size</mi><mn>2</mn></msup></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
 		      </text>
                       </cell>
                     </row>
@@ -4355,7 +4357,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><msup><mi>Size</mi><mn>2</mn></msup></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
 		      </text>
                       </cell>
                     </row>
@@ -4371,7 +4373,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4379,7 +4381,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mfrac><mrow><mn>3</mn><mo><times/></mo><mrow><mo>(</mo><mi>X</mi><mo><times/></mo><mn>1</mn><mo>)</mo></mrow></mrow><mn>4</mn></mfrac></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mn>3</mn><mo><times/></mo><mrow><mo>(</mo><mi>X</mi><mo><times/></mo><mn>1</mn><mo>)</mo></mrow></mrow><mn>4</mn></mfrac></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4398,7 +4400,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
+                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -5107,12 +5109,12 @@
                 <row>
                   <cell>
                     <text>
-                    <math><mrow><mi>X</mi><mo>&gt;</mo><mn>2</mn></mrow></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi><mo>&gt;</mo><mn>2</mn></mrow></math>
                   </text>
                   </cell>
                   <cell>
                     <text>
-                    <math><mrow><mo><times/></mo><mrow><mi>X</mi><mo>-</mo><mn>1</mn></mrow></mrow></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><mrow><mi>X</mi><mo>-</mo><mn>1</mn></mrow></mrow></math>
                   </text>
                   </cell>
                   <cell>
@@ -5120,17 +5122,17 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
                   </text>
                   </cell>
                   <cell>
                     <text>
-                    <math><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
                   </text>
                   </cell>
                   <cell>
                     <text>
-                    <math><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
                   </text>
                   </cell>
                 </row>
@@ -5140,7 +5142,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math><msup><mi>X</mi><mn>2</mn></msup></math>
+                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>
                   </text>
                   </cell>
                   <cell>
@@ -5283,13 +5285,13 @@
                     <text>Anthropoid</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Height:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math></text>
+                    <text>Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5411,13 +5413,13 @@
                     <text>Bipedal</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Height:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math></text>
+                    <text>Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5539,13 +5541,13 @@
                     <text>Quadruped</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Length:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math>; Height:<math><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
+                    <text>Length:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math>; Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math><mrow><mfrac><mi>Length</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Length</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5667,13 +5669,13 @@
                     <text>Serpent</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Length:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math>; Height:<math><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
+                    <text>Length:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math>; Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math><mrow><mfrac><mi>Height</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Height</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5795,13 +5797,13 @@
                     <text>Polymelic</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Size:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>30</mn><mi>cm</mi></mrow></math>, in some dimension</text>
+                    <text>Size:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>30</mn><mi>cm</mi></mrow></math>, in some dimension</text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math><mrow><mfrac><mi>Size</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Size</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5923,13 +5925,13 @@
                     <text>Amorphous</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Diameter:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>50</mn><mi>cm</mi></mrow></math></text>
+                    <text>Diameter:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>50</mn><mi>cm</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math><mrow><msup><mi>Diameter</mi><mn>3</mn></msup><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Diameter</mi><mn>3</mn></msup><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -6189,7 +6191,7 @@
             </head>
             <row>
               <cell>
-		<text><math><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></text>
+		<text><math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></text>
               </cell>
               <cell>
                 <text>Character has one few actions (regular and movement) and -3 to all die rolls.</text>
@@ -6205,7 +6207,7 @@
             </row>
             <row>
               <cell>
-		<text><math><mrow><mi>less-than</mi><mn>0</mn></mrow></math></text>
+		<text><math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>less-than</mi><mn>0</mn></mrow></math></text>
               </cell>
               <cell>
                 <text>Character is unconscious and loses 1 Hit Point per turn until stabilized.</text>
@@ -7554,7 +7556,7 @@
           <text>Any</text>
         </field>
         <field description="yes" name="Description">
-          <text>Unique skill. This provides the character money. Character gets<math><mrow><msup><mi>LVL</mi><mn>2</mn></msup><mo><times/></mo><mn>1000</mn></mrow></math>dollars in cash, equipment, or goods. This can be bought many times.</text>
+          <text>Unique skill. This provides the character money. Character gets<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>LVL</mi><mn>2</mn></msup><mo><times/></mo><mn>1000</mn></mrow></math>dollars in cash, equipment, or goods. This can be bought many times.</text>
         </field>
         <field name="Implementation">
           <text>Money += Level*Level*500</text>
@@ -23140,7 +23142,7 @@
           <text>0</text>
         </field>
         <field description="yes" name="Description">
-          <text>The class <ldquo/>fencing<rdquo/>sword used in duels from the<math><msup><mn>16</mn><mi>th</mi></msup></math><ndash/><math><msup><mn>19</mn><mi>th</mi></msup></math>c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns/></roll> with 4 AP and a MSB of 12. If the weapon is used as exotic (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</text>
+          <text>The class <ldquo/>fencing<rdquo/>sword used in duels from the<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>16</mn><mi>th</mi></msup></math><ndash/><math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>19</mn><mi>th</mi></msup></math>c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns/></roll> with 4 AP and a MSB of 12. If the weapon is used as exotic (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -27993,7 +27995,7 @@
           <text><notappl/></text>
         </field>
         <field name="Magic Points" qsummary="yes" table="yes">
-          <text>50* (<math><msup><mi>X</mi><mn>2</mn></msup></math>)</text>
+          <text>50* (<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>)</text>
         </field>
         <field name="Range" qsummary="yes" table="yes">
           <text>target</text>
@@ -28876,7 +28878,7 @@
           <text>Auto</text>
         </field>
         <field description="yes" name="Description">
-          <text>Disenchant is used to remove magical effects from an object or area. Each casting of Disenchant affects a single magical spell or effect. If disenchant is used on a spell of<math><msup><mn>3</mn><mi>rd</mi></msup></math>rank or lower, then the targeted spell effect instantly expires (stops). If disenchant is used on a spell of<math><msup><mn>4</mn><mi>th</mi></msup></math>rank or higher, then the spell may or may not be affected. In this case the caster of Disenchant enters a contest of skills (Magical Control) with the original caster of the existing spell, with the following conditions:</text>
+          <text>Disenchant is used to remove magical effects from an object or area. Each casting of Disenchant affects a single magical spell or effect. If disenchant is used on a spell of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>3</mn><mi>rd</mi></msup></math>rank or lower, then the targeted spell effect instantly expires (stops). If disenchant is used on a spell of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>4</mn><mi>th</mi></msup></math>rank or higher, then the spell may or may not be affected. In this case the caster of Disenchant enters a contest of skills (Magical Control) with the original caster of the existing spell, with the following conditions:</text>
           <numbered-list>
             <item>
               <text>The Original caster of the spell (even if he is deceased) rolls Magical Control using the statistics he had at the time the original spell was first cast. Furthermore, he adds the rank of that spell to his roll.</text>
@@ -28890,7 +28892,7 @@
           </numbered-list>
           <example>
             <title><text>Bratzner attempts to disenchant</text></title>
-            <text>Five years ago Ulek the Pious cast Major Ward on a lockbox containing some scrolls. Now, having slain Ulek, an evil wizard, Bratzner wishes to disenchant Major Ward so that he can open the box unharmed. Because Major Ward is<math><msup><mn>5</mn><mi>th</mi></msup></math>rank, Disenchant does not automatically work, and a skill contest is required. Even though Ulek is dead, <ldquo/>he<rdquo/> is still entitled to a roll. The GM determines that Ulek had Magical Control level 4 and WIL 15 at the time Major Ward was first cast. Thus, Ulek<rsquo/>s roll is 4 dice + 15 (from wisdom) and +5 from the spell level. The GM keeps this information secret, and rolls for Ulek: Three successes. The evil wizard now rolls: He has Lvl 5 Magical Control, a WIL of 14, and he chooses to spend an extra 250 MP which gives him +5 to his roll. His roll is 5 dice + 19, and comes up four successes. Because the evil wizard wins the skill contest, disenchant is successful and Major Ward disappears.</text>
+            <text>Five years ago Ulek the Pious cast Major Ward on a lockbox containing some scrolls. Now, having slain Ulek, an evil wizard, Bratzner wishes to disenchant Major Ward so that he can open the box unharmed. Because Major Ward is<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>5</mn><mi>th</mi></msup></math>rank, Disenchant does not automatically work, and a skill contest is required. Even though Ulek is dead, <ldquo/>he<rdquo/> is still entitled to a roll. The GM determines that Ulek had Magical Control level 4 and WIL 15 at the time Major Ward was first cast. Thus, Ulek<rsquo/>s roll is 4 dice + 15 (from wisdom) and +5 from the spell level. The GM keeps this information secret, and rolls for Ulek: Three successes. The evil wizard now rolls: He has Lvl 5 Magical Control, a WIL of 14, and he chooses to spend an extra 250 MP which gives him +5 to his roll. His roll is 5 dice + 19, and comes up four successes. Because the evil wizard wins the skill contest, disenchant is successful and Major Ward disappears.</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -30361,7 +30363,7 @@
         </field>
         <field name="Magic Points" qsummary="yes" table="yes">
           <text>
-          <math><msup><mi>X</mi><mn>2</mn></msup></math>
+          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field name="Range" qsummary="yes" table="yes">
@@ -32012,7 +32014,7 @@
           <text>Auto</text>
         </field>
         <field description="yes" name="Description">
-          <text>Caster may extinguish normal fire (Magical Contro<math><msup><mi>l</mi><mn>2</mn></msup></math>square yards)</text>
+          <text>Caster may extinguish normal fire (Magical Contro<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>l</mi><mn>2</mn></msup></math>square yards)</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -39103,7 +39105,7 @@
           <text>You deliver a P, C, or S blow using your fist or foot (Punch and Kick, respectively). The damage for a for a kick is <roll><num>X</num><face>6</face></roll> and for a punch is <roll><num>X</num><face>4</face></roll> , where<math/>is the Rank of the skill. A martial srtist may increase the Rank of this skill even after he has bought it.</text>
           <example>
             <title><text>Rei hits harder</text></title>
-            <text>Rei has decided that he wants to hit harder with his punches and kicks. He currently has Rank 2, Level 4, Punch/Kick. He decides to increase the Rank of his Punch/Kick to 3. The cost of a Rank 2, Level 4 skill is 20; the cost of a Rank 3, Level 4 skill is 30, so he owes<math><mrow><mn>30</mn><mo>-</mo><mn>20</mn><mo>=</mo><mn>10</mn></mrow></math>character points.</text>
+            <text>Rei has decided that he wants to hit harder with his punches and kicks. He currently has Rank 2, Level 4, Punch/Kick. He decides to increase the Rank of his Punch/Kick to 3. The cost of a Rank 2, Level 4 skill is 20; the cost of a Rank 3, Level 4 skill is 30, so he owes<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>30</mn><mo>-</mo><mn>20</mn><mo>=</mo><mn>10</mn></mrow></math>character points.</text>
           </example>
           <text>The Maximum Strength Bonus (MSB) of Punch/Kick is <ldquo/>unlimited,<rdquo/>; and the Minimum Strength Requirement (MSR) is 8. Characters with less than an 8 STR can still purchase Punch/Kick but have a negative to the raw damage they deal. A kick is always considered the most off-hand weapon; that is, if you only kick you are at a -3 to strike. If you punch and kick, the punch is at -3, and kick at -6. If you do two punches and a kick, then the punches are -3 and -6, and the kick is -9 to strike. This can be mitigated by ambidexterity.</text>
         </field>
@@ -39157,7 +39159,7 @@
           <text>You are trained to fight with two weapons simultaneously. Each skill level reduces the dual-wield penalty by 1 point for each hand. Note that no matter the level of Ambidexterity, it can never provide a positive bonus; it can only reduce or remove the normal penalty.</text>
           <example>
             <title><text>Candlestick is ambidextrous</text></title>
-            <text>Candlestick has 3 levels of ambidexterity; he has -0 to strike with his<lsquo/>good<rdquo/> hand and -3 to strike with the off hand. If Candlestick had 6 levels of ambidexterity he would no negative at all when attacking with his<math><msup><mn>2</mn><mi>nd</mi></msup></math>weapon, and a -3 with his<math><msup><mn>3</mn><mi>rd</mi></msup></math>weapon, for instance if he were doing two punches and a kick.</text>
+            <text>Candlestick has 3 levels of ambidexterity; he has -0 to strike with his<lsquo/>good<rdquo/> hand and -3 to strike with the off hand. If Candlestick had 6 levels of ambidexterity he would no negative at all when attacking with his<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>nd</mi></msup></math>weapon, and a -3 with his<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>3</mn><mi>rd</mi></msup></math>weapon, for instance if he were doing two punches and a kick.</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -39290,7 +39292,7 @@
           <text>Knowledge and practical experience with combat. The primary bonus is that for each LVL in combat training gain one move-equivalent action. The characteris also familiar with appropriate strategies of order-of-battle and platoon, developing enfilading fire, retreat, modes of advance, etc. If multiple characters have Combat Training, then simple (standard) combat maneuvers can be carried out without verbal (only visual) communication, given that they have trained together for at least one week prior. With simple verbal commands or hand-signals, highly-developed or coordinated maneuvers can be carried out (the requirement of previous group practice still holds). Characters may also attack and defend <ldquo/>as a unit,<rdquo/> thus if two characters have Combat Training and are immediately adjacent to each other (typically 5 feet), then when initiative is rolled, they can choose to take either of the rolled initiatives.</text>
           <example>
             <title><text>Myk and Travis: the Machine</text></title>
-            <text>Myk and Travis have trained together as years: Myk uses sword-and-shield, and Travis with the polearm. They both have three levels in Combat Training. Travis has three levels in Readiness. At the beginning of combat they both roll initiative, Myk rolls (and gets) a 12, Travis rolls an 11, with his Readiness he has<math><mrow><mn>11</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>17</mn></mrow></math>. Both Myk and Travis choose to go on the iniative of 17.</text>
+            <text>Myk and Travis have trained together as years: Myk uses sword-and-shield, and Travis with the polearm. They both have three levels in Combat Training. Travis has three levels in Readiness. At the beginning of combat they both roll initiative, Myk rolls (and gets) a 12, Travis rolls an 11, with his Readiness he has<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>11</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>17</mn></mrow></math>. Both Myk and Travis choose to go on the iniative of 17.</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -39353,7 +39355,7 @@
           <text>For each level in Jitsu pick one Special or one Defensive skill that the martial artist already knows. This special skill is now considered a Basic skill, and may be modified and used as a Basic skill.</text>
           <example>
             <title><text>Myk<rsquo/>s Deadly Reciprocal Attack</text></title>
-            <text>Myk is typically out-of-range of any opponent because he uses a Gladius, while Travis uses a 14' Yari. Most of the time, Myk focuses on defending himself and Travis using Defend Other. However, because he has such fantastic armor (and gets hit a lot defending Travis), he really wants to be able to <ldquo/>lay down the law<rdquo/>; with his Reciprocal Attack. When he takes his<math><msup><mn>3</mn><mi>rd</mi></msup></math>level in Jitsu, he chooses Reciprocal Attack as his skill; from now on Myk can modify Reciprocal Attack as if it were a Basic attack; in particular he has 3 levels in Deadly he plans to use...</text>
+            <text>Myk is typically out-of-range of any opponent because he uses a Gladius, while Travis uses a 14' Yari. Most of the time, Myk focuses on defending himself and Travis using Defend Other. However, because he has such fantastic armor (and gets hit a lot defending Travis), he really wants to be able to <ldquo/>lay down the law<rdquo/>; with his Reciprocal Attack. When he takes his<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>3</mn><mi>rd</mi></msup></math>level in Jitsu, he chooses Reciprocal Attack as his skill; from now on Myk can modify Reciprocal Attack as if it were a Basic attack; in particular he has 3 levels in Deadly he plans to use...</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -42100,7 +42102,7 @@
           <text>8</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can control up to a total of<math><msup><mrow><mi>LVL</mi><mo>-</mo><mn>2</mn></mrow><mn>2</mn></msup></math>* 30 cp worth of spirits. The spirit must obey any commands until death.</text>
+          <text>Character can control up to a total of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>LVL</mi><mo>-</mo><mn>2</mn></mrow><mn>2</mn></msup></math>* 30 cp worth of spirits. The spirit must obey any commands until death.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42191,7 +42193,7 @@
           <text>5</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can steal<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP from target, and gain<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP. Requires touch.</text>
+          <text>Character can steal<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP from target, and gain<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP. Requires touch.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42243,7 +42245,7 @@
           <text>2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character emits an odor up to 10*<math><msup><mi>lvl</mi><mn>2</mn></msup></math>feet away. Purchase for each odor.</text>
+          <text>Character emits an odor up to 10*<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>lvl</mi><mn>2</mn></msup></math>feet away. Purchase for each odor.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42325,7 +42327,7 @@
           <text>3</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can float a few inches above the ground or smooth water. Can move at<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>mph.</text>
+          <text>Character can float a few inches above the ground or smooth water. Can move at<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>mph.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42338,7 +42340,7 @@
           <text>6</text>
         </field>
         <field description="yes" name="Description">
-          <text>Erect a FF with a radius of up to Lvl * 5 ft around character. Can take<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 25 damage. Opponents are +1 to strike the forcefield. FF regenerates Lvl HP per hour.</text>
+          <text>Erect a FF with a radius of up to Lvl * 5 ft around character. Can take<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 25 damage. Opponents are +1 to strike the forcefield. FF regenerates Lvl HP per hour.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42524,7 +42526,7 @@
           <text>1</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can jump an additional<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet</text>
+          <text>Character can jump an additional<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42537,7 +42539,7 @@
           <text>1</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can run at<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>MPH</text>
+          <text>Character can run at<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>MPH</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42628,7 +42630,7 @@
           <text>5</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character emits enough light to illuminate (like day) an area up to 5*<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>in radius.</text>
+          <text>Character emits enough light to illuminate (like day) an area up to 5*<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>in radius.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42693,7 +42695,7 @@
           <text>7</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can manipulate up to<math><msup><mi>Lvl</mi><mn>3</mn></msup></math>* 10 pounds of metal. Metal pieces may be thrown for an attack (one action) that deals Lvl D 6 S<ndash/>P<ndash/>C damage.</text>
+          <text>Character can manipulate up to<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>3</mn></msup></math>* 10 pounds of metal. Metal pieces may be thrown for an attack (one action) that deals Lvl D 6 S<ndash/>P<ndash/>C damage.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42758,7 +42760,7 @@
           <text>3</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character has some form of natural (or mystical) covering that gives him<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>P<ndash/>S<ndash/>C protection and Lvl U protection.</text>
+          <text>Character has some form of natural (or mystical) covering that gives him<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>P<ndash/>S<ndash/>C protection and Lvl U protection.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -42849,7 +42851,7 @@
           <text>6</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can control up to<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 10 pounds of plant material. Can be used to attack others (takes one action) with the plants, deals Lvl D 6 C damage.</text>
+          <text>Character can control up to<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 10 pounds of plant material. Can be used to attack others (takes one action) with the plants, deals Lvl D 6 C damage.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43031,7 +43033,7 @@
           <text>10</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character gains Lvl sizes, gains<math><msup><mn>2</mn><mi>Lvl</mi></msup></math>Strength, looses Lvl Dex, multiply HP and Base Armor by<math><msup><mn>2</mn><mi>Lvl</mi></msup></math>.</text>
+          <text>Character gains Lvl sizes, gains<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>Lvl</mi></msup></math>Strength, looses Lvl Dex, multiply HP and Base Armor by<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>Lvl</mi></msup></math>.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43174,7 +43176,7 @@
           <text>1</text>
         </field>
         <field description="yes" name="Description">
-          <text>Purchase per attribute that is at least a 20. Increase the max attribute to 20 +<math><msup><mi>lvl</mi><mn>2</mn></msup></math>, and purchase additional points as if the base attribute is 1<ndash/>2 the current attribute.</text>
+          <text>Purchase per attribute that is at least a 20. Increase the max attribute to 20 +<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>lvl</mi><mn>2</mn></msup></math>, and purchase additional points as if the base attribute is 1<ndash/>2 the current attribute.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43200,7 +43202,7 @@
           <text>20</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can teleport up to<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 miles away that he can see or has been.</text>
+          <text>Character can teleport up to<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 miles away that he can see or has been.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43239,7 +43241,7 @@
           <text>5</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can transfer<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP to a target per second. Requires Touch</text>
+          <text>Character can transfer<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP to a target per second. Requires Touch</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43252,7 +43254,7 @@
           <text>2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can initiate a grip that requires a strength of STR+<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>. Adds Level to any grappling skill.</text>
+          <text>Character can initiate a grip that requires a strength of STR+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>. Adds Level to any grappling skill.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43291,7 +43293,7 @@
           <text>10</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can control the weather (basic stuff here, no tornadoes, huricanes, etc) for an area of<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>square miles.</text>
+          <text>Character can control the weather (basic stuff here, no tornadoes, huricanes, etc) for an area of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>square miles.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43330,7 +43332,7 @@
           <text>10</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can see through any substance that is no more than<math><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet thick.</text>
+          <text>Character can see through any substance that is no more than<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet thick.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -43352,7 +43354,7 @@
           <text>4</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>3+(<math><msup><mi>Size</mi><mn>2</mn></msup></math>)x2</text>
+          <text>3+(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)x2</text>
         </field>
         <field description="yes" name="Description">
           <text>75<percent/>chance of resisting detection by Radar or Sonar. Uses 3* SIZE PC</text>
@@ -43382,7 +43384,7 @@
           <text>8</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>3+(<math><msup><mi>Size</mi><mn>2</mn></msup></math>)x3</text>
+          <text>3+(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)x3</text>
         </field>
         <field description="yes" name="Description">
           <text>100<percent/>chance of working, High manuever missiles have no bonus, can misrepresent radar signiture. 15 PC</text>
@@ -43430,7 +43432,7 @@
           <text>X</text>
         </field>
         <field description="yes" name="Description">
-          <text>Can hold<math><msup><mi>X</mi><mn>2</mn></msup></math>slots worth of armor where X is no larger than the size of suit. The pod has<math><msup><mrow><mn>2</mn><mo><times/></mo><mi>X</mi></mrow><mn>2</mn></msup></math>armor. If the pod is pierced, the ammo is rendered useless.</text>
+          <text>Can hold<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>slots worth of armor where X is no larger than the size of suit. The pod has<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mn>2</mn><mo><times/></mo><mi>X</mi></mrow><mn>2</mn></msup></math>armor. If the pod is pierced, the ammo is rendered useless.</text>
         </field>
       </datum>
       <datum name="Armor Suit">
@@ -43502,10 +43504,10 @@
           <text>Size</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>(<math><msup><mi>Size</mi><mn>2</mn></msup></math>)/2</text>
+          <text>(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)/2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Range of<math><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo><times/></mo><mn>150</mn></mrow></math>feet. Minimum of 50'. Uses 5 PC per use</text>
+          <text>Range of<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo><times/></mo><mn>150</mn></mrow></math>feet. Minimum of 50'. Uses 5 PC per use</text>
         </field>
       </datum>
       <datum name="Combination Ability">
@@ -43685,7 +43687,7 @@
           <text>2</text>
         </field>
         <field description="yes" name="Description">
-          <text><math><msup><mi>Size</mi><mn>2</mn></msup></math>hours in air supply, rebreather, stops poisons and radiation fallout</text>
+          <text><math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>hours in air supply, rebreather, stops poisons and radiation fallout</text>
         </field>
       </datum>
       <datum name="Equipment Shielding">
@@ -43803,7 +43805,7 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math><msup><mi>Size</mi><mn>2</mn></msup></math>
+          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
@@ -43924,7 +43926,7 @@
           <text>Size</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>1+<math><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+          <text>1+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math></text>
         </field>
         <field description="yes" name="Description">
           <text>+2 Dex</text>
@@ -43969,7 +43971,7 @@
           <text>0</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>3+<math><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+          <text>3+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math></text>
         </field>
         <field description="yes" name="Description">
           <text>50<percent/>chance of resisting detection by Radar or Sonar</text>
@@ -43985,7 +43987,7 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math><msup><mi>Size</mi><mn>2</mn></msup></math>
+          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
@@ -44004,7 +44006,7 @@
           <text>Size*2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Add +50<percent/>to strength for<math><msup><mn>2</mn><mi>Size</mi></msup></math>power</text>
+          <text>Add +50<percent/>to strength for<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>Size</mi></msup></math>power</text>
         </field>
       </datum>
       <datum name="Quantum Teleport Engine">
@@ -44061,10 +44063,10 @@
           <text>Size</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>(<math><msup><mi>Size</mi><mn>2</mn></msup></math>)*3</text>
+          <text>(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)*3</text>
         </field>
         <field description="yes" name="Description">
-          <text>Repairs Size HP per hour (up to half of damage taken). Uses<math><msup><mi>Size</mi><mn>2</mn></msup></math>power</text>
+          <text>Repairs Size HP per hour (up to half of damage taken). Uses<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>power</text>
         </field>
       </datum>
       <datum name="Shield">
@@ -44092,11 +44094,11 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math><msup><mi>Size</mi><mn>3</mn></msup></math>
+          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>3</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
-          <text>Doubles armor. Power: All PC production+<math><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+          <text>Doubles armor. Power: All PC production+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math></text>
         </field>
       </datum>
       <datum name="Spot Armor">
@@ -44154,7 +44156,7 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math><msup><mi>Size</mi><mn>2</mn></msup></math>
+          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
@@ -44988,7 +44990,7 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math><msup><mi>Bonus</mi><mn>2</mn></msup></math>
+          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Bonus</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
