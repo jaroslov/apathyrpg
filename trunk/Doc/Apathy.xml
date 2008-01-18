@@ -60,8 +60,7 @@
             </item>
             <item>
               <description>
-                <text><define>Crushing</define>,<define>C</define>
-		</text>
+                <text><define>Crushing</define>,<define>C</define></text>
               </description>
               <text>An abbreviation for <define>crushing</define>. When used in conjunction with a weapon, it indicates that the weapon in question deals Crushing type damage. When used in conjunction with armor, it indicates how much Crushing damage the armor will defend against.</text>
             </item>
@@ -222,7 +221,7 @@
         </section>
         <section kind="section">
           <title><text>Creating a Character</text></title>
-          <text>The first step in playing <Apathy/> is determining your character concept. Talk to the GM and your fellow players for ideas about the game setting and what kind of character you might want to play. Your imagination is the only real limit as to what your character can be. Perhaps you want to play a heroic knight that fights for honor and puts monsters to the sword? Or maybe you<rdquo/>d rather play a cunning and seductive thief with a hidden agenda. You could be a young mecha pilot<mdash/>inexperienced, but eager to fight for his cause. Your character is a hero in the game. You should take this opportunity to have fun and do things you can<rdquo/>t do in real life.</text>
+          <text>The first step in playing <Apathy/> is determining your character concept. Talk to the GM and your fellow players for ideas about the game setting and what kind of character you might want to play. Your imagination is the only real limit as to what your character can be. Perhaps you want to play a heroic knight that fights for honor and puts monsters to the sword? Or maybe you<rdquo/>d rather play a cunning and seductive thief with a hidden agenda. You could be a young mecha pilot<mdash/>inexperienced, but eager to fight for his cause. Your character is a hero in the game. You should take this opportunity to have fun and do things you can<rsquo/>t do in real life.</text>
           <text>If you are having trouble thinking up a character concept, you might want to look to books, movies, or even historical precedent as to what kind of character you want to play. You could be a space mercenary like Han Solo from Star Wars, or maybe a secret agent like James Bond<mdash/>or perhaps an old-west gunslinger.</text>
           <text>Once you have an idea so to what kind of character you want to play, it<rdquo/>s time to develop that idea. Think about what your character looks like. How old are they? How do they dress? What kinds of possessions do they have? What do they do for a living? What was their past? How would they react in a fight? What would they do if they were suddenly given a lot of money? What are their fears? Their hopes? Their goals?</text>
           <text>Now you should have a good understanding of your character<rdquo/>s appearance, personality, skills, etc. What you need to do next is represent that idea in the <Apathy/> system rules. Grab a character sheet, and follow along.</text>
