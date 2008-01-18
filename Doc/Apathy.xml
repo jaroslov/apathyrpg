@@ -2,9 +2,7 @@
 <?xml-stylesheet href="xml-apathy.css" type="text/css"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
   "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
-<apathy-game xmlns="http://www.w3.org/1999/xhtml"
-	     xmlns:math="http://www.w3.org/1998/Math/MathML"
-	     xmlns:xlink="http://www.w3.org/1999/xlink">
+<apathy-game>
   <book name="Apathy Rule Book">
     <section kind="part">
       <title><text>Game Manual</text></title>
