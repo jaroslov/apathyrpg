@@ -14,6 +14,6 @@ for part in parts[1:]:
     for hr in hridp[2:]:
       hridn += "-"+hr
   hrid = hridn.replace(" ","_").replace(",","_")
-  result += "hird=\""+hrid
+  result += "hrid=\""+hrid + part[endquo:]
 
 print result
