@@ -1,0 +1,2884 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="xml-apathy.css" type="text/css"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+  "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+    <category name="Content/Academic">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field colfmt="p{12em}" name="Occupation" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Acrobatics">
+        <field name="Name" title="yes">
+          <text>Acrobatics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Gymnast, onstage performer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to perform acrobatic feats of dexterity such as flips, mid-air grabs, cartwheels, and similar exercises. When accompanied with a skill such as dodge, it will allow the character to perform acrobatics while dodging or other similar movement.</text>
+        </field>
+      </datum>
+      <datum name="Advanced Academic">
+        <field name="Name" title="yes">
+          <text>Advanced Academic</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Professor, researcher, scientist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Advanced knowledge in one specific area of academics. This is usually in a prior area of expertise. For example, a Biologist (high level Biology skill) might have the skill.</text>
+        </field>
+      </datum>
+      <datum name="Advanced Communications">
+        <field name="Name" title="yes">
+          <text>Advanced Communications</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Military intelligence, technicians, communications personnel</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The character has the knowledge of advanced communication systems, their use, limitations, abilities, satellites, industrial networking, and similar information. This also gives the character to use the tools and instruments used within the communications field.</text>
+        </field>
+      </datum>
+      <datum name="Alchemy">
+        <field name="Name" title="yes">
+          <text>Alchemy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Herbalist, magician, shaman</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of<lsquo/>primitive<rdquo/> chemistry and related techniques. A person with this skill will know how to prepare simple chemicals (including such things as simple medicines, poisons, black powder, etc) from natural sources. This skill can also be used to prepare alchemical equivalents of magical potions at -2 LVL.</text>
+        </field>
+      </datum>
+      <datum name="Alectromancy">
+        <field name="Name" title="yes">
+          <text>Alectromancy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Voodoun, witch</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The (magical) art of divining answers to questions using a chicken.</text>
+        </field>
+      </datum>
+      <datum name="Ambush">
+        <field name="Name" title="yes">
+          <text>Ambush</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Soldier, assassin, hunter, law enforcement</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how to surprise someone or something<mdash/>often by means of diversion or camouflage.</text>
+        </field>
+      </datum>
+      <datum name="Anatomy">
+        <field name="Name" title="yes">
+          <text>Anatomy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Doctor, assassin, hunter</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic knowledge of the bodies of humans and common animals. The skill holder will know the location and function of various organs, muscles, etc. This skill is helpful for medical purposes, and to identify weaknesses of your foes.</text>
+        </field>
+      </datum>
+      <datum name="Ancient History">
+        <field name="Name" title="yes">
+          <text>Ancient History</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ancient</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Historian, diplomat</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of history starting at 5000 years ago and extending back further. A person with this skill would know major historical events, figures, and common beliefs and myths of the various cultures existing during that time period. Higher levels represent more in-depth knowledge.</text>
+        </field>
+      </datum>
+      <datum name="Animal Handling">
+        <field name="Name" title="yes">
+          <text>Animal Handling</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Steve Irwin</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Dealing with animals. Wild or domestic.</text>
+        </field>
+      </datum>
+      <datum name="Appraisal">
+        <field name="Name" title="yes">
+          <text>Appraisal</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Jeweler, Appraiser, Antiquer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of determining the value of items. Typically, the character should also have knowledge of the area.</text>
+        </field>
+      </datum>
+      <datum name="Archaeology">
+        <field name="Name" title="yes">
+          <text>Archaeology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Archeologist, treasure hunter</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The scientific study of cultural or natural remains, artifacts, and structures. A person with this skill would know how to excavate and preserve delicate artifacts, and how to identify them. He would also have knowledge of various past cultures, etc.</text>
+        </field>
+      </datum>
+      <datum name="Architecture">
+        <field name="Name" title="yes">
+          <text>Architecture</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Architect, interior designer, construction worker</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The artistic creation and basic structural design of buildings and similar structures. A person with this skill will also recognize weak points of structures, and will have a high amount of intuition as to the location of doors, hallways, etc. hidden or otherwise.</text>
+        </field>
+      </datum>
+      <datum name="Arguing">
+        <field name="Name" title="yes">
+          <text>Arguing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Merchant, diplomat, con artist, Lawyer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skill of winning an argument, by presenting a strong case and pointing out the flaws and errors made by the person you are arguing with. A person with this skill will be excellent at convincing others of his ideas, etc. Lawyers, politicians, philosophers, law enforcement, magistrates, etc commonly possess this skill.</text>
+        </field>
+      </datum>
+      <datum name="Armory">
+        <field name="Name" title="yes">
+          <text>Armory</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Blacksmith, military officer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of the suitability of armor, armor theory, and how to make armor. In archaic settings, this would include the skills to directly make simple armor (or complex armor in conjunction with blacksmithing). In modern settings, this includes the ability to design armor or repair it, but not the skills to make it (that would require materials science, mechanical engineering, machining, etc.) A player with this skill would know the strengths and weaknesses of the armor of his enemies.</text>
+        </field>
+      </datum>
+      <datum name="Art">
+        <field name="Name" title="yes">
+          <text>Art</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Artist, architect, entertainer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Artistic skills are the production of a particular type of art. You may choose the type of art, such as painting, drawing, sculpture, calligraphy, etc.</text>
+        </field>
+      </datum>
+      <datum name="Astrology">
+        <field name="Name" title="yes">
+          <text>Astrology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Palmist, court prescivener</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>How to read the future in the stars; determine the course of events; auspicous days etc.</text>
+        </field>
+      </datum>
+      <datum name="Athletics">
+        <field name="Name" title="yes">
+          <text>Athletics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Strength</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of a particular type of sport. Examples are football, tae-kwon do, soccer, and jai alai.</text>
+        </field>
+      </datum>
+      <datum name="Audio/Video">
+        <field name="Name" title="yes">
+          <text>Audio/Video</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>intelligence, thief, cameraman, security guard, musician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of various Audio/Video systems and their components, and how to assemble and operate such systems. In a modern campaign setting, this would include knowledge of such things as video sources (VCRs, DVD, etc.), displays (projectors, TVs), audio formats (CD, Record, tape), and their associated hardware, like amplifiers, speakers, etc. Professional musicians, producers for music or film, home theater enthusiasts, etc, would commonly possess this skill.</text>
+        </field>
+      </datum>
+      <datum name="Bargaining/Haggling">
+        <field name="Name" title="yes">
+          <text>Bargaining/Haggling</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Merchant, trader, diplomat, travelling salesman</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This imparts the ability to haggle over the price of goods or services, and the trading of goods and services for one another. People with this skill (salesmen, store clerks, antique dealers) will know how to get the maximum money for a product when selling it, and how to get the lowest possible price when purchasing goods.</text>
+        </field>
+      </datum>
+      <datum name="Beauty">
+        <field name="Name" title="yes">
+          <text>Beauty</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Entertainer, model, anyone else</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The physical beauty of a person, and how to accentuate it with actions, poises, as well as selection of clothing, makeup, etc.</text>
+        </field>
+      </datum>
+      <datum name="Biology">
+        <field name="Name" title="yes">
+          <text>Biology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Biologist, weapon designer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The scientific study of life. This academic skill includes the description, classification, and knowledge of function of all different life forms, including people, animals, single-cell organisms, etc.</text>
+        </field>
+      </datum>
+      <datum name="Botany">
+        <field name="Name" title="yes">
+          <text>Botany</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Botanist, gardener</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how plants grow, and their biological processes, etc. Persons with this skill can identify plants<mdash/>including those that are medicinal, poisonous, or edible.</text>
+        </field>
+      </datum>
+      <datum name="Bureaucracy">
+        <field name="Name" title="yes">
+          <text>Bureaucracy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>diplomat, law enforcement, organized crime, politician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Experience with dealing with the political, legal, and related processes of the time. People with this skill will know ways around<lsquo/>red tape<rdquo/> and how to favorably deal with public services and government agencies.</text>
+        </field>
+      </datum>
+      <datum name="Business Sense">
+        <field name="Name" title="yes">
+          <text>Business Sense</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Merchant, trader, businessman</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to determine 'good deals' and make quick business deals in order to profit from them. Persons with this skill will be good at recognizing good and bad business propositions, as well as bargains or rip-offs in the common marketplace. This skill gives the holder <dollar/>50 per level per week, if he/she is in an area with people and business dealings.</text>
+        </field>
+      </datum>
+      <datum name="Carpentry">
+        <field name="Name" title="yes">
+          <text>Carpentry</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Carpenter, architect, blacksmith, contractor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of woodworking. A person with this skill will know how to use woodworking tools, and can produce and repair things such as tools, furniture, and buildings (and building subcomponents) from wood.</text>
+        </field>
+      </datum>
+      <datum name="Cash">
+        <field name="Name" title="yes">
+          <text>Cash</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Implementation</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Unique skill. This provides the character money. Character gets<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>LVL</mi><mn>2</mn></msup><mo><times/></mo><mn>1000</mn></mrow></math>dollars in cash, equipment, or goods. This can be bought many times.</text>
+        </field>
+        <field name="Implementation">
+          <text>Money += Level*Level*500</text>
+        </field>
+      </datum>
+      <datum name="Chemistry">
+        <field name="Name" title="yes">
+          <text>Chemistry</text>
+        </field>
+        <field name="MetaTag">
+          <text>Renaissance</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Chemist, weapons designer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The scientific study of chemicals and chemical processes. A person with this skill will be able to identify chemicals and substances and make various chemical compounds (given the needed supplies, of course).</text>
+        </field>
+      </datum>
+      <datum name="Civil Engineering">
+        <field name="Name" title="yes">
+          <text>Civil Engineering</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer, Architect, Builder</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The design of public works projects such as buildings, bridges, roadways, railroads, sewers, gas and electric services, etc.</text>
+        </field>
+      </datum>
+      <datum name="Climbing">
+        <field name="Name" title="yes">
+          <text>Climbing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Strength</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Thief, soldier, athlete, hunter</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to climb things such as trees, buildings, walls, rock formations, ice, etc. This includes free climbing, and climbing with equipment.</text>
+        </field>
+      </datum>
+      <datum name="Communications">
+        <field name="Name" title="yes">
+          <text>Communications</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Reporter, teacher, secretary</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of basic communication such as hand signals and gesturing, as well as modern communications methods like telephone, radio, and computerized communication<mdash/>and their associated equipment.</text>
+        </field>
+      </datum>
+      <datum name="Computer Programming">
+        <field name="Name" title="yes">
+          <text>Computer Programming</text>
+        </field>
+        <field name="MetaTag">
+          <text>Steam</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Programmer, hacker</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how to write code for computers. This includes knowledge of programming languages, basic operation of the computer, and how to construct algorithms to solve problems. Computer programming implies the computer use skill. (you get computer use free with programming)</text>
+        </field>
+      </datum>
+      <datum name="Computer Use">
+        <field name="Name" title="yes">
+          <text>Computer Use</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to use a computer for work and pleasure. This includes how to perform simple computer-related tasks, such as setting up a computer, basic repairs, and how to use common software<mdash/>like word processing, spreadsheets, image viewing, E-mail, and Internet browsing.</text>
+        </field>
+      </datum>
+      <datum name="Construction">
+        <field name="Name" title="yes">
+          <text>Construction</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Strength</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Construction worker, architect, contractor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of working on a construction site. This includes preparing a site for building, reading plans<mdash/>blueprints, surveying and laying a foundation, framing, and finishing a building or other structure. This also includes the use of common construction tools and heavy equipment including power tools, dump trucks, cement mixers, backhoes, and cranes. A person with this skill will also have experience with mixing concrete, laying bricks, and working with lumber and structural steel<mdash/>as well as SIMPLE plumbing, electrical, and carpentry tasks.</text>
+        </field>
+      </datum>
+      <datum name="Cooking">
+        <field name="Name" title="yes">
+          <text>Cooking</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Professional cook</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skill of preparing various dishes from scratch. A person with this skill will know many recipes, how to select and prepare ingredients, and how to cook and present a finished dish or meal. (Skill level 3 would be a professional Chef)</text>
+        </field>
+      </datum>
+      <datum name="Cryptography">
+        <field name="Name" title="yes">
+          <text>Cryptography</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Military specialist, hacker, programmer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The study of codes, including how to create, identify, and break them.</text>
+        </field>
+      </datum>
+      <datum name="Cyber Medicine">
+        <field name="Name" title="yes">
+          <text>Cyber Medicine</text>
+        </field>
+        <field name="MetaTag">
+          <text>NearFuture</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Doctor, cybernetics dealer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The study of cybernetics as they relate to the human body. People with this skill are knowledgeable about cybernetics, how they function, and how to design and modify or repair them. A person with this skill and the appropriate supplies can work on cyborgs.</text>
+        </field>
+      </datum>
+      <datum name="Dancing">
+        <field name="Name" title="yes">
+          <text>Dancing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Entertainer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to dance. Choose a particular type, such as Ballroom, Country and Western, Swing, etc.</text>
+        </field>
+      </datum>
+      <datum name="Deception">
+        <field name="Name" title="yes">
+          <text>Deception</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Con artist, thief, crooked businessman, stage magician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to hide the truth about something, or make things appear different than they really are, by talking about them. This is NOT lying outright, etc, but cleverly presenting the evidence to further your goal. This is usually achieved by downplaying or carefully ignoring some information while strategically emphasizing other points. Bending the truth, rationalizing things, etc, falls under this skill.</text>
+        </field>
+      </datum>
+      <datum name="Decorating">
+        <field name="Name" title="yes">
+          <text>Decorating</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Interior Designer, Artist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>How to decorate that is pleasing to the eye.</text>
+        </field>
+      </datum>
+      <datum name="Diplomacy">
+        <field name="Name" title="yes">
+          <text>Diplomacy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Implementation</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Diplomat, politician, merchant</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to negotiate and broker deals for business, political, and legal purposes. A person with this skill will know how to make compromises that best suit his goals, and will be able to deal with people in tense situations without angering them.</text>
+        </field>
+      </datum>
+      <datum name="Disguise">
+        <field name="Name" title="yes">
+          <text>Disguise</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Undercover officer, spy</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Characters with Disguise know how to make themselves look like someone else. Either to copy the looks of another person or to just change the appearance of the character. This also includes the ability to detect if someone else is in disguise.</text>
+        </field>
+      </datum>
+      <datum name="Drink Mixing">
+        <field name="Name" title="yes">
+          <text>Drink Mixing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Bartender, Spy</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of drinks, how to make them, etc.</text>
+        </field>
+      </datum>
+      <datum name="Electrical Engineering">
+        <field name="Name" title="yes">
+          <text>Electrical Engineering</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic skill of the design and function of electronics and electrical systems. A person with this skill would know how to design and analyze electronic devices.</text>
+        </field>
+      </datum>
+      <datum name="Electrician">
+        <field name="Name" title="yes">
+          <text>Electrician</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer, architect</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The practical knowledge of the electrical wiring of homes and buildings. A person with this skill will know about the electrical wiring in buildings, and how to repair and modify such things. This includes the use of related tools, and how to identify problems and parts.</text>
+        </field>
+      </datum>
+      <datum name="Electronic Warfare">
+        <field name="Name" title="yes">
+          <text>Electronic Warfare</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Military specialist, modern pilot</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of electronic technology such as communications jamming, stealth technology, ECM, ECCM, and related topics as applied to electronics in war or combat situations.</text>
+        </field>
+      </datum>
+      <datum name="Electronics">
+        <field name="Name" title="yes">
+          <text>Electronics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer, tinker</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The practical skill of building, troubleshooting, and repairing electronic devices. A person with this skill would have only basic knowledge of designing electronic devices, but they are skilled in repairing, modifying, and working on electronic items. This includes use of electronic tools such as test equipment, soldering gear, etc.</text>
+        </field>
+      </datum>
+      <datum name="Entertaining">
+        <field name="Name" title="yes">
+          <text>Entertaining</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Entertainer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skill of entertaining people by telling jokes, simple performances, and improvising. Being comfortable and at ease around people.</text>
+        </field>
+      </datum>
+      <datum name="Escape">
+        <field name="Name" title="yes">
+          <text>Escape</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Thief, spy, stage magician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>People with this skill have the ability to escape from bonds. This includes ropes, handcuffs, straight jackets, and similar restrictive bonds.</text>
+        </field>
+      </datum>
+      <datum name="Espionage/surveillance">
+        <field name="Name" title="yes">
+          <text>Espionage/surveillance</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Military specialist, thief, detective, private investigator</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skills required to find out information by observing others and their actions. Includes techniques for watching people and listening in on their conversations, etc, from a distance. Also, how to set up stakeouts and use technology (cameras, bugs, etc) to perform these tasks falls under the scope of this skill.</text>
+        </field>
+      </datum>
+      <datum name="Faith">
+        <field name="Name" title="yes">
+          <text>Faith</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Willpower</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Priest, monk, shaman</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The belief in a particular religion, God(s), or a spiritual philosophy. Note that this skill is true belief in that religion, not simply knowledge about it. This skill is use for Faith-type magic. See magic section for more details</text>
+        </field>
+        <field name="Implementation">
+          <text>ManaPoints += Level*Level*Willpower*1.5;</text>
+        </field>
+      </datum>
+      <datum name="Falling">
+        <field name="Name" title="yes">
+          <text>Falling</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Implementation</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>stuntman, thief</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The character knows how to fall from a fall distance. When falling, the character can roll his skill. He can fall 10 feet per success without taking damage. Beyond that, he takes the normal <roll><num>1</num><face>6</face><bns/></roll> per 10 feet.</text>
+        </field>
+      </datum>
+      <datum name="Farming">
+        <field name="Name" title="yes">
+          <text>Farming</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Farmer, peasant</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge growing crops, harvesting, etc. Includes knowledge of raising common farm animals and working with farm equipment.</text>
+        </field>
+      </datum>
+      <datum name="Fashion">
+        <field name="Name" title="yes">
+          <text>Fashion</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Entertainer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge and selection of clothing and related items to maximize beauty, or to convey a particular image.</text>
+        </field>
+      </datum>
+      <datum name="Filmography">
+        <field name="Name" title="yes">
+          <text>Filmography</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Movie director</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how to make movies, commercials, and other video productions. Includes knowledge of directing, sets, working with actors, simple effects, and film editing.</text>
+        </field>
+      </datum>
+      <datum name="First Aid/Paramedicine">
+        <field name="Name" title="yes">
+          <text>First Aid/Paramedicine</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Doctor, soldier, outdoorsman</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Basic first aid treatment for various common injuries. Includes knowledge of basic medication, bandaging, treatment of wounds, stabilizing victims, and performing very simple medical procedures in the field. A successful use of this skill will stop a person below 0 hit points from losing any more, this takes a turn to attempt.</text>
+        </field>
+      </datum>
+      <datum name="Forensics">
+        <field name="Name" title="yes">
+          <text>Forensics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Law enforcement</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Deducing the nature of a crime or other event based on evidence, especially minimal evidence. Taking and matching fingerprints, analyzing handwriting, notes, threats, study of weapons or other objects used in crimes, etc.</text>
+        </field>
+      </datum>
+      <datum name="Forgery">
+        <field name="Name" title="yes">
+          <text>Forgery</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Smuggler, law enforcement (for detection)</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how to forge signatures, documents, insignia, etc. and how to detect forged work.</text>
+        </field>
+      </datum>
+      <datum name="Gambling">
+        <field name="Name" title="yes">
+          <text>Gambling</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Gambler, gangster, playboy</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of card and casino games, such as poker, blackjack, craps, baccarat, roulette, etc. This includes how to play the games, rules, the odds of winning, etc.</text>
+        </field>
+      </datum>
+      <datum name="Geology">
+        <field name="Name" title="yes">
+          <text>Geology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Geologist, oil driller, professional climber</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic study of the earth and its geological formations<mdash/>including rocks, minerals, and related scientific elements. A person with this skill would know how to identify various geological features, including gems, etc.</text>
+        </field>
+      </datum>
+      <datum name="Glassblowing">
+        <field name="Name" title="yes">
+          <text>Glassblowing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Glass blower, Artist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The art of glass-blowing. How to make, shape, and judge glass. How to make objects, and sculptures; things like idols, plateware, jugs, abstract art, etc. The ability to be artistic is governed by this skill. If the character also has blacksmithing, carpentry, etc. they can make their own tools, and forge. The ability to design new types of glass requires alchemy or chemistry.</text>
+        </field>
+      </datum>
+      <datum name="Graphic Arts">
+        <field name="Name" title="yes">
+          <text>Graphic Arts</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Newspaper<ndash/>book editor, artist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The design and layout of printed matter, such as books, magazines, newspapers, and posters and advertising materials. Includes designing such works for maximum readability and visual impact, as well as the production of printed materials. This involves typesetting, production of master copies, operating a printing press, and desktop publishing on a computer.</text>
+        </field>
+      </datum>
+      <datum name="Gunsmithing">
+        <field name="Name" title="yes">
+          <text>Gunsmithing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Medieval</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Gunsmith, soldier</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to design, repair, modify, and build handguns, shotguns, and rifles. A person with this skill cannot build a gun from scratch, but can build guns from raw parts, and is skilled in the modification and tuning of firearms.</text>
+        </field>
+      </datum>
+      <datum name="Hacking/Cracking">
+        <field name="Name" title="yes">
+          <text>Hacking/Cracking</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Hacker, IT specialist, secret agent</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The art of gaining access to computer systems and software by indirect means. This often includes breaking into secured systems or networks. Password cracking, enabling protected software, etc. falls under this skill.</text>
+        </field>
+      </datum>
+      <datum name="History">
+        <field name="Name" title="yes">
+          <text>History</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Diplomat, politician, teacher</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Historical knowledge extending from the present until 5000 years in the past. Persons with this skill will know about major political figures (and other famous people), wars, famines, natural disasters, and major cultural<mdash/>scientific<mdash/>religious events and discoveries made during that time.</text>
+        </field>
+      </datum>
+      <datum name="Hit Points">
+        <field name="Name" title="yes">
+          <text>Hit Points</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Attribute"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>Adds HitPoints to your character. You get two per CP spent.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Holistic Medicine">
+        <field name="Name" title="yes">
+          <text>Holistic Medicine</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Herbalist, shaman, doctor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Non-traditional medicine, such as acupuncture, massage therapy, use of herbal drugs, etc. Choose a branch when selecting this skill (example</text>
+        </field>
+      </datum>
+      <datum name="Hunting">
+        <field name="Name" title="yes">
+          <text>Hunting</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Hunter</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to locate, stalk, and kill game. This includes looking for game animals and signs of their presence, tracking, and techniques for stalking them. Also, using weapons (such as bows, firearms, spears, etc.) and traps to kill game, and how to butcher game in the field for meat and skins.</text>
+        </field>
+      </datum>
+      <datum name="Impersonation/Acting">
+        <field name="Name" title="yes">
+          <text>Impersonation/Acting</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Actor, thief, assassin</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skills of portraying a character or person other than oneself. Includes how to alter voice, habits and mannerisms<mdash/>as well as basic costuming, etc. in order to play the part. This skill is used for professional actors, and for espionage purposes.</text>
+        </field>
+      </datum>
+      <datum name="Inspire Emotion">
+        <field name="Name" title="yes">
+          <text>Inspire Emotion</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Politician, actor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to manipulate the emotions of others by interacting with them. Through verbal communication and body language, a person with this skill can cause others to become happy, sad, etc.</text>
+        </field>
+      </datum>
+      <datum name="Interrogation">
+        <field name="Name" title="yes">
+          <text>Interrogation</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Military specialist, law enforcement, Mafia</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Extracting information or answers to specific questions from someone through various means. This might include deceiving the target, befriending them, convincing them, intimidation/blackmail, or even torture.</text>
+        </field>
+      </datum>
+      <datum name="Intuition">
+        <field name="Name" title="yes">
+          <text>Intuition</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Law enforcement, soldier, almost any other occupation</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to guess well in situations where a person is unsure about two or more options. A person with this skill tends to guess correctly between options more than statistics would predict. This skill can only be used if the character had some knowledge in the general area of the guess to be made.</text>
+        </field>
+      </datum>
+      <datum name="Investigation">
+        <field name="Name" title="yes">
+          <text>Investigation</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Law enforcement, journalist, private investigator</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gathering information about something or someone using the media, interviewing people, looking at firsthand accounts and other evidence, etc.</text>
+        </field>
+      </datum>
+      <datum name="Journalism">
+        <field name="Name" title="yes">
+          <text>Journalism</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Reporter, writer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Researching recent events and reporting on them concisely. This skill is common for newspapers and TV news station crews.</text>
+        </field>
+      </datum>
+      <datum name="Language">
+        <field name="Name" title="yes">
+          <text>Language</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Diplomat, politician, military specialist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of a language. Possessing this skill implies proficiency of one language. Purchase this skill separately for each language a person knows. Higher levels imply greater proficiency, eloquence, and superior vocabulary. Note that if you purchase Literacy and Language together (the same language) you may purchase Language as a LVL 1 skill.</text>
+        </field>
+      </datum>
+      <datum name="Leadership">
+        <field name="Name" title="yes">
+          <text>Leadership</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Military officer, politician, business manager</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to observe situations, prioritize activities related to them, and guide people through them. All characters under the leadership of someone with this skill may add X to each of their initiative numbers. (The person with the leadership skill may do this as well) X is the number of successes on the leadership roll.</text>
+        </field>
+        <field name="Implementation">
+          <text>Initiative += Level</text>
+        </field>
+      </datum>
+      <datum name="Leatherwork">
+        <field name="Name" title="yes">
+          <text>Leatherwork</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Blacksmith, leatherworker, hunter</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Working with leather and leather goods. This includes the tanning of leather, forming it into shapes (such as bags, pouches, saddles, clothing items, weapon sheaths, etc.), and sewing it into useable goods.</text>
+        </field>
+      </datum>
+      <datum name="Legal">
+        <field name="Name" title="yes">
+          <text>Legal</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Lawyer, Judge</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of legal systems and how to use them.</text>
+        </field>
+      </datum>
+      <datum name="Literacy">
+        <field name="Name" title="yes">
+          <text>Literacy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ancient</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>anyone</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to write and read a written language. Note that if you purchase Literacy and Language together (the same language) you may purchase Language as a LVL 1 skill.</text>
+        </field>
+      </datum>
+      <datum name="Literature">
+        <field name="Name" title="yes">
+          <text>Literature</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ancient</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Teacher, writer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of well-known literature (famous works and authors), as well as general rhetoric and literary expression. Note that this is not the same thing as language, literacy, or writing.</text>
+        </field>
+      </datum>
+      <datum name="Lockpicking">
+        <field name="Name" title="yes">
+          <text>Lockpicking</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Thief, locksmith</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of locks, how to open them without a key, and how locks (both simple and complex) operate. This includes the use of lock-opening tools such as picks, etc.</text>
+        </field>
+      </datum>
+      <datum name="Luck">
+        <field name="Name" title="yes">
+          <text>Luck</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute"  table="yes"><text>No value</text></field>
+        <field name="Occupation" table="yes">
+          <text>Any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The maximum value of the character<rsquo/>s Luck subattribute is increased by one.</text>
+        </field>
+      </datum>
+      <datum name="Lying">
+        <field name="Name" title="yes">
+          <text>Lying</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Criminal, politician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowing how to tell a lie is a fine art, and this character knows it. The character can tell a convincing lie and to develop plausible alibis. This also allows the character to detect that someone else is lying.</text>
+        </field>
+      </datum>
+      <datum name="Machining">
+        <field name="Name" title="yes">
+          <text>Machining</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Machinist, engineer, mechanic</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skills of metalworking. This includes how to operate common tools in a metalworking shop, as well as processes such as welding, flame cutting, etc. A person with this skill can read blueprints, and can produce parts and devices from metal given the proper equipment. This skill is also useful for repairing mechanical devices, such as vehicles, robots, and mecha.</text>
+        </field>
+      </datum>
+      <datum name="Magical Control">
+        <field name="Name" title="yes">
+          <text>Magical Control</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Willpower</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Magician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This skill represents a magic user's ability to accurately control magic energy and make it do what she wants it to. See magic section for full information.</text>
+        </field>
+        <field name="Implementation">
+          <text>ManaPoints += Level*Level*Willpower*2</text>
+        </field>
+      </datum>
+      <datum name="Magical Studies">
+        <field name="Name" title="yes">
+          <text>Magical Studies</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Wizard, Sorcerer, Scholar</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic study of magic and related processes. A character may also use this skill to identify magical items (requires touching them). It also allows a character to read magical script such as that used in spell books.</text>
+        </field>
+      </datum>
+      <datum name="Mana Points">
+        <field name="Name" title="yes">
+          <text>Mana Points</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Varies</text>
+        </field>
+        <field name="Occupation"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>How to add arbitrary mana points.</text>
+        </field>
+        <field name="Implementation">
+          <text>ManaPoints += Rank;</text>
+        </field>
+      </datum>
+      <datum name="Management">
+        <field name="Name" title="yes">
+          <text>Management</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Manager, military officer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to manage people and resources in order to accomplish a certain task. This is primarily in business personnel, as well as military commanders, etc.</text>
+        </field>
+      </datum>
+      <datum name="Marine Piloting">
+        <field name="Name" title="yes">
+          <text>Marine Piloting</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Boat pilot</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of piloting a ship or boat. The knowledge of maritime laws, practices, and the general maintenance and operation of boats and ships fall under the scope of this skill.</text>
+        </field>
+      </datum>
+      <datum name="Martial Arts">
+        <field name="Name" title="yes">
+          <text>Martial Arts</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Martial artist, military specialist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>(See Martial Arts section) This is the governing skill of the Martial Arts subsystem. It represents the level of skill that a person has in martial arts. No person may posses a martial arts technique of higher rank than his or her level of martial arts.</text>
+        </field>
+      </datum>
+      <datum name="Materials Science">
+        <field name="Name" title="yes">
+          <text>Materials Science</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ancient</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer, chemist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of various natural and processed substances and their uses and applications. This is a supporting skill for many engineering skills, etc.</text>
+        </field>
+      </datum>
+      <datum name="Mathematics">
+        <field name="Name" title="yes">
+          <text>Mathematics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Teacher, engineer, programmer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of mathematical theory and techniques for apply mathematics to real life situations.</text>
+        </field>
+      </datum>
+      <datum name="Mecha Electronics">
+        <field name="Name" title="yes">
+          <text>Mecha Electronics</text>
+        </field>
+        <field name="MetaTag">
+          <text>NearFuture</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Mecha designer, engineer, mechanic</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The electronics skill as applied to Mecha. This includes the design and modification of the electrical systems of mechs, including computers, sensors, and related components.</text>
+        </field>
+      </datum>
+      <datum name="Mecha Piloting">
+        <field name="Name" title="yes">
+          <text>Mecha Piloting</text>
+        </field>
+        <field name="MetaTag">
+          <text>NearFuture</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Mecha pilot</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to operate a Mech. This skill is required in order for a character to operate a Mech. While piloting a mech, any DEX-based skill you want to use cannot have a higher level than this skill. See Mecha rules for more information.</text>
+        </field>
+      </datum>
+      <datum name="Mechanic">
+        <field name="Name" title="yes">
+          <text>Mechanic</text>
+        </field>
+        <field name="MetaTag">
+          <text>Medieval</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Mechanic, engineer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skills for performing maintenance, repair, and related work on cars, trucks, buses, and motorcycles. In short, just about any vehicle except aircraft and mecha.</text>
+        </field>
+      </datum>
+      <datum name="Mechanical Engineering">
+        <field name="Name" title="yes">
+          <text>Mechanical Engineering</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic study of mechanical parts and systems. This includes such things as machinery, controls, structural design, etc. A person with this skill would be adept at designing mechanical things, and analyzing the designs of others. This skill does NOT imply the ability to make a mechanical device.</text>
+        </field>
+      </datum>
+      <datum name="Medical">
+        <field name="Name" title="yes">
+          <text>Medical</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Doctor, paramedic, shaman</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Professional medicine. The study of the human body, its ailments, and how to treat them. Lvl 1 = Pre-Med Student, Lvl 2 = Med School Graduate<ndash/>Resident, Lvl 3 = Inexperienced MD. You may choose the area of expertise</text>
+        </field>
+      </datum>
+      <datum name="Medical Emergency">
+        <field name="Name" title="yes">
+          <text>Medical Emergency</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Field nurse</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to fix wounds 'in the field'. This can be done as a standard action.</text>
+        </field>
+      </datum>
+      <datum name="Military Strategy">
+        <field name="Name" title="yes">
+          <text>Military Strategy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Military officer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The strategic deployment and command of troops, tanks, ships, and other units in war, police, security, and similar situations.</text>
+        </field>
+      </datum>
+      <datum name="Mining">
+        <field name="Name" title="yes">
+          <text>Mining</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Miner, bank robber, fortress sieger</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to correctly assess the ability to mine a large, long, deep tunnel. How to go about digging the tunnel, and all the logistics and equipment needed for the mine.</text>
+        </field>
+      </datum>
+      <datum name="Music">
+        <field name="Name" title="yes">
+          <text>Music</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Entertainer, musician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to play an instrument. Select what instrument when you pick this skill. This implies the ability to read music.</text>
+        </field>
+      </datum>
+      <datum name="Mysticism">
+        <field name="Name" title="yes">
+          <text>Mysticism</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Implementation</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Shaman, wise man, monk</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>See MYSTICISM section.</text>
+        </field>
+        <field name="Implementation">
+          <text>ManaPoints += Level*Level*Level*Wisdom</text>
+        </field>
+      </datum>
+      <datum name="Mythology">
+        <field name="Name" title="yes">
+          <text>Mythology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Historian, teacher</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of the myths, superstitions, and religious beliefs of past civilizations. This can be generic overall knowledge, or specific and in-depth in one particular area.</text>
+        </field>
+      </datum>
+      <datum name="Navigation">
+        <field name="Name" title="yes">
+          <text>Navigation</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>How to plot and plan directions and courses in natural settings.</text>
+        </field>
+      </datum>
+      <datum name="Pharmacology">
+        <field name="Name" title="yes">
+          <text>Pharmacology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Pharmacist, doctor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The dispensing, dosage calculation, and selection of drugs. How to make pills or liquid medicines (from the raw medicine), and the knowledge of what existing drugs work for what ailments; knowledge of combined effects from mixing drugs, etc.</text>
+        </field>
+      </datum>
+      <datum name="Philosophy">
+        <field name="Name" title="yes">
+          <text>Philosophy</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Scholar, monk, philosopher, orator</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Study of any particular type of philosophy or outlook on life (or general knowledge of several). Academic skill.</text>
+        </field>
+      </datum>
+      <datum name="Photography">
+        <field name="Name" title="yes">
+          <text>Photography</text>
+        </field>
+        <field name="MetaTag">
+          <text>Steam</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Artist, cameraman, reporter</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skills associated with taking pictures. The selection and operation of cameras (still and video), use of lenses and filters, taking pictures in various different conditions, working with film, as well as developing and editing prints.</text>
+        </field>
+      </datum>
+      <datum name="Physics">
+        <field name="Name" title="yes">
+          <text>Physics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer, physicist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic study of natural laws, including mechanics, electricity and magnetism, optics, etc. The study of how and why things act the way they do.</text>
+        </field>
+      </datum>
+      <datum name="Plumbing">
+        <field name="Name" title="yes">
+          <text>Plumbing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ancient</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Architect, plumber, contractor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The repair and installation of piping, drains, and fixtures (sinks, bathtubs, water heaters, etc.) in and around buildings. Includes working with piping, fittings, etc. for both water and gas use.</text>
+        </field>
+      </datum>
+      <datum name="Politics">
+        <field name="Name" title="yes">
+          <text>Politics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Politician, diplomat</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Affinity for politics; knowledge of the political process, political groups and their agendas<ndash/>public and private. The knowledge of current political events, deal making, vote gathering, and lobbying fall under this scope of this skill.</text>
+        </field>
+      </datum>
+      <datum name="Psionic Studies">
+        <field name="Name" title="yes">
+          <text>Psionic Studies</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Researcher, teacher</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic study of Pisioncs; including how psionic powers work, what they do, and what their limitations are. This skill is NOT required to use psionic abilities.</text>
+        </field>
+      </datum>
+      <datum name="Riding">
+        <field name="Name" title="yes">
+          <text>Riding</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Riding an animal. Select the type of animal for the skill. Common examples are horses, camels, elephants, etc. This skill can be taken for any riding animal. The skill also includes basic care, grooming and feeding of the animal.</text>
+        </field>
+      </datum>
+      <datum name="Robotics">
+        <field name="Name" title="yes">
+          <text>Robotics</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Engineer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The scientific knowledge and practical engineering experience associated with working on robots. Much like how a mechanic works on cars, a person with robotics is skilled at working on robots. This includes designing robots (greatly aided with mechanical and electrical engineering), and repairing or modifying them.</text>
+        </field>
+      </datum>
+      <datum name="Ropes and Rigging">
+        <field name="Name" title="yes">
+          <text>Ropes and Rigging</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Sailor, dock worker, climber</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Tying knots, working with ropes and cables for purposes of lifting and securing loads, etc. Sailors, dockworkers, crane crews, truckers, climbers, etc commonly possess this skill. Persons with this skill know what knots to use when and how to tie them. Also gives the character the knowledge on the suitability of ropes and cables for different applications.</text>
+        </field>
+      </datum>
+      <datum name="Rune Magic">
+        <field name="Name" title="yes">
+          <text>Rune Magic</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Magician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic study of rune magic. No character may learn a rune spell of higher rank than his level of this skill. (See Rune Magic system...)</text>
+        </field>
+      </datum>
+      <datum name="SCUBA Diving">
+        <field name="Name" title="yes">
+          <text>SCUBA Diving</text>
+        </field>
+        <field name="MetaTag">
+          <text>Steam</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Diver</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how to use assist equipment for underwater diving. This includes SCUBA systems, air tanks, surface compressors, diving suits, and related devices. Persons with this skill will know how to avoid decompression sickness, how to communicate underwater by means of signals, and how to recover small to mid-sized objects underwater.</text>
+        </field>
+      </datum>
+      <datum name="Sailing">
+        <field name="Name" title="yes">
+          <text>Sailing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Sailor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of sailboats and how to sail them. This includes setting up and working with sails and rigging, steering, etc. A person with this skill will have basic navigation knowledge, and knowledge of maritime laws.</text>
+        </field>
+      </datum>
+      <datum name="Sales">
+        <field name="Name" title="yes">
+          <text>Sales</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Merchant, trader</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to sell something. A person with this skill will be adept at marketing and promotion of goods and services, finding buyers, negotiating prices, etc.</text>
+        </field>
+      </datum>
+      <datum name="Scrounging">
+        <field name="Name" title="yes">
+          <text>Scrounging</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Bum, thief</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of how and where to look for items, but not from 'normal' sources. People with this skill are known for their ability to find just about anything<ndash/>even if that means digging around in dumpsters, pawnshops, and similar locations.</text>
+        </field>
+      </datum>
+      <datum name="Security">
+        <field name="Name" title="yes">
+          <text>Security</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Law enforcement, bodyguard, assassin</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how to protect persons, objects, and places. This includes use of security systems, surveillance equipment, and guard personnel. A person with this skill knows how to use these measures to protect things, and also recognizes their weaknesses, as well as common tactics used to breach them.</text>
+        </field>
+      </datum>
+      <datum name="Seduction">
+        <field name="Name" title="yes">
+          <text>Seduction</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Actor</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The use of oneself to make other people to do what they want. This might include faking friendship or romantic interest, deceptive speech, and use of physical attractiveness.</text>
+        </field>
+      </datum>
+      <datum name="Singing">
+        <field name="Name" title="yes">
+          <text>Singing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Charisma</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Entertainer, musician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to sing. This can be any type of music. This skill implies the ability to read music.</text>
+        </field>
+      </datum>
+      <datum name="Sleight of Hand">
+        <field name="Name" title="yes">
+          <text>Sleight of Hand</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Stage magician, assassin, thief</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This skill includes things such as stage magic, palming things, concealment, etc. A person with this skill can perform various card tricks, other magic tricks, and would be skilled at palming objects, or making objects 'appear' from thin air. This could be used for tricks, stealing small objects, or concealing small weapons.</text>
+        </field>
+      </datum>
+      <datum name="Smithing">
+        <field name="Name" title="yes">
+          <text>Smithing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Blacksmith, maintenance worker</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The art of working with metal with primitive techniques. Persons with this skill are experienced at forming metal with a forge, hammer, and anvil. This skill can be used to make simple tools, weapons, and other goods.</text>
+        </field>
+      </datum>
+      <datum name="Spellcasting">
+        <field name="Name" title="yes">
+          <text>Spellcasting</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Wizard, Sorcerer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skill of casting magical spells, invocation style. You cannot purchase a spell whose rank is higher than your level of this skill. It provides additional MP as well. See magic section for full information.</text>
+        </field>
+        <field name="Implementation">
+          <text>ManaPoints += Level*Level*Wisdom</text>
+        </field>
+      </datum>
+      <datum name="Stealth">
+        <field name="Name" title="yes">
+          <text>Stealth</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Thief, stagehand, hunter</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Stealth gives the character the ability to move silently through his or her surroundings.</text>
+        </field>
+      </datum>
+      <datum name="Streetwise">
+        <field name="Name" title="yes">
+          <text>Streetwise</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Vagrant, naif</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of how the streets 'work'; things like cants, where to find contacts, etc.</text>
+        </field>
+      </datum>
+      <datum name="Summoning">
+        <field name="Name" title="yes">
+          <text>Summoning</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Willpower</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Magician</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A variant of magic applied to calling forth animals and various creatures to assist the caster. See the Summoning Magic text for more information.</text>
+        </field>
+      </datum>
+      <datum name="Supernatural Lore">
+        <field name="Name" title="yes">
+          <text>Supernatural Lore</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Magician, historian</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of little known or unusual mythology, especially that involving ghosts, monsters, undead, werewolves or vampires, etc. A person with this skill will have knowledge of various mythical (and real) beasts, monsters, etc. including their appearance, strengths<ndash/>weaknesses, etc.</text>
+        </field>
+      </datum>
+      <datum name="Survival">
+        <field name="Name" title="yes">
+          <text>Survival</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Hunter, military specialist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to find food, water, and shelter in most any situation. Includes making simple shelters (lean-tos, tents, stick houses, etc.), making a fire, collecting food and water, and avoiding harm from the elements (extreme temperatures), dangerous animals, etc.</text>
+        </field>
+      </datum>
+      <datum name="Swimming">
+        <field name="Name" title="yes">
+          <text>Swimming</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Strength</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Similar to Athletics, but specifically swimming and diving skills. Imparts the endurance and techniques to swim long distances, etc.</text>
+        </field>
+      </datum>
+      <datum name="Teaching">
+        <field name="Name" title="yes">
+          <text>Teaching</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Teacher, Didact</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to teach skills you know to others.</text>
+        </field>
+      </datum>
+      <datum name="Theology">
+        <field name="Name" title="yes">
+          <text>Theology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Bullshitters</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of religion and how to argue about religion. Non-historical in nature.</text>
+        </field>
+      </datum>
+      <datum name="Throwing">
+        <field name="Name" title="yes">
+          <text>Throwing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Stage magician, assassin, soldier</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Throwing things with accuracy and power. This could be a rock, baseball, grenade, or whatever. A person with this skill can throw things much more accurately and further than a normal person. (Note, this skill can be used in combat to strike with grenades or similar thrown weapons. However, throwing knives, shuriken, etc. are a different skill)</text>
+        </field>
+      </datum>
+      <datum name="Tracking">
+        <field name="Name" title="yes">
+          <text>Tracking</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Hunter, law enforcement, assassin</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to follow something (animal, person, or vehicle) based on the signs it left behind. This includes such things as identifying and following tracks, finding hidden or covered tracks, and how to disguise tracks.</text>
+        </field>
+      </datum>
+      <datum name="Trivia">
+        <field name="Name" title="yes">
+          <text>Trivia</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The knowledge of unusual or generally useless facts like obscure history, sports stats, info about actors and actresses, etc. This is the kind of knowledge one would need to do well at trivia games, like Trivial Pursuit and Jeopardy.</text>
+        </field>
+      </datum>
+      <datum name="Vehicle Piloting">
+        <field name="Name" title="yes">
+          <text>Vehicle Piloting</text>
+        </field>
+        <field name="MetaTag">
+          <text>Archaic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Truck driver, construction worker, some soldiers</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to drive land-based vehicles other than automobiles or motorcycles. This would apply to things like heavy trucks, buses, tanks, construction equipment, forklifts, and other things.</text>
+        </field>
+      </datum>
+      <datum name="Veterinary Medicine">
+        <field name="Name" title="yes">
+          <text>Veterinary Medicine</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Veterinarian</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The medicine skill applied to animals. See Medicine skill for more detail.</text>
+        </field>
+      </datum>
+      <datum name="Weaponry">
+        <field name="Name" title="yes">
+          <text>Weaponry</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Blacksmith, weapons designer</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knowledge of weapons design, suitability of weapons, and how to make weapons. In an archaic setting, this would include how to make simple weapons. In a modern setting, one could design weapons, but might not be able to build them (that might require such skills as mechanical or electrical engineering, machining, etc.)</text>
+        </field>
+      </datum>
+      <datum name="Whore">
+        <field name="Name" title="yes">
+          <text>Whore</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Prostitute, choir boy, pimp</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This is effectively a specialization of the skill</text>
+        </field>
+      </datum>
+      <datum name="Work">
+        <field name="Name" title="yes">
+          <text>Work</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Varies</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Any</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Special skill. This can be thought of as a resume or work experience. It implies that you have work experience and higher levels mean you are a desirable employee. Talk to your GM about what this skill does for you.</text>
+        </field>
+      </datum>
+      <datum name="Writing">
+        <field name="Name" title="yes">
+          <text>Writing</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ancient</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Intelligence</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Writer, journalist</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to write convincing literary works. This could be poetry or prose, fiction or nonfiction. (This is NOT the skill of being literate. This is the skill of being a good writer).</text>
+        </field>
+      </datum>
+      <datum name="Zero-G">
+        <field name="Name" title="yes">
+          <text>Zero-G</text>
+        </field>
+        <field name="MetaTag">
+          <text>Now</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Astronaut, diver</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Imparts the ability to control one's body movements effectively in low-G or zero-G environments such as in space, freefall, or underwater.</text>
+        </field>
+      </datum>
+      <datum name="Zoology">
+        <field name="Name" title="yes">
+          <text>Zoology</text>
+        </field>
+        <field name="MetaTag">
+          <text>Any</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field name="Occupation" table="yes">
+          <text>Zoologist, teacher</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The academic study of animals; including their biology and their behavior, etc.</text>
+        </field>
+      </datum>
+    </category>
