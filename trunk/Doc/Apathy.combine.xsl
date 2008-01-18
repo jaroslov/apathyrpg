@@ -2,6 +2,8 @@
 <xsl:stylesheet
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  exclude-result-prefixes="xlink"
   xmlns="http://www.w3.org/1999/xhtml">
 
   <xsl:output version="1.0"
@@ -242,58 +244,55 @@
     <xsl:param name="categoryDisplayStyle">Reference</xsl:param>
     <xsl:variable name="Name" select="./@name" />
     <category name='{$Name}'>
+      <figure>
+        <table>
+          <head>
+            <xsl:element name="cell">
+              <text>Title</text>
+            </xsl:element>
+            <xsl:for-each select="default/field">
+              <xsl:variable name="FieldName" select="./@name" />
+              <xsl:variable name="TableName" select="./@table" />
+              <xsl:choose>
+                <xsl:when test="$TableName = 'yes'">
+                  <cell>
+                    <text>
+                      <xsl:copy-of select="$FieldName" />
+                    </text>
+                  </cell>
+                </xsl:when>
+                <xsl:otherwise />
+              </xsl:choose>
+            </xsl:for-each>
+          </head>
+          <xsl:for-each select="datum">
+            <row>
+              <cell>
+                <text>
+                  <xsl:value-of select="./field[@title='yes']"/>
+                </text>
+              </cell>
+              <xsl:for-each select="field">
+                <xsl:variable name="FieldName" select="./@name" />
+                <xsl:variable name="TableName" select="./@table" />
+                <xsl:choose>
+                  <xsl:when test="$TableName = 'yes'">
+                    <cell>
+                      <xsl:copy-of select="./text" />
+                    </cell>
+                  </xsl:when>
+                  <xsl:otherwise />
+                </xsl:choose>
+              </xsl:for-each>
+            </row>
+          </xsl:for-each>
+        </table>
+      </figure>
       <xsl:choose>
         <xsl:when test="$categoryDisplayStyle = 'Reference'">
           <xsl:apply-templates select="default|datum" />
         </xsl:when>
-        <xsl:otherwise>
-          <figure>
-            <table>
-              <head>
-                <xsl:element name="cell">
-                  <text>Title</text>
-                </xsl:element>
-                <xsl:for-each select="default/field">
-                  <xsl:variable name="FieldName" select="./@name" />
-                  <xsl:variable name="TableName" select="./@table" />
-                  <xsl:choose>
-                    <xsl:when test="$TableName = 'yes'">
-                      <cell>
-                        <text>
-                          <xsl:value-of select="$FieldName" />
-                        </text>
-                      </cell>
-                    </xsl:when>
-                    <xsl:otherwise />
-                  </xsl:choose>
-                </xsl:for-each>
-              </head>
-              <xsl:for-each select="datum">
-                <row>
-                  <cell>
-                    <text>
-                      <xsl:value-of select="./field[@title='yes']"/>
-                    </text>
-                  </cell>
-                  <xsl:for-each select="field">
-                    <xsl:variable name="FieldName" select="./@name" />
-                    <xsl:variable name="TableName" select="./@table" />
-                    <xsl:choose>
-                      <xsl:when test="$TableName = 'yes'">
-                        <cell>
-                          <text>
-                            <xsl:value-of select="." />
-                          </text>
-                        </cell>
-                      </xsl:when>
-                      <xsl:otherwise />
-                    </xsl:choose>
-                  </xsl:for-each>
-                </row>
-              </xsl:for-each>
-            </table>
-          </figure>
-        </xsl:otherwise>
+        <xsl:otherwise />
       </xsl:choose>
     </category>
   </xsl:template>
