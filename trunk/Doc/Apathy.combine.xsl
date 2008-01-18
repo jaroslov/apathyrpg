@@ -27,8 +27,8 @@
   </xsl:template>
 
   <xsl:template match="apathy-game">
-    <html:img xmlns:html="http://www.w3.org/TR/REC-html40"
-          src="Resources/Apathy.png" width="100" height="100"/>
+    <html:img xmlns:html="http://www.w3.org/1999/xhtml"
+          src="Resources/Apathy.svg"/>
     <xsl:element name="book">
       <xsl:variable name="name" select="./@name" />
       <xsl:attribute name="name"><xsl:value-of select="$name" /></xsl:attribute>
