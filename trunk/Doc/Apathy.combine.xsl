@@ -37,6 +37,14 @@
   <!-- STRUCTURAL -->
   <xsl:template match="book">
     <xsl:copy-of select="header" />
+    <toc-list>
+      <xsl:for-each select="section">
+        <xsl:variable name="subSecId" select="generate-id(.)" />
+        <item>
+          <link href="#{$subSecId}"><xsl:value-of select="title" /></link>
+        </item>
+      </xsl:for-each>
+    </toc-list>
     <xsl:apply-templates select="section" />
   </xsl:template>
   <xsl:template match="section">
@@ -46,14 +54,14 @@
       <xsl:attribute name="id"><xsl:value-of select="$secId" /></xsl:attribute>
       <xsl:attribute name="kind"><xsl:value-of select="$kind" /></xsl:attribute>
       <xsl:apply-templates select="title" />
-      <numbered-list>
+      <toc-list>
         <xsl:for-each select="section">
           <xsl:variable name="subSecId" select="generate-id(.)" />
           <item>
             <link href="#{$subSecId}"><xsl:value-of select="title" /></link>
           </item>
         </xsl:for-each>
-      </numbered-list>
+      </toc-list>
       <xsl:apply-templates select="section|reference|summarize|text|example|description-list|itemized-list|numbered-list|figure|footnote|equation|note|table"/>
     </xsl:element>
   </xsl:template>
