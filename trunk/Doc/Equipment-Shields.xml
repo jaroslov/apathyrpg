@@ -1,0 +1,473 @@
+
+    <category name="Content/Equipment/Shields">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Note" table="yes"><text/></field>
+        <field colfmt="p{3em}" name="Piercing" table="yes"/>
+        <field colfmt="p{3em}" name="Slashing" table="yes"/>
+        <field colfmt="p{3em}" name="Crushing" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="ALC Plate">
+        <field name="Name" title="yes">
+          <text>ALC Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>9000</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Boron-Ceramic Plate">
+        <field name="Name" title="yes">
+          <text>Boron-Ceramic Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>14200</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>26</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>26</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>26</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>14</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Bound and Studded Wooden">
+        <field name="Name" title="yes">
+          <text>Bound and Studded Wooden</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1400</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Carbon Fiber Plate">
+        <field name="Name" title="yes">
+          <text>Carbon Fiber Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>6900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ceramic Plate">
+        <field name="Name" title="yes">
+          <text>Ceramic Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>14200</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>26</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>26</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>26</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>14</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Densematter Plate">
+        <field name="Name" title="yes">
+          <text>Densematter Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>18700</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>16</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fiberglass Plate">
+        <field name="Name" title="yes">
+          <text>Fiberglass Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="G-Alloy">
+        <field name="Name" title="yes">
+          <text>G-Alloy</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>33900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>34</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>34</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>34</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hard Cast Aramid">
+        <field name="Name" title="yes">
+          <text>Hard Cast Aramid</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>17000</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>28</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>28</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>28</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>14</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Heavy Wooden">
+        <field name="Name" title="yes">
+          <text>Heavy Wooden</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>600</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ironbound">
+        <field name="Name" title="yes">
+          <text>Ironbound</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>3900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Light Wooden">
+        <field name="Name" title="yes">
+          <text>Light Wooden</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>300</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Minkovsky Sheild">
+        <field name="Name" title="yes">
+          <text>Minkovsky Sheild</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>65000</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>35</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>35</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>35</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>has 100 HP regen 20 HP<ndash/>turn</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Plate">
+        <field name="Name" title="yes">
+          <text>Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>7300</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>14</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="R-Polymer Plate">
+        <field name="Name" title="yes">
+          <text>R-Polymer Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>12700</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Riot (transparent)">
+        <field name="Name" title="yes">
+          <text>Riot (transparent)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1600</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="SEB Hard">
+        <field name="Name" title="yes">
+          <text>SEB Hard</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10200</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>22</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>22</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>22</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Scale">
+        <field name="Name" title="yes">
+          <text>Scale</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2500</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Steel Plate*">
+        <field name="Name" title="yes">
+          <text>Steel Plate*</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>6200</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Piercing" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

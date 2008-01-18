@@ -1,0 +1,421 @@
+
+    <category name="Content/Augmentations/Torso">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="p{2em}" name="Character Points" table="yes"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Advanced Digestive Sys">
+        <field name="Name" title="yes">
+          <text>Advanced Digestive Sys</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>An improved digestive system. It allows you to eat and digest things that would normally have little nutriutional value. This includes stringy vegitation, wood, paper, hard meat, leather, etc. Also extracts more nutrition out of normal foods.</text>
+        </field>
+      </datum>
+      <datum name="Armored Crotch">
+        <field name="Name" title="yes">
+          <text>Armored Crotch</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Protective armor applied to the crotch area. It elimiates the groin as an effective target in combat. Armor is 5/5/5</text>
+        </field>
+      </datum>
+      <datum name="Breathing Filter">
+        <field name="Name" title="yes">
+          <text>Breathing Filter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows you to breathe effectivley in <ldquo/>bad<rdquo/> enviornments, such as smoke, steam, or chemical vapors. It won<rsquo/>t create oxygen out of nowhere, but it will filter out mild and some moderate irritants and hazardous substances.</text>
+        </field>
+      </datum>
+      <datum name="Crotch Gun">
+        <field name="Name" title="yes">
+          <text>Crotch Gun</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any pistol-caliber can be used. The gun is semiautomatic and is hidden in the groin area. Cost adds to the cost of the gun you pick. STR requirement is normal.</text>
+        </field>
+      </datum>
+      <datum name="Dilating Throat">
+        <field name="Name" title="yes">
+          <text>Dilating Throat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The throat can expand to much larger than it's normal size. This allows one to swallow large objects without a problem.</text>
+        </field>
+      </datum>
+      <datum name="Durable Genitalia">
+        <field name="Name" title="yes">
+          <text>Durable Genitalia</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes the genitals less sensitive to pain, damage, and disease. Improves sexual stamina, and elimiates chafing!</text>
+        </field>
+      </datum>
+      <datum name="Hyper Kidneys">
+        <field name="Name" title="yes">
+          <text>Hyper Kidneys</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Improved kidneys allow you to eat spolied or rotten food that would otherwise make you ill. They remove toxins from the blood very effectivley.</text>
+        </field>
+      </datum>
+      <datum name="Improved Breathing">
+        <field name="Name" title="yes">
+          <text>Improved Breathing</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Improves your ability to breathe under duress. You don't have to gasp or breathe hard when doing strenuous activity. Gives a +3 to BLD checks for strenuous activity.</text>
+        </field>
+      </datum>
+      <datum name="Internal Cavity Trans Sys">
+        <field name="Name" title="yes">
+          <text>Internal Cavity Trans Sys</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A complex modification that enables things to be moved throughout the body. It can be used to remove embedded objects (splinters, bullets, etc.) this can be used with an internal storage compartment. Example: swallow a key and have it appear in the compartment.</text>
+        </field>
+      </datum>
+      <datum name="Metabolic Controller">
+        <field name="Name" title="yes">
+          <text>Metabolic Controller</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Nervous System Replacement</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows one to control one's metabolism. This can be used to maintain a certain weight and to govern sleep cycles, etc.</text>
+        </field>
+      </datum>
+      <datum name="Nutrient Storage">
+        <field name="Name" title="yes">
+          <text>Nutrient Storage</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small implant stores hyper-concentrated vitamins an minerals from when your body has a surplus and saves them for later, when needed. This allows the body to be healthy when eating poor food for extended periods of time.</text>
+        </field>
+      </datum>
+      <datum name="Odor Masking">
+        <field name="Name" title="yes">
+          <text>Odor Masking</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables the user to elimiate his or her natural scent. It also effects burps and flatulence, etc.</text>
+        </field>
+      </datum>
+      <datum name="Oxygen Storage">
+        <field name="Name" title="yes">
+          <text>Oxygen Storage</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small tank implanted in the body is used to store compressed 3 hours worth of oxygen. It can be used to breathe anywhere. If the tank is destroyed, when full, it explodes and deals <roll><num>6</num><face>6</face><bOff>+</bOff><bns>3</bns></roll> damage to the host.</text>
+        </field>
+      </datum>
+      <datum name="Prehensile Genitalia">
+        <field name="Name" title="yes">
+          <text>Prehensile Genitalia</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Adds significant dexterity to the genitals. This is used to enhance sexual pleasure.</text>
+        </field>
+      </datum>
+      <datum name="Reduced Cardiovascular Sys">
+        <field name="Name" title="yes">
+          <text>Reduced Cardiovascular Sys</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 slot in torso</text>
+        </field>
+      </datum>
+      <datum name="Reduced Digestive Sys">
+        <field name="Name" title="yes">
+          <text>Reduced Digestive Sys</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+2 slot in torso</text>
+        </field>
+      </datum>
+      <datum name="Reduced Respitory Sys">
+        <field name="Name" title="yes">
+          <text>Reduced Respitory Sys</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 slot in torso</text>
+        </field>
+      </datum>
+      <datum name="Redundant Vital System">
+        <field name="Name" title="yes">
+          <text>Redundant Vital System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Duplciates the effect of a vital organ (pick one). If the original is damaged, this takes over, saving your life.</text>
+        </field>
+      </datum>
+      <datum name="Retractible Genitals">
+        <field name="Name" title="yes">
+          <text>Retractible Genitals</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Normally used for males only. The genitals can be <ldquo/>pulled up<rdquo/> into the body to protect them from harm. Can also be used for disguise purposes.</text>
+        </field>
+      </datum>
+      <datum name="Sealing Lungs">
+        <field name="Name" title="yes">
+          <text>Sealing Lungs</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A modification to the lungs that enables them to seal themselves if punctured. If your lungs are wounded, you suffer no special effects.</text>
+        </field>
+      </datum>
+      <datum name="Self Destruct Bomb">
+        <field name="Name" title="yes">
+          <text>Self Destruct Bomb</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables the user to self-destruct his body and cause serious damage in the process. Deals 5x <roll><num>6</num><face>6</face><bOff>+</bOff><bns>3</bns></roll> to a 20' radius. Kills the character.</text>
+        </field>
+      </datum>
+      <datum name="Sex Changer">
+        <field name="Name" title="yes">
+          <text>Sex Changer</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>enables the user to change his sexual appearance. The <ldquo/>change<rdquo/>takes less than a minuite, and can make a man look like a woman, or vice versa, even when totally naked. It does NOT actually change the user's sex, just the appearance.</text>
+        </field>
+      </datum>
+      <datum name="Silent Running">
+        <field name="Name" title="yes">
+          <text>Silent Running</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes the body quiet. It cancels the sound of the heartbeat, breathing, etc.</text>
+        </field>
+      </datum>
+      <datum name="Storage Compartment">
+        <field name="Name" title="yes">
+          <text>Storage Compartment</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A compartment is installed in the body. It can be accessed by opening a door on the body. It can store something a little bigger than a soda can.</text>
+        </field>
+      </datum>
+      <datum name="Thermal Masking">
+        <field name="Name" title="yes">
+          <text>Thermal Masking</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes the body appear room temperature.</text>
+        </field>
+      </datum>
+      <datum name="Vomit Tank">
+        <field name="Name" title="yes">
+          <text>Vomit Tank</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>takes a slot. The tank can be filled with anything you can swallow. At a later time, you can spew the contents of the tank forth, out your mouth.</text>
+        </field>
+      </datum>
+      <datum name="Waste Eliminator">
+        <field name="Name" title="yes">
+          <text>Waste Eliminator</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Hyper Kidneys</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>An upgrade to the digestive tract finds a way to use ALL the substances you ingest. It all but eliminates the need to excrete waste.</text>
+        </field>
+      </datum>
+      <datum name="Weight Control">
+        <field name="Name" title="yes">
+          <text>Weight Control</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Torso</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enables the recipient to control his or her weight. By thinking about it, the user can add or remove fat quite quickly. Up to one pound per minuite. When gaining weight, the user must ingest something for the weight to come from (e.g. food)</text>
+        </field>
+      </datum>
+    </category>

@@ -1,0 +1,1082 @@
+
+    <category name="Content/Magic/Earth">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
+        <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
+        <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
+        <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Alter Size">
+        <field name="Name" title="yes">
+          <text>Alter Size</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>1 hour</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster may alter the size of one object +/- 100<percent/>. This can only affect non-living targets. The target must be a single object; it cannot work on machines.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cataclysm">
+        <field name="Name" title="yes">
+          <text>Cataclysm</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>50' square</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster unleashes an unrelenting attack of flying, exploding, and falling stones on an area. Targets in the area are struck <roll><num>1</num><face>6</face><bns/></roll> times per size level. Each hit does the listed damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chasm">
+        <field name="Name" title="yes">
+          <text>Chasm</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>80</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Opens or closes a fissure in the ground, up to 15 feet long, 5 feet wide, 20 feet deep.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Create Portal">
+        <field name="Name" title="yes">
+          <text>Create Portal</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>1 min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a hole with radius 2 feet in earth, rock, brick, etc. (Max thickness = 2 feet)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Create stone">
+        <field name="Name" title="yes">
+          <text>Create stone</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster creates a small (1/2 lb) stone in the palm of his hand. Can also be used to make a stone larger by 1/2 lb. The general shape can be controlled, but nothing detailed can be produced</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Crumble">
+        <field name="Name" title="yes">
+          <text>Crumble</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>40</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster can use his hands to crumble away stone, dirt, etc. as if it were soft (cake-like) in consistency. Caster can shape up to 5 cubic feet of stone before the spell wears off. Otherwise it will wear off in <roll><num>1</num><face>6</face><bns/></roll> minutes. The shaping performed by the caster is permanent. This spell cannot effect man-made materials like artificial stone or concrete.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dance of Stalagmites">
+        <field name="Name" title="yes">
+          <text>Dance of Stalagmites</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>P</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>20 foot radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>An area, 20 feet in radius around a point the caster chooses, is enchanted with growing stalagmites. Every turn, <roll><num>2</num><face>4</face><bns/></roll> stalagmites rapidly grow out of the ground, impaling anything above the area. These stalagmites can be targeted by the caster, and remain as permanent fixtures upon the ground once created. Each stalagmite must use the Roll to strike, and each deals the listed damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Deformation">
+        <field name="Name" title="yes">
+          <text>Deformation</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2 hours</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>1000</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>10 square miles</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One geographic area, up to 10 square miles, will start to deform into a type of terrain desired by the caster. The process takes <roll><num>1</num><face>6</face><bns/></roll> days, and can include movement, creation, or destruction of land masses; but not the living things in that area.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dustcloud">
+        <field name="Name" title="yes">
+          <text>Dustcloud</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a cloud of sand, dust, and dirt in the air. The cloud will dissipate normally. The cloud measures no larger than 5' x 5' x 5' per X</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Earth to Stone">
+        <field name="Name" title="yes">
+          <text>Earth to Stone</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large quantity (3 cubic yards) of dirt is changed to hard stone</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Earthen Fist">
+        <field name="Name" title="yes">
+          <text>Earthen Fist</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster creates a giant arm and hand of rocks and dirt, that rises out of the ground. The arm mimics the movement of the caster's arm and can strike or grapple targets. Use unarmed combat or similar skill to strike with. The arm has STR equal to the Caster's WIL times the number of succeses made on a Magical Control roll. The arm can stay in existance for 10 MP/turn.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Earthen Maw">
+        <field name="Name" title="yes">
+          <text>Earthen Maw</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>4</num><face>4</face><bOff>+</bOff><bns>2</bns></roll> x3 C</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a huge mouth-like chasm (20' long, 10' deep, 6' wide) along the ground lined with sharp stone, under the target. Each turn the target is trapped within the maw, it suffers listed damage. Target can avoid the maw by making a DEX check at -10. To get out of the maw, the target must make a STR check at -10 vs. the caster's WIL +LVL of Magical Control.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fissure">
+        <field name="Name" title="yes">
+          <text>Fissure</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bns/>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>40</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A 10 foot wide seismic fissure opens, trapping and crushing those who fall in. Creatures within the effect must make a DEX check at a -10 or fall into the fissure.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Geo Press">
+        <field name="Name" title="yes">
+          <text>Geo Press</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>5</num><face>6</face><bOff>+</bOff><bns>6</bns><kind>C</kind></roll> per size level</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a large mass of stone 10 feet in diameter held in the air above a target. It then falls, crushing the target and burying it underneath tons of earth.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Geo Transport">
+        <field name="Name" title="yes">
+          <text>Geo Transport</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>70</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ground swallows the caster and up to 1 ton of additional mass and instantly transports him to any location via underground. May only transport to/from and through areas of soil, rock, etc. Cannot pass through concrete, refined metals, wood, etc. All items to be transported must be within 10' of the caster.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Greatly Alter Size">
+        <field name="Name" title="yes">
+          <text>Greatly Alter Size</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>1 hour</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster may alter the size of one object +/- 500<percent/>. This can only affect non-living targets. The target must be a single object; it cannot work on machines.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Invoke Quake">
+        <field name="Name" title="yes">
+          <text>Invoke Quake</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>6</face>
+            <bns/>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>65</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>30 feet</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster creates a small earthquake, causing large-scale seismic damage within 30 feet of the epicenter</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Manipulate Earth">
+        <field name="Name" title="yes">
+          <text>Manipulate Earth</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>3 turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows the caster to sculpt structures out of naturally occurring rocks, dirt, etc. Caster may move up to 2 cubic yards of material. After the spell's duration unstable sections will collapse.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Push">
+        <field name="Name" title="yes">
+          <text>Push</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>25</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Magically pushes a target away from the caster. The target is pushed a distance of (2000 / weight in lbs.) feet. The push travels directly away from the caster. This spell cannot deal damage intrinsically, but it can be used to push something down a hole or against a trap, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Rock Bomb">
+        <field name="Name" title="yes">
+          <text>Rock Bomb</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>10</num><face>6</face><bns/></roll> +1 S</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100 + 20X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>10X feet</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster sends a nearby stone hurtling towards one target. When it gets near the target it explodes, sending razor-sharp shards flying in all directions.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Rock Encasement">
+        <field name="Name" title="yes">
+          <text>Rock Encasement</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>55</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A hard, stone-like layer coats one object that is no larger than 4 feet in any one dimension. Moving objects must be traveling less than 5 MPH. The rock layer is 1 inch thick.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Rock Serpent">
+        <field name="Name" title="yes">
+          <text>Rock Serpent</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>2</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100+X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster creates a snake-like living golem out of stone. It is controllable by the caster for the duration of the spell. It cannot dodge, but it can attack and parry with it's claws. Damage is <roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll> claws, <roll><num>6</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll> bite and <roll><num>4</num><face>10</face><bns/><kind>C</kind></roll> tail. It has 5 dice to attack and 3 actions/turn. Armor is equal to caster's WIL in all categories and has X HP.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Rock to Mud">
+        <field name="Name" title="yes">
+          <text>Rock to Mud</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large quantity (3 cubic yards) of rock or concrete is changed into a loose, wet mud</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Rockslide">
+        <field name="Name" title="yes">
+          <text>Rockslide</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Initiates the movement of dirt, stones, in the surrounding area into a giant wave that crashes into the target area. Deals a total of 6x <roll><num>4</num><face>6</face><bns/><kind>C</kind></roll> damage divided however the user chooses among up to 6 targets. Can only be used around suitable material for the spell. Can deal no more than 100 damage per size level of any one target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Screen of Stones">
+        <field name="Name" title="yes">
+          <text>Screen of Stones</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>25 + 40X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster creates a thin wall of dirt, sand, and stones suspended in the air. Wall takes no damage from physical attacks. The wall can be struck X times, then it crumbles to dust. Wall can be oriented however the caster wishes, but must have a surface area no greater than 100 square feet. Wall has no effect versus energy weapons, purely magical/elemental attacks, or anything with AP.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Seismic Wave">
+        <field name="Name" title="yes">
+          <text>Seismic Wave</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>(X*3)D4 C</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Generates a foot-high wave of seismic activity that travels outward from the caster in all directions to a range of 25*X feet. Any objects struck by wave suffer damage. X can be no greater than his level of Magical Control. Permanent structures take quadruple damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Stone Rain">
+        <field name="Name" title="yes">
+          <text>Stone Rain</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>25</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A single target and an area 5 feet in radius is barraged by thousands of small stones.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Stone Sentry">
+        <field name="Name" title="yes">
+          <text>Stone Sentry</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>ground</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A statue, approximately 8 feet tall, rises from the ground and attacks any opponents that come near it. The statue has 10/10/10 armor and 200 HP. It has a reach of 15 feet with it's stone arms, and deals <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll> damage. It has an attack and parry skill of a 5, and has 4 actions per turn.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Stone Skin">
+        <field name="Name" title="yes">
+          <text>Stone Skin</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bns/></roll> minutes</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50+20X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One target gains a layer of stone-like external armor. The stone armor cover's the targets own skin, and provides armor with values (2+X) / (2*X) / (1+X)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Stoneform">
+        <field name="Name" title="yes">
+          <text>Stoneform</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Earth</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>8</face><bOff>+</bOff><bns>3</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster transforms his body into a dense, hard stone. DEX becomes 10. Gain 30/30/20 armor and quadruple normal HP. Cannot use complex weapons (e.g. guns, high tech, etc.) STR becomes four times normal.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

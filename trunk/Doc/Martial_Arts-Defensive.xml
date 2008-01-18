@@ -1,0 +1,202 @@
+
+    <category name="Content/Martial Arts/Defensive">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Anticipated Dodge">
+        <field name="Name" title="yes">
+          <text>Anticipated Dodge</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This skills requires Dodge. You expect that an attack is incoming and prepare yourself beforehand. When the attack comes, you automatically dodge the attack. This skill has the same restrictions as Dodge. You must spend one action during your turn to do nothing but prepare to perform Anticipated Dodge. At this time you must declare a specific opponent. You must be able to see this opponent. If the declared opponent attacks you before your next turn then you may automatically dodge the attack with no skill roll needed. You may dodge up to LVL attacks in this manner, however they must all be from the same designated opponent.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Arrow Smasher">
+        <field name="Name" title="yes">
+          <text>Arrow Smasher</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>You may parry missile and thrown weapons with your weapon; use your weapon skill to determine if you parry.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Defend Other">
+        <field name="Name" title="yes">
+          <text>Defend Other</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>You are skilled at protecting your comerades in a fight. To use Defend Other you must declare during your turn which of your comerades you are defending. You must be within 10 feet of your comerade and you must meet the conditions stipulated in Dodge as well (though these stipulations do not apply to your comerade). Your comerade must be willing or unconcious for you to defend them. You may choose to defend for that character up to LVL times before your next action. When you do this you are making the defensive roll for the other character. The character being defended may also attempt a defensive maneuver of their own, both of you are still protected by any supernatural effects that may be active and whatever armor you both are wearing. You must choose an interferential defensive maneuver that you know, such as parry, block, preemptive strike, etc. If you use Defend other, then roll the defensive maneuver of your choice. If you succeed then continue as if you were attacked rather than the defender. If you fail on your defensive maneuver roll, then the original target is struck by the attack and you loose your next action.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dodge">
+        <field name="Name" title="yes">
+          <text>Dodge</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>You see that an attack is coming at you and you move your body out of the way to avoid it. With this skill a character can totally avoid physical attacks. A successful dodge means that you are not struck by the incoming attack at all. To perform this skill you must be free to move about the combat area. You cannot be bound, in a grapple, or incapacitated. You must be able to see, hear, or otherwise know the attack is incoming. Dodge does not work for certain attacks that automatically strike the target, such as many magic spells. You may not dodge an attack that you do not know about (such as a sneak attack or being shot at from a long distance). You can give yourself a bonus to your Dodge roll by jumping behind cover. If you dodge by throwing yourself to the ground or behind partial cover you get +1 die. Dodging behind any full cover that may be present gives +2 dice.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Improved Anticipated Dodge">
+        <field name="Name" title="yes">
+          <text>Improved Anticipated Dodge</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Wisdom</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This skill requires Anticipated Dodge. This is a defensive maneuver that is similar to Anticipated Dodge. The martial artist spends two actions during his turn to prepare his defense and an attack. When attacked, the martial artist automatically dodges the attack and performs his own counter-attack that may not be defended against. This skill works exactly like Anticipated Dodge, except that you must spend two actions to prepare instead of one. If the declared opponent attacks you before your next turn then you may automatically Dodge the attack with no skill roll needed. As well, you may make a counter-attack of your choice. You must roll normally to determine if you succeed in your counter-attack, however your opponent may not defend against it. Your counter attack can be any ability that you know provided that it can be performed in one action or less and that it requires no special preparation. For example, to counter-attack with your sword, you must already have had your sword drawn beforehand. To counter-attack with a magic spell, it must be one that you can cast in 1 action, etc. You may counter attack with a modified attack or a special attack, but only if you can perform the attack in one action.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Preemptive Block">
+        <field name="Name" title="yes">
+          <text>Preemptive Block</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The Martial Artist sees an incoming melee attack and actively strikes at his opponent during his opponent's attack. This reduces the damage dealt by his opponent. Preemptive Block is your defensive maneuver. Roll Preemptive Block and also roll to strike with any melee attack that you could readily make. If you succeed on both of your rolls, then you take only half damage from the incoming attack. (There is no need to contest rolls with the attacker). However, if you fail either roll then you take full damage. Preemptive Block may not be used against ranged or missile attacks. Preemptive Block does not deal damage to your opponent.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ranging">
+        <field name="Name" title="yes">
+          <text>Ranging</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>You wait for your opponent to strike, and then keep your range. During your turn, you may reserve level actions for your Ranging maneuver. You may not use these actions during your normal turn. If you are attacked before your next turn, you may use your range skill once for each action you have reserved. When you do so, you gain an automatic 5-foot step in any direction. If this would place you out of range of your opponent, your opponent automatically misses. You may make a single weapon strike after your movement, but only if that strike is in range.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Reciprocal Attack">
+        <field name="Name" title="yes">
+          <text>Reciprocal Attack</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This skill is used instead of defending against a melee attack. The martial artist allows the incoming attack to strike him as though he was not defending at all (and takes full damage from it). Then roll Reciprocal Attack. If you succeed, you then make a surprise counter-attack in place of your defense. The original attacker does not get to roll defense versus the reciprocal attack. The reciprocal attack can be any singular ability the character knows, so long as it can be performed in 1 action or less and the martial artist has the requisite weapon drawn and ready for use. If you fail your roll of Reciprocal Attack, then your counter-attack misses.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Shield">
+        <field name="Name" title="yes">
+          <text>Shield</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Combat</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Shield is used to parry. You must EQUAL the opponents strike successes.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Shrug Blow">
+        <field name="Name" title="yes">
+          <text>Shrug Blow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Defensive</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Build</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>You trust in the toughness of your body to shrug off minor blows in combat. This is a defensive maneuver. You allow the blow to hit you. Roll BLD with a negative equal to the amount of damage sustained from the attack (after considering armor). If you succeed in your roll, then you take only 1 damage. If you fail in your roll, then you suffer normal damage and loose your next action (even if your armor absorbed all the damage). This skill is only effective versus standard attacks that deal P, S, or C damage. It has no effect versus U attacks.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

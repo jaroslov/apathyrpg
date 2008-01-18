@@ -1,0 +1,271 @@
+
+    <category name="Content/Equipment/Melee/Rocket-Assisted">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Battle Axe">
+        <field name="Name" title="yes">
+          <text>Battle Axe</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Rocket-Assisted</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>20000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Great Maul">
+        <field name="Name" title="yes">
+          <text>Great Maul</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Rocket-Assisted</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>18000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>22</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A massive wooden hammer originally meant for driving posts into the earth. A warrior with enough strength to swing a great maul could easily drive his opponents six feet under.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Heavy Staff">
+        <field name="Name" title="yes">
+          <text>Heavy Staff</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Rocket-Assisted</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>10000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hercules Club">
+        <field name="Name" title="yes">
+          <text>Hercules Club</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Rocket-Assisted</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>14000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A giant club that requires exceptional strength to wield. The weapon is roughly five feet long, with half of that length being the handle. The striking surface is covered in spikes fashioned from stone or iron.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Morning Star">
+        <field name="Name" title="yes">
+          <text>Morning Star</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Rocket-Assisted</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>10000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A fearsome weapon with a well-deserved reputation for combat effectiveness. This is a technologically superior mace, usually fashioned entirely from iron. The head is covered with strong spikes, enabling this weapon do deal significant damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="War Hammer">
+        <field name="Name" title="yes">
+          <text>War Hammer</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ultramodern</text>
+        </field>
+        <field name="Class">
+          <text>Rocket-Assisted</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>20000</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A stout weapon used by the strongest of knights. A war hammer is an oversized sledgehammer, often sporting an iron-reinforced handle and spike-like striking faces. In the right hands, a warhammer is capable of smashing even the toughest armors.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

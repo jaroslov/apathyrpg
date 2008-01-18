@@ -1,0 +1,755 @@
+
+    <category name="Content/Equipment/Melee/Polearms">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Awl Pike">
+        <field name="Name" title="yes">
+          <text>Awl Pike</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This is one of the simplest yet most effective polearms. An awl pike is a long, slender, metal spike affixed to the end of a long wooden pole. It is a highly effective stabbing weapon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beaked Axe">
+        <field name="Name" title="yes">
+          <text>Beaked Axe</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P<ndash/>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A long wooden pole topped with an iron head. One side of the head features an axe blade; the other is equipped with a spike for piercing armor. Originally used as a tool for ships<mdash/>the axe head was used to chop stuck mooring lines; the spike could be used to snag ropes or wreckage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Bicento">
+        <field name="Name" title="yes">
+          <text>Bicento</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class"><text>No value</text></field>
+        <field name="Type"  table="yes"><text>No value</text></field>
+        <field name="Cost"  table="yes"><text>No value</text></field>
+        <field name="Damage"  table="yes"><text>No value</text></field>
+        <field name="Hands"  table="yes"><text>No value</text></field>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
+        <field name="Recovery"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>Where most polearms consist of a smallish blade with a long handle, the Bicento is a long blade with a long handle. The blade and handle would both measure somewhere around 4 feet in length.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Glaive-Guisarme">
+        <field name="Name" title="yes">
+          <text>Glaive-Guisarme</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P<ndash/>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A lengthy handle topped with a hook-like metal blade. It can deliver fierce attacks, and can also be used to pull riders off their mounts.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Halberd">
+        <field name="Name" title="yes">
+          <text>Halberd</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple, effective, weapon<mdash/>especially for defensive positions. A halberd is basically a large knife blade mounted on a pole for extra reach.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Katakamayari">
+        <field name="Name" title="yes">
+          <text>Katakamayari</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class"><text>No value</text></field>
+        <field name="Type"  table="yes"><text>No value</text></field>
+        <field name="Cost"  table="yes"><text>No value</text></field>
+        <field name="Damage"  table="yes"><text>No value</text></field>
+        <field name="Hands"  table="yes"><text>No value</text></field>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
+        <field name="Recovery"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>A vicious Japanese polearm equipped with a cross-like blade. Though not exceptionally damaging in and out of itself, it is unmatched when wielded by a powerful warrior.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Lance">
+        <field name="Name" title="yes">
+          <text>Lance</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text> <roll><num>3</num><face>4</face><bns/></roll> +X</text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A long, reinforced wooden pole equipped with an iron point and handguard. It is generally used while riding on a charging horse. The faster you move, the more damage you can deal.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Long Spear">
+        <field name="Name" title="yes">
+          <text>Long Spear</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A larger spear used for hunting large animals, or for war. Generally around eight feet long.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Lucerne Hammer">
+        <field name="Name" title="yes">
+          <text>Lucerne Hammer</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P<ndash/>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Similar to a Beaked Axe. The head on a Lucerne hammer has one spiked face, and one crushing face.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Military Fork">
+        <field name="Name" title="yes">
+          <text>Military Fork</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A variant on a simple pike. The military fork is a group of thin metal tines (spikes) mounted to a long handle. It is much more effective for parrying than a pike, since one can catch weapons between its tines. It is also effective for hunting<mdash/>it is excellent for spearing small animals or fish.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Naginata">
+        <field name="Name" title="yes">
+          <text>Naginata</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A Japanese halberd. The Naginata blade is actually much longer than its cutting edge, with the bulk of its length embedded in the handle. The superior blade and this unique construction make it a very deadly and well-balanced weapon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Pike">
+        <field name="Name" title="yes">
+          <text>Pike</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A very long sharp stick. Pikes are generally much longer than other polearms<mdash/>often twenty feet long. The point is generally made from iron, but simple pikes might just have carved points.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sabre Halberd">
+        <field name="Name" title="yes">
+          <text>Sabre Halberd</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Similar to a normal halberd, but equipped with a long, slender, blade.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sankaku Yari">
+        <field name="Name" title="yes">
+          <text>Sankaku Yari</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>20 AP</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Short Spear">
+        <field name="Name" title="yes">
+          <text>Short Spear</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This is cross-listed in the spears section. This would be a common hunting spear.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Trident">
+        <field name="Name" title="yes">
+          <text>Trident</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Originally a fisherman's tool, and a favored weapon of the gladiatorial area. A trident is a spear with three points, increasing the chances of striking a target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Voulge">
+        <field name="Name" title="yes">
+          <text>Voulge</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P<ndash/>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A very large blade on a very long pole, dealing very high damage. Think of it like a halberd on steroids.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="War Scythe">
+        <field name="Name" title="yes">
+          <text>War Scythe</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A farming tool for cutting grain or brush. An unlikely weapon, but strangely effective.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Yari">
+        <field name="Name" title="yes">
+          <text>Yari</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Polearms</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A Japanese spear equipped with a forged and polished head. Though generally not very long, it has excellent damage potential. It can be thrown, but is designed to be used as a hand-held weapon, for stabbing and slashing. Since the blade is edged, it always deals S damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Yoroidoshi Yari">
+        <field name="Name" title="yes">
+          <text>Yoroidoshi Yari</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class"><text>No value</text></field>
+        <field name="Type"  table="yes"><text>No value</text></field>
+        <field name="Cost"  table="yes"><text>No value</text></field>
+        <field name="Damage"  table="yes"><text>No value</text></field>
+        <field name="Hands"  table="yes"><text>No value</text></field>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
+        <field name="Recovery"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>A different type of Japanese spear designed to penetrate armor. The point is narrow and rather small. It is triangular in profile (like a stiletto), forged from hard martensitic steel. It is capable of piercing the toughest armor.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

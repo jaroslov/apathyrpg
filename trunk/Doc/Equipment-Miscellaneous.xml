@@ -1,0 +1,2292 @@
+
+    <category name="Content/Equipment/Miscellaneous">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="ALICE Rig">
+        <field name="Name" title="yes">
+          <text>ALICE Rig</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>250.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Millitary vest used to hold weapons, ammo, grenades, rations, tools, etc. for quick access.</text>
+        </field>
+      </datum>
+      <datum name="Ammo Pouch, combo">
+        <field name="Name" title="yes">
+          <text>Ammo Pouch, combo</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>30.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A sturdy leather or nylon pouch that fits on your belt. Holds approx. 50 pistol rounds, 25 rifle rounds, or 15 shotgun shells</text>
+        </field>
+      </datum>
+      <datum name="Ammo Pouch, mag">
+        <field name="Name" title="yes">
+          <text>Ammo Pouch, mag</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>30.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A leather or nylon pouch that fits on your belt. It holds up to four pistol magazines or two assault rifle mags</text>
+        </field>
+      </datum>
+      <datum name="Anti-dazzle lens">
+        <field name="Name" title="yes">
+          <text>Anti-dazzle lens</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Add this to a set of goggles or glasses. It prevents flashes of light, etc, from stunning the wearer.</text>
+        </field>
+      </datum>
+      <datum name="Backpack">
+        <field name="Name" title="yes">
+          <text>Backpack</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>45</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A satchel with two straps designed to be worn on the back. A normal backpack can carry up to 40 lbs. Higher quality backpacks can hold up to 60 lbs. With a proper frame and waist strap, a backpack can carry up to 225 pounds, but has significant encumbrance (+1 Encumbrance for every 25 lbs above 75).</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Backpack - hard">
+        <field name="Name" title="yes">
+          <text>Backpack - hard</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Hiker's backpack with a metal frame. Carries up to 100 pounds of gear. Very comfortable.</text>
+        </field>
+      </datum>
+      <datum name="Bag of Holding">
+        <field name="Name" title="yes">
+          <text>Bag of Holding</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A normal looking bag with an extradimensional space on the inside that holds extra weight and volume.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Belt">
+        <field name="Name" title="yes">
+          <text>Belt</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>25</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A piece of flat leather or other sturdy material with a hasp designed to keep a pair of pants on.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Belt Buckle">
+        <field name="Name" title="yes">
+          <text>Belt Buckle</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>25</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large, flat plate designed to clasp a belt together. Typically comes with a design.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Belt of Leaves">
+        <field name="Name" title="yes">
+          <text>Belt of Leaves</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A belt made of brass, gold, and copper leaves; probably made by elves for trackers and hunters. Provides +1 to strike.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Binoculars, mini">
+        <field name="Name" title="yes">
+          <text>Binoculars, mini</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A pair of binoculars that folds up for easy carrying. Magnifies 4 times.</text>
+        </field>
+      </datum>
+      <datum name="Binoculars, standard">
+        <field name="Name" title="yes">
+          <text>Binoculars, standard</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A normal pair of binoculars. Has a neck strap and a carrying case. Variable magnification from 5 to 10 times.</text>
+        </field>
+      </datum>
+      <datum name="Binoculars, super">
+        <field name="Name" title="yes">
+          <text>Binoculars, super</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A pair of high grade binoculars. Has a built in range finder and superior glass lenses. Mag varies from 5 to 20 times.</text>
+        </field>
+      </datum>
+      <datum name="Blue Ribbon of Fagotry">
+        <field name="Name" title="yes">
+          <text>Blue Ribbon of Fagotry</text>
+        </field>
+        <field name="MetaTag">
+          <text>Unique</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A beautiful blue ribbon.</text>
+        </field>
+        <field name="Implementation">
+          <text>Charisma += 2;</text>
+        </field>
+      </datum>
+      <datum name="Boat, Portable">
+        <field name="Name" title="yes">
+          <text>Boat, Portable</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>750.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A backpack containing an inflatable boat, inflating device, and a set of collapsible paddles. Holds up to 750 lbs of people and gear. Not safe for ocean use, but not a toy.</text>
+        </field>
+      </datum>
+      <datum name="Boat, inflatable">
+        <field name="Name" title="yes">
+          <text>Boat, inflatable</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple inflatable boat. Light duty. Will hold up to 500 lbs.</text>
+        </field>
+      </datum>
+      <datum name="Boat, portable Zodiac">
+        <field name="Name" title="yes">
+          <text>Boat, portable Zodiac</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>5,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Very high quality portable/inflatable boat. Kit weighs 160 lbs, carried in two packs. Has boat (seats four adults+250 lbs of gear), inflator, repair kit, portable paddes, and a small gas engine. Boat is very durable and will withstand small-caliber gunshots.</text>
+        </field>
+      </datum>
+      <datum name="Book">
+        <field name="Name" title="yes">
+          <text>Book</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any sort of book.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Boots">
+        <field name="Name" title="yes">
+          <text>Boots</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>25</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Made for walking.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Bowl">
+        <field name="Name" title="yes">
+          <text>Bowl</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A dish for serving things which are prone to escape.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Breathing Apparatus">
+        <field name="Name" title="yes">
+          <text>Breathing Apparatus</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Similar to a SCUBA tank. Has a mask and tank that protects the wearer from gases, diseases, fumes, etc, even in enviornments that have no oxygen. Worn by firefighters, etc. Tank is good for 3 hours, can be refilled.</text>
+        </field>
+      </datum>
+      <datum name="Bug, micro">
+        <field name="Name" title="yes">
+          <text>Bug, micro</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Listening device the size of a button. Transmits what it hears to a common AM/FM radio. Range is 1000' max.</text>
+        </field>
+      </datum>
+      <datum name="Bug, phone tap">
+        <field name="Name" title="yes">
+          <text>Bug, phone tap</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Listening device attached to a telephone. Range is 1 mile.</text>
+        </field>
+      </datum>
+      <datum name="Bug, super">
+        <field name="Name" title="yes">
+          <text>Bug, super</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Listening device. Button sized, has special encrypted transmssions. Range is 1 mile.</text>
+        </field>
+      </datum>
+      <datum name="Bull&apos;s Eye Lantern">
+        <field name="Name" title="yes">
+          <text>Bull's Eye Lantern</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>150</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A lantern with an enclosure that is either mirrored or highly-polished metal on the interior with a single exit hole. A Bull's Eye lantern produces a long beam (about 100 feet long) for normal burn time (see the Lantern), but only in a directed fashion. Some forms of the Bull's Eye Lantern have multiple shutters. Some have fresnel lenses (although this can increase the cost of the lantern by a factor of 10 or a 100). The lense increases the distance of the lantern to 250 feet.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Butcher&apos;s kit">
+        <field name="Name" title="yes">
+          <text>Butcher's kit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Used for dressing animals in the field. Contains meat bags, skinning knife, saw, and a compact game hoist.</text>
+        </field>
+      </datum>
+      <datum name="Camera, Digital">
+        <field name="Name" title="yes">
+          <text>Camera, Digital</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Digital video camera. Not a true pro-grade camera, but can store hundreds of photos and you don't have film hassles.</text>
+        </field>
+      </datum>
+      <datum name="Camera, Video">
+        <field name="Name" title="yes">
+          <text>Camera, Video</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Video camera that records to tape or data discs. It is NOT broadcast quality, but is compact and easy to carry.</text>
+        </field>
+      </datum>
+      <datum name="Camera, Zoom Lens">
+        <field name="Name" title="yes">
+          <text>Camera, Zoom Lens</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Zoom lens for a camera for long-distance shots</text>
+        </field>
+      </datum>
+      <datum name="Camera, basic">
+        <field name="Name" title="yes">
+          <text>Camera, basic</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple film camera.</text>
+        </field>
+      </datum>
+      <datum name="Camera, professional">
+        <field name="Name" title="yes">
+          <text>Camera, professional</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A pro grade film camera. Includes some different lenses, filters, etc.</text>
+        </field>
+      </datum>
+      <datum name="Camera, spy">
+        <field name="Name" title="yes">
+          <text>Camera, spy</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>300.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Super-small camera that can be easily concealed. Can be used like a normal camera, or can be set like a booby trap.</text>
+        </field>
+      </datum>
+      <datum name="Cart, 2-wheeled">
+        <field name="Name" title="yes">
+          <text>Cart, 2-wheeled</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>200</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A two-wheeled cart with attachments for a single pulling animal.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cart, 4-wheel">
+        <field name="Name" title="yes">
+          <text>Cart, 4-wheel</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>350</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A four-wheel cart for use with a single draft-animal.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cart, Ox">
+        <field name="Name" title="yes">
+          <text>Cart, Ox</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>400</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A 2-wheeled cart for an Ox, has a much deeper bed and much taller sides.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cat">
+        <field name="Name" title="yes">
+          <text>Cat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Kingdom</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chemlight, bright">
+        <field name="Name" title="yes">
+          <text>Chemlight, bright</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>3.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A chemical light stick. Bend it to activate. This is a special stick that only lasts 20-30 minuites at most. It is VERY bright, like a good flashlight. Excellent for signaling, etc.</text>
+        </field>
+      </datum>
+      <datum name="Chemlight, mini">
+        <field name="Name" title="yes">
+          <text>Chemlight, mini</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small chemical light stick. It's about the size of a hair pin. Makes a great fishing lure</text>
+        </field>
+      </datum>
+      <datum name="Chemlight, stick">
+        <field name="Name" title="yes">
+          <text>Chemlight, stick</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A chemical light stick. Bend it to activiate. Works in any temperature, no batteries, etc. Gives off enough light to perform simple tasks in complete darkness. Lasts for 8-10 hours.</text>
+        </field>
+      </datum>
+      <datum name="Climbing Gear">
+        <field name="Name" title="yes">
+          <text>Climbing Gear</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>400.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Climibing shoes, gear belt / harness, climbing axe, pitons, etc.</text>
+        </field>
+      </datum>
+      <datum name="Climbing Gear - Ice">
+        <field name="Name" title="yes">
+          <text>Climbing Gear - Ice</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>600.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>As above, but includes ice axe, crampons (spiked shoes), ice screws, etc.</text>
+        </field>
+      </datum>
+      <datum name="Cloak of Stealth">
+        <field name="Name" title="yes">
+          <text>Cloak of Stealth</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation">
+          <text>Piercing+=5; Crushing+=5; Slashing+=5; Encumber+=1;</text>
+        </field>
+      </datum>
+      <datum name="Clothes">
+        <field name="Name" title="yes">
+          <text>Clothes</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>40</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Keeps ya' covered.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Coat, Raincoat">
+        <field name="Name" title="yes">
+          <text>Coat, Raincoat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Waterproof coat. Good for travelling, etc.</text>
+        </field>
+      </datum>
+      <datum name="Coat, Trenchcoat">
+        <field name="Name" title="yes">
+          <text>Coat, Trenchcoat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>200.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Keeps you warm, dry, and is great for concealing things. Can conceal a shotgun or rifle.</text>
+        </field>
+      </datum>
+      <datum name="Combat Belt">
+        <field name="Name" title="yes">
+          <text>Combat Belt</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Keeps your extra magazines, grenades, pistol, etc, close at hand and ready for use</text>
+        </field>
+      </datum>
+      <datum name="Computer, PDA">
+        <field name="Name" title="yes">
+          <text>Computer, PDA</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>300.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small calculator-sized mini computer. Used for storing notes, directions, can also save small files, etc.</text>
+        </field>
+      </datum>
+      <datum name="Computer, advanced">
+        <field name="Name" title="yes">
+          <text>Computer, advanced</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>4,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>High powered computer, <ldquo/>cutting edge<rdquo/> of the era</text>
+        </field>
+      </datum>
+      <datum name="Computer, basic">
+        <field name="Name" title="yes">
+          <text>Computer, basic</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple computer with monitor, etc.</text>
+        </field>
+      </datum>
+      <datum name="Computer, portable">
+        <field name="Name" title="yes">
+          <text>Computer, portable</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>2,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Portable version of a normal computer. Runs off of batteries or can be plugged in.</text>
+        </field>
+      </datum>
+      <datum name="Cordelian Belt of the Warrior">
+        <field name="Name" title="yes">
+          <text>Cordelian Belt of the Warrior</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>132850</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This was made by a Cordelian weaponsmith as a gift of a high-ranking military comander whose daughter the smith was courting. The accompanying armor was long ago destroyed, but the belt has survived. A dark brown iron studded leather belt with an iron buckle; shaped like a weight-lifters belt. Archaic Weapons at plus one level. -1 to all Charisma and Intelligence based skills. Healing magic has half effect.</text>
+        </field>
+        <field name="Implementation">
+          <text>Strength += 2; Build += 1; Dexterity += 1; MagicPoints -= 2;</text>
+        </field>
+      </datum>
+      <datum name="Cowboy Boots">
+        <field name="Name" title="yes">
+          <text>Cowboy Boots</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>225</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Midcalf heavy leather boots with a short heel and typically pointed shoe. Designed to ease horse-riding with stirrups.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cowboy Hat">
+        <field name="Name" title="yes">
+          <text>Cowboy Hat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>125</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A type of hat normally worn by workers who deal with cattle in the open desert or other arid climates.</text>
+        </field>
+        <field name="Implementation">
+          <text>Hick += 1;</text>
+        </field>
+      </datum>
+      <datum name="Cyber-medicine kit">
+        <field name="Name" title="yes">
+          <text>Cyber-medicine kit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Supplies for performing first aid on cyborgs, etc. Contains many of the same things as a normal first aid kit, but also specialized drugs, and extra supplies.</text>
+        </field>
+      </datum>
+      <datum name="Diving - Extra tank">
+        <field name="Name" title="yes">
+          <text>Diving - Extra tank</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Extra tank gives up to 2 hour dive time.</text>
+        </field>
+      </datum>
+      <datum name="Diving Kit">
+        <field name="Name" title="yes">
+          <text>Diving Kit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>750.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>SCUBA kit with tank, regulator, weight belt, BCD vest. Everything needed for 1 person. 1 hour maximum dive time.</text>
+        </field>
+      </datum>
+      <datum name="Dog">
+        <field name="Name" title="yes">
+          <text>Dog</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Domain</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Donkey">
+        <field name="Name" title="yes">
+          <text>Donkey</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>500</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Kingdom</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Duffel Bag">
+        <field name="Name" title="yes">
+          <text>Duffel Bag</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>25</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy, denim bag in the shape of a tube with a single, heavy strap. Can easily accomodate 75 lbs. Larger versions can go up to 250 lbs. For every 25 lbs. a duffel bag adds 1 encumbrance.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Elephant">
+        <field name="Name" title="yes">
+          <text>Elephant</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large, four-kneed animal weighing around 16000 lbs. Elephants are the biggest of the domesticated draft animals. Carts and wagons must be specially designed to be used with them.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Elephant of War">
+        <field name="Name" title="yes">
+          <text>Elephant of War</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>120000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>An Elephant of War can weigh up to 26000 lbs and be 16 or 17 feet tall. This is the only type of elephant that can be controlled in combat.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Feather Comforter">
+        <field name="Name" title="yes">
+          <text>Feather Comforter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>600</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A comforter, filled with feathers.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Feather Mattress">
+        <field name="Name" title="yes">
+          <text>Feather Mattress</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>500</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A nice feather mattress; bulky but only about 25 lbs.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fishing Kit, portable">
+        <field name="Name" title="yes">
+          <text>Fishing Kit, portable</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small box containing a multi-piece rod <and/> reel, line, hooks, lures, and a small folding net.</text>
+        </field>
+      </datum>
+      <datum name="Flannel Shirt">
+        <field name="Name" title="yes">
+          <text>Flannel Shirt</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>30</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy shirt made of flannel with (pearl) snap buttons, with a collar.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Flares, aerial">
+        <field name="Name" title="yes">
+          <text>Flares, aerial</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>20.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>These flares look like shotgun shells. They are fired from a launcher and ignite high in the air, whereafter they drift slowly back down. Available in red, green, blue, yellow, white. Priced per set of 5.</text>
+        </field>
+      </datum>
+      <datum name="Flares, launcher">
+        <field name="Name" title="yes">
+          <text>Flares, launcher</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Looks like pistol. Fires aerial signal flares</text>
+        </field>
+      </datum>
+      <datum name="Flares, signal">
+        <field name="Name" title="yes">
+          <text>Flares, signal</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A stick-type flare that burns with a bright red flame. (Road flare). For marking targets, warnings, etc. Good for starting fires too.</text>
+        </field>
+      </datum>
+      <datum name="Flashlight, Heavy duty">
+        <field name="Name" title="yes">
+          <text>Flashlight, Heavy duty</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>25.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Metal police flashlight. Can be used as a club. Very tough, waterproof, high brightness</text>
+        </field>
+      </datum>
+      <datum name="Flashlight, Spotlight">
+        <field name="Name" title="yes">
+          <text>Flashlight, Spotlight</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Portable spotlight for hunting, search-and-rescue, etc. Runs for 4 hours, VERY powerful.</text>
+        </field>
+      </datum>
+      <datum name="Flashlight, pen light">
+        <field name="Name" title="yes">
+          <text>Flashlight, pen light</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Pen-sized pocket flashlight</text>
+        </field>
+      </datum>
+      <datum name="Flashlight, small">
+        <field name="Name" title="yes">
+          <text>Flashlight, small</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A handy flashlight that fits in your pocket.</text>
+        </field>
+      </datum>
+      <datum name="Flashlight, standard">
+        <field name="Name" title="yes">
+          <text>Flashlight, standard</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>10.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A normal flashlight. It takes two D-size batteries.</text>
+        </field>
+      </datum>
+      <datum name="Flint and Tender">
+        <field name="Name" title="yes">
+          <text>Flint and Tender</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>15</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Flint, Striker, a small, sealed, wooden box, and tender (typically moss). Can be used to start a fire, although this can take 15 or 20 minutes or more.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Folding Chair">
+        <field name="Name" title="yes">
+          <text>Folding Chair</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>75</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Comes in two forms depending upon the time period. Pre-modern folding charis are a triangle of leather suspended between three stout posts. A modern (or ultramodern) chair forms a full chair with armrests and a back.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Forensics kit">
+        <field name="Name" title="yes">
+          <text>Forensics kit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>25.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Magnifying glass, fingerprinting supplies, disposable camera, evidence bags, composite sketch kit, notebook, handbook</text>
+        </field>
+      </datum>
+      <datum name="GPS Rec. superior">
+        <field name="Name" title="yes">
+          <text>GPS Rec. superior</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Global Positioning System tool. About the size of a calculator. Has advanced 2-D and 3-D mapping information, weather data, can store and re-display paths travelled, etc. Can display directions in urban areas.</text>
+        </field>
+      </datum>
+      <datum name="GPS Reciever">
+        <field name="Name" title="yes">
+          <text>GPS Reciever</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>200.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Global Positioning System tool. About the size of a calculator, it tells you exactly where you are in the world. Has limited mapping functions too.</text>
+        </field>
+      </datum>
+      <datum name="Gas Mask">
+        <field name="Name" title="yes">
+          <text>Gas Mask</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>rubber mask with filter prevents poisous gases, smoke, etc, from harming the wearer. Filter is good for 6 hours.</text>
+        </field>
+      </datum>
+      <datum name="Gas Mask filter">
+        <field name="Name" title="yes">
+          <text>Gas Mask filter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>25.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>extra filter for gas mask. Lasts for 6 hours.</text>
+        </field>
+      </datum>
+      <datum name="Gem">
+        <field name="Name" title="yes">
+          <text>Gem</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any sort of gem.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Generator, large">
+        <field name="Name" title="yes">
+          <text>Generator, large</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>2,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A big generator that might be found on a construction site. Can run power tools, big floodlights, etc.</text>
+        </field>
+      </datum>
+      <datum name="Generator, small">
+        <field name="Name" title="yes">
+          <text>Generator, small</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A backpack sized portable generator. Good for operating small electronic devices like TV, radio, etc.</text>
+        </field>
+      </datum>
+      <datum name="Glass Bottle">
+        <field name="Name" title="yes">
+          <text>Glass Bottle</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Glass bottles vary in cost dependent upon size, cost, quality, and timeperiod. For the modern period, a glass bottle is typically about 5 dollars per liter (non-bulk). In <ldquo/>medieval<rdquo/> periods they would be about 50 dollars per liter. In for &quot;ancient&quot; time periods or very-out-of-the-way, they are about 500 dollars (or more) per liter.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Gloves, Butcher&apos;s">
+        <field name="Name" title="yes">
+          <text>Gloves, Butcher's</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Heavy-duty gloves made from kevlar or metal that prevents your hand from being cut when handling sharp objects. Has 1/4/0 Armor for the hands.</text>
+        </field>
+      </datum>
+      <datum name="Gloves, Grip">
+        <field name="Name" title="yes">
+          <text>Gloves, Grip</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Specially treated gloves to improve your grip on objects. Gives +1 STR when in a strength contest, etc.</text>
+        </field>
+      </datum>
+      <datum name="Gloves, Mittens">
+        <field name="Name" title="yes">
+          <text>Gloves, Mittens</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gloves for cold weather. -3 Dex while wearing them</text>
+        </field>
+      </datum>
+      <datum name="Gloves, Work">
+        <field name="Name" title="yes">
+          <text>Gloves, Work</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Leather gloves to protect the hands from minor cuts and abrasions while working</text>
+        </field>
+      </datum>
+      <datum name="Goggles - combat">
+        <field name="Name" title="yes">
+          <text>Goggles - combat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Full wraparound goggles that protect the eyes from dust, shrapnel, chemicals, and laser sighting devices</text>
+        </field>
+      </datum>
+      <datum name="Goggles - night vision">
+        <field name="Name" title="yes">
+          <text>Goggles - night vision</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Provides monochrome night vision by amplfiying ambient light</text>
+        </field>
+      </datum>
+      <datum name="Goggles - thermal">
+        <field name="Name" title="yes">
+          <text>Goggles - thermal</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>2,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows wearer to &quot;see&quot; heat. It has a limited ability to see heat through things. The thicker the cover, the less detail.</text>
+        </field>
+      </datum>
+      <datum name="Handcuffs">
+        <field name="Name" title="yes">
+          <text>Handcuffs</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>25.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Police quality handcuffs. Cannot be broken unless STR &gt;19, Lock can be picked at -4 to roll.</text>
+        </field>
+      </datum>
+      <datum name="Handcuffs, super">
+        <field name="Name" title="yes">
+          <text>Handcuffs, super</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Extra-high security handcuffs. Requires STR &gt; 26 to break them. Lock is -10 to pick.</text>
+        </field>
+      </datum>
+      <datum name="Handkerchief">
+        <field name="Name" title="yes">
+          <text>Handkerchief</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small square piece of cloth.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hat">
+        <field name="Name" title="yes">
+          <text>Hat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>For head.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hat, Adventurer&apos;s">
+        <field name="Name" title="yes">
+          <text>Hat, Adventurer's</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Keep the sun and the bugs off your head.</text>
+        </field>
+      </datum>
+      <datum name="Hemp Rope">
+        <field name="Name" title="yes">
+          <text>Hemp Rope</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>For 1 foot. Weighs .2 lbs.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Holster, Hip">
+        <field name="Name" title="yes">
+          <text>Holster, Hip</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple holster that holds your gun at your hip. Can be modern appearance, or &quot;old west&quot; type.</text>
+        </field>
+      </datum>
+      <datum name="Holster, SWAT">
+        <field name="Name" title="yes">
+          <text>Holster, SWAT</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Holds a pistol or SMG on your leg. Can't be concealed, but offers +2 to quick draw the weapon.</text>
+        </field>
+      </datum>
+      <datum name="Holster, Shoulder">
+        <field name="Name" title="yes">
+          <text>Holster, Shoulder</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>200.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Quality leather rig holds your pistol by your shoulder or armpit. Conceals under a jacket easily. Fit to the wearer</text>
+        </field>
+      </datum>
+      <datum name="Holster, concealed">
+        <field name="Name" title="yes">
+          <text>Holster, concealed</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Used to conceal a gun inside your pants or by your bellybutton.</text>
+        </field>
+      </datum>
+      <datum name="Horse, Draft">
+        <field name="Name" title="yes">
+          <text>Horse, Draft</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1500</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A horse that has been only been trained to draft; that is be hitched to pull a plow, wagon, cart, ferry, etc. These horses can weigh up to 1500 lbs. (making them about the size of the largest Warhorse). They can stand up to 16 hands at the withers.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Horse, Farm">
+        <field name="Name" title="yes">
+          <text>Horse, Farm</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>500</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A normal farm horse (Quarter).</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Horse, Riding">
+        <field name="Name" title="yes">
+          <text>Horse, Riding</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>750</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A horse that has been trained to be ridden. Not combat ready.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Horse, Shire">
+        <field name="Name" title="yes">
+          <text>Horse, Shire</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A shire horse is the largest of the Draft horses. They can be 18 or 20 hands high and over a ton, and some specimens (although very rare) have come in at 24 hands and 3000+ lbs. These horses, even given their size, are unusually strong, and have unusual endurance. They are known for their kindness, but also for their great stupidity. They are unusable as Warhorses, although attempts (unsuccessful) have been made.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Horse, Thoroughbred">
+        <field name="Name" title="yes">
+          <text>Horse, Thoroughbred</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>12000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Also called a Postal Horse. These are the fastest horses money can buy; they have been bred for unusually long endurance, which means Thoroughbreds are not only the fastest but also the longest distance horses. It is not unusual for a Thoroughbred to be able to maintain speeds of 40+ mph for 6 or more hours.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Jean&apos;s Jacket">
+        <field name="Name" title="yes">
+          <text>Jean's Jacket</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>55</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy, denim jacket. Normally with heavy brass flat-tack buttons and pockets.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Jeans">
+        <field name="Name" title="yes">
+          <text>Jeans</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>25</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A pair of pants made from heavy denim, normally triple-stitched for extra strength. Typically comes with front and back pockets and loops for a belt.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Jerry Can">
+        <field name="Name" title="yes">
+          <text>Jerry Can</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>25.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A metal or plastic container for storing <and/> transporting gas, water, oil, etc. Very rugged. Has a 5 gallon capacity, and can be used with most chemicals.</text>
+        </field>
+      </datum>
+      <datum name="Lantern">
+        <field name="Name" title="yes">
+          <text>Lantern</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>80</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gas or oil. A lantern is a bulkier but more efficient way to light an area as it typically comes with a glass enclosure and a flue to increase the temperature of burning. A lantern burns one ounce of oil per hour to light a 20 foot radius. Burning four times as much oil per hour double the equvalent lit area.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Lock Picks, gun">
+        <field name="Name" title="yes">
+          <text>Lock Picks, gun</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A nifty little tool that will open nearly all simple key locks in a second or two. Can be used by unskilled persons. Tool gives Lockpick: 2 regardless of level of user. Only works on simple locks (no good for cars, safes, combinations, etc.)</text>
+        </field>
+      </datum>
+      <datum name="Lock Picks, master">
+        <field name="Name" title="yes">
+          <text>Lock Picks, master</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A full lockpick set, about the size of a hardcover book. Contains many different types of picks and specialty tools. Use for car locks, padlocks, doors, etc. +3 to lockpick skill.</text>
+        </field>
+      </datum>
+      <datum name="Lock Picks, mini">
+        <field name="Name" title="yes">
+          <text>Lock Picks, mini</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small leather pouch containing a tension wrench and 3-4 commonly shaped picks. Good for simple locks.</text>
+        </field>
+      </datum>
+      <datum name="Lock Picks, set">
+        <field name="Name" title="yes">
+          <text>Lock Picks, set</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A pouch about the size of a glasses case. It contains a tension wrench, and an assortment of picks and other lock tools. This would be sufficient for most locks.</text>
+        </field>
+      </datum>
+      <datum name="Medical Kit">
+        <field name="Name" title="yes">
+          <text>Medical Kit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>250.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small tote bag with a good selection of first aid supplies. Gauze banadges, antiseptic, scissors, simple drugs, elastic bandage, etc.</text>
+        </field>
+      </datum>
+      <datum name="Medical Kit - First Aid">
+        <field name="Name" title="yes">
+          <text>Medical Kit - First Aid</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>10.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small waterproof box with basic first aid supplies (band aids, gauze bandages, ointment, aspirin, etc.)</text>
+        </field>
+      </datum>
+      <datum name="Medical Kit - Large">
+        <field name="Name" title="yes">
+          <text>Medical Kit - Large</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>2,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large duffel bag crammed with most of an emergency room. Enough to complete simple many surgical procedures. A full assortment of bandages, many drugs (painkillers, disease treatments, anesthetic, antibiotics, etc), surgical tools, splints, portable EKG machine, emergency fluids <and/> blood supply, sutures, etc.</text>
+        </field>
+      </datum>
+      <datum name="Mess Kit">
+        <field name="Name" title="yes">
+          <text>Mess Kit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>25.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Frying pan x2, pan lid, cup, bowl, knife, fork, spoon, and salt/pepper shaker. It all nests together in a small pouch.</text>
+        </field>
+      </datum>
+      <datum name="Mobile Phone">
+        <field name="Name" title="yes">
+          <text>Mobile Phone</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Portable telephone. Works off of cellular system. Works in all major cities and most suburbs.</text>
+        </field>
+      </datum>
+      <datum name="Mobile Phone, sat">
+        <field name="Name" title="yes">
+          <text>Mobile Phone, sat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Portable telephone. Works off of satellites. Works anywhere on earth.</text>
+        </field>
+      </datum>
+      <datum name="Money">
+        <field name="Name" title="yes">
+          <text>Money</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>5x the cost of gold.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Oil Lamp">
+        <field name="Name" title="yes">
+          <text>Oil Lamp</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>60</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Come in various sizes (ounces of fluid). An oil lamp burns about one ounce of oil per hour to light a 10-foot-radius zone. Burning the oil four times as fast doubles the equivalent site radius. Oil lamps can be made of many materials such as stone, fired clay, glass, brass, bronze, or steel.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Oliphant">
+        <field name="Name" title="yes">
+          <text>Oliphant</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2200000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>An Oliphant is a semimagical breed of Titanic War Elephant. They are typically about 40' feet tall and weigh around 55 tons. They are adorned with tusks, uptusks (like a warthog), sabre-fangs, and incisorial glancing-tusks (upward bending tusks like a walrus).</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Pine Tar Torch">
+        <field name="Name" title="yes">
+          <text>Pine Tar Torch</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Lasts approximately 2 hours in a well-ventilated room. Gives off a prodigious amount of smoke, but smells pretty good.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Pitch Torch">
+        <field name="Name" title="yes">
+          <text>Pitch Torch</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>12</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Pitch torches are &quot;better&quot; than pine-tar torches because they produce a less perfidious odor. They also lasts about 6 hours.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Pouch">
+        <field name="Name" title="yes">
+          <text>Pouch</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small bag, usually with a drawstring. Can hold only a couple of pounds of items.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Precious Metal">
+        <field name="Name" title="yes">
+          <text>Precious Metal</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any precious metal.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Precious Stone">
+        <field name="Name" title="yes">
+          <text>Precious Stone</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any precious stone (not a gem!)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Radio, Comm headset">
+        <field name="Name" title="yes">
+          <text>Radio, Comm headset</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A radio headset that has hands-free operation. Works up to 2 miles away in clear areas. Each</text>
+        </field>
+      </datum>
+      <datum name="Radio, Walkie-Talkie">
+        <field name="Name" title="yes">
+          <text>Radio, Walkie-Talkie</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A hand-held radio that lets you talk to other people with similar radios. Has a range up to 2 miles in clear areas. Each.</text>
+        </field>
+      </datum>
+      <datum name="Rations">
+        <field name="Name" title="yes">
+          <text>Rations</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Millitary ration (MRE) or equivalent. A plastic bag containing a full meal. About as big as a &quot;bag lunch&quot;</text>
+        </field>
+      </datum>
+      <datum name="Rations - mini">
+        <field name="Name" title="yes">
+          <text>Rations - mini</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>3.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small food bar. Highly nutritious (1 day's food in one bar!), but tastes awful. Same size as a candy bar.</text>
+        </field>
+      </datum>
+      <datum name="Repair Kit">
+        <field name="Name" title="yes">
+          <text>Repair Kit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>200.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>For repairing robotics, power armor, and mecha. Contains specialized tools (but not basics, which are also needed) Oil, wire, common replacement parts, special repair materials, etc.</text>
+        </field>
+      </datum>
+      <datum name="Ring">
+        <field name="Name" title="yes">
+          <text>Ring</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any sort of ring.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ring of Daylight Globe">
+        <field name="Name" title="yes">
+          <text>Ring of Daylight Globe</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A ring with the Daylight Globe spell cast on it. This normally has either fixed charges or charges-per-day.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ring of the Ram">
+        <field name="Name" title="yes">
+          <text>Ring of the Ram</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>20000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Crafted by Darin Tealpeck who wore it whenever he left his castle. A large man's ring mad eof a gold-bearing alloy. Roughly made, with a head of a ram on it. Tarnished.</text>
+        </field>
+        <field name="Implementation">
+          <text>Crushing += 2; Slashing += 2; Piercing += 2;</text>
+        </field>
+      </datum>
+      <datum name="Rope, climbing">
+        <field name="Name" title="yes">
+          <text>Rope, climbing</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>150.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Woven rope handles better and is safer for climbing than normal rope. Can hold up to 1000 lbs. 100 feet</text>
+        </field>
+      </datum>
+      <datum name="Rope, utility">
+        <field name="Name" title="yes">
+          <text>Rope, utility</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Basic twisted rope. Good for all sorts of uses! Can hold up to 500 lbs before it breaks. Price is for 100 feet</text>
+        </field>
+      </datum>
+      <datum name="Satan&apos;s Stopwatch">
+        <field name="Name" title="yes">
+          <text>Satan's Stopwatch</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>100000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Using a move equivalent action, turn on Satan's Stopwatch. For this turn and the next, gain an extra standard action. The Stopwatch is truly indestructible; when using the watch, the user's aura is modified to reflect Satan's power.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Semiprecious Stone">
+        <field name="Name" title="yes">
+          <text>Semiprecious Stone</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any sort.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sharkskin Gloves">
+        <field name="Name" title="yes">
+          <text>Sharkskin Gloves</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>25000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Crafted approximately one hundred years ago by a seafaring people of unknown origin. A pair of gray leather gloves that cover all five fingers and end at the wrist. A set of woven silk laces on the back of the hand allow the gloves to be secured tightly to the hand. The leather is made from the preserved hide of a giant shark</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Shovel">
+        <field name="Name" title="yes">
+          <text>Shovel</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>15.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>For digging holes. A regular shovel with a wooden handle</text>
+        </field>
+      </datum>
+      <datum name="Shovel, folding">
+        <field name="Name" title="yes">
+          <text>Shovel, folding</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>10.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Portable army shovel. It folds up to take less space.</text>
+        </field>
+      </datum>
+      <datum name="Silk Rope">
+        <field name="Name" title="yes">
+          <text>Silk Rope</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>For one foot. Weights 2 ounces.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Skillet">
+        <field name="Name" title="yes">
+          <text>Skillet</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>50</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy, flat, iron pan. Skillets come in all sizes. Superior versions have very thick cast-iron bottoms.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sleeping Bag">
+        <field name="Name" title="yes">
+          <text>Sleeping Bag</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>75</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A flat, heavy bag designed to be slept in. Can be made of light leather, denim, or cotton with a stuffing (the best use arctic feathers). A sleeping bag can accommodate one person comfortably or two as a tight fit. Superior versions are no heavier or bulkier but can enable surviving cooler tempatures. A normal sleeping backpack is good down to freezing. Additional superiority can reduce the minimum tempurature in steps of 40 degrees.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Snowshoes">
+        <field name="Name" title="yes">
+          <text>Snowshoes</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>For walking on snow. Also useful for loose desert sand</text>
+        </field>
+      </datum>
+      <datum name="Socks">
+        <field name="Name" title="yes">
+          <text>Socks</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Wool or cotten tube designed to be worn on the foot.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Spidersilk Rope">
+        <field name="Name" title="yes">
+          <text>Spidersilk Rope</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>50</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This is for 1 feet of rope. Weighs 1<ndash/>2 ounce.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Statue">
+        <field name="Name" title="yes">
+          <text>Statue</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any sort of statue.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Suit- Dry suit">
+        <field name="Name" title="yes">
+          <text>Suit- Dry suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>1,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Used for diving in very cold water.</text>
+        </field>
+      </datum>
+      <datum name="Suit- Enviornmental">
+        <field name="Name" title="yes">
+          <text>Suit- Enviornmental</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Special rubber and plastic suit covers the entire body. Has a built-in gas mask. Prevents harm due to posion gas, smoke, dangerous chemicals, spills, fumes, toxins, diseases, etc.</text>
+        </field>
+      </datum>
+      <datum name="Suit- Fire">
+        <field name="Name" title="yes">
+          <text>Suit- Fire</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>250.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>NOMEX clothing and helmet. Has no armor value, but protects wearer from fire.</text>
+        </field>
+      </datum>
+      <datum name="Suit- Ghillie">
+        <field name="Name" title="yes">
+          <text>Suit- Ghillie</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Sniper's camo suit. Must be purchased for a certain type of terrain (desert, woodland, urban, etc...) Gives +4 to camo skill.</text>
+        </field>
+      </datum>
+      <datum name="Suit- Space">
+        <field name="Name" title="yes">
+          <text>Suit- Space</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>2,500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Space suit, similar to that worn by astrounauts. Has an emergency air supply built in.</text>
+        </field>
+      </datum>
+      <datum name="Suit- Wetsuit">
+        <field name="Name" title="yes">
+          <text>Suit- Wetsuit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>200.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Used for diving. Keeps wearer protected from abrasions, jellyfish, etc. Keeps diver warm.</text>
+        </field>
+      </datum>
+      <datum name="Survival Kit, basic">
+        <field name="Name" title="yes">
+          <text>Survival Kit, basic</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>40.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A fanny pack containing simple first aid supplies, two days of emergency rations, poncho, fishing supplies, knife, snare, matches, 100 feet of strong cord, signal mirror, magnifying lens, water purifying tablets, and basic medications.</text>
+        </field>
+      </datum>
+      <datum name="Survival Kit, full">
+        <field name="Name" title="yes">
+          <text>Survival Kit, full</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>500.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A backpack with enough gear to survive for a long time: first aid supplies, 15 days of mini-rations, knife, fishing supplies, snare, guidebook to animals <and/> plants, 4 days of water, water filter, compass, flashlight, signal equipment, flare launcher, matches, assorted drugs, compact sleeping blanket, battery powered radio, and a .22 caliber gun with 200 rounds.</text>
+        </field>
+      </datum>
+      <datum name="T-shirt">
+        <field name="Name" title="yes">
+          <text>T-shirt</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A type of shirt made from cotton or a cotton-polyblend with short or long sleeves; no collar and simplified construction.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Tao Tieh Pendant">
+        <field name="Name" title="yes">
+          <text>Tao Tieh Pendant</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small stone pendant carved with a Yin<ndash/>Yang. The size of a quarter of black-granite. Part is inlaid with mother-of-pearl. The back is engraved with eight Tao hexagrams in an octagonal pattern inlaid in gold. There is a crude fiber cord attached to the pendant.</text>
+        </field>
+        <field name="Implementation">
+          <text>ManaPoints+=50; Piercing+=1; Crushing+=1; Slashing+=1;</text>
+        </field>
+      </datum>
+      <datum name="Tent, expedition">
+        <field name="Name" title="yes">
+          <text>Tent, expedition</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>300.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>High quality tent will stand up to the worst weather conditions. Fits 3 adults max.</text>
+        </field>
+      </datum>
+      <datum name="Tent, large">
+        <field name="Name" title="yes">
+          <text>Tent, large</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A big <ldquo/>cabin<rdquo/>style tent. Has lots of room inside, up to 8 adults.</text>
+        </field>
+      </datum>
+      <datum name="Tent, small">
+        <field name="Name" title="yes">
+          <text>Tent, small</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>30.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A small tent. Will fit two adults max.</text>
+        </field>
+      </datum>
+      <datum name="Tent, survival">
+        <field name="Name" title="yes">
+          <text>Tent, survival</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A tiny tent large enough for one person. Fits into a pants pocket!</text>
+        </field>
+      </datum>
+      <datum name="Tool kit- advanced">
+        <field name="Name" title="yes">
+          <text>Tool kit- advanced</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>3,000.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Large tool kit for working on machinery, vehicles, or mecha. Fits in a large rolling chest or small trailer. Has many special tools such as a large jack, extra-large wrench set for big jobs, portable engine hoist, small air compressor, metal and wood cutting saws, powered wrench, gas torch, etc.</text>
+        </field>
+      </datum>
+      <datum name="Tool kit- basic">
+        <field name="Name" title="yes">
+          <text>Tool kit- basic</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>30.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A portable pouch with the basics: Hammer, screwdrivers, adjustable wrench, pliers, measuring tape, and a small saw</text>
+        </field>
+      </datum>
+      <datum name="Tool kit- standard">
+        <field name="Name" title="yes">
+          <text>Tool kit- standard</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>200.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A big tool box filled with a large assortment of tools. Weighs about 70 lbs. Good for most basic jobs.</text>
+        </field>
+      </datum>
+      <datum name="Tool, Halligan">
+        <field name="Name" title="yes">
+          <text>Tool, Halligan</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>250.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Firefighter's tool. A single piece of metal that has a hammer, axe, hydrant wrench, and a special prying edge. It can be used to force open doors, etc.</text>
+        </field>
+      </datum>
+      <datum name="Tool, MultiTool">
+        <field name="Name" title="yes">
+          <text>Tool, MultiTool</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>75.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A pocket tool similar to a <ldquo/>swiss army knife<rdquo/>. It has common tools inside, like pliers, screwdriver, knife blade, etc. Very handy, but not tough enough for serious jobs or manuverable enough for delicate work.</text>
+        </field>
+      </datum>
+      <datum name="Tool, Rescue">
+        <field name="Name" title="yes">
+          <text>Tool, Rescue</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>2-in-1 tool. Used to break car windshields and cut seatbelts/clothing. Cannot be used as a weapon.</text>
+        </field>
+      </datum>
+      <datum name="Utensil">
+        <field name="Name" title="yes">
+          <text>Utensil</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any eating utensil such as a spoon, fork, knife or chopstick.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wagon">
+        <field name="Name" title="yes">
+          <text>Wagon</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1200</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large four-wheeled cart, possibly enclosed. Can accomodate one or two draft animals.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wagon, Ox">
+        <field name="Name" title="yes">
+          <text>Wagon, Ox</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A very large wagon that can accomodate a team of Oxen, like a regular wagon, but much larger.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wagon, Postal Carrier">
+        <field name="Name" title="yes">
+          <text>Wagon, Postal Carrier</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>4000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A wagon with a light-weight steel undercarriage with wicker-work and canvas top. The top is oiled and made from doubled-egypt cloth and is therefore weather proof. A Postal Carrier weighs approximately 1<ndash/>4 of an equivalently sized wagon, but uses the same number of draft animals. It can maintain twice the speed of a normal wagon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wagon, Team">
+        <field name="Name" title="yes">
+          <text>Wagon, Team</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>3500</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A wagon which can accomodate a team of draft animals. Teams come in even numbers; for example, this type of wagon can accomodate teams of 2,4,6, or 8 draft animals.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Warhorse">
+        <field name="Name" title="yes">
+          <text>Warhorse</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>3000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A &quot;normal&quot; warhorse is much larger than a regular horse, being around 1300 lbs. Only warhorses can be used in combat.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Warhorse, Furious">
+        <field name="Name" title="yes">
+          <text>Warhorse, Furious</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>15000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>These are the largest of the Warhorses, weighing in at 1500 or more pounds. They are known for extreme (and violent) attachment to a single rider and will literally attempt to kill any others attempting to ride them. Furies are the strongest, fastest, and most durable of all the Warhorses.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Warhorse, Heavy">
+        <field name="Name" title="yes">
+          <text>Warhorse, Heavy</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A breed of Warhorse used by mounted and heavily armored soldiers. These Warhorses are not much bigger than a normal Warhorse, but are much stronger. They are typically slower but have greater endurance. Only warhorses can be used in combat.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Warhorse, King&apos;s Own">
+        <field name="Name" title="yes">
+          <text>Warhorse, King's Own</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>50000</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A subbreed of the Furious, the King's Own is a slightly lighter, but much faster horse than the Furious. They are trained to be able to handle two riders. Only warhorses can be used in combat.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Warhorse, Light">
+        <field name="Name" title="yes">
+          <text>Warhorse, Light</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2500</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A smaller horse bred for speed and ferocity. Only warhorses can be used in combat.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Watch, Calculator">
+        <field name="Name" title="yes">
+          <text>Watch, Calculator</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>50.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A wristwatch with a built-in calculator.</text>
+        </field>
+      </datum>
+      <datum name="Watch, standard">
+        <field name="Name" title="yes">
+          <text>Watch, standard</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>20.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Tells the time. That's about it.</text>
+        </field>
+      </datum>
+      <datum name="Watch, survival">
+        <field name="Name" title="yes">
+          <text>Watch, survival</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text> <dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy-duty watch that's nearly indestructible. Waterproof, has built in compass, thermometer, and other features.</text>
+        </field>
+      </datum>
+    </category>

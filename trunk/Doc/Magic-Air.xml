@@ -1,0 +1,1143 @@
+
+    <category name="Content/Magic/Air">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
+        <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
+        <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
+        <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Air Laser">
+        <field name="Name" title="yes">
+          <text>Air Laser</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+            <kind>P</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>
+          <notappl/>
+        </text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>100 feet</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This spell fires a thin beam of compressed gas and wind from the caster's outstretched hand. The beam is very hard to see becasue it looks like a hazy distortion in the air<ndash/>it is very nearly transparent. The beam may be fired at any target within 100 feet range. Air Laser has AP: 50 and is at a +3 to strike. Note: this spell is not actually a laser in the true sense of the word, thus it is not affected by typical laser defenses.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Air Scythe">
+        <field name="Name" title="yes">
+          <text>Air Scythe</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>4</bns>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>
+          <notappl/>
+        </text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster enchants a bit of air surrounding one target, forming it into an invisible cutting blade. The blade automatically strikes the target. This spell is only effective if the intended target is surrounded by air. It is ineffective in an air-free enviornment, such as in space or underwater.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ball lightning">
+        <field name="Name" title="yes">
+          <text>Ball lightning</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bns/>
+            <mul>5</mul>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>
+          <notappl/>
+        </text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>150' max</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster charges a ball of electricity between his hands and then throws it forward in a direction of his choosing. The ball travels in a straight line from the caster towards its intended target. The ball can travel no more than 150 feet away, or to the intended target, whichever is closer. The ball explodes into a flash of lightning and sparks whenever it strikes its intended target or reaches its maximum range in the event of a miss. This deals <roll><num>1</num><face>10</face><bns/><mul>5</mul><kind>U</kind></roll> damage to the target and anything occupying the target square. This spell does not have the Fire effect though it will ignite readily flammible materials in the target square. Furthermore, any creature that is within 10 feet of the path the ball travels (except the caster) is struck by a small lightning bolt dealiong <roll><num>1</num><face>10</face><bns/><mul>2</mul></roll> damage. (roll this damage seperatley for each target harmed in this manner) The final target does not suffer this damage in addition to the normal target damage. The caster may throw the ball through hard objects or through &quot;friendly&quot; targets by making the ball disappear and reappear along its path. The ball can pass though inaninmate objects or open areas 15' or less in size and then reappear without stopping it or diminishing it's effect on the target if the caster makes a magical control check for each object or space he wishes the ball to skip.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Call Lightning">
+        <field name="Name" title="yes">
+          <text>Call Lightning</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bns/>
+            <mul>5</mul>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>
+          <notappl/>
+        </text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>45</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster calls down a single lighting bolt from the sky, which strikes the target. It has a 50<percent/>chance of fire effect. This spell is only effective outdoors. If this spell is cast on a stormy day, it deals double damage and the caster gets +3 to his strike roll.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chain Lightning">
+        <field name="Name" title="yes">
+          <text>Chain Lightning</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>
+          <notappl/>
+        </text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>90</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster fires a bolt of lightning from his outstretched arms. The bolt automatically strikes one target, dealing <roll><num>1</num><face>10</face><bns/><mul>5</mul></roll> damage. The bolt then immedietly jumps to another target within 40 feet of the first, dealing 4x <roll><num>1</num><face>10</face><bns/></roll> , etc. The bolt keeps jumping, each time losing 1x damage. The bolt jumps four times for a total of five different strikes. Chain Lightning can jump to the same target more than once, as long as the target wasn't the target of the previous strike. Each lightning jump always strikes the closest possible target from its previous jump, unless the caster makes a Magical Control check to redirect it elsewhere at -1 for each 5 feet between the closest target and the caster's preferred target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Corona">
+        <field name="Name" title="yes">
+          <text>Corona</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>10</face>
+            <bns/>
+            <mul>5</mul>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster conjures up a field of intense lightning energy, fire, and sparks which fills one 5-foot square (which must be a valid target) and four surrounding squares (a cross shape). Anything in the area of effect of the spell suffers <roll><num>2</num><face>10</face><bns/><mul>5</mul><kind>U</kind></roll> per turn for the duration of the spell. Also, on each of the caster's turns one randomly determined target within 20' of the area of effect is struck by a lightning bolt dealing <roll><num>3</num><face>10</face><bns/><kind>U</kind></roll>.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Create Smoke">
+        <field name="Name" title="yes">
+          <text>Create Smoke</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Generates a large cloud of dense black-gray smoke filling 50,000 cubic feet. (50x50x20), which then dissipates naturally. This smoke is not hazardous or unpleasant to breathe, though it does obscure vision.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Deflection">
+        <field name="Name" title="yes">
+          <text>Deflection</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Deflection enchants one target with a field of anti-gravity. This has the following effects on the target: +3 levels to dodge skill (and similar skills based on dodge) +3 to any DEX or skill rolls related to jumping or avoiding objects. +2 levels to parry +2 levels to block (shield skill) -6 to strike with melee attacks -3 to other types of DEX checks or skills involving manual dexterity or manipulation of small objects.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Electric Bolt">
+        <field name="Name" title="yes">
+          <text>Electric Bolt</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>10</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster forms a small bolt of lighting in his/her hands and sends it flying towards any one target. (has a 50<percent/>chance of fire effect)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Electrospark">
+        <field name="Name" title="yes">
+          <text>Electrospark</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>-</bOff>
+            <bns>1</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll or Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster manipulates air molecules to create an electrostatic discharge wherever he chooses. It doesn't have fire effect, but it can ignite very flammable materials such as gasoline, lamp oil, dry tinder, natural gas, etc. Target must be within 20' of caster. Caster can use touch to strike with the spell automatically.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Energy Field">
+        <field name="Name" title="yes">
+          <text>Energy Field</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bns/></roll> min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>35</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>50' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Generates an area of highly charged air. Electronic devices in the field such as appliances, cellular phones, computers, or walkie-talkies have 60<percent/>chance to fail in operation. Furthermore, static electricity in the area will move about lightweight objects and fine particles are likely to become stuck to anything moving in the area.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Explodet">
+        <field name="Name" title="yes">
+          <text>Explodet</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2X-1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>3X* <roll><num>4</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>C</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A powerful spell that forces the air immediately surrounding one target to undergo immediate and complete mass-energy transformation, creating a powerful explosion with the target inside it. X is the size of the target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Focused Gust">
+        <field name="Name" title="yes">
+          <text>Focused Gust</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a short gust of wind in a random direction centered at a location the caster chooses. It applies force equal to 10*X*Y lbs. Y is the size level of the object the spell is cast on. If the caster spends double MP he can choose the direction of the gust. This spell cannot cause damage directly, but can knock things over.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Gas Slash">
+        <field name="Name" title="yes">
+          <text>Gas Slash</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>5x <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50* (<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>)</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One target is struck by several narrow streamers of high pressure gas. Target is struck a total of X times. Reroll damage for each strike.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Grand Storm">
+        <field name="Name" title="yes">
+          <text>Grand Storm</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>Varies</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>3</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>Varies</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>After casting, a dark, foreboding, storm blows into the region. For the duration of the spell, the caster can spend one action to call down from the sky a bolt of lightning dealing <roll><num>3</num><face>10</face><bns/><mul>10</mul><kind>U</kind></roll> damage to any target that is outside; all objects within 10 feet of the target take half damage from this strike. In addition, for the duration of the spell the caster can take an action to throw a bolt of lightning from his fingers dealing <roll><num>1</num><face>10</face><bns/><mul>5</mul><kind>U</kind></roll> damage to the target, and all objects that are lined up behind the target for up to 50 feet.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Great Bolt">
+        <field name="Name" title="yes">
+          <text>Great Bolt</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bns/>
+            <mul>10</mul>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The caster calls down a large bolt of lightning from the sky, striking one target. (fire effect). Anything within 5' of the strike takes half damage. This only works outdoors.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Heavy Spark">
+        <field name="Name" title="yes">
+          <text>Heavy Spark</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>10</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster launches a bolt of lightning from his/her outstretched hands, which attacks a single target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Invert pressure">
+        <field name="Name" title="yes">
+          <text>Invert pressure</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bns/>
+            <mul>10</mul>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Invokes a gas explosion within the target</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Lightning Gauntlet">
+        <field name="Name" title="yes">
+          <text>Lightning Gauntlet</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bns/>
+            <mul>5</mul>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>2</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One of the caster's forearm and hand is surrounded by a sheath of electricity. Anything the caster touches with the gauntlet takes listed damage. Due to the size of the gauntlet, the caster gets a +1 to strike with it (use unarmed combat, or similar skill to strike).</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Lightning Stream">
+        <field name="Name" title="yes">
+          <text>Lightning Stream</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bns/>
+            <mul>5</mul>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>100 feet</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large column of lightning streams out from the caster. The stream can be a maximum of 100 feet long, and deals <roll><num>1</num><face>10</face><bns/><mul>5</mul><kind>U</kind></roll> damage to all that are caught within the stream. Only large, inorganic, nonmetallic objects (e.g. stone wall, hill, etc.) can stop the lightning stream. For the duration of the spell, the caster can use an action to re-point the spell so that it can damage a different set of opponents.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Pressure shift">
+        <field name="Name" title="yes">
+          <text>Pressure shift</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text> <roll><num>6</num><face>6</face><bOff>+</bOff><bns>3</bns></roll> x2 C</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster disassociates ambient air along a common plane, centered at the target, producing a devastating crushing blow within the target</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sandstorm">
+        <field name="Name" title="yes">
+          <text>Sandstorm</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>6' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A more powerful version of whirlwind. Area affect: 10'x10'</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Spark Shower">
+        <field name="Name" title="yes">
+          <text>Spark Shower</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>10</face>
+            <bns/>
+            <mul>5</mul>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One target is barraged by thousands of high-voltage sparks emanating from all surrounding matter dealing damage and catching the target on fire. (Fire effect)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Web Lightning">
+        <field name="Name" title="yes">
+          <text>Web Lightning</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>10</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A bolt of lightning streaks out from each finger of the caster's primary hand, for a total of 5 bolts. Each one is treated as if it was the level 4 spell Chain Lightning.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Whirlwind">
+        <field name="Name" title="yes">
+          <text>Whirlwind</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>S</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>3' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a small whirlwind that strikes one target, slashing at it with airborne stones and other particles.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Willy-Willy">
+        <field name="Name" title="yes">
+          <text>Willy-Willy</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a small cyclone about 6-10 feet high. Deals no damage, but can move objects weighing less than 20 lbs. GM should determine skill check, if any, to perform special manipulation of the object. The cyclone can move things around but it cannot perform careful manipulation , etc. Can also blow around dirt, fan flames, etc. Creatures inside the cyclone require a dex check at -4 to remain standing.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wind Screen">
+        <field name="Name" title="yes">
+          <text>Wind Screen</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Generates a circular wall (as Wind Wall), ten feet in radius, three feet thick, thirty feet high, of fast-moving air surrounding the caster. (HP=300)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wind Shear">
+        <field name="Name" title="yes">
+          <text>Wind Shear</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>4</bns>
+            <kind>C</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Tosses one target into the air, where it is torn apart by strong crosswinds. If the target is wearing armor there is a 75<percent/>chance that it will be destroyed if it is soft armor, 25<percent/>chance if it is hard. The armor does protect against the damage of the spell.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wind Wall">
+        <field name="Name" title="yes">
+          <text>Wind Wall</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Air</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Creates a large wall of swirling air, three feet thick, 50 feet x 25 feet in size. The wall has 200 HP. It is damaged normally by explosions or air, or physical magic. It takes half damage from fire and no damage from other sources. The wall is oriented as the caster wishes, but one edge must be on the ground. Things can pass 1' through the wall per action, if they pass a STR check at -3*size.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

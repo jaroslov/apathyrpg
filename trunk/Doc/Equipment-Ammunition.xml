@@ -1,0 +1,184 @@
+
+    <category name="Content/Equipment/Ammunition">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Anti-armor (arrows only!)">
+        <field name="Name" title="yes">
+          <text>Anti-armor (arrows only!)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>-25<percent/>dmg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A special type of arrowhead designed to penetrate heavy armor. They are expensive and time-consuming to produce, and therefore generally rare for military use (at least by common soldiers). The forged and hardened point is square or triangular in profile, carefully ground into a very sharp point.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Barbed">
+        <field name="Name" title="yes">
+          <text>Barbed</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>Bonus 0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Common for hunting small game (especially birds), and also used for war. This is a standard arrow (bullet point) with several metallic barbs embedded in the head. It is difficult to remove, causing additional damage when it is pulled out of the target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Broadhead (hunting)">
+        <field name="Name" title="yes">
+          <text>Broadhead (hunting)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>+1 Dmg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>These are the most effective hunting arrows. They aren't great at penetrating heavy armor, but are excellent for causing additional damage to the target. This is particularly desirable for hunting, because it is likely to kill or incapacitate the target animal quickly, even if the vital organs are missed. A broadhead is a wide, diamond-shaped head that has two or more <ldquo/>fins<rdquo/> on it that are sharpened into blades<mdash/>which cut a devastating wound in the target.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Bullet Point">
+        <field name="Name" title="yes">
+          <text>Bullet Point</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type"  table="yes"><text>No value</text></field>
+        <field name="Cost"  table="yes"><text>No value</text></field>
+        <field name="Damage"  table="yes"><text>No value</text></field>
+        <field name="Hands"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>The <ldquo/>standard<rdquo/> type of arrow point. The tip is pointed, but somewhat blunt, like a rifle bullet. They are used for hunting small game, and for target shooting. They are also common arrows for some military use since they are easily and cheaply produced.</text>
+        </field>
+      </datum>
+      <datum name="Bullet Point (blunt/target)">
+        <field name="Name" title="yes">
+          <text>Bullet Point (blunt<ndash/>target)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>Bonus 0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A common military arrowhead. This is also the most common type of dart. The head is made of steel, and fashioned into a narrow cone<mdash/>much like a pencil. These types of arrows are generally not used for hunting, but are very effective for wartime use.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Explosive">
+        <field name="Name" title="yes">
+          <text>Explosive</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type"  table="yes"><text>No value</text></field>
+        <field name="Cost"  table="yes"><text>No value</text></field>
+        <field name="Damage"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>A rare arrow design, which features a hollow head packed with gunpowder or other light explosive. When it strikes the target, it makes a small explosion. This has excellent damage potential. Unfortunately, the large, fragile, head makes this type of arrow poor at penetrating armor.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Explosive Point">
+        <field name="Name" title="yes">
+          <text>Explosive Point</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>Bonus 0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>fragile</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Field Point (penetration)">
+        <field name="Name" title="yes">
+          <text>Field Point (penetration)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>Bonus 0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>9 AP</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fire Arrow">
+        <field name="Name" title="yes">
+          <text>Fire Arrow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>Bonus 0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>5AP, has fire effect, light before shooting.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fire Point">
+        <field name="Name" title="yes">
+          <text>Fire Point</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type"  table="yes"><text>No value</text></field>
+        <field name="Cost"  table="yes"><text>No value</text></field>
+        <field name="Damage"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>An arrow that is coated with cloth soaked in pitch, tar, kerosene, or some similar flammable material. It is set alight before firing. These arrows are commonly used for sending signals, and for setting enemy structures on fire<mdash/>however, they are also effective for setting enemy soldiers on fire.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>

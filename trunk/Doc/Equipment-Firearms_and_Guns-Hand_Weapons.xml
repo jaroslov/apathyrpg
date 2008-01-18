@@ -1,0 +1,1304 @@
+
+    <category name="Content/Equipment/Firearms and Guns/Hand Weapons">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="p{6em}" name="Kind" table="yes"/>
+        <field colfmt="p{3em}" name="Damage" table="yes"/>
+        <field colfmt="p{4em}" name="Capacity" table="yes"/>
+        <field colfmt="p{2em}" name="Burst" table="yes"/>
+        <field colfmt="p{2.5em}" name="Range" table="yes"/>
+        <field colfmt="p{2em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{4em}" name="Cost" table="yes"/>
+        <field colfmt="p{3em}" name="Ammo" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name=".22 short">
+        <field name="Name" title="yes">
+          <text>.22 short</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>100.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.10</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".22 LR">
+        <field name="Name" title="yes">
+          <text>.22 LR</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>4</face><bOff/><bns/></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>125.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.10</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".32">
+        <field name="Name" title="yes">
+          <text>.32</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6 or 8</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>150.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.15</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".38 special">
+        <field name="Name" title="yes">
+          <text>.38 special</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>1</num><face>8</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>200.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.25</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".357 magnum">
+        <field name="Name" title="yes">
+          <text>.357 magnum</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>300.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.50</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".44 magnum">
+        <field name="Name" title="yes">
+          <text>.44 magnum</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>350.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.75</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".45 Long Colt">
+        <field name="Name" title="yes">
+          <text>.45 Long Colt</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>400.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.75</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".454 Casull">
+        <field name="Name" title="yes">
+          <text>.454 Casull</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>5 or 6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>800.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>1.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".455 Supermag">
+        <field name="Name" title="yes">
+          <text>.455 Supermag</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".500 S W">
+        <field name="Name" title="yes">
+          <text>.500 S<and/>W</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".500 Linebaugh">
+        <field name="Name" title="yes">
+          <text>.500 Linebaugh</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>5 or 6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,200.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".500 Linebaugh Long">
+        <field name="Name" title="yes">
+          <text>.500 Linebaugh Long</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Revolver</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>2,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>4.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".25 Auto">
+        <field name="Name" title="yes">
+          <text>.25 Auto</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>4</face><bOff/><bns/></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>14 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>100.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.20</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".32 Auto">
+        <field name="Name" title="yes">
+          <text>.32 Auto</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>14 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>150.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.25</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="9mm Parabellum">
+        <field name="Name" title="yes">
+          <text>9mm Parabellum</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff/><bns/></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>10 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>250.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.25</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".40 S W">
+        <field name="Name" title="yes">
+          <text>.40 S<and/>W</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>1</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>10 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>250.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.50</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".357 Sig">
+        <field name="Name" title="yes">
+          <text>.357 Sig</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>10 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>250</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>500.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.75</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="10mm Auto">
+        <field name="Name" title="yes">
+          <text>10mm Auto</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>9 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>150</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>400.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.75</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".45 Auto">
+        <field name="Name" title="yes">
+          <text>.45 Auto</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>8 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>300.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.50</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".440 Cor-Bon">
+        <field name="Name" title="yes">
+          <text>.440 Cor-Bon</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>7 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>300</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,200.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".50 Action Express">
+        <field name="Name" title="yes">
+          <text>.50 Action Express</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>7 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>900.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>1.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".223 Remington (5.56mm NATO)">
+        <field name="Name" title="yes">
+          <text>.223 Remington (5.56mm NATO)</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Hunting Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>1 single</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>600.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.25</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".243 Winchester">
+        <field name="Name" title="yes">
+          <text>.243 Winchester</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Hunting Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>1 single</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>700.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.50</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".308 Winchester (7.62 mm NATO)">
+        <field name="Name" title="yes">
+          <text>.308 Winchester (7.62 mm NATO)</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Hunting Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>1 single</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text><dollar/>12.00</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>800.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.50</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".30-06 Springfield">
+        <field name="Name" title="yes">
+          <text>.30-06 Springfield</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Hunting Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>1 single</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>1.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".224 BOZ">
+        <field name="Name" title="yes">
+          <text>.224 BOZ</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>9 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>800.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>3.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".30 Willis Magnum">
+        <field name="Name" title="yes">
+          <text>.30 Willis Magnum</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>10 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>400</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".357 Supermagnum">
+        <field name="Name" title="yes">
+          <text>.357 Supermagnum</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>4</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6 (revolver)</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>300</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text><dollar/>12.00</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>750.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>3.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="10 x 64 Borgmaster">
+        <field name="Name" title="yes">
+          <text>10 x 64 Borgmaster</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>8 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>2,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>4.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="12 x 70 Borg King">
+        <field name="Name" title="yes">
+          <text>12 x 70 Borg King</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>6</face><bOff>+</bOff><bns>3</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6 (revolver)</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>4,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".500 Sledgehammer">
+        <field name="Name" title="yes">
+          <text>.500 Sledgehammer</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>6</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>7,200.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>3.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".525 Sweitzer Ultramax">
+        <field name="Name" title="yes">
+          <text>.525 Sweitzer Ultramax</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>4</num><face>6</face><bOff>+</bOff><bns>4</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>5 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>10,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>8.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".600 NE-MOD Earth Shaker">
+        <field name="Name" title="yes">
+          <text>.600 NE-MOD Earth Shaker</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Heavy Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>6</num><face>4</face><bOff>+</bOff><bns>3</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>3 (revolver)</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>25,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>100.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="10mm  Light Gyropistol">
+        <field name="Name" title="yes">
+          <text>10mm  Light Gyropistol</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Gyro-rocket Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff/><bns/></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>750.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>5.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="13mm Gyropistol">
+        <field name="Name" title="yes">
+          <text>13mm Gyropistol</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Gyro-rocket Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face><bOff>+</bOff><bns>1</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,100.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>7.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="16mm  Heavy Gyropistol (FIRE eff.)">
+        <field name="Name" title="yes">
+          <text>16mm  Heavy Gyropistol (FIRE eff.)</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Gyro-rocket Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>3</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> F</text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>2,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>12.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="9mm Parabellum">
+        <field name="Name" title="yes">
+          <text>9mm Parabellum</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Submachine Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>20 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1/6</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,500.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.25</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".45 Auto">
+        <field name="Name" title="yes">
+          <text>.45 Auto</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Submachine Pistol</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>2D6+1</text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>15 </text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1/4</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>2,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.50</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="9mm Parabellum">
+        <field name="Name" title="yes">
+          <text>9mm Parabellum</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Submachine Gun</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>24 mag</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>4..8</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>600.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.25</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name=".45 Auto">
+        <field name="Name" title="yes">
+          <text>.45 Auto</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Submachine Gun</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>2D6+1</text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>24 mag</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>600.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>0.50</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="Muzzleloading pistol">
+        <field name="Name" title="yes">
+          <text>Muzzleloading pistol</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Archaic Hand-arm</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>700.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="Pepperbox">
+        <field name="Name" title="yes">
+          <text>Pepperbox</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Archaic Hand-arm</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>1</num><face>8</face><bOff>+</bOff><bns>2</bns></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>4..6</text>
+        </field>
+        <field name="Burst" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,300.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="Duck&apos;s Foot pistol">
+        <field name="Name" title="yes">
+          <text>Duck's Foot pistol</text>
+        </field>
+        <field name="Kind" table="yes">
+          <text>Archaic Hand-arm</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text><roll><num>2</num><face>6</face></roll></text>
+        </field>
+        <field name="Capacity" table="yes">
+          <text>3, all fire at once (3 rnd burst)</text>
+        </field>
+        <field name="Burst"  table="yes"><text>No value</text></field>
+        <field name="Range" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text><dollar/>1,000.00</text>
+        </field>
+        <field name="Ammo" table="yes">
+          <text><dollar/>2.00</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+    </category>
