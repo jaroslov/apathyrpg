@@ -1342,7 +1342,7 @@
       <title><text>Rule Sections</text></title>
       <section kind="chapter">
         <title><text>Academics</text></title>
-        <reference hrid="Content/Academic"/>
+        <reference hrid="Academic"/>
       </section>
       <section kind="chapter">
         <title><text>Augmentations</text></title>
@@ -1448,30 +1448,30 @@
         </section>
         <section kind="section">
           <title><text>Arm, Hand</text></title>
-          <reference hrid="Content/Augmentations/Arm Hand"/>
+          <reference hrid="Augmentations-Arm_Hand"/>
         </section>
         <section kind="section">
           <title><text>Body</text></title>
-          <reference hrid="Content/Augmentations/Body"/>
+          <reference hrid="Augmentations-Body"/>
         </section>
         <section kind="section">
           <title><text>Head</text></title>
-          <reference hrid="Content/Augmentations/Head"/>
+          <reference hrid="Augmentations-Head"/>
         </section>
         <section kind="section">
           <title><text>Leg</text></title>
-          <reference hrid="Content/Augmentations/Leg"/>
+          <reference hrid="Augmentations-Leg"/>
         </section>
         <section kind="section">
           <title><text>Torso</text></title>
-          <reference hrid="Content/Augmentations/Torso"/>
+          <reference hrid="Augmentations-Torso"/>
         </section>
       </section>
       <section kind="chapter">
         <title><text>Equipment</text></title>
         <section kind="section">
           <title><text>Ammunition</text></title>
-          <reference hrid="Content/Equipment/Ammunition"/>
+          <reference hrid="Equipment-Ammunition"/>
         </section>
         <section kind="section">
           <title><text>Armor</text></title>
@@ -1558,7 +1558,7 @@
               </item>
             </itemized-list>
           </section>
-          <reference hrid="Content/Equipment/Armor"/>
+          <reference hrid="Equipment-Armor"/>
         </section>
         <section kind="section">
           <title><text>Energy Weapons</text></title>
@@ -1695,37 +1695,37 @@
           </section>
           <section kind="section">
             <title><text>Axes</text></title>
-            <reference hrid="Content/Equipment/Melee/Axes"/>
+            <reference hrid="Equipment-Melee-Axes"/>
           </section>
           <section kind="section">
             <title><text>Blunt</text></title>
-            <reference hrid="Content/Equipment/Melee/Blunt"/>
+            <reference hrid="Equipment-Melee-Blunt"/>
           </section>
           <section kind="section">
             <title><text>Body</text></title>
-            <reference hrid="Content/Equipment/Melee/Body"/>
+            <reference hrid="Equipment-Melee-Body"/>
           </section>
           <section kind="section">
             <title><text>Chained</text></title>
-            <reference hrid="Content/Equipment/Melee/Chained"/>
+            <reference hrid="Equipment-Melee-Chained"/>
           </section>
           <section kind="section">
             <title><text>Exotic</text></title>
-            <reference hrid="Content/Equipment/Melee/Exotic"/>
+            <reference hrid="Equipment-Melee-Exotic"/>
           </section>
           <section kind="section">
             <title><text>Knives</text></title>
-            <reference hrid="Content/Equipment/Melee/Knives"/>
+            <reference hrid="Equipment-Melee-Knives"/>
           </section>
           <section kind="section">
             <title><text>Large Swords</text></title>
-            <reference hrid="Content/Equipment/Melee/Large Swords"/>
+            <reference hrid="Equipment-Melee-Large_Swords"/>
           </section>
           <section kind="section">
             <title><text>Monofilament</text></title>
             <text>The Monofilament Whip is length of metallic, diamondoid, or silicoid wire that is the thickness of a single molecule, with a weight on one end. The Archaic Weapon<mdash/>Chain skill is used. A skill roll of 4 or less is considered a critical failure (instead of the normal 1). This modified critical failure is there for people who are skilled. Those who are not get a critical failure on a 9 or below.</text>
             <text>The recover time of the Monofilament Whip cannot be reduced by strength, and will always require a 1 action to recover from safely. The user can attempt to reduce the recover time to 0, but there is a 50<percent/>chance that the user will strike himself with the whip dealing full damage to himself.</text>
-            <reference hrid="Content/Equipment/Melee/Monofilament"/>
+            <reference hrid="Equipment-Melee-Monofilament"/>
           </section>
           <section kind="section">
             <title><text>Plasma</text></title>
@@ -1812,7 +1812,7 @@
           </section>
           <section kind="section">
             <title><text>Polearms</text></title>
-            <reference hrid="Content/Equipment/Melee/Polearms"/>
+            <reference hrid="Equipment-Melee-Polearms"/>
           </section>
           <section kind="section">
             <title><text>Rocket Assisted</text></title>
@@ -1820,28 +1820,28 @@
             <text>If such a weapon is used, and the target is missed, then it takes an extra two actions to recover. If the target is hit but the blow is parried or blocked, then it takes the normal time to recover.</text>
             <text>When using rocket assisted weapons, you need an extra success to parry melee attacks. (At least two better than attacker.)</text>
             <text>Each weapon can store up to 5 <ldquo/>rocket charges.<rdquo/> When these are used up, they must be refilled before the weapon can be used. Each charge costs <dollar/>100 to refill.</text>
-            <reference hrid="Content/Equipment/Melee/Rocket-Assisted"/>
+            <reference hrid="Equipment-Melee-Rocket-Assisted"/>
           </section>
           <section kind="section">
             <title><text>Staves</text></title>
-            <reference hrid="Content/Equipment/Melee/Staves"/>
+            <reference hrid="Equipment-Melee-Staves"/>
           </section>
           <section kind="section">
             <title><text>Thrown</text></title>
-            <reference hrid="Content/Equipment/Melee/Thrown"/>
+            <reference hrid="Equipment-Melee-Thrown"/>
           </section>
         </section>
         <section kind="section">
           <title><text>Miscellaneous</text></title>
-          <reference hrid="Content/Equipment/Miscellaneous"/>
+          <reference hrid="Equipment-Miscellaneous"/>
         </section>
         <section kind="section">
           <title><text>Ranged</text></title>
-          <reference hrid="Content/Equipment/Ranged"/>
+          <reference hrid="Equipment-Ranged"/>
         </section>
         <section kind="section">
           <title><text>Shields</text></title>
-          <reference hrid="Content/Equipment/Shields"/>
+          <reference hrid="Equipment-Shields"/>
         </section>
         <section kind="section">
           <title><text>Firearms <and/> Guns</text></title>
@@ -1972,7 +1972,7 @@
               <title><text>Gyroject and Rocket Handguns</text></title>
               <text>These are very rare weapons. They appear similar to automatics (pistols) but he cartridges are essentially tiney, computer-controlled rockets. They are no louder than opening a soda can when fired. Damage at ranges less than 30 feet is half of normal. Damage at ranges greater than 60 feet is +2 per die. Accuracy is a -1 to strike, plus a -1 for every 10 feet to the target. These guns have virtually no recoil. Gyrojet carbines are an available option, however, the cost is an additional <dollar/>500, and teh accuracy is at +1 to strike. They have double the ammunition capacity.</text>
             </section>
-            <reference hrid="Content/Equipment/Firearms and Guns/Hand Weapons"/>
+            <reference hrid="Equipment-Firearms_and_Guns-Hand_Weapons"/>
           </section>
           <section kind="section">
             <title><text>Long Weapons</text></title>
@@ -2023,7 +2023,7 @@
               <title><text>Archaic Long-arms</text></title>
               <text>Blunderbuss' deal half damage against armor. Muskets are at a -1 to strike.</text>
             </section>
-            <reference hrid="Content/Equipment/Firearms and Guns/Long Guns"/>
+            <reference hrid="Equipment-Firearms_and_Guns-Long_Guns"/>
           </section>
           <section kind="section">
             <title><text>Heavy Weapons</text></title>
@@ -2863,43 +2863,43 @@
           <title><text>Schools</text></title>
           <section kind="section">
             <title><text>Air</text></title>
-            <reference hrid="Content/Magic/Air"/>
+            <reference hrid="Magic-Air"/>
           </section>
           <section kind="section">
             <title><text>Arcane</text></title>
-            <reference hrid="Content/Magic/Arcane"/>
+            <reference hrid="Magic-Arcane"/>
           </section>
           <section kind="section">
             <title><text>Beast</text></title>
-            <reference hrid="Content/Magic/Beast"/>
+            <reference hrid="Magic-Beast"/>
           </section>
           <section kind="section">
             <title><text>Earth</text></title>
-            <reference hrid="Content/Magic/Earth"/>
+            <reference hrid="Magic-Earth"/>
           </section>
           <section kind="section">
             <title><text>Fire</text></title>
-            <reference hrid="Content/Magic/Fire"/>
+            <reference hrid="Magic-Fire"/>
           </section>
           <section kind="section">
             <title><text>Life</text></title>
-            <reference hrid="Content/Magic/Life"/>
+            <reference hrid="Magic-Life"/>
           </section>
           <section kind="section">
             <title><text>Light</text></title>
-            <reference hrid="Content/Magic/Light"/>
+            <reference hrid="Magic-Light"/>
           </section>
           <section kind="section">
             <title><text>Physical</text></title>
-            <reference hrid="Content/Magic/Physical"/>
+            <reference hrid="Magic-Physical"/>
           </section>
           <section kind="section">
             <title><text>Spirit</text></title>
-            <reference hrid="Content/Magic/Spirit"/>
+            <reference hrid="Magic-Spirit"/>
           </section>
           <section kind="section">
             <title><text>Water</text></title>
-            <reference hrid="Content/Magic/Water"/>
+            <reference hrid="Magic-Water"/>
           </section>
         </section>
       </section>
@@ -2963,23 +2963,23 @@
           <title><text>Categories</text></title>
           <section kind="section">
             <title><text>Basic</text></title>
-            <reference hrid="Content/Martial Arts/Basic"/>
+            <reference hrid="Martial_Arts-Basic"/>
           </section>
           <section kind="section">
             <title><text>Combat</text></title>
-            <reference hrid="Content/Martial Arts/Combat"/>
+            <reference hrid="Martial_Arts-Combat"/>
           </section>
           <section kind="section">
             <title><text>Defensive</text></title>
-            <reference hrid="Content/Martial Arts/Defensive"/>
+            <reference hrid="Martial_Arts-Defensive"/>
           </section>
           <section kind="section">
             <title><text>Modifier</text></title>
-            <reference hrid="Content/Martial Arts/Modifier"/>
+            <reference hrid="Martial_Arts-Modifier"/>
           </section>
           <section kind="section">
             <title><text>Special</text></title>
-            <reference hrid="Content/Martial Arts/Special"/>
+            <reference hrid="Martial_Arts-Special"/>
           </section>
         </section>
       </section>
@@ -4478,7 +4478,7 @@
           <title><text>Equipment</text></title>
           <section kind="section">
             <title><text>Auxiliary</text></title>
-            <reference hrid="Content/Mecha/Equipment/Auxiliary"/>
+            <reference hrid="Mecha-Equipment-Auxiliary"/>
           </section>
           <section kind="section">
             <title><text>Ballistics</text></title>
@@ -4822,7 +4822,7 @@
                 <text>the cost in dollars to purchase the ammunition pod</text>
               </item>
             </description-list>
-            <reference hrid="Content/Mecha/Equipment/Ballistic"/>
+            <reference hrid="Mecha-Equipment-Ballistic"/>
           </section>
           <section kind="section">
             <title><text>Energy Weapons</text></title>
@@ -4999,7 +4999,7 @@
             </description-list>
             <text>When buying an energy weapon you may pay it<rsquo/>s cost again to add an effect. Certain combinations of effects are <ldquo/>named<rdquo/> below.</text>
             <text>After every twenty shots an Energy weapon must be retuned or else it will suffer damage. For every five shots after the twenty-limit, roll a <roll><num>1</num><face>20</face><bns/></roll> with a minus equal to the number of shots, plus (Class+1)*2. If the die-roll fails, the weapon is slagged and requires (Class+1)*10 hours of repair in a professional shop.</text>
-            <reference hrid="Content/Mecha/Equipment/Energy Weapons"/>
+            <reference hrid="Mecha-Equipment-Energy_Weapons"/>
           </section>
           <section kind="section">
             <title><text>Weapons</text></title>
@@ -5160,11 +5160,11 @@
                 <text>Mecha and Power Armor Melee Weapons</text>
               </caption>
             </figure>
-            <reference hrid="Content/Mecha/Equipment/Melee Weapons"/>
+            <reference hrid="Mecha-Equipment-Melee_Weapons"/>
           </section>
           <section kind="section">
             <title><text>Sensors and Controls</text></title>
-            <reference hrid="Content/Mecha/Equipment/Sensors and Controls"/>
+            <reference hrid="Mecha-Equipment-Sensors_and_Controls"/>
           </section>
         </section>
       </section>
@@ -6061,14 +6061,14 @@
         </section>
         <section kind="section">
           <title><text>Monsters</text></title>
-          <reference hrid="Content/Monsters"/>
+          <reference hrid="Monsters"/>
         </section>
       </section>
       <section kind="chapter">
         <title><text>Traits</text></title>
         <section kind="section">
           <title><text>Traits</text></title>
-          <reference hrid="Content/Traits"/>
+          <reference hrid="Traits"/>
         </section>
       </section>
     </section>
@@ -6813,221 +6813,220 @@
         <title><text>Summary of Tables</text></title>
         <section kind="section">
           <title><text>Academic Skills</text></title>
-          <summarize hrid="Content/Academic"/>
+          <summarize hrid="Academic"/>
         </section>
         <section kind="section">
           <title><text>Augmentations</text></title>
           <section kind="section">
             <title><text>Augmentations: Arm, Hand</text></title>
-            <summarize hrid="Content/Augmentations/Arm, Hand"/>
+            <summarize hrid="Augmentations-Arm__Hand"/>
           </section>
           <section kind="section">
             <title><text>Augmentations: Body</text></title>
-            <summarize hrid="Content/Augmentations/Body"/>
+            <summarize hrid="Augmentations-Body"/>
           </section>
           <section kind="section">
             <title><text>Augmentations: Head</text></title>
-            <summarize hrid="Content/Augmentations/Head"/>
+            <summarize hrid="Augmentations-Head"/>
           </section>
           <section kind="section">
             <title><text>Augmentations: Leg</text></title>
-            <summarize hrid="Content/Augmentations/Leg"/>
+            <summarize hrid="Augmentations-Leg"/>
           </section>
           <section kind="section">
             <title><text>Augmentations: Torso</text></title>
-            <summarize hrid="Content/Augmentations/Torso"/>
+            <summarize hrid="Augmentations-Torso"/>
           </section>
         </section>
         <section kind="section">
           <title><text>Equipment</text></title>
           <section kind="section">
             <title><text>Ammunition</text></title>
-            <summarize hrid="Content/Equipment/Ammunition"/>
+            <summarize hrid="Equipment-Ammunition"/>
           </section>
           <section kind="section">
             <title><text>Long Guns</text></title>
-            <summarize hrid="Content/Equipment/Firearms and Guns/Long Guns"/>
+            <summarize hrid="Equipment-Firearms_and_Guns-Long_Guns"/>
           </section>
           <section kind="section">
             <title><text>Hand Guns</text></title>
-            <summarize hrid="Content/Equipment/Firearms and Guns/Hand Weapons"/>
+            <summarize hrid="Equipment-Firearms_and_Guns-Hand_Weapons"/>
           </section>
           <section kind="section">
             <title><text>Armor</text></title>
-            <summarize hrid="Content/Equipment/Armor"/>
+            <summarize hrid="Equipment-Armor"/>
           </section>
           <section kind="section">
             <title><text>Energy Weapons</text></title>
-            <summarize hrid="Content/Equipment/Energy Weapons"/>
+            <summarize hrid="Equipment-Energy_Weapons"/>
           </section>
           <section kind="section">
             <title><text>Axes</text></title>
-            <summarize hrid="Content/Equipment/Melee/Axes"/>
+            <summarize hrid="Equipment-Melee-Axes"/>
           </section>
           <section kind="section">
             <title><text>Blunt</text></title>
-            <summarize hrid="Content/Equipment/Melee/Blunt"/>
+            <summarize hrid="Equipment-Melee-Blunt"/>
           </section>
           <section kind="section">
             <title><text>Body</text></title>
-            <summarize hrid="Content/Equipment/Melee/Body"/>
+            <summarize hrid="Equipment-Melee-Body"/>
           </section>
           <section kind="section">
             <title><text>Chained</text></title>
-            <summarize hrid="Content/Equipment/Melee/Chained"/>
+            <summarize hrid="Equipment-Melee-Chained"/>
           </section>
           <section kind="section">
             <title><text>Exotic</text></title>
-            <summarize hrid="Content/Equipment/Melee/Exotic"/>
+            <summarize hrid="Equipment-Melee-Exotic"/>
           </section>
           <section kind="section">
             <title><text>Knives</text></title>
-            <summarize hrid="Content/Equipment/Melee/Knives"/>
+            <summarize hrid="Equipment-Melee-Knives"/>
           </section>
           <section kind="section">
             <title><text>Large Swords</text></title>
-            <summarize hrid="Content/Equipment/Melee/Large Swords"/>
+            <summarize hrid="Equipment-Melee-Large_Swords"/>
           </section>
           <section kind="section">
             <title><text>Monofilament</text></title>
-            <summarize hrid="Content/Equipment/Melee/Monofilament"/>
+            <summarize hrid="Equipment-Melee-Monofilament"/>
           </section>
           <section kind="section">
             <title><text>Plasma Melee</text></title>
-            <summarize hrid="Content/Equipment/Melee/Plasma"/>
+            <summarize hrid="Equipment-Melee-Plasma"/>
           </section>
           <section kind="section">
             <title><text>Polearms</text></title>
-            <summarize hrid="Content/Equipment/Melee/Polearms"/>
+            <summarize hrid="Equipment-Melee-Polearms"/>
           </section>
           <section kind="section">
             <title><text>Rocket Assisted</text></title>
-            <summarize hrid="Content/Equipment/Melee/Rocket-Assisted"/>
+            <summarize hrid="Equipment-Melee-Rocket-Assisted"/>
           </section>
           <section kind="section">
             <title><text>Small Swords</text></title>
-            <summarize hrid="Content/Equipment/Melee/Small Swords"/>
+            <summarize hrid="Equipment-Melee-Small_Swords"/>
           </section>
           <section kind="section">
             <title><text>Staves</text></title>
-            <summarize hrid="Content/Equipment/Melee/Staves"/>
+            <summarize hrid="Equipment-Melee-Staves"/>
           </section>
           <section kind="section">
             <title><text>Thrown</text></title>
-            <summarize hrid="Content/Equipment/Melee/Thrown"/>
+            <summarize hrid="Equipment-Melee-Thrown"/>
           </section>
           <section kind="section">
             <title><text>Miscellaneous Equipment</text></title>
-            <summarize hrid="Content/Equipment/Miscellaneous"/>
+            <summarize hrid="Equipment-Miscellaneous"/>
           </section>
           <section kind="section">
             <title><text>Ranged Archaic Weapons</text></title>
-            <summarize hrid="Content/Equipment/Ranged"/>
+            <summarize hrid="Equipment-Ranged"/>
           </section>
           <section kind="section">
             <title><text>Shields</text></title>
-            <summarize hrid="Content/Equipment/Shields"/>
+            <summarize hrid="Equipment-Shields"/>
           </section>
         </section>
         <section kind="section">
           <title><text>Magic</text></title>
           <section kind="section">
             <title><text>Magic: Air</text></title>
-            <summarize hrid="Content/Magic/Air"/>
+            <summarize hrid="Magic-Air"/>
           </section>
           <section kind="section">
             <title><text>Magic: Arcane</text></title>
-            <summarize hrid="Content/Magic/Arcane"/>
+            <summarize hrid="Magic-Arcane"/>
           </section>
           <section kind="section">
             <title><text>Magic: Beast</text></title>
-            <summarize hrid="Content/Magic/Beast"/>
+            <summarize hrid="Magic-Beast"/>
           </section>
           <section kind="section">
             <title><text>Magic: Earth</text></title>
-            <summarize hrid="Content/Magic/Earth"/>
+            <summarize hrid="Magic-Earth"/>
           </section>
           <section kind="section">
             <title><text>Magic: Fire</text></title>
-            <summarize hrid="Content/Magic/Fire"/>
+            <summarize hrid="Magic-Fire"/>
           </section>
           <section kind="section">
             <title><text>Magic: Life</text></title>
-            <summarize hrid="Content/Magic/Life"/>
+            <summarize hrid="Magic-Life"/>
           </section>
           <section kind="section">
             <title><text>Magic: Light</text></title>
-            <summarize hrid="Content/Magic/Light"/>
+            <summarize hrid="Magic-Light"/>
           </section>
           <section kind="section">
             <title><text>Magic: Physical</text></title>
-            <summarize hrid="Content/Magic/Physical"/>
+            <summarize hrid="Magic-Physical"/>
           </section>
           <section kind="section">
             <title><text>Magic: Spirit</text></title>
-            <summarize hrid="Content/Magic/Spirit"/>
+            <summarize hrid="Magic-Spirit"/>
           </section>
           <section kind="section">
             <title><text>Magic: Water</text></title>
-            <summarize hrid="Content/Magic/Water"/>
+            <summarize hrid="Magic-Water"/>
           </section>
         </section>
         <section kind="section">
           <title><text>Martial Arts</text></title>
           <section kind="section">
             <title><text>Martial Arts: Basic</text></title>
-            <summarize hrid="Content/Martial Arts/Basic"/>
+            <summarize hrid="Martial_Arts-Basic"/>
           </section>
           <section kind="section">
             <title><text>Martial Arts: Combat</text></title>
-            <summarize hrid="Content/Martial Arts/Combat"/>
+            <summarize hrid="Martial_Arts-Combat"/>
           </section>
           <section kind="section">
             <title><text>Martial Arts: Defensive</text></title>
-            <summarize hrid="Content/Martial Arts/Defensive"/>
+            <summarize hrid="Martial_Arts-Defensive"/>
           </section>
           <section kind="section">
             <title><text>Martial Arts: Modifier</text></title>
-            <summarize hrid="Content/Martial Arts/Modifier"/>
+            <summarize hrid="Martial_Arts-Modifier"/>
           </section>
           <section kind="section">
             <title><text>Martial Arts: Special</text></title>
-            <summarize hrid="Content/Martial Arts/Special"/>
+            <summarize hrid="Martial_Arts-Special"/>
           </section>
         </section>
         <section kind="section">
           <title><text>Monsters</text></title>
-          <summarize hrid="Content/Monsters"/>
+          <summarize hrid="Monsters"/>
         </section>
         <section kind="section">
           <title><text>Traits</text></title>
-          <summarize hrid="Content/Traits"/>
+          <summarize hrid="Traits"/>
         </section>
         <section kind="section">
           <title><text>Mecha</text></title>
           <section kind="section">
             <title><text>Mecha: Auxiliary</text></title>
-            <summarize hrid="Content/Mecha/Equipment/Auxiliary"/>
+            <summarize hrid="Mecha-Equipment-Auxiliary"/>
           </section>
           <section kind="section">
             <title><text>Mecha: Ballistic</text></title>
-            <summarize hrid="Content/Mecha/Equipment/Ballistic"/>
+            <summarize hrid="Mecha-Equipment-Ballistic"/>
           </section>
           <section kind="section">
             <title><text>Mecha: Energy Weapons</text></title>
-            <summarize hrid="Content/Mecha/Equipment/Energy Weapons"/>
+            <summarize hrid="Mecha-Equipment-Energy_Weapons"/>
           </section>
           <section kind="section">
             <title><text>Mecha: Melee Weapons</text></title>
-            <summarize hrid="Content/Mecha/Equipment/Melee Weapons"/>
+            <summarize hrid="Mecha-Equipment-Melee_Weapons"/>
           </section>
           <section kind="section">
             <title><text>Mecha: Sensors and Controls</text></title>
-            <summarize hrid="Content/Mecha/Equipment/Sensors and Controls"/>
+            <summarize hrid="Mecha-Equipment-Sensors_and_Controls"/>
           </section>
         </section>
       </section>
     </section>
   </book>
 </apathy-game>
-
