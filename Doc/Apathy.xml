@@ -1,6 +1,20 @@
 <?xml-stylesheet type="text/xsl" href="Apathy.combine.xsl"?>
 <apathy-game>
   <book name="Apathy Rule Book">
+    <header>
+      <authors>
+        <author>
+          <html:img xmlns:html="http://www.w3.org/1999/xhtml"
+            src="Resources/Apathy.png" width="80%" />
+        </author>
+        <author>Allan Moyse</author>
+        <author>Nathan Jones</author>
+        <author>Jacob Smith</author>
+        <author>Noah Smith</author>
+        <author>Chris Cook</author>
+        <author>Josh Kramer</author>
+      </authors>
+    </header>
     <section kind="part">
       <title><text>Game Manual</text></title>
       <section kind="chapter">
