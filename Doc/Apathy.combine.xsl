@@ -39,7 +39,7 @@
     <xsl:element name="section">
       <xsl:variable name="kind" select="./@kind" />
       <xsl:attribute name="kind"><xsl:value-of select="$kind" /></xsl:attribute>
-      <xsl:apply-templates select="section|reference|summary|title|text|example|description-list|itemized-list|numbered-list|figure|footnote|equation|note"/>
+      <xsl:apply-templates select="section|reference|summary|title|text|example|description-list|itemized-list|numbered-list|figure|footnote|equation|note|table"/>
     </xsl:element>
   </xsl:template>
 
@@ -61,7 +61,7 @@
   </xsl:template>
   <xsl:template match="item">
     <item>
-      <xsl:apply-templates select="description|text|text()|description-list|numbered-list|itemized-list|figure|equation|example|note" />
+      <xsl:apply-templates select="." />
     </item>
   </xsl:template>
   <xsl:template match="description">
