@@ -107,7 +107,9 @@
   </xsl:template>
   <xsl:template match="reference">
     <xsl:variable name="hrid" select="./@hrid" />
-    <reference hrid='{$hrid}' />
+    <xsl:element name="reference">
+      <xsl:attribute name="hrid"/><xsl:value-of select="$hrid"/></xsl:attribute>
+    </xsl:element>
   </xsl:template>
   <xsl:template match="Apathy">
     <Apathy />
