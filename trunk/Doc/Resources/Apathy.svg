@@ -8,13 +8,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="180"
-   height="67.5"
+   width="1064.5814"
+   height="382.71521"
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="0.45.1"
    version="1.0"
-   sodipodi:docbase="/Users/thechao/Desktop/STAMPS"
+   sodipodi:docbase="/Users/thechao/Sites/Apathy/Doc/Resources"
    sodipodi:docname="Apathy.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/Users/thechao/Desktop/RTFM.png"
@@ -32,20 +32,20 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.0777778"
-     inkscape:cx="90"
-     inkscape:cy="33.75"
+     inkscape:zoom="0.73605986"
+     inkscape:cx="335.33"
+     inkscape:cy="65.719271"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     width="2in"
-     height="0.75in"
-     units="in"
+     inkscape:current-layer="layer5"
+     width="30.044854cm"
+     height="10.801074cm"
+     units="cm"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1000"
      inkscape:window-height="788"
-     inkscape:window-x="437"
-     inkscape:window-y="22"
+     inkscape:window-x="242"
+     inkscape:window-y="0"
      borderlayer="false"
      inkscape:showpageshadow="false"
      showborder="true" />
@@ -63,10 +63,11 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="PrettyBorder">
+     inkscape:label="PrettyBorder"
+     transform="translate(442.29071,157.60761)">
     <g
        id="g3208"
-       transform="translate(2.1669695,2.2446885)">
+       transform="matrix(6.0270112,0,0,6.0270112,-439.37066,-156.13287)">
       <text
          transform="scale(1,-1)"
          sodipodi:linespacing="125%"
@@ -143,7 +144,7 @@
     </g>
     <g
        id="g3234"
-       transform="translate(-6.8558269e-2,0.7795501)">
+       transform="matrix(6.0270112,0,0,6.0270112,-452.84421,-164.96327)">
       <text
          transform="matrix(0.7071068,-0.7071068,0.7071068,0.7071068,0,0)"
          sodipodi:linespacing="125%"
@@ -176,7 +177,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="RTFM"
-     style="display:none">
+     style="display:none"
+     transform="translate(442.29071,157.60761)">
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Nasty"
@@ -194,7 +196,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="STFU"
-     style="display:none">
+     style="display:none"
+     transform="translate(442.29071,157.60761)">
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Nasty"
@@ -212,7 +215,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="FAIL"
-     style="display:none">
+     style="display:none"
+     transform="translate(442.29071,157.60761)">
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Nasty"
@@ -229,9 +233,11 @@
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="Apathy">
+     inkscape:label="Apathy"
+     transform="translate(442.29071,157.60761)">
     <g
-       id="g2225">
+       id="g2225"
+       transform="matrix(6.0270112,0,0,6.0270112,-452.43101,-169.66163)">
       <g
          transform="translate(6.892779,4.726477)"
          id="g2203">
