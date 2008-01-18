@@ -27,10 +27,8 @@
   </xsl:template>
 
   <xsl:template match="apathy-game">
-    <html:img xmlns:html="http://www.w3.org/1999/xhtml"
-          src="Resources/Apathy.svg"/>
     <xsl:element name="book">
-      <xsl:variable name="name" select="./@name" />
+      <xsl:variable name="name" select="./book/@name" />
       <xsl:attribute name="name"><xsl:value-of select="$name" /></xsl:attribute>
       <xsl:apply-templates select="book" />
     </xsl:element>
@@ -38,6 +36,7 @@
 
   <!-- STRUCTURAL -->
   <xsl:template match="book">
+    <xsl:copy-of select="header" />
     <xsl:apply-templates select="section" />
   </xsl:template>
   <xsl:template match="section">
