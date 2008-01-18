@@ -266,11 +266,12 @@
             </xsl:for-each>
           </head>
           <xsl:for-each select="datum">
+            <xsl:variable name="datumId" select="generate-id(.)" />
             <row>
               <cell>
-                <text>
+                <text><link href="#{$datumId}">
                   <xsl:value-of select="./field[@title='yes']"/>
-                </text>
+                </link></text>
               </cell>
               <xsl:for-each select="field">
                 <xsl:variable name="FieldName" select="./@name" />
@@ -304,7 +305,7 @@
   </xsl:template>
   <xsl:template match="datum">
     <xsl:variable name="Name" select="./@name" />
-    <datum name='{$Name}'>
+    <datum name="{$Name}" id="{generate-id(.)}">
       <xsl:apply-templates select="field"/>
     </datum>
   </xsl:template>
