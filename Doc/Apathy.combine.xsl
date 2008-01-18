@@ -257,7 +257,7 @@
                 <xsl:when test="$TableName = 'yes'">
                   <cell>
                     <text>
-                      <xsl:copy-of select="$FieldName" />
+                      <xsl:value-of select="$FieldName" />
                     </text>
                   </cell>
                 </xsl:when>
