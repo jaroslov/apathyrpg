@@ -12,11 +12,12 @@
     doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
     doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
 
-  <xsl:preserve-space elements="text" />
+  <xsl:preserve-space elements="" />
   <xsl:strip-space elements=""/><!--description caption title field" />-->
 
   <xsl:template match="/">
-    <xsl:processing-instruction name="xml-stylesheet">href="xml-apathy.css" type="text/css"</xsl:processing-instruction>
+    <xsl:processing-instruction name="xml-stylesheet">href="html-apathy.css" type="text/css"</xsl:processing-instruction>
+    <xsl:processing-instruction name="xml-stylesheet">alternate="yes" href="print-apathy.css" type="text/css"</xsl:processing-instruction>
 
     <xsl:element name="apathy-game">
       <xsl:apply-templates select="apathy-game" />
@@ -39,7 +40,7 @@
     <xsl:element name="section">
       <xsl:variable name="kind" select="./@kind" />
       <xsl:attribute name="kind"><xsl:value-of select="$kind" /></xsl:attribute>
-      <xsl:apply-templates select="section|reference|summary|title|text|example|description-list|itemized-list|numbered-list|figure|footnote|equation|note|table"/>
+      <xsl:apply-templates select="section|reference|summarize|title|text|example|description-list|itemized-list|numbered-list|figure|footnote|equation|note|table"/>
     </xsl:element>
   </xsl:template>
 
@@ -61,7 +62,7 @@
   </xsl:template>
   <xsl:template match="item">
     <item>
-      <xsl:apply-templates select="." />
+      <xsl:apply-templates select="description|section|reference|summary|title|text|example|description-list|itemized-list|numbered-list|figure|footnote|equation|note|table" />
     </item>
   </xsl:template>
   <xsl:template match="description">
@@ -73,6 +74,9 @@
     <title><xsl:apply-templates /></title>
   </xsl:template>
   <xsl:template match="text">
+    <!--<text>
+      <xsl:apply-templates />
+    </text>-->
     <xsl:copy-of select="." />
   </xsl:template>
   <xsl:template match="note">
@@ -108,8 +112,22 @@
   <xsl:template match="reference">
     <xsl:variable name="hrid" select="./@hrid" />
     <xsl:element name="reference">
-      <xsl:attribute name="hrid"/><xsl:value-of select="$hrid"/></xsl:attribute>
+      <xsl:attribute name="hrid"><xsl:value-of select="$hrid"/></xsl:attribute>
     </xsl:element>
+    <xsl:variable name="CategoryDisplay" select="reference"/>
+    <xsl:apply-templates select="document(concat($hrid,'.xml'))//category">
+      <xsl:with-param name="categoryDisplayStyle">Reference</xsl:with-param>
+    </xsl:apply-templates>
+  </xsl:template>
+  <xsl:template match="summarize">
+    <xsl:variable name="hrid" select="./@hrid" />
+    <xsl:element name="summarize">
+      <xsl:attribute name="hrid"><xsl:value-of select="$hrid"/></xsl:attribute>
+    </xsl:element>
+    <xsl:variable name="CategoryDisplay" select="summarize"/>
+    <xsl:apply-templates select="document(concat($hrid,'.xml'))//category">
+      <xsl:with-param name="categoryDisplayStyle">Summarize</xsl:with-param>
+    </xsl:apply-templates>
   </xsl:template>
   <xsl:template match="Apathy">
     <Apathy />
@@ -221,9 +239,18 @@
 
   <!-- RAW DATA -->
   <xsl:template match="category">
+    <xsl:param name="categoryDisplayStyle">Reference</xsl:param>
     <xsl:variable name="Name" select="./@name" />
     <category name='{$Name}'>
-      <xsl:apply-templates select="default|datum" />
+      <xsl:value-of select="$categoryDisplayStyle" />
+      <xsl:choose>
+        <xsl:when test="$categoryDisplayStyle = 'Reference'">
+          <xsl:apply-templates select="default|datum" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$categoryDisplayStyle"/>
+        </xsl:otherwise>
+      </xsl:choose>
     </category>
   </xsl:template>
   <xsl:template match="default">
