@@ -409,7 +409,7 @@
           <text>0</text>
         </field>
         <field description="yes" name="Description">
-          <text>The class <ldquo/>fencing<rdquo/>sword used in duels from the<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>16</mn><mi>th</mi></msup></math><ndash/><math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>19</mn><mi>th</mi></msup></math>c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns/></roll> with 4 AP and a MSB of 12. If the weapon is used as exotic (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</text>
+          <text>The class <ldquo/>fencing<rdquo/>sword used in duels from the<math ><msup><mn>16</mn><mi>th</mi></msup></math><ndash/><math ><msup><mn>19</mn><mi>th</mi></msup></math>c. If the user has weapon specialization in Small Sword then the weapon can be used as a P (Piercing) weapon for <roll><num>2</num><face>6</face><bns/></roll> with 4 AP and a MSB of 12. If the weapon is used as exotic (with the accompanying Exotic skill), then the wielder gets a bonus die to his pool when using the weapon with Multitarget.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -495,3 +495,4 @@
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
+

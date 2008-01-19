@@ -146,7 +146,7 @@
           <text>Auto</text>
         </field>
         <field description="yes" name="Description">
-          <text>Caster may extinguish normal fire (Magical Contro<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>l</mi><mn>2</mn></msup></math>square yards)</text>
+          <text>Caster may extinguish normal fire (Magical Contro<math ><msup><mi>l</mi><mn>2</mn></msup></math>square yards)</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -980,3 +980,4 @@
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
+

@@ -541,7 +541,7 @@
           <text><notappl/></text>
         </field>
         <field name="Magic Points" qsummary="yes" table="yes">
-          <text>50* (<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>)</text>
+          <text>50* (<math ><msup><mi>X</mi><mn>2</mn></msup></math>)</text>
         </field>
         <field name="Range" qsummary="yes" table="yes">
           <text>target</text>
@@ -1141,3 +1141,4 @@
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
+

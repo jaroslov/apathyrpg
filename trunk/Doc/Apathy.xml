@@ -21,7 +21,7 @@
         <title><text>Core Rules</text></title>
         <section kind="section">
           <title><text>Introduction</text></title>
-          <text><Apathy/> is a paper <and/> pencil role-playing game. <Apathy/><rsquo/>s authors have played a great many RPGs including D<and/>D, Heroes Unlimited, GURPS, Shadowrun, TMNT, various White Wolf games (Vampire, etc.), Deadlands, and a few others. While these games are all fun, we felt that each game had various shortcomings that could be improved upon. Enter <Apathy/>. <Apathy/> is designed to be a very flexible role-playing system. <Apathy/> can handle classic games with knights and dragons, as well as modern-day, Cyberpunk, superhero, or futuristic scenarios. It excels at fantasy games that blend all genres.</text>
+          <text><Apathy/> is a paper <and/> pencil role-playing game. <Apathy><rsquo/>s</Apathy> authors have played a great many RPGs including D<and/>D, Heroes Unlimited, GURPS, Shadowrun, TMNT, various White Wolf games (Vampire, etc.), Deadlands, and a few others. While these games are all fun, we felt that each game had various shortcomings that could be improved upon. Enter <Apathy>.</Apathy> <Apathy/> is designed to be a very flexible role-playing system. <Apathy/> can handle classic games with knights and dragons, as well as modern-day, Cyberpunk, superhero, or futuristic scenarios. It excels at fantasy games that blend all genres.</text>
           <text><Apathy/> is recommended for advanced role-players (or at least for experienced DM/GM/Storytellers). This is because the <Apathy/> system is designed for a unique mix of speed and realism rather than carefully <ldquo/>balanced<rdquo/> rules. The <Apathy/> rules make it very easy to make unbalanced (<ldquo/>min-maxed<rdquo/>) or tweaked characters. <Apathy/> is likewise not appropriate for <ldquo/>rules lawyers<rdquo/> or excessively anal GMs and players.</text>
           <text><Apathy/> was created around several core features. These are what make <Apathy/> a unique game system:</text>
           <itemized-list>
@@ -38,10 +38,10 @@
               <text>The game rules are purposely devoid of <ldquo/>fluff<rdquo/> rules. Time-consuming (and therefore not fun) look-up tables and thick books of rules are nowhere to be found. <Apathy/> is designed to be fast to play. Most of the <ldquo/>tables<rdquo/> in the <Apathy/> manuals are just to explain things to the players and aren<rdquo/>t used during play.</text>
             </item>
             <item>
-              <text>While <Apathy/> is devoid of many <ldquo/>clutter rules<rdquo/>, it does have an emphasis on realism. <Apathy/><rsquo/>s combat system is an excellent compromise between speed and realism.</text>
+              <text>While <Apathy/> is devoid of many <ldquo/>clutter rules<rdquo/>, it does have an emphasis on realism. <Apathy><rsquo/>s</Apathy> combat system is an excellent compromise between speed and realism.</text>
             </item>
           </itemized-list>
-          <text>In any game of <Apathy/>, the CHARACTERS are the heroes!</text>
+          <text>In any game of <Apathy>,</Apathy> the CHARACTERS are the heroes!</text>
         </section>
         <section kind="section">
           <title><text>Basic Terms</text></title>
@@ -200,7 +200,7 @@
         </section>
         <section kind="section">
           <title><text>Game World</text></title>
-          <text><Apathy/>, like most role-playing games, can be thought of like a play or a movie. The players are like the actors; their characters are the heroes and heroines of the story. Like a movie, a game can take place in any number of settings. The GM is like the director, and decides the intricacies of the game world.</text>
+          <text><Apathy>,</Apathy> like most role-playing games, can be thought of like a play or a movie. The players are like the actors; their characters are the heroes and heroines of the story. Like a movie, a game can take place in any number of settings. The GM is like the director, and decides the intricacies of the game world.</text>
           <text>The GM should talk with the players and decide upon what kind of game world they would like to use. The GM can then finalize the details of that world, and should tell the players about it before the players make their characters and the game starts.</text>
           <text>Some things to think about when creating the game world are the following:</text>
           <numbered-list>
@@ -333,7 +333,7 @@
             <text>The first three attributes (STR, DEX, and BLD) are considered Physical Attributes. The second three attributes (INT, WIS, and WIL) are Mental Attributes. The seventh, CHA, is a little of both, but is generally considered to be a Mental Attribute.</text>
             <text>Attributes are rated on a scale. 1 is the lowest possible attribute score. There is no top end on the scale, though an attribute of 20 is the peak of human ability. A human character can never have an attribute higher than 20 without some supernatural effect (super power, magic, cybernetics, etc).</text>
             <text>When creating a character, the GM allows you a certain number of attribute points. Attribute Points are used to purchase the attribute values you want your character to have. A normal human has about 40 attribute points. An above average human would have about 105<ndash/>140 attribute points. We recommend that 120 Attribute Points be assigned to starting characters<mdash/>after all, player characters are supposed to be heroic<mdash/>though the GM has the final word.</text>
-            <text>The cost of an attribute is computed like a skill with Rank 1 (see the skill section later on). However, the final value for the attribute (for a Human) is increased by 8; that is, if you buy 5 levels of STR (for 15 AP), then the final value of the STR is<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>13</mn></mrow></math>.</text>
+            <text>The cost of an attribute is computed like a skill with Rank 1 (see the skill section later on). However, the final value for the attribute (for a Human) is increased by 8; that is, if you buy 5 levels of STR (for 15 AP), then the final value of the STR is<math><mrow><mn>5</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>13</mn></mrow></math>.</text>
             <note>
               <text>In most cases no player may have an attribute below 8. Attributes below 8 are considered handicapped and/or disabled, and such a character would probably not be adventuring!</text>
             </note>
@@ -371,7 +371,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>STR</mi><times/><mi>STR</mi><times/><mi>BLD</mi></mrow><mn>10</mn></mfrac></math>
+                    <math><mfrac><mrow><mi>STR</mi><times/><mi>STR</mi><times/><mi>BLD</mi></mrow><mn>10</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -384,7 +384,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mi>Lift</mi><mn>2</mn></mfrac></math>
+                    <math><mfrac><mi>Lift</mi><mn>2</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -397,7 +397,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>DEX</mi><mo>+</mo><mi>STR</mi></mrow><mn>6</mn></mfrac></math>
+                    <math><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>DEX</mi><mo>+</mo><mi>STR</mi></mrow><mn>6</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -410,7 +410,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow><mn>6</mn></mfrac></math>
+                    <math><mfrac><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow><mn>6</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -423,7 +423,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>STR</mi><mo>+</mo><mi>DEX</mi></mrow><mn>15</mn></mfrac></math>
+                    <math><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>STR</mi><mo>+</mo><mi>DEX</mi></mrow><mn>15</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -436,7 +436,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>DEX</mi><mo>+</mo><mn>2</mn><mo><times/></mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>4</mn></mfrac></math>
+                    <math><mfrac><mrow><mi>DEX</mi><mo>+</mo><mn>2</mn><mo><times/></mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>4</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -449,7 +449,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>CHA</mi><mo>+</mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>3</mn></mfrac></math>
+                    <math><mfrac><mrow><mi>CHA</mi><mo>+</mo><mi>KNO</mi><mo>+</mo><mi>INT</mi></mrow><mn>3</mn></mfrac></math>
                   </text>
                   </cell>
                 </row>
@@ -462,7 +462,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
+                    <math><mrow><mi>BLD</mi><mo>+</mo><mi>WIL</mi></mrow></math>
                   </text>
                   </cell>
                 </row>
@@ -475,7 +475,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>WIL</mi><mo>+</mo><mi>BLD</mi><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
+                    <math><mrow><mo>(</mo><mi>WIL</mi><mo>+</mo><mi>BLD</mi><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
                   </text>
                   </cell>
                 </row>
@@ -561,7 +561,7 @@
           <section kind="section">
             <title><text>Increasing Attributes (optional)</text></title>
             <text>If your attributes aren<rdquo/>t quite where you desire, you will need to get more Attribute Points so you can purchase a better attribute. Each Attribute Point costs 1 Character Point. Once you purchase the number of Attribute Points you want, just look at the table found in the Attributes section above to see how many total Attribute Points you must spend to get that attribute.</text>
-            <text>You must pay a number of Attribute Points equal to the difference between what you want, and what you already have. For example: if you currently have an 11 STR (6 Attribute Points) and wish to increase it to a 14 (21 Attribute Points) that will cost you 15 Attribute Points (<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>). Since Attribute Points cost 1 Character Point each, going from an 11 in an attribute to a 14 will cost 15 CP.</text>
+            <text>You must pay a number of Attribute Points equal to the difference between what you want, and what you already have. For example: if you currently have an 11 STR (6 Attribute Points) and wish to increase it to a 14 (21 Attribute Points) that will cost you 15 Attribute Points (<math><mrow><mn>9</mn><mo>-</mo><mn>4</mn><mo>=</mo><mn>5</mn></mrow></math>). Since Attribute Points cost 1 Character Point each, going from an 11 in an attribute to a 14 will cost 15 CP.</text>
             <text>Remember to keep track of how many Attribute Points you have spent on your attributes so you can easily increase them at a later date.</text>
             <text>Note that attribute increases are major additions to your character, and they should be role-played as such. Significant attribute changes represent months if not years of hard work! Here are some examples of possible means of increasing attributes:</text>
             <description-list>
@@ -708,7 +708,7 @@
           <text>Like most of character creation, skills are purchased using CP. The higher the rank, the more expensive it will be. The higher the level you want in the skill, the more expensive it will be.</text>
           <text>For those that are mathematically inclined, here is the formula for determining CP of a particular skill level and rank:</text>
 	  <equation>
-	    <text><math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><munderover><mo ><Sum/></mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo>n</mo></munderover><mi>i</mi><mo>=</mo><mfrac><mrow><msup><mi>n</mi> <mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></math></text>
+	    <text><math display='block'><mrow><munderover><mo ><Sum/></mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo>n</mo></munderover><mi>i</mi><mo>=</mo><mfrac><mrow><msup><mi>n</mi> <mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></math></text>
 	  </equation>
           <text>For the rest of us, use this nifty table, and multiply the value listed by the rank.</text>
           <figure>
@@ -833,7 +833,7 @@
           <title><text>Rules (Rolls)</text></title>
           <text>What would an RPG be without rules? <Apathy/> has a set of rules that allow for just about any occurrence that an imaginative GM can put the players through.</text>
           <text>Lets start with the basics (some of this will be review):</text>
-          <text>In <Apathy/>, there are three different types of die rolls. Every time you roll a die when playing <Apathy/>, you will use one of these sets of rules.</text>
+          <text>In <Apathy>,</Apathy> there are three different types of die rolls. Every time you roll a die when playing <Apathy>,</Apathy> you will use one of these sets of rules.</text>
           <section kind="section">
             <title><text>Attribute Checks</text></title>
             <text>Attribute checks are required anytime the GM wants to see if you did something solely based on an attribute. They are used whenever a player wants their character to do something tricky. Attribute checks are purely based on a character<rdquo/>s core attributes. They are completely separate from skills. If a player needs to do something based on a particular skill, then see the skill roll section below.</text>
@@ -1048,7 +1048,7 @@
             <text>The raw damage bonus (RDB) is calculated by subtracting 8 from the wielder<rsquo/>s Str. The RDB is added as raw damage to total of the weapon<rsquo/>s damage. However, all weapons have a maximum strength bonus (MSB); if the RDB is greater than the MSB, then the MSB is used as the RDB instead.</text>
             <example>
               <title><text>MSR for Bosk</text></title>
-              <text>Bosk has a STR of 17 and is brandishing a Hercules Club ( <roll><num>3</num><face>6</face><bns/><kind>C</kind></roll> , MSR: 12, MSB: 13). Because Bosk<rsquo/>s Str is higher than the minimum strength requirement of the Hercules Club (12), he is entitled to a damage bonus. Subtract 8 from Bosk<rsquo/>s Str score to calculate his bonus:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>17</mn><mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></math>. So this means that Bosk deals <roll><raw>9</raw><num>3</num><face>6</face><bns/><kind>C</kind></roll> damage.</text>
+              <text>Bosk has a STR of 17 and is brandishing a Hercules Club ( <roll><num>3</num><face>6</face><bns/><kind>C</kind></roll> , MSR: 12, MSB: 13). Because Bosk<rsquo/>s Str is higher than the minimum strength requirement of the Hercules Club (12), he is entitled to a damage bonus. Subtract 8 from Bosk<rsquo/>s Str score to calculate his bonus: <math><mrow><mn>17</mn><mo>-</mo><mn>8</mn><mo>=</mo><mn>9</mn></mrow></math>. So this means that Bosk deals <roll><raw>9</raw><num>3</num><face>6</face><bns/><kind>C</kind></roll> damage.</text>
             </example>
             <example>
               <title><text>Bosk with Knife</text></title>
@@ -1070,7 +1070,7 @@
                 <description>
                   <text>Two normal weapons</text>
                 </description>
-                <text>When wielding two weapons the weapon in the character<rsquo/>s <ldquo/>good<rdquo/> hand receives a -3 to strike and the weapon in the character<rsquo/>s <ldquo/>off<rdquo/> hand receives a -6. Some characters can have <ldquo/>even-more-offhand<rdquo/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>k</mi><mi>th</mi></msup></mrow></math> weapon is at <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>-3</mn><mo><times/></mo><mi>k</mi></mrow></math> to strike.</text>
+                <text>When wielding two weapons the weapon in the character<rsquo/>s <ldquo/>good<rdquo/> hand receives a -3 to strike and the weapon in the character<rsquo/>s <ldquo/>off<rdquo/> hand receives a -6. Some characters can have <ldquo/>even-more-offhand<rdquo/> weapons, such as a kick (or two), or literally having extra limbs. To calculate the negative to strike for wielding multiple weapons, first find the number of weapons being used, then order them (the strike order). The first weapon is at -3 to strike, the second at -6, the third ad -9, and so on, i.e. the <math><mrow><msup><mi>k</mi><mi>th</mi></msup></mrow></math> weapon is at <math><mrow><mn>-3</mn><mo><times/></mo><mi>k</mi></mrow></math> to strike.</text>
               </item>
               <item>
                 <description>
@@ -1243,7 +1243,7 @@
             </section>
             <section kind="section">
               <title><text>Fire (F)</text></title>
-              <text>Some weapons and spells have a note that says <ldquo/>F<rdquo/>, <ldquo/>Fire<rdquo/>, <ldquo/>Fire Effect<rdquo/>, or<rdquo/> U Fire<rdquo/>. These weapons deal fire damage. Unless stated otherwise Fire weapons deal U damage. As well, Fire effect weapons will ignite the target, as well as readily flammable materials within a 3<rdquo/> radius of the blow. A target that is <ldquo/>on fire<rdquo/> will suffer an extra <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> damage each turn that the fire is still going. This starts on the <ldquo/>next<rdquo/> turn after the target is struck. Certain types of armor have Fire Protection. This means that this armor has the unique ability to resist heat and the damage caused by fire-effect sources. If a target with fire protection is struck with a fire-effect attack, damage dealt from the fire is zero and the target is not ignited. Fire protection on armor will only work three times before the armor must be repaired or replaced. Some armor is rated fire protection<math  xmlns='http://www.w3.org/1998/Math/MathML'><times/></math>2, which will take six fire-effect hits before loosing it<rsquo/>s fire resistance, etc. Note that fire protection armor only resists the ignition effect and any heat (U) damage from the fire specifically. Therefore, if a weapon deals normal damage (P/S/C) AND has either Fire effect or Fire damage (U) then the fire-related effects are prevented but the standard damage (P/S/C) is treated as normal. Targets that are <ldquo/>on fire<rdquo/>suffer the damage on each of their turns.</text>
+              <text>Some weapons and spells have a note that says <ldquo/>F<rdquo/>, <ldquo/>Fire<rdquo/>, <ldquo/>Fire Effect<rdquo/>, or<rdquo/> U Fire<rdquo/>. These weapons deal fire damage. Unless stated otherwise Fire weapons deal U damage. As well, Fire effect weapons will ignite the target, as well as readily flammable materials within a 3<rdquo/> radius of the blow. A target that is <ldquo/>on fire<rdquo/> will suffer an extra <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> damage each turn that the fire is still going. This starts on the <ldquo/>next<rdquo/> turn after the target is struck. Certain types of armor have Fire Protection. This means that this armor has the unique ability to resist heat and the damage caused by fire-effect sources. If a target with fire protection is struck with a fire-effect attack, damage dealt from the fire is zero and the target is not ignited. Fire protection on armor will only work three times before the armor must be repaired or replaced. Some armor is rated fire protection<math><times/></math>2, which will take six fire-effect hits before loosing it<rsquo/>s fire resistance, etc. Note that fire protection armor only resists the ignition effect and any heat (U) damage from the fire specifically. Therefore, if a weapon deals normal damage (P/S/C) AND has either Fire effect or Fire damage (U) then the fire-related effects are prevented but the standard damage (P/S/C) is treated as normal. Targets that are <ldquo/>on fire<rdquo/>suffer the damage on each of their turns.</text>
               <example>
                 <title><text>David deals Fire damage</text></title>
                 <text>David shoots a Ghoul with a Flame blaster. This weapon deals <roll><num>2</num><face>6</face><bns/><kind>U</kind></roll> Fire. David rolls damage and ends up with 10 U. The target suffers the 10 damage. As well, the Ghoul suffers the fire effect and has been set on fire. On the ghoul<lsquo/>s next turn it will suffer <roll><num>1</num><face>6</face><bns/><kind>U</kind></roll> from being on fire. This will continue until the fire is somehow put out.</text>
@@ -1293,9 +1293,9 @@
           <section kind="section">
             <title><text>Hit Points</text></title>
             <text>Hit Points are numbers used to represent how injured or healthy a character is. A character will have TWO Hit Point numbers. Your maximum Hit Points determines how tough your character is at full health. This number will rarely change. It is determined by your BLD and WIL attributes, and will rarely change unless your attributes change.</text>
-            <text>Your current Hit Points is the most important number. It will likely change frequently during combat. Hit Points are generally represented as a fraction:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mi>Current HP</mi><mi>Max HP</mi></mfrac></math>. When the game begins, your character will be fully healthy and uninjured. Thus, when starting, your current HP will be equal to your maximum.</text>
+            <text>Your current Hit Points is the most important number. It will likely change frequently during combat. Hit Points are generally represented as a fraction:<math><mfrac><mi>Current HP</mi><mi>Max HP</mi></mfrac></math>. When the game begins, your character will be fully healthy and uninjured. Thus, when starting, your current HP will be equal to your maximum.</text>
             <text>As you get injured, any damage you take (after applying armor, etc.) will be applied to your current HP. As you get injured, your current HP drops. Over time, your body will heal itself, and your HP will go up. Seeking medical attention will speed this process. Other things, like magic or cybernetic devices, can heal you as well.</text>
-            <text>Your current HP can never exceed your maximum HP. As a general rule for minor injuries (less than 5 HP), you gain back 1 HP per day of average activity. For significant HP losses, it takes<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mo>(</mo><mi>Maximum</mi><mo>-</mo><mi>Current</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></math>days to fully recover your HP.</text>
+            <text>Your current HP can never exceed your maximum HP. As a general rule for minor injuries (less than 5 HP), you gain back 1 HP per day of average activity. For significant HP losses, it takes<math><mrow><msup><mrow><mo>(</mo><mi>Maximum</mi><mo>-</mo><mi>Current</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></math>days to fully recover your HP.</text>
             <text>If a character is resting and is under basic medical care, then your healing time is cut in HALF. If your character is under the care of a professional Doctor or Healer, healing time is cut to one QUARTER of normal time.</text>
             <text>If your current HP falls below 0, your character falls unconscious. It is possible to remain conscious by making a willpower check at -X, where X is the amount below zero your HP are. If your current HP are below 0, your character is bleeding badly (internal bleeding is possible too) and you will loose 1 HP per round, unless you receive medical attention. If your current HP ever reaches the negative of your maximum HP, you have died.</text>
           </section>
@@ -1686,7 +1686,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mfrac><mn>1</mn><mn>10</mn></mfrac>
+                    <math><mrow><msup><mfrac><mn>1</mn><mn>10</mn></mfrac>
                           <mi>th</mi></msup><mi>cost</mi></mrow></math>
                   </text>
                   </cell>
@@ -1699,7 +1699,7 @@
                 <text>Options for melee weapon construction</text>
               </caption>
             </figure>
-            <text>For other than normal sized weapons (mecha, etc.), all stats are<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow></msup></math>normal. This applies to strength requirement, strength bonus, damage dice number, etc.</text>
+            <text>For other than normal sized weapons (mecha, etc.), all stats are<math><msup><mn>2</mn><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow></msup></math>normal. This applies to strength requirement, strength bonus, damage dice number, etc.</text>
           </section>
           <section kind="section">
             <title><text>Axes</text></title>
@@ -1966,7 +1966,7 @@
             </section>
             <section kind="section">
               <title><text>Pistols</text></title>
-              <text>Extra magazines cost <dollar/><math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>150</mn><mo><times/></mo><mfrac><mi>Cost of Gun</mi><mn>1000</mn></mfrac></mrow></math> each. High-capacity magazines holds 50<percent/> more rounds, but cost twice as much.</text>
+              <text>Extra magazines cost <dollar/><math><mrow><mn>150</mn><mo><times/></mo><mfrac><mi>Cost of Gun</mi><mn>1000</mn></mfrac></mrow></math> each. High-capacity magazines holds 50<percent/> more rounds, but cost twice as much.</text>
             </section>
             <section kind="section">
               <title><text>Hunting Pistols</text></title>
@@ -4148,12 +4148,12 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>Size CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
+                        <math><mrow><mfrac><mrow><mn>2</mn><mo><times/></mo><mi>Size CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
 		      </text>
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mi>CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></math>
+                        <math><mfrac><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mi>CP</mi></mrow><mrow><mi>+1</mi></mrow></mfrac></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4166,12 +4166,12 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mn>3</mn><mi>CP</mi></mrow><mrow><mo>+</mo><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow></math>
+                        <math><mrow><mfrac><mrow><mn>3</mn><mi>CP</mi></mrow><mrow><mo>+</mo><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow></math>
 		      </text>
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mo>(</mo><mn>2</mn><mo><times/></mo><mi>Size Cp</mi><mo>)</mo></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
+                        <math><mrow><mfrac><mrow><mo>(</mo><mn>2</mn><mo><times/></mo><mi>Size Cp</mi><mo>)</mo></mrow><mrow><mi>+1</mi></mrow></mfrac></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4220,12 +4220,12 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>5</mn><mo><times/></mo><mi>Size</mi></mrow></math>
+                        <math><mrow><mn>5</mn><mo><times/></mo><mi>Size</mi></mrow></math>
 		      </text>
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>6</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>6</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4247,7 +4247,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>2</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>2</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4269,7 +4269,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>4</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>4</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4291,7 +4291,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4313,7 +4313,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>15</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>15</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4335,7 +4335,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>10</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4343,7 +4343,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
+                        <math><msup><mi>Size</mi><mn>2</mn></msup></math>
 		      </text>
                       </cell>
                     </row>
@@ -4365,7 +4365,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
+                        <math><msup><mi>Size</mi><mn>2</mn></msup></math>
 		      </text>
                       </cell>
                     </row>
@@ -4381,7 +4381,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4389,7 +4389,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mn>3</mn><mo><times/></mo><mrow><mo>(</mo><mi>X</mi><mo><times/></mo><mn>1</mn><mo>)</mo></mrow></mrow><mn>4</mn></mfrac></math>
+                        <math><mfrac><mrow><mn>3</mn><mo><times/></mo><mrow><mo>(</mo><mi>X</mi><mo><times/></mo><mn>1</mn><mo>)</mo></mrow></mrow><mn>4</mn></mfrac></math>
 		      </text>
                       </cell>
                       <cell>
@@ -4408,7 +4408,7 @@
                       </cell>
                       <cell>
                         <text>
-                        <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
+                        <math><mrow><mo>(</mo><mi>Size</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo><times/></mo><mn>20</mn></mrow></math>
 		      </text>
                       </cell>
                       <cell>
@@ -5117,12 +5117,12 @@
                 <row>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>X</mi><mo>&gt;</mo><mn>2</mn></mrow></math>
+                    <math><mrow><mi>X</mi><mo>&gt;</mo><mn>2</mn></mrow></math>
                   </text>
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><mrow><mi>X</mi><mo>-</mo><mn>1</mn></mrow></mrow></math>
+                    <math><mrow><mo><times/></mo><mrow><mi>X</mi><mo>-</mo><mn>1</mn></mrow></mrow></math>
                   </text>
                   </cell>
                   <cell>
@@ -5130,17 +5130,17 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
+                    <math><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
                   </text>
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
+                    <math><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
                   </text>
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
+                    <math><mrow><mo><times/></mo><msup><mn>2</mn><mrow><mi>X</mi><mo>-</mo><mn>2</mn></mrow></msup></mrow></math>
                   </text>
                   </cell>
                 </row>
@@ -5150,7 +5150,7 @@
                   </cell>
                   <cell>
                     <text>
-                    <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>
+                    <math><msup><mi>X</mi><mn>2</mn></msup></math>
                   </text>
                   </cell>
                   <cell>
@@ -5293,13 +5293,13 @@
                     <text>Anthropoid</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math></text>
+                    <text>Height:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5421,13 +5421,13 @@
                     <text>Bipedal</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math></text>
+                    <text>Height:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math><mrow><mfrac><mi>Height</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5549,13 +5549,13 @@
                     <text>Quadruped</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Length:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math>; Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
+                    <text>Length:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>35</mn><mi>cm</mi></mrow></math>; Height:<math><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Length</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math><mrow><mfrac><mi>Length</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5677,13 +5677,13 @@
                     <text>Serpent</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Length:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math>; Height:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
+                    <text>Length:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>40</mn><mi>cm</mi></mrow></math>; Height:<math><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac><mo><times/></mo><mi>Length</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Height</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math><mrow><mfrac><mi>Height</mi><mn>2</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5805,13 +5805,13 @@
                     <text>Polymelic</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Size:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>30</mn><mi>cm</mi></mrow></math>, in some dimension</text>
+                    <text>Size:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>30</mn><mi>cm</mi></mrow></math>, in some dimension</text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mi>Size</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math><mrow><mfrac><mi>Size</mi><mn>3</mn></mfrac><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -5933,13 +5933,13 @@
                     <text>Amorphous</text>
                   </cell>
                   <cell border="none" span="11">
-                    <text>Diameter:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>50</mn><mi>cm</mi></mrow></math></text>
+                    <text>Diameter:<math><mrow><msup><mi>Size</mi><mn>2</mn></msup><mo><times/></mo><mn>50</mn><mi>cm</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
                   <cell/>
                   <cell span="11">
-                    <text>Weight:<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>Diameter</mi><mn>3</mn></msup><mi>kilograms</mi></mrow></math></text>
+                    <text>Weight:<math><mrow><msup><mi>Diameter</mi><mn>3</mn></msup><mi>kilograms</mi></mrow></math></text>
                   </cell>
                 </row>
                 <row>
@@ -6199,7 +6199,7 @@
             </head>
             <row>
               <cell>
-		<text><math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></text>
+		<text><math><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></text>
               </cell>
               <cell>
                 <text>Character has one few actions (regular and movement) and -3 to all die rolls.</text>
@@ -6215,7 +6215,7 @@
             </row>
             <row>
               <cell>
-		<text><math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>less-than</mi><mn>0</mn></mrow></math></text>
+		<text><math><mrow><mi>less-than</mi><mn>0</mn></mrow></math></text>
               </cell>
               <cell>
                 <text>Character is unconscious and loses 1 Hit Point per turn until stabilized.</text>

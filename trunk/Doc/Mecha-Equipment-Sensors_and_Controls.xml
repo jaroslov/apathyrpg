@@ -440,7 +440,7 @@
     </field>
     <field name="Character Points" table="yes">
       <text>
-      <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Bonus</mi><mn>2</mn></msup></math>
+      <math ><msup><mi>Bonus</mi><mn>2</mn></msup></math>
     </text>
     </field>
     <field description="yes" name="Description">
@@ -502,3 +502,4 @@
     </field>
   </datum>
 </category>
+
