@@ -1,0 +1,215 @@
+
+    <category name="Content/Mecha/Equipment/Ballistic">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Slots" table="yes"><text/></field>
+        <field colfmt="l" name="Character Points" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Auto-Cannon">
+        <field name="Name" title="yes">
+          <text>Auto-Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*4</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text> <ldquo/>Automatically Loading Cannon<rdquo/> An autocannon is similar to a modern semiautomatic rifle, but scaled up to an artillery size weapon. Ammunition is stored in a magazine and the gun automatically loads a new shell after each is fired.</text>
+        </field>
+      </datum>
+      <datum name="Chaingun">
+        <field name="Name" title="yes">
+          <text>Chaingun</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*4</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*8</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Chainguns fire a <roll><num>1</num><face>6</face><bns/></roll> burst. They are fully automatic weapons, similar to anti-aircraft guns. They are generally belt-fed.</text>
+        </field>
+      </datum>
+      <datum name="Field Gun">
+        <field name="Name" title="yes">
+          <text>Field Gun</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*4</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A Field Gun is a slow to reload, single shot, gun. A tank cannon or artillery piece would be a classic example. Field guns take one action to reload before they can fire again. Reloading is automated, so the pilot can do something else while waiting.</text>
+        </field>
+      </datum>
+      <datum name="Flechette Cannon">
+        <field name="Name" title="yes">
+          <text>Flechette Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*2</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Flechette cannon deals (Class+1)D4+(Class/3) S (Slashing) damage, in bursts of <roll><num>1</num><face>10</face><bns/></roll>. They have 10 AP. Flechette ammunition is 1/10th the size of usual ammunition (thus a pod stores 10x as much ammunition), but costs 5x more.</text>
+        </field>
+      </datum>
+      <datum name="Grenade Launcher">
+        <field name="Name" title="yes">
+          <text>Grenade Launcher</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Deals (Class+1)* <roll><num>4</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> + Fire damage with a radius of (Class+1)*20 feet. An ammunition pod holds 5 grenades, regardless of Class.</text>
+        </field>
+      </datum>
+      <datum name="Long Rail Gun">
+        <field name="Name" title="yes">
+          <text>Long Rail Gun</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*10</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*15</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Alternately, the Long Rail Gun can be <ldquo/>carried<rdquo/> like a rifle, but has to be manually reloaded with a recovery time if (Class+5) actions. Deals double normal damage, with (Class+10)*20 AP. Requires (Class+1)*10 <ldquo/>free<rdquo/> energy units from the engines.</text>
+        </field>
+      </datum>
+      <datum name="Mortar">
+        <field name="Name" title="yes">
+          <text>Mortar</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Indirect fire, -5 to strike.</text>
+        </field>
+      </datum>
+      <datum name="Progressive Vulcan">
+        <field name="Name" title="yes">
+          <text>Progressive Vulcan</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*6</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The progressive vulcan is the most advanced fully automatic weapon available. They fire <roll><num>4</num><face>6</face><bns/></roll> round bursts. They work on a principle similar to a standard vulcan, except that they have multiple breeches and fire from more than one barrel at a time.</text>
+        </field>
+      </datum>
+      <datum name="Rail Gun">
+        <field name="Name" title="yes">
+          <text>Rail Gun</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*6</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*10</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>In addition to normal damage, the Rail Gun has (Class+4)*10 AP. Requires (Class+1)*3 <ldquo/>free<rdquo/> units of energy to shoot per turn (from the engines).</text>
+        </field>
+      </datum>
+      <datum name="Shotgun">
+        <field name="Name" title="yes">
+          <text>Shotgun</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*3/2</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Mecha Shotgun's deal half the usual damage of a similar weapon of the same size and ammunition, i.e. if it is a 75mm shotgun, then it deals ( <roll><num>4</num><face>6</face><bns/><mul>10</mul></roll> )/2 = <roll><num>4</num><face>6</face><bns/><mul>5</mul><kind>C</kind></roll> (Crushing) damage. Shotguns use 5<ndash/>25 rounds per shot, depending upon the set-up of the weapon. Shotguns get a bonus to Strike of 1+(Class+2)/2. The range is 1/4 of the usual weapon range.</text>
+        </field>
+      </datum>
+      <datum name="Snub Cannon">
+        <field name="Name" title="yes">
+          <text>Snub Cannon</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*10</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Uses a very heavy barrel and a much more powerful detonant. Deals (Class+1)/2 (rounded up!) x20 C (Crushing) damage. Has a 100' maximum range. The mecha may not fire while moving or the next action after firing. Recovery time is 3, and requires dextrous, working arms and hands.</text>
+        </field>
+      </datum>
+      <datum name="Vulcan">
+        <field name="Name" title="yes">
+          <text>Vulcan</text>
+        </field>
+        <field name="MetaTag">
+          <text>Future</text>
+        </field>
+        <field name="Slots" table="yes">
+          <text>(Class+1)*4</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(Class+1)*20</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Vulcans are automatic weapons capable of high rates of fire. They fire <roll><num>2</num><face>6</face><bns/></roll> bursts. These are multi-barrelled weapons, where the barrels are rotated mechanically.</text>
+        </field>
+      </datum>
+    </category>
+

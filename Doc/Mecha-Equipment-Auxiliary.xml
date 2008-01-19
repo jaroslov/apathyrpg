@@ -1,0 +1,904 @@
+
+    <category name="Content/Mecha/Equipment/Auxiliary">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Slots" table="yes"><text/></field>
+        <field colfmt="l" name="Character Points" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Active Stealth">
+        <field name="Name" title="yes">
+          <text>Active Stealth</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>3+(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)x2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>75<percent/>chance of resisting detection by Radar or Sonar. Uses 3* SIZE PC</text>
+        </field>
+      </datum>
+      <datum name="Advanced Cloaking System">
+        <field name="Name" title="yes">
+          <text>Advanced Cloaking System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>20</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+5 Camo skill. Mech is invisible to light-based detection when not moving</text>
+        </field>
+      </datum>
+      <datum name="Advanced ECM">
+        <field name="Name" title="yes">
+          <text>Advanced ECM</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>3+(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)x3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>100<percent/>chance of working, High manuever missiles have no bonus, can misrepresent radar signiture. 15 PC</text>
+        </field>
+      </datum>
+      <datum name="Advanced PC Recharger">
+        <field name="Name" title="yes">
+          <text>Advanced PC Recharger</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Recharges 1 PC per 2 engine power</text>
+        </field>
+      </datum>
+      <datum name="Advanced communications">
+        <field name="Name" title="yes">
+          <text>Advanced communications</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Communication system that is resistant to jamming and detection</text>
+        </field>
+      </datum>
+      <datum name="Ammo pod">
+        <field name="Name" title="yes">
+          <text>Ammo pod</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>X</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can hold<math ><msup><mi>X</mi><mn>2</mn></msup></math>slots worth of armor where X is no larger than the size of suit. The pod has<math ><msup><mrow><mn>2</mn><mo><times/></mo><mi>X</mi></mrow><mn>2</mn></msup></math>armor. If the pod is pierced, the ammo is rendered useless.</text>
+        </field>
+      </datum>
+      <datum name="Armor Suit">
+        <field name="Name" title="yes">
+          <text>Armor Suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Varies</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Choose a human armor, multiply values by Size-1. CP: normal <dollar/>amount * (size-1)</text>
+        </field>
+      </datum>
+      <datum name="Armored Cockpit (Mecha Only)">
+        <field name="Name" title="yes">
+          <text>Armored Cockpit (Mecha Only)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Protects the pilot's compartment with 50<percent/>more armor than the rest of the mecha.</text>
+        </field>
+      </datum>
+      <datum name="Basic Cloaking system">
+        <field name="Name" title="yes">
+          <text>Basic Cloaking system</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>8</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+3 Camo skill.</text>
+        </field>
+      </datum>
+      <datum name="Chaff Launcher">
+        <field name="Name" title="yes">
+          <text>Chaff Launcher</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Has 10 uses before refill. Each gives 25<percent/>to fool RADAR sensor or Missile</text>
+        </field>
+      </datum>
+      <datum name="Climbing System">
+        <field name="Name" title="yes">
+          <text>Climbing System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)/2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Range of<math ><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo><times/></mo><mn>150</mn></mrow></math>feet. Minimum of 50'. Uses 5 PC per use</text>
+        </field>
+      </datum>
+      <datum name="Combination Ability">
+        <field name="Name" title="yes">
+          <text>Combination Ability</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can combine with another vehicle, mecha, or power armor</text>
+        </field>
+      </datum>
+      <datum name="Communication Jammer">
+        <field name="Name" title="yes">
+          <text>Communication Jammer</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>31</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>14</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>2000' range. 100<percent/>to interrupt radio, 75<percent/>to disrupt advanced comm</text>
+        </field>
+      </datum>
+      <datum name="Compact Transformation">
+        <field name="Name" title="yes">
+          <text>Compact Transformation</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size/2</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Transforms into something with size -1, no weapons or attribute bonuses are accessible</text>
+        </field>
+      </datum>
+      <datum name="Consumable Rocket System: Extra fast">
+        <field name="Name" title="yes">
+          <text>Consumable Rocket System: Extra fast</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 to dodge per chargeGet 10 charges before recharging system</text>
+        </field>
+      </datum>
+      <datum name="Consumable Rocket System: Fast">
+        <field name="Name" title="yes">
+          <text>Consumable Rocket System: Fast</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>mimics jump jets (see that sys) Can only be used 4 times before must be recharged</text>
+        </field>
+      </datum>
+      <datum name="Consumable Rocket System: Slow burn">
+        <field name="Name" title="yes">
+          <text>Consumable Rocket System: Slow burn</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Size / 2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>mimics hover system for 1 min. Can only be used once before must be recharged</text>
+        </field>
+      </datum>
+      <datum name="Consumable Rocket System: Standard">
+        <field name="Name" title="yes">
+          <text>Consumable Rocket System: Standard</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Size / 2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Travel +300 mph for 30 sec. Can only be used once before must be recharged</text>
+        </field>
+      </datum>
+      <datum name="Direct Controls">
+        <field name="Name" title="yes">
+          <text>Direct Controls</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>12</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives +1 LEVEL to mecha related skills (including piloting, dodge, weapons, ect.)</text>
+        </field>
+      </datum>
+      <datum name="EM Pulse Generator">
+        <field name="Name" title="yes">
+          <text>EM Pulse Generator</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>5X</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>X*10 yard radius. Has 75<percent/>chance to shut down electronic devices in the area</text>
+        </field>
+      </datum>
+      <datum name="Easy maintenace">
+        <field name="Name" title="yes">
+          <text>Easy maintenace</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Anyone making an engineering or electrical roll when working on vehicle gets +2</text>
+        </field>
+      </datum>
+      <datum name="Easy to modify">
+        <field name="Name" title="yes">
+          <text>Easy to modify</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Modifications <and/> repairs can be done in 1/2 the normal time</text>
+        </field>
+      </datum>
+      <datum name="Environmental protection">
+        <field name="Name" title="yes">
+          <text>Environmental protection</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text><math ><msup><mi>Size</mi><mn>2</mn></msup></math>hours in air supply, rebreather, stops poisons and radiation fallout</text>
+        </field>
+      </datum>
+      <datum name="Equipment Shielding">
+        <field name="Name" title="yes">
+          <text>Equipment Shielding</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>X</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>X/2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Protects a certain piece of equipment from electronic effects (EM pulse, Logic Bomb). The sheilding <and/> equipment it protects are immune to electronic effects + damage but other types of weapons (bullets, bombs, missiles, lasers, etc.) will destroy BOTH</text>
+        </field>
+      </datum>
+      <datum name="Extra Jammer Emitter">
+        <field name="Name" title="yes">
+          <text>Extra Jammer Emitter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Add +50<percent/>range to a Jammer. Uses 2 PC</text>
+        </field>
+      </datum>
+      <datum name="Extra limb">
+        <field name="Name" title="yes">
+          <text>Extra limb</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Size*2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>copy of any standard limb.</text>
+        </field>
+      </datum>
+      <datum name="False Destruction">
+        <field name="Name" title="yes">
+          <text>False Destruction</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Simulates the explosion of the power armor or mecha to give the appearance of death</text>
+        </field>
+      </datum>
+      <datum name="Fire Resistant Coating">
+        <field name="Name" title="yes">
+          <text>Fire Resistant Coating</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Size</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armor will not catch on fire</text>
+        </field>
+      </datum>
+      <datum name="Flare Launcher">
+        <field name="Name" title="yes">
+          <text>Flare Launcher</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Has 10 uses before refill. Each gives 25<percent/>to fool thermal sensor or missile</text>
+        </field>
+      </datum>
+      <datum name="Flash System">
+        <field name="Name" title="yes">
+          <text>Flash System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>15</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives +5 Dex; +1 action/turn. Pilot takes D damage from combat rather than U.</text>
+        </field>
+      </datum>
+      <datum name="Force Field">
+        <field name="Name" title="yes">
+          <text>Force Field</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>
+          <math ><msup><mi>Size</mi><mn>2</mn></msup></math>
+        </text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Each point of damage done to the force field, 1 PC is used.</text>
+        </field>
+      </datum>
+      <datum name="Holographic View Cockpit">
+        <field name="Name" title="yes">
+          <text>Holographic View Cockpit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives +2 to: mecha piloting, dodge, use of melee/HtH skills, and dex checks.</text>
+        </field>
+      </datum>
+      <datum name="Hypno-Flash System">
+        <field name="Name" title="yes">
+          <text>Hypno-Flash System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>7X</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>X*10 yard radius. Anyone seeing flash w/o anti-dazzle looses 2 actions this round</text>
+        </field>
+      </datum>
+      <datum name="Internal medical system">
+        <field name="Name" title="yes">
+          <text>Internal medical system</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>10</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Will stop bleeding. Once per &quot;charge&quot; it can give <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> HP ( <dollar/>1000 to refill)</text>
+        </field>
+      </datum>
+      <datum name="LASER Resistant Coating">
+        <field name="Name" title="yes">
+          <text>LASER Resistant Coating</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Size*2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Lasers deal half damage</text>
+        </field>
+      </datum>
+      <datum name="Logic Blast System">
+        <field name="Name" title="yes">
+          <text>Logic Blast System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>10X</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>X*10 yard radius. 100<percent/>chance to shut down electronics, 50<percent/>to destroy them.</text>
+        </field>
+      </datum>
+      <datum name="Magical Transformation">
+        <field name="Name" title="yes">
+          <text>Magical Transformation</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>15</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Everything must be bought for the new form. Can form into ANY other item.</text>
+        </field>
+      </datum>
+      <datum name="Master Cloak">
+        <field name="Name" title="yes">
+          <text>Master Cloak</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>40</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+8 Camo skills. Mech is invisible to light-based detection.</text>
+        </field>
+      </datum>
+      <datum name="Myomer Actuators">
+        <field name="Name" title="yes">
+          <text>Myomer Actuators</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>1+<math ><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+2 Dex</text>
+        </field>
+      </datum>
+      <datum name="Non-dextrous hand">
+        <field name="Name" title="yes">
+          <text>Non-dextrous hand</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>x1.5 strength and -5 dex with that hand. Used for construction and punching.</text>
+        </field>
+      </datum>
+      <datum name="PC Recharger">
+        <field name="Name" title="yes">
+          <text>PC Recharger</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Recharges 1 PC per 4 engine power</text>
+        </field>
+      </datum>
+      <datum name="Passive Stealth">
+        <field name="Name" title="yes">
+          <text>Passive Stealth</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>3+<math ><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+        </field>
+        <field description="yes" name="Description">
+          <text>50<percent/>chance of resisting detection by Radar or Sonar</text>
+        </field>
+      </datum>
+      <datum name="Pinpoint Forcefield">
+        <field name="Name" title="yes">
+          <text>Pinpoint Forcefield</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>
+          <math ><msup><mi>Size</mi><mn>2</mn></msup></math>
+        </text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Like forcefield, 3 hp per 1 PC. Parry with a skill of 3 or get a +2 to a defensive skill</text>
+        </field>
+      </datum>
+      <datum name="Power booster">
+        <field name="Name" title="yes">
+          <text>Power booster</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Size*2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Add +50<percent/>to strength for<math ><msup><mn>2</mn><mi>Size</mi></msup></math>power</text>
+        </field>
+      </datum>
+      <datum name="Quantum Teleport Engine">
+        <field name="Name" title="yes">
+          <text>Quantum Teleport Engine</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>2*SIZE</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>100</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Uses SIZE*100 PC. Allows mech to teleport to location in 1 action.</text>
+        </field>
+      </datum>
+      <datum name="Rugged Movement System">
+        <field name="Name" title="yes">
+          <text>Rugged Movement System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Must be bought for each movement system. 1 movement system is more rugged (GM).</text>
+        </field>
+      </datum>
+      <datum name="Self Destruct">
+        <field name="Name" title="yes">
+          <text>Self Destruct</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Destroys vehicle and pilot if he/she hasn't ejected, or by pilot's command</text>
+        </field>
+      </datum>
+      <datum name="Self Repair">
+        <field name="Name" title="yes">
+          <text>Self Repair</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)*3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Repairs Size HP per hour (up to half of damage taken). Uses<math ><msup><mi>Size</mi><mn>2</mn></msup></math>power</text>
+        </field>
+      </datum>
+      <datum name="Shield">
+        <field name="Name" title="yes">
+          <text>Shield</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Varies</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>See shields in the armor section for larger than normal shields</text>
+        </field>
+      </datum>
+      <datum name="Shielded Armor">
+        <field name="Name" title="yes">
+          <text>Shielded Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size-1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>
+          <math ><msup><mi>Size</mi><mn>3</mn></msup></math>
+        </text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Doubles armor. Power: All PC production+<math ><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+        </field>
+      </datum>
+      <datum name="Spot Armor">
+        <field name="Name" title="yes">
+          <text>Spot Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>X</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>X/2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Protects a certain piece of equipment. If it is hit by an attack, the armor is damaged rather than the equipment.</text>
+        </field>
+      </datum>
+      <datum name="Spread-spectrum Detector">
+        <field name="Name" title="yes">
+          <text>Spread-spectrum Detector</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>50<percent/>chance of negating active stealth. Only one per vehicle. With 2 systems, 100<percent/>chance of negating active stealth. Uses 7 power.</text>
+        </field>
+      </datum>
+      <datum name="Supercharger">
+        <field name="Name" title="yes">
+          <text>Supercharger</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Size*2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Increases speed any one movement system by 50<percent/>, doubles power required.</text>
+        </field>
+      </datum>
+      <datum name="Thermal Masking">
+        <field name="Name" title="yes">
+          <text>Thermal Masking</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>
+          <math ><msup><mi>Size</mi><mn>2</mn></msup></math>
+        </text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Makes mecha invisible to thermal sensors, cannot be targeted by heat seekers</text>
+        </field>
+      </datum>
+      <datum name="Transformation ability">
+        <field name="Name" title="yes">
+          <text>Transformation ability</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Size</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Get +50<percent/>speed for related form. (more wheeled speed for cars)</text>
+        </field>
+      </datum>
+      <datum name="Weapon Storage">
+        <field name="Name" title="yes">
+          <text>Weapon Storage</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>Varies</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Requires slots equal to the slot size of a weapon / 5. Minimum of 1 slot</text>
+        </field>
+      </datum>
+      <datum name="Weapon arm">
+        <field name="Name" title="yes">
+          <text>Weapon arm</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>Wpn / 3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can hold a weapon, weapon takes up no slots. They are easier to destroy</text>
+        </field>
+      </datum>
+      <datum name="Weapon grouping">
+        <field name="Name" title="yes">
+          <text>Weapon grouping</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>X</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Group X weapons together, can be shot in groups or singly. Use bonus of least accurate weapon</text>
+        </field>
+      </datum>
+      <datum name="Zero-G controls">
+        <field name="Name" title="yes">
+          <text>Zero-G controls</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Slots" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Character Points" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Removes any negatives while within altered gravity areas (space, underwater, etc)</text>
+        </field>
+      </datum>
+    </category>
+

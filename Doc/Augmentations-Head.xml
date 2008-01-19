@@ -1,0 +1,1116 @@
+
+    <category name="Content/Augmentations/Head">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="p{2em}" name="Character Points" table="yes"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Advanced Audio">
+        <field name="Name" title="yes">
+          <text>Advanced Audio</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Hearing System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Hear a whisper from 100 meters away</text>
+        </field>
+      </datum>
+      <datum name="Advanced Olfactory System">
+        <field name="Name" title="yes">
+          <text>Advanced Olfactory System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Increases senses of taste and smell by 4 times.</text>
+        </field>
+      </datum>
+      <datum name="Advanced Tasting">
+        <field name="Name" title="yes">
+          <text>Advanced Tasting</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Advanced Olfactory System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Increase sense of taste by 100 times</text>
+        </field>
+      </datum>
+      <datum name="Alternate breathing passage">
+        <field name="Name" title="yes">
+          <text>Alternate breathing passage</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Additional hole to breath from (can be anywhere on body)</text>
+        </field>
+      </datum>
+      <datum name="Anti-Dazzle">
+        <field name="Name" title="yes">
+          <text>Anti-Dazzle</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Immune to flash and laser blinding</text>
+        </field>
+      </datum>
+      <datum name="Automatic Reticle">
+        <field name="Name" title="yes">
+          <text>Automatic Reticle</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives + 1 to strike with ranged weapons</text>
+        </field>
+      </datum>
+      <datum name="Brain Coprocessor">
+        <field name="Name" title="yes">
+          <text>Brain Coprocessor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 INT</text>
+        </field>
+      </datum>
+      <datum name="Brain casing">
+        <field name="Name" title="yes">
+          <text>Brain casing</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives brain 10/10/10 armor</text>
+        </field>
+      </datum>
+      <datum name="Built in Translator">
+        <field name="Name" title="yes">
+          <text>Built in Translator</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Hearing System, Advanced Vocal System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>One language</text>
+        </field>
+      </datum>
+      <datum name="Camera">
+        <field name="Name" title="yes">
+          <text>Camera</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>2 hours of recording time</text>
+        </field>
+      </datum>
+      <datum name="Chemical Identification">
+        <field name="Name" title="yes">
+          <text>Chemical Identification</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Advanced Olfactory System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Detect Hormonal changes, sweat, lie detect (as if at level 4), etc...</text>
+        </field>
+      </datum>
+      <datum name="Cold Breath">
+        <field name="Name" title="yes">
+          <text>Cold Breath</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>must have 1 slot for fuel. <roll><num>1</num><face>4</face><bns/></roll> D, half damage against hard armor</text>
+        </field>
+      </datum>
+      <datum name="Cosmetic Ear change">
+        <field name="Name" title="yes">
+          <text>Cosmetic Ear change</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Change ears to look like anything you want</text>
+        </field>
+      </datum>
+      <datum name="Cosmetic Eye Change">
+        <field name="Name" title="yes">
+          <text>Cosmetic Eye Change</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Change the look of any/all portions of the eye. This can be color of the iris, pupil, or any other portion of the eye. This can also include glowing eyes. Permanent change.</text>
+        </field>
+      </datum>
+      <datum name="Cyber hair">
+        <field name="Name" title="yes">
+          <text>Cyber hair</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Metallic hair, effect is cosmetic only</text>
+        </field>
+      </datum>
+      <datum name="Detachable Jaw">
+        <field name="Name" title="yes">
+          <text>Detachable Jaw</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Character can unhinge the jaw, allowing him or her to swallow objects up to 3 times normal size</text>
+        </field>
+      </datum>
+      <datum name="Directional Hearing">
+        <field name="Name" title="yes">
+          <text>Directional Hearing</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Hearing System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Range 2000'</text>
+        </field>
+      </datum>
+      <datum name="Disguise Face (Facial Features)">
+        <field name="Name" title="yes">
+          <text>Disguise Face (Facial Features)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Character can completely change his or her facial features, not including facial hair. This process takes a minute of concentration.</text>
+        </field>
+      </datum>
+      <datum name="Droud">
+        <field name="Name" title="yes">
+          <text>Droud</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A device for stimulating the pleasure or pain centers of the brain directly.</text>
+        </field>
+      </datum>
+      <datum name="Dynamic Eye Changing">
+        <field name="Name" title="yes">
+          <text>Dynamic Eye Changing</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Change the look of any/all portions of the eye. This can be color of the iris, pupil, or any other portion of the eye. This can also include glowing eyes. The look of the eyes can be changed at will, takes 15 seconds.</text>
+        </field>
+      </datum>
+      <datum name="Dynamic Memory Chip">
+        <field name="Name" title="yes">
+          <text>Dynamic Memory Chip</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 WIS</text>
+        </field>
+      </datum>
+      <datum name="Extra Eye">
+        <field name="Name" title="yes">
+          <text>Extra Eye</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Additional eye on body</text>
+        </field>
+      </datum>
+      <datum name="Eye Laser">
+        <field name="Name" title="yes">
+          <text>Eye Laser</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll>. Can be used once per round.</text>
+        </field>
+      </datum>
+      <datum name="Eye Lights">
+        <field name="Name" title="yes">
+          <text>Eye Lights</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The eyes can act like flashlights, emiting a beam of light up to 100' away</text>
+        </field>
+      </datum>
+      <datum name="Eye Projector">
+        <field name="Name" title="yes">
+          <text>Eye Projector</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The eyes can project a holographic image of anything the character wishes. The image is unmistakable for a hologram, and will fool only the most stupid into believing what they are seeing. Has no sound.</text>
+        </field>
+      </datum>
+      <datum name="Eye flash">
+        <field name="Name" title="yes">
+          <text>Eye flash</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The eyes can emit a bright flash, momentarily stunning those without an anti-dazzle system. Stunned victives are at -3 to all actions for <roll><num>1</num><face>4</face><bns/></roll> turns</text>
+        </field>
+      </datum>
+      <datum name="Facial Hair Control">
+        <field name="Name" title="yes">
+          <text>Facial Hair Control</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Character can completely change his or her facial <and/> head hair. This includes style, sparseness, color, and placement</text>
+        </field>
+      </datum>
+      <datum name="False teeth">
+        <field name="Name" title="yes">
+          <text>False teeth</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Teeth are not natural, and they feel no pain</text>
+        </field>
+      </datum>
+      <datum name="Fangs">
+        <field name="Name" title="yes">
+          <text>Fangs</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Cosmetic. But if character has the Strengthened Bite implant, then fangs add +3 damage and changes damage to P.</text>
+        </field>
+      </datum>
+      <datum name="Fire Breathing">
+        <field name="Name" title="yes">
+          <text>Fire Breathing</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>must have 1 slot for fuel. <roll><num>2</num><face>4</face><bns/><kind>U</kind></roll> </text>
+        </field>
+      </datum>
+      <datum name="Hearing System">
+        <field name="Name" title="yes">
+          <text>Hearing System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Inner ear replacement. 4x normal hearing</text>
+        </field>
+      </datum>
+      <datum name="Heat Sensor">
+        <field name="Name" title="yes">
+          <text>Heat Sensor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>20ft range. Detect exact temperature of surroundings.</text>
+        </field>
+      </datum>
+      <datum name="Horns">
+        <field name="Name" title="yes">
+          <text>Horns</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text> <roll><num>1</num><face>4</face><bns/><kind>P</kind></roll> damage, or <roll><num>2</num><face>4</face><bns/></roll> for 1 enc</text>
+        </field>
+      </datum>
+      <datum name="Infra-Scanner">
+        <field name="Name" title="yes">
+          <text>Infra-Scanner</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Visualizes heat of objects</text>
+        </field>
+      </datum>
+      <datum name="Maxwell Board">
+        <field name="Name" title="yes">
+          <text>Maxwell Board</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Regenerates <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> HP per round. 1 Slot for power source</text>
+        </field>
+      </datum>
+      <datum name="Memory Board">
+        <field name="Name" title="yes">
+          <text>Memory Board</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Acts as a file system for remembering things. It can store up to twenty-five different <ldquo/>memories<rdquo/>. They can be accessed at will, and the information contained within will never be <ldquo/>forgotten<rdquo/>.</text>
+        </field>
+      </datum>
+      <datum name="Memory Buffer/Reclocker">
+        <field name="Name" title="yes">
+          <text>Memory Buffer/Reclocker</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 action per turn, only one</text>
+        </field>
+      </datum>
+      <datum name="Microscopic Vision">
+        <field name="Name" title="yes">
+          <text>Microscopic Vision</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Increase magnification by up to 200 times but for only objects very close to character</text>
+        </field>
+      </datum>
+      <datum name="Motion Detector">
+        <field name="Name" title="yes">
+          <text>Motion Detector</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>100ft range</text>
+        </field>
+      </datum>
+      <datum name="Movement Board">
+        <field name="Name" title="yes">
+          <text>Movement Board</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 DEX in applications where speed isn't an issue (Delicate tasks, etc.). If you have a Flexible Skeleton, add +1 DEX all the time and an additional +1 DEX for slow tasks.</text>
+        </field>
+      </datum>
+      <datum name="Multispeech">
+        <field name="Name" title="yes">
+          <text>Multispeech</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Brain Coprocessor</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can speak multiple things at once</text>
+        </field>
+      </datum>
+      <datum name="Navigation System">
+        <field name="Name" title="yes">
+          <text>Navigation System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>1 Brain Slot</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>GPS and map system</text>
+        </field>
+      </datum>
+      <datum name="Needle hair">
+        <field name="Name" title="yes">
+          <text>Needle hair</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Cyber hair</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text> <roll><num>1</num><face>4</face><bOff>-</bOff><bns>1</bns><kind>P</kind></roll> damage from hair (on head)</text>
+        </field>
+      </datum>
+      <datum name="Noise Filter">
+        <field name="Name" title="yes">
+          <text>Noise Filter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Hearing System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Immune to loud noises, and filters out background noise to hear someone in a noisy area</text>
+        </field>
+      </datum>
+      <datum name="Nose gun">
+        <field name="Name" title="yes">
+          <text>Nose gun</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>1 Shell in a nostril. Fired from trigger in mouth. Can be any automatic pistol caliber. Cost adds to the cost of the gun you want to use; min STR has -2 for this use.</text>
+        </field>
+      </datum>
+      <datum name="Octopus Board">
+        <field name="Name" title="yes">
+          <text>Octopus Board</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Slotted Robotic Brain</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives + 4 Brain slots. Only one can be used</text>
+        </field>
+      </datum>
+      <datum name="Output Jack">
+        <field name="Name" title="yes">
+          <text>Output Jack</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows for electronic output from brain to interface with electronics, computers, etc.</text>
+        </field>
+      </datum>
+      <datum name="Posion Glands">
+        <field name="Name" title="yes">
+          <text>Posion Glands</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Fangs</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Deliver poison when bitting. 5 doses</text>
+        </field>
+      </datum>
+      <datum name="Prehensile Tongue">
+        <field name="Name" title="yes">
+          <text>Prehensile Tongue</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vocal System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Cosmetic only. Has a 3 Strength, and a Dexterity of the user.</text>
+        </field>
+      </datum>
+      <datum name="Psionic Board">
+        <field name="Name" title="yes">
+          <text>Psionic Board</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows the use of a single psionic power (must be purchased normally). Also opens character up to attacks from this type of psionic attack (assuming it's a mental attack)</text>
+        </field>
+      </datum>
+      <datum name="Radar Detector">
+        <field name="Name" title="yes">
+          <text>Radar Detector</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="Radiation Detector">
+        <field name="Name" title="yes">
+          <text>Radiation Detector</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Acts like a geiger counter</text>
+        </field>
+      </datum>
+      <datum name="Radio Receiver/Transmitter">
+        <field name="Name" title="yes">
+          <text>Radio Receiver/Transmitter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Hearing System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>20 mile range</text>
+        </field>
+      </datum>
+      <datum name="Remote Eye">
+        <field name="Name" title="yes">
+          <text>Remote Eye</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Remove eye from socket, wire connects to face</text>
+        </field>
+      </datum>
+      <datum name="Slotted Robotic Brain (SRB)">
+        <field name="Name" title="yes">
+          <text>Slotted Robotic Brain (SRB)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A.I. reconstruction of the human brain. Work identically to a human brain. Contains 8 <ldquo/>brain slots<rdquo/> which may be utilized for special brain upgrades. Can be located anywhere in the body. Frees up 2 slots in head. The SRB takes up one slot, can be located anywhere.</text>
+        </field>
+      </datum>
+      <datum name="Sonar">
+        <field name="Name" title="yes">
+          <text>Sonar</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Prerequisite" table="yes">
+          <text>Hearing <and/> Vocal Systems</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>req. vocal system, range 500'</text>
+        </field>
+      </datum>
+      <datum name="Spitting Glands">
+        <field name="Name" title="yes">
+          <text>Spitting Glands</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Spit a poison up to 20'. 5 doses</text>
+        </field>
+      </datum>
+      <datum name="Strengthened Bite">
+        <field name="Name" title="yes">
+          <text>Strengthened Bite</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>False teeth</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Bite deals <roll><num>1</num><face>4</face><bns/><kind>C</kind></roll> damage</text>
+        </field>
+      </datum>
+      <datum name="Suicide system">
+        <field name="Name" title="yes">
+          <text>Suicide system</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>At will, the character can kill himself, just by desiring to die</text>
+        </field>
+      </datum>
+      <datum name="Telescopic Vision">
+        <field name="Name" title="yes">
+          <text>Telescopic Vision</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Provides up to 40x normal vision</text>
+        </field>
+      </datum>
+      <datum name="Ultrasonic Pickup">
+        <field name="Name" title="yes">
+          <text>Ultrasonic Pickup</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Hearing System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Alows hearing of very high frequency sound, like an animal.</text>
+        </field>
+      </datum>
+      <datum name="V-System Board">
+        <field name="Name" title="yes">
+          <text>V-System Board</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can turn on and off at will. When on, it will provide +2 WIS, +2 INT, and +1 action for <roll><num>1</num><face>4</face><bOff>-</bOff><bns>1</bns></roll> turns. Then, it has the opposite effect for two turns, before it can be activated again.</text>
+        </field>
+      </datum>
+      <datum name="Ventriliquist System">
+        <field name="Name" title="yes">
+          <text>Ventriliquist System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vocal System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Character can speak without opening the mouth.</text>
+        </field>
+      </datum>
+      <datum name="Vision System">
+        <field name="Name" title="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The eyes are replaced by mechanical versions that perform slightly better than their human counterparts. 4x normal vision</text>
+        </field>
+      </datum>
+      <datum name="Vocal Blast">
+        <field name="Name" title="yes">
+          <text>Vocal Blast</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Deal <roll><num>2</num><face>4</face><bns/><kind>C</kind></roll> damage to a target up to 100' away</text>
+        </field>
+      </datum>
+      <datum name="Vocal Screech">
+        <field name="Name" title="yes">
+          <text>Vocal Screech</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vocal System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Stun all listeners of the screech for <roll><num>1</num><face>4</face><bns/></roll> turns. All those stunned lose an action for the duration.</text>
+        </field>
+      </datum>
+      <datum name="Vocal System">
+        <field name="Name" title="yes">
+          <text>Vocal System</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Increase vocal range by 4 times. Gives a +4 to the singing skill.</text>
+        </field>
+      </datum>
+      <datum name="Voice Modulator">
+        <field name="Name" title="yes">
+          <text>Voice Modulator</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vocal System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can change characters voice to any recorded voice</text>
+        </field>
+      </datum>
+      <datum name="Voice Projector">
+        <field name="Name" title="yes">
+          <text>Voice Projector</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+      </datum>
+      <datum name="Volume Control">
+        <field name="Name" title="yes">
+          <text>Volume Control</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vocal System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Increase or decrease volume by up to 10 times.</text>
+        </field>
+      </datum>
+      <datum name="Whiskers">
+        <field name="Name" title="yes">
+          <text>Whiskers</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 perception rolls</text>
+        </field>
+      </datum>
+      <datum name="Wideband Camera">
+        <field name="Name" title="yes">
+          <text>Wideband Camera</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite" table="yes">
+          <text>Vision System</text>
+        </field>
+        <field name="Location" table="yes">
+          <text>Head</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Sees IR and UV Light reflections</text>
+        </field>
+      </datum>
+    </category>
+
