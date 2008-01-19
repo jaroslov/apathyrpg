@@ -140,10 +140,18 @@
     <p><xsl:apply-templates select="./*|text()"/></p>
   </xsl:template>
   <xsl:template match="Apathy">
-    <span class="Apathy"><xsl:value-of select="."/></span>
+    <span class="Apathy">ApAthy</span><xsl:apply-templates />
+  </xsl:template>
+  <xsl:template match="notappl">
+    <span class="notappl">n/a</span>
   </xsl:template>
   <xsl:template match="footnote">
     <div class="footnote"><xsl:value-of select="."/></div>
+  </xsl:template>
+  <xsl:template match="example">
+    <div class="example">
+      <xsl:apply-templates />
+    </div>
   </xsl:template>
   <xsl:template match="math">
     <xsl:element name="math" namespace="http://www.w3.org/1998/Math/MathML">
@@ -207,9 +215,10 @@
     <xsl:element name="div">
       <xsl:attribute name="class">reference</xsl:attribute>
       <xsl:variable name="hrid" select="./@hrid"/>
-      <xsl:attribute name="name"><xsl:value-of select="./@hrid"/></xsl:attribute>
+      <xsl:attribute name="name"><xsl:value-of select="$hrid"/></xsl:attribute>
       <xsl:element name="a">
         <xsl:attribute name="href"><xsl:value-of select="concat($hrid,'.xhtml')"/></xsl:attribute>
+        <xsl:value-of select="$hrid"/>
       </xsl:element>
     </xsl:element>
   </xsl:template>
@@ -221,8 +230,7 @@
   </xsl:template>
   <xsl:template match="note">
     <div class="note">
-      <xsl:apply-templates select="title" />
-      <xsl:apply-templates select="text" />
+      <xsl:apply-templates />
     </div>
   </xsl:template>
 
@@ -240,13 +248,22 @@
     </table>
   </xsl:template>
   <xsl:template match="head">
-    <thead><xsl:apply-templates select="cell"/></thead>
+    <thead><tr>
+      <xsl:apply-templates select="cell">
+        <xsl:with-param name="kind">th</xsl:with-param>
+      </xsl:apply-templates>
+    </tr></thead>
   </xsl:template>
   <xsl:template match="row">
-    <tr><xsl:apply-templates select="cell"/></tr>
+    <tr>
+      <xsl:apply-templates select="cell">
+        <xsl:with-param name="kind">td</xsl:with-param>
+      </xsl:apply-templates>
+    </tr>
   </xsl:template>
   <xsl:template match="cell">
-    <xsl:element name="td">
+    <xsl:param name="kind">td</xsl:param>
+    <xsl:element name="{$kind}">
       <xsl:if test="./@span">
         <xsl:attribute name="colspan"><xsl:value-of select="./@span"/></xsl:attribute>
       </xsl:if>
@@ -287,7 +304,7 @@
 
   <!-- ROLL -->
   <xsl:template match="roll">
-    <span class="span"><xsl:apply-templates /></span>
+    <span class="roll"><xsl:apply-templates /></span>
   </xsl:template>
   <xsl:template match="bOff">
     <span class="bOff"><xsl:apply-templates /></span>
