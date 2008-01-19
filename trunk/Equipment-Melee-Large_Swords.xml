@@ -1,0 +1,604 @@
+
+    <category name="Content/Equipment/Melee/Large Swords">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Bastard Sword">
+        <field name="Name" title="yes">
+          <text>Bastard Sword</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This is the typical sword of the medieval knight. It is designed to be wielded with one or two hands, and can be used my most people.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Broadsword">
+        <field name="Name" title="yes">
+          <text>Broadsword</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Another common European sword. This weapon has a fairly short, wide, blade.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Claymore">
+        <field name="Name" title="yes">
+          <text>Claymore</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A famous weapon of Scottish origin. This blade requires a very strong person to wield<mdash/>even two handed, but deals impressive damage to match. Claymores generally have a blade 5..6 feet long. The long reach of the claymore makes it effective for engaging multiple targets at once.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Espandon">
+        <field name="Name" title="yes">
+          <text>Espandon</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class"><text>No value</text></field>
+        <field name="Type"  table="yes"><text>No value</text></field>
+        <field name="Cost"  table="yes"><text>No value</text></field>
+        <field name="Damage"  table="yes"><text>No value</text></field>
+        <field name="Hands"  table="yes"><text>No value</text></field>
+        <field name="Minimum Strength" table="yes"><text/></field>
+        <field name="Maximum Strength Bonus" table="yes"><text/></field>
+        <field name="Recovery"  table="yes"><text>No value</text></field>
+        <field description="yes" name="Description">
+          <text>A slender Spanish sword, rather like a large saber. Many of the world's greatest swordsmen relied upon this weapon to quell their foes.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Flamberge">
+        <field name="Name" title="yes">
+          <text>Flamberge</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A fearsome sword with scalloped, flame-like, blade edges. Sure to inspire terror in your enemies, before you cut them down where they stand.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Grand Saber">
+        <field name="Name" title="yes">
+          <text>Grand Saber</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A weapon with exceptional deadliness and grace. The five-foot blade requires a very strong warrior to wield, but reciprocates with exceptional damage potential.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Grand Sword">
+        <field name="Name" title="yes">
+          <text>Grand Sword</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>19</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The largest traditional sword. The grand sword appears much like a great sword, only larger. It is sufficiently heavy that only a mighty warrior might wield it, but is nearly indestructible<mdash/>and is only matched by the No-Dachi in combat effectiveness.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Great Sword">
+        <field name="Name" title="yes">
+          <text>Great Sword</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>17</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A huge version of the typical medieval sword. This is a massive weapon, with a blade several feet long, and a thickness and width to match. Few foes are a match for a warrior who can wield this massive weapon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Katana">
+        <field name="Name" title="yes">
+          <text>Katana</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The typical weapon of the Samurai warrior. The Katana is a long sword worn alongside a Wakizashi. The blade is generally around 24..30 inches in length, and is shaped to be a natural extension of the warrior's arm. Like the Wakizashi, the superior edge of this weapon makes it fearsome in combat. A true Katana wielded by a skilled warrior can cut through a steel pipe or a large wooden post.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Long Sword">
+        <field name="Name" title="yes">
+          <text>Long Sword</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A favored weapon of medieval heroes. The long sword is a slender weapon with deadly reach.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Massive Sword">
+        <field name="Name" title="yes">
+          <text>Massive Sword</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>21</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Not so much a sword as a sword-shaped club. A massive piece of steel weighing in excess of forty pounds, few foes can withstand a blow from this weapon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ram Dao">
+        <field name="Name" title="yes">
+          <text>Ram Dao</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Target must win STR contest to block or parry</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Rapier">
+        <field name="Name" title="yes">
+          <text>Rapier</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Tachi">
+        <field name="Name" title="yes">
+          <text>Tachi</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A more ancient Japanese sword. The Tachi is longer than a Katana, with a blade of around 34 or more inches long. Worn much like a European sword, this weapon offers exceptional power to a warrior who can wield it. It's is nearly impossible to use indoors due to it's length.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Tai Chi sword">
+        <field name="Name" title="yes">
+          <text>Tai Chi sword</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Large Swords</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The Tai Chi sword is an Asian weapon whose goal is grace and accuracy rather than raw mass and power. The weapon has a narrow, double-edged blade and is equipped with a strung counterweight on the pommel</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>
+

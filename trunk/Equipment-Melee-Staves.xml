@@ -1,0 +1,303 @@
+
+    <category name="Content/Equipment/Melee/Staves">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Bo Staff">
+        <field name="Name" title="yes">
+          <text>Bo Staff</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Staves</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large fighting staff, generally made from tough woods such as oak, mahogany, or ironwood. The Bo is roughly six feet in length and shaped to offer an exceptional grip and balance.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Full metal staff">
+        <field name="Name" title="yes">
+          <text>Full metal staff</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Staves</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A fighting staff forged entirely from iron or other metal. Weighing twenty pounds or more, it requires a good deal of strength to wield. However, it is practically indestructible and deals savage blows that are difficult to deflect.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Heavy Staff">
+        <field name="Name" title="yes">
+          <text>Heavy Staff</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Staves</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A wooden staff reinforced with iron end caps and studded bands throughout its length. The extra weight of the iron allows for devastating blows, and protects the wood from damage when parrying.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Jo Staff">
+        <field name="Name" title="yes">
+          <text>Jo Staff</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Staves</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A true fighting staff. The Jo is roughly four feet long, and tapers from a thick center section to about 15mm in diameter at the ends. Though light and easy to swing, it can be an excellent weapon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Long Staff">
+        <field name="Name" title="yes">
+          <text>Long Staff</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Staves</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A long wooden staff, such as a woodsman's hiking stick. Generally as long as the wielder is tall, the long staff can be a useful tool or an effective weapon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Quarterstaff">
+        <field name="Name" title="yes">
+          <text>Quarterstaff</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Staves</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large fighting staff similar to the Bo. While the quarterstaff lacks the Bo's quality craftsmanship, it makes up for that by sheer mass. A quarterstaff is generally one foot taller than its wielder, and 30 or more mm thick.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Short Staff">
+        <field name="Name" title="yes">
+          <text>Short Staff</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Staves</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A walking stick, cane, or similar wooden pole.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>
+

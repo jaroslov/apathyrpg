@@ -1,0 +1,192 @@
+
+    <category name="Content/Martial Arts/Basic">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Rank" table="yes"><text/></field>
+        <field colfmt="l" name="Attribute" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Archaic Weapons">
+        <field name="Name" title="yes">
+          <text>Archaic Weapons</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Basic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skill of attacking with and parrying (if applicable) with the given (archaic) weapon type. Archaic weapons include both Melee and Ranged. The damage and type of the weapon is listed in the Equipment section. Note that Archaic Weapons actually encompasses many different skills.</text>
+          <description-list>
+            <item>
+              <description>
+                <text>Class</text>
+              </description>
+              <text>skills are for individual classes of archaic weapon, such as Axe or Polearm. These must be bought individual and are Rank 1 skills.</text>
+            </item>
+            <item>
+              <description>
+                <text>Super Class</text>
+              </description>
+              <text>skills are for groups of classes. These groups are:</text>
+	      <description-list>
+		<item>
+		  <description><text>Stick</text></description>
+		  <text>Long Swords, Short Swords, Knives, Blunt</text>
+		</item>
+		<item>
+		  <description><text>Axes</text></description>
+		  <text>Axes, Blunt</text>
+		</item>
+		<item>
+		  <description><text>Flexible</text></description>
+		  <text>Chained, Monofilament, Ships</text>
+		</item>
+		<item>
+		  <description><text>Great</text></description>
+		  <text>Staves, Polearms</text>
+		</item>
+		<item>
+		  <description><text>Missile</text></description>
+		  <text>Ranged, Thrown</text>
+		</item>
+	      </description-list>
+	      <text>Super-Classes are Rank 2 and not Rank 1. A Super-Class may never be Specialized.</text>
+            </item>
+            <item>
+              <description>
+                <text>Exotic</text>
+              </description>
+              <text>Certain weapons are Exotic (most of these are in the Exotic category, but some are within other categories). All Exotic weapons require that you purchase an individual skill for them. For example, the Zaghnal is Exotic, in order to use the Zaghnal, a character must purchase the specific skill Zaghnal. Exotic skills may be specialized.</text>
+            </item>
+          </description-list>
+          <text>In addition, any non-Exotic and non-Chained weapon can be used as a blunt weapon. It deals damage as a low-quality club of the same mass. Blunt weapons may be manufactured ad hoc from items laying around, i.e. rolling-pins, chair-legs, lead-pipe. As we know this will come up, a limb that includes the joint and significant portions of both the upper and lower section, is considered chained and thus may not be used.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Barrel Charge">
+        <field name="Name" title="yes">
+          <text>Barrel Charge</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Basic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Strength</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Knock over an opponent (like a trip) by running through or at them. You must move at least 10 feet immediately prior to this action. Roll a Str check against the opponent, where they get a [-LVL] (raw!) to their roll. A Barrel Charge deals <roll><num>1</num><face>6</face><bns/><kind>C</kind></roll> damage.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Grapple">
+        <field name="Name" title="yes">
+          <text>Grapple</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Basic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Grappling is an attack that seeks to grab and restrain the target rather than dealing immediate damage. It may also be used as a set-up for aother martial arts techniques that require the target to be grappled first. The target may defend against the grappler in one of four different ways.</text>
+          <numbered-list>
+            <item>
+              <text>If the target is not grappled, then he may Dodge</text>
+            </item>
+            <item>
+              <text>If the target is not grappled and has a melee weapon, then he may defend by parrying</text>
+            </item>
+            <item>
+              <text>If the target is grappled, or not suitably armed but also has the Grapple skill, then he may engage in a contest-of-skills with the grappler (wrestling)</text>
+            </item>
+            <item>
+              <text>Otherwise the target may attempt a Str check with a raw minus equal to the Grappler<rsquo/>s LVL in Grapple</text>
+            </item>
+          </numbered-list>
+          <text>Grapples are ineffective against amorphous or incorporeal creatures unless otherwise noted. Once in a grapple the grappled opponent may attempt to break free on any of his actions. A grappled target is at -2*LVL to defend against the grappler (Str-checking, or Grapple-contest).</text>
+          <text>If a target is Grappled they can Grapple the attacker without any minuses. If the target succeeds then both are considered Grappled. This is called Wrestling.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Modern Weapons">
+        <field name="Name" title="yes">
+          <text>Modern Weapons</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Basic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The skill of attacking with various modern weapons. Choose the weapon type when purchasing this skill. There are no Super-Class equivalents (as in Archaic Weapons). However, for all firearms of roughly the same period it is assumed that anyone can at least fire them (given that they can figure out how to load, chamber, turn off the safety, etc.) The important ability this skill confers is to be able to operate and shoot accurately and swiftly in a high-stress environment.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Punch/Kick">
+        <field name="Name" title="yes">
+          <text>Punch/Kick</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Basic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>See description.</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Dexterity</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>You deliver a P, C, or S blow using your fist or foot (Punch and Kick, respectively). The damage for a for a kick is <roll><num>X</num><face>6</face></roll> and for a punch is <roll><num>X</num><face>4</face></roll> , where<math/>is the Rank of the skill. A martial srtist may increase the Rank of this skill even after he has bought it.</text>
+          <example>
+            <title><text>Rei hits harder</text></title>
+            <text>Rei has decided that he wants to hit harder with his punches and kicks. He currently has Rank 2, Level 4, Punch/Kick. He decides to increase the Rank of his Punch/Kick to 3. The cost of a Rank 2, Level 4 skill is 20; the cost of a Rank 3, Level 4 skill is 30, so he owes<math ><mrow><mn>30</mn><mo>-</mo><mn>20</mn><mo>=</mo><mn>10</mn></mrow></math>character points.</text>
+          </example>
+          <text>The Maximum Strength Bonus (MSB) of Punch/Kick is <ldquo/>unlimited,<rdquo/>; and the Minimum Strength Requirement (MSR) is 8. Characters with less than an 8 STR can still purchase Punch/Kick but have a negative to the raw damage they deal. A kick is always considered the most off-hand weapon; that is, if you only kick you are at a -3 to strike. If you punch and kick, the punch is at -3, and kick at -6. If you do two punches and a kick, then the punches are -3 and -6, and the kick is -9 to strike. This can be mitigated by ambidexterity.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Throw">
+        <field name="Name" title="yes">
+          <text>Throw</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" table="yes">
+          <text>Basic</text>
+        </field>
+        <field name="Rank" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Attribute" table="yes">
+          <text>Strength</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A throw is an attack that is performed against a grappled target. It causes damage and also knocks the target down, forcing the target to spend actions to get back up again. The target takes <roll><num>1</num><face>6</face><bns/><kind>C</kind></roll> damage per LVL. Once the throw is performed, the Grapple is automatically released. The target is thrown in any direction of the martial artist five feet for each LVL in Throw. The martial artist may choose to throw the target straight down at his feet instead. Throw may not be blocked, parried, or dodged. However, the target may attempt to reduce damage by supernatural means, such as blink, or by a successful Acrobatics check with a minus equal to the damage dealt.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>
+

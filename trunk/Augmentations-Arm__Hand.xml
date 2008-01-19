@@ -1,0 +1,274 @@
+<category name="Content/Augmentations/Arm, Hand">
+  <default name="">
+    <field name="Name"  title="yes"><text>No value</text></field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field colfmt="p{2em}" name="Character Points" table="yes"/>
+    <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+    <field colfmt="l" name="Location" table="yes"><text/></field>
+    <field description="yes" name="Description"><text/></field>
+  </default>
+  <datum name="Arm Blades">
+    <field name="Name" title="yes">
+      <text>Arm Blades</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes">
+      <text>5</text>
+    </field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>One or more metal blades is inserted into the forearm. It can extend forward or swing out from the back of the arm. The blades are used with the small sword skill and can deal <roll><num>1</num><face>6</face><bOff>+</bOff><bns>2</bns><kind>S</kind></roll> </text>
+    </field>
+  </datum>
+  <datum name="Arm Guards">
+    <field name="Name" title="yes">
+      <text>Arm Guards</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Special armor plating is inserted into the back of the forearm. This makes the forearm and effective tool for parrying melee attacks. Armor is 5/9/5</text>
+    </field>
+  </datum>
+  <datum name="Climbing Hands">
+    <field name="Name" title="yes">
+      <text>Climbing Hands</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>A special set of hands designed to improve your ability to climb. -1 DEX for normal tasks. +4 to climbing rolls. When combined with Climbing Feet, bonus is a total of +6</text>
+    </field>
+  </datum>
+  <datum name="Climbing System">
+    <field name="Name" title="yes">
+      <text>Climbing System</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Uses 5 Power, range of 150 feet</text>
+    </field>
+  </datum>
+  <datum name="Concealed Gun">
+    <field name="Name" title="yes">
+      <text>Concealed Gun</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes">
+      <text>3</text>
+    </field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>A semiautomatic gun, in any normal pistol caliber, can be concealed in the forearm</text>
+    </field>
+  </datum>
+  <datum name="Extendable Arms">
+    <field name="Name" title="yes">
+      <text>Extendable Arms</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes">
+      <text>6</text>
+    </field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>The ability to extend your arms up to twice their normal length. You have -3 STR with the arms fully extended. They can be extended and contracted at wll.</text>
+    </field>
+  </datum>
+  <datum name="Finger Blades">
+    <field name="Name" title="yes">
+      <text>Finger Blades</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description"><text/></field>
+  </datum>
+  <datum name="Finger Sprayer">
+    <field name="Name" title="yes">
+      <text>Finger Sprayer</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>This device, when implanted into a hand, can be used to spray chemicals a short distance away. It can't store very much liquid, however.</text>
+    </field>
+  </datum>
+  <datum name="Garrote Wire">
+    <field name="Name" title="yes">
+      <text>Garrote Wire</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Concealed in a finger</text>
+    </field>
+  </datum>
+  <datum name="Grip Lock">
+    <field name="Name" title="yes">
+      <text>Grip Lock</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes">
+      <text>4</text>
+    </field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>This allows the user to lock his grip on an object. When locked, it requires 5 greater than the user's STR to un-break the grip. It also gives +5 to STR checks for holding onto an object.</text>
+    </field>
+  </datum>
+  <datum name="Heated Hand">
+    <field name="Name" title="yes">
+      <text>Heated Hand</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>This modification gives your hands -1 DEX, but allows you to heat your palms to a significant temperatures. This can be used to deal <roll><num>1</num><face>4</face><bns/><kind>U</kind></roll> damage in an attack, or for cooking food, etc.</text>
+    </field>
+  </datum>
+  <datum name="Hollow Arm">
+    <field name="Name" title="yes">
+      <text>Hollow Arm</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Gives 2 slots in either arm. 1 in upper arm, one in lower arm.</text>
+    </field>
+  </datum>
+  <datum name="Knuckle Spikes">
+    <field name="Name" title="yes">
+      <text>Knuckle Spikes</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Adds +1 to punching damage</text>
+    </field>
+  </datum>
+  <datum name="Laser Finger">
+    <field name="Name" title="yes">
+      <text>Laser Finger</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes">
+      <text>2</text>
+    </field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text> <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>S</kind></roll> per shot for 2 Power</text>
+    </field>
+  </datum>
+  <datum name="Palm Sheild">
+    <field name="Name" title="yes">
+      <text>Palm Sheild</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>An armored palm can be used as a shield to block attacks, etc. The palm has 6/8/4 armor after this modification.</text>
+    </field>
+  </datum>
+  <datum name="Subdermal Watch">
+    <field name="Name" title="yes">
+      <text>Subdermal Watch</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>A luminescent watch is implanted beneath the skin somewhere on the body. It is usually in the wrist area. It tells perfect time, and you can't ever loose it!</text>
+    </field>
+  </datum>
+  <datum name="Tool Hands">
+    <field name="Name" title="yes">
+      <text>Tool Hands</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes"><text/></field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Small tools, similar to a swiss army knife, are implanted into the hands. They aren't strong enough for tough jobs, but are very handy for light work. Includes a small knife, scissors, file, saw, various screwdrivers, bottle/can opener, etc.</text>
+    </field>
+  </datum>
+  <datum name="Typing Hands">
+    <field name="Name" title="yes">
+      <text>Typing Hands</text>
+    </field>
+    <field name="MetaTag"><text>No value</text></field>
+    <field name="Character Points" table="yes">
+      <text>3</text>
+    </field>
+    <field name="Prerequisite"  table="yes"><text>No value</text></field>
+    <field name="Location" table="yes">
+      <text>Arm, Hand</text>
+    </field>
+    <field description="yes" name="Description">
+      <text>Robotic fingers can split apart into six individual micro-fingers. This allows one to type on a keyboard much faster than with normal hands. When in <ldquo/>typing mode<rdquo/>, hand has a STR of 2.</text>
+    </field>
+  </datum>
+</category>

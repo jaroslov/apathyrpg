@@ -1,0 +1,745 @@
+
+    <category name="Content/Equipment/Ranged">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{2em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Range" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Blow Gun - Long">
+        <field name="Name" title="yes">
+          <text>Blow Gun - Long</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Missile</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A hollow tube, fashioned from wood or metal, which is used to shoot small darts by means of blowing into one end. Blowguns deal very low damage intrinsically, but are very effective for delivering poisons to the target. Many primitive tribes rely on the silent attack of the blowgun to hunt animals for food.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Blow Gun - Short">
+        <field name="Name" title="yes">
+          <text>Blow Gun - Short</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Missile</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>150</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>See Blow Gun - Long</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Bolo">
+        <field name="Name" title="yes">
+          <text>Bolo</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Missile</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>100</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple tool used for capturing animals. The bolo is a bundle of long cords tied together in a common knot. The free ends of the cords are tipped with weights. The bolo is whirled around the head and then thrown<mdash/>upon striking, the cords are likely to entangle the target's legs. Though not thought of as a common weapon of war, bolos have been used in combat, and can be very useful.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Composite Bow">
+        <field name="Name" title="yes">
+          <text>Composite Bow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>400</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A composite bow is one that is made from multiple layers of wood that are glued together. It also has a semi-recurve design. This creates a bow that is significantly more durable and more powerful than a smaller bow. They are about 4..5 feet long.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Compound Bow">
+        <field name="Name" title="yes">
+          <text>Compound Bow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>400</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A modern variation of the archaic bow. The compound bow has a pulley system attached to the string, which provides increased velocity. They generally have a very high draw weight, but are designed so that once they are pulled back, the weight the shooter has to hold while aiming is far less than the actual power of the bow. Though some archaic bows are more powerful, the compound bow is much more durable and more compact.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Crossbow - Hand">
+        <field name="Name" title="yes">
+          <text>Crossbow - Hand</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Crossbow - Heavy">
+        <field name="Name" title="yes">
+          <text>Crossbow - Heavy</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>5</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>700</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A bow made from iron equipped with a gun-like trigger assembly for firing. Crossbows range in size from the small pistol-sized ones through larger ones used for hunting and war, through the largest sizes, which are so powerful they require a mechanical crank to cock them. Crossbows always require one action or more to load. Modern crossbows are made from composite materials, and even the larger sizes are fairly light and easily carried.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Crossbow - Large">
+        <field name="Name" title="yes">
+          <text>Crossbow - Large</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>500</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>5 AP</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Crossbow - Pellet, hand">
+        <field name="Name" title="yes">
+          <text>Crossbow - Pellet, hand</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Always deals P damage. Bullets are <dollar/>1 each</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Crossbow - Pellet, large">
+        <field name="Name" title="yes">
+          <text>Crossbow - Pellet, large</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>P</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>300</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Always deals P damage. Bullets are <dollar/>1 each</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Crossbow - Repeating">
+        <field name="Name" title="yes">
+          <text>Crossbow - Repeating</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>takes 2 hands to reload, but 1 to fire.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Heavy Recurve Bow">
+        <field name="Name" title="yes">
+          <text>Heavy Recurve Bow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>500</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hunters Bow">
+        <field name="Name" title="yes">
+          <text>Hunters Bow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>300</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A variant of the short bow optimized for hunting. It is of similar size, but is made of more flexible wood and has a larger draw length. It is designed so that it is powerful, but isn't too large to carry while stalking game. This bow can kill larger deer, antelope, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Long Bow">
+        <field name="Name" title="yes">
+          <text>Long Bow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>700</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A much heavier bow developed by the English. A true Long bow is made from Yew wood, and is at least six feet long. When equipped with the proper arrows, it can penetrate full plate armor.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Recurve Bow">
+        <field name="Name" title="yes">
+          <text>Recurve Bow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>400</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A recurve bow is one that has been specially treated so that the bow itself <ldquo/>wants<rdquo/> to bend in the opposite direction that it actually does when drawn. This puts more force on the bowstring therefore equates to a more powerful bow.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Short Bow">
+        <field name="Name" title="yes">
+          <text>Short Bow</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Bows</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>n<ndash/>a</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>200</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A common bow used for hunting, target shooting, or combat. The short bow is generally four feet long. It can be used to hunt animals weighing less than a man.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sling">
+        <field name="Name" title="yes">
+          <text>Sling</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Missile</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>150</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The weapon used by David to slay Goliath. A sling is a simple leather or cloth strip with a pocket in the center. The pocket is loaded with a stone, or other object, and the sling is whirled about the head and released, sending the stone flying at high speed. Slings deal decent damage, and are very simple to create. They are often used to harass enemy troops, or to launch various nasty substances into enemy ranks.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Slingshot">
+        <field name="Name" title="yes">
+          <text>Slingshot</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Missile</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>2</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Range" table="yes">
+          <text>50</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A very simple modern weapon. The slingshot is a Y-shaped frame, often made from wood, into which a thick rubber band has been mounted. The slingshot is held in one hand, while the other hand loads the band with your choice of missile, and stretches it back, then firing. Slingshots are so simple children often make them. Professionally made slingshots, which fire metal balls, can be quite powerful, and can kill in the proper hands. They are effective for hunting small game.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>
+
