@@ -1,0 +1,176 @@
+
+    <category name="Content/Augmentations/Leg">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="p{2em}" name="Character Points" table="yes"/>
+        <field colfmt="l" name="Prerequisite" table="yes"><text/></field>
+        <field colfmt="l" name="Location" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+      </default>
+      <datum name="Climbing Feet">
+        <field name="Name" title="yes">
+          <text>Climbing Feet</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A special set of feet designed to improve your ability to climb. -1 DEX for normal tasks. +4 to climbing rolls. When combined with Climbing hands, bonus is a total of +6</text>
+        </field>
+      </datum>
+      <datum name="Durable Feet">
+        <field name="Name" title="yes">
+          <text>Durable Feet</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The feet are made unusually durable. They will not develop blisters nor get tired, even when doing heavy work. Stubbing a toe or having your feet stepped on will no longer be as painful and is much less likely to cause injury.</text>
+        </field>
+      </datum>
+      <datum name="Extendable Legs">
+        <field name="Name" title="yes">
+          <text>Extendable Legs</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The ability to extend your legs up to twice their normal length. You have -3 STR with the legs fully extended. They can be extended and contracted at wll.</text>
+        </field>
+      </datum>
+      <datum name="Foot Blades">
+        <field name="Name" title="yes">
+          <text>Foot Blades</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Retractible metal blades are implanted into the foot. They give +1 damage to kicks and deal S damage.</text>
+        </field>
+      </datum>
+      <datum name="Foot Sheild">
+        <field name="Name" title="yes">
+          <text>Foot Sheild</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>The sole of the foot is toughened with implants. This eliminates the need to wear shoes. You can walk on any normal terrain without hurting your feet. They can also be used to block attacks (if you are sufficiently skilled). The sole has 4/5/3 armor.</text>
+        </field>
+      </datum>
+      <datum name="Foot Thrusters">
+        <field name="Name" title="yes">
+          <text>Foot Thrusters</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Small rocket engines implanted into the foot allow you to jump 50<percent/>further than normal. They can also be used to accelerate the movement of the foot during a kick, adding +5 raw damage. Six uses before recharging.</text>
+        </field>
+      </datum>
+      <datum name="Heel Spike">
+        <field name="Name" title="yes">
+          <text>Heel Spike</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A metal spike is implanted into the heel. It makes it easier to run, walk, etc. on slippery surfaces. It also deals extra damage with kicks or stomps. (+1, P)</text>
+        </field>
+      </datum>
+      <datum name="Hollow leg">
+        <field name="Name" title="yes">
+          <text>Hollow leg</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives 3 slots in either leg. (two in thigh and one in calf)</text>
+        </field>
+      </datum>
+      <datum name="Jumping ability">
+        <field name="Name" title="yes">
+          <text>Jumping ability</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes">
+          <text>5+X</text>
+        </field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can leap 10+3*X feet vertically or horizontally.</text>
+        </field>
+      </datum>
+      <datum name="Knee Spike">
+        <field name="Name" title="yes">
+          <text>Knee Spike</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A metal spike is implanted into the knee. It can be used to deal <roll><num>1</num><face>6</face><bOff>+</bOff><bns>1</bns><kind>P</kind></roll> damage. It also protects the kneecap from injury.</text>
+        </field>
+      </datum>
+      <datum name="Speed increase">
+        <field name="Name" title="yes">
+          <text>Speed increase</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Character Points" table="yes"><text/></field>
+        <field name="Prerequisite"  table="yes"><text>No value</text></field>
+        <field name="Location" table="yes">
+          <text>Leg</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Gives 5 additional MPH per purchase. Can be bought 4 times without needing space. Beyond that, every 4 purchases requires a slot.</text>
+        </field>
+      </datum>
+    </category>
+

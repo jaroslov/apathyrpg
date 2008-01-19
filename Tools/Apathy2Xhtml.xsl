@@ -4,8 +4,25 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml">
 
+  <xsl:output version="1.0"
+    method="xml"
+    encoding="ISO-8859-1"
+    media-type="text/html"
+    indent="yes"
+    doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+    doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
+
   <xsl:template match="/">
-    <xsl:apply-templates />
+    <html>
+      <head>
+        <title>Apathy Document</title>
+        <link rel="stylesheet" type="text/css" href="apathy.css" title="HTML" />
+        <link rel="stylesheet" type="text/css" href="apathy.css" title="Print" />
+      </head>
+      <body>
+        <xsl:apply-templates />
+      </body>
+    </html>
   </xsl:template>
 
   <!-- book -->
@@ -100,9 +117,27 @@
     </xsl:element>
   </xsl:template>
 
+  <!-- stupid sigils I implemented and now hate -->
+  <xsl:template match="and">&amp;</xsl:template>
+  <xsl:template match="dollar">$</xsl:template>
+  <xsl:template match="ldquo">&#8220;</xsl:template>
+  <xsl:template match="lsquo">&#8216;</xsl:template>
+  <xsl:template match="mdash">&#8212;</xsl:template>
+  <xsl:template match="ndash">&#8211;</xsl:template>
+  <xsl:template match="oslash">&#248;</xsl:template>
+  <xsl:template match="ouml">&#246;</xsl:template>
+  <xsl:template match="plusminus">&#177;</xsl:template>
+  <xsl:template match="percent">%</xsl:template>
+  <xsl:template match="rdquo">&#8221;</xsl:template>
+  <xsl:template match="rightarrow">&#8594;</xsl:template>
+  <xsl:template match="rsquo">&#8217;</xsl:template>
+  <xsl:template match="Sum">&#8721;</xsl:template>
+  <xsl:template match="times">&#215;</xsl:template>
+  <xsl:template match="trademark">&#8482;</xsl:template>
+
   <!-- TEXT ORIENTED -->
   <xsl:template match="text">
-    <p><xsl:apply-templates select="Apathy|footnote|text()|roll|math"/></p>
+    <p><xsl:apply-templates select="./*|text()"/></p>
   </xsl:template>
   <xsl:template match="Apathy">
     <span class="Apathy"><xsl:value-of select="."/></span>
@@ -110,9 +145,55 @@
   <xsl:template match="footnote">
     <div class="footnote"><xsl:value-of select="."/></div>
   </xsl:template>
-  <!-- Math is broken -->
   <xsl:template match="math">
-    <math>HERE</math>
+    <xsl:element name="math" namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:if test="./@display">
+        <xsl:attribute name="display"><xsl:value-of select="./@display"/></xsl:attribute>
+      </xsl:if>
+      <xsl:apply-templates select="./*"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="define">
+    <span class="define"><xsl:value-of select="."/></span>
+  </xsl:template>
+
+  <!-- math -->
+  <xsl:template match="mrow">
+    <xsl:element name="mrow"
+      namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:apply-templates select="./*"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="munderover">
+    <xsl:element name="munderover"
+      namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:apply-templates select="./*"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="mi">
+    <xsl:element name="mi" namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:apply-templates select="./*|text()"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="mo">
+    <xsl:element name="mo" namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:apply-templates select="./*|text()"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="mn">
+    <xsl:element name="mn" namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:apply-templates select="./*|text()"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="mfrac">
+    <xsl:element name="mfrac" namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:apply-templates select="./*"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="msup">
+    <xsl:element name="msup" namespace="http://www.w3.org/1998/Math/MathML">
+      <xsl:apply-templates select="./*"/>
+    </xsl:element>
   </xsl:template>
 
   <!-- non-text boxes -->
@@ -125,7 +206,11 @@
   <xsl:template match="reference">
     <xsl:element name="div">
       <xsl:attribute name="class">reference</xsl:attribute>
+      <xsl:variable name="hrid" select="./@hrid"/>
       <xsl:attribute name="name"><xsl:value-of select="./@hrid"/></xsl:attribute>
+      <xsl:element name="a">
+        <xsl:attribute name="href"><xsl:value-of select="concat($hrid,'.xhtml')"/></xsl:attribute>
+      </xsl:element>
     </xsl:element>
   </xsl:template>
   <xsl:template match="summarize">
@@ -186,7 +271,7 @@
   <xsl:template match="description-list">
     <dl class="description-list">
       <xsl:for-each select="item">
-        <xsl:apply-templates select="dt"/>
+        <xsl:apply-templates select="description"/>
         <dd>
           <xsl:apply-templates select="description-list|equation|example|figure|itemized-list|note|numbered-list|reference|summarize|table|text"/>
         </dd>
@@ -197,7 +282,7 @@
     <li><xsl:apply-templates /></li>
   </xsl:template>
   <xsl:template match="description">
-    <dt><xsl:apply-templates /></dt>
+    <dt><xsl:apply-templates select="text"/></dt>
   </xsl:template>
 
   <!-- ROLL -->

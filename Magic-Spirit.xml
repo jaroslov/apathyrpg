@@ -1,0 +1,1065 @@
+
+    <category name="Content/Magic/Spirit">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Type" qsummary="yes"><text/></field>
+        <field colfmt="p{1em}" name="Rank" qsummary="yes" table="yes"/>
+        <field colfmt="p{1.5em}" name="Casting Time" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Damage" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Duration" qsummary="yes" table="yes"/>
+        <field colfmt="l" name="Magic Points" qsummary="yes" table="yes"><text/></field>
+        <field colfmt="p{4em}" name="Range" qsummary="yes" table="yes"/>
+        <field colfmt="p{4em}" name="Target" qsummary="yes" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Banshee&apos;s Wail">
+        <field name="Name" title="yes">
+          <text>Banshee's Wail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>300</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>150' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster lets out a soul-shattering scream. All beings that can hear the caster, and are within 150 feet of the caster must make a WIL check. If they fail the check, they die.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Barrier Ward">
+        <field name="Name" title="yes">
+          <text>Barrier Ward</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bns/></roll> hrs -or- permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>45</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster enchants any pre-existing relatively flat surface (such as a wall) to a maximum area of 200 square feet in size as to make it impenetrable to any spirit. The enchanted surface is also impenetrable to phasing and Selective Vision. Ward can be made permanent by spending ten times the normal MP cost.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Black Beam">
+        <field name="Name" title="yes">
+          <text>Black Beam</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>10</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Deals <roll><num>2</num><face>10</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll>. Caster looses <roll><num>1</num><face>8</face><bOff>-</bOff><bns>1</bns></roll> HP.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Black Wrath">
+        <field name="Name" title="yes">
+          <text>Black Wrath</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>4</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>50' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 1 action next turn, suffer listed damage, and have 50<percent/>chance to become poisoned. Does not affect the caster or undead, ghosts/spirits, or demons. Poison deals <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> damage per turn for the spell's duration</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cleansing Wave">
+        <field name="Name" title="yes">
+          <text>Cleansing Wave</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>4 x <roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>350</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>300'</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at Caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 2 actions per turn, suffer Mute effect, are blinded permanently if they fail a WIL check, and suffer listed damage. Only affects undead, ghosts/spirits, demons, etc. Valid targets with less than 100 maximum HP within range of the spell are instantly vaporized.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Communicate with Spirits">
+        <field name="Name" title="yes">
+          <text>Communicate with Spirits</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bns/></roll> min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>80</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows caster to communicate mentally (similar to Telepathy) with ghosts, spirits, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dark Apocalypse">
+        <field name="Name" title="yes">
+          <text>Dark Apocalypse</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>8 x <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>400</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>300' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 2 actions for each of the next 5 turns, suffer damage, become poisoned ( <roll><num>2</num><face>10</face><bns/><kind>U</kind></roll> per turn), and have 75<percent/>chance to become paralyzed for the duration of the spell. Does not affect the caster, spirits, undead or demons.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Dark Curse">
+        <field name="Name" title="yes">
+          <text>Dark Curse</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>30' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 1 action next turn and suffer damage. Does not affect the caster.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Demon Song">
+        <field name="Name" title="yes">
+          <text>Demon Song</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>8</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>Hearing range</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 1 action for each of the next 3 turns, suffer listed damage, become poisoned ( <roll><num>2</num><face>6</face><bns/><kind>U</kind></roll> per turn), and have 25<percent/>chance to become paralyzed for the duration of the spell. Does not affect the caster, demons, undead, ghosts, or spirits.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Energy Blast">
+        <field name="Name" title="yes">
+          <text>Energy Blast</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1+X</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>(5+X)D6+2 special</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>100X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>10* X foot long, 5' wide</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster forms a glowing ball of pure magical-spritual energy at his fingertips. The ball then detonates outwards in a powerful blast. The spell deals full damage to spirits and undead. It deals half damage, as C, to all other targets within range.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Evil Essence">
+        <field name="Name" title="yes">
+          <text>Evil Essence</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>5X <roll><num>2</num><face>4</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>300</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>200' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 1 action for each of the next 4 turns, suffer damage, become poisoned ( <roll><num>1</num><face>8</face><bOff>+</bOff><bns>1</bns><kind>U</kind></roll> per turn), and have 50<percent/>chance to become paralyzed for the duration of the spell. Does not affect the caster, demons, undead, ghosts, or spirits.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Great Gospel">
+        <field name="Name" title="yes">
+          <text>Great Gospel</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>4x <roll><num>3</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>500' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at Caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A sphere of light 500 feet in radius emanates from the caster. All beings within range loose 2 actions per turn, if they fail a WIL check they are muted and blinded permanently, and suffer listed damage. Each subsequent turn of the spell's duration inflicts additional damage equal to half the previous turn. Only affects undead, ghosts/spirits, demons, etc. Valid targets with less than 100 maximum HP within range of the spell are instantly vaporized.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Healing Rain">
+        <field name="Name" title="yes">
+          <text>Healing Rain</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> hours</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>400</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>2 mile radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A soft rain falls from the sky, healing everything that it touches 1 HP a turn.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Holy Sigil">
+        <field name="Name" title="yes">
+          <text>Holy Sigil</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Enchants a single weapon (archaic weapon, a single bullet, etc.). Enchanted weapon is now considered magical and can damage supernatural creatures, spirits, etc, as normal. Weapon also has [+3] damage. Enchantment lasts for 1 strike only, after which the weapon reverts to normal.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Light Scrying">
+        <field name="Name" title="yes">
+          <text>Light Scrying</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows caster to determine the vital statistics of a spirit or demon (HP, most of it's skills, attributes, etc.)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Major Ward">
+        <field name="Name" title="yes">
+          <text>Major Ward</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1 min</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster enchants a small object (less than 1 cubic foot). Any spirit, demon, or undead touching the object will suffer <roll><num>1</num><face>10</face><bns/><mul>20</mul></roll> damage. Once the damage is dealt, spell expires. Merely by getting NEAR the ward the target suffers <roll><num>1</num><face>10</face><bns/><mul>2</mul></roll> damage per turn. (this does not make spell expire)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Minor Ward">
+        <field name="Name" title="yes">
+          <text>Minor Ward</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1 min</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>special</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>permanent</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>45</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster enchants a small object (less than 1 cubic foot). Any spirit or demon touching the object will suffer <roll><num>1</num><face>10</face><bns/><mul>5</mul></roll> damage. Once the damage is dealt, spell expires.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Pulse of Life">
+        <field name="Name" title="yes">
+          <text>Pulse of Life</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>6</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>120</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>100' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at Caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 1 action per turn, have 70<percent/>to suffer Mute effect, are blinded for <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns, and suffer listed damage. Only affects undead, ghosts/spirits, demons, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sanctuary">
+        <field name="Name" title="yes">
+          <text>Sanctuary</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1 min +</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>50+10X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>self</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster radiates an intense aura from his body that measures 10 feet in radius. Spirits and Demons must make a WIL check at -10 in order to enter the aura, and thereafter every turn to remain there. Undead that enter the aura will suffer <roll><num>1</num><face>4</face><bns/></roll> damage per turn. The spell lasts 10 minuites, but the caster may extend it at a cost of 1 MP per min</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Seal Evil">
+        <field name="Name" title="yes">
+          <text>Seal Evil</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>3</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>70</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>50' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at Caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 1 action per turn, have 50<percent/>to suffer Mute effect, and suffer listed damage. Only affects undead, ghosts/spirits, and demons, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Seeking">
+        <field name="Name" title="yes">
+          <text>Seeking</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A spell you cast that is not an auto hit, is now an auto hit. Cast at the same time as you are casting the spell in question.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Spirit Bomb">
+        <field name="Name" title="yes">
+          <text>Spirit Bomb</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>3+X D4 P</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75 + 25X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Caster creates a small, glowing blue orb which then travels to target location within caster's sight range. Upon arrival, it detonates, scattering magical spikes in all directions. After traveling 10 feet, the spikes disappear. Will damage non-corpreal targets. Deals half damage vs. normal targets</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Spirit Nail">
+        <field name="Name" title="yes">
+          <text>Spirit Nail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>5+X D4 P</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>60 +20X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Unleashes a deadly rain of magical spikes upon one 5x5 foot area. Treat as piercing damage. Will affect ghosts, spirits, etc. Deals half damage vs. normal targets</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Spirit Scatter">
+        <field name="Name" title="yes">
+          <text>Spirit Scatter</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>6</face><bns/></roll> min</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>75</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Forces any one target ghost or spirit to break apart into a hazy fog. Target requires <roll><num>1</num><face>6</face><bns/></roll> minutes to re-assemble. Non-corporeal ghosts can attempt to re-assemble themselves in 1 turn with a WIL check at -5.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Storm of Spirits">
+        <field name="Name" title="yes">
+          <text>Storm of Spirits</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bOff>-</bOff>
+            <bns>1</bns>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>2</num><face>4</face><bns/></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>120</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>100' radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Moaning sprits swirl out from the caster within a 100 foot radius. The spirits seek out living targets the caster wishes, and attempt to steal a small part of their soul. Anyone that has a spirit hit them takes <roll><num>1</num><face>10</face><bOff>-</bOff><bns>1</bns><kind>U</kind></roll> damage. Any targets within the range have a 50<percent/>chance per turn to be struck by a spirit.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Touch of Fate">
+        <field name="Name" title="yes">
+          <text>Touch of Fate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>varies</text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>5+10*X</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>touch</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Can be used to heal or damage a target. Effect is somewhat random: target looses <roll><num>3</num><face>6</face><bns/></roll> HP and gains <roll><num>3</num><face>6</face><bns/></roll> HP. For each X, caster can add [+1] to either of the die rolls that he chooses. Luck points cannot be added to this spell to increase damage. The target can spend 1 luck point to nullify the spell. No effect on non-living targets (such as mecha or robots)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="True Sense">
+        <field name="Name" title="yes">
+          <text>True Sense</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>25</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Auto</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Allows caster to determine exactly what a particular target is. Spell will reveal if the target is human, alien, beast, demon, spirit, illusion, machine, etc. It the target is alive the spell will reveal the basic emotional state of the target as well.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="White Beacon">
+        <field name="Name" title="yes">
+          <text>White Beacon</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>6x <roll><num>2</num><face>4</face><bOff>+</bOff><bns>3</bns><kind>U</kind></roll> </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text> <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns</text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>250</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>200' Radius</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>Centered at Caster</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>All beings within range loose 1 action per turn, suffer Mute effect, are blinded for <roll><num>1</num><face>4</face><bOff>+</bOff><bns>1</bns></roll> turns, and suffer damage. Only affects undead, ghosts/spirits, demons, etc. Valid targets with less than 60 maximum HP within range of the spell are instantly vaporized.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="White Beam">
+        <field name="Name" title="yes">
+          <text>White Beam</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Type" qsummary="yes">
+          <text>Spirit</text>
+        </field>
+        <field name="Rank" qsummary="yes" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Casting Time" qsummary="yes" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Damage" qsummary="yes" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>10</face>
+            <bns/>
+            <kind>U</kind>
+          </roll> 
+        </text>
+        </field>
+        <field name="Duration" qsummary="yes" table="yes">
+          <text><notappl/></text>
+        </field>
+        <field name="Magic Points" qsummary="yes" table="yes">
+          <text>30</text>
+        </field>
+        <field name="Range" qsummary="yes" table="yes">
+          <text>target</text>
+        </field>
+        <field name="Target" qsummary="yes" table="yes">
+          <text>roll</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Deals <roll><num>1</num><face>10</face><bns/><kind>U</kind></roll> </text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>
+
