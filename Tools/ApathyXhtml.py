@@ -20,8 +20,6 @@ def parseOptions():
   parser.usage += " File"
 
   (options, args) = parser.parse_args()
-  if options.x2h is None:
-    options.x2h = True
 
   # args is ONE file
   if len(args) != 1:
@@ -44,7 +42,12 @@ def parseOptions():
 
 if __name__=="__main__":
   (options, xorhtml) = parseOptions()
+  command = ""
   if options.x2h:
-    print "Converting xml->xhtml to "+options.output_file
+    command = "xsltproc -o %s Apathy2Xhtml.xsl %s"
   else:
-    print "Converting xhtml->xml to "+options.output_file
+    command = "xsltproc -o %s -html Xhtml2Apathy.xsl %s"
+
+  command = command%(options.output_file,xorhtml)
+  print command
+  os.system(command)
