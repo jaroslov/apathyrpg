@@ -1,0 +1,656 @@
+
+    <category name="Content/Equipment/Melee/Blunt">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Class"><text/></field>
+        <field colfmt="l" name="Type" table="yes"><text/></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Damage" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Hands" table="yes"/>
+        <field colfmt="p{3em}" name="Minimum Strength" table="yes"/>
+        <field colfmt="p{3em}" name="Maximum Strength Bonus" table="yes"/>
+        <field colfmt="l" name="Recovery" table="yes"><text/></field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="Arab Mace">
+        <field name="Name" title="yes">
+          <text>Arab Mace</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple yet effective weapon, consisting of a wooden handle capped with a round iron or bronze head.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cane/Lathi">
+        <field name="Name" title="yes">
+          <text>Cane/Lathi</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+1 to parry using this weapon</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Club">
+        <field name="Name" title="yes">
+          <text>Club</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A simple piece of wood or metal used to beat your opponent into submission. Think baseball.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cudgel">
+        <field name="Name" title="yes">
+          <text>Cudgel</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A wooden club, traditionally made from a gnarled tree branch or root.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Great Maul">
+        <field name="Name" title="yes">
+          <text>Great Maul</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>22</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hammer">
+        <field name="Name" title="yes">
+          <text>Hammer</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A normal household hammer. You never know when you might need to use one as a backup weapon.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hercules Club">
+        <field name="Name" title="yes">
+          <text>Hercules Club</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Iron Cane">
+        <field name="Name" title="yes">
+          <text>Iron Cane</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>+3 to parry, no penalty to parry heavy weapons</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Mace">
+        <field name="Name" title="yes">
+          <text>Mace</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A common European weapon. The mace proved an effective weapon against opponents wearing chain mail or other soft armor. It is basically a club with a metal facing, often studded.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Maul">
+        <field name="Name" title="yes">
+          <text>Maul</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A tool for splitting logs, often adapted for combat purposes to split skulls. The maul is a wedge-shaped iron head mounted to a long handle.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Morning Star">
+        <field name="Name" title="yes">
+          <text>Morning Star</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>3</num>
+            <face>4</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sjambok">
+        <field name="Name" title="yes">
+          <text>Sjambok</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>S</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>4</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Cannot be used to parry.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sledge Hammer">
+        <field name="Name" title="yes">
+          <text>Sledge Hammer</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>2</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A large hammer, typically used for construction work<mdash/>and sometimes conscripted as a weapon. A sledgehammer has an iron head weighing several pounds mounted atop a long wooden handle.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Slungshot">
+        <field name="Name" title="yes">
+          <text>Slungshot</text>
+        </field>
+        <field name="MetaTag">
+          <text>Ancient</text>
+        </field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bns/>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A very easy-to-make weapon consisting of a cord with a weight on the end. A slungshot is used much like a yo-yo. It is not a chained weapon because of it's use: straight-line shots. The range of the weapon can be up to 10 feet. Specialists may use a variant called a <ldquo/>loaded sleeve<rdquo/> which is a modification of long robe-sleeves to use the weapon. As an Exotic weapon, the slungshot may be used twice in a single action.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Tonfa or Truncheon">
+        <field name="Name" title="yes">
+          <text>Tonfa or Truncheon</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>1</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A common sidearm of police and security personnel throughout the ages. It consists of a metal or wooden bar, about 18<rdquo/> long, equipped with a handle mounted at 90 degrees to the bar, one third of the way down. It is quick to swing, and can deal crushing blows. As well, it is effective at blocking enemy attacks.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="War Hammer">
+        <field name="Name" title="yes">
+          <text>War Hammer</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Class">
+          <text>Blunt</text>
+        </field>
+        <field name="Type" table="yes">
+          <text>C</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Damage" table="yes">
+          <text>
+           <roll>
+            <num>4</num>
+            <face>6</face>
+            <bOff>+</bOff>
+            <bns>1</bns>
+          </roll> 
+        </text>
+        </field>
+        <field name="Hands" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Minimum Strength" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Maximum Strength Bonus" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Recovery" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>
+

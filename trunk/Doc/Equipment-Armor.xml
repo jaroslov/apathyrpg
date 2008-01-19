@@ -1,0 +1,1956 @@
+
+    <category name="Content/Equipment/Armor">
+      <default name="">
+        <field name="Name"  title="yes"><text>No value</text></field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field colfmt="l" name="Cost" table="yes"><text/></field>
+        <field colfmt="l" name="Note" table="yes"><text/></field>
+        <field colfmt="p{2em}" name="Encumbrance" table="yes"/>
+        <field colfmt="p{2em}" name="Piercing" table="yes"/>
+        <field colfmt="p{2em}" name="Slashing" table="yes"/>
+        <field colfmt="p{2em}" name="Crushing" table="yes"/>
+        <field description="yes" name="Description"><text/></field>
+        <field name="Implementation"><text>No value</text></field>
+      </default>
+      <datum name="ALCAR Plate">
+        <field name="Name" title="yes">
+          <text>ALCAR Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>11900</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard, Fire</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>ALCAR plate is heavy armor developed for use in military and SWAT applications. It consists of a helmet, long-sleeved jacket and pants. The suit is made of heavy ballistic nylon which is covered with form-fitting ALuminum-CARbon plates which cover the vast majority of the body.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ajax&apos;s Deadly Grasp">
+        <field name="Name" title="yes">
+          <text>Ajax's Deadly Grasp</text>
+        </field>
+        <field name="MetaTag">
+          <text>Unique</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>???</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Articulated Plate">
+        <field name="Name" title="yes">
+          <text>Articulated Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>32700</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>9</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Articulated plate represents the finest acheivement of the blacksmith-armorer. It consists of a full suit of form-fitting and overlapping metal plates that cover the entire body from head to toe. The superior joints in articulated plate provide much better mobility than standard full plate. Articulated plate must be made specifically for a given wearer.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="BSP Linked Plate Armor">
+        <field name="Name" title="yes">
+          <text>BSP Linked Plate Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>29300</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard, Fire x2</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>8</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This armor was developed for strategic depolyment by special forces soldiers and elite personal security details. It offers superior protection to armors of similar weight. This armor consists of a Spectra sleeved vest and matching pants. The entire suit is covered with polymeric plates reenforced with boron nanotubes. The thickness and shape of the plates is optimized to provide good mobility and protection.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ballistics Cloth (Heavy)">
+        <field name="Name" title="yes">
+          <text>Ballistics Cloth (Heavy)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>6300</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Heavy bulletproof vest with a trauma plate in the chest area.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ballistics Cloth (Light)">
+        <field name="Name" title="yes">
+          <text>Ballistics Cloth (Light)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1100</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A very light bulletproof vest. This is typically used by undercover police or anyone that needs unobtrusive protection.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ballistics Cloth (Standard)">
+        <field name="Name" title="yes">
+          <text>Ballistics Cloth (Standard)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2700</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A typical Kevlar bulletproof vest. Very commonly issued to soldiers and police.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Banded Mail">
+        <field name="Name" title="yes">
+          <text>Banded Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>6200</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>9</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A leather suit covered in overlapping and layerd metal plates that curve around the body.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Beast Leather">
+        <field name="Name" title="yes">
+          <text>Beast Leather</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>3900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Leather armor made from special leather from wilderness beasts. Scarce.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Biker&apos;s Leathers">
+        <field name="Name" title="yes">
+          <text>Biker's Leathers</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Leather suit worn by motorcycle racers. The suit is specially tailored to fit the rider while in the ridng position. This, size is considered to be zero when the rider is on a motorcycle.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Boron-Ceramic Plate">
+        <field name="Name" title="yes">
+          <text>Boron-Ceramic Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>27500</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard, Fire x3</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>9</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This high-tech armor is typically marketed to private security and mercenaries as it is generally too heavy for use by typical police or military forces. It consists of incredibly tough dual-phase plate armor over a spectra inner suit. This armor is exceptionally resistant to battle damage and is capable of absorbing a remarkable amount of damage before becoming unusuable.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Brigandine">
+        <field name="Name" title="yes">
+          <text>Brigandine</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1700</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Brigandine armor is made from a heavy cloth or supple leather tunic that is fitted with a regular pattern of rectangular iron plates. It covers the body from the neck to the thighs, and also covers the shoulder area.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="CLAF Suit">
+        <field name="Name" title="yes">
+          <text>CLAF Suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10100</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>CLAF armor is the trade name for <ldquo/>Cross-Linked Aramid Fiber<rdquo/>. This armor is a technologically superior <ldquo/>bulletproof vest<rdquo/> which covers the chest, torso, and groin area. CLAF armor is common amongst police in affluent precincts and is also issued to some frontline infantry troops.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="CLB-WAF Suit">
+        <field name="Name" title="yes">
+          <text>CLB<ndash/>WAF Suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>19000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>CLB-WAF, called <ldquo/>Clubwaf<rdquo/> by it<rsquo/>s wearers, is the most effective <ldquo/>bulletproof vest<rdquo/>developed. It consists of a Spectra-boron nanocomposite thread that is woven into armored cloth. This armor delivers remarkable protection but is light enough to be used by beat cops and common soldiers.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Carbon Fiber Plate">
+        <field name="Name" title="yes">
+          <text>Carbon Fiber Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>17000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire, Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>7</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>This is the modern equivalent of plate mail armor. Unlike it's historical equivalent, this armor is made of lightweight composites. It also incorporates flexible joints which means that it is nearly universal in fitment. It consists of high saturation 3D carbon fiber matix plates impregnated with semimetallic resins. This armor is typically used by SWAT and Military units.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ceramic Plate">
+        <field name="Name" title="yes">
+          <text>Ceramic Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>24800</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard, Fire x3</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>7</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Ceramic Plate armor was developed as an outgrowth of vehicle armor research. Ceramic Plate consists of large, scuplted plates that closely fit the body. The joints are unarmored. Though it is an uncommon choice for military or police use, it is very popular amonst freelance mercenaries and adventurers due to its excellent fire resistance.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chain Mail">
+        <field name="Name" title="yes">
+          <text>Chain Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1000</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Chain mail consists of an armored vest (Hauberk) and pants. The armor is a very flexible fabric that is made of thousands of interlocking metal rings. Typically this is worn over padded armor as the rings are known for chafing against bare skin.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Chain and Brigandine">
+        <field name="Name" title="yes">
+          <text>Chain and Brigandine</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A chain mail suit covered with thick metal plates</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Cloth">
+        <field name="Name" title="yes">
+          <text>Cloth</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Heavy clothing designed especially for protection<ndash/>like a woodsman's coveralls, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Densematter Plate">
+        <field name="Name" title="yes">
+          <text>Densematter Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>30000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard, Fire x3</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>17</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>11</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Heavy hard armor carrying collapsed abotex plates. Exceedingly rare.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Double Mail">
+        <field name="Name" title="yes">
+          <text>Double Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2700</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Similar to chain mail, but a superior design with a higher denisty of rings.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Elven Chain Mail">
+        <field name="Name" title="yes">
+          <text>Elven Chain Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>17800</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A superior form of chain mail made from exceptionally small metal rings that are interlinked in three dimensions.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Elysian Plate">
+        <field name="Name" title="yes">
+          <text>Elysian Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>13300</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A fine suit of plate armor. It is made of exotic metals and has finely fitted joints to improve mobility.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fiberglass Plate">
+        <field name="Name" title="yes">
+          <text>Fiberglass Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2300</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Hard armor composed of fiberglass-epoxy plates over a kevlar interior</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Field Plate aka 3/4 plate">
+        <field name="Name" title="yes">
+          <text>Field Plate aka 3/4 plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>10500</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>8</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A chain mail suit covered with thick, form-fitting heavy metal plates</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fishback Ceramic">
+        <field name="Name" title="yes">
+          <text>Fishback Ceramic</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>4800</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy synth coat covered with hundreds of small hexagonal CERMET plates</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Fishback Steel">
+        <field name="Name" title="yes">
+          <text>Fishback Steel</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy denim coat covered with hundreds of small hexagonal metal tiles</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Flak Armor">
+        <field name="Name" title="yes">
+          <text>Flak Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1000</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A thick, bulky vest that is padded and contains iron plates that cover vital areas of the chest and groin. (Millitary style, WWII, etc.)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Forged Plate">
+        <field name="Name" title="yes">
+          <text>Forged Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>27300</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>17</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>11</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Metallurgically improved plate armor. It is the same encumberance but provides better protection.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Full Plate">
+        <field name="Name" title="yes">
+          <text>Full Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>14000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>15</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>9</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A full chain mail suit completely covered with form fitting heavy steel plates</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Furs">
+        <field name="Name" title="yes">
+          <text>Furs</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>cold weather clothing made from leather and animal furs</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="G-Alloy Plate">
+        <field name="Name" title="yes">
+          <text>G-Alloy Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>329700</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard, Fire x5</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>20</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>24</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>14</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Highly advanced semimetallic armor oriented on the molecular level</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Gentleman&apos;s Vest">
+        <field name="Name" title="yes">
+          <text>Gentleman's Vest</text>
+        </field>
+        <field name="MetaTag">
+          <text>Unique</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire, Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>16</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A snazzy, gray, woolen, formal vest. It is somewhat bulky, but very debonair. Adds +1 to all Build-related skills. A magical item.</text>
+        </field>
+        <field name="Implementation">
+          <text>Charisma += 2;</text>
+        </field>
+      </datum>
+      <datum name="Gi">
+        <field name="Name" title="yes">
+          <text>Gi</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>martial arts costume</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="HC Aramid Armor">
+        <field name="Name" title="yes">
+          <text>HC Aramid Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>42000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire, Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>9</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Heavy hard armor made from hard-cast semimetallic composite plates</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hakama (cotton)">
+        <field name="Name" title="yes">
+          <text>Hakama (cotton)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>200</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>martial arts costume</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hakama (silk)">
+        <field name="Name" title="yes">
+          <text>Hakama (silk)</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1000</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>martial arts costume</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Half Plate">
+        <field name="Name" title="yes">
+          <text>Half Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5700</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A chain mail suit sparcely covered with thick, non-interlocking plates</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Hard Leather">
+        <field name="Name" title="yes">
+          <text>Hard Leather</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>700</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Similar to soft leather, except that the main pieces are made of hard tooled leather</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Heavy Jacket">
+        <field name="Name" title="yes">
+          <text>Heavy Jacket</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>50</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Any sort of unusually thick clothing<ndash/>like a parka, leather jacket, heavy denim, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Heavy Plate">
+        <field name="Name" title="yes">
+          <text>Heavy Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>33100</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>18</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>16</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>19</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>12</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A suit of fully enclosed metal plate armor. The plates are thicker than normal for superior protection.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Jack/gravel coat">
+        <field name="Name" title="yes">
+          <text>Jack/gravel coat</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>400</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A cloak made of heavy cloth secured with leather straps. The surface is covered with small stones and bits of metal bonded and sewn in place.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Kevlar">
+        <field name="Name" title="yes">
+          <text>Kevlar</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2200</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>armored clothing made from pure kevlar with normal cloth over it. Designed to be inconspicuous. (used by diplomats, etc.)</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Knitted Steel">
+        <field name="Name" title="yes">
+          <text>Knitted Steel</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>800</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armor made from weaving steel wire into cloth</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Light Plate">
+        <field name="Name" title="yes">
+          <text>Light Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5100</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A partial plate suit. It consists of a breast plate, shoulder plates and greaves. The plates are cut to maximize movement.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Linked Metal">
+        <field name="Name" title="yes">
+          <text>Linked Metal</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>secondary armor for millitary applications<ndash/>a network of metal plates over a cloth vest</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Mylar">
+        <field name="Name" title="yes">
+          <text>Mylar</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>4900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Thin armor material that is nearly impossible to cut</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Nomex">
+        <field name="Name" title="yes">
+          <text>Nomex</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>250</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire x 2</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Tough clothing made from NOMEX fibers<mdash/>designed for fire protection. Worn by firefighters and emergency workers</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="PACA Mesh suit">
+        <field name="Name" title="yes">
+          <text>PACA Mesh suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>3400</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Millitary armor made from tough armored fibers and composite plastics</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="PLCALF Armor">
+        <field name="Name" title="yes">
+          <text>PLCALF Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>28900</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire, Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>13</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Same as the above, with additional polymeric plates in key areas. This is the heaviest armor used by ultramodern SWAT forces.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Padded">
+        <field name="Name" title="yes">
+          <text>Padded</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>100</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Heavy clothing lined with multiple layers of thick fur, padding, etc.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Polymer Plate">
+        <field name="Name" title="yes">
+          <text>Polymer Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>5800</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Light hard armor made from advanced polymeric plates over a kevlar suit</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="R-Polymer Plate">
+        <field name="Name" title="yes">
+          <text>R-Polymer Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>15900</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>11</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>7</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Polymeric hard armor containing steel inserts in all plates</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="RIR Hazard Suit">
+        <field name="Name" title="yes">
+          <text>RIR Hazard Suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2300</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Rubber-impregnated polyester fabric filled with dogbone-shaped interlocking metal bars. Protects against chemicals too.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Racer&apos;s Suit/Pilot&apos;s suit">
+        <field name="Name" title="yes">
+          <text>Racer's Suit/Pilot's suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1500</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire x 2</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Full body jumpsuit made of fireproof materials. Designed to save the life of race car drivers, pilots, etc, in the event of a crash or fire.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Reinforced Leather">
+        <field name="Name" title="yes">
+          <text>Reinforced Leather</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1200</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>2</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Very hard and stiff leather with inlaid metal reinforcements. The edges are ringed in metal.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Ring Mail">
+        <field name="Name" title="yes">
+          <text>Ring Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Large metal rings held together with leather straps</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Riot Armor">
+        <field name="Name" title="yes">
+          <text>Riot Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2400</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Standard SWAT armor: Ballistics cloth with metal plates in key locations</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="SEB Hard Armor">
+        <field name="Name" title="yes">
+          <text>SEB Hard Armor</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>22000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>14</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>10</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>7</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Boron-composite plates over a spectra undersuit. Rare, generally used by special forces or elite units.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="SPECTRA">
+        <field name="Name" title="yes">
+          <text>SPECTRA</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>22700</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Improved version of Kevar, very flexible yet stands up well to piercing and slashing</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="SPECTRA Tactical Vest">
+        <field name="Name" title="yes">
+          <text>SPECTRA Tactical Vest</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>14900</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A heavy bulletproof vest made from the improved SPECTRA material with a steel chestplate</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Scale Mail">
+        <field name="Name" title="yes">
+          <text>Scale Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1400</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Hard leather armor covered in overlapping metal scales</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Scale-over-Chain">
+        <field name="Name" title="yes">
+          <text>Scale-over-Chain</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2400</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A chain mail suit with additional metal scales covering the chain material</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Silk">
+        <field name="Name" title="yes">
+          <text>Silk</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>4400</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armored robes made from woven silk threads.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Soft Leather">
+        <field name="Name" title="yes">
+          <text>Soft Leather</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>500</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armored clothing made of pieces of thick, soft, leather sewn together</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Sorbothene">
+        <field name="Name" title="yes">
+          <text>Sorbothene</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1100</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>5</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A shock-damping suit made from a special rubber material</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Splint Mail">
+        <field name="Name" title="yes">
+          <text>Splint Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2600</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>8</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>8</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Soft leather armor covered with paralell vertical bands of iron</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Steel Plate">
+        <field name="Name" title="yes">
+          <text>Steel Plate</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>2000</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Hard</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>12</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>9</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>6</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>A modern version of full plate mail</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Stripped-Leather Mail">
+        <field name="Name" title="yes">
+          <text>Stripped-Leather Mail</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>1800</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>4</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>6</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>1</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Soft leather underlayment with multiple layers of hard leather straps held on by metallic buckles or rings. Creaks and makes noise when moving.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Tai Chi suit">
+        <field name="Name" title="yes">
+          <text>Tai Chi suit</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>250</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>0</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>martial arts costume</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Toad Armor">
+        <field name="Name" title="yes">
+          <text>Toad Armor</text>
+        </field>
+        <field name="MetaTag">
+          <text>Unique</text>
+        </field>
+        <field name="Cost" table="yes">
+          <text>0</text>
+        </field>
+        <field name="Note" table="yes">
+          <text>Fire, Hard*</text>
+        </field>
+        <field name="Encumbrance" table="yes">
+          <text>2</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>1</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>4</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Armor made of hundreds of toad-skins stitched together. This may be worn either inside or outside of armor as it is quite suppled and billowing. The armor provides protection against poisons and acids, as long as it is not punctured. Even though the armor is considered <ldquo/>Hard<rdquo/> it does not count as <ldquo/>Hard<rdquo/> for sizing and encumbrance purposes.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+      <datum name="Wyrmhide">
+        <field name="Name" title="yes">
+          <text>Wyrmhide</text>
+        </field>
+        <field name="MetaTag"><text>No value</text></field>
+        <field name="Cost" table="yes">
+          <text>4800</text>
+        </field>
+        <field name="Note"  table="yes"><text>No value</text></field>
+        <field name="Encumbrance" table="yes">
+          <text>3</text>
+        </field>
+        <field name="Piercing" table="yes">
+          <text>5</text>
+        </field>
+        <field name="Slashing" table="yes">
+          <text>7</text>
+        </field>
+        <field name="Crushing" table="yes">
+          <text>3</text>
+        </field>
+        <field description="yes" name="Description">
+          <text>Special leather made from the hide of rare and dangerous monsters is used to make this superior type of armor.</text>
+        </field>
+        <field name="Implementation"><text>No value</text></field>
+      </datum>
+    </category>
+
