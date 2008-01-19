@@ -2,6 +2,7 @@
 
 import os, sys, libxslt, libxml2
 from optparse import OptionParser
+from Apathy2Xhtml import apathy2xhtml, xhtml2apathy
 
 def parseOptions():
   parser = OptionParser()
@@ -65,14 +66,18 @@ if __name__=="__main__":
   #document.freeDoc()
   #output.freeDoc()
 
-  command = ""
+  #command = "" ## Allan doesn't have Unix, do it by hand...
   if options.x2h:
-    command = "xsltproc -o %s %s %s"
+    #command = "xsltproc -o %s %s %s"
+    xhtml = apathy2xhtml(xorhtml)
+    print xhtml.toxml()
   else:
-    command = "xsltproc -o %s -html %s %s"
+    #command = "xsltproc -o %s -html %s %s"
+    xml = xhtml2apathy(xorhtml)
+    print xml.toxml()
 
-  command = command%(options.output_file,options.xslt,xorhtml)
+  #command = command%(options.output_file,options.xslt,xorhtml)
   if options.pretend:
-    print "PRETEND", command
+    print "PRETEND"#, command
   else:
-    os.system(command)
+    pass#os.system(command)
