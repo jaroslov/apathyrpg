@@ -27,7 +27,7 @@
           <text>You are trained to fight with two weapons simultaneously. Each skill level reduces the dual-wield penalty by 1 point for each hand. Note that no matter the level of Ambidexterity, it can never provide a positive bonus; it can only reduce or remove the normal penalty.</text>
           <example>
             <title><text>Candlestick is ambidextrous</text></title>
-            <text>Candlestick has 3 levels of ambidexterity; he has -0 to strike with his<lsquo/>good<rdquo/> hand and -3 to strike with the off hand. If Candlestick had 6 levels of ambidexterity he would no negative at all when attacking with his<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>nd</mi></msup></math>weapon, and a -3 with his<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>3</mn><mi>rd</mi></msup></math>weapon, for instance if he were doing two punches and a kick.</text>
+            <text>Candlestick has 3 levels of ambidexterity; he has -0 to strike with his<lsquo/>good<rdquo/> hand and -3 to strike with the off hand. If Candlestick had 6 levels of ambidexterity he would no negative at all when attacking with his<math ><msup><mn>2</mn><mi>nd</mi></msup></math>weapon, and a -3 with his<math ><msup><mn>3</mn><mi>rd</mi></msup></math>weapon, for instance if he were doing two punches and a kick.</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -160,7 +160,7 @@
           <text>Knowledge and practical experience with combat. The primary bonus is that for each LVL in combat training gain one move-equivalent action. The characteris also familiar with appropriate strategies of order-of-battle and platoon, developing enfilading fire, retreat, modes of advance, etc. If multiple characters have Combat Training, then simple (standard) combat maneuvers can be carried out without verbal (only visual) communication, given that they have trained together for at least one week prior. With simple verbal commands or hand-signals, highly-developed or coordinated maneuvers can be carried out (the requirement of previous group practice still holds). Characters may also attack and defend <ldquo/>as a unit,<rdquo/> thus if two characters have Combat Training and are immediately adjacent to each other (typically 5 feet), then when initiative is rolled, they can choose to take either of the rolled initiatives.</text>
           <example>
             <title><text>Myk and Travis: the Machine</text></title>
-            <text>Myk and Travis have trained together as years: Myk uses sword-and-shield, and Travis with the polearm. They both have three levels in Combat Training. Travis has three levels in Readiness. At the beginning of combat they both roll initiative, Myk rolls (and gets) a 12, Travis rolls an 11, with his Readiness he has<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>11</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>17</mn></mrow></math>. Both Myk and Travis choose to go on the iniative of 17.</text>
+            <text>Myk and Travis have trained together as years: Myk uses sword-and-shield, and Travis with the polearm. They both have three levels in Combat Training. Travis has three levels in Readiness. At the beginning of combat they both roll initiative, Myk rolls (and gets) a 12, Travis rolls an 11, with his Readiness he has<math ><mrow><mn>11</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>17</mn></mrow></math>. Both Myk and Travis choose to go on the iniative of 17.</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -223,7 +223,7 @@
           <text>For each level in Jitsu pick one Special or one Defensive skill that the martial artist already knows. This special skill is now considered a Basic skill, and may be modified and used as a Basic skill.</text>
           <example>
             <title><text>Myk<rsquo/>s Deadly Reciprocal Attack</text></title>
-            <text>Myk is typically out-of-range of any opponent because he uses a Gladius, while Travis uses a 14' Yari. Most of the time, Myk focuses on defending himself and Travis using Defend Other. However, because he has such fantastic armor (and gets hit a lot defending Travis), he really wants to be able to <ldquo/>lay down the law<rdquo/>; with his Reciprocal Attack. When he takes his<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>3</mn><mi>rd</mi></msup></math>level in Jitsu, he chooses Reciprocal Attack as his skill; from now on Myk can modify Reciprocal Attack as if it were a Basic attack; in particular he has 3 levels in Deadly he plans to use...</text>
+            <text>Myk is typically out-of-range of any opponent because he uses a Gladius, while Travis uses a 14' Yari. Most of the time, Myk focuses on defending himself and Travis using Defend Other. However, because he has such fantastic armor (and gets hit a lot defending Travis), he really wants to be able to <ldquo/>lay down the law<rdquo/>; with his Reciprocal Attack. When he takes his<math ><msup><mn>3</mn><mi>rd</mi></msup></math>level in Jitsu, he chooses Reciprocal Attack as his skill; from now on Myk can modify Reciprocal Attack as if it were a Basic attack; in particular he has 3 levels in Deadly he plans to use...</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -452,3 +452,4 @@
         </field>
       </datum>
     </category>
+

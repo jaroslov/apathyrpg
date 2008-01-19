@@ -410,7 +410,7 @@
         </field>
         <field name="Magic Points" qsummary="yes" table="yes">
           <text>
-          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>
+          <math ><msup><mi>X</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field name="Range" qsummary="yes" table="yes">
@@ -833,3 +833,4 @@
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
+

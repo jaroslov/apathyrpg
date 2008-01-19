@@ -524,7 +524,7 @@
       <text>Any</text>
     </field>
     <field description="yes" name="Description">
-      <text>Unique skill. This provides the character money. Character gets<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mi>LVL</mi><mn>2</mn></msup><mo><times/></mo><mn>1000</mn></mrow></math>dollars in cash, equipment, or goods. This can be bought many times.</text>
+      <text>Unique skill. This provides the character money. Character gets<math ><mrow><msup><mi>LVL</mi><mn>2</mn></msup><mo><times/></mo><mn>1000</mn></mrow></math>dollars in cash, equipment, or goods. This can be bought many times.</text>
     </field>
     <field name="Implementation">
       <text>Money += Level*Level*500</text>

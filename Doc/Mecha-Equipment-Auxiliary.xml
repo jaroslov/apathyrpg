@@ -16,7 +16,7 @@
           <text>4</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>3+(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)x2</text>
+          <text>3+(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)x2</text>
         </field>
         <field description="yes" name="Description">
           <text>75<percent/>chance of resisting detection by Radar or Sonar. Uses 3* SIZE PC</text>
@@ -46,7 +46,7 @@
           <text>8</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>3+(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)x3</text>
+          <text>3+(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)x3</text>
         </field>
         <field description="yes" name="Description">
           <text>100<percent/>chance of working, High manuever missiles have no bonus, can misrepresent radar signiture. 15 PC</text>
@@ -94,7 +94,7 @@
           <text>X</text>
         </field>
         <field description="yes" name="Description">
-          <text>Can hold<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>X</mi><mn>2</mn></msup></math>slots worth of armor where X is no larger than the size of suit. The pod has<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mn>2</mn><mo><times/></mo><mi>X</mi></mrow><mn>2</mn></msup></math>armor. If the pod is pierced, the ammo is rendered useless.</text>
+          <text>Can hold<math ><msup><mi>X</mi><mn>2</mn></msup></math>slots worth of armor where X is no larger than the size of suit. The pod has<math ><msup><mrow><mn>2</mn><mo><times/></mo><mi>X</mi></mrow><mn>2</mn></msup></math>armor. If the pod is pierced, the ammo is rendered useless.</text>
         </field>
       </datum>
       <datum name="Armor Suit">
@@ -166,10 +166,10 @@
           <text>Size</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)/2</text>
+          <text>(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)/2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Range of<math  xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo><times/></mo><mn>150</mn></mrow></math>feet. Minimum of 50'. Uses 5 PC per use</text>
+          <text>Range of<math ><mrow><msup><mrow><mi>Size</mi><mo>-</mo><mn>1</mn></mrow><mn>2</mn></msup><mo><times/></mo><mn>150</mn></mrow></math>feet. Minimum of 50'. Uses 5 PC per use</text>
         </field>
       </datum>
       <datum name="Combination Ability">
@@ -349,7 +349,7 @@
           <text>2</text>
         </field>
         <field description="yes" name="Description">
-          <text><math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>hours in air supply, rebreather, stops poisons and radiation fallout</text>
+          <text><math ><msup><mi>Size</mi><mn>2</mn></msup></math>hours in air supply, rebreather, stops poisons and radiation fallout</text>
         </field>
       </datum>
       <datum name="Equipment Shielding">
@@ -467,7 +467,7 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
+          <math ><msup><mi>Size</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
@@ -588,7 +588,7 @@
           <text>Size</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>1+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+          <text>1+<math ><msup><mi>Size</mi><mn>2</mn></msup></math></text>
         </field>
         <field description="yes" name="Description">
           <text>+2 Dex</text>
@@ -633,7 +633,7 @@
           <text>0</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>3+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+          <text>3+<math ><msup><mi>Size</mi><mn>2</mn></msup></math></text>
         </field>
         <field description="yes" name="Description">
           <text>50<percent/>chance of resisting detection by Radar or Sonar</text>
@@ -649,7 +649,7 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
+          <math ><msup><mi>Size</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
@@ -668,7 +668,7 @@
           <text>Size*2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Add +50<percent/>to strength for<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>Size</mi></msup></math>power</text>
+          <text>Add +50<percent/>to strength for<math ><msup><mn>2</mn><mi>Size</mi></msup></math>power</text>
         </field>
       </datum>
       <datum name="Quantum Teleport Engine">
@@ -725,10 +725,10 @@
           <text>Size</text>
         </field>
         <field name="Character Points" table="yes">
-          <text>(<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>)*3</text>
+          <text>(<math ><msup><mi>Size</mi><mn>2</mn></msup></math>)*3</text>
         </field>
         <field description="yes" name="Description">
-          <text>Repairs Size HP per hour (up to half of damage taken). Uses<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>power</text>
+          <text>Repairs Size HP per hour (up to half of damage taken). Uses<math ><msup><mi>Size</mi><mn>2</mn></msup></math>power</text>
         </field>
       </datum>
       <datum name="Shield">
@@ -756,11 +756,11 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>3</mn></msup></math>
+          <math ><msup><mi>Size</mi><mn>3</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
-          <text>Doubles armor. Power: All PC production+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math></text>
+          <text>Doubles armor. Power: All PC production+<math ><msup><mi>Size</mi><mn>2</mn></msup></math></text>
         </field>
       </datum>
       <datum name="Spot Armor">
@@ -818,7 +818,7 @@
         </field>
         <field name="Character Points" table="yes">
           <text>
-          <math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Size</mi><mn>2</mn></msup></math>
+          <math ><msup><mi>Size</mi><mn>2</mn></msup></math>
         </text>
         </field>
         <field description="yes" name="Description">
@@ -901,3 +901,4 @@
         </field>
       </datum>
     </category>
+

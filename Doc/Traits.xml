@@ -283,7 +283,7 @@
           <text>8</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can control up to a total of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>LVL</mi><mo>-</mo><mn>2</mn></mrow><mn>2</mn></msup></math>* 30 cp worth of spirits. The spirit must obey any commands until death.</text>
+          <text>Character can control up to a total of<math ><msup><mrow><mi>LVL</mi><mo>-</mo><mn>2</mn></mrow><mn>2</mn></msup></math>* 30 cp worth of spirits. The spirit must obey any commands until death.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -374,7 +374,7 @@
           <text>5</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can steal<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP from target, and gain<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP. Requires touch.</text>
+          <text>Character can steal<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP from target, and gain<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP. Requires touch.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -426,7 +426,7 @@
           <text>2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character emits an odor up to 10*<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>lvl</mi><mn>2</mn></msup></math>feet away. Purchase for each odor.</text>
+          <text>Character emits an odor up to 10*<math ><msup><mi>lvl</mi><mn>2</mn></msup></math>feet away. Purchase for each odor.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -508,7 +508,7 @@
           <text>3</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can float a few inches above the ground or smooth water. Can move at<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>mph.</text>
+          <text>Character can float a few inches above the ground or smooth water. Can move at<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>mph.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -521,7 +521,7 @@
           <text>6</text>
         </field>
         <field description="yes" name="Description">
-          <text>Erect a FF with a radius of up to Lvl * 5 ft around character. Can take<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 25 damage. Opponents are +1 to strike the forcefield. FF regenerates Lvl HP per hour.</text>
+          <text>Erect a FF with a radius of up to Lvl * 5 ft around character. Can take<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 25 damage. Opponents are +1 to strike the forcefield. FF regenerates Lvl HP per hour.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -707,7 +707,7 @@
           <text>1</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can jump an additional<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet</text>
+          <text>Character can jump an additional<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -720,7 +720,7 @@
           <text>1</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can run at<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>MPH</text>
+          <text>Character can run at<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>MPH</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -811,7 +811,7 @@
           <text>5</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character emits enough light to illuminate (like day) an area up to 5*<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>in radius.</text>
+          <text>Character emits enough light to illuminate (like day) an area up to 5*<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>in radius.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -876,7 +876,7 @@
           <text>7</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can manipulate up to<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>3</mn></msup></math>* 10 pounds of metal. Metal pieces may be thrown for an attack (one action) that deals Lvl D 6 S<ndash/>P<ndash/>C damage.</text>
+          <text>Character can manipulate up to<math ><msup><mi>Lvl</mi><mn>3</mn></msup></math>* 10 pounds of metal. Metal pieces may be thrown for an attack (one action) that deals Lvl D 6 S<ndash/>P<ndash/>C damage.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -941,7 +941,7 @@
           <text>3</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character has some form of natural (or mystical) covering that gives him<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>P<ndash/>S<ndash/>C protection and Lvl U protection.</text>
+          <text>Character has some form of natural (or mystical) covering that gives him<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>P<ndash/>S<ndash/>C protection and Lvl U protection.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1032,7 +1032,7 @@
           <text>6</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can control up to<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 10 pounds of plant material. Can be used to attack others (takes one action) with the plants, deals Lvl D 6 C damage.</text>
+          <text>Character can control up to<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 10 pounds of plant material. Can be used to attack others (takes one action) with the plants, deals Lvl D 6 C damage.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1214,7 +1214,7 @@
           <text>10</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character gains Lvl sizes, gains<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>Lvl</mi></msup></math>Strength, looses Lvl Dex, multiply HP and Base Armor by<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>2</mn><mi>Lvl</mi></msup></math>.</text>
+          <text>Character gains Lvl sizes, gains<math ><msup><mn>2</mn><mi>Lvl</mi></msup></math>Strength, looses Lvl Dex, multiply HP and Base Armor by<math ><msup><mn>2</mn><mi>Lvl</mi></msup></math>.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1357,7 +1357,7 @@
           <text>1</text>
         </field>
         <field description="yes" name="Description">
-          <text>Purchase per attribute that is at least a 20. Increase the max attribute to 20 +<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>lvl</mi><mn>2</mn></msup></math>, and purchase additional points as if the base attribute is 1<ndash/>2 the current attribute.</text>
+          <text>Purchase per attribute that is at least a 20. Increase the max attribute to 20 +<math ><msup><mi>lvl</mi><mn>2</mn></msup></math>, and purchase additional points as if the base attribute is 1<ndash/>2 the current attribute.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1383,7 +1383,7 @@
           <text>20</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can teleport up to<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 miles away that he can see or has been.</text>
+          <text>Character can teleport up to<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 miles away that he can see or has been.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1422,7 +1422,7 @@
           <text>5</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can transfer<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP to a target per second. Requires Touch</text>
+          <text>Character can transfer<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>* 5 MP to a target per second. Requires Touch</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1435,7 +1435,7 @@
           <text>2</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can initiate a grip that requires a strength of STR+<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>. Adds Level to any grappling skill.</text>
+          <text>Character can initiate a grip that requires a strength of STR+<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>. Adds Level to any grappling skill.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1474,7 +1474,7 @@
           <text>10</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can control the weather (basic stuff here, no tornadoes, huricanes, etc) for an area of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>square miles.</text>
+          <text>Character can control the weather (basic stuff here, no tornadoes, huricanes, etc) for an area of<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>square miles.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
@@ -1513,8 +1513,9 @@
           <text>10</text>
         </field>
         <field description="yes" name="Description">
-          <text>Character can see through any substance that is no more than<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet thick.</text>
+          <text>Character can see through any substance that is no more than<math ><msup><mi>Lvl</mi><mn>2</mn></msup></math>feet thick.</text>
         </field>
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
+

@@ -282,7 +282,7 @@
           <text>Auto</text>
         </field>
         <field description="yes" name="Description">
-          <text>Disenchant is used to remove magical effects from an object or area. Each casting of Disenchant affects a single magical spell or effect. If disenchant is used on a spell of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>3</mn><mi>rd</mi></msup></math>rank or lower, then the targeted spell effect instantly expires (stops). If disenchant is used on a spell of<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>4</mn><mi>th</mi></msup></math>rank or higher, then the spell may or may not be affected. In this case the caster of Disenchant enters a contest of skills (Magical Control) with the original caster of the existing spell, with the following conditions:</text>
+          <text>Disenchant is used to remove magical effects from an object or area. Each casting of Disenchant affects a single magical spell or effect. If disenchant is used on a spell of<math ><msup><mn>3</mn><mi>rd</mi></msup></math>rank or lower, then the targeted spell effect instantly expires (stops). If disenchant is used on a spell of<math ><msup><mn>4</mn><mi>th</mi></msup></math>rank or higher, then the spell may or may not be affected. In this case the caster of Disenchant enters a contest of skills (Magical Control) with the original caster of the existing spell, with the following conditions:</text>
           <numbered-list>
             <item>
               <text>The Original caster of the spell (even if he is deceased) rolls Magical Control using the statistics he had at the time the original spell was first cast. Furthermore, he adds the rank of that spell to his roll.</text>
@@ -296,7 +296,7 @@
           </numbered-list>
           <example>
             <title><text>Bratzner attempts to disenchant</text></title>
-            <text>Five years ago Ulek the Pious cast Major Ward on a lockbox containing some scrolls. Now, having slain Ulek, an evil wizard, Bratzner wishes to disenchant Major Ward so that he can open the box unharmed. Because Major Ward is<math  xmlns='http://www.w3.org/1998/Math/MathML'><msup><mn>5</mn><mi>th</mi></msup></math>rank, Disenchant does not automatically work, and a skill contest is required. Even though Ulek is dead, <ldquo/>he<rdquo/> is still entitled to a roll. The GM determines that Ulek had Magical Control level 4 and WIL 15 at the time Major Ward was first cast. Thus, Ulek<rsquo/>s roll is 4 dice + 15 (from wisdom) and +5 from the spell level. The GM keeps this information secret, and rolls for Ulek: Three successes. The evil wizard now rolls: He has Lvl 5 Magical Control, a WIL of 14, and he chooses to spend an extra 250 MP which gives him +5 to his roll. His roll is 5 dice + 19, and comes up four successes. Because the evil wizard wins the skill contest, disenchant is successful and Major Ward disappears.</text>
+            <text>Five years ago Ulek the Pious cast Major Ward on a lockbox containing some scrolls. Now, having slain Ulek, an evil wizard, Bratzner wishes to disenchant Major Ward so that he can open the box unharmed. Because Major Ward is<math ><msup><mn>5</mn><mi>th</mi></msup></math>rank, Disenchant does not automatically work, and a skill contest is required. Even though Ulek is dead, <ldquo/>he<rdquo/> is still entitled to a roll. The GM determines that Ulek had Magical Control level 4 and WIL 15 at the time Major Ward was first cast. Thus, Ulek<rsquo/>s roll is 4 dice + 15 (from wisdom) and +5 from the spell level. The GM keeps this information secret, and rolls for Ulek: Three successes. The evil wizard now rolls: He has Lvl 5 Magical Control, a WIL of 14, and he chooses to spend an extra 250 MP which gives him +5 to his roll. His roll is 5 dice + 19, and comes up four successes. Because the evil wizard wins the skill contest, disenchant is successful and Major Ward disappears.</text>
           </example>
         </field>
         <field name="Implementation"><text>No value</text></field>
@@ -1356,3 +1356,4 @@
         <field name="Implementation"><text>No value</text></field>
       </datum>
     </category>
+
