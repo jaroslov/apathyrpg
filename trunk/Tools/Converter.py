@@ -6,7 +6,7 @@ from optparse import OptionParser
 def parseOptions():
   parser = OptionParser()
   parser.add_option("-x","--xslt",dest="xslt",
-          help="the xml stylesheet to use",metavar="FILE")
+          help="[required] the xml stylesheet to use",metavar="FILE")
   parser.add_option("-s","--suffix",dest="suffix",
           help="the new suffix",metavar="FILE")
   parser.add_option("-p","--pretend",dest="pretend",
@@ -16,6 +16,15 @@ def parseOptions():
 
   (options, args) = parser.parse_args()
 
+  if options.pretend is None:
+    options.pretend = False
+  if options.suffix is None:
+    options.suffix = "converted"
+
+  if options.xslt is None:
+    parser.print_help()
+    sys.exit(1)
+
   return options, args
 
 if __name__=="__main__":
@@ -24,4 +33,7 @@ if __name__=="__main__":
   command = "xsltproc -o %s %s %s"
 
   for file in files:
-    print file
+    filepathparts = os.path.split(file)
+    filename = filepathparts[1]
+    filext = os.path.splitext(filename)
+    print filext[0]+"."+options.suffix+filext[1]
