@@ -4,25 +4,8 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml">
 
-  <xsl:output version="1.0"
-    method="xml"
-    encoding="ISO-8859-1"
-    media-type="text/html"
-    indent="yes"
-    doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
-    doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
-
   <xsl:template match="/">
-    <html>
-      <head>
-        <title>Apathy Document</title>
-        <link rel="stylesheet" type="text/css" href="apathy.css" title="HTML" />
-        <link rel="stylesheet" type="text/css" href="apathy.css" title="Print" />
-      </head>
-      <body>
-        <xsl:apply-templates />
-      </body>
-    </html>
+    <xsl:apply-templates />
   </xsl:template>
 
   <!-- book -->
