@@ -18,12 +18,14 @@ def parseOptions():
 
   if options.pretend is None:
     options.pretend = False
-  if options.suffix is None:
-    options.suffix = "converted"
 
   if options.xslt is None:
     parser.print_help()
     sys.exit(1)
+
+  if options.suffix is None:
+    xsltext = os.path.splitext(os.path.split(options.xslt)[1])[0]
+    options.suffix = xsltext.lower()
 
   return options, args
 
@@ -36,4 +38,11 @@ if __name__=="__main__":
     filepathparts = os.path.split(file)
     filename = filepathparts[1]
     filext = os.path.splitext(filename)
-    print filext[0]+"."+options.suffix+filext[1]
+    newname = filext[0]+"."+options.suffix+filext[1]
+    syscmd = command%(newname,options.xslt,file)
+    if options.pretend:
+      print syscmd
+    else:
+      os.system(syscmd)
+
+
