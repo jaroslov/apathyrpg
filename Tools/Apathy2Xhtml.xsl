@@ -83,6 +83,7 @@
   <xsl:template match="category">
     <xsl:variable name="hrid" select="./@name" />
     <xsl:element name="table">
+      <xsl:attribute name="class">category</xsl:attribute>
       <xsl:attribute name="name"><xsl:value-of select="$hrid" /></xsl:attribute>
       <!-- titles head -->
       <xsl:apply-templates select="default">
@@ -347,6 +348,7 @@
     <xsl:param name="which"/>
       <xsl:element name="thead">
         <xsl:attribute name="name"><xsl:value-of select="$which"/></xsl:attribute>
+        <xsl:attribute name="class"><xsl:value-of select="$which"/></xsl:attribute>
         <xsl:for-each select="./field">
           <xsl:variable name="FieldName" select="./@name" />
           <xsl:variable name="Title" select="./@title" />
