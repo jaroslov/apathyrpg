@@ -54,7 +54,15 @@
   <xsl:template match="author">
     <xsl:element name="div">
       <xsl:attribute name="class">author</xsl:attribute>
-      <xsl:value-of select="."/>
+      <xsl:apply-templates select="text()|resource" />
+    </xsl:element>
+  </xsl:template>
+
+  <!-- img -->
+  <xsl:template match="resource">
+    <xsl:element name="img">
+      <xsl:attribute name="width"><xsl:value-of select="./@width"/></xsl:attribute>
+      <xsl:attribute name="src"><xsl:value-of select="./@location"/></xsl:attribute>
     </xsl:element>
   </xsl:template>
 
@@ -248,11 +256,13 @@
     </table>
   </xsl:template>
   <xsl:template match="head">
-    <thead><tr>
-      <xsl:apply-templates select="cell">
-        <xsl:with-param name="kind">th</xsl:with-param>
-      </xsl:apply-templates>
-    </tr></thead>
+    <thead>
+      <tr>
+        <xsl:apply-templates select="cell">
+          <xsl:with-param name="kind">th</xsl:with-param>
+        </xsl:apply-templates>
+      </tr>
+    </thead>
   </xsl:template>
   <xsl:template match="row">
     <tr>
