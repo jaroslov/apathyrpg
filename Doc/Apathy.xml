@@ -1,6 +1,9 @@
 <book>
     <header>
       <authors>
+        <author><resource
+          location="Resources/Apathy.png"
+          width="100%"/></author>
         <author>Allan Moyse</author>
         <author>Nathan Jones</author>
         <author>Jacob Smith</author>
