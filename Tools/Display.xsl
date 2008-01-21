@@ -13,6 +13,7 @@
     doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
 
   <xsl:include href="Category.xsl"/>
+  <xsl:include href="Document.xsl"/>
 
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -24,7 +25,9 @@
           title="Apathy" />
       </head>
       <body>
-        <xsl:apply-templates select="xhtml:div" />
+        <xsl:apply-templates select="xhtml:div">
+          <xsl:with-param name="combine">No</xsl:with-param>
+        </xsl:apply-templates>
         <xsl:apply-templates select="xhtml:table">
           <xsl:with-param name="style">Display</xsl:with-param>
         </xsl:apply-templates>
@@ -33,14 +36,6 @@
         </xsl:apply-templates>
       </body>
     </html>
-  </xsl:template>
-
-  <xsl:template match="xhtml:div">
-    <!-- must be a 'book' -->
-    <xsl:variable name="Class" select="./@class" />
-    <xsl:if test="$Class='book'">
-      <xsl:copy-of select="." />
-    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>
