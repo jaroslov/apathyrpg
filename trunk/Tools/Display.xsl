@@ -42,7 +42,16 @@
     <xsl:param name="style">Edit</xsl:param>
     <!-- must be a 'category' -->
     <xsl:variable name="Class" select="./@class" />
+    
     <xsl:if test="$Class='category'">
+      <!-- next two variables find the position (index)
+            of the title and description nodes within the node-set
+            of cells (th) -->
+      <xsl:variable name="description-index"
+        select="count(./xhtml:thead[@name='display']/xhtml:th[text()='Description']/preceding-sibling::xhtml:th)+1" />
+      <xsl:variable name="title-index"
+        select="count(./xhtml:thead[@name='display']/xhtml:th[text()='Title']/preceding-sibling::xhtml:th)+1" />
+      <!-- display the "Edit" style -->
       <xsl:choose>
         <xsl:when test="$style='Edit'">
           <xsl:copy-of select="." />
@@ -51,13 +60,6 @@
           <!-- show table elements in table -->
           <xsl:variable name="name" select="./@name" />
           <xsl:variable name="id" select="generate-id(.)" />
-          <!-- next two variables find the position (index)
-                of the title and description nodes within the node-set
-                of cells (th) -->
-          <xsl:variable name="description-index"
-            select="count(./xhtml:thead[@name='display']/xhtml:th[text()='Description']/preceding-sibling::xhtml:th)+1" />
-          <xsl:variable name="title-index"
-            select="count(./xhtml:thead[@name='display']/xhtml:th[text()='Title']/preceding-sibling::xhtml:th)+1" />
           <xsl:element name="table"
             namespace="http://www.w3.org/1999/xhtml">
             <xsl:attribute name="id"><xsl:value-of select="$id"/></xsl:attribute>
