@@ -1,0 +1,19 @@
+=== Tools ===
+
+The important parts are the XSL and PY files.
+
+=== PYTHON: Convert ===
+
+This allows you to apply an XSL file to a bunch of XML files at once, rather than dicking around one-at-a-time. I think xsltproc already supports this, but the output-file designation is not automagic. Do ./Converter --help to get more info.
+
+=== XSL: Category ===
+
+This translates the Category (xhtml:table@category) into the Display form. The main function is "xhtml:table" which accepts any xhtml:table whose name is "category". It takes one parameter "style" which can be either "Edit", "Display", or "Descriptions".
+
+Edit -- simply copies the xhtml:table@category in place, useful for editing
+Display -- builds a display-table containing the title and table-elements from the category; the title elements contain links to the descriptions (whether or not they exist)
+Descriptions -- builds a list of divs in a div, that contains the descriptions along with the title of the element
+
+=== XSL: Display ===
+
+Wraps the xml of the raw information (Apathy.xhtml, all the category.xhtml) into legal XHTML documents.
