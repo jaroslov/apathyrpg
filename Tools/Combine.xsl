@@ -18,6 +18,9 @@
       namespace="http://www.w3.org/1999/xhtml">
       <xsl:attribute name="class">book</xsl:attribute>
       <xsl:apply-templates select="xhtml:div[@class='header']"/>
+      Finish up... need to find all the sub-types for section/section-body
+      and make sure they're propogated to the *-lists; finish figure, table,
+      note, example, et al.
       <xsl:apply-templates select="xhtml:div[@class='section-body']">
         <xsl:with-param name="parentKind">book</xsl:with-param>
       </xsl:apply-templates>
