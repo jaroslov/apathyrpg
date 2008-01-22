@@ -32,22 +32,15 @@ class ItemData(object):
     self.Id = ""
 
 class Outline(wx.TreeCtrl):
-  def __init__(self,Parent,XML,Images=None,SerializeChildren=None):
+  def __init__(self,Parent,XML,SerializeChildren=None):
     wx.TreeCtrl.__init__(self,Parent,
         style=wx.TR_SINGLE
              |wx.TR_EDIT_LABELS
              |wx.TR_HAS_BUTTONS
              |wx.TR_HAS_VARIABLE_ROW_HEIGHT
              |wx.TR_HAS_BUTTONS)
-    if not Images:
-      try:
-        Images = wx.ImageList(16,16,False,1)
-        Images.Add(wx.Bitmap("element.png",wx.BITMAP_TYPE_PNG),wx.NullBitmap)
-      except Exception, e:
-        print >> sys.stderr, e
     self.SerializeChildren = SerializeChildren 
     if not SerializeChildren: self.SerializeChildren = []
-    self.SetImageList(Images)
     self.loadHierarchy(XML)
   def loadHierarchy(self,Node,Hierarchy=None,IsRoot=False,Id=[1]):
     result = []
