@@ -4,7 +4,8 @@ XSLTP = xsltproc
 all: xhtml charactersheet
 
 xhtml: Apathy.xml Apathy.html.xsl Apathy.css
-	xsltproc --stringparam TOC yes --stringparam Title "Apathy Game Rules" -o Apathy.xhtml Tools/Display.xsl Doc/Apathy.xhtml
+	xsltproc --stringparam media xhtml --stringparam title "Apathy Game Rules" -o Apathy.xhtml.prelint Tools/Combine.xsl Doc/Apathy.xhtml
+	xmllint --format Apathy.xhtml.prelint > Apathy.xhtml
 
 charactersheet: CharacterSheet.tex
 	pdflatex CharacterSheet.tex >& CharacterSheet.pdflatex

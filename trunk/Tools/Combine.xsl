@@ -4,8 +4,41 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <xsl:param name="media">Combine</xsl:param>
+  <xsl:param name="title">Combine</xsl:param>
+
+  <xsl:output version="1.0"
+    method="xml"
+    encoding="ISO-8859-1"
+    media-type="text/xhtml"
+    indent="yes"
+    doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+    doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
+
   <xsl:template match="/">
-    <xsl:apply-templates select="xhtml:div[@class='book']" />
+    <xsl:choose>
+      <xsl:when test="$media = 'xhtml'">
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+          <head>
+            <title><xsl:value-of select="$title"/></title>
+              <!--Apathy Manual (ARPG)</title>-->
+            <link rel="stylesheet"
+              type="text/css"
+              href="apathy.css"
+              title="Apathy" />
+          </head>
+          <body>
+            <xsl:apply-templates select="xhtml:div[@class='book']" />
+          </body>
+        </html>
+      </xsl:when>
+      <xsl:when test="$media = 'latex'">
+        <xsl:apply-templates select="xhtml:div[@class='book']" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="xhtml:div[@class='book']" />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!--
@@ -18,9 +51,6 @@
       namespace="http://www.w3.org/1999/xhtml">
       <xsl:attribute name="class">book</xsl:attribute>
       <xsl:apply-templates select="xhtml:div[@class='header']"/>
-      Finish up... need to find all the sub-types for section/section-body
-      and make sure they're propogated to the *-lists; finish figure, table,
-      note, example, et al.
       <xsl:apply-templates select="xhtml:div[@class='section-body']">
         <xsl:with-param name="parentKind">book</xsl:with-param>
       </xsl:apply-templates>
@@ -97,8 +127,11 @@
   <xsl:template match="xhtml:p">
     <xsl:element name="p"
       namespace="http://www.w3.org/1999/xhtml">
-      <xsl:copy-of select="./*|text()" />
+      <xsl:apply-templates select="xhtml:Apathy|text()" />
     </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="xhtml:Apathy">
   </xsl:template>
 
   <!--
