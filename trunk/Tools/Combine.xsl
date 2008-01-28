@@ -2,7 +2,8 @@
 <xsl:stylesheet
   version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:mathml="http://www.w3.org/1998/Math/MathML">
 
   <xsl:param name="media">Combine</xsl:param>
   <xsl:param name="title">Combine</xsl:param>
@@ -110,6 +111,67 @@
   </xsl:template>
 
   <!--
+    figures have tables
+  -->
+  <xsl:template match="xhtml:div[@class='figure']">
+    <xsl:element name="div"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">figure</xsl:attribute>
+      <xsl:apply-templates select="xhtml:table"/>
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    display-table
+  -->
+  <xsl:template match="xhtml:table[@class='display-table']">
+    <xsl:element name="table"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">display-table</xsl:attribute>
+      <xsl:apply-templates select="xhtml:caption"/>
+      <xsl:apply-templates select="xhtml:thead"/>
+      <xsl:apply-templates select="xhtml:tbody"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="xhtml:caption">
+    <xsl:element name="caption"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates />
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="xhtml:thead">
+    <xsl:element name="thead"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="xhtml:th|xhtml:tr"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="xhtml:tr">
+    <xsl:element name="tr"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="xhtml:td|xhtml:th"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="xhtml:th">
+    <xsl:element name="th"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates />
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="xhtml:td">
+    <xsl:element name="td"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates />
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    math is copied whole-sale
+  -->
+  <xsl:template match="mathml:math">
+    <xsl:copy-of select="." />
+  </xsl:template>
+
+  <!--
     may contain text, only
   -->
   <xsl:template match="xhtml:h1[@class='title']">
@@ -127,11 +189,17 @@
   <xsl:template match="xhtml:p">
     <xsl:element name="p"
       namespace="http://www.w3.org/1999/xhtml">
-      <xsl:apply-templates select="xhtml:Apathy|text()" />
+      <!--<xsl:apply-templates select="xhtml:Apathy|text()|math" />-->
+      <xsl:apply-templates select="xhtml:Apathy|text()|mathml:math" />
     </xsl:element>
   </xsl:template>
 
   <xsl:template match="xhtml:Apathy">
+    <xsl:element name="span"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">Apathy</xsl:attribute>
+      ApAthy<xsl:copy-of select="text()" />
+    </xsl:element>
   </xsl:template>
 
   <!--
@@ -217,7 +285,7 @@
           <xsl:apply-templates select="xhtml:div[@class='section']"/>
         </xsl:when>
         <xsl:when test="$parentKind='section'">
-          <xsl:apply-templates select="xhtml:div[@class='section']|xhtml:p|xhtml:ol|xhtml:ul|xhtml:dl"/>
+          <xsl:apply-templates select="xhtml:div[@class='section']|xhtml:p|xhtml:ol|xhtml:ul|xhtml:dl|xhtml:div[@class='figure']"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:element name="div"
