@@ -4,6 +4,9 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <xsl:param name="TOC">No</xsl:param>
+  <xsl:param name="Title"></xsl:param>
+
   <xsl:output version="1.0"
     method="xml"
     encoding="ISO-8859-1"
@@ -17,7 +20,8 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
       <head>
-        <title>Apathy Manual (ARPG)</title>
+        <title><xsl:value-of select="$Title"/></title>
+          <!--Apathy Manual (ARPG)</title>-->
         <link rel="stylesheet"
           type="text/css"
           href="apathy.css"
@@ -26,6 +30,9 @@
       <body>
         <xsl:apply-templates select="xhtml:div">
           <xsl:with-param name="combine">Yes</xsl:with-param>
+          <xsl:with-param name="TOC">
+            <xsl:value-of select="$TOC"/>
+          </xsl:with-param>
         </xsl:apply-templates>
         <!--<xsl:apply-templates select="xhtml:table">
           <xsl:with-param name="style">Display</xsl:with-param>
