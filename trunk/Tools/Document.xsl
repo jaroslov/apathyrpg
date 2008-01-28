@@ -6,6 +6,7 @@
 
   <xsl:template match="xhtml:div">
     <xsl:param name="combine">No</xsl:param>
+    <xsl:param name="TOC">No</xsl:param>
     <xsl:param name="suffix">.xhtml</xsl:param>
     <!-- must be a 'book' -->
     <xsl:variable name="Class" select="./@class" />
