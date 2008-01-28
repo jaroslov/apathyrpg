@@ -5,105 +5,102 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <xsl:template match="xhtml:div">
-    <xsl:param name="combine">No</xsl:param>
     <xsl:param name="TOC">No</xsl:param>
     <xsl:param name="suffix">.xhtml</xsl:param>
     <!-- must be a 'book' -->
     <xsl:variable name="Class" select="./@class" />
-    <xsl:if test="$combine='Yes'">
-      <xsl:choose>
-        <xsl:when test="$Class='book'">
+    <xsl:choose>
+      <xsl:when test="$Class='book'">
+        <xsl:choose>
+          <xsl:when test="$combine='No'">
+            <xsl:copy-of select="." />
+          </xsl:when>
+          <xsl:when test="$combine='Yes'">
+            <xsl:element name="div"
+              namespace="http://www.w3.org/1999/xhtml">
+              <xsl:attribute name="class">book</xsl:attribute>
+              <xsl:attribute name="name">book</xsl:attribute>
+              <xsl:apply-templates select="xhtml:div">
+                <xsl:with-param name="combine">
+                  <xsl:value-of select="$combine"/>
+                </xsl:with-param>
+                <xsl:with-param name="suffix">
+                  <xsl:value-of select="$combine"/>
+                </xsl:with-param>
+              </xsl:apply-templates>
+            </xsl:element>
+          </xsl:when>
+          <xsl:otherwise/>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="($Class='header') or ($Class='part') or ($Class='chapter') or ($Class='section') or ($Class='authors') or ($Class='author') or ($Class='section-body')">
+        <xsl:element name="div"
+          namespace="http://www.w3.org/1999/xhtml">
+          <xsl:attribute name="class"><xsl:value-of select="$Class"/></xsl:attribute>
+          <xsl:attribute name="name"><xsl:value-of select="$Class"/></xsl:attribute>
           <xsl:choose>
-            <xsl:when test="$combine='No'">
-              <xsl:copy-of select="." />
+            <xsl:when test="$Class='author'">
+              <xsl:copy-of select="./node()|./text()" />
             </xsl:when>
-            <xsl:when test="$combine='Yes'">
-              <xsl:element name="div"
-                namespace="http://www.w3.org/1999/xhtml">
-                <xsl:attribute name="class">book</xsl:attribute>
-                <xsl:attribute name="name">book</xsl:attribute>
-                <xsl:apply-templates select="xhtml:div">
-                  <xsl:with-param name="combine">
-                    <xsl:value-of select="$combine"/>
-                  </xsl:with-param>
-                  <xsl:with-param name="suffix">
-                    <xsl:value-of select="$combine"/>
-                  </xsl:with-param>
-                </xsl:apply-templates>
-              </xsl:element>
+            <xsl:when test="($Class='part') or ($Class='chapter') or ($Class='section')">
+              <xsl:apply-templates select="xhtml:h1"/>
+              <xsl:apply-templates select="xhtml:div">
+                <xsl:with-param name="combine">
+                  <xsl:value-of select="$combine"/>
+                </xsl:with-param>
+                <xsl:with-param name="suffix">
+                  <xsl:value-of select="$combine"/>
+                </xsl:with-param>
+              </xsl:apply-templates>
             </xsl:when>
-            <xsl:otherwise/>
+            <xsl:otherwise>
+              <xsl:apply-templates select="xhtml:div|xhtml:p|xhtml:Apathy|xhtml:ol|xhtml:ul|xhtml:dl">
+                <xsl:with-param name="combine">
+                  <xsl:value-of select="$combine"/>
+                </xsl:with-param>
+                <xsl:with-param name="suffix">
+                  <xsl:value-of select="$combine"/>
+                </xsl:with-param>
+              </xsl:apply-templates>
+            </xsl:otherwise>
           </xsl:choose>
-        </xsl:when>
-        <xsl:when test="($Class='header') or ($Class='part') or ($Class='chapter') or ($Class='section') or ($Class='authors') or ($Class='author') or ($Class='section-body')">
-          <xsl:element name="div"
-            namespace="http://www.w3.org/1999/xhtml">
-            <xsl:attribute name="class"><xsl:value-of select="$Class"/></xsl:attribute>
-            <xsl:attribute name="name"><xsl:value-of select="$Class"/></xsl:attribute>
-            <xsl:choose>
-              <xsl:when test="$Class='author'">
-                <xsl:copy-of select="./node()|./text()" />
-              </xsl:when>
-              <xsl:when test="($Class='part') or ($Class='chapter') or ($Class='section')">
-                <xsl:apply-templates select="xhtml:h1"/>
-                <xsl:apply-templates select="xhtml:div">
-                  <xsl:with-param name="combine">
-                    <xsl:value-of select="$combine"/>
-                  </xsl:with-param>
-                  <xsl:with-param name="suffix">
-                    <xsl:value-of select="$combine"/>
-                  </xsl:with-param>
-                </xsl:apply-templates>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:apply-templates select="xhtml:div|xhtml:p|xhtml:Apathy|xhtml:ol|xhtml:ul|xhtml:dl">
-                  <xsl:with-param name="combine">
-                    <xsl:value-of select="$combine"/>
-                  </xsl:with-param>
-                  <xsl:with-param name="suffix">
-                    <xsl:value-of select="$combine"/>
-                  </xsl:with-param>
-                </xsl:apply-templates>
-              </xsl:otherwise>
-            </xsl:choose>
-          </xsl:element>
-        </xsl:when>
-        <xsl:when test="$Class='figure'">
-          <xsl:element name="div"
-            namespace="http://www.w3.org/1999/xhtml">
-            <xsl:attribute name="class">figure</xsl:attribute>
-            <xsl:apply-templates select="xhtml:table" />
-          </xsl:element>
-        </xsl:when>
-        <xsl:when test="$Class='reference'">
-          <xsl:apply-templates select="document(./xhtml:a/@href)/xhtml:table">
-            <xsl:with-param name="style">Display</xsl:with-param>
-          </xsl:apply-templates>
-          <xsl:apply-templates select="document(./xhtml:a/@href)/xhtml:table">
-            <xsl:with-param name="style">Descriptions</xsl:with-param>
-          </xsl:apply-templates>
-        </xsl:when>
-        <xsl:when test="$Class='summarize'">
-          <xsl:apply-templates select="document(./xhtml:a/@href)/xhtml:table">
-            <xsl:with-param name="style">Display</xsl:with-param>
-          </xsl:apply-templates>
-        </xsl:when>
-        <xsl:when test="($Class='note') or ($Class='equation') or ($Class='example')">
-          <xsl:element name="div"
-            namespace="http://www.w3.org/1999/xhtml">
-            <xsl:attribute name="class"><xsl:value-of select="$Class"/></xsl:attribute>
-            <xsl:apply-templates/>
-          </xsl:element>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:element name="div"
-            namespace="http://www.w3.org/1999/xhtml">
-            <xsl:attribute name="class">error</xsl:attribute>
-            I don&apos;t know: <xsl:value-of select="$Class"/>
-          </xsl:element>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:if>
+        </xsl:element>
+      </xsl:when>
+      <xsl:when test="$Class='figure'">
+        <xsl:element name="div"
+          namespace="http://www.w3.org/1999/xhtml">
+          <xsl:attribute name="class">figure</xsl:attribute>
+          <xsl:apply-templates select="xhtml:table" />
+        </xsl:element>
+      </xsl:when>
+      <xsl:when test="$Class='reference'">
+        <xsl:apply-templates select="document(./xhtml:a/@href)/xhtml:table">
+          <xsl:with-param name="style">Display</xsl:with-param>
+        </xsl:apply-templates>
+        <xsl:apply-templates select="document(./xhtml:a/@href)/xhtml:table">
+          <xsl:with-param name="style">Descriptions</xsl:with-param>
+        </xsl:apply-templates>
+      </xsl:when>
+      <xsl:when test="$Class='summarize'">
+        <xsl:apply-templates select="document(./xhtml:a/@href)/xhtml:table">
+          <xsl:with-param name="style">Display</xsl:with-param>
+        </xsl:apply-templates>
+      </xsl:when>
+      <xsl:when test="($Class='note') or ($Class='equation') or ($Class='example')">
+        <xsl:element name="div"
+          namespace="http://www.w3.org/1999/xhtml">
+          <xsl:attribute name="class"><xsl:value-of select="$Class"/></xsl:attribute>
+          <xsl:apply-templates/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:element name="div"
+          namespace="http://www.w3.org/1999/xhtml">
+          <xsl:attribute name="class">error</xsl:attribute>
+          I don&apos;t know: <xsl:value-of select="$Class"/>
+        </xsl:element>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="xhtml:h1">
