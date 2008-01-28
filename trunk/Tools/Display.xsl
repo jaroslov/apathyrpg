@@ -12,7 +12,6 @@
     doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
     doctype-system="http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd"/>
 
-  <xsl:include href="Category.xsl"/>
   <xsl:include href="Document.xsl"/>
 
   <xsl:template match="/">
@@ -26,14 +25,14 @@
       </head>
       <body>
         <xsl:apply-templates select="xhtml:div">
-          <xsl:with-param name="combine">No</xsl:with-param>
+          <xsl:with-param name="combine">Yes</xsl:with-param>
         </xsl:apply-templates>
-        <xsl:apply-templates select="xhtml:table">
+        <!--<xsl:apply-templates select="xhtml:table">
           <xsl:with-param name="style">Display</xsl:with-param>
         </xsl:apply-templates>
         <xsl:apply-templates select="xhtml:table">
           <xsl:with-param name="style">Descriptions</xsl:with-param>
-        </xsl:apply-templates>
+        </xsl:apply-templates>-->
       </body>
     </html>
   </xsl:template>

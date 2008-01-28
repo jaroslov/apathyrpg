@@ -10,21 +10,6 @@
     <!-- must be a 'book' -->
     <xsl:variable name="Class" select="./@class" />
     <xsl:if test="$combine='Yes'">
-      <!-- All the different divs
-        book
-          header
-            author
-          part
-            title
-            section-body
-              chapter
-                title
-                section-body
-                  section
-                    title
-                    section-body
-                      section
-      -->
       <xsl:choose>
         <xsl:when test="$Class='book'">
           <xsl:choose>
@@ -130,7 +115,7 @@
   <xsl:template match="xhtml:p">
     <xsl:element name="p"
       namespace="http://www.w3.org/1999/xhtml">
-      <xsl:copy-of select="./*|./text()"/>
+      <xsl:apply-templates />
     </xsl:element>
   </xsl:template>
 
