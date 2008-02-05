@@ -92,7 +92,10 @@ def getReferenceSet(XML):
     references.append(anchor)
   return references
 
-def combine(options):
+def nullTranslator(XML):
+  return XML
+
+def __combine(options, translate, report=sys.stdout):
   Main = getMainXhtml(options)
   references = getReferenceSet(Main)
   for reference in references:
@@ -106,11 +109,54 @@ def combine(options):
       if child.nodeType == child.ELEMENT_NODE:
         root = child
         break
-    print >> sys.stdout, which
-    parent.replaceChild(root.cloneNode(root), reference)
-  output_name = options.output+".combine.xhtml"
+    print >> report, which
+    parent.replaceChild(translate(root.cloneNode(root)), reference)
+  return Main
+
+def combine(options):
+  """
+  Simplest way to combine data and save; example code.
+  """
+  combined = __combine(options, nullTranslator)
+  writeToDisk(combined,".combine.xhtml")
+
+def tableAsWebTable(XML):
+  """
+  Takes tabular xhtml documents and converts them into web-form
+  We are given the "table", so double-check
+  """
+  if XML.nodeType != XML.ELEMENT_NODE:
+    return XML # fail nicely
+  if XML.tagName.lower() != "table":
+    return XML # fail nicely
+  if (not XML.hasAttribute("class")
+      and XML.getAttribute("class").lower() != "category"):
+    return XML # fail nicely
+  theads = XML.getElementsByTagName("thead")
+  ## FINISH HERE
+  #  it is fun
+  return XML
+
+def addToc(XML, intersperse=True):
+  """
+  Builds tables-of-contents (interspersed or not) into the webpage.
+  Interspersed: places small TOCs at each structural level
+  Not interspersed: places one global TOC at the top-level
+  """
+  return XML
+
+def buildWebPage(options):
+  combined = __combine(options, tableAsWebTable, report=sys.stderr)
+  combined = addToc(combined)
+  writeToDisk(combined, ".webpage.xhtml")
+
+def writeToDisk(XML, appendix):
+  """
+  Writes the XML to disk with the correct encoding.
+  """
+  output_name = options.output+appendix
   target = open(output_name,"w")
-  print >> target, Main.toxml(encoding="utf-8")
+  print >> target, XML.toxml(encoding="utf-8")
 
 if __name__=="__main__":
   options, args = parseOptions()
