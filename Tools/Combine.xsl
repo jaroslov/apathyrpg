@@ -111,6 +111,51 @@
   </xsl:template>
 
   <!--
+    equations have text
+  -->
+  <xsl:template match="xhtml:div[@class='equation']">
+    <xsl:element name="div"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">equation</xsl:attribute>
+      <xsl:apply-templates select="xhtml:p"/>
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    notes have text
+  -->
+  <xsl:template match="xhtml:div[@class='note']">
+    <xsl:element name="div"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">note</xsl:attribute>
+      <xsl:apply-templates select="xhtml:p"/>
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    reference
+  -->
+  <xsl:template match="xhtml:div[@class='reference']">
+    <xsl:element name="div"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">reference</xsl:attribute>
+      <p><xsl:value-of select="./xhtml:a/@href"/></p>
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    equations have text
+  -->
+  <xsl:template match="xhtml:div[@class='example']">
+    <xsl:element name="div"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">example</xsl:attribute>
+      <xsl:apply-templates select="xhtml:h1[@class='title']"/>
+      <xsl:apply-templates select="xhtml:p"/>
+    </xsl:element>
+  </xsl:template>
+
+  <!--
     figures have tables
   -->
   <xsl:template match="xhtml:div[@class='figure']">
@@ -142,24 +187,36 @@
   <xsl:template match="xhtml:thead">
     <xsl:element name="thead"
       namespace="http://www.w3.org/1999/xhtml">
-      <xsl:apply-templates select="xhtml:th|xhtml:tr"/>
+      <xsl:apply-templates select="xhtml:th"/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="xhtml:tbody">
+    <xsl:element name="tbody"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="xhtml:tr"/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="xhtml:tr">
     <xsl:element name="tr"
       namespace="http://www.w3.org/1999/xhtml">
-      <xsl:apply-templates select="xhtml:td|xhtml:th"/>
+      <xsl:apply-templates select="xhtml:td"/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="xhtml:th">
     <xsl:element name="th"
       namespace="http://www.w3.org/1999/xhtml">
+      <xsl:if test="./@colspan">
+        <xsl:attribute name="colspan"><xsl:value-of select="./@colspan"/></xsl:attribute>
+      </xsl:if>
       <xsl:apply-templates />
     </xsl:element>
   </xsl:template>
   <xsl:template match="xhtml:td">
     <xsl:element name="td"
       namespace="http://www.w3.org/1999/xhtml">
+      <xsl:if test="./@colspan">
+        <xsl:attribute name="colspan"><xsl:value-of select="./@colspan"/></xsl:attribute>
+      </xsl:if>
       <xsl:apply-templates />
     </xsl:element>
   </xsl:template>
@@ -178,7 +235,7 @@
     <xsl:element name="h1"
       namespace="http://www.w3.org/1999/xhtml">
       <xsl:attribute name="class">title</xsl:attribute>
-      <xsl:copy-of select="xhtml:p" />
+      <xsl:apply-templates select="xhtml:p" />
     </xsl:element>
   </xsl:template>
 
@@ -189,16 +246,65 @@
   <xsl:template match="xhtml:p">
     <xsl:element name="p"
       namespace="http://www.w3.org/1999/xhtml">
-      <!--<xsl:apply-templates select="xhtml:Apathy|text()|math" />-->
-      <xsl:apply-templates select="xhtml:Apathy|text()|mathml:math" />
+      <xsl:apply-templates select="xhtml:Apathy|text()|mathml:math|xhtml:span[@class='roll']|xhtml:span[@class='footnote']|xhtml:span[@class='notappl']" />
     </xsl:element>
   </xsl:template>
 
+  <!--
+    footnote
+  -->
+  <xsl:template match="xhtml:span[@class='footnote']">
+    <xsl:element name="span"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">footnote</xsl:attribute>
+      <xsl:apply-templates />
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    notappl
+  -->
+  <xsl:template match="xhtml:span[@class='notappl']">
+    <xsl:element name="span"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">notappl</xsl:attribute>
+      <xsl:apply-templates />
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    Apathy
+  -->
   <xsl:template match="xhtml:Apathy">
     <xsl:element name="span"
       namespace="http://www.w3.org/1999/xhtml">
       <xsl:attribute name="class">Apathy</xsl:attribute>
       ApAthy<xsl:copy-of select="text()" />
+    </xsl:element>
+  </xsl:template>
+
+  <!--
+    span:roll
+  -->
+  <xsl:template match="xhtml:span[@class='roll']">
+    <xsl:element name="span"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class">roll</xsl:attribute>
+      <xsl:apply-templates select="xhtml:span[@class='rOff']" />
+      <xsl:apply-templates select="xhtml:span[@class='raw']" />
+      <xsl:apply-templates select="xhtml:span[@class='num']" />
+      <xsl:apply-templates select="xhtml:span[@class='face']" />
+      <xsl:apply-templates select="xhtml:span[@class='bOff']" />
+      <xsl:apply-templates select="xhtml:span[@class='bns']" />
+      <xsl:apply-templates select="xhtml:span[@class='mul']" />
+      <xsl:apply-templates select="xhtml:span[@class='kind']" />
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="xhtml:span[@class='raw']|xhtml:span[@class='rOff']|xhtml:span[@class='face']|xhtml:span[@class='num']|xhtml:span[@class='bOff']|xhtml:span[@class='bns']|xhtml:span[@class='mul']|xhtml:span[@class='kind']">
+    <xsl:element name="span"
+      namespace="http://www.w3.org/1999/xhtml">
+      <xsl:attribute name="class"><xsl:value-of select="./@class"/></xsl:attribute>
+      <xsl:value-of select="." />
     </xsl:element>
   </xsl:template>
 
@@ -285,7 +391,7 @@
           <xsl:apply-templates select="xhtml:div[@class='section']"/>
         </xsl:when>
         <xsl:when test="$parentKind='section'">
-          <xsl:apply-templates select="xhtml:div[@class='section']|xhtml:p|xhtml:ol|xhtml:ul|xhtml:dl|xhtml:div[@class='figure']"/>
+          <xsl:apply-templates select="xhtml:div[@class='section']|xhtml:p|xhtml:ol|xhtml:ul|xhtml:dl|xhtml:div[@class='figure']|xhtml:div[@class='equation']|xhtml:div[@class='example']|xhtml:div[@class='note']|xhtml:div[@class='reference']"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:element name="div"
