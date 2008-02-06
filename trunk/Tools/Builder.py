@@ -126,114 +126,120 @@ def combine(options):
   combined = __combine(options, nullTranslator)
   writeToDisk(combined,".combine.xhtml")
 
-def tableAsWebTable(XML):
-  """
-  Takes tabular xhtml documents and converts them into web-form
-  We are given the "table", so double-check
-  """
-  SR = SystemRandom()
-  if XML.nodeType != XML.ELEMENT_NODE:
-    return XML # fail nicely
-  if XML.tagName.lower() != "table":
-    return XML # fail nicely
-  if (not XML.hasAttribute("class")
-      and XML.getAttribute("class").lower() != "category"):
-    return XML # fail nicely
-  theads = XML.getElementsByTagName("thead")
-  ## FINISH HERE
-  #  it is fun
-  titles = None
-  display = None
-  format = None
-  for thead in theads:
-    if thead.hasAttribute("class"):
-      cls = thead.getAttribute("class")
-      if cls == "titles": titles = thead
-      if cls == "display": display = thead
-      if cls == "format": format = thead
-  displayParent = display.parentNode
-  titlesParent = titles.parentNode
-  formatParent = format.parentNode
-  displayC = display.cloneNode(display)
-  titlesC = titles.cloneNode(titles)
-  formatC = format.cloneNode(format)
-
-  # build the description sections, which are a list of DIV;
-  # also, find the actual title
-  displayKind = []
-  displayKindMap = {}
-  displayKindMap["table"] = [] # simplifies things later
-  displayKindMap["name"] = []
-  for ddx in xrange(len(displayC.childNodes)):
-    disp = displayC.childNodes[ddx]
-    kind = disp.firstChild.nodeValue.lower()
-    displayKind.append(kind)
-    if displayKindMap.has_key(kind): displayKindMap[kind].append(ddx)
-    else: displayKindMap[kind] = [ddx]
-
-  displayParent.removeChild(display)
-  formatParent.removeChild(format)
-
-  titleLoc = -1
-  for ddx in xrange(len(titlesC.childNodes)):
-    ttl = titlesC.childNodes[ddx]
-    if ttl.firstChild.nodeValue.lower() == "name":
-      titleLoc = ddx
-
-  descriptions = []
-  # rowset of all tr within the table
-  rowset = XML.getElementsByTagName("tr")
-  for tr in rowset:
-    # duplicate the row
-    # throw away everything but title and description
-    # rename row to "div", add "@class";
-    # rename title td to "h1" and body "td" to "div"
-    # add appropriate attributes
-    div = tr.cloneNode(tr)
+class tableAsWebTable(object):
+  def __init__(self, DoAnchors=True, TableOnly=False):
+    self.DoAnchors = DoAnchors
+    self.TableOnly = TableOnly
+  def __call__(self, XML):
+    """
+    Takes tabular xhtml documents and converts them into web-form
+    We are given the "table", so double-check
+    """
+    SR = SystemRandom()
+    if XML.nodeType != XML.ELEMENT_NODE:
+      return XML # fail nicely
+    if XML.tagName.lower() != "table":
+      return XML # fail nicely
+    if (not XML.hasAttribute("class")
+        and XML.getAttribute("class").lower() != "category"):
+      return XML # fail nicely
+    theads = XML.getElementsByTagName("thead")
+    ## FINISH HERE
+    #  it is fun
+    titles = None
+    display = None
+    format = None
+    for thead in theads:
+      if thead.hasAttribute("class"):
+        cls = thead.getAttribute("class")
+        if cls == "titles": titles = thead
+        if cls == "display": display = thead
+        if cls == "format": format = thead
+    displayParent = display.parentNode
+    titlesParent = titles.parentNode
+    formatParent = format.parentNode
+    displayC = display.cloneNode(display)
+    titlesC = titles.cloneNode(titles)
+    formatC = format.cloneNode(format)
+  
+    # build the description sections, which are a list of DIV;
+    # also, find the actual title
+    displayKind = []
+    displayKindMap = {}
+    displayKindMap["table"] = [] # simplifies things later
+    displayKindMap["name"] = []
+    for ddx in xrange(len(displayC.childNodes)):
+      disp = displayC.childNodes[ddx]
+      kind = disp.firstChild.nodeValue.lower()
+      displayKind.append(kind)
+      if displayKindMap.has_key(kind): displayKindMap[kind].append(ddx)
+      else: displayKindMap[kind] = [ddx]
+  
+    displayParent.removeChild(display)
+    formatParent.removeChild(format)
+  
+    titleLoc = -1
+    for ddx in xrange(len(titlesC.childNodes)):
+      ttl = titlesC.childNodes[ddx]
+      if ttl.firstChild.nodeValue.lower() == "name":
+        titleLoc = ddx
+  
+    descriptions = []
+    # rowset of all tr within the table
+    rowset = XML.getElementsByTagName("tr")
+    for tr in rowset:
+      # duplicate the row
+      # throw away everything but title and description
+      # rename row to "div", add "@class";
+      # rename title td to "h1" and body "td" to "div"
+      # add appropriate attributes
+      div = tr.cloneNode(tr)
+      removes = []
+      GID = "G"+str(SR.randrange(5001, 214000000))
+      for tdx in xrange(len(div.childNodes)):
+        td = div.childNodes[tdx]
+        if tdx != titleLoc and tdx not in displayKindMap["description"]:
+          removes.append(div.childNodes[tdx])
+        elif tdx == titleLoc:
+          td.tagName = "h1"
+          td.setAttribute("class","title")
+        elif tdx in displayKindMap["description"]:
+          td.tagName = "div"
+          td.setAttribute("class","description-body")
+      for remove in removes:
+        div.removeChild(remove)
+      div.tagName = "div"
+      div.setAttribute("class","description")
+      div.setAttribute("id",GID)
+      descriptions.append(div)
+  
+      # now, go through the main table and remove all non-table entries
+      removes = []
+      for tdx in xrange(len(tr.childNodes)):
+        td = tr.childNodes[tdx]
+        if tdx != titleLoc and tdx not in displayKindMap["table"]:
+          removes.append(td)
+        if tdx == titleLoc and self.DoAnchors:
+          anchor = td.cloneNode(td)
+          anchor.tagName = "a"
+          anchor.setAttribute("href","#"+GID)
+          td.childNodes = []
+          td.appendChild(anchor)
+      for remove in removes:
+        tr.removeChild(remove)
+  
     removes = []
-    GID = "G"+str(SR.randrange(5001, 214000000))
-    for tdx in xrange(len(div.childNodes)):
-      td = div.childNodes[tdx]
-      if tdx != titleLoc and tdx not in displayKindMap["description"]:
-        removes.append(div.childNodes[tdx])
-      elif tdx == titleLoc:
-        td.tagName = "h1"
-        td.setAttribute("class","title")
-      elif tdx in displayKindMap["description"]:
-        td.tagName = "div"
-        td.setAttribute("class","description-body")
+    for thx in xrange(len(titles.childNodes)):
+      th = titles.childNodes[thx]
+      if thx != titleLoc and thx not in displayKindMap["table"]:
+        removes.append(th)
     for remove in removes:
-      div.removeChild(remove)
-    div.tagName = "div"
-    div.setAttribute("class","description")
-    div.setAttribute("id",GID)
-    descriptions.append(div)
-
-    # now, go through the main table and remove all non-table entries
-    removes = []
-    for tdx in xrange(len(tr.childNodes)):
-      td = tr.childNodes[tdx]
-      if tdx != titleLoc and tdx not in displayKindMap["table"]:
-        removes.append(td)
-      if tdx == titleLoc:
-        anchor = td.cloneNode(td)
-        anchor.tagName = "a"
-        anchor.setAttribute("href","#"+GID)
-        td.childNodes = []
-        td.appendChild(anchor)
-    for remove in removes:
-      tr.removeChild(remove)
-
-  removes = []
-  for thx in xrange(len(titles.childNodes)):
-    th = titles.childNodes[thx]
-    if thx != titleLoc and thx not in displayKindMap["table"]:
-      removes.append(th)
-  for remove in removes:
-    titles.removeChild(remove)
-
-  descriptions.insert(0, XML)
-  return descriptions
+      titles.removeChild(remove)
+  
+    descriptions.insert(0, XML)
+    if self.TableOnly:
+      return [XML]
+    return descriptions
 
 def addToc(XML, intersperse=True):
   """
@@ -244,7 +250,7 @@ def addToc(XML, intersperse=True):
   return XML
 
 def buildWebPage(options):
-  combined = __combine(options, tableAsWebTable, report=sys.stderr)
+  combined = __combine(options, tableAsWebTable(), report=sys.stderr)
   combined = addToc(combined)
   writeToDisk(combined, ".webpage.xhtml")
 
