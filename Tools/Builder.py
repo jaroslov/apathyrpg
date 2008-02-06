@@ -156,12 +156,16 @@ def tableAsWebTable(XML):
   # also, find the actual title
   displayKind = []
   displayKindMap = {}
+  displayKindMap["table"] = [] # simplifies things later
+  displayKindMap["name"] = []
   for ddx in xrange(len(displayC.childNodes)):
     disp = displayC.childNodes[ddx]
     kind = disp.firstChild.nodeValue.lower()
     displayKind.append(kind)
     if displayKindMap.has_key(kind): displayKindMap[kind].append(ddx)
     else: displayKindMap[kind] = [ddx]
+
+  displayParent.removeChild(display)
 
   titleLoc = -1
   for ddx in xrange(len(titlesC.childNodes)):
@@ -172,13 +176,13 @@ def tableAsWebTable(XML):
   descriptions = []
   # rowset of all tr within the table
   rowset = XML.getElementsByTagName("tr")
-  for row in rowset:
+  for tr in rowset:
     # duplicate the row
     # throw away everything but title and description
     # rename row to "div", add "@class";
     # rename title td to "h1" and body "td" to "div"
     # add appropriate attributes
-    div = row.cloneNode(row)
+    div = tr.cloneNode(tr)
     removes = []
     for tdx in xrange(len(div.childNodes)):
       td = div.childNodes[tdx]
@@ -196,8 +200,22 @@ def tableAsWebTable(XML):
     div.setAttribute("class","description")
     descriptions.append(div)
     # now, go through the main table and remove all non-table entries
-    for td in row.childNodes:
-      print td.nodeValue
+
+    removes = []
+    for tdx in xrange(len(tr.childNodes)):
+      td = tr.childNodes[tdx]
+      if tdx != titleLoc and tdx not in displayKindMap["table"]:
+        removes.append(td)
+    for remove in removes:
+      tr.removeChild(remove)
+
+  removes = []
+  for thx in xrange(len(titles.childNodes)):
+    th = titles.childNodes[thx]
+    if thx != titleLoc and thx not in displayKindMap["table"]:
+      removes.append(th)
+  for remove in removes:
+    titles.removeChild(remove)
 
   return [XML,descriptions]
 
