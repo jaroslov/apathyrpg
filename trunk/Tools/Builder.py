@@ -162,17 +162,41 @@ def tableAsWebTable(XML):
     displayKind.append(kind)
     if displayKindMap.has_key(kind): displayKindMap[kind].append(ddx)
     else: displayKindMap[kind] = [ddx]
-  descriptions = []
+
   titleLoc = -1
   for ddx in xrange(len(titlesC.childNodes)):
     ttl = titlesC.childNodes[ddx]
-    if ttl.firstChild.nodeValue.lower() == "title":
+    if ttl.firstChild.nodeValue.lower() == "name":
       titleLoc = ddx
 
+  descriptions = []
   # rowset of all tr within the table
   rowset = XML.getElementsByTagName("tr")
+  for row in rowset:
+    # duplicate the row
+    # throw away everything but title and description
+    # rename row to "div", add "@class";
+    # rename title td to "h1" and body "td" to "div"
+    # add appropriate attributes
+    div = row.cloneNode(row)
+    removes = []
+    for tdx in xrange(len(div.childNodes)):
+      td = div.childNodes[tdx]
+      if tdx != titleLoc and tdx not in displayKindMap["description"]:
+        removes.append(div.childNodes[tdx])
+      elif tdx == titleLoc:
+        td.tagName = "h1"
+        td.setAttribute("class","title")
+      elif tdx in displayKindMap["description"]:
+        td.tagName = "div"
+        td.setAttribute("class","description-body")
+    for remove in removes:
+      div.removeChild(remove)
+    div.tagName = "div"
+    div.setAttribute("class","description")
+    descriptions.append(div)
 
-  return [XML]
+  return [XML,descriptions]
 
 def addToc(XML, intersperse=True):
   """
