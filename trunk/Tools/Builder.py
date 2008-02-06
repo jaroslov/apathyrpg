@@ -93,7 +93,7 @@ def getReferenceSet(XML):
   return references
 
 def nullTranslator(XML):
-  return XML
+  return [XML]
 
 def __combine(options, translate, report=sys.stdout):
   Main = getMainXhtml(options)
@@ -110,7 +110,12 @@ def __combine(options, translate, report=sys.stdout):
         root = child
         break
     print >> report, which
-    parent.replaceChild(translate(root.cloneNode(root)), reference)
+    # get the new children and insert before the reference,
+    # then remove the reference, itself
+    newChildren = translate(root.cloneNode(root))
+    for newChild in newChildren:
+      parent.insertBefore(root.cloneNode(root), reference)
+    parent.removeChild(reference)
   return Main
 
 def combine(options):
@@ -135,7 +140,34 @@ def tableAsWebTable(XML):
   theads = XML.getElementsByTagName("thead")
   ## FINISH HERE
   #  it is fun
-  return XML
+  titles = None
+  display = None
+  for thead in theads:
+    if thead.hasAttribute("class"):
+      cls = thead.getAttribute("class")
+      if cls == "titles": titles = thead
+      if cls == "display": display = thead
+  displayParent = display.parentNode
+  titlesParent = titles.parentNode
+  displayC = display.cloneNode(display)
+  titlesC = titles.cloneNode(titles)
+
+  # build the description sections, which are a list of DIV;
+  # also, find the actual title
+  displayKind = []
+  displayKindMap = {}
+  for ddx in xrange(len(displayC.childNodes)):
+    disp = displayC.childNodes[ddx]
+    kind = disp.firstChild.nodeValue
+    displayKind.append(kind)
+    if displayKindMap.has_key(kind): displayKindMap[kind].append(ddx)
+    else: displayKindMap[kind] = [ddx]
+  descriptions = []
+
+  # rowset of all tr within the table
+  rowset = XML.getElementsByTagName("tr")
+
+  return [XML]
 
 def addToc(XML, intersperse=True):
   """
