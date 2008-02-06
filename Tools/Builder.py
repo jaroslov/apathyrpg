@@ -195,6 +195,9 @@ def tableAsWebTable(XML):
     div.tagName = "div"
     div.setAttribute("class","description")
     descriptions.append(div)
+    # now, go through the main table and remove all non-table entries
+    for td in row.childNodes:
+      print td.nodeValue
 
   return [XML,descriptions]
 
