@@ -3,6 +3,7 @@
 import os, sys
 from optparse import OptionParser
 from xml.dom.minidom import parse as parseXml
+from random import SystemRandom
 
 def parseOptions():
   parser = OptionParser()
@@ -114,7 +115,7 @@ def __combine(options, translate, report=sys.stdout):
     # then remove the reference, itself
     newChildren = translate(root.cloneNode(root))
     for newChild in newChildren:
-      parent.insertBefore(root.cloneNode(root), reference)
+      parent.insertBefore(newChild, reference)
     parent.removeChild(reference)
   return Main
 
@@ -130,6 +131,7 @@ def tableAsWebTable(XML):
   Takes tabular xhtml documents and converts them into web-form
   We are given the "table", so double-check
   """
+  SR = SystemRandom()
   if XML.nodeType != XML.ELEMENT_NODE:
     return XML # fail nicely
   if XML.tagName.lower() != "table":
@@ -142,15 +144,19 @@ def tableAsWebTable(XML):
   #  it is fun
   titles = None
   display = None
+  format = None
   for thead in theads:
     if thead.hasAttribute("class"):
       cls = thead.getAttribute("class")
       if cls == "titles": titles = thead
       if cls == "display": display = thead
+      if cls == "format": format = thead
   displayParent = display.parentNode
   titlesParent = titles.parentNode
+  formatParent = format.parentNode
   displayC = display.cloneNode(display)
   titlesC = titles.cloneNode(titles)
+  formatC = format.cloneNode(format)
 
   # build the description sections, which are a list of DIV;
   # also, find the actual title
@@ -166,6 +172,7 @@ def tableAsWebTable(XML):
     else: displayKindMap[kind] = [ddx]
 
   displayParent.removeChild(display)
+  formatParent.removeChild(format)
 
   titleLoc = -1
   for ddx in xrange(len(titlesC.childNodes)):
@@ -184,6 +191,7 @@ def tableAsWebTable(XML):
     # add appropriate attributes
     div = tr.cloneNode(tr)
     removes = []
+    GID = "G"+str(SR.randrange(5001, 214000000))
     for tdx in xrange(len(div.childNodes)):
       td = div.childNodes[tdx]
       if tdx != titleLoc and tdx not in displayKindMap["description"]:
@@ -198,14 +206,21 @@ def tableAsWebTable(XML):
       div.removeChild(remove)
     div.tagName = "div"
     div.setAttribute("class","description")
+    div.setAttribute("id",GID)
     descriptions.append(div)
-    # now, go through the main table and remove all non-table entries
 
+    # now, go through the main table and remove all non-table entries
     removes = []
     for tdx in xrange(len(tr.childNodes)):
       td = tr.childNodes[tdx]
       if tdx != titleLoc and tdx not in displayKindMap["table"]:
         removes.append(td)
+      if tdx == titleLoc:
+        anchor = td.cloneNode(td)
+        anchor.tagName = "a"
+        anchor.setAttribute("href","#"+GID)
+        td.childNodes = []
+        td.appendChild(anchor)
     for remove in removes:
       tr.removeChild(remove)
 
@@ -217,7 +232,8 @@ def tableAsWebTable(XML):
   for remove in removes:
     titles.removeChild(remove)
 
-  return [XML,descriptions]
+  descriptions.insert(0, XML)
+  return descriptions
 
 def addToc(XML, intersperse=True):
   """
