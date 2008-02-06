@@ -158,11 +158,16 @@ def tableAsWebTable(XML):
   displayKindMap = {}
   for ddx in xrange(len(displayC.childNodes)):
     disp = displayC.childNodes[ddx]
-    kind = disp.firstChild.nodeValue
+    kind = disp.firstChild.nodeValue.lower()
     displayKind.append(kind)
     if displayKindMap.has_key(kind): displayKindMap[kind].append(ddx)
     else: displayKindMap[kind] = [ddx]
   descriptions = []
+  titleLoc = -1
+  for ddx in xrange(len(titlesC.childNodes)):
+    ttl = titlesC.childNodes[ddx]
+    if ttl.firstChild.nodeValue.lower() == "title":
+      titleLoc = ddx
 
   # rowset of all tr within the table
   rowset = XML.getElementsByTagName("tr")
