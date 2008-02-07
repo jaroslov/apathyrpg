@@ -390,10 +390,29 @@ def wrapInHtml(options,XML,Title):
   html.appendChild(body)
   return html
 
+def htmlToLatex(XML):
+  """
+    Converts (X)HTML nodes into their appropriate LaTeX version.
+    
+  """
+  result = ""
+  if XML.nodeType == XML.ELEMENT_NODE:
+    if XML.tagName == "div":
+      cls = None
+      if XML.hasAttribute("class"): cls = XML.getAttribute("class")
+      if cls == "book":
+        result += "\documentclass{book}\n"
+  return result
+
+def buildLatex(options):
+  combined = __combine(options, tableAsWebTable(), report=sys.stderr)
+  combined = htmlToLatex(combined)
+  writeToDisk(options, combined, ".tex")
+
 def buildWebPage(options):
   combined = __combine(options, tableAsWebTable(), report=sys.stderr)
   combined = addToc(combined)
-  combined = wrapInHtml(options,combined,options.output)
+  combined = wrapInHtml(options, combined, options.output)
   writeToDisk(options, combined, ".webpage.xhtml")
 
 def writeToDisk(options, XML, appendix):
