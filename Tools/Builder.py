@@ -135,11 +135,12 @@ def __combine(options, translate, report=sys.stdout):
       Apathy.insertBefore(apathytext,Apathy.firstChild)
     else:
       Apathy.appendChild(apathytext)
-  imgs = Main.getElementsByTagName("img")
-  for img in imgs:
-    npath = os.path.join(options.prefix,img.getAttribute("src"))
-    npath = os.path.normpath(npath)
-    img.setAttribute("src",npath)
+  if options.retargetresources:
+    imgs = Main.getElementsByTagName("img")
+    for img in imgs:
+      npath = os.path.join(options.prefix,img.getAttribute("src"))
+      npath = os.path.normpath(npath)
+      img.setAttribute("src",npath)
   return Main
 
 def combine(options):
@@ -167,8 +168,6 @@ class tableAsWebTable(object):
         and XML.getAttribute("class").lower() != "category"):
       return XML # fail nicely
     theads = XML.getElementsByTagName("thead")
-    ## FINISH HERE
-    #  it is fun
     titles = None
     display = None
     format = None
@@ -283,7 +282,7 @@ def getSubstructureElements(Node):
     if (child.nodeType == child.ELEMENT_NODE
         and child.tagName == "div"
         and child.hasAttribute("class")
-        and child.getAttribute("class") in ["section-body"])
+        and child.getAttribute("class") in ["section-body"]):
       sectionbody = child
       break
   if sectionbody is None:
@@ -296,22 +295,60 @@ def getSubstructureElements(Node):
       substructure.append(child)
   return substructure
 
-def getTocGlobal(Node):
-  """
-  Gets all the structural elements...
-  """
-  pass
+def createLocalToc(StructureNode):
+  SR = SystemRandom()
+  substructure = getSubstructureElements(StructureNode)
+  document = StructureNode.ownerDocument
+  ol = document.createElement("ol")
+  ol.setAttribute("class","toc")
+  secbody = None
+  for subs in substructure:
+    GID = "G"+str(SR.randrange(5001, 214000000))
+    secbody = subs.parentNode
+    title = None
+    for child in subs.childNodes:
+      if (child.nodeType == child.ELEMENT_NODE and child.tagName=="h1"
+          and child.hasAttribute("class")
+          and child.getAttribute("class") == "title"):
+        title = child
+        title.setAttribute("id",GID)
+    if title is None or not title.hasChildNodes():
+      continue # fail silently
+    ps = title.getElementsByTagName("p")
+    if len(ps) == 0:
+      continue # fail silently
+    anchor = ps[0].cloneNode(ps[0])
+    anchor.tagName = "a"
+    anchor.setAttribute("href","#"+GID)
+    li = document.createElement("li")
+    li.appendChild(anchor)
+    ol.appendChild(li)
+  return ol
 
-def addToc(XML, intersperse=True):
+def addLocalToc(Node):
+  if (Node.nodeType == Node.ELEMENT_NODE and Node.tagName == "div"
+      and Node.hasAttribute("class")
+      and Node.getAttribute("class") in ["book","part","chapter","section"]):
+      secbody = None
+      for child in Node.childNodes:
+        if (child.nodeType == child.ELEMENT_NODE and child.tagName == "div"
+            and child.hasAttribute("class")
+            and child.getAttribute("class") == "section-body"):
+          secbody = child
+          break
+      ol = createLocalToc(Node)
+      if secbody is not None: # work quietly
+        secbody.insertBefore(ol, secbody.firstChild)
+  for child in Node.childNodes:
+    addLocalToc(child)
+  return Node
+
+def addToc(XML):
   """
-  Builds tables-of-contents (interspersed or not) into the webpage.
+  Builds tables-of-contents (interspersed) into the webpage.
   Interspersed: places small TOCs at each structural level
-  Not interspersed: places one global TOC at the top-level
   """
-  if intersperse:
-    # pass b/c I'm lazy
-  else:
-    # pass b/c I'm lazy
+  addLocalToc(XML)
   return XML
 
 def wrapInHtml(XML,Title):
