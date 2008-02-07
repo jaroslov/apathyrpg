@@ -401,7 +401,8 @@ def htmlToLatex(XML):
       cls = None
       if XML.hasAttribute("class"): cls = XML.getAttribute("class")
       if cls == "book":
-        result += "\documentclass{book}\n"
+        result = open("apathy.tex.template","r").read()
+        return result
   return result
 
 def buildLatex(options):
