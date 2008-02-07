@@ -24,6 +24,10 @@ def parseOptions():
   parser.add_option("","--main-document",dest="main",
                     help="the name of the main document, defaults to 'Apathy'",
                     metavar="FILE")
+  parser.add_option("","--pretty-print",dest="prettyprint",
+                    help="pretty-print the resulting file",action="store_true")
+  parser.add_option("","--retarget-resources",dest="retargetresources",
+                    help="retarget image resources",action="store_true")
   
   (options, args) = parser.parse_args()
 
@@ -43,6 +47,10 @@ def parseOptions():
     options.clean = False
   if options.main is None:
     options.main = "Apathy"
+  if options.prettyprint is None:
+    options.prettyprint = False
+  if options.retargetresources is None:
+    options.retargetresources = False
 
   return options, args
 
@@ -117,6 +125,21 @@ def __combine(options, translate, report=sys.stdout):
     for newChild in newChildren:
       parent.insertBefore(newChild, reference)
     parent.removeChild(reference)
+  # change all the Apathy tags to span tags
+  Apathys = Main.getElementsByTagName("Apathy")
+  for Apathy in Apathys:
+    Apathy.setAttribute("class","Apathy")
+    Apathy.tagName = "span"
+    apathytext = Main.createTextNode("Apathy")
+    if Apathy.hasChildNodes():
+      Apathy.insertBefore(apathytext,Apathy.firstChild)
+    else:
+      Apathy.appendChild(apathytext)
+  imgs = Main.getElementsByTagName("img")
+  for img in imgs:
+    npath = os.path.join(options.prefix,img.getAttribute("src"))
+    npath = os.path.normpath(npath)
+    img.setAttribute("src",npath)
   return Main
 
 def combine(options):
@@ -124,7 +147,7 @@ def combine(options):
   Simplest way to combine data and save; example code.
   """
   combined = __combine(options, nullTranslator)
-  writeToDisk(combined,".combine.xhtml")
+  writeToDisk(options, combined,".combine.xhtml")
 
 class tableAsWebTable(object):
   def __init__(self, DoAnchors=True, TableOnly=False):
@@ -202,7 +225,7 @@ class tableAsWebTable(object):
           removes.append(div.childNodes[tdx])
         elif tdx == titleLoc:
           td.tagName = "h1"
-          td.setAttribute("class","title")
+          td.setAttribute("class","description-title")
         elif tdx in displayKindMap["description"]:
           td.tagName = "div"
           td.setAttribute("class","description-body")
@@ -220,11 +243,19 @@ class tableAsWebTable(object):
         if tdx != titleLoc and tdx not in displayKindMap["table"]:
           removes.append(td)
         if tdx == titleLoc and self.DoAnchors:
-          anchor = td.cloneNode(td)
-          anchor.tagName = "a"
-          anchor.setAttribute("href","#"+GID)
-          td.childNodes = []
-          td.appendChild(anchor)
+          #anchor = td.cloneNode(td)
+          #anchor.tagName = "a"
+          #anchor.setAttribute("href","#"+GID)
+          #td.childNodes = []
+          #td.appendChild(anchor)
+          if td.hasChildNodes():
+            p = None
+            for child in td.childNodes:
+              if (child.nodeType == child.ELEMENT_NODE
+                  and child.tagName.lower() == "p"):
+                child.tagName = "a"
+                child.setAttribute("href","#"+GID)
+                break
       for remove in removes:
         tr.removeChild(remove)
   
@@ -241,26 +272,100 @@ class tableAsWebTable(object):
       return [XML]
     return descriptions
 
+def getSubstructureElements(Node):
+  """
+  Retrieves any node called "part", "chapter", "section"
+  within the section-body of this node
+  """
+  substructure = []
+  sectionbody = None
+  for child in Node.childNodes:
+    if (child.nodeType == child.ELEMENT_NODE
+        and child.tagName == "div"
+        and child.hasAttribute("class")
+        and child.getAttribute("class") in ["section-body"])
+      sectionbody = child
+      break
+  if sectionbody is None:
+    return [] # fail silently
+  for child in sectionbody.childNodes:
+    if (child.nodeType == child.ELEMENT_NODE
+        and child.tagName == "div"
+        and child.hasAttribute("class")
+        and child.getAttribute("class") in ["part","chapter","section"]):
+      substructure.append(child)
+  return substructure
+
+def getTocGlobal(Node):
+  """
+  Gets all the structural elements...
+  """
+  pass
+
 def addToc(XML, intersperse=True):
   """
   Builds tables-of-contents (interspersed or not) into the webpage.
   Interspersed: places small TOCs at each structural level
   Not interspersed: places one global TOC at the top-level
   """
+  if intersperse:
+    # pass b/c I'm lazy
+  else:
+    # pass b/c I'm lazy
   return XML
+
+def wrapInHtml(XML,Title):
+  """
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+      <title><Title /></title>
+      <link rel="stylesheet" type="text/css"
+            href="Apathy.css" title="Apathy" />
+    </head>
+    <body>
+      <combined-data-goes-here />
+    </body>
+  </html>
+  """
+  html = XML.createElement("html")
+  html.setAttribute("xmlns","http://www.w3.org/1999/xhtml")
+  html.setAttribute("xml:lang","en")
+  head = XML.createElement("head")
+  title = XML.createElement("title")
+  titletext = XML.createTextNode(Title)
+  title.appendChild(titletext)
+  link = XML.createElement("link")
+  link.setAttribute("rel","stylesheet")
+  link.setAttribute("type","text/css")
+  link.setAttribute("href","Apathy.css")
+  link.setAttribute("title","Apathy")
+  head.appendChild(title)
+  head.appendChild(link)
+  body = XML.createElement("body")
+  for child in XML.childNodes:
+    if child.nodeType == child.ELEMENT_NODE:
+      body.appendChild(child)
+  html.appendChild(head)
+  html.appendChild(body)
+  return html
 
 def buildWebPage(options):
   combined = __combine(options, tableAsWebTable(), report=sys.stderr)
   combined = addToc(combined)
-  writeToDisk(combined, ".webpage.xhtml")
+  combined = wrapInHtml(combined,options.output)
+  writeToDisk(options, combined, ".webpage.xhtml")
 
-def writeToDisk(XML, appendix):
+def writeToDisk(options, XML, appendix):
   """
   Writes the XML to disk with the correct encoding.
   """
   output_name = options.output+appendix
   target = open(output_name,"w")
-  print >> target, XML.toxml(encoding="utf-8")
+  # pretty printing is worse than regular printing, by far
+  if options.prettyprint:
+    print >> target, XML.toxml(encoding="utf-8")
+  else:
+    print >> target, XML.toxml(encoding="utf-8")
 
 if __name__=="__main__":
   options, args = parseOptions()
