@@ -27,7 +27,8 @@ def parseOptions():
   parser.add_option("","--pretty-print",dest="prettyprint",
                     help="pretty-print the resulting file",action="store_true")
   parser.add_option("","--retarget-resources",dest="retargetresources",
-                    help="retarget image resources",action="store_true")
+                    help="retarget image, css, etc. resources",
+                    action="store_true")
   
   (options, args) = parser.parse_args()
 
@@ -351,7 +352,7 @@ def addToc(XML):
   addLocalToc(XML)
   return XML
 
-def wrapInHtml(XML,Title):
+def wrapInHtml(options,XML,Title):
   """
   <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
     <head>
@@ -374,7 +375,10 @@ def wrapInHtml(XML,Title):
   link = XML.createElement("link")
   link.setAttribute("rel","stylesheet")
   link.setAttribute("type","text/css")
-  link.setAttribute("href","Apathy.css")
+  linkref = "Apathy.css"
+  if options.retargetresources:
+    linkref = os.path.normpath(os.path.join(options.prefix,linkref))
+  link.setAttribute("href",linkref)
   link.setAttribute("title","Apathy")
   head.appendChild(title)
   head.appendChild(link)
@@ -389,7 +393,7 @@ def wrapInHtml(XML,Title):
 def buildWebPage(options):
   combined = __combine(options, tableAsWebTable(), report=sys.stderr)
   combined = addToc(combined)
-  combined = wrapInHtml(combined,options.output)
+  combined = wrapInHtml(options,combined,options.output)
   writeToDisk(options, combined, ".webpage.xhtml")
 
 def writeToDisk(options, XML, appendix):
