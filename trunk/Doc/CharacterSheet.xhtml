@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Character Sheet</title>
+    <script>
+      function updateAttribute(Which,Element) {
+        document.title = "FOO";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="name">
+      <span>Name</span> <input type="text" size="65"/>
+    </div>
+    <div class="descriptive">
+      <span>Age</span> <input type="text" size="5"/>
+      <span>Sex</span>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Hermaphrodite</option>
+        <option>Androgynous</option>
+        <option>Other</option>
+      </select>
+      <span>Hair</span> <input type="text" size="10"/>
+      <span>Eyes</span> <input type="text" size="10"/>
+      <span>Height</span> <input type="text" size="10"/>
+      <span>Weight</span> <input type="text" size="10"/>
+    </div>
+    <div class="attributes">
+      <div class="physical">
+        <span>Str</span> <input type="text" size="10"
+                           onChange="updateAttribute('STR',this)"/>
+        <span>Dex</span> <input type="text" size="10"
+                           onChange="updateAttribute('DEX',this)"/>
+        <span>Bld</span> <input type="text" size="10"
+                           onChange="updateAttribute('BLD',this)"/>
+      </div>
+      <div class="mental">
+        <span>Int</span> <input type="text" size="10"
+                           onChange="updateAttribute('INT',this)"/>
+        <span>Kno</span> <input type="text" size="10"
+                           onChange="updateAttribute('KNO',this)"/>
+        <span>Wil</span> <input type="text" size="10"
+                           onChange="updateAttribute('WIL',this)"/>
+      </div>
+      <div class="emotional">
+        <span>Cha</span> <input type="text" size="10"
+                           onChange="updateAttribute('CHA',this)"/>
+      </div>
+    </div>
+  </body>
+</html>
