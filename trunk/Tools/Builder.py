@@ -20,7 +20,8 @@ def parseOptions():
   parser.add_option("-w","--xhtml",dest="xhtml",
                     action="store_true",help="produce webpage output")
   parser.add_option("","--clean",dest="clean",
-                    action="store_true",help="attempt to the clean the source files")
+                    action="store_true",
+                    help="attempt to the clean the source files")
   parser.add_option("","--main-document",dest="main",
                     help="the name of the main document, defaults to 'Apathy'",
                     metavar="FILE")
@@ -117,6 +118,42 @@ def getSummarySet(XML):
 
 def nullTranslator(XML,Kind):
   return [XML]
+
+def __seperate(options, translate, report=sys.stdout):
+  Main = getMainXhtml(options)
+  res = {options.output:Main}
+  references = getReferenceSet(Main)
+  for reference in references:
+    which = reference.getAttribute("href")
+    xhtml = getXhtmlDocument(options, which)
+    root = None
+    for child in xhtml.childNodes:
+      if child.nodeType == child.ELEMENT_NODE:
+        root = child
+        break
+    print >> report, which
+    key = "Reference--"+which
+    reference.setAttribute("href",key)
+    translation = translate(root.cloneNode(root),"reference")
+    translated = catXHTML(translation)
+    res[key] = translated
+  references = getSummarySet(Main)
+  for reference in references:
+    which = reference.getAttribute("href")
+    xhtml = getXhtmlDocument(options, which)
+    root = None
+    for child in xhtml.childNodes:
+      if child.nodeType == child.ELEMENT_NODE:
+        root = child
+        break
+    print >> report, which
+    key = "Summary--"+which
+    reference.setAttribute("href",key)
+    translation = translate(root.cloneNode(root),"summary")
+    translated = catXHTML(translation)
+    res[key] = translated
+  return res
+  
 
 def __combine(options, translate, report=sys.stdout):
   Main = getMainXhtml(options)
@@ -422,10 +459,22 @@ def wrapInHtml(options,XML,Title):
   html.appendChild(body)
   return html
 
+def catXHTML(XMLs):
+  if len(XMLs) == 0:
+    raise Exception, "Empty set of XHTML fragments"
+  document = XMLs[0].ownerDocument
+  div = document.createElement("div")
+  div.setAttribute("class","main")
+  for XML in XMLs:
+    div.appendChild(XML)
+  doc = document.cloneNode(document)
+  doc.childNodes = []
+  doc.appendChild(div)
+  return doc
+
 def htmlToLatex(XML):
   """
     Converts (X)HTML nodes into their appropriate LaTeX version.
-    
   """
   result = ""
   if XML.nodeType == XML.ELEMENT_NODE:
@@ -443,16 +492,30 @@ def buildLatex(options):
   writeToDisk(options, combined, ".tex")
 
 def buildWebPage(options):
-  combined = __combine(options, tableAsWebTable(), report=sys.stderr)
-  combined = addToc(combined)
-  combined = wrapInHtml(options, combined, options.output)
-  writeToDisk(options, combined, ".webpage.xhtml")
+  if options.combine:
+    page = __combine(options, tableAsWebTable(), report=sys.stderr)
+    page = addToc(page)
+    page = wrapInHtml(options, page, options.output)
+    writeToDisk(options, page, ".webpage.xhtml")
+  else:
+    pages = __seperate(options, tableAsWebTable(), report=sys.stderr)
+    for key,page in pages.items():
+      page = wrapInHtml(options, page, key)
+      page = addToc(page)
+      keyname = key.replace(": ","--")
+      appendix = ""
+      if ".xhtml" not in keyname:
+        appendix = ".xhtml"
+      writeToDisk(options, page, appendix=appendix, altname=keyname)
 
-def writeToDisk(options, XML, appendix):
+def writeToDisk(options, XML, appendix, altname=None):
   """
   Writes the XML to disk with the correct encoding.
   """
-  output_name = options.output+appendix
+  if altname is None:
+    output_name = options.output+appendix
+  else:
+    output_name = altname+appendix
   target = open(output_name,"w")
   # pretty printing is worse than regular printing, by far
   if options.prettyprint:
