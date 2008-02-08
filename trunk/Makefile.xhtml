@@ -3,9 +3,8 @@ XSLTP = xsltproc
 
 all: xhtml charactersheet
 
-xhtml: Apathy.xml Apathy.html.xsl Apathy.css
-	xsltproc --stringparam media xhtml --stringparam title "Apathy Game Rules" -o Apathy.xhtml.prelint Tools/Combine.xsl Doc/Apathy.xhtml
-	xmllint --format Apathy.xhtml.prelint > Apathy.xhtml
+xhtml: Doc/*
+	Tools/Builder.py --prefix=Doc/ -wc --retarget-resources
 
 charactersheet: CharacterSheet.tex
 	pdflatex CharacterSheet.tex >& CharacterSheet.pdflatex
