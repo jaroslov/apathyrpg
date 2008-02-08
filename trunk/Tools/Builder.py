@@ -80,9 +80,27 @@ def getXhtmlDocument(options, who, suffix=False):
   """
   Retrieves some xhtml file from the xhtml set
   """
-  whom= os.path.join(options.prefix, who)
+  whom = os.path.join(options.prefix, who)
   if suffix: whom += ".xhtml"
+  if not os.path.isfile(whom) and not suffix:
+    # try appending "xhtml" anyways
+    whom += ".xhtml"
+    if not os.path.isfile(whom): # give up
+      raise Exception, "I don't know: "+who
   return parseXml(whom)
+
+def getSumRefSet(XML,Class):
+  anchors = XML.getElementsByTagName("a")
+  references = []
+  for anchor in anchors:
+    if not anchor.hasAttribute("class"):
+      continue
+    if anchor.getAttribute("class") != Class:
+      continue
+    if not anchor.hasAttribute("href"):
+      continue
+    references.append(anchor)
+  return references
 
 def getReferenceSet(XML):
   """
@@ -90,19 +108,14 @@ def getReferenceSet(XML):
   in a document; "references" are of this form:
   <a class="hrid" href="...">...</a>
   """
-  anchors = XML.getElementsByTagName("a")
-  references = []
-  for anchor in anchors:
-    if not anchor.hasAttribute("class"):
-      continue
-    if anchor.getAttribute("class") != "hrid":
-      continue
-    if not anchor.hasAttribute("href"):
-      continue
-    references.append(anchor)
-  return references
+  return getSumRefSet(XML,"hrid")
 
-def nullTranslator(XML):
+def getSummarySet(XML):
+  """
+  """
+  return getSumRefSet(XML,"summarize")
+
+def nullTranslator(XML,Kind):
   return [XML]
 
 def __combine(options, translate, report=sys.stdout):
@@ -122,10 +135,28 @@ def __combine(options, translate, report=sys.stdout):
     print >> report, which
     # get the new children and insert before the reference,
     # then remove the reference, itself
-    newChildren = translate(root.cloneNode(root))
+    newChildren = translate(root.cloneNode(root),"reference")
     for newChild in newChildren:
       parent.insertBefore(newChild, reference)
     parent.removeChild(reference)
+  # change all summaries into tabular-forms
+  summaries = getSummarySet(Main)
+  for summary in summaries:
+    which = summary.getAttribute("href")
+    xhtml = getXhtmlDocument(options, which)
+    parent = summary.parentNode
+    # get first ELEMENT_NODE from the document
+    root = None
+    for child in xhtml.childNodes:
+      if child.nodeType == child.ELEMENT_NODE:
+        root = child
+        break
+    print >> report, which
+    newChildren = translate(root.cloneNode(root),"summary")
+    for newChild in newChildren:
+      parent.insertBefore(newChild, summary)
+      parent.removeChild(summary)
+    ## DO MORE
   # change all the Apathy tags to span tags
   Apathys = Main.getElementsByTagName("Apathy")
   for Apathy in Apathys:
@@ -154,8 +185,7 @@ def combine(options):
 class tableAsWebTable(object):
   def __init__(self, DoAnchors=True, TableOnly=False):
     self.DoAnchors = DoAnchors
-    self.TableOnly = TableOnly
-  def __call__(self, XML):
+  def __call__(self, XML, Kind):
     """
     Takes tabular xhtml documents and converts them into web-form
     We are given the "table", so double-check
@@ -178,6 +208,8 @@ class tableAsWebTable(object):
         if cls == "titles": titles = thead
         if cls == "display": display = thead
         if cls == "format": format = thead
+    if titles is None or display is None or format is None:
+      return [XML]
     displayParent = display.parentNode
     titlesParent = titles.parentNode
     formatParent = format.parentNode
@@ -268,7 +300,7 @@ class tableAsWebTable(object):
       titles.removeChild(remove)
   
     descriptions.insert(0, XML)
-    if self.TableOnly:
+    if Kind == "summary":
       return [XML]
     return descriptions
 
