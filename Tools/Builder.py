@@ -153,7 +153,6 @@ def __seperate(options, translate, report=sys.stdout):
     translated = catXHTML(translation)
     res[key] = translated
   return res
-  
 
 def __combine(options, translate, report=sys.stdout):
   Main = getMainXhtml(options)
@@ -477,12 +476,12 @@ def htmlToLatex(XML):
     Converts (X)HTML nodes into their appropriate LaTeX version.
   """
   result = ""
+  print XML
   if XML.nodeType == XML.ELEMENT_NODE:
     if XML.tagName == "div":
       cls = None
       if XML.hasAttribute("class"): cls = XML.getAttribute("class")
       if cls == "book":
-        result = open("apathy.tex.template","r").read()
         return result
   return result
 
