@@ -154,7 +154,7 @@ def __seperate(options, translate, report=sys.stdout):
     res[key] = translated
   return res
 
-def __combine(options, translate, report=sys.stdout):
+def __combine(options, translate, report=sys.stdout, fastHack=False):
   Main = getMainXhtml(options)
   references = getReferenceSet(Main)
   for reference in references:
@@ -175,6 +175,7 @@ def __combine(options, translate, report=sys.stdout):
     for newChild in newChildren:
       parent.insertBefore(newChild, reference)
     parent.removeChild(reference)
+    if fastHack: break
   # change all summaries into tabular-forms
   summaries = getSummarySet(Main)
   for summary in summaries:
@@ -192,7 +193,7 @@ def __combine(options, translate, report=sys.stdout):
     for newChild in newChildren:
       parent.insertBefore(newChild, summary)
       parent.removeChild(summary)
-    ## DO MORE
+    if fastHack: break
   # change all the Apathy tags to span tags
   Apathys = Main.getElementsByTagName("Apathy")
   for Apathy in Apathys:
@@ -471,24 +472,94 @@ def catXHTML(XMLs):
   doc.appendChild(div)
   return doc
 
-def htmlToLatex(XML):
+def htmlToLaTeXC(XML):
+  result = ""
+  for child in XML.childNodes:
+    result += htmlToLaTeX(child)
+  return result
+
+def htmlToLaTeX(XML):
   """
     Converts (X)HTML nodes into their appropriate LaTeX version.
   """
   result = ""
-  print XML
-  if XML.nodeType == XML.ELEMENT_NODE:
-    if XML.tagName == "div":
+  if XML.nodeType == XML.DOCUMENT_NODE:
+    result += """\documentclass[twoside]{book}
+\usepackage{multicol}
+\usepackage{newcent}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage[text={6.5in,8in},textheight=8in]{geometry}\n"""
+    result += htmlToLaTeXC(XML)
+  elif XML.nodeType == XML.ELEMENT_NODE:
+    tagl = XML.tagName.lower()
+    if tagl == "div":
       cls = None
       if XML.hasAttribute("class"): cls = XML.getAttribute("class")
-      if cls == "book":
-        return result
+      if cls == "book": # the whole book
+        result += "\\begin{document}\n"
+        result += htmlToLaTeXC(XML)
+        result += "\\end{document}"
+      elif cls == "header": # title page
+        result += "\\begin{titlepage}\n\\begin{center}"
+        result += htmlToLaTeXC(XML)
+        result += "\\end{center}\n\\end{titlepage}\n"
+        result += """\setcounter{page}{1}
+\pagenumbering{roman}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}\n"""
+      elif cls == "authors":
+        result += "\\vbox{\\small\n"
+        result += htmlToLaTeXC(XML)
+        result += "}\n"
+      elif cls == "author":
+        result += htmlToLaTeXC(XML)+"\\\\\n"
+      elif cls == "section-body":
+        result += htmlToLaTeX(XML)
+      elif cls == "part":
+        pass # continue here
+      else:
+        print cls
+    elif tagl == "img":
+      img = "\\includegraphics[width=%s\\textwidth]{%s}"
+      width = "1.0"
+      if XML.hasAttribute("width"):
+        wd = XML.getAttribute("width")
+        if "%" in wd:
+          wd = wd.replace("%","")
+        wd = float(wd)
+        width = "%3.2f"%(wd / 100)
+      src = XML.getAttribute("src")
+      if options.retargetresources:
+        #src = os.path.join(options.prefix,src) ### BUG! Doc/Doc/...
+        src = os.path.normpath(src)
+      img = img%(width, src)
+      result += img
+    else:
+      print XML.tagName
+  elif XML.nodeType == XML.TEXT_NODE:
+    result += XML.nodeValue
   return result
 
 def buildLatex(options):
-  combined = __combine(options, tableAsWebTable(), report=sys.stderr)
-  combined = htmlToLatex(combined)
-  writeToDisk(options, combined, ".tex")
+  combined = __combine(options, tableAsWebTable(), report=sys.stderr, fastHack=True)
+  LaTeX = htmlToLaTeX(combined)
+  target = open(options.output+".combine.tex","w")
+  print >> target, LaTeX
 
 def buildWebPage(options):
   if options.combine:
