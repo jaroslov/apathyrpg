@@ -528,7 +528,4 @@ if __name__=="__main__":
   if options.latex:
     buildLatex(options)
   if options.xhtml:
-    buildWebPage(options)
-  if options.combine:
-    combine(options)
-    
+    buildWebPage(options)    
