@@ -736,7 +736,7 @@ def htmlToLaTeX(XML):
             result += htmlToLaTeX(tcaption)
           result += "\\end{longtable}\n"
     elif tagl=="math":
-      pass
+      print XML.toxml(encoding="utf-8")
     elif tagl == "a":
       if XML.hasAttribute("class"):
         cls = XML.getAttribute("class")
@@ -755,7 +755,8 @@ def htmlToLaTeX(XML):
   return result
 
 def buildLatex(options):
-  combined = __combine(options, tableAsWebTable(), report=sys.stderr, fastHack=True)
+  combined = __combine(options, tableAsWebTable(),
+    report=sys.stderr)#, fastHack=True)
   LaTeX = htmlToLaTeX(combined)
   target = open(options.output+".combine.tex","w")
   print >> target, LaTeX.encode("utf-8")
