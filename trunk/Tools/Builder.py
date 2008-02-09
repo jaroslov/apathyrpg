@@ -506,6 +506,20 @@ def htmlToLaTeX(XML):
       if XML.hasAttribute("class"): cls = XML.getAttribute("class")
       if cls == "book": # the whole book
         result += "\\begin{document}\n"
+        result += """\\newcounter{ExampleCounter}
+  \\setcounter{ExampleCounter}{1}
+  \\newcommand{\\quoteexample}[2][~] {
+    \\vspace{1em}
+    \\addcontentsline{lof}{section}{\\arabic{ExampleCounter} \\textsc{#1}}
+    \\vbox{
+      \\textsc{\\noindent Example \\arabic{ExampleCounter} {\\large \\textbf{#1}}}
+      \\begin{quotation}
+        {\\small #2}
+      \\end{quotation}
+      \\vspace{1em}
+    }
+    \\addtocounter{ExampleCounter}{1}
+  }"""
         result += htmlToLaTeXC(XML)
         result += "\\end{document}"
       elif cls == "header": # title page
@@ -534,26 +548,80 @@ def htmlToLaTeX(XML):
       elif cls in ["part","chapter","section"]:
         title = None
         body = None
+        sub = ""
+        if cls == "section":
+          gp = XML.parentNode.parentNode
+          if gp.getAttribute("class")=="section":
+            sub = "sub"
+            gggp = gp.parentNode.parentNode
+            if gggp.getAttribute("class") == "section":
+              sub += "sub"
         for child in XML.childNodes:
           if child.nodeType == child.ELEMENT_NODE:
             if child.tagName == "h1":
               title = child
             elif child.tagName == "div":
               body = child
-        result += "\\%s{"%(cls)+htmlToLaTeX(title)+"}\n"
+        sectitle = "\\%s{"%(sub+cls)+htmlToLaTeX(title).strip()+"}"
+        result += sectitle.strip()+"\n"
         result += htmlToLaTeX(body)
+      elif cls == "note":
+        result += "{\\bf\\large Note!~}{\\sc~~"+htmlToLaTeXC(XML).strip()+" }\n\n"
+      elif cls == "example":
+        # examples are poorly structured
+        # first child SHOULD be a title (h1), so we use it
+        # the rest of the children are the "body"
+        title = None
+        body = []
+        for child in XML.childNodes:
+          if title is None:
+            if child.nodeType == child.ELEMENT_NODE:
+              title = child
+          else:
+            body.append(child)
+        result += "\\quoteexample["+htmlToLaTeX(title).strip()+"]"
+        result += "{"
+        for child in body:
+          result += htmlToLaTeX(child)
+        result += "}\n\n"
+      elif cls == "figure":
+        result += "\\begin{figure}[h]\n"
+        result += htmlToLaTeXC(XML)
+        result += "\\end{figure}\n"
       else:
         print cls,
+    elif tagl == "ul":
+      # unordered list
+      result += "\\begin{itemize}\n"
+      result += htmlToLaTeXC(XML)
+      result += "\\end{itemize}\n"
+    elif tagl == "ol":
+      # unordered list
+      result += "\\begin{enumerate}\n"
+      result += htmlToLaTeXC(XML)
+      result += "\\end{enumerate}\n"
+    elif tagl == "li":
+      result += "\\item "+htmlToLaTeXC(XML)+"\n"
+    elif tagl == "dl":
+      result += "\\begin{description}\n"
+      result += htmlToLaTeXC(XML)
+      result += "\\end{description}\n"
+    elif tagl == "dt":
+      result += "\\item["+htmlToLaTeXC(XML).strip()+"]\n"
+    elif tagl == "dd":
+      result += htmlToLaTeXC(XML)+"\n"
     elif tagl == "span":
       cls = None
       if XML.hasAttribute("class"):
         cls = XML.getAttribute("class")
       if cls == "Apathy":
-        result += "{\\bf "+htmlToLaTeXC(XML)+"}"
+        result += " {\\bf "+htmlToLaTeXC(XML)+"} "
+      if cls == "define":
+        result += htmlToLaTeXC(XML)
     elif tagl == "h1":
       result += htmlToLaTeXC(XML)
     elif tagl == "p":
-      result += "{"+htmlToLaTeXC(XML)+"}"
+      result += htmlToLaTeXC(XML)+"\n\n"
     elif tagl == "img":
       img = "\\includegraphics[width=%s\\textwidth]{%s}"
       width = "1.0"
@@ -569,10 +637,16 @@ def htmlToLaTeX(XML):
         src = os.path.normpath(src)
       img = img%(width, src)
       result += img
+    elif tagl=="table":
+      cls = None
+      if XML.hasAttribute("class"):
+        cls = XML.getAttribute("class")
     else:
       print XML.tagName,
   elif XML.nodeType == XML.TEXT_NODE:
-    result += unicodeToLaTeX(XML.nodeValue)
+    value = unicodeToLaTeX(XML.nodeValue)
+    value = value.strip()
+    result += value
   return result
 
 def buildLatex(options):
