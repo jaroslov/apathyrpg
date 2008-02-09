@@ -4,6 +4,8 @@ import os, sys
 from optparse import OptionParser
 from xml.dom.minidom import parse as parseXml
 from random import SystemRandom
+import codecs
+from Uni2LaTeX import unicodeToLaTeX
 
 def parseOptions():
   parser = OptionParser()
@@ -486,7 +488,6 @@ def htmlToLaTeX(XML):
   if XML.nodeType == XML.DOCUMENT_NODE:
     result += """\documentclass[twoside]{book}
 \usepackage{multicol}
-\usepackage{newcent}
 \usepackage{rotating}
 \usepackage{tabularx}
 \usepackage{array}
@@ -511,17 +512,17 @@ def htmlToLaTeX(XML):
         result += "\\begin{titlepage}\n\\begin{center}"
         result += htmlToLaTeXC(XML)
         result += "\\end{center}\n\\end{titlepage}\n"
-        result += """\setcounter{page}{1}
-\pagenumbering{roman}
-\setcounter{tocdepth}{3}
-\tableofcontents
-\newpage
-\listoftables
-\newpage
-\listoffigures
-\newpage
-\pagenumbering{arabic}
-\setcounter{page}{1}\n"""
+        result += """\\setcounter{page}{1}
+\\pagenumbering{roman}
+\\setcounter{tocdepth}{3}
+\\tableofcontents
+\\newpage
+\\listoftables
+\\newpage
+\\listoffigures
+\\newpage
+\\pagenumbering{arabic}
+\\setcounter{page}{1}\n"""
       elif cls == "authors":
         result += "\\vbox{\\small\n"
         result += htmlToLaTeXC(XML)
@@ -529,11 +530,30 @@ def htmlToLaTeX(XML):
       elif cls == "author":
         result += htmlToLaTeXC(XML)+"\\\\\n"
       elif cls == "section-body":
-        result += htmlToLaTeX(XML)
-      elif cls == "part":
-        pass # continue here
+        result += htmlToLaTeXC(XML)
+      elif cls in ["part","chapter","section"]:
+        title = None
+        body = None
+        for child in XML.childNodes:
+          if child.nodeType == child.ELEMENT_NODE:
+            if child.tagName == "h1":
+              title = child
+            elif child.tagName == "div":
+              body = child
+        result += "\\%s{"%(cls)+htmlToLaTeX(title)+"}\n"
+        result += htmlToLaTeX(body)
       else:
-        print cls
+        print cls,
+    elif tagl == "span":
+      cls = None
+      if XML.hasAttribute("class"):
+        cls = XML.getAttribute("class")
+      if cls == "Apathy":
+        result += "{\\bf "+htmlToLaTeXC(XML)+"}"
+    elif tagl == "h1":
+      result += htmlToLaTeXC(XML)
+    elif tagl == "p":
+      result += "{"+htmlToLaTeXC(XML)+"}"
     elif tagl == "img":
       img = "\\includegraphics[width=%s\\textwidth]{%s}"
       width = "1.0"
@@ -550,16 +570,16 @@ def htmlToLaTeX(XML):
       img = img%(width, src)
       result += img
     else:
-      print XML.tagName
+      print XML.tagName,
   elif XML.nodeType == XML.TEXT_NODE:
-    result += XML.nodeValue
+    result += unicodeToLaTeX(XML.nodeValue)
   return result
 
 def buildLatex(options):
   combined = __combine(options, tableAsWebTable(), report=sys.stderr, fastHack=True)
   LaTeX = htmlToLaTeX(combined)
   target = open(options.output+".combine.tex","w")
-  print >> target, LaTeX
+  print >> target, LaTeX.encode("utf-8")
 
 def buildWebPage(options):
   if options.combine:
