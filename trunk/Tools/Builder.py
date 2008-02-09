@@ -326,6 +326,7 @@ class tableAsWebTable(object):
                   and child.tagName.lower() == "p"):
                 child.tagName = "a"
                 child.setAttribute("href","#"+GID)
+                child.setAttribute("class","table-link")
                 break
       for remove in removes:
         tr.removeChild(remove)
@@ -337,11 +338,15 @@ class tableAsWebTable(object):
         removes.append(th)
     for remove in removes:
       titles.removeChild(remove)
-  
-    descriptions.insert(0, XML)
+
+    descriptionholder = XML.ownerDocument.createElement("div")
+    descriptionholder.setAttribute("class","description-set")
+    for description in descriptions:
+      descriptionholder.appendChild(description)
+
     if Kind == "summary":
       return [XML]
-    return descriptions
+    return [XML, descriptionholder]
 
 def getSubstructureElements(Node):
   """
@@ -588,8 +593,32 @@ def htmlToLaTeX(XML):
         result += "\\begin{figure}[h]\n"
         result += htmlToLaTeXC(XML)
         result += "\\end{figure}\n\n"
+      elif cls == "equation":
+        result += "\n\n"+htmlToLaTeXC(XML)+"\n\n"
+      elif cls == "reference":
+        result += htmlToLaTeXC(XML)
+      elif cls == "description-body":
+        result += htmlToLaTeXC(XML)
+      elif cls == "description":
+        title = None
+        body = None
+        for child in XML.childNodes:
+          if child.nodeType == child.ELEMENT_NODE:
+            if child.tagName == "h1":
+              title = child
+            elif child.tagName == "div":
+              body = child
+        result += "{\\bf\\large "+htmlToLaTeX(title).strip()+"}\n\n"
+        if body:
+          result += htmlToLaTeX(body)
+        else:
+          print XML.toxml(encoding="utf-8")
+      elif cls == "description-set":
+        result += "\\begin{multicols}{2}\n"
+        result += htmlToLaTeXC(XML)
+        result += "\\end{multicols}\n"
       else:
-        print cls,
+        print "CLS"+cls,
     elif tagl == "ul":
       # unordered list
       result += "\\begin{itemize}\n"
@@ -643,16 +672,24 @@ def htmlToLaTeX(XML):
       trs = XML.getElementsByTagName("tr")
       for tr in trs:
         tds = tr.getElementsByTagName("td")
-        if len(tds) > 0:
-          result += htmlToLaTeXC(tds[0]).strip()
-        for td in tds[1:]:
-          result += "\n& "+htmlToLaTeXC(td).strip()
-        result += " \\\\\n"
+        doAmp = False
+        for td in tds:
+          if doAmp: result += "\n& "
+          else: doAmp = True
+          if td.hasAttribute("colspan"):
+            result += "\\multicolumn{"
+            result += td.getAttribute("colspan")+"}{c}{"
+            result += htmlToLaTeXC(td).strip()+"}"
+          else:
+            result += htmlToLaTeXC(td).strip()
+        result += " \\\\\n\\hline\n"
+    elif tagl=="caption":
+      result += "\\caption{"+htmlToLaTeXC(XML).strip()+"}\n"
     elif tagl=="table":
       cls = None
       if XML.hasAttribute("class"):
         cls = XML.getAttribute("class")
-      if cls == "display-table":
+      if cls in ["display-table","category"]:
         thead = None
         tcaption = None
         tbody = None
@@ -678,16 +715,39 @@ def htmlToLaTeX(XML):
           Head += "\\\\\n"
           Head += "\\hline\n"
           for thx in xrange(len(ths)):
-            result += "c|"
+            kind = "c|"
+            th = ths[thx]
+            if th.hasAttribute("align"):
+              align = th.getAttribute("align")
+              if align == "center": kind = "c|"
+              elif align == "left": kind = "l|"
+              else: kind = "r|"
+            elif th.hasAttribute("width"):
+              width = th.getAttribute("width")
+              kind = "p{"+width+"}|"
+            result += kind
           result += "}\n"
           result += "\\hline\n"
           result += Head + "\\hline\n\\endfirsthead\n"
-          result += Head + "\\endhead\n"
+          result += "\\hline\n" + Head + "\\endhead\n"
           result += htmlToLaTeX(tbody)
           result += "\n\\hline\n"
+          if tcaption:
+            result += htmlToLaTeX(tcaption)
           result += "\\end{longtable}\n"
+    elif tagl=="math":
+      pass
+    elif tagl == "a":
+      if XML.hasAttribute("class"):
+        cls = XML.getAttribute("class")
+        if cls == "table-link":
+          result += htmlToLaTeXC(XML)
+        else:
+          print "anchor"+tagl,
+      else:
+        print tagl,
     else:
-      print XML.tagName,
+      print tagl, 
   elif XML.nodeType == XML.TEXT_NODE:
     value = unicodeToLaTeX(XML.nodeValue)
     value = value.strip()
