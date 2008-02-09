@@ -587,7 +587,7 @@ def htmlToLaTeX(XML):
       elif cls == "figure":
         result += "\\begin{figure}[h]\n"
         result += htmlToLaTeXC(XML)
-        result += "\\end{figure}\n"
+        result += "\\end{figure}\n\n"
       else:
         print cls,
     elif tagl == "ul":
@@ -637,10 +637,55 @@ def htmlToLaTeX(XML):
         src = os.path.normpath(src)
       img = img%(width, src)
       result += img
+    elif tagl=="th":
+      result += htmlToLaTeXC(XML)
+    elif tagl == "tbody":
+      trs = XML.getElementsByTagName("tr")
+      for tr in trs:
+        tds = tr.getElementsByTagName("td")
+        if len(tds) > 0:
+          result += htmlToLaTeXC(tds[0]).strip()
+        for td in tds[1:]:
+          result += "\n& "+htmlToLaTeXC(td).strip()
+        result += " \\\\\n"
     elif tagl=="table":
       cls = None
       if XML.hasAttribute("class"):
         cls = XML.getAttribute("class")
+      if cls == "display-table":
+        thead = None
+        tcaption = None
+        tbody = None
+        for child in XML.childNodes:
+          if child.nodeType == child.ELEMENT_NODE:
+            if child.tagName == "caption":
+              tcaption = child
+            elif child.tagName == "thead":
+              thead = child
+            elif child.tagName == "tbody":
+              tbody = child
+        if not(tbody is None or thead is None):
+          result += "\\begin{longtable}{|"
+          ths = thead.getElementsByTagName("th")
+          lengths = []
+          Head = ""
+          if len(ths) > 0:
+            val = htmlToLaTeX(ths[0]).strip()
+            Head += " {\\sc\\bf "+val+"}"
+          for th in ths[1:]:
+            val = htmlToLaTeX(th).strip()
+            Head += "& {\sc\\bf "+val+"}"
+          Head += "\\\\\n"
+          Head += "\\hline\n"
+          for thx in xrange(len(ths)):
+            result += "c|"
+          result += "}\n"
+          result += "\\hline\n"
+          result += Head + "\\hline\n\\endfirsthead\n"
+          result += Head + "\\endhead\n"
+          result += htmlToLaTeX(tbody)
+          result += "\n\\hline\n"
+          result += "\\end{longtable}\n"
     else:
       print XML.tagName,
   elif XML.nodeType == XML.TEXT_NODE:
