@@ -13,15 +13,23 @@ import codecs
 #  3. the latex code for that character
 #  4. a crlf
 
-Map = {}
-mappinglines = codecs.open("Tools/Uni2LaTeX.map","r","utf-8").readlines()
-for mappingline in mappinglines:
-  umapping = unicode(mappingline)
-  key = umapping[0]
-  value = umapping[2:].strip()
-  Map[key] = value
+def buildMapFrom(where):
+  Map = {}
+  for wh in where:
+    mappinglines = codecs.open(wh,"r","utf-8").readlines()
+    for mappingline in mappinglines:
+      umapping = unicode(mappingline)
+      key = umapping[0]
+      value = umapping[2:].strip()
+      Map[key] = value
 
 def unicodeToLaTeX(string):
   for key,value in Map.items():
     string = string.replace(key,value)
   return string
+
+lines = codecs.open("ent-sym-and-greek.txt","r","utf-8").readlines()
+res = codecs.open("ent-sym-and-greek.map","w","utf-8")
+for line in lines:
+  parts = line.split(" ")
+  print >> res, parts[-1].strip()
