@@ -13,7 +13,7 @@
 ® \textregistered{}
 ¯ \textasciimacron{}
 ° \textdegree{}
-± \textpm{}
+± \ensuremath{\pm}
 ² \texttwosuperior{}
 ³ \textthreesuperior{}
 ´ \textasciiacute{}
