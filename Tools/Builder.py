@@ -283,7 +283,7 @@ class tableAsWebTable(object):
       if ttl.nodeType == ttl.ELEMENT_NODE:
         if ttl.firstChild.nodeValue.lower() == "name":
           titleLoc = ddx
-  
+
     descriptions = []
     # rowset of all tr within the table
     rowset = XML.getElementsByTagName("tr")
@@ -313,11 +313,12 @@ class tableAsWebTable(object):
       div.setAttribute("class","description")
       div.setAttribute("id",GID)
       descriptions.append(div)
-  
+
       # now, go through the main table and remove all non-table entries
       removes = []
-      for tdx in xrange(len(tr.childNodes)):
-        td = tr.childNodes[tdx]
+      tdnodes = tr.getElementsByTagName("td")
+      for tdx in xrange(len(tdnodes)):
+        td = tdnodes[tdx]
         if tdx != titleLoc and tdx not in displayKindMap["table"]:
           removes.append(td)
         if tdx == titleLoc and self.DoAnchors:
@@ -337,10 +338,11 @@ class tableAsWebTable(object):
                 break
       for remove in removes:
         tr.removeChild(remove)
-  
+
     removes = []
-    for thx in xrange(len(titles.childNodes)):
-      th = titles.childNodes[thx]
+    thnodes = titles.getElementsByTagName("th")
+    for thx in xrange(len(thnodes)):
+      th = thnodes[thx]
       if thx != titleLoc and thx not in displayKindMap["table"]:
         removes.append(th)
     for remove in removes:
