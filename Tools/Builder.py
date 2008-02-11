@@ -501,6 +501,7 @@ def htmlToLaTeX(XML):
   result = ""
   if XML.nodeType == XML.DOCUMENT_NODE:
     result += """\documentclass[twoside]{book}
+\usepackage{pslatex}
 \usepackage{multicol}
 \usepackage{rotating}
 \usepackage{tabularx}
