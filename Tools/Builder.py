@@ -262,21 +262,27 @@ class tableAsWebTable(object):
     displayKindMap = {}
     displayKindMap["table"] = [] # simplifies things later
     displayKindMap["name"] = []
-    for ddx in xrange(len(displayC.childNodes)):
-      disp = displayC.childNodes[ddx]
-      kind = disp.firstChild.nodeValue.lower()
-      displayKind.append(kind)
-      if displayKindMap.has_key(kind): displayKindMap[kind].append(ddx)
-      else: displayKindMap[kind] = [ddx]
+    index = 0
+    dtdnodes = displayC.getElementsByTagName("th")
+    for ddx in xrange(len(dtdnodes)):
+      disp = dtdnodes[ddx]
+      if disp.nodeType == disp.ELEMENT_NODE:
+        kind = disp.firstChild.nodeValue.lower()
+        displayKind.append(kind)
+        if displayKindMap.has_key(kind): displayKindMap[kind].append(index)
+        else: displayKindMap[kind] = [index]
+        index += 1
   
     displayParent.removeChild(display)
     formatParent.removeChild(format)
   
     titleLoc = -1
-    for ddx in xrange(len(titlesC.childNodes)):
-      ttl = titlesC.childNodes[ddx]
-      if ttl.firstChild.nodeValue.lower() == "name":
-        titleLoc = ddx
+    ttdnodes = titlesC.getElementsByTagName("th")
+    for ddx in xrange(len(ttdnodes)):
+      ttl = ttdnodes[ddx]
+      if ttl.nodeType == ttl.ELEMENT_NODE:
+        if ttl.firstChild.nodeValue.lower() == "name":
+          titleLoc = ddx
   
     descriptions = []
     # rowset of all tr within the table
@@ -290,10 +296,11 @@ class tableAsWebTable(object):
       div = tr.cloneNode(tr)
       removes = []
       GID = "G"+str(SR.randrange(5001, 214000000))
-      for tdx in xrange(len(div.childNodes)):
-        td = div.childNodes[tdx]
+      tdnodes = div.getElementsByTagName("td")
+      for tdx in xrange(len(tdnodes)):
+        td = tdnodes[tdx]
         if tdx != titleLoc and tdx not in displayKindMap["description"]:
-          removes.append(div.childNodes[tdx])
+          removes.append(tdnodes[tdx])
         elif tdx == titleLoc:
           td.tagName = "h1"
           td.setAttribute("class","description-title")
