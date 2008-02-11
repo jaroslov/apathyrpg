@@ -51,7 +51,7 @@
 Ô \^O
 Õ \~O
 Ö \"O
-× \texttimes{}
+× \ensuremath{\times}
 Ø \O{}
 Ù \`U
 Ú \'U
