@@ -489,6 +489,8 @@ def catXHTML(XMLs):
   return doc
 
 def htmlToLaTeXC(XML):
+  if XML is None:
+    return ""
   result = ""
   for child in XML.childNodes:
     result += htmlToLaTeX(child)
@@ -498,10 +500,13 @@ def htmlToLaTeX(XML):
   """
     Converts (X)HTML nodes into their appropriate LaTeX version.
   """
+  if XML is None:
+    return ""
   result = ""
   if XML.nodeType == XML.DOCUMENT_NODE:
     result += """\documentclass[twoside]{book}
 \usepackage{pslatex}
+\usepackage{newcent}
 \usepackage{multicol}
 \usepackage{rotating}
 \usepackage{tabularx}
@@ -664,9 +669,47 @@ def htmlToLaTeX(XML):
       if XML.hasAttribute("class"):
         cls = XML.getAttribute("class")
       if cls == "Apathy":
-        result += " {\\bf "+htmlToLaTeXC(XML)+"} "
-      if cls == "define":
+        result += " \\textsc{\\textbf{"+htmlToLaTeXC(XML)+"}} "
+      elif cls == "define":
         result += htmlToLaTeXC(XML)
+      elif cls == "notappl":
+        result += "\\emph{n/a}"
+      elif cls == "roll":
+        bOff = None
+        bonus = None
+        num = None
+        face = None
+        rOff = None
+        raw = None
+        mul = None
+        kind = None
+        for child in XML.childNodes:
+          if child.nodeType == child.ELEMENT_NODE:
+            if child.hasAttribute("class"):
+              atr = child.getAttribute("class")
+              if atr == "bOff": bOff = child
+              elif atr == "bns": bonus = child
+              elif atr == "num": num = child
+              elif atr == "face": face = child
+              elif atr == "rOff": rOff = child
+              elif atr == "raw": raw = child
+              elif atr == "mul": mul = child
+              elif atr == "kind": kind = child
+        roll = "{\\bf"
+        if rOff: roll += "{"+htmlToLaTeXC(rOff)+"}"
+        if raw: roll += "{["+htmlToLaTeXC(raw)+"]}+"
+        roll += "{"+htmlToLaTeXC(num)+"}\\textsc{\\textbf{d}}"
+        roll += "{"+htmlToLaTeXC(face)+"}"
+        if bOff: roll += "{"+htmlToLaTeXC(bOff)+"}"
+        if bonus: roll += "{"+htmlToLaTeXC(bonus)+"}"
+        if mul: roll += "{\\ensuremath{\\times}"+htmlToLaTeXC(mul)+"}"
+        if kind: roll += "~{"+htmlToLaTeXC(kind)+"}"
+        roll += "}"
+        result += " "+roll+" "
+      elif cls == "footnote":
+        result += "\\footnote{"+htmlToLaTeXC(XML)+"}"
+      else:
+        print XML.toxml(encoding="utf-8")
     elif tagl == "h1":
       result += htmlToLaTeXC(XML)
     elif tagl == "p":
