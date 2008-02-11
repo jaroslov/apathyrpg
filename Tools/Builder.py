@@ -571,7 +571,8 @@ def htmlToLaTeX(XML):
         result += sectitle.strip()+"\n"
         result += htmlToLaTeX(body)
       elif cls == "note":
-        result += "{\\bf\\large Note!~}{\\sc~~"+htmlToLaTeXC(XML).strip()+" }\n\n"
+        result += "{\\bf\\large Note!~}{\\sc~~"
+        result += htmlToLaTeXC(XML).strip()+" }\n\n"
       elif cls == "example":
         # examples are poorly structured
         # first child SHOULD be a title (h1), so we use it
@@ -594,7 +595,14 @@ def htmlToLaTeX(XML):
         result += htmlToLaTeXC(XML)
         result += "\\end{figure}\n\n"
       elif cls == "equation":
-        result += "\n\n"+htmlToLaTeXC(XML)+"\n\n"
+        math = XML.getElementsByTagName("math")
+        if len(math) > 0:
+          math = math[0]
+          result += "\n\n\\begin{figure}[h]\n\\begin{center}\n"
+          result += "\\begin{math}\n\\displaystyle\n"
+          result += htmlToLaTeXC(math).strip()
+          result += "\n\\end{math}\n"
+          result += "\\end{center}\n\\end{figure}\n\n"
       elif cls == "reference":
         result += htmlToLaTeXC(XML)
       elif cls == "description-body":
@@ -617,6 +625,8 @@ def htmlToLaTeX(XML):
         result += "\\begin{multicols}{2}\n"
         result += htmlToLaTeXC(XML)
         result += "\\end{multicols}\n"
+      elif cls == "footnote":
+        result += "\\footnote{"+htmlToLaTeXC(XML)+"}"
       else:
         print "CLS"+cls,
     elif tagl == "ul":
@@ -711,7 +721,13 @@ def htmlToLaTeX(XML):
             Head += " {\\sc\\bf "+val+"}"
           for th in ths[1:]:
             val = htmlToLaTeX(th).strip()
-            Head += "& {\sc\\bf "+val+"}"
+            Head += "& {\sc\\bf "
+            if cls == "category":
+              Head += "\\begin{turn}{70}{"
+            Head += val
+            if cls == "category":
+              Head += "}\\end{turn}"
+            Head += "}"
           Head += "\\\\\n"
           Head += "\\hline\n"
           for thx in xrange(len(ths)):
@@ -735,8 +751,45 @@ def htmlToLaTeX(XML):
           if tcaption:
             result += htmlToLaTeX(tcaption)
           result += "\\end{longtable}\n"
+    elif tagl in ["mn","mo","mi"]:
+      result += htmlToLaTeXC(XML).strip()
+    elif tagl == "mrow":
+      result += "{"+htmlToLaTeXC(XML).strip()+"}"
+    elif tagl == "munderover":
+      first = None
+      second = None
+      third = None
+      for child in XML.childNodes:
+        if child.nodeType == child.ELEMENT_NODE:
+          if first is None:
+            first = child
+          elif second is None:
+            second = child
+          elif third is None:
+            third = child
+            break
+      first = "\\displaystyle"+htmlToLaTeXC(first)
+      second = "{"+htmlToLaTeXC(second)+"}"
+      third = "{"+htmlToLaTeXC(third)+"}"
+      result += first+"_"+second+"^"+third
+    elif tagl in ["mfrac","msup"]:
+      first = None
+      second = None
+      for child in XML.childNodes:
+        if child.nodeType == child.ELEMENT_NODE:
+          if first is None:
+            first = child
+          elif second is None:
+            second = child
+            break
+      first = u"{"+htmlToLaTeXC(first).strip()+"}"
+      second = u"{"+htmlToLaTeXC(second)+"}"
+      if tagl == "mfrac":
+        result += "\\frac"+first+second
+      else:
+        result += first + "^" + second
     elif tagl=="math":
-      print XML.toxml(encoding="utf-8")
+      result += "$\\ensuremath{"+htmlToLaTeXC(XML).strip()+"}$"
     elif tagl == "a":
       if XML.hasAttribute("class"):
         cls = XML.getAttribute("class")
