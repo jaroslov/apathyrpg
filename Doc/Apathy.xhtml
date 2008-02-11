@@ -887,21 +887,29 @@
                           </mrow>
                           <mo>n</mo>
                         </munderover>
-                        <mi>i</mi>
+                        <mrow>
+                          <mi>i</mi>
+                          <mo>&#xD7;</mo>
+                          <mi>Rank</mi>
+                        </mrow>
                         <mo>=</mo>
-                        <mfrac>
-                          <mrow>
-                            <msup>
+                        <mrow>
+                          <mi>Rank</mi>
+                          <mo>&#xD7;</mo>
+                          <mfrac>
+                            <mrow>
+                              <msup>
+                                <mi>n</mi>
+                                <mn>2</mn>
+                              </msup>
+                              <mo>+</mo>
                               <mi>n</mi>
+                            </mrow>
+                            <mrow>
                               <mn>2</mn>
-                            </msup>
-                            <mo>+</mo>
-                            <mi>n</mi>
-                          </mrow>
-                          <mrow>
-                            <mn>2</mn>
-                          </mrow>
-                        </mfrac>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
                       </mrow>
                     </math>
                   </p>
@@ -1632,7 +1640,7 @@
                   </h1>
                   <div class="section-body">
                     <p>Hit Points are numbers used to represent how injured or healthy a character is. A character will have TWO Hit Point numbers. Your maximum Hit Points determines how tough your character is at full health. This number will rarely change. It is determined by your BLD and WIL attributes, and will rarely change unless your attributes change.</p>
-                    <p>Your current Hit Points is the most important number. It will likely change frequently during combat. Hit Points are generally represented as a fraction:<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>Current HP</mi><mi>Max HP</mi></mfrac></math>. When the game begins, your character will be fully healthy and uninjured. Thus, when starting, your current HP will be equal to your maximum.</p>
+                    <p>Your current Hit Points is the most important number. It will likely change frequently during combat. Hit Points are generally represented as a fraction:<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>Current~HP</mi><mi>Max HP</mi></mfrac></math>. When the game begins, your character will be fully healthy and uninjured. Thus, when starting, your current HP will be equal to your maximum.</p>
                     <p>As you get injured, any damage you take (after applying armor, etc.) will be applied to your current HP. As you get injured, your current HP drops. Over time, your body will heal itself, and your HP will go up. Seeking medical attention will speed this process. Other things, like magic or cybernetic devices, can heal you as well.</p>
                     <p>Your current HP can never exceed your maximum HP. As a general rule for minor injuries (less than 5 HP), you gain back 1 HP per day of average activity. For significant HP losses, it takes<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mrow><mo>(</mo><mi>Maximum</mi><mo>-</mo><mi>Current</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow></math>days to fully recover your HP.</p>
                     <p>If a character is resting and is under basic medical care, then your healing time is cut in HALF. If your character is under the care of a professional Doctor or Healer, healing time is cut to one QUARTER of normal time.</p>
