@@ -7,6 +7,8 @@ from random import SystemRandom
 import codecs
 from Uni2LaTeX import unicodeToLaTeX
 
+FASTHACK = False
+
 def parseOptions():
   parser = OptionParser()
   parser.add_option("-p","--prefix",dest="prefix",
@@ -32,6 +34,9 @@ def parseOptions():
   parser.add_option("","--retarget-resources",dest="retargetresources",
                     help="retarget image, css, etc. resources",
                     action="store_true")
+  #parser.add_option("","--fast-hack",dest="fasthack",
+  #                  help="debug option to speed generation of sources",
+  #                  action="store_true")
   
   (options, args) = parser.parse_args()
 
@@ -55,6 +60,10 @@ def parseOptions():
     options.prettyprint = False
   if options.retargetresources is None:
     options.retargetresources = False
+  if options.fasthack is None:
+    FASTHACK = False
+  else:
+    FASTHACK = True
 
   return options, args
 
@@ -862,15 +871,32 @@ def htmlToLaTeX(XML):
 
 def buildLatex(options):
   combined = __combine(options, tableAsWebTable(),
-    report=sys.stderr)#, fastHack=True)
+    report=sys.stderr, fastHack=FASTHACK)
   LaTeX = htmlToLaTeX(combined)
   target = open(options.output+".combine.tex","w")
   print >> target, LaTeX.encode("utf-8")
 
+def nukeAttribute(XML,Attrs):
+  if XML.nodeType == XML.ELEMENT_NODE:
+    for attr in Attrs:
+      if XML.hasAttribute(attr):
+        XML.removeAttribute(attr)
+  for child in XML.childNodes:
+    nukeAttribute(child,Attrs)
+
+def nukeAttributesOf(XML,Attrs,Tags):
+  for tag in Tags:
+    things = XML.getElementsByTagName(tag)
+    for thing in things:
+      nukeAttribute(thing,Attrs)
+  return XML
+
 def buildWebPage(options):
   if options.combine:
-    page = __combine(options, tableAsWebTable(), report=sys.stderr)
+    page = __combine(options, tableAsWebTable(),
+                     report=sys.stderr, fastHack=FASTHACK)
     page = addToc(page)
+    page = nukeAttributesOf(page,["width"],["table"])
     page = wrapInHtml(options, page, options.output)
     writeToDisk(options, page, ".webpage.xhtml")
   else:
@@ -878,6 +904,7 @@ def buildWebPage(options):
     for key,page in pages.items():
       page = wrapInHtml(options, page, key)
       page = addToc(page)
+      page = nukeAttributesOf(page,["width"],["table"])
       keyname = key.replace(": ","--")
       appendix = ""
       if ".xhtml" not in keyname:
