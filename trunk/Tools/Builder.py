@@ -34,9 +34,9 @@ def parseOptions():
   parser.add_option("","--retarget-resources",dest="retargetresources",
                     help="retarget image, css, etc. resources",
                     action="store_true")
-  #parser.add_option("","--fast-hack",dest="fasthack",
-  #                  help="debug option to speed generation of sources",
-  #                  action="store_true")
+  parser.add_option("","--fast-hack",dest="fasthack",
+                    help="debug option to speed generation of sources",
+                    action="store_true")
   
   (options, args) = parser.parse_args()
 
