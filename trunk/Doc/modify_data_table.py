@@ -6,11 +6,35 @@ from xml.dom.minidom import parseString
 from optparse import OptionParser
 import codecs
 
+USAGE_MESSAGE = """How to use this tool:
+
+This tool is designed to allow you to easily add or remove columns from an
+Apathy Data Table. To add a column do the following:
+
+1. Give the name of the Apathy Data Table to modify (or standard input)
+2. Choose insertion method: --append or --insert
+3. If you chose to "insert", choose a 0-offset position to insert at; for
+   example, --insert=0 (-i0) means to insert before the first column.
+4. Optional: choose a column to clone, --clone=4 (clones the 5th column)
+5. Optional: choose default body of the <td> element:
+      --td-text="<p>Foo</p>"
+   This must be valid HTML or XML
+6. Optional: choose the name of an output file to write to (can be source file).
+   If the file is written to disk, `xmllint --format` will be called on it,
+   automatically.
+
+Example:
+>>> %s Equipment-Melee-Blunt.xhtml --append --clone=3 --td-text="<p>None.</p>" \\
+     --output="Equipment-Melee-Blunt.xhtml"
+"""%(sys.argv[0])
+
 def parseOptions():
   parser = OptionParser()
+  parser.add_option("-u","--usage",dest="usage",help="explain how to use",
+                    action="store_true", metavar="SWITCH")
   parser.add_option("-o","--output",dest="output",
                     help="the output file name", metavar="FILE")
-  parser.add_option("-c","--duplicate-from-element",dest="duplicate",
+  parser.add_option("-c","--clone",dest="duplicate",
                     help="the column to duplicate from", metavar="INTEGER")
   parser.add_option("-i","--insert",dest="insert",
                     help="the position to insert a column at", 
@@ -27,10 +51,16 @@ def parseOptions():
   
   (options, args) = parser.parse_args()
 
+  if parser.usage:
+    parser.print_help(sys.stderr)
+    print >> sys.stderr, USAGE_MESSAGE
+    sys.exit(1)
+
   if len(args) != 1:
     print >> sys.stderr, "see --help"
     parser.print_help(sys.stderr)
     sys.exit(1)
+
   def bool_to_int(val):
     if val: return 1
     else: return 0
@@ -49,30 +79,30 @@ def do_action(someRow, fragment, options):
   example = None
   duplicate = 0
   remove = 0
+  rmnode = 0
   if options.duplicate:
     duplicate = int(options.duplicate)
   if options.remove:
     remove = int(options.remove)
-  offset = 0
-  rmnode = 0
-  tdoff = 0
+  td_off = 0
+  ttl_off = 0
   for is_ts in someRow.childNodes:
     if is_ts.nodeType == is_ts.ELEMENT_NODE and is_ts.tagName in ["th", "td"]:
-      if offset == duplicate:
+      if td_off == duplicate:
         example = is_ts.cloneNode(is_ts)
         if is_ts.tagName == "td":
           if fragment is not None:
             example.childNodes = [fragment]
           else:
             example.childNodes = []
-      if tdoff == remove:
-        rmnode = offset
-      tdoff += 1
-    offset += 1
+      if td_off == remove:
+        rmnode = ttl_off
+      td_off += 1
+    ttl_off += 1
   if options.insert:
     someRow.childNodes.insert(int(options.insert), example)
   elif options.append:
-    someRow.appendChild(example)
+    someRow.childNodes.append(example)
   elif options.remove:
     someRow.childNodes.remove(someRow.childNodes[rmnode])
 
@@ -96,6 +126,15 @@ def modify_file(xmlfile_name, options):
               for is_tr in is_ts.childNodes:
                 if is_tr.nodeType == is_tr.ELEMENT_NODE:
                   do_action(is_tr, td_xml, options)
+  ofile = sys.stdout
+  lint = False
+  if options.output:
+    ofile = file(options.output, "w")
+    lint = True
+  print >> ofile, xmlfile.toxml(encoding="utf-8")
+  ofile.close()
+  if lint:
+    os.system("xmllint --xmlout --format %s -o %s"%(options.output, options.output))
 
 if __name__=="__main__":
   options, xmlfile_name = parseOptions()
