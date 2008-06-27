@@ -851,7 +851,7 @@ def htmlToLaTeX(XML):
       else:
         result += first + "^" + second
     elif tagl=="math":
-      result += "$\\ensuremath{"+htmlToLaTeXC(XML).strip()+"}$"
+      result += " $\\ensuremath{"+htmlToLaTeXC(XML).strip()+"}$ "
     elif tagl == "a":
       if XML.hasAttribute("class"):
         cls = XML.getAttribute("class")
