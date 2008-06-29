@@ -932,4 +932,4 @@ if __name__=="__main__":
   if options.latex:
     buildLatex(options)
   if options.xhtml:
-    buildWebPage(options)    
+    buildWebPage(options)
