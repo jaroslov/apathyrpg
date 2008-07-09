@@ -231,9 +231,29 @@ def __combine(options, translate, report=sys.stdout, fastHack=False):
       img.setAttribute("src",npath)
   return Main
 
+def get_title_of_possible_section(div, kind):
+  if not div.hasAttribute("class") or div.getAttribute("class") != kind:
+    return
+  for findh1 in div.childNodes:
+    if findh1.nodeType == findh1.ELEMENT_NODE and findh1.tagName == "h1":
+      for findp in findh1.childNodes:
+        if findp.nodeType == findp.ELEMENT_NODE and findp.tagName == "p":
+          for findtxt in findp.childNodes:
+            if findtxt.nodeType == findtxt.TEXT_NODE:
+              return findtxt.nodeValue
 
 def remove_excluded(XML, options):
-  print options.exclude_list
+  divs = XML.getElementsByTagName("div")
+  for exclude in options.exclude_list:
+    founddivs = []
+    for div in divs:
+      title = get_title_of_possible_section(div, exclude[0])
+      if exclude[1] == title:
+        founddivs.append(div)
+    for founddiv in founddivs:
+      pnode = founddiv.parentNode
+      pnode.removeChild(founddiv)
+  return XML
 
 def combine(options):
   """
