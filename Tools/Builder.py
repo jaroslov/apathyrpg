@@ -37,6 +37,9 @@ def parseOptions():
   parser.add_option("","--fast-hack",dest="fasthack",
                     help="debug option to speed generation of sources",
                     action="store_true")
+  parser.add_option("","--exclude-file",dest="exclude_list",
+                    help="Used to remove sections of the document by chapter title",
+                    metavar="FILE")
   
   (options, args) = parser.parse_args()
 
@@ -64,6 +67,11 @@ def parseOptions():
     FASTHACK = False
   else:
     FASTHACK = True
+  if options.exclude_list:
+    excludefile = [s.strip() for s in open(options.exclude_list, "r").readlines()]
+    options.exclude_list = []
+    for item in excludefile:
+      options.exclude_list.append((item[:item.find(' ')], item[item.find(' ')+1:]))
 
   return options, args
 
@@ -222,6 +230,10 @@ def __combine(options, translate, report=sys.stdout, fastHack=False):
       npath = os.path.normpath(npath)
       img.setAttribute("src",npath)
   return Main
+
+
+def remove_excluded(XML, options):
+  print options.exclude_list
 
 def combine(options):
   """
@@ -872,6 +884,7 @@ def htmlToLaTeX(XML):
 def buildLatex(options):
   combined = __combine(options, tableAsWebTable(),
     report=sys.stderr, fastHack=FASTHACK)
+  combined = remove_excluded(combined, options)
   LaTeX = htmlToLaTeX(combined)
   target = open(options.output+".combine.tex","w")
   print >> target, LaTeX.encode("utf-8")
@@ -895,6 +908,7 @@ def buildWebPage(options):
   if options.combine:
     page = __combine(options, tableAsWebTable(),
                      report=sys.stderr, fastHack=FASTHACK)
+    page = remove_excluded(page, options)
     page = addToc(page)
     page = nukeAttributesOf(page,["width"],["table"])
     page = wrapInHtml(options, page, options.output)

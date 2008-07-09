@@ -1,3 +1,5 @@
+MEDIEVAL = --exclude-file=Tools/Medieval.exl
+
 all: pdf webpage
 
 webpage:
