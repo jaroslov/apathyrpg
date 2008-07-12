@@ -818,7 +818,7 @@ def htmlToLaTeX(XML):
             val = htmlToLaTeX(th).strip()
             Head += "& {\sc\\bf "
             if cls == "category":
-              Head += "\\begin{turn}{70}{"
+              Head += "\\begin{turn}{90}{"
             Head += val
             if cls == "category":
               Head += "}\\end{turn}"
