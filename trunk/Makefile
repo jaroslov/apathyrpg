@@ -2,6 +2,9 @@ MEDIEVAL = --exclude-file=Tools/Medieval.exl
 
 all: pdf webpage medieval-wb medieval-pdf
 
+clean:
+	rm -f *.aux *.lof *.log *.lot *.out *.toc
+
 standard: webpage pdf
 
 medieval: medieval-wb medieval-pdf
