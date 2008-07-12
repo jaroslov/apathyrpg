@@ -5,6 +5,9 @@ all: pdf webpage medieval-wb medieval-pdf
 clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc
 
+squeaky-clean:
+	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
+
 standard: webpage pdf
 
 medieval: medieval-wb medieval-pdf
