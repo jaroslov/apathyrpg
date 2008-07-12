@@ -568,6 +568,7 @@ def htmlToLaTeX(XML):
       if XML.hasAttribute("class"): cls = XML.getAttribute("class")
       if cls == "book": # the whole book
         result += "\\begin{document}\n"
+        result += "\\begin{small}\n" # small font =)
         result += """\\newcounter{ExampleCounter}
   \\setcounter{ExampleCounter}{1}
   \\newcommand{\\quoteexample}[2][~] {
@@ -583,7 +584,7 @@ def htmlToLaTeX(XML):
     \\addtocounter{ExampleCounter}{1}
   }"""
         result += htmlToLaTeXC(XML)
-        result += "\\end{document}"
+        result += "\\end{small}\n\n\\end{document}"
       elif cls == "header": # title page
         result += "\\begin{titlepage}\n\\begin{center}"
         result += htmlToLaTeXC(XML)
