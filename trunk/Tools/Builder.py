@@ -243,6 +243,7 @@ def get_title_of_possible_section(div, kind):
               return findtxt.nodeValue
 
 def remove_excluded(XML, options):
+  if options.exclude_list is None: return XML
   divs = XML.getElementsByTagName("div")
   for exclude in options.exclude_list:
     founddivs = []
@@ -545,7 +546,7 @@ def htmlToLaTeX(XML):
     return ""
   result = ""
   if XML.nodeType == XML.DOCUMENT_NODE:
-    result += """\documentclass[twoside]{book}
+    result += """\documentclass[twoside,10pt]{book}
 \usepackage{pslatex}
 \usepackage{newcent}
 \usepackage{multicol}
@@ -558,7 +559,7 @@ def htmlToLaTeX(XML):
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{wrapfig}
-\usepackage[text={6.5in,8in},textheight=8in]{geometry}\n"""
+\usepackage[text={7in,7.75in},textheight=8in]{geometry}\n"""
     result += htmlToLaTeXC(XML)
   elif XML.nodeType == XML.ELEMENT_NODE:
     tagl = XML.tagName.lower()
