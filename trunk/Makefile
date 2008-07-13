@@ -21,4 +21,4 @@ pdf:
 	pdflatex Apathy.combine.tex >& pdf.log
 	pdflatex Apathy.combine.tex >& pdf.log
 	pdflatex Apathy.combine.tex >& pdf.log
-	mv Apathy.combine.pdf Apathy.pdf
+	mv Apathy.combine.pdf Apathy.p

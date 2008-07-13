@@ -197,6 +197,13 @@ def retarget_resources(Node, options):
     img.set('src', src)
   return Node
 
+def strip_width_from_tables(Node, options):
+  ## strip the 'width' attribute from all tables
+  ths = Node.xpath("//th[@width]")
+  for th in ths:
+    del th.attrib['width']
+  return Node
+
 def wrap_in_html(Node, options):
   wrapper = """<html xml:lang="en">
     <head>
@@ -213,7 +220,8 @@ def wrap_in_html(Node, options):
   cdgh = wrapnode.xpath("//combined-data-goes-here")[0]
   cdgh.getparent().insert(0, Node)
   html = wrapnode.xpath("//html")[0]
-  html = retarget_resources(html)
+  html = retarget_resources(html, options)
+  html = strip_width_from_tables(html, options)
   html.set('xmlns', "http://www.w3.org/1999/xhtml")
   return wrapnode
 
