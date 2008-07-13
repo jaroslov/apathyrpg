@@ -188,6 +188,15 @@ def combine_references(DocNode, options):
     ipparent.replace(summarize, subdoc)
   return DocNode
 
+def retarget_resources(Node, options):
+  ## we only support <img src='...' /> for now
+  imgs = Node.xpath("//img")
+  for img in imgs:
+    src = img.get('src')
+    src = os.path.join(options.prefix, src)
+    img.set('src', src)
+  return Node
+
 def wrap_in_html(Node, options):
   wrapper = """<html xml:lang="en">
     <head>
@@ -204,6 +213,7 @@ def wrap_in_html(Node, options):
   cdgh = wrapnode.xpath("//combined-data-goes-here")[0]
   cdgh.getparent().insert(0, Node)
   html = wrapnode.xpath("//html")[0]
+  html = retarget_resources(html)
   html.set('xmlns', "http://www.w3.org/1999/xhtml")
   return wrapnode
 
