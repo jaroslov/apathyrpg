@@ -220,8 +220,6 @@ def wrap_in_html(Node, options):
   cdgh = wrapnode.xpath("//combined-data-goes-here")[0]
   cdgh.getparent().insert(0, Node)
   html = wrapnode.xpath("//html")[0]
-  html = retarget_resources(html, options)
-  html = strip_width_from_tables(html, options)
   html.set('xmlns', "http://www.w3.org/1999/xhtml")
   return wrapnode
 
@@ -236,7 +234,13 @@ def special_tag_transform(Node):
       apathy.text += txt
   return Node
 
-def buildLatex(options): pass
+def buildLatex(options):
+  # combine together
+  docname = os.path.join(options.prefix, options.main+".xhtml")
+  maindoc = etree.parse(docname)
+  maindoc = combine_references(maindoc, options)
+  maindoc = retarget_resources(maindoc, options)
+  print >> sys.stdout, etree.tostring(maindoc)
 
 def buildWebPage(options):
   # combine together
@@ -244,6 +248,8 @@ def buildWebPage(options):
   maindoc = etree.parse(docname)
   maindoc = combine_references(maindoc, options)
   maindoc = special_tag_transform(maindoc)
+  maindoc = retarget_resources(maindoc, options)
+  maindoc = strip_width_from_tables(maindoc, options)
   maindoc = wrap_in_html(maindoc.getroot(), options)
   print >> sys.stdout, etree.tostring(maindoc)
 
