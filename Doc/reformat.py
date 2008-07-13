@@ -26,6 +26,6 @@ for file in files:
         ths["titles"][thdx].set('class', str(ths["display"][thdx].text))
       thparent.remove(theads["display"])
       thparent.remove(theads["format"])
-      print etree.tostring(XML)
-    targ = open(file, "w")
-      
+      value = etree.tostring(XML)
+      ofile = open(file, "w")
+      print >> ofile, value
