@@ -59,14 +59,48 @@ def parseOptions():
 def xpath (Node, Path):
   return Node.xpath(Path, namespaces=HTMLNSMap)
 
+def transform_table(subdoc, options):
+  """
+  Given a Category Table, convert it for display:
+  (1) extract Title & Description and build per-entry information
+  (2) remove all-Non-Table values
+  """
+  ths = subdoc.xpath("//th")
+  title = subdoc.xpath("//th[@class='Title']")[0]
+  description = subdoc.xpath("//th[@class='Description']")[0]
+  tables = subdoc.xpath("//th[@class='Table']")
+  rows = subdoc.xpath("//tr")
+  print >> sys.stderr, len(rows)
+  return subdoc
+
 def combine_references(DocNode, options):
-  inplaces = xpath(DocNode, "//x:a[@class='hrid']")
-  for inplace in inplaces:
-    subdocname = os.path.join(options.prefix, inplace.attrib["href"])
+  hrids = DocNode.xpath("//a[@class='hrid']")
+  for hrid in hrids:
+    subdocname = os.path.join(options.prefix, hrid.attrib["href"])
     subdoc = etree.parse(subdocname).getroot()
-    ipparent = inplace.getparent()
-    ipparent.replace(inplace, subdoc)
+    subdoc = transform_table(subdoc, options)
+    ipparent = hrid.getparent()
+    ipparent.replace(hrid, subdoc)
   return DocNode
+
+def wrap_in_html(Node, options):
+  wrapper = """<html xml:lang="en">
+    <head>
+      <title>Apathy Role Playing Game</title>
+      <link rel="stylesheet" type="text/css"
+            href="%s/Apathy.css" title="Apathy" />
+    </head>
+    <body>
+      <combined-data-goes-here />
+    </body>
+  </html>
+  """%options.prefix
+  wrapnode = etree.fromstring(wrapper)
+  cdgh = wrapnode.xpath("//combined-data-goes-here")[0]
+  cdgh.getparent().insert(0, Node)
+  html = wrapnode.xpath("//html")[0]
+  html.set('xmlns', "http://www.w3.org/1999/xhtml")
+  return wrapnode
 
 def buildLatex(options): pass
 
@@ -75,7 +109,8 @@ def buildWebPage(options):
   docname = os.path.join(options.prefix, options.main+".xhtml")
   maindoc = etree.parse(docname)
   maindoc = combine_references(maindoc, options)
-  maindoc.write(sys.stdout)
+  maindoc = wrap_in_html(maindoc.getroot(), options)
+  print >> sys.stdout, etree.tostring(maindoc)
 
 if __name__=="__main__":
   options, args = parseOptions()
