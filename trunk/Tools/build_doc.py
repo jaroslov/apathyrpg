@@ -12,6 +12,12 @@ FASTHACK = False
 HTMLNS = """http://www.w3.org/1999/xhtml"""
 HTMLNSMap = {'x':HTMLNS}
 
+def apathy_hash(string):
+  hash = ""
+  for s in string:
+    hash += str(ord(s))
+  return hash
+
 def parseOptions():
   parser = OptionParser()
   parser.add_option("-p","--prefix",dest="prefix",
@@ -69,6 +75,34 @@ def get_column(table, index):
       column.append(None)
   return column
 
+def transform_summarize_table(subdoc, options):
+  not_in_tables = subdoc.xpath("//th[@class!='Title' and @class!='Table']")
+  not_in_columns = []
+  for nit in not_in_tables:
+    not_in_columns.append(get_column(subdoc, nit.getparent().index(nit)))
+  thead = subdoc.xpath("//thead")[0]
+  title = subdoc.xpath("//th[@class='Title']")
+  if len(title) <= 0:
+    return subdoc # no title; it can happen with a "dummy" table
+  title = title[0]
+  titledx = title.getparent().index(title)
+  rows = subdoc.xpath("//tr")
+  for rdx in xrange(len(rows)):
+    row = rows[rdx]
+    td = etree.Element("td")
+    p = etree.SubElement(td, "p")
+    titleptxt = row[titledx].xpath("./p")[0].text
+    a = etree.SubElement(p, "a", href="#id%s"%(apathy_hash(titleptxt)))
+    a.text = titleptxt
+    row.replace(row[titledx], td)
+    for nic in not_in_columns:
+      nicol = nic[rdx]
+      if nicol is not None:
+        row.remove(nicol)
+  for nit in not_in_tables:
+    thead.remove(nit)
+  return subdoc
+
 def transform_hrid_table(subdoc, options):
   """
   Given a Category Table, convert it for display:
@@ -85,7 +119,6 @@ def transform_hrid_table(subdoc, options):
   </div>
 </div>
 """
-  random.seed()
   title = subdoc.xpath("//th[@class='Title']")[0]
   description = subdoc.xpath("//th[@class='Description']")[0]
   tables = subdoc.xpath("//th[@class='Table']")
@@ -105,13 +138,13 @@ def transform_hrid_table(subdoc, options):
   for rdx in xrange(len(rows)):
     row = rows[rdx]
     ## build the description set
-    Nid = "id%04d%04d"%(random.randint(1201,9998), random.randint(315,8995))
     DescNode = etree.fromstring(Desc)
     titledx = title.getparent().index(title)
     descdx = description.getparent().index(description)
     titlep = DescNode.xpath("//h1/p")[0]
     bodyp = DescNode.xpath("//div[@class='description-body']/p")[0]
     titlep.text = row.getchildren()[titledx].xpath("p")[0].text
+    Nid = "id%s"%(apathy_hash(titlep.text))
     bodyp.text = row.getchildren()[descdx].xpath("p")[0].text
     DescNode.set('id', Nid)
     DSetNode.append(DescNode)
@@ -147,7 +180,12 @@ def combine_references(DocNode, options):
     ipparent = hrid.getparent()
     ipparent.replace(hrid, subdoc)
   summarizes = DocNode.xpath("//a[@class='summarize']")
-  print >> sys.stderr, summarizes
+  for summarize in summarizes:
+    subdocname = os.path.join(options.prefix, summarize.attrib["href"])
+    subdoc = etree.parse(subdocname).getroot()
+    subdoc = transform_summarize_table(subdoc, options)
+    ipparent = summarize.getparent()
+    ipparent.replace(summarize, subdoc)
   return DocNode
 
 def wrap_in_html(Node, options):
