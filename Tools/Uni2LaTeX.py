@@ -1,4 +1,4 @@
-import codecs
+import codecs, sys
 ###
 #  Convert a Unicode character to a LaTeX code
 #
@@ -18,7 +18,7 @@ import codecs
 def buildMapFrom(where):
   Map = {}
   for wh in where:
-    print wh
+    print >> sys.stderr, wh
     mappinglines = codecs.open(wh,"r","utf-8").readlines()
     for mappingline in mappinglines:
       umapping = unicode(mappingline)
