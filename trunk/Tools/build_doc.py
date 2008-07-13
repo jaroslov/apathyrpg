@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.5
 
-import os, sys
+import os, sys, random
 from optparse import OptionParser
 from lxml import etree
 from random import SystemRandom
@@ -59,20 +59,84 @@ def parseOptions():
 def xpath (Node, Path):
   return Node.xpath(Path, namespaces=HTMLNSMap)
 
+def get_column(table, index):
+  trows = table.xpath("//tr")
+  column = []
+  for trow in trows:
+    if index < len(trow.getchildren()):
+      column.append(trow.getchildren()[index])
+    else:
+      column.append(None)
+  return column
+
 def transform_table(subdoc, options):
   """
   Given a Category Table, convert it for display:
   (1) extract Title & Description and build per-entry information
   (2) remove all-Non-Table values
   """
-  ths = subdoc.xpath("//th")
+  DSet = """<div class="description-set"/>"""
+  Desc = """\n<div class="description">
+  <h1 class="description-title" title="yes">
+    <p/>
+  </h1>
+  <div class="description-body" description="yes">
+    <p/>
+  </div>
+</div>
+"""
+  random.seed()
   title = subdoc.xpath("//th[@class='Title']")[0]
   description = subdoc.xpath("//th[@class='Description']")[0]
   tables = subdoc.xpath("//th[@class='Table']")
+  not_in_tables = subdoc.xpath("//th[@class!='Title' and @class!='Table']")
   rows = subdoc.xpath("//tr")
-  title.getparent().remove(tables)
-  print >> sys.stderr, len(rows)
-  return subdoc
+  title_column = get_column(subdoc, title.getparent().index(title))
+  descr_column = get_column(subdoc, description.getparent().index(description))
+  table_columns = []
+  for table in tables:
+    table_columns.append(get_column(subdoc, table.getparent().index(table)))
+  not_in_columns = []
+  for not_in_table in not_in_tables:
+    not_in_columns.append(get_column(subdoc, not_in_table.getparent().index(not_in_table)))
+
+  # Build the description set and update the table
+  DSetNode = etree.fromstring(DSet)
+  for rdx in xrange(len(rows)):
+    row = rows[rdx]
+    ## build the description set
+    Nid = "id%04d%04d"%(random.randint(1201,9998), random.randint(315,8995))
+    DescNode = etree.fromstring(Desc)
+    titledx = title.getparent().index(title)
+    descdx = description.getparent().index(description)
+    titlep = DescNode.xpath("//h1/p")[0]
+    bodyp = DescNode.xpath("//div[@class='description-body']/p")[0]
+    titlep.text = row.getchildren()[titledx].xpath("p")[0].text
+    bodyp.text = row.getchildren()[descdx].xpath("p")[0].text
+    DescNode.set('id', Nid)
+    DSetNode.append(DescNode)
+    # remove non-table/non-title items
+    for not_in_columnz in not_in_columns:
+      nicol = not_in_columnz[rdx]
+      if nicol is not None:
+        row.remove(nicol)
+    a_elt = etree.Element("a", href="#"+Nid)
+    titlep = row[titledx].xpath("./p")[0]
+    a_elt.text = titlep.text
+    p_elt = etree.Element("p"); p_elt.append(a_elt)
+    td_elt = etree.Element("td"); td_elt.append(p_elt)
+    row.remove(row.getchildren()[0])
+    row.insert(0, td_elt)
+
+  ## nuke thead columns we don't want
+  for nit in not_in_tables:
+    title.getparent().remove(nit)
+
+  rdiv = etree.Element("div")
+  rdiv.append(subdoc)
+  rdiv.append(DSetNode)
+
+  return rdiv
 
 def combine_references(DocNode, options):
   hrids = DocNode.xpath("//a[@class='hrid']")
@@ -103,6 +167,17 @@ def wrap_in_html(Node, options):
   html.set('xmlns', "http://www.w3.org/1999/xhtml")
   return wrapnode
 
+def special_tag_transform(Node):
+  apathys = Node.xpath("//Apathy")
+  for apathy in apathys:
+    apathy.tag = "span"
+    apathy.set('class', "Apathy")
+    txt = apathy.text
+    apathy.text = "ApAthy"
+    if txt is not None:
+      apathy.text += txt
+  return Node
+
 def buildLatex(options): pass
 
 def buildWebPage(options):
@@ -110,6 +185,7 @@ def buildWebPage(options):
   docname = os.path.join(options.prefix, options.main+".xhtml")
   maindoc = etree.parse(docname)
   maindoc = combine_references(maindoc, options)
+  maindoc = special_tag_transform(maindoc)
   maindoc = wrap_in_html(maindoc.getroot(), options)
   print >> sys.stdout, etree.tostring(maindoc)
 
