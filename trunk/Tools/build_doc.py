@@ -70,6 +70,7 @@ def transform_table(subdoc, options):
   description = subdoc.xpath("//th[@class='Description']")[0]
   tables = subdoc.xpath("//th[@class='Table']")
   rows = subdoc.xpath("//tr")
+  title.getparent().remove(tables)
   print >> sys.stderr, len(rows)
   return subdoc
 
