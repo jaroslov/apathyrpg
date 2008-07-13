@@ -69,7 +69,7 @@ def get_column(table, index):
       column.append(None)
   return column
 
-def transform_table(subdoc, options):
+def transform_hrid_table(subdoc, options):
   """
   Given a Category Table, convert it for display:
   (1) extract Title & Description and build per-entry information
@@ -143,9 +143,11 @@ def combine_references(DocNode, options):
   for hrid in hrids:
     subdocname = os.path.join(options.prefix, hrid.attrib["href"])
     subdoc = etree.parse(subdocname).getroot()
-    subdoc = transform_table(subdoc, options)
+    subdoc = transform_hrid_table(subdoc, options)
     ipparent = hrid.getparent()
     ipparent.replace(hrid, subdoc)
+  summarizes = DocNode.xpath("//a[@class='summarize']")
+  print >> sys.stderr, summarizes
   return DocNode
 
 def wrap_in_html(Node, options):
