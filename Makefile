@@ -8,9 +8,8 @@ clean:
 squeaky-clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
 
-standard: webpage pdf
-
-medieval: medieval-wb medieval-pdf
+test:
+	./Tools/build_doc.py --prefix=Doc/ -w --retarget-resources > tmp.xhtml
 
 webpage:
 	./Tools/Builder.py --prefix=Doc/ -wc --retarget-resources >& webpage.log
@@ -23,15 +22,3 @@ pdf:
 	pdflatex Apathy.combine.tex >& pdf.log
 	pdflatex Apathy.combine.tex >& pdf.log
 	mv Apathy.combine.pdf Apathy.pdf
-
-medieval-wb:
-	./Tools/Builder.py ${MEDIEVAL} --prefix=Doc/ -wc --retarget-resources >& webpage.log
-	mv Apathy.combine.xhtml Apathy.medieval.xhtml
-
-medieval-pdf:
-	./Tools/Builder.py ${MEDIEVAL} --prefix=Doc/ -l --retarget-resources >& tex.log
-	pdflatex Apathy.combine.tex >& pdf.log
-	pdflatex Apathy.combine.tex >& pdf.log
-	pdflatex Apathy.combine.tex >& pdf.log
-	pdflatex Apathy.combine.tex >& pdf.log
-	mv Apathy.combine.pdf Apathy.medieval.pdf
