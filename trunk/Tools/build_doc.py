@@ -42,6 +42,9 @@ def parseOptions():
   parser.add_option("","--time-period",dest="time_period",
                     help="keeps only those sections before a certain time (date)",
                     metavar="INTEGER")
+  parser.add_option("","--category-exclusion-list",dest="exclude",
+                    help="A file of which categories to exclude from the final document",
+                    metavar="EXCLUSION LIST")
 
   
   (options, args) = parser.parse_args()
@@ -66,6 +69,10 @@ def parseOptions():
     options.time_period = int(options.time_period)
   except:
     options.time_period = 1000000000000
+  if options.exclude is None:
+    options.exclude = []
+  else:
+    options.exclude = [s.strip() for s in open(options.exclude, "r").readlines()]
 
   return options, args
 
@@ -257,12 +264,21 @@ def remove_by_timeperiod(Node, options):
         timed.getparent().remove(timed)
   return Node
 
+def remove_by_exclude_category(Node, options):
+  for category in options.exclude:
+    catteds = Node.xpath("//*[@category='%s']"%category)
+    for catted in catteds:
+      catted.getparent().remove(catted)
+  return Node
+
 def buildLatex(options):
   # combine together
   docname = os.path.join(options.prefix, options.main+".xhtml")
   maindoc = etree.parse(docname)
   maindoc = combine_references(maindoc, options)
   maindoc = retarget_resources(maindoc, options)
+  maindoc = remove_by_timeperiod(maindoc, options)
+  maindoc = remove_by_exclude_category(maindoc, options)
   print >> sys.stdout, etree.tostring(maindoc)
 
 def buildWebPage(options):
@@ -274,6 +290,7 @@ def buildWebPage(options):
   maindoc = retarget_resources(maindoc, options)
   maindoc = strip_width_from_tables(maindoc, options)
   maindoc = remove_by_timeperiod(maindoc, options)
+  maindoc = remove_by_exclude_category(maindoc, options)
   maindoc = wrap_in_html(maindoc.getroot(), options)
   print >> sys.stdout, etree.tostring(maindoc)
 
