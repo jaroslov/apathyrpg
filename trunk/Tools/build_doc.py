@@ -45,6 +45,9 @@ def parseOptions():
   parser.add_option("","--category-exclusion-list",dest="exclude",
                     help="A file of which categories to exclude from the final document",
                     metavar="EXCLUSION LIST")
+  parser.add_option("","--list-categories",dest="list_categories",
+                    help="Lists the set of categories in the document",
+                    action="store_true")
 
   
   (options, args) = parser.parse_args()
@@ -73,6 +76,8 @@ def parseOptions():
     options.exclude = []
   else:
     options.exclude = [s.strip() for s in open(options.exclude, "r").readlines()]
+  if options.list_categories is None:
+    options.list_categories = False
 
   return options, args
 
@@ -271,12 +276,23 @@ def remove_by_exclude_category(Node, options):
       catted.getparent().remove(catted)
   return Node
 
+def report_categories(Node, options):
+  if options.list_categories:
+    catnodes = Node.xpath("//*[@category]")
+    cats = []
+    for catnode in catnodes:
+      cats.append(catnode.get('category'))
+    cats = list(set(cats))
+    for cat in cats:
+      print >> sys.stderr, cat
+
 def buildLatex(options):
   # combine together
   docname = os.path.join(options.prefix, options.main+".xhtml")
   maindoc = etree.parse(docname)
   maindoc = combine_references(maindoc, options)
   maindoc = retarget_resources(maindoc, options)
+  report_categories(maindoc, options) 
   maindoc = remove_by_timeperiod(maindoc, options)
   maindoc = remove_by_exclude_category(maindoc, options)
   print >> sys.stdout, etree.tostring(maindoc)
@@ -288,6 +304,7 @@ def buildWebPage(options):
   maindoc = combine_references(maindoc, options)
   maindoc = special_tag_transform(maindoc)
   maindoc = retarget_resources(maindoc, options)
+  report_categories(maindoc, options)
   maindoc = strip_width_from_tables(maindoc, options)
   maindoc = remove_by_timeperiod(maindoc, options)
   maindoc = remove_by_exclude_category(maindoc, options)
