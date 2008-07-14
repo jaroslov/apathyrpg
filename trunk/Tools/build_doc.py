@@ -134,7 +134,6 @@ def transform_hrid_table(subdoc, options):
     <p/>
   </h1>
   <div class="description-body" description="yes">
-    <p/>
   </div>
 </div>
 """
@@ -161,10 +160,12 @@ def transform_hrid_table(subdoc, options):
     titledx = title.getparent().index(title)
     descdx = description.getparent().index(description)
     titlep = DescNode.xpath("//h1/p")[0]
-    bodyp = DescNode.xpath("//div[@class='description-body']/p")[0]
+    bodydiv = DescNode.xpath("//div[@class='description-body']")[0]
     titlep.text = row.getchildren()[titledx].xpath("p")[0].text
     Nid = "id%s"%(apathy_hash(titlep.text))
-    bodyp.text = row.getchildren()[descdx].xpath("p")[0].text
+    children = row.getchildren()[descdx].getchildren()
+    for child in children:
+      bodydiv.append(child)
     DescNode.set('id', Nid)
     DSetNode.append(DescNode)
     # remove non-table/non-title items
