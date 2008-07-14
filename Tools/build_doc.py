@@ -337,6 +337,28 @@ def insert_table_of_contents(Node):
   parts[0].getparent().insert(0, partol)
   return Node
 
+def convert_to_latex(Node):
+  latex = ""
+  if Node.tag == 'div':
+    if Node.attrib.has_key('class'):
+      klass = Node.get('class')
+      if klass == 'book':
+        for child in Node.getchildren():
+          latex += "\n"+convert_to_latex(child)
+      elif klass == 'part':
+        for child in Node.getchildren():
+          latex += "\n"+convert_to_latex(child)
+      elif klass == 'header':
+        pass # handle the header (authorial) information here
+      elif klass == 'section-body':
+        for child in Node.getchildren():
+          latex += "\n"+convert_to_latex(child)
+      else:
+        print >> sys.stderr, "Unknown div-class attribute `%s'."%klass
+  else:
+    print >> sys.stderr, "Unknown node named `%s'."%Node.tag
+  return latex
+
 def buildDocument(options):
   # combine together
   docname = os.path.join(options.prefix, options.main+".xhtml")
@@ -351,7 +373,8 @@ def buildDocument(options):
 
 def buildLatex(options):
   maindoc = buildDocument(options)
-  print >> sys.stdout, etree.tostring(maindoc)
+  maindoc = convert_to_latex(maindoc.getroot())
+  print >> sys.stdout, maindoc
 
 def buildWebPage(options):
   maindoc = buildDocument(options)
