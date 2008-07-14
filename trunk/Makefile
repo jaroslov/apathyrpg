@@ -9,7 +9,7 @@ squeaky-clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
 
 test:
-	./Tools/build_doc.py --prefix=Doc/ -w --retarget-resources --time-period=1750 --category-exclusion-list=Tools/Medieval.exl --list-categories > tmp.xhtml
+	./Tools/build_doc.py --prefix=Doc/ -w --retarget-resources --time-period=1750 --category-exclusion-list=Tools/Medieval.exl > tmp.xhtml
 
 webpage:
 	./Tools/Builder.py --prefix=Doc/ -wc --retarget-resources >& webpage.log
