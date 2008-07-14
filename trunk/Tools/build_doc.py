@@ -39,6 +39,9 @@ def parseOptions():
   parser.add_option("","--retarget-resources",dest="retargetresources",
                     help="retarget image, css, etc. resources",
                     action="store_true")
+  parser.add_option("","--time-period",dest="time_period",
+                    help="keeps only those sections before a certain time (date)",
+                    metavar="INTEGER")
 
   
   (options, args) = parser.parse_args()
@@ -59,6 +62,10 @@ def parseOptions():
     options.main = "Apathy"
   if options.retargetresources is None:
     options.retargetresources = False
+  try: # convert time-period to an integer
+    options.time_period = int(options.time_period)
+  except:
+    options.time_period = 1000000000000
 
   return options, args
 
@@ -234,6 +241,22 @@ def special_tag_transform(Node):
       apathy.text += txt
   return Node
 
+def remove_by_timeperiod(Node, options):
+  ## keeps only those time-periods before a certain date
+  timeds = Node.xpath("//*[@timeperiod]")
+  for timed in timeds:
+    period = timed.get('timeperiod')
+    if '*' == period:
+      continue # good for any time period
+    else:
+      try: # get an integer!
+        iperiod = int(period)
+      except:
+        continue # don't know what it is; invalid times are ignored
+      if iperiod > options.time_period: # remove it
+        timed.getparent().remove(timed)
+  return Node
+
 def buildLatex(options):
   # combine together
   docname = os.path.join(options.prefix, options.main+".xhtml")
@@ -250,6 +273,7 @@ def buildWebPage(options):
   maindoc = special_tag_transform(maindoc)
   maindoc = retarget_resources(maindoc, options)
   maindoc = strip_width_from_tables(maindoc, options)
+  maindoc = remove_by_timeperiod(maindoc, options)
   maindoc = wrap_in_html(maindoc.getroot(), options)
   print >> sys.stdout, etree.tostring(maindoc)
 
