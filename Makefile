@@ -5,4 +5,8 @@ squeaky-clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
 
 test:
-	./Tools/build_doc.py --prefix=Doc/ -l --retarget-resources  > tmp.xhtml
+	./Tools/build_doc.py --prefix=Doc/ -l --retarget-resources  > tmp.tex
+	pdflatex tmp.tex > out.log
+	pdflatex tmp.tex > out.log
+	pdflatex tmp.tex > out.log
+	pdflatex tmp.tex > out.log
