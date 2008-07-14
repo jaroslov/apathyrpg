@@ -270,10 +270,13 @@ def remove_by_timeperiod(Node, options):
   return Node
 
 def remove_by_exclude_category(Node, options):
-  for category in options.exclude:
-    catteds = Node.xpath("//*[@category='%s']"%category)
-    for catted in catteds:
-      catted.getparent().remove(catted)
+  catnodes = Node.xpath("//*[@category]")
+  for catnode in catnodes:
+    categories = catnode.get('category').split('|')
+    for category in categories:
+      if category in options.exclude:
+        catnode.getparent().remove(catnode)
+        break
   return Node
 
 def report_categories(Node, options):
