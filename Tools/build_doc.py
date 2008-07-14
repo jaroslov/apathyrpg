@@ -293,19 +293,46 @@ def insert_table_of_contents(Node):
   parts = Node.xpath("//div[@class='part']")
   partol = etree.Element("ol"); partol.set('class','toc')
   for part in parts:
-    partli = etree.SubElement(partol, 'li')
     tocid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
+    part.set('id',tocid)
+    partli = etree.SubElement(partol, 'li')
     parta = etree.SubElement(partli, 'a', href="#"+tocid)
     parta.text = part.xpath("./h1/p")[0].text
-    part.set('id',tocid)
-    print >> sys.stderr, parta.text
     chapters = part.xpath("descendant-or-self::div[@class='chapter']")
+    chpol = etree.Element("ol"); chpol.set('class','toc')
+    #print >> sys.stderr, " "*0+part.xpath("./h1/p")[0].text
     for chapter in chapters:
-      print >> sys.stderr, " "*2, chapter.xpath("./h1/p")[0].text
+      chpid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
+      chapter.set('id',chpid)
+      chpli = etree.SubElement(chpol, 'li')
+      chpa = etree.SubElement(chpli, 'a', href="#"+chpid)
+      chpa.text = chapter.xpath("./h1/p")[0].text
       sections = chapter.xpath("descendant-or-self::div[@class='section' and ../../@class='chapter']")
+      secol = etree.Element('ol'); secol.set('class','toc')
+      #print >> sys.stderr, " "*2+chapter.xpath("./h1/p")[0].text
       for section in sections:
-        print >> sys.stderr, " "*4, section.xpath("./h1/p")[0].text
-   # place partol before first part
+        secid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
+        section.set('id', secid)
+        secli = etree.SubElement(secol, 'li')
+        seca = etree.SubElement(secli, 'a', href="#"+secid)
+        seca.text = section.xpath("./h1/p")[0].text
+        subsections = section.xpath("descendant-or-self::div[@class='section' and ../../../../@class='chapter']")
+        #print >> sys.stderr, " "*4+section.xpath("./h1/p")[0].text
+        subol = etree.Element('ol'); subol.set('class','toc')
+        for subsection in subsections:
+          subid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
+          subsection.set('id', subid)
+          subli = etree.SubElement(subol, 'li')
+          suba = etree.SubElement(subli, 'a', href="#"+subid)
+          suba.text = subsection.xpath("./h1/p")[0].text
+          #print >> sys.stderr, " "*6+subsection.xpath("./h1/p")[0].text
+        if len(subsections) > 0:
+          subsections[0].getparent().insert(0, subol)
+      if len(sections) > 0:
+        sections[0].getparent().insert(0, secol)
+    if len(chapters) > 0:
+      chapters[0].getparent().insert(0, chpol)
+  # place partol before first part
   parts[0].getparent().insert(0, partol)
   return Node
 
