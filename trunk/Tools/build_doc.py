@@ -289,28 +289,46 @@ def report_categories(Node, options):
     for cat in cats:
       print >> sys.stderr, cat
 
-def buildLatex(options):
-  # combine together
-  docname = os.path.join(options.prefix, options.main+".xhtml")
-  maindoc = etree.parse(docname)
-  maindoc = combine_references(maindoc, options)
-  maindoc = retarget_resources(maindoc, options)
-  report_categories(maindoc, options) 
-  maindoc = remove_by_timeperiod(maindoc, options)
-  maindoc = remove_by_exclude_category(maindoc, options)
-  print >> sys.stdout, etree.tostring(maindoc)
+def insert_table_of_contents(Node):
+  parts = Node.xpath("//div[@class='part']")
+  partol = etree.Element("ol"); partol.set('class','toc')
+  for part in parts:
+    partli = etree.SubElement(partol, 'li')
+    tocid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
+    parta = etree.SubElement(partli, 'a', href="#"+tocid)
+    parta.text = part.xpath("./h1/p")[0].text
+    part.set('id',tocid)
+    print >> sys.stderr, parta.text
+    chapters = part.xpath("descendant-or-self::div[@class='chapter']")
+    for chapter in chapters:
+      print >> sys.stderr, " "*2, chapter.xpath("./h1/p")[0].text
+      sections = chapter.xpath("descendant-or-self::div[@class='section' and ../../@class='chapter']")
+      for section in sections:
+        print >> sys.stderr, " "*4, section.xpath("./h1/p")[0].text
+   # place partol before first part
+  parts[0].getparent().insert(0, partol)
+  return Node
 
-def buildWebPage(options):
+def buildDocument(options):
   # combine together
   docname = os.path.join(options.prefix, options.main+".xhtml")
   maindoc = etree.parse(docname)
   maindoc = combine_references(maindoc, options)
   maindoc = special_tag_transform(maindoc)
   maindoc = retarget_resources(maindoc, options)
-  report_categories(maindoc, options)
-  maindoc = strip_width_from_tables(maindoc, options)
+  report_categories(maindoc, options) 
   maindoc = remove_by_timeperiod(maindoc, options)
   maindoc = remove_by_exclude_category(maindoc, options)
+  return maindoc
+
+def buildLatex(options):
+  maindoc = buildDocument(options)
+  print >> sys.stdout, etree.tostring(maindoc)
+
+def buildWebPage(options):
+  maindoc = buildDocument(options)
+  maindoc = strip_width_from_tables(maindoc, options)
+  maindoc = insert_table_of_contents(maindoc)
   maindoc = wrap_in_html(maindoc.getroot(), options)
   print >> sys.stdout, etree.tostring(maindoc)
 
