@@ -12,6 +12,62 @@ FASTHACK = False
 HTMLNS = """http://www.w3.org/1999/xhtml"""
 HTMLNSMap = {'x':HTMLNS}
 
+LATEX = """\\documentclass[twoside,10pt]{book}
+\\usepackage{pslatex}
+\\usepackage{newcent}
+\\usepackage{multicol}
+\\usepackage{rotating}
+\\usepackage{tabularx}
+\\usepackage{array}
+\\usepackage{longtable}
+\\usepackage{multirow}
+\\usepackage{graphicx}
+\\usepackage[T1]{fontenc}
+\\usepackage{hyperref}
+\\usepackage{wrapfig}
+\\usepackage[text={7in,7.75in},textheight=7in]{geometry}
+\\begin{document}
+
+\\begin{titlepage}
+
+\\newcounter{ExampleCounter}
+  \\setcounter{ExampleCounter}{1}
+  \\newcommand{\\quoteexample}[2][~] {
+    \\vspace{1em}
+    \\addcontentsline{lof}{section}{\\arabic{ExampleCounter} \\textsc{#1}}
+    \\vbox{
+      \\textsc{\\noindent Example \\arabic{ExampleCounter} {\\textbf{#1}}}
+      \\begin{quotation}
+        {\\small #2}
+      \\end{quotation}
+      \\vspace{1em}
+    }
+    \\addtocounter{ExampleCounter}{1}
+  }
+
+%s
+
+\\end{titlepage}
+\\setcounter{page}{1}
+\\pagenumbering{roman}
+\\setcounter{tocdepth}{3}
+\\tableofcontents
+\\newpage
+\\listoftables
+\\newpage
+\\listoffigures
+\\newpage
+\\pagenumbering{arabic}
+\\setcounter{page}{1}
+
+\\begin{small}
+
+%s
+
+\\end{small}
+\\end{document}
+"""
+
 def apathy_hash(string):
   hash = ""
   for s in string:
@@ -337,24 +393,69 @@ def insert_table_of_contents(Node):
   parts[0].getparent().insert(0, partol)
   return Node
 
-def convert_to_latex(Node):
+def sanitize_string(string):
+  return unicodeToLaTeX(string)
+
+def convert_to_latex(Node, sectiondepth=0):
   latex = ""
   if Node.tag == 'div':
     if Node.attrib.has_key('class'):
       klass = Node.get('class')
       if klass == 'book':
-        for child in Node.getchildren():
-          latex += "\n"+convert_to_latex(child)
-      elif klass == 'part':
-        for child in Node.getchildren():
-          latex += "\n"+convert_to_latex(child)
+        headerstr = convert_to_latex(Node.xpath("descendant::div[@class='header']")[0])+"\n\n\n"
+        parts = Node.xpath("descendant-or-self::div[@class='part']")
+        latex = ""
+        for part in parts:
+          latex += "\n"+convert_to_latex(part)
+        return LATEX%(headerstr, latex)
+      elif klass in 'part':
+        title = Node.xpath("./h1/p")[0].text
+        text = "\n\\part{%s}\n\n"%(sanitize_string(title))
+        searcheds = Node.xpath("descendant::div[@class='chapter']")
+        searchedstr = ""
+        for searched in searcheds:
+          searchedstr += convert_to_latex(searched)
+        return text+searchedstr
+      elif klass == 'chapter':
+        title = Node.xpath("./h1/p")[0].text
+        text = "\n\\chapter{%s}\n\n"%(sanitize_string(title))
+        sections = Node.xpath("./div[@class='section-body']/*")
+        sectstr = ""
+        for section in sections:
+          sectstr += convert_to_latex(section, 0)
+        return text+sectstr
+      elif klass == 'section':
+        if sectiondepth > 2: sectiondepth = 2
+        title = Node.xpath("./h1/p")[0].text
+        text = "\n\\"+"sub"*sectiondepth+"section{"+"~"*sectiondepth+"%s}\n\n"%(sanitize_string(title))
+        sections = Node.xpath("./div[@class='section-body']/div[@class='section']")
+        sectstr = ""
+        for section in sections:
+          sectstr += convert_to_latex(section, sectiondepth+1)
+        return text+sectstr
+      elif klass == 'reference':
+        print >> sys.stderr, "Academic reference..."
       elif klass == 'header':
-        pass # handle the header (authorial) information here
-      elif klass == 'section-body':
-        for child in Node.getchildren():
-          latex += "\n"+convert_to_latex(child)
+        surround = "\\begin{center}\n\\vbox{\\small\n%s\n}\n\\end{center}\n\n"
+        authors = Node.xpath("descendant::div[@class='author']")
+        authstr = ""
+        for author in authors:
+          authstr += convert_to_latex(author)+"\\\\\n"
+        return surround%authstr
+      elif klass == 'author':
+        children = Node.getchildren()
+        if len(children) > 0:
+          text = ""
+          for child in children:
+            text += convert_to_latex(child)
+            return text
+        else:
+          return sanitize_string(Node.text)
       else:
         print >> sys.stderr, "Unknown div-class attribute `%s'."%klass
+  elif Node.tag == 'img':
+    imgtex = "\\includegraphics[width=1.00\\textwidth]{%s}"%(Node.get('src'))
+    return imgtex
   else:
     print >> sys.stderr, "Unknown node named `%s'."%Node.tag
   return latex
@@ -374,7 +475,7 @@ def buildDocument(options):
 def buildLatex(options):
   maindoc = buildDocument(options)
   maindoc = convert_to_latex(maindoc.getroot())
-  print >> sys.stdout, maindoc
+  print >> sys.stdout, maindoc.encode("utf-8")
 
 def buildWebPage(options):
   maindoc = buildDocument(options)
