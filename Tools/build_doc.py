@@ -194,6 +194,19 @@ def build_minitable(minitableheader, minitableitems):
   return table
 
 def sort_table_by_column(table, index):
+  trows = table.xpath("./tbody/tr")
+  strows = []
+  for trow in trows:
+    try:
+      idtxt = trow[index].xpath("./p")[0].text
+    except:
+      idtxt = ""
+    strows.append((idtxt, copy.deepcopy(trow)))
+  strows.sort()
+  tbody = table.xpath("./tbody")[0]
+  tbody.clear()
+  for strow in strows:
+    tbody.append(strow[1])
   return table
 
 def transform_summarize_table(subdoc, options):
@@ -336,8 +349,21 @@ def combine_welds(Node, options):
         trows = subdoc.xpath("//tr")
         for trow in trows:
           globalbody.append(trow)
+    #thead = globaldoc.xpath("./thead")[0]
+    #category = etree.Element("th")
+    #category.set('width', '')
+    #category.set('class', 'Table')
+    #category.text = "Category"
+    #thead.insert(1, category)
+    #print >> ERRORFILE, etree.tostring(thead)
+    #trows = globaldoc.xpath("./tbody/tr")
+    #for trow in trows:
+    #  elt = etree.Element("td"); pelt = etree.SubElement(elt, 'p');
+    #  pelt.text = weld.get('href')
+    #  trow.insert(1, elt)
     globaltbl = transform_summarize_table(globaldoc, options)
     weldfield.getparent().replace(weldfield, globaltbl)
+    sort_table_by_column(globaltbl, 0)
   return Node
 
 def combine_references(DocNode, options):
