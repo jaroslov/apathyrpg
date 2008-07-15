@@ -260,10 +260,16 @@ def transform_hrid_table(subdoc, options):
 
 def combine_in_place(Node, options):
   inplaces = Node.xpath("//a[@class='in-place']")
+  reached_fp = True
   for inplace in inplaces:
-    subdocname = os.path.join(options.prefix, inplace.get('in-place'))
+    reached_fp = False
+    subdocname = os.path.join(options.prefix, inplace.get('href'))
     subdoc = etree.parse(subdocname).getroot()
     inplace.getparent().replace(inplace, subdoc)
+  if reached_fp:
+    return Node
+  else:
+    Node = combine_in_place(Node, options)
   return Node
 
 def combine_references(DocNode, options):
