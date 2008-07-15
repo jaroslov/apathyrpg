@@ -45,13 +45,12 @@ LATEX = """\\documentclass[twoside,10pt]{book}
   \\addtocounter{ExampleCounter}{1}
 }
 \\newcommand{\\descriptionbox}[2][~] {
-  \\vspace{.1em}
+  \\vspace{.5em}
   \\vbox{
     \\textsc{\\noindent {\\textbf{#1}}}
-      \\begin{quotation}
-        {\\tiny #2}
-      \\end{quotation}
-      \\vspace{1em}
+
+        {\\small #2}
+      \\vspace{.1em}
   }
 }
 
@@ -479,7 +478,7 @@ def convert_to_latex(Node, sectiondepth=0):
           return sanitize_string(Node.text)
       elif klass == 'description-set':
         descriptions = Node.xpath("./div[@class='description']")
-        surround = "%s"
+        surround = "\n\n\\begin{multicols}{2}\n\\setlength\\columnseprule{.4pt}\n%s\n\n\\end{multicols}"
         text = ""
         for description in descriptions:
           title = convert_children_to_latex(description.xpath("./h1")[0])
@@ -505,7 +504,7 @@ def convert_to_latex(Node, sectiondepth=0):
         for child in Node.getchildren():
           text += convert_to_latex(child)+"\n"
         text = text.strip()
-        text = "{\\normalsize \\sc Note:} "+text+"\n\n"
+        text = "{\\normalsize \\textsc{\\textbf{Note:}}} "+text+"\n\n"
         return text
       elif klass == 'equation':
         surround = "\n\n\\begin{figure}[!htb]\n\\centering\n%s\n\\end{figure}\n\n"
@@ -533,7 +532,7 @@ def convert_to_latex(Node, sectiondepth=0):
       text += convert_to_latex(child)
     return text
   elif Node.tag == 'Apathy':
-    text = " {\\sc\\bf ApAthy}"
+    text = " {\\textsc{\\textbf{ApAthy}}}"
     if Node.text is not None:
       text += sanitize_string(Node.text)
     if Node.tail is not None:
@@ -600,7 +599,7 @@ def convert_to_latex(Node, sectiondepth=0):
         raw = Node.xpath("./span[@class='raw']")
         if len(raw) == 1: roll += "{\\bf [%s]}+"%sanitize_string(raw[0].text)
         num = Node.xpath("./span[@class='num']")
-        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\sc\\bf D}"
+        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\textsc{\\textbf{D}}}"
         face = Node.xpath("./span[@class='face']")
         roll += "{\\bf %s}"%sanitize_string(face[0].text)
         boff = Node.xpath("./span[@class='bOff']")
@@ -610,10 +609,10 @@ def convert_to_latex(Node, sectiondepth=0):
         mul = Node.xpath("./span[@class='mul']")
         if len(mul) == 1: roll += "$\times${\\bf %s}"%sanitize_string(mul[0].text)
         kind = Node.xpath("./span[@class='kind']")
-        if len(kind) == 1: roll += "{\\sc\\bf %s}"%sanitize_string(kind[0].text)
+        if len(kind) == 1: roll += "{\\textsc{\\textbf{%s}}}"%sanitize_string(kind[0].text)
         roll = roll.strip()
         if Node.tail is not None:
-          roll += Node.tail
+          roll += sanitize_string(Node.tail)
         return roll
       else:
         print >> ERRORFILE, "Unknown span with class `%s'."%klass
@@ -692,9 +691,9 @@ def convert_to_latex(Node, sectiondepth=0):
           if len(thtxt.split(' ')) > 1:
             thtxt = "".join([s[0]+". " for s in thtxt.split(' ')]).strip()
           if th.xpath("./@class='Title'"):
-            header += "{\\sc\\bf %s}"%sanitize_string(thtxt)
+            header += "{\\begin{turn}{0}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
           else:
-            header += "{\\sc\\bf \\begin{turn}{70}%s\\end{turn}}"%sanitize_string(thtxt)
+            header += "{\\begin{turn}{70}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
         header += "\\\\"
         headerstr = "\n"+header+"\n\\hline\n\\hline\n\\endfirsthead\n"+header+"\n\\hline\n\\endhead\n"
         for trow in trows:
@@ -702,7 +701,7 @@ def convert_to_latex(Node, sectiondepth=0):
           first = True
           rowstr = ""
           for td in tds:
-            if not first: rowstr += " & "
+            if not first: rowstr += "\\vline & "
             else: first = False
             rowstr += convert_children_to_latex(td).strip()
           rowsstr += rowstr + "\\\\\n"
