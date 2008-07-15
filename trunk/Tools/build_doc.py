@@ -430,7 +430,7 @@ def convert_to_latex(Node, sectiondepth=0):
         if sectiondepth > 2: sectiondepth = 2
         title = Node.xpath("./h1/p")[0].text
         text = "\n\\"+"sub"*sectiondepth+"section{"+"~"*sectiondepth+"%s}\n\n"%(sanitize_string(title))
-        sections = Node.xpath("./div[@class='section-body']/div[@class='section']")
+        sections = Node.xpath("./div[@class='section-body']/*")
         sectstr = ""
         for section in sections:
           sectstr += convert_to_latex(section, sectiondepth+1)
@@ -463,48 +463,61 @@ def convert_to_latex(Node, sectiondepth=0):
       for child in Node.getchildren():
         text += convert_to_latex(child)
       return text
+  elif Node.tag == 'Apathy':
+    text = " {\\sc\\bf ApAthy}"
+    if Node.text is not None:
+      text += sanitize_string(Node.text)
+    if Node.tail is not None:
+      text += " " + sanitize_string(Node.tail)
+    return text
+  elif Node.tag == 'dl':
+    text = "\n\\begin{description}\n"
+    dts = Node.xpath("./dt")
+    dds = Node.xpath("./dd")
+    for dx in xrange(len(dts)):
+      text += "\\item[%s]"%convert_to_latex(dts[dx]).strip()+"\n"
+      text += convert_to_latex(dds[dx])
+    text += "\\end{description}\n\n"
+    return text
+  elif Node.tag in ['dt', 'dd']:
+    text = ""
+    for child in Node.getchildren():
+      text += convert_to_latex(child)
+    return text
+  elif Node.tag == 'ul':
+    text = "\n\\begin{itemize}\n"
+    for child in Node.getchildren():
+      text += convert_to_latex(child)+"\n"
+    text += "\\end{itemize}\n\n"
+    return text
+  elif Node.tag == 'ol':
+    text = "\n\\begin{enumerate}\n"
+    for child in Node.getchildren():
+      text += convert_to_latex(child)+"\n"
+    text += "\\end{enumerate}\n\n"
+    return text
+  elif Node.tag == 'li':
+    text = "\\item "
+    for child in Node.getchildren():
+      text += convert_to_latex(child)+"\n"
+    return text
+  elif Node.tag == 'span':
+    if Node.attrib.has_key('class'):
+      klass = Node.get('class')
+      if klass == 'define':
+        text = sanitize_string(Node.text)
+        if Node.tail is not None:
+          text += " "+sanitize_string(Node.tail)
+        return text
+      else:
+        print >> sys.stderr, "Unknown span with class `%s'."%klass
+    else:
+      print >> sys.stderr, "Unknown span with class."
   elif Node.tag == 'img':
     imgtex = "\\includegraphics[width=1.00\\textwidth]{%s}"%(Node.get('src'))
     return imgtex
   elif Node.tag == "table":
-    if Node.attrib.has_key('class'):
-      klass = Node.get('class')
-      if klass == 'category':
-        longtable = "\n\\begin{longtable}%s\n%s\n\end{longtable}\n"
-        headers = Node.xpath("./thead/th[@class='Table']")
-        title = Node.xpath("./thead/th[@class='Title']")[0]
-        headerstr = ""
-        colstyles = "{"
-        kind = "c"
-        if title.attrib.has_key('width'):
-          kind = title.get('width')
-        colstyles += "|%s|"%kind
-        headerstr += "{\\sc\\bf %s}"%(sanitize_string(title.text))
-        for header in headers:
-          kind = "|c|"
-          if header.attrib.has_key('width'):
-            kind = header.get('width')
-          colstyles += "%s|"%kind
-          headerstr += "&{\\sc\\bf \\begin{turn}{90}%s\\end{turn}}"%(sanitize_string(header.text))
-        colstyles+="}"
-        headerstr = "\\hline\n"+headerstr+"\\\\\n\\hline\n\\hline\n\\endfirsthead\n\\hline"+headerstr+"\\\\\n\\hline\n\\endhead\n"
-        rows = Node.xpath("./tbody/tr")
-        rowsstr = ""
-        for row in rows:
-          rowstr = convert_to_latex(row.getchildren()[0])
-          for child in row.getchildren()[1:]:
-            rowstr += "&\n"+convert_to_latex(child)+""
-          rowsstr += rowstr+"\\\\\n\\hline\n"
-        return longtable%(colstyles+"\n"+headerstr, rowsstr)
-      else:
-        print >> sys.stderr, "Unknown class-class attribute `%s'."%klass
-    else:
-      print >> sys.stderr, "Unknown table element."
-  elif Node.tag == 'td':
-    text = ""
-    for child in Node.getchildren():
-      text += convert_to_latex(child)+"\n"
-    return text
+    pass
   elif Node.tag == 'a':
     if len(Node.getchildren()) > 0:
       text = ""
@@ -528,7 +541,6 @@ def buildDocument(options):
   docname = os.path.join(options.prefix, options.main+".xhtml")
   maindoc = etree.parse(docname)
   maindoc = combine_references(maindoc, options)
-  maindoc = special_tag_transform(maindoc)
   maindoc = retarget_resources(maindoc, options)
   report_categories(maindoc, options) 
   maindoc = remove_by_timeperiod(maindoc, options)
@@ -542,6 +554,7 @@ def buildLatex(options):
 
 def buildWebPage(options):
   maindoc = buildDocument(options)
+  maindoc = special_tag_transform(maindoc)
   maindoc = strip_width_from_tables(maindoc, options)
   maindoc = insert_table_of_contents(maindoc)
   maindoc = wrap_in_html(maindoc.getroot(), options)
