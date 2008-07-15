@@ -258,6 +258,14 @@ def transform_hrid_table(subdoc, options):
 
   return rdiv
 
+def combine_in_place(Node, options):
+  inplaces = Node.xpath("//a[@class='in-place']")
+  for inplace in inplaces:
+    subdocname = os.path.join(options.prefix, inplace.get('in-place'))
+    subdoc = etree.parse(subdocname).getroot()
+    inplace.getparent().replace(inplace, subdoc)
+  return Node
+
 def combine_references(DocNode, options):
   hrids = DocNode.xpath("//a[@class='hrid']")
   for hrid in hrids:
@@ -596,7 +604,7 @@ def convert_to_latex(Node, sectiondepth=0):
         raw = Node.xpath("./span[@class='raw']")
         if len(raw) == 1: roll += "{\\bf [%s]}+"%sanitize_string(raw[0].text)
         num = Node.xpath("./span[@class='num']")
-        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\textsc{\\textbf{D}}}"
+        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\footnotesize\\textsc{\\textbf{D}}}"
         face = Node.xpath("./span[@class='face']")
         roll += "{\\bf %s}"%sanitize_string(face[0].text)
         boff = Node.xpath("./span[@class='bOff']")
@@ -765,6 +773,7 @@ def buildDocument(options):
   # combine together
   docname = os.path.join(options.prefix, options.main+".xhtml")
   maindoc = etree.parse(docname)
+  maindoc = combine_in_place(maindoc, options)
   maindoc = combine_references(maindoc, options)
   maindoc = retarget_resources(maindoc, options)
   report_categories(maindoc, options) 
