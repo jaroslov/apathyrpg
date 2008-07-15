@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.5
 
-import os, sys, random
+import os, sys, random, copy
 from optparse import OptionParser
 from lxml import etree
 from random import SystemRandom
@@ -161,6 +161,37 @@ def get_column(table, index):
       column.append(None)
   return column
 
+def build_minitable(minitableheader, minitableitems):
+  headers = []
+  for minitableh in minitableheader:
+    txt = minitableh.text
+    headers.append(txt)
+  table = etree.Element("table"); table.set('class', 'minitable')
+  thead = etree.SubElement(table, 'thead')
+  tbody = etree.SubElement(table, 'tbody')
+  # two columns; may have an oddball
+  nrows = len(minitableitems)/2
+  oddball = (1 == len(minitableitems)%2)
+  if oddball: nrows += 1
+  for row in xrange(nrows):
+    mtit1 = copy.deepcopy(minitableitems[row*2])
+    mtit1.attrib.clear()
+    if row*2+1 < len(minitableitems):
+      mtit2 = copy.deepcopy(minitableitems[row*2+1])
+      mtit2.attrib.clear()
+    trow = etree.SubElement(tbody, 'tr')
+    td1a = etree.SubElement(trow, 'td', align='right'); td1a.set('class','mt-name');
+    trow.append(mtit1)
+    td2a = etree.SubElement(trow, 'td', align='right'); td2a.set('class','mt-name');
+    if row*2+1 < len(minitableitems):
+      trow.append(mtit2)
+    else:
+      trow.append(etree.Element('td'))
+    td1a.text = headers[row*2]+":"
+    if row*2+1 < len(minitableitems):
+      td2a.text = headers[row*2+1]+":"
+  return table
+
 def transform_summarize_table(subdoc, options):
   not_in_tables = subdoc.xpath("//th[@class!='Title' and @class!='Table']")
   not_in_columns = []
@@ -204,6 +235,11 @@ def transform_hrid_table(subdoc, options):
   </div>
 </div>
 """
+  minitablesitems = subdoc.xpath("//th[@minitable='yes']")
+  minitablescols = []
+  for mti in minitablesitems:
+    minitablescols.append(mti.getparent().index(mti))
+
   title = subdoc.xpath("//th[@class='Title']")[0]
   description = subdoc.xpath("//th[@class='Description']")[0]
   tables = subdoc.xpath("//th[@class='Table']")
@@ -234,6 +270,13 @@ def transform_hrid_table(subdoc, options):
     for child in children:
       bodydiv.append(child)
     DescNode.set('id', Nid)
+    ## build the minitable
+    minitableitems = []
+    for mtc in minitablescols:
+      minitableitems.append(row[mtc])
+    if len(minitableitems) > 0:
+      minitable = build_minitable(minitablesitems, minitableitems)
+      bodydiv.insert(0, minitable)
     DSetNode.append(DescNode)
     # remove non-table/non-title items
     for not_in_columnz in not_in_columns:
@@ -807,4 +850,3 @@ if __name__=="__main__":
     buildLatex(options)
   if options.xhtml:
     buildWebPage(options)
-  print >> sys.stdout, 0
