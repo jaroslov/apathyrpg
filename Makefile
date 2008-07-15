@@ -7,8 +7,10 @@ squeaky-clean:
 webpage:
 	./Tools/build_doc.py --prefix=Doc/ -w --retarget-resources  > tmp.xhtml
 
-pdf:
+tex:
 	./Tools/build_doc.py --prefix=Doc/ -l --retarget-resources  > tmp.tex
+
+pdf: tex
 	pdflatex tmp.tex > out.log
 	pdflatex tmp.tex > out.log
 	pdflatex tmp.tex > out.log

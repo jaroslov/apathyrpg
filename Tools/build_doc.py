@@ -12,6 +12,9 @@ FASTHACK = False
 HTMLNS = """http://www.w3.org/1999/xhtml"""
 HTMLNSMap = {'x':HTMLNS}
 
+#ERRORFILE = sys.stderr
+ERRORFILE = open("tex.err", "w")
+
 LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage{pslatex}
 \\usepackage{newcent}
@@ -109,8 +112,8 @@ def parseOptions():
   (options, args) = parser.parse_args()
 
   if options.prefix is None:
-    print >> sys.stderr, 'You must give a source directory using "--prefix=???"',
-    print >> sys.stderr, "see --help"
+    print >> ERRORFILE, 'You must give a source directory using "--prefix=???"',
+    print >> ERRORFILE, "see --help"
     sys.exit(1)
   if options.output is None:
     options.output = "Apathy"
@@ -344,7 +347,7 @@ def report_categories(Node, options):
       cats.append(catnode.get('category'))
     cats = list(set(cats))
     for cat in cats:
-      print >> sys.stderr, cat
+      print >> ERRORFILE, cat
 
 def insert_table_of_contents(Node):
   parts = Node.xpath("//div[@class='part']")
@@ -357,7 +360,7 @@ def insert_table_of_contents(Node):
     parta.text = part.xpath("./h1/p")[0].text
     chapters = part.xpath("descendant-or-self::div[@class='chapter']")
     chpol = etree.Element("ol"); chpol.set('class','toc')
-    #print >> sys.stderr, " "*0+part.xpath("./h1/p")[0].text
+    #print >> ERRORFILE, " "*0+part.xpath("./h1/p")[0].text
     for chapter in chapters:
       chpid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
       chapter.set('id',chpid)
@@ -366,7 +369,7 @@ def insert_table_of_contents(Node):
       chpa.text = chapter.xpath("./h1/p")[0].text
       sections = chapter.xpath("descendant-or-self::div[@class='section' and ../../@class='chapter']")
       secol = etree.Element('ol'); secol.set('class','toc')
-      #print >> sys.stderr, " "*2+chapter.xpath("./h1/p")[0].text
+      #print >> ERRORFILE, " "*2+chapter.xpath("./h1/p")[0].text
       for section in sections:
         secid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
         section.set('id', secid)
@@ -374,7 +377,7 @@ def insert_table_of_contents(Node):
         seca = etree.SubElement(secli, 'a', href="#"+secid)
         seca.text = section.xpath("./h1/p")[0].text
         subsections = section.xpath("descendant-or-self::div[@class='section' and ../../../../@class='chapter']")
-        #print >> sys.stderr, " "*4+section.xpath("./h1/p")[0].text
+        #print >> ERRORFILE, " "*4+section.xpath("./h1/p")[0].text
         subol = etree.Element('ol'); subol.set('class','toc')
         for subsection in subsections:
           subid = "toc-id%04d%04d"%(random.randint(1501,9995), random.randint(314,7505))
@@ -382,7 +385,7 @@ def insert_table_of_contents(Node):
           subli = etree.SubElement(subol, 'li')
           suba = etree.SubElement(subli, 'a', href="#"+subid)
           suba.text = subsection.xpath("./h1/p")[0].text
-          #print >> sys.stderr, " "*6+subsection.xpath("./h1/p")[0].text
+          #print >> ERRORFILE, " "*6+subsection.xpath("./h1/p")[0].text
         if len(subsections) > 0:
           subsections[0].getparent().insert(0, subol)
       if len(sections) > 0:
@@ -474,7 +477,7 @@ def convert_to_latex(Node, sectiondepth=0):
         text = "{\\normalsize \\sc Note:} "+text+"\n\n"
         return text
       else:
-        print >> sys.stderr, "Unknown div-class attribute `%s'."%klass
+        print >> ERRORFILE, "Unknown div-class attribute `%s'."%klass
     else:
       text = ""
       for child in Node.getchildren():
@@ -532,9 +535,9 @@ def convert_to_latex(Node, sectiondepth=0):
           text += " "+sanitize_string(Node.tail)
         return text
       else:
-        print >> sys.stderr, "Unknown span with class `%s'."%klass
+        print >> ERRORFILE, "Unknown span with class `%s'."%klass
     else:
-      print >> sys.stderr, "Unknown span with class."
+      print >> ERRORFILE, "Unknown span with class."
   elif Node.tag == 'img':
     imgtex = "\\includegraphics[width=1.00\\textwidth]{%s}"%(Node.get('src'))
     return imgtex
@@ -554,8 +557,10 @@ def convert_to_latex(Node, sectiondepth=0):
         text += convert_to_latex(child)
       return text
     return "\n\n"+sanitize_string(Node.text)+"\n\n"
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}math":
+    print >> ERRORFILE, "MATH"
   else:
-    print >> sys.stderr, "Unknown node named `%s'."%Node.tag
+    print >> ERRORFILE, "Unknown node named `%s'."%Node.tag
   return latex
 
 def buildDocument(options):
