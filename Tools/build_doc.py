@@ -594,3 +594,4 @@ if __name__=="__main__":
     buildLatex(options)
   if options.xhtml:
     buildWebPage(options)
+  print >> sys.stdout, 0
