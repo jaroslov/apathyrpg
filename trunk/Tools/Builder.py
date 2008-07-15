@@ -657,10 +657,9 @@ def htmlToLaTeX(XML):
         if len(math) > 0:
           math = math[0]
           result += "\n\n\\begin{figure}[h]\n\\begin{center}\n"
-          result += "\\begin{math}\n\\displaystyle\n"
+          result += "\\displaystyle\n"
           result += htmlToLaTeXC(math).strip()
-          result += "\n\\end{math}\n"
-          result += "\\end{center}\n\\end{figure}\n\n"
+          result += "\n\\end{center}\n\\end{figure}\n\n"
       elif cls == "reference":
         result += htmlToLaTeXC(XML)
       elif cls == "description-body":

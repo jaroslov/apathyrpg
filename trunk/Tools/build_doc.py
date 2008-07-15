@@ -12,8 +12,8 @@ FASTHACK = False
 HTMLNS = """http://www.w3.org/1999/xhtml"""
 HTMLNSMap = {'x':HTMLNS}
 
-#ERRORFILE = sys.stderr
-ERRORFILE = open("tex.err", "w")
+ERRORFILE = sys.stderr
+#ERRORFILE = open("tex.err", "w")
 
 LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage{pslatex}
@@ -476,6 +476,19 @@ def convert_to_latex(Node, sectiondepth=0):
         text = text.strip()
         text = "{\\normalsize \\sc Note:} "+text+"\n\n"
         return text
+      elif klass == 'equation':
+        surround = "\n\n\\begin{figure}[!htb]\n\\begin{center}\n%s\n\\end{center}\n\\end{figure}\n\n"
+        text = ""
+        for child in Node.getchildren():
+          text += convert_to_latex(child).strip()
+        return surround%text
+      elif klass == 'example':
+        surround = "\n\\quoteexample[%s]{%s}\n\n"
+        title = convert_to_latex(Node.getchildren()[0])
+        bodytext = ""
+        for child in Node.getchildren()[1:]:
+          bodytext += convert_to_latex(child)
+        return surround%(title, bodytext)
       else:
         print >> ERRORFILE, "Unknown div-class attribute `%s'."%klass
     else:
@@ -483,6 +496,8 @@ def convert_to_latex(Node, sectiondepth=0):
       for child in Node.getchildren():
         text += convert_to_latex(child)
       return text
+  elif Node.tag == "h1":
+    
   elif Node.tag == 'Apathy':
     text = " {\\sc\\bf ApAthy}"
     if Node.text is not None:
@@ -542,7 +557,7 @@ def convert_to_latex(Node, sectiondepth=0):
     imgtex = "\\includegraphics[width=1.00\\textwidth]{%s}"%(Node.get('src'))
     return imgtex
   elif Node.tag == "table":
-    pass
+    print >> ERRORFILE, "Finish tabbing-table."
   elif Node.tag == 'a':
     if len(Node.getchildren()) > 0:
       text = ""
@@ -552,13 +567,47 @@ def convert_to_latex(Node, sectiondepth=0):
     return "\n\n"+sanitize_string(Node.text)+"\n\n"
   elif Node.tag == 'p':
     if len(Node.getchildren()) > 0:
-      text = ""
+      text = sanitize_string(Node.text)
       for child in Node.getchildren():
         text += convert_to_latex(child)
+      if Node.tail is not None:
+        text += sanitize_string(Node.tail)
       return text
     return "\n\n"+sanitize_string(Node.text)+"\n\n"
   elif Node.tag == "{http://www.w3.org/1998/Math/MathML}math":
-    print >> ERRORFILE, "MATH"
+    surround = " $%s$"
+    text = ""
+    for child in Node.getchildren():
+      text += convert_to_latex(child).strip()
+    surround = surround%text
+    if Node.tail is not None: surround += sanitize_string(Node.tail)
+    return surround
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}mrow":
+    surround = "{%s}"
+    text = ""
+    for child in Node.getchildren():
+      text += convert_to_latex(child).strip()
+    return surround%text
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}munderover":
+    surround = "\\displaystyle~%s_{%s}^{%s}"
+    inner = convert_to_latex(Node.getchildren()[0]).strip()
+    lower = convert_to_latex(Node.getchildren()[1]).strip()
+    upper = convert_to_latex(Node.getchildren()[2]).strip()
+    return surround%(inner, lower, upper)
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}msup":
+    surround = "{%s}^{%s}"
+    inner = convert_to_latex(Node.getchildren()[0]).strip()
+    outer = convert_to_latex(Node.getchildren()[1]).strip()
+    return surround%(inner, outer)
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}mfrac":
+    surround = "\\frac{%s}{%s}"
+    upper = convert_to_latex(Node.getchildren()[0]).strip()
+    lower = convert_to_latex(Node.getchildren()[1]).strip()
+    return surround%(upper, lower)
+  elif Node.tag in ["{http://www.w3.org/1998/Math/MathML}mn",
+                    "{http://www.w3.org/1998/Math/MathML}mo",
+                    "{http://www.w3.org/1998/Math/MathML}mi"]:
+    return sanitize_string(Node.text)
   else:
     print >> ERRORFILE, "Unknown node named `%s'."%Node.tag
   return latex
