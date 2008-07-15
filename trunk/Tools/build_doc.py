@@ -29,24 +29,26 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage{hyperref}
 \\usepackage{wrapfig}
 \\usepackage[text={7in,7.75in},textheight=7in]{geometry}
-\\begin{document}
-
-\\begin{titlepage}
 
 \\newcounter{ExampleCounter}
-  \\setcounter{ExampleCounter}{1}
-  \\newcommand{\\quoteexample}[2][~] {
-    \\vspace{1em}
-    \\addcontentsline{lof}{section}{\\arabic{ExampleCounter} \\textsc{#1}}
-    \\vbox{
-      \\textsc{\\noindent Example \\arabic{ExampleCounter} {\\textbf{#1}}}
+\\setcounter{ExampleCounter}{1}
+\\newcommand{\\quoteexample}[2][~] {
+  \\vspace{1em}
+  \\addcontentsline{lof}{section}{\\arabic{ExampleCounter} \\textsc{#1}}
+  \\vbox{
+    \\textsc{\\noindent Example \\arabic{ExampleCounter} {\\textbf{#1}}}
       \\begin{quotation}
         {\\small #2}
       \\end{quotation}
       \\vspace{1em}
-    }
-    \\addtocounter{ExampleCounter}{1}
   }
+  \\addtocounter{ExampleCounter}{1}
+}
+
+
+\\begin{document}
+
+\\begin{titlepage}
 
 %s
 
@@ -401,6 +403,12 @@ def sanitize_string(string):
     return ""
   return unicodeToLaTeX(string)
 
+def convert_children_to_latex(Node):
+  text = ""
+  for child in Node.getchildren():
+    text += convert_to_latex(child)
+  return text
+
 def convert_to_latex(Node, sectiondepth=0):
   latex = ""
   if Node.tag == 'div':
@@ -460,7 +468,10 @@ def convert_to_latex(Node, sectiondepth=0):
         else:
           return sanitize_string(Node.text)
       elif klass == 'figure':
-        surround = "\n\\begin{figure}[!htb]\n%s\n\\caption{%s}\n\\end{figure}\n\n"
+        subject = Node.getchildren()[0]
+        if subject.tag == 'table': subject = "table"
+        else: subject = "figure"
+        surround = "\n\\begin{"+subject+"}[!htb]\\centering\n%s\n\\caption{%s}\n\\end{"+subject+"}\n\n"
         captionstr = ""
         caption = Node.xpath("descendant::caption")
         if len(caption) == 1:
@@ -477,14 +488,14 @@ def convert_to_latex(Node, sectiondepth=0):
         text = "{\\normalsize \\sc Note:} "+text+"\n\n"
         return text
       elif klass == 'equation':
-        surround = "\n\n\\begin{figure}[!htb]\n\\begin{center}\n%s\n\\end{center}\n\\end{figure}\n\n"
+        surround = "\n\n\\begin{figure}[!htb]\n\\centering\n%s\n\\end{figure}\n\n"
         text = ""
         for child in Node.getchildren():
           text += convert_to_latex(child).strip()
         return surround%text
       elif klass == 'example':
         surround = "\n\\quoteexample[%s]{%s}\n\n"
-        title = convert_to_latex(Node.getchildren()[0])
+        title = convert_to_latex(Node.getchildren()[0]).strip()
         bodytext = ""
         for child in Node.getchildren()[1:]:
           bodytext += convert_to_latex(child)
@@ -497,7 +508,10 @@ def convert_to_latex(Node, sectiondepth=0):
         text += convert_to_latex(child)
       return text
   elif Node.tag == "h1":
-    
+    text = ""
+    for child in Node.getchildren():
+      text += convert_to_latex(child)
+    return text
   elif Node.tag == 'Apathy':
     text = " {\\sc\\bf ApAthy}"
     if Node.text is not None:
@@ -549,6 +563,38 @@ def convert_to_latex(Node, sectiondepth=0):
         if Node.tail is not None:
           text += " "+sanitize_string(Node.tail)
         return text
+      elif klass == 'footnote':
+        surround = "\\footnote{%s}"
+        text = ""
+        for child in Node.getchildren():
+          text += convert_to_latex(child)
+        if Node.tail is not None:
+          text += sanitize_string(Node.tail)
+        return surround%text
+      elif klass == 'notappl':
+        return "\\emph{N/A}"
+      elif klass == 'roll':
+        roll = ""
+        roff = Node.xpath("./span[@class='rOff']")
+        if len(roff) == 1: roll += "{\\bf %s}"%sanitize_string(roff[0].text)
+        raw = Node.xpath("./span[@class='raw']")
+        if len(raw) == 1: roll += "{\\bf [%s]}+"%sanitize_string(raw[0].text)
+        num = Node.xpath("./span[@class='num']")
+        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\sc\\bf D}"
+        face = Node.xpath("./span[@class='face']")
+        roll += "{\\bf %s}"%sanitize_string(face[0].text)
+        boff = Node.xpath("./span[@class='bOff']")
+        if len(boff) == 1: roll += "%s"%sanitize_string(boff[0].text)
+        bns = Node.xpath("./span[@class='bns']")
+        if len(bns) == 1: roll += "{\\bf %s}"%sanitize_string(bns[0].text)
+        mul = Node.xpath("./span[@class='mul']")
+        if len(mul) == 1: roll += "$\times${\\bf %s}"%sanitize_string(mul[0].text)
+        kind = Node.xpath("./span[@class='kind']")
+        if len(kind) == 1: roll += "{\\sc\\bf %s}"%sanitize_string(kind[0].text)
+        roll = roll.strip()
+        if Node.tail is not None:
+          roll += Node.tail
+        return roll
       else:
         print >> ERRORFILE, "Unknown span with class `%s'."%klass
     else:
@@ -557,7 +603,50 @@ def convert_to_latex(Node, sectiondepth=0):
     imgtex = "\\includegraphics[width=1.00\\textwidth]{%s}"%(Node.get('src'))
     return imgtex
   elif Node.tag == "table":
-    print >> ERRORFILE, "Finish tabbing-table."
+    if Node.attrib.has_key("class"):
+      klass = Node.get('class')
+      if klass == 'display-table':
+        ths = Node.xpath("./thead/th")
+        trows = Node.xpath("./tbody/tr")
+        surround = "\\begin{tabular}{%s}\n\n%s\\end{tabular}"
+        colstyles = ""
+        headerstr = ""
+        rowsstr = ""
+        first = True
+        bar = True
+        for th in ths:
+          default = "l"
+          if th.attrib.has_key('align'):
+            alignment = th.get('align')
+            if alignment == 'left': default = 'l'
+            elif alignment == 'center': default = 'c'
+            else: default = 'r'
+          elif th.attrib.has_key('width'):
+            default = "p{%s}"%th.get('width')
+          colstyles += default
+          if bar: bar = False; colstyles += "|"
+          if not first: headerstr += " & "
+          else: first = False
+          headerstr += "{\\bf \\small %s}"%convert_children_to_latex(th).strip()
+        for trow in trows:
+          first = True
+          tds = trow.xpath("./td")
+          for td in tds:
+            if not first: rowsstr += " & "
+            else: first = False
+            rowstr = "{\\small %s}"%convert_children_to_latex(td).strip()
+            if "\\begin{math}" in rowstr:
+              rowstr = "\\vspace{.25em}"+rowstr+"\\vspace{.25em}"
+            if Node.attrib.has_key('colspan'):
+              rowstr += "\\multicol{"+Node.get('colspan')+"}{c}{"+rowstr+"}"
+            else:
+              rowsstr += rowstr
+          rowsstr += "\\\\\n\hline\n"
+        return surround%(colstyles, headerstr+"\\\\\n\\hline\n\\hline\n"+rowsstr)
+      else:
+        print >> ERRORFILE, "Unknown table with class `%s'."%klass
+    else:
+      print >> ERRORFILE, "Unknown kind of table."
   elif Node.tag == 'a':
     if len(Node.getchildren()) > 0:
       text = ""
@@ -575,7 +664,7 @@ def convert_to_latex(Node, sectiondepth=0):
       return text
     return "\n\n"+sanitize_string(Node.text)+"\n\n"
   elif Node.tag == "{http://www.w3.org/1998/Math/MathML}math":
-    surround = " $%s$"
+    surround = " \\begin{math}%s\\end{math}"
     text = ""
     for child in Node.getchildren():
       text += convert_to_latex(child).strip()
