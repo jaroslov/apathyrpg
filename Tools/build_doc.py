@@ -654,7 +654,7 @@ def convert_to_latex(Node, sectiondepth=0):
         raw = Node.xpath("./span[@class='raw']")
         if len(raw) == 1: roll += "{\\bf [%s]}+"%sanitize_string(raw[0].text)
         num = Node.xpath("./span[@class='num']")
-        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\footnotesize\\textsc{\\textbf{D}}}"
+        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\textsc{\\textbf{D}}}"
         face = Node.xpath("./span[@class='face']")
         roll += "{\\bf %s}"%sanitize_string(face[0].text)
         boff = Node.xpath("./span[@class='bOff']")
