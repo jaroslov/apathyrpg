@@ -456,6 +456,23 @@ def convert_to_latex(Node, sectiondepth=0):
             return text
         else:
           return sanitize_string(Node.text)
+      elif klass == 'figure':
+        surround = "\n\\begin{figure}[!htb]\n%s\n\\caption{%s}\n\\end{figure}\n\n"
+        captionstr = ""
+        caption = Node.xpath("descendant::caption")
+        if len(caption) == 1:
+          captionstr = convert_to_latex(caption[0]).strip()
+        bodystr = ""
+        for child in Node.getchildren():
+          bodystr += convert_to_latex(child)+"\n"
+        return surround%(bodystr, captionstr)
+      elif klass == 'note':
+        text = ""
+        for child in Node.getchildren():
+          text += convert_to_latex(child)+"\n"
+        text = text.strip()
+        text = "{\\normalsize \\sc Note:} "+text+"\n\n"
+        return text
       else:
         print >> sys.stderr, "Unknown div-class attribute `%s'."%klass
     else:
@@ -469,6 +486,11 @@ def convert_to_latex(Node, sectiondepth=0):
       text += sanitize_string(Node.text)
     if Node.tail is not None:
       text += " " + sanitize_string(Node.tail)
+    return text
+  elif Node.tag == 'caption':
+    text = ""
+    for child in Node.getchildren():
+      text += convert_to_latex(child)+"\n"
     return text
   elif Node.tag == 'dl':
     text = "\n\\begin{description}\n"
