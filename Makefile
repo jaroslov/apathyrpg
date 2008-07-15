@@ -6,17 +6,31 @@ clean:
 squeaky-clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
 
-webpage:
-	${BUILDSCRIPT} --prefix=Doc/ -w --retarget-resources  > tmp.xhtml
+standard: standard-wp standard-pdf
 
-tex:
-	${BUILDSCRIPT} --prefix=Doc/ -l --retarget-resources  > tmp.tex
+medieval: medieval-wp medieval-pdf
 
-pdf: tex
-	pdflatex tmp.tex > out.log
-	pdflatex tmp.tex > out.log
-	pdflatex tmp.tex > out.log
-	pdflatex tmp.tex > out.log
+standard-wp:
+	${BUILDSCRIPT} --prefix=Doc/ -w --retarget-resources  > ARPG.xhtml
+
+medieval-wp:
+	${BUILDSCRIPT} --prefix=Doc/ -w --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.arpg.xhtml
+
+standard-tex:
+	${BUILDSCRIPT} --prefix=Doc/ -l --retarget-resources  > ARPG.tex
+
+medieval-tex:
+	${BUILDSCRIPT} --prefix=Doc/ -l --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.arpg.tex
+
+standard-pdf: standard-tex
+	pdflatex ARPG.tex > out.log
+	pdflatex ARPG.tex > out.log
+	pdflatex ARPG.tex > out.log
+
+medieval-pdf: medieval-tex
+	pdflatex Medieval.arpg.tex > out.log
+	pdflatex Medieval.arpg.tex > out.log
+	pdflatex Medieval.arpg.tex > out.log
 
 showpdf: pdf
-	open tmp.pdf
+	open ARPG.pdf

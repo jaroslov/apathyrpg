@@ -193,6 +193,9 @@ def build_minitable(minitableheader, minitableitems):
       td2a.text = headers[row*2+1]+":"
   return table
 
+def sort_table_by_column(table, index):
+  return table
+
 def transform_summarize_table(subdoc, options):
   not_in_tables = subdoc.xpath("//th[@class!='Title' and @class!='Table']")
   not_in_columns = []
@@ -314,6 +317,27 @@ def combine_in_place(Node, options):
     return Node
   else:
     Node = combine_in_place(Node, options)
+  return Node
+
+def combine_welds(Node, options):
+  weldfields = Node.xpath("//div[@class='table-weld']")
+  for weldfield in weldfields:
+    # build a single table from the subtables
+    welds = weldfield.xpath("./a[@class='weld']")
+    globaldoc = None
+    globalbody = None
+    for weld in welds:
+      subdocname = os.path.join(options.prefix, weld.get('href'))
+      subdoc = etree.parse(subdocname).getroot()
+      if globaldoc is None:
+        globaldoc = subdoc
+        globalbody = globaldoc.xpath("//tbody")[0]
+      else:
+        trows = subdoc.xpath("//tr")
+        for trow in trows:
+          globalbody.append(trow)
+    globaltbl = transform_summarize_table(globaldoc, options)
+    weldfield.getparent().replace(weldfield, globaltbl)
   return Node
 
 def combine_references(DocNode, options):
@@ -842,6 +866,7 @@ def buildDocument(options):
   maindoc = etree.parse(docname)
   maindoc = combine_in_place(maindoc, options)
   maindoc = combine_references(maindoc, options)
+  maindoc = combine_welds(maindoc, options)
   maindoc = retarget_resources(maindoc, options)
   report_categories(maindoc, options) 
   maindoc = remove_by_timeperiod(maindoc, options)
