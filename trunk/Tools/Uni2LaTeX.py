@@ -18,7 +18,6 @@ import codecs, sys
 def buildMapFrom(where):
   Map = {}
   for wh in where:
-    print >> sys.stderr, wh
     mappinglines = codecs.open(wh,"r","utf-8").readlines()
     for mappingline in mappinglines:
       umapping = unicode(mappingline)
