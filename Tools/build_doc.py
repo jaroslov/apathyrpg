@@ -47,7 +47,8 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\newcommand{\\descriptionbox}[2][~] {
   \\vspace{.5em}
   \\textsc{\\noindent {\\textbf{#1}}} ---------
-  {\\small #2}
+
+  \\small{#2}
   \\vspace{.1em}
 }
 
@@ -760,6 +761,17 @@ def convert_to_latex(Node, sectiondepth=0):
             rowstr += convert_children_to_latex(td).strip()
           rowsstr += rowstr + "\\\\\n"
         return surround%(colstyles, headerstr+rowsstr)
+      elif klass == "minitable":
+        # only a small table
+        surround = "\n\n\n\\begin{tabular}{rlrl}\n%s\n\\end{tabular}"
+        trows = Node.xpath("./tbody/tr")
+        rowsstr = ""
+        for trow in trows:
+          tds = trow.xpath("./td")
+          rowstr = "{\\footnotesize \\textsc{\\textbf{%s}}~} & %s"%(sanitize_string(tds[0].text), convert_children_to_latex(tds[1]))
+          rowstr += " & {\\footnotesize \\textsc{\\textbf{%s}}~} & %s \\\\"%(sanitize_string(tds[2].text), convert_children_to_latex(tds[3]))
+          rowsstr += rowstr
+        return surround%rowsstr
       else:
         print >> ERRORFILE, "Unknown table with class `%s'."%klass
     else:
