@@ -46,12 +46,9 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 }
 \\newcommand{\\descriptionbox}[2][~] {
   \\vspace{.5em}
-  \\vbox{
-    \\textsc{\\noindent {\\textbf{#1}}}
-
-        {\\small #2}
-      \\vspace{.1em}
-  }
+  \\textsc{\\noindent {\\textbf{#1}}} ---------
+  {\\small #2}
+  \\vspace{.1em}
 }
 
 
@@ -607,7 +604,7 @@ def convert_to_latex(Node, sectiondepth=0):
         bns = Node.xpath("./span[@class='bns']")
         if len(bns) == 1: roll += "{\\bf %s}"%sanitize_string(bns[0].text)
         mul = Node.xpath("./span[@class='mul']")
-        if len(mul) == 1: roll += "$\times${\\bf %s}"%sanitize_string(mul[0].text)
+        if len(mul) == 1: roll += "$\\times${\\bf %s}"%sanitize_string(mul[0].text)
         kind = Node.xpath("./span[@class='kind']")
         if len(kind) == 1: roll += "{\\textsc{\\textbf{%s}}}"%sanitize_string(kind[0].text)
         roll = roll.strip()
@@ -701,7 +698,7 @@ def convert_to_latex(Node, sectiondepth=0):
           first = True
           rowstr = ""
           for td in tds:
-            if not first: rowstr += "\\vline & "
+            if not first: rowstr += " & "
             else: first = False
             rowstr += convert_children_to_latex(td).strip()
           rowsstr += rowstr + "\\\\\n"
