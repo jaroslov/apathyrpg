@@ -15,3 +15,6 @@ pdf: tex
 	pdflatex tmp.tex > out.log
 	pdflatex tmp.tex > out.log
 	pdflatex tmp.tex > out.log
+
+showpdf: pdf
+	open tmp.pdf
