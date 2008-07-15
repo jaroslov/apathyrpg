@@ -44,6 +44,16 @@ LATEX = """\\documentclass[twoside,10pt]{book}
   }
   \\addtocounter{ExampleCounter}{1}
 }
+\\newcommand{\\descriptionbox}[2][~] {
+  \\vspace{.1em}
+  \\vbox{
+    \\textsc{\\noindent {\\textbf{#1}}}
+      \\begin{quotation}
+        {\\tiny #2}
+      \\end{quotation}
+      \\vspace{1em}
+  }
+}
 
 
 \\begin{document}
@@ -467,6 +477,16 @@ def convert_to_latex(Node, sectiondepth=0):
             return text
         else:
           return sanitize_string(Node.text)
+      elif klass == 'description-set':
+        descriptions = Node.xpath("./div[@class='description']")
+        surround = "%s"
+        text = ""
+        for description in descriptions:
+          title = convert_children_to_latex(description.xpath("./h1")[0])
+          body = convert_children_to_latex(description.xpath("./div[@class='description-body']")[0])
+          ditem = "\\descriptionbox[%s]{%s}\n\n"%(title.strip(), body.strip())
+          text += ditem
+        return surround%(text)
       elif klass == 'figure':
         subject = Node.getchildren()[0]
         if subject.tag == 'table': subject = "table"
@@ -618,8 +638,8 @@ def convert_to_latex(Node, sectiondepth=0):
           default = "l"
           if th.attrib.has_key('align'):
             alignment = th.get('align')
-            if alignment == 'left': default = 'l'
-            elif alignment == 'center': default = 'c'
+            if alignment[0] == 'l': default = 'l'
+            elif alignment[0] == 'c': default = 'c'
             else: default = 'r'
           elif th.attrib.has_key('width'):
             default = "p{%s}"%th.get('width')
@@ -637,12 +657,56 @@ def convert_to_latex(Node, sectiondepth=0):
             rowstr = "{\\small %s}"%convert_children_to_latex(td).strip()
             if "\\begin{math}" in rowstr:
               rowstr = "\\vspace{.25em}"+rowstr+"\\vspace{.25em}"
-            if Node.attrib.has_key('colspan'):
-              rowstr += "\\multicol{"+Node.get('colspan')+"}{c}{"+rowstr+"}"
+            if td.attrib.has_key('colspan'):
+              rowsstr += "\\multicolumn{"+td.get('colspan')+"}{c}{"+rowstr+"}"
             else:
               rowsstr += rowstr
           rowsstr += "\\\\\n\hline\n"
         return surround%(colstyles, headerstr+"\\\\\n\\hline\n\\hline\n"+rowsstr)
+      elif klass == 'category':
+        surround = "\\begin{longtable}{%s}\n%s\n\\end{longtable}"
+        colstyles = ""
+        headerstr = ""
+        rowsstr = ""
+        ths = Node.xpath("./thead/th")
+        trows = Node.xpath("./tbody/tr")
+        if len(ths) <= 0 or len(trows) <= 0:
+          return ""
+        header = ""
+        first = True
+        for th in ths:
+          colstyle = 'c'
+          if th.attrib.has_key('align'):
+            if th.get('align')[0] == 'l': colstyle = 'l'
+            elif th.get('align')[0] == 'c': colstyle = 'c'
+            else: colstyle = 'r'
+          if th.attrib.has_key('width'):
+            if th.get('width')[0] == 'l': colstyle = 'l'
+            elif th.get('width')[0] == 'c': colstyle = 'c'
+            elif th.get('width')[0] == 'r': colstyle = 'r'
+            else: colstyle = "p{%s}"%th.get('width')
+          colstyles += colstyle+" "
+          if not first: header += " & "
+          else: first = False
+          thtxt = th.text
+          if len(thtxt.split(' ')) > 1:
+            thtxt = "".join([s[0]+". " for s in thtxt.split(' ')]).strip()
+          if th.xpath("./@class='Title'"):
+            header += "{\\sc\\bf %s}"%sanitize_string(thtxt)
+          else:
+            header += "{\\sc\\bf \\begin{turn}{70}%s\\end{turn}}"%sanitize_string(thtxt)
+        header += "\\\\"
+        headerstr = "\n"+header+"\n\\hline\n\\hline\n\\endfirsthead\n"+header+"\n\\hline\n\\endhead\n"
+        for trow in trows:
+          tds = trow.xpath("./td")
+          first = True
+          rowstr = ""
+          for td in tds:
+            if not first: rowstr += " & "
+            else: first = False
+            rowstr += convert_children_to_latex(td).strip()
+          rowsstr += rowstr + "\\\\\n"
+        return surround%(colstyles, headerstr+rowsstr)
       else:
         print >> ERRORFILE, "Unknown table with class `%s'."%klass
     else:
