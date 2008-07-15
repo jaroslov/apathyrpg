@@ -727,6 +727,7 @@ def convert_to_latex(Node, sectiondepth=0):
         if len(ths) <= 0 or len(trows) <= 0:
           return ""
         header = ""
+        header2 = ""
         first = True
         for th in ths:
           colstyle = 'c'
@@ -739,18 +740,21 @@ def convert_to_latex(Node, sectiondepth=0):
             elif th.get('width')[0] == 'c': colstyle = 'c'
             elif th.get('width')[0] == 'r': colstyle = 'r'
             else: colstyle = "p{%s}"%th.get('width')
-          colstyles += colstyle+" "
-          if not first: header += " & "
+          colstyles += "|"+colstyle+" "
+          if not first: header += " & "; header2 += " & "
           else: first = False
           thtxt = th.text
           if len(thtxt.split(' ')) > 1:
             thtxt = "".join([s[0]+". " for s in thtxt.split(' ')]).strip()
           if th.xpath("./@class='Title'"):
             header += "{\\begin{turn}{0}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
+            header2 += "{\\textsc{\\textbf{%s}}\emph{cont'd}}"%sanitize_string(thtxt)
           else:
             header += "{\\begin{turn}{70}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
+            header2 += "{\\begin{turn}{70}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
         header += "\\\\"
-        headerstr = "\n"+header+"\n\\hline\n\\hline\n\\endfirsthead\n"+header+"\n\\hline\n\\endhead\n"
+        header2 += "\\\\"
+        headerstr = "\\hline\n"+header+"\n\\hline\n\\hline\n\\endfirsthead\n\\hline\n"+header2+"\n\\hline\n\\endhead\n"
         for trow in trows:
           tds = trow.xpath("./td")
           first = True
@@ -759,17 +763,19 @@ def convert_to_latex(Node, sectiondepth=0):
             if not first: rowstr += " & "
             else: first = False
             rowstr += convert_children_to_latex(td).strip()
-          rowsstr += rowstr + "\\\\\n"
-        return surround%(colstyles, headerstr+rowsstr)
+          rowsstr += rowstr + "\\\\\n\\hline\n"
+        return surround%(colstyles+"|", headerstr+rowsstr)
       elif klass == "minitable":
         # only a small table
-        surround = "\n\n\n\\begin{tabular}{rlrl}\n%s\n\\end{tabular}"
+        surround = "\n\n\n\\hspace{-2em}\\begin{tabular}{rlrl}\n%s\n\\end{tabular}\n\n"
         trows = Node.xpath("./tbody/tr")
         rowsstr = ""
         for trow in trows:
           tds = trow.xpath("./td")
-          rowstr = "{\\footnotesize \\textsc{\\textbf{%s}}~} & %s"%(sanitize_string(tds[0].text), convert_children_to_latex(tds[1]))
-          rowstr += " & {\\footnotesize \\textsc{\\textbf{%s}}~} & %s \\\\"%(sanitize_string(tds[2].text), convert_children_to_latex(tds[3]))
+          rowstr = "{\\scriptsize \\textsc{\\textbf{%s}}~}&{\\scriptsize %s}"
+          rowstr += "&{\\scriptsize \\textsc{\\textbf{%s}}~}&{\\scriptsize %s} \\\\"
+          rowstr = rowstr%(sanitize_string(tds[0].text), convert_children_to_latex(tds[1]),
+                           sanitize_string(tds[2].text), convert_children_to_latex(tds[3]))
           rowsstr += rowstr
         return surround%rowsstr
       else:
