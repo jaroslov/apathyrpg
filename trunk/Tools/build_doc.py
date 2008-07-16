@@ -826,7 +826,7 @@ def convert_to_latex(Node, sectiondepth=0):
         return surround%(colstyles+"|", headerstr+rowsstr)
       elif klass == "minitable":
         # only a small table
-        surround = "\n\n\n\\hspace{-2em}\\begin{tabular}{rlrl}\n%s\n\\end{tabular}\n\n"
+        surround = "\n\n\n\\hspace{-2em}\\begin{tabular}{rl|rl}\n%s\n\\end{tabular}\n\n"
         trows = Node.xpath("./tbody/tr")
         rowsstr = ""
         for trow in trows:
