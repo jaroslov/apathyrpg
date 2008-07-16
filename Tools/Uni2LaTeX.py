@@ -1,4 +1,4 @@
-import codecs, sys
+import codecs, sys, os
 ###
 #  Convert a Unicode character to a LaTeX code
 #
@@ -35,9 +35,15 @@ def buildFromCharMap():
     Map[key] = value
   return Map
 
-Map = buildMapFrom(["Tools/latin-1.map","Tools/ent-sym-and-greek.map","Tools/basic.map"])
-
 def unicodeToLaTeX(string):
   for key,value in Map.items():
     string = string.replace(key,value)
   return string
+
+def initialize_mapping(prefix="Tools"):
+  Map = buildMapFrom([os.path.join(prefix,"latin-1.map"),
+                      os.path.join(prefix,"ent-sym-and-greek.map"),
+                      os.path.join(prefix,"basic.map")])
+
+Map = {}
+

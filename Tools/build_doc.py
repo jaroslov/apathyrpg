@@ -5,7 +5,8 @@ from optparse import OptionParser
 from lxml import etree
 from random import SystemRandom
 import codecs
-from Uni2LaTeX import unicodeToLaTeX
+from Uni2LaTeX import unicodeToLaTeX, initialize_mapping
+
 
 FASTHACK = False
 
@@ -87,6 +88,8 @@ def apathy_hash(string):
   return hash
 
 def parseOptions():
+  initialize_mapping()
+
   parser = OptionParser()
   parser.add_option("-p","--prefix",dest="prefix",
                     help="[required] the directory of the document",
