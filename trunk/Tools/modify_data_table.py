@@ -51,11 +51,6 @@ def parseOptions():
   
   (options, args) = parser.parse_args()
 
-  if parser.usage:
-    parser.print_help(sys.stderr)
-    print >> sys.stderr, USAGE_MESSAGE
-    sys.exit(1)
-
   if len(args) != 1:
     print >> sys.stderr, "see --help"
     parser.print_help(sys.stderr)
@@ -66,6 +61,7 @@ def parseOptions():
     else: return 0
   vals = [bool_to_int(f is not None)
             for f in [options.insert, options.append, options.remove]]
+
   if sum(vals) != 1:
     print >> sys.stderr, "see --help"
     print >> sys.stderr, "The options 'insert', 'remove', and 'append' are mutually exclusive"
