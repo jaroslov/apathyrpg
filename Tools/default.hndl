@@ -1,0 +1,40 @@
+tag: div
+open:
+in:
+close:
+tag: a
+open:
+in:
+close:
+tag: p
+open: \n{\n
+in:
+close: \n}\n\n
+tag: html
+open:
+in:
+close:
+tag: body
+open:
+in:
+close:
+tag: head
+open:
+in:
+close:
+tag: title
+open:
+in:
+close:
+tag: table
+open: \\begin{table}\n\\begin{tabular}{%s}\n\\hline\n
+in:
+close: \\end{tabular}\n\\caption{}\n\\end{table}
+tag: thead
+open:
+in:
+close: \\\\\\hline\n\\hline
+tag: th
+open:
+in:
+close:
