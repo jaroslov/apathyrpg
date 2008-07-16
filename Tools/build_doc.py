@@ -196,14 +196,25 @@ def build_minitable(minitableheader, minitableitems):
       td2a.text = headers[row*2+1]+":"
   return table
 
-def sort_table_by_column(table, index):
+def sort_table_by_columns(table, indices):
   trows = table.xpath("./tbody/tr")
   strows = []
   for trow in trows:
+    idtxt = []
     try:
-      idtxt = trow[index].xpath("./p")[0].text
+      for index in indices:
+        text = "".join(trow[index].xpath("./p//text()"))
+        ## we're going to try to convert to a float, just for good heuristics
+        textps = text.split(' ')
+        csorts = []
+        for textp in textps:
+          try:
+            csorts.append(float(textp))
+          except:
+            csorts.append(textp)
+        idtxt.append(csorts)
     except:
-      idtxt = ""
+      idtxt.append("")
     strows.append((idtxt, copy.deepcopy(trow)))
   strows.sort()
   tbody = table.xpath("./tbody")[0]
@@ -321,6 +332,8 @@ def transform_hrid_table(subdoc, options):
   for nit in not_in_tables:
     title.getparent().remove(nit)
 
+  sortedtable = sort_table_by_columns(subdoc, [0, 1])
+
   rdiv = etree.Element("div")
   rdiv.append(subdoc)
   rdiv.append(DSetNode)
@@ -342,8 +355,13 @@ def combine_in_place(Node, options):
   return Node
 
 def combine_welds(Node, options):
+  ## whichever table is first gets to define the columns which are viewed
+  #
   weldfields = Node.xpath("//div[@class='table-weld']")
   for weldfield in weldfields:
+    order = [0,1]
+    if weldfield.attrib.has_key('sort'):
+      order = [int(s) for s in weldfield.get('sort').split(',')]
     # build a single table from the subtables
     welds = weldfield.xpath("./a[@class='weld']")
     globaldoc = None
@@ -358,21 +376,9 @@ def combine_welds(Node, options):
         trows = subdoc.xpath("//tr")
         for trow in trows:
           globalbody.append(trow)
-    #thead = globaldoc.xpath("./thead")[0]
-    #category = etree.Element("th")
-    #category.set('width', '')
-    #category.set('class', 'Table')
-    #category.text = "Category"
-    #thead.insert(1, category)
-    #print >> ERRORFILE, etree.tostring(thead)
-    #trows = globaldoc.xpath("./tbody/tr")
-    #for trow in trows:
-    #  elt = etree.Element("td"); pelt = etree.SubElement(elt, 'p');
-    #  pelt.text = weld.get('href')
-    #  trow.insert(1, elt)
     globaltbl = transform_summarize_table(globaldoc, options)
     weldfield.getparent().replace(weldfield, globaltbl)
-    sort_table_by_column(globaltbl, 0)
+    sort_table_by_columns(globaltbl, order)
   return Node
 
 def combine_references(DocNode, options):
