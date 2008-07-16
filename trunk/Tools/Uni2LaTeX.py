@@ -35,15 +35,13 @@ def buildFromCharMap():
     Map[key] = value
   return Map
 
-def unicodeToLaTeX(string):
+def unicodeToLaTeX(string, Map):
   for key,value in Map.items():
     string = string.replace(key,value)
   return string
 
 def initialize_mapping(prefix="Tools"):
-  Map = buildMapFrom([os.path.join(prefix,"latin-1.map"),
-                      os.path.join(prefix,"ent-sym-and-greek.map"),
-                      os.path.join(prefix,"basic.map")])
-
-Map = {}
+  return buildMapFrom([os.path.join(prefix,"latin-1.map"),
+                       os.path.join(prefix,"ent-sym-and-greek.map"),
+                       os.path.join(prefix,"basic.map")])
 

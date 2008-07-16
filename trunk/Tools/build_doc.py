@@ -16,6 +16,8 @@ HTMLNSMap = {'x':HTMLNS}
 ERRORFILE = sys.stderr
 #ERRORFILE = open("tex.err", "w")
 
+GLOBALENTITYMAP = initialize_mapping("Tools")
+
 LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage{pslatex}
 \\usepackage{newcent}
@@ -88,8 +90,6 @@ def apathy_hash(string):
   return hash
 
 def parseOptions():
-  initialize_mapping()
-
   parser = OptionParser()
   parser.add_option("-p","--prefix",dest="prefix",
                     help="[required] the directory of the document",
@@ -286,7 +286,13 @@ def transform_hrid_table(subdoc, options):
     bodydiv = DescNode.xpath("//div[@class='description-body']")[0]
     titlep.text = row.getchildren()[titledx].xpath("p")[0].text
     Nid = "id%s"%(apathy_hash(titlep.text))
-    children = row.getchildren()[descdx].getchildren()
+    try:
+      children = row.getchildren()[descdx].getchildren()
+    except:
+      print >> ERRORFILE, etree.tostring(subdoc)[:400]
+      print >> ERRORFILE, "*"*10, descdx
+      print >> ERRORFILE, etree.tostring(row)
+      raise Exception, ""
     for child in children:
       bodydiv.append(child)
     DescNode.set('id', Nid)
@@ -518,7 +524,7 @@ def insert_table_of_contents(Node):
 def sanitize_string(string):
   if string is None:
     return ""
-  return unicodeToLaTeX(string)
+  return unicodeToLaTeX(string, GLOBALENTITYMAP)
 
 def convert_children_to_latex(Node):
   text = ""
