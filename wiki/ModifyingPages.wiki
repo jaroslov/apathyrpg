@@ -4,3 +4,27 @@
 = Introduction =
 
 The Apathy system relies on a description of all the parts in a subset (variant) of XHTML. This means that all of the data for the entire system is stored in a number of XHTML documents. The build system takes these XHTML documents and combines them together, performing a number of transformations and then builds a web page or a TeX document from the input values.
+
+= Modifying a `book` =
+
+The Documents that make up the game are found in the folder "Doc". The current (and only) top-level document is called "Apathy.xhtml". The code within Apathy.xhtml looks like this:
+
+{{{
+<?xml version="1.0"?>
+<div class="book">
+  <a class="in-place" href="Authors.xhtml"/>
+  <div class="section-body">
+    <a class="in-place" href="Manual.xhtml"/>
+    <a class="in-place" href="Rules.xhtml"/>
+    <a class="in-place" href="Appendices.xhtml"/>
+  </div>
+</div>
+}}}
+
+  # The first line specifies that this is an XML-compatible document.
+  # The second line specifies the root-element, which is the XHTML `div` tag; this tag has the `class` of "book" which specifies that this document holds an entire book
+  # The next line is a reference tag, specified using the XHTML `a` tag. The class `in-place` tells the build-system to replace this tag with the contents of the file called "Authors.xhtml"
+  # The `book` class must have a `div` with class `section-body`
+  # The next three lines specify the parts of the book
+
+= Modifying a `part` =
