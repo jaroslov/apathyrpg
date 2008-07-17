@@ -1,352 +1,963 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <table class="category" name="Content/Martial Arts/Combat">
-  <thead name="titles" class="titles">
-    <th width="l" class="Title">Name</th>
-    <th width="l" minitable="yes" class="Table">Rank</th>
-    <th width="l" minitable="yes" class="Table">Actions</th>
-    <th width="l" class="Table">Multiple</th>
-    <th width="l" minitable="yes" class="Table">Attribute</th>
-		<th width="l" minitable="yes" class="Table">Type</th>
-    <th width="l" class="Description">Description</th>
+  <thead class="titles" name="titles">
+    <th class="Title" width="l">Name</th>
+    <th class="Title" width="l">Name</th>
+    <th class="Table" minitable="yes" width="l">Rank</th>
+    <th class="Table" minitable="yes" width="l">Actions</th>
+    <th class="Table" width="l">Multiple</th>
+    <th class="Table" minitable="yes" width="l">Attribute</th>
+    <th class="Table" minitable="yes" width="l">Type</th>
+    <th class="Description" width="l">Description</th>
   </thead>
   <tbody>
     <tr>
-      <td><p>Charge</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>On success, knocks opponent to the ground.  Opponent may defend by make a DEX check at DEX -2 per success.</p></td>
-    </tr>
-    <tr>
-      <td><p>Grapple</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Opponent is grappled, and may only use Knives, Isolation, or Unarmed Basic Attack; opponent may prevent a grapple by making a STR or DEX check at -2 per success.  Opponent may accept the grapple, and may attempt a free Basic Attack as a defensive maneuver.</p></td>
-    </tr>
-    <tr>
-      <td><p>Aimed Shot</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
       <td>
-				<p>Gain +X to hit dice by taking X actions, where is X is no more than your level.</p>
-			</td>
-    </tr>
-    <tr>
-      <td><p>Bash</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Add 3xLVL AP to a type C attack</p></td>
-    </tr>
-    <tr>
-      <td><p>Burst</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-			<td><p/></td>
-    </tr>
-    <tr>
-      <td><p>Called Shot</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Subtract level from a called shot negative, but may not force negative below zero</p></td>
-    </tr>
-    <tr>
-      <td><p>Deadly</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
+        <p>Charge</p>
+      </td>
       <td>
-				<p>On success, your next attack deals 1/2 damage, but is now type U.  You gain +X to hit on your next attack, where X is your number of successes. Using Deadly requires at least a rudimentary knowledge of the anatomy of the creature being attacked. If necessary, the GM can require an additional action and appropriate skill-check to determine if Deadly can be used.</p>
-				<div class="example">
-					<h1 class="title"><p>Deadly Strike against Giant Claw Shrimp</p></h1>
-					<p>Borsephus is attempting to perform a Deadly Rapier strike against a Giant Claw Shrimp. However, the GM does not think that Borsephus would know that the only vulnerable spot on a Giant Claw Shrimp is at the base of the head of the Shrimp, to either side of the dorsal crest. The GM makes Borsephus roll the skill Zoology, which Borsephus does not have. Borsephus fails the roll, thus losing the effect of Deadly for his Rapier attack, but still forced to use the action for Deadly, anyways. That is, Borsephus continues to attack with Deadly Rapier, but unknowingly, does no extra damage.</p>
-				</div>
-			</td>
-    </tr>
-    <tr>
-      <td><p>Drawing Cut</p></td>
-      <td><p>2</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>If you succeed hitting with an S type weapon, opponent may not defend against level subsequent actions against the same weapon.  If the opponent moves, they take one additional hit of damage.</p></td>
-    </tr>
-    <tr>
-      <td><p>Feint</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>For each success you roll, opponent rolls his defense skill at one less die against your next attack.</p></td>
-    </tr>
-    <tr>
-      <td><p>Hold/Break</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>If you lost a grapple contest, you may roll again up to level times to retain or break the hold.</p></td>
-    </tr>
-    <tr>
-      <td><p>Lunge</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>On your next move, you may move extra squares equal to your successes, in a single direction</p></td>
-    </tr>
-    <tr>
-      <td><p>Multiple Weapons</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>Yes</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
+        <p>Combat</p>
+      </td>
       <td>
-				<p>You may attack with one "off-limb" per level, or with different Basic Attacks with the same limb, without spending an action Switching Basic Attacks, if the Basic Attacks are already equipped.  Multiple Weapon does not reduce or eliminate the time it takes to equip a Basic Attack.  At each level of Multiple Weapon, you must choose one Basic Attack that may be used with Multiple Weapon.  Other types of Basic Attacks may not be used with Multiple Weapon.  "Off-limb" attacks are made at -7 + 1 per level.  Different Basic Attacks from the same limb are made with no negative.</p>
-				<div class="example">
-					<h1 class="title"><p>Noah clarifies with an Example</p></h1>
-					<p>The minds of men were clouded before... after this example, the dawn of a new Age of Enlightenment!</p>
-				</div>
-			</td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>On success, knocks opponent to the ground.  Opponent may defend by make a DEX check at DEX -2 per success.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Pin</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>After a P type attack near a reasonable surface, target is now pinned to that surface by the weapon.  Opponent may defend by making a STR check at -2 per success.</p></td>
+      <td>
+        <p>Grapple</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Opponent is grappled, and may only use Knives, Isolation, or Unarmed Basic Attack; opponent may prevent a grapple by making a STR or DEX check at -2 per success.  Opponent may accept the grapple, and may attempt a free Basic Attack as a defensive maneuver.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Point Blank</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Reduce minimum range by 1 square per level.</p></td>
+      <td>
+        <p>Aimed Shot</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Gain +X to hit dice by taking X actions, where is X is no more than your level.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Savage</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>If the your attack hits, one die per success on your next attack is considered to have rolled the maximum value on it's first roll.</p></td>
+      <td>
+        <p>Bash</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Add 3xLVL AP to a type C attack</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Pin Shield</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>For each success you roll, opponent may not block with their shield for that many turns.  Opponent is free from this negative if he moves out of your weapon range.</p></td>
+      <td>
+        <p>Burst</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p/>
+      </td>
     </tr>
     <tr>
-      <td><p>Skewer</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>See Drawing Cut, but for P weapons only.</p></td>
+      <td>
+        <p>Called Shot</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Subtract level from a called shot negative, but may not force negative below zero</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Stunning Blow</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Target's damage after armor is reduced by half, rounded down.  They must succeed a WIL check -2 per success to stay conscious.</p></td>
+      <td>
+        <p>Deadly</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>On success, your next attack deals 1/2 damage, but is now type U.  You gain +X to hit on your next attack, where X is your number of successes. Using Deadly requires at least a rudimentary knowledge of the anatomy of the creature being attacked. If necessary, the GM can require an additional action and appropriate skill-check to determine if Deadly can be used.</p>
+        <div class="example">
+          <h1 class="title">
+            <p>Deadly Strike against Giant Claw Shrimp</p>
+          </h1>
+          <p>Borsephus is attempting to perform a Deadly Rapier strike against a Giant Claw Shrimp. However, the GM does not think that Borsephus would know that the only vulnerable spot on a Giant Claw Shrimp is at the base of the head of the Shrimp, to either side of the dorsal crest. The GM makes Borsephus roll the skill Zoology, which Borsephus does not have. Borsephus fails the roll, thus losing the effect of Deadly for his Rapier attack, but still forced to use the action for Deadly, anyways. That is, Borsephus continues to attack with Deadly Rapier, but unknowingly, does no extra damage.</p>
+        </div>
+      </td>
     </tr>
     <tr>
-      <td><p>Trickshot</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Reduce cover negative by 1 per success.</p></td>
+      <td>
+        <p>Drawing Cut</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>2</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>If you succeed hitting with an S type weapon, opponent may not defend against level subsequent actions against the same weapon.  If the opponent moves, they take one additional hit of damage.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Disarm</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>On success, you disarm your opponent.  Opponent my defend by making a DEX check at -2 per success, +1 per extra limb.</p></td>
+      <td>
+        <p>Feint</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>For each success you roll, opponent rolls his defense skill at one less die against your next attack.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Fiendish Maneuver</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Skip up to level actions to add level dice to strike, and +level to damage</p></td>
+      <td>
+        <p>Hold/Break</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>If you lost a grapple contest, you may roll again up to level times to retain or break the hold.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Hurl</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>Yes</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Pick one of your Basic Attacks, which is detachable or extendable by some means.  This Basic Attack gains +level squares of range, but is afterward unequipped, and is thrown +level squares, or next to the target on a successful hit.</p></td>
+      <td>
+        <p>Lunge</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>On your next move, you may move extra squares equal to your successes, in a single direction</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Snatch Weapon</p></td>
-      <td><p>2</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>On success, you take your opponents weapon.  Opponent may defend by making a STR check at -1 per success, +1 per extra limb.</p></td>
+      <td>
+        <p>Multiple Weapons</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>Yes</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>You may attack with one "off-limb" per level, or with different Basic Attacks with the same limb, without spending an action Switching Basic Attacks, if the Basic Attacks are already equipped.  Multiple Weapon does not reduce or eliminate the time it takes to equip a Basic Attack.  At each level of Multiple Weapon, you must choose one Basic Attack that may be used with Multiple Weapon.  Other types of Basic Attacks may not be used with Multiple Weapon.  "Off-limb" attacks are made at -7 + 1 per level.  Different Basic Attacks from the same limb are made with no negative.</p>
+        <div class="example">
+          <h1 class="title">
+            <p>Noah clarifies with an Example</p>
+          </h1>
+          <p>The minds of men were clouded before... after this example, the dawn of a new Age of Enlightenment!</p>
+        </div>
+      </td>
     </tr>
     <tr>
-      <td><p>Quick Draw</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>On success, draw a weapon in 0 actions.</p></td>
+      <td>
+        <p>Pin</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>After a P type attack near a reasonable surface, target is now pinned to that surface by the weapon.  Opponent may defend by making a STR check at -2 per success.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Pin Weapon</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>If you hit your opponent, may choose to attack their weapon, dealing no damage.  You and your opponent may not attack with your striking weapon and opponents target weapon for up to level turns.  If opponent breaks the pin by moving away, they automatically take damage from your weapon.  If you otherwise leave weapon range, the pin is lost.</p></td>
+      <td>
+        <p>Point Blank</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Reduce minimum range by 1 square per level.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Anticipated Dodge</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>Skip up to level actions on your turn to automatically dodge the same number of attacks from one target.</p></td>
+      <td>
+        <p>Savage</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>If the your attack hits, one die per success on your next attack is considered to have rolled the maximum value on it's first roll.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Parry Projectile</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>You may parry level missiles and projectiles thrown from hand weapons per turn.</p></td>
+      <td>
+        <p>Pin Shield</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>For each success you roll, opponent may not block with their shield for that many turns.  Opponent is free from this negative if he moves out of your weapon range.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Defend Other</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>On success, you may defend one target per level, if you are in range of both the target and the attacker, and have clear line of sight to the attacker.</p></td>
+      <td>
+        <p>Skewer</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>See Drawing Cut, but for P weapons only.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Dodge</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>You may dodge level times per turn.  On a successful dodge, you receive no damage.</p></td>
+      <td>
+        <p>Stunning Blow</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Target's damage after armor is reduced by half, rounded down.  They must succeed a WIL check -2 per success to stay conscious.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Ranging</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>You may skip level actions per turn.  During your defense, you may take a 1 square step in any valid direction, for each action you skipped.  If this would put you out of range of the attack, you are not hit.</p></td>
+      <td>
+        <p>Trickshot</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Reduce cover negative by 1 per success.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Hard Parry</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>You parry an attack using this parry skill.  Roll a contest of damage.  If you exceed your opponents damage, they may not attack with that weapon on their next action.</p></td>
+      <td>
+        <p>Disarm</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>On success, you disarm your opponent.  Opponent my defend by making a DEX check at -2 per success, +1 per extra limb.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Reciprocal Attack</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>You defend an attack with Reciprocal attack.  If you are hit, you take full damage.  On success, you may attack back, and the attacker may not defend.</p></td>
+      <td>
+        <p>Fiendish Maneuver</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Skip up to level actions to add level dice to strike, and +level to damage</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Shield</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>Defend using your shield.  You get 1 success automatically.  On a successful defense, add your shields armor to your armor.</p></td>
+      <td>
+        <p>Hurl</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>Yes</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Pick one of your Basic Attacks, which is detachable or extendable by some means.  This Basic Attack gains +level squares of range, but is afterward unequipped, and is thrown +level squares, or next to the target on a successful hit.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Shrug Blow</p></td>
-      <td><p>1</p></td>
-      <td><p>0</p></td>
-      <td><p>No</p></td>
-      <td><p>BLD</p></td>
-      <td><p>Defensive</p></td>
-      <td><p>Roll Shrug Blow at -Damage.  If you succeed, take only 1 damage.  May not be used against U damage.</p></td>
+      <td>
+        <p>Snatch Weapon</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>2</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>On success, you take your opponents weapon.  Opponent may defend by making a STR check at -1 per success, +1 per extra limb.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Close Combat</p></td>
-      <td><p>1</p></td>
-      <td><p>1</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Choose one Basic Attack per level.  You may use these Basic Attacks as an Unarmed attack that deals 1d6C damage rather than listed damage.</p></td>
+      <td>
+        <p>Quick Draw</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>On success, draw a weapon in 0 actions.</p>
+      </td>
     </tr>
     <tr>
-      <td><p>Bind Body</p></td>
-      <td><p>1</p></td>
-      <td><p>3</p></td>
-      <td><p>No</p></td>
-      <td><p>DEX</p></td>
-      <td><p>Offensive</p></td>
-      <td><p>Requires a successful Grapple.  Opponent may not take make any Basic Attacks, or Combat Actions.  Opponent may break the Bind by making a STR or DEX check at -2 per success, or by an opposed Grapple or Bind Body check.  Attacker must re-roll the bind body each turn.  If the Attacker defends, the bind body is immediately released.</p></td>
+      <td>
+        <p>Pin Weapon</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>If you hit your opponent, may choose to attack their weapon, dealing no damage.  You and your opponent may not attack with your striking weapon and opponents target weapon for up to level turns.  If opponent breaks the pin by moving away, they automatically take damage from your weapon.  If you otherwise leave weapon range, the pin is lost.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Anticipated Dodge</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>Skip up to level actions on your turn to automatically dodge the same number of attacks from one target.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Parry Projectile</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>You may parry level missiles and projectiles thrown from hand weapons per turn.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Defend Other</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>On success, you may defend one target per level, if you are in range of both the target and the attacker, and have clear line of sight to the attacker.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Dodge</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>You may dodge level times per turn.  On a successful dodge, you receive no damage.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Ranging</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>You may skip level actions per turn.  During your defense, you may take a 1 square step in any valid direction, for each action you skipped.  If this would put you out of range of the attack, you are not hit.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Hard Parry</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>You parry an attack using this parry skill.  Roll a contest of damage.  If you exceed your opponents damage, they may not attack with that weapon on their next action.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Reciprocal Attack</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>You defend an attack with Reciprocal attack.  If you are hit, you take full damage.  On success, you may attack back, and the attacker may not defend.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Shield</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>Defend using your shield.  You get 1 success automatically.  On a successful defense, add your shields armor to your armor.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Shrug Blow</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>0</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>BLD</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>Roll Shrug Blow at -Damage.  If you succeed, take only 1 damage.  May not be used against U damage.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Close Combat</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Choose one Basic Attack per level.  You may use these Basic Attacks as an Unarmed attack that deals 1d6C damage rather than listed damage.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Bind Body</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>3</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>Requires a successful Grapple.  Opponent may not take make any Basic Attacks, or Combat Actions.  Opponent may break the Bind by making a STR or DEX check at -2 per success, or by an opposed Grapple or Bind Body check.  Attacker must re-roll the bind body each turn.  If the Attacker defends, the bind body is immediately released.</p>
+      </td>
     </tr>
   </tbody>
 </table>
