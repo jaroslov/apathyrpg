@@ -267,6 +267,11 @@ def transform_hrid_table(subdoc, options):
   </div>
 </div>
 """
+  sort = [0, 1]
+  if subdoc.attrib.has_key('sort'):
+    sort = [int(s) for s in subdoc.get('sort').split(',')]
+  subdoc = sort_table_by_columns(subdoc, sort)
+
   minitablesitems = subdoc.xpath("//th[@minitable='yes']")
   minitablescols = []
   for mti in minitablesitems:
@@ -326,11 +331,6 @@ def transform_hrid_table(subdoc, options):
   ## nuke thead columns we don't want
   for nit in not_in_tables:
     title.getparent().remove(nit)
-
-  sort = [0, 1]
-  if subdoc.attrib.has_key('sort'):
-    sort = [int(s) for s in subdoc.get('sort').split(',')]
-  sortedtable = sort_table_by_columns(subdoc, sort)
 
   rdiv = etree.Element("div")
   rdiv.append(subdoc)
