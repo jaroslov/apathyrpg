@@ -3,12 +3,4 @@
 
 = Introduction =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The Apathy system relies on a description of all the parts in a subset (variant) of XHTML. This means that all of the data for the entire system is stored in a number of XHTML documents. The build system takes these XHTML documents and combines them together, performing a number of transformations and then builds a web page or a TeX document from the input values.
