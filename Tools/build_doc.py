@@ -31,7 +31,7 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage[T1]{fontenc}
 \\usepackage{hyperref}
 \\usepackage{wrapfig}
-\\usepackage[text={7in,7.75in},textheight=7in]{geometry}
+\\usepackage[textheight=9in]{geometry}
 
 \\newcounter{ExampleCounter}
 \\setcounter{ExampleCounter}{1}
@@ -831,15 +831,21 @@ def convert_to_latex(Node, sectiondepth=0):
         return surround%(colstyles+"|", headerstr+rowsstr)
       elif klass == "minitable":
         # only a small table
-        surround = "\n\n\n\\hspace{-2em}\\begin{tabular}{rl|rl}\n%s\n\\end{tabular}\n\n"
+        surround = "\n\n\n\\hspace{-2em}\\begin{tabular}{p{3.5em}l|p{3.5em}l}\n%s\n\\end{tabular}\n\n"
         trows = Node.xpath("./tbody/tr")
         rowsstr = ""
         for trow in trows:
           tds = trow.xpath("./td")
           rowstr = "{\\scriptsize \\textsc{\\textbf{%s}}~}&{\\scriptsize %s}"
           rowstr += "&{\\scriptsize \\textsc{\\textbf{%s}}~}&{\\scriptsize %s} \\\\"
-          rowstr = rowstr%(sanitize_string(tds[0].text), convert_children_to_latex(tds[1]),
-                           sanitize_string(tds[2].text), convert_children_to_latex(tds[3]))
+          thtxt1 = sanitize_string(tds[0].text)
+          if len(thtxt1.split(' ')) > 1:
+            thtxt1 = "".join([s[0]+"." for s in thtxt1.split(' ')]).strip()+":"
+          thtxt2 = sanitize_string(tds[2].text)
+          if len(thtxt2.split(' ')) > 1:
+            thtxt2 = "".join([s[0]+"." for s in thtxt2.split(' ')]).strip()+":"
+          rowstr = rowstr%(thtxt1, convert_children_to_latex(tds[1]),
+                           thtxt2, convert_children_to_latex(tds[3]))
           rowsstr += rowstr
         return surround%rowsstr
       else:
