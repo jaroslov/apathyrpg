@@ -249,6 +249,7 @@ def transform_summarize_table(subdoc, options):
         row.remove(nicol)
   for nit in not_in_tables:
     thead.remove(nit)
+  subdoc = sort_table_by_columns(subdoc, [0, 1])
   return subdoc
 
 def transform_hrid_table(subdoc, options):
@@ -297,13 +298,7 @@ def transform_hrid_table(subdoc, options):
     bodydiv = DescNode.xpath("//div[@class='description-body']")[0]
     titlep.text = row.getchildren()[titledx].xpath("p")[0].text
     Nid = "id%s"%(apathy_hash(titlep.text))
-    try:
-      children = row.getchildren()[descdx].getchildren()
-    except:
-      print >> ERRORFILE, etree.tostring(subdoc)[:400]
-      print >> ERRORFILE, "*"*10, descdx
-      print >> ERRORFILE, etree.tostring(row)
-      raise Exception, ""
+    children = row.getchildren()[descdx].getchildren()
     for child in children:
       bodydiv.append(child)
     DescNode.set('id', Nid)
@@ -332,7 +327,10 @@ def transform_hrid_table(subdoc, options):
   for nit in not_in_tables:
     title.getparent().remove(nit)
 
-  sortedtable = sort_table_by_columns(subdoc, [0, 1])
+  sort = [0, 1]
+  if subdoc.attrib.has_key('sort'):
+    sort = [int(s) for s in subdoc.get('sort').split(',')]
+  sortedtable = sort_table_by_columns(subdoc, sort)
 
   rdiv = etree.Element("div")
   rdiv.append(subdoc)
