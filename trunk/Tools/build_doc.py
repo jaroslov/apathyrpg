@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.5
 
-import os, sys, random, copy
+import os, sys, random, copy, string
 from optparse import OptionParser
 from lxml import etree
 from random import SystemRandom
@@ -205,7 +205,8 @@ def sort_table_by_columns(table, indices):
       for index in indices:
         text = "".join(trow[index].xpath("./p//text()"))
         ## we're going to try to convert to a float, just for good heuristics
-        textps = text.split(' ')
+        tt = string.maketrans(',+_-/&\t()[]{}$%\'"','                 ')
+        textps = text.translate(tt).split(' ')
         csorts = []
         for textp in textps:
           try:
