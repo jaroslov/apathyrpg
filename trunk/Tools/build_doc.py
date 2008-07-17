@@ -812,10 +812,10 @@ def convert_to_latex(Node, sectiondepth=0):
             thtxt = "".join([s[0]+". " for s in thtxt.split(' ')]).strip()
           if th.xpath("./@class='Title'"):
             header += "{\\begin{turn}{0}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
-            header2 += "{\\textsc{\\textbf{%s}}\emph{cont'd}}"%sanitize_string(thtxt)
+            header2 += "{\\textsc{\\textbf{%s}} \emph{cont'd}}"%sanitize_string(thtxt)
           else:
-            header += "{\\begin{turn}{70}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
-            header2 += "{\\begin{turn}{70}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
+            header += "{\\begin{turn}{80}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
+            header2 += "{\\begin{turn}{80}\\textsc{\\textbf{%s}}\\end{turn}}"%sanitize_string(thtxt)
         header += "\\\\"
         header2 += "\\\\"
         headerstr = "\\hline\n"+header+"\n\\hline\n\\hline\n\\endfirsthead\n\\hline\n"+header2+"\n\\hline\n\\endhead\n"
