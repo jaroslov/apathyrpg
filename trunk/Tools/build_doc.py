@@ -943,7 +943,6 @@ def buildDocument(options):
 def buildLatex(options):
   maindoc = buildDocument(options)
   maindoc = convert_to_latex(maindoc.getroot())
-  maindoc = buildbackmapindex(maindoc)
   print >> sys.stdout, maindoc.encode("utf-8")
 
 def buildWebPage(options):
