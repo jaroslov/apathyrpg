@@ -39,7 +39,9 @@ martialarts-tex:
 
 standard-pdf: standard-tex
 	pdflatex ARPG.tex > out.log
+	makeindex ARPG > out.log
 	pdflatex ARPG.tex > out.log
+	makeindex ARPG > out.log
 	pdflatex ARPG.tex > out.log
 
 medieval-pdf: medieval-tex

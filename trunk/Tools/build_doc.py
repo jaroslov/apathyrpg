@@ -18,6 +18,8 @@ ERRORFILE = sys.stderr
 
 GLOBALENTITYMAP = initialize_mapping("Tools")
 
+INDEXBACKMAP = {}
+
 LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage{pslatex}
 \\usepackage{newcent}
@@ -32,6 +34,8 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage{hyperref}
 \\usepackage{wrapfig}
 \\usepackage[textheight=9in]{geometry}
+\\usepackage{makeidx}
+\\makeindex
 
 \\newcounter{ExampleCounter}
 \\setcounter{ExampleCounter}{1}
@@ -79,6 +83,8 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\begin{small}
 
 %s
+
+\\printindex
 
 \\end{small}
 \\end{document}
@@ -269,6 +275,12 @@ def transform_hrid_table(subdoc, options):
   </div>
 </div>
 """
+
+  indexname = 'unknown'
+  indexcategory = 'unknown'
+  if subdoc.attrib.has_key('name'): indexname = subdoc.get('name')
+  if subdoc.attrib.has_key('category'): indexcategory = subdoc.get('category')
+
   sort = [0, 1]
   if subdoc.attrib.has_key('sort'):
     sort = [int(s) for s in subdoc.get('sort').split(',')]
@@ -295,6 +307,8 @@ def transform_hrid_table(subdoc, options):
 
   # Build the description set and update the table
   DSetNode = etree.fromstring(DSet)
+  DSetNode.set('name', indexname)
+  DSetNode.set('category', indexcategory)
   for rdx in xrange(len(rows)):
     row = rows[rdx]
     ## build the description set
@@ -600,10 +614,14 @@ def convert_to_latex(Node, sectiondepth=0):
         descriptions = Node.xpath("./div[@class='description']")
         surround = "\n\n\\begin{multicols}{2}\n\\multicolundershoot=3em\n\\setlength\\columnseprule{.4pt}\n%s\n\n\\end{multicols}"
         text = ""
+        indexname = Node.get('name')
+        indexcategory = Node.get('category').split("|")[0]
         for description in descriptions:
-          title = convert_children_to_latex(description.xpath("./h1")[0])
-          body = convert_children_to_latex(description.xpath("./div[@class='description-body']")[0])
-          ditem = "\\descriptionbox[%s]{%s}\n\n"%(title.strip(), body.strip())
+          title = convert_children_to_latex(description.xpath("./h1")[0]).strip()
+          indexterm = indexcategory+"!"+indexname+"!"+title
+          INDEXBACKMAP[title] = indexterm
+          body = convert_children_to_latex(description.xpath("./div[@class='description-body']")[0]).strip()
+          ditem = "\\descriptionbox[\\index{%s}%s]{%s}\n\n"%(indexterm, title, body)
           text += ditem
         return surround%(text)
       elif klass == 'figure':
@@ -925,6 +943,7 @@ def buildDocument(options):
 def buildLatex(options):
   maindoc = buildDocument(options)
   maindoc = convert_to_latex(maindoc.getroot())
+  maindoc = buildbackmapindex(maindoc)
   print >> sys.stdout, maindoc.encode("utf-8")
 
 def buildWebPage(options):
