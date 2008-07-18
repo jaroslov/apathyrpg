@@ -54,6 +54,7 @@ LATEX = """\\documentclass[twoside,10pt]{book}
   \\small{#2}
   \\vspace{.1em}
 }
+\\newcommand{\\apathy}[0]{\\textsc{\\textbf{\\raisebox{-.15ex}{A}\\kern-.1emp\\kern-.19em\\raisebox{-.15ex}{A}\\kern-.17emthy}}}
 
 
 \\begin{document}
@@ -651,11 +652,13 @@ def convert_to_latex(Node, sectiondepth=0):
       text += convert_to_latex(child)
     return text
   elif Node.tag == 'Apathy':
-    text = " {\\textsc{\\textbf{ApAthy}}}"
+    text = " \\apathy"
     if Node.text is not None:
       text += sanitize_string(Node.text)
+    else:
+      text += "{}"
     if Node.tail is not None:
-      text += " " + sanitize_string(Node.tail)
+      text += sanitize_string(Node.tail)
     return text
   elif Node.tag == 'caption':
     text = ""
