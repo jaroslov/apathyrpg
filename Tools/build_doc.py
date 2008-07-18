@@ -232,6 +232,11 @@ def sort_table_by_columns(table, indices):
   return table
 
 def transform_summarize_table(subdoc, options):
+  sort = [0, 1]
+  if subdoc.attrib.has_key('sort'):
+    sort = [int(s) for s in subdoc.get('sort').split(',')]
+  subdoc = sort_table_by_columns(subdoc, sort)
+
   not_in_tables = subdoc.xpath("//th[@class!='Title' and @class!='Table']")
   not_in_columns = []
   for nit in not_in_tables:
@@ -257,7 +262,6 @@ def transform_summarize_table(subdoc, options):
         row.remove(nicol)
   for nit in not_in_tables:
     thead.remove(nit)
-  subdoc = sort_table_by_columns(subdoc, [0, 1])
   return subdoc
 
 def transform_hrid_table(subdoc, options):
@@ -280,11 +284,6 @@ def transform_hrid_table(subdoc, options):
   indexcategory = 'unknown'
   if subdoc.attrib.has_key('name'): indexname = subdoc.get('name')
   if subdoc.attrib.has_key('category'): indexcategory = subdoc.get('category')
-
-  sort = [0, 1]
-  if subdoc.attrib.has_key('sort'):
-    sort = [int(s) for s in subdoc.get('sort').split(',')]
-  subdoc = sort_table_by_columns(subdoc, sort)
 
   minitablesitems = subdoc.xpath("//th[@minitable='yes']")
   minitablescols = []
@@ -309,6 +308,7 @@ def transform_hrid_table(subdoc, options):
   DSetNode = etree.fromstring(DSet)
   DSetNode.set('name', indexname)
   DSetNode.set('category', indexcategory)
+  DSetChildren = []
   for rdx in xrange(len(rows)):
     row = rows[rdx]
     ## build the description set
@@ -330,7 +330,9 @@ def transform_hrid_table(subdoc, options):
     if len(minitableitems) > 0:
       minitable = build_minitable(minitablesitems, minitableitems)
       bodydiv.insert(0, minitable)
-    DSetNode.append(DescNode)
+    #DSetNode.append(DescNode)
+    ## need to alphabetize the description-set according to title, not some random `sort`
+    DSetChildren.append((titlep.text, DescNode))
     # remove non-table/non-title items
     for not_in_columnz in not_in_columns:
       nicol = not_in_columnz[rdx]
@@ -344,9 +346,19 @@ def transform_hrid_table(subdoc, options):
     row.remove(row.getchildren()[0])
     row.insert(0, td_elt)
 
+  # sort by title, and add to the description-set!
+  DSetChildren.sort()
+  for DSetChild in DSetChildren:
+    DSetNode.append(DSetChild[1])
+
   ## nuke thead columns we don't want
   for nit in not_in_tables:
     title.getparent().remove(nit)
+
+  sort = [0, 1]
+  if subdoc.attrib.has_key('sort'):
+    sort = [int(s) for s in subdoc.get('sort').split(',')]
+  subdoc = sort_table_by_columns(subdoc, sort)
 
   rdiv = etree.Element("div")
   rdiv.append(subdoc)
@@ -612,7 +624,7 @@ def convert_to_latex(Node, sectiondepth=0):
           return sanitize_string(Node.text)
       elif klass == 'description-set':
         descriptions = Node.xpath("./div[@class='description']")
-        surround = "\n\n\\begin{multicols}{2}\n\\multicolundershoot=3em\n\\setlength\\columnseprule{.4pt}\n%s\n\n\\end{multicols}"
+        surround = "\n\n\\begin{multicols}{2}\n\\multicolundershoot=2em\n\\setlength\\columnseprule{.4pt}\n%s\n\n\\end{multicols}"
         text = ""
         indexname = Node.get('name')
         indexcategory = Node.get('category').split("|")[0]
