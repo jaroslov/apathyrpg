@@ -49,7 +49,7 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 }
 \\newcommand{\\descriptionbox}[2][~] {
   \\vspace{.5em}
-  \\textsc{\\noindent {\\textbf{#1}}} ---------
+  \\subsubsection*{\\textsc{#1}---------}
 
   \\small{#2}
   \\vspace{.1em}
@@ -597,7 +597,7 @@ def convert_to_latex(Node, sectiondepth=0):
           return sanitize_string(Node.text)
       elif klass == 'description-set':
         descriptions = Node.xpath("./div[@class='description']")
-        surround = "\n\n\\begin{multicols}{2}\n\\setlength\\columnseprule{.4pt}\n%s\n\n\\end{multicols}"
+        surround = "\n\n\\begin{multicols}{2}\n\\multicolundershoot=3em\n\\setlength\\columnseprule{.4pt}\n%s\n\n\\end{multicols}"
         text = ""
         for description in descriptions:
           title = convert_children_to_latex(description.xpath("./h1")[0])
@@ -831,7 +831,7 @@ def convert_to_latex(Node, sectiondepth=0):
         return surround%(colstyles+"|", headerstr+rowsstr)
       elif klass == "minitable":
         # only a small table
-        surround = "\n\n\n\\hspace{-2em}\\begin{tabular}{p{3.5em}l|p{3.5em}l}\n%s\n\\end{tabular}\n\n"
+        surround = "\n\n\n\\hspace{-1em}\\begin{tabular}{rl|rl}\n%s\n\\end{tabular}\n\n"
         trows = Node.xpath("./tbody/tr")
         rowsstr = ""
         for trow in trows:
