@@ -710,7 +710,7 @@ def convert_to_latex(Node, sectiondepth=0):
           text += sanitize_string(Node.tail)
         return surround%text
       elif klass == 'notappl':
-        return "\\emph{N/A}"
+        return "\\ensuremath{N/A}"
       elif klass == 'roll':
         roll = ""
         roff = Node.xpath("./span[@class='rOff']")
