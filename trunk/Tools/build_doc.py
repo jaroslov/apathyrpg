@@ -35,6 +35,7 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage{wrapfig}
 \\usepackage[textheight=9in]{geometry}
 \\usepackage{makeidx}
+\\usepackage{pdflscape}
 \\makeindex
 
 \\newcounter{ExampleCounter}
@@ -818,6 +819,8 @@ def convert_to_latex(Node, sectiondepth=0):
         return surround%(colstyles, headerstr+"\\\\\n\\hline\n\\hline\n"+rowsstr)
       elif klass == 'category':
         surround = "\\begin{longtable}{%s}\n%s\n\\end{longtable}"
+        if Node.attrib.has_key('rotate') and Node.get('rotate') == 'yes':
+          surround = "\n\\begin{landscape}\n%s\n\\end{landscape}\n\n"%surround
         colstyles = ""
         headerstr = ""
         rowsstr = ""
