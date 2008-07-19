@@ -1,0 +1,499 @@
+\documentclass{article}
+\usepackage[text={8.25in,10.5in},centering]{geometry}
+%\usepackage{include}
+\usepackage{pslatex}
+%\usepackage{psfonts}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{newcent}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{colortbl}
+%\usepackage{multicolumn}
+\begin{document}
+
+\newcommand{\textscbf}[1]{\textsc{\textbf{#1}}}
+\newcommand{\textsmscbf}[1]{{\small \textsc{\textbf{#1}}}}
+\newcommand{\texttyscbf}[1]{{\tiny \textsc{\textbf{#1}}}}
+
+\begin{tabular}{c|c|c}
+  {\Large Character Sheet} &
+  \begin{tabular}{p{2.4in}}
+    \textsmscbf{Name} \\
+    {\small } \\
+    \hline
+    \textsmscbf{Player} \\
+    {\small } \\
+  \end{tabular}&
+  \begin{tabular}{p{.8in}|p{.8in}|p{.8in}}
+    \textsmscbf{Age} & \textsmscbf{Hair} & \textsmscbf{Height} \\
+    {\small } & {\small } & {\small } \\
+    \hline
+    \textsmscbf{Sex} & \textsmscbf{Eyes} & \textsmscbf{Weight} \\
+    {\small } & {\small } & {\small } \\
+  \end{tabular} \\
+  \hline
+  \hline
+  \hline
+  \rowcolor[gray]{.9}
+  \textsmscbf{Attributes} & \textsmscbf{Skills} & \textsmscbf{Spells} \\
+  \hline
+  \begin{tabular}{p{.25in}|c|c}
+    & \textsmscbf{Base} & \textsmscbf{Current} \\
+    \hline
+    \textsmscbf{Str} & & \\
+    \hline
+    \textsmscbf{Dex} & & \\
+    \hline
+    \textsmscbf{Bld} & & \\
+    \hline
+    \hline
+    \textsmscbf{Int} & & \\
+    \hline
+    \textsmscbf{Kno} & & \\
+    \hline
+    \textsmscbf{Wil} & & \\
+    \hline
+    \hline
+    \textsmscbf{Cha} & & \\
+    \hline
+    \multicolumn{3}{>{\columncolor[gray]{0.9}}c}{
+      \textsmscbf{Sub-Attributes}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Lift}{\tiny $\frac{STR^2\times + BLD}{10}+STR$}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Carry}{\tiny $\frac{Lift}{2}$}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Enc.}{\tiny $\frac{BLD+DEX+STR}{6}$}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Base Armor}{\tiny $\frac{BLD+WIL}{6}$}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Move}{\tiny $\frac{2\times STR+DEX}{15}$}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Per.}{\tiny $\frac{DEX+2\times KNO+INT}{4}$}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Inter.}{\tiny $\frac{CHA+KNO+INT}{3}$}} \\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{HPts.}{\tiny $BLD+WIL$}} \\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{MPts.}{\tiny $(BLD+KNO)\times 10$}} \\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Luck}{
+        \tiny $\frac{\min{\left \lfloor Attr \right \rfloor}}{2}$}} \\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \hline
+    \multicolumn{3}{l}{\textsmscbf{Money}} \\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \hline
+    \multicolumn{3}{c}{\vspace{2.64in}}
+  \end{tabular} &
+  \begin{tabular}{p{1.2in}|p{.15in}|p{.15in}|p{.15in}|p{.15in}}
+    \textsmscbf{Name} & \texttyscbf{Rank}
+    & \texttyscbf{Attr} & \texttyscbf{Lvl} & \texttyscbf{Targ} \\
+    \hline
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+    \hline
+    & & & & \\
+  \end{tabular} &
+    \begin{tabular}{p{1.4in}|p{.2in}|p{.2in}|p{.2in}}
+    \textsmscbf{Name} & \texttyscbf{Rank}
+    & \texttyscbf{Time} & \texttyscbf{MP} \\
+    \hline
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+    \hline
+    & & & \\
+  \end{tabular} \\
+\end{tabular}
+
+\pagebreak
+~
+~
+~
+\begin{tabular}{l|l}
+  \begin{tabular}{l}
+    {\Large Equipment Sheet} \\
+    \hline
+    \hline
+    \rowcolor[gray]{.9} {\small \textscbf{Gear}} \\
+    \hline
+    \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+    \\ \hline
+  \end{tabular} &
+  \begin{tabular}{l}
+    \rowcolor[gray]{.9}
+    {\small \textscbf{Melee Weapons}} \\
+    \hline
+    \hline
+    \begin{tabular}{p{1in}|p{.6in}|p{.6in}|p{.6in}|p{.6in}|p{.75in}}
+      \rowcolor[gray]{.9}
+      {\small \textscbf{Type}} &
+      {\small \textscbf{\# Hands}} &
+      {\small \textscbf{Min Str}} &
+      {\small \textscbf{Str Bns}} &
+      {\small \textscbf{Damage}} &
+      {\small \textscbf{Recovery}} \\
+      \hline
+      \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+    \end{tabular} \\
+    \hline
+    \hline
+    \rowcolor[gray]{.9}
+    {\small \textscbf{Ranged Weapons}} \\
+    \hline
+    \hline
+    \begin{tabular}{p{1in}|p{.6in}|p{.6in}|p{.6in}|p{.6in}|p{.75in}}
+      \rowcolor[gray]{.9}
+      {\small \textscbf{Type}} &
+      {\small \textscbf{Range}} &
+      {\small \textscbf{Min STR}} &
+      {\small \textscbf{Burst}} &
+      {\small \textscbf{Damage}} &
+      {\small \textscbf{Capacity}}\\
+      \hline
+      \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+      & & & & & \\ \hline
+    \end{tabular} \\
+    \hline
+    \hline
+    \begin{tabular}{l|l}
+      \begin{tabular}{l|}
+        {\small \textscbf{Ammo Type 1}} \\ \\ \\ \\ \\ \\ \\
+        \hline
+        \hline
+        {\small \textscbf{Ammo Type 2}} \\ \\ \\ \\ \\ \\ \\
+        \hline
+        \hline
+        {\small \textscbf{Ammo Type 3}} \\ \\ \\ \\ \\ \\ \\
+        \hline
+        \hline
+        {\small \textscbf{Ammo Type 4}} \\ \\ \\ \\ \\ \\ \\
+        \hline
+        \hline
+        {\small \textscbf{Ammo Type 5}} \\ \\ \\ \\ \\ \\ \\
+      \end{tabular} &
+      \begin{tabular}{p{1in}p{.5in}|p{.5in}|p{.5in}|p{.5in}}
+        \multicolumn{5}{|>{\columncolor[gray]{0.9}}c}{\textscbf{Armor}} \\
+        \hline
+        \hline
+        {\small \textscbf{Type}} & \vline
+        {\small \textscbf{P}} &
+        {\small \textscbf{S}} &
+        {\small \textscbf{C}} &
+        {\small \textscbf{Enc.}} \\
+        \hline
+        \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        & \vline & & & \\ \hline
+        {\small \textscbf{Nat. Armor}} & \vline & & & \\
+        \hline
+        {\small \textscbf{Shield}} & \vline & & & \\
+        \hline
+        {\small \textscbf{Totals}} & \vline & & & \\
+        \hline
+        \hline
+        \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+      \end{tabular}
+    \end{tabular}
+  \end{tabular} \\
+\end{tabular}
+
+\end{document}
