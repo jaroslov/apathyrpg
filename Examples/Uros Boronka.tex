@@ -11,7 +11,6 @@
 \usepackage{longtable}
 \usepackage{multirow}
 \usepackage{colortbl}
-%\usepackage{multicolumn}
 \begin{document}
 
 \newcommand{\textscbf}[1]{\textsc{\textbf{#1}}}
@@ -22,17 +21,17 @@
   {\Large Character Sheet} &
   \begin{tabular}{p{2.4in}}
     \textsmscbf{Name} \\
-    {\small } \\
+    {\small Uro\v{s} Boronka} \\
     \hline
     \textsmscbf{Player} \\
-    {\small } \\
+    {\small Jacob Smith} \\
   \end{tabular}&
   \begin{tabular}{p{.8in}|p{.8in}|p{.8in}}
     \textsmscbf{Age} & \textsmscbf{Hair} & \textsmscbf{Height} \\
-    {\small } & {\small } & {\small } \\
+    {\small 28} & {\small White} & {\small 4' 6''} \\
     \hline
     \textsmscbf{Sex} & \textsmscbf{Eyes} & \textsmscbf{Weight} \\
-    {\small } & {\small } & {\small } \\
+    {\small Male} & {\small Aquamarine} & {\small 68 lbs} \\
   \end{tabular} \\
   \hline
   \hline
@@ -43,60 +42,60 @@
   \begin{tabular}{p{.25in}|c|c}
     & \textsmscbf{Base} & \textsmscbf{Current} \\
     \hline
-    \textsmscbf{Str} & & \\
+    \textsmscbf{Str} & 6 & 10 \\
     \hline
-    \textsmscbf{Dex} & & \\
+    \textsmscbf{Dex} & 11  & 15 \\
     \hline
-    \textsmscbf{Bld} & & \\
-    \hline
-    \hline
-    \textsmscbf{Int} & & \\
-    \hline
-    \textsmscbf{Kno} & & \\
-    \hline
-    \textsmscbf{Wil} & & \\
+    \textsmscbf{Bld} & 6 & 9 \\
     \hline
     \hline
-    \textsmscbf{Cha} & & \\
+    \textsmscbf{Int} & 7 & 9 \\
+    \hline
+    \textsmscbf{Kno} & 8 & 11 \\
+    \hline
+    \textsmscbf{Wil} & 8  & 12 \\
+    \hline
+    \hline
+    \textsmscbf{Cha} & 10 & 13 \\
     \hline
     \multicolumn{3}{>{\columncolor[gray]{0.9}}c}{
       \textsmscbf{Sub-Attributes}} \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Lift}{\tiny $\frac{STR^2\times + BLD}{10}+STR$}} \\
+    \multicolumn{3}{l}{\textsmscbf{Lift}{\tiny $\frac{STR^2\times BLD}{10}+STR$}} 100 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Carry}{\tiny $\frac{Lift}{2}$}} \\
+    \multicolumn{3}{l}{\textsmscbf{Carry}{\tiny $\frac{Lift}{2}$}} 50 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Enc.}{\tiny $\frac{BLD+DEX+STR}{6}$}} \\
+    \multicolumn{3}{l}{\textsmscbf{Enc.}{\tiny $\frac{BLD+DEX+STR}{6}$}} 5.66 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Base Armor}{\tiny $\frac{BLD+WIL}{6}$}} \\
+    \multicolumn{3}{l}{\textsmscbf{Base Armor}{\tiny $\frac{BLD+WIL}{6}$}} 3.5 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Move}{\tiny $\frac{2\times STR+DEX}{15}$}} \\
+    \multicolumn{3}{l}{\textsmscbf{Move}{\tiny $\frac{2\times STR+DEX}{15}$}} 2.33 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Per.}{\tiny $\frac{DEX+2\times KNO+INT}{4}$}} \\
+    \multicolumn{3}{l}{\textsmscbf{Per.}{\tiny $\frac{DEX+2\times KNO+INT}{4}$}} 11.5 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Inter.}{\tiny $\frac{CHA+KNO+INT}{3}$}} \\
+    \multicolumn{3}{l}{\textsmscbf{Inter.}{\tiny $\frac{CHA+KNO+INT}{3}$}} 11 \\
     \hline
     \multicolumn{3}{l}{\textsmscbf{HPts.}{\tiny $BLD+WIL$}} \\
-    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{21}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \hline
     \multicolumn{3}{l}{\textsmscbf{MPts.}{\tiny $(BLD+KNO)\times 10$}} \\
-    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{990}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \hline
     \multicolumn{3}{l}{\textsmscbf{Luck}{
-        \tiny $\frac{\min{\left \lfloor Attr \right \rfloor}}{2}$}} \\
-    \multicolumn{3}{c}{}\\
+        \tiny $\frac{\left \lfloor \min{Attr} \right \rfloor}{2}$}} \\
+    \multicolumn{3}{c}{4}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \hline
     \multicolumn{3}{l}{\textsmscbf{Money}} \\
-    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{5000}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
@@ -108,7 +107,37 @@
     & \texttyscbf{Attr} & \texttyscbf{Lvl} & \texttyscbf{Targ} \\
     \hline
     \hline
-    & & & & \\
+    Acrobatics & 1 & \tiny{DEX} & 2 & \\
+    \hline
+    Alectromancy & 1  & \tiny{INT} & 1 & \\
+    \hline
+    Animal Handling & 1 & \tiny{WIS} & 2 & \\
+    \hline
+    Beauty & 1 & \tiny{CHA} & 1 & \\
+    \hline
+    Business Sense & 1 & \tiny{INT} & 1 & \\
+    \hline
+    Cash & 1 & --- & 4 & \\
+    \hline
+    Holistic Medicine & 1 & \tiny{INT} & 2 & \\
+    \hline
+    Hunting & 1 & \tiny{WIS} & 2 & \\
+    \hline
+    Leatherwork & 1 & \tiny{DEX} & 1 & \\
+    \hline
+    Navigation & 1 & \tiny{WIS} & 2 & \\
+    \hline
+    Riding & 1 & \tiny{DEX} & 3 & \\
+    \hline
+    Ropes & 1 & \tiny{DEX} & 2 & \\
+    \hline
+    Smithing & 1 & \tiny{WIS} & 1 & \\
+    \hline
+    Survival & 1 & \tiny{WIS} & 2 & \\
+    \hline
+    Vetinary & 2 & \tiny{INT} & 2 & \\
+    \hline
+    Zoology & 1 & \tiny{WIS} & 1 & \\
     \hline
     & & & & \\
     \hline
@@ -134,59 +163,29 @@
     \hline
     & & & & \\
     \hline
-    & & & & \\
     \hline
-    & & & & \\
     \hline
-    & & & & \\
+    \textsc{\textbf{Martial Arts}} & 2 & \tiny{DEX} & 2 & \\
     \hline
-    & & & & \\
+    ~~Archaic Weapons & 3 & \tiny{DEX} & 2 & \\
     \hline
-    & & & & \\
+    ~~~~$\rightarrow$Polearms & & & & \\
     \hline
-    & & & & \\
+    ~~Charge & 1 & \tiny{DEX} & 2 & \\
     \hline
-    & & & & \\
+    ~~Lunge & 1 & \tiny{DEX} & 2 & \\
     \hline
-    & & & & \\
+    ~~Skewer & 1 & \tiny{DEX} & 2 & \\
     \hline
-    & & & & \\
+    ~~Dodge & 1 & \tiny{DEX} & 2 & \\
     \hline
-    & & & & \\
+    ~~Combine Offense & 2 & \tiny{DEX} & 2 & \\
     \hline
-    & & & & \\
+    ~~~~$\rightarrow$Lunge & & & & \\
     \hline
-    & & & & \\
+    ~~~~$\rightarrow$Skewer & & & & \\
     \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
-    \hline
-    & & & & \\
+    ~~~~$\rightarrow$Polearm & & & & \\
     \hline
     & & & & \\
     \hline
@@ -215,7 +214,15 @@
     & \texttyscbf{Time} & \texttyscbf{MP} \\
     \hline
     \hline
-    & & & \\
+    Mysticism & 4 & 2 & \tiny{$\frac{WIL+WIS}{2}$} \\
+    \hline
+    \hline
+    \hline
+    \textsc{\textbf{Physical}} & & & \\
+    \hline
+    ~~Extend Presense & 1 & 1 & $10x$ \\
+    \hline
+    ~~Expound STR & 2 & 3 & $30x$ \\
     \hline
     & & & \\
     \hline
@@ -231,7 +238,11 @@
     \hline
     & & & \\
     \hline
-    & & & \\
+    \hline
+    \hline
+    \textsc{\textbf{Spirit}} & & & \\
+    \hline
+    ~~True Sense & 1 & 1 & 25 \\
     \hline
     & & & \\
     \hline
@@ -247,23 +258,11 @@
     \hline
     & & & \\
     \hline
-    & & & \\
     \hline
-    & & & \\
     \hline
-    & & & \\
+    \textsc{\textbf{Arcane}} & & & \\
     \hline
-    & & & \\
-    \hline
-    & & & \\
-    \hline
-    & & & \\
-    \hline
-    & & & \\
-    \hline
-    & & & \\
-    \hline
-    & & & \\
+    ~~Twink & 1 & 1 & 100 \\
     \hline
     & & & \\
     \hline
@@ -331,25 +330,25 @@
     \rowcolor[gray]{.9} {\small \textscbf{Gear}} \\
     \hline
     \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
-    \\ \hline
+    Heavy Boots\\ \hline
+    Trousers$\times 2$ \\ \hline
+    Tunic$\times 3$\\ \hline
+    Cape \\ \hline
+    Raincoat \\ \hline
+    Cooley Hat \\ \hline
+    Belt \\ \hline
+    Belt Pouches$\times 6$\\ \hline
+    Mess Kit \\ \hline
+    Flint \& Tender \\ \hline
+    Work Gloves$\times 2$\\ \hline
+    Climbing Rope$\times 100ft$\\ \hline
+    Satchel \\ \hline
+    Butcher's Gloves \\ \hline
+    Minilantern w/ 10oz oil\\ \hline
+    Medical Kit\\ \hline
+    Survival Tent\\ \hline
+    Light Warhorse \\ \hline
+    Riding Gear \\ \hline
     \\ \hline
     \\ \hline
     \\ \hline
@@ -405,8 +404,8 @@
       {\small \textscbf{Recovery}} \\
       \hline
       \hline
-      & & & & & \\ \hline
-      & & & & & \\ \hline
+      Lance & 1 & 8 & 2 & X+2D4+X & 0 \\ \hline
+      Short Spear$\times 3$ & 1 & 6 & 4 & 2D4  & 0 \\ \hline
       & & & & & \\ \hline
       & & & & & \\ \hline
       & & & & & \\ \hline
@@ -432,7 +431,7 @@
       {\small \textscbf{Capacity}}\\
       \hline
       \hline
-      & & & & & \\ \hline
+      Short Spear & 30 & 6 & 4 & 2D4 & 0 \\ \hline
       & & & & & \\ \hline
       & & & & & \\ \hline
       & & & & & \\ \hline
@@ -461,36 +460,53 @@
         \hline
         {\small \textscbf{Ammo Type 5}} \\ \\ \\ \\ \\ \\ \\
       \end{tabular} &
-      \begin{tabular}{p{1in}p{.5in}|p{.5in}|p{.5in}|p{.5in}}
+      \begin{tabular}{p{1in}|p{.5in}|p{.5in}|p{.5in}|p{.5in}}
         \multicolumn{5}{|>{\columncolor[gray]{0.9}}c}{\textscbf{Armor}} \\
         \hline
         \hline
-        {\small \textscbf{Type}} & \vline
+        {\small \textscbf{Type}} &
         {\small \textscbf{P}} &
         {\small \textscbf{S}} &
         {\small \textscbf{C}} &
         {\small \textscbf{Enc.}} \\
         \hline
         \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        & \vline & & & \\ \hline
-        {\small \textscbf{Nat. Armor}} & \vline & & & \\
+        Brigandine & 4 & 8 & 2 & 6 \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        &  & & & \\ \hline
+        {\small \textscbf{Nat. Armor}} &  3 & 3 & 3 & 3 \\
         \hline
-        {\small \textscbf{Shield}} & \vline & & & \\
+        {\small \textscbf{Shield}} &  & & & \\
         \hline
-        {\small \textscbf{Totals}} & \vline & & & \\
+        {\small \textscbf{Totals}} &  & & & \\
         \hline
         \hline
-        \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{} \\
       \end{tabular}
     \end{tabular}
   \end{tabular} \\
