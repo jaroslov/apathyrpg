@@ -323,6 +323,8 @@ def transform_hrid_table(subdoc, options):
     for child in children:
       bodydiv.append(child)
     DescNode.set('id', Nid)
+    if row.attrib.has_key('timeperiod'):
+      DescNode.set('timeperiod', row.get('timeperiod'))
     ## build the minitable
     minitableitems = []
     for mtc in minitablescols:
