@@ -16,9 +16,9 @@ medieval: medieval-wp medieval-pdf
 martialarts: martialarts-wp martialarts-pdf
 
 character:
-	pdflatex CharacterSheet.tex > cs.log
-	pdflatex CharacterSheet.tex > cs.log
-	pdflatex CharacterSheet.tex > cs.log
+	pdflatex Doc/CharacterSheet.tex > cs.log
+	pdflatex Doc/CharacterSheet.tex > cs.log
+	pdflatex Doc/CharacterSheet.tex > cs.log
 
 standard-wp:
 	${BUILDSCRIPT} --prefix=${PREFIX} -w --retarget-resources  > ARPG.xhtml
