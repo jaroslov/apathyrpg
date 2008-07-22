@@ -1,11 +1,12 @@
 BUILDSCRIPT = python Tools/build_doc.py
+PREFIX = Doc/Apathy
 
 all: standard medieval martialarts
 
 clean:
-	rm -f *.aux *.lof *.log *.lot *.out *.toc *~ *.ilg *.idx
+	rm -f *.aux *.lof *.log *.lot *.out *.toc *~ *.ilg *.idx *ind
 
-squeaky-clean:
+squeaky-clean: clean
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
 
 standard: standard-wp standard-pdf
@@ -20,22 +21,22 @@ character:
 	pdflatex CharacterSheet.tex > cs.log
 
 standard-wp:
-	${BUILDSCRIPT} --prefix=Doc/ -w --retarget-resources  > ARPG.xhtml
+	${BUILDSCRIPT} --prefix=${PREFIX} -w --retarget-resources  > ARPG.xhtml
 
 medieval-wp:
-	${BUILDSCRIPT} --prefix=Doc/ -w --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.xhtml
+	${BUILDSCRIPT} --prefix=${PREFIX} -w --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.xhtml
 
 martialarts-wp:
-	${BUILDSCRIPT} --prefix=Doc/ -w --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.xhtml
+	${BUILDSCRIPT} --prefix=${PREFIX} -w --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.xhtml
 
 standard-tex:
-	${BUILDSCRIPT} --prefix=Doc/ -l --retarget-resources  > ARPG.tex
+	${BUILDSCRIPT} --prefix=${PREFIX} -l --retarget-resources  > ARPG.tex
 
 medieval-tex:
-	${BUILDSCRIPT} --prefix=Doc/ -l --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.tex
+	${BUILDSCRIPT} --prefix=${PREFIX} -l --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.tex
 
 martialarts-tex:
-	${BUILDSCRIPT} --prefix=Doc/ -l --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.tex
+	${BUILDSCRIPT} --prefix=${PREFIX} -l --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.tex
 
 standard-pdf: standard-tex
 	pdflatex ARPG.tex > out.log
