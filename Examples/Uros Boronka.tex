@@ -21,7 +21,7 @@
   {\Large Character Sheet} &
   \begin{tabular}{p{2.4in}}
     \textsmscbf{Name} \\
-    {\small Uro\v{s} Boronka} \\
+    {\small Uro\v{s} Boronka of Clan Daragan} \\
     \hline
     \textsmscbf{Player} \\
     {\small Jacob Smith} \\
@@ -46,7 +46,7 @@
     \hline
     \textsmscbf{Dex} & 11  & 15 \\
     \hline
-    \textsmscbf{Bld} & 6 & 9 \\
+    \textsmscbf{Bld} & 6 & 10 \\
     \hline
     \hline
     \textsmscbf{Int} & 7 & 9 \\
@@ -61,13 +61,13 @@
     \multicolumn{3}{>{\columncolor[gray]{0.9}}c}{
       \textsmscbf{Sub-Attributes}} \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Lift}{\tiny $\frac{STR^2\times BLD}{10}+STR$}} 100 \\
+    \multicolumn{3}{l}{\textsmscbf{Lift}{\tiny $\frac{STR^2\times BLD}{10}+STR$}} 110 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Carry}{\tiny $\frac{Lift}{2}$}} 50 \\
+    \multicolumn{3}{l}{\textsmscbf{Carry}{\tiny $\frac{Lift}{2}$}} 65 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Enc.}{\tiny $\frac{BLD+DEX+STR}{6}$}} 5.66 \\
+    \multicolumn{3}{l}{\textsmscbf{Enc.}{\tiny $\frac{BLD+DEX+STR}{6}$}} 5.83 \\
     \hline
-    \multicolumn{3}{l}{\textsmscbf{Base Armor}{\tiny $\frac{BLD+WIL}{6}$}} 3.5 \\
+    \multicolumn{3}{l}{\textsmscbf{Base Armor}{\tiny $\frac{BLD+WIL}{6}$}} 3.66 \\
     \hline
     \multicolumn{3}{l}{\textsmscbf{Move}{\tiny $\frac{2\times STR+DEX}{15}$}} 2.33 \\
     \hline
@@ -76,31 +76,37 @@
     \multicolumn{3}{l}{\textsmscbf{Inter.}{\tiny $\frac{CHA+KNO+INT}{3}$}} 11 \\
     \hline
     \multicolumn{3}{l}{\textsmscbf{HPts.}{\tiny $BLD+WIL$}} \\
-    \multicolumn{3}{c}{21}\\
+    \multicolumn{3}{c}{22}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \hline
     \multicolumn{3}{l}{\textsmscbf{MPts.}{\tiny $(BLD+KNO)\times 10$}} \\
-    \multicolumn{3}{c}{990}\\
+    \multicolumn{3}{c}{298}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \hline
     \multicolumn{3}{l}{\textsmscbf{Luck}{
-        \tiny $\frac{\left \lfloor \min{Attr} \right \rfloor}{2}$}} \\
-    \multicolumn{3}{c}{4}\\
+        \tiny $\left \lfloor \frac{\min{Attr}}{2} \right \rfloor$}} \\
+    \multicolumn{3}{c}{5}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \hline
     \multicolumn{3}{l}{\textsmscbf{Money}} \\
-    \multicolumn{3}{c}{5000}\\
+    \multicolumn{3}{c}{2000}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \multicolumn{3}{c}{}\\
     \hline
-    \multicolumn{3}{c}{\vspace{2.64in}}
+    \multicolumn{3}{l}{\textsmscbf{CPts}} \\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \multicolumn{3}{c}{}\\
+    \hline
+    \multicolumn{3}{c}{\vspace{2.04in}}
   \end{tabular} &
   \begin{tabular}{p{1.2in}|p{.15in}|p{.15in}|p{.15in}|p{.15in}}
     \textsmscbf{Name} & \texttyscbf{Rank}
@@ -139,7 +145,9 @@
     \hline
     Zoology & 1 & \tiny{WIS} & 1 & \\
     \hline
-    & & & & \\
+    Literacy & 1 & \tiny{WIS} & 1 & \\
+    \hline
+    Language & 1 & \tiny{WIS} & 1 & \\
     \hline
     & & & & \\
     \hline
@@ -161,17 +169,13 @@
     \hline
     & & & & \\
     \hline
-    & & & & \\
     \hline
     \hline
+    \textsc{\textbf{Martial Arts}} & 2 & \tiny{DEX} & 4 & \\
     \hline
-    \textsc{\textbf{Martial Arts}} & 2 & \tiny{DEX} & 2 & \\
-    \hline
-    ~~Archaic Weapons & 3 & \tiny{DEX} & 2 & \\
+    ~~Archaic Weapons & 1 & \tiny{DEX} & 3+ & \\
     \hline
     ~~~~$\rightarrow$Polearms & & & & \\
-    \hline
-    ~~Charge & 1 & \tiny{DEX} & 2 & \\
     \hline
     ~~Lunge & 1 & \tiny{DEX} & 2 & \\
     \hline
@@ -179,17 +183,19 @@
     \hline
     ~~Dodge & 1 & \tiny{DEX} & 2 & \\
     \hline
-    ~~Combine Offense & 2 & \tiny{DEX} & 2 & \\
+    ~~Shield & 1 & \tiny{DEX} & 2+ & \\
     \hline
-    ~~~~$\rightarrow$Lunge & & & & \\
+    ~~Deadly & 1 & \tiny{DEX} & 2+ & \\
     \hline
-    ~~~~$\rightarrow$Skewer & & & & \\
+    ~~Archaic Weapons & 1 & \tiny{DEX} & 3 & \\
     \hline
-    ~~~~$\rightarrow$Polearm & & & & \\
+    ~~~$\rightarrow$Bows & & & & \\
     \hline
-    ~~Shield & 1 & \tiny{DEX} & 1 & \\
+    Burden & 1 & \tiny{STR} & 0 & \\
     \hline
-    ~~Deadly & 1 & \tiny{DEX} & 2 & \\
+    & & & & \\
+    \hline
+    & & & & \\
     \hline
     & & & & \\
     \hline
@@ -348,9 +354,9 @@
     Medical Kit\\ \hline
     Survival Tent\\ \hline
     Light Warhorse \\ \hline
+    $\rightarrow$Anger \\ \hline
     Riding Gear \\ \hline
-    \\ \hline
-    \\ \hline
+    Saddle Bags$\times 2$\\ \hline
     \\ \hline
     \\ \hline
     \\ \hline
@@ -404,7 +410,7 @@
       {\small \textscbf{Recovery}} \\
       \hline
       \hline
-      Lance & 1 & 8 & 2 & X+2D4+X & 0 \\ \hline
+      Lance & 1 & 8 & 2 & \small{(X+2)D4+X} & (X+1)AP 0 \\ \hline
       Short Spear$\times 3$ & 1 & 6 & 4 & 2D4  & 0 \\ \hline
       & & & & & \\ \hline
       & & & & & \\ \hline
@@ -472,6 +478,7 @@
         \hline
         \hline
         Brigandine & 4 & 8 & 2 & 6 \\ \hline
+        Scale Shield & 12 & 12 & 12 & --- \\ \hline
         &  & & & \\ \hline
         &  & & & \\ \hline
         &  & & & \\ \hline
@@ -482,31 +489,12 @@
         &  & & & \\ \hline
         &  & & & \\ \hline
         &  & & & \\ \hline
-        {\small \textscbf{Nat. Armor}} &  3 & 3 & 3 & 3 \\
+        {\small \textscbf{Nat. Armor}} & & & & \\
         \hline
-        {\small \textscbf{Shield}} &  & & & \\
-        \hline
-        {\small \textscbf{Totals}} &  & & & \\
+        {\small \textscbf{Totals}} & 16 & 20 & 14 & 6 \\
         \hline
         \hline
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
-        \multicolumn{5}{c}{} \\
+        \multicolumn{5}{c}{\vspace{2.75in}}
       \end{tabular}
     \end{tabular}
   \end{tabular} \\
