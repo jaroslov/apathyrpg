@@ -3,7 +3,7 @@ BUILDSCRIPT = python Tools/build_doc.py
 all: standard medieval martialarts
 
 clean:
-	rm -f *.aux *.lof *.log *.lot *.out *.toc
+	rm -f *.aux *.lof *.log *.lot *.out *.toc *~ *.ilg *.idx
 
 squeaky-clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
