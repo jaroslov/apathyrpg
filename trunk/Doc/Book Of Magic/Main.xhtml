@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+				A legal ApathyRPG document must begin with the XML tag
+
+				However, first we need to define the book. The root "div" element in this document is given
+				the attribute `class' with the value "book", which can only occur once within a book. This
+				is the root element of the entire book. A `book' contains two parts: the first is the
+				title-page information, the second is a "div" element with an attribute `class' whose 
+				value must be "section-body".
+
+				To simplify life (and reduce the potential size of files), we split the document into pieces.
+				We do this by replacing the content with an anchor (a) element with the attribute `class' whose
+				value is "in-place". The ApathyRPG will find the document named in the attribute `href' and
+				place the contents of that document in place of the anchor element.
+
+				The section body of a book contains only content.
+
+-->
+<div class="book">
+  <a class="in-place" href="Authors.xhtml"/>
+  <div class="section-body">
+    <a class="in-place" href="Manual.xhtml"/>
+    <a class="in-place" href="Weapons.xhtml"/>
+    <a class="in-place" href="Equipment.xhtml"/>
+    <a class="in-place" href="Scrolls Rods Wands et al.xhtml"/>
+  </div>
+</div>
