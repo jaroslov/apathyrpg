@@ -20,19 +20,34 @@ def get_all_categories(PrefixDir, Categories):
     if os.path.isdir(path):
       get_all_categories(path, Categories)
 
+def donothing(X): pass
+
+def quit(X): raise Exception, "Quit"
+
 def run_builder(Categories, Screen):
-  options = ["Set Character Info",
-             "Set Attributes",
-             "Set Skills",
-             "Set Spells",
-             "Set Equipment",
-             "Quit"]
-  for idx in xrange(len(options)):
-    Screen.addstr(idx*2+2,2,"(%d) %s"%(idx+1,options[idx]))
+  mainmenu = [("Set Character Info",donothing),
+              ("Set Attributes",donothing),
+              ("Set Skills",donothing),
+              ("Set Spells",donothing),
+              ("Set Equipment",donothing),
+              ("Quit",quit)]
+  Menus = {"mainmenu":mainmenu}
+  Menu = Menus["mainmenu"]
+  Cursor = (0,0)
+  Written = ""
   while 1:
+    numoptions = len(Menu)
+    for idx in xrange(numoptions):
+      key = Menu[idx][0]
+      Screen.addstr(idx*2+2,4,"(%d) %s"%(idx+1, key))
+    Screen.addstr(idx*2+4,4,"Enter:")
+    Cursor = (idx*2+4,4+len("Enter:"+Written)+1)
+    Screen.move(Cursor[0],Cursor[1])
     c = Screen.getch()
-    if c in [ord('q'), ord('Q')]: break
-    else: continue
+    Written += chr(c)
+    Screen.addstr(Cursor[0],Cursor[1],"%s"%chr(c))
+    Cursor = (Cursor[0],Cursor[1]+1)
+    
 
 def start_builder(Categories):
   stdscr = curses.initscr()
@@ -43,7 +58,7 @@ def start_builder(Categories):
   try:
     run_builder(Categories, stdscr)
   except:
-    raise Exception, "CURSES Exception occurred"
+    print >> sys.stderr, "CURSES Exception occurred"
 
   curses.nocbreak()
   stdscr.keypad(0)
