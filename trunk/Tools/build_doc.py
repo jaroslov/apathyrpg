@@ -102,9 +102,6 @@ def parseOptions():
   parser.add_option("-p","--prefix",dest="prefix",
                     help="[required] the directory of the document",
                     metavar="FOLDER")
-  parser.add_option("-o","--output",dest="output",
-                    help="the name of the output file",
-                    metavar="FILE")
   parser.add_option("-l","--latex",dest="latex",
                     action="store_true",help="produce LaTeX output")
   parser.add_option("-w","--xhtml",dest="xhtml",
@@ -135,8 +132,6 @@ def parseOptions():
     print >> ERRORFILE, 'You must give a source directory using "--prefix=???"',
     print >> ERRORFILE, "see --help"
     sys.exit(1)
-  if options.output is None:
-    options.output = "Apathy"
   if options.latex is None:
     options.latex = False
   if options.xhtml is None:

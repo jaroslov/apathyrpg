@@ -1,5 +1,6 @@
 BUILDSCRIPT = python Tools/build_doc.py
-PREFIX = Doc/Apathy
+APATHYPREFIX = Doc/Apathy
+BOMPREFIX = Doc/BookOfMagic
 
 all: standard medieval martialarts
 
@@ -21,22 +22,28 @@ character:
 	pdflatex Doc/CharacterSheet.tex > cs.log
 
 standard-wp:
-	${BUILDSCRIPT} --prefix=${PREFIX} -w --retarget-resources  > ARPG.xhtml
+	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -w --retarget-resources  > ARPG.xhtml
 
 medieval-wp:
-	${BUILDSCRIPT} --prefix=${PREFIX} -w --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.xhtml
+	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -w --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.xhtml
 
 martialarts-wp:
-	${BUILDSCRIPT} --prefix=${PREFIX} -w --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.xhtml
+	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -w --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.xhtml
+
+bookofmagic-wp:
+	${BUILDSCRIPT} --prefix=${BOMPREFIX} --main-document=main --retarget-resources -w > BOM.xhtml
 
 standard-tex:
-	${BUILDSCRIPT} --prefix=${PREFIX} -l --retarget-resources  > ARPG.tex
+	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -l --retarget-resources  > ARPG.tex
 
 medieval-tex:
-	${BUILDSCRIPT} --prefix=${PREFIX} -l --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.tex
+	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -l --retarget-resources --category-exclusion-list=Tools/Medieval.exl --time-period=1750 > Medieval.tex
 
 martialarts-tex:
-	${BUILDSCRIPT} --prefix=${PREFIX} -l --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.tex
+	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -l --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.tex
+
+bookofmagic-tex:
+	${BUILDSCRIPT} --prefix=${BOMPREFIX} --main-document=main --retarget-resources -l > BOM.tex
 
 standard-pdf: standard-tex
 	pdflatex ARPG.tex > out.log
@@ -58,6 +65,13 @@ martialarts-pdf: martialarts-tex
 	pdflatex MartialArts.tex > out.log
 	makeindex MartialArts > out.log
 	pdflatex MartialArts.tex > out.log
+
+bookofmagic-pdf: bookofmagic-tex
+	pdflatex BOM.tex > out.log
+	makeindex BOM > out.log
+	pdflatex BOM.tex > out.log
+	makeindex BOM > out.log
+	pdflatex BOM.tex > out.log
 
 showpdf: pdf
 	open ARPG.pdf
