@@ -7,7 +7,7 @@ clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *~ *.ilg *.idx *ind
 
 squeaky-clean: clean
-	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml
+	rm -f *.aux *.lof *.log *.lot *.out *.toc *.combine.tex *.pdf *.xhtml *.tex
 
 standard: standard-wp standard-pdf
 
