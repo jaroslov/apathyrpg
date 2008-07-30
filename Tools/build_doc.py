@@ -20,23 +20,18 @@ GLOBALENTITYMAP = initialize_mapping("Tools")
 
 INDEXBACKMAP = {}
 
-LATEX = """\\documentclass[twoside,10pt]{book}
-\\usepackage{pslatex}
-\\usepackage{newcent}
+LATEX = """\\documentclass[twoside,9pt]{memoir}
+\\usepackage[T1]{fontenc}
 \\usepackage{multicol}
 \\usepackage{rotating}
 \\usepackage{tabularx}
 \\usepackage{array}
 \\usepackage{longtable}
-\\usepackage{multirow}
 \\usepackage{graphicx}
-\\usepackage[T1]{fontenc}
 \\usepackage{hyperref}
-\\usepackage{wrapfig}
 \\usepackage[textheight=9in]{geometry}
 \\usepackage{makeidx}
 \\usepackage{pdflscape}
-\\usepackage[Bjarne]{fncychap}
 \\makeindex
 
 \\newcounter{ExampleCounter}
@@ -47,12 +42,13 @@ LATEX = """\\documentclass[twoside,10pt]{book}
   \\vbox{
     \\textsc{\\noindent Example \\arabic{ExampleCounter} {\\textbf{#1}}}
       \\begin{quotation}
-        {\\small #2}
+        {\\small{\\noindent#2}}
       \\end{quotation}
       \\vspace{1em}
   }
   \\addtocounter{ExampleCounter}{1}
 }
+
 \\newcommand{\\descriptionbox}[2][~] {
   \\vspace{.5em}
   \\subsubsection*{\\textsc{#1}---------}
@@ -60,18 +56,24 @@ LATEX = """\\documentclass[twoside,10pt]{book}
   \\small{#2}
   \\vspace{.1em}
 }
+
 \\newcommand{\\apathy}[0]{\\textsc{\\textbf{\\raisebox{-.15ex}{A}\\kern-.1emp\\kern-.19em\\raisebox{-.15ex}{A}\\kern-.17emthy}}}
 
+\\chapterstyle{ger}
+
+\\renewcommand{\\partnamefont}{\\LARGE\\raggedleft}
+\\renewcommand{\\partnumfont}{\\LARGE}
+\\renewcommand{\\parttitlefont}{\\HUGE\\scshape\\raggedright\\hrulefill\\vskip 1cm}
 
 \\begin{document}
 
-\\begin{titlepage}
+\\frontmatter
+\\begin{titlingpage}
 
 %s
 
-\\end{titlepage}
-\\setcounter{page}{1}
-\\pagenumbering{roman}
+\\end{titlingpage}
+
 \\setcounter{tocdepth}{3}
 \\tableofcontents
 \\newpage
@@ -79,16 +81,15 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\newpage
 \\listoffigures
 \\newpage
-\\pagenumbering{arabic}
-\\setcounter{page}{1}
 
-\\begin{small}
+\\mainmatter
 
 %s
 
+\\backmatter
+
 \\printindex
 
-\\end{small}
 \\end{document}
 """
 
@@ -746,19 +747,19 @@ def convert_to_latex(Node, sectiondepth=0):
       elif klass == 'roll':
         roll = ""
         roff = Node.xpath("./span[@class='rOff']")
-        if len(roff) == 1: roll += "{\\bf %s}"%sanitize_string(roff[0].text)
+        if len(roff) == 1: roll += "{\\textbf{%s}}"%sanitize_string(roff[0].text)
         raw = Node.xpath("./span[@class='raw']")
-        if len(raw) == 1: roll += "{\\bf [%s]}+"%sanitize_string(raw[0].text)
+        if len(raw) == 1: roll += "{\\textbf{[%s]}}+"%sanitize_string(raw[0].text)
         num = Node.xpath("./span[@class='num']")
-        roll += "{\\bf %s}"%sanitize_string(num[0].text)+"{\\textsc{\\textbf{D}}}"
+        roll += "{\\textbf{%s}}"%sanitize_string(num[0].text)+"{\\textsc{\\textbf{D}}}"
         face = Node.xpath("./span[@class='face']")
-        roll += "{\\bf %s}"%sanitize_string(face[0].text)
+        roll += "{\\textbf{%s}}"%sanitize_string(face[0].text)
         boff = Node.xpath("./span[@class='bOff']")
         if len(boff) == 1: roll += "%s"%sanitize_string(boff[0].text)
         bns = Node.xpath("./span[@class='bns']")
-        if len(bns) == 1: roll += "{\\bf %s}"%sanitize_string(bns[0].text)
+        if len(bns) == 1: roll += "{\\textbf{%s}}"%sanitize_string(bns[0].text)
         mul = Node.xpath("./span[@class='mul']")
-        if len(mul) == 1: roll += "$\\times${\\bf %s}"%sanitize_string(mul[0].text)
+        if len(mul) == 1: roll += "$\\times${\\textbf{%s}}"%sanitize_string(mul[0].text)
         kind = Node.xpath("./span[@class='kind']")
         if len(kind) == 1: roll += "{\\textsc{\\textbf{%s}}}"%sanitize_string(kind[0].text)
         roll = roll.strip()
@@ -797,7 +798,7 @@ def convert_to_latex(Node, sectiondepth=0):
           if bar: bar = False; colstyles += "|"
           if not first: headerstr += " & "
           else: first = False
-          headerstr += "{\\bf \\small %s}"%convert_children_to_latex(th).strip()
+          headerstr += "{\\textbf{\\small %s}}"%convert_children_to_latex(th).strip()
         for trow in trows:
           first = True
           tds = trow.xpath("./td")
