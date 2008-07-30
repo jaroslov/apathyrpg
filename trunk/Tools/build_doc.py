@@ -36,6 +36,7 @@ LATEX = """\\documentclass[twoside,10pt]{book}
 \\usepackage[textheight=9in]{geometry}
 \\usepackage{makeidx}
 \\usepackage{pdflscape}
+\\usepackage[Bjarne]{fncychap}
 \\makeindex
 
 \\newcounter{ExampleCounter}
