@@ -12,7 +12,7 @@
   </thead>
   <tbody>
 		<tr>
-			<td><p>Blind Fighting</p></td><td><p>Combat</p></td><td><p>2</p></td><td><p>None</p></td><td><p>No</p></td><td><p>PER</p></td><td><p>Offensive</p></td>
+			<td><p>Blind Fighting</p></td><td><p>Combat</p></td><td><p>1</p></td><td><p>None</p></td><td><p>No</p></td><td><p>PER</p></td><td><p>Offensive</p></td>
 			<td><p>
 			 The ability to fight in darkness. For each level in Blind Fighting the Martial Artist gains +1 to strike, up to nullifying the effect of darkness. For example, if there is a -6 to fight in the darkness, and the Martial Artist has Level 4 Blind Fighting, then he has -2 to fight.
 			</p><p>You have experience fighting when your vision is compromised or obscured due to injury, darkness, smoke, or other impediments to your vision. Each level in Blind Fighting reduces the negative to fighting blind by 2; it may not be used to add a positive bonus. Blind Fighting is only effective for ranges less than 5*LVL feet. Blind Fighting does not mitigate strike penalties for cover.
@@ -31,21 +31,28 @@
 			<td><p>The ability to reload a gun, bow, or crossbow as quikcly as possible. On a successful skill roll, the character can replace a magazine, use a speed loader in a revolver, draw aand nock and arrow, or pump a shotgun without using an action. For bows, this will reduce the recover time by 1 action per level automatically. Failure implies that th enormal time was required (and must be spent) even if this is an action in the next turn.</p></td>
 		</tr>
 		<tr>
-			<td><p>Weapon Burden</p></td><td><p>Combat</p></td><td><p>5</p></td><td><p>None</p></td><td><p>No</p></td><td><p>STR</p></td><td><p>Offensive</p></td>
+			<td><p>Weapon Burden</p></td><td><p>Combat</p></td><td><p>3</p></td><td><p>1</p></td><td><p>No</p></td><td><p>STR</p></td><td><p>Offensive</p></td>
 			<td><p>Reduce the recovery time for a weapon by 1 per Level.</p></td>
 		</tr>
 		<tr>
-			<td><p>Readiness</p></td><td><p>Combat</p></td><td><p>2</p></td><td><p>None</p></td><td><p>No</p></td><td><p>PER</p></td><td><p>Defensive</p></td>
-			<td><p>Add 2*LVL to all quick- skills and 2*LVL to your initiative.</p></td>
+			<td><p>Subdue</p></td><td><p>Combat</p></td><td><p>1</p></td><td><p>3</p></td><td><p>No</p></td><td><p>DEX</p></td><td><p>Offensive</p></td>
+			<td><p>Opponent must be grappled.  Every turn, opponent must pass a WIL check at -LVL or fall unconscious.</p></td>
+		</tr>
+		<tr>
+			<td><p>Readiness</p></td><td><p>Combat</p></td><td><p>1</p></td><td><p>None</p></td><td><p>No</p></td><td><p>PER</p></td><td><p>Defensive</p></td>
+			<td><p>Add LVL to all quick- skills and LVL to your initiative.</p></td>
 		</tr>
 		<tr>
 			<td><p>Taunt</p></td><td><p>Combat</p></td><td><p>Varies.</p></td><td><p>None</p></td><td><p>No</p></td><td><p>CHA</p></td><td><p>Offensive</p></td>
-			<td><p>Requires at least one action, but may be combined with another action, as long as that second action does not require your voice. Communicate with the opponent in such a way as to deliberately anger them. The opponent must make a WIL save with a negative equal to your LVL in taunt, or must target you instead.</p></td>
+			<td><p>Requires at least one action, but may be combined with another action, as long as that second action does not require your voice. Communicate with the opponent in such a way as to deliberately anger them. An opponent within 5*LVL spaces (25*LVL feet) must make a WIL save with a negative equal to your LVL in taunt, or must target you as the only opponent, instead.</p></td>
 		</tr>
 		<tr>
 			<td><p>Combat Etiquette</p></td><td><p>Combat</p></td><td><p>1</p></td><td><p>None</p></td><td><p>No</p></td><td><p>CHA</p></td><td><p>Offensive</p></td>
 			<td><p>
         The skill of how to engage in &#x201C;gentlemanly,&#x201D; &#x201C;honorable&#x201D; or &#x201C;face-saving&#x201D; combat (duels, sport-combat, etc.). This includes battle-field code-of-conduct, rituals, battle-cries, cheers, negotation, the art of surrender etc. In any situation in which negotation must occur during the duress of combat, the Combat Etiquette skill must be checked first. Without this skill it is impossible in most cases to attempt to negotiate with the opposing party.</p>
+				<p>
+				You may communicate combat conditions and requests, non-verbally, up to level x 5 spaces (Level x 5 feet).
+				</p>
         <div class="example">
           <h1 class="title">
             <p>Bratzefv negotiates peace</p>
@@ -63,10 +70,36 @@
 		<tr>
 			<td><p>Combat Terrain</p></td><td><p>Combat</p></td><td><p>1</p></td><td><p>None</p></td><td><p>No</p></td><td><p>INT</p></td><td><p>Offensive</p></td>
 			<td><p>
-				Understanding of combat terrain, troop movement, weather and combat condition impact on the terrain. Adds 3 to your Leadership rolls per level. Upon entering combat a character may spend actions to become familiar with the local terrain. Familiarity means that the character takes no minuses from slick, unlevel or otherwise difficult-to-traverse terrain, given that he has an appropriate skill knowledge (like acrobatics or Climb). This skill is rolled with a minus equal to the &#x201C;difficulty&#x201D; of the terrain and a bonus of LVL*Actions-spent-studying. If the character is familiar with the local terrain then if he has to dodge by &#x201C;throwing himself to the ground&#x201D; he gets an additional die. The character is also acutely aware in changes in the environment and gets a bonus to his Perception equal to 2*LVL in Combat Terrain.
+				Understanding of combat terrain, troop movement, weather and combat condition impact on the terrain. Adds +1 to your Leadership rolls per level, +1 to Perception checks, and +1 to DEX checks against footing. Upon entering combat a character may spend actions to become familiar with the local terrain. Familiarity means that the character takes no minuses from slick, unlevel or otherwise difficult-to-traverse terrain, given that he has an appropriate skill knowledge (like acrobatics or Climb). This skill is rolled with a minus equal to the &#x201C;difficulty&#x201D; of the terrain and a bonus of LVL*Actions-spent-studying. If the character is familiar with the local terrain then if he has to dodge by &#x201C;throwing himself to the ground&#x201D; he gets an additional die. The character is also acutely aware in changes in the environment and gets a bonus to his Perception equal to 2*LVL in Combat Terrain.
 			</p></td>
 		</tr>
     <tr>
+      <td>
+        <p>Resist Wounds</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>1</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>WIL</p>
+      </td>
+      <td>
+        <p>Defensive</p>
+      </td>
+      <td>
+        <p>Gain 2*LVL to WIL checsk to stay conscious below 0.  Gain LVL P/S/C armor against non-lethal blows.</p>
+      </td>
+    </tr>
+   <tr>
       <td>
         <p>Charge</p>
       </td>
@@ -142,6 +175,32 @@
       </td>
       <td>
         <p>Gain +X to hit dice by taking X actions, where is X is no more than your level.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Quick Movement</p>
+      </td>
+      <td>
+        <p>Combat</p>
+      </td>
+      <td>
+        <p>2</p>
+      </td>
+      <td>
+        <p>Varies</p>
+      </td>
+      <td>
+        <p>No</p>
+      </td>
+      <td>
+        <p>DEX</p>
+      </td>
+      <td>
+        <p>Offensive</p>
+      </td>
+      <td>
+        <p>You may use one action per level per turn during a full-run turn, rather than running for that action.  Reduce your movement correspondingly.  These actions must be taken at the beginning or end of our turn, and you may not split up your run actions.</p>
       </td>
     </tr>
     <tr>
