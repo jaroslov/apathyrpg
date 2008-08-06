@@ -42,7 +42,7 @@ LATEX = """\\documentclass[twoside,9pt]{memoir}
   \\vbox{
     \\textsc{\\noindent Example \\arabic{ExampleCounter} {\\textbf{#1}}}
       \\begin{quotation}
-        {\\small{\\noindent#2}}
+        \\noindent{\\small{\\noindent#2}}
       \\end{quotation}
       \\vspace{1em}
   }
