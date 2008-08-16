@@ -4,6 +4,8 @@ BOMPREFIX = Doc/BookOfMagic
 
 all: standard medieval martialarts
 
+all-pdf: medieval-pdf standard-pdf
+
 clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *~ *.ilg *.idx *ind
 
