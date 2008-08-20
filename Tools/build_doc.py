@@ -938,6 +938,14 @@ def convert_to_latex(Node, sectiondepth=0):
     upper = convert_to_latex(Node.getchildren()[0]).strip()
     lower = convert_to_latex(Node.getchildren()[1]).strip()
     return surround%(upper, lower)
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}mfenced":
+    surround = "\\left%s{%s}\\right%s"
+    Lfence = Node.get("open")
+    Rfence = Node.get("close")
+    if Lfence in ["{","}"]: Lfence = "\\"+Lfence
+    if Rfence in ["{","}"]: Rfence = "\\"+Rfence
+    inner = convert_children_to_latex(Node).strip()
+    return surround%(Lfence, inner, Rfence)
   elif Node.tag in ["{http://www.w3.org/1998/Math/MathML}mn",
                     "{http://www.w3.org/1998/Math/MathML}mo",
                     "{http://www.w3.org/1998/Math/MathML}mi"]:
