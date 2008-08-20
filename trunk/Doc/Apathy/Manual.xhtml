@@ -1517,6 +1517,57 @@
                 <p>Note that if there is a minus to the die roll once all the bonuses/penalties are added up, then no rollover is possible. An example is <span class="roll"><span class="num">1</span><span class="face">4</span><span class="bOff">-</span><span class="bns">1</span></span>. Even if you roll a 4 on the die it will be reduced to a 3, which does not yield a rollover. No die (even after negatives) can give a value less than 1. So, if you have a <span class="roll"><span class="num">1</span><span class="face">6</span><span class="bOff">-</span><span class="bns">4</span></span>, and roll a 2 (which would theoretically total -2), then the actual total would be 1.</p>
                 <p>Along with what is given above, die rolls might have a raw bonus. This is represented by a bonus in brackets such as this: <span class="roll"><span class="num">3</span><span class="face">4</span><span class="bOff">+</span><span class="bns">1</span><span class="rOff">+</span><span class="raw">4</span><span class="kind"/></span> (alt. <span class="roll"><span class="raw">4</span><span class="num">3</span><span class="face">4</span><span class="bOff">+</span><span class="bns">1</span></span> ). Raw Bonuses are added to the resultant total of a die roll, NOT to each die; thus they do not affect rollovers at all. This bonus is added in after all the rollovers are done with. Consider the prior example of <span class="roll"><span class="num">3</span><span class="face">4</span><span class="bOff">+</span><span class="bns">1</span></span> but with the [+4] added. That would be written <span class="roll"><span class="num">3</span><span class="face">4</span><span class="bOff">+</span><span class="bns">1</span><span class="rOff">+</span><span class="raw">4</span><span class="kind"/></span>. The total using the above numbers would be 24.</p>
                 <p>Unless otherwise stated, all non-skill die rolls use this system.</p>
+								<p>In general, the increased average value due to rollover is proportional to the bonus. Thus, for a 6-sided die, the average roll is 3.5, and the rollover adds roughly .7, i.e., 3.5/6~.583. However, for those interested, this is an exact equation describing the average value of a die roll. For the die roll: <span class="roll"><span class="rOff">&#xB1;</span><span class="raw">R</span><span class="num">N</span><span class="face">F</span><span class="bOff">+</span><span class="bns">B</span></span>:</p>
+								<div class="equation">
+									<p>
+										<math overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+											<mfenced close=")" open="(" separators="">
+												<mfenced close=")" open="(" separators="">
+													<mfrac>
+														<mi>F</mi>
+														<mrow>
+															<mi>F</mi>
+															<mo>-</mo>
+															<mn>1</mn>
+														</mrow>
+													</mfrac>
+													<mo>-</mo>
+													<mfrac>
+														<mn>1</mn>
+														<mi>F</mi>
+													</mfrac>
+													<mo>+</mo>
+													<mi>min</mi>
+													<mfenced close=")" open="(" separators="">
+														<mfrac>
+															<mrow>
+																<mn>1</mn>
+																<mo>+</mo>
+																<mi>B</mi>
+															</mrow>
+															<mi>F</mi>
+														</mfrac>
+														<mn>1</mn>
+													</mfenced>
+												</mfenced>
+												<mfrac>
+													<mrow>
+														<mi>F</mi>
+														<mo>+</mo>
+														<mn>1</mn>
+													</mrow>
+													<mn>2</mn>
+												</mfrac>
+												<mo>+</mo>
+												<mi>B</mi>
+											</mfenced>
+											<mo>&#x22C5;</mo>
+											<mi>N</mi>
+											<mo>&#x00B1;</mo>
+											<mi>R</mi>
+										</math>
+									</p>
+								</div>
               </div>
             </div>
           </div>
