@@ -1520,52 +1520,107 @@
 								<p>In general, the increased average value due to rollover is proportional to the bonus. Thus, for a 6-sided die, the average roll is 3.5, and the rollover adds roughly .7, i.e., 3.5/6~.583. However, for those interested, this is an exact equation describing the average value of a die roll. For the die roll: <span class="roll"><span class="rOff">&#xB1;</span><span class="raw">R</span><span class="num">N</span><span class="face">F</span><span class="bOff">+</span><span class="bns">B</span></span>:</p>
 								<div class="equation">
 									<p>
-										<math overflow="scroll" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-											<mfenced close=")" open="(" separators="">
-												<mfenced close=")" open="(" separators="">
-													<mfrac>
-														<mi>F</mi>
-														<mrow>
-															<mi>F</mi>
-															<mo>-</mo>
-															<mn>1</mn>
-														</mrow>
-													</mfrac>
-													<mo>-</mo>
-													<mfrac>
-														<mn>1</mn>
-														<mi>F</mi>
-													</mfrac>
-													<mo>+</mo>
-													<mi>min</mi>
-													<mfenced close=")" open="(" separators="">
-														<mfrac>
-															<mrow>
-																<mn>1</mn>
-																<mo>+</mo>
-																<mi>B</mi>
-															</mrow>
-															<mi>F</mi>
-														</mfrac>
-														<mn>1</mn>
-													</mfenced>
-												</mfenced>
-												<mfrac>
-													<mrow>
-														<mi>F</mi>
-														<mo>+</mo>
-														<mn>1</mn>
-													</mrow>
-													<mn>2</mn>
-												</mfrac>
-												<mo>+</mo>
-												<mi>B</mi>
-											</mfenced>
-											<mo>&#x22C5;</mo>
-											<mi>N</mi>
-											<mo>&#x00B1;</mo>
-											<mi>R</mi>
-										</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML" overflow="scroll" display="block">
+  <mfenced close="" open="{">
+    <mtable columnalign="left left">
+      <mtr>
+        <mtd>
+          <mi>B</mi>
+          <mo>≥</mo>
+          <mn>0</mn>
+        </mtd>
+        <mtd>
+          <mfenced close=")" open="(" separators="">
+            <mfenced close=")" open="(" separators="">
+              <mfrac>
+                <mi>F</mi>
+                <mrow>
+                  <mi>F</mi>
+                  <mo>-</mo>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+              <mo>-</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mi>F</mi>
+              </mfrac>
+              <mo>+</mo>
+              <mi>min</mi>
+              <mfenced close=")" open="(" separators="">
+                <mfrac>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mi>B</mi>
+                  </mrow>
+                  <mi>F</mi>
+                </mfrac>
+                <mi>,</mi>
+                <mn>1</mn>
+              </mfenced>
+            </mfenced>
+            <mo>⋅</mo>
+            <mfrac>
+              <mrow>
+                <mi>F</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+            <mo>+</mo>
+            <mi>B</mi>
+          </mfenced>
+          <mo>⋅</mo>
+          <mi>N</mi>
+          <mo>±</mo>
+          <mi>R</mi>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mo>-</mo>
+          <mi>F</mi>
+          <mo>&lt;</mo>
+          <mi>B</mi>
+          <mo>&lt;</mo>
+          <mn>0</mn>
+        </mtd>
+        <mtd>
+          <mfrac>
+            <mrow>
+              <msup>
+                <mfenced close=")" open="(" separators="">
+                  <mi>F</mi>
+                  <mo>-</mo>
+                  <mi>B</mi>
+                </mfenced>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <mi>F</mi>
+              <mo>+</mo>
+              <mi>B</mi>
+            </mrow>
+            <mi>F</mi>
+          </mfrac>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>B</mi>
+          <mo>≤</mo>
+          <mo>-</mo>
+          <mi>F</mi>
+        </mtd>
+        <mtd>
+          <mn>1</mn>
+        </mtd>
+      </mtr>
+    </mtable>
+  </mfenced>
+</math>
 									</p>
 								</div>
               </div>

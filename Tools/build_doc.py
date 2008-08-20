@@ -944,8 +944,25 @@ def convert_to_latex(Node, sectiondepth=0):
     Rfence = Node.get("close")
     if Lfence in ["{","}"]: Lfence = "\\"+Lfence
     if Rfence in ["{","}"]: Rfence = "\\"+Rfence
+    if Lfence.strip() == "": Lfence = "."
+    if Rfence.strip() == "": Rfence = "."
     inner = convert_children_to_latex(Node).strip()
     return surround%(Lfence, inner, Rfence)
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}mtable":
+    surround = "\\begin{array}{%s}%s\\end{array}"
+    colalign = "".join([al[0] for al in Node.get("columnalign").split(" ")])
+    inner = convert_to_latex(Node.getchildren()[0]).strip()
+    for child in Node.getchildren()[1:]:
+      inner += "\\\\" + convert_to_latex(child).strip()
+    return surround%(colalign, inner)
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}mtr":
+    inner = convert_to_latex(Node.getchildren()[0]).strip()
+    if len(Node.getchildren()) > 1:
+      for child in Node.getchildren()[1:]:
+        inner += "& " + convert_to_latex(child).strip()
+    return inner
+  elif Node.tag == "{http://www.w3.org/1998/Math/MathML}mtd":
+    return convert_children_to_latex(Node).strip()
   elif Node.tag in ["{http://www.w3.org/1998/Math/MathML}mn",
                     "{http://www.w3.org/1998/Math/MathML}mo",
                     "{http://www.w3.org/1998/Math/MathML}mi"]:
