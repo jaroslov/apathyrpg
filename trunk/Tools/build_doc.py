@@ -372,7 +372,12 @@ def combine_in_place(Node, options):
   for inplace in inplaces:
     reached_fp = False
     subdocname = os.path.join(options.prefix, inplace.get('href'))
-    subdoc = etree.parse(subdocname).getroot()
+    try:
+      subdoc = etree.parse(subdocname).getroot()
+    except Exception, e:
+      print >> sys.stderr, subdocname
+      print >> sys.stderr, e
+      raise Exception, "Invalid file:", subdocname
     inplace.getparent().replace(inplace, subdoc)
   if reached_fp:
     return Node
