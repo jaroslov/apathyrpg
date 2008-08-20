@@ -9,6 +9,10 @@ The Apathy system relies on a description of all the parts in a subset (variant)
 
 You should _always_ open your content in an XML validating structured editor or viewer, such as Firefox, before committing. This reduces the chances of build-breakage.
 
+  # Always update your repository before beginning to edit content
+  # Before checking content in, open it up in Firefox and fix any error messages
+  # Always check your modified content in as soon as possible
+
 = Boom! Microformat =
 
 We will eventually be moving to the Boom! microformat and developing an @page CSS style for Apathy. Our hope is that this will enable us to move away from the latex and lxml dependencies, and to a pure Python+XHTML tool-chain.
