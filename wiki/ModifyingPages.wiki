@@ -5,6 +5,10 @@
 
 The Apathy system relies on a description of all the parts in a subset (variant) of XHTML. This means that all of the data for the entire system is stored in a number of XHTML documents. The build system takes these XHTML documents and combines them together, performing a number of transformations and then builds a web page or a TeX document from the input values.
 
+= Breaking the Build: Content =
+
+You should _always_ open your content in an XML validating structured editor or viewer, such as Firefox, before committing. This reduces the chances of build-breakage.
+
 = Modifying a `book` =
 
 The Documents that make up the game are found in the folder "Doc". The current (and only) top-level document is called "Apathy.xhtml". The code within Apathy.xhtml looks like this:
