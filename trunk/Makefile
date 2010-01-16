@@ -1,4 +1,4 @@
-BUILDSCRIPT = python Tools/build_doc.py
+BUILDSCRIPT = python2.5 Tools/build_doc.py
 APATHYPREFIX = Doc/Apathy
 BOMPREFIX = Doc/BookOfMagic
 

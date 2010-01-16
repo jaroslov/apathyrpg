@@ -28,7 +28,12 @@ LATEX = """\\documentclass[twoside,9pt]{memoir}
 \\usepackage{array}
 \\usepackage{longtable}
 \\usepackage{graphicx}
-\\usepackage{hyperref}
+\\usepackage{color}
+\\definecolor{darkblue}{rgb}{0,0,.75}
+\\definecolor{darkred}{rgb}{.75,0,0}
+\\usepackage[bookmarks=true,colorlinks=true,
+            linkcolor={darkblue},
+            citecolor={darkblue}]{hyperref}
 \\usepackage[textheight=9in]{geometry}
 \\usepackage{makeidx}
 \\usepackage{pdflscape}
@@ -375,8 +380,8 @@ def combine_in_place(Node, options):
     try:
       subdoc = etree.parse(subdocname).getroot()
     except Exception, e:
-      print >> sys.stderr, subdocname
-      print >> sys.stderr, e
+      print >> sys.stderr, "I found an error in the following XHTML document:", subdocname
+      print >> sys.stderr, "Specified as:", e
       raise Exception, "Invalid file:", subdocname
     inplace.getparent().replace(inplace, subdoc)
   if reached_fp:
@@ -415,11 +420,16 @@ def combine_welds(Node, options):
 def combine_references(DocNode, options):
   hrids = DocNode.xpath("//a[@class='hrid']")
   for hrid in hrids:
-    subdocname = os.path.join(options.prefix, hrid.attrib["href"])
-    subdoc = etree.parse(subdocname).getroot()
-    subdoc = transform_hrid_table(subdoc, options)
-    ipparent = hrid.getparent()
-    ipparent.replace(hrid, subdoc)
+    try:
+      subdocname = os.path.join(options.prefix, hrid.attrib["href"])
+      subdoc = etree.parse(subdocname).getroot()
+      subdoc = transform_hrid_table(subdoc, options)
+      ipparent = hrid.getparent()
+      ipparent.replace(hrid, subdoc)
+    except:
+      print >> sys.stderr, "I found an error in the following XHTML document:", subdocname
+      print >> sys.stderr, "Specified as:", e
+      raise Exception, "Invalid file:", subdocname
   summarizes = DocNode.xpath("//a[@class='summarize']")
   for summarize in summarizes:
     subdocname = os.path.join(options.prefix, summarize.attrib["href"])
