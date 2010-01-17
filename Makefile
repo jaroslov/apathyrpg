@@ -1,10 +1,14 @@
+#BUILDSCRIPT = python Tools/build_doc.py
 BUILDSCRIPT = python2.5 Tools/build_doc.py
 APATHYPREFIX = Doc/Apathy
 BOMPREFIX = Doc/BookOfMagic
 
-all: standard medieval martialarts
+all: msg character standard medieval martialarts bookofmagic
 
-all-pdf: medieval-pdf standard-pdf
+all-pdf: medieval-pdf standard-pdf character martialarts-pdf bookofmagic-pdf
+
+msg:
+	@echo "Change to python2.5 in Makefile if bare python fails."
 
 clean:
 	rm -f *.aux *.lof *.log *.lot *.out *.toc *~ *.ilg *.idx *ind
@@ -17,6 +21,8 @@ standard: standard-wp standard-pdf
 medieval: medieval-wp medieval-pdf
 
 martialarts: martialarts-wp martialarts-pdf
+
+bookofmagic: bookofmagic-wp bookofmagic-pdf
 
 character:
 	pdflatex Doc/CharacterSheet.tex > cs.log
