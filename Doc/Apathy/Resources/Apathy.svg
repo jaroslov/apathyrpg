@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,16 +13,23 @@
    height="382.71521"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45.1"
+   inkscape:version="0.47 r22583"
    version="1.0"
-   sodipodi:docbase="/Users/thechao/Sites/Apathy/Doc/Resources"
    sodipodi:docname="Apathy.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/Users/thechao/Desktop/RTFM.png"
    inkscape:export-xdpi="720"
    inkscape:export-ydpi="720">
   <defs
-     id="defs4" />
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 191.3576 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1064.5814 : 191.3576 : 1"
+       inkscape:persp3d-origin="532.29071 : 127.57174 : 1"
+       id="perspective2952" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -33,22 +41,24 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.73605986"
-     inkscape:cx="335.33"
-     inkscape:cy="65.719271"
+     inkscape:cx="475.43193"
+     inkscape:cy="-42.967542"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="g2225"
      width="30.044854cm"
      height="10.801074cm"
      units="cm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1000"
-     inkscape:window-height="788"
+     inkscape:window-width="1351"
+     inkscape:window-height="869"
      inkscape:window-x="242"
      inkscape:window-y="0"
      borderlayer="false"
      inkscape:showpageshadow="false"
-     showborder="true" />
+     showborder="true"
+     showgrid="false"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -238,46 +248,41 @@
     <g
        id="g2225"
        transform="matrix(6.0270112,0,0,6.0270112,-452.43101,-169.66163)">
-      <g
-         transform="translate(6.892779,4.726477)"
-         id="g2203">
-        <text
-           xml:space="preserve"
-           style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Nasty"
-           x="16.066534"
-           y="49.075508"
-           id="text2187"
-           sodipodi:linespacing="50%"><tspan
-             sodipodi:role="line"
-             id="tspan2189"
-             x="16.066534"
-             y="49.075508"
-             style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;font-family:Nasty">A</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Nasty"
-           x="64.723709"
-           y="49.075508"
-           id="text2191"
-           sodipodi:linespacing="50%"><tspan
-             sodipodi:role="line"
-             id="tspan2193"
-             x="64.723709"
-             y="49.075508"
-             style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;font-family:Nasty">A</tspan></text>
-      </g>
+      <text
+         sodipodi:linespacing="50%"
+         id="text2187"
+         y="53.801987"
+         x="19.647619"
+         style="font-size:58.07190323px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Blackmoor LET;-inkscape-font-specification:Blackmoor LET Medium"
+         xml:space="preserve"><tspan
+           style="font-size:58.07190323px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;font-family:Blackmoor LET;-inkscape-font-specification:Blackmoor LET Medium"
+           y="53.801987"
+           x="19.647619"
+           id="tspan2189"
+           sodipodi:role="line">A</tspan></text>
+      <text
+         sodipodi:linespacing="50%"
+         id="text2191"
+         y="53.801987"
+         x="68.304794"
+         style="font-size:58.07190323px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Big Caslon;-inkscape-font-specification:Big Caslon Bold"
+         xml:space="preserve"><tspan
+           style="font-size:58.07190323px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;font-family:Blackmoor LET;-inkscape-font-specification:Blackmoor LET Medium"
+           y="53.801987"
+           x="68.304794"
+           id="tspan2193"
+           sodipodi:role="line">A</tspan></text>
       <text
          sodipodi:linespacing="50%"
          id="text2199"
-         y="38.061817"
-         x="57.088829"
-         style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Nasty"
+         y="40.766811"
+         x="58.510838"
+         style="font-size:33.1839447px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Blackmoor LET;-inkscape-font-specification:Blackmoor LET Bold"
          xml:space="preserve"><tspan
-           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:50%;writing-mode:lr-tb;text-anchor:start;font-family:Nasty"
-           y="38.061817"
-           x="57.088829"
-           id="tspan2201"
-           sodipodi:role="line">p   THY</tspan></text>
+           sodipodi:role="line"
+           id="tspan2966"
+           x="58.510838"
+           y="40.766811">p     THY</tspan></text>
     </g>
   </g>
 </svg>
