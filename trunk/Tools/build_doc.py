@@ -39,6 +39,11 @@ LATEX = """\\documentclass[twoside,9pt]{memoir}
 \\usepackage{pdflscape}
 \\makeindex
 
+\\setlength{\\marginparwidth}{1.2in}
+\\let\\oldmarginpar\\marginpar
+\\renewcommand\\marginpar[1]{\\-\\oldmarginpar[\\footnotesize #1]%%
+{\\footnotesize #1}}
+
 \\newcounter{ExampleCounter}
 \\setcounter{ExampleCounter}{1}
 \\newcommand{\\quoteexample}[2][~] {
@@ -669,7 +674,8 @@ def convert_to_latex(Node, sectiondepth=0):
         for child in Node.getchildren():
           text += convert_to_latex(child)+"\n"
         text = text.strip()
-        text = "{\\normalsize \\textsc{\\textbf{Note:}}} "+text+"\n\n"
+        #text = "{\\normalsize \\textsc{\\textbf{Note:}}} "+text+"\n\n"
+	text = "\\marginpar{" + text + "}"
         return text
       elif klass == 'equation':
         surround = "\n\n\\begin{figure}[!htb]\n\\centering\n%s\n\\end{figure}\n\n"
@@ -756,7 +762,7 @@ def convert_to_latex(Node, sectiondepth=0):
           text += convert_to_latex(child)
         if Node.tail is not None:
           text += sanitize_string(Node.tail)
-        return surround%text
+        return surround%(text.strip('\n'))
       elif klass == 'notappl':
         return "\\ensuremath{N/A}"
       elif klass == 'roll':
