@@ -22,6 +22,7 @@ INDEXBACKMAP = {}
 
 LATEX = """\\documentclass[twoside,9pt]{memoir}
 \\usepackage[T1]{fontenc}
+\\usepackage{times}
 \\usepackage{multicol}
 \\usepackage{rotating}
 \\usepackage{tabularx}

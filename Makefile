@@ -1,11 +1,12 @@
-#BUILDSCRIPT = python Tools/build_doc.py
-BUILDSCRIPT = python2.5 Tools/build_doc.py
+BUILDSCRIPT = python Tools/build_doc.py
+#BUILDSCRIPT = python2.5 Tools/build_doc.py
 APATHYPREFIX = Doc/Apathy
 BOMPREFIX = Doc/BookOfMagic
 
 all: msg character standard medieval martialarts bookofmagic
 
-all-pdf: medieval-pdf standard-pdf character martialarts-pdf bookofmagic-pdf
+all-pdf: medieval-pdf standard-pdf character martialarts-pdf 
+#bookofmagic-pdf
 
 msg:
 	@echo "Change to python2.5 in Makefile if bare python fails."
@@ -22,7 +23,7 @@ medieval: medieval-wp medieval-pdf
 
 martialarts: martialarts-wp martialarts-pdf
 
-bookofmagic: bookofmagic-wp bookofmagic-pdf
+#bookofmagic: bookofmagic-wp bookofmagic-pdf
 
 character:
 	pdflatex Doc/CharacterSheet.tex > cs.log
@@ -38,8 +39,8 @@ medieval-wp:
 martialarts-wp:
 	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -w --retarget-resources --category-exclusion-list=Tools/MartialArts.exl > MartialArts.xhtml
 
-bookofmagic-wp:
-	${BUILDSCRIPT} --prefix=${BOMPREFIX} --main-document=main --retarget-resources -w > BOM.xhtml
+#bookofmagic-wp:
+#	${BUILDSCRIPT} --prefix=${BOMPREFIX} --main-document=Main --retarget-resources -w > BOM.xhtml
 
 standard-tex:
 	${BUILDSCRIPT} --prefix=${APATHYPREFIX} -l --retarget-resources  > ARPG.tex
