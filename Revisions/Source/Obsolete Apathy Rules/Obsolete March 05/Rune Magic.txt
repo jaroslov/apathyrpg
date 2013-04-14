@@ -1,0 +1,49 @@
+Rune Magic
+
+Rune magic is the art of casting a spell and forcing the spell energy into a magical symbol.  The symbol can be activated later, causing the spell to take effect.  The spell can be released by the caster, just like normal spellcasting, or the rune can be “programmed” to trigger under certain circumstances.
+
+Rune magic tends to be very fast in combat, since using pre-cast runes is usually faster than spellcasting in real-time.  It is also useful for making traps or safety runes.  However, rune magic is a more difficult art to master.
+
+
+Rune-related skills
+
+? Magic Control: This is the same skill used with normal spellcasting.  Each level gives the mage (LVL^2*WIL)*2 MP.
+? Rune Magic.  Similar to spellcasting.  Gives (LVL^2* WIS)  MP.  Also, no player may learn a rune spell with a higher rank than his/her level of Rune Magic.  It also gives the player the ability to identify magical items or effects (skill test at -5), and to determine what a particular magical item/effect does (GM determines difficulty of the test, but with a +1 die above Magical Studies).  The mage can also identify any rune with a normal skill check.
+
+
+Magic Points
+
+The player’s magic points and MP recovery are the same as with normal spell casting.  Upon finishing inscribing a rune, the player spends the normal mana for the spell.
+
+Rune Spells
+
+The player purchases rune spells just like normal spells.  Note that if a player knows both rune magic and spellcasting, it is important to note which are purchased as Rune Spells, and which as normal spells.  THEY ARE NOT INTERCHANGABLE.  That means that if you know the rune spell Daylight Globe, you CANNOT cast it like a normal magician.  And vice versa.  If someone knows the spell Daylight Globe, they cannot inscribe a rune of it.  If you want to use a given spell in both rune and normal form, you have to buy it twice.
+
+Rune Creation
+
+The process for creating runes is rather simple.  The mage inscribes a magic symbol onto an item.  The symbol can be drawn, carved, embossed, knitted, painted, or otherwise put onto any surface.  This process takes a minimum number of minutes equal to the number of actions the spell would normally take.  This minimum is something similar to drawing the symbol on a piece of paper.  A more sophisticated or time-consuming processes can be used; this is usually done to make the rune more durable or visually appealing.  For if a runic symbol is defaced in any manner such that the symbol changes, even slightly, the spell fizzles and is wasted.  The creator of a rune can cancel one of his runes at any time.
+
+Upon finishing the rune inscribing, the player then spends the normal mana for the spell.
+
+All runes have only one charge or activation.  A rune can be activated in 1 action.  After activation, the rune symbol fades away and is useless from then on.  Only the caster, or a trigger, can activate a rune.
+
+The only exception is a permanent rune.  Any permanent rune will not fade away, but will just be drained of its charge, and must be refilled.  A permanent rune may be recharged in half the normal time.  One of these runes takes a number of HOURS equal to the actions normally required in order to create.  Permanent runes are often inscribed in a permanent substance, like etched metal, because the permanency and rune will get destroyed if the symbol is marred.
+
+When a rune is created, the caster can inscribe a sub symbol for triggering.  This trigger can be anything the caster wishes, as long as the event to trigger the rune happens within 10 feet of the rune, and is something that the caster would normally be able to detect.  IE, a rune cannot be set to discharge when an invisible creature gets within 10’ if the caster does not normally have the ability to see invisible.  Triggered runes can be combined with permanent runes.  Each trigger requirement takes an extra minuite to inscribe in a normal rune, or one hour for a permanent rune.
+
+Runes can also be chained together.  This means that when the first in the chain is activated, one action later, the second rune is activated, then one action later the third is released, and so on.  These chained runes can also have triggers to keep them from discharging unless under certain circumstances.  If a rune in the series is defaced or destroyed, then all runes “down the chain” fizzle as well.
+ 
+The number of runes a player can have active at once is determined by his number of Rune Slots.  The player has a number of Rune Slots (RS) determined by:
+
+RS = 2 * Rune Studies2
+
+- Each normal rune uses up RANK RS.  When the rune is discharged or defaced, the RS is free again unless it is a permanent rune.
+- Making a rune permanent uses up three times the normal RS.
+- A trigger or condition can be added to a rune by taking up one extra slot per trigger.
+- A chained rune cost an additional 2*X where X is the depth in the chain of activation.
+- It is possible to have more than one trigger on a given rune
+
+Rune Notes:
+
+- Dispel-3 will destroy all runes on a person or within an area of effect
+- One popular form of modern Rune Magic is the use of tattoos as the runic symbol. 
